@@ -1,0 +1,22 @@
+diff --git a/node_modules/@babel/traverse/lib/path/replacement.js b/node_modules/@babel/traverse/lib/path/replacement.js
+index 6de6596..c016c05 100644
+--- a/node_modules/@babel/traverse/lib/path/replacement.js
++++ b/node_modules/@babel/traverse/lib/path/replacement.js
+@@ -166,11 +166,12 @@ function _replaceWith(node) {
+     throw new ReferenceError("Container is falsy");
+   }
+ 
+-  if (this.inList) {
+-    t.validate(this.parent, this.key, [node]);
+-  } else {
+-    t.validate(this.parent, this.key, node);
+-  }
++  // TODO(flow2dts): We want to be able to replace a FlowType with a TSType
++  // if (this.inList) {
++  //   t.validate(this.parent, this.key, [node]);
++  // } else {
++  //   t.validate(this.parent, this.key, node);
++  // }
+ 
+   this.debug(`Replace with ${node == null ? void 0 : node.type}`);
+   this.node = this.container[this.key] = node;

@@ -1,0 +1,18 @@
+diff --git a/node_modules/@types/babel-plugin-tester/index.d.ts b/node_modules/@types/babel-plugin-tester/index.d.ts
+index ec8c8c6..36a6bfb 100644
+--- a/node_modules/@types/babel-plugin-tester/index.d.ts
++++ b/node_modules/@types/babel-plugin-tester/index.d.ts
+@@ -276,6 +276,13 @@ export interface PluginTesterOptions extends TestObject, Omit<Babel.TransformOpt
+      * what's included in this package.
+      */
+     babel?: BabelType;
++
++    /**
++     * Use this to provide your own fixture output file extension. This is
++     * particularly useful if you are testing typescript input. If ommited
++     * fixture input file extension will be used.
++     */
++    fixtureOutputExt?: string;
+ }
+ 
+ export default function pluginTester(options: PluginTesterOptions): void;
