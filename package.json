@@ -1,0 +1,8 @@
+{
+  "name": "flow2dts",
+  "version": "0.0.1",
+  "description": "Generate TypeScript ambient declaration files from Flow source.",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false
+}
