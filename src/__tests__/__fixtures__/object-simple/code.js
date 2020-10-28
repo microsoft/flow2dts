@@ -1,9 +1,9 @@
 type a = {}
-type b = {
+type b = $Readonly<{
   x: string,
   y: number,
   z: boolean,
-}
+}>
 type c = {
   [a: number]: string,
 }

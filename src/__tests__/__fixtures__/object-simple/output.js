@@ -1,9 +1,9 @@
 declare type a = {}
-declare type b = {
+declare type b = Readonly<{
   x: string;
   y: number;
   z: boolean;
-}
+}>
 declare type c = {
   [a: number]: string;
 }
