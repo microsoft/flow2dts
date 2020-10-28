@@ -1,0 +1,12 @@
+declare type a1 = Boolean
+declare type a2 = boolean
+declare type b1 = String
+declare type b2 = string
+declare type c1 = Number
+declare type c2 = number
+declare type d = null
+declare type e = undefined
+declare type f = void
+declare type g = Symbol
+declare type h = {}
+declare type i = any
