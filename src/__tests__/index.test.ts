@@ -17,6 +17,13 @@ test case todo:
   export
   interface
   class
+  generic function
+  generic call signature
+  generic type alias
+  generic class
+  generic interface
+  typeof EXPR
+  utility types: https://flow.org/en/docs/types/utilities/
 */
 
 pluginTester({
