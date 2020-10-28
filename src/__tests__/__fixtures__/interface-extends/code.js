@@ -2,6 +2,6 @@ interface IA {
   x: number;
 }
 
-interface IA extends IB {
+interface IB extends IA {
   y: number;
 }

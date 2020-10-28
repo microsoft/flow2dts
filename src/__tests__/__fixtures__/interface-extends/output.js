@@ -2,6 +2,6 @@ declare interface IA {
     x: number;
 }
 
-declare interface IA extends IB {
+declare interface IB extends IA {
     y: number;
 }
