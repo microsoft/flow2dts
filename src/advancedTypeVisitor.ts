@@ -27,9 +27,12 @@ export const advancedTypeVisitor: Visitor<PluginPass> = {
         } else if (name === "Array" && args) {
           path.replaceWith(t.tsArrayType(<t.TSType>(<unknown>args.params[0])))
         } else if (name === "$ReadOnlyArray" && args) {
-          const operatorType = t.tsTypeOperator(t.tsArrayType(<t.TSType>(<unknown>args.params[0])))
-          operatorType.operator = "readonly"
-          path.replaceWith(operatorType)
+          path.replaceWith(
+            t.tsTypeReference(
+              t.identifier("ReadonlyArray"),
+              t.tsTypeParameterInstantiation([<t.TSType>(<unknown>args.params[0])])
+            )
+          )
         } else {
           path.replaceWith(t.tsTypeReference(t.identifier(name)))
         }
