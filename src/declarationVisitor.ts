@@ -5,6 +5,9 @@ export const declarationVisitor: Visitor<PluginPass> = {
   TypeAlias: {
     exit(path) {
       const { id, typeParameters, right } = path.node
+      if (typeParameters !== null) {
+        throw new Error("Generic type alias not supported yet.")
+      }
       assertTSType(right)
       const newAst = t.tsTypeAliasDeclaration(id, undefined, right)
       newAst.declare = true
