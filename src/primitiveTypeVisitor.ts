@@ -52,19 +52,4 @@ export const primitiveTypeVisitor: Visitor<PluginPass> = {
       path.replaceWith(t.tsTypeLiteral([]))
     },
   },
-  GenericTypeAnnotation: {
-    exit(path) {
-      if (path.node.id.type === "Identifier") {
-        const name = path.node.id.name
-        if (name === "undefined") {
-          path.replaceWith(t.tsUndefinedKeyword())
-        } else {
-          path.replaceWith(t.tsTypeReference(t.identifier(name)))
-        }
-      } else {
-        // QualifiedTypeIdentifier -> QualifiedName
-        throw "QualifiedTypeIdentifier not supported yet"
-      }
-    },
-  },
 }
