@@ -15,8 +15,6 @@ Tips:
 test case todo:
   import
   export
-  interface
-  class
   generic function
   generic call signature
   generic type alias

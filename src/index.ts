@@ -1,4 +1,19 @@
 import { PluginObj, types as t } from "@babel/core"
+import generate from "@babel/generator"
+
+function assertTSType(node: t.Node | null | undefined): asserts node is t.TSType {
+  if (node != null && node != undefined && !t.isTSType(node)) {
+    throw new Error(`${node.type}(${generate(<t.Node>node).code}) is not a TypeScript type`)
+  }
+}
+
+function assertTSTypeElement(node: t.Node | null | undefined): asserts node is t.TSTypeElement {
+  t.assertTSTypeElement(node)
+}
+
+function assertTSTypeAnnotation(node: t.Node | null | undefined): asserts node is t.TSTypeAnnotation {
+  t.assertTSTypeAnnotation(node)
+}
 
 export function flow2dtsTransform(): PluginObj {
   return {
@@ -8,8 +23,8 @@ export function flow2dtsTransform(): PluginObj {
         exit(path) {
           const { id, key, value, variance } = path.node
 
-          t.assertTSType(key)
-          t.assertTSType(value)
+          assertTSType(key)
+          assertTSType(value)
 
           const readonly = variance && variance.kind === "plus"
           const writeonly = variance && variance.kind === "minus"
@@ -49,10 +64,10 @@ export function flow2dtsTransform(): PluginObj {
           for (const prop of properties) {
             if (t.isObjectTypeSpreadProperty(prop)) {
               const { argument } = prop
-              t.assertTSType(argument)
+              assertTSType(argument)
               spreads.push(argument)
             } else {
-              t.assertTSTypeElement(prop)
+              assertTSTypeElement(prop)
               elements.push(prop)
             }
           }
@@ -62,7 +77,7 @@ export function flow2dtsTransform(): PluginObj {
             t.assertTSIndexSignature(indexer)
             const value = indexer.typeAnnotation!.typeAnnotation
             const keyTypeAnnotation = indexer.parameters[0].typeAnnotation
-            t.assertTSTypeAnnotation(keyTypeAnnotation)
+            assertTSTypeAnnotation(keyTypeAnnotation)
             const key = keyTypeAnnotation.typeAnnotation
             if (t.isTSSymbolKeyword(key) || t.isTSStringKeyword(key) || t.isTSNumberKeyword(key)) {
               elements.push(indexer)
@@ -91,11 +106,78 @@ export function flow2dtsTransform(): PluginObj {
       TypeAlias: {
         exit(path) {
           const { id, typeParameters, right } = path.node
-          if (typeParameters) {
-            t.assertTSTypeParameterDeclaration(typeParameters)
+          assertTSType(right)
+          const newAst = t.tsTypeAliasDeclaration(id, undefined, right)
+          newAst.declare = true
+          path.replaceWith(newAst)
+        },
+      },
+      AnyTypeAnnotation: {
+        exit(path) {
+          path.replaceWith(t.tsAnyKeyword())
+        },
+      },
+      BooleanTypeAnnotation: {
+        exit(path) {
+          path.replaceWith(t.tsBooleanKeyword())
+        },
+      },
+      BooleanLiteralTypeAnnotation: {
+        exit(path) {
+          path.replaceWith(t.tsLiteralType(t.booleanLiteral(path.node.value)))
+        },
+      },
+      NumberTypeAnnotation: {
+        exit(path) {
+          path.replaceWith(t.tsNumberKeyword())
+        },
+      },
+      NumberLiteralTypeAnnotation: {
+        exit(path) {
+          path.replaceWith(t.tsLiteralType(t.numericLiteral(path.node.value)))
+        },
+      },
+      StringTypeAnnotation: {
+        exit(path) {
+          path.replaceWith(t.tsStringKeyword())
+        },
+      },
+      StringLiteralTypeAnnotation: {
+        exit(path) {
+          path.replaceWith(t.tsLiteralType(t.stringLiteral(path.node.value)))
+        },
+      },
+      VoidTypeAnnotation: {
+        exit(path) {
+          path.replaceWith(t.tsVoidKeyword())
+        },
+      },
+      NullLiteralTypeAnnotation: {
+        exit(path) {
+          path.replaceWith(t.tsNullKeyword())
+        },
+      },
+      MixedTypeAnnotation: {
+        exit(path) {
+          path.replaceWith(t.tsTypeLiteral([]))
+        },
+      },
+      Identifier: {
+        exit(path) {
+          if (path.parentPath.node.type !== "TSTypeReference") {
+            const name = path.node.name
+            if (name === "undefined") {
+              path.replaceWith(t.tsUndefinedKeyword())
+            } else {
+              path.replaceWith(t.tsTypeReference(t.identifier(name)))
+            }
           }
-          t.assertTSType(right)
-          path.replaceWith(t.tsTypeAliasDeclaration(id, typeParameters, right))
+        },
+      },
+      QualifiedTypeIdentifier: {
+        exit(path) {
+          // QualifiedTypeIdentifier -> QualifiedName
+          throw "QualifiedTypeIdentifier not supported yet"
         },
       },
     },
