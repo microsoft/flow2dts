@@ -14,6 +14,14 @@ export const declarationVisitor: Visitor<PluginPass> = {
       path.replaceWith(newAst)
     },
   },
+  VariableDeclaration: {
+    exit(path) {
+      path.node.declare = true
+      path.node.declarations.forEach((d) => {
+        d.init = null
+      })
+    },
+  },
   OpaqueType: {
     exit(path) {
       path.addComment("leading", "[FLOW2DTS - Warning] This type alias was opaque in the original Flow source.")
