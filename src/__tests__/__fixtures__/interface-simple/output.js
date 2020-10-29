@@ -1,1 +1,1 @@
-declare interface IA { }
+interface IA { }

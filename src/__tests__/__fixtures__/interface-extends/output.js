@@ -1,7 +1,7 @@
-declare interface IA {
+interface IA {
     x: number;
 }
 
-declare interface IB extends IA {
+interface IB extends IA {
     y: number;
 }

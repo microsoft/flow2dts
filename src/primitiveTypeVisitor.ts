@@ -49,7 +49,7 @@ export const primitiveTypeVisitor: Visitor<PluginPass> = {
   },
   MixedTypeAnnotation: {
     exit(path) {
-      path.replaceWith(t.tsTypeLiteral([]))
+      path.replaceWith(t.tsUnknownKeyword())
     },
   },
 }

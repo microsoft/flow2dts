@@ -8,5 +8,5 @@ declare type d = null
 declare type e = undefined
 declare type f = void
 declare type g = Symbol
-declare type h = {}
+declare type h = unknown
 declare type i = any

@@ -1,22 +1,22 @@
-declare interface IA {
+interface IA {
     readonly a: string;
     b?: null | undefined | string;
 }
 
-declare interface IB1 {
+interface IB1 {
     [x: string]: number;
 }
 
-declare interface IB2 {
+interface IB2 {
     [$: string]: number;
 }
 
-declare interface IC {
+interface IC {
     c(): void;
     d(a: string, b?: null | undefined | number, ...c: number[]): boolean;
 }
 
-declare interface ID {
+interface ID {
     (): void;
     (a: string, b?: null | undefined | number, ...c: number[]): boolean;
 }
