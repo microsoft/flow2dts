@@ -5,7 +5,7 @@ export const declarationVisitor: Visitor<PluginPass> = {
   TypeAlias: {
     exit(path) {
       const { id, typeParameters, right } = path.node
-      if (typeParameters !== null) {
+      if (typeParameters !== null && typeParameters !== undefined) {
         throw new Error("Generic type alias not supported yet.")
       }
       assertTSType(right)
@@ -20,6 +20,48 @@ export const declarationVisitor: Visitor<PluginPass> = {
       path.node.declarations.forEach((d) => {
         d.init = null
       })
+    },
+  },
+  FunctionDeclaration: {
+    exit(path) {
+      const { id, returnType, params, typeParameters } = path.node
+      if (typeParameters !== null && typeParameters !== undefined) {
+        throw new Error("Generic function not supported yet.")
+      }
+
+      const returnTSType =
+        returnType === null || returnType === undefined
+          ? t.tsVoidKeyword()
+          : (<t.TypeAnnotation>returnType).typeAnnotation
+      assertTSType(returnTSType)
+
+      const args: (t.Identifier | t.RestElement)[] = params.map((flowParam, index) => {
+        switch (flowParam.type) {
+          case "Identifier": {
+            const paramType = (<t.TypeAnnotation>flowParam.typeAnnotation).typeAnnotation
+            assertTSType(paramType)
+            const arg = t.identifier(flowParam.name)
+            arg.typeAnnotation = t.tsTypeAnnotation(paramType)
+            arg.optional = flowParam.optional
+            return arg
+          }
+          case "RestElement": {
+            const paramId = <t.Identifier>flowParam.argument
+            const paramType = (<t.TypeAnnotation>flowParam.typeAnnotation).typeAnnotation
+            assertTSType(paramType)
+            const rarg = t.restElement(t.identifier(paramId.name))
+            rarg.typeAnnotation = t.tsTypeAnnotation(paramType)
+            return rarg
+          }
+          default: {
+            throw new Error("Pattern function parameters are not supported yet.")
+          }
+        }
+      })
+
+      const newAst = t.tsDeclareFunction(id, null, args, t.tsTypeAnnotation(returnTSType))
+      newAst.declare = true
+      path.replaceWith(newAst)
     },
   },
   OpaqueType: {
