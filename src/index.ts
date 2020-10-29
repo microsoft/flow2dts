@@ -3,7 +3,7 @@ import generate from "@babel/generator"
 
 function assertTSType(node: t.Node | null | undefined): asserts node is t.TSType {
   if (node != null && node != undefined && !t.isTSType(node)) {
-    throw new Error(`${node.type}(${generate(<t.Node>node).code}) is not a TypeScript type`)
+    throw new Error(`${node.type}(node is not a TypeScript type:\r\n${JSON.stringify(node, undefined, 4)}`)
   }
 }
 
@@ -162,22 +162,19 @@ export function flow2dtsTransform(): PluginObj {
           path.replaceWith(t.tsTypeLiteral([]))
         },
       },
-      Identifier: {
+      GenericTypeAnnotation: {
         exit(path) {
-          if (path.parentPath.node.type !== "TSTypeReference") {
-            const name = path.node.name
+          if (path.node.id.type === "Identifier") {
+            const name = path.node.id.name
             if (name === "undefined") {
               path.replaceWith(t.tsUndefinedKeyword())
             } else {
               path.replaceWith(t.tsTypeReference(t.identifier(name)))
             }
+          } else {
+            // QualifiedTypeIdentifier -> QualifiedName
+            throw "QualifiedTypeIdentifier not supported yet"
           }
-        },
-      },
-      QualifiedTypeIdentifier: {
-        exit(path) {
-          // QualifiedTypeIdentifier -> QualifiedName
-          throw "QualifiedTypeIdentifier not supported yet"
         },
       },
     },

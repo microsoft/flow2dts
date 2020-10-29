@@ -1,6 +1,6 @@
 declare class CA {
     a: string;
-    b: ?string;
+    b: null | undefined | string;
 }
 
 declare class CB1 {
@@ -13,5 +13,5 @@ declare class CB2 {
 
 declare class CC {
     c(): void;
-    d(a: string, b?: ?number, ...c: number[]): boolean;
+    d(a: string, b?: null | undefined | number, ...c: number[]): boolean;
 }
