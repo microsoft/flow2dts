@@ -1,0 +1,44 @@
+diff --git a/node_modules/babel-plugin-tester/.vscode/settings.json b/node_modules/babel-plugin-tester/.vscode/settings.json
+new file mode 100644
+index 0000000..23fd35f
+--- /dev/null
++++ b/node_modules/babel-plugin-tester/.vscode/settings.json
+@@ -0,0 +1,3 @@
++{
++    "editor.formatOnSave": true
++}
+\ No newline at end of file
+diff --git a/node_modules/babel-plugin-tester/dist/plugin-tester.js b/node_modules/babel-plugin-tester/dist/plugin-tester.js
+index ae96e33..12804c2 100644
+--- a/node_modules/babel-plugin-tester/dist/plugin-tester.js
++++ b/node_modules/babel-plugin-tester/dist/plugin-tester.js
+@@ -73,10 +73,11 @@ function pluginTester(_ref = {}) {
+     tests,
+     fixtures,
+     fixtureOutputName = 'output',
++    fixtureOutputExt = '.js',
+     filename,
+     endOfLine = 'lf'
+   } = _ref,
+-      rest = _objectWithoutProperties(_ref, ["babel", "plugin", "pluginName", "title", "pluginOptions", "tests", "fixtures", "fixtureOutputName", "filename", "endOfLine"]);
++      rest = _objectWithoutProperties(_ref, ["babel", "plugin", "pluginName", "title", "pluginOptions", "tests", "fixtures", "fixtureOutputName", "fixtureOutputExt", "filename", "endOfLine"]);
+ 
+   let testNumber = 1;
+ 
+@@ -88,6 +89,7 @@ function pluginTester(_ref = {}) {
+       title: describeBlockTitle,
+       fixtures,
+       fixtureOutputName,
++      fixtureOutputExt,
+       filename,
+       babel,
+       endOfLine
+@@ -357,6 +359,8 @@ const createFixtureTests = (fixturesDir, options) => {
+ 
+       if (fixtureOutputExt) {
+         ext = fixtureOutputExt;
++      } else if (options.fixtureOutputExt) {
++        ext = options.fixtureOutputExt;
+       } else {
+         ext = `.${codePath.split('.').pop()}`;
+       }

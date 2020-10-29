@@ -1,17 +1,17 @@
 interface IA {
-    x: number;
+  x: number;
 }
 
 interface IB extends IA {
-    y: number;
+  y: number;
 }
 
 declare class CA {
-    x: number;
-    z: number;
+  x: number;
+  z: number;
 }
 
 declare class CB extends CA implements IA, IB {
-    y: number;
-    w: number;
+  y: number;
+  w: number;
 }

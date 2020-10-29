@@ -1,7 +1,7 @@
 interface IA {
-    x: number;
+  x: number;
 }
 
 interface IB extends IA {
-    y: number;
+  y: number;
 }
