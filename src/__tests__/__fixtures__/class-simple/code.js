@@ -1,1 +1,1 @@
-class CA { }
+class CA {}

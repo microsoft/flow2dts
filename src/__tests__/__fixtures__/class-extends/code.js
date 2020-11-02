@@ -7,11 +7,11 @@ interface IB extends IA {
 }
 
 class CA {
-  x: number;
-  z: number;
+  x: number
+  z: number
 }
 
 class CB extends CA implements IA, IB {
-  y: number;
-  w: number;
+  y: number
+  w: number
 }
