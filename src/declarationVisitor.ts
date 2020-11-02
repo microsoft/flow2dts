@@ -103,7 +103,13 @@ export const declarationVisitor: Visitor<PluginPass> = {
         }
       })
 
-      const newAst = t.tsDeclareMethod(null, key, null, args, t.tsTypeAnnotation(returnTSType))
+      const newAst = t.tsDeclareMethod(
+        null,
+        key,
+        null,
+        args,
+        returnTSType ? t.tsTypeAnnotation(returnTSType) : undefined
+      )
       newAst.kind = path.node.kind
       newAst.access = path.node.access
       newAst.accessibility = path.node.accessibility
