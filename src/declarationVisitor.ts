@@ -1,6 +1,34 @@
 import { PluginPass, Visitor, types as t } from "@babel/core"
 import { assertTSType } from "./utilities"
 
+function convertParameters(
+  params: Array<t.Identifier | t.Pattern | t.RestElement | t.TSParameterProperty>
+): (t.Identifier | t.RestElement)[] {
+  return params.map((flowParam, index) => {
+    switch (flowParam.type) {
+      case "Identifier": {
+        const paramType = (<t.TypeAnnotation>flowParam.typeAnnotation).typeAnnotation
+        assertTSType(paramType)
+        const arg = t.identifier(flowParam.name)
+        arg.typeAnnotation = t.tsTypeAnnotation(paramType)
+        arg.optional = flowParam.optional
+        return arg
+      }
+      case "RestElement": {
+        const paramId = <t.Identifier>flowParam.argument
+        const paramType = (<t.TypeAnnotation>flowParam.typeAnnotation).typeAnnotation
+        assertTSType(paramType)
+        const rarg = t.restElement(t.identifier(paramId.name))
+        rarg.typeAnnotation = t.tsTypeAnnotation(paramType)
+        return rarg
+      }
+      default: {
+        throw new Error("Pattern function parameters are not supported yet.")
+      }
+    }
+  })
+}
+
 export const declarationVisitor: Visitor<PluginPass> = {
   TypeAlias: {
     exit(path) {
@@ -35,29 +63,7 @@ export const declarationVisitor: Visitor<PluginPass> = {
           : (<t.TypeAnnotation>returnType).typeAnnotation
       assertTSType(returnTSType)
 
-      const args: (t.Identifier | t.RestElement)[] = params.map((flowParam, index) => {
-        switch (flowParam.type) {
-          case "Identifier": {
-            const paramType = (<t.TypeAnnotation>flowParam.typeAnnotation).typeAnnotation
-            assertTSType(paramType)
-            const arg = t.identifier(flowParam.name)
-            arg.typeAnnotation = t.tsTypeAnnotation(paramType)
-            arg.optional = flowParam.optional
-            return arg
-          }
-          case "RestElement": {
-            const paramId = <t.Identifier>flowParam.argument
-            const paramType = (<t.TypeAnnotation>flowParam.typeAnnotation).typeAnnotation
-            assertTSType(paramType)
-            const rarg = t.restElement(t.identifier(paramId.name))
-            rarg.typeAnnotation = t.tsTypeAnnotation(paramType)
-            return rarg
-          }
-          default: {
-            throw new Error("Pattern function parameters are not supported yet.")
-          }
-        }
-      })
+      const args = convertParameters(params)
 
       const newAst = t.tsDeclareFunction(id, null, args, t.tsTypeAnnotation(returnTSType))
       newAst.declare = true
@@ -84,29 +90,7 @@ export const declarationVisitor: Visitor<PluginPass> = {
           : (<t.TypeAnnotation>returnType).typeAnnotation
       assertTSType(returnTSType)
 
-      const args: (t.Identifier | t.RestElement)[] = params.map((flowParam, index) => {
-        switch (flowParam.type) {
-          case "Identifier": {
-            const paramType = (<t.TypeAnnotation>flowParam.typeAnnotation).typeAnnotation
-            assertTSType(paramType)
-            const arg = t.identifier(flowParam.name)
-            arg.typeAnnotation = t.tsTypeAnnotation(paramType)
-            arg.optional = flowParam.optional
-            return arg
-          }
-          case "RestElement": {
-            const paramId = <t.Identifier>flowParam.argument
-            const paramType = (<t.TypeAnnotation>flowParam.typeAnnotation).typeAnnotation
-            assertTSType(paramType)
-            const rarg = t.restElement(t.identifier(paramId.name))
-            rarg.typeAnnotation = t.tsTypeAnnotation(paramType)
-            return rarg
-          }
-          default: {
-            throw new Error("Pattern function parameters are not supported yet.")
-          }
-        }
-      })
+      const args = convertParameters(params)
 
       const newAst = t.tsDeclareMethod(
         null,

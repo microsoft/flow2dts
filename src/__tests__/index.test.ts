@@ -16,7 +16,6 @@ Tips:
 test case todo:
   import
   export
-  enum
   generic function
   generic call signature
   generic type alias
