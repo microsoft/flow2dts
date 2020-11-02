@@ -1,6 +1,8 @@
 declare class CA {
   a: string
   b: null | undefined | string
+  get e(): string
+  set e(value: string)
 }
 
 declare class CB1 {

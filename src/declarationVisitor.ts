@@ -64,6 +64,11 @@ export const declarationVisitor: Visitor<PluginPass> = {
       path.replaceWith(newAst)
     },
   },
+  ClassProperty: {
+    exit(path) {
+      path.node.value = null
+    },
+  },
   ClassMethod: {
     exit(path) {
       const { kind, key, returnType, params, typeParameters } = path.node
