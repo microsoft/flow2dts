@@ -1,22 +1,33 @@
-declare function a/*[FLOW2DTS - Warning] Covariance and contravariance are ignored.*/
-<T, U, V extends Number, W = String>(t: T, u: U, v: V, w: W): void
-declare type b/*[FLOW2DTS - Warning] Covariance and contravariance are ignored.*/
-<T, U, V extends Number, W = String> = {
+declare function a/*[FLOW2DTS - Warning] Covariance and contravariance are ignored.*/ <
+  T,
+  U,
+  V extends Number,
+  W = String
+>(t: T, u: U, v: V, w: W): void
+declare type b/*[FLOW2DTS - Warning] Covariance and contravariance are ignored.*/ <
+  T,
+  U,
+  V extends Number,
+  W = String
+> = {
   t: T
   u: U
   v: V
   w: W
 }
-interface c/*[FLOW2DTS - Warning] Covariance and contravariance are ignored.*/
-<T, U, V extends Number, W = String> {
+interface c/*[FLOW2DTS - Warning] Covariance and contravariance are ignored.*/ <T, U, V extends Number, W = String> {
   t: T
   u: U
   v: V
   w: W
 }
 
-declare class d/*[FLOW2DTS - Warning] Covariance and contravariance are ignored.*/
-<T, U, V extends Number, W = String> {
+declare class d/*[FLOW2DTS - Warning] Covariance and contravariance are ignored.*/ <
+  T,
+  U,
+  V extends Number,
+  W = String
+> {
   t: T
   u: U
   v: V

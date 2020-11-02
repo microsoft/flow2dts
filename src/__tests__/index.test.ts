@@ -24,6 +24,7 @@ test case todo:
 const prettierConfig: prettier.Options = {
   ...prettier.resolveConfig.sync("output.d.ts"),
   filepath: "output.d.ts",
+  parser: "typescript",
 }
 
 pluginTester({
@@ -34,8 +35,17 @@ pluginTester({
   babelOptions: {
     plugins: ["@babel/plugin-syntax-flow"],
   },
-  // FIXME: Using the correct TS parser should be inferred from the fixtureOutputExt
+  // FIXME:
+  // * Using the correct TS parser should be inferred from the fixtureOutputExt
+  // * Some TS code, like that in src/__tests__/__fixtures__/generic-declarations/output.d.ts, formats differently when
+  //   formatting multiple times. See https://github.com/prettier/prettier/issues/9570
   formatResult: (code, _options) => {
-    return prettier.format(code, prettierConfig)
+    while (true) {
+      const before = code
+      code = prettier.format(code, prettierConfig)
+      if (code === before) {
+        return code
+      }
+    }
   },
 })
