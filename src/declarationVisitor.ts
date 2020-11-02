@@ -1,4 +1,4 @@
-import { PluginPass, Visitor, types as t } from "@babel/core"
+import { NodePath, PluginPass, Visitor, types as t } from "@babel/core"
 import { assertTSType } from "./utilities"
 
 function convertParameters(
@@ -33,13 +33,31 @@ export const declarationVisitor: Visitor<PluginPass> = {
   TypeAlias: {
     exit(path) {
       const { id, typeParameters, right } = path.node
-      if (typeParameters !== null && typeParameters !== undefined) {
-        throw new Error("Generic type alias not supported yet.")
-      }
+      if (typeParameters) t.assertTSTypeParameterDeclaration(typeParameters)
       assertTSType(right)
-      const newAst = t.tsTypeAliasDeclaration(id, undefined, right)
+      const newAst = t.tsTypeAliasDeclaration(id, typeParameters, right)
       newAst.declare = true
       path.replaceWith(newAst)
+    },
+  },
+  TypeParameterDeclaration: {
+    exit(path) {
+      let first = false
+      path.replaceWith(
+        t.tsTypeParameterDeclaration(
+          path.node.params.map((flowParam) => {
+            assertTSType(flowParam.bound)
+            assertTSType(flowParam.default)
+            const newAst = t.tsTypeParameter(flowParam.bound, flowParam.default, flowParam.name)
+
+            if (flowParam.variance && !first) {
+              first = true
+              path.addComment("leading", "[FLOW2DTS - Warning] Covariance and contravariance are ignored.")
+            }
+            return newAst
+          })
+        )
+      )
     },
   },
   VariableDeclaration: {
@@ -53,9 +71,7 @@ export const declarationVisitor: Visitor<PluginPass> = {
   FunctionDeclaration: {
     exit(path) {
       const { id, returnType, params, typeParameters } = path.node
-      if (typeParameters !== null && typeParameters !== undefined) {
-        throw new Error("Generic function not supported yet.")
-      }
+      if (typeParameters) t.assertTSTypeParameterDeclaration(typeParameters)
 
       const returnTSType =
         returnType === null || returnType === undefined
@@ -65,7 +81,7 @@ export const declarationVisitor: Visitor<PluginPass> = {
 
       const args = convertParameters(params)
 
-      const newAst = t.tsDeclareFunction(id, null, args, t.tsTypeAnnotation(returnTSType))
+      const newAst = t.tsDeclareFunction(id, typeParameters, args, t.tsTypeAnnotation(returnTSType))
       newAst.declare = true
       path.replaceWith(newAst)
     },

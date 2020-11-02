@@ -62,10 +62,7 @@ export const advancedTypeVisitor: Visitor<PluginPass> = {
   FunctionTypeAnnotation: {
     exit(path) {
       const { returnType, params, rest, typeParameters } = path.node
-      if (typeParameters !== null) {
-        throw new Error("Generic type alias not supported yet.")
-      }
-
+      if (typeParameters) t.assertTSTypeParameterDeclaration(typeParameters)
       assertTSType(returnType)
 
       const args: (t.Identifier | t.RestElement)[] = params.map((flowParam, index) => {
@@ -83,7 +80,7 @@ export const advancedTypeVisitor: Visitor<PluginPass> = {
         args.push(rarg)
       }
 
-      path.replaceWith(t.tsFunctionType(null, args, t.tsTypeAnnotation(returnType)))
+      path.replaceWith(t.tsFunctionType(typeParameters, args, t.tsTypeAnnotation(returnType)))
     },
   },
 }
