@@ -46,9 +46,9 @@ export const declarationVisitor: Visitor<PluginPass> = {
       path.replaceWith(
         t.tsTypeParameterDeclaration(
           path.node.params.map((flowParam) => {
-            assertTSType(flowParam.bound)
+            assertTSType(flowParam.bound?.typeAnnotation)
             assertTSType(flowParam.default)
-            const newAst = t.tsTypeParameter(flowParam.bound, flowParam.default, flowParam.name)
+            const newAst = t.tsTypeParameter(flowParam.bound?.typeAnnotation, flowParam.default, flowParam.name)
 
             if (flowParam.variance && !first) {
               first = true
