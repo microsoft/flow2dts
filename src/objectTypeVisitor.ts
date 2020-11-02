@@ -29,7 +29,7 @@ export const objectTypeVisitor: Visitor<PluginPass> = {
   },
   ObjectTypeProperty: {
     exit(path) {
-      const { key, value, variance } = path.node
+      const { key, value, variance, optional } = path.node
       assertTSType(value)
 
       const readonly = variance && variance.kind === "plus"
@@ -47,6 +47,7 @@ export const objectTypeVisitor: Visitor<PluginPass> = {
         t.tsTypeAnnotation(value)
       )
       propertySignature.readonly = readonly
+      propertySignature.optional = optional
 
       path.replaceWith(propertySignature)
     },

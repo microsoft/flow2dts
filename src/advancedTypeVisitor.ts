@@ -4,17 +4,27 @@ import { assertTSType } from "./utilities"
 export const advancedTypeVisitor: Visitor<PluginPass> = {
   TupleTypeAnnotation: {
     exit(path) {
+      path.node.types.forEach(assertTSType)
       path.replaceWith(t.tsTupleType(<t.TSType[]>(<unknown>path.node.types)))
     },
   },
   UnionTypeAnnotation: {
     exit(path) {
+      path.node.types.forEach(assertTSType)
       path.replaceWith(t.tsUnionType(<t.TSType[]>(<unknown>path.node.types)))
     },
   },
   IntersectionTypeAnnotation: {
     exit(path) {
+      path.node.types.forEach(assertTSType)
       path.replaceWith(t.tsIntersectionType(<t.TSType[]>(<unknown>path.node.types)))
+    },
+  },
+  NullableTypeAnnotation: {
+    exit(path) {
+      const type = path.node.typeAnnotation
+      assertTSType(type)
+      path.replaceWith(t.tsUnionType([t.tsNullKeyword(), t.tsUndefinedKeyword(), type]))
     },
   },
   GenericTypeAnnotation: {
