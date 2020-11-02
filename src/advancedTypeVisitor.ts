@@ -33,6 +33,13 @@ export const advancedTypeVisitor: Visitor<PluginPass> = {
               t.tsTypeParameterInstantiation([<t.TSType>(<unknown>args.params[0])])
             )
           )
+        } else if (name === "$ReadOnly" && args) {
+          path.replaceWith(
+            t.tsTypeReference(
+              t.identifier("Readonly"),
+              t.tsTypeParameterInstantiation([<t.TSType>(<unknown>args.params[0])])
+            )
+          )
         } else {
           path.replaceWith(t.tsTypeReference(t.identifier(name)))
         }

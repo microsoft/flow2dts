@@ -1,5 +1,5 @@
 type a = {}
-type b = $Readonly<{
+type b = $ReadOnly<{
   x: string,
   y: number,
   z: boolean,

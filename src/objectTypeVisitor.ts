@@ -5,7 +5,6 @@ export const objectTypeVisitor: Visitor<PluginPass> = {
   ObjectTypeIndexer: {
     exit(path) {
       const { id, key, value, variance } = path.node
-
       assertTSType(key)
       assertTSType(value)
 
@@ -19,13 +18,37 @@ export const objectTypeVisitor: Visitor<PluginPass> = {
         )
       }
 
-      const identifier = t.identifier(id ? id.name : "key")
+      const identifier = t.identifier(id === null ? "$" : id.name)
       identifier.typeAnnotation = t.tsTypeAnnotation(key)
 
       const indexSignature = t.tsIndexSignature([identifier], t.tsTypeAnnotation(value))
       indexSignature.readonly = readonly
 
       path.replaceWith(indexSignature)
+    },
+  },
+  ObjectTypeProperty: {
+    exit(path) {
+      const { key, value, variance } = path.node
+      assertTSType(value)
+
+      const readonly = variance && variance.kind === "plus"
+      const writeonly = variance && variance.kind === "minus"
+
+      if (writeonly) {
+        path.addComment(
+          "leading",
+          "[FLOW2DTS - Warning] This property was a write-only property in the original Flow source."
+        )
+      }
+
+      const propertySignature = t.tsPropertySignature(
+        key.type === "Identifier" ? t.identifier(key.name) : t.stringLiteral(key.value),
+        t.tsTypeAnnotation(value)
+      )
+      propertySignature.readonly = readonly
+
+      path.replaceWith(propertySignature)
     },
   },
   ObjectTypeAnnotation: {
