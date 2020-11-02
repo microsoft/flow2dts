@@ -21,6 +21,7 @@ test case todo:
   generic type alias
   generic class
   generic interface
+  static members
   typeof EXPR
   utility types: https://flow.org/en/docs/types/utilities/
 */

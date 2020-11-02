@@ -69,7 +69,7 @@ export const advancedTypeVisitor: Visitor<PluginPass> = {
       assertTSType(returnType)
 
       const args: (t.Identifier | t.RestElement)[] = params.map((flowParam, index) => {
-        const arg = t.identifier(flowParam.name === null ? `$${index}` : flowParam.name.name)
+        const arg = t.identifier(flowParam.name === null ? `$${index + 1}` : flowParam.name.name)
         assertTSType(flowParam.typeAnnotation)
         arg.typeAnnotation = t.tsTypeAnnotation(flowParam.typeAnnotation)
         arg.optional = flowParam.optional

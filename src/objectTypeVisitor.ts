@@ -52,9 +52,23 @@ export const objectTypeVisitor: Visitor<PluginPass> = {
       path.replaceWith(propertySignature)
     },
   },
+  ObjectTypeCallProperty: {
+    exit(path) {
+      const { value } = path.node
+      assertTSType(value)
+
+      const callSignature = t.tsCallSignatureDeclaration(
+        (<t.TSFunctionType>value).typeParameters,
+        (<t.TSFunctionType>value).parameters,
+        (<t.TSFunctionType>value).typeAnnotation
+      )
+
+      path.replaceWith(callSignature)
+    },
+  },
   ObjectTypeAnnotation: {
     exit(path, state) {
-      const { exact, properties, indexers } = path.node // TODO: callProperties, inexact
+      const { exact, properties, callProperties, indexers } = path.node // TODO: callProperties, inexact
 
       if (exact) {
         path.addComment(
@@ -63,8 +77,7 @@ export const objectTypeVisitor: Visitor<PluginPass> = {
         )
       }
 
-      // TODO: create multiple sets of elements so that we can convert
-      // {x: number, ...T, y: number} to {x: number} & T & {y: number}
+      // {x: number, ...T, y: number} to T & {x: number} & {y: number}
       const elements: t.TSTypeElement[] = []
       const spreads: t.TSType[] = []
 
@@ -79,33 +92,21 @@ export const objectTypeVisitor: Visitor<PluginPass> = {
         }
       }
 
-      // TODO: maintain the position of indexers
-      indexers!.forEach((indexer: t.Node) => {
-        t.assertTSIndexSignature(indexer)
-        const value = indexer.typeAnnotation!.typeAnnotation
-        const keyTypeAnnotation = indexer.parameters[0].typeAnnotation
-        assertTSTypeAnnotation(keyTypeAnnotation)
-        const key = keyTypeAnnotation.typeAnnotation
-        if (t.isTSSymbolKeyword(key) || t.isTSStringKeyword(key) || t.isTSNumberKeyword(key)) {
-          elements.push(indexer)
-        } else {
-          // TODO: Is it correct to use `any` as the default here?
-          const typeParameter = t.tsTypeParameter(key, t.tsAnyKeyword(), indexer.parameters[0].name)
+      for (const prop of callProperties!) {
+        assertTSTypeElement(prop)
+        elements.push(prop)
+      }
 
-          const mappedType = t.tsMappedType(typeParameter, value)
-          mappedType.optional = true
+      for (const prop of indexers!) {
+        assertTSTypeElement(prop)
+        elements.push(prop)
+      }
 
-          spreads.push(mappedType)
-        }
-      })
-
-      if (spreads.length > 0 && elements.length > 0) {
-        path.replaceWith(t.tsIntersectionType([...spreads, t.tsTypeLiteral(elements)]))
-      } else if (spreads.length > 0) {
-        path.replaceWith(t.tsIntersectionType(spreads))
+      const typeLiteral = t.tsTypeLiteral(elements)
+      if (spreads.length > 0) {
+        path.replaceWith(t.tsIntersectionType([...spreads, typeLiteral]))
       } else {
         const typeLiteral = t.tsTypeLiteral(elements)
-        // typeLiteral.newlines = path.node.newlines;
         path.replaceWith(typeLiteral)
       }
     },
