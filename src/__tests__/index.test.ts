@@ -14,9 +14,9 @@ Tips:
 
 /*
 test case todo:
+  export default <expression>
   qualified name everywhere
-  export default / export value
-  require
+  require / module.export
   static members
   typeof EXPR
   utility types: https://flow.org/en/docs/types/utilities/
