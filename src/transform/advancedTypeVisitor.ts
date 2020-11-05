@@ -50,6 +50,12 @@ export const advancedTypeVisitor: Visitor<PluginPass> = {
               t.tsTypeParameterInstantiation([<t.TSType>(<unknown>args.params[0])])
             )
           )
+        } else if (name === "$Keys" && args) {
+          const sourceType = args.params[0]
+          assertTSType(sourceType)
+          const keyofOperator = t.tsTypeOperator(sourceType)
+          keyofOperator.operator = "keyof" // FIXME: Seems weird to have to define this
+          path.replaceWith(keyofOperator)
         } else {
           path.replaceWith(t.tsTypeReference(t.identifier(name)))
         }
