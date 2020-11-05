@@ -5,6 +5,7 @@ import { objectTypeVisitor } from "./objectTypeVisitor"
 import { declarationVisitor } from "./declarationVisitor"
 import { importVisitor } from "./importVisitor"
 import { typeOperatorVisitor } from "./typeOperatorVisitor"
+import { exportVisitor } from "./exportVisitor"
 
 export function transform(): PluginObj {
   return {
@@ -16,6 +17,7 @@ export function transform(): PluginObj {
       ...declarationVisitor,
       ...importVisitor,
       ...typeOperatorVisitor,
+      ...exportVisitor,
     },
   }
 }
