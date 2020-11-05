@@ -14,6 +14,7 @@ Tips:
 
 /*
 test case todo:
+  qualified name everywhere
   export default / export value
   require
   static members
