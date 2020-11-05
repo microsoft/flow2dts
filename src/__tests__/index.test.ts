@@ -14,8 +14,8 @@ Tips:
 
 /*
 test case todo:
-  import
-  export
+  export default / export value
+  require
   static members
   typeof EXPR
   utility types: https://flow.org/en/docs/types/utilities/
