@@ -1,4 +1,4 @@
-import { flow2dtsTransform } from "../"
+import { transform } from "../"
 
 import pluginTester from "babel-plugin-tester"
 import path from "path"
@@ -29,7 +29,7 @@ const prettierConfig: prettier.Options = {
 }
 
 pluginTester({
-  plugin: flow2dtsTransform,
+  plugin: transform,
   fixtures: path.join(__dirname, "__fixtures__"),
   // FIXME: This is not picked up, instead it writes out a output.js file
   fixtureOutputExt: ".d.ts",
