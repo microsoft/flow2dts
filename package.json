@@ -2,10 +2,12 @@
   "name": "flow2dts",
   "version": "0.0.1",
   "description": "Generate TypeScript ambient declaration files from Flow source.",
+  "bin": "./bin/flow2dts",
   "main": "index.js",
   "license": "MIT",
   "private": false,
   "scripts": {
+    "build": "tsc --pretty",
     "test": "jest",
     "type-check": "tsc --noEmit --pretty",
     "prettify": "prettier --write src/**/*.ts && prettier --write src/**/*.d.ts && prettier --write src/**/*.js",
