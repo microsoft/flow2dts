@@ -136,9 +136,4 @@ export const declarationVisitor: Visitor<PluginPass> = {
       path.replaceWith(newAst)
     },
   },
-  ImportDeclaration: {
-    exit(path) {
-      path.node.importKind = "value"
-    },
-  },
 }

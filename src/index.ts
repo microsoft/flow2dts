@@ -1,9 +1,9 @@
-import { PluginObj, PluginPass, Visitor, types as t } from "@babel/core"
-import { assertTSType, assertTSTypeElement, assertTSTypeAnnotation } from "./utilities"
+import { PluginObj, PluginPass, Visitor } from "@babel/core"
 import { primitiveTypeVisitor } from "./primitiveTypeVisitor"
 import { advancedTypeVisitor } from "./advancedTypeVisitor"
 import { objectTypeVisitor } from "./objectTypeVisitor"
 import { declarationVisitor } from "./declarationVisitor"
+import { importVisitor } from "./importVisitor"
 
 export function flow2dtsTransform(): PluginObj {
   const visitor: Visitor<PluginPass> = {}
@@ -11,6 +11,7 @@ export function flow2dtsTransform(): PluginObj {
   Object.assign(visitor, advancedTypeVisitor)
   Object.assign(visitor, objectTypeVisitor)
   Object.assign(visitor, declarationVisitor)
+  Object.assign(visitor, importVisitor)
 
   return {
     name: flow2dtsTransform.name,
