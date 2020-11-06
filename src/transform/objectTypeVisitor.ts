@@ -1,5 +1,5 @@
 import { PluginPass, Visitor, types as t } from "@babel/core"
-import { assertTSType, assertTSTypeElement, assertTSTypeAnnotation } from "./utilities"
+import { assertTSType, assertTSTypeElement, nameForTypeIndexerKey } from "./utilities"
 
 export const objectTypeVisitor: Visitor<PluginPass> = {
   ObjectTypeIndexer: {
@@ -18,7 +18,7 @@ export const objectTypeVisitor: Visitor<PluginPass> = {
         )
       }
 
-      const identifier = t.identifier(id === null ? "$f2tKey" : id.name)
+      const identifier = t.identifier(id === null ? nameForTypeIndexerKey : id.name)
       identifier.typeAnnotation = t.tsTypeAnnotation(key)
 
       const indexSignature = t.tsIndexSignature([identifier], t.tsTypeAnnotation(value))

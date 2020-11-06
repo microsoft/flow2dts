@@ -1,4 +1,5 @@
 import { PluginPass, Visitor, types as t } from "@babel/core"
+import { nameForImportTypeof } from "./utilities"
 
 export const importVisitor: Visitor<PluginPass> = {
   ImportDeclaration: {
@@ -10,7 +11,7 @@ export const importVisitor: Visitor<PluginPass> = {
             case "ImportDefaultSpecifier":
             case "ImportSpecifier": {
               names.push(id.local.name)
-              id.local.name += "$f2tTypeof"
+              id.local.name = nameForImportTypeof(id.local.name)
               break
             }
           }
@@ -21,7 +22,7 @@ export const importVisitor: Visitor<PluginPass> = {
           const decl = t.tsTypeAliasDeclaration(
             t.identifier(name),
             null,
-            t.tsTypeQuery(t.identifier(`${name}$f2tTypeof`))
+            t.tsTypeQuery(t.identifier(nameForImportTypeof(name)))
           )
           decl.declare = true
           return decl

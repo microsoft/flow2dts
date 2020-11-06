@@ -1,14 +1,12 @@
 import { PluginPass, Visitor, types as t } from "@babel/core"
-import { assertTSType } from "./utilities"
-
-const exportDefaultName = "$f2tExportDefault"
+import { assertTSType, nameForExportDefault } from "./utilities"
 
 export const exportVisitor: Visitor<PluginPass> = {
   DeclareModuleExports: {
     exit(path) {
       const typeAnnotation = path.node.typeAnnotation.typeAnnotation
       assertTSType(typeAnnotation)
-      const id = t.identifier(exportDefaultName)
+      const id = t.identifier(nameForExportDefault)
       id.typeAnnotation = t.tsTypeAnnotation(typeAnnotation)
       path.replaceWithMultiple([
         t.variableDeclaration("const", [t.variableDeclarator(id)]),
@@ -28,12 +26,12 @@ export const exportVisitor: Visitor<PluginPass> = {
           const tsType = decl.typeAnnotation.typeAnnotation
           assertTSType(tsType)
 
-          const varId = t.identifier(exportDefaultName)
+          const varId = t.identifier(nameForExportDefault)
           varId.typeAnnotation = t.tsTypeAnnotation(tsType)
           const varDecl = t.variableDeclaration("const", [t.variableDeclarator(varId)])
           varDecl.declare = true
 
-          path.node.declaration = t.identifier(exportDefaultName)
+          path.node.declaration = t.identifier(nameForExportDefault)
           path.replaceWithMultiple([varDecl, path.node])
           break
         }
