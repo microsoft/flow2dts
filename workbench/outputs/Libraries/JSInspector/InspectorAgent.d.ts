@@ -1,3 +1,4 @@
+// @flow
 declare type EventSender = (name: string, params: Object) => void;
 declare class InspectorAgent {
   constructor: (eventSender: EventSender) => void;

@@ -1,3 +1,4 @@
+// @flow
 declare module.exports: {|
   getViewManagerConfig: (viewManagerName: string) => mixed,
   getConstants: () => {...},
@@ -79,8 +80,9 @@ declare module.exports: {|
     addAtIndices: Array<number>,
     removeAtIndices: Array<number>
   ) => void,
+  
   // Android only
-setLayoutAnimationEnabledExperimental: (enabled: boolean) => void,
+  setLayoutAnimationEnabledExperimental: (enabled: boolean) => void,
   sendAccessibilityEvent: (reactTag: ?number, eventType: number) => void,
   showPopupMenu: (
     reactTag: ?number,

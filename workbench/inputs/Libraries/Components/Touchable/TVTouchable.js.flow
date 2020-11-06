@@ -1,3 +1,4 @@
+// @flow
 import type {BlurEvent} from "../../Types/CoreEventTypes";
 import type {FocusEvent} from "../../Types/CoreEventTypes";
 import type {PressEvent} from "../../Types/CoreEventTypes";
@@ -13,6 +14,7 @@ type TVTouchableConfig = $ReadOnly<
 
 declare class TVTouchable {
   constructor(component: any, config: TVTouchableConfig): void,
+  
   destroy(): void,
 }
 export {TVTouchable as default};

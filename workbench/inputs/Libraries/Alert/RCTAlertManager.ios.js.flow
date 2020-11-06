@@ -1,3 +1,4 @@
+// @flow
 import type {Args} from "./NativeAlertManager";
 
 declare module.exports: {|

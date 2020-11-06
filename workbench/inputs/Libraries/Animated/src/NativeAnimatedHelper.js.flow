@@ -1,3 +1,4 @@
+// @flow
 import NativeEventEmitter from "../../EventEmitter/NativeEventEmitter";
 import type {EventConfig} from "./AnimatedEvent";
 
@@ -52,12 +53,22 @@ declare function addWhitelistedInterpolationParam(param: string): void;
 declare function validateTransform(
   configs: Array<
     
-      | {type: 'animated', property: string, nodeTag: ?number, ...}
-      | {type: 'static', property: string, value: number | string, ...},
+      | {
+        type: 'animated',
+        property: string,
+        nodeTag: ?number,
+        ...,
+      }
+      | {
+        type: 'static',
+        property: string,
+        value: number | string,
+        ...,
+      },
   >
 ): void;
 
-declare function validateStyles(styles: {[key: string]: ?number, ...}): void;
+declare function validateStyles(styles: {[key: string]: ?number,...}): void;
 
 declare function validateInterpolation(config: InterpolationConfigType): void;
 
@@ -68,7 +79,7 @@ declare function generateNewAnimationId(): number;
 declare function assertNativeAnimatedModule(): void;
 
 declare function shouldUseNativeDriver(
-  config: {...AnimationConfig, ...} | EventConfig
+  config: {...AnimationConfig,...} | EventConfig
 ): boolean;
 
 declare function transformDataType(value: number | string): number | string;
@@ -86,5 +97,6 @@ declare module.exports: {|
   assertNativeAnimatedModule: typeof assertNativeAnimatedModule,
   shouldUseNativeDriver: typeof shouldUseNativeDriver,
   transformDataType: typeof transformDataType,
+  
   get nativeEventEmitter(): NativeEventEmitter,
 |};

@@ -1,5 +1,8 @@
+// @flow
 import type {ObjectParamTypeAnnotation} from "../../../CodegenSchema";
-const {capitalizeFirstLetter} = require("./Utils");
+declare var capitalizeFirstLetter: typeof $2.capitalizeFirstLetter;
+declare var $2: typeof $1;
+const $1 = require("./Utils");
 
 declare function translateObjectsForStructs(
   annotations: $ReadOnlyArray<

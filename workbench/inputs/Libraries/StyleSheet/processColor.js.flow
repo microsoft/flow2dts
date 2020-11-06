@@ -1,7 +1,12 @@
-opaque type NativeColorType = {};
-type ProcessedColorValue = ?number | NativeColorType;
+// @flow
+import type {ColorValue} from "./StyleSheetTypes";
+import type {NativeColorValue} from "./PlatformColorValueTypes";
 
-declare function processColor(color?: ?(string | number)): ProcessedColorValue;
+type ProcessedColorValue = number | NativeColorValue;
+
+declare function processColor(
+  color?: ?(number | ColorValue)
+): ?ProcessedColorValue;
 export type {ProcessedColorValue};
 
 declare module.exports: typeof processColor;

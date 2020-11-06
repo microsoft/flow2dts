@@ -1,3 +1,4 @@
+// @flow
 import { TurboModule } from "../../TurboModule/RCTExport";
 declare type EndResult = {
   finished: boolean;
@@ -29,6 +30,7 @@ interface Spec extends TurboModule {
   readonly dropAnimatedNode: (tag: number) => void;
   readonly addAnimatedEventToView: (viewTag: number, eventName: string, eventMapping: EventMapping) => void;
   readonly removeAnimatedEventFromView: (viewTag: number, eventName: string, animatedNodeTag: number) => void;
+  // Events
   readonly addListener: (eventName: string) => void;
   readonly removeListeners: (count: number) => void;
 }

@@ -1,3 +1,4 @@
+// @flow
 import type {RNTesterAction} from "./RNTesterActions";
 
 declare function URIActionMap(uri: ?string): ?RNTesterAction;

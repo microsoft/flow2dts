@@ -1,3 +1,4 @@
+// @flow
 type PackagerAsset = {
   +__packager_asset: boolean,
   +fileSystemLocation: string,

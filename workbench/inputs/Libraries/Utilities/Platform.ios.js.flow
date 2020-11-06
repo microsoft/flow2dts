@@ -1,4 +1,10 @@
-type PlatformSelectSpec<D, N, I> = {default?: D, native?: N, ios?: I, ...};
+// @flow
+type PlatformSelectSpec<D, N, I> = {
+  default?: D,
+  native?: N,
+  ios?: I,
+  ...,
+};
 
 declare var Platform: {|
   __constants: null,
@@ -18,6 +24,7 @@ declare var Platform: {|
     systemName: string,
   |},
   get isPad(): boolean,
+  
   get isTVOS(): boolean,
   get isTV(): boolean,
   get isTesting(): boolean,

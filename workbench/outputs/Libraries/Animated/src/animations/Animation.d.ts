@@ -1,3 +1,4 @@
+// @flow
 import AnimatedValue from "../nodes/AnimatedValue";
 declare type EndResult = {
   finished: boolean;

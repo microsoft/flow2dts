@@ -1,3 +1,4 @@
+// @flow
 import type {TurboModule} from "../../TurboModule/RCTExport";
 
 interface Spec extends TurboModule {
@@ -9,8 +10,12 @@ interface Spec extends TurboModule {
   +setProfilingEnabled: (isProfilingEnabled: boolean) => void,
   +toggleElementInspector: () => void,
   +addMenuItem: (title: string) => void,
+  
+  // Events
   +addListener: (eventName: string) => void,
   +removeListeners: (count: number) => void,
+  
+  // iOS only.
   +setIsShakeToShowDevMenuEnabled: (enabled: boolean) => void,
 }
 export type {Spec};

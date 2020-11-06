@@ -1,3 +1,4 @@
+// @flow
 import { ViewProps } from "../View/ViewPropTypes";
 import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
 declare type NativeProps = Readonly<

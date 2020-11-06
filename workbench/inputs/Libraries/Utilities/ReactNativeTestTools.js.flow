@@ -1,8 +1,19 @@
-const React = require("react");
+// @flow
+declare var React: typeof $1;
+const $1 = require("react");
 
-import type {ReactTestInstance} from "react-test-renderer";
-import type {ReactTestRendererNode} from "react-test-renderer";
-import type {Predicate} from "react-test-renderer";
+declare var ReactTestRenderer: typeof $2;
+const $2 = require("react-test-renderer");
+
+import type {ReactTestRenderer as ReactTestRendererType} from "react-test-renderer";
+
+type ReactTestInstance = $PropertyType<ReactTestRendererType, 'root'>;
+
+type Predicate = (node: ReactTestInstance) => boolean;
+
+type $ReturnType<Fn> = $Call<<Ret, A>((...A) => Ret) => Ret, Fn>;
+
+type ReactTestRendererJSON = $ReturnType<ReactTestRenderer.create.toJSON>;
 
 declare function byClickable(): Predicate;
 
@@ -13,7 +24,7 @@ declare function byTextMatching(regex: RegExp): Predicate;
 declare function enter(instance: ReactTestInstance, text: string): void;
 
 declare function maximumDepthError(
-  tree: {toJSON: () => ReactTestRendererNode, ...},
+  tree: ReactTestRendererType,
   maxDepthLimit: number
 ): ?string;
 
@@ -27,17 +38,24 @@ declare function expectRendersMatchingSnapshot(
   unmockComponent: () => mixed
 ): void;
 
-declare function maximumDepthOfJSON(node: ReactTestRendererNode): number;
+declare function maximumDepthOfJSON(node: ?ReactTestRendererJSON): number;
 
 declare function renderAndEnforceStrictMode(element: React.Node): any;
 
-declare function renderWithStrictMode(element: React.Node): any;
+declare function renderWithStrictMode(
+  element: React.Node
+): ReactTestRendererType;
 
 declare function tap(instance: ReactTestInstance): void;
 
 declare function scrollToBottom(instance: ReactTestInstance): void;
 
 declare function withMessage(fn: Predicate, message: string): Predicate;
+export type {ReactTestInstance};
+
+export type {Predicate};
+
+export type {ReactTestRendererJSON};
 
 export {byClickable};
 export {byTestID};

@@ -1,6 +1,8 @@
-const React = require("react");
+// @flow
+declare var React: typeof $2;
+const $2 = require("react");
 
-type Context = {rootTag: number, ...};
+type Context = {rootTag: number,...};
 
 type Props = $ReadOnly<
   {|
@@ -13,17 +15,28 @@ type Props = $ReadOnly<
   |},
 >;
 
-type State = {|inspector: ?React.Node, mainKey: number, hasError: boolean|};
+type State = {|
+  inspector: ?React.Node,
+  mainKey: number,
+  hasError: boolean,
+|};
 
 declare class AppContainer
-  extends React.Component<Props, State> {
+  extends $1<Props, State> {
   state: State,
+  
   static getDerivedStateFromError: any,
+  
   static childContextTypes: any | {|rootTag: React$PropType$Primitive<number>|},
+  
   getChildContext(): Context,
+  
   componentDidMount(): void,
+  
   componentWillUnmount(): void,
+  
   render(): React.Node,
 }
+declare var $1: typeof React.Component;
 
 declare module.exports: typeof AppContainer;

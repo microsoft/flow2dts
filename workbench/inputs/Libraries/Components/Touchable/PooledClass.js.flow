@@ -1,9 +1,15 @@
+// @flow
 type Pooler = any;
 
-declare var addPoolingTo: <T>(CopyConstructor: Class<T>, pooler: Pooler) => 
+declare var addPoolingTo: <T>(
+  CopyConstructor: Class<T>,
+  pooler: Pooler
+) => 
   & Class<T>
   & {
-    getPooled(...args: $ReadOnlyArray<mixed>): /* arguments of the constructor */T,
+    getPooled(
+      ...args: $ReadOnlyArray<mixed>
+    ): /* arguments of the constructor */ T,
     release(instance: mixed): void,
     ...,
   };

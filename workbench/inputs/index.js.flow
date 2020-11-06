@@ -1,3 +1,4 @@
+// @flow
 import typeof AccessibilityInfo from "./Libraries/Components/AccessibilityInfo/AccessibilityInfo";
 import typeof ActivityIndicator from "./Libraries/Components/ActivityIndicator/ActivityIndicator";
 import typeof Button from "./Libraries/Components/Button";
@@ -82,6 +83,9 @@ import typeof RCTNativeAppEventEmitter from "./Libraries/EventEmitter/RCTNativeA
 import typeof NativeModules from "./Libraries/BatchedBridge/NativeModules";
 import typeof Platform from "./Libraries/Utilities/Platform";
 import typeof processColor from "./Libraries/StyleSheet/processColor";
+import typeof {PlatformColor} from "./Libraries/StyleSheet/PlatformColorValueTypes";
+import typeof {DynamicColorIOS} from "./Libraries/StyleSheet/PlatformColorValueTypesIOS";
+import typeof {ColorAndroid} from "./Libraries/StyleSheet/PlatformColorValueTypesAndroid";
 import typeof RootTagContext from "./Libraries/ReactNative/RootTagContext";
 import typeof DeprecatedColorPropType from "./Libraries/DeprecatedPropTypes/DeprecatedColorPropType";
 import typeof DeprecatedEdgeInsetsPropType from "./Libraries/DeprecatedPropTypes/DeprecatedEdgeInsetsPropType";
@@ -130,6 +134,7 @@ declare module.exports: {|
   get View(): View,
   get VirtualizedList(): VirtualizedList,
   get VirtualizedSectionList(): VirtualizedSectionList,
+  
   get ActionSheetIOS(): ActionSheetIOS,
   get Alert(): Alert,
   get Animated(): Animated,
@@ -177,14 +182,19 @@ declare module.exports: {|
   get UTFSequence(): UTFSequence,
   get Vibration(): Vibration,
   get YellowBox(): YellowBox,
+  
   get DeviceEventEmitter(): RCTDeviceEventEmitter,
   get NativeAppEventEmitter(): RCTNativeAppEventEmitter,
   get NativeModules(): NativeModules,
   get Platform(): Platform,
   get processColor(): processColor,
+  get PlatformColor(): PlatformColor,
+  get DynamicColorIOS(): DynamicColorIOS,
+  get ColorAndroid(): ColorAndroid,
   get requireNativeComponent(): <T>(uiViewClassName: string) => HostComponent<T>,
   get unstable_RootTagContext(): RootTagContext,
   get unstable_enableLogBox(): () => void,
+  
   get ColorPropType(): DeprecatedColorPropType,
   get EdgeInsetsPropType(): DeprecatedEdgeInsetsPropType,
   get PointPropType(): DeprecatedPointPropType,

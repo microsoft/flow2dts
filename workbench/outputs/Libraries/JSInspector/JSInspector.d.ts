@@ -1,3 +1,4 @@
+// @flow
 import { EventSender } from "./InspectorAgent";
 interface Agent {
   constructor: (eventSender: EventSender) => void;

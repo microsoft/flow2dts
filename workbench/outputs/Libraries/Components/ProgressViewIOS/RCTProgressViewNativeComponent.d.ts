@@ -1,3 +1,4 @@
+// @flow
 import { Float } from "../../Types/CodegenTypes";
 import { WithDefault } from "../../Types/CodegenTypes";
 import { ImageSource } from "../../Image/ImageSource";

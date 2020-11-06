@@ -1,3 +1,4 @@
+// @flow
 import ReactNativeViewViewConfigAndroid from "./ReactNativeViewViewConfigAndroid";
 
 declare var ReactNativeViewConfig: {|
@@ -8,47 +9,98 @@ declare var ReactNativeViewConfig: {|
   Constants: {...},
   bubblingEventTypes: {|
     ...typeof ReactNativeViewViewConfigAndroid.bubblingEventTypes,
-    topBlur: {|phasedRegistrationNames: {|bubbled: string, captured: string|}|},
+    topBlur: {|
+      phasedRegistrationNames: {|
+        bubbled: string,
+        captured: string,
+      |},
+    |},
     topChange: {|
-      phasedRegistrationNames: {|bubbled: string, captured: string|},
+      phasedRegistrationNames: {|
+        bubbled: string,
+        captured: string,
+      |},
     |},
     topEndEditing: {|
-      phasedRegistrationNames: {|bubbled: string, captured: string|},
+      phasedRegistrationNames: {|
+        bubbled: string,
+        captured: string,
+      |},
     |},
-    topFocus: {|phasedRegistrationNames: {|bubbled: string, captured: string|}|},
+    topFocus: {|
+      phasedRegistrationNames: {|
+        bubbled: string,
+        captured: string,
+      |},
+    |},
     topKeyPress: {|
-      phasedRegistrationNames: {|bubbled: string, captured: string|},
+      phasedRegistrationNames: {|
+        bubbled: string,
+        captured: string,
+      |},
     |},
-    topPress: {|phasedRegistrationNames: {|bubbled: string, captured: string|}|},
+    topPress: {|
+      phasedRegistrationNames: {|
+        bubbled: string,
+        captured: string,
+      |},
+    |},
     topSubmitEditing: {|
-      phasedRegistrationNames: {|bubbled: string, captured: string|},
+      phasedRegistrationNames: {|
+        bubbled: string,
+        captured: string,
+      |},
     |},
     topTouchCancel: {|
-      phasedRegistrationNames: {|bubbled: string, captured: string|},
+      phasedRegistrationNames: {|
+        bubbled: string,
+        captured: string,
+      |},
     |},
     topTouchEnd: {|
-      phasedRegistrationNames: {|bubbled: string, captured: string|},
+      phasedRegistrationNames: {|
+        bubbled: string,
+        captured: string,
+      |},
     |},
     topTouchMove: {|
-      phasedRegistrationNames: {|bubbled: string, captured: string|},
+      phasedRegistrationNames: {|
+        bubbled: string,
+        captured: string,
+      |},
     |},
     topTouchStart: {|
-      phasedRegistrationNames: {|bubbled: string, captured: string|},
+      phasedRegistrationNames: {|
+        bubbled: string,
+        captured: string,
+      |},
     |},
   |},
   directEventTypes: {|
     ...typeof ReactNativeViewViewConfigAndroid.directEventTypes,
-    topAccessibilityAction: {|registrationName: string|},
-    topAccessibilityEscape: {|registrationName: string|},
-    topAccessibilityTap: {|registrationName: string|},
-    topLayout: {|registrationName: string|},
-    topMagicTap: {|registrationName: string|},
-    // Events for react-native-gesture-handler (T45765076)
-// Remove once this library can handle JS View Configs
-onGestureHandlerEvent: {|
+    topAccessibilityAction: {|
       registrationName: string,
     |},
-    onGestureHandlerStateChange: {|registrationName: string|},
+    topAccessibilityEscape: {|
+      registrationName: string,
+    |},
+    topAccessibilityTap: {|
+      registrationName: string,
+    |},
+    topLayout: {|
+      registrationName: string,
+    |},
+    topMagicTap: {|
+      registrationName: string,
+    |},
+    // Events for react-native-gesture-handler (T45765076)
+    // Remove once this library can handle JS View Configs
+    onGestureHandlerEvent: {|
+      registrationName: string,
+    |},
+    onGestureHandlerStateChange: {|
+      registrationName: string,
+    |},
   |},
   validAttributes: {|
     ...typeof ReactNativeViewViewConfigAndroid.validAttributes,
@@ -60,8 +112,7 @@ onGestureHandlerEvent: {|
     accessibilityLiveRegion: boolean,
     accessibilityRole: boolean,
     accessibilityStates: boolean,
-    // TODO: Can be removed after next release
-accessibilityState: boolean,
+    accessibilityState: boolean,
     accessibilityValue: boolean,
     accessibilityViewIsModal: boolean,
     accessible: boolean,

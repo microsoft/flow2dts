@@ -1,9 +1,9 @@
-[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/DeprecatedPropTypes/DeprecatedTVViewPropTypes.js.flow: Unexpected reserved type bool (4:40)
+[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/DeprecatedPropTypes/DeprecatedTVViewPropTypes.js.flow: Unexpected reserved type bool (6:40)
 
-  2 | 
-  3 | declare var DeprecatedTVViewPropTypes: {|
-> 4 |   hasTVPreferredFocus: typeof PropTypes.bool,
+  4 | 
+  5 | declare var DeprecatedTVViewPropTypes: {|
+> 6 |   hasTVPreferredFocus: typeof PropTypes.bool,
     |                                         ^
-  5 |   tvParallaxShiftDistanceX: typeof PropTypes.number,
-  6 |   tvParallaxShiftDistanceY: typeof PropTypes.number,
-  7 |   tvParallaxTiltAngle: typeof PropTypes.number,
+  7 |   tvParallaxShiftDistanceX: typeof PropTypes.number,
+  8 |   tvParallaxShiftDistanceY: typeof PropTypes.number,
+  9 |   tvParallaxTiltAngle: typeof PropTypes.number,

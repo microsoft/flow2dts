@@ -1,3 +1,4 @@
+// @flow
 declare class Property {
   domain: string,
   name: string,
@@ -5,16 +6,23 @@ declare class Property {
   exported: ?boolean,
   experimental: ?boolean,
   optional: ?boolean,
+  
   static create(domain: string, obj: any): Property,
+  
   static createArray(
     domain: string,
     elements: Array<any>,
     ignoreExperimental: boolean
   ): Array<Property>,
+  
   constructor(domain: string, obj: any): void,
+  
   getRefDebuggerName(): ?string,
+  
   getFullCppType(): string,
+  
   getCppIdentifier(): string,
+  
   getInitializer(): string,
 }
 export {Property};

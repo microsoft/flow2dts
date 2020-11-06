@@ -1,3 +1,4 @@
+// @flow
 import type {BubblingEventHandler} from "../../Types/CodegenTypes";
 import type {DirectEventHandler} from "../../Types/CodegenTypes";
 import type {Double} from "../../Types/CodegenTypes";
@@ -9,13 +10,19 @@ import type {ColorValue} from "../../StyleSheet/StyleSheetTypes";
 import type {ImageSource} from "../../Image/ImageSource";
 import type {ViewProps} from "../View/ViewPropTypes";
 
-type Event = $ReadOnly<{|value: Double, fromUser?: boolean|}>;
+type Event = $ReadOnly<
+  {|
+    value: Double,
+    fromUser?: boolean,
+  |},
+>;
 
 type NativeProps = $ReadOnly<
   {|
     ...ViewProps,
+    
     // Props
-disabled?: WithDefault<boolean, false>,
+    disabled?: WithDefault<boolean, false>,
     enabled?: WithDefault<boolean, true>,
     maximumTrackImage?: ?ImageSource,
     maximumTrackTintColor?: ?ColorValue,
@@ -29,8 +36,9 @@ disabled?: WithDefault<boolean, false>,
     thumbTintColor?: ?ColorValue,
     trackImage?: ?ImageSource,
     value?: WithDefault<Double, 0>,
+    
     // Events
-onChange?: ?BubblingEventHandler<Event>,
+    onChange?: ?BubblingEventHandler<Event>,
     onValueChange?: ?BubblingEventHandler<Event, 'paperValueChange'>,
     onSlidingComplete?: ?DirectEventHandler<Event, 'paperSlidingComplete'>,
   |},

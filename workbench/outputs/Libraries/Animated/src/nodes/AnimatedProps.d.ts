@@ -1,5 +1,7 @@
-declare const AnimatedNode;
-declare class AnimatedProps extends AnimatedNode {
+// @flow
+declare var AnimatedNode: typeof $1;
+declare const $1;
+declare class AnimatedProps extends $2 {
   constructor: (props: Object, callback: () => void) => void;
   __getValue: () => Object;
   __getAnimatedValue: () => Object;
@@ -13,5 +15,6 @@ declare class AnimatedProps extends AnimatedNode {
   __restoreDefaultValues: () => void;
   __getNativeConfig: () => Object;
 }
+declare var $2: typeof AnimatedNode;
 declare const $f2tExportDefault: typeof AnimatedProps;
 export default $f2tExportDefault;

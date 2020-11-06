@@ -1,8 +1,13 @@
+// @flow
 import * as React from "react";
 
 import type {CodeFrame} from "../Data/parseLogBoxLog";
 
-type Props = $ReadOnly<{|codeFrame: ?CodeFrame|}>;
+type Props = $ReadOnly<
+  {|
+    codeFrame: ?CodeFrame,
+  |},
+>;
 
 declare function LogBoxInspectorCodeFrame(props: Props): React.Node;
 

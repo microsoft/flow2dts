@@ -1,3 +1,4 @@
+// @flow
 declare type Pooler = any;
 declare var addPoolingTo: <T>(CopyConstructor: Class, pooler: Pooler) => Class & {
   getPooled: (...args: ReadonlyArray<unknown>) =>

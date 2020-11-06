@@ -1,3 +1,4 @@
+// @flow
 declare function getBackgroundColor(opacity?: number): string;
 
 declare function getBackgroundLightColor(opacity?: number): string;

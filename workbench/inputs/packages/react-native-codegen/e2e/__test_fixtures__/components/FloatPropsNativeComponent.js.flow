@@ -1,3 +1,4 @@
+// @flow
 import type {WithDefault} from "../../../../../Libraries/Types/CodegenTypes";
 import type {Float} from "../../../../../Libraries/Types/CodegenTypes";
 import type {ViewProps} from "../../../../../Libraries/Components/View/ViewPropTypes";
@@ -7,8 +8,9 @@ import type {HostComponent} from "../../../../../Libraries/Renderer/shims/ReactN
 type NativeProps = $ReadOnly<
   {|
     ...ViewProps,
+    
     // Props
-blurRadius: Float,
+    blurRadius: Float,
     blurRadius2?: WithDefault<Float, 0.001>,
     blurRadius3?: WithDefault<Float, 2.1>,
     blurRadius4?: WithDefault<Float, 0>,

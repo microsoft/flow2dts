@@ -1,12 +1,27 @@
+// @flow
 declare function elementsThatOverlapOffsets(
   offsets: Array<number>,
   itemCount: number,
-  getFrameMetrics: (index: number) => {length: number, offset: number, ...}
+  getFrameMetrics: (
+    index: number
+  ) => {
+    length: number,
+    offset: number,
+    ...,
+  }
 ): Array<number>;
 
 declare function newRangeCount(
-  prev: {first: number, last: number, ...},
-  next: {first: number, last: number, ...}
+  prev: {
+    first: number,
+    last: number,
+    ...,
+  },
+  next: {
+    first: number,
+    last: number,
+    ...,
+  }
 ): number;
 
 declare function computeWindowedRenderLimits(
@@ -17,8 +32,14 @@ declare function computeWindowedRenderLimits(
     windowSize: number,
     ...,
   },
-  prev: {first: number, last: number, ...},
-  getFrameMetricsApprox: (index: number) => {
+  prev: {
+    first: number,
+    last: number,
+    ...,
+  },
+  getFrameMetricsApprox: (
+    index: number
+  ) => {
     length: number,
     offset: number,
     ...,
@@ -30,7 +51,11 @@ declare function computeWindowedRenderLimits(
     visibleLength: number,
     ...,
   }
-): {first: number, last: number, ...};
+): {
+  first: number,
+  last: number,
+  ...,
+};
 
 declare var VirtualizeUtils: {|
   computeWindowedRenderLimits: typeof computeWindowedRenderLimits,

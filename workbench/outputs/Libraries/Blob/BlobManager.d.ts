@@ -1,4 +1,6 @@
-declare const Blob;
+// @flow
+declare var Blob: typeof $1;
+declare const $1;
 import { BlobData } from "./BlobTypes";
 import { BlobOptions } from "./BlobTypes";
 declare class BlobManager {

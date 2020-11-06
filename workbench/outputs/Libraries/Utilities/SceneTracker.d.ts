@@ -1,3 +1,4 @@
+// @flow
 declare type Scene = {
   name: string;
 };

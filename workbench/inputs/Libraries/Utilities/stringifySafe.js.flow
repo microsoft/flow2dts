@@ -1,3 +1,14 @@
-declare function stringifySafe(arg: any): string;
+// @flow
+declare function createStringifySafeWithLimits(
+  limits: {|
+    maxDepth?: number,
+    maxStringLimit?: number,
+    maxArrayLimit?: number,
+    maxObjectKeysLimit?: number,
+  |}
+): (mixed) => string;
 
-declare module.exports: typeof stringifySafe;
+declare var stringifySafe: (mixed) => string;
+export {createStringifySafeWithLimits};
+
+declare export default typeof stringifySafe;

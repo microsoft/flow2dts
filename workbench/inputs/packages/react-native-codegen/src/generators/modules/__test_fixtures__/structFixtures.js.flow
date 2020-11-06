@@ -1,3 +1,4 @@
+// @flow
 import type {ObjectParamTypeAnnotation} from "../../../CodegenSchema.js";
 declare var SIMPLE_STRUCT: $ReadOnlyArray<
   $ReadOnly<

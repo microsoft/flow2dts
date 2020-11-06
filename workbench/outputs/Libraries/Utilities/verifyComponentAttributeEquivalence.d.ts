@@ -1,9 +1,9 @@
-[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/Utilities/verifyComponentAttributeEquivalence.js.flow: Export 'lefthandObjectDiff' is not defined (16:8)
+[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/Utilities/verifyComponentAttributeEquivalence.js.flow: Export 'lefthandObjectDiff' is not defined (17:8)
 
-  14 | 
-  15 | declare function stringifyViewConfig(viewConfig: any): string;
-> 16 | export {lefthandObjectDiff};
+  15 | 
+  16 | declare function stringifyViewConfig(viewConfig: any): string;
+> 17 | export {lefthandObjectDiff};
      |         ^
-  17 | 
-  18 | export {getConfigWithoutViewProps};
-  19 | 
+  18 | 
+  19 | export {getConfigWithoutViewProps};
+  20 | 

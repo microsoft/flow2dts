@@ -1,6 +1,7 @@
-type RNTesterBackAction = {type: 'RNTesterBackAction', ...};
+// @flow
+type RNTesterBackAction = {type: 'RNTesterBackAction',...};
 
-type RNTesterListAction = {type: 'RNTesterListAction', ...};
+type RNTesterListAction = {type: 'RNTesterListAction',...};
 
 type RNTesterExampleAction = {
   type: 'RNTesterExampleAction',

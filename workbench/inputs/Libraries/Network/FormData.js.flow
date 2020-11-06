@@ -1,13 +1,26 @@
+// @flow
 type FormDataValue = any;
 
-type Headers = {[name: string]: string, ...};
+type Headers = {[name: string]: string,...};
 type FormDataPart = 
-  | {string: string, headers: Headers, ...}
-  | {uri: string, headers: Headers, name?: string, type?: string, ...};
+  | {
+    string: string,
+    headers: Headers,
+    ...,
+  }
+  | {
+    uri: string,
+    headers: Headers,
+    name?: string,
+    type?: string,
+    ...,
+  };
 
 declare class FormData {
   constructor(): void,
+  
   append(key: string, value: FormDataValue): void,
+  
   getParts(): Array<FormDataPart>,
 }
 

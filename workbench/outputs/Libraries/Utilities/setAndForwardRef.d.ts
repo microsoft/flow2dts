@@ -1,3 +1,4 @@
+// @flow
 import { ElementRef } from "react";
 import { Ref } from "react";
 declare type Args = Readonly<

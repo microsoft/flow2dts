@@ -1,7 +1,9 @@
-declare const Blob;
+// @flow
+declare var Blob: typeof $1;
+declare const $1;
 declare type ArrayBufferView = Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array | DataView;
 declare type BinaryType = "blob" | "arraybuffer";
-declare class WebSocket extends $TEMPORARY$Super$FlowFixMe {
+declare class WebSocket extends $2 {
   CONNECTING: number;
   OPEN: number;
   CLOSING: number;
@@ -30,5 +32,6 @@ declare class WebSocket extends $TEMPORARY$Super$FlowFixMe {
   send: (data: string | ArrayBuffer | ArrayBufferView | Blob) => void;
   ping: () => void;
 }
+declare var $2: any;
 declare const $f2tExportDefault: typeof WebSocket;
 export default $f2tExportDefault;

@@ -1,3 +1,4 @@
+// @flow
 declare function deprecatedCreateStrictShapeTypeChecker(shapeTypes: {
   [key: string]: ReactPropsCheckType;
 }) => ReactPropsChainableTypeChecker;

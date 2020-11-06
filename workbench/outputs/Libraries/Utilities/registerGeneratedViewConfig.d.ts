@@ -1,3 +1,4 @@
+// @flow
 declare type GeneratedViewConfig = {
   uiViewClassName: string;
   bubblingEventTypes?: Readonly<{

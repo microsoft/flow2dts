@@ -1,3 +1,4 @@
+// @flow
 declare var flushUpdatePositionInList: null | (() => void);
 
 declare var UIManagerTestModule: {|

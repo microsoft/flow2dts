@@ -1,3 +1,4 @@
+// @flow
 import type {IgnorePattern} from "./Data/LogBoxData";
 
 declare module.exports: {

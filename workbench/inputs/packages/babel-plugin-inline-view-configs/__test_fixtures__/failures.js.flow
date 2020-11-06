@@ -1,3 +1,4 @@
+// @flow
 declare var COMMANDS_EXPORTED_WITH_DIFFERENT_NAME: string;
 
 declare var OTHER_COMMANDS_EXPORT: string;

@@ -1,4 +1,5 @@
-import Pressability from "../../Pressability/Pressability.js";
+// @flow
+import Pressability from "../../Pressability/Pressability";
 
 import type {AccessibilityActionEvent} from "../../Components/View/ViewAccessibility";
 import type {AccessibilityActionInfo} from "../../Components/View/ViewAccessibility";
@@ -50,15 +51,24 @@ type Props = $ReadOnly<
   |},
 >;
 
-type State = $ReadOnly<{|pressability: Pressability|}>;
+type State = $ReadOnly<
+  {|
+    pressability: Pressability,
+  |},
+>;
 
 declare class TouchableWithoutFeedback
-  extends React.Component<Props, State> {
+  extends $1<Props, State> {
   state: State,
+  
   render(): React.Node,
+  
   componentDidMount(): void,
+  
   componentDidUpdate(): void,
+  
   componentWillUnmount(): void,
 }
+declare var $1: typeof React.Component;
 
 declare module.exports: typeof TouchableWithoutFeedback;

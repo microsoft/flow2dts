@@ -1,4 +1,6 @@
-const NativeEventEmitter = require("../../EventEmitter/NativeEventEmitter");
+// @flow
+declare var NativeEventEmitter: typeof $1;
+const $1 = require("../../EventEmitter/NativeEventEmitter");
 
 declare var KeyboardEventEmitter: NativeEventEmitter;
 
@@ -18,7 +20,12 @@ type KeyboardEventEasing =
   | 'keyboard';
 
 type KeyboardEventCoordinates = $ReadOnly<
-  {|screenX: number, screenY: number, width: number, height: number|},
+  {|
+    screenX: number,
+    screenY: number,
+    width: number,
+    height: number,
+  |},
 >;
 
 type KeyboardEvent = AndroidKeyboardEvent | IOSKeyboardEvent;
@@ -30,7 +37,11 @@ type BaseKeyboardEvent = {|
 |};
 
 type AndroidKeyboardEvent = $ReadOnly<
-  {|...BaseKeyboardEvent, duration: 0, easing: 'keyboard'|},
+  {|
+    ...BaseKeyboardEvent,
+    duration: 0,
+    easing: 'keyboard',
+  |},
 >;
 
 type IOSKeyboardEvent = $ReadOnly<

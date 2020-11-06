@@ -1,0 +1,12 @@
+// @flow
+import type {ColorValue} from "./StyleSheetTypes";
+
+type DynamicColorIOSTuple = {
+  light: ColorValue,
+  dark: ColorValue,
+};
+
+declare var DynamicColorIOS: (tuple: DynamicColorIOSTuple) => ColorValue;
+export type {DynamicColorIOSTuple};
+
+export {DynamicColorIOS};

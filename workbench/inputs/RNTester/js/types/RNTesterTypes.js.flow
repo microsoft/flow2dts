@@ -1,3 +1,4 @@
+// @flow
 import type {ComponentType} from "react";
 import * as React from "react";
 
@@ -37,7 +38,11 @@ type RNTesterExampleModule = $ReadOnly<
 >;
 
 type RNTesterExample = $ReadOnly<
-  {|key: string, module: RNTesterExampleModule, supportsTVOS?: boolean|},
+  {|
+    key: string,
+    module: RNTesterExampleModule,
+    supportsTVOS?: boolean,
+  |},
 >;
 export type {RNTesterProps};
 

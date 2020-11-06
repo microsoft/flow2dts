@@ -1,3 +1,4 @@
+// @flow
 declare type SpyData = {
   type: number;
   module: null | undefined | string;
@@ -27,8 +28,8 @@ declare class MessageQueue {
   setImmediatesCallback: (fn: () => void) => void;
 
   /**
-     * Private methods
-     */
+   * Private methods
+   */
   __guard: (fn: () => void) => void;
   // MessageQueue installs a global handler to catch all exceptions where JS users can register their own behavior
   // This handler makes all exceptions to be propagated from inside MessageQueue rather than by the VM at their origin

@@ -1,4 +1,6 @@
-declare const NativeEventEmitter;
+// @flow
+declare var NativeEventEmitter: typeof $1;
+declare const $1;
 import EmitterSubscription from "../../vendor/emitter/EmitterSubscription";
 declare class TVEventHandler {
   __nativeTVNavigationEventListener: null | undefined | EmitterSubscription;

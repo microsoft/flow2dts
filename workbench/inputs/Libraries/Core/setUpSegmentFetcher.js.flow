@@ -1,15 +1,22 @@
+// @flow
 type FetchSegmentFunction = typeof __fetchSegment;
 type GetSegmentFunction = typeof __getSegment;
 
 declare function __fetchSegment(
   segmentId: number,
-  options: {|+otaBuildNumber: ?string, +requestedModuleName?: ?string|},
+  options: {|
+    +otaBuildNumber: ?string,
+    +requestedModuleName?: ?string,
+  |},
   callback: (?Error) => void
 ): void;
 
 declare function __getSegment(
   segmentId: number,
-  options: {|+otaBuildNumber: ?string, +requestedModuleName?: ?string|},
+  options: {|
+    +otaBuildNumber: ?string,
+    +requestedModuleName?: ?string,
+  |},
   callback: (?Error, ?string) => void
 ): void;
 export type {FetchSegmentFunction};

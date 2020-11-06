@@ -1,2 +1,9 @@
-type PointProp = $ReadOnly<{x: number, y: number, ...}>;
+// @flow
+type PointProp = $ReadOnly<
+  {
+    x: number,
+    y: number,
+    ...,
+  },
+>;
 export type {PointProp};

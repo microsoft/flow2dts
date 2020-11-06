@@ -1,3 +1,4 @@
+// @flow
 import { PermissionStatus } from "./NativePermissionsAndroid";
 import { PermissionType } from "./NativePermissionsAndroid";
 declare type Rationale = {
@@ -46,32 +47,32 @@ declare class PermissionsAndroid {
   };
 
   /**
-     * DEPRECATED - use check
-     *
-     * Returns a promise resolving to a boolean value as to whether the specified
-     * permissions has been granted
-     *
-     * @deprecated
-     */
+   * DEPRECATED - use check
+   *
+   * Returns a promise resolving to a boolean value as to whether the specified
+   * permissions has been granted
+   *
+   * @deprecated
+   */
   checkPermission: (permission: PermissionType) => Promise;
 
   /**
-     * Returns a promise resolving to a boolean value as to whether the specified
-     * permissions has been granted
-     *
-     * See https://reactnative.dev/docs/permissionsandroid.html#check
-     */
+   * Returns a promise resolving to a boolean value as to whether the specified
+   * permissions has been granted
+   *
+   * See https://reactnative.dev/docs/permissionsandroid.html#check
+   */
   check: (permission: PermissionType) => Promise;
   requestPermission: (permission: PermissionType, rationale?: Rationale) => Promise;
   request: (permission: PermissionType, rationale?: Rationale) => Promise;
 
   /**
-     * Prompts the user to enable multiple permissions in the same dialog and
-     * returns an object with the permissions as keys and strings as values
-     * indicating whether the user allowed or denied the request
-     *
-     * See https://reactnative.dev/docs/permissionsandroid.html#requestmultiple
-     */
+   * Prompts the user to enable multiple permissions in the same dialog and
+   * returns an object with the permissions as keys and strings as values
+   * indicating whether the user allowed or denied the request
+   *
+   * See https://reactnative.dev/docs/permissionsandroid.html#requestmultiple
+   */
   requestMultiple: (permissions: PermissionType[]) => Promise;
 }
 declare var PermissionsAndroidInstance: PermissionsAndroid;

@@ -1,7 +1,12 @@
-const React = require("react");
+// @flow
+declare var React: typeof $2;
+const $2 = require("react");
 
 type Props = $ReadOnly<{||}>;
 declare class ImageCapInsetsExample
-  extends React.Component<Props> {render(): React.Node}
+  extends $1<Props> {
+  render(): React.Node,
+}
+declare var $1: typeof React.Component;
 
 declare module.exports: typeof ImageCapInsetsExample;

@@ -1,3 +1,4 @@
+// @flow
 type OnSuccessCallback = (
   left: number,
   top: number,

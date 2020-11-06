@@ -1,17 +1,15 @@
+// @flow
 declare module.exports: {|
-  
-/**
+  /**
    * Get content of string type, this method returns a `Promise`, so you can use following code to get clipboard content
    * ```javascript
    * async _getContent() {
    *   var content = await Clipboard.getString();
    * }
    * ```
-   */getString(): Promise<
-    string,
-  >,
-  
-/**
+   */
+  getString(): Promise<string>,
+  /**
    * Set content of string type. You can use following code to set clipboard content
    * ```javascript
    * _setContent() {
@@ -19,7 +17,6 @@ declare module.exports: {|
    * }
    * ```
    * @param the content to be stored in the clipboard.
-   */setString(
-    content: string
-  ): void,
+   */
+  setString(content: string): void,
 |};

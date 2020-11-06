@@ -1,3 +1,4 @@
+// @flow
 import { Spec } from "./NativeUIManager";
 interface UIManagerJSInterface extends Spec {
   readonly getViewManagerConfig: (viewManagerName: string) => Object;

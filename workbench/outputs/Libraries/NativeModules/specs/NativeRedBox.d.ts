@@ -1,3 +1,4 @@
+// @flow
 import { TurboModule } from "../../TurboModule/RCTExport";
 interface Spec extends TurboModule {
   readonly setExtraData: (extraData: Object, forIdentifier: string) => void;

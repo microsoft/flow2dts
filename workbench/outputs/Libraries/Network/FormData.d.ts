@@ -1,3 +1,4 @@
+// @flow
 declare type FormDataValue = any;
 declare type Headers = {
   [name: string]: string;

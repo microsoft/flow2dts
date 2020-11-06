@@ -1,3 +1,4 @@
+// @flow
 import type {Spec} from "./NativeUIManager";
 
 interface UIManagerJSInterface extends Spec {

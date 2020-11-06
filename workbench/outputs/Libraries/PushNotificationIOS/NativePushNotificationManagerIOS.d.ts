@@ -1,3 +1,4 @@
+// @flow
 import { TurboModule } from "../TurboModule/RCTExport";
 declare type Permissions =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -10,11 +11,13 @@ declare type Notification =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
   readonly alertTitle?: null | undefined | string;
+  // Actual type: string | number
   readonly fireDate?: null | undefined | number;
   readonly alertBody?: null | undefined | string;
   readonly alertAction?: null | undefined | string;
   readonly userInfo?: null | undefined | Object;
   readonly category?: null | undefined | string;
+  // Actual type: 'year' | 'month' | 'week' | 'day' | 'hour' | 'minute'
   readonly repeatInterval?: null | undefined | string;
   readonly applicationIconBadgeNumber?: null | undefined | number;
   readonly isSilent?: null | undefined | boolean;

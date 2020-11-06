@@ -1,10 +1,18 @@
+// @flow
+import type {ColorValue} from "../StyleSheet/StyleSheetTypes";
+
 import * as React from "react";
 
 type Props = $ReadOnly<
   {|
-    color: string,
+    color: ColorValue,
     hitSlop: ?$ReadOnly<
-      {|bottom?: ?number, left?: ?number, right?: ?number, top?: ?number|},
+      {|
+        bottom?: ?number,
+        left?: ?number,
+        right?: ?number,
+        top?: ?number,
+      |},
     >,
   |},
 >;

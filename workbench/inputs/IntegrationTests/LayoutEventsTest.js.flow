@@ -1,4 +1,6 @@
-const React = require("react");
+// @flow
+declare var React: typeof $2;
+const $2 = require("react");
 
 import type {ViewStyleProp} from "react-native/Libraries/StyleSheet/StyleSheet";
 
@@ -19,17 +21,27 @@ type State = {
 };
 
 declare class LayoutEventsTest
-  extends React.Component<Props, State> {
+  extends $1<Props, State> {
   state: State,
+  
   animateViewLayout(): void,
+  
   addWrapText: () => void,
+  
   changeContainer: () => void,
+  
   checkLayout: (next?: ?(() => void)) => void,
+  
   compare(node: string, measured: Layout, onLayout?: ?Layout): void,
+  
   onViewLayout: (e: LayoutEvent) => void,
+  
   onTextLayout: (e: LayoutEvent) => void,
+  
   onImageLayout: (e: LayoutEvent) => void,
+  
   render(): React.Node,
 }
+declare var $1: typeof React.Component;
 
 declare module.exports: typeof LayoutEventsTest;

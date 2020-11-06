@@ -1,16 +1,22 @@
+// @flow
 import type {TurboModule} from "../TurboModule/RCTExport";
 
 type ColorSchemeName = 'light' | 'dark';
 
 type AppearancePreferences = {|
   // TODO: (hramos) T52919652 Use ?ColorSchemeName once codegen supports union
-// types.
-
-/* 'light' | 'dark' */colorScheme?: ?string,
+  // types.
+  /* 'light' | 'dark' */
+  colorScheme?: ?string,
 |};
 
 interface Spec extends TurboModule {
+  // TODO: (hramos) T52919652 Use ?ColorSchemeName once codegen supports union
+  // types.
+  /* 'light' | 'dark' */
   +getColorScheme: () => ?string,
+  
+  // RCTEventEmitter
   +addListener: (eventName: string) => void,
   +removeListeners: (count: number) => void,
 }

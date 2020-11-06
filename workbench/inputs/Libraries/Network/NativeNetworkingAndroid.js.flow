@@ -1,3 +1,4 @@
+// @flow
 import type {TurboModule} from "../TurboModule/RCTExport";
 
 type Header = [string, string];
@@ -16,6 +17,8 @@ interface Spec extends TurboModule {
   ) => void,
   +abortRequest: (requestId: number) => void,
   +clearCookies: (callback: (result: boolean) => void) => void,
+  
+  // RCTEventEmitter
   +addListener: (eventName: string) => void,
   +removeListeners: (count: number) => void,
 }

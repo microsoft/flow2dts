@@ -1,3 +1,4 @@
+// @flow
 import NativeUIManager from "./NativeUIManager";
 
 declare var UIManagerJS: {|

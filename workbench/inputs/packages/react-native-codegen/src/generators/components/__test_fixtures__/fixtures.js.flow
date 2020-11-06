@@ -1,3 +1,4 @@
+// @flow
 import type {SchemaType} from "../../../CodegenSchema.js";
 
 declare var NO_PROPS_NO_EVENTS: SchemaType;

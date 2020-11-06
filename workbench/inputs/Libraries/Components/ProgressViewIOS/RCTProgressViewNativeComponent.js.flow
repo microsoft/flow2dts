@@ -1,3 +1,4 @@
+// @flow
 import type {Float} from "../../Types/CodegenTypes";
 import type {WithDefault} from "../../Types/CodegenTypes";
 import type {ImageSource} from "../../Image/ImageSource";
@@ -9,8 +10,9 @@ import type {HostComponent} from "../../Renderer/shims/ReactNativeTypes";
 type NativeProps = $ReadOnly<
   {|
     ...ViewProps,
+    
     // Props
-progressViewStyle?: WithDefault<'default' | 'bar', 'default'>,
+    progressViewStyle?: WithDefault<'default' | 'bar', 'default'>,
     progress?: WithDefault<Float, 0>,
     progressTintColor?: ?ColorValue,
     trackTintColor?: ?ColorValue,

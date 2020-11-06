@@ -1,18 +1,21 @@
-const React = require("react");
+// @flow
+declare var React: typeof $1;
+const $1 = require("react");
 
 import type {HostComponent} from "../../Renderer/shims/ReactNativeTypes";
 import type {ViewProps} from "../View/ViewPropTypes";
+import type {ColorValue} from "../../StyleSheet/StyleSheetTypes";
 
 type IndicatorSize = number | 'small' | 'large';
 
 type IOSProps = $ReadOnly<
   {|
-    
-/**
+    /**
    * Whether the indicator should hide when not animating (true by default).
    *
    * See https://reactnative.dev/docs/activityindicator.html#hideswhenstopped
-   */hidesWhenStopped?: ?boolean,
+   */
+    hidesWhenStopped?: ?boolean,
   |},
 >;
 type Props = $ReadOnly<
@@ -20,24 +23,27 @@ type Props = $ReadOnly<
     ...ViewProps,
     ...IOSProps,
     
-/**
+    /**
    * Whether to show the indicator (true, the default) or hide it (false).
    *
    * See https://reactnative.dev/docs/activityindicator.html#animating
-   */animating?: ?boolean,
+   */
+    animating?: ?boolean,
     
-/**
+    /**
    * The foreground color of the spinner (default is gray).
    *
    * See https://reactnative.dev/docs/activityindicator.html#color
-   */color?: ?string,
+   */
+    color?: ?ColorValue,
     
-/**
+    /**
    * Size of the indicator (default is 'small').
    * Passing a number to the size prop is only supported on Android.
    *
    * See https://reactnative.dev/docs/activityindicator.html#size
-   */size?: ?IndicatorSize,
+   */
+    size?: ?IndicatorSize,
   |},
 >;
 

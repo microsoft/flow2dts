@@ -1,3 +1,4 @@
+// @flow
 import type {Category} from "./parseLogBoxLog";
 import type {Message} from "./parseLogBoxLog";
 import type {ComponentStack} from "./parseLogBoxLog";
@@ -36,12 +37,19 @@ declare class LogBoxLog {
     | $ReadOnly<{|error: null, stack: null, status: 'PENDING'|}>
     | $ReadOnly<{|error: null, stack: Stack, status: 'COMPLETE'|}>
     | $ReadOnly<{|error: Error, stack: null, status: 'FAILED'|}>,
+  
   constructor(data: LogBoxLogData): void,
+  
   incrementCount(): void,
+  
   getAvailableStack(): Stack,
+  
   retrySymbolicate(callback?: (status: SymbolicationStatus) => void): void,
+  
   symbolicate(callback?: (status: SymbolicationStatus) => void): void,
+  
   handleSymbolicate(callback?: (status: SymbolicationStatus) => void): void,
+  
   updateStatus(
     error: ?Error,
     stack: ?Stack,

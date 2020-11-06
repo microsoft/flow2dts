@@ -1,3 +1,4 @@
+// @flow
 import { TurboModule } from "../TurboModule/RCTExport";
 interface Spec extends TurboModule {
   readonly getConstants: () =>
@@ -13,6 +14,7 @@ interface Spec extends TurboModule {
     readonly cancelButtonIndex?: null | undefined | number;
     readonly anchor?: null | undefined | number;
     readonly tintColor?: null | undefined | number;
+    readonly userInterfaceStyle?: null | undefined | string;
   }, callback: (buttonIndex: number) => void) => void;
   readonly showShareActionSheetWithOptions: (options:
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -23,6 +25,7 @@ interface Spec extends TurboModule {
     readonly anchor?: null | undefined | number;
     readonly tintColor?: null | undefined | number;
     readonly excludedActivityTypes?: null | undefined | string[];
+    readonly userInterfaceStyle?: null | undefined | string;
   }, failureCallback: (error:
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {

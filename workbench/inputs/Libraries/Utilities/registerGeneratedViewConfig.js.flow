@@ -1,3 +1,4 @@
+// @flow
 type GeneratedViewConfig = {
   uiViewClassName: string,
   bubblingEventTypes?: $ReadOnly<
@@ -5,7 +6,10 @@ type GeneratedViewConfig = {
       [eventName: string]: $ReadOnly<
         {|
           phasedRegistrationNames: $ReadOnly<
-            {|captured: string, bubbled: string|},
+            {|
+              captured: string,
+              bubbled: string,
+            |},
           >,
         |},
       >,
@@ -13,7 +17,14 @@ type GeneratedViewConfig = {
     },
   >,
   directEventTypes?: $ReadOnly<
-    {[eventName: string]: $ReadOnly<{|registrationName: string|}>, ...},
+    {
+      [eventName: string]: $ReadOnly<
+        {|
+          registrationName: string,
+        |},
+      >,
+      ...,
+    },
   >,
   validAttributes?: {
     [propName: string]: 

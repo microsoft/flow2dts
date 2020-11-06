@@ -1,11 +1,8 @@
+// @flow
 declare type CapturedError = {
-  readonly componentName: null | undefined | string;
   readonly componentStack: string;
   readonly error: unknown;
   readonly errorBoundary: null | undefined | {};
-  readonly errorBoundaryFound: boolean;
-  readonly errorBoundaryName: string | null;
-  readonly willRetry: boolean;
 };
 declare function showErrorDialog(capturedError: CapturedError) => boolean;
 export type { CapturedError };

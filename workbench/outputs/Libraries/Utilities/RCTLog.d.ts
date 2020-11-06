@@ -1,3 +1,4 @@
+// @flow
 declare var warningHandler: null | undefined | ($f2t1: any[]) => void;
 declare var RCTLog:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

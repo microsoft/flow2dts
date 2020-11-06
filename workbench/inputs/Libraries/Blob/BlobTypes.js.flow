@@ -1,3 +1,4 @@
+// @flow
 opaque type BlobCollector = {...};
 
 type BlobData = {
@@ -11,7 +12,11 @@ type BlobData = {
   ...,
 };
 
-type BlobOptions = {type: string, lastModified: number, ...};
+type BlobOptions = {
+  type: string,
+  lastModified: number,
+  ...,
+};
 export type {BlobCollector};
 
 export type {BlobData};

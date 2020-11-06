@@ -1,3 +1,4 @@
+// @flow
 import { TurboModule } from "../../TurboModule/RCTExport";
 declare type DialogAction = string;
 declare type DialogButtonKey = number;

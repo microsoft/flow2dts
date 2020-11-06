@@ -1,3 +1,4 @@
+// @flow
 declare var register: (id: string) => void;
 declare var unregister: (id: string) => void;
 declare var has: (id: string) => number | boolean;

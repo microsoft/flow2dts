@@ -1,7 +1,10 @@
+// @flow
 import type {TurboModule} from "../../TurboModule/RCTExport";
 
 interface Spec extends TurboModule {
-  +isReduceMotionEnabled: (onSuccess: (isReduceMotionEnabled: boolean) => void) => void,
+  +isReduceMotionEnabled: (
+    onSuccess: (isReduceMotionEnabled: boolean) => void
+  ) => void,
   +isTouchExplorationEnabled: (
     onSuccess: (isScreenReaderEnabled: boolean) => void
   ) => void,

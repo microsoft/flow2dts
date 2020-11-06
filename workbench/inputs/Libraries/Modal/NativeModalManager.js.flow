@@ -1,6 +1,8 @@
+// @flow
 import type {TurboModule} from "../TurboModule/RCTExport";
 
 interface Spec extends TurboModule {
+  // RCTEventEmitter
   +addListener: (eventName: string) => void,
   +removeListeners: (count: number) => void,
 }

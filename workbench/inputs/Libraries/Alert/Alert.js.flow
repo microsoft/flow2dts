@@ -1,10 +1,20 @@
+// @flow
 type AlertType = 'default' | 'plain-text' | 'secure-text' | 'login-password';
 type AlertButtonStyle = 'default' | 'cancel' | 'destructive';
 type Buttons = Array<
-  {text?: string, onPress?: ?Function, style?: AlertButtonStyle, ...},
+  {
+    text?: string,
+    onPress?: ?Function,
+    style?: AlertButtonStyle,
+    ...,
+  },
 >;
 
-type Options = {cancelable?: ?boolean, onDismiss?: ?(() => void), ...};
+type Options = {
+  cancelable?: ?boolean,
+  onDismiss?: ?(() => void),
+  ...,
+};
 
 declare class Alert {
   static alert(
@@ -13,6 +23,7 @@ declare class Alert {
     buttons?: Buttons,
     options?: Options
   ): void,
+  
   static prompt(
     title: ?string,
     message?: ?string,

@@ -1,3 +1,4 @@
+// @flow
 declare type NativeResponseType = "base64" | "blob" | "text";
 declare type ResponseType = "" | "arraybuffer" | "blob" | "document" | "json" | "text";
 declare type Response = (null | undefined | Object) | string;
@@ -8,7 +9,7 @@ declare type XHRInterceptor = {
   loadingFinished: (id: number, encodedDataLength: number) => void;
   loadingFailed: (id: number, error: string) => void;
 };
-declare class XMLHttpRequestEventTarget extends $TEMPORARY$Super$FlowFixMe {
+declare class XMLHttpRequestEventTarget extends $2 {
   onload: null | undefined | Function;
   onloadstart: null | undefined | Function;
   onprogress: null | undefined | Function;
@@ -17,7 +18,8 @@ declare class XMLHttpRequestEventTarget extends $TEMPORARY$Super$FlowFixMe {
   onabort: null | undefined | Function;
   onloadend: null | undefined | Function;
 }
-declare class XMLHttpRequest extends $TEMPORARY$Super$FlowFixMe {
+declare var $2: any;
+declare class XMLHttpRequest extends $1 {
   UNSENT: number;
   OPENED: number;
   HEADERS_RECEIVED: number;
@@ -65,8 +67,8 @@ declare class XMLHttpRequest extends $TEMPORARY$Super$FlowFixMe {
   setRequestHeader: (header: string, value: any) => void;
 
   /**
-     * Custom extension for tracking origins of request.
-     */
+   * Custom extension for tracking origins of request.
+   */
   setTrackingName: (trackingName: string) => XMLHttpRequest;
   open: (method: string, url: string, async: null | undefined | boolean) => void;
   send: (data: any) => void;
@@ -77,6 +79,7 @@ declare class XMLHttpRequest extends $TEMPORARY$Super$FlowFixMe {
   /* global EventListener */
   addEventListener: (type: string, listener: EventListener) => void;
 }
+declare var $1: any;
 export type { NativeResponseType };
 export type { ResponseType };
 export type { Response };

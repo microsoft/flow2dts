@@ -1,3 +1,4 @@
+// @flow
 declare function deprecatedPropType(
   propType: ReactPropsCheckType,
   explanation: string

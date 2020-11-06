@@ -1,3 +1,4 @@
+// @flow
 declare var COMMANDS_DEFINED_INLINE: string;
 
 declare var COMMANDS_DEFINED_MULTIPLE_TIMES: string;

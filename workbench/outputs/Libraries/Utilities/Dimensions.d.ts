@@ -1,3 +1,4 @@
+// @flow
 declare class Dimensions {
   get: (dim: string) => Object;
   set: (dims: Readonly<{

@@ -1,3 +1,4 @@
+// @flow
 declare function defineLazyObjectProperty<T>(object: Object, name: string, descriptor: {
   get: () => T;
   enumerable?: boolean;

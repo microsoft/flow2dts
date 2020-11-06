@@ -1,3 +1,4 @@
+// @flow
 import {Property} from "./Property";
 
 declare class Event {
@@ -6,12 +7,19 @@ declare class Event {
   description: ?string,
   experimental: ?boolean,
   parameters: Array<Property>,
+  
   static create(domain: string, obj: any, ignoreExperimental: boolean): ?Event,
+  
   constructor(domain: string, obj: any, ignoreExperimental: boolean): void,
+  
   getDebuggerName(): string,
+  
   getCppNamespace(): string,
+  
   getCppType(): string,
+  
   getForwardDecls(): Array<string>,
+  
   getForwardDeclSortKey(): string,
 }
 export {Event};

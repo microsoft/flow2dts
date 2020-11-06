@@ -1,12 +1,28 @@
+// @flow
 import type {TurboModule} from "../../TurboModule/RCTExport";
 
 interface Spec extends TurboModule {
-  +getConstants: () => {|+HEIGHT: number, +DEFAULT_BACKGROUND_COLOR?: number|},
+  +getConstants: () => {|
+    +HEIGHT: number,
+    +DEFAULT_BACKGROUND_COLOR?: number,
+  |},
+  
+  // TODO(T47754272) Can we remove this method?
   +getHeight: (callback: (result: {|height: number|}) => void) => void,
   +setNetworkActivityIndicatorVisible: (visible: boolean) => void,
   +addListener: (eventType: string) => void,
   +removeListeners: (count: number) => void,
+  
+  /**
+   *  - statusBarStyles can be:
+   *    - 'default'
+   *    - 'dark-content'
+   *    - 'light-content'
+   */
   +setStyle: (statusBarStyle?: ?string, animated: boolean) => void,
+  /**
+   *  - withAnimation can be: 'none' | 'fade' | 'slide'
+   */
   +setHidden: (hidden: boolean, withAnimation: string) => void,
 }
 export type {Spec};

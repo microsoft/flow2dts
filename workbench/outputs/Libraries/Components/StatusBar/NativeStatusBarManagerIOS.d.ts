@@ -1,3 +1,4 @@
+// @flow
 import { TurboModule } from "../../TurboModule/RCTExport";
 interface Spec extends TurboModule {
   readonly getConstants: () =>
@@ -6,6 +7,7 @@ interface Spec extends TurboModule {
     readonly HEIGHT: number;
     readonly DEFAULT_BACKGROUND_COLOR?: number;
   };
+  // TODO(T47754272) Can we remove this method?
   readonly getHeight: (callback: (result:
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
@@ -14,7 +16,18 @@ interface Spec extends TurboModule {
   readonly setNetworkActivityIndicatorVisible: (visible: boolean) => void;
   readonly addListener: (eventType: string) => void;
   readonly removeListeners: (count: number) => void;
+
+  /**
+   *  - statusBarStyles can be:
+   *    - 'default'
+   *    - 'dark-content'
+   *    - 'light-content'
+   */
   readonly setStyle: (statusBarStyle?: null | undefined | string, animated: boolean) => void;
+
+  /**
+   *  - withAnimation can be: 'none' | 'fade' | 'slide'
+   */
   readonly setHidden: (hidden: boolean, withAnimation: string) => void;
 }
 export type { Spec };

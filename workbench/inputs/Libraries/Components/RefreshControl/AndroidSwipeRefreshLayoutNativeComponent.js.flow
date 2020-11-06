@@ -1,3 +1,4 @@
+// @flow
 import * as React from "react";
 
 import type {HostComponent} from "../../Renderer/shims/ReactNativeTypes";
@@ -13,24 +14,19 @@ type NativeProps = $ReadOnly<
   {|
     ...ViewProps,
     
-/**
+    /**
    * Whether the pull to refresh functionality is enabled.
-   */enabled?: WithDefault<
-      boolean,
-      true,
-    >,
-    
-/**
+   */
+    enabled?: WithDefault<boolean, true>,
+    /**
    * The colors (at least one) that will be used to draw the refresh indicator.
-   */colors?: ?$ReadOnlyArray<
-      ColorValue,
-    >,
-    
-/**
+   */
+    colors?: ?$ReadOnlyArray<ColorValue>,
+    /**
    * The background color of the refresh indicator.
-   */progressBackgroundColor?: ?ColorValue,
-    
-/**
+   */
+    progressBackgroundColor?: ?ColorValue,
+    /**
    * Size of the refresh indicator, see RefreshControl.SIZE.
    *
    * This type isn't currently accurate. It really is specific numbers
@@ -40,34 +36,32 @@ type NativeProps = $ReadOnly<
    * because native code isn't currently consuming the generated artifact.
    * This will end up being
    * size?: WithDefault<'default' | 'large', 'default'>,
-   */size?: WithDefault<
-      Int32,
-      1,
-    >,
-    
-/**
+   */
+    size?: WithDefault<Int32, 1>,
+    /**
    * Progress view top offset
-   */progressViewOffset?: WithDefault<
-      Float,
-      0,
-    >,
+   */
+    progressViewOffset?: WithDefault<Float, 0>,
     
-/**
+    /**
    * Called when the view starts refreshing.
-   */onRefresh?: ?DirectEventHandler<
-      null,
-    >,
+   */
+    onRefresh?: ?DirectEventHandler<null>,
     
-/**
+    /**
    * Whether the view should be indicating an active refresh.
-   */refreshing: boolean,
+   */
+    refreshing: boolean,
   |},
 >;
 
 type NativeType = HostComponent<NativeProps>;
 
 interface NativeCommands {
-  +setNativeRefreshing: (viewRef: React.ElementRef<NativeType>, value: boolean) => void,
+  +setNativeRefreshing: (
+    viewRef: React.ElementRef<NativeType>,
+    value: boolean
+  ) => void,
 }
 
 declare var Commands: NativeCommands;

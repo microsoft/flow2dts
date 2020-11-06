@@ -1,4 +1,9 @@
-type Options<T = string> = $ReadOnly<{|supportedCommands: $ReadOnlyArray<T>|}>;
+// @flow
+type Options<T = string> = $ReadOnly<
+  {|
+    supportedCommands: $ReadOnlyArray<T>,
+  |},
+>;
 
 declare function codegenNativeCommands<T: {...}>(options: Options<$Keys<T>>): T;
 

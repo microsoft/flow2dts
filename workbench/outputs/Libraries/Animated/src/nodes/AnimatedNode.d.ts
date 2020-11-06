@@ -1,3 +1,4 @@
+// @flow
 declare class AnimatedNode {
   __nativeAnimatedValueListener: null | undefined | any;
   __attach: () => void;
@@ -16,27 +17,27 @@ declare class AnimatedNode {
   __makeNative: () => void;
 
   /**
-     * Adds an asynchronous listener to the value so you can observe updates from
-     * animations.  This is useful because there is no way to
-     * synchronously read the value because it might be driven natively.
-     *
-     * See https://reactnative.dev/docs/animatedvalue.html#addlistener
-     */
+   * Adds an asynchronous listener to the value so you can observe updates from
+   * animations.  This is useful because there is no way to
+   * synchronously read the value because it might be driven natively.
+   *
+   * See https://reactnative.dev/docs/animatedvalue.html#addlistener
+   */
   addListener: (callback: (value: any) => unknown) => string;
 
   /**
-     * Unregister a listener. The `id` param shall match the identifier
-     * previously returned by `addListener()`.
-     *
-     * See https://reactnative.dev/docs/animatedvalue.html#removelistener
-     */
+   * Unregister a listener. The `id` param shall match the identifier
+   * previously returned by `addListener()`.
+   *
+   * See https://reactnative.dev/docs/animatedvalue.html#removelistener
+   */
   removeListener: (id: string) => void;
 
   /**
-     * Remove all registered listeners.
-     *
-     * See https://reactnative.dev/docs/animatedvalue.html#removealllisteners
-     */
+   * Remove all registered listeners.
+   *
+   * See https://reactnative.dev/docs/animatedvalue.html#removealllisteners
+   */
   removeAllListeners: () => void;
   hasListeners: () => boolean;
   __callListeners: (value: number) => void;

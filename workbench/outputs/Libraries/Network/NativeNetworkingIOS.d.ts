@@ -1,3 +1,4 @@
+// @flow
 import { TurboModule } from "../TurboModule/RCTExport";
 interface Spec extends TurboModule {
   readonly sendRequest: (query:
@@ -14,6 +15,7 @@ interface Spec extends TurboModule {
   }, callback: (requestId: number) => void) => void;
   readonly abortRequest: (requestId: number) => void;
   readonly clearCookies: (callback: (result: boolean) => void) => void;
+  // RCTEventEmitter
   readonly addListener: (eventName: string) => void;
   readonly removeListeners: (count: number) => void;
 }

@@ -1,3 +1,4 @@
+// @flow
 import type {WithDefault} from "../../../../../Libraries/Types/CodegenTypes";
 import type {ViewProps} from "../../../../../Libraries/Components/View/ViewPropTypes";
 
@@ -6,11 +7,9 @@ import type {HostComponent} from "../../../../../Libraries/Renderer/shims/ReactN
 type NativeProps = $ReadOnly<
   {|
     ...ViewProps,
+    
     // Props
-alignment?: WithDefault<
-      'top' | 'center' | 'bottom-right',
-      'center',
-    >,
+    alignment?: WithDefault<'top' | 'center' | 'bottom-right', 'center'>,
     intervals?: WithDefault<0 | 15 | 30 | 60, 0>,
   |},
 >;

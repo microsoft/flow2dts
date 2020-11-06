@@ -1,3 +1,4 @@
+// @flow
 import * as React from "react";
 
 import type {ViewProps} from "./ViewPropTypes";
@@ -13,7 +14,10 @@ declare var viewConfig:
         [eventName: string]: $ReadOnly<
           {|
             phasedRegistrationNames: $ReadOnly<
-              {|bubbled: string, captured: string|},
+              {|
+                bubbled: string,
+                captured: string,
+              |},
             >,
           |},
         >,
@@ -21,7 +25,10 @@ declare var viewConfig:
       },
     >,
     directEventTypes?: $ReadOnly<
-      {[eventName: string]: $ReadOnly<{|registrationName: string|}>, ...},
+      {
+        [eventName: string]: $ReadOnly<{|registrationName: string|}>,
+        ...,
+      },
     >,
     uiViewClassName: string,
     validAttributes?: {

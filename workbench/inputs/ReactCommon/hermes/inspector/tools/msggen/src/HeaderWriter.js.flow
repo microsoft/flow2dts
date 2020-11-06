@@ -1,3 +1,4 @@
+// @flow
 import {Writable} from "stream";
 
 import {PropsType} from "./Type";
@@ -10,20 +11,30 @@ declare class HeaderWriter {
   types: Array<Type>,
   commands: Array<Command>,
   events: Array<Event>,
+  
   constructor(
     stream: Writable,
     types: Array<Type>,
     commands: Array<Command>,
     events: Array<Event>
   ): void,
+  
   write(): void,
+  
   writePrologue(): void,
+  
   writeForwardDecls(): void,
+  
   writeRequestHandlerDecls(): void,
+  
   writeTypeDecls(): void,
+  
   writeRequestDecls(): void,
+  
   writeResponseDecls(): void,
+  
   writeNotificationDecls(): void,
+  
   writeEpilogue(): void,
 }
 

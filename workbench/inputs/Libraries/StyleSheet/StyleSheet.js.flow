@@ -1,4 +1,6 @@
-const flatten = require("./flattenStyle");
+// @flow
+declare var flatten: typeof $1;
+const $1 = require("./flattenStyle");
 
 import type {____Styles_Internal} from "./StyleSheetTypes";
 import type {____DangerouslyImpreciseStyle_Internal} from "./StyleSheetTypes";
@@ -59,8 +61,7 @@ export type {ImageStyle};
 export type {DangerouslyImpreciseStyle};
 
 declare module.exports: {|
-  
-/**
+  /**
    * This is defined as the width of a thin line on the platform. It can be
    * used as the thickness of a border or division between two elements.
    * Example:
@@ -78,16 +79,17 @@ declare module.exports: {|
    * value may be calculated differently.
    *
    * A line with hairline width may not be visible if your simulator is downscaled.
-   */hairlineWidth: typeof hairlineWidth,
+   */
+  hairlineWidth: typeof hairlineWidth,
   
-/**
+  /**
    * A very common pattern is to create overlays with position absolute and zero positioning,
    * so `absoluteFill` can be used for convenience and to reduce duplication of these repeated
    * styles.
-   */absoluteFill: any,
-  // TODO: This should be updated after we fix downstream Flow sites.
-
-/**
+   */
+  absoluteFill: any,
+  
+  /**
    * Sometimes you may want `absoluteFill` but with a couple tweaks - `absoluteFillObject` can be
    * used to create a customized entry in a `StyleSheet`, e.g.:
    *
@@ -98,18 +100,21 @@ declare module.exports: {|
    *       backgroundColor: 'transparent',
    *     },
    *   });
-   */absoluteFillObject: typeof absoluteFill,
+   */
+  absoluteFillObject: typeof absoluteFill,
   
-/**
+  /**
    * Combines two styles such that `style2` will override any styles in `style1`.
    * If either style is falsy, the other one is returned without allocating an
    * array, saving allocations and maintaining reference equality for
    * PureComponent checks.
-   */compose<
-    T: DangerouslyImpreciseStyleProp,
-  >(style1: ?T, style2: ?T): ?T | $ReadOnlyArray<T>,
+   */
+  compose<T: DangerouslyImpreciseStyleProp>(
+    style1: ?T,
+    style2: ?T
+  ): ?T | $ReadOnlyArray<T>,
   
-/**
+  /**
    * Flattens an array of style objects, into one aggregated style object.
    * Alternatively, this method can be used to lookup IDs, returned by
    * StyleSheet.register.
@@ -147,9 +152,10 @@ declare module.exports: {|
    * objects (instances of StyleSheet.create), are individually resolved to,
    * their respective objects, merged as one and then returned. This also explains
    * the alternative use.
-   */flatten: typeof flatten,
+   */
+  flatten: typeof flatten,
   
-/**
+  /**
    * WARNING: EXPERIMENTAL. Breaking changes will probably happen a lot and will
    * not be reliably announced. The whole thing might be deleted, who knows? Use
    * at your own risk.
@@ -157,14 +163,14 @@ declare module.exports: {|
    * Sets a function to use to pre-process a style property value. This is used
    * internally to process color and transform values. You should not use this
    * unless you really know what you are doing and have exhausted other options.
-   */setStyleAttributePreprocessor(
+   */
+  setStyleAttributePreprocessor(
     property: string,
     process: (nextProp: mixed) => mixed
   ): void,
   
-/**
+  /**
    * Creates a StyleSheet style reference from the given object.
-   */create<
-    +S: ____Styles_Internal,
-  >(obj: S): $ReadOnly<S>,
+   */
+  create<+S: ____Styles_Internal>(obj: S): $ReadOnly<S>,
 |};

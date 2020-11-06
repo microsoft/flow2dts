@@ -1,4 +1,6 @@
-const React = require("react");
+// @flow
+declare var React: typeof $1;
+const $1 = require("react");
 
 declare var shallow: (Component: React.Element<any>) => any;
 

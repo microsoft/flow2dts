@@ -1,3 +1,4 @@
+// @flow
 declare type FetchSegmentFunction = typeof __fetchSegment;
 declare type GetSegmentFunction = typeof __getSegment;
 declare function __fetchSegment(segmentId: number, options:

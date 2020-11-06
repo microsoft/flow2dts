@@ -1,3 +1,4 @@
+// @flow
 import { ReactNativeBaseComponentViewConfig } from "./ReactNativeTypes";
 import { ViewConfigGetter } from "./ReactNativeTypes";
 declare var customBubblingEventTypes: {

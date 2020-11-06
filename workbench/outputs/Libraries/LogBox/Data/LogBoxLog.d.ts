@@ -1,3 +1,4 @@
+// @flow
 import { Category } from "./parseLogBoxLog";
 import { Message } from "./parseLogBoxLog";
 import { ComponentStack } from "./parseLogBoxLog";

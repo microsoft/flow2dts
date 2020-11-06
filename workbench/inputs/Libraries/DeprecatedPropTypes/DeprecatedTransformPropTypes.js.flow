@@ -1,3 +1,4 @@
+// @flow
 declare var TransformMatrixPropType: (
   props: Object,
   propName: string,
@@ -14,18 +15,18 @@ declare var DeprecatedTransformPropTypes: {|
   transform: React$PropType$Primitive<
     Array<
       
-        | {perspective?: number, ...}
-        | {rotate?: string, ...}
-        | {rotateX?: string, ...}
-        | {rotateY?: string, ...}
-        | {rotateZ?: string, ...}
-        | {scale?: number, ...}
-        | {scaleX?: number, ...}
-        | {scaleY?: number, ...}
-        | {translateX?: number, ...}
-        | {translateY?: number, ...}
-        | {skewX?: string, ...}
-        | {skewY?: string, ...},
+        | {perspective?: number,...}
+        | {rotate?: string,...}
+        | {rotateX?: string,...}
+        | {rotateY?: string,...}
+        | {rotateZ?: string,...}
+        | {scale?: number,...}
+        | {scaleX?: number,...}
+        | {scaleY?: number,...}
+        | {translateX?: number,...}
+        | {translateY?: number,...}
+        | {skewX?: string,...}
+        | {skewY?: string,...},
     >,
   >,
   transformMatrix: typeof TransformMatrixPropType,

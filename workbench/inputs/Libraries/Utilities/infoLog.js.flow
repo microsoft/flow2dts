@@ -1,0 +1,4 @@
+// @flow
+declare function infoLog(...args: Array<mixed>): void;
+
+declare module.exports: typeof infoLog;

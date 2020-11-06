@@ -1,7 +1,11 @@
+// @flow
 import type {TurboModule} from "../TurboModule/RCTExport";
 
 interface Spec extends TurboModule {
-  +getConstants: () => {|isRTL: boolean, doLeftAndRightSwapInRTL: boolean|},
+  +getConstants: () => {|
+    isRTL: boolean,
+    doLeftAndRightSwapInRTL: boolean,
+  |},
   allowRTL: (allowRTL: boolean) => void,
   forceRTL: (forceRTL: boolean) => void,
   swapLeftAndRightInRTL: (flipStyles: boolean) => void,

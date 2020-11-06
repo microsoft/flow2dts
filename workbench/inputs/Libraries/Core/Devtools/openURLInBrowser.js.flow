@@ -1,3 +1,4 @@
+// @flow
 declare function openURLInBrowser(url: string): void;
 
 declare module.exports: typeof openURLInBrowser;

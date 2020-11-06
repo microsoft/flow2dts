@@ -1,7 +1,11 @@
-declare const Blob;
-declare type ReadyState = 0 | 1 | 2;
+// @flow
+declare var Blob: typeof $1;
+declare const $1;
+declare type ReadyState = 0 // EMPTY
+| 1 // LOADING
+| 2;
 declare type ReaderResult = string | ArrayBuffer;
-declare class FileReader extends $TEMPORARY$Super$FlowFixMe {
+declare class FileReader extends $2 {
   EMPTY: number;
   LOADING: number;
   DONE: number;
@@ -17,5 +21,6 @@ declare class FileReader extends $TEMPORARY$Super$FlowFixMe {
   error: () => null | undefined | Error;
   result: () => null | undefined | ReaderResult;
 }
+declare var $2: any;
 declare const $f2tExportDefault: typeof FileReader;
 export default $f2tExportDefault;

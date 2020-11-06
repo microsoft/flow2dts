@@ -1,3 +1,4 @@
+// @flow
 import { TurboModule } from "../TurboModule/RCTExport";
 interface Spec extends TurboModule {
   readonly getConstants: () => Object;
@@ -5,6 +6,7 @@ interface Spec extends TurboModule {
   readonly getDefaultEventTypes: () => string[];
   readonly playTouchSound: () => void;
   readonly lazilyLoadView: (name: string) => Object;
+  // revisit return
   readonly createView: (reactTag: null | undefined | number, viewName: string, rootTag: number, props: Object) => void;
   readonly updateView: (reactTag: number, viewName: string, props: Object) => void;
   readonly focus: (reactTag: null | undefined | number) => void;
@@ -23,6 +25,7 @@ interface Spec extends TurboModule {
   readonly replaceExistingNonRootView: (reactTag: null | undefined | number, newReactTag: null | undefined | number) => void;
   readonly setChildren: (containerTag: null | undefined | number, reactTags: number[]) => void;
   readonly manageChildren: (containerTag: null | undefined | number, moveFromIndices: number[], moveToIndices: number[], addChildReactTags: number[], addAtIndices: number[], removeAtIndices: number[]) => void;
+  // Android only
   readonly setLayoutAnimationEnabledExperimental: (enabled: boolean) => void;
   readonly sendAccessibilityEvent: (reactTag: null | undefined | number, eventType: number) => void;
   readonly showPopupMenu: (reactTag: null | undefined | number, items: string[], error: (error: Object) => void, success: (event: string, selected?: number) => void) => void;

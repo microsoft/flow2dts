@@ -1,3 +1,4 @@
+// @flow
 import { TurboModule } from "../TurboModule/RCTExport";
 declare type PermissionStatus = string;
 declare type PermissionType = string;

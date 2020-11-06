@@ -1,6 +1,9 @@
+// @flow
+import type {ColorValue} from "../StyleSheet/StyleSheetTypes";
+import type {ProcessedColorValue} from "../StyleSheet/processColor";
+
 declare var ActionSheetIOS: {|
-  
-/**
+  /**
    * Display an iOS action sheet.
    *
    * The `options` object must contain one or more of:
@@ -15,7 +18,8 @@ declare var ActionSheetIOS: {|
    * of the selected item.
    *
    * See https://reactnative.dev/docs/actionsheetios.html#showactionsheetwithoptions
-   */showActionSheetWithOptions(
+   */
+  showActionSheetWithOptions(
     options: {|
       +title?: ?string,
       +message?: ?string,
@@ -23,12 +27,13 @@ declare var ActionSheetIOS: {|
       +destructiveButtonIndex?: ?number | ?Array<number>,
       +cancelButtonIndex?: ?number,
       +anchor?: ?number,
-      +tintColor?: number | string,
+      +tintColor?: ColorValue | ProcessedColorValue,
+      +userInterfaceStyle?: string,
     |},
     callback: (buttonIndex: number) => void
   ): void,
   
-/**
+  /**
    * Display the iOS share sheet. The `options` object should contain
    * one or both of `message` and `url` and can additionally have
    * a `subject` or `excludedActivityTypes`:
@@ -50,7 +55,8 @@ declare var ActionSheetIOS: {|
    * - a string that, in the case of success, indicates the method of sharing
    *
    * See https://reactnative.dev/docs/actionsheetios.html#showshareactionsheetwithoptions
-   */showShareActionSheetWithOptions(
+   */
+  showShareActionSheetWithOptions(
     options: Object,
     failureCallback: Function,
     successCallback: Function

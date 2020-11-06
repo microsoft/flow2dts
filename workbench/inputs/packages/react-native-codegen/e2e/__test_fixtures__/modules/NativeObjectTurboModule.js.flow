@@ -1,3 +1,4 @@
+// @flow
 import type {TurboModule} from "react-native/Libraries/TurboModule/RCTExport";
 
 type GenericObject = Object;
@@ -8,17 +9,41 @@ interface Spec extends TurboModule {
   +getGenericObjectReadOnly: (arg: Object) => $ReadOnly<{|a: string|}>,
   +getGenericObjectWithAlias: (arg: GenericObject) => AnotherGenericObject,
   +difficultObject: (
-    A: {|D: boolean, E: {|D: boolean, E: number, F: string|}, F: string|}
+    A: {|
+      D: boolean,
+      E: {|
+        D: boolean,
+        E: number,
+        F: string,
+      |},
+      F: string,
+    |}
   ) => {|
     D: boolean,
-    E: {|D: boolean, E: {|D: boolean, E: number, F: string|}, F: string|},
+    E: {|
+      D: boolean,
+      E: {|
+        D: boolean,
+        E: number,
+        F: string,
+      |},
+      F: string,
+    |},
     F: string,
   |},
   +getConstants: () => {|
     D: boolean,
     E: {|
       D: boolean,
-      E: {|D: boolean, E: {|D: boolean, E: number, F: string|}, F: string|},
+      E: {|
+        D: boolean,
+        E: {|
+          D: boolean,
+          E: number,
+          F: string,
+        |},
+        F: string,
+      |},
       F: string,
     |},
     F: string,

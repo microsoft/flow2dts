@@ -1,8 +1,11 @@
+// @flow
 import type {SchemaType} from "../../../CodegenSchema.js";
 import type {MethodTypeShape} from "../../../CodegenSchema.js";
 
 type NativeModuleSchemaBuilderConfig = $ReadOnly<
-  {|properties: $ReadOnlyArray<MethodTypeShape>|},
+  {|
+    properties: $ReadOnlyArray<MethodTypeShape>,
+  |},
 >;
 
 declare function buildModuleSchema(
@@ -11,4 +14,6 @@ declare function buildModuleSchema(
 ): SchemaType;
 export type {NativeModuleSchemaBuilderConfig};
 
-declare module.exports: {|buildModuleSchema: typeof buildModuleSchema|};
+declare module.exports: {|
+  buildModuleSchema: typeof buildModuleSchema,
+|};

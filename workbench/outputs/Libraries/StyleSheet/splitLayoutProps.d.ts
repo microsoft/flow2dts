@@ -1,3 +1,4 @@
+// @flow
 import { DangerouslyImpreciseStyle } from "./StyleSheet";
 declare function splitLayoutProps(props: null | undefined | DangerouslyImpreciseStyle) => {
   outer: DangerouslyImpreciseStyle;

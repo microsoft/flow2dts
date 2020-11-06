@@ -1,4 +1,6 @@
-declare const AnimatedValue;
+// @flow
+declare var AnimatedValue: typeof $1;
+declare const $1;
 declare type Mapping = {
   [key: string]: Mapping;
 } | AnimatedValue;

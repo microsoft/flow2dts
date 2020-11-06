@@ -1,3 +1,4 @@
+// @flow
 declare var NOT_A_NATIVE_COMPONENT: string;
 
 declare var FULL_NATIVE_COMPONENT: string;

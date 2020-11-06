@@ -1,4 +1,6 @@
-declare const ReactNativeStyleAttributes;
+// @flow
+declare var ReactNativeStyleAttributes: typeof $1;
+declare const $1;
 declare var UIView:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

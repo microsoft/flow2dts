@@ -1,5 +1,6 @@
-import type {EventHandlers} from "./Pressability.js";
-import type {PressabilityConfig} from "./Pressability.js";
+// @flow
+import type {EventHandlers} from "./Pressability";
+import type {PressabilityConfig} from "./Pressability";
 
 declare function usePressability(config: PressabilityConfig): EventHandlers;
 export {usePressability as default};

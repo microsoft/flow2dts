@@ -1,16 +1,23 @@
-type ExtraData = {[key: string]: string, ...};
+// @flow
+type ExtraData = {[key: string]: string,...};
 type SourceCallback = () => string;
-type DebugData = {extras: ExtraData, files: ExtraData, ...};
+type DebugData = {
+  extras: ExtraData,
+  files: ExtraData,
+  ...,
+};
 
 declare class BugReporting {
-  static addSource(key: string, callback: SourceCallback): {
-    remove: () => void,
-    ...,
-  },
-  static addFileSource(key: string, callback: SourceCallback): {
-    remove: () => void,
-    ...,
-  },
+  static addSource(
+    key: string,
+    callback: SourceCallback
+  ): {remove: () => void,...},
+  
+  static addFileSource(
+    key: string,
+    callback: SourceCallback
+  ): {remove: () => void,...},
+  
   static collectExtraData(): DebugData,
 }
 

@@ -1,5 +1,10 @@
+// @flow
 declare var PointPropType: React$PropType$Primitive<
-  {x?: number, y?: number, ...},
+  {
+    x?: number,
+    y?: number,
+    ...,
+  },
 >;
 
 declare module.exports: typeof PointPropType;

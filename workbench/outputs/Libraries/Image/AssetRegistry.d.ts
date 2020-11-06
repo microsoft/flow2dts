@@ -1,3 +1,4 @@
+// @flow
 declare type PackagerAsset = {
   readonly __packager_asset: boolean;
   readonly fileSystemLocation: string;

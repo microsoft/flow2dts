@@ -1,9 +1,18 @@
-const DeprecatedColorPropType = require("./DeprecatedColorPropType");
-const ReactPropTypes = require("prop-types");
+// @flow
+declare var DeprecatedColorPropType: typeof $1;
+const $1 = require("./DeprecatedColorPropType");
+declare var ReactPropTypes: typeof $2;
+const $2 = require("prop-types");
 
 declare var DeprecatedShadowPropTypesIOS: {|
   shadowColor: typeof DeprecatedColorPropType,
-  shadowOffset: React$PropType$Primitive<{height?: number, width?: number, ...}>,
+  shadowOffset: React$PropType$Primitive<
+    {
+      height?: number,
+      width?: number,
+      ...,
+    },
+  >,
   shadowOpacity: typeof ReactPropTypes.number,
   shadowRadius: typeof ReactPropTypes.number,
 |};

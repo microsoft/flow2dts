@@ -1,15 +1,28 @@
-const React = require("react");
+// @flow
+declare var React: typeof $2;
+const $2 = require("react");
 
-type Props = $ReadOnly<{|shouldThrow?: boolean, waitOneFrame?: boolean|}>;
+type Props = $ReadOnly<
+  {|
+    shouldThrow?: boolean,
+    waitOneFrame?: boolean,
+  |},
+>;
 
-type State = {|done: boolean|};
+type State = {|
+  done: boolean,
+|};
 
 declare class IntegrationTestHarnessTest
-  extends React.Component<Props, State> {
+  extends $1<Props, State> {
   state: State,
+  
   componentDidMount(): void,
+  
   runTest: () => void,
+  
   render(): React.Node,
 }
+declare var $1: typeof React.Component;
 
 declare module.exports: typeof IntegrationTestHarnessTest;

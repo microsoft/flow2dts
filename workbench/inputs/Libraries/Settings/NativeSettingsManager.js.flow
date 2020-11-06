@@ -1,7 +1,10 @@
+// @flow
 import type {TurboModule} from "../TurboModule/RCTExport";
 
 interface Spec extends TurboModule {
-  +getConstants: () => {|settings: Object|},
+  +getConstants: () => {|
+    settings: Object,
+  |},
   +setValues: (values: Object) => void,
   +deleteValues: (values: Array<string>) => void,
 }

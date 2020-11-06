@@ -1,6 +1,10 @@
+// @flow
 import type {TurboModule} from "react-native/Libraries/TurboModule/RCTExport";
 
-interface Spec extends TurboModule {+show: () => void, +hide: () => void}
+interface Spec extends TurboModule {
+  +show: () => void,
+  +hide: () => void,
+}
 export type {Spec};
 
 declare export default ?Spec;

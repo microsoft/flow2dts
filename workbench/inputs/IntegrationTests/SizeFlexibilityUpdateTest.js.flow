@@ -1,18 +1,34 @@
-const React = require("react");
+// @flow
+declare var React: typeof $1;
+const $1 = require("react");
 
 type Props = $ReadOnly<
-  {|width: boolean, height: boolean, both: boolean, none: boolean|},
+  {|
+    width: boolean,
+    height: boolean,
+    both: boolean,
+    none: boolean,
+  |},
 >;
 
 declare class SizeFlexibilityUpdateTest
-  extends React.Component<Props> {
+  extends $2<Props> {
   UNSAFE_componentWillMount(): void,
+  
   componentWillUnmount(): void,
+  
   markPassed: () => void,
+  
   rootViewDidChangeIntrinsicSize: (
-    intrinsicSize: {height: number, width: number, ...}
+    intrinsicSize: {
+      height: number,
+      width: number,
+      ...,
+    }
   ) => void,
+  
   render(): React.Node,
 }
+declare var $2: typeof React.Component;
 
 declare module.exports: typeof SizeFlexibilityUpdateTest;

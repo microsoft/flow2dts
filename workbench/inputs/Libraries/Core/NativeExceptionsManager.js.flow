@@ -1,3 +1,4 @@
+// @flow
 import type {TurboModule} from "../TurboModule/RCTExport";
 
 type StackFrame = {|
@@ -17,27 +18,31 @@ type ExceptionData = {
   id: number,
   isFatal: boolean,
   // flowlint-next-line unclear-type:off
-extraData?: Object,
+  extraData?: Object,
   ...,
 };
 
 interface Spec extends TurboModule {
+  // Deprecated: Use `reportException`
   +reportFatalException: (
     message: string,
     stack: Array<StackFrame>,
     exceptionId: number
   ) => void,
+  // Deprecated: Use `reportException`
   +reportSoftException: (
     message: string,
     stack: Array<StackFrame>,
     exceptionId: number
   ) => void,
+  // TODO(T53311281): This is a noop on iOS now. Implement it.
   +reportException?: (data: ExceptionData) => void,
   +updateExceptionMessage: (
     message: string,
     stack: Array<StackFrame>,
     exceptionId: number
   ) => void,
+  // TODO(T53311281): This is a noop on iOS now. Implement it.
   +dismissRedbox?: () => void,
 }
 

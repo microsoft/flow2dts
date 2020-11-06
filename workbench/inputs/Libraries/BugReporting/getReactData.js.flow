@@ -1,3 +1,4 @@
+// @flow
 declare function getData(element: Object): Object;
 
 declare module.exports: typeof getData;

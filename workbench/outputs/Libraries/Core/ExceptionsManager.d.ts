@@ -1,7 +1,9 @@
+// @flow
 import { ExceptionData } from "./NativeExceptionsManager";
-declare class SyntheticError extends Error {
+declare class SyntheticError extends $1 {
   name: string;
 }
+declare var $1: typeof Error;
 declare type ExceptionDecorator = ($f2t1: ExceptionData) => ExceptionData;
 declare function unstable_setExceptionDecorator(exceptionDecorator: null | undefined | ExceptionDecorator) => void;
 declare function handleException(e: unknown, isFatal: boolean) => void;

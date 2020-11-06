@@ -1,5 +1,11 @@
+// @flow
 type Rect = $ReadOnly<
-  {|bottom?: ?number, left?: ?number, right?: ?number, top?: ?number|},
+  {|
+    bottom?: ?number,
+    left?: ?number,
+    right?: ?number,
+    top?: ?number,
+  |},
 >;
 
 type RectOrSize = Rect | number;

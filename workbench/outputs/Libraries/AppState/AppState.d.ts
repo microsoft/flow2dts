@@ -1,6 +1,9 @@
-declare const EventEmitter;
-declare const NativeEventEmitter;
-declare class AppState extends NativeEventEmitter {
+// @flow
+declare var EventEmitter: typeof $2;
+declare const $2;
+declare var NativeEventEmitter: typeof $4;
+declare const $4;
+declare class AppState extends $1 {
   currentState: null | undefined | string;
   isAvailable: boolean;
   constructor: () => void;
@@ -11,21 +14,22 @@ declare class AppState extends NativeEventEmitter {
   // (addListener events are currently required to be globally unique).
 
   /**
-     * Add a handler to AppState changes by listening to the `change` event type
-     * and providing the handler.
-     *
-     * See https://reactnative.dev/docs/appstate.html#addeventlistener
-     */
+   * Add a handler to AppState changes by listening to the `change` event type
+   * and providing the handler.
+   *
+   * See https://reactnative.dev/docs/appstate.html#addeventlistener
+   */
   addEventListener: (type: string, handler: Function) => void;
 
   /**
-     * Remove a handler by passing the `change` event type and the handler.
-     *
-     * See https://reactnative.dev/docs/appstate.html#removeeventlistener
-     */
+   * Remove a handler by passing the `change` event type and the handler.
+   *
+   * See https://reactnative.dev/docs/appstate.html#removeeventlistener
+   */
   removeEventListener: (type: string, handler: Function) => void;
 }
-declare class MissingNativeAppStateShim extends EventEmitter {
+declare var $1: typeof NativeEventEmitter;
+declare class MissingNativeAppStateShim extends $3 {
   // AppState
   isAvailable: boolean;
   currentState: null | undefined | string;
@@ -36,6 +40,7 @@ declare class MissingNativeAppStateShim extends EventEmitter {
   removeAllListeners: () => void;
   removeSubscription: () => void;
 }
+declare var $3: typeof EventEmitter;
 declare var AppStateInstance: AppState | MissingNativeAppStateShim;
 declare const $f2tExportDefault: typeof AppStateInstance;
 export default $f2tExportDefault;

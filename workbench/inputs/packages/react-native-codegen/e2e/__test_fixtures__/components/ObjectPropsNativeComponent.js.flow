@@ -1,3 +1,4 @@
+// @flow
 import type {ViewProps} from "../../../../../Libraries/Components/View/ViewPropTypes";
 import type {ImageSource} from "../../../../../Libraries/Image/ImageSource";
 import type {PointValue} from "../../../../../Libraries/StyleSheet/StyleSheetTypes";
@@ -8,13 +9,18 @@ import type {WithDefault} from "../../../../../Libraries/Types/CodegenTypes";
 
 import type {HostComponent} from "../../../../../Libraries/Renderer/shims/ReactNativeTypes";
 
-type ObjectArrayPropType = $ReadOnly<{|array: $ReadOnlyArray<string>|}>;
+type ObjectArrayPropType = $ReadOnly<
+  {|
+    array: $ReadOnlyArray<string>,
+  |},
+>;
 
 type NativeProps = $ReadOnly<
   {|
     ...ViewProps,
+    
     // Props
-objectProp?: $ReadOnly<
+    objectProp?: $ReadOnly<
       {|
         stringProp?: WithDefault<string, ''>,
         booleanProp: boolean,
@@ -26,7 +32,11 @@ objectProp?: $ReadOnly<
     >,
     objectArrayProp: ObjectArrayPropType,
     objectPrimitiveRequiredProp: $ReadOnly<
-      {|image: ImageSource, color?: ColorValue, point: ?PointValue|},
+      {|
+        image: ImageSource,
+        color?: ColorValue,
+        point: ?PointValue,
+      |},
     >,
   |},
 >;

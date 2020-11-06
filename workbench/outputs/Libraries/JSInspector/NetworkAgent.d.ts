@@ -1,4 +1,6 @@
-declare const InspectorAgent;
+// @flow
+declare var InspectorAgent: typeof $1;
+declare const $1;
 declare type RequestId = string;
 declare class Interceptor {
   constructor: (agent: NetworkAgent) => void;
@@ -13,7 +15,7 @@ declare type EnableArgs = {
   maxResourceBufferSize?: number;
   maxTotalBufferSize?: number;
 };
-declare class NetworkAgent extends InspectorAgent {
+declare class NetworkAgent extends $2 {
   DOMAIN: string;
   enable: ($f2t1: EnableArgs) => void;
   disable: () => void;
@@ -25,5 +27,6 @@ declare class NetworkAgent extends InspectorAgent {
   };
   interceptor: () => Interceptor;
 }
+declare var $2: typeof InspectorAgent;
 declare const $f2tExportDefault: typeof NetworkAgent;
 export default $f2tExportDefault;

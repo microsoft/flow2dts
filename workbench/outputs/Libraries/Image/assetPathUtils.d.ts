@@ -1,6 +1,7 @@
+// @flow
 import { PackagerAsset } from "./AssetRegistry";
 declare function getAndroidAssetSuffix(scale: number) => string;
-declare function getAndroidResourceFolderName(asset: PackagerAsset, scale: number) => string;
+declare function getAndroidResourceFolderName(asset: PackagerAsset, scale: number) => string | string;
 declare function getAndroidResourceIdentifier(asset: PackagerAsset) => string;
 declare function getBasePath(asset: PackagerAsset) => string;
 declare const $f2tExportDefault:

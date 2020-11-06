@@ -1,4 +1,5 @@
-import BatchedBridge$f2tTypeof from "../BatchedBridge/BatchedBridge.js";
+// @flow
+import BatchedBridge$f2tTypeof from "../BatchedBridge/BatchedBridge";
 declare type BatchedBridge = typeof BatchedBridge$f2tTypeof;
 import ExceptionsManager$f2tTypeof from "../Core/ExceptionsManager";
 declare type ExceptionsManager = typeof ExceptionsManager$f2tTypeof;

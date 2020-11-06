@@ -1,3 +1,4 @@
+// @flow
 import * as React from "react";
 
 import type LogBoxLog from "./Data/LogBoxLog";
@@ -11,7 +12,10 @@ type Props = $ReadOnly<
 >;
 
 declare class _LogBoxInspectorContainer
-  extends React.Component<Props> {render(): React.Node}
+  extends $1<Props> {
+  render(): React.Node,
+}
+declare var $1: typeof React.Component;
 export {_LogBoxInspectorContainer};
 
 declare export default React.AbstractComponent<{||}>;

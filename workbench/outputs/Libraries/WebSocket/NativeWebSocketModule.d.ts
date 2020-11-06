@@ -1,3 +1,4 @@
+// @flow
 import { TurboModule } from "../TurboModule/RCTExport";
 interface Spec extends TurboModule {
   readonly connect: (url: string, protocols: null | undefined | string[], options:
@@ -9,6 +10,7 @@ interface Spec extends TurboModule {
   readonly sendBinary: (base64String: string, forSocketID: number) => void;
   readonly ping: (socketID: number) => void;
   readonly close: (code: number, reason: string, socketID: number) => void;
+  // RCTEventEmitter
   readonly addListener: (eventName: string) => void;
   readonly removeListeners: (count: number) => void;
 }

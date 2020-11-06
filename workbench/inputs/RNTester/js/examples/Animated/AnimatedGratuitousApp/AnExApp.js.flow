@@ -1,13 +1,22 @@
-const React = require("react");
+// @flow
+declare var React: typeof $2;
+const $2 = require("react");
 
 declare class AnExApp
-  extends React.Component<any, any> {
+  extends $1<any, any> {
   constructor(props: any): void,
+  
   render(): React.Node,
 }
+declare var $1: typeof React.Component;
 
 declare module.exports: {|
-  examples: Array<{|title: string, render(): React.Element<typeof AnExApp>|}>,
+  examples: Array<
+    {|
+      title: string,
+      render(): React.Element<typeof AnExApp>,
+    |},
+  >,
   description: string,
   title: string,
 |};

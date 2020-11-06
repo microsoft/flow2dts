@@ -1,3 +1,4 @@
+// @flow
 declare type LogLevel = "trace" | "info" | "warn" | "error" | "log" | "group" | "groupCollapsed" | "groupEnd" | "debug";
 declare type HMRClientNativeInterface =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

@@ -1,3 +1,4 @@
+// @flow
 type Handle = number;
 import type {Task} from "./TaskQueue";
 
@@ -7,31 +8,37 @@ declare var InteractionManager: {|
     interactionComplete: 'interactionComplete',
   |},
   
-/**
+  /**
    * Schedule a function to run after all interactions have completed. Returns a cancellable
    * "promise".
-   */runAfterInteractions(
+   */
+  runAfterInteractions(
     task: ?Task
-  ): {then: Function, done: Function, cancel: Function, ...},
+  ): {
+    then: Function,
+    done: Function,
+    cancel: Function,
+    ...,
+  },
   
-/**
+  /**
    * Notify manager that an interaction has started.
-   */createInteractionHandle(): Handle,
+   */
+  createInteractionHandle(): Handle,
   
-/**
+  /**
    * Notify manager that an interaction has completed.
-   */clearInteractionHandle(
-    handle: Handle
-  ): void,
+   */
+  clearInteractionHandle(handle: Handle): void,
+  
   addListener: $FlowFixMe,
   
-/**
+  /**
    * A positive number will use setTimeout to schedule any tasks after the
    * eventLoopRunningTime hits the deadline value, otherwise all tasks will be
    * executed in one setImmediate batch (default).
-   */setDeadline(
-    deadline: number
-  ): void,
+   */
+  setDeadline(deadline: number): void,
 |};
 export type {Handle};
 

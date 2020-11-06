@@ -1,2 +1,1 @@
-declare const $f2tExportDefault: $FlowFixMe;
-export default $f2tExportDefault;
+[FLOW2DTS - Error] Cannot create property 'message' on string 'QualifiedTypeIdentifier not supported yet'

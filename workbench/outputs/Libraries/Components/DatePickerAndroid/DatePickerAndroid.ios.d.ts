@@ -1,3 +1,4 @@
+// @flow
 import { Options } from "./DatePickerAndroidTypes";
 import { DatePickerOpenAction } from "./DatePickerAndroidTypes";
 declare class DatePickerAndroid {

@@ -1,32 +1,54 @@
-const React = require("react");
+// @flow
+declare var React: typeof $3;
+const $3 = require("react");
 
-const {View} = require("react-native");
+declare var View: typeof $5.View;
+declare var $5: typeof $4;
+const $4 = require("react-native");
 
 type Props = $ReadOnly<{||}>;
-type ChangingChildrenState = {|alternateChildren: boolean|};
+type ChangingChildrenState = {|
+  alternateChildren: boolean,
+|};
 
 declare class AnimatedMaskExample
-  extends React.Component<Props> {
+  extends $1<Props> {
   componentDidMount(): void,
+  
   render(): React.Node,
 }
+declare var $1: typeof React.Component;
 
 declare class ChangingChildrenMaskExample
-  extends React.Component<Props, ChangingChildrenState> {
+  extends $2<Props, ChangingChildrenState> {
   state: ChangingChildrenState,
+  
   componentDidMount(): void,
+  
   render(): React.Node,
 }
+declare var $2: typeof React.Component;
 
 declare module.exports: {|
   examples: Array<
-    | {|title: string, render: () => React.Element<typeof View>|}
-    | {|title: string, render: () => React.Element<typeof View>|}
-    | {|title: string, render: () => React.Element<typeof AnimatedMaskExample>|}
-    | {|
-      title: string,
-      render: () => React.Element<typeof ChangingChildrenMaskExample>,
-    |}>,
+    
+      | {|
+        title: string,
+        render: () => React.Element<typeof View>,
+      |}
+      | {|
+        title: string,
+        render: () => React.Element<typeof View>,
+      |}
+      | {|
+        title: string,
+        render: () => React.Element<typeof AnimatedMaskExample>,
+      |}
+      | {|
+        title: string,
+        render: () => React.Element<typeof ChangingChildrenMaskExample>,
+      |},
+  >,
   description: string,
   title: string,
 |};

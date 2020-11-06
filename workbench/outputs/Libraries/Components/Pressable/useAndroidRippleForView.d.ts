@@ -1,7 +1,7 @@
-[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/Components/Pressable/useAndroidRippleForView.js.flow: Export 'useAndroidRippleForView' is not defined (21:8)
+[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/Components/Pressable/useAndroidRippleForView.js.flow: Export 'useAndroidRippleForView' is not defined (39:8)
 
-  19 |   |},
-  20 | >;
-> 21 | export {useAndroidRippleForView as default};
+  37 | export type {RippleConfig};
+  38 | 
+> 39 | export {useAndroidRippleForView as default};
      |         ^
-  22 | 
+  40 | 

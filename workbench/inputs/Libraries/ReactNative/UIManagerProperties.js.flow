@@ -1,1 +1,40 @@
-declare module.exports: Array<string>;
+// @flow
+declare module.exports: Array<
+  
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string
+    | string,
+>;

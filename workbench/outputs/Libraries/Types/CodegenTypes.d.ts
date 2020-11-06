@@ -1,16 +1,16 @@
 [FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/Types/CodegenTypes.js.flow: EmptyTypeAnnotation(node is not a TypeScript type:
 {
     "type": "EmptyTypeAnnotation",
-    "start": 104,
-    "end": 109,
+    "start": 118,
+    "end": 123,
     "loc": {
         "start": {
-            "line": 3,
-            "column": 49
+            "line": 6,
+            "column": 22
         },
         "end": {
-            "line": 3,
-            "column": 54
+            "line": 6,
+            "column": 27
         }
     }
 }

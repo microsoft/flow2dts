@@ -1,3 +1,4 @@
+// @flow
 import type {SyntheticEvent} from "../../Types/CoreEventTypes";
 
 type AccessibilityRole = 
@@ -29,10 +30,16 @@ type AccessibilityRole =
   | 'timer'
   | 'toolbar';
 
-type AccessibilityActionInfo = $ReadOnly<{name: string, label?: string, ...}>;
+type AccessibilityActionInfo = $ReadOnly<
+  {
+    name: string,
+    label?: string,
+    ...,
+  },
+>;
 
 type AccessibilityActionEvent = SyntheticEvent<
-  $ReadOnly<{actionName: string, ...}>,
+  $ReadOnly<{actionName: string,...}>,
 >;
 
 type AccessibilityState = {
@@ -46,22 +53,25 @@ type AccessibilityState = {
 
 type AccessibilityValue = $ReadOnly<
   {|
-    
-/**
+    /**
    * The minimum value of this component's range. (should be an integer)
-   */min?: number,
+   */
+    min?: number,
     
-/**
+    /**
    * The maximum value of this component's range. (should be an integer)
-   */max?: number,
+   */
+    max?: number,
     
-/**
+    /**
    * The current value of this component's range. (should be an integer)
-   */now?: number,
+   */
+    now?: number,
     
-/**
+    /**
    * A textual description of this component's value. (will override minimum, current, and maximum if set)
-   */text?: string,
+   */
+    text?: string,
   |},
 >;
 export type {AccessibilityRole};

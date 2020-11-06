@@ -1,3 +1,4 @@
+// @flow
 declare var FileReaderModule: {|
   readAsText(): Promise<string>,
   readAsDataURL(): Promise<string>,

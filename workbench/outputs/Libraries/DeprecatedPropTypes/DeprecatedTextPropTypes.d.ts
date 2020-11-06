@@ -1,9 +1,9 @@
-[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow: Unexpected reserved type number (23:37)
+[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow: Unexpected reserved type number (25:34)
 
-  21 |    *
-  22 |    * See https://reactnative.dev/docs/text.html#numberoflines
-> 23 |    */numberOfLines: typeof PropTypes.number,
-     |                                      ^
-  24 |   
-  25 | /**
-  26 |    * Set text break strategy on Android.
+  23 |    * See https://reactnative.dev/docs/text.html#numberoflines
+  24 |    */
+> 25 |   numberOfLines: typeof PropTypes.number,
+     |                                   ^
+  26 |   /**
+  27 |    * Set text break strategy on Android.
+  28 |    *

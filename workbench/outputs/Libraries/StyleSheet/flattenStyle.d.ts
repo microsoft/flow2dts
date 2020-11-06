@@ -1,3 +1,4 @@
+// @flow
 import { DangerouslyImpreciseStyle } from "./StyleSheet";
 import { DangerouslyImpreciseStyleProp } from "./StyleSheet";
 declare function flattenStyle(style: null | undefined | DangerouslyImpreciseStyleProp) => null | undefined | DangerouslyImpreciseStyle;

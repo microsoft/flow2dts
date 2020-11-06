@@ -1,4 +1,6 @@
-const AssetSourceResolver = require("./AssetSourceResolver");
+// @flow
+declare var AssetSourceResolver: typeof $1;
+const $1 = require("./AssetSourceResolver");
 
 import type {ResolvedAssetSource} from "./AssetSourceResolver";
 

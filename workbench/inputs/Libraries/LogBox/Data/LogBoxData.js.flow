@@ -1,3 +1,4 @@
+// @flow
 import * as React from "react";
 import LogBoxLog from "./LogBoxLog";
 
@@ -20,12 +21,22 @@ type LogData = $ReadOnly<
 >;
 
 type Observer = (
-  $ReadOnly<{|logs: LogBoxLogs, isDisabled: boolean, selectedLogIndex: number|}>
+  $ReadOnly<
+    {|
+      logs: LogBoxLogs,
+      isDisabled: boolean,
+      selectedLogIndex: number,
+    |},
+  >
 ) => void;
 
 type IgnorePattern = string | RegExp;
 
-type Subscription = $ReadOnly<{|unsubscribe: () => void|}>;
+type Subscription = $ReadOnly<
+  {|
+    unsubscribe: () => void,
+  |},
+>;
 
 type WarningInfo = {|
   finalFormat: string,
@@ -40,7 +51,11 @@ type WarningInfo = {|
 type WarningFilter = (format: string) => WarningInfo;
 
 type AppInfo = $ReadOnly<
-  {|appVersion: string, engine: string, onPress?: ?(() => void)|},
+  {|
+    appVersion: string,
+    engine: string,
+    onPress?: ?(() => void),
+  |},
 >;
 
 declare function reportLogBoxError(
@@ -80,7 +95,9 @@ declare function getAppInfo(): ?AppInfo;
 
 declare function checkWarningFilter(format: string): WarningInfo;
 
-declare function addIgnorePatterns(patterns: $ReadOnlyArray<IgnorePattern>): void;
+declare function addIgnorePatterns(
+  patterns: $ReadOnlyArray<IgnorePattern>
+): void;
 
 declare function setDisabled(value: boolean): void;
 
@@ -98,9 +115,9 @@ type SubscribedComponent = React.AbstractComponent<
   >,
 >;
 
-declare function withSubscription(WrappedComponent: SubscribedComponent): React.AbstractComponent<
-  {||},
->;
+declare function withSubscription(
+  WrappedComponent: SubscribedComponent
+): React.AbstractComponent<{||}>;
 export type {LogBoxLogs};
 export type {LogData};
 

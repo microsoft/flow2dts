@@ -1,14 +1,15 @@
+// @flow
 type ModuleConfig = [
-  string,
-  ?Object/* constants */,
-  ?$ReadOnlyArray<string>,
-  ?$ReadOnlyArray<number>,
-  ?$ReadOnlyArray<number>,
+  string /* name */,
+  ?Object /* constants */,
+  ?$ReadOnlyArray<string> /* functions */,
+  ?$ReadOnlyArray<number> /* promise method IDs */,
+  ?$ReadOnlyArray<number> /* sync method IDs */,
 ];
 
 type MethodType = 'async' | 'promise' | 'sync';
 
-declare var NativeModules: {[moduleName: string]: Object, ...};
+declare var NativeModules: {[moduleName: string]: Object,...};
 export type {ModuleConfig};
 
 export type {MethodType};

@@ -1,8 +1,14 @@
-const DeprecatedColorPropType = require("./DeprecatedColorPropType");
-const DeprecatedLayoutPropTypes = require("./DeprecatedLayoutPropTypes");
-const DeprecatedShadowPropTypesIOS = require("./DeprecatedShadowPropTypesIOS");
-const DeprecatedTransformPropTypes = require("./DeprecatedTransformPropTypes");
-const ReactPropTypes = require("prop-types");
+// @flow
+declare var DeprecatedColorPropType: typeof $1;
+const $1 = require("./DeprecatedColorPropType");
+declare var DeprecatedLayoutPropTypes: typeof $2;
+const $2 = require("./DeprecatedLayoutPropTypes");
+declare var DeprecatedShadowPropTypesIOS: typeof $3;
+const $3 = require("./DeprecatedShadowPropTypesIOS");
+declare var DeprecatedTransformPropTypes: typeof $4;
+const $4 = require("./DeprecatedTransformPropTypes");
+declare var ReactPropTypes: typeof $5;
+const $5 = require("prop-types");
 
 declare var ImageStylePropTypes: {|
   ...typeof DeprecatedLayoutPropTypes,
@@ -18,12 +24,12 @@ declare var ImageStylePropTypes: {|
   borderRadius: typeof ReactPropTypes.number,
   overflow: React$PropType$Primitive<'visible' | 'hidden'>,
   
-/**
+  /**
    * Changes the color of all the non-transparent pixels to the tintColor.
-   */tintColor: typeof DeprecatedColorPropType,
+   */
+  tintColor: typeof DeprecatedColorPropType,
   opacity: typeof ReactPropTypes.number,
-  
-/**
+  /**
    * When the image has rounded corners, specifying an overlayColor will
    * cause the remaining space in the corners to be filled with a solid color.
    * This is useful in cases which are not supported by the Android
@@ -39,9 +45,11 @@ declare var ImageStylePropTypes: {|
    * http://frescolib.org/docs/rounded-corners-and-circles.html
    *
    * @platform android
-   */overlayColor: typeof ReactPropTypes.string,
+   */
+  overlayColor: typeof ReactPropTypes.string,
+  
   // Android-Specific styles
-borderTopLeftRadius: typeof ReactPropTypes.number,
+  borderTopLeftRadius: typeof ReactPropTypes.number,
   borderTopRightRadius: typeof ReactPropTypes.number,
   borderBottomLeftRadius: typeof ReactPropTypes.number,
   borderBottomRightRadius: typeof ReactPropTypes.number,

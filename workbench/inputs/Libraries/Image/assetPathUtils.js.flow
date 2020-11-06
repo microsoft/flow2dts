@@ -1,3 +1,4 @@
+// @flow
 import type {PackagerAsset} from "./AssetRegistry";
 
 declare function getAndroidAssetSuffix(scale: number): string;
@@ -5,7 +6,7 @@ declare function getAndroidAssetSuffix(scale: number): string;
 declare function getAndroidResourceFolderName(
   asset: PackagerAsset,
   scale: number
-): string;
+): string | string;
 
 declare function getAndroidResourceIdentifier(asset: PackagerAsset): string;
 

@@ -1,3 +1,4 @@
+// @flow
 import type {HostComponent} from "../../Renderer/shims/ReactNativeTypes";
 import type {ViewProps} from "../View/ViewPropTypes";
 import type {BubblingEventHandler} from "../../Types/CodegenTypes";
@@ -5,21 +6,28 @@ import type {WithDefault} from "../../Types/CodegenTypes";
 import type {Int32} from "../../Types/CodegenTypes";
 import type {ColorValue} from "../../StyleSheet/StyleSheetTypes";
 
-type OnChangeEvent = $ReadOnly<{|value: Int32, selectedSegmentIndex: Int32|}>;
+type OnChangeEvent = $ReadOnly<
+  {|
+    value: Int32,
+    selectedSegmentIndex: Int32,
+  |},
+>;
 
 type NativeProps = $ReadOnly<
   {|
     ...ViewProps,
+    
     // Props
-values?: $ReadOnlyArray<string>,
+    values?: $ReadOnlyArray<string>,
     selectedIndex?: WithDefault<Int32, 0>,
     enabled?: WithDefault<boolean, true>,
     tintColor?: ?ColorValue,
     textColor?: ?ColorValue,
     backgroundColor?: ?ColorValue,
     momentary?: WithDefault<boolean, false>,
+    
     // Events
-onChange?: ?BubblingEventHandler<OnChangeEvent>,
+    onChange?: ?BubblingEventHandler<OnChangeEvent>,
   |},
 >;
 export type {OnChangeEvent};

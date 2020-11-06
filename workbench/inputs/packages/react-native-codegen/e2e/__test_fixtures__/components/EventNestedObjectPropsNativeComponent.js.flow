@@ -1,3 +1,4 @@
+// @flow
 import type {Int32} from "../../../../../Libraries/Types/CodegenTypes";
 import type {BubblingEventHandler} from "../../../../../Libraries/Types/CodegenTypes";
 import type {WithDefault} from "../../../../../Libraries/Types/CodegenTypes";
@@ -6,16 +7,25 @@ import type {ViewProps} from "../../../../../Libraries/Components/View/ViewPropT
 import type {HostComponent} from "../../../../../Libraries/Renderer/shims/ReactNativeTypes";
 
 type OnChangeEvent = $ReadOnly<
-  {|location: {source: {url: string, ...}, x: Int32, y: Int32, ...}|},
+  {|
+    location: {
+      source: {url: string,...},
+      x: Int32,
+      y: Int32,
+      ...,
+    },
+  |},
 >;
 
 type NativeProps = $ReadOnly<
   {|
     ...ViewProps,
+    
     // Props
-disabled?: WithDefault<boolean, false>,
+    disabled?: WithDefault<boolean, false>,
+    
     // Events
-onChange?: ?BubblingEventHandler<OnChangeEvent>,
+    onChange?: ?BubblingEventHandler<OnChangeEvent>,
   |},
 >;
 

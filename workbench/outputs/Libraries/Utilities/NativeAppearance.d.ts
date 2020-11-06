@@ -1,3 +1,4 @@
+// @flow
 import { TurboModule } from "../TurboModule/RCTExport";
 declare type ColorSchemeName = "light" | "dark";
 declare type AppearancePreferences =
@@ -10,7 +11,12 @@ declare type AppearancePreferences =
   colorScheme?: null | undefined | string;
 };
 interface Spec extends TurboModule {
+  // TODO: (hramos) T52919652 Use ?ColorSchemeName once codegen supports union
+  // types.
+
+  /* 'light' | 'dark' */
   readonly getColorScheme: () => null | undefined | string;
+  // RCTEventEmitter
   readonly addListener: (eventName: string) => void;
   readonly removeListeners: (count: number) => void;
 }

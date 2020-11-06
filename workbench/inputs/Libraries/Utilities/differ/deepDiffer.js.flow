@@ -1,3 +1,4 @@
+// @flow
 type LogListeners = {|
   +onDifferentFunctionsIgnored: (nameOne: ?string, nameTwo: ?string) => void,
 |};
@@ -15,5 +16,8 @@ declare var deepDiffer: (
 
 declare module.exports: $TEMPORARY$module$exports$assign<
   typeof deepDiffer,
-  {unstable_setLogListeners: typeof unstable_setLogListeners, ...},
+  {
+    unstable_setLogListeners: typeof unstable_setLogListeners,
+    ...,
+  },
 >;

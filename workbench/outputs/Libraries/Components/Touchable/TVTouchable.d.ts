@@ -1,3 +1,4 @@
+// @flow
 import { BlurEvent } from "../../Types/CoreEventTypes";
 import { FocusEvent } from "../../Types/CoreEventTypes";
 import { PressEvent } from "../../Types/CoreEventTypes";

@@ -1,4 +1,7 @@
-type HermesStackLocationNative = {|+type: 'NATIVE'|};
+// @flow
+type HermesStackLocationNative = {|
+  +type: 'NATIVE',
+|};
 
 type HermesStackLocationSource = {|
   +type: 'SOURCE',
@@ -25,7 +28,10 @@ type HermesStackEntryFrame = {|
   +functionName: string,
 |};
 
-type HermesStackEntrySkipped = {|+type: 'SKIPPED', +count: number|};
+type HermesStackEntrySkipped = {|
+  +type: 'SKIPPED',
+  +count: number,
+|};
 
 type HermesStackEntry = HermesStackEntryFrame | HermesStackEntrySkipped;
 

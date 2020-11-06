@@ -1,3 +1,4 @@
+// @flow
 declare const $1;
 declare const $f2tExportDefault: typeof $1;
 export default $f2tExportDefault;

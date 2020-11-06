@@ -1,10 +1,16 @@
+// @flow
 type NativeResponseType = 'base64' | 'blob' | 'text';
 type ResponseType = '' | 'arraybuffer' | 'blob' | 'document' | 'json' | 'text';
 type Response = ?Object | string;
 
 type XHRInterceptor = {
   requestSent(id: number, url: string, method: string, headers: Object): void,
-  responseReceived(id: number, url: string, status: number, headers: Object): void,
+  responseReceived(
+    id: number,
+    url: string,
+    status: number,
+    headers: Object
+  ): void,
   dataReceived(id: number, data: string): void,
   loadingFinished(id: number, encodedDataLength: number): void,
   loadingFailed(id: number, error: string): void,
@@ -12,7 +18,7 @@ type XHRInterceptor = {
 };
 
 declare class XMLHttpRequestEventTarget
-  extends $TEMPORARY$Super$FlowFixMe {
+  extends $2 {
   onload: ?Function,
   onloadstart: ?Function,
   onprogress: ?Function,
@@ -21,21 +27,24 @@ declare class XMLHttpRequestEventTarget
   onabort: ?Function,
   onloadend: ?Function,
 }
+declare var $2: any;
 
 declare class XMLHttpRequest
-  extends $TEMPORARY$Super$FlowFixMe {
+  extends $1 {
   static UNSENT: number,
   static OPENED: number,
   static HEADERS_RECEIVED: number,
   static LOADING: number,
   static DONE: number,
+  
   UNSENT: number,
   OPENED: number,
   HEADERS_RECEIVED: number,
   LOADING: number,
   DONE: number,
+  
   // EventTarget automatically initializes these to `null`.
-onload: ?Function,
+  onload: ?Function,
   onloadstart: ?Function,
   onprogress: ?Function,
   ontimeout: ?Function,
@@ -43,67 +52,88 @@ onload: ?Function,
   onabort: ?Function,
   onloadend: ?Function,
   onreadystatechange: ?Function,
+  
   readyState: number,
   responseHeaders: ?Object,
   status: number,
   timeout: number,
   responseURL: ?string,
   withCredentials: boolean,
+  
   upload: XMLHttpRequestEventTarget,
+  
   static setInterceptor(interceptor: ?XHRInterceptor): void,
+  
   constructor(): void,
+  
   get responseType(): ResponseType,
+  
   set responseType(responseType: ResponseType): void,
+  
   get responseText(): string,
+  
   get response(): Response,
+  
   // exposed for testing
-__didCreateRequest(requestId: number): void,
+  __didCreateRequest(requestId: number): void,
+  
   // exposed for testing
-__didUploadProgress(
-    requestId: number,
-    progress: number,
-    total: number
-  ): void,
+  __didUploadProgress(requestId: number, progress: number, total: number): void,
+  
   __didReceiveResponse(
     requestId: number,
     status: number,
     responseHeaders: ?Object,
     responseURL: ?string
   ): void,
+  
   __didReceiveData(requestId: number, response: string): void,
+  
   __didReceiveIncrementalData(
     requestId: number,
     responseText: string,
     progress: number,
     total: number
   ): void,
-  __didReceiveDataProgress(requestId: number, loaded: number, total: number): void,
+  
+  __didReceiveDataProgress(
+    requestId: number,
+    loaded: number,
+    total: number
+  ): void,
+  
   // exposed for testing
-__didCompleteResponse(
+  __didCompleteResponse(
     requestId: number,
     error: string,
     timeOutError: boolean
   ): void,
+  
   getAllResponseHeaders(): ?string,
+  
   getResponseHeader(header: string): ?string,
+  
   setRequestHeader(header: string, value: any): void,
   
-/**
+  /**
    * Custom extension for tracking origins of request.
-   */setTrackingName(
-    trackingName: string
-  ): XMLHttpRequest,
+   */
+  setTrackingName(trackingName: string): XMLHttpRequest,
+  
   open(method: string, url: string, async: ?boolean): void,
+  
   send(data: any): void,
+  
   abort(): void,
+  
   setResponseHeaders(responseHeaders: ?Object): void,
+  
   setReadyState(newState: number): void,
   
-/* global EventListener */addEventListener(
-    type: string,
-    listener: EventListener
-  ): void,
+  /* global EventListener */
+  addEventListener(type: string, listener: EventListener): void,
 }
+declare var $1: any;
 export type {NativeResponseType};
 export type {ResponseType};
 export type {Response};

@@ -1,3 +1,4 @@
+// @flow
 import { TurboModule } from "../../TurboModule/RCTExport";
 interface Spec extends TurboModule {
   readonly getCurrentBoldTextState: (onSuccess: (isBoldTextEnabled: boolean) => void, onError: (error: Object) => void) => void;

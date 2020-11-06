@@ -1,20 +1,28 @@
+// @flow
 import type {StackFrame} from "../NativeExceptionsManager";
 
 type CodeFrame = $ReadOnly<
   {|
     content: string,
-    location: ?{row: number, column: number, ...},
+    location: ?{
+      row: number,
+      column: number,
+      ...,
+    },
     fileName: string,
   |},
 >;
 
 type SymbolicatedStackTrace = $ReadOnly<
-  {|stack: Array<StackFrame>, codeFrame: ?CodeFrame|},
+  {|
+    stack: Array<StackFrame>,
+    codeFrame: ?CodeFrame,
+  |},
 >;
 
-declare function symbolicateStackTrace(stack: Array<StackFrame>): Promise<
-  SymbolicatedStackTrace,
->;
+declare function symbolicateStackTrace(
+  stack: Array<StackFrame>
+): Promise<SymbolicatedStackTrace>;
 export type {CodeFrame};
 
 export type {SymbolicatedStackTrace};

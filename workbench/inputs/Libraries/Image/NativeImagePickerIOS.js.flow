@@ -1,3 +1,4 @@
+// @flow
 import type {TurboModule} from "../TurboModule/RCTExport";
 
 interface Spec extends TurboModule {
@@ -5,12 +6,18 @@ interface Spec extends TurboModule {
   +canRecordVideos: (callback: (result: boolean) => void) => void,
   +canUseCamera: (callback: (result: boolean) => void) => void,
   +openCameraDialog: (
-    config: {|unmirrorFrontFacingCamera: boolean, videoMode: boolean|},
+    config: {|
+      unmirrorFrontFacingCamera: boolean,
+      videoMode: boolean,
+    |},
     successCallback: (imageURL: string, height: number, width: number) => void,
     cancelCallback: () => void
   ) => void,
   +openSelectDialog: (
-    config: {|showImages: boolean, showVideos: boolean|},
+    config: {|
+      showImages: boolean,
+      showVideos: boolean,
+    |},
     successCallback: (imageURL: string, height: number, width: number) => void,
     cancelCallback: () => void
   ) => void,

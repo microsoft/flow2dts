@@ -1,3 +1,4 @@
+// @flow
 import type {TurboModule} from "react-native/Libraries/TurboModule/RCTExport";
 
 type ArrayType = string;

@@ -1,3 +1,4 @@
+// @flow
 import type {ColorSchemeName} from "./NativeAppearance";
 
 declare function useColorScheme(): ?ColorSchemeName;

@@ -1,3 +1,4 @@
+// @flow
 import { TurboModule } from "react-native/Libraries/TurboModule/RCTExport";
 interface Spec extends TurboModule {
   readonly show: () => void;

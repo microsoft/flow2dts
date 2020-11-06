@@ -1,21 +1,25 @@
-const React = require("react");
+// @flow
+declare var React: typeof $1;
+const $1 = require("react");
 
 type Props = $ReadOnly<
   {|
-    
-/**
+    /**
    * Whether or not this component should update.
-   */shouldUpdate?: ?boolean,
-    
-/**
+   */
+    shouldUpdate?: ?boolean,
+    /**
    * Content short-circuited by React reconciliation process.
-   */children: React.Node,
+   */
+    children: React.Node,
   |},
 >;
 declare class StaticContainer
-  extends React.Component<Props> {
+  extends $2<Props> {
   shouldComponentUpdate(nextProps: Props): boolean,
+  
   render(): React.Node,
 }
+declare var $2: typeof React.Component;
 
 declare module.exports: typeof StaticContainer;

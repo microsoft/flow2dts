@@ -1,3 +1,4 @@
+// @flow
 import type {CommandTypeShape} from "../../../CodegenSchema.js";
 import type {TypeMap} from "../utils.js";
 
@@ -8,4 +9,6 @@ declare function getCommands(
   types: TypeMap
 ): $ReadOnlyArray<CommandTypeShape>;
 
-declare module.exports: {|getCommands: typeof getCommands|};
+declare module.exports: {|
+  getCommands: typeof getCommands,
+|};

@@ -1,6 +1,15 @@
-declare type ModuleConfig = [string, null | undefined | Object
+// @flow
+declare type ModuleConfig = [string
+/* name */
+, null | undefined | Object
 /* constants */
-, null | undefined | ReadonlyArray<string>, null | undefined | ReadonlyArray<number>, null | undefined | ReadonlyArray<number>];
+, null | undefined | ReadonlyArray<string>
+/* functions */
+, null | undefined | ReadonlyArray<number>
+/* promise method IDs */
+, null | undefined | ReadonlyArray<number>
+/* sync method IDs */
+];
 declare type MethodType = "async" | "promise" | "sync";
 declare var NativeModules: {
   [moduleName: string]: Object;

@@ -1,4 +1,6 @@
-const MessageQueue = require("./MessageQueue");
+// @flow
+declare var MessageQueue: typeof $1;
+const $1 = require("./MessageQueue");
 
 declare var BatchedBridge: MessageQueue;
 

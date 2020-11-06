@@ -1,7 +1,12 @@
-const AnimatedValue = require("../nodes/AnimatedValue");
-const AnimatedValueXY = require("../nodes/AnimatedValueXY");
-const AnimatedInterpolation = require("../nodes/AnimatedInterpolation");
-const Animation = require("./Animation");
+// @flow
+declare var AnimatedValue: typeof $2;
+const $2 = require("../nodes/AnimatedValue");
+declare var AnimatedValueXY: typeof $3;
+const $3 = require("../nodes/AnimatedValueXY");
+declare var AnimatedInterpolation: typeof $1;
+const $1 = require("../nodes/AnimatedInterpolation");
+declare var Animation: typeof $4;
+const $4 = require("./Animation");
 
 import type {AnimationConfig} from "./Animation";
 import type {EndCallback} from "./Animation";
@@ -11,13 +16,23 @@ type SpringAnimationConfig = {
   toValue: 
     | number
     | AnimatedValue
-    | {x: number, y: number, ...}
+    | {
+      x: number,
+      y: number,
+      ...,
+    }
     | AnimatedValueXY
     | AnimatedInterpolation,
   overshootClamping?: boolean,
   restDisplacementThreshold?: number,
   restSpeedThreshold?: number,
-  velocity?: number | {x: number, y: number, ...},
+  velocity?: 
+    | number
+    | {
+      x: number,
+      y: number,
+      ...,
+    },
   bounciness?: number,
   speed?: number,
   tension?: number,
@@ -46,8 +61,9 @@ type SpringAnimationConfigSingle = {
 };
 
 declare class SpringAnimation
-  extends Animation {
+  extends $5 {
   constructor(config: SpringAnimationConfigSingle): void,
+  
   __getNativeAnimationConfig(): {|
     damping: number,
     initialVelocity: number,
@@ -60,6 +76,7 @@ declare class SpringAnimation
     toValue: any,
     type: string,
   |},
+  
   start(
     fromValue: number,
     onUpdate: (value: number) => void,
@@ -67,9 +84,10 @@ declare class SpringAnimation
     previousAnimation: ?Animation,
     animatedValue: AnimatedValue
   ): void,
+  
   getInternalState(): Object,
   
-/**
+  /**
    * This spring model is based off of a damped harmonic oscillator
    * (https://en.wikipedia.org/wiki/Harmonic_oscillator#Damped_harmonic_oscillator).
    *
@@ -89,9 +107,12 @@ declare class SpringAnimation
    *
    * This algorithm happens to match the algorithm used by CASpringAnimation,
    * a QuartzCore (iOS) API that creates spring animations.
-   */onUpdate(): void,
+   */
+  onUpdate(): void,
+  
   stop(): void,
 }
+declare var $5: typeof Animation;
 export type {SpringAnimationConfig};
 
 export type {SpringAnimationConfigSingle};

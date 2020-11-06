@@ -1,3 +1,4 @@
+// @flow
 declare var UTFSequence: {|
   BOM: string,
   BULLET: string,

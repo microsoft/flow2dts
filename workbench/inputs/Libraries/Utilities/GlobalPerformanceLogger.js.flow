@@ -1,3 +1,4 @@
+// @flow
 import type {IPerformanceLogger} from "./createPerformanceLogger";
 
 declare var GlobalPerformanceLogger: IPerformanceLogger;

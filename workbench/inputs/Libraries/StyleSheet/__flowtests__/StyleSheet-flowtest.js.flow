@@ -1,1 +1,6 @@
-declare module.exports: {|testGoodCompose(): void, testBadCompose(): void|};
+// @flow
+declare module.exports: {|
+  testGoodCompose(): void,
+  
+  testBadCompose(): void,
+|};

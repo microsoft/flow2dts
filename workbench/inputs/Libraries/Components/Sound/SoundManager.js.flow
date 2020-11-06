@@ -1,3 +1,6 @@
-declare var SoundManager: {|playTouchSound: () => void|};
+// @flow
+declare var SoundManager: {|
+  playTouchSound: () => void,
+|};
 
 declare module.exports: typeof SoundManager;

@@ -1,0 +1,5 @@
+// @flow
+import type {ColorValue} from "./StyleSheetTypes";
+
+declare var ColorAndroid: (color: string) => ColorValue;
+export {ColorAndroid};

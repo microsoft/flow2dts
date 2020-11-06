@@ -1,11 +1,16 @@
+// @flow
 import type {TurboModule} from "../TurboModule/RCTExport";
 
 interface Spec extends TurboModule {
-  +getConstants: () => {|initialAppState: string|},
+  +getConstants: () => {|
+    initialAppState: string,
+  |},
   +getCurrentAppState: (
     success: (appState: {|app_state: string|}) => void,
     error: (error: Object) => void
   ) => void,
+  
+  // Events
   +addListener: (eventName: string) => void,
   +removeListeners: (count: number) => void,
 }

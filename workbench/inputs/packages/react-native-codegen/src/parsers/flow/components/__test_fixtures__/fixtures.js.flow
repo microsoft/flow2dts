@@ -1,3 +1,4 @@
+// @flow
 declare var ONE_OF_EACH_PROP_EVENT_DEFAULT_AND_OPTIONS: string;
 
 declare var ONE_OF_EACH_PROP_EVENT_DEFAULT_AND_OPTIONS_NO_CAST: string;

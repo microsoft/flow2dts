@@ -1,3 +1,4 @@
+// @flow
 import { BubblingEventHandler } from "../../Types/CodegenTypes";
 import { DirectEventHandler } from "../../Types/CodegenTypes";
 import { Double } from "../../Types/CodegenTypes";

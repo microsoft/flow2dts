@@ -1,4 +1,9 @@
-type Point = {x: ?number, y: ?number, ...};
+// @flow
+type Point = {
+  x: ?number,
+  y: ?number,
+  ...,
+};
 
 declare var pointsDiffer: (one: ?Point, two: ?Point) => boolean;
 

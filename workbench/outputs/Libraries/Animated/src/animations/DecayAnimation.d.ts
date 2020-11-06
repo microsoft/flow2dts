@@ -1,4 +1,6 @@
-declare const Animation;
+// @flow
+declare var Animation: typeof $1;
+declare const $1;
 import AnimatedValue from "../nodes/AnimatedValue";
 import { AnimationConfig } from "./Animation";
 import { EndCallback } from "./Animation";
@@ -13,7 +15,7 @@ declare type DecayAnimationConfigSingle = AnimationConfig & {
   velocity: number;
   deceleration?: number;
 };
-declare class DecayAnimation extends Animation {
+declare class DecayAnimation extends $2 {
   constructor: (config: DecayAnimationConfigSingle) => void;
   __getNativeAnimationConfig: () =>
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -27,6 +29,7 @@ declare class DecayAnimation extends Animation {
   onUpdate: () => void;
   stop: () => void;
 }
+declare var $2: typeof Animation;
 export type { DecayAnimationConfig };
 export type { DecayAnimationConfigSingle };
 declare const $f2tExportDefault: typeof DecayAnimation;

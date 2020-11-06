@@ -1,3 +1,4 @@
+// @flow
 import type {PointValue} from "../../../../../Libraries/StyleSheet/StyleSheetTypes";
 import type {ColorValue} from "../../../../../Libraries/StyleSheet/StyleSheetTypes";
 import type {EdgeInsetsValue} from "../../../../../Libraries/StyleSheet/StyleSheetTypes";
@@ -12,8 +13,9 @@ import type {HostComponent} from "../../../../../Libraries/Renderer/shims/ReactN
 type NativeProps = $ReadOnly<
   {|
     ...ViewProps,
+    
     // Props
-names?: $ReadOnlyArray<string>,
+    names?: $ReadOnlyArray<string>,
     disableds?: $ReadOnlyArray<boolean>,
     progress?: $ReadOnlyArray<Int32>,
     radii?: $ReadOnlyArray<Float>,

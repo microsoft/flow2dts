@@ -1,3 +1,4 @@
+// @flow
 declare class Easing {
   step0: (n: number) => number;
   step1: (n: number) => number;

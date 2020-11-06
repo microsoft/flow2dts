@@ -1,3 +1,4 @@
+// @flow
 interface DEPRECATED_RCTExport<T extends void = void> {
   readonly getConstants?: () => {};
 }

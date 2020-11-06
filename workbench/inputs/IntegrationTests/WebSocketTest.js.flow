@@ -1,4 +1,6 @@
-const React = require("react");
+// @flow
+declare var React: typeof $1;
+const $1 = require("react");
 
 type State = {
   url: string,
@@ -13,13 +15,19 @@ type State = {
 };
 
 declare class WebSocketTest
-  extends React.Component<{...}, State> {
+  extends $2<{...}, State> {
   state: State,
+  
   componentDidMount(): void,
+  
   testConnect: () => void,
+  
   testSendAndReceive: () => void,
+  
   testDisconnect: () => void,
+  
   render(): React.Node,
 }
+declare var $2: typeof React.Component;
 
 declare module.exports: typeof WebSocketTest;

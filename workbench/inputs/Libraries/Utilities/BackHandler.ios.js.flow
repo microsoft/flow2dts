@@ -1,12 +1,16 @@
+// @flow
 type BackPressEventName = 'backPress' | 'hardwareBackPress';
 
 type TBackHandler = {|
   +exitApp: () => void,
-  +addEventListener: (eventName: BackPressEventName, handler: Function) => {
-    remove: () => void,
-    ...,
-  },
-  +removeEventListener: (eventName: BackPressEventName, handler: Function) => void,
+  +addEventListener: (
+    eventName: BackPressEventName,
+    handler: Function
+  ) => {remove: () => void,...},
+  +removeEventListener: (
+    eventName: BackPressEventName,
+    handler: Function
+  ) => void,
 |};
 
 declare var BackHandler: TBackHandler;

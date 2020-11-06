@@ -1,7 +1,12 @@
+// @flow
 import * as React from "react";
 
 type Props = $ReadOnly<
-  {|heading: string, children: React.Node, action?: ?React.Node|},
+  {|
+    heading: string,
+    children: React.Node,
+    action?: ?React.Node,
+  |},
 >;
 
 declare function LogBoxInspectorSection(props: Props): React.Node;

@@ -1,20 +1,21 @@
-const DeprecatedImageStylePropTypes = require(
-  "../DeprecatedPropTypes/DeprecatedImageStylePropTypes",
-);
-const DeprecatedTextStylePropTypes = require(
-  "../DeprecatedPropTypes/DeprecatedTextStylePropTypes",
-);
-const DeprecatedViewStylePropTypes = require(
-  "../DeprecatedPropTypes/DeprecatedViewStylePropTypes",
-);
+// @flow
+declare var DeprecatedImageStylePropTypes: typeof $1;
+const $1 = require("../DeprecatedPropTypes/DeprecatedImageStylePropTypes");
+declare var DeprecatedTextStylePropTypes: typeof $2;
+const $2 = require("../DeprecatedPropTypes/DeprecatedTextStylePropTypes");
+declare var DeprecatedViewStylePropTypes: typeof $3;
+const $3 = require("../DeprecatedPropTypes/DeprecatedViewStylePropTypes");
 
-const invariant = require("invariant");
+declare var invariant: typeof $4;
+const $4 = require("invariant");
 
 declare var ReactPropTypesSecret: string;
 
 declare class StyleSheetValidation {
   static validateStyleProp(prop: string, style: Object, caller: string): void,
+  
   static validateStyle(name: string, styles: Object): void,
+  
   static addValidStylePropTypes(stylePropTypes: $FlowFixMe): void,
 }
 

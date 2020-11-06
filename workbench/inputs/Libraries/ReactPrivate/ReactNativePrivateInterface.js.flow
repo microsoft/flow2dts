@@ -1,4 +1,5 @@
-import typeof BatchedBridge from "../BatchedBridge/BatchedBridge.js";
+// @flow
+import typeof BatchedBridge from "../BatchedBridge/BatchedBridge";
 import typeof ExceptionsManager from "../Core/ExceptionsManager";
 import typeof Platform from "../Utilities/Platform";
 import typeof RCTEventEmitter from "../EventEmitter/RCTEventEmitter";
@@ -19,7 +20,10 @@ declare module.exports: {|
   get TextInputState(): TextInputState,
   get UIManager(): UIManager,
   get deepDiffer(): deepDiffer,
-  get deepFreezeAndThrowOnMutationInDev(): deepFreezeAndThrowOnMutationInDev<*>,
+  get deepFreezeAndThrowOnMutationInDev(): deepFreezeAndThrowOnMutationInDev<
+    // $FlowFixMe - can't properly parameterize the getter's type
+    *,
+  >,
   get flattenStyle(): flattenStyle,
   get ReactFiberErrorDialog(): ReactFiberErrorDialog,
 |};

@@ -1,9 +1,13 @@
-const React = require("react");
+// @flow
+declare var React: typeof $2;
+const $2 = require("react");
 
 declare class AnExBobble
-  extends React.Component<Object, any> {
+  extends $1<Object, any> {
   constructor(props: Object): void,
+  
   render(): React.Node,
 }
+declare var $1: typeof React.Component;
 
 declare module.exports: typeof AnExBobble;

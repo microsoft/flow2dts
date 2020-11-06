@@ -1,4 +1,6 @@
-const React = require("react");
+// @flow
+declare var React: typeof $6;
+const $6 = require("react");
 
 type Item = {
   title: string,
@@ -12,7 +14,7 @@ type Item = {
 declare function genItemData(count: number, start?: number): Array<Item>;
 
 declare class ItemComponent
-  extends React.PureComponent<
+  extends $3<
     {
       fixedHeight?: ?boolean,
       horizontal?: ?boolean,
@@ -22,39 +24,61 @@ declare class ItemComponent
       onHideUnderlay?: () => void,
       ...,
     },
-  > {render(): React.Node}
+  > {
+  render(): React.Node,
+}
+declare var $3: typeof React.PureComponent;
 
-declare var renderStackedItem: ({item: Item, ...}) => React.Node;
+declare var renderStackedItem: ({item: Item,...}) => React.Node;
 
 declare class FooterComponent
-  extends React.PureComponent<{...}> {render(): React.Node}
+  extends $1<{...}> {
+  render(): React.Node,
+}
+declare var $1: typeof React.PureComponent;
 
 declare class HeaderComponent
-  extends React.PureComponent<{...}> {render(): React.Node}
+  extends $2<{...}> {
+  render(): React.Node,
+}
+declare var $2: typeof React.PureComponent;
 
 declare class ListEmptyComponent
-  extends React.PureComponent<{...}> {render(): React.Node}
+  extends $5<{...}> {
+  render(): React.Node,
+}
+declare var $5: typeof React.PureComponent;
 
 declare class SeparatorComponent
-  extends React.PureComponent<{...}> {render(): React.Node}
+  extends $7<{...}> {
+  render(): React.Node,
+}
+declare var $7: typeof React.PureComponent;
 
 declare class ItemSeparatorComponent
-  extends React.PureComponent<$FlowFixMeProps> {render(): React.Node}
+  extends $4<$FlowFixMeProps> {
+  render(): React.Node,
+}
+declare var $4: typeof React.PureComponent;
 
 declare class Spindicator
-  extends React.PureComponent<$FlowFixMeProps> {render(): React.Node}
+  extends $8<$FlowFixMeProps> {
+  render(): React.Node,
+}
+declare var $8: typeof React.PureComponent;
 
-declare function getItemLayout(data: any, index: number, horizontal?: boolean): {|
+declare function getItemLayout(
+  data: any,
   index: number,
-  length: number,
-  offset: number,
-|};
+  horizontal?: boolean
+): {|index: number, length: number, offset: number|};
 
 declare function pressItem(context: Object, key: string): void;
 
-declare function renderSmallSwitchOption(context: Object, key: string): 
-  | null
-  | React.Node;
+declare function renderSmallSwitchOption(
+  context: Object,
+  key: string
+): null | React.Node;
 
 declare function PlainInput(props: Object): React.Node;
 export type {Item};

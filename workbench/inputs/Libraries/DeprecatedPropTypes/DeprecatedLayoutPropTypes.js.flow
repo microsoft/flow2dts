@@ -1,4 +1,6 @@
-const ReactPropTypes = require("prop-types");
+// @flow
+declare var ReactPropTypes: typeof $1;
+const $1 = require("prop-types");
 
 declare var LayoutPropTypes: {|
   display: React$PropType$Primitive<'none' | 'flex'>,

@@ -1,9 +1,16 @@
-const React = require("react");
+// @flow
+declare var React: typeof $1;
+const $1 = require("react");
 
 import type {HostComponent} from "../../Renderer/shims/ReactNativeTypes";
 import type {ViewProps} from "../View/ViewPropTypes";
 
-type Props = $ReadOnly<{|...ViewProps, emulateUnlessSupported?: boolean|}>;
+type Props = $ReadOnly<
+  {|
+    ...ViewProps,
+    emulateUnlessSupported?: boolean,
+  |},
+>;
 
 declare var exported: React.AbstractComponent<
   Props,

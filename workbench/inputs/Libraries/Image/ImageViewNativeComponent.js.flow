@@ -1,3 +1,4 @@
+// @flow
 import type {DangerouslyImpreciseStyle} from "../StyleSheet/StyleSheet";
 import type {ResolvedAssetSource} from "./AssetSourceResolver";
 import type {HostComponent} from "../Renderer/shims/ReactNativeTypes";
@@ -10,12 +11,15 @@ type NativeProps = $ReadOnly<
   {|
     ...ImageProps,
     ...ViewProps,
+    
     style?: ImageStyleProp | DangerouslyImpreciseStyle,
+    
     // iOS native props
-tintColor?: ColorValue,
+    tintColor?: ColorValue,
+    
     // Android native props
-shouldNotifyLoadEvents?: boolean,
-    src?: ?ResolvedAssetSource | $ReadOnlyArray<{uri: string, ...}>,
+    shouldNotifyLoadEvents?: boolean,
+    src?: ?ResolvedAssetSource | $ReadOnlyArray<{uri: string,...}>,
     headers?: ?string,
     defaultSrc?: ?string,
     loadingIndicatorSrc?: ?string,

@@ -1,4 +1,6 @@
-const React = require("react");
+// @flow
+declare var React: typeof $2;
+const $2 = require("react");
 
 import type {ViewStyleProp} from "../StyleSheet/StyleSheet";
 
@@ -20,18 +22,28 @@ type Props = $ReadOnly<
       {|
         style?: ?ViewStyleProp,
         frame?: ?$ReadOnly<
-          {|top?: ?number, left?: ?number, width?: ?number, height: ?number|},
+          {|
+            top?: ?number,
+            left?: ?number,
+            width?: ?number,
+            height: ?number,
+          |},
         >,
-        source?: ?{|fileName?: string, lineNumber?: number|},
+        source?: ?{|
+          fileName?: string,
+          lineNumber?: number,
+        |},
       |},
     >,
   |},
 >;
 
 declare class InspectorPanel
-  extends React.Component<Props> {
+  extends $1<Props> {
   renderWaiting(): React.Node,
+  
   render(): React.Node,
 }
+declare var $1: typeof React.Component;
 
 declare module.exports: typeof InspectorPanel;

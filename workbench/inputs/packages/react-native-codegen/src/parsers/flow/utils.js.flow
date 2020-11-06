@@ -1,3 +1,4 @@
+// @flow
 type TypeMap = $ReadOnly<{|[name: string]: Object|}>;
 
 type ASTNode = Object;
@@ -7,4 +8,6 @@ export type {TypeMap};
 
 export type {ASTNode};
 
-declare module.exports: {|getValueFromTypes: typeof getValueFromTypes|};
+declare module.exports: {|
+  getValueFromTypes: typeof getValueFromTypes,
+|};

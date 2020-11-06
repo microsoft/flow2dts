@@ -1,3 +1,4 @@
+// @flow
 import type {TurboModule} from "../TurboModule/RCTExport";
 
 interface Spec extends TurboModule {
@@ -11,6 +12,7 @@ interface Spec extends TurboModule {
       +cancelButtonIndex?: ?number,
       +anchor?: ?number,
       +tintColor?: ?number,
+      +userInterfaceStyle?: ?string,
     |},
     callback: (buttonIndex: number) => void
   ) => void,
@@ -22,6 +24,7 @@ interface Spec extends TurboModule {
       +anchor?: ?number,
       +tintColor?: ?number,
       +excludedActivityTypes?: ?Array<string>,
+      +userInterfaceStyle?: ?string,
     |},
     failureCallback: (
       error: {|

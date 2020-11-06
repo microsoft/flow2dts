@@ -1,3 +1,4 @@
+// @flow
 import type {IPerformanceLogger} from "../Utilities/createPerformanceLogger";
 
 type Task = (taskData: any) => Promise<void>;
@@ -17,90 +18,100 @@ type AppConfig = {
   section?: boolean,
   ...,
 };
-type Runnable = {component?: ComponentProvider, run: Function, ...};
-type Runnables = {[appKey: string]: Runnable, ...};
-type Registry = {sections: Array<string>, runnables: Runnables, ...};
+type Runnable = {
+  component?: ComponentProvider,
+  run: Function,
+  ...,
+};
+type Runnables = {[appKey: string]: Runnable,...};
+type Registry = {
+  sections: Array<string>,
+  runnables: Runnables,
+  ...,
+};
 type WrapperComponentProvider = (any) => React$ComponentType<*>;
 
 declare var AppRegistry: {|
   setWrapperComponentProvider(provider: WrapperComponentProvider): void,
+  
   enableArchitectureIndicator(enabled: boolean): void,
+  
   registerConfig(config: Array<AppConfig>): void,
   
-/**
+  /**
    * Registers an app's root component.
    *
    * See https://reactnative.dev/docs/appregistry.html#registercomponent
-   */registerComponent(
+   */
+  registerComponent(
     appKey: string,
     componentProvider: ComponentProvider,
     section?: boolean
   ): string,
+  
   registerRunnable(appKey: string, run: Function): string,
+  
   registerSection(appKey: string, component: ComponentProvider): void,
+  
   getAppKeys(): Array<string>,
+  
   getSectionKeys(): Array<string>,
+  
   getSections(): Runnables,
+  
   getRunnable(appKey: string): ?Runnable,
+  
   getRegistry(): Registry,
+  
   setComponentProviderInstrumentationHook(
     hook: ComponentProviderInstrumentationHook
   ): void,
   
-/**
+  /**
    * Loads the JavaScript bundle and runs the app.
    *
    * See https://reactnative.dev/docs/appregistry.html#runapplication
-   */runApplication(
-    appKey: string,
-    appParameters: any
-  ): void,
+   */
+  runApplication(appKey: string, appParameters: any): void,
   
-/**
+  /**
    * Stops an application when a view should be destroyed.
    *
    * See https://reactnative.dev/docs/appregistry.html#unmountapplicationcomponentatroottag
-   */unmountApplicationComponentAtRootTag(
-    rootTag: number
-  ): void,
+   */
+  unmountApplicationComponentAtRootTag(rootTag: number): void,
   
-/**
+  /**
    * Register a headless task. A headless task is a bit of code that runs without a UI.
    *
    * See https://reactnative.dev/docs/appregistry.html#registerheadlesstask
-   */registerHeadlessTask(
-    taskKey: string,
-    taskProvider: TaskProvider
-  ): void,
+   */
+  registerHeadlessTask(taskKey: string, taskProvider: TaskProvider): void,
   
-/**
+  /**
    * Register a cancellable headless task. A headless task is a bit of code that runs without a UI.
    *
    * See https://reactnative.dev/docs/appregistry.html#registercancellableheadlesstask
-   */registerCancellableHeadlessTask(
+   */
+  registerCancellableHeadlessTask(
     taskKey: string,
     taskProvider: TaskProvider,
     taskCancelProvider: TaskCancelProvider
   ): void,
   
-/**
+  /**
    * Only called from native code. Starts a headless task.
    *
    * See https://reactnative.dev/docs/appregistry.html#startheadlesstask
-   */startHeadlessTask(
-    taskId: number,
-    taskKey: string,
-    data: any
-  ): void,
+   */
+  startHeadlessTask(taskId: number, taskKey: string, data: any): void,
   
-/**
+  /**
    * Only called from native code. Cancels a headless task.
    *
    * See https://reactnative.dev/docs/appregistry.html#cancelheadlesstask
-   */cancelHeadlessTask(
-    taskId: number,
-    taskKey: string
-  ): void,
+   */
+  cancelHeadlessTask(taskId: number, taskKey: string): void,
 |};
 export type {TaskProvider};
 

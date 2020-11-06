@@ -1,3 +1,4 @@
+// @flow
 import { DangerouslyImpreciseStyle } from "../StyleSheet/StyleSheet";
 import { ResolvedAssetSource } from "./AssetSourceResolver";
 import { HostComponent } from "../Renderer/shims/ReactNativeTypes";

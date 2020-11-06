@@ -1,3 +1,4 @@
+// @flow
 import { LayoutEvent } from "../Types/CoreEventTypes";
 import { PressEvent } from "../Types/CoreEventTypes";
 import { TextLayoutEvent } from "../Types/CoreEventTypes";
@@ -17,10 +18,10 @@ declare type TextProps = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
   /**
-     * Indicates whether the view is an accessibility element.
-     *
-     * See https://reactnative.dev/docs/text.html#accessible
-     */
+  * Indicates whether the view is an accessibility element.
+  *
+  * See https://reactnative.dev/docs/text.html#accessible
+  */
   accessible?: null | undefined | boolean;
   accessibilityHint?: null | undefined | Stringish;
   accessibilityLabel?: null | undefined | Stringish;
@@ -28,70 +29,70 @@ declare type TextProps = Readonly<
   accessibilityState?: null | undefined | AccessibilityState;
 
   /**
-     * Whether font should be scaled down automatically.
-     *
-     * See https://reactnative.dev/docs/text.html#adjustsfontsizetofit
-     */
+  * Whether font should be scaled down automatically.
+  *
+  * See https://reactnative.dev/docs/text.html#adjustsfontsizetofit
+  */
   adjustsFontSizeToFit?: null | undefined | boolean;
 
   /**
-     * Whether fonts should scale to respect Text Size accessibility settings.
-     *
-     * See https://reactnative.dev/docs/text.html#allowfontscaling
-     */
+  * Whether fonts should scale to respect Text Size accessibility settings.
+  *
+  * See https://reactnative.dev/docs/text.html#allowfontscaling
+  */
   allowFontScaling?: null | undefined | boolean;
   children?: null | undefined | Node;
 
   /**
-     * When `numberOfLines` is set, this prop defines how text will be
-     * truncated.
-     *
-     * See https://reactnative.dev/docs/text.html#ellipsizemode
-     */
+  * When `numberOfLines` is set, this prop defines how text will be
+  * truncated.
+  *
+  * See https://reactnative.dev/docs/text.html#ellipsizemode
+  */
   ellipsizeMode?: null | undefined | ("clip" | "head" | "middle" | "tail");
 
   /**
-     * Specifies largest possible scale a font can reach when `allowFontScaling` is enabled.
-     * Possible values:
-     * `null/undefined` (default): inherit from the parent node or the global default (0)
-     * `0`: no max, ignore parent/global default
-     * `>= 1`: sets the maxFontSizeMultiplier of this node to this value
-     */
+  * Specifies largest possible scale a font can reach when `allowFontScaling` is enabled.
+  * Possible values:
+  * `null/undefined` (default): inherit from the parent node or the global default (0)
+  * `0`: no max, ignore parent/global default
+  * `>= 1`: sets the maxFontSizeMultiplier of this node to this value
+  */
   maxFontSizeMultiplier?: null | undefined | number;
 
   /**
-     * Used to locate this view from native code.
-     *
-     * See https://reactnative.dev/docs/text.html#nativeid
-     */
+  * Used to locate this view from native code.
+  *
+  * See https://reactnative.dev/docs/text.html#nativeid
+  */
   nativeID?: null | undefined | string;
 
   /**
-     * Used to truncate the text with an ellipsis.
-     *
-     * See https://reactnative.dev/docs/text.html#numberoflines
-     */
+  * Used to truncate the text with an ellipsis.
+  *
+  * See https://reactnative.dev/docs/text.html#numberoflines
+  */
   numberOfLines?: null | undefined | number;
 
   /**
-     * Invoked on mount and layout changes.
-     *
-     * See https://reactnative.dev/docs/text.html#onlayout
-     */
+  * Invoked on mount and layout changes.
+  *
+  * See https://reactnative.dev/docs/text.html#onlayout
+  */
   onLayout?: null | undefined | (event: LayoutEvent) => unknown;
 
   /**
-     * This function is called on long press.
-     *
-     * See https://reactnative.dev/docs/text.html#onlongpress
-     */
+  * This function is called on long press.
+  *
+  * See https://reactnative.dev/docs/text.html#onlongpress
+  */
   onLongPress?: null | undefined | (event: PressEvent) => unknown;
 
   /**
-     * This function is called on press.
-     *
-     * See https://reactnative.dev/docs/text.html#onpress
-     */
+  * This function is called on press.
+  *
+  * See https://reactnative.dev/docs/text.html#onpress
+  */
   onPress?: null | undefined | (event: PressEvent) => unknown;
   onResponderGrant?: null | undefined | (event: PressEvent, dispatchID: string) => void;
   onResponderMove?: null | undefined | (event: PressEvent) => void;
@@ -103,71 +104,71 @@ declare type TextProps = Readonly<
   onTextLayout?: null | undefined | (event: TextLayoutEvent) => unknown;
 
   /**
-     * Defines how far your touch may move off of the button, before
-     * deactivating the button.
-     *
-     * See https://reactnative.dev/docs/text.html#pressretentionoffset
-     */
+  * Defines how far your touch may move off of the button, before
+  * deactivating the button.
+  *
+  * See https://reactnative.dev/docs/text.html#pressretentionoffset
+  */
   pressRetentionOffset?: null | undefined | PressRetentionOffset;
 
   /**
-     * Lets the user select text.
-     *
-     * See https://reactnative.dev/docs/text.html#selectable
-     */
+  * Lets the user select text.
+  *
+  * See https://reactnative.dev/docs/text.html#selectable
+  */
   selectable?: null | undefined | boolean;
   style?: null | undefined | TextStyleProp;
 
   /**
-     * Used to locate this view in end-to-end tests.
-     *
-     * See https://reactnative.dev/docs/text.html#testid
-     */
+  * Used to locate this view in end-to-end tests.
+  *
+  * See https://reactnative.dev/docs/text.html#testid
+  */
   testID?: null | undefined | string;
 
   /**
-     * Android Only
-     */
+  * Android Only
+  */
 
   /**
-     * Specifies the disabled state of the text view for testing purposes.
-     *
-     * See https://reactnative.dev/docs/text.html#disabled
-     */
+  * Specifies the disabled state of the text view for testing purposes.
+  *
+  * See https://reactnative.dev/docs/text.html#disabled
+  */
   disabled?: null | undefined | boolean;
 
   /**
-     * The highlight color of the text.
-     *
-     * See https://reactnative.dev/docs/text.html#selectioncolor
-     */
+  * The highlight color of the text.
+  *
+  * See https://reactnative.dev/docs/text.html#selectioncolor
+  */
   selectionColor?: null | undefined | string;
   dataDetectorType?: null | undefined | ("phoneNumber" | "link" | "email" | "none" | "all");
 
   /**
-     * Set text break strategy on Android.
-     *
-     * See https://reactnative.dev/docs/text.html#textbreakstrategy
-     */
+  * Set text break strategy on Android.
+  *
+  * See https://reactnative.dev/docs/text.html#textbreakstrategy
+  */
   textBreakStrategy?: null | undefined | ("balanced" | "highQuality" | "simple");
 
   /**
-     * iOS Only
-     */
+  * iOS Only
+  */
   adjustsFontSizeToFit?: null | undefined | boolean;
 
   /**
-     * Smallest possible scale a font can reach.
-     *
-     * See https://reactnative.dev/docs/text.html#minimumfontscale
-     */
+  * Smallest possible scale a font can reach.
+  *
+  * See https://reactnative.dev/docs/text.html#minimumfontscale
+  */
   minimumFontScale?: null | undefined | number;
 
   /**
-     * When `true`, no visual change is made when text is pressed down.
-     *
-     * See https://reactnative.dev/docs/text.html#supperhighlighting
-     */
+  * When `true`, no visual change is made when text is pressed down.
+  *
+  * See https://reactnative.dev/docs/text.html#supperhighlighting
+  */
   suppressHighlighting?: null | undefined | boolean;
 }>;
 export type { PressRetentionOffset };

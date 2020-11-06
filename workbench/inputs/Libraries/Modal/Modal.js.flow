@@ -1,96 +1,103 @@
-const React = require("react");
+// @flow
+declare var React: typeof $2;
+const $2 = require("react");
 
 import type {ViewProps} from "../Components/View/ViewPropTypes";
 import type {DirectEventHandler} from "../Types/CodegenTypes";
 
 type OrientationChangeEvent = $ReadOnly<
-  {|orientation: 'portrait' | 'landscape'|},
+  {|
+    orientation: 'portrait' | 'landscape',
+  |},
 >;
 
 type Props = $ReadOnly<
   {|
     ...ViewProps,
     
-/**
+    /**
    * The `animationType` prop controls how the modal animates.
    *
    * See https://reactnative.dev/docs/modal.html#animationtype
-   */animationType?: ?(
-      | 'none'
-      | 'slide'
-      | 'fade'),
+   */
+    animationType?: ?('none' | 'slide' | 'fade'),
     
-/**
+    /**
    * The `presentationStyle` prop controls how the modal appears.
    *
    * See https://reactnative.dev/docs/modal.html#presentationstyle
-   */presentationStyle?: ?(
+   */
+    presentationStyle?: ?(
       | 'fullScreen'
       | 'pageSheet'
       | 'formSheet'
       | 'overFullScreen'),
     
-/**
+    /**
    * The `transparent` prop determines whether your modal will fill the
    * entire view.
    *
    * See https://reactnative.dev/docs/modal.html#transparent
-   */transparent?: ?boolean,
+   */
+    transparent?: ?boolean,
     
-/**
+    /**
    * The `statusBarTranslucent` prop determines whether your modal should go under
    * the system statusbar.
    *
    * See https://reactnative.dev/docs/modal.html#transparent
-   */statusBarTranslucent?: ?boolean,
+   */
+    statusBarTranslucent?: ?boolean,
     
-/**
+    /**
    * The `hardwareAccelerated` prop controls whether to force hardware
    * acceleration for the underlying window.
    *
-   * This prop works inly on Android.
+   * This prop works only on Android.
    *
    * See https://reactnative.dev/docs/modal.html#hardwareaccelerated
-   */hardwareAccelerated?: ?boolean,
+   */
+    hardwareAccelerated?: ?boolean,
     
-/**
+    /**
    * The `visible` prop determines whether your modal is visible.
    *
    * See https://reactnative.dev/docs/modal.html#visible
-   */visible?: ?boolean,
+   */
+    visible?: ?boolean,
     
-/**
+    /**
    * The `onRequestClose` callback is called when the user taps the hardware
    * back button on Android or the menu button on Apple TV.
    *
    * This is required on Apple TV and Android.
    *
    * See https://reactnative.dev/docs/modal.html#onrequestclose
-   */onRequestClose?: ?DirectEventHandler<
-      null,
-    >,
+   */
+    onRequestClose?: ?DirectEventHandler<null>,
     
-/**
+    /**
    * The `onShow` prop allows passing a function that will be called once the
    * modal has been shown.
    *
    * See https://reactnative.dev/docs/modal.html#onshow
-   */onShow?: ?DirectEventHandler<
-      null,
-    >,
+   */
+    onShow?: ?DirectEventHandler<null>,
     
-/**
+    /**
    * The `onDismiss` prop allows passing a function that will be called once
    * the modal has been dismissed.
    *
    * See https://reactnative.dev/docs/modal.html#ondismiss
-   */onDismiss?: ?(() => mixed),
+   */
+    onDismiss?: ?(() => mixed),
     
-/**
+    /**
    * The `supportedOrientations` prop allows the modal to be rotated to any of the specified orientations.
    *
    * See https://reactnative.dev/docs/modal.html#supportedorientations
-   */supportedOrientations?: ?$ReadOnlyArray<
+   */
+    supportedOrientations?: ?$ReadOnlyArray<
       
         | 'portrait'
         | 'portrait-upside-down'
@@ -99,29 +106,36 @@ type Props = $ReadOnly<
         | 'landscape-right',
     >,
     
-/**
+    /**
    * The `onOrientationChange` callback is called when the orientation changes while the modal is being displayed.
    *
    * See https://reactnative.dev/docs/modal.html#onorientationchange
-   */onOrientationChange?: ?DirectEventHandler<
-      OrientationChangeEvent,
-    >,
+   */
+    onOrientationChange?: ?DirectEventHandler<OrientationChangeEvent>,
   |},
 >;
 
 declare class Modal
-  extends React.Component<Props> {
+  extends $1<Props> {
   static defaultProps: {|hardwareAccelerated: boolean, visible: boolean|},
+  
   static contextTypes: any | {|rootTag: React$PropType$Primitive<number>|},
+  
   constructor(props: Props): void,
+  
   static childContextTypes: 
     | any
     | {|virtualizedList: React$PropType$Primitive<any>|},
+  
   getChildContext(): {|virtualizedList: null|},
+  
   componentWillUnmount(): void,
+  
   UNSAFE_componentWillReceiveProps(nextProps: Props): void,
+  
   render(): React.Node,
 }
+declare var $1: typeof React.Component;
 export type {Props};
 
 declare module.exports: typeof Modal;

@@ -1,3 +1,4 @@
+// @flow
 declare type DevServerInfo = {
   url: string;
   bundleLoadedFromServer: boolean;

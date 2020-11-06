@@ -1,3 +1,4 @@
+// @flow
 import NativeEventEmitter from "../../EventEmitter/NativeEventEmitter";
 import { EventConfig } from "./AnimatedEvent";
 import { EventMapping } from "./NativeAnimatedModule";

@@ -1,3 +1,4 @@
+// @flow
 import type {SchemaType} from "../../../CodegenSchema.js";
 
 declare var EMPTY_NATIVE_MODULES: SchemaType;

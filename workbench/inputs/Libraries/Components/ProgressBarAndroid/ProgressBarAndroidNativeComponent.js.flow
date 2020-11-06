@@ -1,3 +1,4 @@
+// @flow
 import type {ColorValue} from "../../StyleSheet/StyleSheetTypes";
 import type {ViewProps} from "../View/ViewPropTypes";
 import type {Double} from "../../Types/CodegenTypes";
@@ -8,8 +9,9 @@ import type {HostComponent} from "../../Renderer/shims/ReactNativeTypes";
 type NativeProps = $ReadOnly<
   {|
     ...ViewProps,
+    
     //Props
-styleAttr?: string,
+    styleAttr?: string,
     typeAttr?: string,
     indeterminate: boolean,
     progress?: WithDefault<Double, 0>,

@@ -1,3 +1,4 @@
+// @flow
 import { ViewProps } from "../View/ViewPropTypes";
 import { WithDefault } from "../../Types/CodegenTypes";
 import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";

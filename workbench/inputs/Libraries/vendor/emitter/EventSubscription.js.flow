@@ -1,3 +1,4 @@
+// @flow
 import type EventSubscriptionVendor from "./EventSubscriptionVendor";
 
 declare class EventSubscription {
@@ -5,16 +6,16 @@ declare class EventSubscription {
   key: number,
   subscriber: EventSubscriptionVendor,
   
-/**
+  /**
    * @param {EventSubscriptionVendor} subscriber the subscriber that controls
    *   this subscription.
-   */constructor(
-    subscriber: EventSubscriptionVendor
-  ): void,
+   */
+  constructor(subscriber: EventSubscriptionVendor): void,
   
-/**
+  /**
    * Removes this subscription from the subscriber that controls it.
-   */remove(): void,
+   */
+  remove(): void,
 }
 
 declare module.exports: typeof EventSubscription;

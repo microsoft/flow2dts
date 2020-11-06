@@ -1,13 +1,20 @@
-const React = require("react");
+// @flow
+declare var React: typeof $2;
+const $2 = require("react");
 
 declare class LayoutExample
-  extends React.Component<$FlowFixMeProps> {render(): React.Node}
+  extends $1<$FlowFixMeProps> {
+  render(): React.Node,
+}
+declare var $1: typeof React.Component;
 
 declare module.exports: {|
-  examples: Array<{|
-    title: string,
-    render: () => React.Element<typeof LayoutExample>,
-  |}>,
+  examples: Array<
+    {|
+      title: string,
+      render: () => React.Element<typeof LayoutExample>,
+    |},
+  >,
   displayName: string,
   description: string,
   title: string,

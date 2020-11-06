@@ -1,7 +1,12 @@
-const AnimatedValue = require("../nodes/AnimatedValue");
-const AnimatedValueXY = require("../nodes/AnimatedValueXY");
-const AnimatedInterpolation = require("../nodes/AnimatedInterpolation");
-const Animation = require("./Animation");
+// @flow
+declare var AnimatedValue: typeof $2;
+const $2 = require("../nodes/AnimatedValue");
+declare var AnimatedValueXY: typeof $3;
+const $3 = require("../nodes/AnimatedValueXY");
+declare var AnimatedInterpolation: typeof $1;
+const $1 = require("../nodes/AnimatedInterpolation");
+declare var Animation: typeof $4;
+const $4 = require("./Animation");
 
 import type {AnimationConfig} from "./Animation";
 import type {EndCallback} from "./Animation";
@@ -11,7 +16,11 @@ type TimingAnimationConfig = {
   toValue: 
     | number
     | AnimatedValue
-    | {x: number, y: number, ...}
+    | {
+      x: number,
+      y: number,
+      ...,
+    }
     | AnimatedValueXY
     | AnimatedInterpolation,
   easing?: (value: number) => number,
@@ -28,9 +37,11 @@ type TimingAnimationConfigSingle = {
 };
 
 declare class TimingAnimation
-  extends Animation {
+  extends $5 {
   constructor(config: TimingAnimationConfigSingle): void,
+  
   __getNativeAnimationConfig(): any,
+  
   start(
     fromValue: number,
     onUpdate: (value: number) => void,
@@ -38,9 +49,12 @@ declare class TimingAnimation
     previousAnimation: ?Animation,
     animatedValue: AnimatedValue
   ): void,
+  
   onUpdate(): void,
+  
   stop(): void,
 }
+declare var $5: typeof Animation;
 export type {TimingAnimationConfig};
 
 export type {TimingAnimationConfigSingle};

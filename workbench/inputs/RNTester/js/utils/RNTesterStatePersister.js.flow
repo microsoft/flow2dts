@@ -1,4 +1,6 @@
-const React = require("react");
+// @flow
+declare var React: typeof $1;
+const $1 = require("react");
 
 type PassProps<State> = {
   state: State,
@@ -7,7 +9,7 @@ type PassProps<State> = {
 };
 
 declare function createContainer<Props: Object, State>(
-  Component: React.ComponentType<Props & {persister: PassProps<State>, ...}>,
+  Component: React.ComponentType<Props & {persister: PassProps<State>,...}>,
   spec: {
     cacheKeySuffix: (props: Props) => string,
     getInitialState: (props: Props) => State,
@@ -16,7 +18,9 @@ declare function createContainer<Props: Object, State>(
   }
 ): React.ComponentType<Props>;
 
-declare var RNTesterStatePersister: {|createContainer: typeof createContainer|};
+declare var RNTesterStatePersister: {|
+  createContainer: typeof createContainer,
+|};
 export type {PassProps};
 
 declare module.exports: typeof RNTesterStatePersister;

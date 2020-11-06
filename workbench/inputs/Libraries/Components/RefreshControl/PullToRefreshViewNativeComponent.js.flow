@@ -1,3 +1,4 @@
+// @flow
 import type {DirectEventHandler} from "../../Types/CodegenTypes";
 import type {WithDefault} from "../../Types/CodegenTypes";
 import type {ColorValue} from "../../StyleSheet/StyleSheetTypes";
@@ -10,30 +11,28 @@ type NativeProps = $ReadOnly<
   {|
     ...ViewProps,
     
-/**
+    /**
    * The color of the refresh indicator.
-   */tintColor?: ?ColorValue,
-    
-/**
+   */
+    tintColor?: ?ColorValue,
+    /**
    * Title color.
-   */titleColor?: ?ColorValue,
-    
-/**
+   */
+    titleColor?: ?ColorValue,
+    /**
    * The title displayed under the refresh indicator.
-   */title?: WithDefault<
-      string,
-      null,
-    >,
+   */
+    title?: WithDefault<string, null>,
     
-/**
+    /**
    * Called when the view starts refreshing.
-   */onRefresh?: ?DirectEventHandler<
-      null,
-    >,
+   */
+    onRefresh?: ?DirectEventHandler<null>,
     
-/**
+    /**
    * Whether the view should be indicating an active refresh.
-   */refreshing: boolean,
+   */
+    refreshing: boolean,
   |},
 >;
 

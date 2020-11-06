@@ -1,3 +1,4 @@
+// @flow
 import type {TurboModule} from "./RCTExport";
 
 declare function get<T: TurboModule>(name: string): ?T;

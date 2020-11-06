@@ -1,3 +1,4 @@
+// @flow
 declare type AlertType = "default" | "plain-text" | "secure-text" | "login-password";
 declare type AlertButtonStyle = "default" | "cancel" | "destructive";
 declare type Buttons = {

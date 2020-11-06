@@ -1,3 +1,4 @@
+// @flow
 import type {ObjectParamTypeAnnotation} from "../../../CodegenSchema";
 
 declare function capitalizeFirstLetter(string: string): string;
@@ -19,7 +20,10 @@ declare function flatObjects(
   forConstants?: boolean
 ): $ReadOnlyArray<
   $ReadOnly<
-    {|name: string, properties: $ReadOnlyArray<ObjectParamTypeAnnotation>|},
+    {|
+      name: string,
+      properties: $ReadOnlyArray<ObjectParamTypeAnnotation>,
+    |},
   >,
 >;
 declare module.exports: {|

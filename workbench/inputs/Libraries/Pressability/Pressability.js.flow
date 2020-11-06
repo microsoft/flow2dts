@@ -1,127 +1,136 @@
-import type {RectOrSize} from "../StyleSheet/Rect.js";
-import type {BlurEvent} from "../Types/CoreEventTypes.js";
-import type {FocusEvent} from "../Types/CoreEventTypes.js";
-import type {PressEvent} from "../Types/CoreEventTypes.js";
-import type {MouseEvent} from "../Types/CoreEventTypes.js";
+// @flow
+import type {RectOrSize} from "../StyleSheet/Rect";
+import type {BlurEvent} from "../Types/CoreEventTypes";
+import type {FocusEvent} from "../Types/CoreEventTypes";
+import type {PressEvent} from "../Types/CoreEventTypes";
+import type {MouseEvent} from "../Types/CoreEventTypes";
 
 type PressabilityConfig = $ReadOnly<
   {|
-    
-/**
+    /**
    * Whether a press gesture can be interrupted by a parent gesture such as a
    * scroll event. Defaults to true.
-   */cancelable?: ?boolean,
+   */
+    cancelable?: ?boolean,
     
-/**
+    /**
    * Whether to disable initialization of the press gesture.
-   */disabled?: ?boolean,
+   */
+    disabled?: ?boolean,
     
-/**
+    /**
    * Amount to extend the `VisualRect` by to create `HitRect`.
-   */hitSlop?: ?RectOrSize,
+   */
+    hitSlop?: ?RectOrSize,
     
-/**
+    /**
    * Amount to extend the `HitRect` by to create `PressRect`.
-   */pressRectOffset?: ?RectOrSize,
+   */
+    pressRectOffset?: ?RectOrSize,
     
-/**
+    /**
    * Whether to disable the systemm sound when `onPress` fires on Android.
-   **/android_disableSound?: ?boolean,
+   **/
+    android_disableSound?: ?boolean,
     
-/**
+    /**
    * Duration to wait after hover in before calling `onHoverIn`.
-   */delayHoverIn?: ?number,
+   */
+    delayHoverIn?: ?number,
     
-/**
+    /**
    * Duration to wait after hover out before calling `onHoverOut`.
-   */delayHoverOut?: ?number,
+   */
+    delayHoverOut?: ?number,
     
-/**
+    /**
    * Duration (in addition to `delayPressIn`) after which a press gesture is
    * considered a long press gesture. Defaults to 500 (milliseconds).
-   */delayLongPress?: ?number,
+   */
+    delayLongPress?: ?number,
     
-/**
+    /**
    * Duration to wait after press down before calling `onPressIn`.
-   */delayPressIn?: ?number,
+   */
+    delayPressIn?: ?number,
     
-/**
+    /**
    * Duration to wait after letting up before calling `onPressOut`.
-   */delayPressOut?: ?number,
+   */
+    delayPressOut?: ?number,
     
-/**
+    /**
+   * Minimum duration to wait between calling `onPressIn` and `onPressOut`.
+   */
+    minPressDuration?: ?number,
+    
+    /**
    * Called after the element loses focus.
-   */onBlur?: ?((
-      event: BlurEvent
-    ) => mixed),
+   */
+    onBlur?: ?((event: BlurEvent) => mixed),
     
-/**
+    /**
    * Called after the element is focused.
-   */onFocus?: ?((
-      event: FocusEvent
-    ) => mixed),
+   */
+    onFocus?: ?((event: FocusEvent) => mixed),
     
-/**
+    /**
    * Called when the hover is activated to provide visual feedback.
-   */onHoverIn?: ?((
-      event: MouseEvent
-    ) => mixed),
+   */
+    onHoverIn?: ?((event: MouseEvent) => mixed),
     
-/**
+    /**
    * Called when the hover is deactivated to undo visual feedback.
-   */onHoverOut?: ?((
-      event: MouseEvent
-    ) => mixed),
+   */
+    onHoverOut?: ?((event: MouseEvent) => mixed),
     
-/**
+    /**
    * Called when a long press gesture has been triggered.
-   */onLongPress?: ?((
-      event: PressEvent
-    ) => mixed),
+   */
+    onLongPress?: ?((event: PressEvent) => mixed),
     
-/**
+    /**
    * Called when a press gestute has been triggered.
-   */onPress?: ?((
-      event: PressEvent
-    ) => mixed),
+   */
+    onPress?: ?((event: PressEvent) => mixed),
     
-/**
+    /**
    * Called when the press is activated to provide visual feedback.
-   */onPressIn?: ?((
-      event: PressEvent
-    ) => mixed),
+   */
+    onPressIn?: ?((event: PressEvent) => mixed),
     
-/**
+    /**
    * Called when the press location moves. (This should rarely be used.)
-   */onPressMove?: ?((
-      event: PressEvent
-    ) => mixed),
+   */
+    onPressMove?: ?((event: PressEvent) => mixed),
     
-/**
+    /**
    * Called when the press is deactivated to undo visual feedback.
-   */onPressOut?: ?((
-      event: PressEvent
-    ) => mixed),
+   */
+    onPressOut?: ?((event: PressEvent) => mixed),
     
-/**
+    /**
    * Returns whether a long press gesture should cancel the press gesture.
    * Defaults to true.
-   */onLongPressShouldCancelPress_DEPRECATED?: ?(() => boolean),
+   */
+    onLongPressShouldCancelPress_DEPRECATED?: ?(() => boolean),
     
-/**
+    /**
    * If `cancelable` is set, this will be ignored.
    *
    * Returns whether to yield to a lock termination request (e.g. if a native
    * scroll gesture attempts to steal the responder lock).
-   */onResponderTerminationRequest_DEPRECATED?: ?(() => boolean),
+   */
+    onResponderTerminationRequest_DEPRECATED?: ?(() => boolean),
     
-/**
+    /**
    * If `disabled` is set, this will be ignored.
    *
    * Returns whether to start a press gesture.
    *
    * @deprecated
-   */onStartShouldSetResponder_DEPRECATED?: ?(() => boolean),
+   */
+    onStartShouldSetResponder_DEPRECATED?: ?(() => boolean),
   |},
 >;
 
@@ -143,15 +152,18 @@ type EventHandlers = $ReadOnly<
 
 declare class Pressability {
   constructor(config: PressabilityConfig): void,
+  
   configure(config: PressabilityConfig): void,
   
-/**
+  /**
    * Resets any pending timers. This should be called on unmount.
-   */reset(): void,
+   */
+  reset(): void,
   
-/**
+  /**
    * Returns a set of props to spread into the interactive element.
-   */getEventHandlers(): EventHandlers,
+   */
+  getEventHandlers(): EventHandlers,
 }
 export type {PressabilityConfig};
 

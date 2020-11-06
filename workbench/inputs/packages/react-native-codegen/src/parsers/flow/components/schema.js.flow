@@ -1,3 +1,4 @@
+// @flow
 import type {EventTypeShape} from "../../../CodegenSchema.js";
 import type {PropTypeShape} from "../../../CodegenSchema.js";
 import type {CommandTypeShape} from "../../../CodegenSchema.js";
@@ -20,4 +21,6 @@ type ComponentSchemaBuilderConfig = $ReadOnly<
 declare function buildComponentSchema(ComponentSchemaBuilderConfig): SchemaType;
 export type {ComponentSchemaBuilderConfig};
 
-declare module.exports: {|buildComponentSchema: typeof buildComponentSchema|};
+declare module.exports: {|
+  buildComponentSchema: typeof buildComponentSchema,
+|};

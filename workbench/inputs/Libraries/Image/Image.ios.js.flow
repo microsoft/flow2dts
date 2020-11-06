@@ -1,9 +1,11 @@
-const DeprecatedImagePropType = require(
-  "../DeprecatedPropTypes/DeprecatedImagePropType",
-);
-const React = require("react");
+// @flow
+declare var DeprecatedImagePropType: typeof $1;
+const $1 = require("../DeprecatedPropTypes/DeprecatedImagePropType");
+declare var React: typeof $2;
+const $2 = require("react");
 
-const resolveAssetSource = require("./resolveAssetSource");
+declare var resolveAssetSource: typeof $3;
+const $3 = require("./resolveAssetSource");
 
 import type {ImageProps as ImagePropsType} from "./ImageProps";
 
@@ -17,16 +19,16 @@ declare function getSize(
 
 declare function getSizeWithHeaders(
   uri: string,
-  headers: {[string]: string, ...},
+  headers: {[string]: string,...},
   success: (width: number, height: number) => void,
   failure?: (error: any) => void
 ): any;
 
 declare function prefetch(url: string): any;
 
-declare function queryCache(urls: Array<string>): Promise<
-  {[string]: 'memory' | 'disk' | 'disk/memory', ...},
->;
+declare function queryCache(
+  urls: Array<string>
+): Promise<{[string]: 'memory' | 'disk' | 'disk/memory',...}>;
 
 type ImageComponentStatics = $ReadOnly<
   {|

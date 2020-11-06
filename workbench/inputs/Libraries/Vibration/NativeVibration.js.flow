@@ -1,8 +1,11 @@
+// @flow
 import type {TurboModule} from "../TurboModule/RCTExport";
 
 interface Spec extends TurboModule {
   +getConstants: () => {||},
-  +vibrate: (pattern?: ?number) => void,
+  +vibrate: (pattern: number) => void,
+  
+  // Android only
   +vibrateByPattern: (pattern: Array<number>, repeat: number) => void,
   +cancel: () => void,
 }

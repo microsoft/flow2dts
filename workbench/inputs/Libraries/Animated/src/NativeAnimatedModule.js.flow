@@ -1,6 +1,7 @@
+// @flow
 import type {TurboModule} from "../../TurboModule/RCTExport";
 
-type EndResult = {finished: boolean, ...};
+type EndResult = {finished: boolean,...};
 type EndCallback = (result: EndResult) => void;
 
 type EventMapping = {|
@@ -42,6 +43,8 @@ interface Spec extends TurboModule {
     eventName: string,
     animatedNodeTag: number
   ) => void,
+  
+  // Events
   +addListener: (eventName: string) => void,
   +removeListeners: (count: number) => void,
 }

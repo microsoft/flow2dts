@@ -1,7 +1,12 @@
-declare const DeprecatedImageStylePropTypes;
-declare const DeprecatedTextStylePropTypes;
-declare const DeprecatedViewStylePropTypes;
-declare const invariant;
+// @flow
+declare var DeprecatedImageStylePropTypes: typeof $1;
+declare const $1;
+declare var DeprecatedTextStylePropTypes: typeof $2;
+declare const $2;
+declare var DeprecatedViewStylePropTypes: typeof $3;
+declare const $3;
+declare var invariant: typeof $4;
+declare const $4;
 declare var ReactPropTypesSecret: string;
 declare class StyleSheetValidation {
   validateStyleProp: (prop: string, style: Object, caller: string) => void;

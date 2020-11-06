@@ -1,3 +1,4 @@
+// @flow
 import {Writable} from "stream";
 
 import {PropsType} from "./Type";
@@ -10,19 +11,28 @@ declare class ImplementationWriter {
   types: Array<Type>,
   commands: Array<Command>,
   events: Array<Event>,
+  
   constructor(
     stream: Writable,
     types: Array<Type>,
     commands: Array<Command>,
     events: Array<Event>
   ): void,
+  
   write(): void,
+  
   writePrologue(): void,
+  
   writeRequestParser(): void,
+  
   writeTypeDefs(): void,
+  
   writeRequestDefs(): void,
+  
   writeResponseDefs(): void,
+  
   writeNotificationDefs(): void,
+  
   writeEpilogue(): void,
 }
 

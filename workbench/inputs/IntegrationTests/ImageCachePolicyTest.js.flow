@@ -1,4 +1,6 @@
-const React = require("react");
+// @flow
+declare var React: typeof $2;
+const $2 = require("react");
 
 type Props = {...};
 type State = {
@@ -10,11 +12,15 @@ type State = {
 };
 
 declare class ImageCachePolicyTest
-  extends React.Component<Props, $FlowFixMeState> {
+  extends $1<Props, $FlowFixMeState> {
   state: $FlowFixMe | {...},
+  
   shouldComponentUpdate(nextProps: Props, nextState: State): boolean,
+  
   testComplete(name: string, pass: boolean): void,
+  
   render(): React.Node,
 }
+declare var $1: typeof React.Component;
 
 declare module.exports: typeof ImageCachePolicyTest;

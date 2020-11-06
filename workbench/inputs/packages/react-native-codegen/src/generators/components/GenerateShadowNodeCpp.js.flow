@@ -1,7 +1,12 @@
+// @flow
 import type {SchemaType} from "../../CodegenSchema";
 
 type FilesOutput = Map<string, string>;
 
 declare module.exports: {|
-  generate(libraryName: string, schema: SchemaType, moduleSpecName: string): FilesOutput,
+  generate(
+    libraryName: string,
+    schema: SchemaType,
+    moduleSpecName: string
+  ): FilesOutput,
 |};

@@ -1,4 +1,6 @@
-const React = require("react");
+// @flow
+declare var React: typeof $2;
+const $2 = require("react");
 
 import type {ViewStyleProp} from "../../../Libraries/StyleSheet/StyleSheet";
 import type {RNTesterExample} from "../types/RNTesterTypes";
@@ -15,6 +17,9 @@ type Props = {
 };
 
 declare class RNTesterExampleList
-  extends React.Component<Props, $FlowFixMeState> {render(): React.Node}
+  extends $1<Props, $FlowFixMeState> {
+  render(): React.Node,
+}
+declare var $1: typeof React.Component;
 
 declare module.exports: typeof RNTesterExampleList;

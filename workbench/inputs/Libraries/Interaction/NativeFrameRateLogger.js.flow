@@ -1,8 +1,12 @@
+// @flow
 import type {TurboModule} from "../TurboModule/RCTExport";
 
 interface Spec extends TurboModule {
   +setGlobalOptions: (
-    options: {|+debug?: ?boolean, +reportStackTraces?: ?boolean|}
+    options: {|
+      +debug?: ?boolean,
+      +reportStackTraces?: ?boolean,
+    |}
   ) => void,
   +setContext: (context: string) => void,
   +beginScroll: () => void,

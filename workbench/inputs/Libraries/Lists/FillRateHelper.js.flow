@@ -1,3 +1,4 @@
+// @flow
 type FillRateInfo = Info;
 
 declare class Info {
@@ -13,18 +14,26 @@ declare class Info {
   sample_count: number,
 }
 
-type FrameMetrics = {inLayout?: boolean, length: number, offset: number, ...};
+type FrameMetrics = {
+  inLayout?: boolean,
+  length: number,
+  offset: number,
+  ...,
+};
 
 declare class FillRateHelper {
-  static addListener(callback: (FillRateInfo) => void): {
-    remove: () => void,
-    ...,
-  },
+  static addListener(callback: (FillRateInfo) => void): {remove: () => void,...},
+  
   static setSampleRate(sampleRate: number): void,
+  
   static setMinSampleCount(minSampleCount: number): void,
+  
   constructor(getFrameMetrics: (index: number) => ?FrameMetrics): void,
+  
   activate(): void,
+  
   deactivateAndFlush(): void,
+  
   computeBlankness(
     props: {
       data: any,
@@ -32,7 +41,11 @@ declare class FillRateHelper {
       initialNumToRender: number,
       ...,
     },
-    state: {first: number, last: number, ...},
+    state: {
+      first: number,
+      last: number,
+      ...,
+    },
     scrollMetrics: {
       dOffset: number,
       offset: number,
@@ -41,6 +54,7 @@ declare class FillRateHelper {
       ...,
     }
   ): number,
+  
   enabled(): boolean,
 }
 export type {FillRateInfo};

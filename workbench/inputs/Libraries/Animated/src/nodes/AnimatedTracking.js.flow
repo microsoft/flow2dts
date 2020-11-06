@@ -1,10 +1,13 @@
-const AnimatedValue = require("./AnimatedValue");
-const AnimatedNode = require("./AnimatedNode");
+// @flow
+declare var AnimatedValue: typeof $3;
+const $3 = require("./AnimatedValue");
+declare var AnimatedNode: typeof $1;
+const $1 = require("./AnimatedNode");
 
 import type {EndCallback} from "../animations/Animation";
 
 declare class AnimatedTracking
-  extends AnimatedNode {
+  extends $2 {
   constructor(
     value: AnimatedValue,
     parent: AnimatedNode,
@@ -12,12 +15,19 @@ declare class AnimatedTracking
     animationConfig: Object,
     callback?: ?EndCallback
   ): void,
+  
   __makeNative(): void,
+  
   __getValue(): Object,
+  
   __attach(): void,
+  
   __detach(): void,
+  
   update(): void,
+  
   __getNativeConfig(): any,
 }
+declare var $2: typeof AnimatedNode;
 
 declare module.exports: typeof AnimatedTracking;

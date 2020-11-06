@@ -1,4 +1,5 @@
-type RNTesterNavigationState = {openExample: ?string, ...};
+// @flow
+type RNTesterNavigationState = {openExample: ?string,...};
 
 declare function RNTesterNavigationReducer(
   state: ?RNTesterNavigationState,

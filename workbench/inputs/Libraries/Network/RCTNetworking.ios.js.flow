@@ -1,11 +1,14 @@
-const NativeEventEmitter = require("../EventEmitter/NativeEventEmitter");
+// @flow
+declare var NativeEventEmitter: typeof $1;
+const $1 = require("../EventEmitter/NativeEventEmitter");
 
 import type {NativeResponseType} from "./XMLHttpRequest";
 import type {RequestBody} from "./convertRequestBody";
 
 declare class RCTNetworking
-  extends NativeEventEmitter {
+  extends $2 {
   constructor(): void,
+  
   sendRequest(
     method: string,
     trackingName: string,
@@ -18,8 +21,11 @@ declare class RCTNetworking
     callback: (requestId: number) => void,
     withCredentials: boolean
   ): void,
+  
   abortRequest(requestId: number): void,
+  
   clearCookies(callback: (result: boolean) => void): void,
 }
+declare var $2: typeof NativeEventEmitter;
 
 declare module.exports: RCTNetworking;

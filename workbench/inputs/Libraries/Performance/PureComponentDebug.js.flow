@@ -1,4 +1,6 @@
-const React = require("react");
+// @flow
+declare var React: typeof $2;
+const $2 = require("react");
 
 opaque type DoNotCommitUsageOfPureComponentDebug = {...};
 
@@ -6,8 +8,9 @@ declare class PureComponentDebug<
   P: DoNotCommitUsageOfPureComponentDebug,
   S: ?Object = void,
 >
-  extends React.Component<P, S> {
+  extends $1<P, S> {
   shouldComponentUpdate(nextProps: P, nextState: S): boolean,
 }
+declare var $1: typeof React.Component;
 
 declare module.exports: typeof PureComponentDebug;

@@ -1,6 +1,7 @@
+// @flow
 import type AnimatedValue from "../nodes/AnimatedValue";
 
-type EndResult = {finished: boolean, ...};
+type EndResult = {finished: boolean,...};
 type EndCallback = (result: EndResult) => void;
 
 type AnimationConfig = {
@@ -26,9 +27,7 @@ declare class Animation {
   stop(): void,
   __getNativeAnimationConfig(): any,
   // Helper function for subclasses to make sure onEnd is only called once.
-__debouncedOnEnd(
-    result: EndResult
-  ): void,
+  __debouncedOnEnd(result: EndResult): void,
   __startNativeAnimation(animatedValue: AnimatedValue): void,
 }
 export type {EndResult};

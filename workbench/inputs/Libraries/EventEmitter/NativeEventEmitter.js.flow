@@ -1,4 +1,6 @@
-const EventEmitter = require("../vendor/emitter/EventEmitter");
+// @flow
+declare var EventEmitter: typeof $1;
+const $1 = require("../vendor/emitter/EventEmitter");
 
 import type EmitterSubscription from "../vendor/emitter/EmitterSubscription";
 
@@ -9,11 +11,19 @@ type NativeModule = {
 };
 
 declare class NativeEventEmitter
-  extends EventEmitter {
+  extends $2 {
   constructor(nativeModule: ?NativeModule): void,
-  addListener(eventType: string, listener: Function, context: ?Object): EmitterSubscription,
+  
+  addListener(
+    eventType: string,
+    listener: Function,
+    context: ?Object
+  ): EmitterSubscription,
+  
   removeAllListeners(eventType: string): void,
+  
   removeSubscription(subscription: EmitterSubscription): void,
 }
+declare var $2: typeof EventEmitter;
 
 declare module.exports: typeof NativeEventEmitter;

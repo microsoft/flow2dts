@@ -1,3 +1,4 @@
+// @flow
 import { TurboModule } from "../TurboModule/RCTExport";
 interface Spec extends TurboModule {
   readonly getConstants: () =>
@@ -10,6 +11,7 @@ interface Spec extends TurboModule {
   {
     app_state: string;
   }) => void, error: (error: Object) => void) => void;
+  // Events
   readonly addListener: (eventName: string) => void;
   readonly removeListeners: (count: number) => void;
 }

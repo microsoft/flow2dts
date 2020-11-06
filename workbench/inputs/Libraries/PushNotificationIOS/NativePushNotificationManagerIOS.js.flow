@@ -1,14 +1,21 @@
+// @flow
 import type {TurboModule} from "../TurboModule/RCTExport";
 
-type Permissions = {|alert: boolean, badge: boolean, sound: boolean|};
+type Permissions = {|
+  alert: boolean,
+  badge: boolean,
+  sound: boolean,
+|};
 
 type Notification = {|
   +alertTitle?: ?string,
+  // Actual type: string | number
   +fireDate?: ?number,
   +alertBody?: ?string,
   +alertAction?: ?string,
   +userInfo?: ?Object,
   +category?: ?string,
+  // Actual type: 'year' | 'month' | 'week' | 'day' | 'hour' | 'minute'
   +repeatInterval?: ?string,
   +applicationIconBadgeNumber?: ?number,
   +isSilent?: ?boolean,
@@ -18,18 +25,22 @@ interface Spec extends TurboModule {
   +getConstants: () => {...},
   +onFinishRemoteNotification: (
     notificationId: string,
-    
-/**
+    /**
      * Type:
      *  'UIBackgroundFetchResultNewData' |
      *  'UIBackgroundFetchResultNoData' |
      *  'UIBackgroundFetchResultFailed'
-     */fetchResult: string
+     */
+    fetchResult: string
   ) => void,
   +setApplicationIconBadgeNumber: (num: number) => void,
   +getApplicationIconBadgeNumber: (callback: (num: number) => void) => void,
   +requestPermissions: (
-    permission: {|+alert: boolean, +badge: boolean, +sound: boolean|}
+    permission: {|
+      +alert: boolean,
+      +badge: boolean,
+      +sound: boolean,
+    |}
   ) => Promise<Permissions>,
   +abandonPermissions: () => void,
   +checkPermissions: (callback: (permissions: Permissions) => void) => void,

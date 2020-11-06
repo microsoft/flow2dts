@@ -1,19 +1,24 @@
-const Blob = require("./Blob");
+// @flow
+declare var Blob: typeof $1;
+const $1 = require("./Blob");
 
 import type {BlobOptions} from "./BlobTypes";
 
 declare class File
-  extends Blob {
-  
-/**
+  extends $2 {
+  /**
    * Constructor for JS consumers.
-   */constructor(
+   */
+  constructor(
     parts: Array<Blob | string>,
     name: string,
     options?: BlobOptions
   ): void,
+  
   get name(): string,
+  
   get lastModified(): number,
 }
+declare var $2: typeof Blob;
 
 declare module.exports: typeof File;

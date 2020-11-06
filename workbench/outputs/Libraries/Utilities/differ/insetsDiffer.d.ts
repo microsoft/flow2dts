@@ -1,3 +1,4 @@
+// @flow
 declare type Inset = {
   top: null | undefined | number;
   left: null | undefined | number;

@@ -1,3 +1,4 @@
+// @flow
 import { TurboModule } from "../../TurboModule/RCTExport";
 interface Spec extends TurboModule {
   readonly getConstants: () =>
@@ -8,6 +9,12 @@ interface Spec extends TurboModule {
   };
   readonly setColor: (color: number, animated: boolean) => void;
   readonly setTranslucent: (translucent: boolean) => void;
+
+  /**
+   *  - statusBarStyles can be:
+   *    - 'default'
+   *    - 'dark-content'
+   */
   readonly setStyle: (statusBarStyle?: null | undefined | string) => void;
   readonly setHidden: (hidden: boolean) => void;
 }

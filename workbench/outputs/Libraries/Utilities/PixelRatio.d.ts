@@ -1,3 +1,4 @@
+// @flow
 declare class PixelRatio {
   get: () => number;
   getFontScale: () => number;

@@ -1,3 +1,4 @@
+// @flow
 declare function elementsThatOverlapOffsets(offsets: number[], itemCount: number, getFrameMetrics: (index: number) => {
   length: number;
   offset: number;

@@ -1,3 +1,4 @@
+// @flow
 import * as React from "react";
 import type {HostComponent} from "../Renderer/shims/ReactNativeTypes";
 
@@ -7,7 +8,11 @@ type SyntheticEvent<T> = $ReadOnly<
     cancelable: ?boolean,
     currentTarget: number | React.ElementRef<HostComponent<mixed>>,
     defaultPrevented: ?boolean,
-    dispatchConfig: $ReadOnly<{|registrationName: string|}>,
+    dispatchConfig: $ReadOnly<
+      {|
+        registrationName: string,
+      |},
+    >,
     eventPhase: ?number,
     preventDefault: () => void,
     isDefaultPrevented: () => boolean,
@@ -51,7 +56,14 @@ type ResponderSyntheticEvent<T> = $ReadOnly<
   |},
 >;
 
-type Layout = $ReadOnly<{|x: number, y: number, width: number, height: number|}>;
+type Layout = $ReadOnly<
+  {|
+    x: number,
+    y: number,
+    width: number,
+    height: number,
+  |},
+>;
 
 type TextLayout = $ReadOnly<
   {|
@@ -64,9 +76,21 @@ type TextLayout = $ReadOnly<
   |},
 >;
 
-type LayoutEvent = SyntheticEvent<$ReadOnly<{|layout: Layout|}>>;
+type LayoutEvent = SyntheticEvent<
+  $ReadOnly<
+    {|
+      layout: Layout,
+    |},
+  >,
+>;
 
-type TextLayoutEvent = SyntheticEvent<$ReadOnly<{|lines: Array<TextLayout>|}>>;
+type TextLayoutEvent = SyntheticEvent<
+  $ReadOnly<
+    {|
+      lines: Array<TextLayout>,
+    |},
+  >,
+>;
 
 type PressEvent = ResponderSyntheticEvent<
   $ReadOnly<
@@ -89,22 +113,64 @@ type ScrollEvent = SyntheticEvent<
   $ReadOnly<
     {|
       contentInset: $ReadOnly<
-        {|bottom: number, left: number, right: number, top: number|},
+        {|
+          bottom: number,
+          left: number,
+          right: number,
+          top: number,
+        |},
       >,
-      contentOffset: $ReadOnly<{|y: number, x: number|}>,
-      contentSize: $ReadOnly<{|height: number, width: number|}>,
-      layoutMeasurement: $ReadOnly<{|height: number, width: number|}>,
-      targetContentOffset?: $ReadOnly<{|y: number, x: number|}>,
-      velocity?: $ReadOnly<{|y: number, x: number|}>,
+      contentOffset: $ReadOnly<
+        {|
+          y: number,
+          x: number,
+        |},
+      >,
+      contentSize: $ReadOnly<
+        {|
+          height: number,
+          width: number,
+        |},
+      >,
+      layoutMeasurement: $ReadOnly<
+        {|
+          height: number,
+          width: number,
+        |},
+      >,
+      targetContentOffset?: $ReadOnly<
+        {|
+          y: number,
+          x: number,
+        |},
+      >,
+      velocity?: $ReadOnly<
+        {|
+          y: number,
+          x: number,
+        |},
+      >,
       zoomScale?: number,
       responderIgnoreScroll?: boolean,
     |},
   >,
 >;
 
-type BlurEvent = SyntheticEvent<$ReadOnly<{|target: number|}>>;
+type BlurEvent = SyntheticEvent<
+  $ReadOnly<
+    {|
+      target: number,
+    |},
+  >,
+>;
 
-type FocusEvent = SyntheticEvent<$ReadOnly<{|target: number|}>>;
+type FocusEvent = SyntheticEvent<
+  $ReadOnly<
+    {|
+      target: number,
+    |},
+  >,
+>;
 
 type MouseEvent = SyntheticEvent<
   $ReadOnly<

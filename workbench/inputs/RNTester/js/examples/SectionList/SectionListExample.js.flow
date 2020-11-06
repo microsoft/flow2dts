@@ -1,9 +1,11 @@
-const React = require("react");
+// @flow
+declare var React: typeof $1;
+const $1 = require("react");
 
 import type {Item} from "../../components/ListExampleShared";
 
 declare class SectionListExample
-  extends React.PureComponent<{...}, $FlowFixMeState> {
+  extends $2<{...}, $FlowFixMeState> {
   state: 
     | any
     | {|
@@ -14,14 +16,18 @@ declare class SectionListExample
       logViewable: boolean,
       virtualized: boolean,
     |},
+  
   render(): React.Node,
 }
+declare var $2: typeof React.PureComponent;
 
 declare module.exports: {|
-  examples: Array<{|
-    title: string,
-    render: () => React.Element<typeof SectionListExample>,
-  |}>,
+  examples: Array<
+    {|
+      title: string,
+      render: () => React.Element<typeof SectionListExample>,
+    |},
+  >,
   description: string,
   title: string,
 |};

@@ -1,4 +1,5 @@
 /*[FLOW2DTS - Warning] This type alias was opaque in the original Flow source.*/
+// @flow
 declare type BlobCollector = {};
 declare type BlobData = {
   blobId: string;

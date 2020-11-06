@@ -1,3 +1,4 @@
+// @flow
 declare type FillRateInfo = Info;
 declare class Info {
   any_blank_count: number;

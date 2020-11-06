@@ -1,17 +1,27 @@
-const EventEmitter = require("../vendor/emitter/EventEmitter");
-const EventSubscriptionVendor = require(
-  "../vendor/emitter/EventSubscriptionVendor",
-);
+// @flow
+declare var EventEmitter: typeof $1;
+const $1 = require("../vendor/emitter/EventEmitter");
+declare var EventSubscriptionVendor: typeof $2;
+const $2 = require("../vendor/emitter/EventSubscriptionVendor");
 
 import type EmitterSubscription from "../vendor/emitter/EmitterSubscription";
 
 declare class RCTDeviceEventEmitter
-  extends EventEmitter {
+  extends $3 {
   sharedSubscriber: EventSubscriptionVendor,
+  
   constructor(): void,
-  addListener(eventType: string, listener: Function, context: ?Object): EmitterSubscription,
+  
+  addListener(
+    eventType: string,
+    listener: Function,
+    context: ?Object
+  ): EmitterSubscription,
+  
   removeAllListeners(eventType: ?string): void,
+  
   removeSubscription(subscription: EmitterSubscription): void,
 }
+declare var $3: typeof EventEmitter;
 
 declare module.exports: RCTDeviceEventEmitter;

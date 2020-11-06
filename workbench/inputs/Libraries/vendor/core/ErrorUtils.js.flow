@@ -1,3 +1,4 @@
-import type {ErrorUtilsT} from "../../polyfills/error-guard.js";
+// @flow
+import type {ErrorUtilsT} from "../../polyfills/error-guard";
 
 declare module.exports: ErrorUtilsT;

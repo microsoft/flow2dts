@@ -1,3 +1,4 @@
+// @flow
 import { MeasureOnSuccessCallback } from "../Renderer/shims/ReactNativeTypes";
 import { MeasureInWindowOnSuccessCallback } from "../Renderer/shims/ReactNativeTypes";
 import { MeasureLayoutOnSuccessCallback } from "../Renderer/shims/ReactNativeTypes";

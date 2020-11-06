@@ -1,5 +1,7 @@
+// @flow
 import { TurboModule } from "../RCTExport";
 interface Spec extends TurboModule {
+  // Exported methods.
   readonly getConstants: () =>
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {

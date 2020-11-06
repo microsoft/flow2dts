@@ -1,3 +1,4 @@
+// @flow
 import { TurboModule } from "../TurboModule/RCTExport";
 declare type StackFrame =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -20,10 +21,14 @@ declare type ExceptionData = {
   extraData?: Object;
 };
 interface Spec extends TurboModule {
+  // Deprecated: Use `reportException`
   readonly reportFatalException: (message: string, stack: StackFrame[], exceptionId: number) => void;
+  // Deprecated: Use `reportException`
   readonly reportSoftException: (message: string, stack: StackFrame[], exceptionId: number) => void;
+  // TODO(T53311281): This is a noop on iOS now. Implement it.
   readonly reportException?: (data: ExceptionData) => void;
   readonly updateExceptionMessage: (message: string, stack: StackFrame[], exceptionId: number) => void;
+  // TODO(T53311281): This is a noop on iOS now. Implement it.
   readonly dismissRedbox?: () => void;
 }
 declare var ExceptionsManager:

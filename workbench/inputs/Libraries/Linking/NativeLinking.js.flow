@@ -1,14 +1,26 @@
+// @flow
 import type {TurboModule} from "../TurboModule/RCTExport";
 
 interface Spec extends TurboModule {
+  // Common interface
   +getInitialURL: () => Promise<string>,
   +canOpenURL: (url: string) => Promise<boolean>,
   +openURL: (url: string) => Promise<void>,
   +openSettings: () => Promise<void>,
+  
+  // Android only
   +sendIntent: (
     action: string,
-    extras: ?Array<{key: string, value: string | number | boolean, ...}>
+    extras: ?Array<
+      {
+        key: string,
+        value: string | number | boolean,
+        ...,
+      },
+    >
   ) => Promise<void>,
+  
+  // Events
   +addListener: (eventName: string) => void,
   +removeListeners: (count: number) => void,
 }

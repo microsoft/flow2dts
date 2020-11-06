@@ -1,3 +1,4 @@
+// @flow
 declare function DeprecatedStyleSheetPropType(shape: {
   [key: string]: ReactPropsCheckType;
 }) => ReactPropsCheckType;

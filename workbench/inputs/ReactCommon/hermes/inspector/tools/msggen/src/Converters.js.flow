@@ -1,3 +1,4 @@
+// @flow
 declare function toCppNamespace(domain: string): string;
 
 declare function toCppType(type: string): string;

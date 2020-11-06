@@ -1,3 +1,7 @@
-declare var BlobModule: {|createFromParts(): void, release(): void|};
+// @flow
+declare var BlobModule: {|
+  createFromParts(): void,
+  release(): void,
+|};
 
 declare module.exports: typeof BlobModule;

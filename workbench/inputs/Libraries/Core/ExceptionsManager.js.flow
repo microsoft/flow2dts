@@ -1,6 +1,11 @@
+// @flow
 import type {ExceptionData} from "./NativeExceptionsManager";
 
-declare class SyntheticError extends Error {name: string}
+declare class SyntheticError
+  extends $1 {
+  name: string,
+}
+declare var $1: typeof Error;
 
 type ExceptionDecorator = (ExceptionData) => ExceptionData;
 

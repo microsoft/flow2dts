@@ -1,3 +1,4 @@
+// @flow
 import { StackFrame } from "../NativeExceptionsManager";
 declare type ExtendedError = Error & {
   jsEngine?: string;

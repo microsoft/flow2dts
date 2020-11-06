@@ -1,3 +1,4 @@
+// @flow
 declare function processDecelerationRate(
   decelerationRate: number | 'normal' | 'fast'
 ): number;

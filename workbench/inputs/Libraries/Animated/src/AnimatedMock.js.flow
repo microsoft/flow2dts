@@ -1,13 +1,25 @@
-const {AnimatedEvent} = require("./AnimatedEvent");
-const {attachNativeEvent} = require("./AnimatedEvent");
-const AnimatedImplementation = require("./AnimatedImplementation");
-const AnimatedInterpolation = require("./nodes/AnimatedInterpolation");
-const AnimatedNode = require("./nodes/AnimatedNode");
-const AnimatedProps = require("./nodes/AnimatedProps");
-const AnimatedValue = require("./nodes/AnimatedValue");
-const AnimatedValueXY = require("./nodes/AnimatedValueXY");
+// @flow
+declare var AnimatedEvent: typeof $2.AnimatedEvent;
+declare var attachNativeEvent: typeof $10.attachNativeEvent;
+declare var $2: typeof $1;
+declare var $10: typeof $9;
+const $1 = require("./AnimatedEvent");
+const $9 = require("./AnimatedEvent");
+declare var AnimatedImplementation: typeof $3;
+const $3 = require("./AnimatedImplementation");
+declare var AnimatedInterpolation: typeof $4;
+const $4 = require("./nodes/AnimatedInterpolation");
+declare var AnimatedNode: typeof $5;
+const $5 = require("./nodes/AnimatedNode");
+declare var AnimatedProps: typeof $6;
+const $6 = require("./nodes/AnimatedProps");
+declare var AnimatedValue: typeof $7;
+const $7 = require("./nodes/AnimatedValue");
+declare var AnimatedValueXY: typeof $8;
+const $8 = require("./nodes/AnimatedValueXY");
 
-const createAnimatedComponent = require("./createAnimatedComponent");
+declare var createAnimatedComponent: typeof $11;
+const $11 = require("./createAnimatedComponent");
 
 import type {EndCallback} from "./animations/Animation";
 import type {TimingAnimationConfig} from "./animations/TimingAnimation";
@@ -40,9 +52,11 @@ declare var decay: (
   config: DecayAnimationConfig
 ) => CompositeAnimation;
 
-declare var sequence: (animations: Array<CompositeAnimation>) => CompositeAnimation;
+declare var sequence: (
+  animations: Array<CompositeAnimation>
+) => CompositeAnimation;
 
-type ParallelConfig = {stopTogether?: boolean, ...};
+type ParallelConfig = {stopTogether?: boolean,...};
 declare var parallel: (
   animations: Array<CompositeAnimation>,
   config?: ?ParallelConfig
@@ -50,7 +64,10 @@ declare var parallel: (
 
 declare var delay: (time: number) => CompositeAnimation;
 
-declare var stagger: (time: number, animations: Array<CompositeAnimation>) => CompositeAnimation;
+declare var stagger: (
+  time: number,
+  animations: Array<CompositeAnimation>
+) => CompositeAnimation;
 
 type LoopAnimationConfig = {
   iterations: number,
@@ -58,7 +75,10 @@ type LoopAnimationConfig = {
   ...,
 };
 
-declare var loop: (animation: CompositeAnimation, _?: LoopAnimationConfig) => CompositeAnimation;
+declare var loop: (
+  animation: CompositeAnimation,
+  _?: LoopAnimationConfig
+) => CompositeAnimation;
 
 declare var event: (argMapping: Array<?Mapping>, config: EventConfig) => any;
 export type {CompositeAnimation};

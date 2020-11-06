@@ -1,3 +1,4 @@
+// @flow
 type ErrorHandler = (error: mixed, isFatal: boolean) => void;
 type Fn<Args, Return> = (...Args) => Return;
 
@@ -11,9 +12,9 @@ declare var ErrorUtils: {|
     context?: ?mixed,
     args?: ?TArgs,
     // Unused, but some code synced from www sets it to null.
-unused_onError?: null,
+    unused_onError?: null,
     // Some callers pass a name here, which we ignore.
-unused_name?: ?string
+    unused_name?: ?string
   ): ?TOut,
   applyWithGuardIfNeeded<TArgs: $ReadOnlyArray<mixed>, TOut>(
     fun: Fn<TArgs, TOut>,

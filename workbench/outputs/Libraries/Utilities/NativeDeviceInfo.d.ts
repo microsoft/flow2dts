@@ -1,3 +1,4 @@
+// @flow
 import { TurboModule } from "../TurboModule/RCTExport";
 declare type DisplayMetricsAndroid =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

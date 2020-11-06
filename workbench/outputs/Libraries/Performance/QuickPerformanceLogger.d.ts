@@ -1,3 +1,4 @@
+// @flow
 declare var QuickPerformanceLogger:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
@@ -7,6 +8,7 @@ declare var QuickPerformanceLogger:
   markerAnnotate: (markerId: number, annotationKey: string, annotationValue: string, instanceKey?: number) => void;
   markerCancel: (markerId: number, instanceKey?: number) => void;
   markerPoint: (markerId: number, name: string, instanceKey?: number, timestamp?: number) => void;
+  markerDrop: (markerId: number, instanceKey?: number) => void;
   currentTimestamp: () => number;
 };
 declare const $f2tExportDefault: typeof QuickPerformanceLogger;

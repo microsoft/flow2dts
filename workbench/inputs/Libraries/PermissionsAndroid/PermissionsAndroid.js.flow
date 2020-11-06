@@ -1,3 +1,4 @@
+// @flow
 import type {PermissionStatus} from "./NativePermissionsAndroid";
 import type {PermissionType} from "./NativePermissionsAndroid";
 
@@ -38,43 +39,50 @@ declare class PermissionsAndroid {
     WRITE_CONTACTS: string,
     WRITE_EXTERNAL_STORAGE: string,
   |},
-  RESULTS: {|DENIED: string, GRANTED: string, NEVER_ASK_AGAIN: string|},
+  RESULTS: {|
+    DENIED: string,
+    GRANTED: string,
+    NEVER_ASK_AGAIN: string,
+  |},
   
-/**
+  /**
    * DEPRECATED - use check
    *
    * Returns a promise resolving to a boolean value as to whether the specified
    * permissions has been granted
    *
    * @deprecated
-   */checkPermission(
-    permission: PermissionType
-  ): Promise<boolean>,
+   */
+  checkPermission(permission: PermissionType): Promise<boolean>,
   
-/**
+  /**
    * Returns a promise resolving to a boolean value as to whether the specified
    * permissions has been granted
    *
    * See https://reactnative.dev/docs/permissionsandroid.html#check
-   */check(
-    permission: PermissionType
-  ): Promise<boolean>,
-  requestPermission(permission: PermissionType, rationale?: Rationale): Promise<
-    boolean,
-  >,
-  request(permission: PermissionType, rationale?: Rationale): Promise<
-    PermissionStatus,
-  >,
+   */
+  check(permission: PermissionType): Promise<boolean>,
   
-/**
+  requestPermission(
+    permission: PermissionType,
+    rationale?: Rationale
+  ): Promise<boolean>,
+  
+  request(
+    permission: PermissionType,
+    rationale?: Rationale
+  ): Promise<PermissionStatus>,
+  
+  /**
    * Prompts the user to enable multiple permissions in the same dialog and
    * returns an object with the permissions as keys and strings as values
    * indicating whether the user allowed or denied the request
    *
    * See https://reactnative.dev/docs/permissionsandroid.html#requestmultiple
-   */requestMultiple(
+   */
+  requestMultiple(
     permissions: Array<PermissionType>
-  ): Promise<{[permission: PermissionType]: PermissionStatus, ...}>,
+  ): Promise<{[permission: PermissionType]: PermissionStatus,...}>,
 }
 
 declare var PermissionsAndroidInstance: PermissionsAndroid;

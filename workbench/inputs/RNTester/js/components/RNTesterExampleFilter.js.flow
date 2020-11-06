@@ -1,4 +1,6 @@
-const React = require("react");
+// @flow
+declare var React: typeof $2;
+const $2 = require("react");
 
 type Props = {
   filter: Function,
@@ -9,9 +11,14 @@ type Props = {
   ...,
 };
 
-type State = {filter: string, ...};
+type State = {filter: string,...};
 
 declare class RNTesterExampleFilter
-  extends React.Component<Props, State> {state: State, render(): React.Node}
+  extends $1<Props, State> {
+  state: State,
+  
+  render(): React.Node,
+}
+declare var $1: typeof React.Component;
 
 declare module.exports: typeof RNTesterExampleFilter;

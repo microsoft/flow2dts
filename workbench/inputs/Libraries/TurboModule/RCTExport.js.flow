@@ -1,4 +1,7 @@
-interface DEPRECATED_RCTExport<T: void = void> {+getConstants?: () => {...}}
+// @flow
+interface DEPRECATED_RCTExport<T: void = void> {
+  +getConstants?: () => {...},
+}
 
 interface TurboModule extends DEPRECATED_RCTExport<void> {}
 export type {DEPRECATED_RCTExport};

@@ -1,3 +1,4 @@
+// @flow
 import { IPerformanceLogger } from "../Utilities/createPerformanceLogger";
 declare type Task = (taskData: any) => Promise;
 declare type TaskProvider = () => Task;
@@ -31,10 +32,10 @@ declare var AppRegistry:
   registerConfig: (config: AppConfig[]) => void;
 
   /**
-     * Registers an app's root component.
-     *
-     * See https://reactnative.dev/docs/appregistry.html#registercomponent
-     */
+   * Registers an app's root component.
+   *
+   * See https://reactnative.dev/docs/appregistry.html#registercomponent
+   */
   registerComponent: (appKey: string, componentProvider: ComponentProvider, section?: boolean) => string;
   registerRunnable: (appKey: string, run: Function) => string;
   registerSection: (appKey: string, component: ComponentProvider) => void;
@@ -46,45 +47,45 @@ declare var AppRegistry:
   setComponentProviderInstrumentationHook: (hook: ComponentProviderInstrumentationHook) => void;
 
   /**
-     * Loads the JavaScript bundle and runs the app.
-     *
-     * See https://reactnative.dev/docs/appregistry.html#runapplication
-     */
+   * Loads the JavaScript bundle and runs the app.
+   *
+   * See https://reactnative.dev/docs/appregistry.html#runapplication
+   */
   runApplication: (appKey: string, appParameters: any) => void;
 
   /**
-     * Stops an application when a view should be destroyed.
-     *
-     * See https://reactnative.dev/docs/appregistry.html#unmountapplicationcomponentatroottag
-     */
+   * Stops an application when a view should be destroyed.
+   *
+   * See https://reactnative.dev/docs/appregistry.html#unmountapplicationcomponentatroottag
+   */
   unmountApplicationComponentAtRootTag: (rootTag: number) => void;
 
   /**
-     * Register a headless task. A headless task is a bit of code that runs without a UI.
-     *
-     * See https://reactnative.dev/docs/appregistry.html#registerheadlesstask
-     */
+   * Register a headless task. A headless task is a bit of code that runs without a UI.
+   *
+   * See https://reactnative.dev/docs/appregistry.html#registerheadlesstask
+   */
   registerHeadlessTask: (taskKey: string, taskProvider: TaskProvider) => void;
 
   /**
-     * Register a cancellable headless task. A headless task is a bit of code that runs without a UI.
-     *
-     * See https://reactnative.dev/docs/appregistry.html#registercancellableheadlesstask
-     */
+   * Register a cancellable headless task. A headless task is a bit of code that runs without a UI.
+   *
+   * See https://reactnative.dev/docs/appregistry.html#registercancellableheadlesstask
+   */
   registerCancellableHeadlessTask: (taskKey: string, taskProvider: TaskProvider, taskCancelProvider: TaskCancelProvider) => void;
 
   /**
-     * Only called from native code. Starts a headless task.
-     *
-     * See https://reactnative.dev/docs/appregistry.html#startheadlesstask
-     */
+   * Only called from native code. Starts a headless task.
+   *
+   * See https://reactnative.dev/docs/appregistry.html#startheadlesstask
+   */
   startHeadlessTask: (taskId: number, taskKey: string, data: any) => void;
 
   /**
-     * Only called from native code. Cancels a headless task.
-     *
-     * See https://reactnative.dev/docs/appregistry.html#cancelheadlesstask
-     */
+   * Only called from native code. Cancels a headless task.
+   *
+   * See https://reactnative.dev/docs/appregistry.html#cancelheadlesstask
+   */
   cancelHeadlessTask: (taskId: number, taskKey: string) => void;
 };
 export type { TaskProvider };

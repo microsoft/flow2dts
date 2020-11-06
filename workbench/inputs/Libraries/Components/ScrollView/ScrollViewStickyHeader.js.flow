@@ -1,7 +1,8 @@
-const AnimatedImplementation = require(
-  "../../Animated/src/AnimatedImplementation",
-);
-const React = require("react");
+// @flow
+declare var AnimatedImplementation: typeof $1;
+const $1 = require("../../Animated/src/AnimatedImplementation");
+declare var React: typeof $2;
+const $2 = require("react");
 
 import type {LayoutEvent} from "../../Types/CoreEventTypes";
 
@@ -11,10 +12,10 @@ type Props = {
   onLayout: (event: LayoutEvent) => void,
   scrollAnimatedValue: AnimatedImplementation.Value,
   // Will cause sticky headers to stick at the bottom of the ScrollView instead
-// of the top.
-inverted: ?boolean,
+  // of the top.
+  inverted: ?boolean,
   // The height of the parent ScrollView. Currently only set when inverted.
-scrollViewHeight: ?number,
+  scrollViewHeight: ?number,
   ...,
 };
 
@@ -27,11 +28,14 @@ type State = {
 };
 
 declare class ScrollViewStickyHeader
-  extends React.Component<Props, State> {
+  extends $3<Props, State> {
   state: State,
+  
   setNextHeaderY(y: number): void,
+  
   render(): React.Node,
 }
+declare var $3: typeof React.Component;
 export type {Props};
 
 declare module.exports: typeof ScrollViewStickyHeader;

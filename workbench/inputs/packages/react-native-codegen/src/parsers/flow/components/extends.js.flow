@@ -1,3 +1,4 @@
+// @flow
 import type {ExtendsPropsShape} from "../../../CodegenSchema.js";
 import type {TypeMap} from "../utils.js";
 

@@ -1,3 +1,4 @@
+// @flow
 declare type BackPressEventName = "backPress" | "hardwareBackPress";
 declare type TBackHandler =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

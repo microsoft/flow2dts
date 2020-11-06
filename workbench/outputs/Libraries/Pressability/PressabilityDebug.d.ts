@@ -1,9 +1,9 @@
-[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/Pressability/PressabilityDebug.js.flow: Export 'PressabilityDebugView' is not defined (15:8)
+[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/Pressability/PressabilityDebug.js.flow: Export 'PressabilityDebugView' is not defined (23:8)
 
-  13 | 
-  14 | declare function isEnabled(): boolean;
-> 15 | export {PressabilityDebugView};
+  21 | 
+  22 | declare function isEnabled(): boolean;
+> 23 | export {PressabilityDebugView};
      |         ^
-  16 | 
-  17 | export {isEnabled};
-  18 | 
+  24 | 
+  25 | export {isEnabled};
+  26 | 

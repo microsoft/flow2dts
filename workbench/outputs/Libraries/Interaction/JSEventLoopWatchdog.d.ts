@@ -1,3 +1,4 @@
+// @flow
 declare type Handler = {
   onIterate?: () => void;
   onStall: (params: {

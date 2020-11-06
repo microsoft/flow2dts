@@ -1,3 +1,4 @@
+// @flow
 declare type SpringConfigType = {
   stiffness: number;
   damping: number;

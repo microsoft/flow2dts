@@ -1,3 +1,4 @@
+// @flow
 declare type Point = {
   x: null | undefined | number;
   y: null | undefined | number;

@@ -1,16 +1,17 @@
-const DeprecatedImageStylePropTypes = require(
-  "../../DeprecatedPropTypes/DeprecatedImageStylePropTypes",
-);
-const DeprecatedTextStylePropTypes = require(
-  "../../DeprecatedPropTypes/DeprecatedTextStylePropTypes",
-);
-const DeprecatedViewStylePropTypes = require(
-  "../../DeprecatedPropTypes/DeprecatedViewStylePropTypes",
-);
+// @flow
+declare var DeprecatedImageStylePropTypes: typeof $1;
+const $1 = require("../../DeprecatedPropTypes/DeprecatedImageStylePropTypes");
+declare var DeprecatedTextStylePropTypes: typeof $2;
+const $2 = require("../../DeprecatedPropTypes/DeprecatedTextStylePropTypes");
+declare var DeprecatedViewStylePropTypes: typeof $3;
+const $3 = require("../../DeprecatedPropTypes/DeprecatedViewStylePropTypes");
 
-const processColor = require("../../StyleSheet/processColor");
-const processTransform = require("../../StyleSheet/processTransform");
-const sizesDiffer = require("../../Utilities/differ/sizesDiffer");
+declare var processColor: typeof $4;
+const $4 = require("../../StyleSheet/processColor");
+declare var processTransform: typeof $5;
+const $5 = require("../../StyleSheet/processTransform");
+declare var sizesDiffer: typeof $6;
+const $6 = require("../../Utilities/differ/sizesDiffer");
 
 type ReturnBoolType = <V>(V) => true;
 type BoolifiedDeprecatedViewStylePropTypes = $ObjMap<

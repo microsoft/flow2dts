@@ -1,3 +1,4 @@
+// @flow
 declare type Content = {
   title?: string;
   message: string;

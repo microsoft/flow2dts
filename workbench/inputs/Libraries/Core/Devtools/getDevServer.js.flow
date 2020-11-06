@@ -1,4 +1,9 @@
-type DevServerInfo = {url: string, bundleLoadedFromServer: boolean, ...};
+// @flow
+type DevServerInfo = {
+  url: string,
+  bundleLoadedFromServer: boolean,
+  ...,
+};
 
 declare function getDevServer(): DevServerInfo;
 

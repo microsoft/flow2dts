@@ -1,3 +1,4 @@
+// @flow
 declare type ErrorHandler = (error: unknown, isFatal: boolean) => void;
 declare type Fn<Args, Return> = (...$f2tRest: Args) => Return;
 declare var ErrorUtils:

@@ -1,9 +1,11 @@
-const React = require("react");
+// @flow
+declare var React: typeof $2;
+const $2 = require("react");
 
 import type {Item} from "../../components/ListExampleShared";
 
 declare class MultiColumnExample
-  extends React.PureComponent<$FlowFixMeProps, $FlowFixMeState> {
+  extends $1<$FlowFixMeProps, $FlowFixMeState> {
   state: 
     | any
     | {|
@@ -14,14 +16,18 @@ declare class MultiColumnExample
       numColumns: number,
       virtualized: boolean,
     |},
+  
   render(): React.Node,
 }
+declare var $1: typeof React.PureComponent;
 
 declare module.exports: {|
-  examples: Array<{|
-    title: string,
-    render: () => React.Element<typeof MultiColumnExample>,
-  |}>,
+  examples: Array<
+    {|
+      title: string,
+      render: () => React.Element<typeof MultiColumnExample>,
+    |},
+  >,
   description: string,
   title: string,
 |};

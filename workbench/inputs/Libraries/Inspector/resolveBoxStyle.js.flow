@@ -1,5 +1,14 @@
-declare function resolveBoxStyle(prefix: string, style: Object): ?$ReadOnly<
-  {|bottom: number, left: number, right: number, top: number|},
+// @flow
+declare function resolveBoxStyle(
+  prefix: string,
+  style: Object
+): ?$ReadOnly<
+  {|
+    bottom: number,
+    left: number,
+    right: number,
+    top: number,
+  |},
 >;
 
 declare module.exports: typeof resolveBoxStyle;

@@ -1,3 +1,4 @@
+// @flow
 declare type JSTimerType = "setTimeout" | "setInterval" | "requestAnimationFrame" | "setImmediate" | "requestIdleCallback";
 declare var ExportedJSTimers:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

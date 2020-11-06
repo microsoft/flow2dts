@@ -1,3 +1,4 @@
+// @flow
 import type {RNTesterExample} from "../types/RNTesterTypes";
 
 declare var ComponentExamples: Array<RNTesterExample>;

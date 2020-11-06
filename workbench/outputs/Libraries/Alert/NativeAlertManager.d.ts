@@ -1,11 +1,12 @@
+// @flow
 import { TurboModule } from "../TurboModule/RCTExport";
 declare type Args =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
   title?: string;
   message?: string;
-  buttons?: Object[];
-  // TODO: have a better type
+  buttons?: Object[]; // TODO: have a better type
+
   type?: string;
   defaultValue?: string;
   cancelButtonKey?: string;

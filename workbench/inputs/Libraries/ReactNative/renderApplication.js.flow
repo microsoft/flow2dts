@@ -1,6 +1,8 @@
+// @flow
 import type {IPerformanceLogger} from "../Utilities/createPerformanceLogger";
 
-const React = require("react");
+declare var React: typeof $1;
+const $1 = require("react");
 
 declare function renderApplication<Props: Object>(
   RootComponent: React.ComponentType<Props>,

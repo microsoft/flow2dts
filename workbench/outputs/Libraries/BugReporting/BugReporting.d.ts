@@ -1,3 +1,4 @@
+// @flow
 declare type ExtraData = {
   [key: string]: string;
 };

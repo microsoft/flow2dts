@@ -1,52 +1,63 @@
+// @flow
 import type {PressEvent} from "../Types/CoreEventTypes";
 
 type GestureState = {|
-  
-/**
+  /**
    * ID of the gestureState - persisted as long as there at least one touch on screen
-   */stateID: number,
+   */
+  stateID: number,
   
-/**
+  /**
    * The latest screen coordinates of the recently-moved touch
-   */moveX: number,
+   */
+  moveX: number,
   
-/**
+  /**
    * The latest screen coordinates of the recently-moved touch
-   */moveY: number,
+   */
+  moveY: number,
   
-/**
+  /**
    * The screen coordinates of the responder grant
-   */x0: number,
+   */
+  x0: number,
   
-/**
+  /**
    * The screen coordinates of the responder grant
-   */y0: number,
+   */
+  y0: number,
   
-/**
+  /**
    * Accumulated distance of the gesture since the touch started
-   */dx: number,
+   */
+  dx: number,
   
-/**
+  /**
    * Accumulated distance of the gesture since the touch started
-   */dy: number,
+   */
+  dy: number,
   
-/**
+  /**
    * Current velocity of the gesture
-   */vx: number,
+   */
+  vx: number,
   
-/**
+  /**
    * Current velocity of the gesture
-   */vy: number,
+   */
+  vy: number,
   
-/**
+  /**
    * Number of touches currently on screen
-   */numberActiveTouches: number,
+   */
+  numberActiveTouches: number,
   
-/**
+  /**
    * All `gestureState` accounts for timeStamps up until this value
    *
    * @private
-   */_accountsForMovesUpTo: number,
+   */
+  _accountsForMovesUpTo: number,
 |};
 
 type ActiveCallback = (event: PressEvent, gestureState: GestureState) => boolean;
@@ -59,14 +70,12 @@ type PanResponderConfig = $ReadOnly<
     onMoveShouldSetPanResponderCapture?: ?ActiveCallback,
     onStartShouldSetPanResponder?: ?ActiveCallback,
     onStartShouldSetPanResponderCapture?: ?ActiveCallback,
-    
-/**
+    /**
    * The body of `onResponderGrant` returns a bool, but the vast majority of
    * callsites return void and this TODO notice is found in it:
    *   TODO: t7467124 investigate if this can be removed
-   */onPanResponderGrant?: ?(
-      | PassiveCallback
-      | ActiveCallback),
+   */
+    onPanResponderGrant?: ?(PassiveCallback | ActiveCallback),
     onPanResponderReject?: ?PassiveCallback,
     onPanResponderStart?: ?PassiveCallback,
     onPanResponderEnd?: ?PassiveCallback,
@@ -79,8 +88,7 @@ type PanResponderConfig = $ReadOnly<
 >;
 
 declare var PanResponder: {|
-  
-/**
+  /**
    *
    * A graphical explanation of the touch data flow:
    *
@@ -141,11 +149,11 @@ declare var PanResponder: {|
    *   moving the same direction. Only valid when currently responder (otherwise,
    *   it only represents the drag distance below the threshold).
    * - vx/vy: Velocity.
-   */_initializeGestureState(
-    gestureState: GestureState
-  ): void,
+   */
   
-/**
+  _initializeGestureState(gestureState: GestureState): void,
+  
+  /**
    * This is nuanced and is necessary. It is incorrect to continuously take all
    * active *and* recently moved touches, find the centroid, and track how that
    * result changes over time. Instead, we must take all recently moved
@@ -168,12 +176,13 @@ declare var PanResponder: {|
    * `onResponderMove` passed the first dispatch. This diverges from the
    * typical responder callback pattern (without using `PanResponder`), but
    * avoids more dispatches than necessary.
-   */_updateGestureStateOnMove(
+   */
+  _updateGestureStateOnMove(
     gestureState: GestureState,
     touchHistory: $PropertyType<PressEvent, 'touchHistory'>
   ): void,
   
-/**
+  /**
    * @param {object} config Enhanced versions of all of the responder callbacks
    * that provide not only the typical `ResponderSyntheticEvent`, but also the
    * `PanResponder` gesture state.  Simply replace the word `Responder` with
@@ -204,7 +213,8 @@ declare var PanResponder: {|
    *  being processed by the gesture and `gestureState` being updated
    *  accordingly. (numberActiveTouches) may not be totally accurate unless you
    *  are the responder.
-   */create(
+   */
+  create(
     config: PanResponderConfig
   ): {|
     getInteractionHandle: () => ?number,

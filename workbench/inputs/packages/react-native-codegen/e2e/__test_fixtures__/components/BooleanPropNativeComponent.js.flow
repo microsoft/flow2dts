@@ -1,3 +1,4 @@
+// @flow
 import type {WithDefault} from "../../../../../Libraries/Types/CodegenTypes";
 import type {ViewProps} from "../../../../../Libraries/Components/View/ViewPropTypes";
 
@@ -6,8 +7,9 @@ import type {HostComponent} from "../../../../../Libraries/Renderer/shims/ReactN
 type NativeProps = $ReadOnly<
   {|
     ...ViewProps,
+    
     // Props
-disabled?: WithDefault<boolean, false>,
+    disabled?: WithDefault<boolean, false>,
     disabledNullable?: WithDefault<boolean, null>,
   |},
 >;

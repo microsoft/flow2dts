@@ -1,9 +1,16 @@
-declare const DeprecatedImageStylePropTypes;
-declare const DeprecatedTextStylePropTypes;
-declare const DeprecatedViewStylePropTypes;
-declare const processColor;
-declare const processTransform;
-declare const sizesDiffer;
+// @flow
+declare var DeprecatedImageStylePropTypes: typeof $1;
+declare const $1;
+declare var DeprecatedTextStylePropTypes: typeof $2;
+declare const $2;
+declare var DeprecatedViewStylePropTypes: typeof $3;
+declare const $3;
+declare var processColor: typeof $4;
+declare const $4;
+declare var processTransform: typeof $5;
+declare const $5;
+declare var sizesDiffer: typeof $6;
+declare const $6;
 declare type ReturnBoolType = <V>($f2t1: V) => true;
 declare type BoolifiedDeprecatedViewStylePropTypes = $ObjMap;
 declare type BoolifiedDeprecatedTextStylePropTypes = $ObjMapi;

@@ -1,3 +1,4 @@
+// @flow
 declare module.exports: {|
   examples: Array<any>,
   description: string,

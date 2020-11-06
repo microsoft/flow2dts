@@ -1,3 +1,4 @@
+// @flow
 type truncateOptions = {
   breakOnWords: boolean,
   minDelta: number,

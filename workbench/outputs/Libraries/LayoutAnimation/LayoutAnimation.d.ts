@@ -1,3 +1,4 @@
+// @flow
 declare type Type = "spring" | "linear" | "easeInEaseOut" | "easeIn" | "easeOut" | "keyboard";
 declare type Property = "opacity" | "scaleX" | "scaleY" | "scaleXY";
 declare type AnimationConfig = Readonly<
@@ -53,26 +54,42 @@ declare var LayoutAnimation:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
   /**
-     * Schedules an animation to happen on the next layout.
-     *
-     * @param config Specifies animation properties:
-     *
-     *   - `duration` in milliseconds
-     *   - `create`, `AnimationConfig` for animating in new views
-     *   - `update`, `AnimationConfig` for animating views that have been updated
-     *
-     * @param onAnimationDidEnd Called when the animation finished.
-     * Only supported on iOS.
-     * @param onError Called on error. Only supported on iOS.
-     */
+   * Schedules an animation to happen on the next layout.
+   *
+   * @param config Specifies animation properties:
+   *
+   *   - `duration` in milliseconds
+   *   - `create`, `AnimationConfig` for animating in new views
+   *   - `update`, `AnimationConfig` for animating views that have been updated
+   *
+   * @param onAnimationDidEnd Called when the animation finished.
+   * Only supported on iOS.
+   * @param onError Called on error. Only supported on iOS.
+   */
   configureNext: typeof configureNext;
 
   /**
-     * Helper for creating a config for `configureNext`.
-     */
+   * Helper for creating a config for `configureNext`.
+   */
   create: typeof create;
-  Types: $TEMPORARY$Object$freeze;
-  Properties: $TEMPORARY$Object$freeze;
+  Types:
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  {
+    spring: string;
+    linear: string;
+    easeInEaseOut: string;
+    easeIn: string;
+    easeOut: string;
+    keyboard: string;
+  };
+  Properties:
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  {
+    opacity: string;
+    scaleX: string;
+    scaleY: string;
+    scaleXY: string;
+  };
   checkConfig: (...args: unknown[]) => void;
   Presets: typeof Presets;
   easeInEaseOut: (onAnimationDidEnd?: any) => void;

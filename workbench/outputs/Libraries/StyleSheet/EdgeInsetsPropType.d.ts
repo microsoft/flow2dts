@@ -1,3 +1,4 @@
-import { Rect } from "./Rect.js";
+// @flow
+import { Rect } from "./Rect";
 declare type EdgeInsetsProp = Rect;
 export type { EdgeInsetsProp };

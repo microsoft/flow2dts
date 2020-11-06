@@ -1,3 +1,4 @@
+// @flow
 import type {StackFrame} from "../../Core/NativeExceptionsManager";
 import type {SymbolicatedStackTrace} from "../../Core/Devtools/symbolicateStackTrace";
 

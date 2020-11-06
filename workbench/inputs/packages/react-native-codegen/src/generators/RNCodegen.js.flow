@@ -1,3 +1,4 @@
+// @flow
 import type {SchemaType} from "../CodegenSchema";
 
 type Options = $ReadOnly<
@@ -17,7 +18,12 @@ type Generators =
   | 'shadow-nodes'
   | 'modules';
 
-type Config = $ReadOnly<{|generators: Array<Generators>, test?: boolean|}>;
+type Config = $ReadOnly<
+  {|
+    generators: Array<Generators>,
+    test?: boolean,
+  |},
+>;
 
 declare module.exports: {|
   generate(Options, Config): boolean,

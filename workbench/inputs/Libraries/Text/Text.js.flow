@@ -1,12 +1,17 @@
-const DeprecatedTextPropTypes = require(
-  "../DeprecatedPropTypes/DeprecatedTextPropTypes",
-);
-const React = require("react");
+// @flow
+declare var DeprecatedTextPropTypes: typeof $1;
+const $1 = require("../DeprecatedPropTypes/DeprecatedTextPropTypes");
+declare var React: typeof $2;
+const $2 = require("react");
 
 import type {HostComponent} from "../Renderer/shims/ReactNativeTypes";
 import type {TextProps} from "./TextProps";
 
-type TextStatics = $ReadOnly<{|propTypes: typeof DeprecatedTextPropTypes|}>;
+type TextStatics = $ReadOnly<
+  {|
+    propTypes: typeof DeprecatedTextPropTypes,
+  |},
+>;
 
 declare module.exports: 
   & React.AbstractComponent<

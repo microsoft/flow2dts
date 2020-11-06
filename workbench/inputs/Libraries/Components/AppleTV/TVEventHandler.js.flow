@@ -1,11 +1,15 @@
-const NativeEventEmitter = require("../../EventEmitter/NativeEventEmitter");
+// @flow
+declare var NativeEventEmitter: typeof $1;
+const $1 = require("../../EventEmitter/NativeEventEmitter");
 
 import type EmitterSubscription from "../../vendor/emitter/EmitterSubscription";
 
 declare class TVEventHandler {
   __nativeTVNavigationEventListener: ?EmitterSubscription,
   __nativeTVNavigationEventEmitter: ?NativeEventEmitter,
+  
   enable(component: ?any, callback: Function): void,
+  
   disable(): void,
 }
 

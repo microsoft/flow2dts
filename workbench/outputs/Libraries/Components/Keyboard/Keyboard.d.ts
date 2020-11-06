@@ -1,4 +1,6 @@
-declare const NativeEventEmitter;
+// @flow
+declare var NativeEventEmitter: typeof $1;
+declare const $1;
 declare var KeyboardEventEmitter: NativeEventEmitter;
 declare type KeyboardEventName = "keyboardWillShow" | "keyboardDidShow" | "keyboardWillHide" | "keyboardDidHide" | "keyboardWillChangeFrame" | "keyboardDidChangeFrame";
 declare type KeyboardEventEasing = "easeIn" | "easeInEaseOut" | "easeOut" | "linear" | "keyboard";

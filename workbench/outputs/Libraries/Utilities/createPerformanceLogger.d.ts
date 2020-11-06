@@ -1,3 +1,4 @@
+// @flow
 declare type Timespan = {
   description?: string;
   totalTime?: number;
@@ -7,7 +8,9 @@ declare type Timespan = {
 declare type IPerformanceLogger = {
   addTimespan: ($f2t1: string, $f2t2: number, $f2t3: string | void) => void;
   startTimespan: ($f2t1: string, $f2t2: string | void) => void;
-  stopTimespan: ($f2t1: string) => void;
+  stopTimespan: ($f2t1: string, options?: {
+    update?: boolean;
+  }) => void;
   clear: () => void;
   clearCompleted: () => void;
   clearExceptTimespans: ($f2t1: string[]) => void;
