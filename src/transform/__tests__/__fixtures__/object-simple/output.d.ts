@@ -8,5 +8,5 @@ declare type c = {
   [a: number]: string
 }
 declare type d = {
-  [$: number]: string
+  [$f2tKey: number]: string
 }

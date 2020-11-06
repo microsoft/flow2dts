@@ -18,7 +18,7 @@ export const objectTypeVisitor: Visitor<PluginPass> = {
         )
       }
 
-      const identifier = t.identifier(id === null ? "$" : id.name)
+      const identifier = t.identifier(id === null ? "$f2tKey" : id.name)
       identifier.typeAnnotation = t.tsTypeAnnotation(key)
 
       const indexSignature = t.tsIndexSignature([identifier], t.tsTypeAnnotation(value))

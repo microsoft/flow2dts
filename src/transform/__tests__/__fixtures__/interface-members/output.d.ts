@@ -8,7 +8,7 @@ interface IB1 {
   [x: string]: number
 }
 interface IB2 {
-  [$: string]: number
+  [$f2tKey: string]: number
 }
 interface IC {
   c: () => void
