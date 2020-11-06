@@ -25,7 +25,7 @@ export async function convert({
       success = true
       outData = result.code
     } else {
-      outData = "Unknown error"
+      outData = "[FLOW2DTS - Error] Unknown error"
     }
   } catch (e: unknown) {
     outData = `[FLOW2DTS - Error] ${stripAnsi((e as Error).message)}`
