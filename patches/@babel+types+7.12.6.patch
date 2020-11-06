@@ -1,8 +1,8 @@
 diff --git a/node_modules/@babel/types/lib/index.d.ts b/node_modules/@babel/types/lib/index.d.ts
-index ebf3e00..86dcfeb 100644
+index e522524..05dad70 100644
 --- a/node_modules/@babel/types/lib/index.d.ts
 +++ b/node_modules/@babel/types/lib/index.d.ts
-@@ -1918,588 +1918,588 @@ export function tsTypeParameterInstantiation(params: Array<TSType>): TSTypeParam
+@@ -1921,588 +1921,588 @@ export function tsTypeParameterInstantiation(params: Array<TSType>): TSTypeParam
  export function tsTypeParameterDeclaration(params: Array<TSTypeParameter>): TSTypeParameterDeclaration;
  export function tsTypeParameter(constraint: TSType | null | undefined, _default: TSType | null | undefined, name: string): TSTypeParameter;
  export function isAnyTypeAnnotation(node: object | null | undefined, opts?: object | null): node is AnyTypeAnnotation;

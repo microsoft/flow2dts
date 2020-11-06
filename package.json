@@ -1,47 +1,19 @@
 {
-  "name": "flow2dts",
-  "version": "0.0.1",
-  "description": "Generate TypeScript ambient declaration files from Flow source.",
-  "bin": "./bin/flow2dts",
-  "main": "index.js",
-  "license": "MIT",
-  "private": false,
+  "private": true,
+  "name": "flow2dts-monorepo",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "start": "rimraf ./workbench/outputs && yarn cli:workbench \"./workbench/inputs/{index,Libraries/**/*}.js.flow\"",
-    "build": "tsc --pretty",
-    "test": "jest",
-    "cli": "ts-node ./src/cli.ts",
-    "cli:workbench": "yarn cli --rootDir ./workbench/inputs --outDir ./workbench/outputs \"!./workbench/inputs/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow\"",
-    "type-check": "tsc --noEmit --pretty",
+    "test": "yarn workspace flow2dts test",
+    "start": "rimraf ./workbench/outputs && yarn workbench \"../../workbench/inputs/{index,Libraries/**/*}.js.flow\"",
+    "workbench": "yarn workspace flow2dts cli --rootDir ../../workbench/inputs --outDir ../../workbench/outputs \"!../../workbench/inputs/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow\"",
     "prettify": "prettier --write src/**/*.ts && prettier --write src/**/*.d.ts && prettier --write src/**/*.js",
     "postinstall": "patch-package"
   },
-  "peerDependencies": {
-    "@babel/plugin-syntax-flow": "^7.12.1"
-  },
   "devDependencies": {
-    "@types/babel__core": "^7.1.10",
-    "@types/chalk": "^2.2.0",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^14.14.6",
-    "@types/yargs": "^15.0.9",
-    "babel-plugin-tester": "^10.0.0",
-    "jest": "^26.6.1",
-    "patch-package": "^6.2.2",
     "rimraf": "^3.0.2",
-    "ts-jest": "^26.4.2",
-    "ts-node": "^9.0.0",
-    "typescript": "^4.0.3"
-  },
-  "dependencies": {
-    "@babel/core": "^7.12.3",
-    "@babel/parser": "^7.12.5",
-    "@babel/plugin-syntax-flow": "^7.12.1",
-    "@babel/traverse": "^7.12.5",
-    "@types/strip-ansi": "^5.2.1",
-    "chalk": "^4.1.0",
-    "fast-glob": "^3.2.4",
-    "strip-ansi": "^6.0.0",
-    "yargs": "^16.1.0"
+    "patch-package": "^6.2.2",
+    "prettier": "^2.1.2"
   }
 }
