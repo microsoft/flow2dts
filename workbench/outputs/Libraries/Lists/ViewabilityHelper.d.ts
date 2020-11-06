@@ -90,5 +90,5 @@ declare class ViewabilityHelper {
 export type { ViewToken };
 export type { ViewabilityConfigCallbackPair };
 export type { ViewabilityConfig };
-declare const $f2tExportDefault: typeof ViewabilityHelper;
+declare const $f2tExportDefault: ViewabilityHelper;
 export default $f2tExportDefault;

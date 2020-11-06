@@ -16,5 +16,5 @@ declare class AnimatedDiffClamp extends $1 {
   __getNativeConfig: () => any;
 }
 declare var $1: typeof AnimatedWithChildren;
-declare const $f2tExportDefault: typeof AnimatedDiffClamp;
+declare const $f2tExportDefault: AnimatedDiffClamp;
 export default $f2tExportDefault;

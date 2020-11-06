@@ -28,5 +28,5 @@ declare class Blob {
   size: () => number;
   type: () => string;
 }
-declare const $f2tExportDefault: typeof Blob;
+declare const $f2tExportDefault: Blob;
 export default $f2tExportDefault;

@@ -25,5 +25,5 @@ declare class AnimatedInterpolation extends $1 {
 }
 declare var $1: typeof AnimatedWithChildren;
 export type { InterpolationConfigType };
-declare const $f2tExportDefault: typeof AnimatedInterpolation;
+declare const $f2tExportDefault: AnimatedInterpolation;
 export default $f2tExportDefault;

@@ -5,5 +5,5 @@ declare class InspectorAgent {
   sendEvent: (name: string, params: Object) => void;
 }
 export type { EventSender };
-declare const $f2tExportDefault: typeof InspectorAgent;
+declare const $f2tExportDefault: InspectorAgent;
 export default $f2tExportDefault;

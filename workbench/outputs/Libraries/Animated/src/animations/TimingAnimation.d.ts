@@ -34,5 +34,5 @@ declare class TimingAnimation extends $5 {
 declare var $5: typeof Animation;
 export type { TimingAnimationConfig };
 export type { TimingAnimationConfigSingle };
-declare const $f2tExportDefault: typeof TimingAnimation;
+declare const $f2tExportDefault: TimingAnimation;
 export default $f2tExportDefault;

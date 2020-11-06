@@ -87,5 +87,5 @@ declare class AnimatedValue extends $2 {
   __getNativeConfig: () => Object;
 }
 declare var $2: typeof AnimatedWithChildren;
-declare const $f2tExportDefault: typeof AnimatedValue;
+declare const $f2tExportDefault: AnimatedValue;
 export default $f2tExportDefault;

@@ -18,5 +18,5 @@ declare class Easing {
   out: (easing: (t: number) => number) => (t: number) => number;
   inOut: (easing: (t: number) => number) => (t: number) => number;
 }
-declare const $f2tExportDefault: typeof Easing;
+declare const $f2tExportDefault: Easing;
 export default $f2tExportDefault;

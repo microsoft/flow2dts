@@ -91,5 +91,5 @@ declare class SpringAnimation extends $5 {
 declare var $5: typeof Animation;
 export type { SpringAnimationConfig };
 export type { SpringAnimationConfigSingle };
-declare const $f2tExportDefault: typeof SpringAnimation;
+declare const $f2tExportDefault: SpringAnimation;
 export default $f2tExportDefault;

@@ -56,5 +56,5 @@ declare class AssetSourceResolver {
   pickScale: (scales: number[], deviceScale: number) => number;
 }
 export type { ResolvedAssetSource };
-declare const $f2tExportDefault: typeof AssetSourceResolver;
+declare const $f2tExportDefault: AssetSourceResolver;
 export default $f2tExportDefault;

@@ -125,5 +125,5 @@ declare class AnimatedValueXY extends $2 {
   }[];
 }
 declare var $2: typeof AnimatedWithChildren;
-declare const $f2tExportDefault: typeof AnimatedValueXY;
+declare const $f2tExportDefault: AnimatedValueXY;
 export default $f2tExportDefault;

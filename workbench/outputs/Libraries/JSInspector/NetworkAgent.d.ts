@@ -28,5 +28,5 @@ declare class NetworkAgent extends $2 {
   interceptor: () => Interceptor;
 }
 declare var $2: typeof InspectorAgent;
-declare const $f2tExportDefault: typeof NetworkAgent;
+declare const $f2tExportDefault: NetworkAgent;
 export default $f2tExportDefault;

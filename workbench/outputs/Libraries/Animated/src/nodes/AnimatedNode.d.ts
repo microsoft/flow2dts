@@ -45,5 +45,5 @@ declare class AnimatedNode {
   __getNativeConfig: () => Object;
   toJSON: () => any;
 }
-declare const $f2tExportDefault: typeof AnimatedNode;
+declare const $f2tExportDefault: AnimatedNode;
 export default $f2tExportDefault;

@@ -13,5 +13,5 @@ declare class NativeEventEmitter extends $2 {
   removeSubscription: (subscription: EmitterSubscription) => void;
 }
 declare var $2: typeof EventEmitter;
-declare const $f2tExportDefault: typeof NativeEventEmitter;
+declare const $f2tExportDefault: NativeEventEmitter;
 export default $f2tExportDefault;

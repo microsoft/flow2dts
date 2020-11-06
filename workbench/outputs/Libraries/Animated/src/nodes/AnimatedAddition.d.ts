@@ -16,5 +16,5 @@ declare class AnimatedAddition extends $1 {
   __getNativeConfig: () => any;
 }
 declare var $1: typeof AnimatedWithChildren;
-declare const $f2tExportDefault: typeof AnimatedAddition;
+declare const $f2tExportDefault: AnimatedAddition;
 export default $f2tExportDefault;

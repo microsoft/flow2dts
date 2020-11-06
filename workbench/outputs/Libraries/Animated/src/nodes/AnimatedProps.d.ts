@@ -16,5 +16,5 @@ declare class AnimatedProps extends $2 {
   __getNativeConfig: () => Object;
 }
 declare var $2: typeof AnimatedNode;
-declare const $f2tExportDefault: typeof AnimatedProps;
+declare const $f2tExportDefault: AnimatedProps;
 export default $f2tExportDefault;

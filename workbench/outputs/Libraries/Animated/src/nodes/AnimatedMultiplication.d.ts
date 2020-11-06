@@ -16,5 +16,5 @@ declare class AnimatedMultiplication extends $2 {
   __getNativeConfig: () => any;
 }
 declare var $2: typeof AnimatedWithChildren;
-declare const $f2tExportDefault: typeof AnimatedMultiplication;
+declare const $f2tExportDefault: AnimatedMultiplication;
 export default $f2tExportDefault;

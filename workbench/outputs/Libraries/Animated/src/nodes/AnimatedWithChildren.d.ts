@@ -10,5 +10,5 @@ declare class AnimatedWithChildren extends $2 {
   __callListeners: (value: number) => void;
 }
 declare var $2: typeof AnimatedNode;
-declare const $f2tExportDefault: typeof AnimatedWithChildren;
+declare const $f2tExportDefault: AnimatedWithChildren;
 export default $f2tExportDefault;

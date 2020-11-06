@@ -63,4 +63,4 @@ declare class LogBoxLog {
 }
 export type { LogLevel };
 export type { LogBoxLogData };
-declare export default typeof LogBoxLog;
+declare export default LogBoxLog;

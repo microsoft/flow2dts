@@ -16,5 +16,5 @@ declare class BugReporting {
   };
   collectExtraData: () => DebugData;
 }
-declare const $f2tExportDefault: typeof BugReporting;
+declare const $f2tExportDefault: BugReporting;
 export default $f2tExportDefault;

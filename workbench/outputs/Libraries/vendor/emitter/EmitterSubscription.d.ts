@@ -29,5 +29,5 @@ declare class EmitterSubscription extends $1 {
   remove: () => void;
 }
 declare var $1: typeof EventSubscription;
-declare const $f2tExportDefault: typeof EmitterSubscription;
+declare const $f2tExportDefault: EmitterSubscription;
 export default $f2tExportDefault;

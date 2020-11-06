@@ -11,5 +11,5 @@ declare class File extends $2 {
   lastModified: () => number;
 }
 declare var $2: typeof Blob;
-declare const $f2tExportDefault: typeof File;
+declare const $f2tExportDefault: File;
 export default $f2tExportDefault;

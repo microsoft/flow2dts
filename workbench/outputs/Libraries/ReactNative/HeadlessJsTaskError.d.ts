@@ -1,4 +1,1 @@
-// @flow
-declare class HeadlessJsTaskError extends $1 {}
-declare var $1: typeof Error;
-export { HeadlessJsTaskError as default };
+[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/ReactNative/HeadlessJsTaskError.js.flow: invariant: expected referred to type to exist

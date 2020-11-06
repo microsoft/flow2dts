@@ -14,5 +14,5 @@ declare class AnimatedTracking extends $2 {
   __getNativeConfig: () => any;
 }
 declare var $2: typeof AnimatedNode;
-declare const $f2tExportDefault: typeof AnimatedTracking;
+declare const $f2tExportDefault: AnimatedTracking;
 export default $f2tExportDefault;

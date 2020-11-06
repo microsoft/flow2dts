@@ -16,5 +16,5 @@ declare class AnimatedDivision extends $1 {
   __getNativeConfig: () => any;
 }
 declare var $1: typeof AnimatedWithChildren;
-declare const $f2tExportDefault: typeof AnimatedDivision;
+declare const $f2tExportDefault: AnimatedDivision;
 export default $f2tExportDefault;
