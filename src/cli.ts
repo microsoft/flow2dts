@@ -26,17 +26,22 @@ async function main() {
     })
     .help().argv
 
+  let successCount = 0
   const conversions: Array<Promise<void>> = []
   for await (const filename of glob.stream(argv._, { absolute: true })) {
     console.log(`⚒️ ${chalk.dim(path.relative(".", filename as string))}`)
     conversions.push(
       convert({ ...argv, filename: filename as string }).then(([success, outFilename]) => {
+        if (success) {
+          successCount++
+        }
         const relativeOutFilename = path.relative(".", outFilename)
         console.log(success ? chalk.green(`✓ ${relativeOutFilename}`) : chalk.red(`‼️ ${relativeOutFilename}`))
       })
     )
   }
   await Promise.all(conversions)
+  console.log(`\nSuccessfully converted ${successCount} of ${conversions.length}\n`)
 }
 
 main()
