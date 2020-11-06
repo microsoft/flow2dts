@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "rimraf ./workbench/outputs && yarn cli:workbench \"./workbench/inputs/Libraries/**/*.js.flow\"",
+    "start": "rimraf ./workbench/outputs && yarn cli:workbench \"./workbench/inputs/{index,Libraries/**/*}.js.flow\"",
     "build": "tsc --pretty",
     "test": "jest",
     "cli": "ts-node ./src/cli.ts",
