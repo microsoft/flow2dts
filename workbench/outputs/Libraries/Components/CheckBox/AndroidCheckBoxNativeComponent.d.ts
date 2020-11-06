@@ -1,0 +1,1 @@
+[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/Components/CheckBox/AndroidCheckBoxNativeComponent.js.flow: Expected type "TSTypeReference" with option {}, but instead got "TSUndefinedKeyword".
