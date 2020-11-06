@@ -1,0 +1,15 @@
+type CapturedError = {
+  +componentName: ?string,
+  +componentStack: string,
+  +error: mixed,
+  +errorBoundary: ?{...},
+  +errorBoundaryFound: boolean,
+  +errorBoundaryName: string | null,
+  +willRetry: boolean,
+  ...,
+};
+
+declare function showErrorDialog(capturedError: CapturedError): boolean;
+export type {CapturedError};
+
+declare module.exports: {|showErrorDialog: typeof showErrorDialog|};

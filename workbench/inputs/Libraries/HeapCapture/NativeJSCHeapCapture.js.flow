@@ -1,0 +1,8 @@
+import type {TurboModule} from "../TurboModule/RCTExport";
+
+interface Spec extends TurboModule {
+  +captureComplete: (path: string, error: ?string) => void,
+}
+export type {Spec};
+
+declare export default ?Spec;

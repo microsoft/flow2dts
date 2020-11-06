@@ -1,0 +1,9 @@
+const React = require("react");
+
+declare class AnExScroll
+  extends React.Component<$FlowFixMeProps, any> {
+  state: any,
+  render(): React.Node,
+}
+
+declare module.exports: typeof AnExScroll;

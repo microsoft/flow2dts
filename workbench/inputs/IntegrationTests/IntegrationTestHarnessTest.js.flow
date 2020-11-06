@@ -1,0 +1,15 @@
+const React = require("react");
+
+type Props = $ReadOnly<{|shouldThrow?: boolean, waitOneFrame?: boolean|}>;
+
+type State = {|done: boolean|};
+
+declare class IntegrationTestHarnessTest
+  extends React.Component<Props, State> {
+  state: State,
+  componentDidMount(): void,
+  runTest: () => void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof IntegrationTestHarnessTest;

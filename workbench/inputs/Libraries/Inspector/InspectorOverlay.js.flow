@@ -1,0 +1,25 @@
+const React = require("react");
+
+import type {HostComponent} from "../Renderer/shims/ReactNativeTypes";
+import type {ViewStyleProp} from "../StyleSheet/StyleSheet";
+import type {PressEvent} from "../Types/CoreEventTypes";
+
+type Inspected = $ReadOnly<{|frame?: Object, style?: ViewStyleProp|}>;
+
+type Props = $ReadOnly<
+  {|
+    isFabric: boolean,
+    inspected?: Inspected,
+    inspectedView?: ?React.ElementRef<HostComponent<mixed>>,
+    onTouchViewTag: (tag: number, frame: Object, pointerY: number) => mixed,
+  |},
+>;
+
+declare class InspectorOverlay
+  extends React.Component<Props> {
+  findViewForTouchEvent: (e: PressEvent) => void,
+  shouldSetResponser: (e: PressEvent) => boolean,
+  render(): React.Node,
+}
+
+declare module.exports: typeof InspectorOverlay;

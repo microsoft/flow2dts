@@ -1,0 +1,11 @@
+import type {CommandTypeShape} from "../../../CodegenSchema.js";
+import type {TypeMap} from "../utils.js";
+
+type EventTypeAST = Object;
+
+declare function getCommands(
+  commandTypeAST: $ReadOnlyArray<EventTypeAST>,
+  types: TypeMap
+): $ReadOnlyArray<CommandTypeShape>;
+
+declare module.exports: {|getCommands: typeof getCommands|};

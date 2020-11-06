@@ -1,0 +1,9 @@
+import type {DangerouslyImpreciseStyle} from "./StyleSheet";
+
+declare function splitLayoutProps(props: ?DangerouslyImpreciseStyle): {
+  outer: DangerouslyImpreciseStyle,
+  inner: DangerouslyImpreciseStyle,
+  ...,
+};
+
+declare module.exports: typeof splitLayoutProps;

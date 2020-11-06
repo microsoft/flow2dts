@@ -1,0 +1,35 @@
+type Timespan = {
+  description?: string,
+  totalTime?: number,
+  startTime?: number,
+  endTime?: number,
+  ...,
+};
+
+type IPerformanceLogger = {
+  addTimespan(string, number, string | void): void,
+  startTimespan(string, string | void): void,
+  stopTimespan(string): void,
+  clear(): void,
+  clearCompleted(): void,
+  clearExceptTimespans(Array<string>): void,
+  currentTimestamp(): number,
+  getTimespans(): {[key: string]: Timespan, ...},
+  hasTimespan(string): boolean,
+  logTimespans(): void,
+  addTimespans(Array<number>, Array<string>): void,
+  setExtra(string, any): void,
+  getExtras(): {[key: string]: any, ...},
+  removeExtra(string): ?any,
+  logExtras(): void,
+  markPoint(string, number | void): void,
+  getPoints(): {[key: string]: number, ...},
+  logPoints(): void,
+  logEverything(): void,
+  ...,
+};
+
+declare function createPerformanceLogger(): IPerformanceLogger;
+export type {IPerformanceLogger};
+
+declare module.exports: typeof createPerformanceLogger;

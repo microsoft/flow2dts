@@ -1,0 +1,19 @@
+const Blob = require("./Blob");
+
+import type {BlobOptions} from "./BlobTypes";
+
+declare class File
+  extends Blob {
+  
+/**
+   * Constructor for JS consumers.
+   */constructor(
+    parts: Array<Blob | string>,
+    name: string,
+    options?: BlobOptions
+  ): void,
+  get name(): string,
+  get lastModified(): number,
+}
+
+declare module.exports: typeof File;

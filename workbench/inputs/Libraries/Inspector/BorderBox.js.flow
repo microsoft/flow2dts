@@ -1,0 +1,6 @@
+const React = require("react");
+
+declare class BorderBox
+  extends React.Component<$FlowFixMeProps> {render(): $FlowFixMe | React.Node}
+
+declare module.exports: typeof BorderBox;

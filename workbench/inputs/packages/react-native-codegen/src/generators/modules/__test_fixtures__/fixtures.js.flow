@@ -1,0 +1,18 @@
+import type {SchemaType} from "../../../CodegenSchema.js";
+
+declare var EMPTY_NATIVE_MODULES: SchemaType;
+
+declare var SIMPLE_NATIVE_MODULES: SchemaType;
+
+declare var TWO_MODULES_SAME_FILE: SchemaType;
+
+declare var TWO_MODULES_DIFFERENT_FILES: SchemaType;
+
+declare var COMPLEX_OBJECTS: SchemaType;
+declare module.exports: {|
+  COMPLEX_OBJECTS: typeof COMPLEX_OBJECTS,
+  TWO_MODULES_SAME_FILE: typeof TWO_MODULES_SAME_FILE,
+  TWO_MODULES_DIFFERENT_FILES: typeof TWO_MODULES_DIFFERENT_FILES,
+  EMPTY_NATIVE_MODULES: typeof EMPTY_NATIVE_MODULES,
+  SIMPLE_NATIVE_MODULES: typeof SIMPLE_NATIVE_MODULES,
+|};

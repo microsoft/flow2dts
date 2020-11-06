@@ -1,0 +1,17 @@
+const React = require("react");
+
+type Props = {
+  filter: Function,
+  render: Function,
+  sections: Object,
+  disableSearch?: boolean,
+  testID?: string,
+  ...,
+};
+
+type State = {filter: string, ...};
+
+declare class RNTesterExampleFilter
+  extends React.Component<Props, State> {state: State, render(): React.Node}
+
+declare module.exports: typeof RNTesterExampleFilter;

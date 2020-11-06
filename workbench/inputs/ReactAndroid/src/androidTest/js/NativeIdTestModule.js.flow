@@ -1,0 +1,6 @@
+const React = require("react");
+
+declare class NativeIdTestApp
+  extends React.Component<{...}> {render(): React.Node}
+
+declare module.exports: {|NativeIdTestApp: typeof NativeIdTestApp|};

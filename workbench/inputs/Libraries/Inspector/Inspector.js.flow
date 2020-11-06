@@ -1,0 +1,47 @@
+const React = require("react");
+
+import type {HostComponent} from "../Renderer/shims/ReactNativeTypes";
+
+type ReactRenderer = {
+  getInspectorDataForViewTag: (viewTag: number) => Object,
+  ...,
+};
+
+type HostRef = React.ElementRef<HostComponent<mixed>>;
+
+declare class Inspector
+  extends React.Component<
+    {
+      isFabric: boolean,
+      inspectedView: ?HostRef,
+      onRequestRerenderApp: (callback: (instance: ?HostRef) => void) => void,
+      ...,
+    },
+    {
+      devtoolsAgent: ?Object,
+      hierarchy: any,
+      panelPos: string,
+      inspecting: boolean,
+      selection: ?number,
+      perfing: boolean,
+      inspected: any,
+      inspectedView: ?HostRef,
+      networking: boolean,
+      ...,
+    },
+  > {
+  constructor(props: Object): void,
+  componentDidMount(): void,
+  componentWillUnmount(): void,
+  UNSAFE_componentWillReceiveProps(newProps: Object): void,
+  setSelection(i: number): void,
+  onTouchViewTag(touchedViewTag: number, frame: Object, pointerY: number): void,
+  setPerfing(val: boolean): void,
+  setInspecting(val: boolean): void,
+  setTouchTargeting(val: boolean): void,
+  setNetworking(val: boolean): void,
+  render(): React.Node,
+}
+export type {ReactRenderer};
+
+declare module.exports: typeof Inspector;

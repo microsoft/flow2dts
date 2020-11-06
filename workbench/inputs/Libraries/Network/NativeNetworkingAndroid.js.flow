@@ -1,0 +1,24 @@
+import type {TurboModule} from "../TurboModule/RCTExport";
+
+type Header = [string, string];
+
+interface Spec extends TurboModule {
+  +sendRequest: (
+    method: string,
+    url: string,
+    requestId: number,
+    headers: Array<Header>,
+    data: Object,
+    responseType: string,
+    useIncrementalUpdates: boolean,
+    timeout: number,
+    withCredentials: boolean
+  ) => void,
+  +abortRequest: (requestId: number) => void,
+  +clearCookies: (callback: (result: boolean) => void) => void,
+  +addListener: (eventName: string) => void,
+  +removeListeners: (count: number) => void,
+}
+export type {Spec};
+
+declare export default Spec;

@@ -1,0 +1,3 @@
+declare var logError: (...args: $ReadOnlyArray<mixed>) => void;
+
+declare module.exports: typeof logError;

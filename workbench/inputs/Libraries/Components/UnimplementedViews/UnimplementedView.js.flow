@@ -1,0 +1,6 @@
+const React = require("react");
+
+declare class UnimplementedView
+  extends React.Component<$FlowFixMeProps> {render(): React.Node}
+
+declare module.exports: typeof UnimplementedView;

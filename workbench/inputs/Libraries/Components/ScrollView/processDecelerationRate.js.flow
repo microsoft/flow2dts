@@ -1,0 +1,5 @@
+declare function processDecelerationRate(
+  decelerationRate: number | 'normal' | 'fast'
+): number;
+
+declare module.exports: typeof processDecelerationRate;

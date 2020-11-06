@@ -1,0 +1,24 @@
+import type {SyntheticEvent} from "./CoreEventTypes";
+
+type BubblingEventHandler<T, PaperName: string | empty = empty> = (
+  event: SyntheticEvent<T>
+) => void | Promise<void>;
+type DirectEventHandler<T, PaperName: string | empty = empty> = (
+  event: SyntheticEvent<T>
+) => void | Promise<void>;
+
+type Double = number;
+type Float = number;
+type Int32 = number;
+
+type DefaultTypes = number | boolean | string | $ReadOnlyArray<string>;
+
+type WithDefault<Type: DefaultTypes, Value: ?Type | string> = ?Type;
+export type {BubblingEventHandler};
+export type {DirectEventHandler};
+
+export type {Double};
+export type {Float};
+export type {Int32};
+
+export type {WithDefault};

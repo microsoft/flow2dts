@@ -1,0 +1,24 @@
+const React = require("react");
+
+import type {SyntheticEvent} from "../../../../Libraries/Types/CoreEventTypes";
+import type {ViewProps} from "../../../../Libraries/Components/View/ViewPropTypes";
+
+type SnapshotReadyEvent = SyntheticEvent<
+  $ReadOnly<{testIdentifier: string, ...}>,
+>;
+
+type Props = $ReadOnly<
+  {|
+    ...ViewProps,
+    onSnapshotReady?: ?((event: SnapshotReadyEvent) => mixed),
+    testIdentifier?: ?string,
+  |},
+>;
+
+declare class SnapshotViewIOS
+  extends React.Component<Props> {
+  onDefaultAction: (event: SnapshotReadyEvent) => void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof SnapshotViewIOS;

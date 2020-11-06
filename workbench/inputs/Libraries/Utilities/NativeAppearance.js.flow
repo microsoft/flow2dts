@@ -1,0 +1,23 @@
+import type {TurboModule} from "../TurboModule/RCTExport";
+
+type ColorSchemeName = 'light' | 'dark';
+
+type AppearancePreferences = {|
+  // TODO: (hramos) T52919652 Use ?ColorSchemeName once codegen supports union
+// types.
+
+/* 'light' | 'dark' */colorScheme?: ?string,
+|};
+
+interface Spec extends TurboModule {
+  +getColorScheme: () => ?string,
+  +addListener: (eventName: string) => void,
+  +removeListeners: (count: number) => void,
+}
+export type {ColorSchemeName};
+
+export type {AppearancePreferences};
+
+export type {Spec};
+
+declare export default ?Spec;

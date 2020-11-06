@@ -1,0 +1,7 @@
+import type {ProcessedColorValue} from "./processColor";
+
+declare function processColorArray(colors: ?Array<string>): ?Array<
+  ProcessedColorValue,
+>;
+
+declare module.exports: typeof processColorArray;

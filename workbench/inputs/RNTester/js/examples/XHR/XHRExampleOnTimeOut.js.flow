@@ -1,0 +1,12 @@
+const React = require("react");
+
+declare class XHRExampleOnTimeOut
+  extends React.Component<any, any> {
+  xhr: XMLHttpRequest,
+  constructor(props: any): void,
+  loadTimeOutRequest(): void,
+  componentWillUnmount(): void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof XHRExampleOnTimeOut;

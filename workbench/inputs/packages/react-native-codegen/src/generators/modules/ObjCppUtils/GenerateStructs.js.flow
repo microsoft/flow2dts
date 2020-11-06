@@ -1,0 +1,22 @@
+import type {ObjectParamTypeAnnotation} from "../../../CodegenSchema";
+const {capitalizeFirstLetter} = require("./Utils");
+
+declare function translateObjectsForStructs(
+  annotations: $ReadOnlyArray<
+    $ReadOnly<
+      {|
+        name: string,
+        object: $ReadOnly<
+          {|
+            type: 'ObjectTypeAnnotation',
+            properties: $ReadOnlyArray<ObjectParamTypeAnnotation>,
+          |},
+        >,
+      |},
+    >,
+  >
+): string;
+declare module.exports: {|
+  translateObjectsForStructs: typeof translateObjectsForStructs,
+  capitalizeFirstLetter: typeof capitalizeFirstLetter,
+|};

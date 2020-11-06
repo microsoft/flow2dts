@@ -1,0 +1,7 @@
+declare function defineLazyObjectProperty<T>(
+  object: Object,
+  name: string,
+  descriptor: {get: () => T, enumerable?: boolean, writable?: boolean, ...}
+): void;
+
+declare module.exports: typeof defineLazyObjectProperty;

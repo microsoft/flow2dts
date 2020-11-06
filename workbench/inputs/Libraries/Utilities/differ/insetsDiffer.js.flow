@@ -1,0 +1,5 @@
+type Inset = {top: ?number, left: ?number, right: ?number, bottom: ?number, ...};
+
+declare var insetsDiffer: (one: Inset, two: Inset) => boolean;
+
+declare module.exports: typeof insetsDiffer;

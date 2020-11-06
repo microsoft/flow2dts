@@ -1,0 +1,20 @@
+const View = require("../../Components/View/View");
+const React = require("react");
+import type {AnimatedComponentType} from "./createAnimatedComponent";
+
+const AnimatedMock = require("./AnimatedMock");
+
+declare var Animated: typeof AnimatedMock;
+
+declare module.exports: {|
+  get FlatList(): any,
+  get Image(): any,
+  get ScrollView(): any,
+  get SectionList(): any,
+  get Text(): any,
+  get View(): AnimatedComponentType<
+    React.ElementConfig<typeof View>,
+    React.ElementRef<typeof View>,
+  >,
+  ...typeof Animated,
+|};

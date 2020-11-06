@@ -1,0 +1,7 @@
+const React = require("react");
+
+type Props = $ReadOnly<{||}>;
+declare class ImageCapInsetsExample
+  extends React.Component<Props> {render(): React.Node}
+
+declare module.exports: typeof ImageCapInsetsExample;

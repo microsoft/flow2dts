@@ -1,0 +1,35 @@
+const React = require("react");
+
+import type {ViewStyleProp} from "react-native/Libraries/StyleSheet/StyleSheet";
+
+import type {Layout} from "react-native/Libraries/Types/CoreEventTypes";
+import type {LayoutEvent} from "react-native/Libraries/Types/CoreEventTypes";
+
+type Props = $ReadOnly<{||}>;
+
+type State = {
+  didAnimation: boolean,
+  extraText?: string,
+  imageLayout?: Layout,
+  textLayout?: Layout,
+  viewLayout?: Layout,
+  viewStyle?: ViewStyleProp,
+  containerStyle?: ViewStyleProp,
+  ...,
+};
+
+declare class LayoutEventsTest
+  extends React.Component<Props, State> {
+  state: State,
+  animateViewLayout(): void,
+  addWrapText: () => void,
+  changeContainer: () => void,
+  checkLayout: (next?: ?(() => void)) => void,
+  compare(node: string, measured: Layout, onLayout?: ?Layout): void,
+  onViewLayout: (e: LayoutEvent) => void,
+  onTextLayout: (e: LayoutEvent) => void,
+  onImageLayout: (e: LayoutEvent) => void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof LayoutEventsTest;

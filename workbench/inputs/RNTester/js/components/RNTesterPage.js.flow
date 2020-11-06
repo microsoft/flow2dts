@@ -1,0 +1,14 @@
+const React = require("react");
+
+type Props = $ReadOnly<
+  {|
+    children?: React.Node,
+    title?: ?string,
+    noScroll?: ?boolean,
+    noSpacer?: ?boolean,
+  |},
+>;
+
+declare class RNTesterPage extends React.Component<Props> {render(): React.Node}
+
+declare module.exports: typeof RNTesterPage;

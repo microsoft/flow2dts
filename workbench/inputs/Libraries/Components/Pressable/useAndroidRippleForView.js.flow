@@ -1,0 +1,21 @@
+import type {ColorValue} from "../../StyleSheet/StyleSheetTypes.js";
+import type {PressEvent} from "../../Types/CoreEventTypes.js";
+import {View} from "react-native";
+import * as React from "react";
+
+type NativeBackgroundProp = $ReadOnly<
+  {|type: 'RippleAndroid', color: ?number, borderless: boolean|},
+>;
+
+declare function useAndroidRippleForView(
+  rippleColor: ?ColorValue,
+  viewRef: {|current: null | React.ElementRef<typeof View>|}
+): ?$ReadOnly<
+  {|
+    onPressIn: (event: PressEvent) => void,
+    onPressMove: (event: PressEvent) => void,
+    onPressOut: (event: PressEvent) => void,
+    viewProps: $ReadOnly<{|nativeBackgroundAndroid: NativeBackgroundProp|}>,
+  |},
+>;
+export {useAndroidRippleForView as default};

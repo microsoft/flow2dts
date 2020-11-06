@@ -1,0 +1,12 @@
+const React = require("react");
+
+import type {HostComponent} from "../../../Renderer/shims/ReactNativeTypes";
+
+declare var RCTScrollView: HostComponent<mixed>;
+
+declare var ScrollViewComponent: $FlowFixMe;
+
+declare class ScrollViewMock
+  extends ScrollViewComponent {render(): React.Element<typeof RCTScrollView>}
+
+declare module.exports: typeof ScrollViewMock;

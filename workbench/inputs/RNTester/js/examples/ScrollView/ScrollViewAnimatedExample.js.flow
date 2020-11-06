@@ -1,0 +1,15 @@
+const React = require("react");
+
+declare var Component: typeof React.Component;
+
+declare class ScrollViewAnimatedExample
+  extends Component<{...}> {startAnimation: () => void, render(): React.Node}
+
+declare module.exports: {|
+  examples: Array<{|
+    title: string,
+    render: () => React.Element<typeof ScrollViewAnimatedExample>,
+  |}>,
+  description: string,
+  title: string,
+|};

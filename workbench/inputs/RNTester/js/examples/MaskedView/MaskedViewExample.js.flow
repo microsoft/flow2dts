@@ -1,0 +1,32 @@
+const React = require("react");
+
+const {View} = require("react-native");
+
+type Props = $ReadOnly<{||}>;
+type ChangingChildrenState = {|alternateChildren: boolean|};
+
+declare class AnimatedMaskExample
+  extends React.Component<Props> {
+  componentDidMount(): void,
+  render(): React.Node,
+}
+
+declare class ChangingChildrenMaskExample
+  extends React.Component<Props, ChangingChildrenState> {
+  state: ChangingChildrenState,
+  componentDidMount(): void,
+  render(): React.Node,
+}
+
+declare module.exports: {|
+  examples: Array<
+    | {|title: string, render: () => React.Element<typeof View>|}
+    | {|title: string, render: () => React.Element<typeof View>|}
+    | {|title: string, render: () => React.Element<typeof AnimatedMaskExample>|}
+    | {|
+      title: string,
+      render: () => React.Element<typeof ChangingChildrenMaskExample>,
+    |}>,
+  description: string,
+  title: string,
+|};

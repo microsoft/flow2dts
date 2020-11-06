@@ -1,0 +1,12 @@
+const React = require("react");
+
+import type {PressEvent} from "../../../Libraries/Types/CoreEventTypes";
+
+type Props = $ReadOnly<
+  {|children?: React.Node, onPress?: ?((event: PressEvent) => mixed)|},
+>;
+
+declare class RNTesterButton
+  extends React.Component<Props> {render(): React.Node}
+
+declare module.exports: typeof RNTesterButton;

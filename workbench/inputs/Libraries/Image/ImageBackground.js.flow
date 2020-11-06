@@ -1,0 +1,9 @@
+const React = require("react");
+
+declare class ImageBackground
+  extends React.Component<$FlowFixMeProps> {
+  setNativeProps(props: Object): void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof ImageBackground;

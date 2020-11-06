@@ -1,0 +1,11 @@
+import type {TurboModule} from "../TurboModule/RCTExport";
+
+interface Spec extends TurboModule {
+  +getConstants: () => {||},
+  +vibrate: (pattern?: ?number) => void,
+  +vibrateByPattern: (pattern: Array<number>, repeat: number) => void,
+  +cancel: () => void,
+}
+export type {Spec};
+
+declare export default Spec;

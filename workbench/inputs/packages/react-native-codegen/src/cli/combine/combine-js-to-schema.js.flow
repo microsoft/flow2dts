@@ -1,0 +1,5 @@
+import type {SchemaType} from "../../CodegenSchema.js";
+
+declare function combineSchemas(files: Array<string>): SchemaType;
+
+declare module.exports: typeof combineSchemas;

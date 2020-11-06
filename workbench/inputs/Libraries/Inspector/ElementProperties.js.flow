@@ -1,0 +1,19 @@
+const React = require("react");
+
+import type {ViewStyleProp} from "../StyleSheet/StyleSheet";
+
+type Props = $ReadOnly<
+  {|
+    hierarchy: Array<{|name: string|}>,
+    style?: ?ViewStyleProp,
+    source?: ?{fileName?: string, lineNumber?: number, ...},
+    frame?: ?Object,
+    selection?: ?number,
+    setSelection?: (number) => mixed,
+  |},
+>;
+
+declare class ElementProperties
+  extends React.Component<Props> {render(): React.Node}
+
+declare module.exports: typeof ElementProperties;

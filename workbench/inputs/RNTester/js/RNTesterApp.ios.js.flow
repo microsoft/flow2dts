@@ -1,0 +1,15 @@
+const React = require("react");
+
+import type {RNTesterNavigationState} from "./utils/RNTesterNavigationReducer";
+
+type Props = {exampleFromAppetizeParams?: ?string, ...};
+
+declare class RNTesterApp
+  extends React.Component<Props, RNTesterNavigationState> {
+  UNSAFE_componentWillMount(): void,
+  componentDidMount(): void,
+  componentWillUnmount(): void,
+  render(): React.Node | null,
+}
+
+declare module.exports: typeof RNTesterApp;

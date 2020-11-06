@@ -1,0 +1,10 @@
+type TypeMap = $ReadOnly<{|[name: string]: Object|}>;
+
+type ASTNode = Object;
+
+declare function getValueFromTypes(value: ASTNode, types: TypeMap): ASTNode;
+export type {TypeMap};
+
+export type {ASTNode};
+
+declare module.exports: {|getValueFromTypes: typeof getValueFromTypes|};

@@ -1,0 +1,17 @@
+import * as React from "react";
+
+type Props = $ReadOnly<
+  {|
+    color: string,
+    hitSlop: ?$ReadOnly<
+      {|bottom?: ?number, left?: ?number, right?: ?number, top?: ?number|},
+    >,
+  |},
+>;
+
+declare function PressabilityDebugView(Props): React.Node;
+
+declare function isEnabled(): boolean;
+export {PressabilityDebugView};
+
+export {isEnabled};

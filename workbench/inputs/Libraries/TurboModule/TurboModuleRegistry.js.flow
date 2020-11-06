@@ -1,0 +1,8 @@
+import type {TurboModule} from "./RCTExport";
+
+declare function get<T: TurboModule>(name: string): ?T;
+
+declare function getEnforcing<T: TurboModule>(name: string): T;
+export {get};
+
+export {getEnforcing};

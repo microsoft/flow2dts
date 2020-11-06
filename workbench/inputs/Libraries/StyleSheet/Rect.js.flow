@@ -1,0 +1,16 @@
+type Rect = $ReadOnly<
+  {|bottom?: ?number, left?: ?number, right?: ?number, top?: ?number|},
+>;
+
+type RectOrSize = Rect | number;
+
+declare function createSquare(size: number): Rect;
+
+declare function normalizeRect(rectOrSize: ?RectOrSize): ?Rect;
+export type {Rect};
+
+export type {RectOrSize};
+
+export {createSquare};
+
+export {normalizeRect};

@@ -1,0 +1,8 @@
+import type {ColorValue} from "../../StyleSheet/StyleSheetTypes";
+import type {ViewProps} from "../View/ViewPropTypes";
+
+import type {HostComponent} from "../../Renderer/shims/ReactNativeTypes";
+
+type NativeProps = $ReadOnly<{|...ViewProps, backgroundColor?: ?ColorValue|}>;
+
+declare export default HostComponent<NativeProps>;

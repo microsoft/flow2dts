@@ -1,0 +1,29 @@
+const React = require("react");
+
+declare module.exports: {|
+  examples: Array<
+    | {|title: string, description: string, render: () => React.Node|}
+    | {|title: string, render: () => React.Node|}
+    | {|
+      title: string,
+      description: string,
+      platform: string,
+      render: () => React.Node,
+    |}
+    | {|title: string, render: () => React.Element<any>|}
+    | {|title: string, description: string, render: () => React.Element<any>|}
+    | {|title: string, description: string, render: () => React.Element<any>|}
+    | {|
+      title: string,
+      description: string,
+      render: () => React.Element<any>,
+      platform: string,
+    |}
+    | {|title: string, description: string, render: () => React.Element<any>|}
+    | {|title: string, description: string, render: () => React.Element<any>|}
+    | {|title: string, description: string, render: () => React.Element<any>|}
+    | {|title: string, description: string, render: () => React.Element<any>|}>,
+  title: string,
+  description: string,
+  displayName: ?string,
+|};

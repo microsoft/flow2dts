@@ -1,0 +1,6 @@
+const React = require("react");
+
+declare class PerformanceOverlay
+  extends React.Component<{...}> {render(): React.Node}
+
+declare module.exports: typeof PerformanceOverlay;

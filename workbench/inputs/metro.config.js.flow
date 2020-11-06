@@ -1,0 +1,6 @@
+const getPolyfills = require("./rn-get-polyfills");
+
+declare module.exports: {|
+  resolver: {|extraNodeModules: {|"react-native": typeof __dirname|}|},
+  serializer: {|getPolyfills: typeof getPolyfills|},
+|};

@@ -1,0 +1,5 @@
+declare function processTransform(transform: Array<Object>): 
+  | Array<Object>
+  | Array<number>;
+
+declare module.exports: typeof processTransform;

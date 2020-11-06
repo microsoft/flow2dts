@@ -1,0 +1,10 @@
+const React = require("react");
+
+declare class XHRExampleBinaryUpload
+  extends React.Component<{...}, $FlowFixMeState> {
+  static handlePostTestServerUpload(xhr: XMLHttpRequest): void,
+  state: $FlowFixMe | {|type: string|},
+  render(): React.Node,
+}
+
+declare module.exports: typeof XHRExampleBinaryUpload;

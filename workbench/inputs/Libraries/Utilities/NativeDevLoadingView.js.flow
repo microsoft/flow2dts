@@ -1,0 +1,9 @@
+import type {TurboModule} from "../TurboModule/RCTExport";
+
+interface Spec extends TurboModule {
+  +showMessage: (message: string, color: Object, backgroundColor: Object) => void,
+  +hide: () => void,
+}
+export type {Spec};
+
+declare export default ?Spec;

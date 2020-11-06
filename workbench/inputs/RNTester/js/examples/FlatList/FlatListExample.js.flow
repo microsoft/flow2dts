@@ -1,0 +1,35 @@
+const React = require("react");
+
+import type {Item} from "../../components/ListExampleShared";
+
+type Props = $ReadOnly<{||}>;
+type State = {|
+  data: Array<Item>,
+  debug: boolean,
+  horizontal: boolean,
+  inverted: boolean,
+  filterText: string,
+  fixedHeight: boolean,
+  logViewable: boolean,
+  virtualized: boolean,
+  empty: boolean,
+  useFlatListItemComponent: boolean,
+  fadingEdgeLength: number,
+|};
+
+declare class FlatListExample
+  extends React.PureComponent<Props, State> {
+  state: State,
+  componentDidUpdate(): void,
+  render(): React.Node,
+}
+
+declare module.exports: {|
+  examples: Array<{|
+    title: string,
+    render: () => React.Element<typeof FlatListExample>,
+  |}>,
+  simpleExampleContainer: boolean,
+  description: string,
+  title: string,
+|};

@@ -1,0 +1,23 @@
+const AnimatedValue = require("./AnimatedValue");
+const AnimatedNode = require("./AnimatedNode");
+
+import type {EndCallback} from "../animations/Animation";
+
+declare class AnimatedTracking
+  extends AnimatedNode {
+  constructor(
+    value: AnimatedValue,
+    parent: AnimatedNode,
+    animationClass: any,
+    animationConfig: Object,
+    callback?: ?EndCallback
+  ): void,
+  __makeNative(): void,
+  __getValue(): Object,
+  __attach(): void,
+  __detach(): void,
+  update(): void,
+  __getNativeConfig(): any,
+}
+
+declare module.exports: typeof AnimatedTracking;

@@ -1,0 +1,38 @@
+import type {ViewStyleProp} from "../../StyleSheet/StyleSheet.js";
+import type {ColorValue} from "../../StyleSheet/StyleSheetTypes.js";
+
+import typeof TouchableWithoutFeedback from "./TouchableWithoutFeedback.js";
+
+import View from "../../Components/View/View";
+import * as React from "react";
+
+type AndroidProps = $ReadOnly<
+  {|
+    nextFocusDown?: ?number,
+    nextFocusForward?: ?number,
+    nextFocusLeft?: ?number,
+    nextFocusRight?: ?number,
+    nextFocusUp?: ?number,
+  |},
+>;
+
+type IOSProps = $ReadOnly<{|hasTVPreferredFocus?: ?boolean|}>;
+
+type Props = $ReadOnly<
+  {|
+    ...React.ElementConfig<TouchableWithoutFeedback>,
+    ...AndroidProps,
+    ...IOSProps,
+    activeOpacity?: ?number,
+    underlayColor?: ?ColorValue,
+    style?: ?ViewStyleProp,
+    onShowUnderlay?: ?(() => void),
+    onHideUnderlay?: ?(() => void),
+    testOnly_pressed?: ?boolean,
+    hostRef: React.Ref<typeof View>,
+  |},
+>;
+
+declare module.exports: React.ComponentType<
+  $ReadOnly<$Diff<Props, {|hostRef: mixed|}>>,
+>;

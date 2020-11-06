@@ -1,0 +1,41 @@
+import type {TurboModule} from "../TurboModule/RCTExport";
+
+type DisplayMetricsAndroid = {|
+  width: number,
+  height: number,
+  scale: number,
+  fontScale: number,
+  densityDpi: number,
+|};
+
+type DisplayMetrics = {|
+  width: number,
+  height: number,
+  scale: number,
+  fontScale: number,
+|};
+
+type DimensionsPayload = {|
+  window?: DisplayMetrics,
+  screen?: DisplayMetrics,
+  windowPhysicalPixels?: DisplayMetricsAndroid,
+  screenPhysicalPixels?: DisplayMetricsAndroid,
+|};
+
+interface Spec extends TurboModule {
+  +getConstants: () => {|
+    +Dimensions: DimensionsPayload,
+    +isIPhoneX_deprecated?: boolean,
+  |},
+}
+
+declare var NativeModule: Spec;
+
+declare var NativeDeviceInfo: typeof NativeModule;
+export type {DisplayMetrics};
+
+export type {DimensionsPayload};
+
+export type {Spec};
+
+declare export default typeof NativeDeviceInfo;

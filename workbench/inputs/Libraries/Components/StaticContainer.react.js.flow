@@ -1,0 +1,21 @@
+const React = require("react");
+
+type Props = $ReadOnly<
+  {|
+    
+/**
+   * Whether or not this component should update.
+   */shouldUpdate?: ?boolean,
+    
+/**
+   * Content short-circuited by React reconciliation process.
+   */children: React.Node,
+  |},
+>;
+declare class StaticContainer
+  extends React.Component<Props> {
+  shouldComponentUpdate(nextProps: Props): boolean,
+  render(): React.Node,
+}
+
+declare module.exports: typeof StaticContainer;

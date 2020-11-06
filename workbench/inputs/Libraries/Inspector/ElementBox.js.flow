@@ -1,0 +1,6 @@
+const React = require("react");
+
+declare class ElementBox
+  extends React.Component<$FlowFixMeProps> {render(): React.Node}
+
+declare module.exports: typeof ElementBox;

@@ -1,0 +1,68 @@
+const React = require("react");
+
+import type {ColorValue} from "../../StyleSheet/StyleSheetTypes";
+import type {SyntheticEvent} from "../../Types/CoreEventTypes";
+import type {ViewProps} from "../View/ViewPropTypes";
+
+type SwitchChangeEvent = SyntheticEvent<$ReadOnly<{|value: boolean|}>>;
+
+type Props = $ReadOnly<
+  {|
+    ...ViewProps,
+    
+/**
+   * Whether the switch is disabled. Defaults to false.
+   */disabled?: ?boolean,
+    
+/**
+   * Boolean value of the switch. Defaults to false.
+   */value?: ?boolean,
+    
+/**
+   * Custom color for the switch thumb.
+   */thumbColor?: ?ColorValue,
+    
+/**
+   * Custom colors for the switch track.
+   *
+   * NOTE: On iOS when the switch value is false, the track shrinks into the
+   * border. If you want to change the color of the background exposed by the
+   * shrunken track, use `ios_backgroundColor`.
+   */trackColor?: ?$ReadOnly<
+      {|false?: ?ColorValue, true?: ?ColorValue|},
+    >,
+    
+/**
+   * On iOS, custom color for the background. This background color can be seen
+   * either when the switch value is false or when the switch is disabled (and
+   * the switch is translucent).
+   */ios_backgroundColor?: ?ColorValue,
+    
+/**
+   * Called when the user tries to change the value of the switch.
+   *
+   * Receives the change event as an argument. If you want to only receive the
+   * new value, use `onValueChange` instead.
+   */onChange?: ?((
+      event: SwitchChangeEvent
+    ) => Promise<void> | void),
+    
+/**
+   * Called when the user tries to change the value of the switch.
+   *
+   * Receives the new value as an argument. If you want to instead receive an
+   * event, use `onChange`.
+   */onValueChange?: ?((
+      value: boolean
+    ) => Promise<void> | void),
+  |},
+>;
+
+declare class Switch
+  extends React.Component<Props> {
+  render(): React.Node,
+  componentDidUpdate(): void,
+}
+export type {Props};
+
+declare module.exports: typeof Switch;

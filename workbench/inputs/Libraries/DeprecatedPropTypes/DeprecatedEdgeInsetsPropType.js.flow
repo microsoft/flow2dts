@@ -1,0 +1,5 @@
+declare var DeprecatedEdgeInsetsPropType: React$PropType$Primitive<
+  {bottom?: number, left?: number, right?: number, top?: number, ...},
+>;
+
+declare module.exports: typeof DeprecatedEdgeInsetsPropType;

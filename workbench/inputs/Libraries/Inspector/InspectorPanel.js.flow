@@ -1,0 +1,37 @@
+const React = require("react");
+
+import type {ViewStyleProp} from "../StyleSheet/StyleSheet";
+
+type Props = $ReadOnly<
+  {|
+    devtoolsIsOpen: boolean,
+    inspecting: boolean,
+    setInspecting: (val: boolean) => void,
+    perfing: boolean,
+    setPerfing: (val: boolean) => void,
+    touchTargeting: boolean,
+    setTouchTargeting: (val: boolean) => void,
+    networking: boolean,
+    setNetworking: (val: boolean) => void,
+    hierarchy?: ?Array<{|name: string|}>,
+    selection?: ?number,
+    setSelection: (number) => mixed,
+    inspected?: ?$ReadOnly<
+      {|
+        style?: ?ViewStyleProp,
+        frame?: ?$ReadOnly<
+          {|top?: ?number, left?: ?number, width?: ?number, height: ?number|},
+        >,
+        source?: ?{|fileName?: string, lineNumber?: number|},
+      |},
+    >,
+  |},
+>;
+
+declare class InspectorPanel
+  extends React.Component<Props> {
+  renderWaiting(): React.Node,
+  render(): React.Node,
+}
+
+declare module.exports: typeof InspectorPanel;

@@ -1,0 +1,16 @@
+import type {IPerformanceLogger} from "../Utilities/createPerformanceLogger";
+
+const React = require("react");
+
+declare function renderApplication<Props: Object>(
+  RootComponent: React.ComponentType<Props>,
+  initialProps: Props,
+  rootTag: any,
+  WrapperComponent?: ?React.ComponentType<*>,
+  fabric?: boolean,
+  showArchitectureIndicator?: boolean,
+  scopedPerformanceLogger?: IPerformanceLogger,
+  isLogBox?: boolean
+): void;
+
+declare module.exports: typeof renderApplication;

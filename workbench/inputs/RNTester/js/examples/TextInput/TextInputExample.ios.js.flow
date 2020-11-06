@@ -1,0 +1,8 @@
+import type {RNTesterExampleModuleItem} from "../../types/RNTesterTypes";
+
+declare module.exports: {|
+  examples: Array<RNTesterExampleModuleItem>,
+  description: string,
+  title: string,
+  displayName: ?string,
+|};

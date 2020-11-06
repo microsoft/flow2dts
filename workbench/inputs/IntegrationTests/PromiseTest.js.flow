@@ -1,0 +1,17 @@
+const React = require("react");
+
+declare class PromiseTest
+  extends React.Component<{...}> {
+  shouldResolve: boolean,
+  shouldReject: boolean,
+  shouldSucceedAsync: boolean,
+  shouldThrowAsync: boolean,
+  componentDidMount(): void,
+  testShouldResolve: () => any,
+  testShouldReject: () => any,
+  testShouldSucceedAsync: () => Promise<any>,
+  testShouldThrowAsync: () => Promise<any>,
+  render(): React.Node,
+}
+
+declare module.exports: typeof PromiseTest;

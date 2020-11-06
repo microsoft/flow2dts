@@ -1,0 +1,28 @@
+const React = require("react");
+
+type Props = $ReadOnly<{||}>;
+type State = {|data: $ReadOnlyArray<{|text: string|}>|};
+
+declare class ScrollViewTestApp
+  extends React.Component<Props, State> {
+  scrollView: {|current: any | null|},
+  state: State,
+  scrollTo(destX: number, destY: number): void,
+  render(): React.Node,
+}
+
+declare class HorizontalScrollViewTestApp
+  extends React.Component<Props, State> {
+  scrollView: {|current: any | null|},
+  state: State,
+  scrollTo(destX: number, destY: number): void,
+  render(): React.Node,
+}
+
+declare var ScrollViewTestModule: {|
+  ScrollViewTestApp: typeof ScrollViewTestApp,
+  HorizontalScrollViewTestApp: typeof HorizontalScrollViewTestApp,
+  scrollTo(destX: number, destY: number): void,
+|};
+
+declare module.exports: typeof ScrollViewTestModule;

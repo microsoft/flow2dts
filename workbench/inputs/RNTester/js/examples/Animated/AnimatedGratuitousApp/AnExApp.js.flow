@@ -1,0 +1,13 @@
+const React = require("react");
+
+declare class AnExApp
+  extends React.Component<any, any> {
+  constructor(props: any): void,
+  render(): React.Node,
+}
+
+declare module.exports: {|
+  examples: Array<{|title: string, render(): React.Element<typeof AnExApp>|}>,
+  description: string,
+  title: string,
+|};

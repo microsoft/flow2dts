@@ -1,0 +1,5 @@
+const EventEmitter = require("../../vendor/emitter/EventEmitter");
+
+declare class NativeEventEmitter extends EventEmitter {constructor(): void}
+
+declare module.exports: typeof NativeEventEmitter;

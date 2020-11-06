@@ -1,0 +1,12 @@
+import * as React from "react";
+
+type State = {|testResults: {[string]: {type: string, value: mixed, ...}, ...}|};
+
+declare class SampleTurboModuleExample
+  extends React.Component<{||}, State> {
+  state: State,
+  componentDidMount(): void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof SampleTurboModuleExample;

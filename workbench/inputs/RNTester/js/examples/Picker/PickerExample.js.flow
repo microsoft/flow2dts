@@ -1,0 +1,51 @@
+const React = require("react");
+
+type State = {value: string | number, ...};
+
+declare class BasicPickerExample
+  extends React.Component<{...}, State> {state: State, render(): React.Node}
+
+declare class DisabledPickerExample
+  extends React.Component<{...}, State> {state: State, render(): React.Node}
+
+declare class DropdownPickerExample
+  extends React.Component<{...}, State> {state: State, render(): React.Node}
+
+declare class PromptPickerExample
+  extends React.Component<{...}, State> {state: State, render(): React.Node}
+
+type ColorState = {color: string | number, ...};
+
+declare class ColorPickerExample
+  extends React.Component<{...}, ColorState> {
+  state: ColorState,
+  render(): React.Node,
+}
+declare class AccessibilityLabelPickerExample
+  extends React.Component<{||}, State> {state: State, render(): React.Node}
+
+declare module.exports: {|
+  examples: Array<
+    | {|title: string, render: () => React.Element<typeof BasicPickerExample>|}
+    | {|
+      title: string,
+      render: () => React.Element<typeof DisabledPickerExample>,
+    |}
+    | {|
+      title: string,
+      render: () => React.Element<typeof DropdownPickerExample>,
+    |}
+    | {|title: string, render: () => React.Element<typeof PromptPickerExample>|}
+    | {|
+      title: string,
+      render: () => React.Element<typeof AccessibilityLabelPickerExample>,
+    |}
+    | {|title: string, render: () => React.Element<typeof PromptPickerExample>|}
+    | {|title: string, render: () => React.Element<typeof ColorPickerExample>|}
+    | {|
+      title: string,
+      render: () => React.Element<typeof AccessibilityLabelPickerExample>,
+    |}>,
+  description: string,
+  title: string,
+|};

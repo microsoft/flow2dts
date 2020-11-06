@@ -1,0 +1,33 @@
+const React = require("react");
+
+declare function Basic(): React.Node;
+
+declare function ClippedByText(): React.Node;
+
+type ChangeSizeState = {|width: number|};
+
+declare class ChangeImageSize
+  extends React.Component<*, ChangeSizeState> {
+  state: ChangeSizeState,
+  render(): React.Node,
+}
+
+declare class ChangeViewSize
+  extends React.Component<*, ChangeSizeState> {
+  state: ChangeSizeState,
+  render(): React.Node,
+}
+
+declare class ChangeInnerViewSize
+  extends React.Component<*, ChangeSizeState> {
+  state: ChangeSizeState,
+  render(): React.Node,
+}
+
+declare module.exports: {|
+  Basic: typeof Basic,
+  ClippedByText: typeof ClippedByText,
+  ChangeImageSize: typeof ChangeImageSize,
+  ChangeViewSize: typeof ChangeViewSize,
+  ChangeInnerViewSize: typeof ChangeInnerViewSize,
+|};

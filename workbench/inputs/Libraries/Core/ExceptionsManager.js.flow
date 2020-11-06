@@ -1,0 +1,20 @@
+import type {ExceptionData} from "./NativeExceptionsManager";
+
+declare class SyntheticError extends Error {name: string}
+
+type ExceptionDecorator = (ExceptionData) => ExceptionData;
+
+declare function unstable_setExceptionDecorator(
+  exceptionDecorator: ?ExceptionDecorator
+): void;
+
+declare function handleException(e: mixed, isFatal: boolean): void;
+
+declare function installConsoleErrorReporter(): void;
+
+declare module.exports: {|
+  handleException: typeof handleException,
+  installConsoleErrorReporter: typeof installConsoleErrorReporter,
+  SyntheticError: typeof SyntheticError,
+  unstable_setExceptionDecorator: typeof unstable_setExceptionDecorator,
+|};

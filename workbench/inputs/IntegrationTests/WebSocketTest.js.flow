@@ -1,0 +1,25 @@
+const React = require("react");
+
+type State = {
+  url: string,
+  fetchStatus: ?string,
+  socket: ?WebSocket,
+  socketState: ?number,
+  lastSocketEvent: ?string,
+  lastMessage: ?string | ?ArrayBuffer,
+  testMessage: string,
+  testExpectedResponse: string,
+  ...,
+};
+
+declare class WebSocketTest
+  extends React.Component<{...}, State> {
+  state: State,
+  componentDidMount(): void,
+  testConnect: () => void,
+  testSendAndReceive: () => void,
+  testDisconnect: () => void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof WebSocketTest;

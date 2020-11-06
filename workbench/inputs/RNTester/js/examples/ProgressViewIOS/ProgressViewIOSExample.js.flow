@@ -1,0 +1,9 @@
+const React = require("react");
+
+declare module.exports: {|
+  examples: Array<{|title: string, render(): React.Node|}>,
+  description: string,
+  title: string,
+  framework: string,
+  displayName: ?string,
+|};

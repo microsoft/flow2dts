@@ -1,0 +1,13 @@
+import type {SchemaType} from "../../CodegenSchema.js";
+
+declare function parseFile(filename: string): ?SchemaType;
+
+declare function parseModuleFixture(filename: string): ?SchemaType;
+
+declare function parseString(contents: string): ?SchemaType;
+
+declare module.exports: {|
+  parseFile: typeof parseFile,
+  parseModuleFixture: typeof parseModuleFixture,
+  parseString: typeof parseString,
+|};

@@ -1,0 +1,12 @@
+const React = require("react");
+
+declare class XHRExampleFetch
+  extends React.Component<any, any> {
+  responseURL: ?string,
+  responseHeaders: ?Object,
+  constructor(props: any): void,
+  submit(uri: string): void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof XHRExampleFetch;

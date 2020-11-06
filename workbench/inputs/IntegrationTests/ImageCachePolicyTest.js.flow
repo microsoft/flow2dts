@@ -1,0 +1,20 @@
+const React = require("react");
+
+type Props = {...};
+type State = {
+  "only-if-cached"?: boolean,
+  default?: boolean,
+  reload?: boolean,
+  "force-cache"?: boolean,
+  ...,
+};
+
+declare class ImageCachePolicyTest
+  extends React.Component<Props, $FlowFixMeState> {
+  state: $FlowFixMe | {...},
+  shouldComponentUpdate(nextProps: Props, nextState: State): boolean,
+  testComplete(name: string, pass: boolean): void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof ImageCachePolicyTest;

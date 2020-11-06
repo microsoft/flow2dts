@@ -1,0 +1,27 @@
+const React = require("react");
+
+import type {Item} from "../../components/ListExampleShared";
+
+declare class MultiColumnExample
+  extends React.PureComponent<$FlowFixMeProps, $FlowFixMeState> {
+  state: 
+    | any
+    | {|
+      data: Array<Item>,
+      filterText: string,
+      fixedHeight: boolean,
+      logViewable: boolean,
+      numColumns: number,
+      virtualized: boolean,
+    |},
+  render(): React.Node,
+}
+
+declare module.exports: {|
+  examples: Array<{|
+    title: string,
+    render: () => React.Element<typeof MultiColumnExample>,
+  |}>,
+  description: string,
+  title: string,
+|};

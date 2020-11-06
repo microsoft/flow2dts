@@ -1,0 +1,9 @@
+const React = require("react");
+
+declare class RootViewSizeFlexibilityExampleApp
+  extends React.Component<{toggled: boolean, ...}, any> {
+  constructor(props: {toggled: boolean, ...}): void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof RootViewSizeFlexibilityExampleApp;

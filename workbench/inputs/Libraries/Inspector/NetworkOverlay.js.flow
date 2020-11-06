@@ -1,0 +1,36 @@
+const React = require("react");
+
+type NetworkRequestInfo = {
+  id: number,
+  type?: string,
+  url?: string,
+  method?: string,
+  status?: number,
+  dataSent?: any,
+  responseContentType?: string,
+  responseSize?: number,
+  requestHeaders?: Object,
+  responseHeaders?: string,
+  response?: Object | string,
+  responseURL?: string,
+  responseType?: string,
+  timeout?: number,
+  closeReason?: string,
+  messages?: string,
+  serverClose?: Object,
+  serverError?: Object,
+  ...,
+};
+
+type Props = $ReadOnly<{||}>;
+type State = {|detailRowId: ?number, requests: Array<NetworkRequestInfo>|};
+
+declare class NetworkOverlay
+  extends React.Component<Props, State> {
+  state: State,
+  componentDidMount(): void,
+  componentWillUnmount(): void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof NetworkOverlay;

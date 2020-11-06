@@ -1,0 +1,9 @@
+import type {IgnorePattern} from "./Data/LogBoxData";
+
+declare module.exports: {
+  ignoreLogs($ReadOnlyArray<IgnorePattern>): void,
+  ignoreAllLogs(?boolean): void,
+  install(): void,
+  uninstall(): void,
+  ...,
+};

@@ -1,0 +1,6 @@
+const React = require("react");
+
+declare class StyleInspector
+  extends React.Component<$FlowFixMeProps> {render(): React.Node}
+
+declare module.exports: typeof StyleInspector;

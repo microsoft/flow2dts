@@ -1,0 +1,22 @@
+const React = require("react");
+const {View} = require("react-native");
+
+type Props = $ReadOnly<{||}>;
+type State = {|left: number, top: number, pressed: boolean|};
+
+declare class PanResponderExample
+  extends React.Component<Props, State> {
+  circle: ?React.ElementRef<typeof View>,
+  state: State,
+  render(): React.Node,
+}
+
+declare module.exports: {|
+  examples: Array<{|
+    title: string,
+    render: () => React.Element<typeof PanResponderExample>,
+  |}>,
+  simpleExampleContainer: boolean,
+  description: string,
+  title: string,
+|};

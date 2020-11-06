@@ -1,0 +1,3 @@
+import type {ErrorUtilsT} from "../../polyfills/error-guard.js";
+
+declare module.exports: ErrorUtilsT;

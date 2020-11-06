@@ -1,0 +1,14 @@
+const React = require("react");
+
+import type {HostComponent} from "../../../Renderer/shims/ReactNativeTypes";
+
+declare var RCTRefreshControl: HostComponent<mixed>;
+
+declare class RefreshControlMock
+  extends React.Component<{...}> {
+  static latestRef: ?RefreshControlMock,
+  componentDidMount(): void,
+  render(): React.Element<typeof RCTRefreshControl>,
+}
+
+declare module.exports: typeof RefreshControlMock;

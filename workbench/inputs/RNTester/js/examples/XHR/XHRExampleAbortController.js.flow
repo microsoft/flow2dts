@@ -1,0 +1,9 @@
+const React = require("react");
+
+declare class XHRExampleAbortController
+  extends React.Component<{...}, {...}> {
+  componentWillUnmount(): void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof XHRExampleAbortController;

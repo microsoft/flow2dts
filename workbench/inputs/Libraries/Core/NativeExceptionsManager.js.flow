@@ -1,0 +1,69 @@
+import type {TurboModule} from "../TurboModule/RCTExport";
+
+type StackFrame = {|
+  column: ?number,
+  file: ?string,
+  lineNumber: ?number,
+  methodName: string,
+  collapse?: boolean,
+|};
+
+type ExceptionData = {
+  message: string,
+  originalMessage: ?string,
+  name: ?string,
+  componentStack: ?string,
+  stack: Array<StackFrame>,
+  id: number,
+  isFatal: boolean,
+  // flowlint-next-line unclear-type:off
+extraData?: Object,
+  ...,
+};
+
+interface Spec extends TurboModule {
+  +reportFatalException: (
+    message: string,
+    stack: Array<StackFrame>,
+    exceptionId: number
+  ) => void,
+  +reportSoftException: (
+    message: string,
+    stack: Array<StackFrame>,
+    exceptionId: number
+  ) => void,
+  +reportException?: (data: ExceptionData) => void,
+  +updateExceptionMessage: (
+    message: string,
+    stack: Array<StackFrame>,
+    exceptionId: number
+  ) => void,
+  +dismissRedbox?: () => void,
+}
+
+declare var ExceptionsManager: {|
+  reportFatalException(
+    message: string,
+    stack: Array<StackFrame>,
+    exceptionId: number
+  ): void,
+  reportSoftException(
+    message: string,
+    stack: Array<StackFrame>,
+    exceptionId: number
+  ): void,
+  updateExceptionMessage(
+    message: string,
+    stack: Array<StackFrame>,
+    exceptionId: number
+  ): void,
+  dismissRedbox(): void,
+  reportException(data: ExceptionData): void,
+|};
+export type {StackFrame};
+
+export type {ExceptionData};
+
+export type {Spec};
+
+declare export default typeof ExceptionsManager;

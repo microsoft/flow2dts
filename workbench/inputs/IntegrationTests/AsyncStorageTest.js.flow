@@ -1,0 +1,10 @@
+const React = require("react");
+
+declare class AsyncStorageTest
+  extends React.Component<{...}, $FlowFixMeState> {
+  state: any | {|done: boolean, messages: string|},
+  componentDidMount(): void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof AsyncStorageTest;

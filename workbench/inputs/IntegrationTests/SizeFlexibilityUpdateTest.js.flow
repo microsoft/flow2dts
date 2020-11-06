@@ -1,0 +1,18 @@
+const React = require("react");
+
+type Props = $ReadOnly<
+  {|width: boolean, height: boolean, both: boolean, none: boolean|},
+>;
+
+declare class SizeFlexibilityUpdateTest
+  extends React.Component<Props> {
+  UNSAFE_componentWillMount(): void,
+  componentWillUnmount(): void,
+  markPassed: () => void,
+  rootViewDidChangeIntrinsicSize: (
+    intrinsicSize: {height: number, width: number, ...}
+  ) => void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof SizeFlexibilityUpdateTest;

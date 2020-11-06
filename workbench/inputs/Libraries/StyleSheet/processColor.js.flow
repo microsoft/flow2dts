@@ -1,0 +1,7 @@
+opaque type NativeColorType = {};
+type ProcessedColorValue = ?number | NativeColorType;
+
+declare function processColor(color?: ?(string | number)): ProcessedColorValue;
+export type {ProcessedColorValue};
+
+declare module.exports: typeof processColor;

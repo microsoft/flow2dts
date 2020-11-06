@@ -1,0 +1,13 @@
+import type {ElementRef} from "react";
+import type {Ref} from "react";
+
+type Args = $ReadOnly<
+  {|
+    getForwardedRef: () => ?Ref<any>,
+    setLocalRef: (ref: ElementRef<any>) => mixed,
+  |},
+>;
+
+declare function setAndForwardRef(Args): (ref: ElementRef<any>) => void;
+
+declare module.exports: typeof setAndForwardRef;

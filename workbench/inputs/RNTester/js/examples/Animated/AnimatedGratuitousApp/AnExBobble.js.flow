@@ -1,0 +1,9 @@
+const React = require("react");
+
+declare class AnExBobble
+  extends React.Component<Object, any> {
+  constructor(props: Object): void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof AnExBobble;

@@ -1,0 +1,11 @@
+const PropTypes = require("prop-types");
+
+declare var DeprecatedTVViewPropTypes: {|
+  hasTVPreferredFocus: typeof PropTypes.bool,
+  tvParallaxShiftDistanceX: typeof PropTypes.number,
+  tvParallaxShiftDistanceY: typeof PropTypes.number,
+  tvParallaxTiltAngle: typeof PropTypes.number,
+  tvParallaxMagnification: typeof PropTypes.number,
+|};
+
+declare module.exports: typeof DeprecatedTVViewPropTypes;

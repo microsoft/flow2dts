@@ -1,0 +1,53 @@
+const React = require("react");
+
+declare module.exports: {|
+  examples: Array<
+    | {|title: string, description: string, render: () => React.Node|}
+    | {|title: string, description: string, render: () => React.Node|}
+    | {|title: string, render: () => React.Node|}
+    | {|title: string, render: () => React.Node, platform: string|}
+    | {|title: string, render: () => React.Node, platform: string|}
+    | {|
+      title: string,
+      description: string,
+      render: () => React.Node,
+      platform: string,
+    |}
+    | {|
+      title: string,
+      description: string,
+      render: () => React.Node,
+      platform: string,
+    |}
+    | {|title: string, render: () => React.Node|}
+    | {|title: string, render: () => React.Node|}
+    | {|title: string, render: () => React.Node|}
+    | {|title: string, render: () => React.Node|}
+    | {|title: string, render: () => React.Node|}
+    | {|title: string, render: () => React.Node|}
+    | {|title: string, render: () => React.Node|}
+    | {|title: string, description: string, render: () => React.Node|}
+    | {|title: string, description: string, render: () => React.Node|}
+    | {|title: string, render: () => React.Node, platform: string|}
+    | {|title: string, render: () => React.Node, platform: string|}
+    | {|
+      title: string,
+      description: string,
+      render: () => React.Node,
+      platform: string,
+    |}
+    | {|title: string, render: () => React.Node|}
+    | {|title: string, description: string, render: () => React.Node|}
+    | {|title: string, description: string, render: () => React.Node|}
+    | {|
+      title: string,
+      description: string,
+      render: () => React.Node,
+      platform: string,
+    |}
+    | {|title: string, render: () => React.Node|}>,
+  description: string,
+  title: string,
+  framework: string,
+  displayName: ?string,
+|};

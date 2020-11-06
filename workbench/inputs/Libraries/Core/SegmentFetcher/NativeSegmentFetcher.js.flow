@@ -1,0 +1,19 @@
+import type {TurboModule} from "../../TurboModule/RCTExport";
+
+interface Spec extends TurboModule {
+  +fetchSegment: (
+    segmentId: number,
+    options: Object,
+    // flowlint-line unclear-type: off
+callback: (error: ?Object) => void
+  ) => void,
+  +getSegment?: (
+    segmentId: number,
+    options: Object,
+    // flowlint-line unclear-type: off
+callback: (error: ?Object, path: ?string) => void
+  ) => void,
+}
+export type {Spec};
+
+declare export default Spec;

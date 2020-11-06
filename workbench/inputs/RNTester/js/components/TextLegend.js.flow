@@ -1,0 +1,13 @@
+const React = require("react");
+
+declare class TextLegend
+  extends React.Component<*, *> {
+  state: {|
+    alignment: string,
+    fontSize: number,
+    language: string,
+    textMetrics: Array<any>,
+  |},
+  render(): React.Node,
+}
+declare module.exports: typeof TextLegend;

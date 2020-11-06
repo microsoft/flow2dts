@@ -1,0 +1,4 @@
+declare module.exports: {|
+  // This must be kept in sync with the AccessibilityRolesMask in RCTViewManager.m
+DeprecatedAccessibilityRoles: Array<string>,
+|};

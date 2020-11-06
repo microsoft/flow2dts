@@ -1,0 +1,85 @@
+import * as React from "react";
+
+type RNTesterTheme = {
+  LabelColor: string,
+  SecondaryLabelColor: string,
+  TertiaryLabelColor: string,
+  QuaternaryLabelColor: string,
+  PlaceholderTextColor: string,
+  SystemBackgroundColor: string,
+  SecondarySystemBackgroundColor: string,
+  TertiarySystemBackgroundColor: string,
+  GroupedBackgroundColor: string,
+  SecondaryGroupedBackgroundColor: string,
+  TertiaryGroupedBackgroundColor: string,
+  SystemFillColor: string,
+  SecondarySystemFillColor: string,
+  TertiarySystemFillColor: string,
+  QuaternarySystemFillColor: string,
+  SeparatorColor: string,
+  OpaqueSeparatorColor: string,
+  LinkColor: string,
+  SystemPurpleColor: string,
+  ToolbarColor: string,
+  ...,
+};
+
+declare var RNTesterLightTheme: {|
+  LabelColor: string,
+  SecondaryLabelColor: string,
+  TertiaryLabelColor: string,
+  QuaternaryLabelColor: string,
+  PlaceholderTextColor: string,
+  SystemBackgroundColor: string,
+  SecondarySystemBackgroundColor: string,
+  TertiarySystemBackgroundColor: string,
+  GroupedBackgroundColor: string,
+  SecondaryGroupedBackgroundColor: string,
+  TertiaryGroupedBackgroundColor: string,
+  SystemFillColor: string,
+  SecondarySystemFillColor: string,
+  TertiarySystemFillColor: string,
+  QuaternarySystemFillColor: string,
+  SeparatorColor: string,
+  OpaqueSeparatorColor: string,
+  LinkColor: string,
+  SystemPurpleColor: string,
+  ToolbarColor: string,
+|};
+
+declare var RNTesterDarkTheme: {|
+  LabelColor: string,
+  SecondaryLabelColor: string,
+  TertiaryLabelColor: string,
+  QuaternaryLabelColor: string,
+  PlaceholderTextColor: string,
+  SystemBackgroundColor: string,
+  SecondarySystemBackgroundColor: string,
+  TertiarySystemBackgroundColor: string,
+  GroupedBackgroundColor: string,
+  SecondaryGroupedBackgroundColor: string,
+  TertiaryGroupedBackgroundColor: string,
+  SystemFillColor: string,
+  SecondarySystemFillColor: string,
+  TertiarySystemFillColor: string,
+  QuaternarySystemFillColor: string,
+  SeparatorColor: string,
+  OpaqueSeparatorColor: string,
+  LinkColor: string,
+  SystemPurpleColor: string,
+  ToolbarColor: string,
+|};
+
+declare var themes: {|
+  light: typeof RNTesterLightTheme,
+  dark: typeof RNTesterDarkTheme,
+|};
+declare var RNTesterThemeContext: React.Context<RNTesterTheme>;
+export type {RNTesterTheme};
+
+export {RNTesterLightTheme};
+
+export {RNTesterDarkTheme};
+
+export {themes};
+export {RNTesterThemeContext};

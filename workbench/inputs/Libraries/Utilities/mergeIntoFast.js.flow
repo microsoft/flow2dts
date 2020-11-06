@@ -1,0 +1,3 @@
+declare var mergeIntoFast: (one: Object, two: Object) => void;
+
+declare module.exports: typeof mergeIntoFast;

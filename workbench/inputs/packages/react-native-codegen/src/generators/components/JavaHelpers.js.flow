@@ -1,0 +1,16 @@
+import type {ComponentShape} from "../../CodegenSchema";
+
+declare function getInterfaceJavaClassName(componentName: string): string;
+
+declare function getDelegateJavaClassName(componentName: string): string;
+
+declare function toSafeJavaString(input: string, shouldUpperCaseFirst?: boolean): string;
+
+declare function getImports(component: ComponentShape): Set<string>;
+
+declare module.exports: {|
+  getInterfaceJavaClassName: typeof getInterfaceJavaClassName,
+  getDelegateJavaClassName: typeof getDelegateJavaClassName,
+  toSafeJavaString: typeof toSafeJavaString,
+  getImports: typeof getImports,
+|};

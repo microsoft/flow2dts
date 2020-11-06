@@ -1,0 +1,25 @@
+import type {SchemaType} from "../CodegenSchema";
+
+type Options = $ReadOnly<
+  {|
+    libraryName: string,
+    schema: SchemaType,
+    outputDirectory: string,
+    moduleSpecName: string,
+  |},
+>;
+
+type Generators = 
+  | 'descriptors'
+  | 'events'
+  | 'props'
+  | 'tests'
+  | 'shadow-nodes'
+  | 'modules';
+
+type Config = $ReadOnly<{|generators: Array<Generators>, test?: boolean|}>;
+
+declare module.exports: {|
+  generate(Options, Config): boolean,
+  generateViewConfig(Options): string,
+|};

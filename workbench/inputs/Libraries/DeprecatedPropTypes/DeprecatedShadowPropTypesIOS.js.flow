@@ -1,0 +1,11 @@
+const DeprecatedColorPropType = require("./DeprecatedColorPropType");
+const ReactPropTypes = require("prop-types");
+
+declare var DeprecatedShadowPropTypesIOS: {|
+  shadowColor: typeof DeprecatedColorPropType,
+  shadowOffset: React$PropType$Primitive<{height?: number, width?: number, ...}>,
+  shadowOpacity: typeof ReactPropTypes.number,
+  shadowRadius: typeof ReactPropTypes.number,
+|};
+
+declare module.exports: typeof DeprecatedShadowPropTypesIOS;

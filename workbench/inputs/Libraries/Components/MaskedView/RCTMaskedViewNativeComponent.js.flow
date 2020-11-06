@@ -1,0 +1,7 @@
+import type {ViewProps} from "../View/ViewPropTypes";
+
+import type {HostComponent} from "../../Renderer/shims/ReactNativeTypes";
+
+type NativeProps = $ReadOnly<{|...ViewProps|}>;
+
+declare export default HostComponent<NativeProps>;

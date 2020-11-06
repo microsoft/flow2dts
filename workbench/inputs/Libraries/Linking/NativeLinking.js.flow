@@ -1,0 +1,17 @@
+import type {TurboModule} from "../TurboModule/RCTExport";
+
+interface Spec extends TurboModule {
+  +getInitialURL: () => Promise<string>,
+  +canOpenURL: (url: string) => Promise<boolean>,
+  +openURL: (url: string) => Promise<void>,
+  +openSettings: () => Promise<void>,
+  +sendIntent: (
+    action: string,
+    extras: ?Array<{key: string, value: string | number | boolean, ...}>
+  ) => Promise<void>,
+  +addListener: (eventName: string) => void,
+  +removeListeners: (count: number) => void,
+}
+export type {Spec};
+
+declare export default Spec;

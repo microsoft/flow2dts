@@ -1,0 +1,10 @@
+const React = require("react");
+
+declare module.exports: {|
+  testEverythingIsFine(): React.Node,
+  testBadDataWithTypicalItem(): React.Node,
+  testMissingFieldWithTypicalItem(): React.Node,
+  testGoodDataWithBadCustomRenderItemFunction(): React.Node,
+  testBadRenderItemFunction(): Array<React.Node>,
+  testOtherBadProps(): Array<React.Node>,
+|};

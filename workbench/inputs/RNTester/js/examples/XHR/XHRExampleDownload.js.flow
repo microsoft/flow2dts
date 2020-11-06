@@ -1,0 +1,12 @@
+const React = require("react");
+
+declare class XHRExampleDownload
+  extends React.Component<{...}, Object> {
+  state: Object,
+  xhr: ?XMLHttpRequest,
+  cancelled: boolean,
+  componentWillUnmount(): void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof XHRExampleDownload;

@@ -1,0 +1,13 @@
+const React = require("react");
+
+opaque type DoNotCommitUsageOfPureComponentDebug = {...};
+
+declare class PureComponentDebug<
+  P: DoNotCommitUsageOfPureComponentDebug,
+  S: ?Object = void,
+>
+  extends React.Component<P, S> {
+  shouldComponentUpdate(nextProps: P, nextState: S): boolean,
+}
+
+declare module.exports: typeof PureComponentDebug;

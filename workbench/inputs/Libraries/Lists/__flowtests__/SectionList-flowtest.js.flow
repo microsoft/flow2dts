@@ -1,0 +1,10 @@
+const React = require("react");
+
+declare module.exports: {|
+  testGoodDataWithGoodItem(): React.Node,
+  testBadRenderItemFunction(): Array<React.Node>,
+  testBadInheritedDefaultProp(): React.Element<*>,
+  testMissingData(): React.Element<*>,
+  testBadSectionsShape(): React.Element<*>,
+  testBadSectionsMetadata(): React.Element<*>,
+|};

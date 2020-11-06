@@ -1,0 +1,16 @@
+const React = require("react");
+
+declare module.exports: {|
+  examples: Array<
+    | {|title: string, description: string, render(): React.Node|}
+    | {|title: string, description: string, render(): React.Element<any>|}
+    | {|title: string, render(): React.Element<any>|}
+    | {|
+      platform: string,
+      title: string,
+      description: string,
+      render(): React.Element<any>,
+    |}>,
+  description: string,
+  title: string,
+|};

@@ -1,0 +1,27 @@
+const React = require("react");
+
+import type {Item} from "../../components/ListExampleShared";
+
+declare class SectionListExample
+  extends React.PureComponent<{...}, $FlowFixMeState> {
+  state: 
+    | any
+    | {|
+      data: Array<Item>,
+      debug: boolean,
+      filterText: string,
+      inverted: boolean,
+      logViewable: boolean,
+      virtualized: boolean,
+    |},
+  render(): React.Node,
+}
+
+declare module.exports: {|
+  examples: Array<{|
+    title: string,
+    render: () => React.Element<typeof SectionListExample>,
+  |}>,
+  description: string,
+  title: string,
+|};

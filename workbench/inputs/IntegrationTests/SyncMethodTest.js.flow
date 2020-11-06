@@ -1,0 +1,9 @@
+const React = require("react");
+
+declare class SyncMethodTest
+  extends React.Component<{...}> {
+  componentDidMount(): void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof SyncMethodTest;

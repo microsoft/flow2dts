@@ -1,0 +1,10 @@
+const React = require("react");
+
+declare class AnExTilt
+  extends React.Component<Object, any> {
+  constructor(props: Object): void,
+  UNSAFE_componentWillMount(): void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof AnExTilt;

@@ -1,0 +1,10 @@
+const React = require("react");
+
+declare class AnExSet
+  extends React.Component<Object, any> {
+  constructor(props: Object): void,
+  render(): React.Node,
+  UNSAFE_componentWillMount(): void,
+}
+
+declare module.exports: typeof AnExSet;

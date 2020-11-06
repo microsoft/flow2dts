@@ -1,0 +1,16 @@
+const DeprecatedTextPropTypes = require(
+  "../DeprecatedPropTypes/DeprecatedTextPropTypes",
+);
+const React = require("react");
+
+import type {HostComponent} from "../Renderer/shims/ReactNativeTypes";
+import type {TextProps} from "./TextProps";
+
+type TextStatics = $ReadOnly<{|propTypes: typeof DeprecatedTextPropTypes|}>;
+
+declare module.exports: 
+  & React.AbstractComponent<
+    TextProps,
+    React.ElementRef<HostComponent<TextProps>>,
+  >
+  & TextStatics;

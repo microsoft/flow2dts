@@ -1,0 +1,15 @@
+const Blob = require("../Blob/Blob");
+const FormData = require("./FormData");
+
+type RequestBody = 
+  | string
+  | Blob
+  | FormData
+  | {uri: string, ...}
+  | ArrayBuffer
+  | $ArrayBufferView;
+
+declare function convertRequestBody(body: RequestBody): Object;
+export type {RequestBody};
+
+declare module.exports: typeof convertRequestBody;

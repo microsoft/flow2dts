@@ -1,0 +1,16 @@
+const React = require("react");
+
+declare class ScrollViewSimpleExample
+  extends React.Component<{...}> {
+  makeItems: (nItems: number, styles: any) => Array<any>,
+  render(): React.Node,
+}
+
+declare module.exports: {|
+  examples: Array<{|
+    title: string,
+    render: () => React.Element<typeof ScrollViewSimpleExample>,
+  |}>,
+  description: string,
+  title: string,
+|};

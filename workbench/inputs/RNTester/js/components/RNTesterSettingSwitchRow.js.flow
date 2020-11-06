@@ -1,0 +1,9 @@
+const React = require("react");
+
+declare class RNTesterSettingSwitchRow
+  extends React.Component<$FlowFixMeProps, $FlowFixMeState> {
+  UNSAFE_componentWillReceiveProps(newProps: $FlowFixMeProps): void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof RNTesterSettingSwitchRow;

@@ -1,0 +1,3 @@
+import NativeDeviceInfo from "./NativeDeviceInfo";
+
+declare module.exports: typeof NativeDeviceInfo;

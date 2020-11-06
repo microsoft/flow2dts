@@ -1,0 +1,21 @@
+import type {ComponentSchemaBuilderConfig} from "./schema.js";
+const {getCommands} = require("./commands");
+const {getEvents} = require("./events");
+const {getProps} = require("./props");
+const {getPropProperties} = require("./props");
+const {getCommandOptions} = require("./options");
+const {getOptions} = require("./options");
+const {getExtendsProps} = require("./extends");
+const {removeKnownExtends} = require("./extends");
+
+declare function findComponentConfig(ast: $FlowFixMe): $FlowFixMe;
+
+declare function getCommandProperties(
+  commandTypeName: $FlowFixMe,
+  types: $FlowFixMe,
+  commandOptions: $FlowFixMe
+): $FlowFixMe;
+
+declare function processComponent(ast: $FlowFixMe, types: $FlowFixMe): ComponentSchemaBuilderConfig;
+
+declare module.exports: {|processComponent: typeof processComponent|};

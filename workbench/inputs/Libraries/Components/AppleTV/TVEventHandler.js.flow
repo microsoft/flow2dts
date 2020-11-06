@@ -1,0 +1,12 @@
+const NativeEventEmitter = require("../../EventEmitter/NativeEventEmitter");
+
+import type EmitterSubscription from "../../vendor/emitter/EmitterSubscription";
+
+declare class TVEventHandler {
+  __nativeTVNavigationEventListener: ?EmitterSubscription,
+  __nativeTVNavigationEventEmitter: ?NativeEventEmitter,
+  enable(component: ?any, callback: Function): void,
+  disable(): void,
+}
+
+declare module.exports: typeof TVEventHandler;

@@ -1,0 +1,10 @@
+const React = require("react");
+
+declare class SimpleSnapshotTest
+  extends React.Component<{...}> {
+  componentDidMount(): void,
+  done: (success: boolean) => void,
+  render(): React.Node,
+}
+
+declare module.exports: typeof SimpleSnapshotTest;

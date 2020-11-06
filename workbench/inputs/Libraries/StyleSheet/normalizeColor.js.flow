@@ -1,0 +1,3 @@
+declare function normalizeColor(color: string | number): ?number;
+
+declare module.exports: typeof normalizeColor;

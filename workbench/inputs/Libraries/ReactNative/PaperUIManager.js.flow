@@ -1,0 +1,9 @@
+import NativeUIManager from "./NativeUIManager";
+
+declare var UIManagerJS: {|
+  ...typeof NativeUIManager,
+  getConstants(): Object,
+  getViewManagerConfig: (viewManagerName: string) => any,
+|};
+
+declare module.exports: typeof UIManagerJS;

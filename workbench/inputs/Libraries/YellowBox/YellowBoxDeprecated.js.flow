@@ -1,0 +1,14 @@
+const React = require("react");
+
+import type {IgnorePattern} from "../LogBox/Data/LogBoxData";
+
+type Props = $ReadOnly<{||}>;
+
+declare module.exports: 
+  & Class<React.Component<Props>>
+  & {
+    ignoreWarnings($ReadOnlyArray<IgnorePattern>): void,
+    install(): void,
+    uninstall(): void,
+    ...,
+  };

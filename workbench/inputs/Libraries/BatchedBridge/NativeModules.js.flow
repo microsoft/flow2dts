@@ -1,0 +1,16 @@
+type ModuleConfig = [
+  string,
+  ?Object/* constants */,
+  ?$ReadOnlyArray<string>,
+  ?$ReadOnlyArray<number>,
+  ?$ReadOnlyArray<number>,
+];
+
+type MethodType = 'async' | 'promise' | 'sync';
+
+declare var NativeModules: {[moduleName: string]: Object, ...};
+export type {ModuleConfig};
+
+export type {MethodType};
+
+declare module.exports: typeof NativeModules;
