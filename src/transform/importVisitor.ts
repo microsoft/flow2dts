@@ -10,7 +10,7 @@ export const importVisitor: Visitor<PluginPass> = {
             case "ImportDefaultSpecifier":
             case "ImportSpecifier": {
               names.push(id.local.name)
-              id.local.name += "$value"
+              id.local.name += "$f2tTypeof"
               break
             }
           }
@@ -18,7 +18,11 @@ export const importVisitor: Visitor<PluginPass> = {
         path.node.importKind = "value"
 
         const decls = names.map((name) => {
-          const decl = t.tsTypeAliasDeclaration(t.identifier(name), null, t.tsTypeQuery(t.identifier(`${name}$value`)))
+          const decl = t.tsTypeAliasDeclaration(
+            t.identifier(name),
+            null,
+            t.tsTypeQuery(t.identifier(`${name}$f2tTypeof`))
+          )
           decl.declare = true
           return decl
         })

@@ -1,5 +1,5 @@
-declare const $export_default: {
+declare const $f2tExportDefault: {
   x: string
   y: number
 }
-export default $export_default
+export default $f2tExportDefault
