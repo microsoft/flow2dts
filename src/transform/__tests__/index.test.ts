@@ -14,7 +14,6 @@ Tips:
 
 /*
 test case todo:
-  export default <expression>
   qualified name everywhere
   require
   static members

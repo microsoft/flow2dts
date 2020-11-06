@@ -14,4 +14,36 @@ export const exportVisitor: Visitor<PluginPass> = {
       ])
     },
   },
+  ExportDefaultDeclaration: {
+    exit(path) {
+      const decl = path.node.declaration
+      switch (decl.type) {
+        case "Identifier": {
+          // nothing to do
+          break
+        }
+        case "TypeCastExpression": {
+          const tsType = decl.typeAnnotation.typeAnnotation
+          assertTSType(tsType)
+
+          const varId = t.identifier("$export_default")
+          varId.typeAnnotation = t.tsTypeAnnotation(tsType)
+          const varDecl = t.variableDeclaration("const", [t.variableDeclarator(varId)])
+          varDecl.declare = true
+
+          path.node.declaration = t.identifier("$export_default")
+          path.replaceWithMultiple([varDecl, path.node])
+          break
+        }
+        default:
+          throw new Error(
+            `Only identifiers and type cast expressions are allowed in export default:\r\n${JSON.stringify(
+              decl,
+              undefined,
+              4
+            )}`
+          )
+      }
+    },
+  },
 }
