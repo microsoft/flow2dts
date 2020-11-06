@@ -18,7 +18,6 @@ test case todo:
   qualified name everywhere
   require
   static members
-  typeof EXPR
   utility types: https://flow.org/en/docs/types/utilities/
 */
 
