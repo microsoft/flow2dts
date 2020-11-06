@@ -1,0 +1,13 @@
+{
+  "name": "flow2dts-flow-types-polyfill",
+  "version": "0.0.1",
+  "description": "Flow builtin types for TypeScript",
+  "license": "MIT",
+  "types": "./index.d.ts",
+  "scripts": {
+    "test": "tsd"
+  },
+  "devDependencies": {
+    "tsd": "^0.13.1"
+  }
+}
