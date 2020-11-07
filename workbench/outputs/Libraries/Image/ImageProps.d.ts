@@ -1,15 +1,15 @@
 [FLOW2DTS - Error] /Libraries/Image/ImageProps.js.flow: EmptyTypeAnnotation(node is not a TypeScript type:
 {
     "type": "EmptyTypeAnnotation",
-    "start": 4450,
-    "end": 4455,
+    "start": 4231,
+    "end": 4236,
     "loc": {
         "start": {
-            "line": 174,
+            "line": 172,
             "column": 8
         },
         "end": {
-            "line": 174,
+            "line": 172,
             "column": 13
         }
     }

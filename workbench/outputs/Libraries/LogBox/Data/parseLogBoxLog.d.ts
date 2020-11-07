@@ -1,9 +1,9 @@
-[FLOW2DTS - Error] /Libraries/LogBox/Data/parseLogBoxLog.js.flow: Export 'parseInterpolation' is not defined (68:8)
+[FLOW2DTS - Error] /Libraries/LogBox/Data/parseLogBoxLog.js.flow: Export 'parseInterpolation' is not defined (73:8)
 
-  66 | export type {ComponentStack};
-  67 | 
-> 68 | export {parseInterpolation};
+  71 | export type {ComponentStack};
+  72 | 
+> 73 | export {parseInterpolation};
      |         ^
-  69 | 
-  70 | export {parseComponentStack};
-  71 | 
+  74 | 
+  75 | export {parseComponentStack};
+  76 | 

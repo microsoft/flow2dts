@@ -1,7 +1,6 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var NativeEventEmitter: $TypeOf<typeof $2>;
-import $2 from "../EventEmitter/NativeEventEmitter";
+import NativeEventEmitter from "../EventEmitter/NativeEventEmitter";
 declare class Linking extends $1 {
   constructor: () => void;
 
@@ -11,14 +10,14 @@ declare class Linking extends $1 {
    *
    * See https://reactnative.dev/docs/linking.html#addeventlistener
    */
-  addEventListener: (type: string, handler: Function) => void;
+  addEventListener: <T>(type: string, handler: T) => void;
 
   /**
    * Remove a handler by passing the `url` event type and the handler.
    *
    * See https://reactnative.dev/docs/linking.html#removeeventlistener
    */
-  removeEventListener: (type: string, handler: Function) => void;
+  removeEventListener: <T>(type: string, handler: T) => void;
 
   /**
    * Try to open the given `url` with any of the installed apps.

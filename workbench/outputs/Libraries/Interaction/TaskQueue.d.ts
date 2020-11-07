@@ -8,7 +8,7 @@ declare type PromiseTask = {
   name: string;
   gen: () => Promise;
 };
-declare type Task = Function | SimpleTask | PromiseTask;
+declare type Task = SimpleTask | PromiseTask | () => void;
 declare class TaskQueue {
   /**
    * TaskQueue instances are self contained and independent, so multiple tasks

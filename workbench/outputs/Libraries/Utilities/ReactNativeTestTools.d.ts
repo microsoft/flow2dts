@@ -1,9 +1,9 @@
-[FLOW2DTS - Error] /Libraries/Utilities/ReactNativeTestTools.js.flow: Export 'byClickable' is not defined (60:8)
+[FLOW2DTS - Error] /Libraries/Utilities/ReactNativeTestTools.js.flow: Export 'byClickable' is not defined (61:8)
 
-  58 | export type {ReactTestRendererJSON};
-  59 | 
-> 60 | export {byClickable};
+  59 | export type {ReactTestRendererJSON};
+  60 | 
+> 61 | export {byClickable};
      |         ^
-  61 | export {byTestID};
-  62 | export {byTextMatching};
-  63 | export {enter};
+  62 | export {byTestID};
+  63 | export {byTextMatching};
+  64 | export {enter};

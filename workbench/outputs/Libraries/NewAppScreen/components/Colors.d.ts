@@ -7,5 +7,6 @@ declare export default
   lighter: string;
   light: string;
   dark: string;
+  darker: string;
   black: string;
 };

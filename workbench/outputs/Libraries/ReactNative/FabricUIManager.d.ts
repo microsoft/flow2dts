@@ -3,6 +3,7 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { MeasureOnSuccessCallback } from "../Renderer/shims/ReactNativeTypes";
 import { MeasureInWindowOnSuccessCallback } from "../Renderer/shims/ReactNativeTypes";
 import { MeasureLayoutOnSuccessCallback } from "../Renderer/shims/ReactNativeTypes";
+import { LayoutAnimationConfig } from "../Renderer/shims/ReactNativeTypes";
 declare type Node = {};
 declare type NodeSet = Node[];
 declare type NodeProps = {};
@@ -23,7 +24,9 @@ declare type Spec =
   readonly measure: (node: Node, callback: MeasureOnSuccessCallback) => void;
   readonly measureInWindow: (node: Node, callback: MeasureInWindowOnSuccessCallback) => void;
   readonly measureLayout: (node: Node, relativeNode: Node, onFail: () => void, onSuccess: MeasureLayoutOnSuccessCallback) => void;
+  readonly configureNextLayoutAnimation: (config: LayoutAnimationConfig, callback: () => void, errorCallback: (error: Object) => void) => void;
 };
 declare var FabricUIManager: null | undefined | Spec;
+export type { Spec };
 declare const $f2tExportDefault: $TypeOf<typeof FabricUIManager>;
 export default $f2tExportDefault;

@@ -1,7 +1,6 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var React: $TypeOf<typeof $1>;
-import $1 from "react";
+import * as React from "react";
 import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
 import { ViewProps } from "../View/ViewPropTypes";
 declare type Props = Readonly<

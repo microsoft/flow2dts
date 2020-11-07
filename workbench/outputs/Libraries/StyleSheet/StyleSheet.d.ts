@@ -2,6 +2,7 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var flatten: $TypeOf<typeof $1>;
 import $1 from "./flattenStyle";
+import { ____ColorValue_Internal } from "./StyleSheetTypes";
 import { ____Styles_Internal } from "./StyleSheetTypes";
 import { ____DangerouslyImpreciseStyle_Internal } from "./StyleSheetTypes";
 import { ____DangerouslyImpreciseStyleProp_Internal } from "./StyleSheetTypes";
@@ -11,6 +12,7 @@ import { ____TextStyle_Internal } from "./StyleSheetTypes";
 import { ____TextStyleProp_Internal } from "./StyleSheetTypes";
 import { ____ImageStyle_Internal } from "./StyleSheetTypes";
 import { ____ImageStyleProp_Internal } from "./StyleSheetTypes";
+declare type ColorValue = ____ColorValue_Internal;
 declare type ViewStyleProp = ____ViewStyleProp_Internal;
 declare type TextStyleProp = ____TextStyleProp_Internal;
 declare type ImageStyleProp = ____ImageStyleProp_Internal;
@@ -32,6 +34,7 @@ declare var absoluteFill:
   top: number;
   bottom: number;
 };
+export type { ColorValue };
 export type { ViewStyleProp };
 export type { TextStyleProp };
 export type { ImageStyleProp };

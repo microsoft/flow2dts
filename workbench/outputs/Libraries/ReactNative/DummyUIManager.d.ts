@@ -6,7 +6,6 @@ declare const $f2tExportDefault:
   getConstants: () => {};
   getConstantsForViewManager: (viewManagerName: string) => void;
   getDefaultEventTypes: () => $FlowFixMe[];
-  playTouchSound: () => void;
   lazilyLoadView: (name: string) => void;
   createView: (reactTag: null | undefined | number, viewName: string, rootTag: number, props: Object) => void;
   updateView: (reactTag: number, viewName: string, props: Object) => void;

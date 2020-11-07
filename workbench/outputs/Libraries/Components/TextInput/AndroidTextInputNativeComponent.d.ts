@@ -9,7 +9,7 @@ import { WithDefault } from "../../Types/CodegenTypes";
 import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
 import { TextStyleProp } from "../../StyleSheet/StyleSheet";
 import { ViewStyleProp } from "../../StyleSheet/StyleSheet";
-import { ColorValue } from "../../StyleSheet/StyleSheetTypes";
+import { ColorValue } from "../../StyleSheet/StyleSheet";
 import { TextInputNativeCommands } from "./TextInputNativeCommands";
 declare type KeyboardType = // Cross Platform
 "default" | "email-address" | "numeric" | "phone-pad" | "number-pad" | "decimal-pad" // iOS-only
@@ -118,7 +118,6 @@ $Diff & {
   /**
   * When `false`, it will prevent the soft keyboard from showing when the field is focused.
   * Defaults to `true`.
-  * @platform android
   */
   showSoftInputOnFocus?: null | undefined | boolean;
 

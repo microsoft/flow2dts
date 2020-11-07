@@ -3,11 +3,14 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 declare var InspectorAgent: $TypeOf<typeof $1>;
 import $1 from "./InspectorAgent";
 declare type RequestId = string;
+declare type Headers = {
+  [$f2tKey: string]: string;
+};
 declare class Interceptor {
   constructor: (agent: NetworkAgent) => void;
   getData: (requestId: string) => null | undefined | string;
-  requestSent: (id: number, url: string, method: string, headers: Object) => void;
-  responseReceived: (id: number, url: string, status: number, headers: Object) => void;
+  requestSent: (id: number, url: string, method: string, headers: Headers) => void;
+  responseReceived: (id: number, url: string, status: number, headers: Headers) => void;
   dataReceived: (id: number, data: string) => void;
   loadingFinished: (id: number, encodedDataLength: number) => void;
   loadingFailed: (id: number, error: string) => void;

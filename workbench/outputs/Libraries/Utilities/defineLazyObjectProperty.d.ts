@@ -1,6 +1,6 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare function defineLazyObjectProperty<T>(object: Object, name: string, descriptor: {
+declare function defineLazyObjectProperty<T>(object: {}, name: string, descriptor: {
   get: () => T;
   enumerable?: boolean;
   writable?: boolean;

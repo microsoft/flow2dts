@@ -1,5 +1,6 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
+import { IPerformanceLogger } from "../Utilities/createPerformanceLogger";
 declare type NativeResponseType = "base64" | "blob" | "text";
 declare type ResponseType = "" | "arraybuffer" | "blob" | "document" | "json" | "text";
 declare type Response = (null | undefined | Object) | string;
@@ -71,6 +72,11 @@ declare class XMLHttpRequest extends $1 {
    * Custom extension for tracking origins of request.
    */
   setTrackingName: (trackingName: string) => XMLHttpRequest;
+
+  /**
+   * Custom extension for setting a custom performance logger
+   */
+  setPerformanceLogger: (performanceLogger: IPerformanceLogger) => XMLHttpRequest;
   open: (method: string, url: string, async: null | undefined | boolean) => void;
   send: (data: any) => void;
   abort: () => void;

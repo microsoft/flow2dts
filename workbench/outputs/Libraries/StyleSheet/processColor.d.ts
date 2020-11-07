@@ -1,6 +1,6 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import { ColorValue } from "./StyleSheetTypes";
+import { ColorValue } from "./StyleSheet";
 import { NativeColorValue } from "./PlatformColorValueTypes";
 declare type ProcessedColorValue = number | NativeColorValue;
 declare function processColor(color?: null | undefined | (number | ColorValue)) => null | undefined | ProcessedColorValue;

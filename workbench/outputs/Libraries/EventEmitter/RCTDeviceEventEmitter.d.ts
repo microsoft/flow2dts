@@ -1,17 +1,14 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var EventEmitter: $TypeOf<typeof $1>;
-import $1 from "../vendor/emitter/EventEmitter";
-declare var EventSubscriptionVendor: $TypeOf<typeof $2>;
-import $2 from "../vendor/emitter/EventSubscriptionVendor";
-import EmitterSubscription from "../vendor/emitter/EmitterSubscription";
-declare class RCTDeviceEventEmitter extends $3 {
+import EventEmitter from "../vendor/emitter/EventEmitter";
+import EmitterSubscription from "../vendor/emitter/_EmitterSubscription";
+import EventSubscriptionVendor from "../vendor/emitter/_EventSubscriptionVendor";
+declare class RCTDeviceEventEmitter extends $1 {
   sharedSubscriber: EventSubscriptionVendor;
   constructor: () => void;
   addListener: (eventType: string, listener: Function, context: null | undefined | Object) => EmitterSubscription;
   removeAllListeners: (eventType: null | undefined | string) => void;
   removeSubscription: (subscription: EmitterSubscription) => void;
 }
-declare var $3: $TypeOf<typeof EventEmitter>;
-declare const $f2tExportDefault: RCTDeviceEventEmitter;
-export default $f2tExportDefault;
+declare var $1: $TypeOf<typeof EventEmitter>;
+declare export default RCTDeviceEventEmitter;

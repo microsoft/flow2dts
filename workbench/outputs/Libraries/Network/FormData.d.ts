@@ -1,6 +1,10 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare type FormDataValue = any;
+declare type FormDataValue = string | {
+  name?: string;
+  type?: string;
+  uri: string;
+};
 declare type Headers = {
   [name: string]: string;
 };

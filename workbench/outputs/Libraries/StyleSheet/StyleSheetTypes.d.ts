@@ -1,10 +1,10 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var AnimatedNode: $TypeOf<typeof $1>;
-import $1 from "../Animated/src/nodes/AnimatedNode";
+import $1 from "../Animated/nodes/AnimatedNode";
 import { NativeColorValue } from "./PlatformColorValueTypes";
-declare type ColorValue = null | string | NativeColorValue;
-declare type ColorArrayValue = null | ReadonlyArray<ColorValue>;
+declare type ____ColorValue_Internal = null | string | NativeColorValue;
+declare type ColorArrayValue = null | ReadonlyArray<____ColorValue_Internal>;
 declare type PointValue =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
@@ -520,7 +520,7 @@ declare type ____ShadowStyle_Internal = Readonly<
   * Sets the drop shadow color
   * @platform ios
   */
-  shadowColor?: ColorValue;
+  shadowColor?: ____ColorValue_Internal;
 
   /**
   * Sets the drop shadow offset
@@ -549,14 +549,14 @@ declare type ____ViewStyle_Internal = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 $Exact & $Exact & $Exact & {
   backfaceVisibility?: "visible" | "hidden";
-  backgroundColor?: ColorValue;
-  borderColor?: ColorValue;
-  borderBottomColor?: ColorValue;
-  borderEndColor?: ColorValue;
-  borderLeftColor?: ColorValue;
-  borderRightColor?: ColorValue;
-  borderStartColor?: ColorValue;
-  borderTopColor?: ColorValue;
+  backgroundColor?: ____ColorValue_Internal;
+  borderColor?: ____ColorValue_Internal;
+  borderBottomColor?: ____ColorValue_Internal;
+  borderEndColor?: ____ColorValue_Internal;
+  borderLeftColor?: ____ColorValue_Internal;
+  borderRightColor?: ____ColorValue_Internal;
+  borderStartColor?: ____ColorValue_Internal;
+  borderTopColor?: ____ColorValue_Internal;
   borderRadius?: number | AnimatedNode;
   borderBottomEndRadius?: number | AnimatedNode;
   borderBottomLeftRadius?: number | AnimatedNode;
@@ -581,7 +581,7 @@ declare type ____FontWeight_Internal = "normal" | "bold" | "100" | "200" | "300"
 declare type ____TextStyle_Internal = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 $Exact & {
-  color?: ColorValue;
+  color?: ____ColorValue_Internal;
   fontFamily?: string;
   fontSize?: number;
   fontStyle?: "normal" | "italic";
@@ -594,7 +594,7 @@ $Exact & {
     height: number;
   }>;
   textShadowRadius?: number;
-  textShadowColor?: ColorValue;
+  textShadowColor?: ____ColorValue_Internal;
   letterSpacing?: number;
   lineHeight?: number;
   textAlign?: "auto" | "left" | "right" | "center" | "justify";
@@ -602,7 +602,7 @@ $Exact & {
   includeFontPadding?: boolean;
   textDecorationLine?: "none" | "underline" | "line-through" | "underline line-through";
   textDecorationStyle?: "solid" | "double" | "dotted" | "dashed";
-  textDecorationColor?: ColorValue;
+  textDecorationColor?: ____ColorValue_Internal;
   textTransform?: "none" | "capitalize" | "uppercase" | "lowercase";
   writingDirection?: "auto" | "ltr" | "rtl";
 }>;
@@ -610,12 +610,12 @@ declare type ____ImageStyle_Internal = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 $Exact & {
   resizeMode?: "contain" | "cover" | "stretch" | "center" | "repeat";
-  tintColor?: ColorValue;
+  tintColor?: ____ColorValue_Internal;
   overlayColor?: string;
 }>;
 declare type ____DangerouslyImpreciseStyle_Internal = $Exact & {
   readonly resizeMode?: "contain" | "cover" | "stretch" | "center" | "repeat";
-  readonly tintColor?: ColorValue;
+  readonly tintColor?: ____ColorValue_Internal;
   readonly overlayColor?: string;
 };
 declare type GenericStyleProp
@@ -628,7 +628,7 @@ declare type ____ImageStyleProp_Internal = GenericStyleProp;
 declare type ____Styles_Internal = {
   readonly [key: string]: $Shape;
 };
-export type { ColorValue };
+export type { ____ColorValue_Internal };
 export type { ColorArrayValue };
 export type { PointValue };
 export type { EdgeInsetsValue };

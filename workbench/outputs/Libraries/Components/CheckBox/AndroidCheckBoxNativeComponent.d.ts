@@ -1,1 +1,0 @@
-[FLOW2DTS - Error] /Libraries/Components/CheckBox/AndroidCheckBoxNativeComponent.js.flow: Expected type "TSTypeReference" with option {}, but instead got "TSUndefinedKeyword".

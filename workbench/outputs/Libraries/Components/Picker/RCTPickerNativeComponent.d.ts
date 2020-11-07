@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
 import { SyntheticEvent } from "../../Types/CoreEventTypes";
@@ -10,7 +9,7 @@ declare type RCTPickerIOSItemType = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
   label: null | undefined | Label;
-  value: null | undefined | (number | string);
+  value: null | undefined | string;
   textColor: null | undefined | ProcessedColorValue;
 }>;
 declare type Label = Stringish | number;
@@ -29,6 +28,5 @@ interface NativeCommands {
   readonly setNativeSelectedIndex: (viewRef: React.ElementRef<ComponentType>, index: number) => void;
 }
 declare var Commands: NativeCommands;
-declare var RCTPickerNativeComponent: ComponentType;
 export { Commands };
-declare export default $TypeOf<typeof RCTPickerNativeComponent>;
+declare export default HostComponent;

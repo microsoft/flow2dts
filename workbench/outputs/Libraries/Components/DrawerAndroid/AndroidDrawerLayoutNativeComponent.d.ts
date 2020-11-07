@@ -1,6 +1,6 @@
 // @flow
 import { ViewProps } from "react-native/Libraries/Components/View/ViewPropTypes";
-import { ColorValue } from "react-native/Libraries/StyleSheet/StyleSheetTypes";
+import { ColorValue } from "react-native/Libraries/StyleSheet/StyleSheet";
 import { WithDefault } from "react-native/Libraries/Types/CodegenTypes";
 import { DirectEventHandler } from "react-native/Libraries/Types/CodegenTypes";
 import { Int32 } from "react-native/Libraries/Types/CodegenTypes";

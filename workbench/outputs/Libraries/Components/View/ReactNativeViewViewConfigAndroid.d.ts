@@ -17,6 +17,16 @@ declare var ReactNativeViewViewConfigAndroid:
         captured: string;
       };
     };
+    topAssetDidLoad:
+    /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+    {
+      phasedRegistrationNames:
+      /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+      {
+        bubbled: string;
+        captured: string;
+      };
+    };
   };
   directEventTypes:
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -77,6 +87,11 @@ declare var ReactNativeViewViewConfigAndroid:
       registrationName: string;
     };
     topSelectionChange:
+    /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+    {
+      registrationName: string;
+    };
+    onAssetDidLoad:
     /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
     {
       registrationName: string;

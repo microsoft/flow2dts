@@ -7,7 +7,7 @@ declare type Options = Readonly<
   interfaceOnly?: boolean;
   paperComponentName?: string;
   paperComponentNameDeprecated?: string;
-  excludedPlatform?: "iOS" | "android";
+  excludedPlatforms?: ReadonlyArray<"iOS" | "android">;
 }>;
 declare type NativeComponentType<T> = HostComponent;
 declare function codegenNativeComponent<Props>(componentName: string, options?: Options) => NativeComponentType;

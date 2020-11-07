@@ -1,10 +1,9 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var Blob: $TypeOf<typeof $1>;
-import $1 from "../Blob/Blob";
+import Blob from "../Blob/Blob";
 declare type ArrayBufferView = Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array | DataView;
 declare type BinaryType = "blob" | "arraybuffer";
-declare class WebSocket extends $2 {
+declare class WebSocket extends $1 {
   CONNECTING: number;
   OPEN: number;
   CLOSING: number;
@@ -33,6 +32,6 @@ declare class WebSocket extends $2 {
   send: (data: string | ArrayBuffer | ArrayBufferView | Blob) => void;
   ping: () => void;
 }
-declare var $2: any;
+declare var $1: any;
 declare const $f2tExportDefault: $TypeOf<typeof WebSocket>;
 export default $f2tExportDefault;

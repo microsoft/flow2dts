@@ -149,6 +149,26 @@ declare type ReactFaricEvent = {
   targetTouches: ReactFaricEventTouch[];
   target: number;
 };
+declare type LayoutAnimationType = "spring" | "linear" | "easeInEaseOut" | "easeIn" | "easeOut" | "keyboard";
+declare type LayoutAnimationProperty = "opacity" | "scaleX" | "scaleY" | "scaleXY";
+declare type LayoutAnimationAnimationConfig = Readonly<
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  duration?: number;
+  delay?: number;
+  springDamping?: number;
+  initialVelocity?: number;
+  type?: LayoutAnimationType;
+  property?: LayoutAnimationProperty;
+}>;
+declare type LayoutAnimationConfig = Readonly<
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  duration: number;
+  create?: LayoutAnimationAnimationConfig;
+  update?: LayoutAnimationAnimationConfig;
+  delete?: LayoutAnimationAnimationConfig;
+}>;
 export type { MeasureOnSuccessCallback };
 export type { MeasureInWindowOnSuccessCallback };
 export type { MeasureLayoutOnSuccessCallback };
@@ -164,3 +184,7 @@ export type { ReactFabricType };
 export type { ReactNativeEventTarget };
 export type { ReactFaricEventTouch };
 export type { ReactFaricEvent };
+export type { LayoutAnimationType };
+export type { LayoutAnimationProperty };
+export type { LayoutAnimationAnimationConfig };
+export type { LayoutAnimationConfig };

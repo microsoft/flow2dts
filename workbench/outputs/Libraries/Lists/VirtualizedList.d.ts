@@ -1,15 +1,15 @@
 [FLOW2DTS - Error] /Libraries/Lists/VirtualizedList.js.flow: EmptyTypeAnnotation(node is not a TypeScript type:
 {
     "type": "EmptyTypeAnnotation",
-    "start": 10286,
-    "end": 10291,
+    "start": 10063,
+    "end": 10068,
     "loc": {
         "start": {
-            "line": 264,
+            "line": 263,
             "column": 25
         },
         "end": {
-            "line": 264,
+            "line": 263,
             "column": 30
         }
     }
