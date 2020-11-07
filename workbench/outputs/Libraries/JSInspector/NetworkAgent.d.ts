@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var InspectorAgent: $TypeOf<typeof $1>;
-declare const $1;
+import $1 from "./InspectorAgent";
 declare type RequestId = string;
 declare class Interceptor {
   constructor: (agent: NetworkAgent) => void;

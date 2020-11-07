@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var AnimatedValue: $TypeOf<typeof $1>;
-declare const $1;
+import $1 from "./nodes/AnimatedValue";
 declare type Mapping = {
   [key: string]: Mapping;
 } | AnimatedValue;

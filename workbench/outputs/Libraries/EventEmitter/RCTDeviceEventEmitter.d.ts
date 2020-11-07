@@ -1,9 +1,9 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var EventEmitter: $TypeOf<typeof $1>;
-declare const $1;
+import $1 from "../vendor/emitter/EventEmitter";
 declare var EventSubscriptionVendor: $TypeOf<typeof $2>;
-declare const $2;
+import $2 from "../vendor/emitter/EventSubscriptionVendor";
 import EmitterSubscription from "../vendor/emitter/EmitterSubscription";
 declare class RCTDeviceEventEmitter extends $3 {
   sharedSubscriber: EventSubscriptionVendor;

@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var NativeEventEmitter: $TypeOf<typeof $2>;
-declare const $2;
+import $2 from "../EventEmitter/NativeEventEmitter";
 declare class Linking extends $1 {
   constructor: () => void;
 

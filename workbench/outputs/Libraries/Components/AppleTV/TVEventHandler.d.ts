@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var NativeEventEmitter: $TypeOf<typeof $1>;
-declare const $1;
+import $1 from "../../EventEmitter/NativeEventEmitter";
 import EmitterSubscription from "../../vendor/emitter/EmitterSubscription";
 declare class TVEventHandler {
   __nativeTVNavigationEventListener: null | undefined | EmitterSubscription;

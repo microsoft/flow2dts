@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var EventSubscription: $TypeOf<typeof $2>;
-declare const $2;
+import $2 from "./EventSubscription";
 import EventEmitter from "./EventEmitter";
 import EventSubscriptionVendor from "./EventSubscriptionVendor";
 declare class EmitterSubscription extends $1 {

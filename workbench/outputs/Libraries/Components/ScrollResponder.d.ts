@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var React: $TypeOf<typeof $1>;
-declare const $1;
+import $1 from "react";
 import { PressEvent } from "../Types/CoreEventTypes";
 import { ScrollEvent } from "../Types/CoreEventTypes";
 import { KeyboardEvent } from "./Keyboard/Keyboard";

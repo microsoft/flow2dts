@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var EventEmitter: $TypeOf<typeof $1>;
-declare const $1;
+import $1 from "../vendor/emitter/EventEmitter";
 import EmitterSubscription from "../vendor/emitter/EmitterSubscription";
 declare type NativeModule = {
   readonly addListener: (eventType: string) => void;

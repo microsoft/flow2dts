@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var React: $TypeOf<typeof $1>;
-declare const $1;
+import $1 from "react";
 declare type AnimatedComponentType<Props extends {
   readonly [$f2tKey: string]: unknown;
 }, Instance> = React.AbstractComponent<$ObjMap, Instance>;

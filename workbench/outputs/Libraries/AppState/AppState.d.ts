@@ -1,9 +1,9 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var EventEmitter: $TypeOf<typeof $2>;
-declare const $2;
+import $2 from "../vendor/emitter/EventEmitter";
 declare var NativeEventEmitter: $TypeOf<typeof $4>;
-declare const $4;
+import $4 from "../EventEmitter/NativeEventEmitter";
 declare class AppState extends $1 {
   currentState: null | undefined | string;
   isAvailable: boolean;

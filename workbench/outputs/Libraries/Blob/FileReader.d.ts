@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var Blob: $TypeOf<typeof $1>;
-declare const $1;
+import $1 from "./Blob";
 declare type ReadyState = 0 // EMPTY
 | 1 // LOADING
 | 2;

@@ -1,11 +1,11 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var AnimatedInterpolation: $TypeOf<typeof $2>;
-declare const $2;
+import $2 from "./AnimatedInterpolation";
 declare var AnimatedNode: $TypeOf<typeof $3>;
-declare const $3;
+import $3 from "./AnimatedNode";
 declare var AnimatedWithChildren: $TypeOf<typeof $4>;
-declare const $4;
+import $4 from "./AnimatedWithChildren";
 import { InterpolationConfigType } from "./AnimatedInterpolation";
 declare class AnimatedDiffClamp extends $1 {
   constructor: (a: AnimatedNode, min: number, max: number) => void;

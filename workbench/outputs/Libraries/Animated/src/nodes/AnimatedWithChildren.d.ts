@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var AnimatedNode: $TypeOf<typeof $1>;
-declare const $1;
+import $1 from "./AnimatedNode";
 declare class AnimatedWithChildren extends $2 {
   constructor: () => void;
   __makeNative: () => void;

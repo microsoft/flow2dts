@@ -2,7 +2,7 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import SliderNativeComponent from "./SliderNativeComponent";
 declare var React: $TypeOf<typeof $1>;
-declare const $1;
+import $1 from "react";
 import { ImageSource } from "../../Image/ImageSource";
 import { ViewStyleProp } from "../../StyleSheet/StyleSheet";
 import { ColorValue } from "../../StyleSheet/StyleSheetTypes";

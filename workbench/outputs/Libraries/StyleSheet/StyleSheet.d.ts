@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var flatten: $TypeOf<typeof $1>;
-declare const $1;
+import $1 from "./flattenStyle";
 import { ____Styles_Internal } from "./StyleSheetTypes";
 import { ____DangerouslyImpreciseStyle_Internal } from "./StyleSheetTypes";
 import { ____DangerouslyImpreciseStyleProp_Internal } from "./StyleSheetTypes";

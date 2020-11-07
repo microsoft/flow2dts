@@ -1,9 +1,9 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var AnimatedValue: $TypeOf<typeof $1>;
-declare const $1;
+import $1 from "./AnimatedValue";
 declare var AnimatedWithChildren: $TypeOf<typeof $3>;
-declare const $3;
+import $3 from "./AnimatedWithChildren";
 declare type ValueXYListenerCallback = (value: {
   x: number;
   y: number;

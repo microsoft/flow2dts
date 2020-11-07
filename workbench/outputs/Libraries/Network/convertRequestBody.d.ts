@@ -1,9 +1,9 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var Blob: $TypeOf<typeof $1>;
-declare const $1;
+import $1 from "../Blob/Blob";
 declare var FormData: $TypeOf<typeof $2>;
-declare const $2;
+import $2 from "./FormData";
 declare type RequestBody = string | Blob | FormData | {
   uri: string;
 } | ArrayBuffer | $ArrayBufferView;

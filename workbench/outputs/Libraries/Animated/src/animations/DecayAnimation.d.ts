@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var Animation: $TypeOf<typeof $1>;
-declare const $1;
+import $1 from "./Animation";
 import AnimatedValue from "../nodes/AnimatedValue";
 import { AnimationConfig } from "./Animation";
 import { EndCallback } from "./Animation";

@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var Promise: $TypeOf<typeof $1>;
-declare const $1;
+import $1 from "../../Promise";
 declare type ChangeEventName = keyof {
   announcementFinished: string;
   boldTextChanged: string;

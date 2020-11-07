@@ -1,9 +1,9 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var AnimatedNode: $TypeOf<typeof $2>;
-declare const $2;
+import $2 from "./AnimatedNode";
 declare var AnimatedWithChildren: $TypeOf<typeof $3>;
-declare const $3;
+import $3 from "./AnimatedWithChildren";
 declare type ExtrapolateType = "extend" | "identity" | "clamp";
 declare type InterpolationConfigType = {
   inputRange: ReadonlyArray<number>;

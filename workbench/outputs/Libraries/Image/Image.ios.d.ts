@@ -1,11 +1,11 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var DeprecatedImagePropType: $TypeOf<typeof $1>;
-declare const $1;
+import $1 from "../DeprecatedPropTypes/DeprecatedImagePropType";
 declare var React: $TypeOf<typeof $2>;
-declare const $2;
+import $2 from "react";
 declare var resolveAssetSource: $TypeOf<typeof $3>;
-declare const $3;
+import $3 from "./resolveAssetSource";
 import { ImageProps as ImagePropsType } from "./ImageProps";
 import ImageViewNativeComponent from "./ImageViewNativeComponent";
 declare function getSize(uri: string, success: (width: number, height: number) => void, failure?: (error: any) => void) => void;

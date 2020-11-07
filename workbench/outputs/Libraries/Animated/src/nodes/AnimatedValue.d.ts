@@ -1,9 +1,9 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var AnimatedInterpolation: $TypeOf<typeof $1>;
-declare const $1;
+import $1 from "./AnimatedInterpolation";
 declare var AnimatedWithChildren: $TypeOf<typeof $3>;
-declare const $3;
+import $3 from "./AnimatedWithChildren";
 import { EndCallback } from "../animations/Animation";
 import Animation from "../animations/Animation";
 import { InterpolationConfigType } from "./AnimatedInterpolation";

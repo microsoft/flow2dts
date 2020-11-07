@@ -1,17 +1,17 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var DeprecatedImageStylePropTypes: $TypeOf<typeof $1>;
-declare const $1;
+import $1 from "../../DeprecatedPropTypes/DeprecatedImageStylePropTypes";
 declare var DeprecatedTextStylePropTypes: $TypeOf<typeof $2>;
-declare const $2;
+import $2 from "../../DeprecatedPropTypes/DeprecatedTextStylePropTypes";
 declare var DeprecatedViewStylePropTypes: $TypeOf<typeof $3>;
-declare const $3;
+import $3 from "../../DeprecatedPropTypes/DeprecatedViewStylePropTypes";
 declare var processColor: $TypeOf<typeof $4>;
-declare const $4;
+import $4 from "../../StyleSheet/processColor";
 declare var processTransform: $TypeOf<typeof $5>;
-declare const $5;
+import $5 from "../../StyleSheet/processTransform";
 declare var sizesDiffer: $TypeOf<typeof $6>;
-declare const $6;
+import $6 from "../../Utilities/differ/sizesDiffer";
 declare type ReturnBoolType = <V>($f2t1: V) => true;
 declare type BoolifiedDeprecatedViewStylePropTypes = $ObjMap;
 declare type BoolifiedDeprecatedTextStylePropTypes = $ObjMapi;

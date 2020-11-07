@@ -1,9 +1,9 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var DeprecatedTextPropTypes: $TypeOf<typeof $1>;
-declare const $1;
+import $1 from "../DeprecatedPropTypes/DeprecatedTextPropTypes";
 declare var React: $TypeOf<typeof $2>;
-declare const $2;
+import $2 from "react";
 import { HostComponent } from "../Renderer/shims/ReactNativeTypes";
 import { TextProps } from "./TextProps";
 declare type TextStatics = Readonly<
