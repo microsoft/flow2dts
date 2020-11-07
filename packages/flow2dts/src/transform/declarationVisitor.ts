@@ -64,12 +64,12 @@ export const declarationVisitor: Visitor<State> = {
   VariableDeclaration: {
     exit(path) {
       const decl = path.node.declarations[0]
-      if (path.node.kind === "const" && decl && decl.init && decl.init.type === "CallExpression" && decl.init) {
+      if (decl.id.type === "Identifier" && decl && decl.init && decl.init.type === "CallExpression" && decl.init) {
         const callee = decl.init.callee
         if (callee.type === "Identifier" && callee.name === "require" && decl.init.arguments.length === 1) {
           path.replaceWith(
             t.importDeclaration(
-              [t.importDefaultSpecifier(t.identifier((<t.Identifier>decl.id).name))],
+              [t.importDefaultSpecifier(t.identifier(decl.id.name))],
               <t.StringLiteral>decl.init.arguments[0]
             )
           )
