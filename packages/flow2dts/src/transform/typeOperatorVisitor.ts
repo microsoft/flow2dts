@@ -1,8 +1,9 @@
-import { PluginPass, Visitor, types as t } from "@babel/core"
+import { Visitor, types as t } from "@babel/core"
+import { State } from "./index"
 
-export const typeOperatorVisitor: Visitor<PluginPass> = {
+export const typeOperatorVisitor: Visitor<State> = {
   TypeofTypeAnnotation: {
-    exit(path) {
+    exit(path, state) {
       const typeQueryOperator = path.node.argument as any
       t.assertTSTypeReference(typeQueryOperator)
       t.assertIdentifier(typeQueryOperator.typeName)
@@ -10,11 +11,13 @@ export const typeOperatorVisitor: Visitor<PluginPass> = {
       if (!referencePath) {
         throw new Error("invariant: expected referred to type to exist")
       }
-      if (referencePath.path.isDeclareClass() || referencePath.path.isClassDeclaration()) {
-        path.replaceWith(typeQueryOperator)
-      } else {
-        path.replaceWith(t.tsTypeQuery(typeQueryOperator.typeName))
-      }
+      state.polyfillFlowTypes.add("$TypeOf")
+      path.replaceWith(
+        t.tsTypeReference(
+          t.identifier("$TypeOf"),
+          t.tsTypeParameterInstantiation([t.tsTypeQuery(typeQueryOperator.typeName)])
+        )
+      )
     },
   },
 }

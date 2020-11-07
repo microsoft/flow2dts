@@ -1,7 +1,8 @@
-import { PluginPass, Visitor, types as t } from "@babel/core"
+import { Visitor, types as t } from "@babel/core"
+import { State } from "./index"
 import { nameForImportTypeof } from "./utilities"
 
-export const importVisitor: Visitor<PluginPass> = {
+export const importVisitor: Visitor<State> = {
   ImportDeclaration: {
     exit(path) {
       if (path.node.importKind === "typeof") {

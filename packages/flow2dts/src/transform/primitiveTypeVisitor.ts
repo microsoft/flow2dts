@@ -1,7 +1,8 @@
-import { PluginPass, Visitor, types as t } from "@babel/core"
+import { Visitor, types as t } from "@babel/core"
+import { State } from "./index"
 import { assertTSType } from "./utilities"
 
-export const primitiveTypeVisitor: Visitor<PluginPass> = {
+export const primitiveTypeVisitor: Visitor<State> = {
   AnyTypeAnnotation: {
     exit(path) {
       path.replaceWith(t.tsAnyKeyword())

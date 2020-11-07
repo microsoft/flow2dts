@@ -1,7 +1,8 @@
-import { PluginPass, Visitor, types as t } from "@babel/core"
+import { Visitor, types as t } from "@babel/core"
+import { State } from "./index"
 import { assertTSType, nameForParameter, nameForRestParameter } from "./utilities"
 
-export const advancedTypeVisitor: Visitor<PluginPass> = {
+export const advancedTypeVisitor: Visitor<State> = {
   TupleTypeAnnotation: {
     exit(path) {
       path.node.types.forEach(assertTSType)

@@ -1,7 +1,8 @@
-import { PluginPass, Visitor, types as t } from "@babel/core"
+import { Visitor, types as t } from "@babel/core"
+import { State } from "./index"
 import { assertTSType, nameForExportDefault } from "./utilities"
 
-export const exportVisitor: Visitor<PluginPass> = {
+export const exportVisitor: Visitor<State> = {
   DeclareModuleExports: {
     exit(path) {
       const typeAnnotation = path.node.typeAnnotation.typeAnnotation

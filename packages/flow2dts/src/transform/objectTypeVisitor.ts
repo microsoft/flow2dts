@@ -1,7 +1,8 @@
-import { PluginPass, Visitor, types as t } from "@babel/core"
+import { Visitor, types as t } from "@babel/core"
+import { State } from "./index"
 import { assertTSType, assertTSTypeElement, nameForTypeIndexerKey } from "./utilities"
 
-export const objectTypeVisitor: Visitor<PluginPass> = {
+export const objectTypeVisitor: Visitor<State> = {
   ObjectTypeIndexer: {
     exit(path) {
       const { id, key, value, variance } = path.node

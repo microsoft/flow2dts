@@ -1,4 +1,5 @@
-import { NodePath, PluginPass, Visitor, types as t } from "@babel/core"
+import { Visitor, types as t } from "@babel/core"
+import { State } from "."
 import { assertTSType } from "./utilities"
 
 function convertParameters(
@@ -29,7 +30,7 @@ function convertParameters(
   })
 }
 
-export const declarationVisitor: Visitor<PluginPass> = {
+export const declarationVisitor: Visitor<State> = {
   TypeAlias: {
     exit(path) {
       const { id, typeParameters, right } = path.node
