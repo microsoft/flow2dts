@@ -1,6 +1,6 @@
 import { Visitor, types as t } from "@babel/core"
 import { State } from "./index"
-import { nameForImportTypeof } from "./utilities"
+import { nameForImportTypeof, wrappedTypeOf } from "./utilities"
 
 export const importVisitor: Visitor<State> = {
   ImportDeclaration: {
@@ -19,15 +19,11 @@ export const importVisitor: Visitor<State> = {
         }
         path.node.importKind = "value"
 
-        state.polyfillFlowTypes.add("$TypeOf")
         const decls = names.map((name) => {
           const decl = t.tsTypeAliasDeclaration(
             t.identifier(name),
             null,
-            t.tsTypeReference(
-              t.identifier("$TypeOf"),
-              t.tsTypeParameterInstantiation([t.tsTypeQuery(t.identifier(nameForImportTypeof(name)))])
-            )
+            wrappedTypeOf(t.identifier(nameForImportTypeof(name)), state)
           )
           decl.declare = true
           return decl

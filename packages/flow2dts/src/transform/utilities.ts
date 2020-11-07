@@ -1,4 +1,5 @@
 import { types as t } from "@babel/core"
+import { State } from "./index"
 
 export const nameForExportDefault = "$f2tExportDefault"
 export const nameForRestParameter = "$f2tRest"
@@ -24,4 +25,9 @@ export function assertTSTypeElement(node: t.Node | null | undefined): asserts no
 
 export function assertTSTypeAnnotation(node: t.Node | null | undefined): asserts node is t.TSTypeAnnotation {
   t.assertTSTypeAnnotation(node)
+}
+
+export function wrappedTypeOf(id: t.Identifier, state: State) {
+  state.polyfillFlowTypes.add("$TypeOf")
+  return t.tsTypeReference(t.identifier("$TypeOf"), t.tsTypeParameterInstantiation([t.tsTypeQuery(id)]))
 }

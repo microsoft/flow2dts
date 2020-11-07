@@ -1,5 +1,6 @@
 import { Visitor, types as t } from "@babel/core"
 import { State } from "./index"
+import { wrappedTypeOf } from "./utilities"
 
 export const typeOperatorVisitor: Visitor<State> = {
   TypeofTypeAnnotation: {
@@ -11,13 +12,7 @@ export const typeOperatorVisitor: Visitor<State> = {
       if (!referencePath) {
         throw new Error("invariant: expected referred to type to exist")
       }
-      state.polyfillFlowTypes.add("$TypeOf")
-      path.replaceWith(
-        t.tsTypeReference(
-          t.identifier("$TypeOf"),
-          t.tsTypeParameterInstantiation([t.tsTypeQuery(typeQueryOperator.typeName)])
-        )
-      )
+      path.replaceWith(wrappedTypeOf(typeQueryOperator.typeName, state))
     },
   },
 }
