@@ -62,7 +62,7 @@ export const advancedTypeVisitor: Visitor<State> = {
         }
       } else {
         // QualifiedTypeIdentifier -> QualifiedName
-        throw "QualifiedTypeIdentifier not supported yet"
+        throw new Error("QualifiedTypeIdentifier not supported yet")
       }
     },
   },

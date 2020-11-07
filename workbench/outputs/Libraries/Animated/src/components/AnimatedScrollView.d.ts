@@ -1,1 +1,1 @@
-[FLOW2DTS - Error] Cannot create property 'message' on string 'QualifiedTypeIdentifier not supported yet'
+[FLOW2DTS - Error] /Libraries/Animated/src/components/AnimatedScrollView.js.flow: QualifiedTypeIdentifier not supported yet
