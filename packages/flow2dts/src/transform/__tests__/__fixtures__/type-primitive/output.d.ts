@@ -10,3 +10,4 @@ declare type f = void
 declare type g = Symbol
 declare type h = unknown
 declare type i = any
+declare type k = First.Second.Third<string, number, A.B.C>

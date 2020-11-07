@@ -1,1 +1,1 @@
-[FLOW2DTS - Error] /Libraries/Inspector/NetworkOverlay.js.flow: QualifiedTypeIdentifier not supported yet
+[FLOW2DTS - Error] /Libraries/Inspector/NetworkOverlay.js.flow: Expected type "Identifier" with option {}, but instead got "TSQualifiedName".

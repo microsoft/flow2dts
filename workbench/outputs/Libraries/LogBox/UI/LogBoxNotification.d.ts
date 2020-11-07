@@ -1,1 +1,15 @@
-[FLOW2DTS - Error] /Libraries/LogBox/UI/LogBoxNotification.js.flow: QualifiedTypeIdentifier not supported yet
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
+// @flow
+import * as React from "react";
+import LogBoxLog from "../Data/LogBoxLog";
+declare type Props = Readonly<
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  log: LogBoxLog;
+  totalLogCount: number;
+  level: "warn" | "error";
+  onPressOpen: () => void;
+  onPressDismiss: () => void;
+}>;
+declare function LogBoxLogNotification(props: Props) => React.Node;
+declare export default $TypeOf<typeof LogBoxLogNotification>;

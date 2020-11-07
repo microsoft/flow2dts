@@ -2,6 +2,14 @@ import { Visitor, types as t } from "@babel/core"
 import { State } from "./index"
 import { assertTSType, nameForParameter, nameForRestParameter } from "./utilities"
 
+function convertQId(input: t.Identifier | t.QualifiedTypeIdentifier): t.Identifier | t.TSQualifiedName {
+  if (input.type === "Identifier") {
+    return t.identifier(input.name)
+  } else {
+    return t.tsQualifiedName(convertQId(input.qualification), t.identifier(input.id.name))
+  }
+}
+
 export const advancedTypeVisitor: Visitor<State> = {
   TupleTypeAnnotation: {
     exit(path) {
@@ -61,8 +69,17 @@ export const advancedTypeVisitor: Visitor<State> = {
           path.replaceWith(t.tsTypeReference(t.identifier(name)))
         }
       } else {
-        // QualifiedTypeIdentifier -> QualifiedName
-        throw new Error("QualifiedTypeIdentifier not supported yet")
+        if (path.node.typeParameters) {
+          for (const flowType of path.node.typeParameters.params) {
+            assertTSType(flowType)
+          }
+        }
+
+        const qid = convertQId(path.node.id)
+        const args = path.node.typeParameters
+          ? t.tsTypeParameterInstantiation(<t.TSType[]>(<unknown>path.node.typeParameters.params))
+          : undefined
+        path.replaceWith(t.tsTypeReference(qid, args))
       }
     },
   },

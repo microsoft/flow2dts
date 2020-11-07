@@ -1,1 +1,12 @@
-[FLOW2DTS - Error] /Libraries/LogBox/UI/LogBoxInspectorSection.js.flow: QualifiedTypeIdentifier not supported yet
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
+// @flow
+import * as React from "react";
+declare type Props = Readonly<
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  heading: string;
+  children: React.Node;
+  action?: null | undefined | React.Node;
+}>;
+declare function LogBoxInspectorSection(props: Props) => React.Node;
+declare export default $TypeOf<typeof LogBoxInspectorSection>;

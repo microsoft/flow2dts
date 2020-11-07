@@ -10,3 +10,4 @@ type f = void
 type g = Symbol
 type h = mixed
 type i = any
+type k = First.Second.Third<string, number, A.B.C>
