@@ -1,7 +1,4 @@
 // @flow
-declare var Promise: typeof $1;
-const $1 = require("../../Promise");
-
 type ChangeEventName = $Keys<
   {
     announcementFinished: string,
@@ -110,7 +107,10 @@ declare var AccessibilityInfo: {|
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#addeventlistener
    */
-  addEventListener: (eventName: ChangeEventName, handler: Function) => Object,
+  addEventListener: <T>(
+    eventName: ChangeEventName,
+    handler: T
+  ) => {remove: () => void},
   
   /**
    * Set accessibility focus to a react component.
@@ -131,7 +131,7 @@ declare var AccessibilityInfo: {|
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#removeeventlistener
    */
-  removeEventListener: (eventName: ChangeEventName, handler: Function) => void,
+  removeEventListener: <T>(eventName: ChangeEventName, handler: T) => void,
 |};
 
 declare module.exports: typeof AccessibilityInfo;

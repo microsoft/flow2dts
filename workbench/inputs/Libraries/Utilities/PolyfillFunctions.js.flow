@@ -1,6 +1,6 @@
 // @flow
 declare function polyfillObjectProperty<T>(
-  object: Object,
+  object: {...},
   name: string,
   getValue: () => T
 ): void;

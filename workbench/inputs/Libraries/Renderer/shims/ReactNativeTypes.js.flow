@@ -224,6 +224,36 @@ type ReactFaricEvent = {
   target: number,
   ...,
 };
+
+type LayoutAnimationType = 
+  | 'spring'
+  | 'linear'
+  | 'easeInEaseOut'
+  | 'easeIn'
+  | 'easeOut'
+  | 'keyboard';
+
+type LayoutAnimationProperty = 'opacity' | 'scaleX' | 'scaleY' | 'scaleXY';
+
+type LayoutAnimationAnimationConfig = $ReadOnly<
+  {|
+    duration?: number,
+    delay?: number,
+    springDamping?: number,
+    initialVelocity?: number,
+    type?: LayoutAnimationType,
+    property?: LayoutAnimationProperty,
+  |},
+>;
+
+type LayoutAnimationConfig = $ReadOnly<
+  {|
+    duration: number,
+    create?: LayoutAnimationAnimationConfig,
+    update?: LayoutAnimationAnimationConfig,
+    delete?: LayoutAnimationAnimationConfig,
+  |},
+>;
 export type {MeasureOnSuccessCallback};
 
 export type {MeasureInWindowOnSuccessCallback};
@@ -253,3 +283,11 @@ export type {ReactNativeEventTarget};
 export type {ReactFaricEventTouch};
 
 export type {ReactFaricEvent};
+
+export type {LayoutAnimationType};
+
+export type {LayoutAnimationProperty};
+
+export type {LayoutAnimationAnimationConfig};
+
+export type {LayoutAnimationConfig};

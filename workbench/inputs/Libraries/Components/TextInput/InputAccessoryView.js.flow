@@ -3,7 +3,7 @@ declare var React: typeof $2;
 const $2 = require("react");
 
 import type {ViewStyleProp} from "../../StyleSheet/StyleSheet";
-import type {ColorValue} from "../../StyleSheet/StyleSheetTypes";
+import type {ColorValue} from "../../StyleSheet/StyleSheet";
 
 type Props = $ReadOnly<
   {|

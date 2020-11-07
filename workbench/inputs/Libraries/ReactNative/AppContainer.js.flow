@@ -1,6 +1,5 @@
 // @flow
-declare var React: typeof $2;
-const $2 = require("react");
+import * as React from "react";
 
 type Context = {rootTag: number,...};
 
@@ -9,6 +8,7 @@ type Props = $ReadOnly<
     children?: React.Node,
     fabric?: boolean,
     rootTag: number,
+    initialProps?: {...},
     showArchitectureIndicator?: boolean,
     WrapperComponent?: ?React.ComponentType<any>,
     internal_excludeLogBox?: ?boolean,

@@ -1,4 +1,6 @@
 // @flow
+import type {IPerformanceLogger} from "../Utilities/createPerformanceLogger";
+
 type NativeResponseType = 'base64' | 'blob' | 'text';
 type ResponseType = '' | 'arraybuffer' | 'blob' | 'document' | 'json' | 'text';
 type Response = ?Object | string;
@@ -119,6 +121,11 @@ declare class XMLHttpRequest
    * Custom extension for tracking origins of request.
    */
   setTrackingName(trackingName: string): XMLHttpRequest,
+  
+  /**
+   * Custom extension for setting a custom performance logger
+   */
+  setPerformanceLogger(performanceLogger: IPerformanceLogger): XMLHttpRequest,
   
   open(method: string, url: string, async: ?boolean): void,
   

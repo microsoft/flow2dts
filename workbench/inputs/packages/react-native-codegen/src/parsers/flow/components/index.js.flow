@@ -19,11 +19,14 @@ declare var $10: typeof $9;
 const $1 = require("./options");
 const $9 = require("./options");
 declare var getExtendsProps: typeof $8.getExtendsProps;
-declare var removeKnownExtends: typeof $16.removeKnownExtends;
+declare var removeKnownExtends: typeof $18.removeKnownExtends;
 declare var $8: typeof $7;
-declare var $16: typeof $15;
-const $15 = require("./extends");
+declare var $18: typeof $17;
+const $17 = require("./extends");
 const $7 = require("./extends");
+declare var getTypes: typeof $16.getTypes;
+declare var $16: typeof $15;
+const $15 = require("../utils");
 
 declare function findComponentConfig(ast: $FlowFixMe): $FlowFixMe;
 
@@ -33,11 +36,10 @@ declare function getCommandProperties(
   commandOptions: $FlowFixMe
 ): $FlowFixMe;
 
-declare function processComponent(
-  ast: $FlowFixMe,
-  types: $FlowFixMe
+declare function buildComponentSchema(
+  ast: $FlowFixMe
 ): ComponentSchemaBuilderConfig;
 
 declare module.exports: {|
-  processComponent: typeof processComponent,
+  buildComponentSchema: typeof buildComponentSchema,
 |};

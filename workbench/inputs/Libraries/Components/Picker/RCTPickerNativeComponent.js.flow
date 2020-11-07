@@ -18,7 +18,7 @@ type PickerIOSChangeEvent = SyntheticEvent<
 type RCTPickerIOSItemType = $ReadOnly<
   {|
     label: ?Label,
-    value: ?(number | string),
+    value: ?string,
     textColor: ?ProcessedColorValue,
   |},
 >;
@@ -46,8 +46,6 @@ interface NativeCommands {
 }
 
 declare var Commands: NativeCommands;
-
-declare var RCTPickerNativeComponent: ComponentType;
 export {Commands};
 
-declare export default typeof RCTPickerNativeComponent;
+declare export default HostComponent<NativeProps>;

@@ -1,6 +1,6 @@
 // @flow
 import typeof TouchableWithoutFeedback from "./TouchableWithoutFeedback";
-import Animated from "react-native/Libraries/Animated/src/Animated";
+import Animated from "react-native/Libraries/Animated/Animated";
 
 import type {ViewStyleProp} from "react-native/Libraries/StyleSheet/StyleSheet";
 
@@ -29,6 +29,6 @@ type Props = $ReadOnly<
   |},
 >;
 
-declare module.exports: React.ComponentType<
+declare module.exports: React.AbstractComponent<
   $ReadOnly<$Diff<Props, {|hostRef: mixed|}>>,
 >;

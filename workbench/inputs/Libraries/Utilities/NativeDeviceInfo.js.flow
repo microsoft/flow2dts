@@ -30,9 +30,12 @@ interface Spec extends TurboModule {
   |},
 }
 
-declare var NativeModule: Spec;
-
-declare var NativeDeviceInfo: typeof NativeModule;
+declare var NativeDeviceInfo: {|
+  getConstants(): {|
+    +Dimensions: DimensionsPayload,
+    +isIPhoneX_deprecated?: boolean,
+  |},
+|};
 export type {DisplayMetrics};
 
 export type {DimensionsPayload};

@@ -7,7 +7,7 @@ import type {DirectEventHandler} from "../../Types/CodegenTypes";
 import type {Float} from "../../Types/CodegenTypes";
 import type {Int32} from "../../Types/CodegenTypes";
 import type {WithDefault} from "../../Types/CodegenTypes";
-import type {ColorValue} from "../../StyleSheet/StyleSheetTypes";
+import type {ColorValue} from "../../StyleSheet/StyleSheet";
 import type {ViewProps} from "../View/ViewPropTypes";
 
 type NativeProps = $ReadOnly<

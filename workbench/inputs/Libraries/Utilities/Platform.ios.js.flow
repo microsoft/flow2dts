@@ -9,7 +9,9 @@ type PlatformSelectSpec<D, N, I> = {
 declare var Platform: {|
   __constants: null,
   OS: string,
+  
   get Version(): string,
+  
   get constants(): {|
     forceTouchAvailable: boolean,
     interfaceIdiom: string,
@@ -23,10 +25,13 @@ declare var Platform: {|
     |},
     systemName: string,
   |},
+  
   get isPad(): boolean,
   
   get isTVOS(): boolean,
+  
   get isTV(): boolean,
+  
   get isTesting(): boolean,
   select: <D, N, I>(spec: PlatformSelectSpec<D, N, I>) => D | N | I,
 |};

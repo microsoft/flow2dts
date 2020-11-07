@@ -1,6 +1,5 @@
 // @flow
-declare var Blob: typeof $1;
-const $1 = require("../Blob/Blob");
+import Blob from "../Blob/Blob";
 
 type ArrayBufferView = 
   | Int8Array
@@ -17,7 +16,7 @@ type ArrayBufferView =
 type BinaryType = 'blob' | 'arraybuffer';
 
 declare class WebSocket
-  extends $2 {
+  extends $1 {
   static CONNECTING: number,
   static OPEN: number,
   static CLOSING: number,
@@ -55,6 +54,6 @@ declare class WebSocket
   
   ping(): void,
 }
-declare var $2: any;
+declare var $1: any;
 
 declare module.exports: typeof WebSocket;

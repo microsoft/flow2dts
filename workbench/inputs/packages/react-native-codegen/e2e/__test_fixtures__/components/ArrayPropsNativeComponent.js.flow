@@ -1,7 +1,7 @@
 // @flow
 import type {PointValue} from "../../../../../Libraries/StyleSheet/StyleSheetTypes";
-import type {ColorValue} from "../../../../../Libraries/StyleSheet/StyleSheetTypes";
 import type {EdgeInsetsValue} from "../../../../../Libraries/StyleSheet/StyleSheetTypes";
+import type {ColorValue} from "../../../../../Libraries/StyleSheet/StyleSheet";
 import type {ImageSource} from "../../../../../Libraries/Image/ImageSource";
 import type {Int32} from "../../../../../Libraries/Types/CodegenTypes";
 import type {Float} from "../../../../../Libraries/Types/CodegenTypes";

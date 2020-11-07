@@ -1,12 +1,12 @@
 // @flow
 declare var AnimatedNode: typeof $1;
-const $1 = require("../Animated/src/nodes/AnimatedNode");
+const $1 = require("../Animated/nodes/AnimatedNode");
 
 import type {NativeColorValue} from "./PlatformColorValueTypes";
 
-type ColorValue = null | string | NativeColorValue;
+type ____ColorValue_Internal = null | string | NativeColorValue;
 
-type ColorArrayValue = null | $ReadOnlyArray<ColorValue>;
+type ColorArrayValue = null | $ReadOnlyArray<____ColorValue_Internal>;
 type PointValue = {|
   x: number,
   y: number,
@@ -505,7 +505,7 @@ type ____ShadowStyle_Internal = $ReadOnly<
    * Sets the drop shadow color
    * @platform ios
    */
-    shadowColor?: ColorValue,
+    shadowColor?: ____ColorValue_Internal,
     /**
    * Sets the drop shadow offset
    * @platform ios
@@ -535,14 +535,14 @@ type ____ViewStyle_Internal = $ReadOnly<
     ...$Exact<____ShadowStyle_Internal>,
     ...$Exact<____TransformStyle_Internal>,
     backfaceVisibility?: 'visible' | 'hidden',
-    backgroundColor?: ColorValue,
-    borderColor?: ColorValue,
-    borderBottomColor?: ColorValue,
-    borderEndColor?: ColorValue,
-    borderLeftColor?: ColorValue,
-    borderRightColor?: ColorValue,
-    borderStartColor?: ColorValue,
-    borderTopColor?: ColorValue,
+    backgroundColor?: ____ColorValue_Internal,
+    borderColor?: ____ColorValue_Internal,
+    borderBottomColor?: ____ColorValue_Internal,
+    borderEndColor?: ____ColorValue_Internal,
+    borderLeftColor?: ____ColorValue_Internal,
+    borderRightColor?: ____ColorValue_Internal,
+    borderStartColor?: ____ColorValue_Internal,
+    borderTopColor?: ____ColorValue_Internal,
     borderRadius?: number | AnimatedNode,
     borderBottomEndRadius?: number | AnimatedNode,
     borderBottomLeftRadius?: number | AnimatedNode,
@@ -581,7 +581,7 @@ type ____FontWeight_Internal =
 type ____TextStyle_Internal = $ReadOnly<
   {|
     ...$Exact<____ViewStyle_Internal>,
-    color?: ColorValue,
+    color?: ____ColorValue_Internal,
     fontFamily?: string,
     fontSize?: number,
     fontStyle?: 'normal' | 'italic',
@@ -601,7 +601,7 @@ type ____TextStyle_Internal = $ReadOnly<
       |},
     >,
     textShadowRadius?: number,
-    textShadowColor?: ColorValue,
+    textShadowColor?: ____ColorValue_Internal,
     letterSpacing?: number,
     lineHeight?: number,
     textAlign?: 'auto' | 'left' | 'right' | 'center' | 'justify',
@@ -613,7 +613,7 @@ type ____TextStyle_Internal = $ReadOnly<
       | 'line-through'
       | 'underline line-through',
     textDecorationStyle?: 'solid' | 'double' | 'dotted' | 'dashed',
-    textDecorationColor?: ColorValue,
+    textDecorationColor?: ____ColorValue_Internal,
     textTransform?: 'none' | 'capitalize' | 'uppercase' | 'lowercase',
     writingDirection?: 'auto' | 'ltr' | 'rtl',
   |},
@@ -623,7 +623,7 @@ type ____ImageStyle_Internal = $ReadOnly<
   {|
     ...$Exact<____ViewStyle_Internal>,
     resizeMode?: 'contain' | 'cover' | 'stretch' | 'center' | 'repeat',
-    tintColor?: ColorValue,
+    tintColor?: ____ColorValue_Internal,
     overlayColor?: string,
   |},
 >;
@@ -631,7 +631,7 @@ type ____ImageStyle_Internal = $ReadOnly<
 type ____DangerouslyImpreciseStyle_Internal = {
   ...$Exact<____TextStyle_Internal>,
   +resizeMode?: 'contain' | 'cover' | 'stretch' | 'center' | 'repeat',
-  +tintColor?: ColorValue,
+  +tintColor?: ____ColorValue_Internal,
   +overlayColor?: string,
   ...,
 };
@@ -661,7 +661,7 @@ type ____Styles_Internal = {
   +[key: string]: $Shape<____DangerouslyImpreciseStyle_Internal>,
   ...,
 };
-export type {ColorValue};
+export type {____ColorValue_Internal};
 
 export type {ColorArrayValue};
 export type {PointValue};

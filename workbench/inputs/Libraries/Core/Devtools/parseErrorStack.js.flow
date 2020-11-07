@@ -12,7 +12,7 @@ type ExtendedError =
     ...,
   };
 
-declare function parseErrorStack(e: ExtendedError): Array<StackFrame>;
+declare function parseErrorStack(errorStack?: string): Array<StackFrame>;
 export type {ExtendedError};
 
 declare module.exports: typeof parseErrorStack;

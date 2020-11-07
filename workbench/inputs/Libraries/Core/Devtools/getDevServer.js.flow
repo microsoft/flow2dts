@@ -1,6 +1,7 @@
 // @flow
 type DevServerInfo = {
   url: string,
+  fullBundleUrl: ?string,
   bundleLoadedFromServer: boolean,
   ...,
 };

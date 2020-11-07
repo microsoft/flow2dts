@@ -2,12 +2,11 @@
 declare var React: typeof $1;
 const $1 = require("react");
 
+import type {HostComponent} from "../Renderer/shims/ReactNativeTypes";
 import type {PressEvent} from "../Types/CoreEventTypes";
 import type {ScrollEvent} from "../Types/CoreEventTypes";
-
+import type {EventSubscription} from "../vendor/emitter/EventEmitter";
 import type {KeyboardEvent} from "./Keyboard/Keyboard";
-import type EmitterSubscription from "../vendor/emitter/EmitterSubscription";
-import type {HostComponent} from "../Renderer/shims/ReactNativeTypes";
 
 type State = {|
   isTouching: boolean,
@@ -18,10 +17,10 @@ type State = {|
 |};
 
 declare var ScrollResponderMixin: {|
-  _subscriptionKeyboardWillShow: ?EmitterSubscription,
-  _subscriptionKeyboardWillHide: ?EmitterSubscription,
-  _subscriptionKeyboardDidShow: ?EmitterSubscription,
-  _subscriptionKeyboardDidHide: ?EmitterSubscription,
+  _subscriptionKeyboardWillShow: ?EventSubscription,
+  _subscriptionKeyboardWillHide: ?EventSubscription,
+  _subscriptionKeyboardDidShow: ?EventSubscription,
+  _subscriptionKeyboardDidHide: ?EventSubscription,
   scrollResponderMixinGetInitialState: () => State,
   
   /**

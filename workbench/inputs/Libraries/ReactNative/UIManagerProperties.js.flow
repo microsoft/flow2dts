@@ -35,6 +35,5 @@ declare module.exports: Array<
     | string
     | string
     | string
-    | string
     | string,
 >;

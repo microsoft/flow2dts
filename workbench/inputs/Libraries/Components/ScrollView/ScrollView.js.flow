@@ -1,17 +1,14 @@
 // @flow
-declare var React: typeof $1;
-const $1 = require("react");
+import * as React from "react";
 
-declare var ScrollResponder: typeof $2;
-const $2 = require("../ScrollResponder");
+import ScrollResponder from "../ScrollResponder";
 
-declare var View: typeof $4;
-const $4 = require("../View/View");
+import View from "../View/View";
 
 import type {EdgeInsetsProp} from "../../StyleSheet/EdgeInsetsPropType";
 import type {PointProp} from "../../StyleSheet/PointPropType";
 import type {ViewStyleProp} from "../../StyleSheet/StyleSheet";
-import type {ColorValue} from "../../StyleSheet/StyleSheetTypes";
+import type {ColorValue} from "../../StyleSheet/StyleSheet";
 import type {PressEvent} from "../../Types/CoreEventTypes";
 import type {ScrollEvent} from "../../Types/CoreEventTypes";
 import type {HostComponent} from "../../Renderer/shims/ReactNativeTypes";
@@ -19,6 +16,7 @@ import type {State as ScrollResponderState} from "../ScrollResponder";
 import type {ViewProps} from "../View/ViewPropTypes";
 import type {Props as ScrollViewStickyHeaderProps} from "./ScrollViewStickyHeader";
 
+import ScrollViewContext from "./ScrollViewContext";
 import ScrollViewNativeComponent from "./ScrollViewNativeComponent";
 
 type ScrollViewImperativeMethods = $ReadOnly<
@@ -253,15 +251,6 @@ type IOSProps = $ReadOnly<
       | 'scrollableAxes'
       | 'never'
       | 'always'),
-    /**
-   * When true, ScrollView will emit updateChildFrames data in scroll events,
-   * otherwise will not compute or emit child frame data.  This only exists
-   * to support legacy issues, `onLayout` should be used instead to retrieve
-   * frame data.
-   * The default value is false.
-   * @platform ios
-   */
-    DEPRECATED_sendUpdatedChildFrames?: ?boolean,
   |},
 >;
 
@@ -577,18 +566,15 @@ type State = {|
   ...ScrollResponderState,
 |};
 
-type ContextType = {|horizontal: boolean|} | null;
-declare var Context: React.Context<ContextType>;
-
 type ScrollViewComponentStatics = $ReadOnly<
   {|
-    Context: typeof Context,
+    Context: typeof ScrollViewContext,
   |},
 >;
 
 declare class ScrollView
-  extends $3<Props, State> {
-  static Context: React$Context<ContextType>,
+  extends $1<Props, State> {
+  static Context: typeof ScrollViewContext,
   
   constructor(props: Props): void,
   
@@ -663,7 +649,7 @@ declare class ScrollView
   
   render(): React.Node | React.Element<string>,
 }
-declare var $3: typeof React.Component;
+declare var $1: typeof React.Component;
 export type {ScrollViewImperativeMethods};
 
 export type {ScrollResponderType};

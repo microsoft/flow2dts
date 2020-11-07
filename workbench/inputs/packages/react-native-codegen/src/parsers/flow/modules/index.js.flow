@@ -1,20 +1,18 @@
 // @flow
-import type {NativeModuleSchemaBuilderConfig} from "./schema.js";
-declare var getMethods: typeof $2.getMethods;
-declare var $2: typeof $1;
-const $1 = require("./methods");
+import type {NativeModuleSchema} from "../../../CodegenSchema.js";
 
-declare function getModuleProperties(
-  types: $FlowFixMe,
-  interfaceName: $FlowFixMe
-): $FlowFixMe;
+import type {ParserErrorCapturer} from "../utils";
 
-declare function findInterfaceName(types: $FlowFixMe): $FlowFixMe;
-
-declare function processModule(
-  types: $FlowFixMe
-): NativeModuleSchemaBuilderConfig;
+declare function buildModuleSchema(
+  hasteModuleName: string,
+  moduleNames: $ReadOnlyArray<string>,
+  /**
+   * TODO(T71778680): Flow-type this node.
+   */
+  ast: $FlowFixMe,
+  guard: ParserErrorCapturer
+): NativeModuleSchema;
 
 declare module.exports: {|
-  processModule: typeof processModule,
+  buildModuleSchema: typeof buildModuleSchema,
 |};

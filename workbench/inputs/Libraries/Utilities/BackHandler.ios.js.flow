@@ -5,14 +5,13 @@ type TBackHandler = {|
   +exitApp: () => void,
   +addEventListener: (
     eventName: BackPressEventName,
-    handler: Function
+    handler: () => ?boolean
   ) => {remove: () => void,...},
   +removeEventListener: (
     eventName: BackPressEventName,
-    handler: Function
+    handler: () => ?boolean
   ) => void,
 |};
 
 declare var BackHandler: TBackHandler;
-
 declare module.exports: typeof BackHandler;

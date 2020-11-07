@@ -22,7 +22,7 @@ type Notification = {|
 |};
 
 interface Spec extends TurboModule {
-  +getConstants: () => {...},
+  +getConstants: () => {||},
   +onFinishRemoteNotification: (
     notificationId: string,
     /**

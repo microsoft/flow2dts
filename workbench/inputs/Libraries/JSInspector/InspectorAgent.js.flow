@@ -1,10 +1,10 @@
 // @flow
-type EventSender = (name: string, params: Object) => void;
+type EventSender = (name: string, params: mixed) => void;
 
 declare class InspectorAgent {
   constructor(eventSender: EventSender): void,
   
-  sendEvent(name: string, params: Object): void,
+  sendEvent(name: string, params: mixed): void,
 }
 export type {EventSender};
 

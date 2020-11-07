@@ -125,8 +125,6 @@ declare class TouchableNativeFeedback
   
   render(): React.Node,
   
-  componentDidMount(): void,
-  
   componentDidUpdate(prevProps: Props, prevState: State): void,
   
   componentWillUnmount(): void,

@@ -2,14 +2,12 @@
 type SimpleTask = {
   name: string,
   run: () => void,
-  ...,
 };
 type PromiseTask = {
   name: string,
-  gen: () => Promise<any>,
-  ...,
+  gen: () => Promise<void>,
 };
-type Task = Function | SimpleTask | PromiseTask;
+type Task = SimpleTask | PromiseTask | (() => void);
 
 declare class TaskQueue {
   /**

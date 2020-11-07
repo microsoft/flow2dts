@@ -1,5 +1,5 @@
 // @flow
-type FormDataValue = any;
+type FormDataValue = string | {name?: string, type?: string, uri: string};
 
 type Headers = {[name: string]: string,...};
 type FormDataPart = 

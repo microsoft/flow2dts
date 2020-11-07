@@ -6,6 +6,12 @@ interface Spec extends TurboModule {
     scriptURL: string,
   |},
 }
+
+declare var NativeSourceCode: {|
+  getConstants(): {|
+    scriptURL: string,
+  |},
+|};
 export type {Spec};
 
-declare export default Spec;
+declare export default typeof NativeSourceCode;

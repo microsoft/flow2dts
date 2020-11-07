@@ -2,7 +2,6 @@
 import typeof AccessibilityInfo from "./Libraries/Components/AccessibilityInfo/AccessibilityInfo";
 import typeof ActivityIndicator from "./Libraries/Components/ActivityIndicator/ActivityIndicator";
 import typeof Button from "./Libraries/Components/Button";
-import typeof CheckBox from "./Libraries/Components/CheckBox/CheckBox";
 import typeof DatePickerIOS from "./Libraries/Components/DatePicker/DatePickerIOS";
 import typeof DrawerLayoutAndroid from "./Libraries/Components/DrawerAndroid/DrawerLayoutAndroid";
 import typeof FlatList from "./Libraries/Lists/FlatList";
@@ -17,14 +16,14 @@ import typeof PickerIOS from "./Libraries/Components/Picker/PickerIOS";
 import typeof Pressable from "./Libraries/Components/Pressable/Pressable";
 import typeof ProgressBarAndroid from "./Libraries/Components/ProgressBarAndroid/ProgressBarAndroid";
 import typeof ProgressViewIOS from "./Libraries/Components/ProgressViewIOS/ProgressViewIOS";
+import typeof RefreshControl from "./Libraries/Components/RefreshControl/RefreshControl";
 import typeof SafeAreaView from "./Libraries/Components/SafeAreaView/SafeAreaView";
 import typeof ScrollView from "./Libraries/Components/ScrollView/ScrollView";
 import typeof SectionList from "./Libraries/Lists/SectionList";
 import typeof SegmentedControlIOS from "./Libraries/Components/SegmentedControlIOS/SegmentedControlIOS";
 import typeof Slider from "./Libraries/Components/Slider/Slider";
-import typeof Switch from "./Libraries/Components/Switch/Switch";
-import typeof RefreshControl from "./Libraries/Components/RefreshControl/RefreshControl";
 import typeof StatusBar from "./Libraries/Components/StatusBar/StatusBar";
+import typeof Switch from "./Libraries/Components/Switch/Switch";
 import typeof Text from "./Libraries/Text/Text";
 import typeof TextInput from "./Libraries/Components/TextInput/TextInput";
 import typeof Touchable from "./Libraries/Components/Touchable/Touchable";
@@ -35,9 +34,10 @@ import typeof TouchableWithoutFeedback from "./Libraries/Components/Touchable/To
 import typeof View from "./Libraries/Components/View/View";
 import typeof VirtualizedList from "./Libraries/Lists/VirtualizedList";
 import typeof VirtualizedSectionList from "./Libraries/Lists/VirtualizedSectionList";
+
 import typeof ActionSheetIOS from "./Libraries/ActionSheetIOS/ActionSheetIOS";
 import typeof Alert from "./Libraries/Alert/Alert";
-import typeof Animated from "./Libraries/Animated/src/Animated";
+import typeof Animated from "./Libraries/Animated/Animated";
 import typeof Appearance from "./Libraries/Utilities/Appearance";
 import typeof AppRegistry from "./Libraries/ReactNative/AppRegistry";
 import typeof AppState from "./Libraries/AppState/AppState";
@@ -48,7 +48,7 @@ import typeof DatePickerAndroid from "./Libraries/Components/DatePickerAndroid/D
 import typeof DeviceInfo from "./Libraries/Utilities/DeviceInfo";
 import typeof DevSettings from "./Libraries/Utilities/DevSettings";
 import typeof Dimensions from "./Libraries/Utilities/Dimensions";
-import typeof Easing from "./Libraries/Animated/src/Easing";
+import typeof Easing from "./Libraries/Animated/Easing";
 import typeof ReactNative from "./Libraries/Renderer/shims/ReactNative";
 import typeof I18nManager from "./Libraries/ReactNative/I18nManager";
 import typeof ImagePickerIOS from "./Libraries/Image/ImagePickerIOS";
@@ -56,6 +56,7 @@ import typeof InteractionManager from "./Libraries/Interaction/InteractionManage
 import typeof Keyboard from "./Libraries/Components/Keyboard/Keyboard";
 import typeof LayoutAnimation from "./Libraries/LayoutAnimation/LayoutAnimation";
 import typeof Linking from "./Libraries/Linking/Linking";
+import typeof LogBox from "./Libraries/LogBox/LogBox";
 import typeof NativeDialogManagerAndroid from "./Libraries/NativeModules/specs/NativeDialogManagerAndroid";
 import typeof NativeEventEmitter from "./Libraries/EventEmitter/NativeEventEmitter";
 import typeof Networking from "./Libraries/Network/RCTNetworking";
@@ -70,23 +71,22 @@ import typeof StyleSheet from "./Libraries/StyleSheet/StyleSheet";
 import typeof Systrace from "./Libraries/Performance/Systrace";
 import typeof ToastAndroid from "./Libraries/Components/ToastAndroid/ToastAndroid";
 import typeof * as TurboModuleRegistry from "./Libraries/TurboModule/TurboModuleRegistry";
-import typeof TVEventHandler from "./Libraries/Components/AppleTV/TVEventHandler";
 import typeof UIManager from "./Libraries/ReactNative/UIManager";
 import typeof useColorScheme from "./Libraries/Utilities/useColorScheme";
 import typeof useWindowDimensions from "./Libraries/Utilities/useWindowDimensions";
 import typeof UTFSequence from "./Libraries/UTFSequence";
 import typeof Vibration from "./Libraries/Vibration/Vibration";
 import typeof YellowBox from "./Libraries/YellowBox/YellowBoxDeprecated";
-import typeof LogBox from "./Libraries/LogBox/LogBox";
-import typeof RCTDeviceEventEmitter from "./Libraries/EventEmitter/RCTDeviceEventEmitter";
-import typeof RCTNativeAppEventEmitter from "./Libraries/EventEmitter/RCTNativeAppEventEmitter";
+
+import typeof {DynamicColorIOS} from "./Libraries/StyleSheet/PlatformColorValueTypesIOS";
 import typeof NativeModules from "./Libraries/BatchedBridge/NativeModules";
 import typeof Platform from "./Libraries/Utilities/Platform";
-import typeof processColor from "./Libraries/StyleSheet/processColor";
 import typeof {PlatformColor} from "./Libraries/StyleSheet/PlatformColorValueTypes";
-import typeof {DynamicColorIOS} from "./Libraries/StyleSheet/PlatformColorValueTypesIOS";
-import typeof {ColorAndroid} from "./Libraries/StyleSheet/PlatformColorValueTypesAndroid";
-import typeof RootTagContext from "./Libraries/ReactNative/RootTagContext";
+import typeof processColor from "./Libraries/StyleSheet/processColor";
+import typeof RCTDeviceEventEmitter from "./Libraries/EventEmitter/RCTDeviceEventEmitter";
+import typeof RCTNativeAppEventEmitter from "./Libraries/EventEmitter/RCTNativeAppEventEmitter";
+import typeof {RootTagContext} from "./Libraries/ReactNative/RootTag";
+
 import typeof DeprecatedColorPropType from "./Libraries/DeprecatedPropTypes/DeprecatedColorPropType";
 import typeof DeprecatedEdgeInsetsPropType from "./Libraries/DeprecatedPropTypes/DeprecatedEdgeInsetsPropType";
 import typeof DeprecatedPointPropType from "./Libraries/DeprecatedPropTypes/DeprecatedPointPropType";
@@ -101,8 +101,9 @@ declare module.exports: {|
   get AccessibilityInfo(): AccessibilityInfo,
   get ActivityIndicator(): ActivityIndicator,
   get Button(): Button,
-  get CheckBox(): CheckBox,
+  
   get DatePickerIOS(): DatePickerIOS,
+  
   get DrawerLayoutAndroid(): DrawerLayoutAndroid,
   get FlatList(): FlatList,
   get Image(): Image,
@@ -112,18 +113,22 @@ declare module.exports: {|
   get MaskedViewIOS(): MaskedViewIOS,
   get Modal(): Modal,
   get Picker(): Picker,
+  
   get PickerIOS(): PickerIOS,
   get Pressable(): Pressable,
+  
   get ProgressBarAndroid(): ProgressBarAndroid,
+  
   get ProgressViewIOS(): ProgressViewIOS,
+  get RefreshControl(): RefreshControl,
   get SafeAreaView(): SafeAreaView,
   get ScrollView(): ScrollView,
   get SectionList(): SectionList,
+  
   get SegmentedControlIOS(): SegmentedControlIOS,
   get Slider(): Slider,
-  get Switch(): Switch,
-  get RefreshControl(): RefreshControl,
   get StatusBar(): StatusBar,
+  get Switch(): Switch,
   get Text(): Text,
   get TextInput(): TextInput,
   get Touchable(): Touchable,
@@ -141,6 +146,7 @@ declare module.exports: {|
   get Appearance(): Appearance,
   get AppRegistry(): AppRegistry,
   get AppState(): AppState,
+  
   get AsyncStorage(): AsyncStorage,
   get BackHandler(): BackHandler,
   get Clipboard(): Clipboard,
@@ -169,9 +175,9 @@ declare module.exports: {|
   get StatusBarIOS(): StatusBarIOS,
   get StyleSheet(): StyleSheet,
   get Systrace(): Systrace,
+  
   get ToastAndroid(): ToastAndroid,
   get TurboModuleRegistry(): TurboModuleRegistry,
-  get TVEventHandler(): TVEventHandler,
   get UIManager(): UIManager,
   get unstable_batchedUpdates(): $PropertyType<
     ReactNative,
@@ -184,13 +190,12 @@ declare module.exports: {|
   get YellowBox(): YellowBox,
   
   get DeviceEventEmitter(): RCTDeviceEventEmitter,
+  get DynamicColorIOS(): DynamicColorIOS,
   get NativeAppEventEmitter(): RCTNativeAppEventEmitter,
   get NativeModules(): NativeModules,
   get Platform(): Platform,
-  get processColor(): processColor,
   get PlatformColor(): PlatformColor,
-  get DynamicColorIOS(): DynamicColorIOS,
-  get ColorAndroid(): ColorAndroid,
+  get processColor(): processColor,
   get requireNativeComponent(): <T>(uiViewClassName: string) => HostComponent<T>,
   get unstable_RootTagContext(): RootTagContext,
   get unstable_enableLogBox(): () => void,

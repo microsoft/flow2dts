@@ -1,5 +1,5 @@
 // @flow
-import type {ColorValue} from "./StyleSheetTypes";
+import type {ColorValue} from "./StyleSheet";
 import type {NativeColorValue} from "./PlatformColorValueTypes";
 
 type ProcessedColorValue = number | NativeColorValue;

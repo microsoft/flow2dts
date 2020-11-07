@@ -1,7 +1,7 @@
 // @flow
 type ModuleConfig = [
   string /* name */,
-  ?Object /* constants */,
+  ?{...} /* constants */,
   ?$ReadOnlyArray<string> /* functions */,
   ?$ReadOnlyArray<number> /* promise method IDs */,
   ?$ReadOnlyArray<number> /* sync method IDs */,
@@ -9,7 +9,7 @@ type ModuleConfig = [
 
 type MethodType = 'async' | 'promise' | 'sync';
 
-declare var NativeModules: {[moduleName: string]: Object,...};
+declare var NativeModules: {[moduleName: string]: $FlowFixMe,...};
 export type {ModuleConfig};
 
 export type {MethodType};

@@ -1,8 +1,6 @@
 // @flow
-declare var AnimatedImplementation: typeof $1;
-const $1 = require("../../Animated/src/AnimatedImplementation");
-declare var React: typeof $2;
-const $2 = require("react");
+import AnimatedImplementation from "../../Animated/AnimatedImplementation";
+import * as React from "react";
 
 import type {LayoutEvent} from "../../Types/CoreEventTypes";
 
@@ -16,6 +14,7 @@ type Props = {
   inverted: ?boolean,
   // The height of the parent ScrollView. Currently only set when inverted.
   scrollViewHeight: ?number,
+  nativeID?: ?string,
   ...,
 };
 
@@ -24,18 +23,26 @@ type State = {
   layoutY: number,
   layoutHeight: number,
   nextHeaderLayoutY: ?number,
+  translateY: ?number,
   ...,
 };
 
 declare class ScrollViewStickyHeader
-  extends $3<Props, State> {
+  extends $1<Props, State> {
   state: State,
   
   setNextHeaderY(y: number): void,
   
+  UNSAFE_componentWillReceiveProps(nextProps: Props): void,
+  
+  updateTranslateListener(
+    translateY: AnimatedImplementation.Interpolation,
+    isFabric: boolean
+  ): void,
+  
   render(): React.Node,
 }
-declare var $3: typeof React.Component;
+declare var $1: typeof React.Component;
 export type {Props};
 
 declare module.exports: typeof ScrollViewStickyHeader;

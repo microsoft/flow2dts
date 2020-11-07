@@ -2,12 +2,12 @@
 declare var React: typeof $1;
 const $1 = require("react");
 
-import type {ColorValue} from "../../StyleSheet/StyleSheetTypes";
+import type {ColorValue} from "../../StyleSheet/StyleSheet";
 
 type StatusBarStyle = $Keys<
   {
     /**
-   * Default status bar style (dark for iOS, light for Android)
+   * Default status bar style (dark for iOS, no change for Android)
    */
     default: string,
     /**
@@ -72,7 +72,7 @@ type IOSProps = $ReadOnly<
    *
    * @platform ios
    */
-    showHideTransition?: ?('fade' | 'slide'),
+    showHideTransition?: ?('fade' | 'slide' | 'none'),
   |},
 >;
 

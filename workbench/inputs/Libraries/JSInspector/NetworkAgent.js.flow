@@ -4,18 +4,20 @@ const $1 = require("./InspectorAgent");
 
 type RequestId = string;
 
+type Headers = {[string]: string};
+
 declare class Interceptor {
   constructor(agent: NetworkAgent): void,
   
   getData(requestId: string): ?string,
   
-  requestSent(id: number, url: string, method: string, headers: Object): void,
+  requestSent(id: number, url: string, method: string, headers: Headers): void,
   
   responseReceived(
     id: number,
     url: string,
     status: number,
-    headers: Object
+    headers: Headers
   ): void,
   
   dataReceived(id: number, data: string): void,

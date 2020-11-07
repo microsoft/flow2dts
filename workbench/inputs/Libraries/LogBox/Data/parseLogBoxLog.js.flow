@@ -18,6 +18,11 @@ type CodeFrame = $ReadOnly<
       ...,
     },
     fileName: string,
+    
+    // TODO: When React switched to using call stack frames,
+    // we gained the ability to use the collapse flag, but
+    // it is not integrated into the LogBox UI.
+    collapse?: boolean,
   |},
 >;
 type Message = $ReadOnly<

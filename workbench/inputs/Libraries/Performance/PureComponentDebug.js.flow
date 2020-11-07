@@ -6,7 +6,7 @@ opaque type DoNotCommitUsageOfPureComponentDebug = {...};
 
 declare class PureComponentDebug<
   P: DoNotCommitUsageOfPureComponentDebug,
-  S: ?Object = void,
+  S: ?{...} = void,
 >
   extends $1<P, S> {
   shouldComponentUpdate(nextProps: P, nextState: S): boolean,

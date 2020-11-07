@@ -24,6 +24,7 @@ declare function byTextMatching(regex: RegExp): Predicate;
 declare function enter(instance: ReactTestInstance, text: string): void;
 
 declare function maximumDepthError(
+  // $FlowFixMe[value-as-type]
   tree: ReactTestRendererType,
   maxDepthLimit: number
 ): ?string;

@@ -8,6 +8,12 @@ declare var ReactNativeViewViewConfigAndroid: {|
         captured: string,
       |},
     |},
+    topAssetDidLoad: {|
+      phasedRegistrationNames: {|
+        bubbled: string,
+        captured: string,
+      |},
+    |},
   |},
   directEventTypes: {|
     topClick: {|
@@ -44,6 +50,9 @@ declare var ReactNativeViewViewConfigAndroid: {|
       registrationName: string,
     |},
     topSelectionChange: {|
+      registrationName: string,
+    |},
+    onAssetDidLoad: {|
       registrationName: string,
     |},
   |},

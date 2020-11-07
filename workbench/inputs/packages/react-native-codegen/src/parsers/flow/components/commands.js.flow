@@ -1,13 +1,14 @@
 // @flow
-import type {CommandTypeShape} from "../../../CodegenSchema.js";
-import type {TypeMap} from "../utils.js";
+import type {NamedShape} from "../../../CodegenSchema.js";
+import type {CommandTypeAnnotation} from "../../../CodegenSchema.js";
+import type {TypeDeclarationMap} from "../utils.js";
 
 type EventTypeAST = Object;
 
 declare function getCommands(
   commandTypeAST: $ReadOnlyArray<EventTypeAST>,
-  types: TypeMap
-): $ReadOnlyArray<CommandTypeShape>;
+  types: TypeDeclarationMap
+): $ReadOnlyArray<NamedShape<CommandTypeAnnotation>>;
 
 declare module.exports: {|
   getCommands: typeof getCommands,

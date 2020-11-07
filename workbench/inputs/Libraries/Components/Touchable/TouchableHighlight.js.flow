@@ -1,7 +1,6 @@
 // @flow
 import type {ViewStyleProp} from "../../StyleSheet/StyleSheet";
-import type {ColorValue} from "../../StyleSheet/StyleSheetTypes";
-
+import type {ColorValue} from "../../StyleSheet/StyleSheet";
 import typeof TouchableWithoutFeedback from "./TouchableWithoutFeedback";
 
 import View from "../../Components/View/View";
@@ -40,6 +39,6 @@ type Props = $ReadOnly<
   |},
 >;
 
-declare module.exports: React.ComponentType<
+declare module.exports: React.AbstractComponent<
   $ReadOnly<$Diff<Props, {|hostRef: mixed|}>>,
 >;

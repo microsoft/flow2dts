@@ -14,11 +14,9 @@ type ImageLoadEvent = SyntheticEvent<
         {|
           width: number,
           height: number,
-          url: string,
+          uri: string,
         |},
       >,
-      uri?: string // Only on Android
-      ,
     |},
   >,
 >;

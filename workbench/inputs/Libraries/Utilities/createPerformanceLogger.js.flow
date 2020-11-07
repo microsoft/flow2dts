@@ -1,36 +1,54 @@
 // @flow
 type Timespan = {
-  description?: string,
-  totalTime?: number,
-  startTime?: number,
+  startTime: number,
   endTime?: number,
-  ...,
+  totalTime?: number,
+  startExtras?: Extras,
+  endExtras?: Extras,
 };
 
-type IPerformanceLogger = {
-  addTimespan(string, number, string | void): void,
-  startTimespan(string, string | void): void,
-  stopTimespan(string, options?: {update?: boolean}): void,
+type ExtraValue = number | string | boolean;
+
+type Extras = {[key: string]: ExtraValue};
+
+interface IPerformanceLogger {
+  addTimespan(
+    key: string,
+    startTime: number,
+    endTime: number,
+    startExtras?: Extras,
+    endExtras?: Extras
+  ): void,
+  append(logger: IPerformanceLogger): void,
   clear(): void,
   clearCompleted(): void,
-  clearExceptTimespans(Array<string>): void,
+  close(): void,
   currentTimestamp(): number,
-  getTimespans(): {[key: string]: Timespan,...},
-  hasTimespan(string): boolean,
-  logTimespans(): void,
-  addTimespans(Array<number>, Array<string>): void,
-  setExtra(string, any): void,
-  getExtras(): {[key: string]: any,...},
-  removeExtra(string): ?any,
-  logExtras(): void,
-  markPoint(string, number | void): void,
-  getPoints(): {[key: string]: number,...},
-  logPoints(): void,
+  getExtras(): $ReadOnly<{[key: string]: ?ExtraValue,...}>,
+  getPoints(): $ReadOnly<{[key: string]: ?number,...}>,
+  getPointExtras(): $ReadOnly<{[key: string]: ?Extras,...}>,
+  getTimespans(): $ReadOnly<{[key: string]: ?Timespan,...}>,
+  hasTimespan(key: string): boolean,
+  isClosed(): boolean,
   logEverything(): void,
-  ...,
-};
+  markPoint(key: string, timestamp?: number, extras?: Extras): void,
+  removeExtra(key: string): ?ExtraValue,
+  setExtra(key: string, value: ExtraValue): void,
+  startTimespan(key: string, timestamp?: number, extras?: Extras): void,
+  stopTimespan(key: string, timestamp?: number, extras?: Extras): void,
+}
+
+declare var getCurrentTimestamp: () => number;
 
 declare function createPerformanceLogger(): IPerformanceLogger;
+export type {Timespan};
+
+export type {ExtraValue};
+
+export type {Extras};
+
 export type {IPerformanceLogger};
 
-declare module.exports: typeof createPerformanceLogger;
+export {getCurrentTimestamp};
+
+export {createPerformanceLogger as default};

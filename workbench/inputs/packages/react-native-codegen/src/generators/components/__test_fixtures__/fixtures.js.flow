@@ -51,6 +51,8 @@ declare var COMMANDS_AND_PROPS: SchemaType;
 
 declare var EXCLUDE_ANDROID: SchemaType;
 
+declare var EXCLUDE_ANDROID_IOS: SchemaType;
+
 declare module.exports: {|
   NO_PROPS_NO_EVENTS: typeof NO_PROPS_NO_EVENTS,
   INTERFACE_ONLY: typeof INTERFACE_ONLY,
@@ -77,4 +79,5 @@ declare module.exports: {|
   COMMANDS: typeof COMMANDS,
   COMMANDS_AND_PROPS: typeof COMMANDS_AND_PROPS,
   EXCLUDE_ANDROID: typeof EXCLUDE_ANDROID,
+  EXCLUDE_ANDROID_IOS: typeof EXCLUDE_ANDROID_IOS,
 |};

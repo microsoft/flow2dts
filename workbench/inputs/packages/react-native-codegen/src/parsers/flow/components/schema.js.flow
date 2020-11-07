@@ -1,7 +1,8 @@
 // @flow
 import type {EventTypeShape} from "../../../CodegenSchema.js";
-import type {PropTypeShape} from "../../../CodegenSchema.js";
-import type {CommandTypeShape} from "../../../CodegenSchema.js";
+import type {NamedShape} from "../../../CodegenSchema.js";
+import type {CommandTypeAnnotation} from "../../../CodegenSchema.js";
+import type {PropTypeAnnotation} from "../../../CodegenSchema.js";
 import type {ExtendsPropsShape} from "../../../CodegenSchema.js";
 import type {SchemaType} from "../../../CodegenSchema.js";
 import type {OptionsShape} from "../../../CodegenSchema.js";
@@ -12,15 +13,15 @@ type ComponentSchemaBuilderConfig = $ReadOnly<
     componentName: string,
     extendsProps: $ReadOnlyArray<ExtendsPropsShape>,
     events: $ReadOnlyArray<EventTypeShape>,
-    props: $ReadOnlyArray<PropTypeShape>,
-    commands: $ReadOnlyArray<CommandTypeShape>,
+    props: $ReadOnlyArray<NamedShape<PropTypeAnnotation>>,
+    commands: $ReadOnlyArray<NamedShape<CommandTypeAnnotation>>,
     options?: ?OptionsShape,
   |},
 >;
 
-declare function buildComponentSchema(ComponentSchemaBuilderConfig): SchemaType;
+declare function wrapComponentSchema(ComponentSchemaBuilderConfig): SchemaType;
 export type {ComponentSchemaBuilderConfig};
 
 declare module.exports: {|
-  buildComponentSchema: typeof buildComponentSchema,
+  wrapComponentSchema: typeof wrapComponentSchema,
 |};

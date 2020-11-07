@@ -4,8 +4,8 @@ import type {Task} from "./TaskQueue";
 
 declare var InteractionManager: {|
   Events: {|
-    interactionStart: 'interactionStart',
-    interactionComplete: 'interactionComplete',
+    interactionStart: string,
+    interactionComplete: string,
   |},
   
   /**
@@ -15,9 +15,12 @@ declare var InteractionManager: {|
   runAfterInteractions(
     task: ?Task
   ): {
-    then: Function,
-    done: Function,
-    cancel: Function,
+    then: <U>(
+      onFulfill?: ?((void) => ?(Promise<U> | U)),
+      onReject?: ?((error: mixed) => ?(Promise<U> | U))
+    ) => Promise<U>,
+    done: () => void,
+    cancel: () => void,
     ...,
   },
   

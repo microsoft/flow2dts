@@ -1,6 +1,5 @@
 // @flow
-declare var React: typeof $2;
-const $2 = require("react");
+import * as React from "react";
 
 declare class AccessibilityManagerTest
   extends $1<{...}> {

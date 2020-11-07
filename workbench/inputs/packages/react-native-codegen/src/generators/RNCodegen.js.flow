@@ -7,6 +7,8 @@ type Options = $ReadOnly<
     schema: SchemaType,
     outputDirectory: string,
     moduleSpecName: string,
+    packageName?: string // Some platforms have a notion of package, which should be configurable.
+    ,
   |},
 >;
 
@@ -16,7 +18,9 @@ type Generators =
   | 'props'
   | 'tests'
   | 'shadow-nodes'
-  | 'modules';
+  | 'modulesAndroid'
+  | 'modulesCxx'
+  | 'modulesIOS';
 
 type Config = $ReadOnly<
   {|

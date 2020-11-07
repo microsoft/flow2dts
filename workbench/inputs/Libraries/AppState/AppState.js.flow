@@ -1,8 +1,7 @@
 // @flow
-declare var EventEmitter: typeof $2;
-const $2 = require("../vendor/emitter/EventEmitter");
-declare var NativeEventEmitter: typeof $4;
-const $4 = require("../EventEmitter/NativeEventEmitter");
+import NativeEventEmitter from "../EventEmitter/NativeEventEmitter";
+
+import EventEmitter from "../vendor/emitter/EventEmitter";
 
 declare class AppState
   extends $1 {
@@ -34,7 +33,7 @@ declare class AppState
 declare var $1: typeof NativeEventEmitter;
 
 declare class MissingNativeAppStateShim
-  extends $3 {
+  extends $2 {
   // AppState
   isAvailable: boolean,
   currentState: ?string,
@@ -50,7 +49,7 @@ declare class MissingNativeAppStateShim
   
   removeSubscription(): void,
 }
-declare var $3: typeof EventEmitter;
+declare var $2: typeof EventEmitter;
 
 declare var AppStateInstance: AppState | MissingNativeAppStateShim;
 

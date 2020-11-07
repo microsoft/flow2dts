@@ -2,7 +2,7 @@
 import type {StackFrame} from "../NativeExceptionsManager";
 
 type CodeFrame = $ReadOnly<
-  {|
+  {
     content: string,
     location: ?{
       row: number,
@@ -10,14 +10,14 @@ type CodeFrame = $ReadOnly<
       ...,
     },
     fileName: string,
-  |},
+  },
 >;
 
 type SymbolicatedStackTrace = $ReadOnly<
-  {|
+  {
     stack: Array<StackFrame>,
     codeFrame: ?CodeFrame,
-  |},
+  },
 >;
 
 declare function symbolicateStackTrace(

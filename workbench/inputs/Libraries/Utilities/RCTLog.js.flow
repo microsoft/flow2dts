@@ -1,12 +1,12 @@
 // @flow
-declare var warningHandler: ?((Array<any>) => void);
+declare var warningHandler: ?((...Array<mixed>) => void);
 
 declare var RCTLog: {|
   // level one of log, info, warn, error, mustfix
-  logIfNoNativeHook(level: string, ...args: Array<any>): void,
+  logIfNoNativeHook(level: string, ...args: Array<mixed>): void,
   
   // Log to console regardless of nativeLoggingHook
-  logToConsole(level: string, ...args: Array<any>): void,
+  logToConsole(level: string, ...args: Array<mixed>): void,
   
   setWarningHandler(handler: typeof warningHandler): void,
 |};

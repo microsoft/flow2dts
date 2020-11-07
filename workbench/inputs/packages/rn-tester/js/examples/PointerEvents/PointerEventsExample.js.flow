@@ -1,0 +1,8 @@
+// @flow
+declare module.exports: {|
+  examples: Array<any>,
+  description: string,
+  category: string,
+  title: string,
+  framework: string,
+|};

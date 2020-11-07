@@ -3,7 +3,7 @@ type SpyData = {
   type: number,
   module: ?string,
   method: string | number,
-  args: Array<any>,
+  args: Array<mixed>,
   ...,
 };
 
@@ -17,53 +17,46 @@ declare class MessageQueue {
   callFunctionReturnFlushedQueue(
     module: string,
     method: string,
-    args: Array<any>
-  ): null | [Array<number>, Array<number>, Array<any>, number],
-  
-  // Deprecated. T61834641: Remove me once native clients have updated
-  callFunctionReturnResultAndFlushedQueue(
-    module: string,
-    method: string,
-    args: Array<any>
-  ): void,
+    args: Array<mixed>
+  ): null | [Array<number>, Array<number>, Array<mixed>, number],
   
   invokeCallbackAndReturnFlushedQueue(
     cbID: number,
-    args: Array<any>
-  ): null | [Array<number>, Array<number>, Array<any>, number],
+    args: Array<mixed>
+  ): null | [Array<number>, Array<number>, Array<mixed>, number],
   
-  flushedQueue(): null | [Array<number>, Array<number>, Array<any>, number],
+  flushedQueue(): null | [Array<number>, Array<number>, Array<mixed>, number],
   
   getEventLoopRunningTime(): number,
   
-  registerCallableModule(name: string, module: Object): void,
+  registerCallableModule(name: string, module: {...}): void,
   
-  registerLazyCallableModule(name: string, factory: (void) => Object): void,
+  registerLazyCallableModule(name: string, factory: (void) => {...}): void,
   
-  getCallableModule(name: string): any | null,
+  getCallableModule(name: string): {...} | null,
   
   callNativeSyncHook(
     moduleID: number,
     methodID: number,
-    params: Array<any>,
-    onFail: ?Function,
-    onSucc: ?Function
-  ): any,
+    params: Array<mixed>,
+    onFail: ?((...Array<mixed>) => void),
+    onSucc: ?((...Array<mixed>) => void)
+  ): mixed,
   
   processCallbacks(
     moduleID: number,
     methodID: number,
-    params: Array<any>,
-    onFail: ?Function,
-    onSucc: ?Function
+    params: Array<mixed>,
+    onFail: ?((...Array<mixed>) => void),
+    onSucc: ?((...Array<mixed>) => void)
   ): void,
   
   enqueueNativeCall(
     moduleID: number,
     methodID: number,
-    params: Array<any>,
-    onFail: ?Function,
-    onSucc: ?Function
+    params: Array<mixed>,
+    onFail: ?((...Array<mixed>) => void),
+    onSucc: ?((...Array<mixed>) => void)
   ): void,
   
   createDebugLookup(
@@ -92,9 +85,9 @@ declare class MessageQueue {
   
   __callImmediates(): void,
   
-  __callFunction(module: string, method: string, args: Array<any>): void,
+  __callFunction(module: string, method: string, args: Array<mixed>): void,
   
-  __invokeCallback(cbID: number, args: Array<any>): void,
+  __invokeCallback(cbID: number, args: Array<mixed>): void,
 }
 export type {SpyData};
 

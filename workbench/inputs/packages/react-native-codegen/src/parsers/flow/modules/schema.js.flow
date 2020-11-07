@@ -1,19 +1,12 @@
 // @flow
 import type {SchemaType} from "../../../CodegenSchema.js";
-import type {MethodTypeShape} from "../../../CodegenSchema.js";
+import type {NativeModuleSchema} from "../../../CodegenSchema.js";
 
-type NativeModuleSchemaBuilderConfig = $ReadOnly<
-  {|
-    properties: $ReadOnlyArray<MethodTypeShape>,
-  |},
->;
-
-declare function buildModuleSchema(
-  NativeModuleSchemaBuilderConfig,
-  moduleName: string
+declare function wrapModuleSchema(
+  nativeModuleSchema: NativeModuleSchema,
+  hasteModuleName: string
 ): SchemaType;
-export type {NativeModuleSchemaBuilderConfig};
 
 declare module.exports: {|
-  buildModuleSchema: typeof buildModuleSchema,
+  wrapModuleSchema: typeof wrapModuleSchema,
 |};

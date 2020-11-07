@@ -4,7 +4,6 @@ declare module.exports: {|
   getConstants: () => {...},
   getConstantsForViewManager: (viewManagerName: string) => void,
   getDefaultEventTypes: () => Array<$FlowFixMe>,
-  playTouchSound: () => void,
   lazilyLoadView: (name: string) => void,
   createView: (
     reactTag: ?number,

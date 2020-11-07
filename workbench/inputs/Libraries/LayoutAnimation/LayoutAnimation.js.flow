@@ -1,43 +1,23 @@
 // @flow
-type Type = 
-  | 'spring'
-  | 'linear'
-  | 'easeInEaseOut'
-  | 'easeIn'
-  | 'easeOut'
-  | 'keyboard';
+import type {LayoutAnimationType} from "../Renderer/shims/ReactNativeTypes";
+import type {LayoutAnimationProperty} from "../Renderer/shims/ReactNativeTypes";
+import type {LayoutAnimationConfig as LayoutAnimationConfig_} from "../Renderer/shims/ReactNativeTypes";
 
-type Property = 'opacity' | 'scaleX' | 'scaleY' | 'scaleXY';
+type LayoutAnimationConfig = LayoutAnimationConfig_;
 
-type AnimationConfig = $ReadOnly<
-  {|
-    duration?: number,
-    delay?: number,
-    springDamping?: number,
-    initialVelocity?: number,
-    type?: Type,
-    property?: Property,
-  |},
->;
-
-type LayoutAnimationConfig = $ReadOnly<
-  {|
-    duration: number,
-    create?: AnimationConfig,
-    update?: AnimationConfig,
-    delete?: AnimationConfig,
-  |},
->;
+type OnAnimationDidEndCallback = () => void;
+type OnAnimationDidFailCallback = () => void;
 
 declare function configureNext(
   config: LayoutAnimationConfig,
-  onAnimationDidEnd?: Function
+  onAnimationDidEnd?: OnAnimationDidEndCallback,
+  onAnimationDidFail?: OnAnimationDidFailCallback
 ): void;
 
 declare function create(
   duration: number,
-  type: Type,
-  property: Property
+  type: LayoutAnimationType,
+  property: LayoutAnimationProperty
 ): LayoutAnimationConfig;
 
 declare var Presets: {|
@@ -95,9 +75,9 @@ declare var LayoutAnimation: {|
   |},
   checkConfig(...args: Array<mixed>): void,
   Presets: typeof Presets,
-  easeInEaseOut: (onAnimationDidEnd?: any) => void,
-  linear: (onAnimationDidEnd?: any) => void,
-  spring: (onAnimationDidEnd?: any) => void,
+  easeInEaseOut: (onAnimationDidEnd?: OnAnimationDidEndCallback) => void,
+  linear: (onAnimationDidEnd?: OnAnimationDidEndCallback) => void,
+  spring: (onAnimationDidEnd?: OnAnimationDidEndCallback) => void,
 |};
 export type {LayoutAnimationConfig};
 
