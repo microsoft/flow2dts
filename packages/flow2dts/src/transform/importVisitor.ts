@@ -4,7 +4,7 @@ import { nameForImportTypeof } from "./utilities"
 
 export const importVisitor: Visitor<State> = {
   ImportDeclaration: {
-    exit(path) {
+    exit(path, state) {
       if (path.node.importKind === "typeof") {
         const names: string[] = []
         for (const id of path.node.specifiers) {
@@ -19,11 +19,15 @@ export const importVisitor: Visitor<State> = {
         }
         path.node.importKind = "value"
 
+        state.polyfillFlowTypes.add("$TypeOf")
         const decls = names.map((name) => {
           const decl = t.tsTypeAliasDeclaration(
             t.identifier(name),
             null,
-            t.tsTypeQuery(t.identifier(nameForImportTypeof(name)))
+            t.tsTypeReference(
+              t.identifier("$TypeOf"),
+              t.tsTypeParameterInstantiation([t.tsTypeQuery(t.identifier(nameForImportTypeof(name)))])
+            )
           )
           decl.declare = true
           return decl
