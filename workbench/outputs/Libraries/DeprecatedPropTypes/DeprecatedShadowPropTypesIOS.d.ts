@@ -1,4 +1,4 @@
-[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow: Unexpected reserved type number (16:39)
+[FLOW2DTS - Error] /Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow: Unexpected reserved type number (16:39)
 
   14 |     },
   15 |   >,

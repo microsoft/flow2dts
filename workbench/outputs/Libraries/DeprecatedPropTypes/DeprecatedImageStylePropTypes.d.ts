@@ -1,4 +1,4 @@
-[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow: Unexpected reserved type number (23:37)
+[FLOW2DTS - Error] /Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow: Unexpected reserved type number (23:37)
 
   21 |   backgroundColor: typeof DeprecatedColorPropType,
   22 |   borderColor: typeof DeprecatedColorPropType,

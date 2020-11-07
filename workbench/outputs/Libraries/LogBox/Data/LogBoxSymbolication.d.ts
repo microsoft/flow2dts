@@ -1,4 +1,4 @@
-[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/LogBox/Data/LogBoxSymbolication.js.flow: Export 'deleteStack' is not defined (12:8)
+[FLOW2DTS - Error] /Libraries/LogBox/Data/LogBoxSymbolication.js.flow: Export 'deleteStack' is not defined (12:8)
 
   10 | export type {Stack};
   11 | 

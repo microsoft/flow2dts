@@ -1,4 +1,4 @@
-[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/DeprecatedPropTypes/DeprecatedViewPropTypes.js.flow: Unexpected reserved type bool (17:31)
+[FLOW2DTS - Error] /Libraries/DeprecatedPropTypes/DeprecatedViewPropTypes.js.flow: Unexpected reserved type bool (17:31)
 
   15 |    * See https://reactnative.dev/docs/view.html#accessible
   16 |    */

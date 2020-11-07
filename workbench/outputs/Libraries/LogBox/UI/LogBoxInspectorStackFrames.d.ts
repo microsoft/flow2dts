@@ -1,4 +1,4 @@
-[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/LogBox/UI/LogBoxInspectorStackFrames.js.flow: Export 'getCollapseMessage' is not defined (20:8)
+[FLOW2DTS - Error] /Libraries/LogBox/UI/LogBoxInspectorStackFrames.js.flow: Export 'getCollapseMessage' is not defined (20:8)
 
   18 | 
   19 | declare function LogBoxInspectorStackFrames(props: Props): React.Node;

@@ -1,4 +1,4 @@
-[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/StyleSheet/Rect.js.flow: Export 'createSquare' is not defined (20:8)
+[FLOW2DTS - Error] /Libraries/StyleSheet/Rect.js.flow: Export 'createSquare' is not defined (20:8)
 
   18 | export type {RectOrSize};
   19 | 

@@ -1,4 +1,4 @@
-[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow: Unexpected reserved type bool (25:31)
+[FLOW2DTS - Error] /Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow: Unexpected reserved type bool (25:31)
 
   23 |   >,
   24 |   

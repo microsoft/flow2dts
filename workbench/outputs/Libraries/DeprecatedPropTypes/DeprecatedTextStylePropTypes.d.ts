@@ -1,4 +1,4 @@
-[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/DeprecatedPropTypes/DeprecatedTextStylePropTypes.js.flow: Unexpected reserved type string (13:36)
+[FLOW2DTS - Error] /Libraries/DeprecatedPropTypes/DeprecatedTextStylePropTypes.js.flow: Unexpected reserved type string (13:36)
 
   11 |   
   12 |   color: typeof DeprecatedColorPropType,

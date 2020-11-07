@@ -1,4 +1,4 @@
-[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/Utilities/ReactNativeTestTools.js.flow: Export 'byClickable' is not defined (60:8)
+[FLOW2DTS - Error] /Libraries/Utilities/ReactNativeTestTools.js.flow: Export 'byClickable' is not defined (60:8)
 
   58 | export type {ReactTestRendererJSON};
   59 | 

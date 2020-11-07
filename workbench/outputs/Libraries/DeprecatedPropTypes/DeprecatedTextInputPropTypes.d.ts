@@ -1,4 +1,4 @@
-[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow: Unexpected reserved type bool (67:32)
+[FLOW2DTS - Error] /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow: Unexpected reserved type bool (67:32)
 
   65 |    * If `false`, disables auto-correct. The default value is `true`.
   66 |    */

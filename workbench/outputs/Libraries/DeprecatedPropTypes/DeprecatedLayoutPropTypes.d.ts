@@ -1,4 +1,4 @@
-[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow: Unexpected reserved type number (37:37)
+[FLOW2DTS - Error] /Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow: Unexpected reserved type number (37:37)
 
   35 |   paddingStart: React$PropType$Primitive<number | string>,
   36 |   paddingEnd: React$PropType$Primitive<number | string>,

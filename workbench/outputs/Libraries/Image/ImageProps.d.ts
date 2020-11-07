@@ -1,8 +1,8 @@
-[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/Image/ImageProps.js.flow: EmptyTypeAnnotation(node is not a TypeScript type:
+[FLOW2DTS - Error] /Libraries/Image/ImageProps.js.flow: EmptyTypeAnnotation(node is not a TypeScript type:
 {
     "type": "EmptyTypeAnnotation",
-    "start": 4277,
-    "end": 4282,
+    "start": 4450,
+    "end": 4455,
     "loc": {
         "start": {
             "line": 174,

@@ -1,1 +1,1 @@
-[FLOW2DTS - Error] /Users/eloy/Code/ReactNative/flow2dts/workbench/inputs/Libraries/ReactNative/HeadlessJsTaskError.js.flow: invariant: expected referred to type to exist
+[FLOW2DTS - Error] /Libraries/ReactNative/HeadlessJsTaskError.js.flow: invariant: expected referred to type to exist
