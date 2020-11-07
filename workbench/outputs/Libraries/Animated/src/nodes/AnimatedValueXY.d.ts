@@ -1,7 +1,8 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var AnimatedValue: typeof $1;
+declare var AnimatedValue: $TypeOf<typeof $1>;
 declare const $1;
-declare var AnimatedWithChildren: typeof $3;
+declare var AnimatedWithChildren: $TypeOf<typeof $3>;
 declare const $3;
 declare type ValueXYListenerCallback = (value: {
   x: number;
@@ -124,6 +125,6 @@ declare class AnimatedValueXY extends $2 {
     [key: string]: AnimatedValue;
   }[];
 }
-declare var $2: typeof AnimatedWithChildren;
-declare const $f2tExportDefault: AnimatedValueXY;
+declare var $2: $TypeOf<typeof AnimatedWithChildren>;
+declare const $f2tExportDefault: $TypeOf<typeof AnimatedValueXY>;
 export default $f2tExportDefault;

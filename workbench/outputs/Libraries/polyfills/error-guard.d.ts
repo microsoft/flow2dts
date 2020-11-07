@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type ErrorHandler = (error: unknown, isFatal: boolean) => void;
 declare type Fn<Args, Return> = (...$f2tRest: Args) => Return;
@@ -13,5 +14,5 @@ declare var ErrorUtils:
   inGuard: () => boolean;
   guard: <TArgs extends ReadonlyArray<unknown>, TOut>(fun: Fn, name?: null | undefined | string, context?: null | undefined | unknown) => null | undefined | (...$f2tRest: TArgs) => null | undefined | TOut;
 };
-declare type ErrorUtilsT = typeof ErrorUtils;
+declare type ErrorUtilsT = $TypeOf<typeof ErrorUtils>;
 export type { ErrorUtilsT };

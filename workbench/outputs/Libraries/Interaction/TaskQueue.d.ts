@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type SimpleTask = {
   name: string;
@@ -47,5 +48,5 @@ declare class TaskQueue {
   processNext: () => void;
 }
 export type { Task };
-declare const $f2tExportDefault: TaskQueue;
+declare const $f2tExportDefault: $TypeOf<typeof TaskQueue>;
 export default $f2tExportDefault;

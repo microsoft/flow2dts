@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type NativeResponseType = "base64" | "blob" | "text";
 declare type ResponseType = "" | "arraybuffer" | "blob" | "document" | "json" | "text";
@@ -83,5 +84,5 @@ declare var $1: any;
 export type { NativeResponseType };
 export type { ResponseType };
 export type { Response };
-declare const $f2tExportDefault: XMLHttpRequest;
+declare const $f2tExportDefault: $TypeOf<typeof XMLHttpRequest>;
 export default $f2tExportDefault;

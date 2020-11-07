@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type ContentAvailable = 1 | null | void;
 declare type FetchResult = {
@@ -127,5 +128,5 @@ declare class PushNotificationIOS {
 export type { ContentAvailable };
 export type { FetchResult };
 export type { PushNotificationEventName };
-declare const $f2tExportDefault: PushNotificationIOS;
+declare const $f2tExportDefault: $TypeOf<typeof PushNotificationIOS>;
 export default $f2tExportDefault;

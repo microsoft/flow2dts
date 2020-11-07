@@ -1,11 +1,12 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var AnimatedValue: typeof $2;
+declare var AnimatedValue: $TypeOf<typeof $2>;
 declare const $2;
-declare var AnimatedValueXY: typeof $3;
+declare var AnimatedValueXY: $TypeOf<typeof $3>;
 declare const $3;
-declare var AnimatedInterpolation: typeof $1;
+declare var AnimatedInterpolation: $TypeOf<typeof $1>;
 declare const $1;
-declare var Animation: typeof $4;
+declare var Animation: $TypeOf<typeof $4>;
 declare const $4;
 import { AnimationConfig } from "./Animation";
 import { EndCallback } from "./Animation";
@@ -88,8 +89,8 @@ declare class SpringAnimation extends $5 {
   onUpdate: () => void;
   stop: () => void;
 }
-declare var $5: typeof Animation;
+declare var $5: $TypeOf<typeof Animation>;
 export type { SpringAnimationConfig };
 export type { SpringAnimationConfigSingle };
-declare const $f2tExportDefault: SpringAnimation;
+declare const $f2tExportDefault: $TypeOf<typeof SpringAnimation>;
 export default $f2tExportDefault;

@@ -1,5 +1,6 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var flatten: typeof $1;
+declare var flatten: $TypeOf<typeof $1>;
 declare const $1;
 import { ____Styles_Internal } from "./StyleSheetTypes";
 import { ____DangerouslyImpreciseStyle_Internal } from "./StyleSheetTypes";
@@ -62,7 +63,7 @@ declare const $f2tExportDefault:
    *
    * A line with hairline width may not be visible if your simulator is downscaled.
    */
-  hairlineWidth: typeof hairlineWidth;
+  hairlineWidth: $TypeOf<typeof hairlineWidth>;
 
   /**
    * A very common pattern is to create overlays with position absolute and zero positioning,
@@ -83,7 +84,7 @@ declare const $f2tExportDefault:
    *     },
    *   });
    */
-  absoluteFillObject: typeof absoluteFill;
+  absoluteFillObject: $TypeOf<typeof absoluteFill>;
 
   /**
    * Combines two styles such that `style2` will override any styles in `style1`.
@@ -132,7 +133,7 @@ declare const $f2tExportDefault:
    * their respective objects, merged as one and then returned. This also explains
    * the alternative use.
    */
-  flatten: typeof flatten;
+  flatten: $TypeOf<typeof flatten>;
 
   /**
    * WARNING: EXPERIMENTAL. Breaking changes will probably happen a lot and will

@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type ViewToken = {
   item: any;
@@ -90,5 +91,5 @@ declare class ViewabilityHelper {
 export type { ViewToken };
 export type { ViewabilityConfigCallbackPair };
 export type { ViewabilityConfig };
-declare const $f2tExportDefault: ViewabilityHelper;
+declare const $f2tExportDefault: $TypeOf<typeof ViewabilityHelper>;
 export default $f2tExportDefault;

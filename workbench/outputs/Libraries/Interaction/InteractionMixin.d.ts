@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { Handle } from "./InteractionManager";
 declare var InteractionMixin:
@@ -15,5 +16,5 @@ declare var InteractionMixin:
    */
   runAfterInteractions: (callback: Function) => void;
 };
-declare const $f2tExportDefault: typeof InteractionMixin;
+declare const $f2tExportDefault: $TypeOf<typeof InteractionMixin>;
 export default $f2tExportDefault;

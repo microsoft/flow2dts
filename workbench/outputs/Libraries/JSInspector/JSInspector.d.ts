@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { EventSender } from "./InspectorAgent";
 interface Agent {
@@ -12,5 +13,5 @@ declare var JSInspector:
   registerAgent: (type: AgentClass) => void;
   getTimestamp: () => number;
 };
-declare const $f2tExportDefault: typeof JSInspector;
+declare const $f2tExportDefault: $TypeOf<typeof JSInspector>;
 export default $f2tExportDefault;

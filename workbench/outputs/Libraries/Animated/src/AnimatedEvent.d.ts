@@ -1,5 +1,6 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var AnimatedValue: typeof $1;
+declare var AnimatedValue: $TypeOf<typeof $1>;
 declare const $1;
 declare type Mapping = {
   [key: string]: Mapping;
@@ -25,7 +26,7 @@ export type { EventConfig };
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  AnimatedEvent: AnimatedEvent;
-  attachNativeEvent: typeof attachNativeEvent;
+  AnimatedEvent: $TypeOf<typeof AnimatedEvent>;
+  attachNativeEvent: $TypeOf<typeof attachNativeEvent>;
 };
 export default $f2tExportDefault;

@@ -1,5 +1,6 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var Blob: typeof $1;
+declare var Blob: $TypeOf<typeof $1>;
 declare const $1;
 import { BlobOptions } from "./BlobTypes";
 declare class File extends $2 {
@@ -10,6 +11,6 @@ declare class File extends $2 {
   name: () => string;
   lastModified: () => number;
 }
-declare var $2: typeof Blob;
-declare const $f2tExportDefault: File;
+declare var $2: $TypeOf<typeof Blob>;
+declare const $f2tExportDefault: $TypeOf<typeof File>;
 export default $f2tExportDefault;

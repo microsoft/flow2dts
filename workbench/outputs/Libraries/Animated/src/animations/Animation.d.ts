@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import AnimatedValue from "../nodes/AnimatedValue";
 declare type EndResult = {
@@ -26,5 +27,5 @@ declare class Animation {
 export type { EndResult };
 export type { EndCallback };
 export type { AnimationConfig };
-declare const $f2tExportDefault: Animation;
+declare const $f2tExportDefault: $TypeOf<typeof Animation>;
 export default $f2tExportDefault;

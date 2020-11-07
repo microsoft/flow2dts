@@ -1,5 +1,6 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var Promise: typeof $1;
+declare var Promise: $TypeOf<typeof $1>;
 declare const $1;
 declare type ChangeEventName = keyof {
   announcementFinished: string;
@@ -129,5 +130,5 @@ declare var AccessibilityInfo:
    */
   removeEventListener: (eventName: ChangeEventName, handler: Function) => void;
 };
-declare const $f2tExportDefault: typeof AccessibilityInfo;
+declare const $f2tExportDefault: $TypeOf<typeof AccessibilityInfo>;
 export default $f2tExportDefault;

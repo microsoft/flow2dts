@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type GeneratedViewConfig = {
   uiViewClassName: string;
@@ -31,5 +32,5 @@ declare type GeneratedViewConfig = {
 };
 declare function registerGeneratedViewConfig(componentName: string, viewConfig: GeneratedViewConfig) => void;
 export type { GeneratedViewConfig };
-declare const $f2tExportDefault: typeof registerGeneratedViewConfig;
+declare const $f2tExportDefault: $TypeOf<typeof registerGeneratedViewConfig>;
 export default $f2tExportDefault;

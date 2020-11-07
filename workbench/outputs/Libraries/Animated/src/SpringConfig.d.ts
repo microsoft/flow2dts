@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type SpringConfigType = {
   stiffness: number;
@@ -8,7 +9,7 @@ declare function fromBouncinessAndSpeed(bounciness: number, speed: number) => Sp
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  fromOrigamiTensionAndFriction: typeof fromOrigamiTensionAndFriction;
-  fromBouncinessAndSpeed: typeof fromBouncinessAndSpeed;
+  fromOrigamiTensionAndFriction: $TypeOf<typeof fromOrigamiTensionAndFriction>;
+  fromBouncinessAndSpeed: $TypeOf<typeof fromBouncinessAndSpeed>;
 };
 export default $f2tExportDefault;

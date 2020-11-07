@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { IPerformanceLogger } from "../Utilities/createPerformanceLogger";
 declare type Task = (taskData: any) => Promise;
@@ -96,5 +97,5 @@ export type { Runnable };
 export type { Runnables };
 export type { Registry };
 export type { WrapperComponentProvider };
-declare const $f2tExportDefault: typeof AppRegistry;
+declare const $f2tExportDefault: $TypeOf<typeof AppRegistry>;
 export default $f2tExportDefault;

@@ -1,5 +1,6 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var Animation: typeof $1;
+declare var Animation: $TypeOf<typeof $1>;
 declare const $1;
 import AnimatedValue from "../nodes/AnimatedValue";
 import { AnimationConfig } from "./Animation";
@@ -29,8 +30,8 @@ declare class DecayAnimation extends $2 {
   onUpdate: () => void;
   stop: () => void;
 }
-declare var $2: typeof Animation;
+declare var $2: $TypeOf<typeof Animation>;
 export type { DecayAnimationConfig };
 export type { DecayAnimationConfigSingle };
-declare const $f2tExportDefault: DecayAnimation;
+declare const $f2tExportDefault: $TypeOf<typeof DecayAnimation>;
 export default $f2tExportDefault;

@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type Handler = {
   onIterate?: () => void;
@@ -16,5 +17,5 @@ declare var JSEventLoopWatchdog:
     thresholdMS: number;
   }) => void;
 };
-declare const $f2tExportDefault: typeof JSEventLoopWatchdog;
+declare const $f2tExportDefault: $TypeOf<typeof JSEventLoopWatchdog>;
 export default $f2tExportDefault;

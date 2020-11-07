@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type AlertType = "default" | "plain-text" | "secure-text" | "login-password";
 declare type AlertButtonStyle = "default" | "cancel" | "destructive";
@@ -17,5 +18,5 @@ declare class Alert {
 export type { AlertType };
 export type { AlertButtonStyle };
 export type { Buttons };
-declare const $f2tExportDefault: Alert;
+declare const $f2tExportDefault: $TypeOf<typeof Alert>;
 export default $f2tExportDefault;

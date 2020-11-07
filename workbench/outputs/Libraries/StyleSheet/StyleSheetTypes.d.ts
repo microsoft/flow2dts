@@ -1,5 +1,6 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var AnimatedNode: typeof $1;
+declare var AnimatedNode: $TypeOf<typeof $1>;
 declare const $1;
 import { NativeColorValue } from "./PlatformColorValueTypes";
 declare type ColorValue = null | string | NativeColorValue;

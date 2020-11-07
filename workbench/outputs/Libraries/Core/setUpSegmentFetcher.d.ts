@@ -1,6 +1,7 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare type FetchSegmentFunction = typeof __fetchSegment;
-declare type GetSegmentFunction = typeof __getSegment;
+declare type FetchSegmentFunction = $TypeOf<typeof __fetchSegment>;
+declare type GetSegmentFunction = $TypeOf<typeof __getSegment>;
 declare function __fetchSegment(segmentId: number, options:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

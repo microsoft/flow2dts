@@ -1,5 +1,6 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var NativeEventEmitter: typeof $1;
+declare var NativeEventEmitter: $TypeOf<typeof $1>;
 declare const $1;
 import EmitterSubscription from "../../vendor/emitter/EmitterSubscription";
 declare class TVEventHandler {
@@ -8,5 +9,5 @@ declare class TVEventHandler {
   enable: (component: null | undefined | any, callback: Function) => void;
   disable: () => void;
 }
-declare const $f2tExportDefault: TVEventHandler;
+declare const $f2tExportDefault: $TypeOf<typeof TVEventHandler>;
 export default $f2tExportDefault;

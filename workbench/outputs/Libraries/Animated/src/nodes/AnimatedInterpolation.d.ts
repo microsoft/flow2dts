@@ -1,7 +1,8 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var AnimatedNode: typeof $2;
+declare var AnimatedNode: $TypeOf<typeof $2>;
 declare const $2;
-declare var AnimatedWithChildren: typeof $3;
+declare var AnimatedWithChildren: $TypeOf<typeof $3>;
 declare const $3;
 declare type ExtrapolateType = "extend" | "identity" | "clamp";
 declare type InterpolationConfigType = {
@@ -23,7 +24,7 @@ declare class AnimatedInterpolation extends $1 {
   __transformDataType: (range: any[]) => any[];
   __getNativeConfig: () => any;
 }
-declare var $1: typeof AnimatedWithChildren;
+declare var $1: $TypeOf<typeof AnimatedWithChildren>;
 export type { InterpolationConfigType };
-declare const $f2tExportDefault: AnimatedInterpolation;
+declare const $f2tExportDefault: $TypeOf<typeof AnimatedInterpolation>;
 export default $f2tExportDefault;

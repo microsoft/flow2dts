@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type PackagerAsset = {
   readonly __packager_asset: boolean;
@@ -16,7 +17,7 @@ export type { PackagerAsset };
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  registerAsset: typeof registerAsset;
-  getAssetByID: typeof getAssetByID;
+  registerAsset: $TypeOf<typeof registerAsset>;
+  getAssetByID: $TypeOf<typeof getAssetByID>;
 };
 export default $f2tExportDefault;

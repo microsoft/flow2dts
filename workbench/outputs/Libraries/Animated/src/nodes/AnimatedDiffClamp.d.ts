@@ -1,9 +1,10 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var AnimatedInterpolation: typeof $2;
+declare var AnimatedInterpolation: $TypeOf<typeof $2>;
 declare const $2;
-declare var AnimatedNode: typeof $3;
+declare var AnimatedNode: $TypeOf<typeof $3>;
 declare const $3;
-declare var AnimatedWithChildren: typeof $4;
+declare var AnimatedWithChildren: $TypeOf<typeof $4>;
 declare const $4;
 import { InterpolationConfigType } from "./AnimatedInterpolation";
 declare class AnimatedDiffClamp extends $1 {
@@ -15,6 +16,6 @@ declare class AnimatedDiffClamp extends $1 {
   __detach: () => void;
   __getNativeConfig: () => any;
 }
-declare var $1: typeof AnimatedWithChildren;
-declare const $f2tExportDefault: AnimatedDiffClamp;
+declare var $1: $TypeOf<typeof AnimatedWithChildren>;
+declare const $f2tExportDefault: $TypeOf<typeof AnimatedDiffClamp>;
 export default $f2tExportDefault;

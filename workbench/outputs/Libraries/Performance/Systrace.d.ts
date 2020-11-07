@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var Systrace:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -25,5 +26,5 @@ declare var Systrace:
    **/
   counterEvent: (profileName?: any, value?: any) => void;
 };
-declare const $f2tExportDefault: typeof Systrace;
+declare const $f2tExportDefault: $TypeOf<typeof Systrace>;
 export default $f2tExportDefault;

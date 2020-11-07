@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import NativeEventEmitter from "../../EventEmitter/NativeEventEmitter";
 import { EventConfig } from "./AnimatedEvent";
@@ -54,18 +55,18 @@ declare function transformDataType(value: number | string) => number | string;
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  API: typeof API;
-  addWhitelistedStyleProp: typeof addWhitelistedStyleProp;
-  addWhitelistedTransformProp: typeof addWhitelistedTransformProp;
-  addWhitelistedInterpolationParam: typeof addWhitelistedInterpolationParam;
-  validateStyles: typeof validateStyles;
-  validateTransform: typeof validateTransform;
-  validateInterpolation: typeof validateInterpolation;
-  generateNewNodeTag: typeof generateNewNodeTag;
-  generateNewAnimationId: typeof generateNewAnimationId;
-  assertNativeAnimatedModule: typeof assertNativeAnimatedModule;
-  shouldUseNativeDriver: typeof shouldUseNativeDriver;
-  transformDataType: typeof transformDataType;
+  API: $TypeOf<typeof API>;
+  addWhitelistedStyleProp: $TypeOf<typeof addWhitelistedStyleProp>;
+  addWhitelistedTransformProp: $TypeOf<typeof addWhitelistedTransformProp>;
+  addWhitelistedInterpolationParam: $TypeOf<typeof addWhitelistedInterpolationParam>;
+  validateStyles: $TypeOf<typeof validateStyles>;
+  validateTransform: $TypeOf<typeof validateTransform>;
+  validateInterpolation: $TypeOf<typeof validateInterpolation>;
+  generateNewNodeTag: $TypeOf<typeof generateNewNodeTag>;
+  generateNewAnimationId: $TypeOf<typeof generateNewAnimationId>;
+  assertNativeAnimatedModule: $TypeOf<typeof assertNativeAnimatedModule>;
+  shouldUseNativeDriver: $TypeOf<typeof shouldUseNativeDriver>;
+  transformDataType: $TypeOf<typeof transformDataType>;
   nativeEventEmitter: () => NativeEventEmitter;
 };
 export default $f2tExportDefault;

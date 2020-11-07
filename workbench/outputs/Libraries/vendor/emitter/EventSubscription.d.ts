@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import EventSubscriptionVendor from "./EventSubscriptionVendor";
 declare class EventSubscription {
@@ -16,5 +17,5 @@ declare class EventSubscription {
    */
   remove: () => void;
 }
-declare const $f2tExportDefault: EventSubscription;
+declare const $f2tExportDefault: $TypeOf<typeof EventSubscription>;
 export default $f2tExportDefault;

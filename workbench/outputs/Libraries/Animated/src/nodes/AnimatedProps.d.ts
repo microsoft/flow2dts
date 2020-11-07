@@ -1,5 +1,6 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var AnimatedNode: typeof $1;
+declare var AnimatedNode: $TypeOf<typeof $1>;
 declare const $1;
 declare class AnimatedProps extends $2 {
   constructor: (props: Object, callback: () => void) => void;
@@ -15,6 +16,6 @@ declare class AnimatedProps extends $2 {
   __restoreDefaultValues: () => void;
   __getNativeConfig: () => Object;
 }
-declare var $2: typeof AnimatedNode;
-declare const $f2tExportDefault: AnimatedProps;
+declare var $2: $TypeOf<typeof AnimatedNode>;
+declare const $f2tExportDefault: $TypeOf<typeof AnimatedProps>;
 export default $f2tExportDefault;

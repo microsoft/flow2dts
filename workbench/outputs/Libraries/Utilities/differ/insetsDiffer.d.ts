@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type Inset = {
   top: null | undefined | number;
@@ -6,5 +7,5 @@ declare type Inset = {
   bottom: null | undefined | number;
 };
 declare var insetsDiffer: (one: Inset, two: Inset) => boolean;
-declare const $f2tExportDefault: typeof insetsDiffer;
+declare const $f2tExportDefault: $TypeOf<typeof insetsDiffer>;
 export default $f2tExportDefault;

@@ -1,5 +1,6 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var NativeEventEmitter: typeof $1;
+declare var NativeEventEmitter: $TypeOf<typeof $1>;
 declare const $1;
 import { NativeResponseType } from "./XMLHttpRequest";
 import { RequestBody } from "./convertRequestBody";
@@ -9,6 +10,6 @@ declare class RCTNetworking extends $2 {
   abortRequest: (requestId: number) => void;
   clearCookies: (callback: (result: boolean) => void) => void;
 }
-declare var $2: typeof NativeEventEmitter;
+declare var $2: $TypeOf<typeof NativeEventEmitter>;
 declare const $f2tExportDefault: RCTNetworking;
 export default $f2tExportDefault;

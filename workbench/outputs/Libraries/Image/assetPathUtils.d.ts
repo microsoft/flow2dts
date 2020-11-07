@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { PackagerAsset } from "./AssetRegistry";
 declare function getAndroidAssetSuffix(scale: number) => string;
@@ -7,9 +8,9 @@ declare function getBasePath(asset: PackagerAsset) => string;
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  getAndroidAssetSuffix: typeof getAndroidAssetSuffix;
-  getAndroidResourceFolderName: typeof getAndroidResourceFolderName;
-  getAndroidResourceIdentifier: typeof getAndroidResourceIdentifier;
-  getBasePath: typeof getBasePath;
+  getAndroidAssetSuffix: $TypeOf<typeof getAndroidAssetSuffix>;
+  getAndroidResourceFolderName: $TypeOf<typeof getAndroidResourceFolderName>;
+  getAndroidResourceIdentifier: $TypeOf<typeof getAndroidResourceIdentifier>;
+  getBasePath: $TypeOf<typeof getBasePath>;
 };
 export default $f2tExportDefault;

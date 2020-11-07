@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type ExtraData = {
   [key: string]: string;
@@ -16,5 +17,5 @@ declare class BugReporting {
   };
   collectExtraData: () => DebugData;
 }
-declare const $f2tExportDefault: BugReporting;
+declare const $f2tExportDefault: $TypeOf<typeof BugReporting>;
 export default $f2tExportDefault;

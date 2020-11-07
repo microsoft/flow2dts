@@ -1,5 +1,6 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var InspectorAgent: typeof $1;
+declare var InspectorAgent: $TypeOf<typeof $1>;
 declare const $1;
 declare type RequestId = string;
 declare class Interceptor {
@@ -27,6 +28,6 @@ declare class NetworkAgent extends $2 {
   };
   interceptor: () => Interceptor;
 }
-declare var $2: typeof InspectorAgent;
-declare const $f2tExportDefault: NetworkAgent;
+declare var $2: $TypeOf<typeof InspectorAgent>;
+declare const $f2tExportDefault: $TypeOf<typeof NetworkAgent>;
 export default $f2tExportDefault;

@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var ImagePickerIOS:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -33,5 +34,5 @@ declare var ImagePickerIOS:
    */
   clearAllPendingVideos: () => void;
 };
-declare const $f2tExportDefault: typeof ImagePickerIOS;
+declare const $f2tExportDefault: $TypeOf<typeof ImagePickerIOS>;
 export default $f2tExportDefault;

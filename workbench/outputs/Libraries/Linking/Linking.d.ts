@@ -1,5 +1,6 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var NativeEventEmitter: typeof $2;
+declare var NativeEventEmitter: $TypeOf<typeof $2>;
 declare const $2;
 declare class Linking extends $1 {
   constructor: () => void;
@@ -60,6 +61,6 @@ declare class Linking extends $1 {
     value: string | number | boolean;
   }[]) => Promise;
 }
-declare var $1: typeof NativeEventEmitter;
+declare var $1: $TypeOf<typeof NativeEventEmitter>;
 declare const $f2tExportDefault: Linking;
 export default $f2tExportDefault;

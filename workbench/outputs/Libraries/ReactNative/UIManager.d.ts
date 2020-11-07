@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { Spec } from "./NativeUIManager";
 interface UIManagerJSInterface extends Spec {
@@ -7,5 +8,5 @@ interface UIManagerJSInterface extends Spec {
   readonly manageChildren: (containerTag: null | undefined | number, moveFromIndices: number[], moveToIndices: number[], addChildReactTags: number[], addAtIndices: number[], removeAtIndices: number[]) => void;
 }
 declare var UIManager: UIManagerJSInterface;
-declare const $f2tExportDefault: typeof UIManager;
+declare const $f2tExportDefault: $TypeOf<typeof UIManager>;
 export default $f2tExportDefault;

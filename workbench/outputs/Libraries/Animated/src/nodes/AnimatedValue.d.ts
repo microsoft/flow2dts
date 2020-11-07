@@ -1,7 +1,8 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var AnimatedInterpolation: typeof $1;
+declare var AnimatedInterpolation: $TypeOf<typeof $1>;
 declare const $1;
-declare var AnimatedWithChildren: typeof $3;
+declare var AnimatedWithChildren: $TypeOf<typeof $3>;
 declare const $3;
 import { EndCallback } from "../animations/Animation";
 import Animation from "../animations/Animation";
@@ -86,6 +87,6 @@ declare class AnimatedValue extends $2 {
   track: (tracking: AnimatedTracking) => void;
   __getNativeConfig: () => Object;
 }
-declare var $2: typeof AnimatedWithChildren;
-declare const $f2tExportDefault: AnimatedValue;
+declare var $2: $TypeOf<typeof AnimatedWithChildren>;
+declare const $f2tExportDefault: $TypeOf<typeof AnimatedValue>;
 export default $f2tExportDefault;

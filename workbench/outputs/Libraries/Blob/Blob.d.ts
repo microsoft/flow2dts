@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { BlobData } from "./BlobTypes";
 import { BlobOptions } from "./BlobTypes";
@@ -28,5 +29,5 @@ declare class Blob {
   size: () => number;
   type: () => string;
 }
-declare const $f2tExportDefault: Blob;
+declare const $f2tExportDefault: $TypeOf<typeof Blob>;
 export default $f2tExportDefault;
