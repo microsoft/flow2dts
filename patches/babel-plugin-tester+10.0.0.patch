@@ -1,5 +1,5 @@
 diff --git a/node_modules/babel-plugin-tester/dist/plugin-tester.js b/node_modules/babel-plugin-tester/dist/plugin-tester.js
-index ae96e33..12804c2 100644
+index ae96e33..e1976c7 100644
 --- a/node_modules/babel-plugin-tester/dist/plugin-tester.js
 +++ b/node_modules/babel-plugin-tester/dist/plugin-tester.js
 @@ -73,10 +73,11 @@ function pluginTester(_ref = {}) {
@@ -23,6 +23,15 @@ index ae96e33..12804c2 100644
        filename,
        babel,
        endOfLine
+@@ -322,7 +324,7 @@ const createFixtureTests = (fixturesDir, options) => {
+       return;
+     }
+ 
+-    it(blockTitle, () => {
++    const testBody = () => {
+       const {
+         plugin,
+         pluginOptions,
 @@ -357,6 +359,8 @@ const createFixtureTests = (fixturesDir, options) => {
  
        if (fixtureOutputExt) {
@@ -32,3 +41,18 @@ index ae96e33..12804c2 100644
        } else {
          ext = `.${codePath.split('.').pop()}`;
        }
+@@ -372,7 +376,13 @@ const createFixtureTests = (fixturesDir, options) => {
+       const output = _fs.default.readFileSync(outputPath, 'utf8');
+ 
+       _assert.default.equal(actual.trim(), fixLineEndings(output, endOfLine), `actual output does not match ${fixtureOutputName}${ext}`);
+-    });
++    };
++
++    if (fixturePluginOptions.skip) {
++      it.skip(blockTitle, testBody);
++    } else {
++      it(blockTitle, testBody);
++    }
+   });
+ };
+ 
