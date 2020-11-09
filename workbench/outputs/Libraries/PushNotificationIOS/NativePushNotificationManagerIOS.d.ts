@@ -35,14 +35,14 @@ interface Spec extends TurboModule {
     readonly alert: boolean;
     readonly badge: boolean;
     readonly sound: boolean;
-  }) => Promise;
+  }) => Promise<Permissions>;
   readonly abandonPermissions: () => void;
   readonly checkPermissions: (callback: (permissions: Permissions) => void) => void;
   readonly presentLocalNotification: (notification: Notification) => void;
   readonly scheduleLocalNotification: (notification: Notification) => void;
   readonly cancelAllLocalNotifications: () => void;
   readonly cancelLocalNotifications: (userInfo: Object) => void;
-  readonly getInitialNotification: () => Promise;
+  readonly getInitialNotification: () => Promise<null | undefined | Notification>;
   readonly getScheduledLocalNotifications: (callback: (notification: Notification) => void) => void;
   readonly removeAllDeliveredNotifications: () => void;
   readonly removeDeliveredNotifications: (identifiers: string[]) => void;

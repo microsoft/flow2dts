@@ -9,11 +9,11 @@ declare type NativeProps = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 ViewProps & {
   // Props
-  progressViewStyle?: WithDefault;
-  progress?: WithDefault;
+  progressViewStyle?: WithDefault<"default" | "bar", "default">;
+  progress?: WithDefault<Float, 0>;
   progressTintColor?: null | undefined | ColorValue;
   trackTintColor?: null | undefined | ColorValue;
   progressImage?: null | undefined | ImageSource;
   trackImage?: null | undefined | ImageSource;
 }>;
-declare export default HostComponent;
+declare export default HostComponent<NativeProps>;

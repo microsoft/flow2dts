@@ -10,7 +10,7 @@ declare const $f2tExportDefault:
    * }
    * ```
    */
-  getString: () => Promise;
+  getString: () => Promise<string>;
 
   /**
    * Set content of string type. You can use following code to set clipboard content

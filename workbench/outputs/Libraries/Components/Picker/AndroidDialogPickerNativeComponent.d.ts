@@ -26,14 +26,14 @@ ViewProps & {
   // Props
   color?: null | undefined | ColorValue;
   backgroundColor?: null | undefined | ColorValue;
-  enabled?: WithDefault;
+  enabled?: WithDefault<boolean, true>;
   items: ReadonlyArray<PickerItem>;
-  prompt?: WithDefault;
+  prompt?: WithDefault<string, "">;
   selected: Int32;
   // Events
-  onSelect?: DirectEventHandler;
+  onSelect?: DirectEventHandler<PickerItemSelectEvent>;
 }>;
-declare type NativeType = HostComponent;
+declare type NativeType = HostComponent<NativeProps>;
 interface NativeCommands {
   readonly setNativeSelectedPosition: (viewRef: React.ElementRef<NativeType>, index: number) => void;
 }

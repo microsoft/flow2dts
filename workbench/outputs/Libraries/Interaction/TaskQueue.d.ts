@@ -6,7 +6,7 @@ declare type SimpleTask = {
 };
 declare type PromiseTask = {
   name: string;
-  gen: () => Promise;
+  gen: () => Promise<void>;
 };
 declare type Task = SimpleTask | PromiseTask | () => void;
 declare class TaskQueue {

@@ -6,7 +6,7 @@ declare type SyntheticEvent<T> = Readonly<
 {
   bubbles: null | undefined | boolean;
   cancelable: null | undefined | boolean;
-  currentTarget: number | React.ElementRef<HostComponent>;
+  currentTarget: number | React.ElementRef<HostComponent<unknown>>;
   defaultPrevented: null | undefined | boolean;
   dispatchConfig: Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -21,13 +21,13 @@ declare type SyntheticEvent<T> = Readonly<
   isTrusted: null | undefined | boolean;
   nativeEvent: T;
   persist: () => void;
-  target: (null | undefined | number) | React.ElementRef<HostComponent>;
+  target: (null | undefined | number) | React.ElementRef<HostComponent<unknown>>;
   timeStamp: number;
   type: null | undefined | string;
 }>;
 declare type ResponderSyntheticEvent<T> = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-SyntheticEvent & {
+SyntheticEvent<T> & {
   touchHistory: Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
@@ -67,13 +67,93 @@ Layout & {
   text: string;
   xHeight: number;
 }>;
-declare type LayoutEvent = SyntheticEvent;
-declare type TextLayoutEvent = SyntheticEvent;
-declare type PressEvent = ResponderSyntheticEvent;
-declare type ScrollEvent = SyntheticEvent;
-declare type BlurEvent = SyntheticEvent;
-declare type FocusEvent = SyntheticEvent;
-declare type MouseEvent = SyntheticEvent;
+declare type LayoutEvent = SyntheticEvent<Readonly<
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  layout: Layout;
+}>>;
+declare type TextLayoutEvent = SyntheticEvent<Readonly<
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  lines: TextLayout[];
+}>>;
+declare type PressEvent = ResponderSyntheticEvent<Readonly<
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  changedTouches: ReadonlyArray<$PropertyType<PressEvent, "nativeEvent">>;
+  force?: number;
+  identifier: number;
+  locationX: number;
+  locationY: number;
+  pageX: number;
+  pageY: number;
+  target: null | undefined | number;
+  timestamp: number;
+  touches: ReadonlyArray<$PropertyType<PressEvent, "nativeEvent">>;
+}>>;
+declare type ScrollEvent = SyntheticEvent<Readonly<
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  contentInset: Readonly<
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  {
+    bottom: number;
+    left: number;
+    right: number;
+    top: number;
+  }>;
+  contentOffset: Readonly<
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  {
+    y: number;
+    x: number;
+  }>;
+  contentSize: Readonly<
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  {
+    height: number;
+    width: number;
+  }>;
+  layoutMeasurement: Readonly<
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  {
+    height: number;
+    width: number;
+  }>;
+  targetContentOffset?: Readonly<
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  {
+    y: number;
+    x: number;
+  }>;
+  velocity?: Readonly<
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  {
+    y: number;
+    x: number;
+  }>;
+  zoomScale?: number;
+  responderIgnoreScroll?: boolean;
+}>>;
+declare type BlurEvent = SyntheticEvent<Readonly<
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  target: number;
+}>>;
+declare type FocusEvent = SyntheticEvent<Readonly<
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  target: number;
+}>>;
+declare type MouseEvent = SyntheticEvent<Readonly<
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  clientX: number;
+  clientY: number;
+  pageX: number;
+  pageY: number;
+  timestamp: number;
+}>>;
 export type { SyntheticEvent };
 export type { ResponderSyntheticEvent };
 export type { Layout };

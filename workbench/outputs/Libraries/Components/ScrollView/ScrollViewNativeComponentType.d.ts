@@ -63,6 +63,6 @@ declare type ScrollViewNativeProps = Readonly<ViewProps & {
   style?: (ViewStyleProp & {}) | DangerouslyImpreciseStyle;
   onResponderGrant?: null | undefined | (e: any) => void | boolean;
 }>;
-declare type ScrollViewNativeComponentType = HostComponent;
+declare type ScrollViewNativeComponentType = HostComponent<ScrollViewNativeProps>;
 export type { ScrollViewNativeProps };
 export type { ScrollViewNativeComponentType };

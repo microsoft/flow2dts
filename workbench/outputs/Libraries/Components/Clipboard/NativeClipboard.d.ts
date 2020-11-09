@@ -4,7 +4,7 @@ interface Spec extends TurboModule {
   readonly getConstants: () =>
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {};
-  readonly getString: () => Promise;
+  readonly getString: () => Promise<string>;
   readonly setString: (content: string) => void;
 }
 export type { Spec };

@@ -25,7 +25,7 @@ ViewProps & {
   *   - 'none' (the default), drags do not dismiss the keyboard.
   *   - 'on-drag', the keyboard is dismissed when a drag begins.
   */
-  keyboardDismissMode?: WithDefault;
+  keyboardDismissMode?: WithDefault<"none" | "on-drag", "none">;
 
   /**
   * Specifies the background color of the drawer. The default value is white.
@@ -43,13 +43,13 @@ ViewProps & {
   /**
   * Specifies the side of the screen from which the drawer will slide in.
   */
-  drawerPosition?: WithDefault;
+  drawerPosition?: WithDefault<"left" | "right", "left">;
 
   /**
   * Specifies the width of the drawer, more precisely the width of the view that be pulled in
   * from the edge of the window.
   */
-  drawerWidth?: WithDefault;
+  drawerWidth?: WithDefault<Float, null>;
 
   /**
   * Specifies the lock mode of the drawer. The drawer can be locked in 3 states:
@@ -58,12 +58,12 @@ ViewProps & {
   * - locked-open, meaning that the drawer will stay opened and not respond to gestures.
   * The drawer may still be opened and closed programmatically (`openDrawer`/`closeDrawer`).
   */
-  drawerLockMode?: WithDefault;
+  drawerLockMode?: WithDefault<"unlocked" | "locked-closed" | "locked-open", "unlocked">;
 
   /**
   * Function called whenever there is an interaction with the navigation view.
   */
-  onDrawerSlide?: null | undefined | DirectEventHandler;
+  onDrawerSlide?: null | undefined | DirectEventHandler<DrawerSlideEvent>;
 
   /**
   * Function called when the drawer state has changed. The drawer can be in 3 states:
@@ -72,17 +72,17 @@ ViewProps & {
   * - Settling, meaning that there was an interaction with the navigation view, and the
   * navigation view is now finishing its closing or opening animation
   */
-  onDrawerStateChanged?: null | undefined | DirectEventHandler;
+  onDrawerStateChanged?: null | undefined | DirectEventHandler<DrawerStateEvent>;
 
   /**
   * Function called whenever the navigation view has been opened.
   */
-  onDrawerOpen?: null | undefined | DirectEventHandler;
+  onDrawerOpen?: null | undefined | DirectEventHandler<null, "topDrawerOpened">;
 
   /**
   * Function called whenever the navigation view has been closed.
   */
-  onDrawerClose?: null | undefined | DirectEventHandler;
+  onDrawerClose?: null | undefined | DirectEventHandler<null, "topDrawerClosed">;
 
   /**
   * Make the drawer take the entire screen and draw the background of the
@@ -91,7 +91,7 @@ ViewProps & {
   */
   statusBarBackgroundColor?: null | undefined | ColorValue;
 }>;
-declare type NativeType = HostComponent;
+declare type NativeType = HostComponent<NativeProps>;
 interface NativeCommands {
   readonly openDrawer: (viewRef: React.ElementRef<NativeType>) => void;
   readonly closeDrawer: (viewRef: React.ElementRef<NativeType>) => void;

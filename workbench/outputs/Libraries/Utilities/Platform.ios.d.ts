@@ -32,7 +32,7 @@ declare var Platform:
   isTVOS: () => boolean;
   isTV: () => boolean;
   isTesting: () => boolean;
-  select: <D, N, I>(spec: PlatformSelectSpec) => D | N | I;
+  select: <D, N, I>(spec: PlatformSelectSpec<D, N, I>) => D | N | I;
 };
 export type { PlatformSelectSpec };
 declare const $f2tExportDefault: $TypeOf<typeof Platform>;

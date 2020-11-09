@@ -21,4 +21,4 @@ ImageProps & ViewProps & {
   defaultSrc?: null | undefined | string;
   loadingIndicatorSrc?: null | undefined | string;
 }>;
-declare export default HostComponent;
+declare export default HostComponent<NativeProps>;

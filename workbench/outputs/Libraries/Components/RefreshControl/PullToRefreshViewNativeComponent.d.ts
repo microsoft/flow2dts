@@ -21,22 +21,22 @@ ViewProps & {
   /**
   * The title displayed under the refresh indicator.
   */
-  title?: WithDefault;
+  title?: WithDefault<string, null>;
 
   /**
   * Called when the view starts refreshing.
   */
-  onRefresh?: null | undefined | DirectEventHandler;
+  onRefresh?: null | undefined | DirectEventHandler<null>;
 
   /**
   * Whether the view should be indicating an active refresh.
   */
   refreshing: boolean;
 }>;
-declare type ComponentType = HostComponent;
+declare type ComponentType = HostComponent<NativeProps>;
 interface NativeCommands {
   readonly setNativeRefreshing: (viewRef: React.ElementRef<ComponentType>, refreshing: boolean) => void;
 }
 declare var Commands: NativeCommands;
 export { Commands };
-declare export default HostComponent;
+declare export default HostComponent<NativeProps>;

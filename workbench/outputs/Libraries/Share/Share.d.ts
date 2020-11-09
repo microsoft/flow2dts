@@ -14,7 +14,10 @@ declare type Options = {
   subject?: string;
 };
 declare class Share {
-  share: (content: Content, options?: Options) => Promise;
+  share: (content: Content, options?: Options) => Promise<{
+    action: string;
+    activityType: null | undefined | string;
+  }>;
   sharedAction: "sharedAction";
   dismissedAction: "dismissedAction";
 }

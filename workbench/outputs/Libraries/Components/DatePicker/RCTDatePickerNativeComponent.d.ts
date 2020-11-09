@@ -18,15 +18,15 @@ ViewProps & {
   locale?: null | undefined | string;
   maximumDate?: null | undefined | Float;
   minimumDate?: null | undefined | Float;
-  minuteInterval?: WithDefault;
-  mode?: WithDefault;
-  onChange?: null | undefined | BubblingEventHandler;
+  minuteInterval?: WithDefault<1 | 2 | 3 | 4 | 5 | 6 | 10 | 12 | 15 | 20 | 30, 1>;
+  mode?: WithDefault<"date" | "time" | "datetime", "date">;
+  onChange?: null | undefined | BubblingEventHandler<Event>;
   timeZoneOffsetInMinutes?: null | undefined | Float;
 }>;
-declare type ComponentType = HostComponent;
+declare type ComponentType = HostComponent<NativeProps>;
 interface NativeCommands {
   readonly setNativeDate: (viewRef: React.ElementRef<ComponentType>, date: Float) => void;
 }
 declare var Commands: NativeCommands;
 export { Commands };
-declare export default HostComponent;
+declare export default HostComponent<NativeProps>;

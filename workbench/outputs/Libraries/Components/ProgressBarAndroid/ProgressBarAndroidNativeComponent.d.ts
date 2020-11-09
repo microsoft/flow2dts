@@ -11,9 +11,9 @@ ViewProps & {
   styleAttr?: string;
   typeAttr?: string;
   indeterminate: boolean;
-  progress?: WithDefault;
-  animating?: WithDefault;
+  progress?: WithDefault<Double, 0>;
+  animating?: WithDefault<boolean, true>;
   color?: null | undefined | ColorValue;
-  testID?: WithDefault;
+  testID?: WithDefault<string, "">;
 }>;
-declare export default HostComponent;
+declare export default HostComponent<NativeProps>;

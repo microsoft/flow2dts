@@ -5,7 +5,9 @@ declare type AccessibilityActionInfo = Readonly<{
   name: string;
   label?: string;
 }>;
-declare type AccessibilityActionEvent = SyntheticEvent;
+declare type AccessibilityActionEvent = SyntheticEvent<Readonly<{
+  actionName: string;
+}>>;
 declare type AccessibilityState = {
   disabled?: boolean;
   selected?: boolean;

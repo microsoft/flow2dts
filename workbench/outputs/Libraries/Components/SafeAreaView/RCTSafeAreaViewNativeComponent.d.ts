@@ -6,6 +6,6 @@ declare type NativeProps = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 ViewProps & {
   // Props
-  emulateUnlessSupported?: WithDefault;
+  emulateUnlessSupported?: WithDefault<boolean, false>;
 }>;
-declare export default HostComponent;
+declare export default HostComponent<NativeProps>;

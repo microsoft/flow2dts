@@ -46,7 +46,7 @@ declare type ReactNativeBaseComponentViewConfig<TProps = string, TStyleProps = s
     [propName: string]: string;
   }>;
   uiViewClassName: string;
-  validAttributes: AttributeConfiguration;
+  validAttributes: AttributeConfiguration<TProps, TStyleProps>;
 }>;
 declare type ViewConfigGetter = () => ReactNativeBaseComponentViewConfig;
 declare type NativeMethods = {
@@ -54,10 +54,10 @@ declare type NativeMethods = {
   focus: () => void;
   measure: (callback: MeasureOnSuccessCallback) => void;
   measureInWindow: (callback: MeasureInWindowOnSuccessCallback) => void;
-  measureLayout: (relativeToNativeNode: number | ElementRef, onSuccess: MeasureLayoutOnSuccessCallback, onFail?: () => void) => void;
+  measureLayout: (relativeToNativeNode: number | ElementRef<HostComponent<unknown>>, onSuccess: MeasureLayoutOnSuccessCallback, onFail?: () => void) => void;
   setNativeProps: (nativeProps: Object) => void;
 };
-declare type HostComponent<T> = AbstractComponent;
+declare type HostComponent<T> = AbstractComponent<T, Readonly<NativeMethods>>;
 declare type SecretInternalsType = {
   computeComponentStackForErrorReporting: (tag: number) => string;
 };
@@ -105,10 +105,10 @@ InspectorData & {
   }>;
 }>;
 declare type ReactNativeType = {
-  findHostInstance_DEPRECATED: (componentOrHandle: any) => null | undefined | ElementRef;
+  findHostInstance_DEPRECATED: (componentOrHandle: any) => null | undefined | ElementRef<HostComponent<unknown>>;
   findNodeHandle: (componentOrHandle: any) => null | undefined | number;
   dispatchCommand: (handle: any, command: string, args: any[]) => void;
-  render: (element: React$Element, containerTag: any, callback: null | undefined | Function) => any;
+  render: (element: React$Element<any>, containerTag: any, callback: null | undefined | Function) => any;
   unmountComponentAtNode: (containerTag: number) => any;
   unmountComponentAtNodeAndRemoveContainer: (containerTag: number) => any;
   // TODO (bvaughn) Add types
@@ -116,10 +116,10 @@ declare type ReactNativeType = {
   __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: SecretInternalsType;
 };
 declare type ReactFabricType = {
-  findHostInstance_DEPRECATED: (componentOrHandle: any) => null | undefined | ElementRef;
+  findHostInstance_DEPRECATED: (componentOrHandle: any) => null | undefined | ElementRef<HostComponent<unknown>>;
   findNodeHandle: (componentOrHandle: any) => null | undefined | number;
   dispatchCommand: (handle: any, command: string, args: any[]) => void;
-  render: (element: React$Element, containerTag: any, callback: null | undefined | Function) => any;
+  render: (element: React$Element<any>, containerTag: any, callback: null | undefined | Function) => any;
   unmountComponentAtNode: (containerTag: number) => any;
 };
 declare type ReactNativeEventTarget = {

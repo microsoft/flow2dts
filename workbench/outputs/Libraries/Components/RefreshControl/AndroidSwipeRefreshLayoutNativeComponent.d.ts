@@ -13,7 +13,7 @@ ViewProps & {
   /**
   * Whether the pull to refresh functionality is enabled.
   */
-  enabled?: WithDefault;
+  enabled?: WithDefault<boolean, true>;
 
   /**
   * The colors (at least one) that will be used to draw the refresh indicator.
@@ -36,24 +36,24 @@ ViewProps & {
   * This will end up being
   * size?: WithDefault<'default' | 'large', 'default'>,
   */
-  size?: WithDefault;
+  size?: WithDefault<Int32, 1>;
 
   /**
   * Progress view top offset
   */
-  progressViewOffset?: WithDefault;
+  progressViewOffset?: WithDefault<Float, 0>;
 
   /**
   * Called when the view starts refreshing.
   */
-  onRefresh?: null | undefined | DirectEventHandler;
+  onRefresh?: null | undefined | DirectEventHandler<null>;
 
   /**
   * Whether the view should be indicating an active refresh.
   */
   refreshing: boolean;
 }>;
-declare type NativeType = HostComponent;
+declare type NativeType = HostComponent<NativeProps>;
 interface NativeCommands {
   readonly setNativeRefreshing: (viewRef: React.ElementRef<NativeType>, value: boolean) => void;
 }

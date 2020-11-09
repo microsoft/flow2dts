@@ -6,7 +6,7 @@ declare type NativeTextProps = Readonly<TextProps & {
   isHighlighted?: null | undefined | boolean;
   selectionColor?: null | undefined | ProcessedColorValue;
 }>;
-declare var NativeText: HostComponent;
-declare var NativeVirtualText: HostComponent;
+declare var NativeText: HostComponent<NativeTextProps>;
+declare var NativeVirtualText: HostComponent<NativeTextProps>;
 export { NativeText };
 export { NativeVirtualText };

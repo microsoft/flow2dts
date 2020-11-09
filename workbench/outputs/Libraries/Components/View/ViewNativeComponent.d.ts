@@ -3,7 +3,7 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import * as React from "react";
 import { ViewProps } from "./ViewPropTypes";
 import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
-declare type ViewNativeComponentType = HostComponent;
+declare type ViewNativeComponentType = HostComponent<ViewProps>;
 declare var viewConfig: {} |
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
@@ -38,8 +38,8 @@ declare var viewConfig: {} |
 };
 declare var __INTERNAL_VIEW_CONFIG: $TypeOf<typeof viewConfig>;
 interface NativeCommands {
-  readonly hotspotUpdate: (viewRef: React.ElementRef<HostComponent>, x: number, y: number) => void;
-  readonly setPressed: (viewRef: React.ElementRef<HostComponent>, pressed: boolean) => void;
+  readonly hotspotUpdate: (viewRef: React.ElementRef<HostComponent<unknown>>, x: number, y: number) => void;
+  readonly setPressed: (viewRef: React.ElementRef<HostComponent<unknown>>, pressed: boolean) => void;
 }
 declare var Commands: NativeCommands;
 export type { ViewNativeComponentType };

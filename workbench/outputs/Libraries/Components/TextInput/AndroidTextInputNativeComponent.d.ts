@@ -1,3 +1,4 @@
+import { $Diff } from "utility-types";
 // @flow
 import { ViewProps } from "../View/ViewPropTypes";
 import { BubblingEventHandler } from "../../Types/CodegenTypes";
@@ -21,7 +22,11 @@ declare type ReturnKeyType = // Cross Platform
 | "default" | "emergency-call" | "google" | "join" | "route" | "yahoo";
 declare type NativeProps = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$Diff & {
+$Diff<ViewProps, Readonly<
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  style: null | undefined | ViewStyleProp;
+}>> & {
   /**
   * Android props after this
   */
@@ -50,7 +55,7 @@ $Diff & {
   *
   * @platform android
   */
-  autoCompleteType?: WithDefault;
+  autoCompleteType?: WithDefault<"cc-csc" | "cc-exp" | "cc-exp-month" | "cc-exp-year" | "cc-number" | "email" | "name" | "password" | "postal-code" | "street-address" | "tel" | "username" | "off", "off">;
 
   /**
   * Sets the return key to the label. Use it instead of `returnKeyType`.
@@ -80,7 +85,7 @@ $Diff & {
   * The default value is `simple`.
   * @platform android
   */
-  textBreakStrategy?: WithDefault;
+  textBreakStrategy?: WithDefault<"simple" | "highQuality" | "balanced", "simple">;
 
   /**
   * The color of the `TextInput` underline.
@@ -133,7 +138,7 @@ $Diff & {
   * - `sentences`: first letter of each sentence (*default*).
   * - `none`: don't auto capitalize anything.
   */
-  autoCapitalize?: WithDefault;
+  autoCapitalize?: WithDefault<"none" | "sentences" | "words" | "characters", "none">;
 
   /**
   * If `false`, disables auto-correct. The default value is `true`.
@@ -184,7 +189,7 @@ $Diff & {
   *
   * - `visible-password`
   */
-  keyboardType?: WithDefault;
+  keyboardType?: WithDefault<KeyboardType, "default">;
 
   /**
   * Determines how the return key should look. On Android you can also use
@@ -207,7 +212,7 @@ $Diff & {
   * - `none`
   * - `previous`
   */
-  returnKeyType?: WithDefault;
+  returnKeyType?: WithDefault<ReturnKeyType, "done">;
 
   /**
   * Limits the maximum number of characters that can be entered. Use this
@@ -225,27 +230,47 @@ $Diff & {
   * Callback that is called when the text input is blurred.
   * `target` is the reactTag of the element
   */
-  onBlur?: null | undefined | BubblingEventHandler;
+  onBlur?: null | undefined | BubblingEventHandler<Readonly<
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  {
+    target: Int32;
+  }>>;
 
   /**
   * Callback that is called when the text input is focused.
   * `target` is the reactTag of the element
   */
-  onFocus?: null | undefined | BubblingEventHandler;
+  onFocus?: null | undefined | BubblingEventHandler<Readonly<
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  {
+    target: Int32;
+  }>>;
 
   /**
   * Callback that is called when the text input's text changes.
   * `target` is the reactTag of the element
   * TODO: differentiate between onChange and onChangeText
   */
-  onChange?: null | undefined | BubblingEventHandler;
+  onChange?: null | undefined | BubblingEventHandler<Readonly<
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  {
+    target: Int32;
+    eventCount: Int32;
+    text: string;
+  }>>;
 
   /**
   * Callback that is called when the text input's text changes.
   * Changed text is passed as an argument to the callback handler.
   * TODO: differentiate between onChange and onChangeText
   */
-  onChangeText?: null | undefined | BubblingEventHandler;
+  onChangeText?: null | undefined | BubblingEventHandler<Readonly<
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  {
+    target: Int32;
+    eventCount: Int32;
+    text: string;
+  }>>;
 
   /**
   * Callback that is called when the text input's content size changes.
@@ -254,26 +279,68 @@ $Diff & {
   *
   * Only called for multiline text inputs.
   */
-  onContentSizeChange?: null | undefined | DirectEventHandler;
-  onTextInput?: null | undefined | BubblingEventHandler;
+  onContentSizeChange?: null | undefined | DirectEventHandler<Readonly<
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  {
+    target: Int32;
+    contentSize: Readonly<
+    /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+    {
+      width: Double;
+      height: Double;
+    }>;
+  }>>;
+  onTextInput?: null | undefined | BubblingEventHandler<Readonly<
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  {
+    target: Int32;
+    text: string;
+    previousText: string;
+    range: Readonly<
+    /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+    {
+      start: Double;
+      end: Double;
+    }>;
+  }>>;
 
   /**
   * Callback that is called when text input ends.
   */
-  onEndEditing?: null | undefined | BubblingEventHandler;
+  onEndEditing?: null | undefined | BubblingEventHandler<Readonly<
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  {
+    target: Int32;
+    text: string;
+  }>>;
 
   /**
   * Callback that is called when the text input selection is changed.
   * This will be called with
   * `{ nativeEvent: { selection: { start, end } } }`.
   */
-  onSelectionChange?: null | undefined | DirectEventHandler;
+  onSelectionChange?: null | undefined | DirectEventHandler<Readonly<
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  {
+    target: Int32;
+    selection: Readonly<
+    /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+    {
+      start: Double;
+      end: Double;
+    }>;
+  }>>;
 
   /**
   * Callback that is called when the text input's submit button is pressed.
   * Invalid if `multiline={true}` is specified.
   */
-  onSubmitEditing?: null | undefined | BubblingEventHandler;
+  onSubmitEditing?: null | undefined | BubblingEventHandler<Readonly<
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  {
+    target: Int32;
+    text: string;
+  }>>;
 
   /**
   * Callback that is called when a key is pressed.
@@ -282,14 +349,64 @@ $Diff & {
   * the typed-in character otherwise including `' '` for space.
   * Fires before `onChange` callbacks.
   */
-  onKeyPress?: null | undefined | BubblingEventHandler;
+  onKeyPress?: null | undefined | BubblingEventHandler<Readonly<
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  {
+    target: Int32;
+    key: string;
+  }>>;
 
   /**
   * Invoked on content scroll with `{ nativeEvent: { contentOffset: { x, y } } }`.
   * May also contain other properties from ScrollEvent but on Android contentSize
   * is not provided for performance reasons.
   */
-  onScroll?: null | undefined | DirectEventHandler;
+  onScroll?: null | undefined | DirectEventHandler<Readonly<
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  {
+    target: Int32;
+    responderIgnoreScroll: boolean;
+    contentInset: Readonly<
+    /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+    {
+      top: Double; // always 0 on Android
+
+      bottom: Double; // always 0 on Android
+
+      left: Double; // always 0 on Android
+
+      right: Double; // always 0 on Android
+
+    }>;
+    contentOffset: Readonly<
+    /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+    {
+      x: Double;
+      y: Double;
+    }>;
+    contentSize: Readonly<
+    /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+    {
+      width: Double; // always 0 on Android
+
+      height: Double; // always 0 on Android
+
+    }>;
+    layoutMeasurement: Readonly<
+    /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+    {
+      width: Double;
+      height: Double;
+    }>;
+    velocity: Readonly<
+    /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+    {
+      x: Double; // always 0 on Android
+
+      y: Double; // always 0 on Android
+
+    }>;
+  }>>;
 
   /**
   * The string that will be rendered before text input has been entered.
@@ -424,11 +541,11 @@ $Diff & {
   mostRecentEventCount: Int32;
   text?: null | undefined | string;
 }>;
-declare type NativeType = HostComponent;
-declare type NativeCommands = TextInputNativeCommands;
+declare type NativeType = HostComponent<NativeProps>;
+declare type NativeCommands = TextInputNativeCommands<NativeType>;
 declare var Commands: NativeCommands;
 export type { KeyboardType };
 export type { ReturnKeyType };
 export type { NativeProps };
 export { Commands };
-declare export default HostComponent;
+declare export default HostComponent<NativeProps>;

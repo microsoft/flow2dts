@@ -14,8 +14,8 @@ declare type NativeProps = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 ViewProps & {
   // Props
-  disabled?: WithDefault;
-  value?: WithDefault;
+  disabled?: WithDefault<boolean, false>;
+  value?: WithDefault<boolean, false>;
   tintColor?: null | undefined | ColorValue;
   onTintColor?: null | undefined | ColorValue;
   thumbTintColor?: null | undefined | ColorValue;
@@ -24,9 +24,9 @@ ViewProps & {
   trackColorForFalse?: null | undefined | ColorValue;
   trackColorForTrue?: null | undefined | ColorValue;
   // Events
-  onChange?: null | undefined | BubblingEventHandler;
+  onChange?: null | undefined | BubblingEventHandler<SwitchChangeEvent>;
 }>;
-declare type ComponentType = HostComponent;
+declare type ComponentType = HostComponent<NativeProps>;
 interface NativeCommands {
   readonly setValue: (viewRef: React.ElementRef<ComponentType>, value: boolean) => void;
 }

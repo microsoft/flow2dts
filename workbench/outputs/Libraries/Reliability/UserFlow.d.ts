@@ -4,7 +4,32 @@ declare type FlowId = {
   markerId: number;
   instanceKey: number;
 };
-declare type PointData = $Shape;
+declare type PointData = $Shape<{
+  string: null | undefined | {
+    [$f2tKey: string]: string;
+  };
+  int: null | undefined | {
+    [$f2tKey: string]: number;
+  };
+  double: null | undefined | {
+    [$f2tKey: string]: number;
+  };
+  bool: null | undefined | {
+    [$f2tKey: string]: boolean;
+  };
+  string_array: null | undefined | {
+    [$f2tKey: string]: ReadonlyArray<string>;
+  };
+  int_array: null | undefined | {
+    [$f2tKey: string]: ReadonlyArray<number>;
+  };
+  double_array: null | undefined | {
+    [$f2tKey: string]: ReadonlyArray<number>;
+  };
+  bool_array: null | undefined | {
+    [$f2tKey: string]: ReadonlyArray<boolean>;
+  };
+}>;
 declare var UserFlow:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

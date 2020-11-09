@@ -37,6 +37,6 @@ ViewProps & IOSProps & {
   */
   size?: null | undefined | IndicatorSize;
 }>;
-declare var ActivityIndicatorWithRef: React.AbstractComponent<Props, HostComponent>;
+declare var ActivityIndicatorWithRef: React.AbstractComponent<Props, HostComponent<unknown>>;
 declare const $f2tExportDefault: $TypeOf<typeof ActivityIndicatorWithRef>;
 export default $f2tExportDefault;

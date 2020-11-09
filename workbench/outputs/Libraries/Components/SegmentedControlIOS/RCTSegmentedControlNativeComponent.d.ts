@@ -16,14 +16,14 @@ declare type NativeProps = Readonly<
 ViewProps & {
   // Props
   values?: ReadonlyArray<string>;
-  selectedIndex?: WithDefault;
-  enabled?: WithDefault;
+  selectedIndex?: WithDefault<Int32, 0>;
+  enabled?: WithDefault<boolean, true>;
   tintColor?: null | undefined | ColorValue;
   textColor?: null | undefined | ColorValue;
   backgroundColor?: null | undefined | ColorValue;
-  momentary?: WithDefault;
+  momentary?: WithDefault<boolean, false>;
   // Events
-  onChange?: null | undefined | BubblingEventHandler;
+  onChange?: null | undefined | BubblingEventHandler<OnChangeEvent>;
 }>;
 export type { OnChangeEvent };
-declare export default HostComponent;
+declare export default HostComponent<NativeProps>;

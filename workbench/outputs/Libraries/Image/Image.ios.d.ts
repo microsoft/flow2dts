@@ -13,7 +13,9 @@ declare function getSizeWithHeaders(uri: string, headers: {
   [$f2tKey: string]: string;
 }, success: (width: number, height: number) => void, failure?: (error: any) => void) => any;
 declare function prefetch(url: string) => any;
-declare function queryCache(urls: string[]) => Promise;
+declare function queryCache(urls: string[]) => Promise<{
+  [$f2tKey: string]: "memory" | "disk" | "disk/memory";
+}>;
 declare type ImageComponentStatics = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

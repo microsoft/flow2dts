@@ -13,7 +13,7 @@ declare type SymbolicatedStackTrace = Readonly<{
   stack: StackFrame[];
   codeFrame: null | undefined | CodeFrame;
 }>;
-declare function symbolicateStackTrace(stack: StackFrame[]) => Promise;
+declare function symbolicateStackTrace(stack: StackFrame[]) => Promise<SymbolicatedStackTrace>;
 export type { CodeFrame };
 export type { SymbolicatedStackTrace };
 declare const $f2tExportDefault: $TypeOf<typeof symbolicateStackTrace>;

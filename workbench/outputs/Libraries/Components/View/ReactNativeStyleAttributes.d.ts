@@ -13,9 +13,9 @@ import $5 from "../../StyleSheet/processTransform";
 declare var sizesDiffer: $TypeOf<typeof $6>;
 import $6 from "../../Utilities/differ/sizesDiffer";
 declare type ReturnBoolType = <V>($f2t1: V) => true;
-declare type BoolifiedDeprecatedViewStylePropTypes = $ObjMap;
-declare type BoolifiedDeprecatedTextStylePropTypes = $ObjMapi;
-declare type BoolifiedDeprecatedImageStylePropTypes = $ObjMapi;
+declare type BoolifiedDeprecatedViewStylePropTypes = $ObjMap<$TypeOf<typeof DeprecatedViewStylePropTypes>, ReturnBoolType>;
+declare type BoolifiedDeprecatedTextStylePropTypes = $ObjMapi<$TypeOf<typeof DeprecatedTextStylePropTypes>, ReturnBoolType>;
+declare type BoolifiedDeprecatedImageStylePropTypes = $ObjMapi<$TypeOf<typeof DeprecatedImageStylePropTypes>, ReturnBoolType>;
 declare type StyleAttributesType = BoolifiedDeprecatedViewStylePropTypes & BoolifiedDeprecatedTextStylePropTypes & BoolifiedDeprecatedImageStylePropTypes & {
   transform: Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

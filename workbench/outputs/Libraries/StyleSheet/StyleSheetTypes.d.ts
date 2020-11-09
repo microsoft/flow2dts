@@ -547,7 +547,7 @@ declare type ____ShadowStyle_Internal = Readonly<
 }>;
 declare type ____ViewStyle_Internal = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$Exact & $Exact & $Exact & {
+$Exact<____LayoutStyle_Internal> & $Exact<____ShadowStyle_Internal> & $Exact<____TransformStyle_Internal> & {
   backfaceVisibility?: "visible" | "hidden";
   backgroundColor?: ____ColorValue_Internal;
   borderColor?: ____ColorValue_Internal;
@@ -580,7 +580,7 @@ $Exact & $Exact & $Exact & {
 declare type ____FontWeight_Internal = "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
 declare type ____TextStyle_Internal = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$Exact & {
+$Exact<____ViewStyle_Internal> & {
   color?: ____ColorValue_Internal;
   fontFamily?: string;
   fontSize?: number;
@@ -608,25 +608,25 @@ $Exact & {
 }>;
 declare type ____ImageStyle_Internal = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$Exact & {
+$Exact<____ViewStyle_Internal> & {
   resizeMode?: "contain" | "cover" | "stretch" | "center" | "repeat";
   tintColor?: ____ColorValue_Internal;
   overlayColor?: string;
 }>;
-declare type ____DangerouslyImpreciseStyle_Internal = $Exact & {
+declare type ____DangerouslyImpreciseStyle_Internal = $Exact<____TextStyle_Internal> & {
   readonly resizeMode?: "contain" | "cover" | "stretch" | "center" | "repeat";
   readonly tintColor?: ____ColorValue_Internal;
   readonly overlayColor?: string;
 };
-declare type GenericStyleProp
+declare type GenericStyleProp<
 /*[FLOW2DTS - Warning] Covariance and contravariance are ignored.*/
-<T> = null | void | T | false | "" | ReadonlyArray<GenericStyleProp>;
-declare type ____DangerouslyImpreciseStyleProp_Internal = GenericStyleProp;
-declare type ____ViewStyleProp_Internal = GenericStyleProp;
-declare type ____TextStyleProp_Internal = GenericStyleProp;
-declare type ____ImageStyleProp_Internal = GenericStyleProp;
+T> = null | void | T | false | "" | ReadonlyArray<GenericStyleProp<T>>;
+declare type ____DangerouslyImpreciseStyleProp_Internal = GenericStyleProp<$Shape<____DangerouslyImpreciseStyle_Internal>>;
+declare type ____ViewStyleProp_Internal = GenericStyleProp<Readonly<$Shape<____ViewStyle_Internal>>>;
+declare type ____TextStyleProp_Internal = GenericStyleProp<Readonly<$Shape<____TextStyle_Internal>>>;
+declare type ____ImageStyleProp_Internal = GenericStyleProp<Readonly<$Shape<____ImageStyle_Internal>>>;
 declare type ____Styles_Internal = {
-  readonly [key: string]: $Shape;
+  readonly [key: string]: $Shape<____DangerouslyImpreciseStyle_Internal>;
 };
 export type { ____ColorValue_Internal };
 export type { ColorArrayValue };

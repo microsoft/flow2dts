@@ -177,7 +177,7 @@ declare var PanResponder:
    * typical responder callback pattern (without using `PanResponder`), but
    * avoids more dispatches than necessary.
    */
-  _updateGestureStateOnMove: (gestureState: GestureState, touchHistory: $PropertyType) => void;
+  _updateGestureStateOnMove: (gestureState: GestureState, touchHistory: $PropertyType<PressEvent, "touchHistory">) => void;
 
   /**
    * @param {object} config Enhanced versions of all of the responder callbacks
@@ -233,7 +233,7 @@ declare var PanResponder:
     };
   };
 };
-declare type PanResponderInstance = $Call;
+declare type PanResponderInstance = $Call<$PropertyType<$TypeOf<typeof PanResponder>, "create">, PanResponderConfig>;
 export type { GestureState };
 export type { PanResponderInstance };
 declare const $f2tExportDefault: $TypeOf<typeof PanResponder>;

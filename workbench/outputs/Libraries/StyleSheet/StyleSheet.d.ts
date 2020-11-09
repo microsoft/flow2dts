@@ -1,4 +1,5 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $Keys } from "utility-types";
 // @flow
 declare var flatten: $TypeOf<typeof $1>;
 import $1 from "./flattenStyle";
@@ -17,9 +18,9 @@ declare type ViewStyleProp = ____ViewStyleProp_Internal;
 declare type TextStyleProp = ____TextStyleProp_Internal;
 declare type ImageStyleProp = ____ImageStyleProp_Internal;
 declare type DangerouslyImpreciseStyleProp = ____DangerouslyImpreciseStyleProp_Internal;
-declare type TypeForStyleKey
+declare type TypeForStyleKey<
 /*[FLOW2DTS - Warning] Covariance and contravariance are ignored.*/
-<key extends keyof ____DangerouslyImpreciseStyle_Internal> = $ElementType;
+key extends $Keys<____DangerouslyImpreciseStyle_Internal>> = $ElementType<____DangerouslyImpreciseStyle_Internal, key>;
 declare type ViewStyle = ____ViewStyle_Internal;
 declare type TextStyle = ____TextStyle_Internal;
 declare type ImageStyle = ____ImageStyle_Internal;
@@ -152,8 +153,8 @@ declare const $f2tExportDefault:
   /**
    * Creates a StyleSheet style reference from the given object.
    */
-  create:
+  create: <
   /*[FLOW2DTS - Warning] Covariance and contravariance are ignored.*/
-  <S extends ____Styles_Internal>(obj: S) => Readonly<S>;
+  S extends ____Styles_Internal>(obj: S) => Readonly<S>;
 };
 export default $f2tExportDefault;

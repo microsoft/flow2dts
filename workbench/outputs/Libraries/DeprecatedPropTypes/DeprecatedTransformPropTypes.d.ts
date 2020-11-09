@@ -5,7 +5,31 @@ declare var DecomposedMatrixPropType: (props: Object, propName: string, componen
 declare var DeprecatedTransformPropTypes:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  transform: React$PropType$Primitive;
+  transform: React$PropType$Primitive<({
+    perspective?: number;
+  } | {
+    rotate?: string;
+  } | {
+    rotateX?: string;
+  } | {
+    rotateY?: string;
+  } | {
+    rotateZ?: string;
+  } | {
+    scale?: number;
+  } | {
+    scaleX?: number;
+  } | {
+    scaleY?: number;
+  } | {
+    translateX?: number;
+  } | {
+    translateY?: number;
+  } | {
+    skewX?: string;
+  } | {
+    skewY?: string;
+  })[]>;
   transformMatrix: $TypeOf<typeof TransformMatrixPropType>;
   decomposedMatrix: $TypeOf<typeof DecomposedMatrixPropType>;
   scaleX: ReactPropsCheckType;

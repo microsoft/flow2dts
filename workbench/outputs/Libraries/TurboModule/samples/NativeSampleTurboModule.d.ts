@@ -19,7 +19,7 @@ interface Spec extends TurboModule {
   readonly getRootTag: (arg: RootTag) => RootTag;
   readonly getValue: (x: number, y: string, z: Object) => Object;
   readonly getValueWithCallback: (callback: (value: string) => void) => void;
-  readonly getValueWithPromise: (error: boolean) => Promise;
+  readonly getValueWithPromise: (error: boolean) => Promise<string>;
 }
 export type { Spec };
 declare export default Spec;

@@ -12,5 +12,7 @@ declare type Options =
 };
 declare function unstable_setLogListeners(listeners: null | undefined | LogListeners) => void;
 declare var deepDiffer: (one: any, two: any, maxDepthOrOptions?: Options | number, maybeOptions?: Options) => boolean;
-declare const $f2tExportDefault: $TEMPORARY$module$exports$assign;
+declare const $f2tExportDefault: $TEMPORARY$module$exports$assign<$TypeOf<typeof deepDiffer>, {
+  unstable_setLogListeners: $TypeOf<typeof unstable_setLogListeners>;
+}>;
 export default $f2tExportDefault;

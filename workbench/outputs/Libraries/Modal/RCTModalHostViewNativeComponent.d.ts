@@ -17,14 +17,14 @@ ViewProps & {
   *
   * See https://reactnative.dev/docs/modal.html#animationtype
   */
-  animationType?: WithDefault;
+  animationType?: WithDefault<"none" | "slide" | "fade", "none">;
 
   /**
   * The `presentationStyle` prop controls how the modal appears.
   *
   * See https://reactnative.dev/docs/modal.html#presentationstyle
   */
-  presentationStyle?: WithDefault;
+  presentationStyle?: WithDefault<"fullScreen" | "pageSheet" | "formSheet" | "overFullScreen", "fullScreen">;
 
   /**
   * The `transparent` prop determines whether your modal will fill the
@@ -32,7 +32,7 @@ ViewProps & {
   *
   * See https://reactnative.dev/docs/modal.html#transparent
   */
-  transparent?: WithDefault;
+  transparent?: WithDefault<boolean, false>;
 
   /**
   * The `statusBarTranslucent` prop determines whether your modal should go under
@@ -40,7 +40,7 @@ ViewProps & {
   *
   * See https://reactnative.dev/docs/modal.html#statusBarTranslucent
   */
-  statusBarTranslucent?: WithDefault;
+  statusBarTranslucent?: WithDefault<boolean, false>;
 
   /**
   * The `hardwareAccelerated` prop controls whether to force hardware
@@ -48,7 +48,7 @@ ViewProps & {
   *
   * See https://reactnative.dev/docs/modal.html#hardwareaccelerated
   */
-  hardwareAccelerated?: WithDefault;
+  hardwareAccelerated?: WithDefault<boolean, false>;
 
   /**
   * The `onRequestClose` callback is called when the user taps the hardware
@@ -58,7 +58,7 @@ ViewProps & {
   *
   * See https://reactnative.dev/docs/modal.html#onrequestclose
   */
-  onRequestClose?: null | undefined | DirectEventHandler;
+  onRequestClose?: null | undefined | DirectEventHandler<null>;
 
   /**
   * The `onShow` prop allows passing a function that will be called once the
@@ -66,30 +66,30 @@ ViewProps & {
   *
   * See https://reactnative.dev/docs/modal.html#onshow
   */
-  onShow?: null | undefined | DirectEventHandler;
+  onShow?: null | undefined | DirectEventHandler<null>;
 
   /**
   * Deprecated. Use the `animationType` prop instead.
   */
-  animated?: WithDefault;
+  animated?: WithDefault<boolean, false>;
 
   /**
   * The `supportedOrientations` prop allows the modal to be rotated to any of the specified orientations.
   *
   * See https://reactnative.dev/docs/modal.html#supportedorientations
   */
-  supportedOrientations?: WithDefault;
+  supportedOrientations?: WithDefault<ReadonlyArray<"portrait" | "portrait-upside-down" | "landscape" | "landscape-left" | "landscape-right">, "portrait">;
 
   /**
   * The `onOrientationChange` callback is called when the orientation changes while the modal is being displayed.
   *
   * See https://reactnative.dev/docs/modal.html#onorientationchange
   */
-  onOrientationChange?: null | undefined | DirectEventHandler;
+  onOrientationChange?: null | undefined | DirectEventHandler<OrientationChangeEvent>;
 
   /**
   * The `identifier` is the unique number for identifying Modal components.
   */
-  identifier?: WithDefault;
+  identifier?: WithDefault<Int32, 0>;
 }>;
-declare export default HostComponent;
+declare export default HostComponent<NativeProps>;

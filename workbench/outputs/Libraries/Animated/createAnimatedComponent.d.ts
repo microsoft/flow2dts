@@ -6,10 +6,12 @@ declare var React: $TypeOf<typeof $1>;
 import $1 from "react";
 declare type AnimatedComponentType<Props extends {
   readonly [$f2tKey: string]: unknown;
-}, Instance> = React.AbstractComponent<$ObjMap, Instance>;
+}, Instance> = React.AbstractComponent<$ObjMap<Props & Readonly<{
+  passthroughAnimatedPropExplicitValues?: React.ElementConfig<$TypeOf<typeof View>>;
+}>, () => any>, Instance>;
 declare function createAnimatedComponent<Props extends {
   readonly [$f2tKey: string]: unknown;
-}, Instance>(Component: React.AbstractComponent<Props, Instance>) => AnimatedComponentType;
+}, Instance>(Component: React.AbstractComponent<Props, Instance>) => AnimatedComponentType<Props, Instance>;
 export type { AnimatedComponentType };
 declare const $f2tExportDefault: $TypeOf<typeof createAnimatedComponent>;
 export default $f2tExportDefault;

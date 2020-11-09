@@ -24,21 +24,21 @@ declare class Linking extends $1 {
    *
    * See https://reactnative.dev/docs/linking.html#openurl
    */
-  openURL: (url: string) => Promise;
+  openURL: (url: string) => Promise<void>;
 
   /**
    * Determine whether or not an installed app can handle a given URL.
    *
    * See https://reactnative.dev/docs/linking.html#canopenurl
    */
-  canOpenURL: (url: string) => Promise;
+  canOpenURL: (url: string) => Promise<boolean>;
 
   /**
    * Open app settings.
    *
    * See https://reactnative.dev/docs/linking.html#opensettings
    */
-  openSettings: () => Promise;
+  openSettings: () => Promise<void>;
 
   /**
    * If the app launch was triggered by an app link,
@@ -46,7 +46,7 @@ declare class Linking extends $1 {
    *
    * See https://reactnative.dev/docs/linking.html#getinitialurl
    */
-  getInitialURL: () => Promise;
+  getInitialURL: () => Promise<null | undefined | string>;
 
   /*
    * Launch an Android intent with extras (optional)
@@ -58,7 +58,7 @@ declare class Linking extends $1 {
   sendIntent: (action: string, extras?: {
     key: string;
     value: string | number | boolean;
-  }[]) => Promise;
+  }[]) => Promise<void>;
 }
 declare var $1: $TypeOf<typeof NativeEventEmitter>;
 declare const $f2tExportDefault: Linking;

@@ -3,7 +3,7 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 declare var React: $TypeOf<typeof $1>;
 import $1 from "react";
 import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
-declare type ComponentRef = React.ElementRef<HostComponent>;
+declare type ComponentRef = React.ElementRef<HostComponent<unknown>>;
 declare function currentlyFocusedInput() => null | undefined | ComponentRef;
 declare function currentlyFocusedField() => null | undefined | number;
 declare function focusInput(textField: null | undefined | ComponentRef) => void;

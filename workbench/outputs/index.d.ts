@@ -178,7 +178,7 @@ declare type DeprecatedPointPropType = $TypeOf<typeof DeprecatedPointPropType$f2
 import DeprecatedViewPropTypes$f2tTypeof from "./Libraries/DeprecatedPropTypes/DeprecatedViewPropTypes";
 declare type DeprecatedViewPropTypes = $TypeOf<typeof DeprecatedViewPropTypes$f2tTypeof>;
 import { HostComponent as _HostComponentInternal } from "./Libraries/Renderer/shims/ReactNativeTypes";
-declare type HostComponent<T> = _HostComponentInternal;
+declare type HostComponent<T> = _HostComponentInternal<T>;
 export type { HostComponent };
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -232,7 +232,7 @@ declare const $f2tExportDefault:
   DevSettings: () => DevSettings;
   Dimensions: () => Dimensions;
   Easing: () => Easing;
-  findNodeHandle: () => $PropertyType;
+  findNodeHandle: () => $PropertyType<ReactNative, "findNodeHandle">;
   I18nManager: () => I18nManager;
   ImagePickerIOS: () => ImagePickerIOS;
   InteractionManager: () => InteractionManager;
@@ -255,7 +255,7 @@ declare const $f2tExportDefault:
   ToastAndroid: () => ToastAndroid;
   TurboModuleRegistry: () => TurboModuleRegistry;
   UIManager: () => UIManager;
-  unstable_batchedUpdates: () => $PropertyType;
+  unstable_batchedUpdates: () => $PropertyType<ReactNative, "unstable_batchedUpdates">;
   useColorScheme: () => useColorScheme;
   useWindowDimensions: () => useWindowDimensions;
   UTFSequence: () => UTFSequence;
@@ -268,7 +268,7 @@ declare const $f2tExportDefault:
   Platform: () => Platform;
   PlatformColor: () => PlatformColor;
   processColor: () => processColor;
-  requireNativeComponent: () => <T>(uiViewClassName: string) => HostComponent;
+  requireNativeComponent: () => <T>(uiViewClassName: string) => HostComponent<T>;
   unstable_RootTagContext: () => RootTagContext;
   unstable_enableLogBox: () => () => void;
   ColorPropType: () => DeprecatedColorPropType;

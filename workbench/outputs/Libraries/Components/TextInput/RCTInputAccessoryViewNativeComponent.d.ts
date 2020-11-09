@@ -7,4 +7,4 @@ declare type NativeProps = Readonly<
 ViewProps & {
   backgroundColor?: null | undefined | ColorValue;
 }>;
-declare export default HostComponent;
+declare export default HostComponent<NativeProps>;

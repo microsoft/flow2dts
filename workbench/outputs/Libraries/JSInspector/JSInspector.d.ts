@@ -4,7 +4,7 @@ import { EventSender } from "./InspectorAgent";
 interface Agent {
   constructor: (eventSender: EventSender) => void;
 }
-declare type AgentClass = Class & {
+declare type AgentClass = Class<Agent> & {
   DOMAIN: string;
 };
 declare var JSInspector:

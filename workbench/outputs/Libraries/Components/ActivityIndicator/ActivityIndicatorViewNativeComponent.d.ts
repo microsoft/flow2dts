@@ -11,14 +11,14 @@ ViewProps & {
   *
   * See https://reactnative.dev/docs/activityindicator.html#hideswhenstopped
   */
-  hidesWhenStopped?: WithDefault;
+  hidesWhenStopped?: WithDefault<boolean, false>;
 
   /**
   * Whether to show the indicator (true, the default) or hide it (false).
   *
   * See https://reactnative.dev/docs/activityindicator.html#animating
   */
-  animating?: WithDefault;
+  animating?: WithDefault<boolean, false>;
 
   /**
   * The foreground color of the spinner (default is gray).
@@ -33,6 +33,6 @@ ViewProps & {
   *
   * See https://reactnative.dev/docs/activityindicator.html#size
   */
-  size?: WithDefault;
+  size?: WithDefault<"small" | "large", "small">;
 }>;
-declare export default HostComponent;
+declare export default HostComponent<NativeProps>;

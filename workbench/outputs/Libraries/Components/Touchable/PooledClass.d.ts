@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type Pooler = any;
-declare var addPoolingTo: <T>(CopyConstructor: Class, pooler: Pooler) => Class & {
+declare var addPoolingTo: <T>(CopyConstructor: Class<T>, pooler: Pooler) => Class<T> & {
   getPooled: (...args: ReadonlyArray<unknown>) =>
   /* arguments of the constructor */
   T;

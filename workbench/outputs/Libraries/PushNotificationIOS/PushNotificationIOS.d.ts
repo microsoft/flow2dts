@@ -1,4 +1,5 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $Keys } from "utility-types";
 // @flow
 declare type ContentAvailable = 1 | null | void;
 declare type FetchResult = {
@@ -6,7 +7,7 @@ declare type FetchResult = {
   NoData: string;
   ResultFailed: string;
 };
-declare type PushNotificationEventName = keyof {
+declare type PushNotificationEventName = $Keys<{
   /**
   * Fired when a remote notification is received. The handler will be invoked
   * with an instance of `PushNotificationIOS`.
@@ -31,7 +32,7 @@ declare type PushNotificationEventName = keyof {
   * handler will be invoked with {message: string, code: number, details: any}.
   */
   registrationError: string;
-};
+}>;
 declare class PushNotificationIOS {
   FetchResult: FetchResult;
   presentLocalNotification: (details: Object) => void;
@@ -50,10 +51,14 @@ declare class PushNotificationIOS {
     alert?: boolean;
     badge?: boolean;
     sound?: boolean;
-  }) => Promise;
+  }) => Promise<{
+    alert: boolean;
+    badge: boolean;
+    sound: boolean;
+  }>;
   abandonPermissions: () => void;
   checkPermissions: (callback: Function) => void;
-  getInitialNotification: () => Promise;
+  getInitialNotification: () => Promise<null | undefined | PushNotificationIOS>;
 
   /**
    * You will never need to instantiate `PushNotificationIOS` yourself.

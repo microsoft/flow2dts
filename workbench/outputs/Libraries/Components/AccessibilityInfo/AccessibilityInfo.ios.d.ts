@@ -1,6 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $Keys } from "utility-types";
 // @flow
-declare type ChangeEventName = keyof {
+declare type ChangeEventName = $Keys<{
   announcementFinished: string;
   boldTextChanged: string;
   change: string;
@@ -9,7 +10,7 @@ declare type ChangeEventName = keyof {
   reduceMotionChanged: string;
   reduceTransparencyChanged: string;
   screenReaderChanged: string;
-};
+}>;
 declare var AccessibilityInfo:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
@@ -21,7 +22,7 @@ declare var AccessibilityInfo:
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#isBoldTextEnabled
    */
-  isBoldTextEnabled: () => Promise;
+  isBoldTextEnabled: () => Promise<boolean>;
 
   /**
    * Query whether grayscale is currently enabled.
@@ -31,7 +32,7 @@ declare var AccessibilityInfo:
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#isGrayscaleEnabled
    */
-  isGrayscaleEnabled: () => Promise;
+  isGrayscaleEnabled: () => Promise<boolean>;
 
   /**
    * Query whether inverted colors are currently enabled.
@@ -41,7 +42,7 @@ declare var AccessibilityInfo:
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#isInvertColorsEnabled
    */
-  isInvertColorsEnabled: () => Promise;
+  isInvertColorsEnabled: () => Promise<boolean>;
 
   /**
    * Query whether reduced motion is currently enabled.
@@ -51,7 +52,7 @@ declare var AccessibilityInfo:
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#isReduceMotionEnabled
    */
-  isReduceMotionEnabled: () => Promise;
+  isReduceMotionEnabled: () => Promise<boolean>;
 
   /**
    * Query whether reduced transparency is currently enabled.
@@ -61,7 +62,7 @@ declare var AccessibilityInfo:
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#isReduceTransparencyEnabled
    */
-  isReduceTransparencyEnabled: () => Promise;
+  isReduceTransparencyEnabled: () => Promise<boolean>;
 
   /**
    * Query whether a screen reader is currently enabled.
@@ -71,7 +72,7 @@ declare var AccessibilityInfo:
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#isScreenReaderEnabled
    */
-  isScreenReaderEnabled: () => Promise;
+  isScreenReaderEnabled: () => Promise<boolean>;
   fetch: () => $FlowFixMe;
 
   /**
