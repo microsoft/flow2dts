@@ -42,7 +42,7 @@ declare type Props = Readonly<
   * Either children or a render prop that receives a boolean reflecting whether
   * the component is currently pressed.
   */
-  children: React.Node | (state: StateCallbackType) => React.Node;
+  children: React.Node | ((state: StateCallbackType) => React.Node);
 
   /**
   * Duration (in milliseconds) from `onPressIn` before `onLongPress` is called.
@@ -94,7 +94,7 @@ declare type Props = Readonly<
   * Either view styles or a function that receives a boolean reflecting whether
   * the component is currently pressed and returns view styles.
   */
-  style?: ViewStyleProp | (state: StateCallbackType) => ViewStyleProp;
+  style?: ViewStyleProp | ((state: StateCallbackType) => ViewStyleProp);
 
   /**
   * Identifier used to find this view in tests.

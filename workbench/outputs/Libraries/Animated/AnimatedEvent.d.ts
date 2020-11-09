@@ -19,7 +19,7 @@ declare class AnimatedEvent {
   __removeListener: (callback: Function) => void;
   __attach: (viewRef: any, eventName: string) => void;
   __detach: (viewTag: any, eventName: string) => void;
-  __getHandler: () => any | (...args: any) => void;
+  __getHandler: () => any | ((...args: any) => void);
 }
 export type { Mapping };
 export type { EventConfig };
