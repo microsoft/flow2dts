@@ -8,7 +8,7 @@
     "test": "yarn workspace flow2dts-flow-types-polyfill test && yarn workspace flow2dts test",
     "start": "rimraf ./workbench/outputs && yarn workbench",
     "workbench": "yarn workbench:ios && yarn workbench:android",
-    "workbench:_": "yarn workspace flow2dts cli --rootDir ../../workbench/inputs \"../../workbench/inputs/{index,Libraries/**/*}.js.flow\" \"!../../workbench/inputs/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow\"",
+    "workbench:_": "yarn workspace flow2dts cli --rootDir ../../workbench/inputs \"../../workbench/inputs/{index,Libraries/**/*}.js.flow\" \"!../../workbench/inputs/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow\" \"!../../workbench/inputs/Libraries/{DeprecatedPropTypes,Inspector,JSInspector,NewAppScreen,ReactPrivate}/*.js.flow\" \"!../../workbench/inputs/Libraries/Animated/AnimatedWeb.js.flow\"",
     "workbench:ios": "yarn workbench:_ --platform ios --outDir ../../workbench/outputs/ios",
     "workbench:android": "yarn workbench:_ --platform android --outDir ../../workbench/outputs/android",
     "prettify": "prettier --write \"packages/**/*.ts\" && prettier --write \"packages/**/*.d.ts\" && prettier --write \"packages/**/*.js\"",
