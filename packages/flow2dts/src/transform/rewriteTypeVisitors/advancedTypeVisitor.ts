@@ -11,21 +11,33 @@ export const advancedTypeVisitor: Visitor<State> = {
   },
   UnionTypeAnnotation: {
     exit(path) {
-      path.node.types.forEach(assertTSType)
-      path.replaceWith(t.tsUnionType(<t.TSType[]>(<unknown>path.node.types)))
+      const types = path.node.types.map((type: any) => {
+        assertTSType(type)
+        return t.isTSFunctionType(type) ? t.tsParenthesizedType(type) : type
+      })
+      path.replaceWith(t.tsUnionType(types))
     },
   },
   IntersectionTypeAnnotation: {
     exit(path) {
-      path.node.types.forEach(assertTSType)
-      path.replaceWith(t.tsIntersectionType(<t.TSType[]>(<unknown>path.node.types)))
+      const types = path.node.types.map((type: any) => {
+        assertTSType(type)
+        return t.isTSFunctionType(type) ? t.tsParenthesizedType(type) : type
+      })
+      path.replaceWith(t.tsIntersectionType(types))
     },
   },
   NullableTypeAnnotation: {
     exit(path) {
-      const type = path.node.typeAnnotation
+      const type = path.node.typeAnnotation as any
       assertTSType(type)
-      path.replaceWith(t.tsUnionType([t.tsNullKeyword(), t.tsUndefinedKeyword(), type]))
+      path.replaceWith(
+        t.tsUnionType([
+          t.tsNullKeyword(),
+          t.tsUndefinedKeyword(),
+          t.isTSFunctionType(type) ? t.tsParenthesizedType(type) : type,
+        ])
+      )
     },
   },
   FunctionTypeAnnotation: {
@@ -49,16 +61,7 @@ export const advancedTypeVisitor: Visitor<State> = {
         args.push(rarg)
       }
 
-      const functionType = t.tsFunctionType(typeParameters, args, t.tsTypeAnnotation(returnType))
-
-      path.replaceWith(
-        !path.parent ||
-          t.isUnionTypeAnnotation(path.parent) ||
-          t.isIntersectionTypeAnnotation(path.parent) ||
-          t.isArrayTypeAnnotation(path.parent)
-          ? t.tsParenthesizedType(functionType)
-          : functionType
-      )
+      path.replaceWith(t.tsFunctionType(typeParameters, args, t.tsTypeAnnotation(returnType)))
     },
   },
 }
