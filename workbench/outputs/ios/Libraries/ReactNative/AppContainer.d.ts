@@ -1,0 +1,1 @@
+[FLOW2DTS - Error] /Libraries/ReactNative/AppContainer.js.flow: Expected type "Identifier" with option {}, but instead got "TSQualifiedName".

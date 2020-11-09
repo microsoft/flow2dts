@@ -1,0 +1,1 @@
+[FLOW2DTS - Error] /Libraries/Components/ScrollView/ScrollViewStickyHeader.js.flow: Expected type "Identifier" with option {}, but instead got "TSQualifiedName".

@@ -1,0 +1,1 @@
+[FLOW2DTS - Error] /Libraries/Lists/VirtualizedSectionList.js.flow: Expected type "Identifier" with option {}, but instead got "TSQualifiedName".
