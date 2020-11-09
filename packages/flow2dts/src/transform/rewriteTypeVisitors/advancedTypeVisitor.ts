@@ -2,14 +2,6 @@ import { Visitor, types as t } from "@babel/core"
 import { State } from "../state"
 import { assertTSType, nameForParameter, nameForRestParameter } from "../utilities"
 
-function convertQId(input: t.Identifier | t.QualifiedTypeIdentifier): t.Identifier | t.TSQualifiedName {
-  if (input.type === "Identifier") {
-    return t.identifier(input.name)
-  } else {
-    return t.tsQualifiedName(convertQId(input.qualification), t.identifier(input.id.name))
-  }
-}
-
 export const advancedTypeVisitor: Visitor<State> = {
   TupleTypeAnnotation: {
     exit(path) {
@@ -34,53 +26,6 @@ export const advancedTypeVisitor: Visitor<State> = {
       const type = path.node.typeAnnotation
       assertTSType(type)
       path.replaceWith(t.tsUnionType([t.tsNullKeyword(), t.tsUndefinedKeyword(), type]))
-    },
-  },
-  GenericTypeAnnotation: {
-    exit(path) {
-      if (path.node.id.type === "Identifier") {
-        const name = path.node.id.name
-        const args = path.node.typeParameters
-        if (name === "undefined") {
-          path.replaceWith(t.tsUndefinedKeyword())
-        } else if (name === "Array" && args) {
-          path.replaceWith(t.tsArrayType(<t.TSType>(<unknown>args.params[0])))
-        } else if (name === "$ReadOnlyArray" && args) {
-          path.replaceWith(
-            t.tsTypeReference(
-              t.identifier("ReadonlyArray"),
-              t.tsTypeParameterInstantiation([<t.TSType>(<unknown>args.params[0])])
-            )
-          )
-        } else if (name === "$ReadOnly" && args) {
-          path.replaceWith(
-            t.tsTypeReference(
-              t.identifier("Readonly"),
-              t.tsTypeParameterInstantiation([<t.TSType>(<unknown>args.params[0])])
-            )
-          )
-        } else if (name === "$Keys" && args) {
-          const sourceType = args.params[0]
-          assertTSType(sourceType)
-          const keyofOperator = t.tsTypeOperator(sourceType)
-          keyofOperator.operator = "keyof" // FIXME: Seems weird to have to define this
-          path.replaceWith(keyofOperator)
-        } else {
-          path.replaceWith(t.tsTypeReference(t.identifier(name)))
-        }
-      } else {
-        if (path.node.typeParameters) {
-          for (const flowType of path.node.typeParameters.params) {
-            assertTSType(flowType)
-          }
-        }
-
-        const qid = convertQId(path.node.id)
-        const args = path.node.typeParameters
-          ? t.tsTypeParameterInstantiation(<t.TSType[]>(<unknown>path.node.typeParameters.params))
-          : undefined
-        path.replaceWith(t.tsTypeReference(qid, args))
-      }
     },
   },
   FunctionTypeAnnotation: {
