@@ -1,5 +1,5 @@
 import { Visitor, types as t } from "@babel/core"
-import { State } from "."
+import { State } from "./state"
 import { assertTSType } from "./utilities"
 
 function convertParameters(

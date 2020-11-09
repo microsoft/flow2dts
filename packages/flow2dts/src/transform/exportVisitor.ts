@@ -1,5 +1,5 @@
 import { Visitor, types as t } from "@babel/core"
-import { State } from "./index"
+import { State } from "./state"
 import { assertTSType, nameForExportDefault } from "./utilities"
 
 export const exportVisitor: Visitor<State> = {

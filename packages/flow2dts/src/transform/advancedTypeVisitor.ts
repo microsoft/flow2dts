@@ -1,5 +1,5 @@
 import { Visitor, types as t } from "@babel/core"
-import { State } from "./index"
+import { State } from "./state"
 import { assertTSType, nameForParameter, nameForRestParameter } from "./utilities"
 
 function convertQId(input: t.Identifier | t.QualifiedTypeIdentifier): t.Identifier | t.TSQualifiedName {

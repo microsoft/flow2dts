@@ -1,5 +1,6 @@
 import { PluginObj, types as t } from "@babel/core"
 
+import { State } from "./state"
 import { primitiveTypeVisitor } from "./primitiveTypeVisitor"
 import { advancedTypeVisitor } from "./advancedTypeVisitor"
 import { objectTypeVisitor } from "./objectTypeVisitor"
@@ -7,10 +8,6 @@ import { declarationVisitor } from "./declarationVisitor"
 import { importVisitor } from "./importVisitor"
 import { typeOperatorVisitor } from "./typeOperatorVisitor"
 import { exportVisitor } from "./exportVisitor"
-
-export interface State {
-  polyfillFlowTypes: Set<"$TypeOf">
-}
 
 export function transform(): PluginObj<State> {
   return {

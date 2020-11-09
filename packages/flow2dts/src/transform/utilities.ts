@@ -1,5 +1,5 @@
 import { types as t } from "@babel/core"
-import { State } from "./index"
+import { State } from "./state"
 
 export const nameForExportDefault = "$f2tExportDefault"
 export const nameForRestParameter = "$f2tRest"
