@@ -13,10 +13,16 @@ export function transform(): PluginObj<State> {
         },
         exit(path, state) {
           /*
-           fix types before declarations because,
-           if they are in the same visitor,
-           when declarations are rewritten,
-           types will be revisitted because TypeScript and Flow shares AST for types.
+           import * as React from "react"
+           declare class AccessibilityManagerTest extends $1<{ ... }> {}
+           declare var $1: typeof React.Component
+
+           In this example,
+           everything looks like $1 will eventually be removed,
+           and $1 is replaced to React.Component in all occurrences.
+           
+           In order to keep these variables exist before handling all types,
+           it is necessary to keep types and declarations in two different visitors.
            */
           path.traverse(rewriteTypeVisitor, state)
           path.traverse(rewriteDeclVisitor, state)
