@@ -17,3 +17,8 @@ class CC {
   c() {}
   d(a: string, b?: ?number, ...c: Array<number>): boolean {}
 }
+
+class CD<T> {
+  static a: string
+  static b: T
+}

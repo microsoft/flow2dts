@@ -17,3 +17,8 @@ declare class CC {
   c(): void
   d(a: string, b?: null | undefined | number, ...c: number[]): boolean
 }
+
+declare class CD<T> {
+  static a: string
+  static b: /*[FLOW2DTS - Warning] This was typed using the `T` type parameter*/ unknown
+}

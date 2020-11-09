@@ -1,5 +1,7 @@
 import { Visitor, types as t } from "@babel/core"
+import { type } from "os"
 import { State } from "../state"
+import { assertTSType } from "../utilities"
 
 export const declarationVisitor: Visitor<State> = {
   VariableDeclaration: {
@@ -23,9 +25,26 @@ export const declarationVisitor: Visitor<State> = {
       })
     },
   },
+  // TODO: ClassPrivateProperty needs to be converted to ClassProperty with `accessibility = private`
   ClassProperty: {
     exit(path) {
       path.node.value = null
+      if (path.node.static) {
+        const node = path.node
+        if (t.isTypeAnnotation(node.typeAnnotation)) {
+          const typeAnnotation = node.typeAnnotation.typeAnnotation as any
+          assertTSType(typeAnnotation)
+          if (t.isTSTypeReference(typeAnnotation)) {
+            path.node.typeAnnotation = t.tsTypeAnnotation(t.tsUnknownKeyword())
+            t.assertIdentifier(typeAnnotation.typeName)
+            t.addComment(
+              path.node.typeAnnotation,
+              "leading",
+              `[FLOW2DTS - Warning] This was typed using the \`${typeAnnotation.typeName.name}\` type parameter`
+            )
+          }
+        }
+      }
     },
   },
   ClassDeclaration: {
