@@ -8,7 +8,7 @@
     "test": "yarn workspace flow2dts-flow-types-polyfill test && yarn workspace flow2dts test",
     "start": "rimraf ./workbench/outputs && yarn workbench \"../../workbench/inputs/{index,Libraries/**/*}.js.flow\"",
     "workbench": "yarn workspace flow2dts cli --rootDir ../../workbench/inputs --outDir ../../workbench/outputs \"!../../workbench/inputs/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow\"",
-    "prettify": "prettier --write src/**/*.ts && prettier --write src/**/*.d.ts && prettier --write src/**/*.js",
+    "prettify": "prettier --write packages/**/src/**/*.ts && prettier --write packages/**/src/**/*.d.ts && prettier --write packages/**/src/**/*.js",
     "postinstall": "patch-package"
   },
   "devDependencies": {
