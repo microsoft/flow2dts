@@ -16,52 +16,43 @@ export const typeReferenceVisitor: Visitor<State> = {
     exit(path, state) {
       if (path.node.id.type === "Identifier") {
         const name = path.node.id.name
-        const args = path.node.typeParameters
+        const typeParameters =
+          path.node.typeParameters === null ? null : ((path.node.typeParameters.params as unknown) as t.TSType[])
+        if (typeParameters) {
+          typeParameters.forEach(assertTSType)
+        }
 
         if (name === "undefined") {
           path.replaceWith(t.tsUndefinedKeyword())
-        } else if (name === "Array" && args) {
-          if (args.params.length !== 1) {
+        } else if (name === "Array" && typeParameters) {
+          if (typeParameters.length !== 1) {
             throw new Error(
               `Array must have exactly one type argument:\r\n${JSON.stringify(path.node.id, undefined, 4)}`
             )
           }
-          path.replaceWith(t.tsArrayType(<t.TSType>(<unknown>args.params[0])))
+          path.replaceWith(t.tsArrayType(typeParameters[0]))
         } else if (name === "$ReadOnlyArray") {
-          if (!args || args.params.length !== 1) {
+          if (!typeParameters || typeParameters.length !== 1) {
             throw new Error(
               `$ReadOnlyArray must have exactly one type argument:\r\n${JSON.stringify(path.node.id, undefined, 4)}`
             )
           }
           path.replaceWith(
-            t.tsTypeReference(
-              t.identifier("ReadonlyArray"),
-              t.tsTypeParameterInstantiation([<t.TSType>(<unknown>args.params[0])])
-            )
+            t.tsTypeReference(t.identifier("ReadonlyArray"), t.tsTypeParameterInstantiation(typeParameters))
           )
         } else if (name === "$ReadOnly") {
-          if (!args || args.params.length !== 1) {
+          if (!typeParameters || typeParameters.length !== 1) {
             throw new Error(
               `$ReadOnly must have exactly one type argument:\r\n${JSON.stringify(path.node.id, undefined, 4)}`
             )
           }
-          path.replaceWith(
-            t.tsTypeReference(
-              t.identifier("Readonly"),
-              t.tsTypeParameterInstantiation([<t.TSType>(<unknown>args.params[0])])
-            )
-          )
+          path.replaceWith(t.tsTypeReference(t.identifier("Readonly"), t.tsTypeParameterInstantiation(typeParameters)))
         } else {
           if (isPolyFilledType(name)) {
             state.polyfillTypes.add(name)
           }
-          if (args && args.params.length > 0) {
-            path.replaceWith(
-              t.tsTypeReference(
-                t.identifier(name),
-                t.tsTypeParameterInstantiation([<t.TSType>(<unknown>args!.params[0])])
-              )
-            )
+          if (typeParameters && typeParameters.length > 0) {
+            path.replaceWith(t.tsTypeReference(t.identifier(name), t.tsTypeParameterInstantiation(typeParameters)))
           } else {
             path.replaceWith(t.tsTypeReference(t.identifier(name)))
           }

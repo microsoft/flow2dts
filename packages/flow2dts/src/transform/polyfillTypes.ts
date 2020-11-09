@@ -2,7 +2,7 @@ import { types as t } from "@babel/core"
 
 const BRIDGING_TYPES = ["$TypeOf"] as const
 const FLOW_UTILITY_TYPES_LOCAL = [] as const
-const FLOW_UTILITY_TYPES_UPSTREAM = ["$Keys"] as const
+const FLOW_UTILITY_TYPES_UPSTREAM = ["$Diff", "$Keys"] as const
 
 export const POLYFILL_TYPES = [...BRIDGING_TYPES, ...FLOW_UTILITY_TYPES_LOCAL, ...FLOW_UTILITY_TYPES_UPSTREAM]
 
@@ -23,7 +23,7 @@ export function polyfillTypes(typeNames: Set<typeof POLYFILL_TYPES[number]>) {
     if (importTypes.length > 0) {
       result.push(
         t.importDeclaration(
-          importTypes.map((typeName) => t.importSpecifier(t.identifier(typeName), t.identifier(typeName))),
+          importTypes.sort().map((typeName) => t.importSpecifier(t.identifier(typeName), t.identifier(typeName))),
           t.stringLiteral(packageName)
         )
       )
