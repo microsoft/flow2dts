@@ -112,13 +112,4 @@ export const objectTypeVisitor: Visitor<State> = {
       }
     },
   },
-  TypeAlias: {
-    exit(path) {
-      const { id, typeParameters, right } = path.node
-      assertTSType(right)
-      const newAst = t.tsTypeAliasDeclaration(id, undefined, right)
-      newAst.declare = true
-      path.replaceWith(newAst)
-    },
-  },
 }
