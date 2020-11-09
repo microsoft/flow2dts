@@ -1,6 +1,6 @@
 import { Visitor, types as t } from "@babel/core"
-import { State } from "./state"
-import { wrappedTypeOf } from "./utilities"
+import { State } from "../state"
+import { wrappedTypeOf } from "../utilities"
 
 export const typeOperatorVisitor: Visitor<State> = {
   TypeofTypeAnnotation: {

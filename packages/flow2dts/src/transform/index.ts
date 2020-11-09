@@ -1,13 +1,7 @@
 import { PluginObj, types as t } from "@babel/core"
-
 import { State } from "./state"
-import { primitiveTypeVisitor } from "./primitiveTypeVisitor"
-import { advancedTypeVisitor } from "./advancedTypeVisitor"
-import { objectTypeVisitor } from "./objectTypeVisitor"
-import { declarationVisitor } from "./declarationVisitor"
-import { importVisitor } from "./importVisitor"
-import { typeOperatorVisitor } from "./typeOperatorVisitor"
-import { exportVisitor } from "./exportVisitor"
+import { rewriteTypeVisitor } from "./rewriteTypeVisitors"
+import { rewriteDeclVisitor } from "./rewriteDeclVisitors"
 
 export function transform(): PluginObj<State> {
   return {
@@ -18,6 +12,9 @@ export function transform(): PluginObj<State> {
           state.polyfillFlowTypes = new Set()
         },
         exit(path, state) {
+          path.traverse(rewriteTypeVisitor, state)
+          path.traverse(rewriteDeclVisitor, state)
+
           if (state.polyfillFlowTypes.size > 0) {
             path.node.body.unshift(
               t.importDeclaration(
@@ -30,13 +27,6 @@ export function transform(): PluginObj<State> {
           }
         },
       },
-      ...primitiveTypeVisitor,
-      ...advancedTypeVisitor,
-      ...objectTypeVisitor,
-      ...declarationVisitor,
-      ...importVisitor,
-      ...typeOperatorVisitor,
-      ...exportVisitor,
     },
   }
 }

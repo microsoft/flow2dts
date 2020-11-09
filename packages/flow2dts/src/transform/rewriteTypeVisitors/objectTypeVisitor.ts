@@ -1,6 +1,6 @@
 import { Visitor, types as t } from "@babel/core"
-import { State } from "./state"
-import { assertTSType, assertTSTypeElement, nameForTypeIndexerKey } from "./utilities"
+import { State } from "../state"
+import { assertTSType, assertTSTypeElement, nameForTypeIndexerKey } from "../utilities"
 
 export const objectTypeVisitor: Visitor<State> = {
   ObjectTypeIndexer: {

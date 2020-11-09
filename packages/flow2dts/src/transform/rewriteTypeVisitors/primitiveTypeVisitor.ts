@@ -1,6 +1,6 @@
 import { Visitor, types as t } from "@babel/core"
-import { State } from "./state"
-import { assertTSType } from "./utilities"
+import { State } from "../state"
+import { assertTSType } from "../utilities"
 
 export const primitiveTypeVisitor: Visitor<State> = {
   AnyTypeAnnotation: {

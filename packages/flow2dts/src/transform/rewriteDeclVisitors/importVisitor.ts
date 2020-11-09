@@ -1,6 +1,6 @@
 import { Visitor, types as t } from "@babel/core"
-import { State } from "./state"
-import { nameForImportTypeof, wrappedTypeOf } from "./utilities"
+import { State } from "../state"
+import { nameForImportTypeof, wrappedTypeOf } from "../utilities"
 
 export const importVisitor: Visitor<State> = {
   ImportDeclaration: {
