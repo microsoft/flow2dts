@@ -31,6 +31,22 @@ function convertParameters(
 }
 
 export const functionVisitor: Visitor<State> = {
+  DeclareFunction: {
+    exit(path) {
+      const id = path.node.id
+      t.assertTypeAnnotation(id.typeAnnotation)
+      const functionType = id.typeAnnotation.typeAnnotation as any
+      t.assertTSFunctionType(functionType)
+      const declareFunction = t.tsDeclareFunction(
+        id,
+        functionType.typeParameters,
+        functionType.parameters,
+        functionType.typeAnnotation
+      )
+      declareFunction.declare = true // TODO: Seems superfluous to have to provide this
+      path.replaceWith(declareFunction)
+    },
+  },
   FunctionDeclaration: {
     exit(path) {
       const { id, returnType, params, typeParameters } = path.node

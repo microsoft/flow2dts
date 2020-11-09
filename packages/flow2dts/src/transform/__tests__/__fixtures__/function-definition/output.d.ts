@@ -1,2 +1,3 @@
-declare function a(): void
-declare function b(x: string, y?: number, ...z: number[]): boolean
+declare function a<X>(arg: string): void
+declare function b(): void
+declare function c(x: string, y?: number, ...z: number[]): boolean
