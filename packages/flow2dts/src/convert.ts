@@ -20,15 +20,7 @@ function fixPathInOutput(outData: string): string {
   return lines.join("\n")
 }
 
-export async function convert({
-  rootDir,
-  outDir,
-  filename,
-}: {
-  rootDir: string
-  outDir: string
-  filename: string
-}): Promise<[boolean, string]> {
+export async function convert({ filename, outFilename }: { filename: string; outFilename: string }) {
   let success = false
   let outData: string
   try {
@@ -44,8 +36,7 @@ export async function convert({
   } catch (e: unknown) {
     outData = `[FLOW2DTS - Error] ${stripAnsi((e as Error).message)}`
   }
-  const outFilename = path.join(outDir, path.relative(rootDir, filename)).replace(/\.js\.flow$/, ".d.ts")
   await fs.promises.mkdir(path.dirname(outFilename), { recursive: true })
   await fs.promises.writeFile(outFilename, fixPathInOutput(outData), "utf8")
-  return [success, outFilename]
+  return success
 }
