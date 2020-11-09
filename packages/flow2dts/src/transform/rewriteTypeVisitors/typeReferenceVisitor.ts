@@ -1,6 +1,7 @@
 import { Visitor, types as t } from "@babel/core"
+import { isPolyFilledType } from "../polyfillTypes"
 import { State } from "../state"
-import { assertTSType, nameForParameter, nameForRestParameter } from "../utilities"
+import { assertTSType } from "../utilities"
 
 function convertQID(input: t.Identifier | t.QualifiedTypeIdentifier): t.Identifier | t.TSQualifiedName {
   if (input.type === "Identifier") {
@@ -12,7 +13,7 @@ function convertQID(input: t.Identifier | t.QualifiedTypeIdentifier): t.Identifi
 
 export const typeReferenceVisitor: Visitor<State> = {
   GenericTypeAnnotation: {
-    exit(path) {
+    exit(path, state) {
       if (path.node.id.type === "Identifier") {
         const name = path.node.id.name
         const args = path.node.typeParameters
@@ -50,19 +51,20 @@ export const typeReferenceVisitor: Visitor<State> = {
               t.tsTypeParameterInstantiation([<t.TSType>(<unknown>args.params[0])])
             )
           )
-        } else if (name === "$Keys") {
-          if (!args || args.params.length !== 1) {
-            throw new Error(
-              `$Keys must have exactly one type argument:\r\n${JSON.stringify(path.node.id, undefined, 4)}`
-            )
-          }
-          const sourceType = args.params[0]
-          assertTSType(sourceType)
-          const keyofOperator = t.tsTypeOperator(sourceType)
-          keyofOperator.operator = "keyof" // FIXME: Seems weird to have to define this
-          path.replaceWith(keyofOperator)
         } else {
-          path.replaceWith(t.tsTypeReference(t.identifier(name)))
+          if (isPolyFilledType(name)) {
+            state.polyfillTypes.add(name)
+          }
+          if (args && args.params.length > 0) {
+            path.replaceWith(
+              t.tsTypeReference(
+                t.identifier(name),
+                t.tsTypeParameterInstantiation([<t.TSType>(<unknown>args!.params[0])])
+              )
+            )
+          } else {
+            path.replaceWith(t.tsTypeReference(t.identifier(name)))
+          }
         }
       } else {
         if (path.node.typeParameters) {

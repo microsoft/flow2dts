@@ -17,7 +17,6 @@ test case todo:
   https://github.com/alloy/flow2dts/issues/4
   typeof A.B (not it fails because of the assertion)
   qualified name everywhere
-  static members
   utility types: https://flow.org/en/docs/types/utilities/
 */
 

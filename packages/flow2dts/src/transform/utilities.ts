@@ -28,6 +28,6 @@ export function assertTSTypeAnnotation(node: t.Node | null | undefined): asserts
 }
 
 export function wrappedTypeOf(id: t.Identifier, state: State) {
-  state.polyfillFlowTypes.add("$TypeOf")
+  state.polyfillTypes.add("$TypeOf")
   return t.tsTypeReference(t.identifier("$TypeOf"), t.tsTypeParameterInstantiation([t.tsTypeQuery(id)]))
 }

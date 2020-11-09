@@ -1,7 +1,8 @@
 import { Visitor, types as t } from "@babel/core"
+import { POLYFILL_TYPES } from "./polyfillTypes"
 
 export interface State {
-  polyfillFlowTypes: Set<"$TypeOf">
+  polyfillTypes: Set<typeof POLYFILL_TYPES[number]>
 }
 
 export function combineVisitorsSafe(...visitors: Visitor<State>[]): Visitor<State> {
