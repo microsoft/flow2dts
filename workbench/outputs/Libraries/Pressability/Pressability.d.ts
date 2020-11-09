@@ -67,53 +67,53 @@ declare type PressabilityConfig = Readonly<
   /**
   * Called after the element loses focus.
   */
-  onBlur?: null | undefined | (event: BlurEvent) => unknown;
+  onBlur?: null | undefined | ((event: BlurEvent) => unknown);
 
   /**
   * Called after the element is focused.
   */
-  onFocus?: null | undefined | (event: FocusEvent) => unknown;
+  onFocus?: null | undefined | ((event: FocusEvent) => unknown);
 
   /**
   * Called when the hover is activated to provide visual feedback.
   */
-  onHoverIn?: null | undefined | (event: MouseEvent) => unknown;
+  onHoverIn?: null | undefined | ((event: MouseEvent) => unknown);
 
   /**
   * Called when the hover is deactivated to undo visual feedback.
   */
-  onHoverOut?: null | undefined | (event: MouseEvent) => unknown;
+  onHoverOut?: null | undefined | ((event: MouseEvent) => unknown);
 
   /**
   * Called when a long press gesture has been triggered.
   */
-  onLongPress?: null | undefined | (event: PressEvent) => unknown;
+  onLongPress?: null | undefined | ((event: PressEvent) => unknown);
 
   /**
   * Called when a press gestute has been triggered.
   */
-  onPress?: null | undefined | (event: PressEvent) => unknown;
+  onPress?: null | undefined | ((event: PressEvent) => unknown);
 
   /**
   * Called when the press is activated to provide visual feedback.
   */
-  onPressIn?: null | undefined | (event: PressEvent) => unknown;
+  onPressIn?: null | undefined | ((event: PressEvent) => unknown);
 
   /**
   * Called when the press location moves. (This should rarely be used.)
   */
-  onPressMove?: null | undefined | (event: PressEvent) => unknown;
+  onPressMove?: null | undefined | ((event: PressEvent) => unknown);
 
   /**
   * Called when the press is deactivated to undo visual feedback.
   */
-  onPressOut?: null | undefined | (event: PressEvent) => unknown;
+  onPressOut?: null | undefined | ((event: PressEvent) => unknown);
 
   /**
   * Returns whether a long press gesture should cancel the press gesture.
   * Defaults to true.
   */
-  onLongPressShouldCancelPress_DEPRECATED?: null | undefined | () => boolean;
+  onLongPressShouldCancelPress_DEPRECATED?: null | undefined | (() => boolean);
 
   /**
   * If `cancelable` is set, this will be ignored.
@@ -121,7 +121,7 @@ declare type PressabilityConfig = Readonly<
   * Returns whether to yield to a lock termination request (e.g. if a native
   * scroll gesture attempts to steal the responder lock).
   */
-  onResponderTerminationRequest_DEPRECATED?: null | undefined | () => boolean;
+  onResponderTerminationRequest_DEPRECATED?: null | undefined | (() => boolean);
 
   /**
   * If `disabled` is set, this will be ignored.
@@ -130,7 +130,7 @@ declare type PressabilityConfig = Readonly<
   *
   * @deprecated
   */
-  onStartShouldSetResponder_DEPRECATED?: null | undefined | () => boolean;
+  onStartShouldSetResponder_DEPRECATED?: null | undefined | (() => boolean);
 }>;
 declare type EventHandlers = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

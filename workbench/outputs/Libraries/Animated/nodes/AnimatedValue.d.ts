@@ -53,14 +53,14 @@ declare class AnimatedValue extends $2 {
    *
    * See https://reactnative.dev/docs/animatedvalue.html#stopanimation
    */
-  stopAnimation: (callback?: null | undefined | (value: number) => void) => void;
+  stopAnimation: (callback?: null | undefined | ((value: number) => void)) => void;
 
   /**
    * Stops any animation and resets the value to its original.
    *
    * See https://reactnative.dev/docs/animatedvalue.html#resetanimation
    */
-  resetAnimation: (callback?: null | undefined | (value: number) => void) => void;
+  resetAnimation: (callback?: null | undefined | ((value: number) => void)) => void;
 
   /**
    * Interpolates the value before updating the property, e.g. mapping 0-1 to

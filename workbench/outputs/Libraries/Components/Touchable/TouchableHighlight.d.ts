@@ -27,8 +27,8 @@ React.ElementConfig<TouchableWithoutFeedback> & AndroidProps & IOSProps & {
   activeOpacity?: null | undefined | number;
   underlayColor?: null | undefined | ColorValue;
   style?: null | undefined | ViewStyleProp;
-  onShowUnderlay?: null | undefined | () => void;
-  onHideUnderlay?: null | undefined | () => void;
+  onShowUnderlay?: null | undefined | (() => void);
+  onHideUnderlay?: null | undefined | (() => void);
   testOnly_pressed?: null | undefined | boolean;
   hostRef: React.Ref<$TypeOf<typeof View>>;
 }>;

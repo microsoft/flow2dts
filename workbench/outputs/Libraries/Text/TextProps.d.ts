@@ -85,29 +85,29 @@ declare type TextProps = Readonly<
   *
   * See https://reactnative.dev/docs/text.html#onlayout
   */
-  onLayout?: null | undefined | (event: LayoutEvent) => unknown;
+  onLayout?: null | undefined | ((event: LayoutEvent) => unknown);
 
   /**
   * This function is called on long press.
   *
   * See https://reactnative.dev/docs/text.html#onlongpress
   */
-  onLongPress?: null | undefined | (event: PressEvent) => unknown;
+  onLongPress?: null | undefined | ((event: PressEvent) => unknown);
 
   /**
   * This function is called on press.
   *
   * See https://reactnative.dev/docs/text.html#onpress
   */
-  onPress?: null | undefined | (event: PressEvent) => unknown;
-  onResponderGrant?: null | undefined | (event: PressEvent) => void;
-  onResponderMove?: null | undefined | (event: PressEvent) => void;
-  onResponderRelease?: null | undefined | (event: PressEvent) => void;
-  onResponderTerminate?: null | undefined | (event: PressEvent) => void;
-  onResponderTerminationRequest?: null | undefined | () => boolean;
-  onStartShouldSetResponder?: null | undefined | () => boolean;
-  onMoveShouldSetResponder?: null | undefined | () => boolean;
-  onTextLayout?: null | undefined | (event: TextLayoutEvent) => unknown;
+  onPress?: null | undefined | ((event: PressEvent) => unknown);
+  onResponderGrant?: null | undefined | ((event: PressEvent) => void);
+  onResponderMove?: null | undefined | ((event: PressEvent) => void);
+  onResponderRelease?: null | undefined | ((event: PressEvent) => void);
+  onResponderTerminate?: null | undefined | ((event: PressEvent) => void);
+  onResponderTerminationRequest?: null | undefined | (() => boolean);
+  onStartShouldSetResponder?: null | undefined | (() => boolean);
+  onMoveShouldSetResponder?: null | undefined | (() => boolean);
+  onTextLayout?: null | undefined | ((event: TextLayoutEvent) => unknown);
 
   /**
   * Defines how far your touch may move off of the button, before

@@ -1,6 +1,6 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare var warningHandler: null | undefined | (...$f2tRest: unknown[]) => void;
+declare var warningHandler: null | undefined | ((...$f2tRest: unknown[]) => void);
 declare var RCTLog:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

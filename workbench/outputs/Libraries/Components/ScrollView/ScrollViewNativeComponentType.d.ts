@@ -34,11 +34,11 @@ declare type ScrollViewNativeProps = Readonly<ViewProps & {
   maximumZoomScale?: null | undefined | number;
   minimumZoomScale?: null | undefined | number;
   nestedScrollEnabled?: null | undefined | boolean;
-  onMomentumScrollBegin?: null | undefined | (event: ScrollEvent) => void;
-  onMomentumScrollEnd?: null | undefined | (event: ScrollEvent) => void;
-  onScroll?: null | undefined | (event: ScrollEvent) => void;
-  onScrollBeginDrag?: null | undefined | (event: ScrollEvent) => void;
-  onScrollEndDrag?: null | undefined | (event: ScrollEvent) => void;
+  onMomentumScrollBegin?: null | undefined | ((event: ScrollEvent) => void);
+  onMomentumScrollEnd?: null | undefined | ((event: ScrollEvent) => void);
+  onScroll?: null | undefined | ((event: ScrollEvent) => void);
+  onScrollBeginDrag?: null | undefined | ((event: ScrollEvent) => void);
+  onScrollEndDrag?: null | undefined | ((event: ScrollEvent) => void);
   onScrollToTop?: (event: ScrollEvent) => void;
   overScrollMode?: null | undefined | ("auto" | "always" | "never");
   pagingEnabled?: null | undefined | boolean;
@@ -61,7 +61,7 @@ declare type ScrollViewNativeProps = Readonly<ViewProps & {
   zoomScale?: null | undefined | number;
   // Overrides
   style?: (ViewStyleProp & {}) | DangerouslyImpreciseStyle;
-  onResponderGrant?: null | undefined | (e: any) => void | boolean;
+  onResponderGrant?: null | undefined | ((e: any) => void | boolean);
 }>;
 declare type ScrollViewNativeComponentType = HostComponent<ScrollViewNativeProps>;
 export type { ScrollViewNativeProps };

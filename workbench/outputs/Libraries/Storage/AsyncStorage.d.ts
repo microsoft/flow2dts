@@ -12,21 +12,21 @@ declare var AsyncStorage:
    *
    * See https://reactnative.dev/docs/asyncstorage.html#getitem
    */
-  getItem: (key: string, callback?: null | undefined | (error: null | undefined | Error, result: null | undefined | string) => void) => Promise;
+  getItem: (key: string, callback?: null | undefined | ((error: null | undefined | Error, result: null | undefined | string) => void)) => Promise;
 
   /**
    * Sets the value for a `key` and invokes a callback upon completion.
    *
    * See https://reactnative.dev/docs/asyncstorage.html#setitem
    */
-  setItem: (key: string, value: string, callback?: null | undefined | (error: null | undefined | Error) => void) => Promise;
+  setItem: (key: string, value: string, callback?: null | undefined | ((error: null | undefined | Error) => void)) => Promise;
 
   /**
    * Removes an item for a `key` and invokes a callback upon completion.
    *
    * See https://reactnative.dev/docs/asyncstorage.html#removeitem
    */
-  removeItem: (key: string, callback?: null | undefined | (error: null | undefined | Error) => void) => Promise;
+  removeItem: (key: string, callback?: null | undefined | ((error: null | undefined | Error) => void)) => Promise;
 
   /**
    * Merges an existing `key` value with an input value, assuming both values
@@ -36,7 +36,7 @@ declare var AsyncStorage:
    *
    * See https://reactnative.dev/docs/asyncstorage.html#mergeitem
    */
-  mergeItem: (key: string, value: string, callback?: null | undefined | (error: null | undefined | Error) => void) => Promise;
+  mergeItem: (key: string, value: string, callback?: null | undefined | ((error: null | undefined | Error) => void)) => Promise;
 
   /**
    * Erases *all* `AsyncStorage` for all clients, libraries, etc. You probably
@@ -45,14 +45,14 @@ declare var AsyncStorage:
    *
    * See https://reactnative.dev/docs/asyncstorage.html#clear
    */
-  clear: (callback?: null | undefined | (error: null | undefined | Error) => void) => Promise;
+  clear: (callback?: null | undefined | ((error: null | undefined | Error) => void)) => Promise;
 
   /**
    * Gets *all* keys known to your app; for all callers, libraries, etc.
    *
    * See https://reactnative.dev/docs/asyncstorage.html#getallkeys
    */
-  getAllKeys: (callback?: null | undefined | (error: null | undefined | Error, keys: null | undefined | string[]) => void) => Promise;
+  getAllKeys: (callback?: null | undefined | ((error: null | undefined | Error, keys: null | undefined | string[]) => void)) => Promise;
 
   /**
    * The following batched functions are useful for executing a lot of
@@ -78,7 +78,7 @@ declare var AsyncStorage:
    *
    * See https://reactnative.dev/docs/asyncstorage.html#multiget
    */
-  multiGet: (keys: string[], callback?: null | undefined | (errors: null | undefined | Error[], result: null | undefined | string[][]) => void) => Promise;
+  multiGet: (keys: string[], callback?: null | undefined | ((errors: null | undefined | Error[], result: null | undefined | string[][]) => void)) => Promise;
 
   /**
    * Use this as a batch operation for storing multiple key-value pairs. When
@@ -86,14 +86,14 @@ declare var AsyncStorage:
    *
    * See https://reactnative.dev/docs/asyncstorage.html#multiset
    */
-  multiSet: (keyValuePairs: string[][], callback?: null | undefined | (errors: null | undefined | Error[]) => void) => Promise;
+  multiSet: (keyValuePairs: string[][], callback?: null | undefined | ((errors: null | undefined | Error[]) => void)) => Promise;
 
   /**
    * Call this to batch the deletion of all keys in the `keys` array.
    *
    * See https://reactnative.dev/docs/asyncstorage.html#multiremove
    */
-  multiRemove: (keys: string[], callback?: null | undefined | (errors: null | undefined | Error[]) => void) => Promise;
+  multiRemove: (keys: string[], callback?: null | undefined | ((errors: null | undefined | Error[]) => void)) => Promise;
 
   /**
    * Batch operation to merge in existing and new values for a given set of
@@ -103,7 +103,7 @@ declare var AsyncStorage:
    *
    * See https://reactnative.dev/docs/asyncstorage.html#multimerge
    */
-  multiMerge: (keyValuePairs: string[][], callback?: null | undefined | (errors: null | undefined | Error[]) => void) => Promise;
+  multiMerge: (keyValuePairs: string[][], callback?: null | undefined | ((errors: null | undefined | Error[]) => void)) => Promise;
 };
 declare const $f2tExportDefault: $TypeOf<typeof AsyncStorage>;
 export default $f2tExportDefault;

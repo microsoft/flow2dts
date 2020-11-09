@@ -36,7 +36,7 @@ declare type Props = Readonly<
   accessible?: null | undefined | boolean;
   focusable?: null | undefined | boolean;
   importantForAccessibility?: null | undefined | ("auto" | "yes" | "no" | "no-hide-descendants");
-  onAccessibilityAction?: null | undefined | (event: AccessibilityActionEvent) => unknown;
+  onAccessibilityAction?: null | undefined | ((event: AccessibilityActionEvent) => unknown);
 
   /**
   * Either children or a render prop that receives a boolean reflecting whether
@@ -68,27 +68,27 @@ declare type Props = Readonly<
   /**
   * Called when this view's layout changes.
   */
-  onLayout?: null | undefined | (event: LayoutEvent) => void;
+  onLayout?: null | undefined | ((event: LayoutEvent) => void);
 
   /**
   * Called when a long-tap gesture is detected.
   */
-  onLongPress?: null | undefined | (event: PressEvent) => void;
+  onLongPress?: null | undefined | ((event: PressEvent) => void);
 
   /**
   * Called when a single tap gesture is detected.
   */
-  onPress?: null | undefined | (event: PressEvent) => void;
+  onPress?: null | undefined | ((event: PressEvent) => void);
 
   /**
   * Called when a touch is engaged before `onPress`.
   */
-  onPressIn?: null | undefined | (event: PressEvent) => void;
+  onPressIn?: null | undefined | ((event: PressEvent) => void);
 
   /**
   * Called when a touch is released before `onPress`.
   */
-  onPressOut?: null | undefined | (event: PressEvent) => void;
+  onPressOut?: null | undefined | ((event: PressEvent) => void);
 
   /**
   * Either view styles or a function that receives a boolean reflecting whether

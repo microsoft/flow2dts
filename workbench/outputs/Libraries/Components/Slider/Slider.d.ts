@@ -96,14 +96,14 @@ ViewProps & IOSProps & {
   /**
   * Callback continuously called while the user is dragging the slider.
   */
-  onValueChange?: null | undefined | (value: number) => void;
+  onValueChange?: null | undefined | ((value: number) => void);
 
   /**
   * Callback that is called when the user releases the slider,
   * regardless if the value has changed. The current value is passed
   * as an argument to the callback handler.
   */
-  onSlidingComplete?: null | undefined | (value: number) => void;
+  onSlidingComplete?: null | undefined | ((value: number) => void);
 
   /**
   * Used to locate this view in UI automation tests.

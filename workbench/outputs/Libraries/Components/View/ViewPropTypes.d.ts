@@ -18,8 +18,8 @@ declare type ViewLayoutEvent = LayoutEvent;
 declare type BubblingEventProps = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  onBlur?: null | undefined | (event: BlurEvent) => unknown;
-  onFocus?: null | undefined | (event: FocusEvent) => unknown;
+  onBlur?: null | undefined | ((event: BlurEvent) => unknown);
+  onFocus?: null | undefined | ((event: FocusEvent) => unknown);
 }>;
 declare type DirectEventProps = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -29,7 +29,7 @@ declare type DirectEventProps = Readonly<
   * when the user performs an accessibility custom action.
   *
   */
-  onAccessibilityAction?: null | undefined | (event: AccessibilityActionEvent) => unknown;
+  onAccessibilityAction?: null | undefined | ((event: AccessibilityActionEvent) => unknown);
 
   /**
   * When `accessible` is true, the system will try to invoke this function
@@ -37,7 +37,7 @@ declare type DirectEventProps = Readonly<
   *
   * See https://reactnative.dev/docs/view.html#onaccessibilitytap
   */
-  onAccessibilityTap?: null | undefined | () => unknown;
+  onAccessibilityTap?: null | undefined | (() => unknown);
 
   /**
   * Invoked on mount and layout changes with:
@@ -50,7 +50,7 @@ declare type DirectEventProps = Readonly<
   *
   * See https://reactnative.dev/docs/view.html#onlayout
   */
-  onLayout?: null | undefined | (event: LayoutEvent) => unknown;
+  onLayout?: null | undefined | ((event: LayoutEvent) => unknown);
 
   /**
   * When `accessible` is `true`, the system will invoke this function when the
@@ -58,7 +58,7 @@ declare type DirectEventProps = Readonly<
   *
   * See https://reactnative.dev/docs/view.html#onmagictap
   */
-  onMagicTap?: null | undefined | () => unknown;
+  onMagicTap?: null | undefined | (() => unknown);
 
   /**
   * When `accessible` is `true`, the system will invoke this function when the
@@ -66,7 +66,7 @@ declare type DirectEventProps = Readonly<
   *
   * See https://reactnative.dev/docs/view.html#onaccessibilityescape
   */
-  onAccessibilityEscape?: null | undefined | () => unknown;
+  onAccessibilityEscape?: null | undefined | (() => unknown);
 }>;
 declare type MouseEventProps = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -77,14 +77,14 @@ declare type MouseEventProps = Readonly<
 declare type TouchEventProps = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  onTouchCancel?: null | undefined | (e: PressEvent) => void;
-  onTouchCancelCapture?: null | undefined | (e: PressEvent) => void;
-  onTouchEnd?: null | undefined | (e: PressEvent) => void;
-  onTouchEndCapture?: null | undefined | (e: PressEvent) => void;
-  onTouchMove?: null | undefined | (e: PressEvent) => void;
-  onTouchMoveCapture?: null | undefined | (e: PressEvent) => void;
-  onTouchStart?: null | undefined | (e: PressEvent) => void;
-  onTouchStartCapture?: null | undefined | (e: PressEvent) => void;
+  onTouchCancel?: null | undefined | ((e: PressEvent) => void);
+  onTouchCancelCapture?: null | undefined | ((e: PressEvent) => void);
+  onTouchEnd?: null | undefined | ((e: PressEvent) => void);
+  onTouchEndCapture?: null | undefined | ((e: PressEvent) => void);
+  onTouchMove?: null | undefined | ((e: PressEvent) => void);
+  onTouchMoveCapture?: null | undefined | ((e: PressEvent) => void);
+  onTouchStart?: null | undefined | ((e: PressEvent) => void);
+  onTouchStartCapture?: null | undefined | ((e: PressEvent) => void);
 }>;
 declare type GestureResponderEventProps = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -98,7 +98,7 @@ declare type GestureResponderEventProps = Readonly<
   *
   * See https://reactnative.dev/docs/view.html#onmoveshouldsetresponder
   */
-  onMoveShouldSetResponder?: null | undefined | (e: PressEvent) => boolean;
+  onMoveShouldSetResponder?: null | undefined | ((e: PressEvent) => boolean);
 
   /**
   * If a parent `View` wants to prevent a child `View` from becoming responder
@@ -109,7 +109,7 @@ declare type GestureResponderEventProps = Readonly<
   *
   * See https://reactnative.dev/docs/view.html#onMoveShouldsetrespondercapture
   */
-  onMoveShouldSetResponderCapture?: null | undefined | (e: PressEvent) => boolean;
+  onMoveShouldSetResponderCapture?: null | undefined | ((e: PressEvent) => boolean);
 
   /**
   * The View is now responding for touch events. This is the time to highlight
@@ -123,7 +123,7 @@ declare type GestureResponderEventProps = Readonly<
   *
   * See https://reactnative.dev/docs/view.html#onrespondergrant
   */
-  onResponderGrant?: null | undefined | (e: PressEvent) => void | boolean;
+  onResponderGrant?: null | undefined | ((e: PressEvent) => void | boolean);
 
   /**
   * The user is moving their finger.
@@ -133,7 +133,7 @@ declare type GestureResponderEventProps = Readonly<
   *
   * See https://reactnative.dev/docs/view.html#onrespondermove
   */
-  onResponderMove?: null | undefined | (e: PressEvent) => void;
+  onResponderMove?: null | undefined | ((e: PressEvent) => void);
 
   /**
   * Another responder is already active and will not release it to that `View`
@@ -144,7 +144,7 @@ declare type GestureResponderEventProps = Readonly<
   *
   * See https://reactnative.dev/docs/view.html#onresponderreject
   */
-  onResponderReject?: null | undefined | (e: PressEvent) => void;
+  onResponderReject?: null | undefined | ((e: PressEvent) => void);
 
   /**
   * Fired at the end of the touch.
@@ -154,9 +154,9 @@ declare type GestureResponderEventProps = Readonly<
   *
   * See https://reactnative.dev/docs/view.html#onresponderrelease
   */
-  onResponderRelease?: null | undefined | (e: PressEvent) => void;
-  onResponderStart?: null | undefined | (e: PressEvent) => void;
-  onResponderEnd?: null | undefined | (e: PressEvent) => void;
+  onResponderRelease?: null | undefined | ((e: PressEvent) => void);
+  onResponderStart?: null | undefined | ((e: PressEvent) => void);
+  onResponderEnd?: null | undefined | ((e: PressEvent) => void);
 
   /**
   * The responder has been taken from the `View`. Might be taken by other
@@ -169,7 +169,7 @@ declare type GestureResponderEventProps = Readonly<
   *
   * See https://reactnative.dev/docs/view.html#onresponderterminate
   */
-  onResponderTerminate?: null | undefined | (e: PressEvent) => void;
+  onResponderTerminate?: null | undefined | ((e: PressEvent) => void);
 
   /**
   * Some other `View` wants to become responder and is asking this `View` to
@@ -180,7 +180,7 @@ declare type GestureResponderEventProps = Readonly<
   *
   * See https://reactnative.dev/docs/view.html#onresponderterminationrequest
   */
-  onResponderTerminationRequest?: null | undefined | (e: PressEvent) => boolean;
+  onResponderTerminationRequest?: null | undefined | ((e: PressEvent) => boolean);
 
   /**
   * Does this view want to become responder on the start of a touch?
@@ -190,7 +190,7 @@ declare type GestureResponderEventProps = Readonly<
   *
   * See https://reactnative.dev/docs/view.html#onstartshouldsetresponder
   */
-  onStartShouldSetResponder?: null | undefined | (e: PressEvent) => boolean;
+  onStartShouldSetResponder?: null | undefined | ((e: PressEvent) => boolean);
 
   /**
   * If a parent `View` wants to prevent a child `View` from becoming responder
@@ -201,7 +201,7 @@ declare type GestureResponderEventProps = Readonly<
   *
   * See https://reactnative.dev/docs/view.html#onstartshouldsetrespondercapture
   */
-  onStartShouldSetResponderCapture?: null | undefined | (e: PressEvent) => boolean;
+  onStartShouldSetResponderCapture?: null | undefined | ((e: PressEvent) => boolean);
 }>;
 declare type AndroidDrawableThemeAttr = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -319,7 +319,7 @@ declare type AndroidViewProps = Readonly<
   *
   * @platform android
   */
-  onClick?: null | undefined | (event: PressEvent) => unknown;
+  onClick?: null | undefined | ((event: PressEvent) => unknown);
 }>;
 declare type IOSViewProps = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

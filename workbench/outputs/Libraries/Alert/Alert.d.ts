@@ -9,7 +9,7 @@ declare type Buttons = {
 }[];
 declare type Options = {
   cancelable?: null | undefined | boolean;
-  onDismiss?: null | undefined | () => void;
+  onDismiss?: null | undefined | (() => void);
 };
 declare class Alert {
   alert: (title: null | undefined | string, message?: null | undefined | string, buttons?: Buttons, options?: Options) => void;

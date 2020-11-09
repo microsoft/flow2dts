@@ -7,7 +7,7 @@ declare type SpyData = {
   args: unknown[];
 };
 declare class MessageQueue {
-  __spy: null | undefined | (data: SpyData) => void;
+  __spy: null | undefined | ((data: SpyData) => void);
   constructor: () => void;
   spy: (spyOrToggle: boolean | ((data: SpyData) => void)) => void;
   callFunctionReturnFlushedQueue: (module: string, method: string, args: unknown[]) => null | [number[], number[], unknown[], number];
@@ -17,9 +17,9 @@ declare class MessageQueue {
   registerCallableModule: (name: string, module: {}) => void;
   registerLazyCallableModule: (name: string, factory: ($f2t1: void) => {}) => void;
   getCallableModule: (name: string) => {} | null;
-  callNativeSyncHook: (moduleID: number, methodID: number, params: unknown[], onFail: null | undefined | (...$f2tRest: unknown[]) => void, onSucc: null | undefined | (...$f2tRest: unknown[]) => void) => unknown;
-  processCallbacks: (moduleID: number, methodID: number, params: unknown[], onFail: null | undefined | (...$f2tRest: unknown[]) => void, onSucc: null | undefined | (...$f2tRest: unknown[]) => void) => void;
-  enqueueNativeCall: (moduleID: number, methodID: number, params: unknown[], onFail: null | undefined | (...$f2tRest: unknown[]) => void, onSucc: null | undefined | (...$f2tRest: unknown[]) => void) => void;
+  callNativeSyncHook: (moduleID: number, methodID: number, params: unknown[], onFail: null | undefined | ((...$f2tRest: unknown[]) => void), onSucc: null | undefined | ((...$f2tRest: unknown[]) => void)) => unknown;
+  processCallbacks: (moduleID: number, methodID: number, params: unknown[], onFail: null | undefined | ((...$f2tRest: unknown[]) => void), onSucc: null | undefined | ((...$f2tRest: unknown[]) => void)) => void;
+  enqueueNativeCall: (moduleID: number, methodID: number, params: unknown[], onFail: null | undefined | ((...$f2tRest: unknown[]) => void), onSucc: null | undefined | ((...$f2tRest: unknown[]) => void)) => void;
   createDebugLookup: (moduleID: number, name: string, methods: null | undefined | ReadonlyArray<string>) => void;
   // For JSTimers to register its callback. Otherwise a circular dependency
   // between modules is introduced. Note that only one callback may be

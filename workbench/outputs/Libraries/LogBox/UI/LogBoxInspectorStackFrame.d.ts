@@ -7,7 +7,7 @@ declare type Props = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
   frame: StackFrame;
-  onPress?: null | undefined | (event: PressEvent) => void;
+  onPress?: null | undefined | ((event: PressEvent) => void);
 }>;
 declare function LogBoxInspectorStackFrame(props: Props): React.Node;
 declare export default $TypeOf<typeof LogBoxInspectorStackFrame>;

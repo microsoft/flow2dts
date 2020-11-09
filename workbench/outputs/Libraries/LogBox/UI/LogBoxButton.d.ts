@@ -15,7 +15,7 @@ declare type Props = Readonly<
   }>;
   children?: React.Node;
   hitSlop?: null | undefined | EdgeInsetsProp;
-  onPress?: null | undefined | (event: PressEvent) => void;
+  onPress?: null | undefined | ((event: PressEvent) => void);
   style?: ViewStyleProp;
 }>;
 declare function LogBoxButton(props: Props): React.Node;
