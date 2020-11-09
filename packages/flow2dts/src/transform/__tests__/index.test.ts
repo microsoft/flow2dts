@@ -14,6 +14,7 @@ Tips:
 
 /*
 test case todo:
+  https://github.com/alloy/flow2dts/issues/4
   qualified name everywhere
   static members
   utility types: https://flow.org/en/docs/types/utilities/
