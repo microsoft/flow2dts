@@ -13,5 +13,5 @@ declare type Props = Readonly<
   selectedIndex: number;
   fatalType?: null | undefined | LogLevel;
 }>;
-declare function LogBoxInspector(props: Props) => React.Node;
+declare function LogBoxInspector(props: Props): React.Node;
 declare export default $TypeOf<typeof LogBoxInspector>;

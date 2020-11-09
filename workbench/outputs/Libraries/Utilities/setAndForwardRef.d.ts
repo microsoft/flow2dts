@@ -8,6 +8,6 @@ declare type Args = Readonly<
   getForwardedRef: () => null | undefined | Ref<any>;
   setLocalRef: (ref: ElementRef<any>) => unknown;
 }>;
-declare function setAndForwardRef($f2t1: Args) => (ref: ElementRef<any>) => void;
+declare function setAndForwardRef($f2t1: Args): (ref: ElementRef<any>) => void;
 declare const $f2tExportDefault: $TypeOf<typeof setAndForwardRef>;
 export default $f2tExportDefault;

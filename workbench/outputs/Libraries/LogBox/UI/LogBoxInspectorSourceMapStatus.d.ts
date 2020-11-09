@@ -8,5 +8,5 @@ declare type Props = Readonly<
   onPress?: null | undefined | (event: PressEvent) => void;
   status: "COMPLETE" | "FAILED" | "NONE" | "PENDING";
 }>;
-declare function LogBoxInspectorSourceMapStatus(props: Props) => React.Node;
+declare function LogBoxInspectorSourceMapStatus(props: Props): React.Node;
 declare export default $TypeOf<typeof LogBoxInspectorSourceMapStatus>;

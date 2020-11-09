@@ -12,5 +12,5 @@ declare type Props = Readonly<
   title: string;
   onPress: () => void;
 }>;
-declare function LogBoxInspectorMessageHeader(props: Props) => React.Node;
+declare function LogBoxInspectorMessageHeader(props: Props): React.Node;
 declare export default $TypeOf<typeof LogBoxInspectorMessageHeader>;

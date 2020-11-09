@@ -9,5 +9,5 @@ declare type Props = Readonly<
   onMinimize: () => void;
   level?: null | undefined | LogLevel;
 }>;
-declare function LogBoxInspectorFooter(props: Props) => React.Node;
+declare function LogBoxInspectorFooter(props: Props): React.Node;
 declare export default $TypeOf<typeof LogBoxInspectorFooter>;

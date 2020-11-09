@@ -9,5 +9,5 @@ declare type Props = {
   plaintext?: null | undefined | boolean;
   maxLength?: null | undefined | number;
 };
-declare function LogBoxMessage(props: Props) => React.Node;
+declare function LogBoxMessage(props: Props): React.Node;
 declare export default $TypeOf<typeof LogBoxMessage>;

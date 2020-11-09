@@ -10,6 +10,6 @@ declare type Options = Readonly<
   excludedPlatforms?: ReadonlyArray<"iOS" | "android">;
 }>;
 declare type NativeComponentType<T> = HostComponent<T>;
-declare function codegenNativeComponent<Props>(componentName: string, options?: Options) => NativeComponentType<Props>;
+declare function codegenNativeComponent<Props>(componentName: string, options?: Options): NativeComponentType<Props>;
 export type { NativeComponentType };
 declare export default $TypeOf<typeof codegenNativeComponent>;

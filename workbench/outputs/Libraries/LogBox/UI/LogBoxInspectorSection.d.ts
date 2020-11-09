@@ -8,5 +8,5 @@ declare type Props = Readonly<
   children: React.Node;
   action?: null | undefined | React.Node;
 }>;
-declare function LogBoxInspectorSection(props: Props) => React.Node;
+declare function LogBoxInspectorSection(props: Props): React.Node;
 declare export default $TypeOf<typeof LogBoxInspectorSection>;

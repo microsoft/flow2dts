@@ -4,6 +4,6 @@ declare function defineLazyObjectProperty<T>(object: {}, name: string, descripto
   get: () => T;
   enumerable?: boolean;
   writable?: boolean;
-}) => void;
+}): void;
 declare const $f2tExportDefault: $TypeOf<typeof defineLazyObjectProperty>;
 export default $f2tExportDefault;

@@ -7,7 +7,7 @@ import $2 from "./FormData";
 declare type RequestBody = string | Blob | FormData | {
   uri: string;
 } | ArrayBuffer | $ArrayBufferView;
-declare function convertRequestBody(body: RequestBody) => Object;
+declare function convertRequestBody(body: RequestBody): Object;
 export type { RequestBody };
 declare const $f2tExportDefault: $TypeOf<typeof convertRequestBody>;
 export default $f2tExportDefault;

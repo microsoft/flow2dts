@@ -6,5 +6,5 @@ declare type Options<T = string> = Readonly<
 {
   supportedCommands: ReadonlyArray<T>;
 }>;
-declare function codegenNativeCommands<T extends {}>(options: Options<$Keys<T>>) => T;
+declare function codegenNativeCommands<T extends {}>(options: Options<$Keys<T>>): T;
 declare export default $TypeOf<typeof codegenNativeCommands>;

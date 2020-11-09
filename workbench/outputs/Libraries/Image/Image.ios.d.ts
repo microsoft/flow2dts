@@ -8,12 +8,12 @@ declare var resolveAssetSource: $TypeOf<typeof $3>;
 import $3 from "./resolveAssetSource";
 import { ImageProps as ImagePropsType } from "./ImageProps";
 import ImageViewNativeComponent from "./ImageViewNativeComponent";
-declare function getSize(uri: string, success: (width: number, height: number) => void, failure?: (error: any) => void) => void;
+declare function getSize(uri: string, success: (width: number, height: number) => void, failure?: (error: any) => void): void;
 declare function getSizeWithHeaders(uri: string, headers: {
   [$f2tKey: string]: string;
-}, success: (width: number, height: number) => void, failure?: (error: any) => void) => any;
-declare function prefetch(url: string) => any;
-declare function queryCache(urls: string[]) => Promise<{
+}, success: (width: number, height: number) => void, failure?: (error: any) => void): any;
+declare function prefetch(url: string): any;
+declare function queryCache(urls: string[]): Promise<{
   [$f2tKey: string]: "memory" | "disk" | "disk/memory";
 }>;
 declare type ImageComponentStatics = Readonly<

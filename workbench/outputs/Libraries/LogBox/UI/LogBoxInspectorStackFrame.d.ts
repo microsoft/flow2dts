@@ -9,5 +9,5 @@ declare type Props = Readonly<
   frame: StackFrame;
   onPress?: null | undefined | (event: PressEvent) => void;
 }>;
-declare function LogBoxInspectorStackFrame(props: Props) => React.Node;
+declare function LogBoxInspectorStackFrame(props: Props): React.Node;
 declare export default $TypeOf<typeof LogBoxInspectorStackFrame>;

@@ -9,7 +9,7 @@ declare type EventConfig = {
   listener?: null | undefined | Function;
   useNativeDriver: boolean;
 };
-declare function attachNativeEvent(viewRef: any, eventName: string, argMapping: ReadonlyArray<null | undefined | Mapping>) => {
+declare function attachNativeEvent(viewRef: any, eventName: string, argMapping: ReadonlyArray<null | undefined | Mapping>): {
   detach: () => void;
 };
 declare class AnimatedEvent {

@@ -3,14 +3,14 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 declare function elementsThatOverlapOffsets(offsets: number[], itemCount: number, getFrameMetrics: (index: number) => {
   length: number;
   offset: number;
-}) => number[];
+}): number[];
 declare function newRangeCount(prev: {
   first: number;
   last: number;
 }, next: {
   first: number;
   last: number;
-}) => number;
+}): number;
 declare function computeWindowedRenderLimits(props: {
   data: any;
   getItemCount: (data: any) => number;
@@ -27,7 +27,7 @@ declare function computeWindowedRenderLimits(props: {
   offset: number;
   velocity: number;
   visibleLength: number;
-}) => {
+}): {
   first: number;
   last: number;
 };

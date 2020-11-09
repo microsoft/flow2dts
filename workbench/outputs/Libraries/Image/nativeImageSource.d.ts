@@ -12,6 +12,6 @@ declare type NativeImageSourceSpec = Readonly<
   height: number;
   width: number;
 }>;
-declare function nativeImageSource(spec: NativeImageSourceSpec) => ImageURISource;
+declare function nativeImageSource(spec: NativeImageSourceSpec): ImageURISource;
 declare const $f2tExportDefault: $TypeOf<typeof nativeImageSource>;
 export default $f2tExportDefault;

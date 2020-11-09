@@ -11,5 +11,5 @@ declare type Props = Readonly<
   onPressOpen: () => void;
   onPressDismiss: () => void;
 }>;
-declare function LogBoxLogNotification(props: Props) => React.Node;
+declare function LogBoxLogNotification(props: Props): React.Node;
 declare export default $TypeOf<typeof LogBoxLogNotification>;

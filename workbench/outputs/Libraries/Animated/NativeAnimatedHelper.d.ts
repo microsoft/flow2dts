@@ -34,9 +34,9 @@ declare var API:
   addAnimatedEventToView: (viewTag: number, eventName: string, eventMapping: EventMapping) => void;
   removeAnimatedEventFromView: (viewTag: number, eventName: string, animatedNodeTag: number) => void;
 };
-declare function addWhitelistedStyleProp(prop: string) => void;
-declare function addWhitelistedTransformProp(prop: string) => void;
-declare function addWhitelistedInterpolationParam(param: string) => void;
+declare function addWhitelistedStyleProp(prop: string): void;
+declare function addWhitelistedTransformProp(prop: string): void;
+declare function addWhitelistedInterpolationParam(param: string): void;
 declare function validateTransform(configs: ({
   type: "animated";
   property: string;
@@ -45,16 +45,16 @@ declare function validateTransform(configs: ({
   type: "static";
   property: string;
   value: number | string;
-})[]) => void;
+})[]): void;
 declare function validateStyles(styles: {
   [key: string]: null | undefined | number;
-}) => void;
-declare function validateInterpolation(config: InterpolationConfigType) => void;
-declare function generateNewNodeTag() => number;
-declare function generateNewAnimationId() => number;
-declare function assertNativeAnimatedModule() => void;
-declare function shouldUseNativeDriver(config: (AnimationConfig & {}) | EventConfig) => boolean;
-declare function transformDataType(value: number | string) => number | string;
+}): void;
+declare function validateInterpolation(config: InterpolationConfigType): void;
+declare function generateNewNodeTag(): number;
+declare function generateNewAnimationId(): number;
+declare function assertNativeAnimatedModule(): void;
+declare function shouldUseNativeDriver(config: (AnimationConfig & {}) | EventConfig): boolean;
+declare function transformDataType(value: number | string): number | string;
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

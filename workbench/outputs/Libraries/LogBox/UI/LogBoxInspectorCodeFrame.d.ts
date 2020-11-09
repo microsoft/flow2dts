@@ -7,5 +7,5 @@ declare type Props = Readonly<
 {
   codeFrame: null | undefined | CodeFrame;
 }>;
-declare function LogBoxInspectorCodeFrame(props: Props) => React.Node;
+declare function LogBoxInspectorCodeFrame(props: Props): React.Node;
 declare export default $TypeOf<typeof LogBoxInspectorCodeFrame>;

@@ -6,8 +6,8 @@ import { LayoutAnimationConfig as LayoutAnimationConfig_ } from "../Renderer/shi
 declare type LayoutAnimationConfig = LayoutAnimationConfig_;
 declare type OnAnimationDidEndCallback = () => void;
 declare type OnAnimationDidFailCallback = () => void;
-declare function configureNext(config: LayoutAnimationConfig, onAnimationDidEnd?: OnAnimationDidEndCallback, onAnimationDidFail?: OnAnimationDidFailCallback) => void;
-declare function create(duration: number, type: LayoutAnimationType, property: LayoutAnimationProperty) => LayoutAnimationConfig;
+declare function configureNext(config: LayoutAnimationConfig, onAnimationDidEnd?: OnAnimationDidEndCallback, onAnimationDidFail?: OnAnimationDidFailCallback): void;
+declare function create(duration: number, type: LayoutAnimationType, property: LayoutAnimationProperty): LayoutAnimationConfig;
 declare var Presets:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

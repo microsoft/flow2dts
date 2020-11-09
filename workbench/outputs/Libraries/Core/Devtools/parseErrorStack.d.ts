@@ -8,7 +8,7 @@ declare type ExtendedError = Error & {
   forceRedbox?: boolean;
   isComponentError?: boolean;
 };
-declare function parseErrorStack(errorStack?: string) => StackFrame[];
+declare function parseErrorStack(errorStack?: string): StackFrame[];
 export type { ExtendedError };
 declare const $f2tExportDefault: $TypeOf<typeof parseErrorStack>;
 export default $f2tExportDefault;

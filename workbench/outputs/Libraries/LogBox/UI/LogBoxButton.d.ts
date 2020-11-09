@@ -18,5 +18,5 @@ declare type Props = Readonly<
   onPress?: null | undefined | (event: PressEvent) => void;
   style?: ViewStyleProp;
 }>;
-declare function LogBoxButton(props: Props) => React.Node;
+declare function LogBoxButton(props: Props): React.Node;
 declare export default $TypeOf<typeof LogBoxButton>;

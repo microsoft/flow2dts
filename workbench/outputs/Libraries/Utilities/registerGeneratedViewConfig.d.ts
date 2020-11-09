@@ -30,7 +30,7 @@ declare type GeneratedViewConfig = {
     }>;
   };
 };
-declare function registerGeneratedViewConfig(componentName: string, viewConfig: GeneratedViewConfig) => void;
+declare function registerGeneratedViewConfig(componentName: string, viewConfig: GeneratedViewConfig): void;
 export type { GeneratedViewConfig };
 declare const $f2tExportDefault: $TypeOf<typeof registerGeneratedViewConfig>;
 export default $f2tExportDefault;
