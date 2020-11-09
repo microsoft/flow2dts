@@ -49,7 +49,16 @@ export const advancedTypeVisitor: Visitor<State> = {
         args.push(rarg)
       }
 
-      path.replaceWith(t.tsFunctionType(typeParameters, args, t.tsTypeAnnotation(returnType)))
+      const functionType = t.tsFunctionType(typeParameters, args, t.tsTypeAnnotation(returnType))
+
+      path.replaceWith(
+        !path.parent ||
+          t.isUnionTypeAnnotation(path.parent) ||
+          t.isIntersectionTypeAnnotation(path.parent) ||
+          t.isArrayTypeAnnotation(path.parent)
+          ? t.tsParenthesizedType(functionType)
+          : functionType
+      )
     },
   },
 }
