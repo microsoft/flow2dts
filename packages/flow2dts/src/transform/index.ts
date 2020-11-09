@@ -12,6 +12,12 @@ export function transform(): PluginObj<State> {
           state.polyfillFlowTypes = new Set()
         },
         exit(path, state) {
+          /*
+           fix types before declarations because,
+           if they are in the same visitor,
+           when declarations are rewritten,
+           types will be revisitted because TypeScript and Flow shares AST for types.
+           */
           path.traverse(rewriteTypeVisitor, state)
           path.traverse(rewriteDeclVisitor, state)
 
