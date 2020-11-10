@@ -1,11 +1,11 @@
 import { Visitor, types as t } from "@babel/core"
 import { type } from "os"
-import { State } from "../state"
+import { isRecognized, State } from "../state"
 import { assertTSType } from "../utilities"
 
 export const declarationVisitor: Visitor<State> = {
   VariableDeclaration: {
-    exit(path) {
+    exit(path, state) {
       const decl = path.node.declarations[0]
       if (decl.id.type === "Identifier" && decl && decl.init && decl.init.type === "CallExpression" && decl.init) {
         const callee = decl.init.callee
@@ -19,10 +19,18 @@ export const declarationVisitor: Visitor<State> = {
           return
         }
       }
+
       path.node.declare = true
       path.node.declarations.forEach((d) => {
         d.init = null
       })
+    },
+  },
+  DeclareVariable: {
+    exit(path, state) {
+      if (isRecognized(state.typeReferences, path.node)) {
+        path.replaceWithMultiple([])
+      }
     },
   },
   // TODO: ClassPrivateProperty needs to be converted to ClassProperty with `accessibility = private`
