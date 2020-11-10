@@ -2,7 +2,16 @@ import { types as t } from "@babel/core"
 
 const BRIDGING_TYPES = ["$TypeOf"] as const
 const FLOW_UTILITY_TYPES_LOCAL = [] as const
-const FLOW_UTILITY_TYPES_UPSTREAM = ["$Diff", "$Keys"] as const
+const FLOW_UTILITY_TYPES_UPSTREAM = [
+  "$Call",
+  "$Diff",
+  "$ElementType",
+  "$Keys",
+  "$PropertyType",
+  "$NonMaybeType",
+  "$Shape",
+  "Class",
+] as const
 
 export const POLYFILL_TYPES = [...BRIDGING_TYPES, ...FLOW_UTILITY_TYPES_LOCAL, ...FLOW_UTILITY_TYPES_UPSTREAM]
 
