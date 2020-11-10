@@ -40,12 +40,12 @@ declare class KeyboardAvoidingView extends $2.Component<Props, State> {
     keyboardVerticalOffset: number;
   };
   viewRef: {
-    current: $2<any> | null;
+    current: $2.ElementRef<any> | null;
   };
   constructor: (props: Props) => void;
   componentDidMount: () => void;
   componentWillUnmount: () => void;
-  render: () => $2;
+  render: () => $2.Node;
 }
 declare const $f2tExportDefault: $TypeOf<typeof KeyboardAvoidingView>;
 export default $f2tExportDefault;

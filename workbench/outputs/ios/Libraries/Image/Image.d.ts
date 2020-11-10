@@ -22,5 +22,5 @@ declare type ImageComponentStatics = Readonly<
   resolveAssetSource: $3;
   propTypes: $1;
 }>;
-declare const $f2tExportDefault: $2<ImagePropsType, $2<$TypeOf<typeof ImageViewNativeComponent>>> & ImageComponentStatics;
+declare const $f2tExportDefault: $2.AbstractComponent<ImagePropsType, $2.ElementRef<$TypeOf<typeof ImageViewNativeComponent>>> & ImageComponentStatics;
 export default $f2tExportDefault;

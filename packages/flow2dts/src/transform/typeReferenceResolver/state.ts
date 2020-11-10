@@ -90,7 +90,7 @@ export function resolveQualifiedTypeIdentifier<T>(
   if (!record) return undefined
   if (record.variable !== binding.path.node) return undefined
 
-  return ensureResolved(typeReferences, record)
+  return makeResolved(typeReferences, flowType)
 }
 
 export function resolveMemberExpression<T>(

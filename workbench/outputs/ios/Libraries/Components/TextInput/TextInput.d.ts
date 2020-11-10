@@ -576,26 +576,26 @@ $Diff<ViewProps, Readonly<
   * If `true`, contextMenuHidden is hidden. The default value is `false`.
   */
   contextMenuHidden?: null | undefined | boolean;
-  forwardedRef?: null | undefined | ReactRefSetter<$2<HostComponent<unknown>> & ImperativeMethods>;
+  forwardedRef?: null | undefined | ReactRefSetter<$2.ElementRef<HostComponent<unknown>> & ImperativeMethods>;
 }>;
 declare type ImperativeMethods = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
   clear: () => void;
   isFocused: () => boolean;
-  getNativeRef: () => null | undefined | $2<HostComponent<unknown>>;
+  getNativeRef: () => null | undefined | $2.ElementRef<HostComponent<unknown>>;
 }>;
-declare function InternalTextInput(props: Props): $2;
+declare function InternalTextInput(props: Props): $2.Node;
 declare type TextInputComponentStatics = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
   State: Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    currentlyFocusedInput: $3;
-    currentlyFocusedField: $3;
-    focusTextInput: $3;
-    blurTextInput: $3;
+    currentlyFocusedInput: $3.currentlyFocusedInput;
+    currentlyFocusedField: $3.currentlyFocusedField;
+    focusTextInput: $3.focusTextInput;
+    blurTextInput: $3.blurTextInput;
   }>;
   propTypes: $1;
 }>;
@@ -612,7 +612,7 @@ export type { ReturnKeyType };
 export type { AutoCapitalize };
 export type { TextContentType };
 export type { Props };
-declare const $f2tExportDefault: $2<$2<$TypeOf<typeof InternalTextInput>>, Readonly<
+declare const $f2tExportDefault: $2.AbstractComponent<$2.ElementConfig<$TypeOf<typeof InternalTextInput>>, Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$2<HostComponent<unknown>> & ImperativeMethods & {}>> & TextInputComponentStatics;
+$2.ElementRef<HostComponent<unknown>> & ImperativeMethods & {}>> & TextInputComponentStatics;
 export default $f2tExportDefault;

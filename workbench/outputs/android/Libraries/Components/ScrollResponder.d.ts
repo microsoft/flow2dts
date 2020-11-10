@@ -247,7 +247,7 @@ declare var ScrollResponderMixin:
    * @param {bool} preventNegativeScrolling Whether to allow pulling the content
    *        down to make it meet the keyboard's top. Default is false.
    */
-  scrollResponderScrollNativeHandleToKeyboard: <T>(nodeHandle: number | $1<HostComponent<T>>, additionalOffset?: number, preventNegativeScrollOffset?: boolean) => void;
+  scrollResponderScrollNativeHandleToKeyboard: <T>(nodeHandle: number | $1.ElementRef<HostComponent<T>>, additionalOffset?: number, preventNegativeScrollOffset?: boolean) => void;
 
   /**
    * The calculations performed here assume the scroll view takes up the entire
