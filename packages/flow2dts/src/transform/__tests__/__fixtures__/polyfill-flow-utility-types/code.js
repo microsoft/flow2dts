@@ -13,4 +13,6 @@ type S = $Shape<T>
 type NM = $NonMaybeType<number | null | undefined>
 type C = Class<T>
 type EX = $Exact<T>
-type OM = $ObjMap<T, () => boolean>
+type OMF = $ObjMap<T, () => boolean>
+type _OMT = () => boolean
+type OMT = $ObjMap<T, _OMT>

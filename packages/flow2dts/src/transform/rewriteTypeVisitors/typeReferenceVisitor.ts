@@ -72,15 +72,16 @@ export const typeReferenceVisitor: Visitor<State> = {
             )
           }
           const [objectType, functionType] = typeParameters
-          t.assertTSFunctionType(functionType)
-          if (functionType.typeParameters && functionType.typeParameters.params.length > 0) {
-            throw new Error(
-              `$ObjMap with a function with generics cannot be converted:\r\n${JSON.stringify(
-                path.node.id,
-                undefined,
-                4
-              )}`
-            )
+          if (t.isTSFunctionType(functionType)) {
+            if (functionType.typeParameters && functionType.typeParameters.params.length > 0) {
+              throw new Error(
+                `$ObjMap with a function with generics cannot be converted:\r\n${JSON.stringify(
+                  path.node.id,
+                  undefined,
+                  4
+                )}`
+              )
+            }
           }
           const returnType = t.tsTypeReference(
             t.identifier("ReturnType"),
