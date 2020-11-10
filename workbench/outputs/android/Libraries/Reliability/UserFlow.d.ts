@@ -1,4 +1,5 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $Shape } from "utility-types";
 // @flow
 declare type FlowId = {
   markerId: number;

@@ -1,4 +1,5 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { Class } from "utility-types";
 // @flow
 declare type Pooler = any;
 declare var addPoolingTo: <T>(CopyConstructor: Class<T>, pooler: Pooler) => Class<T> & {

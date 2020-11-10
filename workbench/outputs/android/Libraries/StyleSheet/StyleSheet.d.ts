@@ -1,5 +1,5 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
-import { $Keys } from "utility-types";
+import { $ElementType, $Keys } from "utility-types";
 import $1 from "./flattenStyle";
 import { ____ColorValue_Internal } from "./StyleSheetTypes";
 import { ____Styles_Internal } from "./StyleSheetTypes";

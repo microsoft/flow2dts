@@ -1,3 +1,4 @@
+import { Class } from "utility-types";
 import $1 from "react";
 import { IgnorePattern } from "../LogBox/Data/LogBoxData";
 declare type Props = Readonly<

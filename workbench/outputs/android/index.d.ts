@@ -1,4 +1,5 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $PropertyType } from "utility-types";
 // @flow
 import AccessibilityInfo$f2tTypeof from "./Libraries/Components/AccessibilityInfo/AccessibilityInfo";
 declare type AccessibilityInfo = $TypeOf<typeof AccessibilityInfo$f2tTypeof>;

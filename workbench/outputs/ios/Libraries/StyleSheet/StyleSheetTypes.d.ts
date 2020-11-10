@@ -1,3 +1,4 @@
+import { $Shape } from "utility-types";
 import $1 from "../Animated/nodes/AnimatedNode";
 import { NativeColorValue } from "./PlatformColorValueTypes";
 declare type ____ColorValue_Internal = null | string | NativeColorValue;
@@ -544,7 +545,13 @@ declare type ____ShadowStyle_Internal = Readonly<
 }>;
 declare type ____ViewStyle_Internal = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$Exact<____LayoutStyle_Internal> & $Exact<____ShadowStyle_Internal> & $Exact<____TransformStyle_Internal> & {
+
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+____LayoutStyle_Internal &
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+____ShadowStyle_Internal &
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+____TransformStyle_Internal & {
   backfaceVisibility?: "visible" | "hidden";
   backgroundColor?: ____ColorValue_Internal;
   borderColor?: ____ColorValue_Internal;
@@ -577,7 +584,9 @@ $Exact<____LayoutStyle_Internal> & $Exact<____ShadowStyle_Internal> & $Exact<___
 declare type ____FontWeight_Internal = "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";
 declare type ____TextStyle_Internal = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$Exact<____ViewStyle_Internal> & {
+
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+____ViewStyle_Internal & {
   color?: ____ColorValue_Internal;
   fontFamily?: string;
   fontSize?: number;
@@ -605,12 +614,16 @@ $Exact<____ViewStyle_Internal> & {
 }>;
 declare type ____ImageStyle_Internal = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$Exact<____ViewStyle_Internal> & {
+
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+____ViewStyle_Internal & {
   resizeMode?: "contain" | "cover" | "stretch" | "center" | "repeat";
   tintColor?: ____ColorValue_Internal;
   overlayColor?: string;
 }>;
-declare type ____DangerouslyImpreciseStyle_Internal = $Exact<____TextStyle_Internal> & {
+declare type ____DangerouslyImpreciseStyle_Internal =
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+____TextStyle_Internal & {
   readonly resizeMode?: "contain" | "cover" | "stretch" | "center" | "repeat";
   readonly tintColor?: ____ColorValue_Internal;
   readonly overlayColor?: string;

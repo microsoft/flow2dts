@@ -1,3 +1,4 @@
+import { $PropertyType } from "utility-types";
 // @flow
 import * as React from "react";
 import { HostComponent } from "../Renderer/shims/ReactNativeTypes";

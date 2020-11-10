@@ -1,4 +1,5 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $Call, $PropertyType } from "utility-types";
 // @flow
 import { PressEvent } from "../Types/CoreEventTypes";
 declare type GestureState =

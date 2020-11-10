@@ -1,5 +1,5 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
-import { $Diff } from "utility-types";
+import { $Diff, $PropertyType } from "utility-types";
 import $2 from "react";
 import $3 from "../Components/View/View";
 import $4 from "./VirtualizedList";
