@@ -54,6 +54,17 @@ export const typeReferenceVisitor: Visitor<State> = {
             )
           }
           path.replaceWith(t.tsTypeReference(t.identifier("Readonly"), t.tsTypeParameterInstantiation(typeParameters)))
+        } else if (name === "$Exact") {
+          if (!typeParameters || typeParameters.length !== 1) {
+            throw new Error(
+              `$Exact must have exactly one type argument:\r\n${JSON.stringify(path.node.id, undefined, 4)}`
+            )
+          }
+          path.addComment(
+            "leading",
+            "[FLOW2DTS - Warning] This type was an exact object type in the original Flow source."
+          )
+          path.replaceWith(typeParameters[0])
         } else {
           if (isPolyFilledType(name)) {
             state.polyfillTypes.add(name)

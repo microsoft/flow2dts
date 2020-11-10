@@ -18,3 +18,6 @@ declare type FR = $Call<() => number>
 declare type S = $Shape<T>
 declare type NM = $NonMaybeType<number | null | undefined>
 declare type C = Class<T>
+declare type EX =
+  /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+  T

@@ -12,3 +12,4 @@ type FR = $Call<() => number>
 type S = $Shape<T>
 type NM = $NonMaybeType<number | null | undefined>
 type C = Class<T>
+type EX = $Exact<T>
