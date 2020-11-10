@@ -2,7 +2,7 @@ import { Visitor, types as t } from "@babel/core"
 import { type } from "os"
 import { isRecognized, State } from "../state"
 import { assertTSType } from "../utilities"
-import { resolveMemberExpression } from "../typeReferenceResolver"
+import { resolveQualifiedTypeIdentifier, resolveMemberExpression } from "../typeReferenceResolver"
 
 export const declarationVisitor: Visitor<State> = {
   VariableDeclaration: {
@@ -66,6 +66,15 @@ export const declarationVisitor: Visitor<State> = {
       }
     },
   },
+  InterfaceExtends: {
+    exit(path, state) {
+      const resolved = resolveQualifiedTypeIdentifier(state.typeReferences, path, path.node.id)
+      if (resolved) {
+        // it should be TSInterfaceHeritage, but the type is missing, so just hack it for now
+        path.node.id = <t.Identifier>resolved
+      }
+    },
+  },
   ClassDeclaration: {
     exit(path, state) {
       path.node.declare = true
@@ -83,14 +92,5 @@ export const declarationVisitor: Visitor<State> = {
         )
       }
     },
-  },
-  InterfaceDeclaration: {
-    exit(path, state) {},
-  },
-  DeclareClass: {
-    exit(path, state) {},
-  },
-  DeclareInterface: {
-    exit(path, state) {},
   },
 }
