@@ -1,13 +1,16 @@
-[FLOW2DTS - Error] /Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow: Unexpected reserved type number (16:39)
-
-  14 |     },
-  15 |   >,
-> 16 |   shadowOpacity: typeof ReactPropTypes.number,
-     |                                        ^
-  17 |   shadowRadius: typeof ReactPropTypes.number,
-  18 | |};
-  19 | 
-
-================================================================
-
-[babelParser.parse] Unexpected reserved type number (16:39)
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import $1 from "./DeprecatedColorPropType";
+import $2 from "prop-types";
+declare var DeprecatedShadowPropTypesIOS:
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  shadowColor: $1;
+  shadowOffset: React$PropType$Primitive<{
+    height?: number;
+    width?: number;
+  }>;
+  shadowOpacity: $2.number;
+  shadowRadius: $2.number;
+};
+declare const $f2tExportDefault: $TypeOf<typeof DeprecatedShadowPropTypesIOS>;
+export default $f2tExportDefault;
