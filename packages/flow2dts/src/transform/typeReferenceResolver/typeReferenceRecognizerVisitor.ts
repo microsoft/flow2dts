@@ -1,6 +1,5 @@
 import { Visitor, types as t } from "@babel/core"
 import { State } from "../state"
-import { ReferenceRecord } from "./state"
 
 export const typeReferenceRecognizerVisitor: Visitor<State> = {
   DeclareVariable: {
