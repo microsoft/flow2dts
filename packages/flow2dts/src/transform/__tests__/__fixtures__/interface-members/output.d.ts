@@ -18,3 +18,6 @@ interface ID {
   (): void
   (a: string, b?: null | undefined | number, ...c: number[]): boolean
 }
+interface IE {
+  foo: string
+}

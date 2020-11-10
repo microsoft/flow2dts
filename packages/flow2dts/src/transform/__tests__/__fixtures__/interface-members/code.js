@@ -20,3 +20,7 @@ interface ID {
   (): void;
   (a: string, b?: ?number, ...c: Array<number>): boolean;
 }
+
+interface IE {
+  get foo(): string;
+}
