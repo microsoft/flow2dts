@@ -10,4 +10,5 @@ function f2(e: typeof AnimatedEvent): typeof attachNativeEvent {}
 
 import * as React from "react"
 declare class AccessibilityManagerTest extends $1<{ ... }> {}
+function g(): $1<{ ... }> {}
 declare var $1: typeof React.Component
