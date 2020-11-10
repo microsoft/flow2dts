@@ -1,4 +1,5 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $Call } from "utility-types";
 // @flow
 import { enable as enable$f2tTypeof } from "promise/setimmediate/rejection-tracking";
 declare type enable = $TypeOf<typeof enable$f2tTypeof>;
