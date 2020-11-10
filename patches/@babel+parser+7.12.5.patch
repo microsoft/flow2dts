@@ -1,0 +1,13 @@
+diff --git a/node_modules/@babel/parser/lib/index.js b/node_modules/@babel/parser/lib/index.js
+index 4f85862..81fb264 100644
+--- a/node_modules/@babel/parser/lib/index.js
++++ b/node_modules/@babel/parser/lib/index.js
+@@ -1696,7 +1696,7 @@ var flow = (superClass => {
+ 
+     checkReservedType(word, startLoc, declaration) {
+       if (!reservedTypes.has(word)) return;
+-      this.raise(startLoc, declaration ? FlowErrors.AssignReservedType : FlowErrors.UnexpectedReservedType, word);
++      // this.raise(startLoc, declaration ? FlowErrors.AssignReservedType : FlowErrors.UnexpectedReservedType, word);
+     }
+ 
+     flowParseRestrictedIdentifier(liberal, declaration) {
