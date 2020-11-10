@@ -2,7 +2,7 @@ import { Visitor, types as t } from "@babel/core"
 import { isPolyFilledType } from "../polyfillTypes"
 import { State } from "../state"
 import { assertTSType, wrappedTypeOf } from "../utilities"
-import { resolveTypeReference } from "../typeReferenceResolver"
+import { resolveGenericTypeAnnotation } from "../typeReferenceResolver"
 
 function convertQID(input: t.Identifier | t.QualifiedTypeIdentifier): t.Identifier | t.TSQualifiedName {
   if (input.type === "Identifier") {
@@ -15,7 +15,7 @@ function convertQID(input: t.Identifier | t.QualifiedTypeIdentifier): t.Identifi
 export const typeReferenceVisitor: Visitor<State> = {
   GenericTypeAnnotation: {
     exit(path, state) {
-      const resolved = resolveTypeReference(state.typeReferences, path, path.node)
+      const resolved = resolveGenericTypeAnnotation(state.typeReferences, path, path.node)
       if (resolved) {
         path.replaceWith(resolved)
         return
@@ -88,7 +88,7 @@ export const typeReferenceVisitor: Visitor<State> = {
        */
       const typeQueryOperator = path.node.argument
       if (typeQueryOperator.type === "GenericTypeAnnotation") {
-        const resolved = resolveTypeReference(state.typeReferences, path, typeQueryOperator)
+        const resolved = resolveGenericTypeAnnotation(state.typeReferences, path, typeQueryOperator)
         if (resolved) {
           path.replaceWith(resolved)
         }

@@ -38,11 +38,11 @@ function ensureResolved(typeReferences: RecognizedTypeReferences, record: Refere
   return record.resolved
 }
 
-export function resolveTypeReference<T>(
+export function resolveQualifiedTypeIdentifier<T>(
   typeReferences: RecognizedTypeReferences,
   path: NodePath<T>,
-  flowType: t.GenericTypeAnnotation
-): t.TSTypeReference | undefined {
+  flowType: t.Identifier | t.QualifiedTypeIdentifier
+): t.TSEntityName | undefined {
   /*
    Check if the first identifier references one of a recognized DeclareVariable.
    getBinding is necessary because name could be hidden by anything inside scopes.
@@ -52,7 +52,7 @@ export function resolveTypeReference<T>(
    it is not impossible to have name hiding.
    */
 
-  let firstName = flowType.id
+  let firstName = flowType
   while (firstName.type !== "Identifier") {
     firstName = firstName.qualification
   }
@@ -64,9 +64,18 @@ export function resolveTypeReference<T>(
   if (!record) return undefined
   if (record.variable !== binding.path.node) return undefined
 
-  let tsParams: t.TSTypeParameterInstantiation | undefined
+  return ensureResolved(typeReferences, record)
+}
 
-  const entity = ensureResolved(typeReferences, record)
+export function resolveGenericTypeAnnotation<T>(
+  typeReferences: RecognizedTypeReferences,
+  path: NodePath<T>,
+  flowType: t.GenericTypeAnnotation
+): t.TSTypeReference | undefined {
+  const entity = resolveQualifiedTypeIdentifier(typeReferences, path, flowType.id)
+  if (!entity) return undefined
+
+  let tsParams: t.TSTypeParameterInstantiation | undefined
   if (flowType.typeParameters) {
     /*
      if this GenericTypeAnnotation is in TypeofTypeAnnotation, typeParameters.params has not been translated.
@@ -75,5 +84,6 @@ export function resolveTypeReference<T>(
      */
     tsParams = t.tsTypeParameterInstantiation(<t.TSType[]>(<unknown>flowType.typeParameters.params))
   }
+
   return t.tsTypeReference(entity, tsParams)
 }
