@@ -2,6 +2,7 @@ import { Visitor, types as t } from "@babel/core"
 import { type } from "os"
 import { isRecognized, State } from "../state"
 import { assertTSType } from "../utilities"
+import { resolveMemberExpression } from "../typeReferenceResolver"
 
 export const declarationVisitor: Visitor<State> = {
   VariableDeclaration: {
@@ -56,17 +57,30 @@ export const declarationVisitor: Visitor<State> = {
     },
   },
   ClassDeclaration: {
-    exit(path) {
+    exit(path, state) {
       path.node.declare = true
+
+      if (path.node.superClass) {
+        const superClass = resolveMemberExpression(state.typeReferences, path, path.node.superClass)
+        if (superClass) {
+          path.node.superClass = superClass
+        }
+      }
+
+      if (path.node.superTypeParameters && path.node.superTypeParameters.type === "TypeParameterInstantiation") {
+        path.node.superTypeParameters = t.tsTypeParameterInstantiation(
+          <t.TSType[]>(<unknown>path.node.superTypeParameters.params)
+        )
+      }
     },
   },
   InterfaceDeclaration: {
-    exit(path) {},
+    exit(path, state) {},
   },
   DeclareClass: {
-    exit(path) {},
+    exit(path, state) {},
   },
   DeclareInterface: {
-    exit(path) {},
+    exit(path, state) {},
   },
 }

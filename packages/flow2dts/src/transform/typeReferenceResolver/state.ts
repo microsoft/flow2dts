@@ -38,6 +38,32 @@ function ensureResolved(typeReferences: RecognizedTypeReferences, record: Refere
   return record.resolved
 }
 
+function convertMemberExpressionToQualifiedTypeIdentifier(
+  member: t.Expression
+): t.Identifier | t.QualifiedTypeIdentifier | undefined {
+  if (member.type === "Identifier") {
+    return member
+  } else if (
+    member.type === "MemberExpression" &&
+    member.property.type === "Identifier" &&
+    (member.object.type === "MemberExpression" || member.object.type === "Identifier")
+  ) {
+    const parent = convertMemberExpressionToQualifiedTypeIdentifier(member.object)
+    if (!parent) return undefined
+    return t.qualifiedTypeIdentifier(member.property, parent)
+  } else {
+    return undefined
+  }
+}
+
+function convertTSEntityNameToMemberExpression(entity: t.TSEntityName): t.MemberExpression | t.Identifier {
+  if (entity.type === "Identifier") {
+    return entity
+  } else {
+    return t.memberExpression(convertTSEntityNameToMemberExpression(entity.left), entity.right)
+  }
+}
+
 export function resolveQualifiedTypeIdentifier<T>(
   typeReferences: RecognizedTypeReferences,
   path: NodePath<T>,
@@ -65,6 +91,18 @@ export function resolveQualifiedTypeIdentifier<T>(
   if (record.variable !== binding.path.node) return undefined
 
   return ensureResolved(typeReferences, record)
+}
+
+export function resolveMemberExpression<T>(
+  typeReferences: RecognizedTypeReferences,
+  path: NodePath<T>,
+  member: t.Expression
+): t.MemberExpression | t.Identifier | undefined {
+  const flowType = convertMemberExpressionToQualifiedTypeIdentifier(member)
+  if (!flowType) return undefined
+  const resolved = resolveQualifiedTypeIdentifier(typeReferences, path, flowType)
+  if (!resolved) return undefined
+  return convertTSEntityNameToMemberExpression(resolved)
 }
 
 export function resolveGenericTypeAnnotation<T>(
