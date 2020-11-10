@@ -50,10 +50,10 @@ declare class XMLHttpRequest extends $1 {
   upload: XMLHttpRequestEventTarget;
   setInterceptor: (interceptor: null | undefined | XHRInterceptor) => void;
   constructor: () => void;
-  responseType: () => ResponseType;
+  responseType: ResponseType;
   responseType: (responseType: ResponseType) => void;
-  responseText: () => string;
-  response: () => Response;
+  responseText: string;
+  response: Response;
   // exposed for testing
   __didCreateRequest: (requestId: number) => void;
   // exposed for testing

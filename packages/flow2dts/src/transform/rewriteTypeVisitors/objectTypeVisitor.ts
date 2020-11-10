@@ -30,7 +30,8 @@ export const objectTypeVisitor: Visitor<State> = {
   },
   ObjectTypeProperty: {
     exit(path) {
-      const { key, value, variance, optional } = path.node
+      const { key, kind, variance, optional } = path.node
+      let value = path.node.value as any
       assertTSType(value)
 
       const readonly = variance && variance.kind === "plus"
@@ -41,6 +42,12 @@ export const objectTypeVisitor: Visitor<State> = {
           "leading",
           "[FLOW2DTS - Warning] This property was a write-only property in the original Flow source."
         )
+      }
+
+      // TODO: Mark as readonly if no `set` version exists
+      if (kind === "get") {
+        t.assertTSFunctionType(value)
+        value = value.typeAnnotation!.typeAnnotation
       }
 
       const propertySignature = t.tsPropertySignature(

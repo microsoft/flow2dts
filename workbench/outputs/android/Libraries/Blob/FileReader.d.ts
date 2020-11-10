@@ -18,9 +18,9 @@ declare class FileReader extends $2 {
   readAsDataURL: (blob: null | undefined | Blob) => void;
   readAsText: (blob: null | undefined | Blob, encoding?: string) => void;
   abort: () => void;
-  readyState: () => ReadyState;
-  error: () => null | undefined | Error;
-  result: () => null | undefined | ReaderResult;
+  readyState: ReadyState;
+  error: null | undefined | Error;
+  result: null | undefined | ReaderResult;
 }
 declare var $2: any;
 declare const $f2tExportDefault: $TypeOf<typeof FileReader>;

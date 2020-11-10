@@ -10,8 +10,8 @@ declare var Platform:
 {
   __constants: null;
   OS: string;
-  Version: () => string;
-  constants: () =>
+  Version: string;
+  constants:
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
     forceTouchAvailable: boolean;
@@ -28,10 +28,10 @@ declare var Platform:
     };
     systemName: string;
   };
-  isPad: () => boolean;
-  isTVOS: () => boolean;
-  isTV: () => boolean;
-  isTesting: () => boolean;
+  isPad: boolean;
+  isTVOS: boolean;
+  isTV: boolean;
+  isTesting: boolean;
   select: <D, N, I>(spec: PlatformSelectSpec<D, N, I>) => D | N | I;
 };
 export type { PlatformSelectSpec };

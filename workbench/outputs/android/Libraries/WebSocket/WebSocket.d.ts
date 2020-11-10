@@ -26,7 +26,7 @@ declare class WebSocket extends $1 {
       origin?: string;
     };
   }) => void;
-  binaryType: () => null | undefined | BinaryType;
+  binaryType: null | undefined | BinaryType;
   binaryType: (binaryType: BinaryType) => void;
   close: (code?: number, reason?: string) => void;
   send: (data: string | ArrayBuffer | ArrayBufferView | Blob) => void;

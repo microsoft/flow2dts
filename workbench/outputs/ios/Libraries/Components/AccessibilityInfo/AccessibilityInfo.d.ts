@@ -73,7 +73,7 @@ declare var AccessibilityInfo:
    * See https://reactnative.dev/docs/accessibilityinfo.html#isScreenReaderEnabled
    */
   isScreenReaderEnabled: () => Promise<boolean>;
-  fetch: () => $FlowFixMe;
+  fetch: $FlowFixMe;
 
   /**
    * Add an event handler. Supported events:

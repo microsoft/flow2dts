@@ -70,6 +70,6 @@ declare const $f2tExportDefault:
   assertNativeAnimatedModule: $TypeOf<typeof assertNativeAnimatedModule>;
   shouldUseNativeDriver: $TypeOf<typeof shouldUseNativeDriver>;
   transformDataType: $TypeOf<typeof transformDataType>;
-  nativeEventEmitter: () => NativeEventEmitter;
+  nativeEventEmitter: NativeEventEmitter;
 };
 export default $f2tExportDefault;

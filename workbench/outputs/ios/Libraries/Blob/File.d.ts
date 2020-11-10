@@ -8,8 +8,8 @@ declare class File extends $2 {
    * Constructor for JS consumers.
    */
   constructor: (parts: (Blob | string)[], name: string, options?: BlobOptions) => void;
-  name: () => string;
-  lastModified: () => number;
+  name: string;
+  lastModified: number;
 }
 declare var $2: $TypeOf<typeof Blob>;
 declare const $f2tExportDefault: $TypeOf<typeof File>;

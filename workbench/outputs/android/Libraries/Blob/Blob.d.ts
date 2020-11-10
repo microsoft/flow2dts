@@ -10,7 +10,7 @@ declare class Blob {
    */
   constructor: (parts?: (Blob | string)[], options?: BlobOptions) => void;
   data: (data: null | undefined | BlobData) => void;
-  data: () => BlobData;
+  data: BlobData;
   slice: (start?: number, end?: number) => Blob;
 
   /**
@@ -26,8 +26,8 @@ declare class Blob {
    * `new Blob([blob, ...])` actually copies the data in memory.
    */
   close: () => void;
-  size: () => number;
-  type: () => string;
+  size: number;
+  type: string;
 }
 declare const $f2tExportDefault: $TypeOf<typeof Blob>;
 export default $f2tExportDefault;

@@ -18,11 +18,11 @@ declare var Animated: $TypeOf<typeof AnimatedMock>;
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 $TypeOf<typeof Animated> & {
-  FlatList: () => AnimatedFlatList;
-  Image: () => AnimatedImage;
-  ScrollView: () => AnimatedScrollView;
-  SectionList: () => AnimatedSectionList;
-  Text: () => AnimatedText;
-  View: () => AnimatedView;
+  FlatList: AnimatedFlatList;
+  Image: AnimatedImage;
+  ScrollView: AnimatedScrollView;
+  SectionList: AnimatedSectionList;
+  Text: AnimatedText;
+  View: AnimatedView;
 };
 export default $f2tExportDefault;
