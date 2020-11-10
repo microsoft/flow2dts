@@ -2,29 +2,28 @@ import { Visitor, types as t } from "@babel/core"
 import { State } from "../state"
 import { assertTSType, nameForParameter, nameForRestParameter } from "../utilities"
 
-function ensureParenthesizedFunctionType(type: t.TSType) {
-  return t.isTSFunctionType(type) ? t.tsParenthesizedType(type) : type
-}
-
 export const advancedTypeVisitor: Visitor<State> = {
   ArrayTypeAnnotation: {
     exit(path) {
       const elementType = path.node.elementType as any
       assertTSType(elementType)
-      path.replaceWith(t.tsArrayType(ensureParenthesizedFunctionType(elementType)))
+      path.replaceWith(t.tsArrayType(elementType))
     },
   },
   TupleTypeAnnotation: {
     exit(path) {
-      path.node.types.forEach(assertTSType)
-      path.replaceWith(t.tsTupleType(<t.TSType[]>(<unknown>path.node.types)))
+      const types = path.node.types.map((type: any) => {
+        assertTSType(type)
+        return type
+      })
+      path.replaceWith(t.tsTupleType(types))
     },
   },
   UnionTypeAnnotation: {
     exit(path) {
       const types = path.node.types.map((type: any) => {
         assertTSType(type)
-        return ensureParenthesizedFunctionType(type)
+        return type
       })
       path.replaceWith(t.tsUnionType(types))
     },
@@ -33,7 +32,7 @@ export const advancedTypeVisitor: Visitor<State> = {
     exit(path) {
       const types = path.node.types.map((type: any) => {
         assertTSType(type)
-        return ensureParenthesizedFunctionType(type)
+        return type
       })
       path.replaceWith(t.tsIntersectionType(types))
     },
@@ -42,9 +41,7 @@ export const advancedTypeVisitor: Visitor<State> = {
     exit(path) {
       const type = path.node.typeAnnotation as any
       assertTSType(type)
-      path.replaceWith(
-        t.tsUnionType([t.tsNullKeyword(), t.tsUndefinedKeyword(), ensureParenthesizedFunctionType(type)])
-      )
+      path.replaceWith(t.tsUnionType([t.tsNullKeyword(), t.tsUndefinedKeyword(), type]))
     },
   },
   FunctionTypeAnnotation: {
