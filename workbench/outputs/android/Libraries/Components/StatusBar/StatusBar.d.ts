@@ -108,7 +108,7 @@ declare class StatusBar extends $1.Component<Props> {
   componentDidMount: () => void;
   componentWillUnmount: () => void;
   componentDidUpdate: () => void;
-  render: () => $1;
+  render: () => $1.Node;
 }
 export type { StatusBarStyle };
 export type { StatusBarAnimation };

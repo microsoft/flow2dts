@@ -22,7 +22,7 @@ declare type Label = Stringish | number;
 declare type Props = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 ViewProps & {
-  children: $2<$2<$TypeOf<typeof PickerIOSItem>>>;
+  children: $2.ChildrenArray<$2.Element<$TypeOf<typeof PickerIOSItem>>>;
   itemStyle?: null | undefined | TextStyleProp;
   onChange?: null | undefined | ((event: PickerIOSChangeEvent) => unknown);
   onValueChange?: null | undefined | ((itemValue: string | number, itemIndex: number) => unknown);
@@ -47,7 +47,7 @@ declare class PickerIOS extends $2.Component<Props, State> {
   state: State;
   Item: (props: ItemProps) => null;
   getDerivedStateFromProps: (props: Props) => State;
-  render: () => $2;
+  render: () => $2.Node;
   componentDidUpdate: () => void;
 }
 declare const $f2tExportDefault: $TypeOf<typeof PickerIOS>;

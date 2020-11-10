@@ -39,7 +39,7 @@ declare type OptionalProps<SectionT extends SectionBase<any>> =
       unhighlight: () => void;
       updateProps: (select: "leading" | "trailing", newProps: Object) => void;
     };
-  }) => null | $1<any>;
+  }) => null | $1.Element<any>;
 
   /**
    * A marker property for telling the list to re-render (since it implements `PureComponent`). If
@@ -92,7 +92,7 @@ $Diff<VirtualizedSectionListProps<SectionT>, {
 }> & RequiredProps<SectionT> & OptionalProps<SectionT> & {};
 declare var defaultProps:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$3 & {
+$3.defaultProps & {
   stickySectionHeadersEnabled: boolean;
 };
 declare type DefaultProps = $TypeOf<typeof defaultProps>;
@@ -132,7 +132,7 @@ declare class SectionList<SectionT extends SectionBase<any>> extends $1.PureComp
   getScrollResponder: () => null | undefined | ScrollResponderType;
   getScrollableNode: () => any;
   setNativeProps: (props: Object) => void;
-  render: () => $1;
+  render: () => $1.Node;
 }
 export type { SectionBase };
 export type { Props };

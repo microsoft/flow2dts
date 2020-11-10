@@ -12,11 +12,11 @@ declare type Props = Readonly<
   * () => renderable
   * A function that returns a renderable component
   */
-  render: () => $1;
+  render: () => $1.Node;
 }>;
 declare class StaticRenderer extends $1.Component<Props> {
   shouldComponentUpdate: (nextProps: Props) => boolean;
-  render: () => $1;
+  render: () => $1.Node;
 }
 declare const $f2tExportDefault: $TypeOf<typeof StaticRenderer>;
 export default $f2tExportDefault;

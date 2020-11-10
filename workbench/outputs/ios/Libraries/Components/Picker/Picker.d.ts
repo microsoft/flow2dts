@@ -33,7 +33,7 @@ declare class PickerItem extends $3.Component<PickerItemProps> {
 declare type PickerProps = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  children?: $3;
+  children?: $3.Node;
   style?: null | undefined | TextStyleProp;
 
   /**
@@ -102,7 +102,7 @@ declare class Picker extends $3.Component<PickerProps> {
   {
     mode: string;
   };
-  render: () => $3;
+  render: () => $3.Node;
 }
 export type { PickerItem };
 declare const $f2tExportDefault: $TypeOf<typeof Picker>;

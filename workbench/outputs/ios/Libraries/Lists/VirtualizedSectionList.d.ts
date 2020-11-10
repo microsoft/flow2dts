@@ -24,8 +24,8 @@ declare type SectionBase<SectionItemT> = {
       unhighlight: () => void;
       updateProps: (select: "leading" | "trailing", newProps: Object) => void;
     };
-  }) => null | $1<any>);
-  ItemSeparatorComponent?: null | undefined | $1<any>;
+  }) => null | $1.Element<any>);
+  ItemSeparatorComponent?: null | undefined | $1.ComponentType<any>;
   keyExtractor?: (item: SectionItemT, index?: null | undefined | number) => string;
 };
 declare type RequiredProps<SectionT extends SectionBase<any>> =
@@ -48,7 +48,7 @@ declare type OptionalProps<SectionT extends SectionBase<any>> =
       unhighlight: () => void;
       updateProps: (select: "leading" | "trailing", newProps: Object) => void;
     };
-  }) => null | $1<any>;
+  }) => null | $1.Element<any>;
 
   /**
    * Rendered at the top of each section. These stick to the top of the `ScrollView` by default on
@@ -56,14 +56,14 @@ declare type OptionalProps<SectionT extends SectionBase<any>> =
    */
   renderSectionHeader?: null | undefined | ((info: {
     section: SectionT;
-  }) => null | $1<any>);
+  }) => null | $1.Element<any>);
 
   /**
    * Rendered at the bottom of each section.
    */
   renderSectionFooter?: null | undefined | ((info: {
     section: SectionT;
-  }) => null | $1<any>);
+  }) => null | $1.Element<any>);
 
   /**
    * Rendered at the top and bottom of each section (note this is different from
@@ -72,7 +72,7 @@ declare type OptionalProps<SectionT extends SectionBase<any>> =
    * `ItemSeparatorComponent`. Also receives `highlighted`, `[leading/trailing][Item/Separator]`,
    * and any custom props from `separators.updateProps`.
    */
-  SectionSeparatorComponent?: null | undefined | $1<any>;
+  SectionSeparatorComponent?: null | undefined | $1.ComponentType<any>;
 
   /**
    * Makes section headers stick to the top of the screen until the next one pushes it off. Only
@@ -83,7 +83,7 @@ declare type OptionalProps<SectionT extends SectionBase<any>> =
     distanceFromEnd: number;
   }) => void);
 };
-declare type VirtualizedListProps = $1<$2>;
+declare type VirtualizedListProps = $1.ElementProps<$2>;
 declare type Props<SectionT> =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 RequiredProps<SectionT> & OptionalProps<SectionT> & $Diff<VirtualizedListProps, {
@@ -100,7 +100,7 @@ declare type ScrollToLocationParamsType =
 };
 declare type DefaultProps =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$2 & {
+$2.defaultProps & {
   data: ReadonlyArray<Item>;
 };
 declare type State = {
@@ -112,7 +112,7 @@ declare class VirtualizedSectionList<SectionT extends SectionBase<any>> extends 
   getListRef: () => $2;
   constructor: (props: Props<SectionT>, context: Object) => void;
   UNSAFE_componentWillReceiveProps: (nextProps: Props<SectionT>) => void;
-  render: () => $1;
+  render: () => $1.Node;
 }
 export type { SectionBase };
 export type { Props };
