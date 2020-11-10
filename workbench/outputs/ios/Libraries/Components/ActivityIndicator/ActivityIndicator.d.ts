@@ -1,6 +1,4 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
-// @flow
-declare var React: $TypeOf<typeof $1>;
 import $1 from "react";
 import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
 import { ViewProps } from "../View/ViewPropTypes";
@@ -37,6 +35,6 @@ ViewProps & IOSProps & {
   */
   size?: null | undefined | IndicatorSize;
 }>;
-declare var ActivityIndicatorWithRef: React.AbstractComponent<Props, HostComponent<unknown>>;
+declare var ActivityIndicatorWithRef: $1<Props, HostComponent<unknown>>;
 declare const $f2tExportDefault: $TypeOf<typeof ActivityIndicatorWithRef>;
 export default $f2tExportDefault;

@@ -1,10 +1,6 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
-// @flow
-declare var DeprecatedImagePropType: $TypeOf<typeof $1>;
 import $1 from "../DeprecatedPropTypes/DeprecatedImagePropType";
-declare var React: $TypeOf<typeof $2>;
 import $2 from "react";
-declare var resolveAssetSource: $TypeOf<typeof $3>;
 import $3 from "./resolveAssetSource";
 import { ImageProps as ImagePropsType } from "./ImageProps";
 import ImageViewNativeComponent from "./ImageViewNativeComponent";
@@ -23,8 +19,8 @@ declare type ImageComponentStatics = Readonly<
   getSizeWithHeaders: $TypeOf<typeof getSizeWithHeaders>;
   prefetch: $TypeOf<typeof prefetch>;
   queryCache: $TypeOf<typeof queryCache>;
-  resolveAssetSource: $TypeOf<typeof resolveAssetSource>;
-  propTypes: $TypeOf<typeof DeprecatedImagePropType>;
+  resolveAssetSource: $3;
+  propTypes: $1;
 }>;
-declare const $f2tExportDefault: React.AbstractComponent<ImagePropsType, React.ElementRef<$TypeOf<typeof ImageViewNativeComponent>>> & ImageComponentStatics;
+declare const $f2tExportDefault: $2<ImagePropsType, $2<$TypeOf<typeof ImageViewNativeComponent>>> & ImageComponentStatics;
 export default $f2tExportDefault;

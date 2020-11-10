@@ -1,6 +1,4 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import RCTDeviceEventEmitter from "./RCTDeviceEventEmitter";
-declare var RCTNativeAppEventEmitter: $TypeOf<typeof RCTDeviceEventEmitter>;
-declare const $f2tExportDefault: $TypeOf<typeof RCTNativeAppEventEmitter>;
+declare const $f2tExportDefault: RCTDeviceEventEmitter;
 export default $f2tExportDefault;

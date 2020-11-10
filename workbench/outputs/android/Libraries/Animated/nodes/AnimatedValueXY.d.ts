@@ -1,19 +1,16 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
-// @flow
-declare var AnimatedValue: $TypeOf<typeof $1>;
 import $1 from "./AnimatedValue";
-declare var AnimatedWithChildren: $TypeOf<typeof $3>;
 import $3 from "./AnimatedWithChildren";
 declare type ValueXYListenerCallback = (value: {
   x: number;
   y: number;
 }) => unknown;
-declare class AnimatedValueXY extends $2 {
-  x: AnimatedValue;
-  y: AnimatedValue;
+declare class AnimatedValueXY extends $3 {
+  x: $1;
+  y: $1;
   constructor: (valueIn?: null | undefined | {
-    readonly x: number | AnimatedValue;
-    readonly y: number | AnimatedValue;
+    readonly x: number | $1;
+    readonly y: number | $1;
   }) => void;
 
   /**
@@ -113,7 +110,7 @@ declare class AnimatedValueXY extends $2 {
    * See https://reactnative.dev/docs/animatedvaluexy.html#getlayout
    */
   getLayout: () => {
-    [key: string]: AnimatedValue;
+    [key: string]: $1;
   };
 
   /**
@@ -122,9 +119,8 @@ declare class AnimatedValueXY extends $2 {
    * See https://reactnative.dev/docs/animatedvaluexy.html#gettranslatetransform
    */
   getTranslateTransform: () => {
-    [key: string]: AnimatedValue;
+    [key: string]: $1;
   }[];
 }
-declare var $2: $TypeOf<typeof AnimatedWithChildren>;
 declare const $f2tExportDefault: $TypeOf<typeof AnimatedValueXY>;
 export default $f2tExportDefault;

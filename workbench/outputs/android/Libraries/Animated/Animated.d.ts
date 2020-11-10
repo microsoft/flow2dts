@@ -12,12 +12,10 @@ import AnimatedText$f2tTypeof from "./components/AnimatedText";
 declare type AnimatedText = $TypeOf<typeof AnimatedText$f2tTypeof>;
 import AnimatedView$f2tTypeof from "./components/AnimatedView";
 declare type AnimatedView = $TypeOf<typeof AnimatedView$f2tTypeof>;
-declare var AnimatedMock: $TypeOf<typeof $1>;
 import $1 from "./AnimatedMock";
-declare var Animated: $TypeOf<typeof AnimatedMock>;
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$TypeOf<typeof Animated> & {
+$1 & {
   FlatList: AnimatedFlatList;
   Image: AnimatedImage;
   ScrollView: AnimatedScrollView;

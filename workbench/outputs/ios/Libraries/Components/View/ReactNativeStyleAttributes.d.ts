@@ -1,31 +1,24 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
-// @flow
-declare var DeprecatedImageStylePropTypes: $TypeOf<typeof $1>;
 import $1 from "../../DeprecatedPropTypes/DeprecatedImageStylePropTypes";
-declare var DeprecatedTextStylePropTypes: $TypeOf<typeof $2>;
 import $2 from "../../DeprecatedPropTypes/DeprecatedTextStylePropTypes";
-declare var DeprecatedViewStylePropTypes: $TypeOf<typeof $3>;
 import $3 from "../../DeprecatedPropTypes/DeprecatedViewStylePropTypes";
-declare var processColor: $TypeOf<typeof $4>;
 import $4 from "../../StyleSheet/processColor";
-declare var processTransform: $TypeOf<typeof $5>;
 import $5 from "../../StyleSheet/processTransform";
-declare var sizesDiffer: $TypeOf<typeof $6>;
 import $6 from "../../Utilities/differ/sizesDiffer";
 declare type ReturnBoolType = <V>($f2t1: V) => true;
-declare type BoolifiedDeprecatedViewStylePropTypes = $ObjMap<$TypeOf<typeof DeprecatedViewStylePropTypes>, ReturnBoolType>;
-declare type BoolifiedDeprecatedTextStylePropTypes = $ObjMapi<$TypeOf<typeof DeprecatedTextStylePropTypes>, ReturnBoolType>;
-declare type BoolifiedDeprecatedImageStylePropTypes = $ObjMapi<$TypeOf<typeof DeprecatedImageStylePropTypes>, ReturnBoolType>;
+declare type BoolifiedDeprecatedViewStylePropTypes = $ObjMap<$3, ReturnBoolType>;
+declare type BoolifiedDeprecatedTextStylePropTypes = $ObjMapi<$2, ReturnBoolType>;
+declare type BoolifiedDeprecatedImageStylePropTypes = $ObjMapi<$1, ReturnBoolType>;
 declare type StyleAttributesType = BoolifiedDeprecatedViewStylePropTypes & BoolifiedDeprecatedTextStylePropTypes & BoolifiedDeprecatedImageStylePropTypes & {
   transform: Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    process: $TypeOf<typeof processTransform>;
+    process: $5;
   }> | true;
   shadowOffset: Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    diff: $TypeOf<typeof sizesDiffer>;
+    diff: $6;
   }> | true;
   backgroundColor: $TypeOf<typeof colorAttributes> | true;
   borderBottomColor: $TypeOf<typeof colorAttributes> | true;
@@ -46,7 +39,7 @@ declare var ReactNativeStyleAttributes: StyleAttributesType;
 declare var colorAttributes:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  process: $TypeOf<typeof processColor>;
+  process: $4;
 };
 declare const $f2tExportDefault: $TypeOf<typeof ReactNativeStyleAttributes>;
 export default $f2tExportDefault;

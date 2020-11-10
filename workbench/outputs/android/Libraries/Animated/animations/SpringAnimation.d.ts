@@ -1,20 +1,15 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
-// @flow
-declare var AnimatedValue: $TypeOf<typeof $2>;
 import $2 from "../nodes/AnimatedValue";
-declare var AnimatedValueXY: $TypeOf<typeof $3>;
 import $3 from "../nodes/AnimatedValueXY";
-declare var AnimatedInterpolation: $TypeOf<typeof $1>;
 import $1 from "../nodes/AnimatedInterpolation";
-declare var Animation: $TypeOf<typeof $4>;
 import $4 from "./Animation";
 import { AnimationConfig } from "./Animation";
 import { EndCallback } from "./Animation";
 declare type SpringAnimationConfig = AnimationConfig & {
-  toValue: number | AnimatedValue | {
+  toValue: number | $2 | {
     x: number;
     y: number;
-  } | AnimatedValueXY | AnimatedInterpolation;
+  } | $3 | $1;
   overshootClamping?: boolean;
   restDisplacementThreshold?: number;
   restSpeedThreshold?: number;
@@ -32,7 +27,7 @@ declare type SpringAnimationConfig = AnimationConfig & {
   delay?: number;
 };
 declare type SpringAnimationConfigSingle = AnimationConfig & {
-  toValue: number | AnimatedValue | AnimatedInterpolation;
+  toValue: number | $2 | $1;
   overshootClamping?: boolean;
   restDisplacementThreshold?: number;
   restSpeedThreshold?: number;
@@ -46,7 +41,7 @@ declare type SpringAnimationConfigSingle = AnimationConfig & {
   mass?: number;
   delay?: number;
 };
-declare class SpringAnimation extends $5 {
+declare class SpringAnimation extends $4 {
   constructor: (config: SpringAnimationConfigSingle) => void;
   __getNativeAnimationConfig: () =>
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -62,7 +57,7 @@ declare class SpringAnimation extends $5 {
     toValue: any;
     type: string;
   };
-  start: (fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | Animation, animatedValue: AnimatedValue) => void;
+  start: (fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | $4, animatedValue: $2) => void;
   getInternalState: () => Object;
 
   /**
@@ -89,7 +84,6 @@ declare class SpringAnimation extends $5 {
   onUpdate: () => void;
   stop: () => void;
 }
-declare var $5: $TypeOf<typeof Animation>;
 export type { SpringAnimationConfig };
 export type { SpringAnimationConfigSingle };
 declare const $f2tExportDefault: $TypeOf<typeof SpringAnimation>;

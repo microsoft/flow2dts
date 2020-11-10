@@ -1,1 +1,3 @@
-[FLOW2DTS - Error] /Libraries/ReactNative/HeadlessJsTaskError.js.flow: invariant: expected referred to type to exist
+// @flow
+declare class HeadlessJsTaskError extends Error {}
+export { HeadlessJsTaskError as default };

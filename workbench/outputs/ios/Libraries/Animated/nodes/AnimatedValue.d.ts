@@ -1,14 +1,11 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
-// @flow
-declare var AnimatedInterpolation: $TypeOf<typeof $1>;
 import $1 from "./AnimatedInterpolation";
-declare var AnimatedWithChildren: $TypeOf<typeof $3>;
 import $3 from "./AnimatedWithChildren";
 import { EndCallback } from "../animations/Animation";
 import Animation from "../animations/Animation";
 import { InterpolationConfigType } from "./AnimatedInterpolation";
 import AnimatedTracking from "./AnimatedTracking";
-declare class AnimatedValue extends $2 {
+declare class AnimatedValue extends $3 {
   constructor: (value: number) => void;
   __detach: () => void;
   __getValue: () => number;
@@ -66,7 +63,7 @@ declare class AnimatedValue extends $2 {
    * Interpolates the value before updating the property, e.g. mapping 0-1 to
    * 0-10.
    */
-  interpolate: (config: InterpolationConfigType) => AnimatedInterpolation;
+  interpolate: (config: InterpolationConfigType) => $1;
 
   /**
    * Typically only used internally, but could be used by a custom Animation
@@ -87,6 +84,5 @@ declare class AnimatedValue extends $2 {
   track: (tracking: AnimatedTracking) => void;
   __getNativeConfig: () => Object;
 }
-declare var $2: $TypeOf<typeof AnimatedWithChildren>;
 declare const $f2tExportDefault: $TypeOf<typeof AnimatedValue>;
 export default $f2tExportDefault;

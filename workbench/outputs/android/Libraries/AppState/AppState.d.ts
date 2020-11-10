@@ -2,7 +2,7 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import NativeEventEmitter from "../EventEmitter/NativeEventEmitter";
 import EventEmitter from "../vendor/emitter/EventEmitter";
-declare class AppState extends $1 {
+declare class AppState extends NativeEventEmitter {
   currentState: null | undefined | string;
   isAvailable: boolean;
   constructor: () => void;
@@ -27,8 +27,7 @@ declare class AppState extends $1 {
    */
   removeEventListener: (type: string, handler: Function) => void;
 }
-declare var $1: $TypeOf<typeof NativeEventEmitter>;
-declare class MissingNativeAppStateShim extends $2 {
+declare class MissingNativeAppStateShim extends EventEmitter {
   // AppState
   isAvailable: boolean;
   currentState: null | undefined | string;
@@ -39,7 +38,6 @@ declare class MissingNativeAppStateShim extends $2 {
   removeAllListeners: () => void;
   removeSubscription: () => void;
 }
-declare var $2: $TypeOf<typeof EventEmitter>;
 declare var AppStateInstance: AppState | MissingNativeAppStateShim;
 declare const $f2tExportDefault: $TypeOf<typeof AppStateInstance>;
 export default $f2tExportDefault;

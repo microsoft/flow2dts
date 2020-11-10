@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import EventEmitter from "../vendor/emitter/EventEmitter";
 import { EventSubscription } from "../vendor/emitter/EventEmitter";
@@ -11,11 +10,10 @@ declare type NativeEventEmitterOptions = Readonly<
 {
   __SECRET_DISABLE_CALLS_INTO_MODULE_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: boolean;
 }>;
-declare class NativeEventEmitter extends $1 {
+declare class NativeEventEmitter extends EventEmitter {
   constructor: (nativeModule: null | undefined | NativeModule, options?: NativeEventEmitterOptions) => void;
   addListener: (eventType: string, listener: Function, context: null | undefined | Object) => EventSubscription;
   removeAllListeners: (eventType: string) => void;
   removeSubscription: (subscription: EventSubscription) => void;
 }
-declare var $1: $TypeOf<typeof EventEmitter>;
 export { NativeEventEmitter as default };

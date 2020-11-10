@@ -1,6 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
-// @flow
-declare var AnimatedNode: $TypeOf<typeof $1>;
 import $1 from "../Animated/nodes/AnimatedNode";
 import { NativeColorValue } from "./PlatformColorValueTypes";
 declare type ____ColorValue_Internal = null | string | NativeColorValue;
@@ -19,7 +16,7 @@ declare type EdgeInsetsValue =
   right: number;
   bottom: number;
 };
-declare type DimensionValue = null | number | string | AnimatedNode;
+declare type DimensionValue = null | number | string | $1;
 declare type ____LayoutStyle_Internal = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
@@ -457,47 +454,47 @@ declare type ____TransformStyle_Internal = Readonly<
   transform?: ReadonlyArray<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly perspective: number | AnimatedNode;
+    readonly perspective: number | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly rotate: string | AnimatedNode;
+    readonly rotate: string | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly rotateX: string | AnimatedNode;
+    readonly rotateX: string | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly rotateY: string | AnimatedNode;
+    readonly rotateY: string | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly rotateZ: string | AnimatedNode;
+    readonly rotateZ: string | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly scale: number | AnimatedNode;
+    readonly scale: number | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly scaleX: number | AnimatedNode;
+    readonly scaleX: number | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly scaleY: number | AnimatedNode;
+    readonly scaleY: number | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly translateX: number | AnimatedNode;
+    readonly translateX: number | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly translateY: number | AnimatedNode;
+    readonly translateY: number | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly translate: [number | AnimatedNode, number | AnimatedNode] | AnimatedNode;
+    readonly translate: [number | $1, number | $1] | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
@@ -510,7 +507,7 @@ declare type ____TransformStyle_Internal = Readonly<
   |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly matrix: ReadonlyArray<number | AnimatedNode> | AnimatedNode;
+    readonly matrix: ReadonlyArray<number | $1> | $1;
   }>;
 }>;
 declare type ____ShadowStyle_Internal = Readonly<
@@ -537,7 +534,7 @@ declare type ____ShadowStyle_Internal = Readonly<
   * Sets the drop shadow opacity (multiplied by the color's alpha component)
   * @platform ios
   */
-  shadowOpacity?: number | AnimatedNode;
+  shadowOpacity?: number | $1;
 
   /**
   * Sets the drop shadow blur radius
@@ -557,24 +554,24 @@ $Exact<____LayoutStyle_Internal> & $Exact<____ShadowStyle_Internal> & $Exact<___
   borderRightColor?: ____ColorValue_Internal;
   borderStartColor?: ____ColorValue_Internal;
   borderTopColor?: ____ColorValue_Internal;
-  borderRadius?: number | AnimatedNode;
-  borderBottomEndRadius?: number | AnimatedNode;
-  borderBottomLeftRadius?: number | AnimatedNode;
-  borderBottomRightRadius?: number | AnimatedNode;
-  borderBottomStartRadius?: number | AnimatedNode;
-  borderTopEndRadius?: number | AnimatedNode;
-  borderTopLeftRadius?: number | AnimatedNode;
-  borderTopRightRadius?: number | AnimatedNode;
-  borderTopStartRadius?: number | AnimatedNode;
+  borderRadius?: number | $1;
+  borderBottomEndRadius?: number | $1;
+  borderBottomLeftRadius?: number | $1;
+  borderBottomRightRadius?: number | $1;
+  borderBottomStartRadius?: number | $1;
+  borderTopEndRadius?: number | $1;
+  borderTopLeftRadius?: number | $1;
+  borderTopRightRadius?: number | $1;
+  borderTopStartRadius?: number | $1;
   borderStyle?: "solid" | "dotted" | "dashed";
-  borderWidth?: number | AnimatedNode;
-  borderBottomWidth?: number | AnimatedNode;
-  borderEndWidth?: number | AnimatedNode;
-  borderLeftWidth?: number | AnimatedNode;
-  borderRightWidth?: number | AnimatedNode;
-  borderStartWidth?: number | AnimatedNode;
-  borderTopWidth?: number | AnimatedNode;
-  opacity?: number | AnimatedNode;
+  borderWidth?: number | $1;
+  borderBottomWidth?: number | $1;
+  borderEndWidth?: number | $1;
+  borderLeftWidth?: number | $1;
+  borderRightWidth?: number | $1;
+  borderStartWidth?: number | $1;
+  borderTopWidth?: number | $1;
+  opacity?: number | $1;
   elevation?: number;
 }>;
 declare type ____FontWeight_Internal = "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";

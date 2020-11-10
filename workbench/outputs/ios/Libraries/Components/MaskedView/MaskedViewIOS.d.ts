@@ -1,1 +1,19 @@
-[FLOW2DTS - Error] /Libraries/Components/MaskedView/MaskedViewIOS.ios.js.flow: Expected type "Identifier" with option {}, but instead got "TSQualifiedName".
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import $2 from "react";
+import { ViewProps } from "../View/ViewPropTypes";
+declare type Props = Readonly<
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+ViewProps & {
+  children: $2;
+
+  /**
+  * Should be a React element to be rendered and applied as the
+  * mask for the child element.
+  */
+  maskElement: $2<any>;
+}>;
+declare class MaskedViewIOS extends $2.Component<Props> {
+  render: () => $2;
+}
+declare const $f2tExportDefault: $TypeOf<typeof MaskedViewIOS>;
+export default $f2tExportDefault;

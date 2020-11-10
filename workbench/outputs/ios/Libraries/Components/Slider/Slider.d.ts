@@ -1,7 +1,6 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import SliderNativeComponent from "./SliderNativeComponent";
-declare var React: $TypeOf<typeof $1>;
 import $1 from "react";
 import { ImageSource } from "../../Image/ImageSource";
 import { ViewStyleProp } from "../../StyleSheet/StyleSheet";
@@ -110,6 +109,6 @@ ViewProps & IOSProps & {
   */
   testID?: null | undefined | string;
 }>;
-declare var SliderWithRef: React.AbstractComponent<Props, React.ElementRef<$TypeOf<typeof SliderNativeComponent>>>;
+declare var SliderWithRef: $1<Props, $1<$TypeOf<typeof SliderNativeComponent>>>;
 declare const $f2tExportDefault: $TypeOf<typeof SliderWithRef>;
 export default $f2tExportDefault;

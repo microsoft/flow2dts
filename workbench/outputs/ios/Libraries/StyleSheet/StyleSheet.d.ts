@@ -1,7 +1,5 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $Keys } from "utility-types";
-// @flow
-declare var flatten: $TypeOf<typeof $1>;
 import $1 from "./flattenStyle";
 import { ____ColorValue_Internal } from "./StyleSheetTypes";
 import { ____Styles_Internal } from "./StyleSheetTypes";
@@ -137,7 +135,7 @@ declare const $f2tExportDefault:
    * their respective objects, merged as one and then returned. This also explains
    * the alternative use.
    */
-  flatten: $TypeOf<typeof flatten>;
+  flatten: $1;
 
   /**
    * WARNING: EXPERIMENTAL. Breaking changes will probably happen a lot and will

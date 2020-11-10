@@ -1,12 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
-// @flow
-declare var DeprecatedImageStylePropTypes: $TypeOf<typeof $1>;
 import $1 from "../DeprecatedPropTypes/DeprecatedImageStylePropTypes";
-declare var DeprecatedTextStylePropTypes: $TypeOf<typeof $2>;
 import $2 from "../DeprecatedPropTypes/DeprecatedTextStylePropTypes";
-declare var DeprecatedViewStylePropTypes: $TypeOf<typeof $3>;
 import $3 from "../DeprecatedPropTypes/DeprecatedViewStylePropTypes";
-declare var invariant: $TypeOf<typeof $4>;
 import $4 from "invariant";
 declare var ReactPropTypesSecret: string;
 declare class StyleSheetValidation {
