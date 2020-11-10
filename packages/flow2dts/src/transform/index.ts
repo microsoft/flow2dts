@@ -4,6 +4,7 @@ import { typeReferenceRecognizerVisitor } from "./typeReferenceResolver"
 import { rewriteTypeVisitor } from "./rewriteTypeVisitors"
 import { rewriteDeclVisitor } from "./rewriteDeclVisitors"
 import { polyfillTypes } from "./polyfillTypes"
+import { fixupVisitor } from "./fixupVisitor"
 
 export function transform(): PluginObj<State> {
   return {
@@ -29,6 +30,11 @@ export function transform(): PluginObj<State> {
           path.traverse(typeReferenceRecognizerVisitor, state)
           path.traverse(rewriteTypeVisitor, state)
           path.traverse(rewriteDeclVisitor, state)
+
+          /**
+           * Fixes some AST issues.
+           */
+          path.traverse(fixupVisitor, state)
 
           path.node.body.unshift(...polyfillTypes(state.polyfillTypes))
         },
