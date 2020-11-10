@@ -53,4 +53,14 @@ export const primitiveTypeVisitor: Visitor<State> = {
       path.replaceWith(t.tsUnknownKeyword())
     },
   },
+  EmptyTypeAnnotation: {
+    exit(path) {
+      path.replaceWith(t.tsNeverKeyword())
+    },
+  },
+  ExistsTypeAnnotation: {
+    exit(path) {
+      path.replaceWith(t.tsAnyKeyword())
+    },
+  },
 }
