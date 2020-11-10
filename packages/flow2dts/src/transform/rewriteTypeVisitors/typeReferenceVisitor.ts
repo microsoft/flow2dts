@@ -2,6 +2,7 @@ import { Visitor, types as t } from "@babel/core"
 import { isPolyFilledType } from "../polyfillTypes"
 import { State } from "../state"
 import { assertTSType, wrappedTypeOf } from "../utilities"
+import { resolveTypeReference } from "../typeReferenceResolver"
 
 function convertQID(input: t.Identifier | t.QualifiedTypeIdentifier): t.Identifier | t.TSQualifiedName {
   if (input.type === "Identifier") {
@@ -14,6 +15,12 @@ function convertQID(input: t.Identifier | t.QualifiedTypeIdentifier): t.Identifi
 export const typeReferenceVisitor: Visitor<State> = {
   GenericTypeAnnotation: {
     exit(path, state) {
+      const resolved = resolveTypeReference(state.typeReferences, path, path.node)
+      if (resolved) {
+        path.replaceWith(resolved)
+        return
+      }
+
       if (path.node.id.type === "Identifier") {
         const name = path.node.id.name
         const typeParameters =
@@ -73,6 +80,20 @@ export const typeReferenceVisitor: Visitor<State> = {
     },
   },
   TypeofTypeAnnotation: {
+    enter(path, state) {
+      /*
+       if X needs to be resolved, typeof should be translated to the resolved type.
+       this needs to be do before entering GenericTypeAnnotation,
+       or it is hard to tell if part of a translated GenericTypeAnnotation is resolved or not
+       */
+      const typeQueryOperator = path.node.argument
+      if (typeQueryOperator.type === "GenericTypeAnnotation") {
+        const resolved = resolveTypeReference(state.typeReferences, path, typeQueryOperator)
+        if (resolved) {
+          path.replaceWith(resolved)
+        }
+      }
+    },
     exit(path, state) {
       const typeQueryOperator = path.node.argument as any
       t.assertTSTypeReference(typeQueryOperator)
