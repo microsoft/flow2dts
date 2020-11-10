@@ -134,7 +134,6 @@ export const typeReferenceVisitor: Visitor<State> = {
     exit(path, state) {
       const typeQueryOperator = path.node.argument as any
       t.assertTSTypeReference(typeQueryOperator)
-      t.assertIdentifier(typeQueryOperator.typeName)
       path.replaceWith(wrappedTypeOf(typeQueryOperator.typeName, state))
     },
   },

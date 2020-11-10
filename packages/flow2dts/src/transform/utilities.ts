@@ -27,7 +27,7 @@ export function assertTSTypeAnnotation(node: t.Node | null | undefined): asserts
   t.assertTSTypeAnnotation(node)
 }
 
-export function wrappedTypeOf(id: t.Identifier, state: State) {
+export function wrappedTypeOf(id: t.TSEntityName, state: State) {
   state.polyfillTypes.add("$TypeOf")
   return t.tsTypeReference(t.identifier("$TypeOf"), t.tsTypeParameterInstantiation([t.tsTypeQuery(id)]))
 }
