@@ -135,10 +135,6 @@ export const typeReferenceVisitor: Visitor<State> = {
       const typeQueryOperator = path.node.argument as any
       t.assertTSTypeReference(typeQueryOperator)
       t.assertIdentifier(typeQueryOperator.typeName)
-      const referencePath = path.scope.getBinding(typeQueryOperator.typeName.name)
-      if (!referencePath) {
-        throw new Error("invariant: expected referred to type to exist")
-      }
       path.replaceWith(wrappedTypeOf(typeQueryOperator.typeName, state))
     },
   },
