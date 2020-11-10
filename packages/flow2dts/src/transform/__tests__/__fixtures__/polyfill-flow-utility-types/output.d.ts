@@ -21,3 +21,6 @@ declare type C = Class<T>
 declare type EX =
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   T
+declare type OM =
+  /*[FLOW2DTS - Warning] This type was a $ObjMap type in the original Flow source.*/
+  { [K in keyof T]: ReturnType<() => boolean> }

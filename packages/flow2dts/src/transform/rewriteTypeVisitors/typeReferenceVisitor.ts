@@ -65,6 +65,31 @@ export const typeReferenceVisitor: Visitor<State> = {
             "[FLOW2DTS - Warning] This type was an exact object type in the original Flow source."
           )
           path.replaceWith(typeParameters[0])
+        } else if (name === "$ObjMap") {
+          if (!typeParameters || typeParameters.length !== 2) {
+            throw new Error(
+              `$ObjMap must have exactly two type arguments:\r\n${JSON.stringify(path.node.id, undefined, 4)}`
+            )
+          }
+          const [objectType, functionType] = typeParameters
+          t.assertTSFunctionType(functionType)
+          if (functionType.typeParameters && functionType.typeParameters.params.length > 0) {
+            throw new Error(
+              `$ObjMap with a function with generics cannot be converted:\r\n${JSON.stringify(
+                path.node.id,
+                undefined,
+                4
+              )}`
+            )
+          }
+          const returnType = t.tsTypeReference(
+            t.identifier("ReturnType"),
+            t.tsTypeParameterInstantiation([functionType])
+          )
+          const inKeysType = t.tsTypeOperator(objectType)
+          inKeysType.operator = "keyof"
+          path.addComment("leading", "[FLOW2DTS - Warning] This type was a $ObjMap type in the original Flow source.")
+          path.replaceWith(t.tsMappedType(t.tsTypeParameter(inKeysType, undefined, "K"), returnType))
         } else {
           if (isPolyFilledType(name)) {
             state.polyfillTypes.add(name)
