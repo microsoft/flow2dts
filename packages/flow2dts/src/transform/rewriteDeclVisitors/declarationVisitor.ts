@@ -56,6 +56,16 @@ export const declarationVisitor: Visitor<State> = {
       }
     },
   },
+  ClassImplements: {
+    exit(path, state) {
+      const { id, typeParameters } = path.node
+      const superClass = resolveMemberExpression(state.typeReferences, path, id)
+      if (superClass) {
+        // it should be TSClassImplements, but the type is missing, so just hack it for now
+        path.node.id = <t.Identifier>superClass
+      }
+    },
+  },
   ClassDeclaration: {
     exit(path, state) {
       path.node.declare = true

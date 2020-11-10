@@ -12,19 +12,19 @@ import * as React from "react"
 
 function g(): $1<{ ... }> {}
 
-declare class MyClass1 extends $1<{ ... }> {
+declare class MyClass1 extends $1<{ ... }> implements $1<{ ... }>, $1<{ ... }> {
   member: $1<{ ... }>;
 }
 
-declare interface MyInterface1 extends $1<{ ... }> {
+declare interface MyInterface1 extends $1<{ ... }>, $1<{ ... }> {
   member: $1<{ ... }>;
 }
 
-class MyClass2 extends $1<{ ... }> {
+class MyClass2 extends $1<{ ... }> implements $1<{ ... }>, $1<{ ... }> {
   member: $1<{ ... }>
 }
 
-interface MyInterface2 extends $1<{ ... }> {
+interface MyInterface2 extends $1<{ ... }>, $1<{ ... }> {
   member: $1<{ ... }>;
 }
 
