@@ -7,3 +7,7 @@
   26 |   /**
   27 |    * Set text break strategy on Android.
   28 |    *
+
+================================================================
+
+[babelParser.parse] Unexpected reserved type number (25:34)

@@ -1,9 +1,15 @@
-[FLOW2DTS - Error] /Libraries/LogBox/LogBoxNotificationContainer.js.flow: Export '_LogBoxNotificationContainer' is not defined (15:8)
-
-  13 | 
-  14 | declare function _LogBoxNotificationContainer(props: Props): React.Node;
-> 15 | export {_LogBoxNotificationContainer};
-     |         ^
-  16 | 
-  17 | declare export default React.AbstractComponent<{||}>;
-  18 | 
+// @flow
+import * as React from "react";
+import LogBoxLog from "./Data/LogBoxLog";
+declare type Props = Readonly<
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  logs: ReadonlyArray<LogBoxLog>;
+  selectedLogIndex: number;
+  isDisabled?: null | undefined | boolean;
+}>;
+declare function _LogBoxNotificationContainer(props: Props): React.Node;
+export { _LogBoxNotificationContainer };
+declare export default React.AbstractComponent<
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{}>;

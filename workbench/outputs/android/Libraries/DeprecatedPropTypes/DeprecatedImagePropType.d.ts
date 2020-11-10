@@ -7,3 +7,7 @@
   26 |   
   27 |   accessibilityLabel: typeof PropTypes.node,
   28 |   
+
+================================================================
+
+[babelParser.parse] Unexpected reserved type bool (25:31)

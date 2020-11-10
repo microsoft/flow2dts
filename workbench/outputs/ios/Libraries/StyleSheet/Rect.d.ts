@@ -1,9 +1,16 @@
-[FLOW2DTS - Error] /Libraries/StyleSheet/Rect.js.flow: Export 'createSquare' is not defined (20:8)
-
-  18 | export type {RectOrSize};
-  19 | 
-> 20 | export {createSquare};
-     |         ^
-  21 | 
-  22 | export {normalizeRect};
-  23 | 
+// @flow
+declare type Rect = Readonly<
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  bottom?: null | undefined | number;
+  left?: null | undefined | number;
+  right?: null | undefined | number;
+  top?: null | undefined | number;
+}>;
+declare type RectOrSize = Rect | number;
+declare function createSquare(size: number): Rect;
+declare function normalizeRect(rectOrSize: null | undefined | RectOrSize): null | undefined | Rect;
+export type { Rect };
+export type { RectOrSize };
+export { createSquare };
+export { normalizeRect };

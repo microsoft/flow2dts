@@ -7,3 +7,7 @@
   14 |   fontSize: typeof ReactPropTypes.number,
   15 |   fontStyle: React$PropType$Primitive<'normal' | 'italic'>,
   16 |   /**
+
+================================================================
+
+[babelParser.parse] Unexpected reserved type string (13:36)

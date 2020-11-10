@@ -1,4 +1,8 @@
 import { transformFileAsync } from "@babel/core"
+import * as babelParser from "@babel/parser"
+import babelTraverse from "@babel/traverse"
+import babelGenerator from "@babel/generator"
+import { State } from "./transform/state"
 // @ts-ignore
 import pluginSyntaxFlow from "@babel/plugin-syntax-flow"
 import path from "path"
@@ -26,6 +30,10 @@ export async function convert({ filename, outFilename }: { filename: string; out
   try {
     const result = await transformFileAsync(filename, {
       plugins: [pluginSyntaxFlow, pluginFlow2DTS],
+      sourceType: "module",
+      parserOpts: {
+        allowUndeclaredExports: true,
+      },
     })
     if (result && result.code) {
       success = true
@@ -35,6 +43,29 @@ export async function convert({ filename, outFilename }: { filename: string; out
     }
   } catch (e: unknown) {
     outData = `[FLOW2DTS - Error] ${stripAnsi((e as Error).message)}`
+
+    // FIXME: temporary solution to print generated code after the error
+    let phrase = ""
+    try {
+      phrase = "fs.readFileSync"
+      const flowCode = fs.readFileSync(filename, { encoding: "utf8" })
+
+      phrase = "babelParser.parse"
+      const flowAst = babelParser.parse(flowCode, {
+        plugins: ["flow"],
+        sourceType: "module",
+        allowUndeclaredExports: true,
+      })
+
+      phrase = "babelTraverse()"
+      babelTraverse<State>(flowAst, pluginFlow2DTS().visitor, undefined, <State>{})
+
+      phrase = "babelGenerator()"
+      const generatorResult = babelGenerator(flowAst)
+      outData = `${outData}\r\n\r\n${"=".repeat(64)}\r\n\r\n${generatorResult.code}`
+    } catch (e: unknown) {
+      outData = `${outData}\r\n\r\n${"=".repeat(64)}\r\n\r\n[${phrase}] ${(e as Error).message}`
+    }
   }
   await fs.promises.mkdir(path.dirname(outFilename), { recursive: true })
   await fs.promises.writeFile(outFilename, fixPathInOutput(outData), "utf8")

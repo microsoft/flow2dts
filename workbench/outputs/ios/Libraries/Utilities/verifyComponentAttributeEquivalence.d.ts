@@ -1,9 +1,11 @@
-[FLOW2DTS - Error] /Libraries/Utilities/verifyComponentAttributeEquivalence.js.flow: Export 'lefthandObjectDiff' is not defined (17:8)
-
-  15 | 
-  16 | declare function stringifyViewConfig(viewConfig: any): string;
-> 17 | export {lefthandObjectDiff};
-     |         ^
-  18 | 
-  19 | export {getConfigWithoutViewProps};
-  20 | 
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
+// @flow
+import { ReactNativeBaseComponentViewConfig } from "../Renderer/shims/ReactNativeTypes";
+declare function verifyComponentAttributeEquivalence(componentName: string, config: ReactNativeBaseComponentViewConfig): void;
+declare function lefthandObjectDiff(leftObj: Object, rightObj: Object): Object;
+declare function getConfigWithoutViewProps(viewConfig: ReactNativeBaseComponentViewConfig, propName: string): {};
+declare function stringifyViewConfig(viewConfig: any): string;
+export { lefthandObjectDiff };
+export { getConfigWithoutViewProps };
+export { stringifyViewConfig };
+declare export default $TypeOf<typeof verifyComponentAttributeEquivalence>;

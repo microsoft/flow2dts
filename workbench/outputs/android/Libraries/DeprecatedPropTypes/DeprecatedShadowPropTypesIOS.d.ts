@@ -7,3 +7,7 @@
   17 |   shadowRadius: typeof ReactPropTypes.number,
   18 | |};
   19 | 
+
+================================================================
+
+[babelParser.parse] Unexpected reserved type number (16:39)

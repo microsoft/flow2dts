@@ -7,3 +7,7 @@
   27 |   borderTopLeftRadius: typeof ReactPropTypes.number,
   28 |   borderTopRightRadius: typeof ReactPropTypes.number,
   29 |   borderTopStartRadius: typeof ReactPropTypes.number,
+
+================================================================
+
+[babelParser.parse] Unexpected reserved type number (26:38)

@@ -7,3 +7,7 @@
   24 |   borderRadius: typeof ReactPropTypes.number,
   25 |   overflow: React$PropType$Primitive<'visible' | 'hidden'>,
   26 |   
+
+================================================================
+
+[babelParser.parse] Unexpected reserved type number (23:37)

@@ -1,7 +1,5 @@
-[FLOW2DTS - Error] /Libraries/Pressability/usePressability.js.flow: Export 'usePressability' is not defined (6:8)
-
-  4 | 
-  5 | declare function usePressability(config: ?PressabilityConfig): ?EventHandlers;
-> 6 | export {usePressability as default};
-    |         ^
-  7 | 
+// @flow
+import { EventHandlers } from "./Pressability";
+import { PressabilityConfig } from "./Pressability";
+declare function usePressability(config: null | undefined | PressabilityConfig): null | undefined | EventHandlers;
+export { usePressability as default };

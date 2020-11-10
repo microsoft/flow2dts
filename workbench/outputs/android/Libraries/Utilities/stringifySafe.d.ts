@@ -1,9 +1,13 @@
-[FLOW2DTS - Error] /Libraries/Utilities/stringifySafe.js.flow: Export 'createStringifySafeWithLimits' is not defined (12:8)
-
-  10 | 
-  11 | declare var stringifySafe: (mixed) => string;
-> 12 | export {createStringifySafeWithLimits};
-     |         ^
-  13 | 
-  14 | declare export default typeof stringifySafe;
-  15 | 
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
+// @flow
+declare function createStringifySafeWithLimits(limits:
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  maxDepth?: number;
+  maxStringLimit?: number;
+  maxArrayLimit?: number;
+  maxObjectKeysLimit?: number;
+}): ($f2t1: unknown) => string;
+declare var stringifySafe: ($f2t1: unknown) => string;
+export { createStringifySafeWithLimits };
+declare export default $TypeOf<typeof stringifySafe>;

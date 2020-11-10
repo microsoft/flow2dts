@@ -7,3 +7,7 @@
   18 |   
   19 |   /**
   20 |    * Overrides the text that's read by the screen reader when the user interacts
+
+================================================================
+
+[babelParser.parse] Unexpected reserved type bool (17:31)

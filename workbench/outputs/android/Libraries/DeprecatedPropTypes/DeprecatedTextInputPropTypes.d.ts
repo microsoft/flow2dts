@@ -7,3 +7,7 @@
   68 |   /**
   69 |    * If `false`, disables spell-check style (i.e. red underlines).
   70 |    * The default value is inherited from `autoCorrect`.
+
+================================================================
+
+[babelParser.parse] Unexpected reserved type bool (67:32)

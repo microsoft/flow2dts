@@ -7,3 +7,7 @@
   38 |   borderTopWidth: typeof ReactPropTypes.number,
   39 |   borderStartWidth: typeof ReactPropTypes.number,
   40 |   borderEndWidth: typeof ReactPropTypes.number,
+
+================================================================
+
+[babelParser.parse] Unexpected reserved type number (37:37)
