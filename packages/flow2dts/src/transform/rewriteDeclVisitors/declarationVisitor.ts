@@ -60,4 +60,13 @@ export const declarationVisitor: Visitor<State> = {
       path.node.declare = true
     },
   },
+  InterfaceDeclaration: {
+    exit(path) {},
+  },
+  DeclareClass: {
+    exit(path) {},
+  },
+  DeclareInterface: {
+    exit(path) {},
+  },
 }

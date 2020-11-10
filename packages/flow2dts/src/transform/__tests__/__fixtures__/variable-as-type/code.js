@@ -9,6 +9,23 @@ function f1(e: AnimatedEvent): attachNativeEvent {}
 function f2(e: typeof AnimatedEvent): typeof attachNativeEvent {}
 
 import * as React from "react"
-declare class AccessibilityManagerTest extends $1<{ ... }> {}
+
 function g(): $1<{ ... }> {}
+
+declare class MyClass1 extends $1<{ ... }> {
+  member: $1<{ ... }>;
+}
+
+declare interface MyInterface1 extends $1<{ ... }> {
+  member: $1<{ ... }>;
+}
+
+class MyClass2 extends $1<{ ... }> {
+  member: $1<{ ... }>
+}
+
+interface MyInterface2 extends $1<{ ... }> {
+  member: $1<{ ... }>;
+}
+
 declare var $1: typeof React.Component
