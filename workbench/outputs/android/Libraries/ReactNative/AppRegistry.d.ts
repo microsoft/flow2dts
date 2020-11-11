@@ -1,6 +1,6 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import type { IPerformanceLogger } from "../Utilities/createPerformanceLogger";
+import { IPerformanceLogger } from "../Utilities/createPerformanceLogger";
 declare type Task = (taskData: any) => Promise<void>;
 declare type TaskProvider = () => Task;
 declare type TaskCanceller = () => void;

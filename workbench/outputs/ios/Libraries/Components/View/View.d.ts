@@ -1,6 +1,6 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import type { ViewProps } from "./ViewPropTypes";
+import { ViewProps } from "./ViewPropTypes";
 import $1 from "react";
 import ViewNativeComponent from "./ViewNativeComponent";
 declare type Props = ViewProps;

@@ -1,5 +1,5 @@
 // @flow
-import type { SyntheticEvent } from "../../Types/CoreEventTypes";
+import { SyntheticEvent } from "../../Types/CoreEventTypes";
 declare type AccessibilityRole = "none" | "button" | "link" | "search" | "image" | "keyboardkey" | "text" | "adjustable" | "imagebutton" | "header" | "summary" | "alert" | "checkbox" | "combobox" | "menu" | "menubar" | "menuitem" | "progressbar" | "radio" | "radiogroup" | "scrollbar" | "spinbutton" | "switch" | "tab" | "tablist" | "timer" | "toolbar";
 declare type AccessibilityActionInfo = Readonly<{
   name: string;

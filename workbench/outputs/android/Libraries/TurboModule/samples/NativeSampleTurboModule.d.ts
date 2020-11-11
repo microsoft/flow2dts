@@ -1,6 +1,6 @@
 // @flow
-import type { RootTag } from "../RCTExport";
-import type { TurboModule } from "../RCTExport";
+import { RootTag } from "../RCTExport";
+import { TurboModule } from "../RCTExport";
 interface Spec extends TurboModule {
   // Exported methods.
   readonly getConstants: () =>

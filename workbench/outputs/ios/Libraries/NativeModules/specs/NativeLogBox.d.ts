@@ -1,5 +1,5 @@
 // @flow
-import type { TurboModule } from "react-native/Libraries/TurboModule/RCTExport";
+import { TurboModule } from "react-native/Libraries/TurboModule/RCTExport";
 interface Spec extends TurboModule {
   readonly show: () => void;
   readonly hide: () => void;

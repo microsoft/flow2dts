@@ -1,17 +1,17 @@
 import { $Diff } from "utility-types";
 // @flow
-import type { ViewProps } from "../View/ViewPropTypes";
-import type { BubblingEventHandler } from "../../Types/CodegenTypes";
-import type { DirectEventHandler } from "../../Types/CodegenTypes";
-import type { Double } from "../../Types/CodegenTypes";
-import type { Float } from "../../Types/CodegenTypes";
-import type { Int32 } from "../../Types/CodegenTypes";
-import type { WithDefault } from "../../Types/CodegenTypes";
-import type { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
-import type { TextStyleProp } from "../../StyleSheet/StyleSheet";
-import type { ViewStyleProp } from "../../StyleSheet/StyleSheet";
-import type { ColorValue } from "../../StyleSheet/StyleSheet";
-import type { TextInputNativeCommands } from "./TextInputNativeCommands";
+import { ViewProps } from "../View/ViewPropTypes";
+import { BubblingEventHandler } from "../../Types/CodegenTypes";
+import { DirectEventHandler } from "../../Types/CodegenTypes";
+import { Double } from "../../Types/CodegenTypes";
+import { Float } from "../../Types/CodegenTypes";
+import { Int32 } from "../../Types/CodegenTypes";
+import { WithDefault } from "../../Types/CodegenTypes";
+import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
+import { TextStyleProp } from "../../StyleSheet/StyleSheet";
+import { ViewStyleProp } from "../../StyleSheet/StyleSheet";
+import { ColorValue } from "../../StyleSheet/StyleSheet";
+import { TextInputNativeCommands } from "./TextInputNativeCommands";
 declare type KeyboardType = // Cross Platform
 "default" | "email-address" | "numeric" | "phone-pad" | "number-pad" | "decimal-pad" // iOS-only
 | "ascii-capable" | "numbers-and-punctuation" | "url" | "name-phone-pad" | "twitter" | "web-search" // Android-only

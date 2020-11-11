@@ -3,10 +3,10 @@ import { $Diff, $PropertyType } from "utility-types";
 import $2 from "react";
 import $3 from "../Components/View/View";
 import $4 from "./VirtualizedList";
-import type { ScrollResponderType } from "../Components/ScrollView/ScrollView";
-import type { ScrollViewNativeComponentType } from "../Components/ScrollView/ScrollViewNativeComponentType.js";
-import type { ViewStyleProp } from "../StyleSheet/StyleSheet";
-import type { RenderItemType } from "./VirtualizedList";
+import { ScrollResponderType } from "../Components/ScrollView/ScrollView";
+import { ScrollViewNativeComponentType } from "../Components/ScrollView/ScrollViewNativeComponentType.js";
+import { ViewStyleProp } from "../StyleSheet/StyleSheet";
+import { RenderItemType } from "./VirtualizedList";
 declare type RequiredProps<ItemT> =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

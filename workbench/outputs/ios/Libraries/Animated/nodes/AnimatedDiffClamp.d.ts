@@ -2,7 +2,7 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "./AnimatedInterpolation";
 import $3 from "./AnimatedNode";
 import $4 from "./AnimatedWithChildren";
-import type { InterpolationConfigType } from "./AnimatedInterpolation";
+import { InterpolationConfigType } from "./AnimatedInterpolation";
 declare class AnimatedDiffClamp extends $4 {
   constructor(a: $3, min: number, max: number);
   __makeNative(): void;

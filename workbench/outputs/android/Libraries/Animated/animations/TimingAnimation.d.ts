@@ -3,8 +3,8 @@ import $2 from "../nodes/AnimatedValue";
 import $3 from "../nodes/AnimatedValueXY";
 import $1 from "../nodes/AnimatedInterpolation";
 import $4 from "./Animation";
-import type { AnimationConfig } from "./Animation";
-import type { EndCallback } from "./Animation";
+import { AnimationConfig } from "./Animation";
+import { EndCallback } from "./Animation";
 declare type TimingAnimationConfig = AnimationConfig & {
   toValue: number | $2 | {
     x: number;

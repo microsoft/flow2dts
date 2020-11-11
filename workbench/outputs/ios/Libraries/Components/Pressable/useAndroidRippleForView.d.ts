@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import type { ColorValue } from "../../StyleSheet/StyleSheet";
-import type { PressEvent } from "../../Types/CoreEventTypes";
+import { ColorValue } from "../../StyleSheet/StyleSheet";
+import { PressEvent } from "../../Types/CoreEventTypes";
 import { View } from "react-native";
 import * as React from "react";
 declare type NativeBackgroundProp = Readonly<

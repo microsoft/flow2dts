@@ -1,6 +1,6 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import type { ImageURISource } from "./ImageSource";
+import { ImageURISource } from "./ImageSource";
 declare type NativeImageSourceSpec = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

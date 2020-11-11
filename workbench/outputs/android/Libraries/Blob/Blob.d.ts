@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import type { BlobData } from "./BlobTypes";
-import type { BlobOptions } from "./BlobTypes";
+import { BlobData } from "./BlobTypes";
+import { BlobOptions } from "./BlobTypes";
 declare class Blob {
   /**
    * Constructor for JS consumers.

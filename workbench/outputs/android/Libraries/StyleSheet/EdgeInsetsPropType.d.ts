@@ -1,4 +1,4 @@
 // @flow
-import type { Rect } from "./Rect";
+import { Rect } from "./Rect";
 declare type EdgeInsetsProp = Rect;
 export type { EdgeInsetsProp };

@@ -1,6 +1,6 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import type { Handle } from "./InteractionManager";
+import { Handle } from "./InteractionManager";
 declare var InteractionMixin:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

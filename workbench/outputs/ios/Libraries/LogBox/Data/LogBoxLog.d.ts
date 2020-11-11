@@ -1,10 +1,10 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import type { Category } from "./parseLogBoxLog";
-import type { Message } from "./parseLogBoxLog";
-import type { ComponentStack } from "./parseLogBoxLog";
-import type { CodeFrame } from "./parseLogBoxLog";
-import type { Stack } from "./LogBoxSymbolication";
+import { Category } from "./parseLogBoxLog";
+import { Message } from "./parseLogBoxLog";
+import { ComponentStack } from "./parseLogBoxLog";
+import { CodeFrame } from "./parseLogBoxLog";
+import { Stack } from "./LogBoxSymbolication";
 declare type SymbolicationStatus = "NONE" | "PENDING" | "COMPLETE" | "FAILED";
 declare type LogLevel = "warn" | "error" | "fatal" | "syntax";
 declare type LogBoxLogData = Readonly<

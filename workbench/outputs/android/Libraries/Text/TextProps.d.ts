@@ -1,11 +1,11 @@
 // @flow
-import type { LayoutEvent } from "../Types/CoreEventTypes";
-import type { PressEvent } from "../Types/CoreEventTypes";
-import type { TextLayoutEvent } from "../Types/CoreEventTypes";
-import type { Node } from "react";
-import type { TextStyleProp } from "../StyleSheet/StyleSheet";
-import type { AccessibilityRole } from "../Components/View/ViewAccessibility";
-import type { AccessibilityState } from "../Components/View/ViewAccessibility";
+import { LayoutEvent } from "../Types/CoreEventTypes";
+import { PressEvent } from "../Types/CoreEventTypes";
+import { TextLayoutEvent } from "../Types/CoreEventTypes";
+import { Node } from "react";
+import { TextStyleProp } from "../StyleSheet/StyleSheet";
+import { AccessibilityRole } from "../Components/View/ViewAccessibility";
+import { AccessibilityState } from "../Components/View/ViewAccessibility";
 declare type PressRetentionOffset = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

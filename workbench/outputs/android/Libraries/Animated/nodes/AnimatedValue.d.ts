@@ -1,10 +1,10 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "./AnimatedInterpolation";
 import $3 from "./AnimatedWithChildren";
-import type { EndCallback } from "../animations/Animation";
+import { EndCallback } from "../animations/Animation";
 import Animation$f2tTypeof from "../animations/Animation";
 declare type Animation = $TypeOf<typeof Animation$f2tTypeof>;
-import type { InterpolationConfigType } from "./AnimatedInterpolation";
+import { InterpolationConfigType } from "./AnimatedInterpolation";
 import AnimatedTracking$f2tTypeof from "./AnimatedTracking";
 declare type AnimatedTracking = $TypeOf<typeof AnimatedTracking$f2tTypeof>;
 declare class AnimatedValue extends $3 {

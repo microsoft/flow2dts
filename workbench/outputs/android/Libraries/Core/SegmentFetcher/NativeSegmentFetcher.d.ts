@@ -1,5 +1,5 @@
 // @flow
-import type { TurboModule } from "../../TurboModule/RCTExport";
+import { TurboModule } from "../../TurboModule/RCTExport";
 interface Spec extends TurboModule {
   readonly fetchSegment: (segmentId: number, options: Object, callback: (error: null | undefined | Object) => void) => // flowlint-line unclear-type: off
   void;

@@ -1,6 +1,6 @@
 import { $Shape } from "utility-types";
 import $1 from "../Animated/nodes/AnimatedNode";
-import type { NativeColorValue } from "./PlatformColorValueTypes";
+import { NativeColorValue } from "./PlatformColorValueTypes";
 declare type ____ColorValue_Internal = null | string | NativeColorValue;
 declare type ColorArrayValue = null | ReadonlyArray<____ColorValue_Internal>;
 declare type PointValue =

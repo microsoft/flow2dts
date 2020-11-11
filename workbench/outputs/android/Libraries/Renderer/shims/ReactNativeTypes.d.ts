@@ -1,6 +1,6 @@
 // @flow
-import type { ElementRef } from "react";
-import type { AbstractComponent } from "react";
+import { ElementRef } from "react";
+import { AbstractComponent } from "react";
 declare type MeasureOnSuccessCallback = (x: number, y: number, width: number, height: number, pageX: number, pageY: number) => void;
 declare type MeasureInWindowOnSuccessCallback = (x: number, y: number, width: number, height: number) => void;
 declare type MeasureLayoutOnSuccessCallback = (left: number, top: number, width: number, height: number) => void;

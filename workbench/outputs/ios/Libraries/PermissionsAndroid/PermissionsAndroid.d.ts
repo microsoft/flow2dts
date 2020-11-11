@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import type { PermissionStatus } from "./NativePermissionsAndroid";
-import type { PermissionType } from "./NativePermissionsAndroid";
+import { PermissionStatus } from "./NativePermissionsAndroid";
+import { PermissionType } from "./NativePermissionsAndroid";
 declare type Rationale = {
   title: string;
   message: string;

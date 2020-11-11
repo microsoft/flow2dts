@@ -1,7 +1,7 @@
 // @flow
 import * as React from "react";
-import type { ViewProps } from "./ViewPropTypes";
-import type { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
+import { ViewProps } from "./ViewPropTypes";
+import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
 declare type ViewNativeComponentType = HostComponent<ViewProps>;
 declare var viewConfig: {} |
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

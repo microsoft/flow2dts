@@ -1,8 +1,8 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import * as React from "react";
-import type { PressEvent } from "../../Types/CoreEventTypes";
-import type { StackFrame } from "../../Core/NativeExceptionsManager";
+import { PressEvent } from "../../Types/CoreEventTypes";
+import { StackFrame } from "../../Core/NativeExceptionsManager";
 declare type Props = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

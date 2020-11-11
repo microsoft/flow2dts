@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import * as React from "react";
-import type { LogLevel } from "../Data/LogBoxLog";
+import { LogLevel } from "../Data/LogBoxLog";
 declare type Props = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

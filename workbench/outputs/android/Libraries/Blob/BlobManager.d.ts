@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "./Blob";
-import type { BlobData } from "./BlobTypes";
-import type { BlobOptions } from "./BlobTypes";
+import { BlobData } from "./BlobTypes";
+import { BlobOptions } from "./BlobTypes";
 declare class BlobManager {
   isAvailable: boolean;
   createFromParts(parts: ($1 | string)[], options?: BlobOptions): $1;

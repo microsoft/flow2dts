@@ -1,5 +1,5 @@
 // @flow
-import type { ColorValue } from "./StyleSheet";
+import { ColorValue } from "./StyleSheet";
 declare type DynamicColorIOSTuple = {
   light: ColorValue;
   dark: ColorValue;

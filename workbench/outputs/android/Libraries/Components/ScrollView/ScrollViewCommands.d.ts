@@ -1,7 +1,7 @@
 // @flow
 import * as React from "react";
-import type { Double } from "react-native/Libraries/Types/CodegenTypes";
-import type { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
+import { Double } from "react-native/Libraries/Types/CodegenTypes";
+import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
 declare type ScrollViewNativeComponentType = HostComponent<unknown>;
 interface NativeCommands {
   readonly flashScrollIndicators: (viewRef: React.ElementRef<ScrollViewNativeComponentType>) => void;

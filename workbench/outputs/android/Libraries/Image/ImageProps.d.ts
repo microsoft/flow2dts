@@ -1,12 +1,12 @@
 import { $Diff } from "utility-types";
 // @flow
-import type { SyntheticEvent } from "../Types/CoreEventTypes";
-import type { LayoutEvent } from "../Types/CoreEventTypes";
-import type { EdgeInsetsProp } from "../StyleSheet/EdgeInsetsPropType";
-import type { ImageSource } from "./ImageSource";
-import type { ViewStyleProp } from "../StyleSheet/StyleSheet";
-import type { ImageStyleProp } from "../StyleSheet/StyleSheet";
-import type { ViewProps } from "../Components/View/ViewPropTypes";
+import { SyntheticEvent } from "../Types/CoreEventTypes";
+import { LayoutEvent } from "../Types/CoreEventTypes";
+import { EdgeInsetsProp } from "../StyleSheet/EdgeInsetsPropType";
+import { ImageSource } from "./ImageSource";
+import { ViewStyleProp } from "../StyleSheet/StyleSheet";
+import { ImageStyleProp } from "../StyleSheet/StyleSheet";
+import { ViewProps } from "../Components/View/ViewPropTypes";
 declare type ImageLoadEvent = SyntheticEvent<Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

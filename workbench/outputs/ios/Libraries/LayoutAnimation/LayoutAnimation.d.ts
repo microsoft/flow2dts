@@ -1,8 +1,8 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import type { LayoutAnimationType } from "../Renderer/shims/ReactNativeTypes";
-import type { LayoutAnimationProperty } from "../Renderer/shims/ReactNativeTypes";
-import type { LayoutAnimationConfig as LayoutAnimationConfig_ } from "../Renderer/shims/ReactNativeTypes";
+import { LayoutAnimationType } from "../Renderer/shims/ReactNativeTypes";
+import { LayoutAnimationProperty } from "../Renderer/shims/ReactNativeTypes";
+import { LayoutAnimationConfig as LayoutAnimationConfig_ } from "../Renderer/shims/ReactNativeTypes";
 declare type LayoutAnimationConfig = LayoutAnimationConfig_;
 declare type OnAnimationDidEndCallback = () => void;
 declare type OnAnimationDidFailCallback = () => void;

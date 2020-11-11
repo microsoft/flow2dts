@@ -1,8 +1,8 @@
 // @flow
-import type { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
-import type { SyntheticEvent } from "../../Types/CoreEventTypes";
-import type { TextStyleProp } from "../../StyleSheet/StyleSheet";
-import type { ProcessedColorValue } from "../../StyleSheet/processColor";
+import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
+import { SyntheticEvent } from "../../Types/CoreEventTypes";
+import { TextStyleProp } from "../../StyleSheet/StyleSheet";
+import { ProcessedColorValue } from "../../StyleSheet/processColor";
 import * as React from "react";
 declare type PickerIOSChangeEvent = SyntheticEvent<Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

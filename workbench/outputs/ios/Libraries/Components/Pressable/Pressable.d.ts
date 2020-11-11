@@ -2,15 +2,15 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $ElementType } from "utility-types";
 // @flow
 import * as React from "react";
-import type { RippleConfig } from "./useAndroidRippleForView";
-import type { AccessibilityActionEvent } from "../View/ViewAccessibility";
-import type { AccessibilityActionInfo } from "../View/ViewAccessibility";
-import type { AccessibilityRole } from "../View/ViewAccessibility";
-import type { AccessibilityState } from "../View/ViewAccessibility";
-import type { AccessibilityValue } from "../View/ViewAccessibility";
-import type { RectOrSize } from "../../StyleSheet/Rect";
-import type { LayoutEvent } from "../../Types/CoreEventTypes";
-import type { PressEvent } from "../../Types/CoreEventTypes";
+import { RippleConfig } from "./useAndroidRippleForView";
+import { AccessibilityActionEvent } from "../View/ViewAccessibility";
+import { AccessibilityActionInfo } from "../View/ViewAccessibility";
+import { AccessibilityRole } from "../View/ViewAccessibility";
+import { AccessibilityState } from "../View/ViewAccessibility";
+import { AccessibilityValue } from "../View/ViewAccessibility";
+import { RectOrSize } from "../../StyleSheet/Rect";
+import { LayoutEvent } from "../../Types/CoreEventTypes";
+import { PressEvent } from "../../Types/CoreEventTypes";
 import View from "../View/View";
 declare type ViewStyleProp = $ElementType<React.ElementConfig<$TypeOf<typeof View>>, "style">;
 declare type StateCallbackType = Readonly<

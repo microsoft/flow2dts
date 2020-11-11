@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import type { ReactNativeBaseComponentViewConfig } from "./ReactNativeTypes";
-import type { ViewConfigGetter } from "./ReactNativeTypes";
+import { ReactNativeBaseComponentViewConfig } from "./ReactNativeTypes";
+import { ViewConfigGetter } from "./ReactNativeTypes";
 declare var customBubblingEventTypes: {
   [eventName: string]: Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

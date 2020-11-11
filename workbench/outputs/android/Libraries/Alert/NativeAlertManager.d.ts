@@ -1,5 +1,5 @@
 // @flow
-import type { TurboModule } from "../TurboModule/RCTExport";
+import { TurboModule } from "../TurboModule/RCTExport";
 declare type Args =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

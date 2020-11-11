@@ -1,9 +1,9 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import * as React from "react";
-import type { EdgeInsetsProp } from "../../StyleSheet/EdgeInsetsPropType";
-import type { ViewStyleProp } from "../../StyleSheet/StyleSheet";
-import type { PressEvent } from "../../Types/CoreEventTypes";
+import { EdgeInsetsProp } from "../../StyleSheet/EdgeInsetsPropType";
+import { ViewStyleProp } from "../../StyleSheet/StyleSheet";
+import { PressEvent } from "../../Types/CoreEventTypes";
 declare type Props = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

@@ -1,6 +1,6 @@
 // @flow
 import * as React from "react";
-import type { TextStyleProp } from "react-native/Libraries/StyleSheet/StyleSheet";
+import { TextStyleProp } from "react-native/Libraries/StyleSheet/StyleSheet";
 declare function Ansi($f2t1: {
   text: string;
   style: TextStyleProp;

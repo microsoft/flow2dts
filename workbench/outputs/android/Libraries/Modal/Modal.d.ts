@@ -1,8 +1,8 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "react";
-import type { ViewProps } from "../Components/View/ViewPropTypes";
-import type { RootTag } from "../ReactNative/RootTag";
-import type { DirectEventHandler } from "../Types/CodegenTypes";
+import { ViewProps } from "../Components/View/ViewPropTypes";
+import { RootTag } from "../ReactNative/RootTag";
+import { DirectEventHandler } from "../Types/CodegenTypes";
 declare type OrientationChangeEvent = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

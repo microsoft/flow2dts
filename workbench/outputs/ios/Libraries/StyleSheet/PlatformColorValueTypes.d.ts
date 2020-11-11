@@ -1,6 +1,6 @@
 // @flow
-import type { ColorValue } from "./StyleSheet";
-import type { ProcessedColorValue } from "./processColor";
+import { ColorValue } from "./StyleSheet";
+import { ProcessedColorValue } from "./processColor";
 
 /*[FLOW2DTS - Warning] This type alias was opaque in the original Flow source.*/
 declare type NativeColorValue = {

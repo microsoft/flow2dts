@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "react";
-import type { PressEvent } from "../Types/CoreEventTypes";
-import type { ColorValue } from "../StyleSheet/StyleSheet";
+import { PressEvent } from "../Types/CoreEventTypes";
+import { ColorValue } from "../StyleSheet/StyleSheet";
 declare type ButtonProps = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

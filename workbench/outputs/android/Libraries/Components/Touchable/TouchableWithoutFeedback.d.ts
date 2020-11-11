@@ -1,16 +1,16 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import Pressability from "../../Pressability/Pressability";
-import type { AccessibilityActionEvent } from "../../Components/View/ViewAccessibility";
-import type { AccessibilityActionInfo } from "../../Components/View/ViewAccessibility";
-import type { AccessibilityRole } from "../../Components/View/ViewAccessibility";
-import type { AccessibilityState } from "../../Components/View/ViewAccessibility";
-import type { AccessibilityValue } from "../../Components/View/ViewAccessibility";
-import type { EdgeInsetsProp } from "../../StyleSheet/EdgeInsetsPropType";
-import type { BlurEvent } from "../../Types/CoreEventTypes";
-import type { FocusEvent } from "../../Types/CoreEventTypes";
-import type { LayoutEvent } from "../../Types/CoreEventTypes";
-import type { PressEvent } from "../../Types/CoreEventTypes";
+import { AccessibilityActionEvent } from "../../Components/View/ViewAccessibility";
+import { AccessibilityActionInfo } from "../../Components/View/ViewAccessibility";
+import { AccessibilityRole } from "../../Components/View/ViewAccessibility";
+import { AccessibilityState } from "../../Components/View/ViewAccessibility";
+import { AccessibilityValue } from "../../Components/View/ViewAccessibility";
+import { EdgeInsetsProp } from "../../StyleSheet/EdgeInsetsPropType";
+import { BlurEvent } from "../../Types/CoreEventTypes";
+import { FocusEvent } from "../../Types/CoreEventTypes";
+import { LayoutEvent } from "../../Types/CoreEventTypes";
+import { PressEvent } from "../../Types/CoreEventTypes";
 import * as React from "react";
 declare type Props = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

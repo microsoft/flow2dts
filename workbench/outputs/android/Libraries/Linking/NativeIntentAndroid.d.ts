@@ -1,5 +1,5 @@
 // @flow
-import type { TurboModule } from "../TurboModule/RCTExport";
+import { TurboModule } from "../TurboModule/RCTExport";
 interface Spec extends TurboModule {
   readonly getInitialURL: () => Promise<string>;
   readonly canOpenURL: (url: string) => Promise<boolean>;

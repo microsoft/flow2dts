@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import * as React from "react";
-import type { Stack } from "../Data/LogBoxSymbolication";
+import { Stack } from "../Data/LogBoxSymbolication";
 import LogBoxLog$f2tTypeof from "../Data/LogBoxLog";
 declare type LogBoxLog = $TypeOf<typeof LogBoxLog$f2tTypeof>;
 declare type Props = Readonly<

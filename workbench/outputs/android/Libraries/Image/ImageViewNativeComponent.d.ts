@@ -1,11 +1,11 @@
 // @flow
-import type { DangerouslyImpreciseStyle } from "../StyleSheet/StyleSheet";
-import type { ResolvedAssetSource } from "./AssetSourceResolver";
-import type { HostComponent } from "../Renderer/shims/ReactNativeTypes";
-import type { ImageProps } from "./ImageProps";
-import type { ViewProps } from "../Components/View/ViewPropTypes";
-import type { ImageStyleProp } from "../StyleSheet/StyleSheet";
-import type { ColorValue } from "../StyleSheet/StyleSheet";
+import { DangerouslyImpreciseStyle } from "../StyleSheet/StyleSheet";
+import { ResolvedAssetSource } from "./AssetSourceResolver";
+import { HostComponent } from "../Renderer/shims/ReactNativeTypes";
+import { ImageProps } from "./ImageProps";
+import { ViewProps } from "../Components/View/ViewPropTypes";
+import { ImageStyleProp } from "../StyleSheet/StyleSheet";
+import { ColorValue } from "../StyleSheet/StyleSheet";
 declare type NativeProps = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 ImageProps & ViewProps & {

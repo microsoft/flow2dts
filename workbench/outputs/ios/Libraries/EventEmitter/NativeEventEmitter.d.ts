@@ -1,6 +1,6 @@
 // @flow
 import EventEmitter from "../vendor/emitter/EventEmitter";
-import type { EventSubscription } from "../vendor/emitter/EventEmitter";
+import { EventSubscription } from "../vendor/emitter/EventEmitter";
 declare type NativeModule = {
   readonly addListener: (eventType: string) => void;
   readonly removeListeners: (count: number) => void;

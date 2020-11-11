@@ -1,8 +1,8 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $Diff } from "utility-types";
 // @flow
-import type { ViewStyleProp } from "../../StyleSheet/StyleSheet";
-import type { ColorValue } from "../../StyleSheet/StyleSheet";
+import { ViewStyleProp } from "../../StyleSheet/StyleSheet";
+import { ColorValue } from "../../StyleSheet/StyleSheet";
 import TouchableWithoutFeedback$f2tTypeof from "./TouchableWithoutFeedback";
 declare type TouchableWithoutFeedback = $TypeOf<typeof TouchableWithoutFeedback$f2tTypeof>;
 import View from "../../Components/View/View";

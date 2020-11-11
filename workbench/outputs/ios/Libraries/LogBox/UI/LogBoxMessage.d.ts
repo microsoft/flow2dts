@@ -1,8 +1,8 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import * as React from "react";
-import type { TextStyleProp } from "../../StyleSheet/StyleSheet";
-import type { Message } from "../Data/parseLogBoxLog";
+import { TextStyleProp } from "../../StyleSheet/StyleSheet";
+import { Message } from "../Data/parseLogBoxLog";
 declare type Props = {
   message: Message;
   style: TextStyleProp;

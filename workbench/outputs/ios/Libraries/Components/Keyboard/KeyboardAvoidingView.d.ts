@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "react";
-import type { ViewStyleProp } from "../../StyleSheet/StyleSheet";
-import type { ViewProps } from "../View/ViewPropTypes";
+import { ViewStyleProp } from "../../StyleSheet/StyleSheet";
+import { ViewProps } from "../View/ViewPropTypes";
 declare type Props = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 ViewProps & {

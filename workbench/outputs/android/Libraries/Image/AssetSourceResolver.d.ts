@@ -9,7 +9,7 @@ declare type ResolvedAssetSource =
   readonly uri: string;
   readonly scale: number;
 };
-import type { PackagerAsset } from "@react-native/assets/registry";
+import { PackagerAsset } from "@react-native/assets/registry";
 declare class AssetSourceResolver {
   serverUrl: null | undefined | string;
   // where the jsbundle is being run from

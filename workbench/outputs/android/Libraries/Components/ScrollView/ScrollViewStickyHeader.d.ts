@@ -2,7 +2,7 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import AnimatedImplementation from "../../Animated/AnimatedImplementation";
 import * as React from "react";
-import type { LayoutEvent } from "../../Types/CoreEventTypes";
+import { LayoutEvent } from "../../Types/CoreEventTypes";
 declare type Props = {
   children?: React.Element<any>;
   nextHeaderLayoutY: null | undefined | number;

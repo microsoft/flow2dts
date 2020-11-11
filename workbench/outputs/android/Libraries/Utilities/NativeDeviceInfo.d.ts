@@ -1,6 +1,6 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import type { TurboModule } from "../TurboModule/RCTExport";
+import { TurboModule } from "../TurboModule/RCTExport";
 declare type DisplayMetricsAndroid =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

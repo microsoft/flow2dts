@@ -1,6 +1,6 @@
 // @flow
-import type { ExceptionData } from "../../Core/NativeExceptionsManager";
-import type { LogBoxLogData } from "./LogBoxLog";
+import { ExceptionData } from "../../Core/NativeExceptionsManager";
+import { LogBoxLogData } from "./LogBoxLog";
 declare type ExtendedExceptionData = ExceptionData & {
   isComponentError: boolean;
 };
