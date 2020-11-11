@@ -14,7 +14,7 @@
     "workbench:check": "yarn workbench:check:ios; yarn workbench:check:android",
     "workbench:check:ios": "yarn tsc --project ./workbench/tsconfig.ios.json --pretty",
     "workbench:check:android": "yarn tsc --project ./workbench/tsconfig.android.json --pretty",
-    "workbench:check:offences": "yarn workbench:check 2>/dev/null | grep -E 'TS\\d+' -o | grep -v TS2339 | sort | uniq -c | sort -r",
+    "workbench:check:offences": "yarn workbench:check 2>/dev/null | node ./scripts/tsc-offence-ranking.js",
     "prettify": "prettier --write \"packages/**/*.ts\" && prettier --write \"packages/**/*.d.ts\" && prettier --write \"packages/**/*.js\"",
     "postinstall": "patch-package"
   },
