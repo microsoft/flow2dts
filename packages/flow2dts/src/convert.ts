@@ -24,7 +24,13 @@ function fixPathInOutput(outData: string): string {
   return lines.join("\n")
 }
 
-export async function convert({ filename, outFilename }: { filename: string; outFilename: string }) {
+export async function convert({
+  filename,
+  outFilename,
+}: {
+  filename: string
+  outFilename: string
+}): Promise<[string, boolean]> {
   let success = false
   let outData: string
   try {
@@ -69,5 +75,5 @@ export async function convert({ filename, outFilename }: { filename: string; out
   }
   await fs.promises.mkdir(path.dirname(outFilename), { recursive: true })
   await fs.promises.writeFile(outFilename, fixPathInOutput(outData), "utf8")
-  return success
+  return [outFilename, success]
 }

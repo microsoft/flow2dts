@@ -33,7 +33,7 @@ async function run({
       const outFilename = path.join(outDir, path.relative(rootDir, filename)).replace(matchedExtname, ".d.ts")
       console.log(`⚒️ ${chalk.dim(path.relative(cwd || ".", filename))}`)
       conversions.push(
-        convert({ filename, outFilename }).then((success) => {
+        convert({ filename, outFilename }).then(([outFilename, success]) => {
           if (success) {
             successCount++
           }
