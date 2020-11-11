@@ -34,30 +34,46 @@ export const objectTypeVisitor: Visitor<State> = {
       let value = path.node.value as any
       assertTSType(value)
 
-      const readonly = variance && variance.kind === "plus"
-      const writeonly = variance && variance.kind === "minus"
-
-      if (writeonly) {
-        path.addComment(
-          "leading",
-          "[FLOW2DTS - Warning] This property was a write-only property in the original Flow source."
+      if (
+        t.isTSFunctionType(value) &&
+        path.parentPath.isObjectTypeAnnotation() &&
+        path.parentPath.parentPath.isDeclareClass()
+      ) {
+        const isConstructor = (t.isIdentifier(key) ? key.name : key.value) === "constructor"
+        path.replaceWith(
+          t.tsMethodSignature(
+            key,
+            value.typeParameters,
+            value.parameters,
+            isConstructor ? undefined : value.typeAnnotation
+          )
         )
+      } else {
+        const readonly = variance && variance.kind === "plus"
+        const writeonly = variance && variance.kind === "minus"
+
+        if (writeonly) {
+          path.addComment(
+            "leading",
+            "[FLOW2DTS - Warning] This property was a write-only property in the original Flow source."
+          )
+        }
+
+        // TODO: Mark as readonly if no `set` version exists
+        if (kind === "get") {
+          t.assertTSFunctionType(value)
+          value = value.typeAnnotation!.typeAnnotation
+        }
+
+        const propertySignature = t.tsPropertySignature(
+          key.type === "Identifier" ? t.identifier(key.name) : t.stringLiteral(key.value),
+          t.tsTypeAnnotation(value)
+        )
+        propertySignature.readonly = readonly
+        propertySignature.optional = optional
+
+        path.replaceWith(propertySignature)
       }
-
-      // TODO: Mark as readonly if no `set` version exists
-      if (kind === "get") {
-        t.assertTSFunctionType(value)
-        value = value.typeAnnotation!.typeAnnotation
-      }
-
-      const propertySignature = t.tsPropertySignature(
-        key.type === "Identifier" ? t.identifier(key.name) : t.stringLiteral(key.value),
-        t.tsTypeAnnotation(value)
-      )
-      propertySignature.readonly = readonly
-      propertySignature.optional = optional
-
-      path.replaceWith(propertySignature)
     },
   },
   ObjectTypeCallProperty: {
@@ -86,7 +102,7 @@ export const objectTypeVisitor: Visitor<State> = {
       }
 
       // {x: number, ...T, y: number} to T & {x: number} & {y: number}
-      const elements: t.TSTypeElement[] = []
+      const elements: Array<t.TSTypeElement | t.TSMethodSignature> = []
       const spreads: t.TSType[] = []
 
       for (const prop of properties) {
@@ -94,9 +110,10 @@ export const objectTypeVisitor: Visitor<State> = {
           const { argument } = prop
           assertTSType(argument)
           spreads.push(argument)
-        } else {
-          assertTSTypeElement(prop)
+        } else if (t.isTSTypeElement(prop) || t.isTSMethodSignature(prop)) {
           elements.push(prop)
+        } else {
+          throw new Error("Unexpected property type")
         }
       }
 

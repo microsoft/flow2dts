@@ -22,3 +22,8 @@ class CD<T> {
   static a: string
   static b: T
 }
+
+declare class CE {
+  constructor(a: string): void;
+  foo(b: string): number;
+}

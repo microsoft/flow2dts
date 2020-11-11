@@ -22,3 +22,8 @@ declare class CD<T> {
   static a: string
   static b: /*[FLOW2DTS - Warning] This was typed using the `T` type parameter*/ unknown
 }
+
+declare class CE {
+  constructor(a: string)
+  foo(b: string): number
+}
