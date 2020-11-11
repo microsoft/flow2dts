@@ -47,4 +47,16 @@ export const exportVisitor: Visitor<State> = {
       }
     },
   },
+  DeclareExportDeclaration: {
+    exit(path) {
+      const decl = path.node.declaration as any
+      if (t.isTSType(decl) && !t.isIdentifier(decl)) {
+        const varId = t.identifier(nameForExportDefault)
+        varId.typeAnnotation = t.tsTypeAnnotation(decl)
+        const varDecl = t.variableDeclaration("const", [t.variableDeclarator(varId)])
+        varDecl.declare = true
+        path.replaceWithMultiple([varDecl, t.exportDefaultDeclaration(t.identifier(nameForExportDefault))])
+      }
+    },
+  },
 }
