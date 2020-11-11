@@ -7,4 +7,5 @@ declare type NativeCommands = TextInputNativeCommands<NativeType>;
 declare var Commands: NativeCommands;
 declare var SinglelineTextInputNativeComponent: HostComponent<unknown>;
 export { Commands };
-declare export default $TypeOf<typeof SinglelineTextInputNativeComponent>;
+declare const $f2tExportDefault: $TypeOf<typeof SinglelineTextInputNativeComponent>;
+export default $f2tExportDefault;

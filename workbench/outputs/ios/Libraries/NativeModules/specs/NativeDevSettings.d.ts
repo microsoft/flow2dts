@@ -16,4 +16,5 @@ interface Spec extends TurboModule {
   readonly setIsShakeToShowDevMenuEnabled: (enabled: boolean) => void;
 }
 export type { Spec };
-declare export default Spec;
+declare const $f2tExportDefault: Spec;
+export default $f2tExportDefault;

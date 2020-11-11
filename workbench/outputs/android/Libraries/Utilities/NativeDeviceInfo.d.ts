@@ -47,4 +47,5 @@ declare var NativeDeviceInfo:
 export type { DisplayMetrics };
 export type { DimensionsPayload };
 export type { Spec };
-declare export default $TypeOf<typeof NativeDeviceInfo>;
+declare const $f2tExportDefault: $TypeOf<typeof NativeDeviceInfo>;
+export default $f2tExportDefault;

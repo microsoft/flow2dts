@@ -12,4 +12,5 @@ interface Spec extends TurboModule {
   }[]) => Promise<void>;
 }
 export type { Spec };
-declare export default null | undefined | Spec;
+declare const $f2tExportDefault: null | undefined | Spec;
+export default $f2tExportDefault;

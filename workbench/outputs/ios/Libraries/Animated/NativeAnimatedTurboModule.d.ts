@@ -42,4 +42,5 @@ export type { EventMapping };
 export type { AnimatedNodeConfig };
 export type { AnimatingNodeConfig };
 export type { Spec };
-declare export default null | undefined | Spec;
+declare const $f2tExportDefault: null | undefined | Spec;
+export default $f2tExportDefault;

@@ -40,4 +40,5 @@ interface Spec extends TurboModule {
   readonly cropImage: (uri: string, cropData: Options, successCallback: (uri: string) => void, errorCallback: (error: string) => void) => void;
 }
 export type { Spec };
-declare export default Spec;
+declare const $f2tExportDefault: Spec;
+export default $f2tExportDefault;

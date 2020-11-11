@@ -19,4 +19,5 @@ declare type Props = Readonly<
   style?: ViewStyleProp;
 }>;
 declare function LogBoxButton(props: Props): React.Node;
-declare export default $TypeOf<typeof LogBoxButton>;
+declare const $f2tExportDefault: $TypeOf<typeof LogBoxButton>;
+export default $f2tExportDefault;

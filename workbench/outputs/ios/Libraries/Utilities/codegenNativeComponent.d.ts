@@ -12,4 +12,5 @@ declare type Options = Readonly<
 declare type NativeComponentType<T> = HostComponent<T>;
 declare function codegenNativeComponent<Props>(componentName: string, options?: Options): NativeComponentType<Props>;
 export type { NativeComponentType };
-declare export default $TypeOf<typeof codegenNativeComponent>;
+declare const $f2tExportDefault: $TypeOf<typeof codegenNativeComponent>;
+export default $f2tExportDefault;

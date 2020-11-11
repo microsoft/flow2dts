@@ -10,4 +10,5 @@ declare type Props = {
   maxLength?: null | undefined | number;
 };
 declare function LogBoxMessage(props: Props): React.Node;
-declare export default $TypeOf<typeof LogBoxMessage>;
+declare const $f2tExportDefault: $TypeOf<typeof LogBoxMessage>;
+export default $f2tExportDefault;

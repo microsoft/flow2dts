@@ -98,4 +98,5 @@ interface NativeCommands {
 }
 declare var Commands: NativeCommands;
 export { Commands };
-declare export default NativeType;
+declare const $f2tExportDefault: NativeType;
+export default $f2tExportDefault;

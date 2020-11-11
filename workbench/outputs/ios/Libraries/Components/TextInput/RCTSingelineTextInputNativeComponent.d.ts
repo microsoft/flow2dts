@@ -5,4 +5,5 @@ declare type NativeType = HostComponent<unknown>;
 declare type NativeCommands = TextInputNativeCommands<NativeType>;
 declare var Commands: NativeCommands;
 export { Commands };
-declare export default HostComponent<unknown>;
+declare const $f2tExportDefault: HostComponent<unknown>;
+export default $f2tExportDefault;

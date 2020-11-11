@@ -18,4 +18,5 @@ declare var NativeSourceCode:
   };
 };
 export type { Spec };
-declare export default $TypeOf<typeof NativeSourceCode>;
+declare const $f2tExportDefault: $TypeOf<typeof NativeSourceCode>;
+export default $f2tExportDefault;

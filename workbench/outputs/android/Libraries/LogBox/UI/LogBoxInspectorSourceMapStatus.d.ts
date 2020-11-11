@@ -9,4 +9,5 @@ declare type Props = Readonly<
   status: "COMPLETE" | "FAILED" | "NONE" | "PENDING";
 }>;
 declare function LogBoxInspectorSourceMapStatus(props: Props): React.Node;
-declare export default $TypeOf<typeof LogBoxInspectorSourceMapStatus>;
+declare const $f2tExportDefault: $TypeOf<typeof LogBoxInspectorSourceMapStatus>;
+export default $f2tExportDefault;

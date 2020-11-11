@@ -36,4 +36,5 @@ ViewProps & {
   onValueChange?: null | undefined | BubblingEventHandler<Event, "paperValueChange">;
   onSlidingComplete?: null | undefined | DirectEventHandler<Event, "paperSlidingComplete">;
 }>;
-declare export default HostComponent<NativeProps>;
+declare const $f2tExportDefault: HostComponent<NativeProps>;
+export default $f2tExportDefault;

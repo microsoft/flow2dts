@@ -26,4 +26,5 @@ ViewProps & {
   onChange?: null | undefined | BubblingEventHandler<OnChangeEvent>;
 }>;
 export type { OnChangeEvent };
-declare export default HostComponent<NativeProps>;
+declare const $f2tExportDefault: HostComponent<NativeProps>;
+export default $f2tExportDefault;

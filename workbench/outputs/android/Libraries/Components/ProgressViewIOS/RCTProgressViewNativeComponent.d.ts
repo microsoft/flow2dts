@@ -16,4 +16,5 @@ ViewProps & {
   progressImage?: null | undefined | ImageSource;
   trackImage?: null | undefined | ImageSource;
 }>;
-declare export default HostComponent<NativeProps>;
+declare const $f2tExportDefault: HostComponent<NativeProps>;
+export default $f2tExportDefault;

@@ -64,4 +64,5 @@ declare var NativeStatusBarManager:
   setHidden: (hidden: boolean, withAnimation: string) => void;
 };
 export type { Spec };
-declare export default $TypeOf<typeof NativeStatusBarManager>;
+declare const $f2tExportDefault: $TypeOf<typeof NativeStatusBarManager>;
+export default $f2tExportDefault;

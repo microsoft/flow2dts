@@ -22,4 +22,5 @@ interface Spec extends TurboModule {
   readonly getValueWithPromise: (error: boolean) => Promise<string>;
 }
 export type { Spec };
-declare export default Spec;
+declare const $f2tExportDefault: Spec;
+export default $f2tExportDefault;

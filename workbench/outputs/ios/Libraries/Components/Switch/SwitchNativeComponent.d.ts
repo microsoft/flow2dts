@@ -32,4 +32,5 @@ interface NativeCommands {
 }
 declare var Commands: NativeCommands;
 export { Commands };
-declare export default ComponentType;
+declare const $f2tExportDefault: ComponentType;
+export default $f2tExportDefault;

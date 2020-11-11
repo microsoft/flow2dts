@@ -17,4 +17,5 @@ interface NativeCommands {
     animated?: boolean;
   }, animated?: boolean) => void;
 }
-declare export default NativeCommands;
+declare const $f2tExportDefault: NativeCommands;
+export default $f2tExportDefault;

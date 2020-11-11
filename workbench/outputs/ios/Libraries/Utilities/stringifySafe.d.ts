@@ -10,4 +10,5 @@ declare function createStringifySafeWithLimits(limits:
 }): ($f2t1: unknown) => string;
 declare var stringifySafe: ($f2t1: unknown) => string;
 export { createStringifySafeWithLimits };
-declare export default $TypeOf<typeof stringifySafe>;
+declare const $f2tExportDefault: $TypeOf<typeof stringifySafe>;
+export default $f2tExportDefault;

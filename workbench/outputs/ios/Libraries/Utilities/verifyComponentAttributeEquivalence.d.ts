@@ -8,4 +8,5 @@ declare function stringifyViewConfig(viewConfig: any): string;
 export { lefthandObjectDiff };
 export { getConfigWithoutViewProps };
 export { stringifyViewConfig };
-declare export default $TypeOf<typeof verifyComponentAttributeEquivalence>;
+declare const $f2tExportDefault: $TypeOf<typeof verifyComponentAttributeEquivalence>;
+export default $f2tExportDefault;

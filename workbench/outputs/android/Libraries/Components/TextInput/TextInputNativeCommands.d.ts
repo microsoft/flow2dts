@@ -9,4 +9,5 @@ interface TextInputNativeCommands<T> {
 }
 declare var supportedCommands: (string | string | string)[];
 export type { TextInputNativeCommands };
-declare export default $TypeOf<typeof supportedCommands>;
+declare const $f2tExportDefault: $TypeOf<typeof supportedCommands>;
+export default $f2tExportDefault;

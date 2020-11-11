@@ -5,4 +5,5 @@ import { enable as enable$f2tTypeof } from "promise/setimmediate/rejection-track
 declare type enable = $TypeOf<typeof enable$f2tTypeof>;
 declare type ExtractOptionsType = <P>($f2t1: (options?: null | undefined | P) => void) => P;
 declare var rejectionTrackingOptions: $Call<ExtractOptionsType, enable>;
-declare export default $TypeOf<typeof rejectionTrackingOptions>;
+declare const $f2tExportDefault: $TypeOf<typeof rejectionTrackingOptions>;
+export default $f2tExportDefault;

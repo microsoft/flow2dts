@@ -10,4 +10,5 @@ declare type Props = Readonly<
   onPress?: null | undefined | ((event: PressEvent) => void);
 }>;
 declare function LogBoxInspectorStackFrame(props: Props): React.Node;
-declare export default $TypeOf<typeof LogBoxInspectorStackFrame>;
+declare const $f2tExportDefault: $TypeOf<typeof LogBoxInspectorStackFrame>;
+export default $f2tExportDefault;

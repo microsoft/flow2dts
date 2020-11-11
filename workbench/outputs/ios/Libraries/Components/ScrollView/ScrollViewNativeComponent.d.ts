@@ -1,3 +1,4 @@
 // @flow
 import { ScrollViewNativeComponentType } from "./ScrollViewNativeComponentType";
-declare export default ScrollViewNativeComponentType;
+declare const $f2tExportDefault: ScrollViewNativeComponentType;
+export default $f2tExportDefault;

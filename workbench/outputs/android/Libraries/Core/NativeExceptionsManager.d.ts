@@ -43,4 +43,5 @@ declare var ExceptionsManager:
 export type { StackFrame };
 export type { ExceptionData };
 export type { Spec };
-declare export default $TypeOf<typeof ExceptionsManager>;
+declare const $f2tExportDefault: $TypeOf<typeof ExceptionsManager>;
+export default $f2tExportDefault;

@@ -10,4 +10,5 @@ interface Spec extends TurboModule {
   readonly removeListeners: (count: number) => void;
 }
 export type { Spec };
-declare export default Spec;
+declare const $f2tExportDefault: Spec;
+export default $f2tExportDefault;

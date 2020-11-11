@@ -8,4 +8,5 @@ declare type Props = Readonly<
   log: LogBoxLog;
 }>;
 declare function LogBoxInspectorReactFrames(props: Props): React.Node;
-declare export default $TypeOf<typeof LogBoxInspectorReactFrames>;
+declare const $f2tExportDefault: $TypeOf<typeof LogBoxInspectorReactFrames>;
+export default $f2tExportDefault;

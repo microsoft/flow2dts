@@ -35,4 +35,5 @@ ViewProps & {
   */
   size?: WithDefault<"small" | "large", "small">;
 }>;
-declare export default HostComponent<NativeProps>;
+declare const $f2tExportDefault: HostComponent<NativeProps>;
+export default $f2tExportDefault;

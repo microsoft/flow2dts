@@ -7,4 +7,5 @@ declare type NativeProps = Readonly<
 ViewProps & {
   name?: WithDefault<string, "">;
 }>;
-declare export default HostComponent<NativeProps>;
+declare const $f2tExportDefault: HostComponent<NativeProps>;
+export default $f2tExportDefault;

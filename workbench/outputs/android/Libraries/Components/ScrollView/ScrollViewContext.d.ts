@@ -7,6 +7,7 @@ declare type Value = {
 declare var ScrollViewContext: React.Context<Value>;
 declare var HORIZONTAL: Value;
 declare var VERTICAL: Value;
-declare export default $TypeOf<typeof ScrollViewContext>;
+declare const $f2tExportDefault: $TypeOf<typeof ScrollViewContext>;
+export default $f2tExportDefault;
 export { HORIZONTAL };
 export { VERTICAL };

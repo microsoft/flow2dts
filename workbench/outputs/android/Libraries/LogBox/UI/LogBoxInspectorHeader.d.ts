@@ -11,4 +11,5 @@ declare type Props = Readonly<
   level: LogLevel;
 }>;
 declare function LogBoxInspectorHeader(props: Props): React.Node;
-declare export default $TypeOf<typeof LogBoxInspectorHeader>;
+declare const $f2tExportDefault: $TypeOf<typeof LogBoxInspectorHeader>;
+export default $f2tExportDefault;

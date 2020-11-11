@@ -64,4 +64,5 @@ declare class LogBoxLog {
 }
 export type { LogLevel };
 export type { LogBoxLogData };
-declare export default $TypeOf<typeof LogBoxLog>;
+declare const $f2tExportDefault: $TypeOf<typeof LogBoxLog>;
+export default $f2tExportDefault;
