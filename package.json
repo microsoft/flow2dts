@@ -6,11 +6,15 @@
   ],
   "scripts": {
     "test": "yarn workspace flow2dts-flow-types-polyfill test && yarn workspace flow2dts test",
-    "start": "yarn workbench",
+    "start": "yarn workbench && yarn workbench:check:offences",
     "workbench": "yarn workbench:ios && yarn workbench:android",
     "workbench:_": "yarn workspace flow2dts cli --cwd ../.. --rootDir ./workbench/inputs \"./workbench/inputs/{index,Libraries/**/*}.js.flow\" \"!./workbench/inputs/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow\" \"!./workbench/inputs/Libraries/{Inspector,JSInspector,NewAppScreen,ReactPrivate}/*.js.flow\" \"!./workbench/inputs/Libraries/Animated/AnimatedWeb.js.flow\"",
     "workbench:ios": "rimraf ./workbench/outputs/ios && yarn workbench:_ --platform ios --outDir ./workbench/outputs/ios",
     "workbench:android": "rimraf ./workbench/outputs/android && yarn workbench:_ --platform android --outDir ./workbench/outputs/android",
+    "workbench:check": "yarn workbench:check:ios; yarn workbench:check:android",
+    "workbench:check:ios": "yarn tsc --project ./workbench/tsconfig.ios.json --pretty",
+    "workbench:check:android": "yarn tsc --project ./workbench/tsconfig.android.json --pretty",
+    "workbench:check:offences": "yarn workbench:check 2>/dev/null | grep -E 'TS\\d+' -o | grep -v TS2339 | sort | uniq -c | sort -r",
     "prettify": "prettier --write \"packages/**/*.ts\" && prettier --write \"packages/**/*.d.ts\" && prettier --write \"packages/**/*.js\"",
     "postinstall": "patch-package"
   },
