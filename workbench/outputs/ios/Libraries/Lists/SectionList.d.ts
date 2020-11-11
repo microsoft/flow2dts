@@ -110,29 +110,29 @@ declare class SectionList<SectionT extends SectionBase<any>> extends $1.PureComp
    * Note: cannot scroll to locations outside the render window without specifying the
    * `getItemLayout` prop.
    */
-  scrollToLocation: (params: ScrollToLocationParamsType) => void;
+  scrollToLocation(params: ScrollToLocationParamsType): void;
 
   /**
    * Tells the list an interaction has occurred, which should trigger viewability calculations, e.g.
    * if `waitForInteractions` is true and the user has not scrolled. This is typically called by
    * taps on items or by navigation actions.
    */
-  recordInteraction: () => void;
+  recordInteraction(): void;
 
   /**
    * Displays the scroll indicators momentarily.
    *
    * @platform ios
    */
-  flashScrollIndicators: () => void;
+  flashScrollIndicators(): void;
 
   /**
    * Provides a handle to the underlying scroll responder.
    */
-  getScrollResponder: () => null | undefined | ScrollResponderType;
-  getScrollableNode: () => any;
-  setNativeProps: (props: Object) => void;
-  render: () => $1.Node;
+  getScrollResponder(): null | undefined | ScrollResponderType;
+  getScrollableNode(): any;
+  setNativeProps(props: Object): void;
+  render(): $1.Node;
 }
 export type { SectionBase };
 export type { Props };

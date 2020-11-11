@@ -18,9 +18,9 @@ declare type FormDataPart = {
   type?: string;
 };
 declare class FormData {
-  constructor: () => void;
-  append: (key: string, value: FormDataValue) => void;
-  getParts: () => FormDataPart[];
+  constructor();
+  append(key: string, value: FormDataValue): void;
+  getParts(): FormDataPart[];
 }
 declare const $f2tExportDefault: $TypeOf<typeof FormData>;
 export default $f2tExportDefault;

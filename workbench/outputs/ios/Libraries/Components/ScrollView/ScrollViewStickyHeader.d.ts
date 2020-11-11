@@ -24,10 +24,10 @@ declare type State = {
 };
 declare class ScrollViewStickyHeader extends React.Component<Props, State> {
   state: State;
-  setNextHeaderY: (y: number) => void;
-  UNSAFE_componentWillReceiveProps: (nextProps: Props) => void;
-  updateTranslateListener: (translateY: AnimatedImplementation.Interpolation, isFabric: boolean) => void;
-  render: () => React.Node;
+  setNextHeaderY(y: number): void;
+  UNSAFE_componentWillReceiveProps(nextProps: Props): void;
+  updateTranslateListener(translateY: AnimatedImplementation.Interpolation, isFabric: boolean): void;
+  render(): React.Node;
 }
 export type { Props };
 declare const $f2tExportDefault: $TypeOf<typeof ScrollViewStickyHeader>;

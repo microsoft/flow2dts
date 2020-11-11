@@ -2,7 +2,7 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import EventSubscription from "./_EventSubscription";
 declare class EventSubscriptionVendor {
-  constructor: () => void;
+  constructor();
 
   /**
    * Adds a subscription keyed by an event type.
@@ -10,7 +10,7 @@ declare class EventSubscriptionVendor {
    * @param {string} eventType
    * @param {EventSubscription} subscription
    */
-  addSubscription: (eventType: string, subscription: EventSubscription) => EventSubscription;
+  addSubscription(eventType: string, subscription: EventSubscription): EventSubscription;
 
   /**
    * Removes a bulk set of the subscriptions.
@@ -18,7 +18,7 @@ declare class EventSubscriptionVendor {
    * @param {?string} eventType - Optional name of the event type whose
    *   registered supscriptions to remove, if null remove all subscriptions.
    */
-  removeAllSubscriptions: (eventType: null | undefined | string) => void;
+  removeAllSubscriptions(eventType: null | undefined | string): void;
 
   /**
    * Removes a specific subscription. Instead of calling this function, call
@@ -26,7 +26,7 @@ declare class EventSubscriptionVendor {
    *
    * @param {object} subscription
    */
-  removeSubscription: (subscription: Object) => void;
+  removeSubscription(subscription: Object): void;
 
   /**
    * Returns the array of subscriptions that are currently registered for the
@@ -40,7 +40,7 @@ declare class EventSubscriptionVendor {
    * @param {string} eventType
    * @returns {?array}
    */
-  getSubscriptionsForType: (eventType: string) => null | undefined | [EventSubscription];
+  getSubscriptionsForType(eventType: string): null | undefined | [EventSubscription];
 }
 declare const $f2tExportDefault: $TypeOf<typeof EventSubscriptionVendor>;
 export default $f2tExportDefault;

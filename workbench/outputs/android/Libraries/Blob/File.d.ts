@@ -5,9 +5,9 @@ declare class File extends $1 {
   /**
    * Constructor for JS consumers.
    */
-  constructor: (parts: ($1 | string)[], name: string, options?: BlobOptions) => void;
-  name: string;
-  lastModified: number;
+  constructor(parts: ($1 | string)[], name: string, options?: BlobOptions);
+  name(): string;
+  lastModified(): number;
 }
 declare const $f2tExportDefault: $TypeOf<typeof File>;
 export default $f2tExportDefault;

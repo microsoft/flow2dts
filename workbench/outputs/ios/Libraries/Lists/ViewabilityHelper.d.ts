@@ -45,29 +45,29 @@ declare type ViewabilityConfig =
   waitForInteraction?: boolean;
 };
 declare class ViewabilityHelper {
-  constructor: (config?: ViewabilityConfig) => void;
+  constructor(config?: ViewabilityConfig);
 
   /**
    * Cleanup, e.g. on unmount. Clears any pending timers.
    */
-  dispose: () => void;
+  dispose(): void;
 
   /**
    * Determines which items are viewable based on the current metrics and config.
    */
-  computeViewableItems: (itemCount: number, scrollOffset: number, viewportHeight: number, getFrameMetrics: (index: number) => null | undefined | {
+  computeViewableItems(itemCount: number, scrollOffset: number, viewportHeight: number, getFrameMetrics: (index: number) => null | undefined | {
     length: number;
     offset: number;
   }, renderRange?: {
     first: number;
     last: number;
-  }) => number[];
+  }): number[];
 
   /**
    * Figures out which items are viewable and how that has changed from before and calls
    * `onViewableItemsChanged` as appropriate.
    */
-  onUpdate: (itemCount: number, scrollOffset: number, viewportHeight: number, getFrameMetrics: (index: number) => null | undefined | {
+  onUpdate(itemCount: number, scrollOffset: number, viewportHeight: number, getFrameMetrics: (index: number) => null | undefined | {
     length: number;
     offset: number;
   }, createViewToken: (index: number, isViewable: boolean) => ViewToken, onViewableItemsChanged: ($f2t1: {
@@ -76,17 +76,17 @@ declare class ViewabilityHelper {
   }) => void, renderRange?: {
     first: number;
     last: number;
-  }) => void;
+  }): void;
 
   /**
    * clean-up cached _viewableIndices to evaluate changed items on next update
    */
-  resetViewableIndices: () => void;
+  resetViewableIndices(): void;
 
   /**
    * Records that an interaction has happened even if there has been no scroll.
    */
-  recordInteraction: () => void;
+  recordInteraction(): void;
 }
 export type { ViewToken };
 export type { ViewabilityConfigCallbackPair };

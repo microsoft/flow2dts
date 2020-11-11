@@ -64,9 +64,9 @@ ViewProps & IOSProps & AndroidProps & {
 }>;
 declare class RefreshControl extends $1.Component<RefreshControlProps> {
   SIZE: any;
-  componentDidMount: () => void;
-  componentDidUpdate: (prevProps: RefreshControlProps) => void;
-  render: () => $1.Node;
+  componentDidMount(): void;
+  componentDidUpdate(prevProps: RefreshControlProps): void;
+  render(): $1.Node;
 }
 export type { RefreshControlProps };
 declare const $f2tExportDefault: $TypeOf<typeof RefreshControl>;

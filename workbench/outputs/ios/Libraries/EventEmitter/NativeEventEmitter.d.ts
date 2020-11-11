@@ -11,9 +11,9 @@ declare type NativeEventEmitterOptions = Readonly<
   __SECRET_DISABLE_CALLS_INTO_MODULE_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: boolean;
 }>;
 declare class NativeEventEmitter extends EventEmitter {
-  constructor: (nativeModule: null | undefined | NativeModule, options?: NativeEventEmitterOptions) => void;
-  addListener: (eventType: string, listener: Function, context: null | undefined | Object) => EventSubscription;
-  removeAllListeners: (eventType: string) => void;
-  removeSubscription: (subscription: EventSubscription) => void;
+  constructor(nativeModule: null | undefined | NativeModule, options?: NativeEventEmitterOptions);
+  addListener(eventType: string, listener: Function, context: null | undefined | Object): EventSubscription;
+  removeAllListeners(eventType: string): void;
+  removeSubscription(subscription: EventSubscription): void;
 }
 export { NativeEventEmitter as default };

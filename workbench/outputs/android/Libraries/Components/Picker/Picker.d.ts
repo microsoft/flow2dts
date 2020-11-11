@@ -28,7 +28,7 @@ declare type PickerItemProps = Readonly<
   testID?: string;
 }>;
 declare class PickerItem extends $3.Component<PickerItemProps> {
-  render: () => void;
+  render(): void;
 }
 declare type PickerProps = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -102,7 +102,7 @@ declare class Picker extends $3.Component<PickerProps> {
   {
     mode: string;
   };
-  render: () => $3.Node;
+  render(): $3.Node;
 }
 export type { PickerItem };
 declare const $f2tExportDefault: $TypeOf<typeof Picker>;

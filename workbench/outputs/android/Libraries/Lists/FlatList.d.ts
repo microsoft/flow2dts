@@ -152,9 +152,9 @@ declare class FlatList<ItemT> extends $2.PureComponent<Props<ItemT>, void> {
   /**
    * Scrolls to the end of the content. May be janky without `getItemLayout` prop.
    */
-  scrollToEnd: (params?: null | undefined | {
+  scrollToEnd(params?: null | undefined | {
     animated?: null | undefined | boolean;
-  }) => void;
+  }): void;
 
   /**
    * Scrolls to the item at the specified index such that it is positioned in the viewable area
@@ -164,12 +164,12 @@ declare class FlatList<ItemT> extends $2.PureComponent<Props<ItemT>, void> {
    * Note: cannot scroll to locations outside the render window without specifying the
    * `getItemLayout` prop.
    */
-  scrollToIndex: (params: {
+  scrollToIndex(params: {
     animated?: null | undefined | boolean;
     index: number;
     viewOffset?: number;
     viewPosition?: number;
-  }) => void;
+  }): void;
 
   /**
    * Requires linear scan through data - use `scrollToIndex` instead if possible.
@@ -177,52 +177,52 @@ declare class FlatList<ItemT> extends $2.PureComponent<Props<ItemT>, void> {
    * Note: cannot scroll to locations outside the render window without specifying the
    * `getItemLayout` prop.
    */
-  scrollToItem: (params: {
+  scrollToItem(params: {
     animated?: null | undefined | boolean;
     item: ItemT;
     viewPosition?: number;
-  }) => void;
+  }): void;
 
   /**
    * Scroll to a specific content pixel offset in the list.
    *
    * Check out [scrollToOffset](docs/virtualizedlist.html#scrolltooffset) of VirtualizedList
    */
-  scrollToOffset: (params: {
+  scrollToOffset(params: {
     animated?: null | undefined | boolean;
     offset: number;
-  }) => void;
+  }): void;
 
   /**
    * Tells the list an interaction has occurred, which should trigger viewability calculations, e.g.
    * if `waitForInteractions` is true and the user has not scrolled. This is typically called by
    * taps on items or by navigation actions.
    */
-  recordInteraction: () => void;
+  recordInteraction(): void;
 
   /**
    * Displays the scroll indicators momentarily.
    *
    * @platform ios
    */
-  flashScrollIndicators: () => void;
+  flashScrollIndicators(): void;
 
   /**
    * Provides a handle to the underlying scroll responder.
    */
-  getScrollResponder: () => null | undefined | ScrollResponderType;
+  getScrollResponder(): null | undefined | ScrollResponderType;
 
   /**
    * Provides a reference to the underlying host component
    */
-  getNativeScrollRef: () => (null | undefined | $2.ElementRef<$3>) | (null | undefined | $2.ElementRef<ScrollViewNativeComponentType>);
-  getScrollableNode: () => any;
-  setNativeProps: (props: {
+  getNativeScrollRef(): (null | undefined | $2.ElementRef<$3>) | (null | undefined | $2.ElementRef<ScrollViewNativeComponentType>);
+  getScrollableNode(): any;
+  setNativeProps(props: {
     [$f2tKey: string]: unknown;
-  }) => void;
-  constructor: (props: Props<ItemT>) => void;
-  componentDidUpdate: (prevProps: Props<ItemT>) => void;
-  render: () => $2.Node;
+  }): void;
+  constructor(props: Props<ItemT>);
+  componentDidUpdate(prevProps: Props<ItemT>): void;
+  render(): $2.Node;
 }
 export type { Props };
 export type { DefaultProps };

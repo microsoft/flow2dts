@@ -8,10 +8,10 @@ declare type ValueXYListenerCallback = (value: {
 declare class AnimatedValueXY extends $3 {
   x: $1;
   y: $1;
-  constructor: (valueIn?: null | undefined | {
+  constructor(valueIn?: null | undefined | {
     readonly x: number | $1;
     readonly y: number | $1;
-  }) => void;
+  });
 
   /**
    * Directly set the value. This will stop any animations running on the value
@@ -19,10 +19,10 @@ declare class AnimatedValueXY extends $3 {
    *
    * See https://reactnative.dev/docs/animatedvaluexy.html#setvalue
    */
-  setValue: (value: {
+  setValue(value: {
     x: number;
     y: number;
-  }) => void;
+  }): void;
 
   /**
    * Sets an offset that is applied on top of whatever value is set, whether
@@ -31,10 +31,10 @@ declare class AnimatedValueXY extends $3 {
    *
    * See https://reactnative.dev/docs/animatedvaluexy.html#setoffset
    */
-  setOffset: (offset: {
+  setOffset(offset: {
     x: number;
     y: number;
-  }) => void;
+  }): void;
 
   /**
    * Merges the offset value into the base value and resets the offset to zero.
@@ -42,7 +42,7 @@ declare class AnimatedValueXY extends $3 {
    *
    * See https://reactnative.dev/docs/animatedvaluexy.html#flattenoffset
    */
-  flattenOffset: () => void;
+  flattenOffset(): void;
 
   /**
    * Sets the offset value to the base value, and resets the base value to
@@ -50,8 +50,8 @@ declare class AnimatedValueXY extends $3 {
    *
    * See https://reactnative.dev/docs/animatedvaluexy.html#extractoffset
    */
-  extractOffset: () => void;
-  __getValue: () => {
+  extractOffset(): void;
+  __getValue(): {
     x: number;
     y: number;
   };
@@ -61,10 +61,10 @@ declare class AnimatedValueXY extends $3 {
    *
    * See https://reactnative.dev/docs/animatedvaluexy.html#resetanimation
    */
-  resetAnimation: (callback?: (value: {
+  resetAnimation(callback?: (value: {
     x: number;
     y: number;
-  }) => void) => void;
+  }) => void): void;
 
   /**
    * Stops any running animation or tracking. `callback` is invoked with the
@@ -73,10 +73,10 @@ declare class AnimatedValueXY extends $3 {
    *
    * See https://reactnative.dev/docs/animatedvaluexy.html#stopanimation
    */
-  stopAnimation: (callback?: (value: {
+  stopAnimation(callback?: (value: {
     x: number;
     y: number;
-  }) => void) => void;
+  }) => void): void;
 
   /**
    * Adds an asynchronous listener to the value so you can observe updates from
@@ -87,7 +87,7 @@ declare class AnimatedValueXY extends $3 {
    *
    * See https://reactnative.dev/docs/animatedvaluexy.html#addlistener
    */
-  addListener: (callback: ValueXYListenerCallback) => string;
+  addListener(callback: ValueXYListenerCallback): string;
 
   /**
    * Unregister a listener. The `id` param shall match the identifier
@@ -95,21 +95,21 @@ declare class AnimatedValueXY extends $3 {
    *
    * See https://reactnative.dev/docs/animatedvaluexy.html#removelistener
    */
-  removeListener: (id: string) => void;
+  removeListener(id: string): void;
 
   /**
    * Remove all registered listeners.
    *
    * See https://reactnative.dev/docs/animatedvaluexy.html#removealllisteners
    */
-  removeAllListeners: () => void;
+  removeAllListeners(): void;
 
   /**
    * Converts `{x, y}` into `{left, top}` for use in style.
    *
    * See https://reactnative.dev/docs/animatedvaluexy.html#getlayout
    */
-  getLayout: () => {
+  getLayout(): {
     [key: string]: $1;
   };
 
@@ -118,7 +118,7 @@ declare class AnimatedValueXY extends $3 {
    *
    * See https://reactnative.dev/docs/animatedvaluexy.html#gettranslatetransform
    */
-  getTranslateTransform: () => {
+  getTranslateTransform(): {
     [key: string]: $1;
   }[];
 }

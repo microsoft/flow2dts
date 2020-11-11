@@ -48,43 +48,43 @@ declare class XMLHttpRequest extends $1 {
   responseURL: null | undefined | string;
   withCredentials: boolean;
   upload: XMLHttpRequestEventTarget;
-  setInterceptor: (interceptor: null | undefined | XHRInterceptor) => void;
-  constructor: () => void;
-  responseType: ResponseType;
-  responseType: (responseType: ResponseType) => void;
-  responseText: string;
-  response: Response;
+  setInterceptor(interceptor: null | undefined | XHRInterceptor): void;
+  constructor();
+  responseType(): ResponseType;
+  responseType(responseType: ResponseType): void;
+  responseText(): string;
+  response(): Response;
   // exposed for testing
-  __didCreateRequest: (requestId: number) => void;
+  __didCreateRequest(requestId: number): void;
   // exposed for testing
-  __didUploadProgress: (requestId: number, progress: number, total: number) => void;
-  __didReceiveResponse: (requestId: number, status: number, responseHeaders: null | undefined | Object, responseURL: null | undefined | string) => void;
-  __didReceiveData: (requestId: number, response: string) => void;
-  __didReceiveIncrementalData: (requestId: number, responseText: string, progress: number, total: number) => void;
-  __didReceiveDataProgress: (requestId: number, loaded: number, total: number) => void;
+  __didUploadProgress(requestId: number, progress: number, total: number): void;
+  __didReceiveResponse(requestId: number, status: number, responseHeaders: null | undefined | Object, responseURL: null | undefined | string): void;
+  __didReceiveData(requestId: number, response: string): void;
+  __didReceiveIncrementalData(requestId: number, responseText: string, progress: number, total: number): void;
+  __didReceiveDataProgress(requestId: number, loaded: number, total: number): void;
   // exposed for testing
-  __didCompleteResponse: (requestId: number, error: string, timeOutError: boolean) => void;
-  getAllResponseHeaders: () => null | undefined | string;
-  getResponseHeader: (header: string) => null | undefined | string;
-  setRequestHeader: (header: string, value: any) => void;
+  __didCompleteResponse(requestId: number, error: string, timeOutError: boolean): void;
+  getAllResponseHeaders(): null | undefined | string;
+  getResponseHeader(header: string): null | undefined | string;
+  setRequestHeader(header: string, value: any): void;
 
   /**
    * Custom extension for tracking origins of request.
    */
-  setTrackingName: (trackingName: string) => XMLHttpRequest;
+  setTrackingName(trackingName: string): XMLHttpRequest;
 
   /**
    * Custom extension for setting a custom performance logger
    */
-  setPerformanceLogger: (performanceLogger: IPerformanceLogger) => XMLHttpRequest;
-  open: (method: string, url: string, async: null | undefined | boolean) => void;
-  send: (data: any) => void;
-  abort: () => void;
-  setResponseHeaders: (responseHeaders: null | undefined | Object) => void;
-  setReadyState: (newState: number) => void;
+  setPerformanceLogger(performanceLogger: IPerformanceLogger): XMLHttpRequest;
+  open(method: string, url: string, async: null | undefined | boolean): void;
+  send(data: any): void;
+  abort(): void;
+  setResponseHeaders(responseHeaders: null | undefined | Object): void;
+  setReadyState(newState: number): void;
 
   /* global EventListener */
-  addEventListener: (type: string, listener: EventListener) => void;
+  addEventListener(type: string, listener: EventListener): void;
 }
 declare var $1: any;
 export type { NativeResponseType };

@@ -106,10 +106,10 @@ declare class Modal extends $2.Component<Props> {
     visible: boolean;
   };
   contextType: $2.Context<RootTag>;
-  constructor: (props: Props) => void;
-  componentWillUnmount: () => void;
-  UNSAFE_componentWillReceiveProps: (nextProps: Props) => void;
-  render: () => $2.Node;
+  constructor(props: Props);
+  componentWillUnmount(): void;
+  UNSAFE_componentWillReceiveProps(nextProps: Props): void;
+  render(): $2.Node;
 }
 export type { Props };
 declare const $f2tExportDefault: $TypeOf<typeof Modal>;

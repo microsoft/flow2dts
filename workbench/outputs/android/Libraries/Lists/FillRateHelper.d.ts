@@ -19,15 +19,15 @@ declare type FrameMetrics = {
   offset: number;
 };
 declare class FillRateHelper {
-  addListener: (callback: ($f2t1: FillRateInfo) => void) => {
+  addListener(callback: ($f2t1: FillRateInfo) => void): {
     remove: () => void;
   };
-  setSampleRate: (sampleRate: number) => void;
-  setMinSampleCount: (minSampleCount: number) => void;
-  constructor: (getFrameMetrics: (index: number) => null | undefined | FrameMetrics) => void;
-  activate: () => void;
-  deactivateAndFlush: () => void;
-  computeBlankness: (props: {
+  setSampleRate(sampleRate: number): void;
+  setMinSampleCount(minSampleCount: number): void;
+  constructor(getFrameMetrics: (index: number) => null | undefined | FrameMetrics);
+  activate(): void;
+  deactivateAndFlush(): void;
+  computeBlankness(props: {
     data: any;
     getItemCount: (data: any) => number;
     initialNumToRender: number;
@@ -39,8 +39,8 @@ declare class FillRateHelper {
     offset: number;
     velocity: number;
     visibleLength: number;
-  }) => number;
-  enabled: () => boolean;
+  }): number;
+  enabled(): boolean;
 }
 export type { FillRateInfo };
 declare const $f2tExportDefault: $TypeOf<typeof FillRateHelper>;

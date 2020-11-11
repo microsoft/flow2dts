@@ -12,12 +12,12 @@ declare function attachNativeEvent(viewRef: any, eventName: string, argMapping: 
 };
 declare class AnimatedEvent {
   __isNative: boolean;
-  constructor: (argMapping: ReadonlyArray<null | undefined | Mapping>, config: EventConfig) => void;
-  __addListener: (callback: Function) => void;
-  __removeListener: (callback: Function) => void;
-  __attach: (viewRef: any, eventName: string) => void;
-  __detach: (viewTag: any, eventName: string) => void;
-  __getHandler: () => any | ((...args: any) => void);
+  constructor(argMapping: ReadonlyArray<null | undefined | Mapping>, config: EventConfig);
+  __addListener(callback: Function): void;
+  __removeListener(callback: Function): void;
+  __attach(viewRef: any, eventName: string): void;
+  __detach(viewTag: any, eventName: string): void;
+  __getHandler(): any | ((...args: any) => void);
 }
 export type { Mapping };
 export type { EventConfig };

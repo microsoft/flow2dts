@@ -10,12 +10,12 @@ declare class EventSubscription {
    * @param {EventSubscriptionVendor} subscriber the subscriber that controls
    *   this subscription.
    */
-  constructor: (subscriber: EventSubscriptionVendor) => void;
+  constructor(subscriber: EventSubscriptionVendor);
 
   /**
    * Removes this subscription from the subscriber that controls it.
    */
-  remove: () => void;
+  remove(): void;
 }
 declare const $f2tExportDefault: $TypeOf<typeof EventSubscription>;
 export default $f2tExportDefault;

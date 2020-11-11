@@ -9,7 +9,7 @@ declare type Props = Readonly<
   isDisabled?: null | undefined | boolean;
 }>;
 declare class _LogBoxInspectorContainer extends React.Component<Props> {
-  render: () => React.Node;
+  render(): React.Node;
 }
 export { _LogBoxInspectorContainer };
 declare export default React.AbstractComponent<

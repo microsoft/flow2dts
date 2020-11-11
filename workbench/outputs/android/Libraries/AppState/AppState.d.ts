@@ -5,7 +5,7 @@ import EventEmitter from "../vendor/emitter/EventEmitter";
 declare class AppState extends NativeEventEmitter {
   currentState: null | undefined | string;
   isAvailable: boolean;
-  constructor: () => void;
+  constructor();
   // TODO: now that AppState is a subclass of NativeEventEmitter, we could
   // deprecate `addEventListener` and `removeEventListener` and just use
   // addListener` and `listener.remove()` directly. That will be a breaking
@@ -18,25 +18,25 @@ declare class AppState extends NativeEventEmitter {
    *
    * See https://reactnative.dev/docs/appstate.html#addeventlistener
    */
-  addEventListener: (type: string, handler: Function) => void;
+  addEventListener(type: string, handler: Function): void;
 
   /**
    * Remove a handler by passing the `change` event type and the handler.
    *
    * See https://reactnative.dev/docs/appstate.html#removeeventlistener
    */
-  removeEventListener: (type: string, handler: Function) => void;
+  removeEventListener(type: string, handler: Function): void;
 }
 declare class MissingNativeAppStateShim extends EventEmitter {
   // AppState
   isAvailable: boolean;
   currentState: null | undefined | string;
-  addEventListener: (type: string, handler: Function) => void;
-  removeEventListener: (type: string, handler: Function) => void;
+  addEventListener(type: string, handler: Function): void;
+  removeEventListener(type: string, handler: Function): void;
   // EventEmitter
-  addListener: () => void;
-  removeAllListeners: () => void;
-  removeSubscription: () => void;
+  addListener(): void;
+  removeAllListeners(): void;
+  removeSubscription(): void;
 }
 declare var AppStateInstance: AppState | MissingNativeAppStateShim;
 declare const $f2tExportDefault: $TypeOf<typeof AppStateInstance>;

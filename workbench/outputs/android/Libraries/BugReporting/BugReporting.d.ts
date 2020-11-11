@@ -9,13 +9,13 @@ declare type DebugData = {
   files: ExtraData;
 };
 declare class BugReporting {
-  addSource: (key: string, callback: SourceCallback) => {
+  addSource(key: string, callback: SourceCallback): {
     remove: () => void;
   };
-  addFileSource: (key: string, callback: SourceCallback) => {
+  addFileSource(key: string, callback: SourceCallback): {
     remove: () => void;
   };
-  collectExtraData: () => DebugData;
+  collectExtraData(): DebugData;
 }
 declare const $f2tExportDefault: $TypeOf<typeof BugReporting>;
 export default $f2tExportDefault;

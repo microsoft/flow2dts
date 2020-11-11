@@ -15,8 +15,8 @@ declare type DecayAnimationConfigSingle = AnimationConfig & {
   deceleration?: number;
 };
 declare class DecayAnimation extends $1 {
-  constructor: (config: DecayAnimationConfigSingle) => void;
-  __getNativeAnimationConfig: () =>
+  constructor(config: DecayAnimationConfigSingle);
+  __getNativeAnimationConfig():
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
     deceleration: number;
@@ -24,9 +24,9 @@ declare class DecayAnimation extends $1 {
     type: string;
     velocity: number;
   };
-  start: (fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | $1, animatedValue: AnimatedValue) => void;
-  onUpdate: () => void;
-  stop: () => void;
+  start(fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | $1, animatedValue: AnimatedValue): void;
+  onUpdate(): void;
+  stop(): void;
 }
 export type { DecayAnimationConfig };
 export type { DecayAnimationConfigSingle };

@@ -100,7 +100,7 @@ declare type ButtonProps = Readonly<
   testID?: null | undefined | string;
 }>;
 declare class Button extends $2.Component<ButtonProps> {
-  render: () => $2.Node;
+  render(): $2.Node;
 }
 declare const $f2tExportDefault: $TypeOf<typeof Button>;
 export default $f2tExportDefault;

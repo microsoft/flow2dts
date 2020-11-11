@@ -55,9 +55,9 @@ declare type State = Readonly<
 }>;
 declare class TouchableWithoutFeedback extends React.Component<Props, State> {
   state: State;
-  render: () => React.Node;
-  componentDidUpdate: () => void;
-  componentWillUnmount: () => void;
+  render(): React.Node;
+  componentDidUpdate(): void;
+  componentWillUnmount(): void;
 }
 declare const $f2tExportDefault: $TypeOf<typeof TouchableWithoutFeedback>;
 export default $f2tExportDefault;

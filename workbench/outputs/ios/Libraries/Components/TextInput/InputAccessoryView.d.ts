@@ -16,7 +16,7 @@ declare type Props = Readonly<
   backgroundColor?: null | undefined | ColorValue;
 }>;
 declare class InputAccessoryView extends $2.Component<Props> {
-  render: () => $2.Node;
+  render(): $2.Node;
 }
 declare const $f2tExportDefault: $TypeOf<typeof InputAccessoryView>;
 export default $f2tExportDefault;

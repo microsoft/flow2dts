@@ -91,24 +91,24 @@ AndroidProps & IOSProps & {
 }>;
 declare class StatusBar extends $1.Component<Props> {
   currentHeight: null | undefined | number;
-  setHidden: (hidden: boolean, animation?: StatusBarAnimation) => void;
-  setBarStyle: (style: StatusBarStyle, animated?: boolean) => void;
-  setNetworkActivityIndicatorVisible: (visible: boolean) => void;
-  setBackgroundColor: (color: string, animated?: boolean) => void;
-  setTranslucent: (translucent: boolean) => void;
-  pushStackEntry: (props: any) => any;
-  popStackEntry: (entry: any) => void;
-  replaceStackEntry: (entry: any, props: any) => any;
+  setHidden(hidden: boolean, animation?: StatusBarAnimation): void;
+  setBarStyle(style: StatusBarStyle, animated?: boolean): void;
+  setNetworkActivityIndicatorVisible(visible: boolean): void;
+  setBackgroundColor(color: string, animated?: boolean): void;
+  setTranslucent(translucent: boolean): void;
+  pushStackEntry(props: any): any;
+  popStackEntry(entry: any): void;
+  replaceStackEntry(entry: any, props: any): any;
   defaultProps:
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
     animated: boolean;
     showHideTransition: string;
   };
-  componentDidMount: () => void;
-  componentWillUnmount: () => void;
-  componentDidUpdate: () => void;
-  render: () => $1.Node;
+  componentDidMount(): void;
+  componentWillUnmount(): void;
+  componentDidUpdate(): void;
+  render(): $1.Node;
 }
 export type { StatusBarStyle };
 export type { StatusBarAnimation };

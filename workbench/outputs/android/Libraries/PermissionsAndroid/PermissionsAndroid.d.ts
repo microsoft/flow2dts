@@ -55,7 +55,7 @@ declare class PermissionsAndroid {
    *
    * @deprecated
    */
-  checkPermission: (permission: PermissionType) => Promise<boolean>;
+  checkPermission(permission: PermissionType): Promise<boolean>;
 
   /**
    * Returns a promise resolving to a boolean value as to whether the specified
@@ -63,9 +63,9 @@ declare class PermissionsAndroid {
    *
    * See https://reactnative.dev/docs/permissionsandroid.html#check
    */
-  check: (permission: PermissionType) => Promise<boolean>;
-  requestPermission: (permission: PermissionType, rationale?: Rationale) => Promise<boolean>;
-  request: (permission: PermissionType, rationale?: Rationale) => Promise<PermissionStatus>;
+  check(permission: PermissionType): Promise<boolean>;
+  requestPermission(permission: PermissionType, rationale?: Rationale): Promise<boolean>;
+  request(permission: PermissionType, rationale?: Rationale): Promise<PermissionStatus>;
 
   /**
    * Prompts the user to enable multiple permissions in the same dialog and
@@ -74,7 +74,7 @@ declare class PermissionsAndroid {
    *
    * See https://reactnative.dev/docs/permissionsandroid.html#requestmultiple
    */
-  requestMultiple: (permissions: PermissionType[]) => Promise<{
+  requestMultiple(permissions: PermissionType[]): Promise<{
     [permission: PermissionType]: PermissionStatus;
   }>;
 }

@@ -17,12 +17,12 @@ declare class Animation {
   __nativeId: number;
   __onEnd: null | undefined | EndCallback;
   __iterations: number;
-  start: (fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | Animation, animatedValue: AnimatedValue) => void;
-  stop: () => void;
-  __getNativeAnimationConfig: () => any;
+  start(fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | Animation, animatedValue: AnimatedValue): void;
+  stop(): void;
+  __getNativeAnimationConfig(): any;
   // Helper function for subclasses to make sure onEnd is only called once.
-  __debouncedOnEnd: (result: EndResult) => void;
-  __startNativeAnimation: (animatedValue: AnimatedValue) => void;
+  __debouncedOnEnd(result: EndResult): void;
+  __startNativeAnimation(animatedValue: AnimatedValue): void;
 }
 export type { EndResult };
 export type { EndCallback };

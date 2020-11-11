@@ -64,8 +64,8 @@ ViewProps & {
   onValueChange?: null | undefined | ((value: boolean) => Promise<void> | void);
 }>;
 declare class Switch extends React.Component<Props> {
-  render: () => React.Node;
-  componentDidUpdate: () => void;
+  render(): React.Node;
+  componentDidUpdate(): void;
 }
 export type { Props };
 declare const $f2tExportDefault: $TypeOf<typeof Switch>;

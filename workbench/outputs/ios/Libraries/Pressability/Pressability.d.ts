@@ -148,18 +148,18 @@ declare type EventHandlers = Readonly<
   onStartShouldSetResponder: () => boolean;
 }>;
 declare class Pressability {
-  constructor: (config: PressabilityConfig) => void;
-  configure: (config: PressabilityConfig) => void;
+  constructor(config: PressabilityConfig);
+  configure(config: PressabilityConfig): void;
 
   /**
    * Resets any pending timers. This should be called on unmount.
    */
-  reset: () => void;
+  reset(): void;
 
   /**
    * Returns a set of props to spread into the interactive element.
    */
-  getEventHandlers: () => EventHandlers;
+  getEventHandlers(): EventHandlers;
 }
 export type { PressabilityConfig };
 export type { EventHandlers };

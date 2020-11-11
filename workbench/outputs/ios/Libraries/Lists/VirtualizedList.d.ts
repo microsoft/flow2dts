@@ -303,23 +303,23 @@ declare type State = {
 declare class VirtualizedList extends React.PureComponent<Props, State> {
   contextType: $TypeOf<typeof VirtualizedListContext>;
   // scrollToEnd may be janky without getItemLayout prop
-  scrollToEnd: (params?: null | undefined | {
+  scrollToEnd(params?: null | undefined | {
     animated?: null | undefined | boolean;
-  }) => void;
+  }): void;
   // scrollToIndex may be janky without getItemLayout prop
-  scrollToIndex: (params: {
+  scrollToIndex(params: {
     animated?: null | undefined | boolean;
     index: number;
     viewOffset?: number;
     viewPosition?: number;
-  }) => void;
+  }): void;
   // scrollToItem may be janky without getItemLayout prop. Required linear scan through items -
   // use scrollToIndex instead if possible.
-  scrollToItem: (params: {
+  scrollToItem(params: {
     animated?: null | undefined | boolean;
     item: Item;
     viewPosition?: number;
-  }) => void;
+  }): void;
 
   /**
    * Scroll to a specific content pixel offset in the list.
@@ -331,32 +331,32 @@ declare class VirtualizedList extends React.PureComponent<Props, State> {
    * Param `animated` (`true` by default) defines whether the list
    * should do an animation while scrolling.
    */
-  scrollToOffset: (params: {
+  scrollToOffset(params: {
     animated?: null | undefined | boolean;
     offset: number;
-  }) => void;
-  recordInteraction: () => void;
-  flashScrollIndicators: () => void;
+  }): void;
+  recordInteraction(): void;
+  flashScrollIndicators(): void;
 
   /**
    * Provides a handle to the underlying scroll responder.
    * Note that `this._scrollRef` might not be a `ScrollView`, so we
    * need to check that it responds to `getScrollResponder` before calling it.
    */
-  getScrollResponder: () => null | undefined | ScrollResponderType;
-  getScrollableNode: () => null | undefined | number;
-  getScrollRef: () => (null | undefined | React.ElementRef<$1>) | (null | undefined | React.ElementRef<$2>);
-  setNativeProps: (props: Object) => void;
+  getScrollResponder(): null | undefined | ScrollResponderType;
+  getScrollableNode(): null | undefined | number;
+  getScrollRef(): (null | undefined | React.ElementRef<$1>) | (null | undefined | React.ElementRef<$2>);
+  setNativeProps(props: Object): void;
   defaultProps: DefaultProps;
-  hasMore: () => boolean;
+  hasMore(): boolean;
   state: State;
-  constructor: (props: Props) => void;
-  componentDidMount: () => void;
-  componentWillUnmount: () => void;
-  getDerivedStateFromProps: (newProps: Props, prevState: State) => State;
-  render: () => React.Node;
-  componentDidUpdate: (prevProps: Props) => void;
-  measureLayoutRelativeToContainingList: () => void;
+  constructor(props: Props);
+  componentDidMount(): void;
+  componentWillUnmount(): void;
+  getDerivedStateFromProps(newProps: Props, prevState: State): State;
+  render(): React.Node;
+  componentDidUpdate(prevProps: Props): void;
+  measureLayoutRelativeToContainingList(): void;
 }
 export type { Separators };
 export type { RenderItemProps };

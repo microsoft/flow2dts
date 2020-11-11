@@ -595,13 +595,13 @@ declare type ScrollViewComponentStatics = Readonly<
 }>;
 declare class ScrollView extends React.Component<Props, State> {
   Context: $TypeOf<typeof ScrollViewContext>;
-  constructor: (props: Props) => void;
+  constructor(props: Props);
   state: State;
-  UNSAFE_componentWillMount: () => void;
-  UNSAFE_componentWillReceiveProps: (nextProps: Props) => void;
-  componentDidMount: () => void;
-  componentDidUpdate: () => void;
-  componentWillUnmount: () => void;
+  UNSAFE_componentWillMount(): void;
+  UNSAFE_componentWillReceiveProps(nextProps: Props): void;
+  componentDidMount(): void;
+  componentDidUpdate(): void;
+  componentWillUnmount(): void;
 
   /**
    * Returns a reference to the underlying scroll responder, which supports
@@ -609,11 +609,11 @@ declare class ScrollView extends React.Component<Props, State> {
    * implement this method so that they can be composed while providing access
    * to the underlying scroll responder's methods.
    */
-  getScrollResponder: () => ScrollResponderType;
-  getScrollableNode: () => null | undefined | number;
-  getInnerViewNode: () => null | undefined | number;
-  getInnerViewRef: () => null | undefined | React.ElementRef<$TypeOf<typeof View>>;
-  getNativeScrollRef: () => null | undefined | React.ElementRef<HostComponent<unknown>>;
+  getScrollResponder(): ScrollResponderType;
+  getScrollableNode(): null | undefined | number;
+  getInnerViewNode(): null | undefined | number;
+  getInnerViewRef(): null | undefined | React.ElementRef<$TypeOf<typeof View>>;
+  getNativeScrollRef(): null | undefined | React.ElementRef<HostComponent<unknown>>;
 
   /**
    * Scrolls to a given x, y offset, either immediately or with a smooth animation.
@@ -626,11 +626,11 @@ declare class ScrollView extends React.Component<Props, State> {
    * the function also accepts separate arguments as an alternative to the options object.
    * This is deprecated due to ambiguity (y before x), and SHOULD NOT BE USED.
    */
-  scrollTo: (options?: {
+  scrollTo(options?: {
     x?: number;
     y?: number;
     animated?: boolean;
-  } | number, deprecatedX?: number, deprecatedAnimated?: boolean) => void;
+  } | number, deprecatedX?: number, deprecatedAnimated?: boolean): void;
 
   /**
    * If this is a vertical ScrollView scrolls to the bottom.
@@ -640,17 +640,17 @@ declare class ScrollView extends React.Component<Props, State> {
    * `scrollToEnd({animated: false})` for immediate scrolling.
    * If no options are passed, `animated` defaults to true.
    */
-  scrollToEnd: (options?: null | undefined | {
+  scrollToEnd(options?: null | undefined | {
     animated?: boolean;
-  }) => void;
+  }): void;
 
   /**
    * Displays the scroll indicators momentarily.
    *
    * @platform ios
    */
-  flashScrollIndicators: () => void;
-  render: () => React.Node | React.Element<string>;
+  flashScrollIndicators(): void;
+  render(): React.Node | React.Element<string>;
 }
 export type { ScrollViewImperativeMethods };
 export type { ScrollResponderType };

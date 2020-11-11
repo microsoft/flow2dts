@@ -6,9 +6,9 @@ import Animation from "../animations/Animation";
 import { InterpolationConfigType } from "./AnimatedInterpolation";
 import AnimatedTracking from "./AnimatedTracking";
 declare class AnimatedValue extends $3 {
-  constructor: (value: number) => void;
-  __detach: () => void;
-  __getValue: () => number;
+  constructor(value: number);
+  __detach(): void;
+  __getValue(): number;
 
   /**
    * Directly set the value.  This will stop any animations running on the value
@@ -16,7 +16,7 @@ declare class AnimatedValue extends $3 {
    *
    * See https://reactnative.dev/docs/animatedvalue.html#setvalue
    */
-  setValue: (value: number) => void;
+  setValue(value: number): void;
 
   /**
    * Sets an offset that is applied on top of whatever value is set, whether via
@@ -25,7 +25,7 @@ declare class AnimatedValue extends $3 {
    *
    * See https://reactnative.dev/docs/animatedvalue.html#setoffset
    */
-  setOffset: (offset: number) => void;
+  setOffset(offset: number): void;
 
   /**
    * Merges the offset value into the base value and resets the offset to zero.
@@ -33,7 +33,7 @@ declare class AnimatedValue extends $3 {
    *
    * See https://reactnative.dev/docs/animatedvalue.html#flattenoffset
    */
-  flattenOffset: () => void;
+  flattenOffset(): void;
 
   /**
    * Sets the offset value to the base value, and resets the base value to zero.
@@ -41,7 +41,7 @@ declare class AnimatedValue extends $3 {
    *
    * See https://reactnative.dev/docs/animatedvalue.html#extractoffset
    */
-  extractOffset: () => void;
+  extractOffset(): void;
 
   /**
    * Stops any running animation or tracking. `callback` is invoked with the
@@ -50,20 +50,20 @@ declare class AnimatedValue extends $3 {
    *
    * See https://reactnative.dev/docs/animatedvalue.html#stopanimation
    */
-  stopAnimation: (callback?: null | undefined | ((value: number) => void)) => void;
+  stopAnimation(callback?: null | undefined | ((value: number) => void)): void;
 
   /**
    * Stops any animation and resets the value to its original.
    *
    * See https://reactnative.dev/docs/animatedvalue.html#resetanimation
    */
-  resetAnimation: (callback?: null | undefined | ((value: number) => void)) => void;
+  resetAnimation(callback?: null | undefined | ((value: number) => void)): void;
 
   /**
    * Interpolates the value before updating the property, e.g. mapping 0-1 to
    * 0-10.
    */
-  interpolate: (config: InterpolationConfigType) => $1;
+  interpolate(config: InterpolationConfigType): $1;
 
   /**
    * Typically only used internally, but could be used by a custom Animation
@@ -71,18 +71,18 @@ declare class AnimatedValue extends $3 {
    *
    * See https://reactnative.dev/docs/animatedvalue.html#animate
    */
-  animate: (animation: Animation, callback: null | undefined | EndCallback) => void;
+  animate(animation: Animation, callback: null | undefined | EndCallback): void;
 
   /**
    * Typically only used internally.
    */
-  stopTracking: () => void;
+  stopTracking(): void;
 
   /**
    * Typically only used internally.
    */
-  track: (tracking: AnimatedTracking) => void;
-  __getNativeConfig: () => Object;
+  track(tracking: AnimatedTracking): void;
+  __getNativeConfig(): Object;
 }
 declare const $f2tExportDefault: $TypeOf<typeof AnimatedValue>;
 export default $f2tExportDefault;

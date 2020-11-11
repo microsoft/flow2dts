@@ -54,13 +54,13 @@ declare class LogBoxLog {
     stack: null;
     status: "FAILED";
   }>;
-  constructor: (data: LogBoxLogData) => void;
-  incrementCount: () => void;
-  getAvailableStack: () => Stack;
-  retrySymbolicate: (callback?: (status: SymbolicationStatus) => void) => void;
-  symbolicate: (callback?: (status: SymbolicationStatus) => void) => void;
-  handleSymbolicate: (callback?: (status: SymbolicationStatus) => void) => void;
-  updateStatus: (error: null | undefined | Error, stack: null | undefined | Stack, codeFrame: null | undefined | CodeFrame, callback?: (status: SymbolicationStatus) => void) => void;
+  constructor(data: LogBoxLogData);
+  incrementCount(): void;
+  getAvailableStack(): Stack;
+  retrySymbolicate(callback?: (status: SymbolicationStatus) => void): void;
+  symbolicate(callback?: (status: SymbolicationStatus) => void): void;
+  handleSymbolicate(callback?: (status: SymbolicationStatus) => void): void;
+  updateStatus(error: null | undefined | Error, stack: null | undefined | Stack, codeFrame: null | undefined | CodeFrame, callback?: (status: SymbolicationStatus) => void): void;
 }
 export type { LogLevel };
 export type { LogBoxLogData };

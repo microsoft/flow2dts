@@ -17,18 +17,18 @@ declare class TaskQueue {
    * `onMoreTasks` is invoked when `PromiseTask`s resolve if there are more
    * tasks to process.
    */
-  constructor: ($f2t1: {
+  constructor($f2t1: {
     onMoreTasks: () => void;
-  }) => void;
+  });
 
   /**
    * Add a task to the queue.  It is recommended to name your tasks for easier
    * async debugging. Tasks will not be executed until `processNext` is called
    * explicitly.
    */
-  enqueue: (task: Task) => void;
-  enqueueTasks: (tasks: Task[]) => void;
-  cancelTasks: (tasksToCancel: Task[]) => void;
+  enqueue(task: Task): void;
+  enqueueTasks(tasks: Task[]): void;
+  cancelTasks(tasksToCancel: Task[]): void;
 
   /**
    * Check to see if `processNext` should be called.
@@ -40,12 +40,12 @@ declare class TaskQueue {
    * `onMoreTasks` will be called after each `PromiseTask` resolves if there are
    * tasks ready to run at that point.
    */
-  hasTasksToProcess: () => boolean;
+  hasTasksToProcess(): boolean;
 
   /**
    * Executes the next task in the queue.
    */
-  processNext: () => void;
+  processNext(): void;
 }
 export type { Task };
 declare const $f2tExportDefault: $TypeOf<typeof TaskQueue>;

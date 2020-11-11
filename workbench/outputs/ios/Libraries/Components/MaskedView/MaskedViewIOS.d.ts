@@ -13,7 +13,7 @@ ViewProps & {
   maskElement: $2.Element<any>;
 }>;
 declare class MaskedViewIOS extends $2.Component<Props> {
-  render: () => $2.Node;
+  render(): $2.Node;
 }
 declare const $f2tExportDefault: $TypeOf<typeof MaskedViewIOS>;
 export default $f2tExportDefault;

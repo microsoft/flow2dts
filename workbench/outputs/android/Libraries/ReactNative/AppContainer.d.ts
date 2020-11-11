@@ -30,10 +30,10 @@ declare class AppContainer extends React.Component<Props, State> {
   {
     rootTag: React$PropType$Primitive<number>;
   };
-  getChildContext: () => Context;
-  componentDidMount: () => void;
-  componentWillUnmount: () => void;
-  render: () => React.Node;
+  getChildContext(): Context;
+  componentDidMount(): void;
+  componentWillUnmount(): void;
+  render(): React.Node;
 }
 declare const $f2tExportDefault: $TypeOf<typeof AppContainer>;
 export default $f2tExportDefault;

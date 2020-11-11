@@ -19,7 +19,7 @@ declare class EmitterSubscription extends EventSubscription {
    * @param {*} context - Optional context object to use when invoking the
    *   listener
    */
-  constructor: (emitter: EventEmitter, subscriber: EventSubscriptionVendor, listener: Function, context: null | undefined | Object) => void;
+  constructor(emitter: EventEmitter, subscriber: EventSubscriptionVendor, listener: Function, context: null | undefined | Object);
 
   /**
    * Removes this subscription from the emitter that registered it.
@@ -27,7 +27,7 @@ declare class EmitterSubscription extends EventSubscription {
    * but deliberately not calling `super.remove()` as the responsibility
    * for removing the subscription lies with the EventEmitter.
    */
-  remove: () => void;
+  remove(): void;
 }
 declare const $f2tExportDefault: $TypeOf<typeof EmitterSubscription>;
 export default $f2tExportDefault;

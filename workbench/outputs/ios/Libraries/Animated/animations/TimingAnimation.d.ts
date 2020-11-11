@@ -21,11 +21,11 @@ declare type TimingAnimationConfigSingle = AnimationConfig & {
   delay?: number;
 };
 declare class TimingAnimation extends $4 {
-  constructor: (config: TimingAnimationConfigSingle) => void;
-  __getNativeAnimationConfig: () => any;
-  start: (fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | $4, animatedValue: $2) => void;
-  onUpdate: () => void;
-  stop: () => void;
+  constructor(config: TimingAnimationConfigSingle);
+  __getNativeAnimationConfig(): any;
+  start(fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | $4, animatedValue: $2): void;
+  onUpdate(): void;
+  stop(): void;
 }
 export type { TimingAnimationConfig };
 export type { TimingAnimationConfigSingle };

@@ -8,10 +8,10 @@ declare class Blob {
    * Currently we only support creating Blobs from other Blobs.
    * Reference: https://developer.mozilla.org/en-US/docs/Web/API/Blob/Blob
    */
-  constructor: (parts?: (Blob | string)[], options?: BlobOptions) => void;
-  data: (data: null | undefined | BlobData) => void;
-  data: BlobData;
-  slice: (start?: number, end?: number) => Blob;
+  constructor(parts?: (Blob | string)[], options?: BlobOptions);
+  data(data: null | undefined | BlobData): void;
+  data(): BlobData;
+  slice(start?: number, end?: number): Blob;
 
   /**
    * This method is in the standard, but not actually implemented by
@@ -25,9 +25,9 @@ declare class Blob {
    * of those views is enough to deallocate the data, whereas
    * `new Blob([blob, ...])` actually copies the data in memory.
    */
-  close: () => void;
-  size: number;
-  type: string;
+  close(): void;
+  size(): number;
+  type(): string;
 }
 declare const $f2tExportDefault: $TypeOf<typeof Blob>;
 export default $f2tExportDefault;

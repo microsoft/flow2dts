@@ -42,8 +42,8 @@ declare type SpringAnimationConfigSingle = AnimationConfig & {
   delay?: number;
 };
 declare class SpringAnimation extends $4 {
-  constructor: (config: SpringAnimationConfigSingle) => void;
-  __getNativeAnimationConfig: () =>
+  constructor(config: SpringAnimationConfigSingle);
+  __getNativeAnimationConfig():
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
     damping: number;
@@ -57,8 +57,8 @@ declare class SpringAnimation extends $4 {
     toValue: any;
     type: string;
   };
-  start: (fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | $4, animatedValue: $2) => void;
-  getInternalState: () => Object;
+  start(fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | $4, animatedValue: $2): void;
+  getInternalState(): Object;
 
   /**
    * This spring model is based off of a damped harmonic oscillator
@@ -81,8 +81,8 @@ declare class SpringAnimation extends $4 {
    * This algorithm happens to match the algorithm used by CASpringAnimation,
    * a QuartzCore (iOS) API that creates spring animations.
    */
-  onUpdate: () => void;
-  stop: () => void;
+  onUpdate(): void;
+  stop(): void;
 }
 export type { SpringAnimationConfig };
 export type { SpringAnimationConfigSingle };

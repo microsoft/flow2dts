@@ -21,16 +21,16 @@ declare class WebSocket extends $1 {
   protocol: null | undefined | string;
   readyState: number;
   url: null | undefined | string;
-  constructor: (url: string, protocols: (null | undefined | string) | (null | undefined | string[]), options: null | undefined | {
+  constructor(url: string, protocols: (null | undefined | string) | (null | undefined | string[]), options: null | undefined | {
     headers?: {
       origin?: string;
     };
-  }) => void;
-  binaryType: null | undefined | BinaryType;
-  binaryType: (binaryType: BinaryType) => void;
-  close: (code?: number, reason?: string) => void;
-  send: (data: string | ArrayBuffer | ArrayBufferView | Blob) => void;
-  ping: () => void;
+  });
+  binaryType(): null | undefined | BinaryType;
+  binaryType(binaryType: BinaryType): void;
+  close(code?: number, reason?: string): void;
+  send(data: string | ArrayBuffer | ArrayBufferView | Blob): void;
+  ping(): void;
 }
 declare var $1: any;
 declare const $f2tExportDefault: $TypeOf<typeof WebSocket>;

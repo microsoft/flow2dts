@@ -108,11 +108,11 @@ declare type State = {
 };
 declare class VirtualizedSectionList<SectionT extends SectionBase<any>> extends $1.PureComponent<Props<SectionT>, State> {
   defaultProps: DefaultProps;
-  scrollToLocation: (params: ScrollToLocationParamsType) => void;
-  getListRef: () => $2;
-  constructor: (props: Props<SectionT>, context: Object) => void;
-  UNSAFE_componentWillReceiveProps: (nextProps: Props<SectionT>) => void;
-  render: () => $1.Node;
+  scrollToLocation(params: ScrollToLocationParamsType): void;
+  getListRef(): $2;
+  constructor(props: Props<SectionT>, context: Object);
+  UNSAFE_componentWillReceiveProps(nextProps: Props<SectionT>): void;
+  render(): $1.Node;
 }
 export type { SectionBase };
 export type { Props };
