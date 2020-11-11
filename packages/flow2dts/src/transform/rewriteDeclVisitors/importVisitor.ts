@@ -30,6 +30,7 @@ export const importVisitor: Visitor<State> = {
         })
         path.replaceWithMultiple([path.node, ...decls])
       } else if (path.node.importKind === "type") {
+        path.node.importKind = "value"
         const specifierIndex = path.node.specifiers.findIndex((specifier) => t.isImportDefaultSpecifier(specifier))
         if (specifierIndex >= 0) {
           const specifier = path.node.specifiers[specifierIndex] as t.ImportDefaultSpecifier
