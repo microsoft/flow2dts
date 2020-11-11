@@ -1,4 +1,4 @@
 // @flow
-import { DisplayMetrics } from "./NativeDeviceInfo";
+import type { DisplayMetrics } from "./NativeDeviceInfo";
 declare function useWindowDimensions(): DisplayMetrics;
 export { useWindowDimensions as default };

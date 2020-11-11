@@ -2,11 +2,11 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "../Components/ScrollView/ScrollView";
 import $2 from "../Components/View/View";
 import * as React from "react";
-import { ScrollResponderType } from "../Components/ScrollView/ScrollView";
-import { ViewStyleProp } from "../StyleSheet/StyleSheet";
-import { ViewabilityConfig } from "./ViewabilityHelper";
-import { ViewToken } from "./ViewabilityHelper";
-import { ViewabilityConfigCallbackPair } from "./ViewabilityHelper";
+import type { ScrollResponderType } from "../Components/ScrollView/ScrollView";
+import type { ViewStyleProp } from "../StyleSheet/StyleSheet";
+import type { ViewabilityConfig } from "./ViewabilityHelper";
+import type { ViewToken } from "./ViewabilityHelper";
+import type { ViewabilityConfigCallbackPair } from "./ViewabilityHelper";
 import { VirtualizedListContext } from "./VirtualizedListContext.js";
 declare type Item = any;
 declare type Separators = {

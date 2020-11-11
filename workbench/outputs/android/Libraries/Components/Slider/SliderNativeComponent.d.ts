@@ -1,12 +1,12 @@
 // @flow
-import { BubblingEventHandler } from "../../Types/CodegenTypes";
-import { DirectEventHandler } from "../../Types/CodegenTypes";
-import { Double } from "../../Types/CodegenTypes";
-import { WithDefault } from "../../Types/CodegenTypes";
-import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
-import { ColorValue } from "../../StyleSheet/StyleSheet";
-import { ImageSource } from "../../Image/ImageSource";
-import { ViewProps } from "../View/ViewPropTypes";
+import type { BubblingEventHandler } from "../../Types/CodegenTypes";
+import type { DirectEventHandler } from "../../Types/CodegenTypes";
+import type { Double } from "../../Types/CodegenTypes";
+import type { WithDefault } from "../../Types/CodegenTypes";
+import type { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
+import type { ColorValue } from "../../StyleSheet/StyleSheet";
+import type { ImageSource } from "../../Image/ImageSource";
+import type { ViewProps } from "../View/ViewPropTypes";
 declare type Event = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

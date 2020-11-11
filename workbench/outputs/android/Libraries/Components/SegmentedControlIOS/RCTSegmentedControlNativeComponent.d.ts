@@ -1,10 +1,10 @@
 // @flow
-import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
-import { ViewProps } from "../View/ViewPropTypes";
-import { BubblingEventHandler } from "../../Types/CodegenTypes";
-import { WithDefault } from "../../Types/CodegenTypes";
-import { Int32 } from "../../Types/CodegenTypes";
-import { ColorValue } from "../../StyleSheet/StyleSheet";
+import type { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
+import type { ViewProps } from "../View/ViewPropTypes";
+import type { BubblingEventHandler } from "../../Types/CodegenTypes";
+import type { WithDefault } from "../../Types/CodegenTypes";
+import type { Int32 } from "../../Types/CodegenTypes";
+import type { ColorValue } from "../../StyleSheet/StyleSheet";
 declare type OnChangeEvent = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

@@ -1,6 +1,6 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import { HostComponent } from "../../Libraries/Renderer/shims/ReactNativeTypes";
+import type { HostComponent } from "../../Libraries/Renderer/shims/ReactNativeTypes";
 declare type Options = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

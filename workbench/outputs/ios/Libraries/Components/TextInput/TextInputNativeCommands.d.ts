@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import * as React from "react";
-import { Int32 } from "../../Types/CodegenTypes";
+import type { Int32 } from "../../Types/CodegenTypes";
 interface TextInputNativeCommands<T> {
   readonly focus: (viewRef: React.ElementRef<T>) => void;
   readonly blur: (viewRef: React.ElementRef<T>) => void;

@@ -1,5 +1,5 @@
 // @flow
-import { TurboModule } from "../TurboModule/RCTExport";
+import type { TurboModule } from "../TurboModule/RCTExport";
 declare type Header = [string, string];
 interface Spec extends TurboModule {
   readonly sendRequest: (method: string, url: string, requestId: number, headers: Header[], data: Object, responseType: string, useIncrementalUpdates: boolean, timeout: number, withCredentials: boolean) => void;

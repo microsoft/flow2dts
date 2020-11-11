@@ -1,6 +1,6 @@
 import { Class } from "utility-types";
 import $1 from "react";
-import { IgnorePattern } from "../LogBox/Data/LogBoxData";
+import type { IgnorePattern } from "../LogBox/Data/LogBoxData";
 declare type Props = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {}>;

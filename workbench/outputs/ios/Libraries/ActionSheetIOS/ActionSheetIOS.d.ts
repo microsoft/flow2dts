@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import { ColorValue } from "../StyleSheet/StyleSheet";
-import { ProcessedColorValue } from "../StyleSheet/processColor";
+import type { ColorValue } from "../StyleSheet/StyleSheet";
+import type { ProcessedColorValue } from "../StyleSheet/processColor";
 declare var ActionSheetIOS:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

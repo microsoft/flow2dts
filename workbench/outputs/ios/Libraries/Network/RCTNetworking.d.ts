@@ -1,7 +1,7 @@
 // @flow
 import NativeEventEmitter from "../EventEmitter/NativeEventEmitter";
-import { NativeResponseType } from "./XMLHttpRequest";
-import { RequestBody } from "./convertRequestBody";
+import type { NativeResponseType } from "./XMLHttpRequest";
+import type { RequestBody } from "./convertRequestBody";
 declare class RCTNetworking extends NativeEventEmitter {
   constructor();
   sendRequest(method: string, trackingName: string, url: string, headers: {}, data: RequestBody, responseType: NativeResponseType, incrementalUpdates: boolean, timeout: number, callback: (requestId: number) => void, withCredentials: boolean): void;

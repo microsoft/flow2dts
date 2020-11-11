@@ -1,10 +1,10 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "react";
-import { HostComponent } from "../Renderer/shims/ReactNativeTypes";
-import { PressEvent } from "../Types/CoreEventTypes";
-import { ScrollEvent } from "../Types/CoreEventTypes";
-import { EventSubscription } from "../vendor/emitter/EventEmitter";
-import { KeyboardEvent } from "./Keyboard/Keyboard";
+import type { HostComponent } from "../Renderer/shims/ReactNativeTypes";
+import type { PressEvent } from "../Types/CoreEventTypes";
+import type { ScrollEvent } from "../Types/CoreEventTypes";
+import type { EventSubscription } from "../vendor/emitter/EventEmitter";
+import type { KeyboardEvent } from "./Keyboard/Keyboard";
 declare type State =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

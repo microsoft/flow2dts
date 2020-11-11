@@ -1,9 +1,9 @@
 // @flow
-import { HostComponent } from "../Renderer/shims/ReactNativeTypes";
-import { WithDefault } from "../Types/CodegenTypes";
-import { DirectEventHandler } from "../Types/CodegenTypes";
-import { Int32 } from "../Types/CodegenTypes";
-import { ViewProps } from "../Components/View/ViewPropTypes";
+import type { HostComponent } from "../Renderer/shims/ReactNativeTypes";
+import type { WithDefault } from "../Types/CodegenTypes";
+import type { DirectEventHandler } from "../Types/CodegenTypes";
+import type { Int32 } from "../Types/CodegenTypes";
+import type { ViewProps } from "../Components/View/ViewPropTypes";
 declare type OrientationChangeEvent = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

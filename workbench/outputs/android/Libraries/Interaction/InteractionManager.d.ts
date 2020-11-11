@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type Handle = number;
-import { Task } from "./TaskQueue";
+import type { Task } from "./TaskQueue";
 declare var InteractionManager:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

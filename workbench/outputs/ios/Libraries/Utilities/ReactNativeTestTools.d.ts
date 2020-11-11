@@ -1,7 +1,7 @@
 import { $Call, $PropertyType } from "utility-types";
 import $1 from "react";
 import $2 from "react-test-renderer";
-import { ReactTestRenderer as ReactTestRendererType } from "react-test-renderer";
+import type { ReactTestRenderer as ReactTestRendererType } from "react-test-renderer";
 declare type ReactTestInstance = $PropertyType<ReactTestRendererType, "root">;
 declare type Predicate = (node: ReactTestInstance) => boolean;
 declare type $ReturnType<Fn> = $Call<<Ret, A>($f2t1: (...$f2tRest: A) => Ret) => Ret, Fn>;

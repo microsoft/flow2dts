@@ -1,6 +1,6 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import { ExceptionData } from "./NativeExceptionsManager";
+import type { ExceptionData } from "./NativeExceptionsManager";
 declare class SyntheticError extends Error {
   name: string;
 }

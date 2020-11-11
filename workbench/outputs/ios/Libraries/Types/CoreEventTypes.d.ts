@@ -1,7 +1,7 @@
 import { $PropertyType } from "utility-types";
 // @flow
 import * as React from "react";
-import { HostComponent } from "../Renderer/shims/ReactNativeTypes";
+import type { HostComponent } from "../Renderer/shims/ReactNativeTypes";
 declare type SyntheticEvent<T> = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

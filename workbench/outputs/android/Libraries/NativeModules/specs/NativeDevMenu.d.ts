@@ -1,5 +1,5 @@
 // @flow
-import { TurboModule } from "../../TurboModule/RCTExport";
+import type { TurboModule } from "../../TurboModule/RCTExport";
 interface Spec extends TurboModule {
   readonly show: () => void;
   readonly reload: () => void;

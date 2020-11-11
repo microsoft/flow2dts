@@ -1,12 +1,12 @@
 // @flow
 import * as React from "react";
 import LogBoxLog from "./LogBoxLog";
-import { LogLevel } from "./LogBoxLog";
-import { Message } from "./parseLogBoxLog";
-import { Category } from "./parseLogBoxLog";
-import { ComponentStack } from "./parseLogBoxLog";
-import { ExtendedExceptionData } from "./parseLogBoxLog";
-import { ExtendedError } from "../../Core/Devtools/parseErrorStack";
+import type { LogLevel } from "./LogBoxLog";
+import type { Message } from "./parseLogBoxLog";
+import type { Category } from "./parseLogBoxLog";
+import type { ComponentStack } from "./parseLogBoxLog";
+import type { ExtendedExceptionData } from "./parseLogBoxLog";
+import type { ExtendedError } from "../../Core/Devtools/parseErrorStack";
 declare type LogBoxLogs = Set<LogBoxLog>;
 declare type LogData = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

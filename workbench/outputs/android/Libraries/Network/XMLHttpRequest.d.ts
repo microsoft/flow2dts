@@ -1,6 +1,6 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import { IPerformanceLogger } from "../Utilities/createPerformanceLogger";
+import type { IPerformanceLogger } from "../Utilities/createPerformanceLogger";
 declare type NativeResponseType = "base64" | "blob" | "text";
 declare type ResponseType = "" | "arraybuffer" | "blob" | "document" | "json" | "text";
 declare type Response = (null | undefined | Object) | string;

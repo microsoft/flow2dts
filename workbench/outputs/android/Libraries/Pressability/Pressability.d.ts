@@ -1,9 +1,9 @@
 // @flow
-import { RectOrSize } from "../StyleSheet/Rect";
-import { BlurEvent } from "../Types/CoreEventTypes";
-import { FocusEvent } from "../Types/CoreEventTypes";
-import { PressEvent } from "../Types/CoreEventTypes";
-import { MouseEvent } from "../Types/CoreEventTypes";
+import type { RectOrSize } from "../StyleSheet/Rect";
+import type { BlurEvent } from "../Types/CoreEventTypes";
+import type { FocusEvent } from "../Types/CoreEventTypes";
+import type { PressEvent } from "../Types/CoreEventTypes";
+import type { MouseEvent } from "../Types/CoreEventTypes";
 declare type PressabilityConfig = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

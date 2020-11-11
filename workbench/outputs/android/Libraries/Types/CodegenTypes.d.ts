@@ -1,5 +1,5 @@
 // @flow
-import { SyntheticEvent } from "./CoreEventTypes";
+import type { SyntheticEvent } from "./CoreEventTypes";
 declare type BubblingEventHandler<T, PaperName extends string | never = never> = (event: SyntheticEvent<T>) => void | Promise<void>;
 declare type DirectEventHandler<T, PaperName extends string | never = never> = (event: SyntheticEvent<T>) => void | Promise<void>;
 declare type Double = number;

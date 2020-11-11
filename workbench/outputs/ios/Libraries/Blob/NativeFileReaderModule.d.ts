@@ -1,5 +1,5 @@
 // @flow
-import { TurboModule } from "../TurboModule/RCTExport";
+import type { TurboModule } from "../TurboModule/RCTExport";
 interface Spec extends TurboModule {
   readonly readAsDataURL: (data: Object) => Promise<string>;
   readonly readAsText: (data: Object, encoding: string) => Promise<string>;

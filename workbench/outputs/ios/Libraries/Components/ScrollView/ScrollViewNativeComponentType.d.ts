@@ -1,12 +1,12 @@
 // @flow
-import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
-import { ViewProps } from "../View/ViewPropTypes";
-import { ViewStyleProp } from "../../StyleSheet/StyleSheet";
-import { DangerouslyImpreciseStyle } from "../../StyleSheet/StyleSheet";
-import { ColorValue } from "../../StyleSheet/StyleSheet";
-import { EdgeInsetsProp } from "../../StyleSheet/EdgeInsetsPropType";
-import { ScrollEvent } from "../../Types/CoreEventTypes";
-import { PointProp } from "../../StyleSheet/PointPropType";
+import type { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
+import type { ViewProps } from "../View/ViewPropTypes";
+import type { ViewStyleProp } from "../../StyleSheet/StyleSheet";
+import type { DangerouslyImpreciseStyle } from "../../StyleSheet/StyleSheet";
+import type { ColorValue } from "../../StyleSheet/StyleSheet";
+import type { EdgeInsetsProp } from "../../StyleSheet/EdgeInsetsPropType";
+import type { ScrollEvent } from "../../Types/CoreEventTypes";
+import type { PointProp } from "../../StyleSheet/PointPropType";
 declare type ScrollViewNativeProps = Readonly<ViewProps & {
   alwaysBounceHorizontal?: null | undefined | boolean;
   alwaysBounceVertical?: null | undefined | boolean;

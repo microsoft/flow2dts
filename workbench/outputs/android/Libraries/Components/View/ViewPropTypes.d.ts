@@ -1,18 +1,18 @@
 // @flow
-import { BlurEvent } from "../../Types/CoreEventTypes";
-import { FocusEvent } from "../../Types/CoreEventTypes";
-import { MouseEvent } from "../../Types/CoreEventTypes";
-import { PressEvent } from "../../Types/CoreEventTypes";
-import { Layout } from "../../Types/CoreEventTypes";
-import { LayoutEvent } from "../../Types/CoreEventTypes";
-import { EdgeInsetsProp } from "../../StyleSheet/EdgeInsetsPropType";
-import { Node } from "react";
-import { ViewStyleProp } from "../../StyleSheet/StyleSheet";
-import { AccessibilityRole } from "./ViewAccessibility";
-import { AccessibilityState } from "./ViewAccessibility";
-import { AccessibilityValue } from "./ViewAccessibility";
-import { AccessibilityActionEvent } from "./ViewAccessibility";
-import { AccessibilityActionInfo } from "./ViewAccessibility";
+import type { BlurEvent } from "../../Types/CoreEventTypes";
+import type { FocusEvent } from "../../Types/CoreEventTypes";
+import type { MouseEvent } from "../../Types/CoreEventTypes";
+import type { PressEvent } from "../../Types/CoreEventTypes";
+import type { Layout } from "../../Types/CoreEventTypes";
+import type { LayoutEvent } from "../../Types/CoreEventTypes";
+import type { EdgeInsetsProp } from "../../StyleSheet/EdgeInsetsPropType";
+import type { Node } from "react";
+import type { ViewStyleProp } from "../../StyleSheet/StyleSheet";
+import type { AccessibilityRole } from "./ViewAccessibility";
+import type { AccessibilityState } from "./ViewAccessibility";
+import type { AccessibilityValue } from "./ViewAccessibility";
+import type { AccessibilityActionEvent } from "./ViewAccessibility";
+import type { AccessibilityActionInfo } from "./ViewAccessibility";
 declare type ViewLayout = Layout;
 declare type ViewLayoutEvent = LayoutEvent;
 declare type BubblingEventProps = Readonly<

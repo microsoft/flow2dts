@@ -1,7 +1,7 @@
 // @flow
-import { ColorValue } from "../../StyleSheet/StyleSheet";
-import { ViewProps } from "../View/ViewPropTypes";
-import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
+import type { ColorValue } from "../../StyleSheet/StyleSheet";
+import type { ViewProps } from "../View/ViewPropTypes";
+import type { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
 declare type NativeProps = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 ViewProps & {

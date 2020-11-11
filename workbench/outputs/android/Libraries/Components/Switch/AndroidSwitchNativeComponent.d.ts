@@ -1,10 +1,10 @@
 // @flow
 import * as React from "react";
-import { WithDefault } from "react-native/Libraries/Types/CodegenTypes";
-import { BubblingEventHandler } from "react-native/Libraries/Types/CodegenTypes";
-import { HostComponent } from "react-native/Libraries/Renderer/shims/ReactNativeTypes";
-import { ColorValue } from "../../StyleSheet/StyleSheet";
-import { ViewProps } from "../View/ViewPropTypes";
+import type { WithDefault } from "react-native/Libraries/Types/CodegenTypes";
+import type { BubblingEventHandler } from "react-native/Libraries/Types/CodegenTypes";
+import type { HostComponent } from "react-native/Libraries/Renderer/shims/ReactNativeTypes";
+import type { ColorValue } from "../../StyleSheet/StyleSheet";
+import type { ViewProps } from "../View/ViewPropTypes";
 declare type SwitchChangeEvent = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

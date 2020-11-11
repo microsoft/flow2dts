@@ -2,10 +2,10 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $Diff, $PropertyType } from "utility-types";
 import $1 from "react";
 import $3 from "./VirtualizedSectionList";
-import { ScrollResponderType } from "../Components/ScrollView/ScrollView";
-import { ScrollToLocationParamsType } from "./VirtualizedSectionList";
-import { SectionBase as _SectionBase } from "./VirtualizedSectionList";
-import { Props as VirtualizedSectionListProps } from "./VirtualizedSectionList";
+import type { ScrollResponderType } from "../Components/ScrollView/ScrollView";
+import type { ScrollToLocationParamsType } from "./VirtualizedSectionList";
+import type { SectionBase as _SectionBase } from "./VirtualizedSectionList";
+import type { Props as VirtualizedSectionListProps } from "./VirtualizedSectionList";
 declare type Item = any;
 declare type SectionBase<SectionItemT> = _SectionBase<SectionItemT>;
 declare type RequiredProps<SectionT extends SectionBase<any>> =

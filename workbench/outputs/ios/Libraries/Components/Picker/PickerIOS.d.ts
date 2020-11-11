@@ -1,10 +1,10 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "react";
-import { TextStyleProp } from "../../StyleSheet/StyleSheet";
-import { ColorValue } from "../../StyleSheet/StyleSheet";
-import { ProcessedColorValue } from "../../StyleSheet/processColor";
-import { SyntheticEvent } from "../../Types/CoreEventTypes";
-import { ViewProps } from "../View/ViewPropTypes";
+import type { TextStyleProp } from "../../StyleSheet/StyleSheet";
+import type { ColorValue } from "../../StyleSheet/StyleSheet";
+import type { ProcessedColorValue } from "../../StyleSheet/processColor";
+import type { SyntheticEvent } from "../../Types/CoreEventTypes";
+import type { ViewProps } from "../View/ViewPropTypes";
 declare type PickerIOSChangeEvent = SyntheticEvent<Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

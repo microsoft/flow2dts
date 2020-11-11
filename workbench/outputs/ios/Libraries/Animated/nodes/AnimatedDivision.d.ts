@@ -2,7 +2,7 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "./AnimatedInterpolation";
 import $3 from "./AnimatedNode";
 import $4 from "./AnimatedWithChildren";
-import { InterpolationConfigType } from "./AnimatedInterpolation";
+import type { InterpolationConfigType } from "./AnimatedInterpolation";
 declare class AnimatedDivision extends $4 {
   constructor(a: $3 | number, b: $3 | number);
   __makeNative(): void;

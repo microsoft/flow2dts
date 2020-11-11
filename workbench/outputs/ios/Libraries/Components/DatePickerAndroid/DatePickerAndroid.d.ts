@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import { Options } from "./DatePickerAndroidTypes";
-import { DatePickerOpenAction } from "./DatePickerAndroidTypes";
+import type { Options } from "./DatePickerAndroidTypes";
+import type { DatePickerOpenAction } from "./DatePickerAndroidTypes";
 declare class DatePickerAndroid {
   open(options: null | undefined | Options): Promise<DatePickerOpenAction>;
   readonly dateSetAction: "dateSetAction";

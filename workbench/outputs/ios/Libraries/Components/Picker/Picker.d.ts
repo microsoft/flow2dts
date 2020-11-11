@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $3 from "react";
-import { TextStyleProp } from "../../StyleSheet/StyleSheet";
-import { ColorValue } from "../../StyleSheet/StyleSheet";
+import type { TextStyleProp } from "../../StyleSheet/StyleSheet";
+import type { ColorValue } from "../../StyleSheet/StyleSheet";
 declare type PickerItemProps = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

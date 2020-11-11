@@ -1,5 +1,5 @@
 // @flow
-import { TurboModule } from "../../TurboModule/RCTExport";
+import type { TurboModule } from "../../TurboModule/RCTExport";
 declare type DialogAction = string;
 declare type DialogButtonKey = number;
 declare type DialogOptions =

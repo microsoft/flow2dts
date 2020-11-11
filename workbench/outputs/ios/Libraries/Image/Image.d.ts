@@ -2,7 +2,7 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "../DeprecatedPropTypes/DeprecatedImagePropType";
 import $2 from "react";
 import $3 from "./resolveAssetSource";
-import { ImageProps as ImagePropsType } from "./ImageProps";
+import type { ImageProps as ImagePropsType } from "./ImageProps";
 import ImageViewNativeComponent from "./ImageViewNativeComponent";
 declare function getSize(uri: string, success: (width: number, height: number) => void, failure?: (error: any) => void): void;
 declare function getSizeWithHeaders(uri: string, headers: {

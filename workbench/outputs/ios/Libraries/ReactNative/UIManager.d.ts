@@ -1,6 +1,6 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import { Spec } from "./NativeUIManager";
+import type { Spec } from "./NativeUIManager";
 interface UIManagerJSInterface extends Spec {
   readonly getViewManagerConfig: (viewManagerName: string) => Object;
   readonly createView: (reactTag: null | undefined | number, viewName: string, rootTag: number, props: Object) => void;

@@ -13,12 +13,12 @@ import $11 from "./nodes/AnimatedSubtraction";
 import $12 from "./nodes/AnimatedValue";
 import $13 from "./nodes/AnimatedValueXY";
 import $16 from "./createAnimatedComponent";
-import { EndCallback } from "./animations/Animation";
-import { TimingAnimationConfig } from "./animations/TimingAnimation";
-import { DecayAnimationConfig } from "./animations/DecayAnimation";
-import { SpringAnimationConfig } from "./animations/SpringAnimation";
-import { Mapping } from "./AnimatedEvent";
-import { EventConfig } from "./AnimatedEvent";
+import type { EndCallback } from "./animations/Animation";
+import type { TimingAnimationConfig } from "./animations/TimingAnimation";
+import type { DecayAnimationConfig } from "./animations/DecayAnimation";
+import type { SpringAnimationConfig } from "./animations/SpringAnimation";
+import type { Mapping } from "./AnimatedEvent";
+import type { EventConfig } from "./AnimatedEvent";
 declare type CompositeAnimation = {
   start: (callback?: null | undefined | EndCallback) => void;
   stop: () => void;

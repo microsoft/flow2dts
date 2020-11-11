@@ -1,6 +1,6 @@
 // @flow
-import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
-import { TextInputNativeCommands } from "./TextInputNativeCommands";
+import type { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
+import type { TextInputNativeCommands } from "./TextInputNativeCommands";
 declare type NativeType = HostComponent<unknown>;
 declare type NativeCommands = TextInputNativeCommands<NativeType>;
 declare var Commands: NativeCommands;

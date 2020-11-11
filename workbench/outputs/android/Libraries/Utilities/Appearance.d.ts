@@ -1,6 +1,6 @@
 // @flow
-import { AppearancePreferences } from "./NativeAppearance";
-import { ColorSchemeName } from "./NativeAppearance";
+import type { AppearancePreferences } from "./NativeAppearance";
+import type { ColorSchemeName } from "./NativeAppearance";
 declare type AppearanceListener = (preferences: AppearancePreferences) => void;
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

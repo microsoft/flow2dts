@@ -1,9 +1,9 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import * as React from "react";
-import { ColorValue } from "../../StyleSheet/StyleSheet";
-import { SyntheticEvent } from "../../Types/CoreEventTypes";
-import { ViewProps } from "../View/ViewPropTypes";
+import type { ColorValue } from "../../StyleSheet/StyleSheet";
+import type { SyntheticEvent } from "../../Types/CoreEventTypes";
+import type { ViewProps } from "../View/ViewPropTypes";
 declare type SwitchChangeEvent = SyntheticEvent<Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

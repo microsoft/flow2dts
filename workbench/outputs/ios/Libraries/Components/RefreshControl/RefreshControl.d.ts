@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "react";
-import { ColorValue } from "../../StyleSheet/StyleSheet";
-import { ViewProps } from "../View/ViewPropTypes";
+import type { ColorValue } from "../../StyleSheet/StyleSheet";
+import type { ViewProps } from "../View/ViewPropTypes";
 declare var RefreshLayoutConsts: any;
 declare type IOSProps = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

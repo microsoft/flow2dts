@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $Keys } from "utility-types";
 import $1 from "react";
-import { ColorValue } from "../../StyleSheet/StyleSheet";
+import type { ColorValue } from "../../StyleSheet/StyleSheet";
 declare type StatusBarStyle = $Keys<{
   /**
   * Default status bar style (dark for iOS, no change for Android)

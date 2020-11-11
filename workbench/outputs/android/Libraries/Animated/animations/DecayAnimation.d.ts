@@ -1,8 +1,9 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "./Animation";
-import AnimatedValue from "../nodes/AnimatedValue";
-import { AnimationConfig } from "./Animation";
-import { EndCallback } from "./Animation";
+import AnimatedValue$f2tTypeof from "../nodes/AnimatedValue";
+declare type AnimatedValue = $TypeOf<typeof AnimatedValue$f2tTypeof>;
+import type { AnimationConfig } from "./Animation";
+import type { EndCallback } from "./Animation";
 declare type DecayAnimationConfig = AnimationConfig & {
   velocity: number | {
     x: number;

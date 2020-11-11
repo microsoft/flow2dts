@@ -1,13 +1,13 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import NativeEventEmitter from "../EventEmitter/NativeEventEmitter";
-import { EventConfig } from "./AnimatedEvent";
-import { EventMapping } from "./NativeAnimatedModule";
-import { AnimatedNodeConfig } from "./NativeAnimatedModule";
-import { AnimatingNodeConfig } from "./NativeAnimatedModule";
-import { AnimationConfig } from "./animations/Animation";
-import { EndCallback } from "./animations/Animation";
-import { InterpolationConfigType } from "./nodes/AnimatedInterpolation";
+import type { EventConfig } from "./AnimatedEvent";
+import type { EventMapping } from "./NativeAnimatedModule";
+import type { AnimatedNodeConfig } from "./NativeAnimatedModule";
+import type { AnimatingNodeConfig } from "./NativeAnimatedModule";
+import type { AnimationConfig } from "./animations/Animation";
+import type { EndCallback } from "./animations/Animation";
+import type { InterpolationConfigType } from "./nodes/AnimatedInterpolation";
 declare var API:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

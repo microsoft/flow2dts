@@ -1,13 +1,13 @@
 // @flow
 import * as React from "react";
-import { DirectEventHandler } from "../../Types/CodegenTypes";
-import { Int32 } from "../../Types/CodegenTypes";
-import { WithDefault } from "../../Types/CodegenTypes";
-import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
-import { TextStyleProp } from "../../StyleSheet/StyleSheet";
-import { ColorValue } from "../../StyleSheet/StyleSheet";
-import { ProcessedColorValue } from "../../StyleSheet/processColor";
-import { ViewProps } from "../../Components/View/ViewPropTypes";
+import type { DirectEventHandler } from "../../Types/CodegenTypes";
+import type { Int32 } from "../../Types/CodegenTypes";
+import type { WithDefault } from "../../Types/CodegenTypes";
+import type { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
+import type { TextStyleProp } from "../../StyleSheet/StyleSheet";
+import type { ColorValue } from "../../StyleSheet/StyleSheet";
+import type { ProcessedColorValue } from "../../StyleSheet/processColor";
+import type { ViewProps } from "../../Components/View/ViewPropTypes";
 declare type PickerItem = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

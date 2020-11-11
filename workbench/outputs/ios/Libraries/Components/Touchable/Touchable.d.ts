@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "react";
-import { EdgeInsetsProp } from "../../StyleSheet/EdgeInsetsPropType";
-import { PressEvent } from "../../Types/CoreEventTypes";
+import type { EdgeInsetsProp } from "../../StyleSheet/EdgeInsetsPropType";
+import type { PressEvent } from "../../Types/CoreEventTypes";
 declare var States:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

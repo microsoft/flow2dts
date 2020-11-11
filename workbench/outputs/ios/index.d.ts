@@ -178,7 +178,7 @@ import DeprecatedPointPropType$f2tTypeof from "./Libraries/DeprecatedPropTypes/D
 declare type DeprecatedPointPropType = $TypeOf<typeof DeprecatedPointPropType$f2tTypeof>;
 import DeprecatedViewPropTypes$f2tTypeof from "./Libraries/DeprecatedPropTypes/DeprecatedViewPropTypes";
 declare type DeprecatedViewPropTypes = $TypeOf<typeof DeprecatedViewPropTypes$f2tTypeof>;
-import { HostComponent as _HostComponentInternal } from "./Libraries/Renderer/shims/ReactNativeTypes";
+import type { HostComponent as _HostComponentInternal } from "./Libraries/Renderer/shims/ReactNativeTypes";
 declare type HostComponent<T> = _HostComponentInternal<T>;
 export type { HostComponent };
 declare const $f2tExportDefault:

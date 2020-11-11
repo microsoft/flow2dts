@@ -1,6 +1,6 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import { StackFrame } from "../NativeExceptionsManager";
+import type { StackFrame } from "../NativeExceptionsManager";
 declare type CodeFrame = Readonly<{
   content: string;
   location: null | undefined | {

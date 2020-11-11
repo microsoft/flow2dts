@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "react";
-import { SyntheticEvent } from "../../Types/CoreEventTypes";
-import { ViewProps } from "../View/ViewPropTypes";
+import type { SyntheticEvent } from "../../Types/CoreEventTypes";
+import type { ViewProps } from "../View/ViewPropTypes";
 declare type Event = SyntheticEvent<Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

@@ -1,9 +1,9 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-import { MeasureOnSuccessCallback } from "../Renderer/shims/ReactNativeTypes";
-import { MeasureInWindowOnSuccessCallback } from "../Renderer/shims/ReactNativeTypes";
-import { MeasureLayoutOnSuccessCallback } from "../Renderer/shims/ReactNativeTypes";
-import { LayoutAnimationConfig } from "../Renderer/shims/ReactNativeTypes";
+import type { MeasureOnSuccessCallback } from "../Renderer/shims/ReactNativeTypes";
+import type { MeasureInWindowOnSuccessCallback } from "../Renderer/shims/ReactNativeTypes";
+import type { MeasureLayoutOnSuccessCallback } from "../Renderer/shims/ReactNativeTypes";
+import type { LayoutAnimationConfig } from "../Renderer/shims/ReactNativeTypes";
 declare type Node = {};
 declare type NodeSet = Node[];
 declare type NodeProps = {};
