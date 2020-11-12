@@ -11,7 +11,7 @@ export interface State {
 
 export function initializeState(state: State): void {
   state.polyfillTypes = new Set()
-  state.typeReferences = { records: {} }
+  state.typeReferences = { records: {}, imports: {} }
 }
 
 export function combineVisitorsSafe(...visitors: Visitor<State>[]): Visitor<State> {

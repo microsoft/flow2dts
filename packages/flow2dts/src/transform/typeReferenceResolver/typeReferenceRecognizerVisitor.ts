@@ -1,6 +1,16 @@
 import { Visitor, types as t } from "@babel/core"
 import { State } from "../state"
 
+export function isRequireDeclaration(decl: t.VariableDeclarator): [string, t.StringLiteral] | null {
+  if (decl.id.type === "Identifier" && decl && decl.init && decl.init.type === "CallExpression" && decl.init) {
+    const callee = decl.init.callee
+    if (callee.type === "Identifier" && callee.name === "require" && decl.init.arguments.length === 1) {
+      return [decl.id.name, <t.StringLiteral>decl.init.arguments[0]]
+    }
+  }
+  return null
+}
+
 export const typeReferenceRecognizerVisitor: Visitor<State> = {
   DeclareVariable: {
     enter(path, state) {
@@ -21,6 +31,20 @@ export const typeReferenceRecognizerVisitor: Visitor<State> = {
         resolved: null,
       }
       decl.id.typeAnnotation = null
+    },
+  },
+  VariableDeclaration: {
+    enter(path, state) {
+      const decl = path.node.declarations[0]
+      const requireDecl = isRequireDeclaration(decl)
+      if (requireDecl) {
+        const [name] = requireDecl
+
+        if (state.typeReferences.imports[name]) {
+          throw new Error(`Found duplicated import in module: ${name}`)
+        }
+        state.typeReferences.imports[name] = decl
+      }
     },
   },
 }

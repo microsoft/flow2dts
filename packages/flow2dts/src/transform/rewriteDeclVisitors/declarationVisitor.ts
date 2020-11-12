@@ -2,23 +2,17 @@ import { Visitor, types as t } from "@babel/core"
 import { type } from "os"
 import { isRecognized, State } from "../state"
 import { assertTSType } from "../utilities"
-import { resolveQualifiedTypeIdentifier, resolveMemberExpression } from "../typeReferenceResolver"
+import { isRequireDeclaration, resolveQualifiedTypeIdentifier, resolveMemberExpression } from "../typeReferenceResolver"
 
 export const declarationVisitor: Visitor<State> = {
   VariableDeclaration: {
     exit(path, state) {
       const decl = path.node.declarations[0]
-      if (decl.id.type === "Identifier" && decl && decl.init && decl.init.type === "CallExpression" && decl.init) {
-        const callee = decl.init.callee
-        if (callee.type === "Identifier" && callee.name === "require" && decl.init.arguments.length === 1) {
-          path.replaceWith(
-            t.importDeclaration(
-              [t.importDefaultSpecifier(t.identifier(decl.id.name))],
-              <t.StringLiteral>decl.init.arguments[0]
-            )
-          )
-          return
-        }
+      const requireDecl = isRequireDeclaration(decl)
+      if (requireDecl) {
+        const [name, pack] = requireDecl
+        path.replaceWith(t.importDeclaration([t.importDefaultSpecifier(t.identifier(name))], pack))
+        return
       }
 
       path.node.declare = true

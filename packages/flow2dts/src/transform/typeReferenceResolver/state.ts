@@ -9,6 +9,7 @@ export interface ReferenceRecord {
 
 export interface RecognizedTypeReferences {
   records: { [key: string]: ReferenceRecord }
+  imports: { [key: string]: t.VariableDeclarator }
 }
 
 export function isRecognized(typeReferences: RecognizedTypeReferences, variable: t.DeclareVariable): boolean {
