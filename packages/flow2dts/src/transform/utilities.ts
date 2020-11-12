@@ -1,9 +1,14 @@
 import { types as t } from "@babel/core"
 import { State } from "./state"
 
+export const nameForExportDefaultRedirect = "$f2tExportDefaultRedirect"
 export const nameForExportDefault = "$f2tExportDefault"
 export const nameForRestParameter = "$f2tRest"
 export const nameForTypeIndexerKey = "$f2tKey"
+
+export function nameForHidden(name: string): string {
+  return `$f2tHidden_${name}`
+}
 
 export function nameForImportTypeof(name: string): string {
   return `${name}$f2tTypeof`
