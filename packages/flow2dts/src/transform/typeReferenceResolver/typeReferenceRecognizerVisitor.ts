@@ -1,14 +1,14 @@
 import { Visitor, types as t } from "@babel/core"
 import { State } from "../state"
 
-export function isRequireDeclaration(decl: t.VariableDeclarator): [string, t.StringLiteral] | null {
+export function isRequireDeclaration(decl: t.VariableDeclarator): [string, t.StringLiteral] | undefined {
   if (decl.id.type === "Identifier" && decl && decl.init && decl.init.type === "CallExpression" && decl.init) {
     const callee = decl.init.callee
     if (callee.type === "Identifier" && callee.name === "require" && decl.init.arguments.length === 1) {
       return [decl.id.name, <t.StringLiteral>decl.init.arguments[0]]
     }
   }
-  return null
+  return undefined
 }
 
 export const typeReferenceRecognizerVisitor: Visitor<State> = {

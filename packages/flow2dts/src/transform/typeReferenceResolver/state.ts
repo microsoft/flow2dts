@@ -110,7 +110,7 @@ export function resolveGenericTypeAnnotation<T>(
   typeReferences: RecognizedTypeReferences,
   path: NodePath<T>,
   flowType: t.GenericTypeAnnotation
-): t.TSTypeReference | undefined {
+): t.TSTypeReference | t.TSTypeQuery | undefined {
   const entity = resolveQualifiedTypeIdentifier(typeReferences, path, flowType.id)
   if (!entity) return undefined
 
@@ -122,6 +122,21 @@ export function resolveGenericTypeAnnotation<T>(
      and let babel calls our visitor after doing path.replaceWith in TypeofTypeAnnotation handler.
      */
     tsParams = t.tsTypeParameterInstantiation(<t.TSType[]>(<unknown>flowType.typeParameters.params))
+  } else {
+    /*
+     This is illegal for describing a base class or base interface,
+     so we don't need to take care of resolveQualifiedTypeIdentifier and resolveMemberExpression
+
+     in the context of `const x = require(y)`,
+     x could also be used as a type,
+     so typeof is required in TypeScript
+     */
+    if (entity.type === "Identifier") {
+      // when entity is not undefined, it is a resolved type, which means the name is in global context
+      if (typeReferences.imports[entity.name]) {
+        return t.tsTypeQuery(entity)
+      }
+    }
   }
 
   return t.tsTypeReference(entity, tsParams)
