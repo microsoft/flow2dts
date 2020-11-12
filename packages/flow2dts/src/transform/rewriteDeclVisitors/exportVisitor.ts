@@ -9,14 +9,42 @@ function convertToNamespace(decl: t.TSType): [string, t.TSTypeReference][] | und
     if (prop.key.type !== "Identifier") return undefined
     const propType = prop.typeAnnotation?.typeAnnotation
     if (!propType) return undefined
-    if (propType.type !== "TSTypeReference") return undefined
-    if (propType.typeName.type !== "Identifier") return undefined
-    if (propType.typeName.name !== "$TypeOf") return undefined
+
+    switch (propType.type) {
+      case "TSTypeReference": {
+        if (propType.typeName.type === "Identifier" && propType.typeName.name === "$TypeOf") {
+          if (!propType.typeParameters) return undefined
+        } else {
+          if (propType.typeParameters) return undefined
+        }
+        break
+      }
+      case "TSTypeQuery": {
+        break
+      }
+      default:
+        return undefined
+    }
   }
 
   return decl.members.map((prop) => {
     const propId = <t.Identifier>(<t.TSPropertySignature>prop).key
-    const propType = <t.TSTypeReference>(<t.TSPropertySignature>prop).typeAnnotation?.typeAnnotation
+    let propType = <t.TSTypeReference | t.TSTypeQuery>(<t.TSPropertySignature>prop).typeAnnotation?.typeAnnotation
+    switch (propType.type) {
+      case "TSTypeQuery": {
+        propType = t.tsTypeReference(t.identifier("$TypeOf"), t.tsTypeParameterInstantiation([propType]))
+        break
+      }
+      case "TSTypeReference": {
+        if (propType.typeName.type !== "Identifier" || propType.typeName.name !== "$TypeOf") {
+          propType = t.tsTypeReference(
+            t.identifier("$TypeOf"),
+            t.tsTypeParameterInstantiation([t.tsTypeQuery(propType.typeName)])
+          )
+        }
+        break
+      }
+    }
     return [propId.name, propType]
   })
 }
