@@ -1,4 +1,4 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $TypeOf, React$ComponentType } from "flow2dts-flow-types-polyfill";
 // @flow
 import { IPerformanceLogger } from "../Utilities/createPerformanceLogger";
 declare type Task = (taskData: any) => Promise<void>;

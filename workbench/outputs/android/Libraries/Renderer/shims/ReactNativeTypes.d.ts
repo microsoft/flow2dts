@@ -1,3 +1,4 @@
+import { React$Element } from "flow2dts-flow-types-polyfill";
 // @flow
 import { ElementRef } from "react";
 import { AbstractComponent } from "react";

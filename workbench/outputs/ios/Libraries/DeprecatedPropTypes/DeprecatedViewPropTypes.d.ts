@@ -1,4 +1,4 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $TypeOf, React$PropType$Primitive, ReactPropsCheckType } from "flow2dts-flow-types-polyfill";
 import $1 from "./DeprecatedEdgeInsetsPropType";
 import $2 from "prop-types";
 declare var stylePropType: ReactPropsCheckType;

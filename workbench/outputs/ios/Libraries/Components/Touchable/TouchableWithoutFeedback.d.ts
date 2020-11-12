@@ -1,4 +1,4 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $TypeOf, Stringish } from "flow2dts-flow-types-polyfill";
 // @flow
 import Pressability from "../../Pressability/Pressability";
 import { AccessibilityActionEvent } from "../../Components/View/ViewAccessibility";

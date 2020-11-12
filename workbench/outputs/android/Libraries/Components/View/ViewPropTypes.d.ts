@@ -1,3 +1,4 @@
+import { Stringish } from "flow2dts-flow-types-polyfill";
 // @flow
 import { BlurEvent } from "../../Types/CoreEventTypes";
 import { FocusEvent } from "../../Types/CoreEventTypes";

@@ -1,4 +1,4 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $TypeOf, React$PropType$Primitive, ReactPropsCheckType } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var TransformMatrixPropType: (props: Object, propName: string, componentName: string) => null | undefined | Error;
 declare var DecomposedMatrixPropType: (props: Object, propName: string, componentName: string) => null | undefined | Error;

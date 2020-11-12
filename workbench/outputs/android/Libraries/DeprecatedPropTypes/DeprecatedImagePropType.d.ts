@@ -1,3 +1,4 @@
+import { React$PropType$Primitive, ReactPropsCheckType } from "flow2dts-flow-types-polyfill";
 import $1 from "./DeprecatedEdgeInsetsPropType";
 import $2 from "./DeprecatedImageSourcePropType";
 import $3 from "prop-types";

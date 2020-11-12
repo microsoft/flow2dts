@@ -1,0 +1,72 @@
+diff --git a/node_modules/@types/react/index.d.ts b/node_modules/@types/react/index.d.ts
+index 3289c78..ff7ec8d 100644
+--- a/node_modules/@types/react/index.d.ts
++++ b/node_modules/@types/react/index.d.ts
+@@ -66,7 +66,67 @@ export = React;
+ export as namespace React;
+ 
+ declare namespace React {
++    /**************************************************************************
++     * flow2dts START
++    **************************************************************************/
++
++    type Node = ReactNode
++    type Element = ReactElement
++
++    // Taken from https://github.com/DefinitelyTyped/DefinitelyTyped/blob/f47f8eeea9e4691ebe5e93db524c3f645de10546/types/react-with-styles/index.d.ts#L43-L50
++    type _ComponentClassProps<C> = C extends new (props: infer P, context?: any) => any ? P : never;
++    type _SFCProps<C> = C extends (props: infer P & { children?: React.ReactNode }, context?: any) => any ? P : never;
++    type ElementProps<C> = C extends React.ComponentClass<any>
++        ? _ComponentClassProps<C>
++        : C extends React.SFC<any>
++        ? _SFCProps<C>
++        : any;
++    type ElementConfig<C> = JSX.LibraryManagedAttributes<C, ElementProps<C>>;
++
++    interface ComponentMethods<Props> {
++        context: any;
++        props: Props;
++        state: any;
++        refs: {
++            [key: string]: React.ReactInstance;
++        };
++        setState(state: any, cb?: () => void): void;
++        render(): React.ReactNode;
++        forceUpdate(callback?: () => void): void;
++    }
++    type AbstractComponent<Config extends {}, Instance = unknown> =
++        // Either a function component that has a specific return type:
++        (React.FunctionComponent<Config> & ((props: React.PropsWithChildren<Config>, context?: any) => Instance))
++        // ...or a class component that has the required Component methods and the Instance methods
++        | { new(props: Config, context?: any): (Instance & ComponentMethods<Config>) };
++    // TESTS:
++    // const FB: React.FunctionComponent<{ foo: string }> = props => (<div>{props.foo}</div>)
++    // class CB extends React.Component<{ foo: string }> {
++    //     someMethod(): boolean {
++    //         return true
++    //     }
++    // }
+     //
++    // const FBA: AbstractComponent<{ foo: string }> = FB;
++    // // const FBA: AbstractComponent<{ foo: string }, void> = FB;
++    // // const FBA: AbstractComponent<{ foo: string }, number> = FB; // Error
++    // const fba = <FBA foo="bar" />;
++    // // const fba = <FBA />; // Error, missing
++    // // const fba = <FBA foo={42} />; // Error, number is not string
++    //
++    // const CBA: AbstractComponent<{ foo: string }, { someMethod: () => boolean }> = CB;
++    // // const CBA: AbstractComponent<{ foo: string }, { someMethod: () => boolean }> = class { someMethod = () => true }; // Error, missing component methods (ComponentMethods)
++    // // const CBA: AbstractComponent<{ foo: string }, { someMethod: () => boolean }> = class extends React.Component<{ foo: string }> { }; // Error, missing someMethod
++    // // const CBA: AbstractComponent<{ foo: string }, { someMethod: () => boolean }> = class extends React.Component<{ foo: string }> { someMethod = () => 42 }; // Error, someMethod's return type is not boolean
++    //
++    // const cba = <CBA foo="bar" />
++    // // const cba = <CBA /> // Error, missing
++    // // const cba = <CBA foo={42} /> // Error, number is not string
++
++    /**************************************************************************
++     * flow2dts END
++    **************************************************************************/
++
+     // React Elements
+     // ----------------------------------------------------------------------
+ 
