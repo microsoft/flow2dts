@@ -582,6 +582,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/invariant@^2.2.34":
+  version "2.2.34"
+  resolved "https://registry.yarnpkg.com/@types/invariant/-/invariant-2.2.34.tgz#05e4f79f465c2007884374d4795452f995720bbe"
+  integrity sha512-lYUtmJ9BqUN688fGY1U1HZoWT1/Jrmgigx2loq4ZcJpICECm/Om3V314BxdzypO0u5PORKGMM6x0OXaljV1YFg==
+
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0", "@types/istanbul-lib-coverage@^2.0.1":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.3.tgz#4ba8ddb720221f432e443bd5f9117fd22cfd4762"
@@ -628,6 +633,26 @@
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.1.5.tgz#b6ab3bba29e16b821d84e09ecfaded462b816b00"
   integrity sha512-UEyp8LwZ4Dg30kVU2Q3amHHyTn1jEdhCIE59ANed76GaT1Vp76DD3ZWSAxgCrw6wJ0TqeoBpqmfUHiUDPs//HQ==
+
+"@types/prop-types@*":
+  version "15.7.3"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
+  integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
+
+"@types/react-test-renderer@^16.9.3":
+  version "16.9.3"
+  resolved "https://registry.yarnpkg.com/@types/react-test-renderer/-/react-test-renderer-16.9.3.tgz#96bab1860904366f4e848b739ba0e2f67bcae87e"
+  integrity sha512-wJ7IlN5NI82XMLOyHSa+cNN4Z0I+8/YaLl04uDgcZ+W+ExWCmCiVTLT/7fRNqzy4OhStZcUwIqLNF7q+AdW43Q==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@^16.9.56":
+  version "16.9.56"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.56.tgz#ea25847b53c5bec064933095fc366b1462e2adf0"
+  integrity sha512-gIkl4J44G/qxbuC6r2Xh+D3CGZpJ+NdWTItAPmZbR5mUS+JQ8Zvzpl0ea5qT/ZT3ZNTUcDKUVqV3xBE8wv/DyQ==
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^3.0.2"
 
 "@types/stack-utils@^2.0.0":
   version "2.0.0"
@@ -1262,6 +1287,11 @@ cssstyle@^2.2.0:
   integrity sha512-AZL67abkUzIuvcHqk7c09cezpGNcxUxU4Ioi/05xHk4DQeTkWmGYftIE6ctU6AEt+Gn4n1lDStOtj7FKycP71A==
   dependencies:
     cssom "~0.3.6"
+
+csstype@^3.0.2:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.4.tgz#b156d7be03b84ff425c9a0a4b1e5f4da9c5ca888"
+  integrity sha512-xc8DUsCLmjvCfoD7LTGE0ou2MIWLx0K9RCZwSHMOdynqRsP4MtUcLeqh1HcQ2dInwDTqn+3CE0/FZh1et+p4jA==
 
 dashdash@^1.12.0:
   version "1.14.1"
