@@ -10,3 +10,4 @@ import typeof a3 from "h"
 import typeof { b3, c3 as C3 } from "i"
 import typeof d3, { e3, f3 as F3 } from "j"
 const g = require("k")
+declare type gt = g.foo

@@ -20,3 +20,4 @@ declare type d3 = $TypeOf<typeof d3$f2tTypeof>
 declare type e3 = $TypeOf<typeof e3$f2tTypeof>
 declare type F3 = $TypeOf<typeof F3$f2tTypeof>
 import g from "k"
+declare type gt = $TypeOf<typeof g.foo>
