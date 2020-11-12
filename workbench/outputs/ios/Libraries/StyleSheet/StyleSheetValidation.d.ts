@@ -1,4 +1,4 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $FlowFixMe, $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "../DeprecatedPropTypes/DeprecatedImageStylePropTypes";
 import $2 from "../DeprecatedPropTypes/DeprecatedTextStylePropTypes";
 import $3 from "../DeprecatedPropTypes/DeprecatedViewStylePropTypes";

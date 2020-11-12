@@ -1,4 +1,4 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $FlowFixMe, $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type ModuleConfig = [string
 /* name */
