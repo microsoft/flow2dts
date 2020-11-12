@@ -1,0 +1,22 @@
+diff --git a/node_modules/@babel/generator/lib/generators/typescript.js b/node_modules/@babel/generator/lib/generators/typescript.js
+index 4e938e6..4f11327 100644
+--- a/node_modules/@babel/generator/lib/generators/typescript.js
++++ b/node_modules/@babel/generator/lib/generators/typescript.js
+@@ -658,6 +658,17 @@ function TSModuleDeclaration(node) {
+     body = body.body;
+   }
+ 
++  // TODO(flow2dts): replace "export declare" to "export" in "declare namespace"
++  if (declare && body.type === "TSModuleBlock" && body.body) {
++    for (let stat of body.body) {
++      if (stat.type === "ExportNamedDeclaration") {
++        if (stat.declaration.declare) {
++          stat.declaration.declare = false
++        }
++      }
++    }
++  }
++
+   this.space();
+   this.print(body, node);
+ }
