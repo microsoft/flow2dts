@@ -1,4 +1,4 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $TypeOf, React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
 // @flow
 import * as React from "react";
 declare type Context = {

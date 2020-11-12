@@ -1,3 +1,4 @@
+import { Stringish } from "flow2dts-flow-types-polyfill";
 // @flow
 import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
 import { SyntheticEvent } from "../../Types/CoreEventTypes";

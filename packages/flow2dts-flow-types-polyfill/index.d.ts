@@ -1,9 +1,32 @@
+import PropTypes from "prop-types"
+
+/******************************************************************************
+ * React Native types
+ *****************************************************************************/
+
 /**
- * Equivalent of `keyof T`
- *
- * @see {https://flow.org/en/docs/types/utilities/#toc-keys}
+ * @see https://github.com/facebook/react-native/blob/master/flow/Stringish.js
  */
-export type $Keys<T> = keyof T
+export type Stringish = string
+
+/******************************************************************************
+ * Flow types
+ *****************************************************************************/
+
+/**
+ * @see https://github.com/facebook/flow/blob/41b0eab99cdc5199421f7cccad9e0c4950f8b2f9/tests/any/flowfixme.js
+ */
+export type $FlowFixMe = any
+export type $FlowFixMeProps = any
+
+/**
+ * @see https://github.com/facebook/flow/blob/caf3d8af63b5df37227fd16b22c806966c8596f2/tests/react_proptypes/test.js
+ */
+export type React$PropType$Primitive<T> = PropTypes.Requireable<T>
+
+/******************************************************************************
+ * flow2dts types
+ *****************************************************************************/
 
 /**
  * This is not an existing Flow type, but instead a helper to wrap any `typeof` uasge with. TypeScript treats a class
@@ -17,12 +40,6 @@ export type $Keys<T> = keyof T
  *   type Foo$Type = $TypeOf<typeof Foo>
  */
 export type $TypeOf<T> = T extends { new (...args: any): any } ? InstanceType<T> : T
-
-/**
- * ReactNative specific types that are used as sentinals
- */
-export type $FlowFixMe = any
-export type $FlowFixMeProps = any
 
 /**
  * TODO: These should be re-enabled as we continue work on flow2dts
@@ -72,9 +89,6 @@ export type $FlowFixMeProps = any;
 export type $FlowFixMeState = any;
 export type $FlowFixMeEmpty = any;
 export type Stringish = string;
-
-// TODO: These are actually prop-types types
-export type React$PropType$Primitive<T> = PropTypes.Requireable<T>
 
 type UniqueBranding = { " Thou shalt ignore this here prop or risketh a runtime mad as a bag of ferrets."?: never };
 // TESTS:

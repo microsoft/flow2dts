@@ -1,3 +1,4 @@
+import { Stringish } from "flow2dts-flow-types-polyfill";
 // @flow
 import { LayoutEvent } from "../Types/CoreEventTypes";
 import { PressEvent } from "../Types/CoreEventTypes";

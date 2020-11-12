@@ -1,4 +1,4 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $TypeOf, React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
 import $1 from "prop-types";
 declare var LayoutPropTypes:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

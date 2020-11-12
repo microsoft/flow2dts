@@ -1,4 +1,4 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $TypeOf, Stringish } from "flow2dts-flow-types-polyfill";
 import { $Diff } from "utility-types";
 import $1 from "../../DeprecatedPropTypes/DeprecatedTextInputPropTypes";
 import $2 from "react";

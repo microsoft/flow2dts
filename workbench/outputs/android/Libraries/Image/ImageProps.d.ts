@@ -1,3 +1,4 @@
+import { Stringish } from "flow2dts-flow-types-polyfill";
 import { $Diff } from "utility-types";
 // @flow
 import { SyntheticEvent } from "../Types/CoreEventTypes";

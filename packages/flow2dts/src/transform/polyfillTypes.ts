@@ -1,7 +1,7 @@
 import { types as t } from "@babel/core"
 
 const BRIDGING_TYPES = ["$TypeOf"] as const
-const FLOW_UTILITY_TYPES_LOCAL = ["$FlowFixMe", "$FlowFixMeProps"] as const
+const FLOW_UTILITY_TYPES_LOCAL = ["$FlowFixMe", "$FlowFixMeProps", "React$PropType$Primitive", "Stringish"] as const
 const FLOW_UTILITY_TYPES_UPSTREAM = [
   "$Call",
   "$Diff",

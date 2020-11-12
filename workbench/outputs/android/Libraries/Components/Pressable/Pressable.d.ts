@@ -1,3 +1,4 @@
+import { Stringish } from "flow2dts-flow-types-polyfill";
 import { $ElementType } from "utility-types";
 // @flow
 import * as React from "react";

@@ -1,4 +1,4 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $TypeOf, Stringish } from "flow2dts-flow-types-polyfill";
 import $2 from "react";
 import { TextStyleProp } from "../../StyleSheet/StyleSheet";
 import { ColorValue } from "../../StyleSheet/StyleSheet";
