@@ -11,6 +11,7 @@ declare namespace $f2tExportDefaultRedirect {
   export declare const $f2tHidden_showErrorDialog: $TypeOf<typeof showErrorDialog>;
 }
 declare namespace $f2tExportDefault {
-  export declare const showErrorDialog: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_showErrorDialog>;
+  export declare const showErrorDialog: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_showErrorDialog>;
+  export type showErrorDialog = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_showErrorDialog>;
 }
 export default $f2tExportDefault;

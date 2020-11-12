@@ -7,7 +7,9 @@ declare namespace $f2tExportDefaultRedirect {
   export declare const $f2tHidden_polyfillGlobal: $TypeOf<typeof polyfillGlobal>;
 }
 declare namespace $f2tExportDefault {
-  export declare const polyfillObjectProperty: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_polyfillObjectProperty>;
-  export declare const polyfillGlobal: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_polyfillGlobal>;
+  export declare const polyfillObjectProperty: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_polyfillObjectProperty>;
+  export type polyfillObjectProperty = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_polyfillObjectProperty>;
+  export declare const polyfillGlobal: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_polyfillGlobal>;
+  export type polyfillGlobal = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_polyfillGlobal>;
 }
 export default $f2tExportDefault;

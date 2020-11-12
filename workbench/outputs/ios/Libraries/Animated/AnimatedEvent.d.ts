@@ -26,7 +26,9 @@ declare namespace $f2tExportDefaultRedirect {
   export declare const $f2tHidden_attachNativeEvent: $TypeOf<typeof attachNativeEvent>;
 }
 declare namespace $f2tExportDefault {
-  export declare const AnimatedEvent: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_AnimatedEvent>;
-  export declare const attachNativeEvent: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_attachNativeEvent>;
+  export declare const AnimatedEvent: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_AnimatedEvent>;
+  export type AnimatedEvent = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_AnimatedEvent>;
+  export declare const attachNativeEvent: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_attachNativeEvent>;
+  export type attachNativeEvent = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_attachNativeEvent>;
 }
 export default $f2tExportDefault;

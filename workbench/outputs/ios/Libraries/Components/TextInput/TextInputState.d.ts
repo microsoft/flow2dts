@@ -27,16 +27,27 @@ declare namespace $f2tExportDefaultRedirect {
   export declare const $f2tHidden_isTextInput: $TypeOf<typeof isTextInput>;
 }
 declare namespace $f2tExportDefault {
-  export declare const currentlyFocusedInput: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_currentlyFocusedInput>;
-  export declare const focusInput: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_focusInput>;
-  export declare const blurInput: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_blurInput>;
-  export declare const currentlyFocusedField: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_currentlyFocusedField>;
-  export declare const focusField: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_focusField>;
-  export declare const blurField: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_blurField>;
-  export declare const focusTextInput: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_focusTextInput>;
-  export declare const blurTextInput: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_blurTextInput>;
-  export declare const registerInput: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_registerInput>;
-  export declare const unregisterInput: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_unregisterInput>;
-  export declare const isTextInput: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_isTextInput>;
+  export declare const currentlyFocusedInput: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_currentlyFocusedInput>;
+  export type currentlyFocusedInput = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_currentlyFocusedInput>;
+  export declare const focusInput: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_focusInput>;
+  export type focusInput = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_focusInput>;
+  export declare const blurInput: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_blurInput>;
+  export type blurInput = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_blurInput>;
+  export declare const currentlyFocusedField: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_currentlyFocusedField>;
+  export type currentlyFocusedField = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_currentlyFocusedField>;
+  export declare const focusField: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_focusField>;
+  export type focusField = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_focusField>;
+  export declare const blurField: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_blurField>;
+  export type blurField = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_blurField>;
+  export declare const focusTextInput: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_focusTextInput>;
+  export type focusTextInput = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_focusTextInput>;
+  export declare const blurTextInput: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_blurTextInput>;
+  export type blurTextInput = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_blurTextInput>;
+  export declare const registerInput: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_registerInput>;
+  export type registerInput = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_registerInput>;
+  export declare const unregisterInput: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_unregisterInput>;
+  export type unregisterInput = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_unregisterInput>;
+  export declare const isTextInput: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_isTextInput>;
+  export type isTextInput = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_isTextInput>;
 }
 export default $f2tExportDefault;
