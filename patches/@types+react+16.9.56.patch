@@ -1,17 +1,21 @@
 diff --git a/node_modules/@types/react/index.d.ts b/node_modules/@types/react/index.d.ts
-index 3289c78..ff7ec8d 100644
+index 3289c78..afa37c9 100644
 --- a/node_modules/@types/react/index.d.ts
 +++ b/node_modules/@types/react/index.d.ts
-@@ -66,7 +66,67 @@ export = React;
+@@ -65,8 +65,71 @@ interface SchedulerInteraction {
+ export = React;
  export as namespace React;
  
- declare namespace React {
-+    /**************************************************************************
-+     * flow2dts START
-+    **************************************************************************/
++/******************************************************************************
++ * flow2dts START
++*** **************************************************************************/
 +
++// FIXME: The dependents of this type start failing when we introduce React.Element.
++type _DOM_Element = Element;
++
+ declare namespace React {
 +    type Node = ReactNode
-+    type Element = ReactElement
++    type Element<P> = ReactElement<P>
 +
 +    // Taken from https://github.com/DefinitelyTyped/DefinitelyTyped/blob/f47f8eeea9e4691ebe5e93db524c3f645de10546/types/react-with-styles/index.d.ts#L43-L50
 +    type _ComponentClassProps<C> = C extends new (props: infer P, context?: any) => any ? P : never;
@@ -46,11 +50,11 @@ index 3289c78..ff7ec8d 100644
 +    //         return true
 +    //     }
 +    // }
-     //
++    //
 +    // const FBA: AbstractComponent<{ foo: string }> = FB;
 +    // // const FBA: AbstractComponent<{ foo: string }, void> = FB;
 +    // // const FBA: AbstractComponent<{ foo: string }, number> = FB; // Error
-+    // const fba = <FBA foo="bar" />;
++    // const fba = <FBA foo="bar" 
 +    // // const fba = <FBA />; // Error, missing
 +    // // const fba = <FBA foo={42} />; // Error, number is not string
 +    //
@@ -58,7 +62,7 @@ index 3289c78..ff7ec8d 100644
 +    // // const CBA: AbstractComponent<{ foo: string }, { someMethod: () => boolean }> = class { someMethod = () => true }; // Error, missing component methods (ComponentMethods)
 +    // // const CBA: AbstractComponent<{ foo: string }, { someMethod: () => boolean }> = class extends React.Component<{ foo: string }> { }; // Error, missing someMethod
 +    // // const CBA: AbstractComponent<{ foo: string }, { someMethod: () => boolean }> = class extends React.Component<{ foo: string }> { someMethod = () => 42 }; // Error, someMethod's return type is not boolean
-+    //
+     //
 +    // const cba = <CBA foo="bar" />
 +    // // const cba = <CBA /> // Error, missing
 +    // // const cba = <CBA foo={42} /> // Error, number is not string
@@ -70,3 +74,204 @@ index 3289c78..ff7ec8d 100644
      // React Elements
      // ----------------------------------------------------------------------
  
+@@ -171,7 +234,7 @@ declare namespace React {
+     type ClassicElement<P> = CElement<P, ClassicComponent<P, ComponentState>>;
+ 
+     // string fallback for custom web-components
+-    interface DOMElement<P extends HTMLAttributes<T> | SVGAttributes<T>, T extends Element> extends ReactElement<P, string> {
++    interface DOMElement<P extends HTMLAttributes<T> | SVGAttributes<T>, T extends _DOM_Element> extends ReactElement<P, string> {
+         ref: LegacyRef<T>;
+     }
+ 
+@@ -211,7 +274,7 @@ declare namespace React {
+     type CFactory<P, T extends Component<P, ComponentState>> = ComponentFactory<P, T>;
+     type ClassicFactory<P> = CFactory<P, ClassicComponent<P, ComponentState>>;
+ 
+-    type DOMFactory<P extends DOMAttributes<T>, T extends Element> =
++    type DOMFactory<P extends DOMAttributes<T>, T extends _DOM_Element> =
+         (props?: ClassAttributes<T> & P | null, ...children: ReactNode[]) => DOMElement<P, T>;
+ 
+     interface HTMLFactory<T extends HTMLElement> extends DetailedHTMLFactory<AllHTMLAttributes<T>, T> {}
+@@ -245,10 +308,10 @@ declare namespace React {
+         type: keyof ReactHTML): HTMLFactory<T>;
+     function createFactory(
+         type: keyof ReactSVG): SVGFactory;
+-    function createFactory<P extends DOMAttributes<T>, T extends Element>(
++    function createFactory<P extends DOMAttributes<T>, T extends _DOM_Element>(
+         type: string): DOMFactory<P, T>;
+ 
+-    // Custom components
++    // Custom component
+     function createFactory<P>(type: FunctionComponent<P>): FunctionComponentFactory<P>;
+     function createFactory<P>(
+         type: ClassType<P, ClassicComponent<P, ComponentState>, ClassicComponentClass<P>>): CFactory<P, ClassicComponent<P, ComponentState>>;
+@@ -270,7 +333,7 @@ declare namespace React {
+         type: keyof ReactSVG,
+         props?: ClassAttributes<T> & P | null,
+         ...children: ReactNode[]): ReactSVGElement;
+-    function createElement<P extends DOMAttributes<T>, T extends Element>(
++    function createElement<P extends DOMAttributes<T>, T extends _DOM_Element>(
+         type: string,
+         props?: ClassAttributes<T> & P | null,
+         ...children: ReactNode[]): DOMElement<P, T>;
+@@ -311,7 +374,7 @@ declare namespace React {
+         props?: P,
+         ...children: ReactNode[]): ReactSVGElement;
+     // DOM Element (has to be the last, because type checking stops at first overload that fits)
+-    function cloneElement<P extends DOMAttributes<T>, T extends Element>(
++    function cloneElement<P extends DOMAttributes<T>, T extends _DOM_Element>(
+         element: DOMElement<P, T>,
+         props?: DOMAttributes<T> & P,
+         ...children: ReactNode[]): DOMElement<P, T>;
+@@ -426,7 +489,7 @@ declare namespace React {
+     // Component API
+     // ----------------------------------------------------------------------
+ 
+-    type ReactInstance = Component<any> | Element;
++    type ReactInstance = Component<any> | _DOM_Element;
+ 
+     // Base component for plain JS classes
+     interface Component<P = {}, S = {}, SS = any> extends ComponentLifecycle<P, S, SS> { }
+@@ -1163,21 +1226,21 @@ declare namespace React {
+      * This might be a child element to the element on which the event listener is registered.
+      * If you thought this should be `EventTarget & T`, see https://github.com/DefinitelyTyped/DefinitelyTyped/issues/11508#issuecomment-256045682
+      */
+-    interface SyntheticEvent<T = Element, E = Event> extends BaseSyntheticEvent<E, EventTarget & T, EventTarget> {}
++    interface SyntheticEvent<T = _DOM_Element, E = Event> extends BaseSyntheticEvent<E, EventTarget & T, EventTarget> {}
+ 
+-    interface ClipboardEvent<T = Element> extends SyntheticEvent<T, NativeClipboardEvent> {
++    interface ClipboardEvent<T = _DOM_Element> extends SyntheticEvent<T, NativeClipboardEvent> {
+         clipboardData: DataTransfer;
+     }
+ 
+-    interface CompositionEvent<T = Element> extends SyntheticEvent<T, NativeCompositionEvent> {
++    interface CompositionEvent<T = _DOM_Element> extends SyntheticEvent<T, NativeCompositionEvent> {
+         data: string;
+     }
+ 
+-    interface DragEvent<T = Element> extends MouseEvent<T, NativeDragEvent> {
++    interface DragEvent<T = _DOM_Element> extends MouseEvent<T, NativeDragEvent> {
+         dataTransfer: DataTransfer;
+     }
+ 
+-    interface PointerEvent<T = Element> extends MouseEvent<T, NativePointerEvent> {
++    interface PointerEvent<T = _DOM_Element> extends MouseEvent<T, NativePointerEvent> {
+         pointerId: number;
+         pressure: number;
+         tangentialPressure: number;
+@@ -1190,23 +1253,23 @@ declare namespace React {
+         isPrimary: boolean;
+     }
+ 
+-    interface FocusEvent<T = Element> extends SyntheticEvent<T, NativeFocusEvent> {
++    interface FocusEvent<T = _DOM_Element> extends SyntheticEvent<T, NativeFocusEvent> {
+         relatedTarget: EventTarget | null;
+         target: EventTarget & T;
+     }
+ 
+-    interface FormEvent<T = Element> extends SyntheticEvent<T> {
++    interface FormEvent<T = _DOM_Element> extends SyntheticEvent<T> {
+     }
+ 
+-    interface InvalidEvent<T = Element> extends SyntheticEvent<T> {
++    interface InvalidEvent<T = _DOM_Element> extends SyntheticEvent<T> {
+         target: EventTarget & T;
+     }
+ 
+-    interface ChangeEvent<T = Element> extends SyntheticEvent<T> {
++    interface ChangeEvent<T = _DOM_Element> extends SyntheticEvent<T> {
+         target: EventTarget & T;
+     }
+ 
+-    interface KeyboardEvent<T = Element> extends SyntheticEvent<T, NativeKeyboardEvent> {
++    interface KeyboardEvent<T = _DOM_Element> extends SyntheticEvent<T, NativeKeyboardEvent> {
+         altKey: boolean;
+         /** @deprecated */
+         charCode: number;
+@@ -1230,7 +1293,7 @@ declare namespace React {
+         which: number;
+     }
+ 
+-    interface MouseEvent<T = Element, E = NativeMouseEvent> extends UIEvent<T, E> {
++    interface MouseEvent<T = _DOM_Element, E = NativeMouseEvent> extends UIEvent<T, E> {
+         altKey: boolean;
+         button: number;
+         buttons: number;
+@@ -1252,7 +1315,7 @@ declare namespace React {
+         shiftKey: boolean;
+     }
+ 
+-    interface TouchEvent<T = Element> extends UIEvent<T, NativeTouchEvent> {
++    interface TouchEvent<T = _DOM_Element> extends UIEvent<T, NativeTouchEvent> {
+         altKey: boolean;
+         changedTouches: TouchList;
+         ctrlKey: boolean;
+@@ -1266,25 +1329,25 @@ declare namespace React {
+         touches: TouchList;
+     }
+ 
+-    interface UIEvent<T = Element, E = NativeUIEvent> extends SyntheticEvent<T, E> {
++    interface UIEvent<T = _DOM_Element, E = NativeUIEvent> extends SyntheticEvent<T, E> {
+         detail: number;
+         view: AbstractView;
+     }
+ 
+-    interface WheelEvent<T = Element> extends MouseEvent<T, NativeWheelEvent> {
++    interface WheelEvent<T = _DOM_Element> extends MouseEvent<T, NativeWheelEvent> {
+         deltaMode: number;
+         deltaX: number;
+         deltaY: number;
+         deltaZ: number;
+     }
+ 
+-    interface AnimationEvent<T = Element> extends SyntheticEvent<T, NativeAnimationEvent> {
++    interface AnimationEvent<T = _DOM_Element> extends SyntheticEvent<T, NativeAnimationEvent> {
+         animationName: string;
+         elapsedTime: number;
+         pseudoElement: string;
+     }
+ 
+-    interface TransitionEvent<T = Element> extends SyntheticEvent<T, NativeTransitionEvent> {
++    interface TransitionEvent<T = _DOM_Element> extends SyntheticEvent<T, NativeTransitionEvent> {
+         elapsedTime: number;
+         propertyName: string;
+         pseudoElement: string;
+@@ -1296,22 +1359,22 @@ declare namespace React {
+ 
+     type EventHandler<E extends SyntheticEvent<any>> = { bivarianceHack(event: E): void }["bivarianceHack"];
+ 
+-    type ReactEventHandler<T = Element> = EventHandler<SyntheticEvent<T>>;
+-
+-    type ClipboardEventHandler<T = Element> = EventHandler<ClipboardEvent<T>>;
+-    type CompositionEventHandler<T = Element> = EventHandler<CompositionEvent<T>>;
+-    type DragEventHandler<T = Element> = EventHandler<DragEvent<T>>;
+-    type FocusEventHandler<T = Element> = EventHandler<FocusEvent<T>>;
+-    type FormEventHandler<T = Element> = EventHandler<FormEvent<T>>;
+-    type ChangeEventHandler<T = Element> = EventHandler<ChangeEvent<T>>;
+-    type KeyboardEventHandler<T = Element> = EventHandler<KeyboardEvent<T>>;
+-    type MouseEventHandler<T = Element> = EventHandler<MouseEvent<T>>;
+-    type TouchEventHandler<T = Element> = EventHandler<TouchEvent<T>>;
+-    type PointerEventHandler<T = Element> = EventHandler<PointerEvent<T>>;
+-    type UIEventHandler<T = Element> = EventHandler<UIEvent<T>>;
+-    type WheelEventHandler<T = Element> = EventHandler<WheelEvent<T>>;
+-    type AnimationEventHandler<T = Element> = EventHandler<AnimationEvent<T>>;
+-    type TransitionEventHandler<T = Element> = EventHandler<TransitionEvent<T>>;
++    type ReactEventHandler<T = _DOM_Element> = EventHandler<SyntheticEvent<T>>;
++
++    type ClipboardEventHandler<T = _DOM_Element> = EventHandler<ClipboardEvent<T>>;
++    type CompositionEventHandler<T = _DOM_Element> = EventHandler<CompositionEvent<T>>;
++    type DragEventHandler<T = _DOM_Element> = EventHandler<DragEvent<T>>;
++    type FocusEventHandler<T = _DOM_Element> = EventHandler<FocusEvent<T>>;
++    type FormEventHandler<T = _DOM_Element> = EventHandler<FormEvent<T>>;
++    type ChangeEventHandler<T = _DOM_Element> = EventHandler<ChangeEvent<T>>;
++    type KeyboardEventHandler<T = _DOM_Element> = EventHandler<KeyboardEvent<T>>;
++    type MouseEventHandler<T = _DOM_Element> = EventHandler<MouseEvent<T>>;
++    type TouchEventHandler<T = _DOM_Element> = EventHandler<TouchEvent<T>>;
++    type PointerEventHandler<T = _DOM_Element> = EventHandler<PointerEvent<T>>;
++    type UIEventHandler<T = _DOM_Element> = EventHandler<UIEvent<T>>;
++    type WheelEventHandler<T = _DOM_Element> = EventHandler<WheelEvent<T>>;
++    type AnimationEventHandler<T = _DOM_Element> = EventHandler<AnimationEvent<T>>;
++    type TransitionEventHandler<T = _DOM_Element> = EventHandler<TransitionEvent<T>>;
+ 
+     //
+     // Props / DOM Attributes
