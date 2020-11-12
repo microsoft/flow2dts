@@ -3,7 +3,7 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import NativeUIManager from "./NativeUIManager";
 declare var UIManagerJS:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$TypeOf<typeof NativeUIManager> & {
+typeof NativeUIManager & {
   getConstants: () => Object;
   getViewManagerConfig: (viewManagerName: string) => any;
 };

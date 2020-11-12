@@ -29,7 +29,7 @@ declare class WebSocket extends $1 {
   binaryType(): null | undefined | BinaryType;
   binaryType(binaryType: BinaryType): void;
   close(code?: number, reason?: string): void;
-  send(data: string | ArrayBuffer | ArrayBufferView | Blob): void;
+  send(data: string | ArrayBuffer | ArrayBufferView | typeof Blob): void;
   ping(): void;
 }
 declare var $1: any;

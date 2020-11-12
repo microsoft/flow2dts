@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $ElementType } from "utility-types";
 // @flow
 import * as React from "react";
@@ -12,7 +11,7 @@ import { RectOrSize } from "../../StyleSheet/Rect";
 import { LayoutEvent } from "../../Types/CoreEventTypes";
 import { PressEvent } from "../../Types/CoreEventTypes";
 import View from "../View/View";
-declare type ViewStyleProp = $ElementType<React.ElementConfig<$TypeOf<typeof View>>, "style">;
+declare type ViewStyleProp = $ElementType<React.ElementConfig<typeof View>, "style">;
 declare type StateCallbackType = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
@@ -123,5 +122,5 @@ declare type Props = Readonly<
   unstable_pressDelay?: null | undefined | number;
 }>;
 export type { StateCallbackType };
-declare const $f2tExportDefault: React.AbstractComponent<Props, React.ElementRef<$TypeOf<typeof View>>>;
+declare const $f2tExportDefault: React.AbstractComponent<Props, React.ElementRef<typeof View>>;
 export default $f2tExportDefault;
