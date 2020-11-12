@@ -11,3 +11,4 @@ declare namespace $f2tExportDefault {
   export const Bar: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_Bar>
   export type Bar = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_Bar>
 }
+export default $f2tExportDefault
