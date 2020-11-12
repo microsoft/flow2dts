@@ -9,19 +9,19 @@ declare function unstable_setExceptionDecorator(exceptionDecorator: null | undef
 declare function handleException(e: unknown, isFatal: boolean): void;
 declare function installConsoleErrorReporter(): void;
 declare namespace $f2tExportDefaultRedirect {
-  export declare const $f2tHidden_handleException: $TypeOf<typeof handleException>;
-  export declare const $f2tHidden_installConsoleErrorReporter: $TypeOf<typeof installConsoleErrorReporter>;
-  export declare const $f2tHidden_SyntheticError: $TypeOf<typeof SyntheticError>;
-  export declare const $f2tHidden_unstable_setExceptionDecorator: $TypeOf<typeof unstable_setExceptionDecorator>;
+  export const $f2tHidden_handleException: $TypeOf<typeof handleException>;
+  export const $f2tHidden_installConsoleErrorReporter: $TypeOf<typeof installConsoleErrorReporter>;
+  export const $f2tHidden_SyntheticError: $TypeOf<typeof SyntheticError>;
+  export const $f2tHidden_unstable_setExceptionDecorator: $TypeOf<typeof unstable_setExceptionDecorator>;
 }
 declare namespace $f2tExportDefault {
-  export declare const handleException: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_handleException>;
+  export const handleException: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_handleException>;
   export type handleException = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_handleException>;
-  export declare const installConsoleErrorReporter: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_installConsoleErrorReporter>;
+  export const installConsoleErrorReporter: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_installConsoleErrorReporter>;
   export type installConsoleErrorReporter = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_installConsoleErrorReporter>;
-  export declare const SyntheticError: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_SyntheticError>;
+  export const SyntheticError: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_SyntheticError>;
   export type SyntheticError = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_SyntheticError>;
-  export declare const unstable_setExceptionDecorator: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_unstable_setExceptionDecorator>;
+  export const unstable_setExceptionDecorator: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_unstable_setExceptionDecorator>;
   export type unstable_setExceptionDecorator = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_unstable_setExceptionDecorator>;
 }
 export default $f2tExportDefault;
