@@ -2,7 +2,8 @@
   "private": true,
   "name": "flow2dts-monorepo",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "workbench"
   ],
   "scripts": {
     "test": "yarn workspace flow2dts-flow-types-polyfill test && yarn workspace flow2dts test",
@@ -19,8 +20,8 @@
     "postinstall": "patch-package"
   },
   "devDependencies": {
-    "rimraf": "^3.0.2",
     "patch-package": "^6.2.2",
-    "prettier": "^2.1.2"
+    "prettier": "^2.1.2",
+    "rimraf": "^3.0.2"
   }
 }
