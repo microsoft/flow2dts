@@ -21,16 +21,12 @@ function convertToNamespace(decl: t.TSType): [string, t.TSTypeReference][] | und
   })
 }
 
-function makeRedirection(name: string): t.TSTypeAnnotation {
-  return t.tsTypeAnnotation(
-    t.tsTypeReference(
-      t.identifier("$TypeOf"),
-      t.tsTypeParameterInstantiation([
-        t.tsTypeReference(
-          t.tsQualifiedName(t.identifier(nameForExportDefaultRedirect), t.identifier(nameForHidden(name)))
-        ),
-      ])
-    )
+function makeRedirection(name: string): t.TSType {
+  return t.tsTypeReference(
+    t.identifier("$TypeOf"),
+    t.tsTypeParameterInstantiation([
+      t.tsTypeQuery(t.tsQualifiedName(t.identifier(nameForExportDefaultRedirect), t.identifier(nameForHidden(name)))),
+    ])
   )
 }
 
@@ -53,16 +49,16 @@ export const exportVisitor: Visitor<State> = {
           )
 
           const varField = t.identifier(name)
-          varField.typeAnnotation = makeRedirection(name)
+          varField.typeAnnotation = t.tsTypeAnnotation(makeRedirection(name))
           const exportField = t.exportNamedDeclaration(t.variableDeclaration("const", [t.variableDeclarator(varField)]))
 
-          const varType = t.identifier(name)
-          varType.typeAnnotation = makeRedirection(name)
-          const exportType = t.exportNamedDeclaration(t.variableDeclaration("const", [t.variableDeclarator(varType)]))
+          const exportType = t.exportNamedDeclaration(
+            t.tsTypeAliasDeclaration(t.identifier(name), null, makeRedirection(name))
+          )
 
           statRedirect.push(exportHidden)
           statDefault.push(exportField)
-          // statDefault.push(exportType)
+          statDefault.push(exportType)
         }
 
         const nssRedirect = t.tsModuleDeclaration(
