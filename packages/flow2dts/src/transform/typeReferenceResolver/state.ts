@@ -9,7 +9,7 @@ export interface ReferenceRecord {
 
 export interface RecognizedTypeReferences {
   records: { [key: string]: ReferenceRecord }
-  imports: { [key: string]: t.VariableDeclarator }
+  imports: { [key: string]: t.VariableDeclarator | t.ImportDeclaration }
 }
 
 export function isRecognized(typeReferences: RecognizedTypeReferences, variable: t.DeclareVariable): boolean {
@@ -111,8 +111,30 @@ export function resolveGenericTypeAnnotation<T>(
   path: NodePath<T>,
   flowType: t.GenericTypeAnnotation
 ): t.TSTypeReference | t.TSTypeQuery | undefined {
-  const entity = resolveQualifiedTypeIdentifier(typeReferences, path, flowType.id)
-  if (!entity) return undefined
+  let entity = resolveQualifiedTypeIdentifier(typeReferences, path, flowType.id)
+
+  if (!entity) {
+    /*
+     when flowType references an "import x" or ""import * as x",
+     typeof is necessary to turn x into a TypeScript type
+     */
+    if (flowType.id.type === "Identifier") {
+      const binding = path.scope.getBinding(flowType.id.name)
+      if (binding) {
+        switch (binding.path.node.type) {
+          case "ImportDefaultSpecifier":
+          case "ImportNamespaceSpecifier": {
+            entity = t.identifier(flowType.id.name)
+            break
+          }
+        }
+      }
+    }
+  }
+
+  if (!entity) {
+    return undefined
+  }
 
   let tsParams: t.TSTypeParameterInstantiation | undefined
   if (flowType.typeParameters) {

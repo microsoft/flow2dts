@@ -47,4 +47,19 @@ export const typeReferenceRecognizerVisitor: Visitor<State> = {
       }
     },
   },
+  ImportDeclaration: {
+    enter(path, state) {
+      if (path.node.importKind === "value") {
+        for (const specifier of path.node.specifiers) {
+          if (specifier.type === "ImportDefaultSpecifier" || specifier.type === "ImportNamespaceSpecifier") {
+            const name = specifier.local.name
+            if (state.typeReferences.imports[name]) {
+              throw new Error(`Found duplicated import in module: ${name}`)
+            }
+            state.typeReferences.imports[name] = path.node
+          }
+        }
+      }
+    },
+  },
 }
