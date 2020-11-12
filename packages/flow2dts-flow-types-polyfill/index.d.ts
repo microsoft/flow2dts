@@ -20,9 +20,63 @@ export type $FlowFixMe = any
 export type $FlowFixMeProps = any
 
 /**
+ * @see https://github.com/facebook/flow/blob/master/lib/core.js
+ */
+export type $ArrayBufferView = TypedArray | DataView
+type TypedArray =
+  | Int8Array
+  | Uint8Array
+  | Int16Array
+  | Uint16Array
+  | Int32Array
+  | Uint32Array
+  | Uint8ClampedArray
+  | Float32Array
+  | Float64Array
+
+/**
  * @see https://github.com/facebook/flow/blob/caf3d8af63b5df37227fd16b22c806966c8596f2/tests/react_proptypes/test.js
  */
 export type React$PropType$Primitive<T> = PropTypes.Requireable<T>
+
+/**
+ * @see https://github.com/facebook/flow/blob/887103710b5e5ca5c2acc6af8adbf6d79d9cbc7b/lib/react.js#L458-L462
+ */
+export type ReactPropsCheckType = (
+  props: any,
+  propName: string,
+  componentName: string,
+  href?: string
+) => Error | null | undefined
+
+/**
+ * @see https://github.com/facebook/flow/blob/887103710b5e5ca5c2acc6af8adbf6d79d9cbc7b/lib/react.js#L464-L468
+ */
+export type ReactPropsChainableTypeChecker = {
+  (props: any, propName: string, componentName: string, href?: string): Error | undefined | null
+  isRequired: ReactPropsCheckType
+}
+
+/**
+ * @see https://github.com/facebook/flow/blob/887103710b5e5ca5c2acc6af8adbf6d79d9cbc7b/lib/react.js#L174-L183
+ *
+ * @todo Check if the React type actually lines up well.
+ */
+export type React$Element<T> = React.ElementType<T>
+
+/**
+ * @see https://github.com/facebook/flow/blob/887103710b5e5ca5c2acc6af8adbf6d79d9cbc7b/lib/react.js#L152-L160
+ *
+ * @todo The React TS type probably doesn't actually use the concept of `AbstractComponent` yet.
+ */
+export type React$ComponentType<T> = React.ComponentType<T>
+
+/**
+ * @see https://github.com/facebook/flow/blob/887103710b5e5ca5c2acc6af8adbf6d79d9cbc7b/lib/react.js#L201-L215
+ *
+ * @todo Check if the React type actually lines up well.
+ */
+export type React$Context<T> = React.Context<T>
 
 /******************************************************************************
  * flow2dts types
@@ -57,27 +111,12 @@ export type $TEMPORARY$string<T extends string> = T;
 export type $TEMPORARY$array<T extends any[]> = T;
 
 // https://github.com/facebook/flow/blob/master/lib/core.js
-type TypedArray = Int8Array | Uint8Array | Int16Array | Uint16Array | Int32Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array;
-export type $ArrayBufferView = TypedArray | DataView;
 export type TimeoutID = number;
 
 // https://github.com/facebook/flow/blob/master/lib/react.js
-export type React$Context<T> = React.Context<T>;
 // TODO: These should become React.AbstractComponent based
 export type React$Node = React.ReactNode;
-export type React$Element<T> = React.ElementType<T>;
 export type React$Component<P = {}, S = {}> = React.Component<P, S>;
-export type React$ComponentType<T> = React.ComponentType<T>;
-export type ReactPropsCheckType = (
-    props: any,
-    propName: string,
-    componentName: string,
-    href?: string
-) => Error | null | undefined;
-export type ReactPropsChainableTypeChecker = {
-    (props: any, propName: string, componentName: string, href?: string): Error | undefined | null,
-    isRequired: ReactPropsCheckType,
-};
 
 // TODO: These are actually Flow's utility types
 export type $Exact<T extends object> = T;

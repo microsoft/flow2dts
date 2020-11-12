@@ -1,4 +1,4 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $TypeOf, ReactPropsChainableTypeChecker, ReactPropsCheckType } from "flow2dts-flow-types-polyfill";
 // @flow
 declare function deprecatedCreateStrictShapeTypeChecker(shapeTypes: {
   [key: string]: ReactPropsCheckType;
