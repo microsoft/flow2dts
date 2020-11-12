@@ -34,3 +34,5 @@ declare var FakeReact: typeof $fakeReact
 const $fakeReact = require("fake-react")
 
 type something = FakeReact.AbstractComponent<number>
+type otherthing1 = FakeReact
+type otherthing2 = React
