@@ -282,7 +282,7 @@ declare type OptionalProps =
 };
 declare type Props =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-React.ElementConfig<$1> & RequiredProps & OptionalProps & {};
+React.ElementConfig<typeof $1> & RequiredProps & OptionalProps & {};
 declare type DefaultProps =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
@@ -345,7 +345,7 @@ declare class VirtualizedList extends React.PureComponent<Props, State> {
    */
   getScrollResponder(): null | undefined | ScrollResponderType;
   getScrollableNode(): null | undefined | number;
-  getScrollRef(): (null | undefined | React.ElementRef<$1>) | (null | undefined | React.ElementRef<$2>);
+  getScrollRef(): (null | undefined | React.ElementRef<typeof $1>) | (null | undefined | React.ElementRef<typeof $2>);
   setNativeProps(props: Object): void;
   defaultProps: DefaultProps;
   hasMore(): boolean;

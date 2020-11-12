@@ -83,7 +83,7 @@ declare type OptionalProps<SectionT extends SectionBase<any>> =
     distanceFromEnd: number;
   }) => void);
 };
-declare type VirtualizedListProps = $1.ElementProps<$2>;
+declare type VirtualizedListProps = $1.ElementProps<typeof $2>;
 declare type Props<SectionT> =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 RequiredProps<SectionT> & OptionalProps<SectionT> & $Diff<VirtualizedListProps, {
@@ -109,7 +109,7 @@ declare type State = {
 declare class VirtualizedSectionList<SectionT extends SectionBase<any>> extends $1.PureComponent<Props<SectionT>, State> {
   defaultProps: DefaultProps;
   scrollToLocation(params: ScrollToLocationParamsType): void;
-  getListRef(): $2;
+  getListRef(): typeof $2;
   constructor(props: Props<SectionT>, context: Object);
   UNSAFE_componentWillReceiveProps(nextProps: Props<SectionT>): void;
   render(): $1.Node;

@@ -12,7 +12,7 @@ declare type InterpolationConfigType = {
 };
 declare class AnimatedInterpolation extends $3 {
   __createInterpolation(config: InterpolationConfigType): (input: number) => number | string;
-  constructor(parent: $2, config: InterpolationConfigType);
+  constructor(parent: typeof $2, config: InterpolationConfigType);
   __makeNative(): void;
   __getValue(): number | string;
   interpolate(config: InterpolationConfigType): AnimatedInterpolation;

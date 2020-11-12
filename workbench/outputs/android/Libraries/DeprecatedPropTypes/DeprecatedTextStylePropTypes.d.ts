@@ -4,8 +4,8 @@ import $2 from "./DeprecatedViewStylePropTypes";
 import $3 from "prop-types";
 declare var DeprecatedTextStylePropTypes:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$2 & {
-  color: $1;
+typeof $2 & {
+  color: typeof $1;
   fontFamily: $3.string;
   fontSize: $3.number;
   fontStyle: React$PropType$Primitive<"normal" | "italic">;
@@ -22,7 +22,7 @@ $2 & {
     width?: number;
   }>;
   textShadowRadius: $3.number;
-  textShadowColor: $1;
+  textShadowColor: typeof $1;
 
   /**
    * @platform ios
@@ -58,7 +58,7 @@ $2 & {
   /**
    * @platform ios
    */
-  textDecorationColor: $1;
+  textDecorationColor: typeof $1;
   textTransform: React$PropType$Primitive<"none" | "capitalize" | "uppercase" | "lowercase">;
 
   /**

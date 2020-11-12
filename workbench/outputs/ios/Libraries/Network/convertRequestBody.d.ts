@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "../Blob/Blob";
 import $2 from "./FormData";
-declare type RequestBody = string | $1 | $2 | {
+declare type RequestBody = string | typeof $1 | typeof $2 | {
   uri: string;
 } | ArrayBuffer | $ArrayBufferView;
 declare function convertRequestBody(body: RequestBody): Object;

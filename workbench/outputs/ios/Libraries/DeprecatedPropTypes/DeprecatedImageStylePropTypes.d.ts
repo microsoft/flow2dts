@@ -6,11 +6,11 @@ import $4 from "./DeprecatedTransformPropTypes";
 import $5 from "prop-types";
 declare var ImageStylePropTypes:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$2 & $3 & $4 & {
+typeof $2 & typeof $3 & typeof $4 & {
   resizeMode: React$PropType$Primitive<"center" | "contain" | "cover" | "repeat" | "stretch">;
   backfaceVisibility: React$PropType$Primitive<"visible" | "hidden">;
-  backgroundColor: $1;
-  borderColor: $1;
+  backgroundColor: typeof $1;
+  borderColor: typeof $1;
   borderWidth: $5.number;
   borderRadius: $5.number;
   overflow: React$PropType$Primitive<"visible" | "hidden">;
@@ -18,7 +18,7 @@ $2 & $3 & $4 & {
   /**
    * Changes the color of all the non-transparent pixels to the tintColor.
    */
-  tintColor: $1;
+  tintColor: typeof $1;
   opacity: $5.number;
 
   /**

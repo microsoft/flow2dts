@@ -21,9 +21,9 @@ declare type CompositeAnimation = {
   _startNativeLoop: (iterations?: number) => void;
   _isUsingNativeDriver: () => boolean;
 };
-declare var spring: (value: $7 | $8, config: SpringAnimationConfig) => CompositeAnimation;
-declare var timing: (value: $7 | $8, config: TimingAnimationConfig) => CompositeAnimation;
-declare var decay: (value: $7 | $8, config: DecayAnimationConfig) => CompositeAnimation;
+declare var spring: (value: typeof $7 | typeof $8, config: SpringAnimationConfig) => CompositeAnimation;
+declare var timing: (value: typeof $7 | typeof $8, config: TimingAnimationConfig) => CompositeAnimation;
+declare var decay: (value: typeof $7 | typeof $8, config: DecayAnimationConfig) => CompositeAnimation;
 declare var sequence: (animations: CompositeAnimation[]) => CompositeAnimation;
 declare type ParallelConfig = {
   stopTogether?: boolean;
@@ -41,10 +41,10 @@ export type { CompositeAnimation };
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  Value: $7;
-  ValueXY: $8;
-  Interpolation: $4;
-  Node: $5;
+  Value: typeof $7;
+  ValueXY: typeof $8;
+  Interpolation: typeof $4;
+  Node: typeof $5;
   decay: $TypeOf<typeof decay>;
   timing: $TypeOf<typeof timing>;
   spring: $TypeOf<typeof spring>;
@@ -60,11 +60,11 @@ declare const $f2tExportDefault:
   stagger: $TypeOf<typeof stagger>;
   loop: $TypeOf<typeof loop>;
   event: $TypeOf<typeof event>;
-  createAnimatedComponent: $11;
+  createAnimatedComponent: typeof $11;
   attachNativeEvent: $9.attachNativeEvent;
   forkEvent: $3.forkEvent;
   unforkEvent: $3.unforkEvent;
   Event: $1.AnimatedEvent;
-  __PropsOnlyForTests: $6;
+  __PropsOnlyForTests: typeof $6;
 };
 export default $f2tExportDefault;

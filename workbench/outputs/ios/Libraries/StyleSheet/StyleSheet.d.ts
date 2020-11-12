@@ -135,7 +135,7 @@ declare const $f2tExportDefault:
    * their respective objects, merged as one and then returned. This also explains
    * the alternative use.
    */
-  flatten: $1;
+  flatten: typeof $1;
 
   /**
    * WARNING: EXPERIMENTAL. Breaking changes will probably happen a lot and will

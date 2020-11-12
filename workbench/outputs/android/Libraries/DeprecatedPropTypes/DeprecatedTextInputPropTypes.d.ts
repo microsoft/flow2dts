@@ -4,7 +4,7 @@ import $3 from "prop-types";
 import $4 from "../Text/Text";
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$2 & {
+typeof $2 & {
   /**
    * Can tell `TextInput` to automatically capitalize certain characters.
    *
@@ -278,7 +278,7 @@ $2 & {
   /**
    * The text color of the placeholder string.
    */
-  placeholderTextColor: $1;
+  placeholderTextColor: typeof $1;
 
   /**
    * If `false`, scrolling of the text view will be disabled.
@@ -296,7 +296,7 @@ $2 & {
   /**
    * The highlight and cursor color of the text input.
    */
-  selectionColor: $1;
+  selectionColor: typeof $1;
 
   /**
    * The start and end of the text input's selection. Set start and end to
@@ -376,7 +376,7 @@ $2 & {
    * The color of the `TextInput` underline.
    * @platform android
    */
-  underlineColorAndroid: $1;
+  underlineColorAndroid: typeof $1;
 
   /**
    * If defined, the provided image resource will be rendered on the left.

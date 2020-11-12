@@ -26,15 +26,15 @@ declare type CompositeAnimation = {
   _startNativeLoop: (iterations?: number) => void;
   _isUsingNativeDriver: () => boolean;
 };
-declare var add: (a: $9 | number, b: $9 | number) => $1;
-declare var subtract: (a: $9 | number, b: $9 | number) => $11;
-declare var divide: (a: $9 | number, b: $9 | number) => $3;
-declare var multiply: (a: $9 | number, b: $9 | number) => $8;
-declare var modulo: (a: $9, modulus: number) => $7;
-declare var diffClamp: (a: $9, min: number, max: number) => $2;
-declare var spring: (value: $12 | $13, config: SpringAnimationConfig) => CompositeAnimation;
-declare var timing: (value: $12 | $13, config: TimingAnimationConfig) => CompositeAnimation;
-declare var decay: (value: $12 | $13, config: DecayAnimationConfig) => CompositeAnimation;
+declare var add: (a: typeof $9 | number, b: typeof $9 | number) => typeof $1;
+declare var subtract: (a: typeof $9 | number, b: typeof $9 | number) => typeof $11;
+declare var divide: (a: typeof $9 | number, b: typeof $9 | number) => typeof $3;
+declare var multiply: (a: typeof $9 | number, b: typeof $9 | number) => typeof $8;
+declare var modulo: (a: typeof $9, modulus: number) => typeof $7;
+declare var diffClamp: (a: typeof $9, min: number, max: number) => typeof $2;
+declare var spring: (value: typeof $12 | typeof $13, config: SpringAnimationConfig) => CompositeAnimation;
+declare var timing: (value: typeof $12 | typeof $13, config: TimingAnimationConfig) => CompositeAnimation;
+declare var decay: (value: typeof $12 | typeof $13, config: DecayAnimationConfig) => CompositeAnimation;
 declare var sequence: (animations: CompositeAnimation[]) => CompositeAnimation;
 declare type ParallelConfig = {
   // If one is stopped, stop all.  default: true
@@ -61,21 +61,21 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#value
    */
-  Value: $12;
+  Value: typeof $12;
 
   /**
    * 2D value class for driving 2D animations, such as pan gestures.
    *
    * See https://reactnative.dev/docs/animatedvaluexy.html
    */
-  ValueXY: $13;
+  ValueXY: typeof $13;
 
   /**
    * Exported to use the Interpolation type in flow.
    *
    * See https://reactnative.dev/docs/animated.html#interpolation
    */
-  Interpolation: $6;
+  Interpolation: typeof $6;
 
   /**
    * Exported for ease of type checking. All animated values derive from this
@@ -83,7 +83,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#node
    */
-  Node: $9;
+  Node: typeof $9;
 
   /**
    * Animates a value from an initial velocity to zero based on a decay
@@ -212,7 +212,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#createanimatedcomponent
    */
-  createAnimatedComponent: $16;
+  createAnimatedComponent: typeof $16;
 
   /**
    * Imperative API to attach an animated value to an event on a view. Prefer
@@ -235,6 +235,6 @@ declare const $f2tExportDefault:
    * Expose Event class, so it can be used as a type for type checkers.
    */
   Event: $4.AnimatedEvent;
-  __PropsOnlyForTests: $10;
+  __PropsOnlyForTests: typeof $10;
 };
 export default $f2tExportDefault;

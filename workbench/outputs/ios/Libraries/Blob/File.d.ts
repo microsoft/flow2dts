@@ -5,7 +5,7 @@ declare class File extends $1 {
   /**
    * Constructor for JS consumers.
    */
-  constructor(parts: ($1 | string)[], name: string, options?: BlobOptions);
+  constructor(parts: (typeof $1 | string)[], name: string, options?: BlobOptions);
   name(): string;
   lastModified(): number;
 }

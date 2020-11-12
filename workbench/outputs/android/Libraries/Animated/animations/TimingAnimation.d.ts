@@ -6,16 +6,16 @@ import $4 from "./Animation";
 import { AnimationConfig } from "./Animation";
 import { EndCallback } from "./Animation";
 declare type TimingAnimationConfig = AnimationConfig & {
-  toValue: number | $2 | {
+  toValue: number | typeof $2 | {
     x: number;
     y: number;
-  } | $3 | $1;
+  } | typeof $3 | typeof $1;
   easing?: (value: number) => number;
   duration?: number;
   delay?: number;
 };
 declare type TimingAnimationConfigSingle = AnimationConfig & {
-  toValue: number | $2 | $1;
+  toValue: number | typeof $2 | typeof $1;
   easing?: (value: number) => number;
   duration?: number;
   delay?: number;
@@ -23,7 +23,7 @@ declare type TimingAnimationConfigSingle = AnimationConfig & {
 declare class TimingAnimation extends $4 {
   constructor(config: TimingAnimationConfigSingle);
   __getNativeAnimationConfig(): any;
-  start(fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | $4, animatedValue: $2): void;
+  start(fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | typeof $4, animatedValue: typeof $2): void;
   onUpdate(): void;
   stop(): void;
 }
