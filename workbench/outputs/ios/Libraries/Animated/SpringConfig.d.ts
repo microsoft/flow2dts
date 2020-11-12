@@ -6,10 +6,12 @@ declare type SpringConfigType = {
 };
 declare function fromOrigamiTensionAndFriction(tension: number, friction: number): SpringConfigType;
 declare function fromBouncinessAndSpeed(bounciness: number, speed: number): SpringConfigType;
-declare const $f2tExportDefault:
-/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-{
-  fromOrigamiTensionAndFriction: $TypeOf<typeof fromOrigamiTensionAndFriction>;
-  fromBouncinessAndSpeed: $TypeOf<typeof fromBouncinessAndSpeed>;
-};
+declare namespace $f2tExportDefaultRedirect {
+  export declare const $f2tHidden_fromOrigamiTensionAndFriction: $TypeOf<typeof fromOrigamiTensionAndFriction>;
+  export declare const $f2tHidden_fromBouncinessAndSpeed: $TypeOf<typeof fromBouncinessAndSpeed>;
+}
+declare namespace $f2tExportDefault {
+  export declare const fromOrigamiTensionAndFriction: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_fromOrigamiTensionAndFriction>;
+  export declare const fromBouncinessAndSpeed: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_fromBouncinessAndSpeed>;
+}
 export default $f2tExportDefault;

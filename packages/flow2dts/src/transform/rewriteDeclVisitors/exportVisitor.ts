@@ -62,7 +62,7 @@ export const exportVisitor: Visitor<State> = {
 
           statRedirect.push(exportHidden)
           statDefault.push(exportField)
-          statDefault.push(exportType)
+          // statDefault.push(exportType)
         }
 
         const nssRedirect = t.tsModuleDeclaration(

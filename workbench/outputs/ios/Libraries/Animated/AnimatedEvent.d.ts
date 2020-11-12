@@ -21,10 +21,12 @@ declare class AnimatedEvent {
 }
 export type { Mapping };
 export type { EventConfig };
-declare const $f2tExportDefault:
-/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-{
-  AnimatedEvent: $TypeOf<typeof AnimatedEvent>;
-  attachNativeEvent: $TypeOf<typeof attachNativeEvent>;
-};
+declare namespace $f2tExportDefaultRedirect {
+  export declare const $f2tHidden_AnimatedEvent: $TypeOf<typeof AnimatedEvent>;
+  export declare const $f2tHidden_attachNativeEvent: $TypeOf<typeof attachNativeEvent>;
+}
+declare namespace $f2tExportDefault {
+  export declare const AnimatedEvent: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_AnimatedEvent>;
+  export declare const attachNativeEvent: $TypeOf<$f2tExportDefaultRedirect.$f2tHidden_attachNativeEvent>;
+}
 export default $f2tExportDefault;
