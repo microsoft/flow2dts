@@ -1,4 +1,4 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $FlowFixMeProps, $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "react";
 declare class ImageBackground extends $2.Component<$FlowFixMeProps> {
   setNativeProps(props: Object): void;

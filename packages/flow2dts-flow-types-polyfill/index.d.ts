@@ -19,6 +19,12 @@ export type $Keys<T> = keyof T
 export type $TypeOf<T> = T extends { new (...args: any): any } ? InstanceType<T> : T
 
 /**
+ * ReactNative specific types that are used as sentinals
+ */
+export type $FlowFixMe = any
+export type $FlowFixMeProps = any
+
+/**
  * TODO: These should be re-enabled as we continue work on flow2dts
 
 // Add types packages
