@@ -21,4 +21,11 @@ export const typeParameterVisitor: Visitor<State> = {
       )
     },
   },
+  TypeParameterInstantiation: {
+    exit(path, state) {
+      const params = path.node.params as any[]
+      params.forEach((param) => t.assertTSType(param))
+      path.replaceWith(t.tsTypeParameterInstantiation(params))
+    },
+  },
 }

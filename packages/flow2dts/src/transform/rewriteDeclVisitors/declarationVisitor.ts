@@ -69,6 +69,34 @@ export const declarationVisitor: Visitor<State> = {
       }
     },
   },
+  InterfaceDeclaration: {
+    exit(path, state) {
+      let _extends: t.TSExpressionWithTypeArguments[] | null = null
+      if (path.node.extends && path.node.extends.length > 0) {
+        _extends = path.node.extends.map((e) => {
+          t.assertTSEntityName(e.id)
+          t.assertInterfaceExtends(e)
+          const eTypeParameters = e.typeParameters as t.Node | null
+          if (eTypeParameters) {
+            t.assertTSTypeParameterInstantiation(eTypeParameters)
+          }
+          return t.tsExpressionWithTypeArguments(e.id, eTypeParameters)
+        })
+      }
+
+      const typeParameters = path.node.typeParameters as t.Node | null
+      if (typeParameters) {
+        t.assertTSTypeParameterDeclaration(typeParameters)
+      }
+
+      const body = path.node.body as any
+      t.assertTSTypeLiteral(body)
+
+      path.replaceWith(
+        t.tsInterfaceDeclaration(path.node.id, typeParameters, _extends, t.tsInterfaceBody(body.members))
+      )
+    },
+  },
   ClassDeclaration: {
     exit(path, state) {
       path.node.declare = true
