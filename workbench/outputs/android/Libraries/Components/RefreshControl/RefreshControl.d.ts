@@ -63,7 +63,7 @@ ViewProps & IOSProps & AndroidProps & {
   refreshing: boolean;
 }>;
 declare class RefreshControl extends $1.Component<RefreshControlProps> {
-  SIZE: any;
+  static SIZE: any;
   componentDidMount(): void;
   componentDidUpdate(prevProps: RefreshControlProps): void;
   render(): $1.Node;

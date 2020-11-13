@@ -594,7 +594,7 @@ declare type ScrollViewComponentStatics = Readonly<
   Context: typeof ScrollViewContext;
 }>;
 declare class ScrollView extends React.Component<Props, State> {
-  Context: typeof ScrollViewContext;
+  static Context: typeof ScrollViewContext;
   constructor(props: Props);
   state: State;
   UNSAFE_componentWillMount(): void;

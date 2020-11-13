@@ -33,7 +33,7 @@ declare type PushNotificationEventName = $Keys<{
   registrationError: string;
 }>;
 declare class PushNotificationIOS {
-  FetchResult: FetchResult;
+  static FetchResult: FetchResult;
   presentLocalNotification(details: Object): void;
   scheduleLocalNotification(details: Object): void;
   cancelAllLocalNotifications(): void;

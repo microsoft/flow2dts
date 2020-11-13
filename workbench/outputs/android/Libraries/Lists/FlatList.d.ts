@@ -146,7 +146,7 @@ $TypeOf<typeof $4.defaultProps> & {
 };
 declare type DefaultProps = $TypeOf<typeof defaultProps>;
 declare class FlatList<ItemT> extends $2.PureComponent<Props<ItemT>, void> {
-  defaultProps: DefaultProps;
+  static defaultProps: DefaultProps;
   props: Props<ItemT>;
 
   /**

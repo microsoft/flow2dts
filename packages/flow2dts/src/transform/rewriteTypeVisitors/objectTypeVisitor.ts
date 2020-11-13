@@ -41,7 +41,8 @@ export const objectTypeVisitor: Visitor<State> = {
       ) {
         const isConstructor = (t.isIdentifier(key) ? key.name : key.value) === "constructor"
         path.replaceWith(
-          t.tsMethodSignature(
+          t.tsDeclareMethod(
+            null,
             key,
             value.typeParameters,
             value.parameters,
@@ -65,14 +66,35 @@ export const objectTypeVisitor: Visitor<State> = {
           value = value.typeAnnotation!.typeAnnotation
         }
 
-        const propertySignature = t.tsPropertySignature(
-          key.type === "Identifier" ? t.identifier(key.name) : t.stringLiteral(key.value),
-          t.tsTypeAnnotation(value)
-        )
-        propertySignature.readonly = readonly
-        propertySignature.optional = optional
+        switch (path.parentPath?.parentPath?.node?.type) {
+          case "ClassDeclaration":
+          case "DeclareClass": {
+            // ClassProperty: class, declare class
+            const classProp = t.classProperty(
+              key.type === "Identifier" ? t.identifier(key.name) : t.stringLiteral(key.value),
+              null,
+              t.tsTypeAnnotation(value)
+            )
+            classProp.readonly = readonly
+            classProp.optional = optional
+            classProp.static = path.node.static
 
-        path.replaceWith(propertySignature)
+            path.replaceWith(classProp)
+            break
+          }
+          default: {
+            // TSPropertySignature: interface, declare interface, type literal
+            const propertySignature = t.tsPropertySignature(
+              key.type === "Identifier" ? t.identifier(key.name) : t.stringLiteral(key.value),
+              t.tsTypeAnnotation(value)
+            )
+            propertySignature.readonly = readonly
+            propertySignature.optional = optional
+
+            path.replaceWith(propertySignature)
+            break
+          }
+        }
       }
     },
   },
@@ -92,6 +114,37 @@ export const objectTypeVisitor: Visitor<State> = {
   },
   ObjectTypeAnnotation: {
     exit(path, state) {
+      switch (path.parentPath.node.type) {
+        case "ClassDeclaration":
+        case "DeclareClass": {
+          // ClassBody: class, declare class
+          let { properties, indexers } = path.node
+          if (!indexers) indexers = []
+          path.replaceWith(
+            t.classBody([
+              ...(<(t.TSDeclareMethod | t.ClassProperty)[]>(<unknown>properties)),
+              ...(<t.TSIndexSignature[]>(<unknown>indexers)),
+            ])
+          )
+          return
+        }
+      }
+      switch (path.parentPath.node.type) {
+        case "InterfaceDeclaration":
+        case "DeclareInterface": {
+          // TSInterfaceBody: interface, declare interface
+          let { properties, callProperties, indexers } = path.node
+          if (!indexers) indexers = []
+          path.replaceWith(
+            t.tsInterfaceBody([
+              ...(<(t.TSMethodSignature | t.TSPropertySignature)[]>(<unknown>properties)),
+              ...(<t.TSCallSignatureDeclaration[]>(<unknown>callProperties)),
+              ...(<t.TSIndexSignature[]>(<unknown>indexers)),
+            ])
+          )
+          return
+        }
+      }
       const { exact, properties, callProperties, indexers } = path.node // TODO: callProperties, inexact
 
       if (exact) {

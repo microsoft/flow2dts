@@ -21,11 +21,11 @@ declare class XMLHttpRequestEventTarget extends $2 {
 }
 declare var $2: any;
 declare class XMLHttpRequest extends $1 {
-  UNSENT: number;
-  OPENED: number;
-  HEADERS_RECEIVED: number;
-  LOADING: number;
-  DONE: number;
+  static UNSENT: number;
+  static OPENED: number;
+  static HEADERS_RECEIVED: number;
+  static LOADING: number;
+  static DONE: number;
   UNSENT: number;
   OPENED: number;
   HEADERS_RECEIVED: number;

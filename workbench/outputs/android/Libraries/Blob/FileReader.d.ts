@@ -4,9 +4,9 @@ declare type ReadyState = 0 // EMPTY
 | 2;
 declare type ReaderResult = string | ArrayBuffer;
 declare class FileReader extends $2 {
-  EMPTY: number;
-  LOADING: number;
-  DONE: number;
+  static EMPTY: number;
+  static LOADING: number;
+  static DONE: number;
   EMPTY: number;
   LOADING: number;
   DONE: number;

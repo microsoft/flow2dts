@@ -32,7 +32,7 @@ declare type State =
   bottom: number;
 };
 declare class KeyboardAvoidingView extends $2.Component<Props, State> {
-  defaultProps:
+  static defaultProps:
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
     enabled: boolean;

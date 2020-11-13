@@ -24,8 +24,8 @@ declare type State =
 };
 declare class AppContainer extends React.Component<Props, State> {
   state: State;
-  getDerivedStateFromError: any;
-  childContextTypes: any |
+  static getDerivedStateFromError: any;
+  static childContextTypes: any |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
     rootTag: React$PropType$Primitive<number>;

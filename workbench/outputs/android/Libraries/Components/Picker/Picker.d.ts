@@ -93,10 +93,10 @@ declare type PickerProps = Readonly<
   accessibilityLabel?: null | undefined | string;
 }>;
 declare class Picker extends $3.Component<PickerProps> {
-  MODE_DIALOG: string;
-  MODE_DROPDOWN: string;
-  Item: PickerItem;
-  defaultProps:
+  static MODE_DIALOG: string;
+  static MODE_DROPDOWN: string;
+  static Item: PickerItem;
+  static defaultProps:
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
     mode: string;

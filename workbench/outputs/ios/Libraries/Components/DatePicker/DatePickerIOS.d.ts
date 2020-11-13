@@ -81,7 +81,7 @@ ViewProps & {
   timeZoneOffsetInMinutes?: null | undefined | number;
 }>;
 declare class DatePickerIOS extends $2.Component<Props> {
-  DefaultProps:
+  static DefaultProps:
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
     mode: string;

@@ -301,7 +301,7 @@ declare type State = {
   last: number;
 };
 declare class VirtualizedList extends React.PureComponent<Props, State> {
-  contextType: $TypeOf<typeof VirtualizedListContext>;
+  static contextType: $TypeOf<typeof VirtualizedListContext>;
   // scrollToEnd may be janky without getItemLayout prop
   scrollToEnd(params?: null | undefined | {
     animated?: null | undefined | boolean;
@@ -347,7 +347,7 @@ declare class VirtualizedList extends React.PureComponent<Props, State> {
   getScrollableNode(): null | undefined | number;
   getScrollRef(): (null | undefined | React.ElementRef<typeof $1>) | (null | undefined | React.ElementRef<typeof $2>);
   setNativeProps(props: Object): void;
-  defaultProps: DefaultProps;
+  static defaultProps: DefaultProps;
   hasMore(): boolean;
   state: State;
   constructor(props: Props);

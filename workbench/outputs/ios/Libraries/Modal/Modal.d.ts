@@ -98,13 +98,13 @@ ViewProps & {
   onOrientationChange?: null | undefined | DirectEventHandler<OrientationChangeEvent>;
 }>;
 declare class Modal extends $2.Component<Props> {
-  defaultProps:
+  static defaultProps:
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
     hardwareAccelerated: boolean;
     visible: boolean;
   };
-  contextType: $2.Context<RootTag>;
+  static contextType: $2.Context<RootTag>;
   constructor(props: Props);
   componentWillUnmount(): void;
   UNSAFE_componentWillReceiveProps(nextProps: Props): void;

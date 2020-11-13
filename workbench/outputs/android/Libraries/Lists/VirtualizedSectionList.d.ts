@@ -107,7 +107,7 @@ declare type State = {
   childProps: VirtualizedListProps;
 };
 declare class VirtualizedSectionList<SectionT extends SectionBase<any>> extends $1.PureComponent<Props<SectionT>, State> {
-  defaultProps: DefaultProps;
+  static defaultProps: DefaultProps;
   scrollToLocation(params: ScrollToLocationParamsType): void;
   getListRef(): typeof $2;
   constructor(props: Props<SectionT>, context: Object);

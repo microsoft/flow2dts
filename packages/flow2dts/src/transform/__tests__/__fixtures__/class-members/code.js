@@ -26,4 +26,6 @@ class CD<T> {
 declare class CE {
   constructor(a: string): void;
   foo(b: string): number;
+  static a: string;
+  b: ?string;
 }

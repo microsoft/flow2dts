@@ -98,7 +98,7 @@ $TypeOf<typeof $3.defaultProps> & {
 declare type DefaultProps = $TypeOf<typeof defaultProps>;
 declare class SectionList<SectionT extends SectionBase<any>> extends $1.PureComponent<Props<SectionT>, void> {
   props: Props<SectionT>;
-  defaultProps: DefaultProps;
+  static defaultProps: DefaultProps;
 
   /**
    * Scrolls to the item at the specified `sectionIndex` and `itemIndex` (within the section)

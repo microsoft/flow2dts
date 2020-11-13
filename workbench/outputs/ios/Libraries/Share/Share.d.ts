@@ -17,7 +17,7 @@ declare class Share {
     action: string;
     activityType: null | undefined | string;
   }>;
-  sharedAction: "sharedAction";
-  dismissedAction: "dismissedAction";
+  static sharedAction: "sharedAction";
+  static dismissedAction: "dismissedAction";
 }
 export default Share;

@@ -3,10 +3,10 @@ import Blob from "../Blob/Blob";
 declare type ArrayBufferView = Int8Array | Uint8Array | Uint8ClampedArray | Int16Array | Uint16Array | Int32Array | Uint32Array | Float32Array | Float64Array | DataView;
 declare type BinaryType = "blob" | "arraybuffer";
 declare class WebSocket extends $1 {
-  CONNECTING: number;
-  OPEN: number;
-  CLOSING: number;
-  CLOSED: number;
+  static CONNECTING: number;
+  static OPEN: number;
+  static CLOSING: number;
+  static CLOSED: number;
   CONNECTING: number;
   OPEN: number;
   CLOSING: number;
