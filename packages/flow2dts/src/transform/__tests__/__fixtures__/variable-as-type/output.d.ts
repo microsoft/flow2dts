@@ -1,7 +1,8 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill"
 import $14 from "./AnimatedEvent"
 import $4 from "./AnimatedEvent"
 declare function f1(e: $4.AnimatedEvent): $14.attachNativeEvent
-declare function f2(e: $4.AnimatedEvent): $14.attachNativeEvent
+declare function f2(e: $TypeOf<typeof $4.AnimatedEvent>): $TypeOf<typeof $14.attachNativeEvent>
 import * as React from "react"
 declare function g(): React.Component<{}>
 declare class MyClass1 extends React.Component<{}> implements React.Component<{}>, React.Component<{}> {

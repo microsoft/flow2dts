@@ -127,6 +127,21 @@ export const typeReferenceVisitor: Visitor<State> = {
       if (typeQueryOperator.type === "GenericTypeAnnotation") {
         const resolved = resolveGenericTypeAnnotation(state.typeReferences, path, typeQueryOperator)
         if (resolved) {
+          /*
+           if it is resolved to be TSTypeReference(TSEntityName),
+           then check the first name to see if it is from an imports,
+           and translate to $TypeOf<typeof T> accordingly
+           */
+          if (resolved.type === "TSTypeReference") {
+            let firstName = resolved.typeName
+            while (firstName.type !== "Identifier") {
+              firstName = firstName.left
+            }
+            if (state.typeReferences.imports[firstName.name]) {
+              path.replaceWith(wrappedTypeOf(resolved.typeName, state))
+              return
+            }
+          }
           path.replaceWith(resolved)
         }
       }
