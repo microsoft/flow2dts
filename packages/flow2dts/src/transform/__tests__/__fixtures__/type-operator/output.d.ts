@@ -6,8 +6,8 @@ declare var value: {
 declare type T = $TypeOf<typeof value>
 declare type K = $Keys<T>
 declare class Foo {}
-declare type Foo$Type = $TypeOf<typeof Foo>
+declare type Foo$Type = Foo
 
 declare class Bar {}
 
-declare type Bar$Type = $TypeOf<typeof Bar>
+declare type Bar$Type = Bar

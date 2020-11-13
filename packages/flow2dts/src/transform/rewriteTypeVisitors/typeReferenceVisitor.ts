@@ -147,9 +147,17 @@ export const typeReferenceVisitor: Visitor<State> = {
       }
     },
     exit(path, state) {
-      const typeQueryOperator = path.node.argument as any
-      t.assertTSTypeReference(typeQueryOperator)
-      path.replaceWith(wrappedTypeOf(typeQueryOperator.typeName, state))
+      const typeOfType = path.node.argument as any
+      t.assertTSTypeReference(typeOfType)
+      const typeName = typeOfType.typeName
+      if (t.isIdentifier(typeName)) {
+        const binding = path.scope.getBinding(typeName.name)
+        if (binding && (binding.path.isDeclareClass() || binding.path.isClassDeclaration())) {
+          path.replaceWith(typeOfType)
+          return
+        }
+      }
+      path.replaceWith(wrappedTypeOf(typeOfType.typeName, state))
     },
   },
 }
