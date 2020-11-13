@@ -31,6 +31,10 @@ export const typeReferenceVisitor: Visitor<State> = {
 
         if (name === "undefined") {
           path.replaceWith(t.tsUndefinedKeyword())
+        } else if (name === "Promise" && (!typeParameters || typeParameters.length === 0)) {
+          path.replaceWith(
+            t.tsTypeReference(t.identifier("Promise"), t.tsTypeParameterInstantiation([t.tsVoidKeyword()]))
+          )
         } else if (name === "Array" && typeParameters) {
           if (typeParameters.length !== 1) {
             throw new Error(
