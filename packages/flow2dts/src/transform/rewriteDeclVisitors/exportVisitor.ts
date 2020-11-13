@@ -1,6 +1,6 @@
 import { Visitor, types as t } from "@babel/core"
 import { State } from "../state"
-import { assertTSType, nameForExportDefault, nameForExportDefaultRedirect, nameForHidden } from "../utilities"
+import { assertTSType, isClass, nameForExportDefault, nameForExportDefaultRedirect, nameForHidden } from "../utilities"
 
 function convertToNamespace(decl: t.TSType): [string, t.TSTypeReference][] | undefined {
   if (decl.type !== "TSTypeLiteral") return undefined
@@ -61,7 +61,7 @@ function makeRedirection(name: string): t.TSType {
 export const exportVisitor: Visitor<State> = {
   DeclareModuleExports: {
     exit(path) {
-      const typeAnnotation = path.node.typeAnnotation.typeAnnotation
+      const typeAnnotation = path.node.typeAnnotation.typeAnnotation as any
       assertTSType(typeAnnotation)
 
       const nss = convertToNamespace(typeAnnotation)
@@ -102,6 +102,9 @@ export const exportVisitor: Visitor<State> = {
           nssDefault,
           t.exportDefaultDeclaration(t.identifier(nameForExportDefault)),
         ])
+      } else if (t.isTSTypeReference(typeAnnotation) && isClass(typeAnnotation, path.scope)) {
+        t.assertIdentifier(typeAnnotation.typeName)
+        path.replaceWith(t.exportDefaultDeclaration(typeAnnotation.typeName))
       } else {
         const id = t.identifier(nameForExportDefault)
         id.typeAnnotation = t.tsTypeAnnotation(typeAnnotation)

@@ -1,7 +1,7 @@
-import { Visitor, types as t } from "@babel/core"
+import { Visitor, types as t, NodePath } from "@babel/core"
 import { isPolyFilledType } from "../polyfillTypes"
 import { State } from "../state"
-import { assertTSType, wrappedTypeOf } from "../utilities"
+import { assertTSType, isClass, wrappedTypeOf } from "../utilities"
 import { resolveGenericTypeAnnotation } from "../typeReferenceResolver"
 
 function convertQID(input: t.Identifier | t.QualifiedTypeIdentifier): t.Identifier | t.TSQualifiedName {
@@ -149,13 +149,9 @@ export const typeReferenceVisitor: Visitor<State> = {
     exit(path, state) {
       const typeOfType = path.node.argument as any
       t.assertTSTypeReference(typeOfType)
-      const typeName = typeOfType.typeName
-      if (t.isIdentifier(typeName)) {
-        const binding = path.scope.getBinding(typeName.name)
-        if (binding && (binding.path.isDeclareClass() || binding.path.isClassDeclaration())) {
-          path.replaceWith(typeOfType)
-          return
-        }
+      if (isClass(typeOfType, path.scope)) {
+        path.replaceWith(typeOfType)
+        return
       }
       path.replaceWith(wrappedTypeOf(typeOfType.typeName, state))
     },
