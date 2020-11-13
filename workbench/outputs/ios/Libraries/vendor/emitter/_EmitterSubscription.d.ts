@@ -30,5 +30,5 @@ declare class EmitterSubscription extends EventSubscription {
    */
   remove(): void;
 }
-declare const $f2tExportDefault: $TypeOf<typeof EmitterSubscription>;
+declare const $f2tExportDefault: EmitterSubscription;
 export default $f2tExportDefault;

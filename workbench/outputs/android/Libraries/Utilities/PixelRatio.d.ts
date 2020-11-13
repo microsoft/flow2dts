@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare class PixelRatio {
   get(): number;
@@ -7,5 +6,5 @@ declare class PixelRatio {
   roundToNearestPixel(layoutSize: number): number;
   startDetecting(): void;
 }
-declare const $f2tExportDefault: $TypeOf<typeof PixelRatio>;
+declare const $f2tExportDefault: PixelRatio;
 export default $f2tExportDefault;

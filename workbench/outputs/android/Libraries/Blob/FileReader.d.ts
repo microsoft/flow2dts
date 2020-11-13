@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "./Blob";
 declare type ReadyState = 0 // EMPTY
 | 1 // LOADING
@@ -21,5 +20,5 @@ declare class FileReader extends $2 {
   result(): null | undefined | ReaderResult;
 }
 declare var $2: any;
-declare const $f2tExportDefault: $TypeOf<typeof FileReader>;
+declare const $f2tExportDefault: FileReader;
 export default $f2tExportDefault;

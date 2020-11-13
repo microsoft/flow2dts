@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import AnimatedImplementation from "../../Animated/AnimatedImplementation";
 import * as React from "react";
@@ -30,5 +29,5 @@ declare class ScrollViewStickyHeader extends React.Component<Props, State> {
   render(): React.Node;
 }
 export type { Props };
-declare const $f2tExportDefault: $TypeOf<typeof ScrollViewStickyHeader>;
+declare const $f2tExportDefault: ScrollViewStickyHeader;
 export default $f2tExportDefault;

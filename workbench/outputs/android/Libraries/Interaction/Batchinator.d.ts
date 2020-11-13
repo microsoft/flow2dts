@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare class Batchinator {
   constructor(callback: () => void, delayMS: number);
@@ -14,5 +13,5 @@ declare class Batchinator {
   }): void;
   schedule(): void;
 }
-declare const $f2tExportDefault: $TypeOf<typeof Batchinator>;
+declare const $f2tExportDefault: Batchinator;
 export default $f2tExportDefault;

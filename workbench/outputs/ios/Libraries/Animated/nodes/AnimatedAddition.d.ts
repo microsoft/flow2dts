@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "./AnimatedInterpolation";
 import $3 from "./AnimatedNode";
 import $4 from "./AnimatedWithChildren";
@@ -12,5 +11,5 @@ declare class AnimatedAddition extends $4 {
   __detach(): void;
   __getNativeConfig(): any;
 }
-declare const $f2tExportDefault: $TypeOf<typeof AnimatedAddition>;
+declare const $f2tExportDefault: AnimatedAddition;
 export default $f2tExportDefault;

@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $3 from "react";
 import { TextStyleProp } from "../../StyleSheet/StyleSheet";
 import { ColorValue } from "../../StyleSheet/StyleSheet";
@@ -96,7 +95,7 @@ declare type PickerProps = Readonly<
 declare class Picker extends $3.Component<PickerProps> {
   MODE_DIALOG: string;
   MODE_DROPDOWN: string;
-  Item: $TypeOf<typeof PickerItem>;
+  Item: PickerItem;
   defaultProps:
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
@@ -105,5 +104,5 @@ declare class Picker extends $3.Component<PickerProps> {
   render(): $3.Node;
 }
 export type { PickerItem };
-declare const $f2tExportDefault: $TypeOf<typeof Picker>;
+declare const $f2tExportDefault: Picker;
 export default $f2tExportDefault;

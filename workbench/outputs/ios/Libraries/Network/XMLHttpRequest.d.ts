@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { IPerformanceLogger } from "../Utilities/createPerformanceLogger";
 declare type NativeResponseType = "base64" | "blob" | "text";
@@ -90,5 +89,5 @@ declare var $1: any;
 export type { NativeResponseType };
 export type { ResponseType };
 export type { Response };
-declare const $f2tExportDefault: $TypeOf<typeof XMLHttpRequest>;
+declare const $f2tExportDefault: XMLHttpRequest;
 export default $f2tExportDefault;

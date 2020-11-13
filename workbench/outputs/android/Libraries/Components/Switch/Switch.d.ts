@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import * as React from "react";
 import { ColorValue } from "../../StyleSheet/StyleSheet";
@@ -68,5 +67,5 @@ declare class Switch extends React.Component<Props> {
   componentDidUpdate(): void;
 }
 export type { Props };
-declare const $f2tExportDefault: $TypeOf<typeof Switch>;
+declare const $f2tExportDefault: Switch;
 export default $f2tExportDefault;

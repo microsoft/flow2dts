@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "react";
 import { ViewProps } from "../View/ViewPropTypes";
 declare type Props = Readonly<
@@ -15,5 +14,5 @@ ViewProps & {
 declare class MaskedViewIOS extends $2.Component<Props> {
   render(): $2.Node;
 }
-declare const $f2tExportDefault: $TypeOf<typeof MaskedViewIOS>;
+declare const $f2tExportDefault: MaskedViewIOS;
 export default $f2tExportDefault;

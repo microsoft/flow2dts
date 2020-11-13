@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type FormDataValue = string | {
   name?: string;
@@ -22,5 +21,5 @@ declare class FormData {
   append(key: string, value: FormDataValue): void;
   getParts(): FormDataPart[];
 }
-declare const $f2tExportDefault: $TypeOf<typeof FormData>;
+declare const $f2tExportDefault: FormData;
 export default $f2tExportDefault;

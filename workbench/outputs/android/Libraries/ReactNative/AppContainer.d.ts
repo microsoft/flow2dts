@@ -1,4 +1,4 @@
-import { $TypeOf, React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
+import { React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
 // @flow
 import * as React from "react";
 declare type Context = {
@@ -35,5 +35,5 @@ declare class AppContainer extends React.Component<Props, State> {
   componentWillUnmount(): void;
   render(): React.Node;
 }
-declare const $f2tExportDefault: $TypeOf<typeof AppContainer>;
+declare const $f2tExportDefault: AppContainer;
 export default $f2tExportDefault;

@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { Category } from "./parseLogBoxLog";
 import { Message } from "./parseLogBoxLog";
@@ -64,5 +63,5 @@ declare class LogBoxLog {
 }
 export type { LogLevel };
 export type { LogBoxLogData };
-declare const $f2tExportDefault: $TypeOf<typeof LogBoxLog>;
+declare const $f2tExportDefault: LogBoxLog;
 export default $f2tExportDefault;

@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "react";
 import { SyntheticEvent } from "../../Types/CoreEventTypes";
 import { ViewProps } from "../View/ViewPropTypes";
@@ -90,5 +89,5 @@ declare class DatePickerIOS extends $2.Component<Props> {
   componentDidUpdate(): void;
   render(): $2.Node;
 }
-declare const $f2tExportDefault: $TypeOf<typeof DatePickerIOS>;
+declare const $f2tExportDefault: DatePickerIOS;
 export default $f2tExportDefault;

@@ -69,5 +69,5 @@ declare class RefreshControl extends $1.Component<RefreshControlProps> {
   render(): $1.Node;
 }
 export type { RefreshControlProps };
-declare const $f2tExportDefault: $TypeOf<typeof RefreshControl>;
+declare const $f2tExportDefault: RefreshControl;
 export default $f2tExportDefault;

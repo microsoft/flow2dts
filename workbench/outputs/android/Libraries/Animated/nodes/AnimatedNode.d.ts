@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare class AnimatedNode {
   __nativeAnimatedValueListener: null | undefined | any;
@@ -46,5 +45,5 @@ declare class AnimatedNode {
   __getNativeConfig(): Object;
   toJSON(): any;
 }
-declare const $f2tExportDefault: $TypeOf<typeof AnimatedNode>;
+declare const $f2tExportDefault: AnimatedNode;
 export default $f2tExportDefault;

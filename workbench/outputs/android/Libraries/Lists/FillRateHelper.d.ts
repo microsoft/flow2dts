@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type FillRateInfo = Info;
 declare class Info {
@@ -43,5 +42,5 @@ declare class FillRateHelper {
   enabled(): boolean;
 }
 export type { FillRateInfo };
-declare const $f2tExportDefault: $TypeOf<typeof FillRateHelper>;
+declare const $f2tExportDefault: FillRateHelper;
 export default $f2tExportDefault;

@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type ResolvedAssetSource =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -57,5 +56,5 @@ declare class AssetSourceResolver {
   pickScale(scales: number[], deviceScale: number): number;
 }
 export type { ResolvedAssetSource };
-declare const $f2tExportDefault: $TypeOf<typeof AssetSourceResolver>;
+declare const $f2tExportDefault: AssetSourceResolver;
 export default $f2tExportDefault;

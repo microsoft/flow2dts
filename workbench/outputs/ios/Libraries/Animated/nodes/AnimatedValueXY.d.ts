@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "./AnimatedValue";
 import $3 from "./AnimatedWithChildren";
 declare type ValueXYListenerCallback = (value: {
@@ -122,5 +121,5 @@ declare class AnimatedValueXY extends $3 {
     [key: string]: typeof $1;
   }[];
 }
-declare const $f2tExportDefault: $TypeOf<typeof AnimatedValueXY>;
+declare const $f2tExportDefault: AnimatedValueXY;
 export default $f2tExportDefault;

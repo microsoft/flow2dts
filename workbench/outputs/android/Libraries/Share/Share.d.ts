@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type Content = {
   title?: string;
@@ -21,5 +20,5 @@ declare class Share {
   sharedAction: "sharedAction";
   dismissedAction: "dismissedAction";
 }
-declare const $f2tExportDefault: $TypeOf<typeof Share>;
+declare const $f2tExportDefault: Share;
 export default $f2tExportDefault;

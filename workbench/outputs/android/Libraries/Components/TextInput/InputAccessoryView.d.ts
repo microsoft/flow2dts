@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "react";
 import { ViewStyleProp } from "../../StyleSheet/StyleSheet";
 import { ColorValue } from "../../StyleSheet/StyleSheet";
@@ -18,5 +17,5 @@ declare type Props = Readonly<
 declare class InputAccessoryView extends $2.Component<Props> {
   render(): $2.Node;
 }
-declare const $f2tExportDefault: $TypeOf<typeof InputAccessoryView>;
+declare const $f2tExportDefault: InputAccessoryView;
 export default $f2tExportDefault;

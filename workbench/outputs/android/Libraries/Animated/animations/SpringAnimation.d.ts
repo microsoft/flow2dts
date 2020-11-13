@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "../nodes/AnimatedValue";
 import $3 from "../nodes/AnimatedValueXY";
 import $1 from "../nodes/AnimatedInterpolation";
@@ -86,5 +85,5 @@ declare class SpringAnimation extends $4 {
 }
 export type { SpringAnimationConfig };
 export type { SpringAnimationConfigSingle };
-declare const $f2tExportDefault: $TypeOf<typeof SpringAnimation>;
+declare const $f2tExportDefault: SpringAnimation;
 export default $f2tExportDefault;

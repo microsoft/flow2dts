@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type SpyData = {
   type: number;
@@ -41,5 +40,5 @@ declare class MessageQueue {
   __invokeCallback(cbID: number, args: unknown[]): void;
 }
 export type { SpyData };
-declare const $f2tExportDefault: $TypeOf<typeof MessageQueue>;
+declare const $f2tExportDefault: MessageQueue;
 export default $f2tExportDefault;

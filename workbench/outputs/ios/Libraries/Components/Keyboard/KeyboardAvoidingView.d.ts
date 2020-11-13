@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "react";
 import { ViewStyleProp } from "../../StyleSheet/StyleSheet";
 import { ViewProps } from "../View/ViewPropTypes";
@@ -47,5 +46,5 @@ declare class KeyboardAvoidingView extends $2.Component<Props, State> {
   componentWillUnmount(): void;
   render(): $2.Node;
 }
-declare const $f2tExportDefault: $TypeOf<typeof KeyboardAvoidingView>;
+declare const $f2tExportDefault: KeyboardAvoidingView;
 export default $f2tExportDefault;

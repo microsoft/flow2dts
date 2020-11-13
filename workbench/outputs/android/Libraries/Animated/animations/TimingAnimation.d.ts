@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "../nodes/AnimatedValue";
 import $3 from "../nodes/AnimatedValueXY";
 import $1 from "../nodes/AnimatedInterpolation";
@@ -29,5 +28,5 @@ declare class TimingAnimation extends $4 {
 }
 export type { TimingAnimationConfig };
 export type { TimingAnimationConfigSingle };
-declare const $f2tExportDefault: $TypeOf<typeof TimingAnimation>;
+declare const $f2tExportDefault: TimingAnimation;
 export default $f2tExportDefault;

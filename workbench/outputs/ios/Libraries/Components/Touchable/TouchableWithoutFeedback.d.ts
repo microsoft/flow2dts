@@ -1,4 +1,4 @@
-import { $TypeOf, Stringish } from "flow2dts-flow-types-polyfill";
+import { Stringish } from "flow2dts-flow-types-polyfill";
 // @flow
 import Pressability from "../../Pressability/Pressability";
 import { AccessibilityActionEvent } from "../../Components/View/ViewAccessibility";
@@ -59,5 +59,5 @@ declare class TouchableWithoutFeedback extends React.Component<Props, State> {
   componentDidUpdate(): void;
   componentWillUnmount(): void;
 }
-declare const $f2tExportDefault: $TypeOf<typeof TouchableWithoutFeedback>;
+declare const $f2tExportDefault: TouchableWithoutFeedback;
 export default $f2tExportDefault;

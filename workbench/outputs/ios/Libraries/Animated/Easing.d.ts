@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare class Easing {
   step0(n: number): number;
@@ -19,5 +18,5 @@ declare class Easing {
   out(easing: (t: number) => number): (t: number) => number;
   inOut(easing: (t: number) => number): (t: number) => number;
 }
-declare const $f2tExportDefault: $TypeOf<typeof Easing>;
+declare const $f2tExportDefault: Easing;
 export default $f2tExportDefault;

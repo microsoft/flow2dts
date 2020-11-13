@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $3 from "./AnimatedValue";
 import $1 from "./AnimatedNode";
 import { EndCallback } from "../animations/Animation";
@@ -11,5 +10,5 @@ declare class AnimatedTracking extends $1 {
   update(): void;
   __getNativeConfig(): any;
 }
-declare const $f2tExportDefault: $TypeOf<typeof AnimatedTracking>;
+declare const $f2tExportDefault: AnimatedTracking;
 export default $f2tExportDefault;

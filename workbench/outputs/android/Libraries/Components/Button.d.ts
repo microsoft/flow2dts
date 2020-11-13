@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "react";
 import { PressEvent } from "../Types/CoreEventTypes";
 import { ColorValue } from "../StyleSheet/StyleSheet";
@@ -102,5 +101,5 @@ declare type ButtonProps = Readonly<
 declare class Button extends $2.Component<ButtonProps> {
   render(): $2.Node;
 }
-declare const $f2tExportDefault: $TypeOf<typeof Button>;
+declare const $f2tExportDefault: Button;
 export default $f2tExportDefault;

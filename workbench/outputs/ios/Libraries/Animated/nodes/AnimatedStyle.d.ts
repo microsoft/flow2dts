@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "./AnimatedWithChildren";
 declare class AnimatedStyle extends $2 {
   constructor(style: any);
@@ -9,5 +8,5 @@ declare class AnimatedStyle extends $2 {
   __makeNative(): void;
   __getNativeConfig(): Object;
 }
-declare const $f2tExportDefault: $TypeOf<typeof AnimatedStyle>;
+declare const $f2tExportDefault: AnimatedStyle;
 export default $f2tExportDefault;

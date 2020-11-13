@@ -117,5 +117,5 @@ declare class VirtualizedSectionList<SectionT extends SectionBase<any>> extends 
 export type { SectionBase };
 export type { Props };
 export type { ScrollToLocationParamsType };
-declare const $f2tExportDefault: $TypeOf<typeof VirtualizedSectionList>;
+declare const $f2tExportDefault: VirtualizedSectionList;
 export default $f2tExportDefault;

@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $Keys } from "utility-types";
 import $1 from "react";
 import { ColorValue } from "../../StyleSheet/StyleSheet";
@@ -112,5 +111,5 @@ declare class StatusBar extends $1.Component<Props> {
 }
 export type { StatusBarStyle };
 export type { StatusBarAnimation };
-declare const $f2tExportDefault: $TypeOf<typeof StatusBar>;
+declare const $f2tExportDefault: StatusBar;
 export default $f2tExportDefault;

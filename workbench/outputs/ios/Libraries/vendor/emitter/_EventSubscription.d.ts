@@ -17,5 +17,5 @@ declare class EventSubscription {
    */
   remove(): void;
 }
-declare const $f2tExportDefault: $TypeOf<typeof EventSubscription>;
+declare const $f2tExportDefault: EventSubscription;
 export default $f2tExportDefault;

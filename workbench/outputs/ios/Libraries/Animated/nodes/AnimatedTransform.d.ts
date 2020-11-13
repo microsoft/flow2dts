@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "./AnimatedWithChildren";
 declare class AnimatedTransform extends $2 {
   constructor(transforms: ReadonlyArray<Object>);
@@ -9,5 +8,5 @@ declare class AnimatedTransform extends $2 {
   __detach(): void;
   __getNativeConfig(): any;
 }
-declare const $f2tExportDefault: $TypeOf<typeof AnimatedTransform>;
+declare const $f2tExportDefault: AnimatedTransform;
 export default $f2tExportDefault;

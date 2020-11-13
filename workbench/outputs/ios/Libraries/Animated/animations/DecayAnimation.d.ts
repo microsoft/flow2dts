@@ -31,5 +31,5 @@ declare class DecayAnimation extends $1 {
 }
 export type { DecayAnimationConfig };
 export type { DecayAnimationConfigSingle };
-declare const $f2tExportDefault: $TypeOf<typeof DecayAnimation>;
+declare const $f2tExportDefault: DecayAnimation;
 export default $f2tExportDefault;
