@@ -6,8 +6,8 @@ declare var DeprecatedTextStylePropTypes:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 typeof $2 & {
   color: typeof $1;
-  fontFamily: $3.string;
-  fontSize: $3.number;
+  fontFamily: $TypeOf<typeof $3.string>;
+  fontSize: $TypeOf<typeof $3.number>;
   fontStyle: React$PropType$Primitive<"normal" | "italic">;
 
   /**
@@ -21,14 +21,14 @@ typeof $2 & {
     height?: number;
     width?: number;
   }>;
-  textShadowRadius: $3.number;
+  textShadowRadius: $TypeOf<typeof $3.number>;
   textShadowColor: typeof $1;
 
   /**
    * @platform ios
    */
-  letterSpacing: $3.number;
-  lineHeight: $3.number;
+  letterSpacing: $TypeOf<typeof $3.number>;
+  lineHeight: $TypeOf<typeof $3.number>;
 
   /**
    * Specifies text alignment. The value 'justify' is only supported on iOS and
@@ -47,7 +47,7 @@ typeof $2 & {
    * For best results also set `textAlignVertical` to `center`. Default is true.
    * @platform android
    */
-  includeFontPadding: $3.bool;
+  includeFontPadding: $TypeOf<typeof $3.bool>;
   textDecorationLine: React$PropType$Primitive<"none" | "underline" | "line-through" | "underline line-through">;
 
   /**

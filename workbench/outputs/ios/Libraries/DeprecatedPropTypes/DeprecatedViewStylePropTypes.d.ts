@@ -16,22 +16,22 @@ typeof $2 & typeof $3 & typeof $4 & {
   borderLeftColor: typeof $1;
   borderStartColor: typeof $1;
   borderEndColor: typeof $1;
-  borderRadius: $5.number;
-  borderTopLeftRadius: $5.number;
-  borderTopRightRadius: $5.number;
-  borderTopStartRadius: $5.number;
-  borderTopEndRadius: $5.number;
-  borderBottomLeftRadius: $5.number;
-  borderBottomRightRadius: $5.number;
-  borderBottomStartRadius: $5.number;
-  borderBottomEndRadius: $5.number;
+  borderRadius: $TypeOf<typeof $5.number>;
+  borderTopLeftRadius: $TypeOf<typeof $5.number>;
+  borderTopRightRadius: $TypeOf<typeof $5.number>;
+  borderTopStartRadius: $TypeOf<typeof $5.number>;
+  borderTopEndRadius: $TypeOf<typeof $5.number>;
+  borderBottomLeftRadius: $TypeOf<typeof $5.number>;
+  borderBottomRightRadius: $TypeOf<typeof $5.number>;
+  borderBottomStartRadius: $TypeOf<typeof $5.number>;
+  borderBottomEndRadius: $TypeOf<typeof $5.number>;
   borderStyle: React$PropType$Primitive<"solid" | "dotted" | "dashed">;
-  borderWidth: $5.number;
-  borderTopWidth: $5.number;
-  borderRightWidth: $5.number;
-  borderBottomWidth: $5.number;
-  borderLeftWidth: $5.number;
-  opacity: $5.number;
+  borderWidth: $TypeOf<typeof $5.number>;
+  borderTopWidth: $TypeOf<typeof $5.number>;
+  borderRightWidth: $TypeOf<typeof $5.number>;
+  borderBottomWidth: $TypeOf<typeof $5.number>;
+  borderLeftWidth: $TypeOf<typeof $5.number>;
+  opacity: $TypeOf<typeof $5.number>;
 
   /**
    * (Android-only) Sets the elevation of a view, using Android's underlying
@@ -40,7 +40,7 @@ typeof $2 & typeof $3 & typeof $4 & {
    * Only supported on Android 5.0+, has no effect on earlier versions.
    * @platform android
    */
-  elevation: $5.number;
+  elevation: $TypeOf<typeof $5.number>;
 };
 declare const $f2tExportDefault: $TypeOf<typeof DeprecatedViewStylePropTypes>;
 export default $f2tExportDefault;

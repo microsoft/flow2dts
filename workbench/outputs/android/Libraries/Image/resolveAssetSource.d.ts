@@ -5,6 +5,6 @@ declare function setCustomSourceTransformer(transformer: (resolver: typeof $1) =
 declare function resolveAssetSource(source: any): null | undefined | ResolvedAssetSource;
 declare const $f2tExportDefault: $TEMPORARY$module$exports$assign<$TypeOf<typeof resolveAssetSource>, {
   setCustomSourceTransformer: $TypeOf<typeof setCustomSourceTransformer>;
-  pickScale: $1.pickScale;
+  pickScale: $TypeOf<typeof $1.pickScale>;
 }>;
 export default $f2tExportDefault;

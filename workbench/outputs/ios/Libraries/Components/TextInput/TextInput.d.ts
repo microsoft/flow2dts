@@ -592,10 +592,10 @@ declare type TextInputComponentStatics = Readonly<
   State: Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    currentlyFocusedInput: $3.currentlyFocusedInput;
-    currentlyFocusedField: $3.currentlyFocusedField;
-    focusTextInput: $3.focusTextInput;
-    blurTextInput: $3.blurTextInput;
+    currentlyFocusedInput: $TypeOf<typeof $3.currentlyFocusedInput>;
+    currentlyFocusedField: $TypeOf<typeof $3.currentlyFocusedField>;
+    focusTextInput: $TypeOf<typeof $3.focusTextInput>;
+    blurTextInput: $TypeOf<typeof $3.blurTextInput>;
   }>;
   propTypes: typeof $1;
 }>;

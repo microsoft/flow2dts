@@ -9,8 +9,8 @@ declare var DeprecatedShadowPropTypesIOS:
     height?: number;
     width?: number;
   }>;
-  shadowOpacity: $2.number;
-  shadowRadius: $2.number;
+  shadowOpacity: $TypeOf<typeof $2.number>;
+  shadowRadius: $TypeOf<typeof $2.number>;
 };
 declare const $f2tExportDefault: $TypeOf<typeof DeprecatedShadowPropTypesIOS>;
 export default $f2tExportDefault;

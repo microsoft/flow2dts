@@ -134,7 +134,7 @@ declare type Props<ItemT> = $Diff<VirtualizedListProps, {
 }> & FlatListProps<ItemT> & {};
 declare var defaultProps:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$4.defaultProps & {
+$TypeOf<typeof $4.defaultProps> & {
   numColumns: number;
 
   /**
