@@ -13,5 +13,4 @@ declare class AnimatedProps extends $1 {
   __restoreDefaultValues(): void;
   __getNativeConfig(): Object;
 }
-declare const $f2tExportDefault: AnimatedProps;
-export default $f2tExportDefault;
+export default AnimatedProps;

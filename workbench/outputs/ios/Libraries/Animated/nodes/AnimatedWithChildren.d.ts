@@ -7,5 +7,4 @@ declare class AnimatedWithChildren extends $1 {
   __getChildren(): typeof $1[];
   __callListeners(value: number): void;
 }
-declare const $f2tExportDefault: AnimatedWithChildren;
-export default $f2tExportDefault;
+export default AnimatedWithChildren;

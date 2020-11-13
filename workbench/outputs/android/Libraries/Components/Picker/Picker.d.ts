@@ -104,5 +104,4 @@ declare class Picker extends $3.Component<PickerProps> {
   render(): $3.Node;
 }
 export type { PickerItem };
-declare const $f2tExportDefault: Picker;
-export default $f2tExportDefault;
+export default Picker;

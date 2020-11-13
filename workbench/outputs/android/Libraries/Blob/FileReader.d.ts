@@ -20,5 +20,4 @@ declare class FileReader extends $2 {
   result(): null | undefined | ReaderResult;
 }
 declare var $2: any;
-declare const $f2tExportDefault: FileReader;
-export default $f2tExportDefault;
+export default FileReader;

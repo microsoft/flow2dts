@@ -50,5 +50,4 @@ declare class PickerIOS extends $2.Component<Props, State> {
   render(): $2.Node;
   componentDidUpdate(): void;
 }
-declare const $f2tExportDefault: PickerIOS;
-export default $f2tExportDefault;
+export default PickerIOS;

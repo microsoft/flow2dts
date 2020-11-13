@@ -35,5 +35,4 @@ declare class AppContainer extends React.Component<Props, State> {
   componentWillUnmount(): void;
   render(): React.Node;
 }
-declare const $f2tExportDefault: AppContainer;
-export default $f2tExportDefault;
+export default AppContainer;

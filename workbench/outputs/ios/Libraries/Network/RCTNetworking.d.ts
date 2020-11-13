@@ -8,5 +8,4 @@ declare class RCTNetworking extends NativeEventEmitter {
   abortRequest(requestId: number): void;
   clearCookies(callback: (result: boolean) => void): void;
 }
-declare const $f2tExportDefault: RCTNetworking;
-export default $f2tExportDefault;
+export default RCTNetworking;

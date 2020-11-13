@@ -59,5 +59,4 @@ declare class Linking extends NativeEventEmitter {
     value: string | number | boolean;
   }[]): Promise<void>;
 }
-declare const $f2tExportDefault: Linking;
-export default $f2tExportDefault;
+export default Linking;

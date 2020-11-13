@@ -11,5 +11,4 @@ declare class AnimatedSubtraction extends $4 {
   __detach(): void;
   __getNativeConfig(): any;
 }
-declare const $f2tExportDefault: AnimatedSubtraction;
-export default $f2tExportDefault;
+export default AnimatedSubtraction;
