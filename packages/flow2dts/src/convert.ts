@@ -24,18 +24,35 @@ function fixPathInOutput(outData: string): string {
   return lines.join("\n")
 }
 
+async function getOverrides(overrideFilename: string) {
+  let overridesSource = null
+  if (overrideFilename) {
+    try {
+      overridesSource = await fs.promises.readFile(overrideFilename, "utf8")
+    } catch {
+      return
+    }
+  }
+  if (overridesSource) {
+    return babelParser.parse(overridesSource, { sourceType: "module", plugins: ["typescript"] })
+  }
+}
+
 export async function convert({
   filename,
   outFilename,
+  overrideFilename,
 }: {
   filename: string
   outFilename: string
+  overrideFilename?: string
 }): Promise<[string, boolean]> {
   let success = false
   let outData: string
   try {
+    const overrides = overrideFilename && (await getOverrides(overrideFilename))
     const result = await transformFileAsync(filename, {
-      plugins: [pluginSyntaxFlow, pluginFlow2DTS],
+      plugins: [pluginSyntaxFlow, [pluginFlow2DTS, { overrides }]],
       sourceType: "module",
       parserOpts: {
         allowUndeclaredExports: true,
@@ -48,6 +65,7 @@ export async function convert({
       outData = "[FLOW2DTS - Error] Unknown error"
     }
   } catch (e: unknown) {
+    console.log(e)
     outData = `[FLOW2DTS - Error] ${stripAnsi((e as Error).message)}`
 
     // FIXME: temporary solution to print generated code after the error

@@ -9,7 +9,7 @@
     "test": "yarn workspace flow2dts-flow-types-polyfill test && yarn workspace flow2dts test",
     "start": "yarn workbench && yarn workbench:check:offences",
     "workbench": "yarn workbench:ios && yarn workbench:android",
-    "workbench:_": "yarn workspace flow2dts cli --cwd ../.. --rootDir ./workbench/inputs \"./workbench/inputs/{index,Libraries/**/*}.js.flow\" \"!./workbench/inputs/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow\" \"!./workbench/inputs/Libraries/{Inspector,JSInspector,NewAppScreen,ReactPrivate}/*.js.flow\" \"!./workbench/inputs/Libraries/Animated/AnimatedWeb.js.flow\"",
+    "workbench:_": "yarn workspace flow2dts cli --cwd ../.. --rootDir ./workbench/inputs --overridesDir ./workbench/overrides \"./workbench/inputs/{index,Libraries/**/*}.js.flow\" \"!./workbench/inputs/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow\" \"!./workbench/inputs/Libraries/{Inspector,JSInspector,NewAppScreen,ReactPrivate}/*.js.flow\" \"!./workbench/inputs/Libraries/Animated/AnimatedWeb.js.flow\"",
     "workbench:ios": "rimraf ./workbench/outputs/ios && yarn workbench:_ --platform ios --outDir ./workbench/outputs/ios",
     "workbench:android": "rimraf ./workbench/outputs/android && yarn workbench:_ --platform android --outDir ./workbench/outputs/android",
     "workbench:check": "yarn workbench:check:ios && yarn workbench:check:android",
