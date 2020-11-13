@@ -89,12 +89,13 @@ export const declarationVisitor: Visitor<State> = {
         t.assertTSTypeParameterDeclaration(typeParameters)
       }
 
-      const body = path.node.body as any
-      t.assertTSTypeLiteral(body)
+      let body: t.TSInterfaceBody | t.TSTypeLiteral = path.node.body as any
+      if (!t.isTSInterfaceBody(body)) {
+        t.assertTSTypeLiteral(body)
+        body = t.tsInterfaceBody(body.members)
+      }
 
-      path.replaceWith(
-        t.tsInterfaceDeclaration(path.node.id, typeParameters, _extends, t.tsInterfaceBody(body.members))
-      )
+      path.replaceWith(t.tsInterfaceDeclaration(path.node.id, typeParameters, _extends, body))
     },
   },
   ClassDeclaration: {
