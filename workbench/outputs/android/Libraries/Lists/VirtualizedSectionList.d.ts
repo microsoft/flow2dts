@@ -84,7 +84,7 @@ declare type OptionalProps<SectionT extends SectionBase<any>> =
   }) => void);
 };
 declare type VirtualizedListProps = $1.ElementProps<typeof $2>;
-declare type Props<SectionT> =
+declare type Props<SectionT extends SectionBase<any>> =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 RequiredProps<SectionT> & OptionalProps<SectionT> & $Diff<VirtualizedListProps, {
   renderItem: $PropertyType<VirtualizedListProps, "renderItem">;
