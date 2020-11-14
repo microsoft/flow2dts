@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "../Renderer/shims/createReactNativeComponentClass";
 declare namespace $f2tExportDefaultRedirect {
   export const $f2tHidden_createReactNativeComponentClass: $TypeOf<typeof $1>;

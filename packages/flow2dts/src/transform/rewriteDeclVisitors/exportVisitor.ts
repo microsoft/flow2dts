@@ -1,8 +1,15 @@
 import { Visitor, types as t } from "@babel/core"
 import { State } from "../state"
-import { assertTSType, isClass, nameForExportDefault, nameForExportDefaultRedirect, nameForHidden } from "../utilities"
+import {
+  assertTSType,
+  isClass,
+  nameForExportDefault,
+  nameForExportDefaultRedirect,
+  nameForHidden,
+  wrappedTypeOf,
+} from "../utilities"
 
-function convertToNamespace(decl: t.TSType): [string, t.TSTypeReference][] | undefined {
+function convertToNamespace(decl: t.TSType, state: State): [string, t.TSTypeReference][] | undefined {
   if (decl.type !== "TSTypeLiteral") return undefined
   for (const prop of decl.members) {
     if (prop.type !== "TSPropertySignature") return undefined
@@ -37,10 +44,7 @@ function convertToNamespace(decl: t.TSType): [string, t.TSTypeReference][] | und
       }
       case "TSTypeReference": {
         if (propType.typeName.type !== "Identifier" || propType.typeName.name !== "$TypeOf") {
-          propType = t.tsTypeReference(
-            t.identifier("$TypeOf"),
-            t.tsTypeParameterInstantiation([t.tsTypeQuery(propType.typeName)])
-          )
+          propType = wrappedTypeOf(propType.typeName, state)
         }
         break
       }
@@ -49,22 +53,20 @@ function convertToNamespace(decl: t.TSType): [string, t.TSTypeReference][] | und
   })
 }
 
-function makeRedirection(name: string): t.TSType {
-  return t.tsTypeReference(
-    t.identifier("$TypeOf"),
-    t.tsTypeParameterInstantiation([
-      t.tsTypeQuery(t.tsQualifiedName(t.identifier(nameForExportDefaultRedirect), t.identifier(nameForHidden(name)))),
-    ])
+function makeRedirection(name: string, state: State): t.TSType {
+  return wrappedTypeOf(
+    t.tsQualifiedName(t.identifier(nameForExportDefaultRedirect), t.identifier(nameForHidden(name))),
+    state
   )
 }
 
 export const exportVisitor: Visitor<State> = {
   DeclareModuleExports: {
-    exit(path) {
+    exit(path, state) {
       const typeAnnotation = path.node.typeAnnotation.typeAnnotation as any
       assertTSType(typeAnnotation)
 
-      const nss = convertToNamespace(typeAnnotation)
+      const nss = convertToNamespace(typeAnnotation, state)
       if (nss) {
         const statRedirect: t.Statement[] = []
         const statDefault: t.Statement[] = []
@@ -77,11 +79,11 @@ export const exportVisitor: Visitor<State> = {
           )
 
           const varField = t.identifier(name)
-          varField.typeAnnotation = t.tsTypeAnnotation(makeRedirection(name))
+          varField.typeAnnotation = t.tsTypeAnnotation(makeRedirection(name, state))
           const exportField = t.exportNamedDeclaration(t.variableDeclaration("const", [t.variableDeclarator(varField)]))
 
           const exportType = t.exportNamedDeclaration(
-            t.tsTypeAliasDeclaration(t.identifier(name), null, makeRedirection(name))
+            t.tsTypeAliasDeclaration(t.identifier(name), null, makeRedirection(name, state))
           )
 
           statRedirect.push(exportHidden)
