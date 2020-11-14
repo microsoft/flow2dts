@@ -55,6 +55,35 @@ export function createOverrideDeclarationVisitor(options: Options) {
         }
       },
     },
+    // TODO: We should convert DeclareClass, which is a Flow type, to ClassDeclaration.
+    DeclareClass: {
+      exit(path) {
+        const override = normalizedOverrides.types.get(path.node.id.name) as t.ClassDeclaration | undefined
+        if (override) {
+          if (override.typeParameters) {
+            t.assertTSTypeParameterDeclaration(override.typeParameters)
+            const originalTypeParameterDeclaration = path.node.typeParameters as any
+            if (originalTypeParameterDeclaration) {
+              t.assertTSTypeParameterDeclaration(originalTypeParameterDeclaration)
+              const originalTypeParams = originalTypeParameterDeclaration.params
+              override.typeParameters.params.forEach((overrideParam) => {
+                const originalParam = originalTypeParams.find(
+                  (originalParam) => originalParam.name === overrideParam.name
+                )
+                if (originalParam) {
+                  originalParam.constraint = overrideParam.constraint
+                  originalParam.default = overrideParam.default
+                } else {
+                  throw new Error("TODO: Unknown")
+                }
+              })
+              return
+            }
+          }
+          throw new Error("TODO: Unknown")
+        }
+      },
+    },
     ClassDeclaration: {
       exit(path) {
         const override = normalizedOverrides.types.get(path.node.id.name) as t.ClassDeclaration | undefined
