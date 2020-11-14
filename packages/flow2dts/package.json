@@ -9,7 +9,7 @@
   "scripts": {
     "build": "tsc --pretty",
     "test": "jest",
-    "cli": "node -r ts-node/register ./src/cli.ts",
+    "cli": "node --inspect -r ts-node/register ./src/cli.ts",
     "type-check": "tsc --noEmit --pretty"
   },
   "peerDependencies": {
