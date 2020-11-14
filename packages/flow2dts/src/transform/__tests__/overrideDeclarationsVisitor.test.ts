@@ -76,4 +76,19 @@ describe("overrideDeclarationVisitor", () => {
       }"
     `)
   })
+
+  it("replaces class generics", () => {
+    expect(
+      applyOverrides({
+        input: `
+          declare class Foo<X extends string, Y extends string, Z extends boolean = false> extends Bar<X, Y, Z> {}
+        `,
+        overrides: `
+          declare class Foo<Y extends number = 42> {}
+        `,
+      })
+    ).toMatchInlineSnapshot(
+      `"declare class Foo<X extends string, Y extends number = 42, Z extends boolean = false> extends Bar<X, Y, Z> {}"`
+    )
+  })
 })
