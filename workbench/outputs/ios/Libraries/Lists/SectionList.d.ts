@@ -83,7 +83,7 @@ declare type OptionalProps<SectionT extends SectionBase<any>> =
    */
   removeClippedSubviews?: boolean;
 };
-declare type Props<SectionT> =
+declare type Props<SectionT extends SectionBase<any>> =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 $Diff<VirtualizedSectionListProps<SectionT>, {
   getItem: $PropertyType<VirtualizedSectionListProps<SectionT>, "getItem">;

@@ -21,21 +21,39 @@ function applyOverrides(options: { input: string; overrides: string }) {
 }
 
 describe("overrideDeclarationVisitor", () => {
-  it("overrides type alias declarations", () => {
-    expect(
-      applyOverrides({
-        input: `
-          type X = number;
-          type Y = string;
-        `,
-        overrides: `
-          type X = string;
-        `,
-      })
-    ).toMatchInlineSnapshot(`
-      "type X = string;
-      type Y = string;"
-    `)
+  describe("concerning type alias declarations", () => {
+    it("overrides type alias declarations", () => {
+      expect(
+        applyOverrides({
+          input: `
+            type X = number;
+            type Y = string;
+            type Z = boolean;
+          `,
+          overrides: `
+            type X = string;
+            type Z<X> = undefined;
+          `,
+        })
+      ).toMatchInlineSnapshot(`
+        "type X = string;
+        type Y = string;
+        type Z<X> = boolean;"
+      `)
+    })
+
+    it("uses the old implementation when it is undefined in the override", () => {
+      expect(
+        applyOverrides({
+          input: `
+            type Z = boolean;
+          `,
+          overrides: `
+            type Z<X> = undefined;
+          `,
+        })
+      ).toMatchInlineSnapshot(`"type Z<X> = boolean;"`)
+    })
   })
 
   it("replaces interface generics", () => {

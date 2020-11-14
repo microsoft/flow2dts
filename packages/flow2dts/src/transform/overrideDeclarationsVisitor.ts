@@ -29,7 +29,14 @@ export function createOverrideDeclarationVisitor(options: Options) {
       exit(path, state) {
         const override = normalizedOverrides.types.get(path.node.id.name)
         if (override) {
-          path.replaceWith(override)
+          if (t.isTSTypeAliasDeclaration(override) && t.isTSUndefinedKeyword(override.typeAnnotation)) {
+            // The override is a TSTypeAlias as well but doesn't define a implementation override (undefined),
+            // so use the original implementation.
+            path.replaceWith({ ...override, typeAnnotation: path.node.typeAnnotation })
+          } else {
+            path.replaceWith(override)
+          }
+          path.skip()
         }
       },
     },
