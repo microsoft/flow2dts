@@ -1,5 +1,5 @@
 import { Visitor, types as t } from "@babel/core"
-import { Scope } from "@babel/traverse"
+import babelGenerator from "@babel/generator"
 import { State } from "../state"
 import { assertTSType, assertTSTypeElement, nameForTypeIndexerKey } from "../utilities"
 
@@ -60,13 +60,35 @@ export const objectTypeVisitor: Visitor<State> = {
         }
       }
 
-      const identifier = t.identifier(id === null ? nameForTypeIndexerKey : id.name)
-      identifier.typeAnnotation = t.tsTypeAnnotation(rewrittenKey ? rewrittenKey : key)
+      if (rewrittenKey) {
+        const identifier = t.identifier(id === null ? nameForTypeIndexerKey : id.name)
+        identifier.typeAnnotation = t.tsTypeAnnotation(rewrittenKey)
 
-      const indexSignature = t.tsIndexSignature([identifier], t.tsTypeAnnotation(value))
-      indexSignature.readonly = readonly
+        const indexSignature = t.tsIndexSignature([identifier], t.tsTypeAnnotation(value))
+        indexSignature.readonly = readonly
 
-      path.replaceWith(indexSignature)
+        path.replaceWith(indexSignature)
+      } else {
+        path.addComment(
+          "leading",
+          `[FLOW2DTS - Warning] The key type '${
+            babelGenerator(key).code
+          }' was unresolvable in the original Flow source.`
+        )
+
+        const idString = t.identifier(id === null ? nameForTypeIndexerKey : id.name)
+        idString.typeAnnotation = t.tsTypeAnnotation(t.tsStringKeyword())
+        const sigString = t.tsIndexSignature([idString], t.tsTypeAnnotation(value))
+        sigString.readonly = readonly
+
+        const idNumber = t.identifier(id === null ? nameForTypeIndexerKey : id.name)
+        idNumber.typeAnnotation = t.tsTypeAnnotation(t.tsNumberKeyword())
+        const sigNumber = t.tsIndexSignature([idNumber], t.tsTypeAnnotation(value))
+        sigNumber.readonly = readonly
+
+        // FIXME: "value" is shared in two TSIndexSignature, which could cause issues in the future
+        path.replaceWithMultiple([sigString, sigNumber])
+      }
     },
   },
   ObjectTypeProperty: {
