@@ -24,7 +24,7 @@ interface Spec extends TurboModule {
    *    - 'dark-content'
    *    - 'light-content'
    */
-  readonly setStyle: (statusBarStyle?: null | undefined | string, animated: boolean) => void;
+  readonly setStyle: (statusBarStyle: null | undefined | string, animated: boolean) => void;
 
   /**
    *  - withAnimation can be: 'none' | 'fade' | 'slide'
@@ -56,7 +56,7 @@ declare var NativeStatusBarManager:
    *    - 'dark-content'
    *    - 'light-content'
    */
-  setStyle: (statusBarStyle?: null | undefined | string, animated: boolean) => void;
+  setStyle: (statusBarStyle: null | undefined | string, animated: boolean) => void;
 
   /**
    *  - withAnimation can be: 'none' | 'fade' | 'slide'
