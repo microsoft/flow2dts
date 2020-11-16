@@ -7,7 +7,7 @@ interface Spec extends TurboModule {
   readonly requestPermission: (permission: PermissionType) => Promise<PermissionStatus>;
   readonly shouldShowRequestPermissionRationale: (permission: string) => Promise<boolean>;
   readonly requestMultiplePermissions: (permissions: PermissionType[]) => Promise<{
-    [permission: PermissionType]: PermissionStatus;
+    [permission: string]: PermissionStatus;
   }>;
 }
 export type { PermissionStatus };
