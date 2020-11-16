@@ -13,9 +13,14 @@ declare type AttributeType = true | Readonly<
 }>;
 declare type AttributeConfiguration<TProps = string, TStyleProps = string> = Readonly<{
   style: Readonly<{
-    [propName: TStyleProps]: AttributeType;
+    /*[FLOW2DTS - Warning] The key type 'TStyleProps' was unresolvable in the original Flow source.*/
+    [propName: string]: AttributeType;
+    [propName: number]: AttributeType;
   }>;
-  [propName: TProps]: AttributeType;
+
+  /*[FLOW2DTS - Warning] The key type 'TProps' was unresolvable in the original Flow source.*/
+  [propName: string]: AttributeType;
+  [propName: number]: AttributeType;
 }>;
 declare type ReactNativeBaseComponentViewConfig<TProps = string, TStyleProps = string> = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

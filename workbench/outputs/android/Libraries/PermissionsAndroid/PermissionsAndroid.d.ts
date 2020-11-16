@@ -75,7 +75,9 @@ declare class PermissionsAndroid {
    * See https://reactnative.dev/docs/permissionsandroid.html#requestmultiple
    */
   requestMultiple(permissions: PermissionType[]): Promise<{
-    [permission: PermissionType]: PermissionStatus;
+    /*[FLOW2DTS - Warning] The key type 'PermissionType' was unresolvable in the original Flow source.*/
+    [permission: string]: PermissionStatus;
+    [permission: number]: PermissionStatus;
   }>;
 }
 declare var PermissionsAndroidInstance: PermissionsAndroid;
