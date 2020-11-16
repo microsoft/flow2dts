@@ -2,7 +2,7 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "./nodes/AnimatedValue";
 declare type Mapping = {
   [key: string]: Mapping;
-} | typeof $1;
+} | $TypeOf<typeof $1>;
 declare type EventConfig = {
   listener?: null | undefined | Function;
   useNativeDriver: boolean;

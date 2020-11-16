@@ -15,7 +15,7 @@ function convertQID(input: t.Identifier | t.QualifiedTypeIdentifier): t.Identifi
 export const typeReferenceVisitor: Visitor<State> = {
   GenericTypeAnnotation: {
     exit(path, state) {
-      const resolved = resolveGenericTypeAnnotation(state.typeReferences, path, path.node)
+      const resolved = resolveGenericTypeAnnotation(state, path, path.node)
       if (resolved) {
         path.replaceWith(resolved)
         return
@@ -129,7 +129,7 @@ export const typeReferenceVisitor: Visitor<State> = {
        */
       const typeQueryOperator = path.node.argument
       if (typeQueryOperator.type === "GenericTypeAnnotation") {
-        const resolved = resolveGenericTypeAnnotation(state.typeReferences, path, typeQueryOperator)
+        const resolved = resolveGenericTypeAnnotation(state, path, typeQueryOperator)
         if (resolved) {
           /*
            if it is resolved to be TSTypeReference(TSEntityName),

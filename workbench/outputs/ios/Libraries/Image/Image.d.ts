@@ -19,8 +19,8 @@ declare type ImageComponentStatics = Readonly<
   getSizeWithHeaders: $TypeOf<typeof getSizeWithHeaders>;
   prefetch: $TypeOf<typeof prefetch>;
   queryCache: $TypeOf<typeof queryCache>;
-  resolveAssetSource: typeof $3;
-  propTypes: typeof $1;
+  resolveAssetSource: $TypeOf<typeof $3>;
+  propTypes: $TypeOf<typeof $1>;
 }>;
-declare const $f2tExportDefault: $2.AbstractComponent<ImagePropsType, $2.ElementRef<typeof ImageViewNativeComponent>> & ImageComponentStatics;
+declare const $f2tExportDefault: $2.AbstractComponent<ImagePropsType, $2.ElementRef<$TypeOf<typeof ImageViewNativeComponent>>> & ImageComponentStatics;
 export default $f2tExportDefault;

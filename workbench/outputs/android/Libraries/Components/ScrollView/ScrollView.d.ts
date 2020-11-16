@@ -574,14 +574,14 @@ ViewProps & IOSProps & AndroidProps & VRProps & {
   * A ref to the inner View element of the ScrollView. This should be used
   * instead of calling `getInnerViewRef`.
   */
-  innerViewRef?: React.Ref<typeof View>;
+  innerViewRef?: React.Ref<$TypeOf<typeof View>>;
 
   /**
   * A ref to the Native ScrollView component. This ref can be used to call
   * all of ScrollView's public methods, in addition to native methods like
   * measure, measureLayout, etc.
   */
-  scrollViewRef?: React.Ref<typeof ScrollViewNativeComponent & ScrollViewImperativeMethods>;
+  scrollViewRef?: React.Ref<$TypeOf<typeof ScrollViewNativeComponent> & ScrollViewImperativeMethods>;
 }>;
 declare type State =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -591,10 +591,10 @@ ScrollResponderState & {
 declare type ScrollViewComponentStatics = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  Context: typeof ScrollViewContext;
+  Context: $TypeOf<typeof ScrollViewContext>;
 }>;
 declare class ScrollView extends React.Component<Props, State> {
-  static Context: typeof ScrollViewContext;
+  static Context: $TypeOf<typeof ScrollViewContext>;
   constructor(props: Props);
   state: State;
   UNSAFE_componentWillMount(): void;
@@ -612,7 +612,7 @@ declare class ScrollView extends React.Component<Props, State> {
   getScrollResponder(): ScrollResponderType;
   getScrollableNode(): null | undefined | number;
   getInnerViewNode(): null | undefined | number;
-  getInnerViewRef(): null | undefined | React.ElementRef<typeof View>;
+  getInnerViewRef(): null | undefined | React.ElementRef<$TypeOf<typeof View>>;
   getNativeScrollRef(): null | undefined | React.ElementRef<HostComponent<unknown>>;
 
   /**

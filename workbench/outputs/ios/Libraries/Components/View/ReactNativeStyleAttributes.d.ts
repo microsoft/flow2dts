@@ -8,19 +8,19 @@ import $6 from "../../Utilities/differ/sizesDiffer";
 declare type ReturnBoolType = <V>($f2t1: V) => true;
 declare type BoolifiedDeprecatedViewStylePropTypes =
 /*[FLOW2DTS - Warning] This type was a $ObjMap type in the original Flow source.*/
-{ [K in keyof typeof $3]: ReturnType<ReturnBoolType> };
-declare type BoolifiedDeprecatedTextStylePropTypes = $ObjMapi<typeof $2, ReturnBoolType>;
-declare type BoolifiedDeprecatedImageStylePropTypes = $ObjMapi<typeof $1, ReturnBoolType>;
+{ [K in keyof $TypeOf<typeof $3>]: ReturnType<ReturnBoolType> };
+declare type BoolifiedDeprecatedTextStylePropTypes = $ObjMapi<$TypeOf<typeof $2>, ReturnBoolType>;
+declare type BoolifiedDeprecatedImageStylePropTypes = $ObjMapi<$TypeOf<typeof $1>, ReturnBoolType>;
 declare type StyleAttributesType = BoolifiedDeprecatedViewStylePropTypes & BoolifiedDeprecatedTextStylePropTypes & BoolifiedDeprecatedImageStylePropTypes & {
   transform: Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    process: typeof $5;
+    process: $TypeOf<typeof $5>;
   }> | true;
   shadowOffset: Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    diff: typeof $6;
+    diff: $TypeOf<typeof $6>;
   }> | true;
   backgroundColor: $TypeOf<typeof colorAttributes> | true;
   borderBottomColor: $TypeOf<typeof colorAttributes> | true;
@@ -41,7 +41,7 @@ declare var ReactNativeStyleAttributes: StyleAttributesType;
 declare var colorAttributes:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  process: typeof $4;
+  process: $TypeOf<typeof $4>;
 };
 declare const $f2tExportDefault: $TypeOf<typeof ReactNativeStyleAttributes>;
 export default $f2tExportDefault;

@@ -24,7 +24,7 @@ declare var UIView:
   onAccessibilityEscape: boolean;
   collapsable: boolean;
   needsOffscreenAlphaCompositing: boolean;
-  style: typeof $1;
+  style: $TypeOf<typeof $1>;
 };
 declare var RCTView:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

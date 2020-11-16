@@ -26,15 +26,15 @@ declare type CompositeAnimation = {
   _startNativeLoop: (iterations?: number) => void;
   _isUsingNativeDriver: () => boolean;
 };
-declare var add: (a: typeof $9 | number, b: typeof $9 | number) => typeof $1;
-declare var subtract: (a: typeof $9 | number, b: typeof $9 | number) => typeof $11;
-declare var divide: (a: typeof $9 | number, b: typeof $9 | number) => typeof $3;
-declare var multiply: (a: typeof $9 | number, b: typeof $9 | number) => typeof $8;
-declare var modulo: (a: typeof $9, modulus: number) => typeof $7;
-declare var diffClamp: (a: typeof $9, min: number, max: number) => typeof $2;
-declare var spring: (value: typeof $12 | typeof $13, config: SpringAnimationConfig) => CompositeAnimation;
-declare var timing: (value: typeof $12 | typeof $13, config: TimingAnimationConfig) => CompositeAnimation;
-declare var decay: (value: typeof $12 | typeof $13, config: DecayAnimationConfig) => CompositeAnimation;
+declare var add: (a: $TypeOf<typeof $9> | number, b: $TypeOf<typeof $9> | number) => $TypeOf<typeof $1>;
+declare var subtract: (a: $TypeOf<typeof $9> | number, b: $TypeOf<typeof $9> | number) => $TypeOf<typeof $11>;
+declare var divide: (a: $TypeOf<typeof $9> | number, b: $TypeOf<typeof $9> | number) => $TypeOf<typeof $3>;
+declare var multiply: (a: $TypeOf<typeof $9> | number, b: $TypeOf<typeof $9> | number) => $TypeOf<typeof $8>;
+declare var modulo: (a: $TypeOf<typeof $9>, modulus: number) => $TypeOf<typeof $7>;
+declare var diffClamp: (a: $TypeOf<typeof $9>, min: number, max: number) => $TypeOf<typeof $2>;
+declare var spring: (value: $TypeOf<typeof $12> | $TypeOf<typeof $13>, config: SpringAnimationConfig) => CompositeAnimation;
+declare var timing: (value: $TypeOf<typeof $12> | $TypeOf<typeof $13>, config: TimingAnimationConfig) => CompositeAnimation;
+declare var decay: (value: $TypeOf<typeof $12> | $TypeOf<typeof $13>, config: DecayAnimationConfig) => CompositeAnimation;
 declare var sequence: (animations: CompositeAnimation[]) => CompositeAnimation;
 declare type ParallelConfig = {
   // If one is stopped, stop all.  default: true

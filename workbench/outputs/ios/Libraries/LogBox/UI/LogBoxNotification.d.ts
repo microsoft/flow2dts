@@ -5,7 +5,7 @@ import LogBoxLog from "../Data/LogBoxLog";
 declare type Props = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  log: typeof LogBoxLog;
+  log: $TypeOf<typeof LogBoxLog>;
   totalLogCount: number;
   level: "warn" | "error";
   onPressOpen: () => void;

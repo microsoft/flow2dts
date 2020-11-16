@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import * as React from "react";
 import LogBoxLog from "./LogBoxLog";
@@ -7,7 +8,7 @@ import { Category } from "./parseLogBoxLog";
 import { ComponentStack } from "./parseLogBoxLog";
 import { ExtendedExceptionData } from "./parseLogBoxLog";
 import { ExtendedError } from "../../Core/Devtools/parseErrorStack";
-declare type LogBoxLogs = Set<typeof LogBoxLog>;
+declare type LogBoxLogs = Set<$TypeOf<typeof LogBoxLog>>;
 declare type LogData = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
@@ -53,14 +54,14 @@ declare function isLogBoxErrorMessage(message: string): boolean;
 declare function isMessageIgnored(message: string): boolean;
 declare function addLog(log: LogData): void;
 declare function addException(error: ExtendedExceptionData): void;
-declare function symbolicateLogNow(log: typeof LogBoxLog): void;
-declare function retrySymbolicateLogNow(log: typeof LogBoxLog): void;
-declare function symbolicateLogLazy(log: typeof LogBoxLog): void;
+declare function symbolicateLogNow(log: $TypeOf<typeof LogBoxLog>): void;
+declare function retrySymbolicateLogNow(log: $TypeOf<typeof LogBoxLog>): void;
+declare function symbolicateLogLazy(log: $TypeOf<typeof LogBoxLog>): void;
 declare function clear(): void;
 declare function setSelectedLog(proposedNewIndex: number): void;
 declare function clearWarnings(): void;
 declare function clearErrors(): void;
-declare function dismiss(log: typeof LogBoxLog): void;
+declare function dismiss(log: $TypeOf<typeof LogBoxLog>): void;
 declare function setWarningFilter(filter: WarningFilter): void;
 declare function setAppInfo(info: () => AppInfo): void;
 declare function getAppInfo(): null | undefined | AppInfo;
@@ -72,7 +73,7 @@ declare function observe(observer: Observer): Subscription;
 declare type SubscribedComponent = React.AbstractComponent<Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  logs: ReadonlyArray<typeof LogBoxLog>;
+  logs: ReadonlyArray<$TypeOf<typeof LogBoxLog>>;
   isDisabled: boolean;
   selectedLogIndex: number;
 }>>;

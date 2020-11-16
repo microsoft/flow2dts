@@ -1,4 +1,4 @@
-import { Stringish } from "flow2dts-flow-types-polyfill";
+import { $TypeOf, Stringish } from "flow2dts-flow-types-polyfill";
 // @flow
 import Pressability from "../../Pressability/Pressability";
 import { AccessibilityActionEvent } from "../../Components/View/ViewAccessibility";
@@ -51,7 +51,7 @@ declare type Props = Readonly<
 declare type State = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  pressability: typeof Pressability;
+  pressability: $TypeOf<typeof Pressability>;
 }>;
 declare class TouchableWithoutFeedback extends React.Component<Props, State> {
   state: State;

@@ -597,7 +597,7 @@ declare type TextInputComponentStatics = Readonly<
     focusTextInput: $TypeOf<typeof $3.focusTextInput>;
     blurTextInput: $TypeOf<typeof $3.blurTextInput>;
   }>;
-  propTypes: typeof $1;
+  propTypes: $TypeOf<typeof $1>;
 }>;
 export type { ChangeEvent };
 export type { TextInputEvent };

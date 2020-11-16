@@ -263,7 +263,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#hitslop
    */
-  hitSlop: typeof $1;
+  hitSlop: $TypeOf<typeof $1>;
 
   /**
    * Invoked on mount and layout changes with:

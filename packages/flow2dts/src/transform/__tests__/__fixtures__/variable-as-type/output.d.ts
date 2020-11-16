@@ -21,5 +21,5 @@ interface MyInterface2 extends React.Component<{}>, React.Component<{}> {
 }
 import $fakeReact from "fake-react"
 declare type something = $fakeReact.AbstractComponent<number>
-declare type otherthing1 = typeof $fakeReact
-declare type otherthing2 = typeof React
+declare type otherthing1 = $TypeOf<typeof $fakeReact>
+declare type otherthing2 = $TypeOf<typeof React>

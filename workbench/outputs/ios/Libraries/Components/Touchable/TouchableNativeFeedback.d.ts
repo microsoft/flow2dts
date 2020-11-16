@@ -73,7 +73,7 @@ React.ElementConfig<TouchableWithoutFeedback> & {
 declare type State = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  pressability: typeof Pressability;
+  pressability: $TypeOf<typeof Pressability>;
 }>;
 declare class TouchableNativeFeedback extends React.Component<Props, State> {
   SelectableBackground(rippleRadius: null | undefined | number): Readonly<

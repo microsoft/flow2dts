@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "./AnimatedNode";
 import $3 from "./AnimatedWithChildren";
 declare type ExtrapolateType = "extend" | "identity" | "clamp";
@@ -11,7 +12,7 @@ declare type InterpolationConfigType = {
 };
 declare class AnimatedInterpolation extends $3 {
   __createInterpolation(config: InterpolationConfigType): (input: number) => number | string;
-  constructor(parent: typeof $2, config: InterpolationConfigType);
+  constructor(parent: $TypeOf<typeof $2>, config: InterpolationConfigType);
   __makeNative(): void;
   __getValue(): number | string;
   interpolate(config: InterpolationConfigType): AnimatedInterpolation;

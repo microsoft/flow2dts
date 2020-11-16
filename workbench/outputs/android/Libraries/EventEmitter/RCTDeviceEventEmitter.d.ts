@@ -5,7 +5,7 @@ import EmitterSubscription$f2tTypeof from "../vendor/emitter/_EmitterSubscriptio
 declare type EmitterSubscription = $TypeOf<typeof EmitterSubscription$f2tTypeof>;
 import EventSubscriptionVendor from "../vendor/emitter/_EventSubscriptionVendor";
 declare class RCTDeviceEventEmitter extends EventEmitter {
-  sharedSubscriber: typeof EventSubscriptionVendor;
+  sharedSubscriber: $TypeOf<typeof EventSubscriptionVendor>;
   constructor();
   addListener(eventType: string, listener: Function, context: null | undefined | Object): EmitterSubscription;
   removeAllListeners(eventType: null | undefined | string): void;

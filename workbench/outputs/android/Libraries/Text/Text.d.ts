@@ -9,7 +9,7 @@ declare var Text: $2.AbstractComponent<TextProps, $2.ElementRef<$TypeOf<typeof N
 declare var TextToExport: $TypeOf<typeof Text> & Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  propTypes: typeof $1;
+  propTypes: $TypeOf<typeof $1>;
 }>;
 declare const $f2tExportDefault: $TypeOf<typeof TextToExport>;
 export default $f2tExportDefault;

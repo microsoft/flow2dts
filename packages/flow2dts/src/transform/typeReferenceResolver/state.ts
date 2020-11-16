@@ -1,5 +1,6 @@
 import { NodePath, types as t } from "@babel/core"
-import { assertTSType } from "../utilities"
+import { wrappedTypeOf } from "../utilities"
+import { State } from "../state"
 
 export interface ReferenceRecord {
   variable: t.DeclareVariable
@@ -107,11 +108,11 @@ export function resolveMemberExpression<T>(
 }
 
 export function resolveGenericTypeAnnotation<T>(
-  typeReferences: RecognizedTypeReferences,
+  state: State,
   path: NodePath<T>,
   flowType: t.GenericTypeAnnotation
-): t.TSTypeReference | t.TSTypeQuery | undefined {
-  let entity = resolveQualifiedTypeIdentifier(typeReferences, path, flowType.id)
+): t.TSTypeReference | undefined {
+  let entity = resolveQualifiedTypeIdentifier(state.typeReferences, path, flowType.id)
 
   if (!entity) {
     /*
@@ -155,8 +156,8 @@ export function resolveGenericTypeAnnotation<T>(
      */
     if (entity.type === "Identifier") {
       // when entity is not undefined, it is a resolved type, which means the name is in global context
-      if (typeReferences.imports[entity.name]) {
-        return t.tsTypeQuery(entity)
+      if (state.typeReferences.imports[entity.name]) {
+        return wrappedTypeOf(entity, state)
       }
     }
   }

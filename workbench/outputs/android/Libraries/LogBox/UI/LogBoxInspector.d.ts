@@ -9,7 +9,7 @@ declare type Props = Readonly<
   onDismiss: () => void;
   onChangeSelectedIndex: (index: number) => void;
   onMinimize: () => void;
-  logs: ReadonlyArray<typeof LogBoxLog>;
+  logs: ReadonlyArray<$TypeOf<typeof LogBoxLog>>;
   selectedIndex: number;
   fatalType?: null | undefined | LogLevel;
 }>;

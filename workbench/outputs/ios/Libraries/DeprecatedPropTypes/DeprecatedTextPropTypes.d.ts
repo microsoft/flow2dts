@@ -55,7 +55,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/text.html#pressretentionoffset
    */
-  pressRetentionOffset: typeof $2;
+  pressRetentionOffset: $TypeOf<typeof $2>;
 
   /**
    * Lets the user select text.
@@ -69,7 +69,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/text.html#selectioncolor
    */
-  selectionColor: typeof $1;
+  selectionColor: $TypeOf<typeof $1>;
 
   /**
    * When `true`, no visual change is made when text is pressed down.

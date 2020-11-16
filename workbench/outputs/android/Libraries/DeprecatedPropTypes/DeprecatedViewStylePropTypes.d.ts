@@ -6,16 +6,16 @@ import $4 from "./DeprecatedTransformPropTypes";
 import $5 from "prop-types";
 declare var DeprecatedViewStylePropTypes:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-typeof $2 & typeof $3 & typeof $4 & {
+$TypeOf<typeof $2> & $TypeOf<typeof $3> & $TypeOf<typeof $4> & {
   backfaceVisibility: React$PropType$Primitive<"visible" | "hidden">;
-  backgroundColor: typeof $1;
-  borderColor: typeof $1;
-  borderTopColor: typeof $1;
-  borderRightColor: typeof $1;
-  borderBottomColor: typeof $1;
-  borderLeftColor: typeof $1;
-  borderStartColor: typeof $1;
-  borderEndColor: typeof $1;
+  backgroundColor: $TypeOf<typeof $1>;
+  borderColor: $TypeOf<typeof $1>;
+  borderTopColor: $TypeOf<typeof $1>;
+  borderRightColor: $TypeOf<typeof $1>;
+  borderBottomColor: $TypeOf<typeof $1>;
+  borderLeftColor: $TypeOf<typeof $1>;
+  borderStartColor: $TypeOf<typeof $1>;
+  borderEndColor: $TypeOf<typeof $1>;
   borderRadius: $TypeOf<typeof $5.number>;
   borderTopLeftRadius: $TypeOf<typeof $5.number>;
   borderTopRightRadius: $TypeOf<typeof $5.number>;
