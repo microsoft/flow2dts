@@ -36,3 +36,11 @@ const $fakeReact = require("fake-react")
 type something = FakeReact.AbstractComponent<number>
 type otherthing1 = FakeReact
 type otherthing2 = React
+
+import typeof TS2709_1 from "TS2709"
+import typeof * as TS2709_2 from "TS2709"
+
+type hidden = {
+  TS2709_1: TS2709_1,
+  get TS2709_2(): TS2709_2,
+}

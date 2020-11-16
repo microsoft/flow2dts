@@ -23,3 +23,10 @@ import $fakeReact from "fake-react"
 declare type something = $fakeReact.AbstractComponent<number>
 declare type otherthing1 = $TypeOf<typeof $fakeReact>
 declare type otherthing2 = $TypeOf<typeof React>
+import TS2709_1$f2tTypeof from "TS2709"
+declare type TS2709_1 = $TypeOf<typeof TS2709_1$f2tTypeof>
+import * as TS2709_2 from "TS2709"
+declare type hidden = {
+  TS2709_1: TS2709_1
+  TS2709_2: $TypeOf<typeof TS2709_2>
+}
