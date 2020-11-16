@@ -254,7 +254,7 @@ declare const $f2tExportDefault:
   StyleSheet: StyleSheet;
   Systrace: Systrace;
   ToastAndroid: ToastAndroid;
-  TurboModuleRegistry: TurboModuleRegistry;
+  TurboModuleRegistry: $TypeOf<typeof TurboModuleRegistry>;
   UIManager: UIManager;
   unstable_batchedUpdates: $PropertyType<ReactNative, "unstable_batchedUpdates">;
   useColorScheme: useColorScheme;

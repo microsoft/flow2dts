@@ -49,16 +49,27 @@ export const typeReferenceRecognizerVisitor: Visitor<State> = {
   },
   ImportDeclaration: {
     enter(path, state) {
-      if (path.node.importKind === "value") {
-        for (const specifier of path.node.specifiers) {
-          if (specifier.type === "ImportDefaultSpecifier" || specifier.type === "ImportNamespaceSpecifier") {
-            const name = specifier.local.name
-            if (state.typeReferences.imports[name]) {
-              throw new Error(`Found duplicated import in module: ${name}`)
+      for (const specifier of path.node.specifiers) {
+        switch (specifier.type) {
+          case "ImportDefaultSpecifier": {
+            if (path.node.importKind === "type" || path.node.importKind === "typeof") {
+              continue
             }
-            state.typeReferences.imports[name] = path.node
+            break
+          }
+          case "ImportNamespaceSpecifier": {
+            if (path.node.importKind === "type") {
+              continue
+            }
+            break
           }
         }
+
+        const name = specifier.local.name
+        if (state.typeReferences.imports[name]) {
+          throw new Error(`Found duplicated import in module: ${name}`)
+        }
+        state.typeReferences.imports[name] = path.node
       }
     },
   },
