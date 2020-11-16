@@ -1,4 +1,5 @@
 import { Visitor, types as t } from "@babel/core"
+import { Scope } from "@babel/traverse"
 import { State } from "../state"
 import { assertTSType, assertTSTypeElement, nameForTypeIndexerKey } from "../utilities"
 
@@ -19,8 +20,48 @@ export const objectTypeVisitor: Visitor<State> = {
         )
       }
 
+      let rewrittenKey = <undefined | t.FlowType | t.TSType>key
+      let resolvedAlias = false
+      while (rewrittenKey && rewrittenKey.type !== "TSStringKeyword" && rewrittenKey.type !== "TSNumberKeyword") {
+        switch (rewrittenKey.type) {
+          case "StringTypeAnnotation": {
+            rewrittenKey = t.tsStringKeyword()
+            continue
+          }
+          case "NumberTypeAnnotation": {
+            rewrittenKey = t.tsStringKeyword()
+            continue
+          }
+          case "TSTypeReference": {
+            if (!resolvedAlias && rewrittenKey.typeName.type === "Identifier") {
+              // termporarily only allow one step of alias resolving
+              resolvedAlias = true
+
+              const binding = path.scope.getBinding(rewrittenKey.typeName.name)
+              const alias = binding?.path.node
+
+              switch (alias?.type) {
+                case "TypeAlias": {
+                  rewrittenKey = alias.right
+                  continue
+                }
+                case "TSTypeAliasDeclaration": {
+                  rewrittenKey = alias.typeAnnotation
+                  continue
+                }
+              }
+            }
+
+            rewrittenKey = undefined
+            break
+          }
+          default:
+            rewrittenKey = undefined
+        }
+      }
+
       const identifier = t.identifier(id === null ? nameForTypeIndexerKey : id.name)
-      identifier.typeAnnotation = t.tsTypeAnnotation(key)
+      identifier.typeAnnotation = t.tsTypeAnnotation(rewrittenKey ? rewrittenKey : key)
 
       const indexSignature = t.tsIndexSignature([identifier], t.tsTypeAnnotation(value))
       indexSignature.readonly = readonly
