@@ -4,7 +4,7 @@ import generate from "@babel/generator"
 // @ts-ignore
 import pluginSyntaxTypeScript from "@babel/plugin-syntax-typescript"
 
-import { applyImportsForTypeReferencesTransform } from "../applyImportsForTypeReferencesTransform"
+import { emitImportsForTypeReferencesVisitor } from "../emitImportsForTypeReferencesVisitor"
 
 function parse(code: string) {
   return _parse(code, {
@@ -15,11 +15,11 @@ function parse(code: string) {
 
 function applyImports(options: { input: string; packagesAndTypes: Record<string, string[]> }) {
   const input = parse(options.input)
-  applyImportsForTypeReferencesTransform(input.program, options.packagesAndTypes)
+  traverse(input, emitImportsForTypeReferencesVisitor, undefined, { packagesAndTypes: options.packagesAndTypes })
   return generate(input).code
 }
 
-describe(applyImportsForTypeReferencesTransform, () => {
+describe("emitImportsForTypeReferencesVisitor", () => {
   it("emits imports for seen type references", () => {
     expect(
       applyImports({

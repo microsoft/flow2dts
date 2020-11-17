@@ -1,11 +1,11 @@
-import { PluginObj } from "@babel/core"
+import { PluginObj, traverse, types as t } from "@babel/core"
 import { initializeState, State } from "./state"
 import { typeReferenceRecognizerVisitor } from "./typeReferenceResolver"
 import { rewriteTypeVisitor } from "./rewriteTypeVisitors"
 import { rewriteDeclVisitor } from "./rewriteDeclVisitors"
 import { fixupVisitor } from "./fixupVisitor"
 import { createOverrideDeclarationVisitor, Options as OverridesOptions } from "./overrideDeclarationsVisitor"
-import { applyImportsForTypeReferencesTransform } from "./applyImportsForTypeReferencesTransform"
+import { emitImportsForTypeReferencesVisitor } from "./emitImportsForTypeReferencesVisitor"
 import { polyfillPackagesAndTypes } from "./polyfillPackagesAndTypes"
 
 export function transform(_?: unknown, overridesOptions?: OverridesOptions): PluginObj<State> {
@@ -41,7 +41,9 @@ export function transform(_?: unknown, overridesOptions?: OverridesOptions): Plu
           /**
            * Add polyfill imports.
            */
-          applyImportsForTypeReferencesTransform(path.node, polyfillPackagesAndTypes)
+          traverse(t.file(path.node), emitImportsForTypeReferencesVisitor, undefined, {
+            packagesAndTypes: polyfillPackagesAndTypes,
+          })
 
           /**
            * Finally, override declarations with custom provided ones.
