@@ -1,5 +1,4 @@
 import { Visitor, types as t, NodePath } from "@babel/core"
-import { isPolyFilledType } from "../polyfillTypes"
 import { State } from "../state"
 import { assertTSType, isClass, wrappedTypeOf } from "../utilities"
 import { resolveGenericTypeAnnotation } from "../typeReferenceResolver"
@@ -96,9 +95,6 @@ export const typeReferenceVisitor: Visitor<State> = {
           path.addComment("leading", "[FLOW2DTS - Warning] This type was a $ObjMap type in the original Flow source.")
           path.replaceWith(t.tsMappedType(t.tsTypeParameter(inKeysType, undefined, "K"), returnType))
         } else {
-          if (isPolyFilledType(name)) {
-            state.polyfillTypes.add(name)
-          }
           if (typeParameters && typeParameters.length > 0) {
             path.replaceWith(t.tsTypeReference(t.identifier(name), t.tsTypeParameterInstantiation(typeParameters)))
           } else {
@@ -142,7 +138,7 @@ export const typeReferenceVisitor: Visitor<State> = {
               firstName = firstName.left
             }
             if (state.typeReferences.imports[firstName.name]) {
-              path.replaceWith(wrappedTypeOf(resolved.typeName, state))
+              path.replaceWith(wrappedTypeOf(resolved.typeName))
               return
             }
           }
@@ -157,7 +153,7 @@ export const typeReferenceVisitor: Visitor<State> = {
         path.replaceWith(typeOfType)
         return
       }
-      path.replaceWith(wrappedTypeOf(typeOfType.typeName, state))
+      path.replaceWith(wrappedTypeOf(typeOfType.typeName))
     },
   },
 }

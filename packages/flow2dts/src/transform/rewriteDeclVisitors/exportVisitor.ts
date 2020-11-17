@@ -44,7 +44,7 @@ function convertToNamespace(decl: t.TSType, state: State): [string, t.TSTypeRefe
       }
       case "TSTypeReference": {
         if (propType.typeName.type !== "Identifier" || propType.typeName.name !== "$TypeOf") {
-          propType = wrappedTypeOf(propType.typeName, state)
+          propType = wrappedTypeOf(propType.typeName)
         }
         break
       }
@@ -54,10 +54,7 @@ function convertToNamespace(decl: t.TSType, state: State): [string, t.TSTypeRefe
 }
 
 function makeRedirection(name: string, state: State): t.TSType {
-  return wrappedTypeOf(
-    t.tsQualifiedName(t.identifier(nameForExportDefaultRedirect), t.identifier(nameForHidden(name))),
-    state
-  )
+  return wrappedTypeOf(t.tsQualifiedName(t.identifier(nameForExportDefaultRedirect), t.identifier(nameForHidden(name))))
 }
 
 export const exportVisitor: Visitor<State> = {

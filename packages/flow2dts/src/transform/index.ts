@@ -3,9 +3,10 @@ import { initializeState, State } from "./state"
 import { typeReferenceRecognizerVisitor } from "./typeReferenceResolver"
 import { rewriteTypeVisitor } from "./rewriteTypeVisitors"
 import { rewriteDeclVisitor } from "./rewriteDeclVisitors"
-import { polyfillTypes } from "./polyfillTypes"
 import { fixupVisitor } from "./fixupVisitor"
 import { createOverrideDeclarationVisitor, Options as OverridesOptions } from "./overrideDeclarationsVisitor"
+import { applyImportsForTypeReferencesTransform } from "./applyImportsForTypeReferencesTransform"
+import { polyfillPackagesAndTypes } from "./polyfillPackagesAndTypes"
 
 export function transform(_?: unknown, overridesOptions?: OverridesOptions): PluginObj<State> {
   return {
@@ -40,7 +41,7 @@ export function transform(_?: unknown, overridesOptions?: OverridesOptions): Plu
           /**
            * Add polyfill imports.
            */
-          path.node.body.unshift(...polyfillTypes(state.polyfillTypes))
+          applyImportsForTypeReferencesTransform(path.node, polyfillPackagesAndTypes)
 
           /**
            * Finally, override declarations with custom provided ones.

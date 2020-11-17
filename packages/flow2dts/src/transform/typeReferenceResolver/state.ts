@@ -157,7 +157,7 @@ export function resolveGenericTypeAnnotation<T>(
     if (entity.type === "Identifier") {
       // when entity is not undefined, it is a resolved type, which means the name is in global context
       if (state.typeReferences.imports[entity.name]) {
-        return wrappedTypeOf(entity, state)
+        return wrappedTypeOf(entity)
       }
     }
   }

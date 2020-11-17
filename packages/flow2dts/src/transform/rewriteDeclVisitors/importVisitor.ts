@@ -23,7 +23,7 @@ export const importVisitor: Visitor<State> = {
           const decl = t.tsTypeAliasDeclaration(
             t.identifier(name),
             null,
-            wrappedTypeOf(t.identifier(nameForImportTypeof(name)), state)
+            wrappedTypeOf(t.identifier(nameForImportTypeof(name)))
           )
           decl.declare = true
           return decl
@@ -40,7 +40,7 @@ export const importVisitor: Visitor<State> = {
           const decl = t.tsTypeAliasDeclaration(
             t.identifier(name),
             null,
-            wrappedTypeOf(t.identifier(nameForImportTypeof(name)), state)
+            wrappedTypeOf(t.identifier(nameForImportTypeof(name)))
           )
           decl.declare = true
 

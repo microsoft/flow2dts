@@ -1,16 +1,13 @@
 import { Visitor, types as t } from "@babel/core"
-import { POLYFILL_TYPES } from "./polyfillTypes"
 import { RecognizedTypeReferences } from "./typeReferenceResolver"
 
 export { isRecognized } from "./typeReferenceResolver"
 
 export interface State {
-  polyfillTypes: Set<typeof POLYFILL_TYPES[number]>
   typeReferences: RecognizedTypeReferences
 }
 
 export function initializeState(state: State): void {
-  state.polyfillTypes = new Set()
   state.typeReferences = { records: {}, imports: {} }
 }
 
