@@ -6,11 +6,9 @@ import $4 from "../../StyleSheet/processColor";
 import $5 from "../../StyleSheet/processTransform";
 import $6 from "../../Utilities/differ/sizesDiffer";
 declare type ReturnBoolType = <V>($f2t1: V) => true;
-declare type BoolifiedDeprecatedViewStylePropTypes =
-/*[FLOW2DTS - Warning] This type was a $ObjMap type in the original Flow source.*/
-{ [K in keyof $TypeOf<typeof $3>]: ReturnType<ReturnBoolType> };
-declare type BoolifiedDeprecatedTextStylePropTypes = $ObjMapi<$TypeOf<typeof $2>, ReturnBoolType>;
-declare type BoolifiedDeprecatedImageStylePropTypes = $ObjMapi<$TypeOf<typeof $1>, ReturnBoolType>;
+declare type BoolifiedDeprecatedViewStylePropTypes = { [K in keyof typeof import("../../DeprecatedPropTypes/BoolifiedDeprecatedViewStylePropTypes").default]: true };
+declare type BoolifiedDeprecatedTextStylePropTypes = { [K in keyof typeof import("../../DeprecatedPropTypes/BoolifiedDeprecatedTextStylePropTypes").default]: true };
+declare type BoolifiedDeprecatedImageStylePropTypes = { [K in keyof typeof import("../../DeprecatedPropTypes/BoolifiedDeprecatedImageStylePropTypes").default]: true };
 declare type StyleAttributesType = BoolifiedDeprecatedViewStylePropTypes & BoolifiedDeprecatedTextStylePropTypes & BoolifiedDeprecatedImageStylePropTypes & {
   transform: Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

@@ -6,9 +6,11 @@ import { State } from "./transform/state"
 // @ts-ignore
 import pluginSyntaxFlow from "@babel/plugin-syntax-flow"
 import path from "path"
-import { transform as pluginFlow2DTS } from "./transform"
 import fs from "fs"
 import stripAnsi from "strip-ansi"
+
+import { transform as pluginFlow2DTS, Options as PluginOptions } from "./transform"
+import { OverridesVisitors } from "./transform/applyOverridesVisitors"
 
 const regexFixPath = /^\[FLOW2DTS \- Error\] .*?[\\\/]workbench[\\\/]inputs[\\\/](?<path>.*?\.js\.flow):(?<message>.*)$/
 
@@ -42,17 +44,22 @@ export async function convert({
   filename,
   outFilename,
   overrideFilename,
+  overridesVisitors,
 }: {
   filename: string
   outFilename: string
   overrideFilename?: string
+  overridesVisitors?: OverridesVisitors
 }): Promise<[string, boolean]> {
   let success = false
   let outData: string
   try {
-    const overrides = overrideFilename && (await getOverrides(overrideFilename))
+    const pluginOptions: PluginOptions = {
+      pathname: overrideFilename,
+      overridesVisitors,
+    }
     const result = await transformFileAsync(filename, {
-      plugins: [pluginSyntaxFlow, [pluginFlow2DTS, { overrides }]],
+      plugins: [pluginSyntaxFlow, [pluginFlow2DTS, pluginOptions]],
       sourceType: "module",
       parserOpts: {
         allowUndeclaredExports: true,
@@ -82,7 +89,7 @@ export async function convert({
       })
 
       phrase = "babelTraverse()"
-      babelTraverse<State>(flowAst, pluginFlow2DTS().visitor, undefined, <State>{})
+      babelTraverse<State>(flowAst, pluginFlow2DTS(undefined, {}, "").visitor, undefined, <State>{})
 
       phrase = "babelGenerator()"
       const generatorResult = babelGenerator(flowAst)
