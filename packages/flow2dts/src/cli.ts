@@ -33,7 +33,7 @@ async function run({
       const overrideFilename = overridesDir && getOverrideFilename(overridesDir, rootDir, filename)
       logStart(cwd, filename)
       conversions.push(
-        convert({ filename, outFilename, overrideFilename }).then(([outFilename, success]) => {
+        convert({ rootDir, filename, outFilename, overrideFilename }).then(([outFilename, success]) => {
           if (success) {
             successCount++
           }

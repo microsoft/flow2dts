@@ -39,10 +39,12 @@ async function getOverrides(overrideFilename: string) {
 }
 
 export async function convert({
+  rootDir,
   filename,
   outFilename,
   overrideFilename,
 }: {
+  rootDir: string
   filename: string
   outFilename: string
   overrideFilename?: string
@@ -50,9 +52,13 @@ export async function convert({
   let success = false
   let outData: string
   try {
-    const overrides = overrideFilename && (await getOverrides(overrideFilename))
+    const pluginOptions = {
+      overrides: overrideFilename && (await getOverrides(overrideFilename)),
+      moduleRelative: path.relative(path.dirname(filename), rootDir).replace(/\\/g, "/"),
+      moduleName: "react-native",
+    }
     const result = await transformFileAsync(filename, {
-      plugins: [pluginSyntaxFlow, [pluginFlow2DTS, { overrides }]],
+      plugins: [pluginSyntaxFlow, [pluginFlow2DTS, pluginOptions]],
       sourceType: "module",
       parserOpts: {
         allowUndeclaredExports: true,

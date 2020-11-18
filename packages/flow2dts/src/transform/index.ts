@@ -3,12 +3,12 @@ import { initializeState, State } from "./state"
 import { typeReferenceRecognizerVisitor } from "./typeReferenceResolver"
 import { rewriteTypeVisitor } from "./rewriteTypeVisitors"
 import { rewriteDeclVisitor } from "./rewriteDeclVisitors"
-import { fixupVisitor } from "./fixupVisitor"
+import { createFixupVisitor, Options as FixupOptions } from "./fixupVisitor"
 import { createOverrideDeclarationVisitor, Options as OverridesOptions } from "./overrideDeclarationsVisitor"
 import { emitImportsForTypeReferencesVisitor } from "./emitImportsForTypeReferencesVisitor"
 import { polyfillPackagesAndTypes } from "./polyfillPackagesAndTypes"
 
-export function transform(_?: unknown, overridesOptions?: OverridesOptions): PluginObj<State> {
+export function transform(_?: unknown, options?: FixupOptions & OverridesOptions): PluginObj<State> {
   return {
     name: "flow2dtsTransform",
     visitor: {
@@ -36,7 +36,7 @@ export function transform(_?: unknown, overridesOptions?: OverridesOptions): Plu
           /**
            * Fixes some AST issues.
            */
-          path.traverse(fixupVisitor, state)
+          path.traverse(createFixupVisitor(options), state)
 
           /**
            * Add polyfill imports.
@@ -48,8 +48,8 @@ export function transform(_?: unknown, overridesOptions?: OverridesOptions): Plu
           /**
            * Finally, override declarations with custom provided ones.
            */
-          if (overridesOptions && overridesOptions.overrides) {
-            path.traverse(createOverrideDeclarationVisitor(overridesOptions), overridesOptions)
+          if (options && options.overrides) {
+            path.traverse(createOverrideDeclarationVisitor(options), options)
           }
         },
       },
