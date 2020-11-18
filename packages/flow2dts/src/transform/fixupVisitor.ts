@@ -70,7 +70,9 @@ export function createFixupVisitor(options?: Options): Visitor<State> {
     ImportDeclaration: {
       exit(path) {
         if (options && options.moduleName && options.moduleRelative) {
-          if (path.node.source.value.startsWith(`${options.moduleName}/`)) {
+          if (path.node.source.value === options.moduleName) {
+            path.node.source.value = options.moduleRelative
+          } else if (path.node.source.value.startsWith(`${options.moduleName}/`)) {
             path.node.source.value = `${options.moduleRelative}${path.node.source.value.substr(
               options.moduleName.length
             )}`
