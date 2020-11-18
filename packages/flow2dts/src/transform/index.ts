@@ -4,11 +4,16 @@ import { typeReferenceRecognizerVisitor } from "./typeReferenceResolver"
 import { rewriteTypeVisitor } from "./rewriteTypeVisitors"
 import { rewriteDeclVisitor } from "./rewriteDeclVisitors"
 import { createFixupVisitor, Options as FixupOptions } from "./fixupVisitor"
-import { createOverrideDeclarationVisitor, Options as OverridesOptions } from "./overrideDeclarationsVisitor"
+import { applyOverridesVisitors, OverridesVisitors } from "./applyOverridesVisitors"
 import { emitImportsForTypeReferencesVisitor } from "./emitImportsForTypeReferencesVisitor"
 import { polyfillPackagesAndTypes } from "./polyfillPackagesAndTypes"
 
-export function transform(_?: unknown, options?: FixupOptions & OverridesOptions): PluginObj<State> {
+export interface Options extends FixupOptions {
+  pathname?: string
+  overridesVisitors?: OverridesVisitors
+}
+
+export function transform(_api: unknown, options: Options, _dirname: string): PluginObj<State> {
   return {
     name: "flow2dtsTransform",
     visitor: {
@@ -39,17 +44,22 @@ export function transform(_?: unknown, options?: FixupOptions & OverridesOptions
           path.traverse(createFixupVisitor(options), state)
 
           /**
+           *
+           */
+          const fileNode = t.file(path.node)
+
+          /**
            * Add polyfill imports.
            */
-          traverse(t.file(path.node), emitImportsForTypeReferencesVisitor, undefined, {
+          traverse(fileNode, emitImportsForTypeReferencesVisitor, undefined, {
             packagesAndTypes: polyfillPackagesAndTypes,
           })
 
           /**
            * Finally, override declarations with custom provided ones.
            */
-          if (options && options.overrides) {
-            path.traverse(createOverrideDeclarationVisitor(options), options)
+          if (options && options.pathname && options.overridesVisitors) {
+            applyOverridesVisitors(options.pathname, fileNode, options.overridesVisitors)
           }
         },
       },
