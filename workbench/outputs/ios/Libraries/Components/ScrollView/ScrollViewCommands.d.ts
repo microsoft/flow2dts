@@ -1,6 +1,6 @@
 // @flow
 import * as React from "react";
-import { Double } from "react-native/Libraries/Types/CodegenTypes";
+import { Double } from "../../../Libraries/Types/CodegenTypes";
 import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
 declare type ScrollViewNativeComponentType = HostComponent<unknown>;
 interface NativeCommands {

@@ -1,11 +1,11 @@
 // @flow
-import { ViewProps } from "react-native/Libraries/Components/View/ViewPropTypes";
-import { ColorValue } from "react-native/Libraries/StyleSheet/StyleSheet";
-import { WithDefault } from "react-native/Libraries/Types/CodegenTypes";
-import { DirectEventHandler } from "react-native/Libraries/Types/CodegenTypes";
-import { Int32 } from "react-native/Libraries/Types/CodegenTypes";
-import { Float } from "react-native/Libraries/Types/CodegenTypes";
-import { HostComponent } from "react-native/Libraries/Renderer/shims/ReactNativeTypes";
+import { ViewProps } from "../../../Libraries/Components/View/ViewPropTypes";
+import { ColorValue } from "../../../Libraries/StyleSheet/StyleSheet";
+import { WithDefault } from "../../../Libraries/Types/CodegenTypes";
+import { DirectEventHandler } from "../../../Libraries/Types/CodegenTypes";
+import { Int32 } from "../../../Libraries/Types/CodegenTypes";
+import { Float } from "../../../Libraries/Types/CodegenTypes";
+import { HostComponent } from "../../../Libraries/Renderer/shims/ReactNativeTypes";
 import * as React from "react";
 declare type DrawerStateEvent = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

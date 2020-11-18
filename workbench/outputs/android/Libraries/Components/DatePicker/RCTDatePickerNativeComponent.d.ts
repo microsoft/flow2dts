@@ -2,9 +2,9 @@
 import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
 import { ViewProps } from "../View/ViewPropTypes";
 import * as React from "react";
-import { Float } from "react-native/Libraries/Types/CodegenTypes";
-import { WithDefault } from "react-native/Libraries/Types/CodegenTypes";
-import { BubblingEventHandler } from "react-native/Libraries/Types/CodegenTypes";
+import { Float } from "../../../Libraries/Types/CodegenTypes";
+import { WithDefault } from "../../../Libraries/Types/CodegenTypes";
+import { BubblingEventHandler } from "../../../Libraries/Types/CodegenTypes";
 declare type Event = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
