@@ -75,7 +75,7 @@ function getOutFilename(outDir: string, rootDir: string, filename: string, match
 }
 
 function getOverrideFilename(rootDir: string, filename: string) {
-  return path.relative(rootDir, filename).replace(FLOW_EXTNAME, TS_EXTNAME)
+  return path.relative(rootDir, filename).replace(FLOW_EXTNAME, TS_EXTNAME).replace(/\\/g, "/")
 }
 
 async function main() {
