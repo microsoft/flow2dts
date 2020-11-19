@@ -24,7 +24,11 @@ declare type EX =
 declare type OMF =
   /*[FLOW2DTS - Warning] This type was a $ObjMap type in the original Flow source.*/
   { [K in keyof T]: ReturnType<() => boolean> }
-declare type _OMT = () => boolean
-declare type OMT =
+declare type _OMTWithSingle = () => boolean
+declare type OMTWithSingle =
   /*[FLOW2DTS - Warning] This type was a $ObjMap type in the original Flow source.*/
-  { [K in keyof T]: ReturnType<_OMT> }
+  { [K in keyof T]: ReturnType<_OMTWithSingle> }
+declare type _OMTWithUnion = () => true | 42 | "42" | any | void | unknown | null | undefined
+declare type OMTWithUnion =
+  /*[FLOW2DTS - Warning] This type was a $ObjMap type in the original Flow source.*/
+  { [K in keyof T]: ReturnType<_OMTWithUnion> }

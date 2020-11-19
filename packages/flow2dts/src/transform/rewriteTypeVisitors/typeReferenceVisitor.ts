@@ -11,6 +11,25 @@ function convertQID(input: t.Identifier | t.QualifiedTypeIdentifier): t.Identifi
   }
 }
 
+function isLiteralOrKeywordOrUnionThereof(node: t.TSType): boolean {
+  if (t.isTSUnionType(node)) {
+    return node.types.every(isLiteralOrKeywordOrUnionThereof)
+  } else if (
+    t.isTSLiteralType(node) ||
+    t.isTSBooleanKeyword(node) ||
+    t.isTSAnyKeyword(node) ||
+    t.isTSVoidKeyword(node) ||
+    t.isTSNullKeyword(node) ||
+    t.isTSUndefinedKeyword(node) ||
+    t.isTSUnknownKeyword(node) ||
+    // TODO: Unclear why this is not a TSUnknownKeyword
+    (t.isTSTypeReference(node) && t.isIdentifier(node.typeName) && node.typeName.name === "unknown")
+  ) {
+    return true
+  }
+  return false
+}
+
 export const typeReferenceVisitor: Visitor<State> = {
   GenericTypeAnnotation: {
     exit(path, state) {
@@ -68,32 +87,42 @@ export const typeReferenceVisitor: Visitor<State> = {
             "[FLOW2DTS - Warning] This type was an exact object type in the original Flow source."
           )
           path.replaceWith(typeParameters[0])
-        } else if (name === "$ObjMap") {
+        } else if (name === "$ObjMap" || name === "$ObjMapi") {
           if (!typeParameters || typeParameters.length !== 2) {
-            throw new Error(
-              `$ObjMap must have exactly two type arguments:\r\n${JSON.stringify(path.node.id, undefined, 4)}`
+            throw path.buildCodeFrameError(
+              `${name} must have exactly two type arguments:\r\n${JSON.stringify(path.node.id, undefined, 4)}`
             )
           }
-          const [objectType, functionType] = typeParameters
-          if (t.isTSFunctionType(functionType)) {
-            if (functionType.typeParameters && functionType.typeParameters.params.length > 0) {
-              throw new Error(
-                `$ObjMap with a function with generics cannot be converted:\r\n${JSON.stringify(
-                  path.node.id,
-                  undefined,
-                  4
-                )}`
-              )
-            }
+          let [objectType, functionType] = typeParameters
+          let typeReference = null
+          if (t.isTSTypeReference(functionType)) {
+            t.assertIdentifier(functionType.typeName)
+            const binding = path.scope.getBinding(functionType.typeName.name)
+            const typeAlias = binding && binding.path.node
+            t.assertTypeAlias(typeAlias) // TODO: This should be a TSTypeAliasDeclaration at some point
+            typeReference = functionType
+            functionType = (typeAlias.right as unknown) as t.TSType
           }
-          const returnType = t.tsTypeReference(
-            t.identifier("ReturnType"),
-            t.tsTypeParameterInstantiation([functionType])
-          )
+          t.assertTSFunctionType(functionType)
+          t.assertTSTypeAnnotation(functionType.typeAnnotation)
+          const returnType = functionType.typeAnnotation.typeAnnotation
+          if (!isLiteralOrKeywordOrUnionThereof(returnType)) {
+            throw path.buildCodeFrameError(
+              `${name} can only be converted with function types that have literal return types or a union of literals. Use an override instead.`
+            )
+          }
           const inKeysType = t.tsTypeOperator(objectType)
           inKeysType.operator = "keyof"
           path.addComment("leading", "[FLOW2DTS - Warning] This type was a $ObjMap type in the original Flow source.")
-          path.replaceWith(t.tsMappedType(t.tsTypeParameter(inKeysType, undefined, "K"), returnType))
+          path.replaceWith(
+            t.tsMappedType(
+              t.tsTypeParameter(inKeysType, undefined, "K"),
+              t.tsTypeReference(
+                t.identifier("ReturnType"),
+                t.tsTypeParameterInstantiation([typeReference || functionType])
+              )
+            )
+          )
         } else {
           if (typeParameters && typeParameters.length > 0) {
             path.replaceWith(t.tsTypeReference(t.identifier(name), t.tsTypeParameterInstantiation(typeParameters)))

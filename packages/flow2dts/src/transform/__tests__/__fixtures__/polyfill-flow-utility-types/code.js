@@ -14,5 +14,7 @@ type NM = $NonMaybeType<number | null | undefined>
 type C = Class<T>
 type EX = $Exact<T>
 type OMF = $ObjMap<T, () => boolean>
-type _OMT = () => boolean
-type OMT = $ObjMap<T, _OMT>
+type _OMTWithSingle = () => boolean
+type OMTWithSingle = $ObjMapi<T, _OMTWithSingle>
+type _OMTWithUnion = () => true | 42 | "42" | any | void | unknown | null | undefined
+type OMTWithUnion = $ObjMap<T, _OMTWithUnion>
