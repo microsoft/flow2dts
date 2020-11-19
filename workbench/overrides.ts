@@ -28,18 +28,20 @@ const visitors: OverridesVisitors = {
   "Libraries/Components/TextInput/TextInputNativeCommands.d.ts": {
     TSInterfaceDeclaration: {
       exit(path) {
-        const replacementDeclaration = ast`
-          interface TextInputNativeCommands<
-            T extends
-              | React.ForwardRefExoticComponent<any>
-              | { new (props: any): React.Component<any> }
-              | ((props: any, context?: any) => React.ReactElement | null)
-              | keyof JSX.IntrinsicElements
-          > {}
-        ` as t.TSInterfaceDeclaration
-        replacementDeclaration.body = path.node.body
-        path.replaceWith(replacementDeclaration)
-        path.skip()
+        if (path.node.id.name === "TextInputNativeCommands") {
+          const replacementDeclaration = ast`
+            interface TextInputNativeCommands<
+              T extends
+                | React.ForwardRefExoticComponent<any>
+                | { new (props: any): React.Component<any> }
+                | ((props: any, context?: any) => React.ReactElement | null)
+                | keyof JSX.IntrinsicElements
+            > {}
+          ` as t.TSInterfaceDeclaration
+          replacementDeclaration.body = path.node.body
+          path.replaceWith(replacementDeclaration)
+          path.skip()
+        }
       },
     },
   },
@@ -47,9 +49,11 @@ const visitors: OverridesVisitors = {
     // TODO: We should convert DeclareClass, which is a Flow type, to ClassDeclaration.
     DeclareClass: {
       exit(path) {
-        const typeParameters = path.node.typeParameters as any
-        t.assertTSTypeParameterDeclaration(typeParameters)
-        typeParameters.params.find((param) => param.name === "S")!.default = t.tsUndefinedKeyword()
+        if (path.node.id.name === "PureComponentDebug") {
+          const typeParameters = path.node.typeParameters as any
+          t.assertTSTypeParameterDeclaration(typeParameters)
+          typeParameters.params.find((param) => param.name === "S")!.default = t.tsUndefinedKeyword()
+        }
       },
     },
   },
