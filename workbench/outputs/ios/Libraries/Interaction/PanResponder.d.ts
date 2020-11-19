@@ -234,7 +234,7 @@ declare var PanResponder:
     };
   };
 };
-declare type PanResponderInstance = $Call<$PropertyType<$TypeOf<typeof PanResponder>, "create">, PanResponderConfig>;
+declare type PanResponderInstance = ReturnType<typeof PanResponder["create"]>;
 export type { GestureState };
 export type { PanResponderInstance };
 declare const $f2tExportDefault: $TypeOf<typeof PanResponder>;
