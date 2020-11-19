@@ -1,4 +1,4 @@
-import { $Call, $PropertyType } from "utility-types";
+import { $PropertyType } from "utility-types";
 import $1 from "react";
 import $2 from "react-test-renderer";
 import { ReactTestRenderer as ReactTestRendererType } from "react-test-renderer";

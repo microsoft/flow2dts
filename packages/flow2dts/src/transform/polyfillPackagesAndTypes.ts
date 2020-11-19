@@ -12,5 +12,5 @@ export const polyfillPackagesAndTypes: Record<string, string[]> = {
     "ReactPropsChainableTypeChecker",
     "Stringish",
   ],
-  "utility-types": ["$Call", "$Diff", "$ElementType", "$Keys", "$PropertyType", "$NonMaybeType", "$Shape", "Class"],
+  "utility-types": ["$Diff", "$ElementType", "$Keys", "$PropertyType", "$NonMaybeType", "$Shape", "Class"],
 }
