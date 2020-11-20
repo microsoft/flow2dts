@@ -1,7 +1,7 @@
 import { OverridesVisitors } from "../packages/flow2dts/src/transform/applyOverridesVisitors"
 import template from "@babel/template"
 import { types as t } from "@babel/core"
-import { Visitor } from "@babel/traverse"
+import { NodePath, Visitor } from "@babel/traverse"
 
 const ast = template({
   plugins: ["typescript"],
@@ -21,8 +21,43 @@ const listsVisitor: Visitor = {
   },
 }
 
+/**
+ * Flow code tends to use `void` as the type of the `state` instance property,
+ * however the React DT typings do not allow that and in reality React sets it
+ * to `null` at runtime. So here we simply replace `void` with `null`.
+ *
+ * TODO: Currently only handling PureComponent
+ */
+function nullifyReactComponentState(path: NodePath<t.DeclareClass>) {
+  const superclass = path.node.extends![0]
+  if (superclass) {
+    const id = superclass.id as any
+    const typeParameters = superclass.typeParameters as any
+    if (t.isTSQualifiedName(id) && t.isTSTypeParameterInstantiation(typeParameters)) {
+      t.assertIdentifier(id.left)
+      const declarationPath = path.scope.getBinding(id.left.name)!.path
+      if (t.isImportDefaultSpecifier(declarationPath.node)) {
+        t.assertImportDeclaration(declarationPath.parent)
+        if (declarationPath.parent.source.value === "react" && id.right.name === "PureComponent") {
+          const stateType = typeParameters.params[1]
+          if (t.isTSVoidKeyword(stateType)) {
+            typeParameters.params[1] = t.tsNullKeyword()
+          }
+        }
+      }
+    }
+  }
+}
+
 const visitors: OverridesVisitors = {
-  // all: {},
+  all: {
+    // TODO: We should convert DeclareClass, which is a Flow type, to ClassDeclaration.
+    DeclareClass: {
+      exit(path) {
+        nullifyReactComponentState(path)
+      },
+    },
+  },
   "Libraries/Lists/SectionList.d.ts": listsVisitor,
   "Libraries/Lists/VirtualizedSectionList.d.ts": listsVisitor,
   "Libraries/Components/TextInput/TextInputNativeCommands.d.ts": {
