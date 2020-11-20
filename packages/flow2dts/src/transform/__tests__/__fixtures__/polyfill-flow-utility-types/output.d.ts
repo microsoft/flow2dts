@@ -1,3 +1,4 @@
+import { $TEMPORARY$module$exports$assign } from "flow2dts-flow-types-polyfill"
 import { $Diff, $ElementType, $Keys, $NonMaybeType, $PropertyType, $Shape, Class } from "utility-types"
 declare type T = {
   foo: string
@@ -31,3 +32,10 @@ declare type _OMTWithUnion = () => true | 42 | "42" | any | void | unknown | nul
 declare type OMTWithUnion =
   /*[FLOW2DTS - Warning] This type was a $ObjMap type in the original Flow source.*/
   { [K in keyof T]: ReturnType<_OMTWithUnion> }
+declare const $f2tExportDefault: $TEMPORARY$module$exports$assign<
+  _OMTWithSingle,
+  {
+    foo: string
+  }
+>
+export default $f2tExportDefault

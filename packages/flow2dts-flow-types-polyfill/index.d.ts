@@ -14,6 +14,11 @@ export type Stringish = string
  *****************************************************************************/
 
 /**
+ * @see https://github.com/facebook/flow/blob/34465eb6f528fc61de1b3a53db4c1a682b33de03/src/typing/__tests__/signature_generator_test.ml#L728-L756
+ */
+export type $TEMPORARY$module$exports$assign<T1, T2> = T1 & T2
+
+/**
  * @see https://github.com/facebook/flow/blob/41b0eab99cdc5199421f7cccad9e0c4950f8b2f9/tests/any/flowfixme.js
  */
 export type $FlowFixMe = any

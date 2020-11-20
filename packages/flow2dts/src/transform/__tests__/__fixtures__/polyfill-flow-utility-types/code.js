@@ -17,3 +17,4 @@ type _OMTWithSingle = () => boolean
 type OMTWithSingle = $ObjMapi<T, _OMTWithSingle>
 type _OMTWithUnion = () => true | 42 | "42" | any | void | unknown | null | undefined
 type OMTWithUnion = $ObjMap<T, _OMTWithUnion>
+declare module.exports: $TEMPORARY$module$exports$assign<_OMTWithSingle, { foo: string }>

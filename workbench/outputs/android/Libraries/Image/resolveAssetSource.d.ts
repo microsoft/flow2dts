@@ -1,4 +1,4 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $TEMPORARY$module$exports$assign, $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "./AssetSourceResolver";
 import { ResolvedAssetSource } from "./AssetSourceResolver";
 declare function setCustomSourceTransformer(transformer: (resolver: $TypeOf<typeof $1>) => ResolvedAssetSource): void;
