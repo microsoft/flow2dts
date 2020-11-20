@@ -176,7 +176,7 @@ const visitors: OverridesVisitors = {
       },
     },
   },
-  // TODO: This should be fixed upstream in RN.
+  // TODO: This should be fixed upstream in RN. No duplicate prop entries should exist.
   "Libraries/Text/TextProps.d.ts": {
     Program: {
       enter(_, state: any) {
