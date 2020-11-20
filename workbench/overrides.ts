@@ -176,6 +176,24 @@ const visitors: OverridesVisitors = {
       },
     },
   },
+  // TODO: This should be fixed upstream in RN.
+  "Libraries/Text/TextProps.d.ts": {
+    Program: {
+      enter(_, state: any) {
+        state.seen_adjustsFontSizeToFit_times = 0
+      },
+    },
+    TSPropertySignature: {
+      exit(path, state: any) {
+        if (t.isIdentifier(path.node.key) && path.node.key.name === "adjustsFontSizeToFit") {
+          state.seen_adjustsFontSizeToFit_times += 1
+          if (state.seen_adjustsFontSizeToFit_times === 2) {
+            path.remove()
+          }
+        }
+      },
+    },
+  },
 }
 
 export default visitors

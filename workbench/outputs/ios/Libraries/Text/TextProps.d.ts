@@ -160,11 +160,6 @@ declare type TextProps = Readonly<
   textBreakStrategy?: null | undefined | ("balanced" | "highQuality" | "simple");
 
   /**
-  * iOS Only
-  */
-  adjustsFontSizeToFit?: null | undefined | boolean;
-
-  /**
   * Smallest possible scale a font can reach.
   *
   * See https://reactnative.dev/docs/text.html#minimumfontscale
