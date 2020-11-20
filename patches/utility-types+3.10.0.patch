@@ -1,0 +1,19 @@
+diff --git a/node_modules/utility-types/dist/utility-types.d.ts b/node_modules/utility-types/dist/utility-types.d.ts
+index 663da6d..241a774 100644
+--- a/node_modules/utility-types/dist/utility-types.d.ts
++++ b/node_modules/utility-types/dist/utility-types.d.ts
+@@ -1,4 +1,4 @@
+-import { SetComplement, DeepReadonly } from './mapped-types';
++import { SetDifference, DeepReadonly } from './mapped-types';
+ /**
+  * $Keys
+  * @desc Get the union type of all the keys in an object type `T`
+@@ -43,7 +43,7 @@ export declare type $ReadOnly<T extends object> = DeepReadonly<T>;
+  *   // Expect: { name: string; visible: boolean; }
+  *   type RequiredProps = Diff<Props, DefaultProps>;
+  */
+-export declare type $Diff<T extends U, U extends object> = Pick<T, SetComplement<keyof T, keyof U>>;
++export declare type $Diff<T extends object, U extends object> = Pick<T, SetDifference<keyof T, keyof U>>;
+ /**
+  * $PropertyType
+  * @desc Get the type of property of an object at a given key `K`
