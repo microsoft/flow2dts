@@ -1,8 +1,8 @@
 diff --git a/node_modules/@types/react/index.d.ts b/node_modules/@types/react/index.d.ts
-index 3289c78..afa37c9 100644
+index 3289c78..eb547dd 100644
 --- a/node_modules/@types/react/index.d.ts
 +++ b/node_modules/@types/react/index.d.ts
-@@ -65,8 +65,71 @@ interface SchedulerInteraction {
+@@ -65,8 +65,73 @@ interface SchedulerInteraction {
  export = React;
  export as namespace React;
  
@@ -26,6 +26,8 @@ index 3289c78..afa37c9 100644
 +        ? _SFCProps<C>
 +        : any;
 +    type ElementConfig<C> = JSX.LibraryManagedAttributes<C, ElementProps<C>>;
++
++    type ChildrenArray<T> = T | Array<ChildrenArray<T>>
 +
 +    interface ComponentMethods<Props> {
 +        context: any;
@@ -74,7 +76,7 @@ index 3289c78..afa37c9 100644
      // React Elements
      // ----------------------------------------------------------------------
  
-@@ -171,7 +234,7 @@ declare namespace React {
+@@ -171,7 +236,7 @@ declare namespace React {
      type ClassicElement<P> = CElement<P, ClassicComponent<P, ComponentState>>;
  
      // string fallback for custom web-components
@@ -83,7 +85,7 @@ index 3289c78..afa37c9 100644
          ref: LegacyRef<T>;
      }
  
-@@ -211,7 +274,7 @@ declare namespace React {
+@@ -211,7 +276,7 @@ declare namespace React {
      type CFactory<P, T extends Component<P, ComponentState>> = ComponentFactory<P, T>;
      type ClassicFactory<P> = CFactory<P, ClassicComponent<P, ComponentState>>;
  
@@ -92,7 +94,7 @@ index 3289c78..afa37c9 100644
          (props?: ClassAttributes<T> & P | null, ...children: ReactNode[]) => DOMElement<P, T>;
  
      interface HTMLFactory<T extends HTMLElement> extends DetailedHTMLFactory<AllHTMLAttributes<T>, T> {}
-@@ -245,10 +308,10 @@ declare namespace React {
+@@ -245,10 +310,10 @@ declare namespace React {
          type: keyof ReactHTML): HTMLFactory<T>;
      function createFactory(
          type: keyof ReactSVG): SVGFactory;
@@ -105,7 +107,7 @@ index 3289c78..afa37c9 100644
      function createFactory<P>(type: FunctionComponent<P>): FunctionComponentFactory<P>;
      function createFactory<P>(
          type: ClassType<P, ClassicComponent<P, ComponentState>, ClassicComponentClass<P>>): CFactory<P, ClassicComponent<P, ComponentState>>;
-@@ -270,7 +333,7 @@ declare namespace React {
+@@ -270,7 +335,7 @@ declare namespace React {
          type: keyof ReactSVG,
          props?: ClassAttributes<T> & P | null,
          ...children: ReactNode[]): ReactSVGElement;
@@ -114,7 +116,7 @@ index 3289c78..afa37c9 100644
          type: string,
          props?: ClassAttributes<T> & P | null,
          ...children: ReactNode[]): DOMElement<P, T>;
-@@ -311,7 +374,7 @@ declare namespace React {
+@@ -311,7 +376,7 @@ declare namespace React {
          props?: P,
          ...children: ReactNode[]): ReactSVGElement;
      // DOM Element (has to be the last, because type checking stops at first overload that fits)
@@ -123,7 +125,7 @@ index 3289c78..afa37c9 100644
          element: DOMElement<P, T>,
          props?: DOMAttributes<T> & P,
          ...children: ReactNode[]): DOMElement<P, T>;
-@@ -426,7 +489,7 @@ declare namespace React {
+@@ -426,7 +491,7 @@ declare namespace React {
      // Component API
      // ----------------------------------------------------------------------
  
@@ -132,7 +134,7 @@ index 3289c78..afa37c9 100644
  
      // Base component for plain JS classes
      interface Component<P = {}, S = {}, SS = any> extends ComponentLifecycle<P, S, SS> { }
-@@ -1163,21 +1226,21 @@ declare namespace React {
+@@ -1163,21 +1228,21 @@ declare namespace React {
       * This might be a child element to the element on which the event listener is registered.
       * If you thought this should be `EventTarget & T`, see https://github.com/DefinitelyTyped/DefinitelyTyped/issues/11508#issuecomment-256045682
       */
@@ -159,7 +161,7 @@ index 3289c78..afa37c9 100644
          pointerId: number;
          pressure: number;
          tangentialPressure: number;
-@@ -1190,23 +1253,23 @@ declare namespace React {
+@@ -1190,23 +1255,23 @@ declare namespace React {
          isPrimary: boolean;
      }
  
@@ -188,7 +190,7 @@ index 3289c78..afa37c9 100644
          altKey: boolean;
          /** @deprecated */
          charCode: number;
-@@ -1230,7 +1293,7 @@ declare namespace React {
+@@ -1230,7 +1295,7 @@ declare namespace React {
          which: number;
      }
  
@@ -197,7 +199,7 @@ index 3289c78..afa37c9 100644
          altKey: boolean;
          button: number;
          buttons: number;
-@@ -1252,7 +1315,7 @@ declare namespace React {
+@@ -1252,7 +1317,7 @@ declare namespace React {
          shiftKey: boolean;
      }
  
@@ -206,7 +208,7 @@ index 3289c78..afa37c9 100644
          altKey: boolean;
          changedTouches: TouchList;
          ctrlKey: boolean;
-@@ -1266,25 +1329,25 @@ declare namespace React {
+@@ -1266,25 +1331,25 @@ declare namespace React {
          touches: TouchList;
      }
  
@@ -236,7 +238,7 @@ index 3289c78..afa37c9 100644
          elapsedTime: number;
          propertyName: string;
          pseudoElement: string;
-@@ -1296,22 +1359,22 @@ declare namespace React {
+@@ -1296,22 +1361,22 @@ declare namespace React {
  
      type EventHandler<E extends SyntheticEvent<any>> = { bivarianceHack(event: E): void }["bivarianceHack"];
  
