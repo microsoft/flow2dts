@@ -5,7 +5,7 @@ import { ReactTestRenderer as ReactTestRendererType } from "react-test-renderer"
 declare type ReactTestInstance = $PropertyType<ReactTestRendererType, "root">;
 declare type Predicate = (node: ReactTestInstance) => boolean;
 declare type $ReturnType<Fn extends (...args: any) => any> = ReturnType<Fn>;
-declare type ReactTestRendererJSON = $ReturnType<$2.create.toJSON>;
+declare type ReactTestRendererJSON = $ReturnType<$ReturnType<typeof import("react-test-renderer")["create"]>["toJSON"]>;
 declare function byClickable(): Predicate;
 declare function byTestID(testID: string): Predicate;
 declare function byTextMatching(regex: RegExp): Predicate;

@@ -150,15 +150,32 @@ const visitors: OverridesVisitors = {
       },
     },
   },
+  // TODO: This should be fixed upstream in RN. This seems like simply broken upstream code.
   "Libraries/Utilities/ReactNativeTestTools.d.ts": {
     TSTypeAliasDeclaration: {
       exit(path) {
-        if (path.node.id.name === "$ReturnType") {
-          const replacementDeclaration = ast`
-            declare type $ReturnType<Fn extends (...args: any) => any> = ReturnType<Fn>
-          ` as t.TSTypeAliasDeclaration
-          path.replaceWith(replacementDeclaration)
-          path.skip()
+        switch (path.node.id.name) {
+          case "$ReturnType": {
+            const replacementDeclaration = ast`
+              declare type $ReturnType<Fn extends (...args: any) => any> = ReturnType<Fn>
+            ` as t.TSTypeAliasDeclaration
+            path.replaceWith(replacementDeclaration)
+            path.skip()
+            break
+          }
+          case "ReactTestRendererJSON": {
+            const replacementDeclaration = ast`
+              declare type ReactTestRendererJSON =
+                $ReturnType<
+                  $ReturnType<
+                    typeof import("react-test-renderer")["create"]
+                  >["toJSON"]
+                >
+            ` as t.TSTypeAliasDeclaration
+            path.replaceWith(replacementDeclaration)
+            path.skip()
+            break
+          }
         }
       },
     },
