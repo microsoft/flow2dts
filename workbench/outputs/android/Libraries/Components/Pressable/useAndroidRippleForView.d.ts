@@ -22,7 +22,7 @@ declare type RippleConfig =
 declare function useAndroidRippleForView(rippleConfig: null | undefined | RippleConfig, viewRef:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  current: null | React.ElementRef<$TypeOf<typeof View>>;
+  current: null | React.ElementRef<typeof View>;
 }): null | undefined | Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

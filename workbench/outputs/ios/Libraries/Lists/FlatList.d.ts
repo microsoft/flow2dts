@@ -215,7 +215,7 @@ declare class FlatList<ItemT> extends $2.PureComponent<Props<ItemT>, null> {
   /**
    * Provides a reference to the underlying host component
    */
-  getNativeScrollRef(): (null | undefined | $2.ElementRef<$TypeOf<typeof $3>>) | (null | undefined | $2.ElementRef<ScrollViewNativeComponentType>);
+  getNativeScrollRef(): (null | undefined | $2.ElementRef<typeof $3>) | (null | undefined | $2.ElementRef<ScrollViewNativeComponentType>);
   getScrollableNode(): any;
   setNativeProps(props: {
     [$f2tKey: string]: unknown;

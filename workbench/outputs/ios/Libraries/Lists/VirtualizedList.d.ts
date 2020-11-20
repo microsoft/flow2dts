@@ -345,7 +345,7 @@ declare class VirtualizedList extends React.PureComponent<Props, State> {
    */
   getScrollResponder(): null | undefined | ScrollResponderType;
   getScrollableNode(): null | undefined | number;
-  getScrollRef(): (null | undefined | React.ElementRef<$TypeOf<typeof $1>>) | (null | undefined | React.ElementRef<$TypeOf<typeof $2>>);
+  getScrollRef(): (null | undefined | React.ElementRef<typeof $1>) | (null | undefined | React.ElementRef<typeof $2>);
   setNativeProps(props: Object): void;
   static defaultProps: DefaultProps;
   hasMore(): boolean;

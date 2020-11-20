@@ -1,7 +1,7 @@
 import { OverridesVisitors } from "../packages/flow2dts/src/transform/applyOverridesVisitors"
 import template from "@babel/template"
 import { types as t } from "@babel/core"
-import { NodePath, Visitor } from "@babel/traverse"
+import { NodePath, Scope, Visitor } from "@babel/traverse"
 
 const ast = template({
   plugins: ["typescript"],
@@ -21,6 +21,16 @@ const listsVisitor: Visitor = {
   },
 }
 
+function isReactImportSpecifier(scope: Scope, id: t.Identifier) {
+  const declarationPath = scope.getBinding(id.name)!.path
+  if (t.isImportDeclaration(declarationPath.parent)) {
+    if (declarationPath.parent.source.value === "react") {
+      return true
+    }
+  }
+  return false
+}
+
 /**
  * Flow code tends to use `void` as the type of the `state` instance property,
  * however the React DT typings do not allow that and in reality React sets it
@@ -33,18 +43,47 @@ function nullifyReactComponentState(path: NodePath<t.DeclareClass>) {
   if (superclass) {
     const id = superclass.id as any
     const typeParameters = superclass.typeParameters as any
-    if (t.isTSQualifiedName(id) && t.isTSTypeParameterInstantiation(typeParameters)) {
-      t.assertIdentifier(id.left)
-      const declarationPath = path.scope.getBinding(id.left.name)!.path
-      if (t.isImportDefaultSpecifier(declarationPath.node)) {
-        t.assertImportDeclaration(declarationPath.parent)
-        if (declarationPath.parent.source.value === "react" && id.right.name === "PureComponent") {
-          const stateType = typeParameters.params[1]
-          if (t.isTSVoidKeyword(stateType)) {
-            typeParameters.params[1] = t.tsNullKeyword()
-          }
+    if (
+      t.isTSQualifiedName(id) &&
+      t.isIdentifier(id.left) &&
+      isReactImportSpecifier(path.scope, id.left) &&
+      t.isTSTypeParameterInstantiation(typeParameters)
+    ) {
+      if (id.right.name === "PureComponent") {
+        const stateType = typeParameters.params[1]
+        if (t.isTSVoidKeyword(stateType)) {
+          typeParameters.params[1] = t.tsNullKeyword()
         }
       }
+    }
+  }
+}
+
+function unwrapTypeOfHelper(type: t.TSType): t.TSType {
+  if (t.isTSUnionType(type)) {
+    return t.tsUnionType(type.types.map(unwrapTypeOfHelper))
+  } else if (
+    t.isTSTypeReference(type) &&
+    t.isIdentifier(type.typeName) &&
+    type.typeName.name === "$TypeOf" &&
+    t.isTSTypeParameterInstantiation(type.typeParameters)
+  ) {
+    return type.typeParameters.params[0]
+  } else {
+    return type
+  }
+}
+
+function removeTypeOfHelperForReactElementRef(path: NodePath<t.TSTypeReference>) {
+  const id = path.node.typeName
+  if (
+    t.isTSQualifiedName(id) &&
+    t.isIdentifier(id.left) &&
+    isReactImportSpecifier(path.scope, id.left) &&
+    t.isTSTypeParameterInstantiation(path.node.typeParameters)
+  ) {
+    if (id.right.name === "ElementRef") {
+      path.node.typeParameters.params[0] = unwrapTypeOfHelper(path.node.typeParameters.params[0])
     }
   }
 }
@@ -55,6 +94,11 @@ const visitors: OverridesVisitors = {
     DeclareClass: {
       exit(path) {
         nullifyReactComponentState(path)
+      },
+    },
+    TSTypeReference: {
+      exit(path) {
+        removeTypeOfHelperForReactElementRef(path)
       },
     },
   },

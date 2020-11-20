@@ -612,7 +612,7 @@ declare class ScrollView extends React.Component<Props, State> {
   getScrollResponder(): ScrollResponderType;
   getScrollableNode(): null | undefined | number;
   getInnerViewNode(): null | undefined | number;
-  getInnerViewRef(): null | undefined | React.ElementRef<$TypeOf<typeof View>>;
+  getInnerViewRef(): null | undefined | React.ElementRef<typeof View>;
   getNativeScrollRef(): null | undefined | React.ElementRef<HostComponent<unknown>>;
 
   /**

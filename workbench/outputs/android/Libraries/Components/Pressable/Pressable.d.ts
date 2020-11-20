@@ -123,5 +123,5 @@ declare type Props = Readonly<
   unstable_pressDelay?: null | undefined | number;
 }>;
 export type { StateCallbackType };
-declare const $f2tExportDefault: React.AbstractComponent<Props, React.ElementRef<$TypeOf<typeof View>>>;
+declare const $f2tExportDefault: React.AbstractComponent<Props, React.ElementRef<typeof View>>;
 export default $f2tExportDefault;
