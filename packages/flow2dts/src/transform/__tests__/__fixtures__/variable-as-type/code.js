@@ -29,6 +29,8 @@ interface MyInterface2 extends $1<{ ... }>, $1<{ ... }> {
 }
 
 declare var $1: typeof React.Component
+declare var $2: typeof React.Component
+export { $2 }
 
 declare var FakeReact: typeof $fakeReact
 const $fakeReact = require("fake-react")
