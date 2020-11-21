@@ -27,7 +27,7 @@ declare type PickerItemProps = Readonly<
   testID?: string;
 }>;
 declare class PickerItem extends $3.Component<PickerItemProps> {
-  render(): void;
+  render(): never;
 }
 declare type PickerProps = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

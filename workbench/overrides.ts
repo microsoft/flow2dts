@@ -257,6 +257,23 @@ const visitors: OverridesVisitors = {
       },
     },
   },
+  "Libraries/Components/Picker/Picker.d.ts": {
+    DeclareClass: {
+      exit(path) {
+        if (path.node.id.name === "PickerItem") {
+          const body = path.node.body as any
+          t.assertClassBody(body)
+          const renderMethod = body.body.find(
+            (m) => t.isTSDeclareMethod(m) && t.isIdentifier(m.key) && m.key.name === "render"
+          )
+          t.assertTSDeclareMethod(renderMethod)
+          t.assertTSTypeAnnotation(renderMethod.returnType)
+          t.assertTSVoidKeyword(renderMethod.returnType.typeAnnotation)
+          renderMethod.returnType.typeAnnotation = t.tsNeverKeyword()
+        }
+      },
+    },
+  },
 }
 
 export default visitors
