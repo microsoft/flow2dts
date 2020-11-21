@@ -2,7 +2,7 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { ColorValue } from "../../StyleSheet/StyleSheet";
 import { PressEvent } from "../../Types/CoreEventTypes";
-import { View } from "../../..";
+import View from "../../Components/View/View";
 import * as React from "react";
 declare type NativeBackgroundProp = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

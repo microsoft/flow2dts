@@ -225,6 +225,38 @@ const visitors: OverridesVisitors = {
       },
     },
   },
+  "Libraries/Components/Pressable/useAndroidRippleForView.d.ts": {
+    ImportDeclaration: {
+      exit(path) {
+        if (path.node.source.value === "../../..") {
+          if (path.node.specifiers.length !== 1 || path.node.specifiers[0].local.name !== "View") {
+            throw path.buildCodeFrameError("Expected a single `View` import specificier")
+          }
+          const replacementDeclaration = ast`
+            import View from "../../Components/View/View"
+          ` as t.ImportDeclaration
+          path.replaceWith(replacementDeclaration)
+          path.skip()
+        }
+      },
+    },
+  },
+  "Libraries/Components/Touchable/TouchableBounce.d.ts": {
+    ImportDeclaration: {
+      exit(path) {
+        if (path.node.source.value === "../../..") {
+          if (path.node.specifiers.length !== 1 || path.node.specifiers[0].local.name !== "Animated") {
+            throw path.buildCodeFrameError("Expected a single `Animated` import specificier")
+          }
+          const replacementDeclaration = ast`
+            import Animated from "../../Animated/Animated"
+          ` as t.ImportDeclaration
+          path.replaceWith(replacementDeclaration)
+          path.skip()
+        }
+      },
+    },
+  },
 }
 
 export default visitors
