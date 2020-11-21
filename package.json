@@ -10,7 +10,7 @@
     "start": "yarn workbench && yarn workbench:check:offences",
     "workbench": "yarn workbench:ios && yarn workbench:android",
     "workbench:cli": "yarn workspace flow2dts cli --cwd ../.. --rootDir ./workbench/inputs --overrides ./workbench/overrides.ts",
-    "workbench:cli-with-globs": "yarn workbench:cli \"./workbench/inputs/{index,Libraries/**/*}.js.flow\" \"!./workbench/inputs/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow\" \"!./workbench/inputs/Libraries/{Inspector,JSInspector,NewAppScreen,ReactPrivate}/*.js.flow\" \"!./workbench/inputs/Libraries/Animated/AnimatedWeb.js.flow\"",
+    "workbench:cli-with-globs": "yarn workbench:cli \"./workbench/inputs/{index,Libraries/**/*}.js.flow\" \"!./workbench/inputs/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow\" \"!./workbench/inputs/Libraries/{Inspector,JSInspector,NewAppScreen,ReactPrivate}/*.js.flow\" \"!./workbench/inputs/Libraries/Animated/AnimatedWeb.js.flow\" \"!./workbench/inputs/Libraries/{Promise,promiseRejectionIsError,promiseRejectionTrackingOptions}.js.flow\"",
     "workbench:ios": "rimraf ./workbench/outputs/ios && yarn workbench:cli-with-globs --platform ios --outDir ./workbench/outputs/ios",
     "workbench:android": "rimraf ./workbench/outputs/android && yarn workbench:cli-with-globs --platform android --outDir ./workbench/outputs/android",
     "workbench:check": "yarn workbench:check:ios && yarn workbench:check:android",
