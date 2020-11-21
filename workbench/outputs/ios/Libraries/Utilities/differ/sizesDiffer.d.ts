@@ -1,6 +1,8 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
-// @flow
-// TODO: Move these Flow typings upstream
+
+/**
+ * TODO: Move these Flow typings upstream
+ */
 declare type Size = {
   width: null | undefined | number;
   height: null | undefined | number;

@@ -1,5 +1,7 @@
-// @flow
-// TODO: Move these Flow typings upstream
+/**
+ * TODO: Move these Flow typings upstream
+ */
+
 type Size = {
   width: ?number,
   height: ?number,
