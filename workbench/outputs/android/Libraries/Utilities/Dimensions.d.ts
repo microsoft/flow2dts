@@ -1,10 +1,10 @@
 // @flow
 declare class Dimensions {
-  get(dim: string): Object;
-  set(dims: Readonly<{
+  static get(dim: string): Object;
+  static set(dims: Readonly<{
     [key: string]: any;
   }>): void;
-  addEventListener(type: "change", handler: Function): void;
-  removeEventListener(type: "change", handler: Function): void;
+  static addEventListener(type: "change", handler: Function): void;
+  static removeEventListener(type: "change", handler: Function): void;
 }
 export default Dimensions;

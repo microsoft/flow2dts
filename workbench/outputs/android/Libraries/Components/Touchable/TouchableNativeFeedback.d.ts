@@ -76,21 +76,21 @@ declare type State = Readonly<
   pressability: $TypeOf<typeof Pressability>;
 }>;
 declare class TouchableNativeFeedback extends React.Component<Props, State> {
-  SelectableBackground(rippleRadius: null | undefined | number): Readonly<
+  static SelectableBackground(rippleRadius: null | undefined | number): Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
     attribute: "selectableItemBackground";
     type: "ThemeAttrAndroid";
     rippleRadius: null | undefined | number;
   }>;
-  SelectableBackgroundBorderless(rippleRadius: null | undefined | number): Readonly<
+  static SelectableBackgroundBorderless(rippleRadius: null | undefined | number): Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
     attribute: "selectableItemBackgroundBorderless";
     type: "ThemeAttrAndroid";
     rippleRadius: null | undefined | number;
   }>;
-  Ripple(color: string, borderless: boolean, rippleRadius: null | undefined | number): Readonly<
+  static Ripple(color: string, borderless: boolean, rippleRadius: null | undefined | number): Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
     borderless: boolean;
@@ -98,7 +98,7 @@ declare class TouchableNativeFeedback extends React.Component<Props, State> {
     rippleRadius: null | undefined | number;
     type: "RippleAndroid";
   }>;
-  canUseNativeForeground(): boolean;
+  static canUseNativeForeground(): boolean;
   state: State;
   render(): React.Node;
   componentDidUpdate(prevProps: Props, prevState: State): void;

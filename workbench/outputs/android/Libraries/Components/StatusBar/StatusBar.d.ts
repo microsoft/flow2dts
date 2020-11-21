@@ -90,14 +90,14 @@ AndroidProps & IOSProps & {
 }>;
 declare class StatusBar extends $1.Component<Props> {
   static currentHeight: null | undefined | number;
-  setHidden(hidden: boolean, animation?: StatusBarAnimation): void;
-  setBarStyle(style: StatusBarStyle, animated?: boolean): void;
-  setNetworkActivityIndicatorVisible(visible: boolean): void;
-  setBackgroundColor(color: string, animated?: boolean): void;
-  setTranslucent(translucent: boolean): void;
-  pushStackEntry(props: any): any;
-  popStackEntry(entry: any): void;
-  replaceStackEntry(entry: any, props: any): any;
+  static setHidden(hidden: boolean, animation?: StatusBarAnimation): void;
+  static setBarStyle(style: StatusBarStyle, animated?: boolean): void;
+  static setNetworkActivityIndicatorVisible(visible: boolean): void;
+  static setBackgroundColor(color: string, animated?: boolean): void;
+  static setTranslucent(translucent: boolean): void;
+  static pushStackEntry(props: any): any;
+  static popStackEntry(entry: any): void;
+  static replaceStackEntry(entry: any, props: any): any;
   static defaultProps:
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {

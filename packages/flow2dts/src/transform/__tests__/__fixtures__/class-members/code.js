@@ -27,5 +27,6 @@ declare class CE {
   constructor(a: string): void;
   foo(b: string): number;
   static a: string;
-  b: ?string;
+  static b(): string;
+  c: ?string;
 }

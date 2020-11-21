@@ -1,9 +1,9 @@
 // @flow
 declare class PixelRatio {
-  get(): number;
-  getFontScale(): number;
-  getPixelSizeForLayoutSize(layoutSize: number): number;
-  roundToNearestPixel(layoutSize: number): number;
-  startDetecting(): void;
+  static get(): number;
+  static getFontScale(): number;
+  static getPixelSizeForLayoutSize(layoutSize: number): number;
+  static roundToNearestPixel(layoutSize: number): number;
+  static startDetecting(): void;
 }
 export default PixelRatio;

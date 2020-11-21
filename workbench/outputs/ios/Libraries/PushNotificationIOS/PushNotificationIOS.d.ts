@@ -34,19 +34,19 @@ declare type PushNotificationEventName = $Keys<{
 }>;
 declare class PushNotificationIOS {
   static FetchResult: FetchResult;
-  presentLocalNotification(details: Object): void;
-  scheduleLocalNotification(details: Object): void;
-  cancelAllLocalNotifications(): void;
-  removeAllDeliveredNotifications(): void;
-  getDeliveredNotifications(callback: (notifications: Object[]) => void): void;
-  removeDeliveredNotifications(identifiers: string[]): void;
-  setApplicationIconBadgeNumber(number: number): void;
-  getApplicationIconBadgeNumber(callback: Function): void;
-  cancelLocalNotifications(userInfo: Object): void;
-  getScheduledLocalNotifications(callback: Function): void;
-  addEventListener(type: PushNotificationEventName, handler: Function): void;
-  removeEventListener(type: PushNotificationEventName, handler: Function): void;
-  requestPermissions(permissions?: {
+  static presentLocalNotification(details: Object): void;
+  static scheduleLocalNotification(details: Object): void;
+  static cancelAllLocalNotifications(): void;
+  static removeAllDeliveredNotifications(): void;
+  static getDeliveredNotifications(callback: (notifications: Object[]) => void): void;
+  static removeDeliveredNotifications(identifiers: string[]): void;
+  static setApplicationIconBadgeNumber(number: number): void;
+  static getApplicationIconBadgeNumber(callback: Function): void;
+  static cancelLocalNotifications(userInfo: Object): void;
+  static getScheduledLocalNotifications(callback: Function): void;
+  static addEventListener(type: PushNotificationEventName, handler: Function): void;
+  static removeEventListener(type: PushNotificationEventName, handler: Function): void;
+  static requestPermissions(permissions?: {
     alert?: boolean;
     badge?: boolean;
     sound?: boolean;
@@ -55,9 +55,9 @@ declare class PushNotificationIOS {
     badge: boolean;
     sound: boolean;
   }>;
-  abandonPermissions(): void;
-  checkPermissions(callback: Function): void;
-  getInitialNotification(): Promise<null | undefined | PushNotificationIOS>;
+  static abandonPermissions(): void;
+  static checkPermissions(callback: Function): void;
+  static getInitialNotification(): Promise<null | undefined | PushNotificationIOS>;
 
   /**
    * You will never need to instantiate `PushNotificationIOS` yourself.

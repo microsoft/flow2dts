@@ -53,7 +53,7 @@ declare class AssetSourceResolver {
    */
   drawableFolderInBundle(): ResolvedAssetSource;
   fromSource(source: string): ResolvedAssetSource;
-  pickScale(scales: number[], deviceScale: number): number;
+  static pickScale(scales: number[], deviceScale: number): number;
 }
 export type { ResolvedAssetSource };
 export default AssetSourceResolver;

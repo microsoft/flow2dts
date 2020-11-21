@@ -8,12 +8,12 @@ declare type DebugData = {
   files: ExtraData;
 };
 declare class BugReporting {
-  addSource(key: string, callback: SourceCallback): {
+  static addSource(key: string, callback: SourceCallback): {
     remove: () => void;
   };
-  addFileSource(key: string, callback: SourceCallback): {
+  static addFileSource(key: string, callback: SourceCallback): {
     remove: () => void;
   };
-  collectExtraData(): DebugData;
+  static collectExtraData(): DebugData;
 }
 export default BugReporting;

@@ -103,15 +103,15 @@ export const objectTypeVisitor: Visitor<State> = {
         path.parentPath.parentPath.isDeclareClass()
       ) {
         const isConstructor = (t.isIdentifier(key) ? key.name : key.value) === "constructor"
-        path.replaceWith(
-          t.tsDeclareMethod(
-            null,
-            key,
-            value.typeParameters,
-            value.parameters,
-            isConstructor ? undefined : value.typeAnnotation
-          )
+        const declareMethod = t.tsDeclareMethod(
+          null,
+          key,
+          value.typeParameters,
+          value.parameters,
+          isConstructor ? undefined : value.typeAnnotation
         )
+        declareMethod.static = path.node.static
+        path.replaceWith(declareMethod)
       } else {
         const readonly = variance && variance.kind === "plus"
         const writeonly = variance && variance.kind === "minus"

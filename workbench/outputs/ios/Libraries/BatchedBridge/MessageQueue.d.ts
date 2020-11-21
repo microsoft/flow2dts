@@ -8,7 +8,7 @@ declare type SpyData = {
 declare class MessageQueue {
   __spy: null | undefined | ((data: SpyData) => void);
   constructor();
-  spy(spyOrToggle: boolean | ((data: SpyData) => void)): void;
+  static spy(spyOrToggle: boolean | ((data: SpyData) => void)): void;
   callFunctionReturnFlushedQueue(module: string, method: string, args: unknown[]): null | [number[], number[], unknown[], number];
   invokeCallbackAndReturnFlushedQueue(cbID: number, args: unknown[]): null | [number[], number[], unknown[], number];
   flushedQueue(): null | [number[], number[], unknown[], number];

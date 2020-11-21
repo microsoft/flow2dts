@@ -13,7 +13,7 @@ declare type Options = {
   subject?: string;
 };
 declare class Share {
-  share(content: Content, options?: Options): Promise<{
+  static share(content: Content, options?: Options): Promise<{
     action: string;
     activityType: null | undefined | string;
   }>;

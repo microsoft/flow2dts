@@ -47,7 +47,7 @@ declare class XMLHttpRequest extends $1 {
   responseURL: null | undefined | string;
   withCredentials: boolean;
   upload: XMLHttpRequestEventTarget;
-  setInterceptor(interceptor: null | undefined | XHRInterceptor): void;
+  static setInterceptor(interceptor: null | undefined | XHRInterceptor): void;
   constructor();
   responseType(): ResponseType;
   responseType(responseType: ResponseType): void;

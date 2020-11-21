@@ -45,8 +45,8 @@ declare type ItemProps = Readonly<
 declare var PickerIOSItem: (props: ItemProps) => null;
 declare class PickerIOS extends $2.Component<Props, State> {
   state: State;
-  Item(props: ItemProps): null;
-  getDerivedStateFromProps(props: Props): State;
+  static Item(props: ItemProps): null;
+  static getDerivedStateFromProps(props: Props): State;
   render(): $2.Node;
   componentDidUpdate(): void;
 }

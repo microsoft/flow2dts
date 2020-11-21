@@ -353,7 +353,7 @@ declare class VirtualizedList extends React.PureComponent<Props, State> {
   constructor(props: Props);
   componentDidMount(): void;
   componentWillUnmount(): void;
-  getDerivedStateFromProps(newProps: Props, prevState: State): State;
+  static getDerivedStateFromProps(newProps: Props, prevState: State): State;
   render(): React.Node;
   componentDidUpdate(prevProps: Props): void;
   measureLayoutRelativeToContainingList(): void;

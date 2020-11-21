@@ -11,7 +11,7 @@ declare type InterpolationConfigType = {
   extrapolateRight?: ExtrapolateType;
 };
 declare class AnimatedInterpolation extends $3 {
-  __createInterpolation(config: InterpolationConfigType): (input: number) => number | string;
+  static __createInterpolation(config: InterpolationConfigType): (input: number) => number | string;
   constructor(parent: $TypeOf<typeof $2>, config: InterpolationConfigType);
   __makeNative(): void;
   __getValue(): number | string;

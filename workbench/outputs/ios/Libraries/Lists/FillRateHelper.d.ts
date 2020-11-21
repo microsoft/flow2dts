@@ -18,11 +18,11 @@ declare type FrameMetrics = {
   offset: number;
 };
 declare class FillRateHelper {
-  addListener(callback: ($f2t1: FillRateInfo) => void): {
+  static addListener(callback: ($f2t1: FillRateInfo) => void): {
     remove: () => void;
   };
-  setSampleRate(sampleRate: number): void;
-  setMinSampleCount(minSampleCount: number): void;
+  static setSampleRate(sampleRate: number): void;
+  static setMinSampleCount(minSampleCount: number): void;
   constructor(getFrameMetrics: (index: number) => null | undefined | FrameMetrics);
   activate(): void;
   deactivateAndFlush(): void;
