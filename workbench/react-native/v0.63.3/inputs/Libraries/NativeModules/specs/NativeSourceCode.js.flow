@@ -1,0 +1,11 @@
+// @flow
+import type {TurboModule} from "../../TurboModule/RCTExport";
+
+interface Spec extends TurboModule {
+  +getConstants: () => {|
+    scriptURL: string,
+  |},
+}
+export type {Spec};
+
+declare export default Spec;

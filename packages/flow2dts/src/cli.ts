@@ -66,7 +66,8 @@ function relativePath(cwd: string | undefined, filename: string) {
 
 function getExtname(filename: string, platform: string) {
   const platformExtname = `.${platform}${FLOW_EXTNAME}`
-  const extname = filename.substring(filename.indexOf("."))
+  const basename = path.basename(filename)
+  const extname = basename.substring(basename.indexOf("."))
   return extname === FLOW_EXTNAME ? FLOW_EXTNAME : extname === platformExtname ? platformExtname : null
 }
 

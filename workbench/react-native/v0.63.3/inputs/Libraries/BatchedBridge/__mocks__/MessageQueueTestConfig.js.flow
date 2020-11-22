@@ -1,0 +1,10 @@
+// @flow
+import type {ModuleConfig} from "../NativeModules";
+
+declare var remoteModulesConfig: $ReadOnlyArray<ModuleConfig>;
+
+declare var MessageQueueTestConfig: {|
+  remoteModuleConfig: typeof remoteModulesConfig,
+|};
+
+declare module.exports: typeof MessageQueueTestConfig;

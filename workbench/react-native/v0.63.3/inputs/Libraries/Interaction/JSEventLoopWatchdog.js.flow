@@ -1,0 +1,21 @@
+// @flow
+type Handler = {
+  onIterate?: () => void,
+  onStall: (
+    params: {
+      lastInterval: number,
+      busyTime: number,
+      ...,
+    }
+  ) => ?string,
+  ...,
+};
+
+declare var JSEventLoopWatchdog: {|
+  getStats: () => Object,
+  reset: () => void,
+  addHandler: (handler: Handler) => void,
+  install: ({thresholdMS: number,...}) => void,
+|};
+
+declare module.exports: typeof JSEventLoopWatchdog;

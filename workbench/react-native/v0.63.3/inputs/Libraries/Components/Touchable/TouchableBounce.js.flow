@@ -1,0 +1,24 @@
+// @flow
+import type {ViewStyleProp} from "../../StyleSheet/StyleSheet";
+
+import typeof TouchableWithoutFeedback from "./TouchableWithoutFeedback";
+import {Animated} from "react-native";
+import * as React from "react";
+
+type Props = $ReadOnly<
+  {|
+    ...React.ElementConfig<TouchableWithoutFeedback>,
+    
+    onPressAnimationComplete?: ?(() => void),
+    onPressWithCompletion?: ?((callback: () => void) => void),
+    releaseBounciness?: ?number,
+    releaseVelocity?: ?number,
+    style?: ?ViewStyleProp,
+    
+    hostRef: React.Ref<typeof Animated.View>,
+  |},
+>;
+
+declare module.exports: React.ComponentType<
+  $ReadOnly<$Diff<Props, {|hostRef: mixed|}>>,
+>;

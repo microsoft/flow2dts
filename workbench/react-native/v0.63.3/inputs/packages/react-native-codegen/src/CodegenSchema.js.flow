@@ -1,0 +1,491 @@
+// @flow
+type CommandsFunctionTypeAnnotation = $ReadOnly<
+  {|
+    type: 'FunctionTypeAnnotation',
+    params: $ReadOnlyArray<CommandsFunctionTypeParamAnnotation>,
+  |},
+>;
+
+type CommandsFunctionTypeParamAnnotation = $ReadOnly<
+  {|
+    name: string,
+    typeAnnotation: CommandsTypeAnnotation,
+  |},
+>;
+
+type CommandsTypeAnnotation = 
+  | BooleanTypeAnnotation
+  | Int32TypeAnnotation
+  | DoubleTypeAnnotation
+  | FloatTypeAnnotation
+  | StringTypeAnnotation;
+
+type DoubleTypeAnnotation = $ReadOnly<
+  {|
+    type: 'DoubleTypeAnnotation',
+  |},
+>;
+
+type FloatTypeAnnotation = $ReadOnly<
+  {|
+    type: 'FloatTypeAnnotation',
+  |},
+>;
+
+type BooleanTypeAnnotation = $ReadOnly<
+  {|
+    type: 'BooleanTypeAnnotation',
+  |},
+>;
+
+type Int32TypeAnnotation = $ReadOnly<
+  {|
+    type: 'Int32TypeAnnotation',
+  |},
+>;
+
+type StringTypeAnnotation = $ReadOnly<
+  {|
+    type: 'StringTypeAnnotation',
+  |},
+>;
+
+type ObjectPropertyType = 
+  | $ReadOnly<
+    {|
+      type: 'BooleanTypeAnnotation',
+      name: string,
+      optional: boolean,
+    |},
+  >
+  | $ReadOnly<
+    {|
+      type: 'StringTypeAnnotation',
+      name: string,
+      optional: boolean,
+    |},
+  >
+  | $ReadOnly<
+    {|
+      type: 'DoubleTypeAnnotation',
+      name: string,
+      optional: boolean,
+    |},
+  >
+  | $ReadOnly<
+    {|
+      type: 'FloatTypeAnnotation',
+      name: string,
+      optional: boolean,
+    |},
+  >
+  | $ReadOnly<
+    {|
+      type: 'Int32TypeAnnotation',
+      name: string,
+      optional: boolean,
+    |},
+  >
+  | $ReadOnly<
+    {|
+      type: 'StringEnumTypeAnnotation',
+      name: string,
+      optional: boolean,
+      options: $ReadOnlyArray<
+        {|
+          name: string,
+        |},
+      >,
+    |},
+  >
+  | $ReadOnly<
+    {|
+      type: 'ObjectTypeAnnotation',
+      name: string,
+      optional: boolean,
+      properties: $ReadOnlyArray<ObjectPropertyType>,
+    |},
+  >;
+
+type PropTypeTypeAnnotation = 
+  | $ReadOnly<
+    {|
+      type: 'BooleanTypeAnnotation',
+      default: boolean | null,
+    |},
+  >
+  | $ReadOnly<
+    {|
+      type: 'StringTypeAnnotation',
+      default: string | null,
+    |},
+  >
+  | $ReadOnly<
+    {|
+      type: 'DoubleTypeAnnotation',
+      default: number,
+    |},
+  >
+  | $ReadOnly<
+    {|
+      type: 'FloatTypeAnnotation',
+      default: number | null,
+    |},
+  >
+  | $ReadOnly<
+    {|
+      type: 'Int32TypeAnnotation',
+      default: number,
+    |},
+  >
+  | $ReadOnly<
+    {|
+      type: 'StringEnumTypeAnnotation',
+      default: string,
+      options: $ReadOnlyArray<
+        {|
+          name: string,
+        |},
+      >,
+    |},
+  >
+  | $ReadOnly<
+    {|
+      type: 'Int32EnumTypeAnnotation',
+      default: number,
+      options: $ReadOnlyArray<
+        {|
+          value: number,
+        |},
+      >,
+    |},
+  >
+  | $ReadOnly<
+    {|
+      type: 'NativePrimitiveTypeAnnotation',
+      name: 
+        | 'ColorPrimitive'
+        | 'ImageSourcePrimitive'
+        | 'PointPrimitive'
+        | 'EdgeInsetsPrimitive',
+    |},
+  >
+  | $ReadOnly<
+    {|
+      type: 'ObjectTypeAnnotation',
+      properties: $ReadOnlyArray<PropTypeShape>,
+    |},
+  >
+  | $ReadOnly<
+    {|
+      type: 'ArrayTypeAnnotation',
+      elementType: 
+        | $ReadOnly<
+          {|
+            type: 'BooleanTypeAnnotation',
+          |},
+        >
+        | $ReadOnly<
+          {|
+            type: 'StringTypeAnnotation',
+          |},
+        >
+        | $ReadOnly<
+          {|
+            type: 'DoubleTypeAnnotation',
+          |},
+        >
+        | $ReadOnly<
+          {|
+            type: 'FloatTypeAnnotation',
+          |},
+        >
+        | $ReadOnly<
+          {|
+            type: 'Int32TypeAnnotation',
+          |},
+        >
+        | $ReadOnly<
+          {|
+            type: 'StringEnumTypeAnnotation',
+            default: string,
+            options: $ReadOnlyArray<
+              {|
+                name: string,
+              |},
+            >,
+          |},
+        >
+        | $ReadOnly<
+          {|
+            type: 'ObjectTypeAnnotation',
+            properties: $ReadOnlyArray<PropTypeShape>,
+          |},
+        >
+        | $ReadOnly<
+          {|
+            type: 'NativePrimitiveTypeAnnotation',
+            name: 
+              | 'ColorPrimitive'
+              | 'ImageSourcePrimitive'
+              | 'PointPrimitive'
+              | 'EdgeInsetsPrimitive',
+          |},
+        >
+        | $ReadOnly<
+          {|
+            type: 'ArrayTypeAnnotation',
+            elementType: $ReadOnly<
+              {|
+                type: 'ObjectTypeAnnotation',
+                properties: $ReadOnlyArray<PropTypeShape>,
+              |},
+            >,
+          |},
+        >,
+    |},
+  >;
+
+type PropTypeShape = $ReadOnly<
+  {|
+    name: string,
+    optional: boolean,
+    typeAnnotation: PropTypeTypeAnnotation,
+  |},
+>;
+
+type PrimitiveTypeAnnotationType = 
+  | 'StringTypeAnnotation'
+  | 'NumberTypeAnnotation'
+  | 'Int32TypeAnnotation'
+  | 'DoubleTypeAnnotation'
+  | 'FloatTypeAnnotation'
+  | 'BooleanTypeAnnotation'
+  | 'GenericObjectTypeAnnotation';
+
+type PrimitiveTypeAnnotation = $ReadOnly<
+  {|
+    type: PrimitiveTypeAnnotationType,
+  |},
+>;
+
+type FunctionTypeAnnotationParamTypeAnnotation = 
+  | $ReadOnly<
+    {|
+      type: 
+        | 'AnyTypeAnnotation'
+        | 'FunctionTypeAnnotation'
+        | PrimitiveTypeAnnotationType,
+    |},
+  >
+  | $ReadOnly<
+    {|
+      type: 'ArrayTypeAnnotation',
+      elementType: ?FunctionTypeAnnotationParamTypeAnnotation,
+    |},
+  >
+  | $ReadOnly<
+    {|
+      type: 'ObjectTypeAnnotation',
+      properties: ?$ReadOnlyArray<ObjectParamTypeAnnotation>,
+    |},
+  >;
+
+type FunctionTypeAnnotationReturnArrayElementType = FunctionTypeAnnotationParamTypeAnnotation;
+
+type ObjectParamTypeAnnotation = $ReadOnly<
+  {|
+    optional: boolean,
+    name: string,
+    typeAnnotation: FunctionTypeAnnotationParamTypeAnnotation,
+  |},
+>;
+
+type FunctionTypeAnnotationReturn = 
+  | $ReadOnly<
+    {|
+      nullable: boolean,
+      type: 
+        | PrimitiveTypeAnnotationType
+        | 'VoidTypeAnnotation'
+        | 'GenericPromiseTypeAnnotation',
+    |},
+  >
+  | $ReadOnly<
+    {|
+      nullable: boolean,
+      type: 'ArrayTypeAnnotation',
+      elementType: ?FunctionTypeAnnotationReturnArrayElementType,
+    |},
+  >
+  | $ReadOnly<
+    {|
+      nullable: boolean,
+      type: 'ObjectTypeAnnotation',
+      properties: ?$ReadOnlyArray<ObjectParamTypeAnnotation>,
+    |},
+  >;
+
+type FunctionTypeAnnotationParam = $ReadOnly<
+  {|
+    nullable: boolean,
+    name: string,
+    typeAnnotation: FunctionTypeAnnotationParamTypeAnnotation,
+  |},
+>;
+
+type FunctionTypeAnnotation = $ReadOnly<
+  {|
+    type: 'FunctionTypeAnnotation',
+    params: $ReadOnlyArray<FunctionTypeAnnotationParam>,
+    returnTypeAnnotation: FunctionTypeAnnotationReturn,
+    optional: boolean,
+  |},
+>;
+
+type MethodTypeShape = $ReadOnly<
+  {|
+    name: string,
+    typeAnnotation: FunctionTypeAnnotation,
+  |},
+>;
+
+type NativeModuleShape = $ReadOnly<
+  {|
+    properties: $ReadOnlyArray<MethodTypeShape>,
+  |},
+>;
+
+type EventTypeShape = $ReadOnly<
+  {|
+    name: string,
+    bubblingType: 'direct' | 'bubble',
+    optional: boolean,
+    paperTopLevelNameDeprecated?: string,
+    typeAnnotation: $ReadOnly<
+      {|
+        type: 'EventTypeAnnotation',
+        argument?: $ReadOnly<
+          {|
+            type: 'ObjectTypeAnnotation',
+            properties: $ReadOnlyArray<ObjectPropertyType>,
+          |},
+        >,
+      |},
+    >,
+  |},
+>;
+
+type CommandTypeShape = $ReadOnly<
+  {|
+    name: string,
+    optional: boolean,
+    typeAnnotation: CommandsFunctionTypeAnnotation,
+  |},
+>;
+
+type OptionsShape = $ReadOnly<
+  {|
+    interfaceOnly?: boolean,
+    
+    // Use for components with no current paper rename in progress
+    // Does not check for new name
+    paperComponentName?: string,
+    
+    // Use for components that are not used on one or the other platform.
+    excludedPlatform?: 'iOS' | 'android',
+    
+    // Use for components currently being renamed in paper
+    // Will use new name if it is available and fallback to this name
+    paperComponentNameDeprecated?: string,
+  |},
+>;
+
+type ExtendsPropsShape = $ReadOnly<
+  {|
+    type: 'ReactNativeBuiltInType',
+    knownTypeName: 'ReactNativeCoreViewProps',
+  |},
+>;
+
+type ComponentShape = $ReadOnly<
+  {|
+    ...OptionsShape,
+    extendsProps: $ReadOnlyArray<ExtendsPropsShape>,
+    events: $ReadOnlyArray<EventTypeShape>,
+    props: $ReadOnlyArray<PropTypeShape>,
+    commands: $ReadOnlyArray<CommandTypeShape>,
+  |},
+>;
+
+type SchemaType = $ReadOnly<
+  {|
+    modules: $ReadOnly<
+      {
+        [module: string]: $ReadOnly<
+          {|
+            components?: $ReadOnly<{[component: string]: ComponentShape,...}>,
+            nativeModules?: $ReadOnly<
+              {
+                [nativeModule: string]: NativeModuleShape,
+                ...,
+              },
+            >,
+          |},
+        >,
+        ...,
+      },
+    >,
+  |},
+>;
+export type {CommandsFunctionTypeAnnotation};
+
+export type {CommandsFunctionTypeParamAnnotation};
+
+export type {CommandsTypeAnnotation};
+
+export type {DoubleTypeAnnotation};
+
+export type {FloatTypeAnnotation};
+
+export type {BooleanTypeAnnotation};
+
+export type {Int32TypeAnnotation};
+
+export type {StringTypeAnnotation};
+
+export type {ObjectPropertyType};
+
+export type {PropTypeShape};
+
+export type {PrimitiveTypeAnnotationType};
+
+export type {PrimitiveTypeAnnotation};
+
+export type {FunctionTypeAnnotationParamTypeAnnotation};
+
+export type {FunctionTypeAnnotationReturnArrayElementType};
+
+export type {ObjectParamTypeAnnotation};
+
+export type {FunctionTypeAnnotationReturn};
+
+export type {FunctionTypeAnnotationParam};
+
+export type {FunctionTypeAnnotation};
+
+export type {MethodTypeShape};
+
+export type {NativeModuleShape};
+
+export type {EventTypeShape};
+
+export type {CommandTypeShape};
+
+export type {OptionsShape};
+
+export type {ExtendsPropsShape};
+
+export type {ComponentShape};
+
+export type {SchemaType};

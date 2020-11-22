@@ -1,0 +1,20 @@
+// @flow
+import type {NativeModuleSchemaBuilderConfig} from "./schema.js";
+declare var getMethods: typeof $2.getMethods;
+declare var $2: typeof $1;
+const $1 = require("./methods");
+
+declare function getModuleProperties(
+  types: $FlowFixMe,
+  interfaceName: $FlowFixMe
+): $FlowFixMe;
+
+declare function findInterfaceName(types: $FlowFixMe): $FlowFixMe;
+
+declare function processModule(
+  types: $FlowFixMe
+): NativeModuleSchemaBuilderConfig;
+
+declare module.exports: {|
+  processModule: typeof processModule,
+|};

@@ -1,0 +1,11 @@
+// @flow
+declare var EventEmitter: typeof $1;
+const $1 = require("../../vendor/emitter/EventEmitter");
+
+declare class NativeEventEmitter
+  extends $2 {
+  constructor(): void,
+}
+declare var $2: typeof EventEmitter;
+
+declare module.exports: typeof NativeEventEmitter;

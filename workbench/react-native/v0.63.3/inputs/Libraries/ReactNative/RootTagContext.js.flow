@@ -1,0 +1,2 @@
+// @flow
+declare module.exports: React$Context<number>;

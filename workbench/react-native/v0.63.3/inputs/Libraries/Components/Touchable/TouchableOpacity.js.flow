@@ -1,0 +1,34 @@
+// @flow
+import typeof TouchableWithoutFeedback from "./TouchableWithoutFeedback";
+import Animated from "react-native/Libraries/Animated/src/Animated";
+
+import type {ViewStyleProp} from "react-native/Libraries/StyleSheet/StyleSheet";
+
+import * as React from "react";
+
+type TVProps = $ReadOnly<
+  {|
+    hasTVPreferredFocus?: ?boolean,
+    nextFocusDown?: ?number,
+    nextFocusForward?: ?number,
+    nextFocusLeft?: ?number,
+    nextFocusRight?: ?number,
+    nextFocusUp?: ?number,
+  |},
+>;
+
+type Props = $ReadOnly<
+  {|
+    ...React.ElementConfig<TouchableWithoutFeedback>,
+    ...TVProps,
+    
+    activeOpacity?: ?number,
+    style?: ?ViewStyleProp,
+    
+    hostRef: React.Ref<typeof Animated.View>,
+  |},
+>;
+
+declare module.exports: React.ComponentType<
+  $ReadOnly<$Diff<Props, {|hostRef: mixed|}>>,
+>;

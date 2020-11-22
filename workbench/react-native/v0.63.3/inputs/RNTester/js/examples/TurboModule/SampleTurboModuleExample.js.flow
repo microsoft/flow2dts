@@ -1,0 +1,25 @@
+// @flow
+import * as React from "react";
+
+type State = {|
+  testResults: {
+    [string]: {
+      type: string,
+      value: mixed,
+      ...,
+    },
+    ...,
+  },
+|};
+
+declare class SampleTurboModuleExample
+  extends $1<{||}, State> {
+  state: State,
+  
+  componentDidMount(): void,
+  
+  render(): React.Node,
+}
+declare var $1: typeof React.Component;
+
+declare module.exports: typeof SampleTurboModuleExample;

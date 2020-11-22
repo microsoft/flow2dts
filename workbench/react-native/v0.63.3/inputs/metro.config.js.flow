@@ -1,0 +1,14 @@
+// @flow
+declare var getPolyfills: typeof $1;
+const $1 = require("./rn-get-polyfills");
+
+declare module.exports: {|
+  resolver: {|
+    extraNodeModules: {|
+      "react-native": typeof __dirname,
+    |},
+  |},
+  serializer: {|
+    getPolyfills: typeof getPolyfills,
+  |},
+|};

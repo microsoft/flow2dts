@@ -1,0 +1,8 @@
+// @flow
+declare var NativeEventEmitter: typeof $1;
+const $1 = require("../../EventEmitter/NativeEventEmitter");
+
+declare class StatusBarIOS extends $2 {}
+declare var $2: typeof NativeEventEmitter;
+
+declare module.exports: StatusBarIOS;

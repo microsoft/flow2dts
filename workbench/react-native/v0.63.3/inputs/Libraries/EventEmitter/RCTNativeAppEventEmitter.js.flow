@@ -1,0 +1,6 @@
+// @flow
+declare var RCTDeviceEventEmitter: typeof $1;
+const $1 = require("./RCTDeviceEventEmitter");
+
+declare var RCTNativeAppEventEmitter: typeof RCTDeviceEventEmitter;
+declare module.exports: typeof RCTNativeAppEventEmitter;
