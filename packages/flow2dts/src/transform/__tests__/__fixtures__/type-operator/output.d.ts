@@ -11,3 +11,4 @@ declare type Foo$Type = Foo
 declare class Bar {}
 
 declare type Bar$Type = Bar
+declare type U = undefined

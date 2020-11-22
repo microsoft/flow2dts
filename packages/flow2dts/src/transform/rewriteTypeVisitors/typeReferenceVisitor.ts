@@ -177,6 +177,10 @@ export const typeReferenceVisitor: Visitor<State> = {
     },
     exit(path, state) {
       const typeOfType = path.node.argument as any
+      if (t.isTSUndefinedKeyword(typeOfType)) {
+        path.replaceWith(typeOfType)
+        return
+      }
       t.assertTSTypeReference(typeOfType)
       if (isClass(typeOfType, path.scope)) {
         path.replaceWith(typeOfType)

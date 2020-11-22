@@ -7,3 +7,4 @@ declare class Foo {}
 type Foo$Type = typeof Foo
 class Bar {}
 type Bar$Type = typeof Bar
+type U = typeof undefined
