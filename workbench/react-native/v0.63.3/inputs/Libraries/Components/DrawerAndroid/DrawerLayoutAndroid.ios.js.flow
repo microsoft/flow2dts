@@ -1,0 +1,2 @@
+import UnimplementedView from "../UnimplementedViews/UnimplementedView"
+declare module.exports: typeof UnimplementedView
