@@ -1,4 +1,4 @@
-import { OverridesVisitors } from "../packages/flow2dts/src/transform/applyOverridesVisitors"
+import { OverridesVisitors } from "../../../packages/flow2dts/src/transform/applyOverridesVisitors"
 import template from "@babel/template"
 import { types as t } from "@babel/core"
 import { NodePath, Scope, Visitor } from "@babel/traverse"

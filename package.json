@@ -3,19 +3,19 @@
   "name": "flow2dts-monorepo",
   "workspaces": [
     "packages/*",
-    "workbench"
+    "workbench/react-native/d8b0997a"
   ],
   "scripts": {
     "test": "yarn workspace flow2dts-flow-types-polyfill test && yarn workspace flow2dts test",
     "start": "yarn workbench && yarn workbench:check:offences",
     "workbench": "yarn workbench:ios && yarn workbench:android",
-    "workbench:cli": "yarn workspace flow2dts cli --cwd ../.. --rootDir ./workbench/inputs --overrides ./workbench/overrides.ts",
-    "workbench:cli-with-globs": "yarn workbench:cli \"./workbench/inputs/{index,Libraries/**/*}.js.flow\" \"!./workbench/inputs/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow\" \"!./workbench/inputs/Libraries/{Inspector,JSInspector,NewAppScreen,ReactPrivate}/*.js.flow\" \"!./workbench/inputs/Libraries/Animated/AnimatedWeb.js.flow\" \"!./workbench/inputs/Libraries/{Promise,promiseRejectionIsError,promiseRejectionTrackingOptions}.js.flow\"",
-    "workbench:ios": "rimraf ./workbench/outputs/ios && yarn workbench:cli-with-globs --platform ios --outDir ./workbench/outputs/ios",
-    "workbench:android": "rimraf ./workbench/outputs/android && yarn workbench:cli-with-globs --platform android --outDir ./workbench/outputs/android",
+    "workbench:cli": "yarn workspace flow2dts cli --cwd ../.. --rootDir ./workbench/react-native/d8b0997a/inputs --overrides ./workbench/react-native/d8b0997a/overrides.ts",
+    "workbench:cli-with-globs": "yarn workbench:cli \"./workbench/react-native/d8b0997a/inputs/{index,Libraries/**/*}.js.flow\" \"!./workbench/react-native/d8b0997a/inputs/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow\" \"!./workbench/react-native/d8b0997a/inputs/Libraries/{Inspector,JSInspector,NewAppScreen,ReactPrivate}/*.js.flow\" \"!./workbench/react-native/d8b0997a/inputs/Libraries/Animated/AnimatedWeb.js.flow\" \"!./workbench/react-native/d8b0997a/inputs/Libraries/{Promise,promiseRejectionIsError,promiseRejectionTrackingOptions}.js.flow\"",
+    "workbench:ios": "rimraf ./workbench/react-native/d8b0997a/outputs/ios && yarn workbench:cli-with-globs --platform ios --outDir ./workbench/react-native/d8b0997a/outputs/ios",
+    "workbench:android": "rimraf ./workbench/react-native/d8b0997a/outputs/android && yarn workbench:cli-with-globs --platform android --outDir ./workbench/react-native/d8b0997a/outputs/android",
     "workbench:check": "yarn workbench:check:ios && yarn workbench:check:android",
-    "workbench:check:ios": "yarn tsc --project ./workbench/tsconfig.ios.json --pretty",
-    "workbench:check:android": "yarn tsc --project ./workbench/tsconfig.android.json --pretty",
+    "workbench:check:ios": "yarn tsc --project ./workbench/react-native/d8b0997a/tsconfig.ios.json --pretty",
+    "workbench:check:android": "yarn tsc --project ./workbench/react-native/d8b0997a/tsconfig.android.json --pretty",
     "workbench:check:offences": "yarn workbench:check | node ./scripts/tsc-offences.js",
     "prettify": "prettier --write \"packages/**/*.ts\" && prettier --write \"packages/**/*.d.ts\" && prettier --write \"packages/**/*.js\"",
     "postinstall": "patch-package"
