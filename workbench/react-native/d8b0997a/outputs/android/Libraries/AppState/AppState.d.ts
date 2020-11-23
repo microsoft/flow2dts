@@ -33,10 +33,6 @@ declare class MissingNativeAppStateShim extends EventEmitter {
   currentState: null | undefined | string;
   addEventListener(type: string, handler: Function): void;
   removeEventListener(type: string, handler: Function): void;
-  // EventEmitter
-  addListener(): void;
-  removeAllListeners(): void;
-  removeSubscription(): void;
 }
 declare var AppStateInstance: AppState | MissingNativeAppStateShim;
 declare const $f2tExportDefault: $TypeOf<typeof AppStateInstance>;

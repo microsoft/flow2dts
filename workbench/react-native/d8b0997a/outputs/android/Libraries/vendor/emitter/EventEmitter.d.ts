@@ -3,6 +3,5 @@ import $1 from "./_EventEmitter";
 interface EventSubscription {
   remove: () => void;
 }
-declare const $f2tExportDefault: $TypeOf<typeof $1>;
-export default $f2tExportDefault;
+export default $1;
 export type { EventSubscription };

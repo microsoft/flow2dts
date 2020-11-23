@@ -10,7 +10,9 @@ declare type NativeEventEmitterOptions = Readonly<
 {
   __SECRET_DISABLE_CALLS_INTO_MODULE_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: boolean;
 }>;
-declare class NativeEventEmitter extends EventEmitter {
+type EventEmitterWithoutAddListenerType = new (...args: ConstructorParameters<typeof EventEmitter>) => Omit<InstanceType<typeof EventEmitter>, "addListener" | "removeAllListeners" | "removeSubscription">;
+declare const EventEmitterWithoutAddListener: EventEmitterWithoutAddListenerType;
+declare class NativeEventEmitter extends EventEmitterWithoutAddListener {
   constructor(nativeModule: null | undefined | NativeModule, options?: NativeEventEmitterOptions);
   addListener(eventType: string, listener: Function, context: null | undefined | Object): EventSubscription;
   removeAllListeners(eventType: string): void;

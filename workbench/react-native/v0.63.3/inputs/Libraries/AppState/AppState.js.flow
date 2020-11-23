@@ -44,11 +44,10 @@ declare class MissingNativeAppStateShim
   removeEventListener(type: string, handler: Function): void,
   
   // EventEmitter
-  addListener(): void,
-  
-  removeAllListeners(): void,
-  
-  removeSubscription(): void,
+  // TODO: This return type does not match superclass'
+  // addListener(): void,
+  // removeAllListeners(): void,
+  // removeSubscription(): void,
 }
 declare var $3: typeof EventEmitter;
 

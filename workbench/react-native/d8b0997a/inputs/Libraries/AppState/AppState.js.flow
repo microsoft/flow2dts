@@ -1,15 +1,14 @@
 // @flow
-import NativeEventEmitter from "../EventEmitter/NativeEventEmitter";
+import NativeEventEmitter from "../EventEmitter/NativeEventEmitter"
 
-import EventEmitter from "../vendor/emitter/EventEmitter";
+import EventEmitter from "../vendor/emitter/EventEmitter"
 
-declare class AppState
-  extends $1 {
-  currentState: ?string,
-  isAvailable: boolean,
-  
-  constructor(): void,
-  
+declare class AppState extends $1 {
+  currentState: ?string;
+  isAvailable: boolean;
+
+  constructor(): void;
+
   // TODO: now that AppState is a subclass of NativeEventEmitter, we could
   // deprecate `addEventListener` and `removeEventListener` and just use
   // addListener` and `listener.remove()` directly. That will be a breaking
@@ -21,36 +20,34 @@ declare class AppState
    *
    * See https://reactnative.dev/docs/appstate.html#addeventlistener
    */
-  addEventListener(type: string, handler: Function): void,
-  
+  addEventListener(type: string, handler: Function): void;
+
   /**
    * Remove a handler by passing the `change` event type and the handler.
    *
    * See https://reactnative.dev/docs/appstate.html#removeeventlistener
    */
-  removeEventListener(type: string, handler: Function): void,
+  removeEventListener(type: string, handler: Function): void;
 }
-declare var $1: typeof NativeEventEmitter;
+declare var $1: typeof NativeEventEmitter
 
-declare class MissingNativeAppStateShim
-  extends $2 {
+declare class MissingNativeAppStateShim extends $2 {
   // AppState
-  isAvailable: boolean,
-  currentState: ?string,
-  
-  addEventListener(type: string, handler: Function): void,
-  
-  removeEventListener(type: string, handler: Function): void,
-  
+  isAvailable: boolean;
+  currentState: ?string;
+
+  addEventListener(type: string, handler: Function): void;
+
+  removeEventListener(type: string, handler: Function): void;
+
   // EventEmitter
-  addListener(): void,
-  
-  removeAllListeners(): void,
-  
-  removeSubscription(): void,
+  // TODO: This return type does not match superclass'
+  // addListener(): void,
+  // removeAllListeners(): void,
+  // removeSubscription(): void,
 }
-declare var $2: typeof EventEmitter;
+declare var $2: typeof EventEmitter
 
-declare var AppStateInstance: AppState | MissingNativeAppStateShim;
+declare var AppStateInstance: AppState | MissingNativeAppStateShim
 
-declare module.exports: typeof AppStateInstance;
+declare module.exports: typeof AppStateInstance

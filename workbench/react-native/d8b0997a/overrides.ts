@@ -274,6 +274,52 @@ const visitors: OverridesVisitors = {
       },
     },
   },
+  "Libraries/vendor/emitter/EventEmitter.d.ts": {
+    VariableDeclaration: {
+      exit(path, state: any) {
+        const declarator = path.node.declarations[0]
+        if (declarator && t.isIdentifier(declarator.id) && declarator.id.name === "$f2tExportDefault") {
+          const typeAnnotation = declarator.id.typeAnnotation
+          t.assertTSTypeAnnotation(typeAnnotation)
+          const typeOfHelper = typeAnnotation.typeAnnotation
+          t.assertTSTypeReference(typeOfHelper)
+          if (!typeOfHelper.typeParameters || typeOfHelper.typeParameters.params.length !== 1) {
+            throw path.buildCodeFrameError("Expected $TypeOf to have 1 type parameter")
+          }
+          const typeQuery = typeOfHelper.typeParameters.params[0]
+          t.assertTSTypeQuery(typeQuery)
+          t.assertIdentifier(typeQuery.exprName)
+          state.eventEmitterClassVar = typeQuery.exprName
+          path.remove()
+        }
+      },
+    },
+    ExportDefaultDeclaration: {
+      exit(path, state: any) {
+        t.assertIdentifier(path.node.declaration)
+        path.node.declaration = state.eventEmitterClassVar
+      },
+    },
+  },
+  "Libraries/EventEmitter/NativeEventEmitter.d.ts": {
+    // TODO: We should convert DeclareClass, which is a Flow type, to ClassDeclaration.
+    DeclareClass: {
+      exit(path) {
+        if (path.node.id.name === "NativeEventEmitter") {
+          path.insertBefore(ast`
+            type EventEmitterWithoutAddListenerType = new (...args: ConstructorParameters<typeof EventEmitter>) => Omit<
+              InstanceType<typeof EventEmitter>,
+              "addListener" | "removeAllListeners" | "removeSubscription"
+            >
+            declare const EventEmitterWithoutAddListener: EventEmitterWithoutAddListenerType
+          `)
+          const superclass = path.node.extends && path.node.extends[0]
+          t.assertInterfaceExtends(superclass)
+          superclass.id = t.identifier("EventEmitterWithoutAddListener")
+        }
+      },
+    },
+  },
 }
 
 export default visitors
