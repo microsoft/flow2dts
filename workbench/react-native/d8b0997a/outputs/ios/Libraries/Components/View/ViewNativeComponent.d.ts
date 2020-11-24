@@ -41,7 +41,6 @@ interface NativeCommands {
 }
 declare var Commands: NativeCommands;
 export type { ViewNativeComponentType };
-export { __INTERNAL_VIEW_CONFIG };
 export { Commands };
 declare const $f2tExportDefault: ViewNativeComponentType;
 export default $f2tExportDefault;
