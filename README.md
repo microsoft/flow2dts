@@ -3,7 +3,7 @@
 ## Setup
 
 ```
-git clone https://github.com/alloy/flow2dts.git
+git clone https://github.com/microsoft/flow2dts.git
 cd flow2dts
 yarn install
 ```
