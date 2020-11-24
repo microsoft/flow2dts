@@ -37,5 +37,5 @@ declare var NativeModule: Spec;
 export type { DisplayMetrics };
 export type { DimensionsPayload };
 export type { Spec };
-declare const $f2tExportDefault: NativeModule;
+declare const $f2tExportDefault: typeof NativeModule;
 export default $f2tExportDefault;
