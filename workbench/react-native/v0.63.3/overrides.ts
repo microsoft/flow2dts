@@ -274,6 +274,25 @@ const visitors: OverridesVisitors = {
       },
     },
   },
+  "Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.d.ts": {
+    ImportDeclaration: {
+      exit(path, state: { promiseIdentifierName?: string }) {
+        if (path.node.source.value === "../../Promise") {
+          const specifier = path.node.specifiers[0]
+          t.assertImportDefaultSpecifier(specifier)
+          state.promiseIdentifierName = specifier.local.name
+          path.remove()
+        }
+      },
+    },
+    TSTypeReference: {
+      exit(path, state: { promiseIdentifierName: string }) {
+        if (t.isIdentifier(path.node.typeName) && path.node.typeName.name === state.promiseIdentifierName) {
+          path.node.typeName = t.identifier("Promise")
+        }
+      },
+    },
+  },
 }
 
 export default visitors

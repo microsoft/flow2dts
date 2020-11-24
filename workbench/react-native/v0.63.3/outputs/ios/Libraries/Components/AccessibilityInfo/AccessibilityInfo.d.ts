@@ -1,6 +1,5 @@
 import { $FlowFixMe, $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $Keys } from "utility-types";
-import $1 from "../../Promise";
 declare type ChangeEventName = $Keys<{
   announcementFinished: string;
   boldTextChanged: string;
@@ -22,7 +21,7 @@ declare var AccessibilityInfo:
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#isBoldTextEnabled
    */
-  isBoldTextEnabled: () => $1<boolean>;
+  isBoldTextEnabled: () => Promise<boolean>;
 
   /**
    * Query whether grayscale is currently enabled.
@@ -32,7 +31,7 @@ declare var AccessibilityInfo:
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#isGrayscaleEnabled
    */
-  isGrayscaleEnabled: () => $1<boolean>;
+  isGrayscaleEnabled: () => Promise<boolean>;
 
   /**
    * Query whether inverted colors are currently enabled.
@@ -42,7 +41,7 @@ declare var AccessibilityInfo:
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#isInvertColorsEnabled
    */
-  isInvertColorsEnabled: () => $1<boolean>;
+  isInvertColorsEnabled: () => Promise<boolean>;
 
   /**
    * Query whether reduced motion is currently enabled.
@@ -52,7 +51,7 @@ declare var AccessibilityInfo:
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#isReduceMotionEnabled
    */
-  isReduceMotionEnabled: () => $1<boolean>;
+  isReduceMotionEnabled: () => Promise<boolean>;
 
   /**
    * Query whether reduced transparency is currently enabled.
@@ -62,7 +61,7 @@ declare var AccessibilityInfo:
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#isReduceTransparencyEnabled
    */
-  isReduceTransparencyEnabled: () => $1<boolean>;
+  isReduceTransparencyEnabled: () => Promise<boolean>;
 
   /**
    * Query whether a screen reader is currently enabled.
@@ -72,7 +71,7 @@ declare var AccessibilityInfo:
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#isScreenReaderEnabled
    */
-  isScreenReaderEnabled: () => $1<boolean>;
+  isScreenReaderEnabled: () => Promise<boolean>;
   fetch: $FlowFixMe;
 
   /**

@@ -1,6 +1,6 @@
 import { Visitor, types as t, traverse } from "@babel/core"
 
-export type OverridesVisitors<S extends {} = {}> = { all?: Visitor<S>; [Path: string]: Visitor<S> | undefined }
+export type OverridesVisitors<S = any> = { all?: Visitor<S>; [Path: string]: Visitor<S> | undefined }
 
 export function applyOverridesVisitors(pathname: string, fileNode: t.File, visitors: OverridesVisitors) {
   const state = {}
