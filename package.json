@@ -28,10 +28,12 @@
     "workbench:react-native:v0.63.3:android": "rimraf ./workbench/react-native/v0.63.3/outputs/android && yarn workbench:react-native:v0.63.3:cli-with-globs --platform android --outDir ./workbench/react-native/v0.63.3/outputs/android",
     "workbench:react-native:v0.63.3:check:ios": "yarn tsc --project ./workbench/react-native/v0.63.3/tsconfig.ios.json --pretty",
     "workbench:react-native:v0.63.3:check:android": "yarn tsc --project ./workbench/react-native/v0.63.3/tsconfig.android.json --pretty",
+    "workbench:react-native:v0.63.3:ios:npm": "node scripts/create-types-package.js ./workbench/react-native/v0.63.3/package.json ./workbench/react-native/v0.63.3/outputs/ios",
     "prettify": "prettier --write \"packages/**/*.ts\" && prettier --write \"packages/**/*.d.ts\" && prettier --write \"packages/**/*.js\"",
     "postinstall": "patch-package"
   },
   "devDependencies": {
+    "fs-extra": "^9.0.1",
     "patch-package": "^6.2.2",
     "prettier": "^2.1.2",
     "rimraf": "^3.0.2"
