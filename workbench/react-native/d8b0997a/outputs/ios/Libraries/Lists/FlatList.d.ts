@@ -88,7 +88,7 @@ declare type OptionalProps<ItemT> =
    * much more. Note these items will never be unmounted as part of the windowed rendering in order
    * to improve perceived performance of scroll-to-top actions.
    */
-  initialNumToRender: number;
+  initialNumToRender?: number;
 
   /**
    * Instead of starting at the top with the first item, start at `initialScrollIndex`. This
@@ -108,13 +108,13 @@ declare type OptionalProps<ItemT> =
    * and as the react key to track item re-ordering. The default extractor checks `item.key`, then
    * falls back to using the index, like React does.
    */
-  keyExtractor: (item: ItemT, index: number) => string;
+  keyExtractor?: (item: ItemT, index: number) => string;
 
   /**
    * Multiple columns can only be rendered with `horizontal={false}` and will zig-zag like a
    * `flexWrap` layout. Items should all be the same height - masonry layouts are not supported.
    */
-  numColumns: number;
+  numColumns?: number;
 
   /**
    * See `ScrollView` for flow type and further documentation.

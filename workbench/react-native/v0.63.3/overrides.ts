@@ -318,6 +318,21 @@ const visitors: OverridesVisitors = {
       },
     },
   },
+  // TODO: These should all be optional upstream
+  "Libraries/Lists/FlatList.d.ts": {
+    TSTypeAliasDeclaration: {
+      exit(path) {
+        if (path.node.id.name === "OptionalProps") {
+          const typeLiteral = path.node.typeAnnotation
+          t.assertTSTypeLiteral(typeLiteral)
+          typeLiteral.members.forEach((propertySignature) => {
+            t.assertTSPropertySignature(propertySignature)
+            propertySignature.optional = true
+          })
+        }
+      },
+    },
+  },
 }
 
 export default visitors
