@@ -98,7 +98,7 @@ export type React$Context<T> = React.Context<T>
  *   class Foo {}
  *   type Foo$Type = $TypeOf<typeof Foo>
  */
-export type $TypeOf<T> = T extends { new (...args: any): any } ? InstanceType<T> : T
+export type $TypeOf<T> = T extends { new (...args: any): any } ? InstanceType<T> & T : T
 
 /**
  * TODO: These should be re-enabled as we continue work on flow2dts
