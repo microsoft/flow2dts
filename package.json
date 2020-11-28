@@ -30,6 +30,8 @@
     "workbench:react-native:v0.63.3:check:ios": "yarn tsc --project ./workbench/react-native/v0.63.3/tsconfig.ios.json --pretty",
     "workbench:react-native:v0.63.3:check:android": "yarn tsc --project ./workbench/react-native/v0.63.3/tsconfig.android.json --pretty",
     "workbench:react-native:v0.63.3:ios:npm": "node scripts/create-types-package.js ./workbench/react-native/v0.63.3/package.json ./workbench/react-native/v0.63.3/outputs/ios",
+    "workbench:artsy-eigen:check": "yarn workspace artsy-eigen type-check",
+    "workbench:artsy-eigen:check:offences": "yarn workspace artsy-eigen type-check | node ./scripts/tsc-offences.js",
     "prettify": "prettier --write \"packages/**/*.ts\" && prettier --write \"packages/**/*.d.ts\" && prettier --write \"packages/**/*.js\"",
     "postinstall": "patch-package"
   },
