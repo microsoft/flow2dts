@@ -4,7 +4,8 @@
   "workspaces": [
     "packages/*",
     "workbench/react-native/d8b0997a",
-    "workbench/react-native/v0.63.3"
+    "workbench/react-native/v0.63.3",
+    "workbench/artsy-eigen"
   ],
   "scripts": {
     "test": "yarn workspace flow2dts-flow-types-polyfill test && yarn workspace flow2dts test",
@@ -31,6 +32,10 @@
     "workbench:react-native:v0.63.3:ios:npm": "node scripts/create-types-package.js ./workbench/react-native/v0.63.3/package.json ./workbench/react-native/v0.63.3/outputs/ios",
     "prettify": "prettier --write \"packages/**/*.ts\" && prettier --write \"packages/**/*.d.ts\" && prettier --write \"packages/**/*.js\"",
     "postinstall": "patch-package"
+  },
+  "resolutions": {
+    "@types/react": "16.9.56",
+    "@types/react-native": "^0.63.37"
   },
   "devDependencies": {
     "fs-extra": "^9.0.1",
