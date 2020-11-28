@@ -371,6 +371,41 @@ const visitors: OverridesVisitors = {
       },
     },
   },
+  // TODO: These should be typed as such upstream
+  "Libraries/Utilities/Dimensions.d.ts": {
+    Program: {
+      exit(path) {
+        path.unshiftContainer(
+          "body",
+          ast`
+            import type { DisplayMetrics } from "./NativeDeviceInfo"
+            type DimensionsValue = {
+              window?: DisplayMetrics
+              screen?: DisplayMetrics
+            }
+          ` as t.Statement[]
+        )
+      },
+    },
+    TSDeclareMethod: {
+      exit(path) {
+        t.assertTSDeclareMethod(path.node)
+        t.assertIdentifier(path.node.key)
+        if (
+          path.node.key.name === "get" &&
+          path.findParent((p) => p.isDeclareClass() && p.node.id.name === "Dimensions")
+        ) {
+          const prop = (ast`
+            class _ {
+              static get<K extends keyof DimensionsValue>(dim: K): Required<DimensionsValue>[K]
+            }
+          ` as t.ClassDeclaration).body.body[0]
+          path.replaceWith(prop)
+          path.skip()
+        }
+      },
+    },
+  },
 }
 
 export default visitors

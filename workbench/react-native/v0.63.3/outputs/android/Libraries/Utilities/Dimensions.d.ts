@@ -1,6 +1,11 @@
+import type { DisplayMetrics } from "./NativeDeviceInfo";
+type DimensionsValue = {
+  window?: DisplayMetrics;
+  screen?: DisplayMetrics;
+};
 // @flow
 declare class Dimensions {
-  static get(dim: string): Object;
+  static get<K extends keyof DimensionsValue>(dim: K): Required<DimensionsValue>[K];
   static set(dims: Readonly<{
     [key: string]: any;
   }>): void;
