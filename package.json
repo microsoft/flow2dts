@@ -8,7 +8,7 @@
     "workbench/artsy-eigen"
   ],
   "scripts": {
-    "test": "yarn workspace flow2dts-flow-types-polyfill test && yarn workspace flow2dts test",
+    "test": "yarn workspace flow2dts test",
     "start": "yarn workbench && yarn workbench:check:offences",
     "workbench": "yarn workbench:react-native:d8b0997a && yarn workbench:react-native:v0.63.3",
     "workbench:check": "yarn workbench:react-native:d8b0997a:check && yarn workbench:react-native:v0.63.3:check",
@@ -35,7 +35,7 @@
   },
   "resolutions": {
     "@types/react": "16.9.56",
-    "@types/react-native": "^0.63.37"
+    "@types/react-native": "0.63.3"
   },
   "devDependencies": {
     "fs-extra": "^9.0.1",
