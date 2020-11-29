@@ -383,3 +383,18 @@ declare const $f2tExportDefault:
   ViewPropTypes: DeprecatedViewPropTypes;
 };
 export default $f2tExportDefault;
+
+/**
+ * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof Image>`
+ */
+export type ImageProps = React.ComponentPropsWithoutRef<typeof $f2tExportDefault.Image>;
+/**
+ * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof Text>`
+ */
+
+export type TextProps = React.ComponentPropsWithoutRef<typeof $f2tExportDefault.Text>;
+/**
+ * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof View>`
+ */
+
+export type ViewProps = React.ComponentPropsWithoutRef<typeof $f2tExportDefault.View>;

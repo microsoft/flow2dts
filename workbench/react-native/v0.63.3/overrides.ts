@@ -104,6 +104,27 @@ const visitors: OverridesVisitors = {
   },
   // These are convenience overrides for TS users of RN.
   "index.d.ts": {
+    Program: {
+      exit(path) {
+        // These are props interfaces for each component that exist in the manual DT RN types.
+        path.pushContainer(
+          "body",
+          ast(
+            ["Image", "Text", "View"]
+              .map(
+                (componentName) => `
+                  /**
+                   * @deprecated Instead use \`React.ComponentPropsWithoutRef<typeof ${componentName}>\`
+                   */
+                  export type ${componentName}Props = React.ComponentPropsWithoutRef<typeof $f2tExportDefault.${componentName}>
+                `
+              )
+              .join("\n"),
+            { preserveComments: true }
+          )
+        )
+      },
+    },
     // Also export values using ES6 named exports, as users typically import from react-native using ES6 named imports.
     // TODO: Make upstream export as ES6 named exports.
     VariableDeclaration: {
