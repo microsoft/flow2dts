@@ -161,7 +161,10 @@ export const typeReferenceVisitor: Visitor<State> = {
            then check the first name to see if it is from an imports or a variable,
            and translate to $TypeOf<typeof T> accordingly
            */
-          if (resolved.type === "TSTypeReference") {
+          if (
+            resolved.type === "TSTypeReference" &&
+            (!resolved.typeParameters || resolved.typeParameters.params.length === 0)
+          ) {
             let firstName = resolved.typeName
 
             if (firstName.type === "Identifier") {

@@ -352,21 +352,6 @@ const visitors: OverridesVisitors = {
       },
     },
   },
-  "Libraries/Utilities/NativeDeviceInfo.d.ts": {
-    VariableDeclaration: {
-      exit(path) {
-        const declarator = path.node.declarations[0]
-        t.assertIdentifier(declarator.id)
-        if (declarator.id.name === "$f2tExportDefault") {
-          const typeAnnotation = declarator.id.typeAnnotation
-          t.assertTSTypeAnnotation(typeAnnotation)
-          t.assertTSTypeReference(typeAnnotation.typeAnnotation)
-          t.assertIdentifier(typeAnnotation.typeAnnotation.typeName)
-          typeAnnotation.typeAnnotation = t.tsTypeQuery(typeAnnotation.typeAnnotation.typeName)
-        }
-      },
-    },
-  },
   // TODO: These should all be optional upstream
   "Libraries/Lists/FlatList.d.ts": {
     TSTypeAliasDeclaration: {
