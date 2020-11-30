@@ -382,6 +382,11 @@ export type ImageProps = React.ComponentPropsWithoutRef<typeof $f2tExportDefault
 
 export type TextProps = React.ComponentPropsWithoutRef<typeof $f2tExportDefault.Text>;
 /**
+ * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof TouchableWithoutFeedback>`
+ */
+
+export type TouchableWithoutFeedbackProps = React.ComponentPropsWithoutRef<typeof $f2tExportDefault.TouchableWithoutFeedback>;
+/**
  * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof View>`
  */
 

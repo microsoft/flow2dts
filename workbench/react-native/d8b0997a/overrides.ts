@@ -110,7 +110,7 @@ const visitors: OverridesVisitors = {
         path.pushContainer(
           "body",
           ast(
-            ["Image", "Text", "View"]
+            ["Image", "Text", "TouchableWithoutFeedback", "View"]
               .map(
                 (componentName) => `
                   /**
