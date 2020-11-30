@@ -20,3 +20,8 @@ We use [patch-package](https://github.com/ds300/patch-package#usage) to make loc
   1. Select language `JavaScript`
   2. Select parser `@babel/parser`
   3. Select from the parser’s settings either `Flow` or `TypeScript`.
+
+## Workbench
+
+- `react-native`: Contains Flow declaration dumps for React Native v0.63.3 and a recent unreleased commit.
+- `artsy-eigen`: Contains the TypeScript sources of a OSS iOS application by [Artsy Inc.](https://github.com/artsy/eigen). This application uses React Native v0.63.3 and TypeScript and thus serves as a good real-world test bed.
