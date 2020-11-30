@@ -1,14 +1,14 @@
 import { Visitor, types as t } from "@babel/core"
 import { RecognizedTypeReferences } from "./typeReferenceResolver"
 
-export { isRecognized } from "./typeReferenceResolver"
+export { isVariableDiscardable } from "./typeReferenceResolver"
 
 export interface State {
   typeReferences: RecognizedTypeReferences
 }
 
 export function initializeState(state: State): void {
-  state.typeReferences = { records: {}, imports: {} }
+  state.typeReferences = { records: {}, imports: {}, exports: {} }
 }
 
 export function combineVisitorsSafe(...visitors: Visitor<State>[]): Visitor<State> {

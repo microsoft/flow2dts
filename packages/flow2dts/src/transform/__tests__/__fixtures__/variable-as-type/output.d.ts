@@ -19,7 +19,7 @@ declare class MyClass2 extends React.Component<{}> implements React.Component<{}
 interface MyInterface2 extends React.Component<{}>, React.Component<{}> {
   member: React.Component<{}>
 }
-declare var $2: typeof React.Component
+declare var $2: $TypeOf<typeof React.Component>
 export { $2 }
 import $fakeReact from "fake-react"
 declare type something = $fakeReact.AbstractComponent<number>

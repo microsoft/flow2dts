@@ -30,7 +30,6 @@ export const typeReferenceRecognizerVisitor: Visitor<State> = {
         original: decl.id.typeAnnotation.typeAnnotation.argument.id,
         resolved: null,
       }
-      decl.id.typeAnnotation = null
     },
   },
   VariableDeclaration: {
@@ -70,6 +69,15 @@ export const typeReferenceRecognizerVisitor: Visitor<State> = {
           throw new Error(`Found duplicated import in module: ${name}`)
         }
         state.typeReferences.imports[name] = path.node
+      }
+    },
+  },
+  ExportNamedDeclaration: {
+    enter(path, state) {
+      for (const specifier of path.node.specifiers) {
+        if (specifier.type === "ExportSpecifier") {
+          state.typeReferences.exports[specifier.local.name] = [path.node, specifier]
+        }
       }
     },
   },

@@ -1,6 +1,6 @@
 import { Visitor, types as t } from "@babel/core"
 import { type } from "os"
-import { isRecognized, State } from "../state"
+import { isVariableDiscardable, State } from "../state"
 import { assertTSType } from "../utilities"
 import { isRequireDeclaration, resolveQualifiedTypeIdentifier, resolveMemberExpression } from "../typeReferenceResolver"
 
@@ -23,7 +23,7 @@ export const declarationVisitor: Visitor<State> = {
   },
   DeclareVariable: {
     exit(path, state) {
-      if (isRecognized(state.typeReferences, path.node)) {
+      if (isVariableDiscardable(state.typeReferences, path.node)) {
         path.replaceWithMultiple([])
       }
     },

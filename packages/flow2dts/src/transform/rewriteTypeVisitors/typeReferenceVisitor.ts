@@ -158,11 +158,20 @@ export const typeReferenceVisitor: Visitor<State> = {
         if (resolved) {
           /*
            if it is resolved to be TSTypeReference(TSEntityName),
-           then check the first name to see if it is from an imports,
+           then check the first name to see if it is from an imports or a variable,
            and translate to $TypeOf<typeof T> accordingly
            */
           if (resolved.type === "TSTypeReference") {
             let firstName = resolved.typeName
+
+            if (firstName.type === "Identifier") {
+              const binding = path.scope.getBinding(firstName.name)
+              if (binding && (binding.path.isDeclareVariable() || binding.path.isVariableDeclaration())) {
+                path.replaceWith(wrappedTypeOf(resolved.typeName))
+                return
+              }
+            }
+
             while (firstName.type !== "Identifier") {
               firstName = firstName.left
             }

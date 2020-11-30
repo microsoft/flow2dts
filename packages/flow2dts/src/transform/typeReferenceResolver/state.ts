@@ -11,10 +11,14 @@ export interface ReferenceRecord {
 export interface RecognizedTypeReferences {
   records: { [key: string]: ReferenceRecord }
   imports: { [key: string]: t.VariableDeclarator | t.ImportDeclaration }
+  exports: { [key: string]: [t.ExportNamedDeclaration, t.ExportSpecifier] }
 }
 
-export function isRecognized(typeReferences: RecognizedTypeReferences, variable: t.DeclareVariable): boolean {
-  return typeReferences.records[variable.id.name]?.variable === variable
+export function isVariableDiscardable(typeReferences: RecognizedTypeReferences, variable: t.DeclareVariable): boolean {
+  const name = variable.id.name
+  const varDecl = typeReferences.records[name]?.variable
+  const exportDecl = typeReferences.exports[name]
+  return varDecl === variable && exportDecl === undefined
 }
 
 function makeResolved(
