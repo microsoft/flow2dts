@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import * as React from "react";
 import { ViewProps } from "./ViewPropTypes";
@@ -35,12 +36,14 @@ declare var viewConfig: {} |
     }>;
   };
 };
+declare var __INTERNAL_VIEW_CONFIG: $TypeOf<typeof viewConfig>;
 interface NativeCommands {
   readonly hotspotUpdate: (viewRef: React.ElementRef<HostComponent<unknown>>, x: number, y: number) => void;
   readonly setPressed: (viewRef: React.ElementRef<HostComponent<unknown>>, pressed: boolean) => void;
 }
 declare var Commands: NativeCommands;
 export type { ViewNativeComponentType };
+export { __INTERNAL_VIEW_CONFIG };
 export { Commands };
 declare const $f2tExportDefault: ViewNativeComponentType;
 export default $f2tExportDefault;

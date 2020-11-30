@@ -352,16 +352,6 @@ const visitors: OverridesVisitors = {
       },
     },
   },
-  "Libraries/Components/View/ViewNativeComponent.d.ts": {
-    ExportNamedDeclaration: {
-      exit(path) {
-        const specifier = path.node.specifiers[0]
-        if (t.isExportSpecifier(specifier) && specifier.local.name === "__INTERNAL_VIEW_CONFIG") {
-          path.remove()
-        }
-      },
-    },
-  },
   "Libraries/Utilities/NativeDeviceInfo.d.ts": {
     VariableDeclaration: {
       exit(path) {
