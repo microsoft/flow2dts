@@ -33,13 +33,16 @@
     "workbench:artsy-eigen:check": "yarn workspace artsy-eigen type-check",
     "workbench:artsy-eigen:check:offences": "yarn workspace artsy-eigen type-check | node ./scripts/tsc-offences.js",
     "prettify": "prettier --write \"packages/**/*.ts\" && prettier --write \"packages/**/*.d.ts\" && prettier --write \"packages/**/*.js\"",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "experiment:flowcheck": "pushd \"workbench/react-native/v0.63.3/inputs\" && flow check && popd",
+    "experiment:flowgetdef": "pushd \"workbench/react-native/v0.63.3/inputs\" && flow get-def index.js.flow 50 15 && popd"
   },
   "resolutions": {
     "@types/react": "16.9.56",
     "@types/react-native": "0.63.3"
   },
   "devDependencies": {
+    "flow-bin": "0.137.0",
     "fs-extra": "^9.0.1",
     "patch-package": "^6.2.2",
     "prettier": "^2.1.2",
