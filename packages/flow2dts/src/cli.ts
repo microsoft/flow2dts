@@ -82,7 +82,10 @@ function getOverrideFilename(rootDir: string, filename: string) {
 async function main() {
   const argv = yargs
     .scriptName("flow2dts")
-    .usage("$0 --root path/to/flow/inputs --out path/to/ts/outputs [FILES]")
+    .usage(
+      "$0 --root path/to/flow/inputs --out path/to/ts/outputs [FILES]",
+      "FILES can be a list of include patterns or exclude by prepending the ! operator."
+    )
     .options({
       rootDir: {
         nargs: 1,
