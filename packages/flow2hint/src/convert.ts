@@ -111,11 +111,27 @@ export async function convert({
       spawnResult.stderr.on("data", (data) => {
         console.log(`${data}`)
       })
+
+      let resolved = false
+      function callResolve() {
+        if (!resolved) {
+          resolved = true
+          resolve()
+        }
+      }
+
       spawnResult.on("error", (error) => {
         console.log(chalk.red(error.message))
+        callResolve()
+      })
+      spawnResult.on("disconnect", () => {
+        callResolve()
+      })
+      spawnResult.on("close", () => {
+        callResolve()
       })
       spawnResult.on("exit", () => {
-        resolve()
+        callResolve()
       })
     })
   }
