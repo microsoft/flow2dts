@@ -1,6 +1,7 @@
 import yargs from "yargs"
 import glob from "fast-glob"
 import path from "path"
+import fs from "fs"
 import chalk from "chalk"
 
 import { convert } from "./convert"
@@ -26,11 +27,16 @@ async function run({
     const outFilename = getOutFilename(outDir, rootDir, filename, FLOW_EXTNAME)
     totalCount++
 
-    console.log(`⚒️ ${chalk.dim(relativePath(cwd, filename))}`)
-    await convert({ rootDir, filename, outFilename }).then((outFilename) => {
-      console.log(chalk.green(`✓ ${relativePath(cwd, outFilename)}`))
+    if (fs.existsSync(outFilename)) {
+      console.log(chalk.cyanBright(`✓ ${relativePath(cwd, outFilename)}`))
       successCount++
-    })
+    } else {
+      console.log(`⚒️ ${chalk.dim(relativePath(cwd, filename))}`)
+      await convert({ rootDir, filename, outFilename }).then((outFilename) => {
+        console.log(chalk.green(`✓ ${relativePath(cwd, outFilename)}`))
+        successCount++
+      })
+    }
   }
   return [totalCount, successCount]
 }
