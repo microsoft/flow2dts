@@ -26,20 +26,6 @@ function fixPathInOutput(outData: string): string {
   return lines.join("\n")
 }
 
-async function getOverrides(overrideFilename: string) {
-  let overridesSource = null
-  if (overrideFilename) {
-    try {
-      overridesSource = await fs.promises.readFile(overrideFilename, "utf8")
-    } catch {
-      return
-    }
-  }
-  if (overridesSource) {
-    return babelParser.parse(overridesSource, { sourceType: "module", plugins: ["typescript"] })
-  }
-}
-
 export async function convert({
   rootDir,
   filename,
