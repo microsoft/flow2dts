@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+
 import { Visitor, types as t } from "@babel/core"
 import babelGenerator from "@babel/generator"
 import { State } from "../state"

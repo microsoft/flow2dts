@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+
 import { Visitor, types as t } from "@babel/core"
 import { State } from "../state"
 import { nameForImportTypeof, wrappedTypeOf } from "../utilities"

@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+
 const fs = require("fs")
 const fse = require("fs-extra")
 const os = require("os")

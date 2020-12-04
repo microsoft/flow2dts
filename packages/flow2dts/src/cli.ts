@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+
 import yargs from "yargs"
 import glob from "fast-glob"
 import path from "path"

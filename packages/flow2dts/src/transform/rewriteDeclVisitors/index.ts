@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+
 import { declarationVisitor } from "./declarationVisitor"
 import { functionVisitor } from "./functionVisitor"
 import { typeAliasVisitor } from "./typeAliasVisitor"

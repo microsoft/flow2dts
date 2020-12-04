@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+
 import { PluginObj, traverse, types as t } from "@babel/core"
 import { initializeState, State } from "./state"
 import { typeReferenceRecognizerVisitor } from "./typeReferenceResolver"

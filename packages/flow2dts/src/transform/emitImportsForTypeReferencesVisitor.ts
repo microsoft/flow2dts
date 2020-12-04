@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+
 import { types as t, Visitor } from "@babel/core"
 
 function emitImportsForTypes(packagesAndTypes: Record<string, string[]>, typeNames: Set<string>) {

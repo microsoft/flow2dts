@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+
 import { types as t } from "@babel/core"
 import { Scope } from "@babel/traverse"
 import { State } from "./state"

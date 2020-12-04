@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+
 export const polyfillPackagesAndTypes: Record<string, string[]> = {
   "flow2dts-flow-types-polyfill": [
     "$TypeOf",

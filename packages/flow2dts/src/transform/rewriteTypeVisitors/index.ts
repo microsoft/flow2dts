@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+
 import { primitiveTypeVisitor } from "./primitiveTypeVisitor"
 import { typeReferenceVisitor } from "./typeReferenceVisitor"
 import { advancedTypeVisitor } from "./advancedTypeVisitor"

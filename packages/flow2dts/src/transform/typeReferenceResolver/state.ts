@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+
 import { NodePath, types as t } from "@babel/core"
 import { wrappedTypeOf } from "../utilities"
 import { State } from "../state"

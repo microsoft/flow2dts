@@ -1,3 +1,6 @@
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+
 import { Visitor, types as t, traverse } from "@babel/core"
 
 export type OverridesVisitors<S = any> = { all?: Visitor<S>; [Path: string]: Visitor<S> | undefined }
