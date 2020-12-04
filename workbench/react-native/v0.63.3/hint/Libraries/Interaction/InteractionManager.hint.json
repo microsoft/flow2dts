@@ -5,7 +5,8 @@
                 "row": 3,
                 "column": 14,
                 "local": "Task"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Interaction\\TaskQueue.js.flow:12:6,12:9\r\n"
         }
     },
     "decls": []

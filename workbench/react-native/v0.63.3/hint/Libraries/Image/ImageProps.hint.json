@@ -5,49 +5,56 @@
                 "row": 2,
                 "column": 14,
                 "local": "SyntheticEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:5:6,5:19\r\n"
         },
         "LayoutEvent": {
             "source": {
                 "row": 3,
                 "column": 14,
                 "local": "LayoutEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:79:6,79:16\r\n"
         },
         "EdgeInsetsProp": {
             "source": {
                 "row": 4,
                 "column": 14,
                 "local": "EdgeInsetsProp"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\EdgeInsetsPropType.js.flow:4:6,4:19\r\n"
         },
         "ImageSource": {
             "source": {
                 "row": 5,
                 "column": 14,
                 "local": "ImageSource"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Image\\ImageSource.js.flow:68:6,68:16\r\n"
         },
         "ViewStyleProp": {
             "source": {
                 "row": 6,
                 "column": 14,
                 "local": "ViewStyleProp"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:15:6,15:18\r\n"
         },
         "ImageStyleProp": {
             "source": {
                 "row": 7,
                 "column": 14,
                 "local": "ImageStyleProp"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:19:6,19:19\r\n"
         },
         "ViewProps": {
             "source": {
                 "row": 8,
                 "column": 14,
                 "local": "ViewProps"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:389:6,389:14\r\n"
         }
     },
     "decls": []

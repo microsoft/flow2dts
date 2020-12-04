@@ -5,7 +5,8 @@
                 "row": 8,
                 "column": 14,
                 "local": "ReactTestRenderer"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Utilities\\ReactNativeTestTools.js.flow:8:14,8:30\r\n"
         }
     },
     "decls": []

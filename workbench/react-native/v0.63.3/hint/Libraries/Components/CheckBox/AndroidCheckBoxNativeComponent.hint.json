@@ -12,28 +12,32 @@
                 "row": 4,
                 "column": 14,
                 "local": "HostComponent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
         },
         "ViewProps": {
             "source": {
                 "row": 5,
                 "column": 14,
                 "local": "ViewProps"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:389:6,389:14\r\n"
         },
         "SyntheticEvent": {
             "source": {
                 "row": 6,
                 "column": 14,
                 "local": "SyntheticEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:5:6,5:19\r\n"
         },
         "ProcessedColorValue": {
             "source": {
                 "row": 7,
                 "column": 14,
                 "local": "ProcessedColorValue"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\processColor.js.flow:5:6,5:24\r\n"
         }
     },
     "decls": []

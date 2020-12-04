@@ -5,14 +5,16 @@
                 "row": 2,
                 "column": 8,
                 "local": "Pressability"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Pressability\\Pressability.js.flow:153:15,153:26\r\n"
         },
         "TouchableWithoutFeedback": {
             "source": {
                 "row": 4,
                 "column": 15,
                 "local": "TouchableWithoutFeedback"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Touchable\\TouchableWithoutFeedback.js.flow:60:15,60:38\r\n"
         },
         "React": {
             "source": {

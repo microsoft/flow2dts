@@ -5,28 +5,32 @@
                 "row": 2,
                 "column": 14,
                 "local": "BubblingEventHandler"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:4:6,4:25\r\n"
         },
         "WithDefault": {
             "source": {
                 "row": 3,
                 "column": 14,
                 "local": "WithDefault"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:21:6,21:16\r\n"
         },
         "ColorValue": {
             "source": {
                 "row": 4,
                 "column": 14,
                 "local": "ColorValue"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:7:6,7:15\r\n"
         },
         "ViewProps": {
             "source": {
                 "row": 5,
                 "column": 14,
                 "local": "ViewProps"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:389:6,389:14\r\n"
         },
         "React": {
             "source": {
@@ -40,7 +44,8 @@
                 "row": 8,
                 "column": 14,
                 "local": "HostComponent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
         }
     },
     "decls": []

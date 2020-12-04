@@ -5,14 +5,16 @@
                 "row": 5,
                 "column": 14,
                 "local": "NativeResponseType"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Network\\XMLHttpRequest.js.flow:2:6,2:23\r\n"
         },
         "RequestBody": {
             "source": {
                 "row": 6,
                 "column": 14,
                 "local": "RequestBody"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Network\\convertRequestBody.js.flow:7:6,7:16\r\n"
         }
     },
     "decls": []

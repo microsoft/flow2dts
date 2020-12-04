@@ -5,7 +5,8 @@
                 "row": 2,
                 "column": 14,
                 "local": "Spec"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\ReactNative\\NativeUIManager.js.flow:4:11,4:14\r\n"
         }
     },
     "decls": []

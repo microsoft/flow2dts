@@ -5,7 +5,8 @@
                 "row": 7,
                 "column": 14,
                 "local": "LayoutEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:79:6,79:16\r\n"
         }
     },
     "decls": []

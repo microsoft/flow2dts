@@ -12,21 +12,24 @@
                 "row": 7,
                 "column": 15,
                 "local": "ColorValue"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\DrawerAndroid\\DrawerLayoutAndroid.android.js.flow:7:15,7:24\r\n"
         },
         "ViewStyleProp": {
             "source": {
                 "row": 7,
                 "column": 27,
                 "local": "ViewStyleProp"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:15:6,15:18\r\n"
         },
         "DirectEventHandler": {
             "source": {
                 "row": 8,
                 "column": 15,
                 "local": "DirectEventHandler"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:9:6,9:23\r\n"
         }
     },
     "decls": []

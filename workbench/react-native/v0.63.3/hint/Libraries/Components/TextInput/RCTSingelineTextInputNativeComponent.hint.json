@@ -5,14 +5,16 @@
                 "row": 2,
                 "column": 14,
                 "local": "HostComponent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
         },
         "TextInputNativeCommands": {
             "source": {
                 "row": 4,
                 "column": 14,
                 "local": "TextInputNativeCommands"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\TextInput\\RCTSingelineTextInputNativeComponent.js.flow:4:14,4:36\r\n"
         }
     },
     "decls": []

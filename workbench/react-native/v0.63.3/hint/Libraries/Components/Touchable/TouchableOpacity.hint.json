@@ -5,21 +5,24 @@
                 "row": 2,
                 "column": 15,
                 "local": "TouchableWithoutFeedback"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Touchable\\TouchableWithoutFeedback.js.flow:60:15,60:38\r\n"
         },
         "Animated": {
             "source": {
                 "row": 3,
                 "column": 8,
                 "local": "Animated"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Touchable\\TouchableOpacity.js.flow:3:8,3:15\r\n"
         },
         "ViewStyleProp": {
             "source": {
                 "row": 5,
                 "column": 14,
                 "local": "ViewStyleProp"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Touchable\\TouchableOpacity.js.flow:5:14,5:26\r\n"
         },
         "React": {
             "source": {

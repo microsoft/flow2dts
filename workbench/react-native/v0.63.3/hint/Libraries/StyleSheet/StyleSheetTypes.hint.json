@@ -5,7 +5,8 @@
                 "row": 5,
                 "column": 14,
                 "local": "NativeColorValue"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:5:14,5:29\r\n"
         }
     },
     "decls": []

@@ -5,7 +5,8 @@
                 "row": 2,
                 "column": 14,
                 "local": "DisplayMetrics"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Utilities\\NativeDeviceInfo.js.flow:12:6,12:19\r\n"
         }
     },
     "decls": []

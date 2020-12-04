@@ -5,14 +5,16 @@
                 "row": 2,
                 "column": 14,
                 "local": "ExceptionData"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Core\\NativeExceptionsManager.js.flow:12:6,12:18\r\n"
         },
         "LogBoxLogData": {
             "source": {
                 "row": 3,
                 "column": 14,
                 "local": "LogBoxLogData"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\LogBox\\Data\\LogBoxLog.js.flow:12:6,12:18\r\n"
         }
     },
     "decls": []

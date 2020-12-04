@@ -5,21 +5,24 @@
                 "row": 2,
                 "column": 14,
                 "local": "BlurEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:159:6,159:14\r\n"
         },
         "FocusEvent": {
             "source": {
                 "row": 3,
                 "column": 14,
                 "local": "FocusEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:167:6,167:15\r\n"
         },
         "PressEvent": {
             "source": {
                 "row": 4,
                 "column": 14,
                 "local": "PressEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:95:6,95:15\r\n"
         }
     },
     "decls": []

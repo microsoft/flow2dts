@@ -5,14 +5,16 @@
                 "row": 7,
                 "column": 14,
                 "local": "HostComponent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
         },
         "TextProps": {
             "source": {
                 "row": 8,
                 "column": 14,
                 "local": "TextProps"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Text\\TextProps.js.flow:19:6,19:14\r\n"
         }
     },
     "decls": []

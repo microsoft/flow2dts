@@ -5,28 +5,32 @@
                 "row": 9,
                 "column": 14,
                 "local": "ScrollResponderType"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\ScrollView\\ScrollView.js.flow:47:6,47:24\r\n"
         },
         "ScrollViewNativeComponentType": {
             "source": {
                 "row": 10,
                 "column": 14,
                 "local": "ScrollViewNativeComponentType"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\ScrollView\\ScrollViewNativeComponentType.js.flow:77:6,77:34\r\n"
         },
         "ViewStyleProp": {
             "source": {
                 "row": 11,
                 "column": 14,
                 "local": "ViewStyleProp"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:15:6,15:18\r\n"
         },
         "RenderItemType": {
             "source": {
                 "row": 13,
                 "column": 14,
                 "local": "RenderItemType"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Lists\\VirtualizedList.js.flow:33:6,33:19\r\n"
         }
     },
     "decls": []

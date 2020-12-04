@@ -5,14 +5,16 @@
                 "row": 2,
                 "column": 14,
                 "local": "ViewProps"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:389:6,389:14\r\n"
         },
         "ViewNativeComponent": {
             "source": {
                 "row": 6,
                 "column": 8,
                 "local": "ViewNativeComponent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\ViewNativeComponent.js.flow:7:32,7:55\r\n"
         }
     },
     "decls": []

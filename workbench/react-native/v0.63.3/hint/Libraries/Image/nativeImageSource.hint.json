@@ -5,7 +5,8 @@
                 "row": 2,
                 "column": 14,
                 "local": "ImageURISource"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Image\\ImageSource.js.flow:2:6,2:19\r\n"
         }
     },
     "decls": []

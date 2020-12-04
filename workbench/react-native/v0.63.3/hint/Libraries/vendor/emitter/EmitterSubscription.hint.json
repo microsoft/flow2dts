@@ -5,14 +5,16 @@
                 "row": 5,
                 "column": 13,
                 "local": "EventEmitter"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\vendor\\emitter\\EventEmitter.js.flow:25:15,25:26\r\n"
         },
         "EventSubscriptionVendor": {
             "source": {
                 "row": 6,
                 "column": 13,
                 "local": "EventSubscriptionVendor"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\vendor\\emitter\\EventSubscriptionVendor.js.flow:4:15,4:37\r\n"
         }
     },
     "decls": []

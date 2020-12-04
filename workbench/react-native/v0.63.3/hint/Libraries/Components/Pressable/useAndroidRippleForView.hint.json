@@ -5,21 +5,24 @@
                 "row": 2,
                 "column": 14,
                 "local": "ColorValue"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:7:6,7:15\r\n"
         },
         "PressEvent": {
             "source": {
                 "row": 3,
                 "column": 14,
                 "local": "PressEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:95:6,95:15\r\n"
         },
         "View": {
             "source": {
                 "row": 4,
                 "column": 9,
                 "local": "View"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Pressable\\useAndroidRippleForView.js.flow:4:9,4:12\r\n"
         },
         "React": {
             "source": {

@@ -5,14 +5,16 @@
                 "row": 11,
                 "column": 14,
                 "local": "AnimationConfig"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\animations\\Animation.js.flow:7:6,7:20\r\n"
         },
         "EndCallback": {
             "source": {
                 "row": 12,
                 "column": 14,
                 "local": "EndCallback"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\animations\\Animation.js.flow:5:6,5:16\r\n"
         }
     },
     "decls": []

@@ -12,14 +12,16 @@
                 "row": 4,
                 "column": 14,
                 "local": "TextStyleProp"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:17:6,17:18\r\n"
         },
         "Message": {
             "source": {
                 "row": 5,
                 "column": 14,
                 "local": "Message"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\LogBox\\Data\\parseLogBoxLog.js.flow:23:6,23:12\r\n"
         }
     },
     "decls": []

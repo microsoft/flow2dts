@@ -12,7 +12,8 @@
                 "row": 4,
                 "column": 14,
                 "local": "Int32"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:17:6,17:10\r\n"
         }
     },
     "decls": []

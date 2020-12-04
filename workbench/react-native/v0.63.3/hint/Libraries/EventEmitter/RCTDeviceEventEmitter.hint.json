@@ -5,7 +5,8 @@
                 "row": 7,
                 "column": 13,
                 "local": "EmitterSubscription"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\vendor\\emitter\\EmitterSubscription.js.flow:8:15,8:33\r\n"
         }
     },
     "decls": []
