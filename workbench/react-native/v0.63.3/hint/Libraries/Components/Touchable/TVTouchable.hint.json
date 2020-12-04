@@ -1,1 +1,26 @@
-{}
+{
+    "imports": {
+        "BlurEvent": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "BlurEvent"
+            }
+        },
+        "FocusEvent": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "FocusEvent"
+            }
+        },
+        "PressEvent": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "PressEvent"
+            }
+        }
+    },
+    "decls": []
+}

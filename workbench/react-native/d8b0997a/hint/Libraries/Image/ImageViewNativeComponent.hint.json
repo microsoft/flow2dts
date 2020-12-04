@@ -1,1 +1,54 @@
-{}
+{
+    "imports": {
+        "DangerouslyImpreciseStyle": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "DangerouslyImpreciseStyle"
+            }
+        },
+        "ResolvedAssetSource": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "ResolvedAssetSource"
+            }
+        },
+        "HostComponent": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        },
+        "ImageProps": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ImageProps"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        },
+        "ImageStyleProp": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "ImageStyleProp"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        }
+    },
+    "decls": []
+}

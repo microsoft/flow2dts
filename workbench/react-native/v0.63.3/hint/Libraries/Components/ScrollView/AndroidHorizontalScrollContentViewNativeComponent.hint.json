@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "HostComponent": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        }
+    },
+    "decls": []
+}

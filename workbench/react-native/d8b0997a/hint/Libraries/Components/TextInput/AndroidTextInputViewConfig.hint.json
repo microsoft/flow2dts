@@ -1,1 +1,12 @@
-{}
+{
+    "imports": {
+        "ReactNativeBaseComponentViewConfig": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ReactNativeBaseComponentViewConfig"
+            }
+        }
+    },
+    "decls": []
+}

@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "PermissionStatus": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "PermissionStatus"
+            }
+        },
+        "PermissionType": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "PermissionType"
+            }
+        }
+    },
+    "decls": []
+}

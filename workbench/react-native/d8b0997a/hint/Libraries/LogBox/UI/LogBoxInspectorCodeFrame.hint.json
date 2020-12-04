@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "React"
+            }
+        },
+        "CodeFrame": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "CodeFrame"
+            }
+        }
+    },
+    "decls": []
+}

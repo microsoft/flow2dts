@@ -1,1 +1,12 @@
-{}
+{
+    "imports": {
+        "ReactNativeType": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ReactNativeType"
+            }
+        }
+    },
+    "decls": []
+}

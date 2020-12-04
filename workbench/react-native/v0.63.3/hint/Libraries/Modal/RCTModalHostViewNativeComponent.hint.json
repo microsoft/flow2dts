@@ -1,1 +1,40 @@
-{}
+{
+    "imports": {
+        "HostComponent": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        },
+        "WithDefault": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "WithDefault"
+            }
+        },
+        "DirectEventHandler": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "DirectEventHandler"
+            }
+        },
+        "Int32": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "Int32"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        }
+    },
+    "decls": []
+}

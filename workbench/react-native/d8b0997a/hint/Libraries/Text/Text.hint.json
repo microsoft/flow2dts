@@ -1,1 +1,26 @@
-{}
+{
+    "imports": {
+        "NativeText": {
+            "source": {
+                "row": 2,
+                "column": 9,
+                "local": "NativeText"
+            }
+        },
+        "NativeVirtualText": {
+            "source": {
+                "row": 3,
+                "column": 9,
+                "local": "NativeVirtualText"
+            }
+        },
+        "TextProps": {
+            "source": {
+                "row": 10,
+                "column": 14,
+                "local": "TextProps"
+            }
+        }
+    },
+    "decls": []
+}

@@ -1,1 +1,12 @@
-{}
+{
+    "imports": {
+        "Text": {
+            "source": {
+                "row": 2,
+                "column": 15,
+                "local": "Text"
+            }
+        }
+    },
+    "decls": []
+}

@@ -1,1 +1,26 @@
-{}
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "React"
+            }
+        },
+        "Double": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "Double"
+            }
+        },
+        "HostComponent": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        }
+    },
+    "decls": []
+}

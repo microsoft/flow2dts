@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "DangerouslyImpreciseStyle": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "DangerouslyImpreciseStyle"
+            }
+        },
+        "DangerouslyImpreciseStyleProp": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "DangerouslyImpreciseStyleProp"
+            }
+        }
+    },
+    "decls": []
+}

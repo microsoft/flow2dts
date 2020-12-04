@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "ViewProps": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        },
+        "DirectEventHandler": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "DirectEventHandler"
+            }
+        }
+    },
+    "decls": []
+}

@@ -1,1 +1,47 @@
-{}
+{
+    "imports": {
+        "EndCallback": {
+            "source": {
+                "row": 35,
+                "column": 14,
+                "local": "EndCallback"
+            }
+        },
+        "TimingAnimationConfig": {
+            "source": {
+                "row": 36,
+                "column": 14,
+                "local": "TimingAnimationConfig"
+            }
+        },
+        "DecayAnimationConfig": {
+            "source": {
+                "row": 37,
+                "column": 14,
+                "local": "DecayAnimationConfig"
+            }
+        },
+        "SpringAnimationConfig": {
+            "source": {
+                "row": 38,
+                "column": 14,
+                "local": "SpringAnimationConfig"
+            }
+        },
+        "Mapping": {
+            "source": {
+                "row": 39,
+                "column": 14,
+                "local": "Mapping"
+            }
+        },
+        "EventConfig": {
+            "source": {
+                "row": 40,
+                "column": 14,
+                "local": "EventConfig"
+            }
+        }
+    },
+    "decls": []
+}

@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "NativeEventEmitter": {
+            "source": {
+                "row": 2,
+                "column": 8,
+                "local": "NativeEventEmitter"
+            }
+        },
+        "EventEmitter": {
+            "source": {
+                "row": 4,
+                "column": 8,
+                "local": "EventEmitter"
+            }
+        }
+    },
+    "decls": []
+}

@@ -1,1 +1,54 @@
-{}
+{
+    "imports": {
+        "TextStyleProp": {
+            "source": {
+                "row": 11,
+                "column": 14,
+                "local": "TextStyleProp"
+            }
+        },
+        "ViewStyleProp": {
+            "source": {
+                "row": 12,
+                "column": 14,
+                "local": "ViewStyleProp"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 13,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 14,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        },
+        "SyntheticEvent": {
+            "source": {
+                "row": 15,
+                "column": 14,
+                "local": "SyntheticEvent"
+            }
+        },
+        "ScrollEvent": {
+            "source": {
+                "row": 16,
+                "column": 14,
+                "local": "ScrollEvent"
+            }
+        },
+        "HostComponent": {
+            "source": {
+                "row": 18,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        }
+    },
+    "decls": []
+}

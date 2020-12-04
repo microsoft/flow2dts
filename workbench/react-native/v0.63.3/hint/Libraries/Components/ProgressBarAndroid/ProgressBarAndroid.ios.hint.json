@@ -1,1 +1,12 @@
-{}
+{
+    "imports": {
+        "UnimplementedView": {
+            "source": {
+                "row": 1,
+                "column": 8,
+                "local": "UnimplementedView"
+            }
+        }
+    },
+    "decls": []
+}

@@ -1,1 +1,82 @@
-{}
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "React"
+            }
+        },
+        "RippleConfig": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "RippleConfig"
+            }
+        },
+        "AccessibilityActionEvent": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "AccessibilityActionEvent"
+            }
+        },
+        "AccessibilityActionInfo": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "AccessibilityActionInfo"
+            }
+        },
+        "AccessibilityRole": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "AccessibilityRole"
+            }
+        },
+        "AccessibilityState": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "AccessibilityState"
+            }
+        },
+        "AccessibilityValue": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "AccessibilityValue"
+            }
+        },
+        "RectOrSize": {
+            "source": {
+                "row": 11,
+                "column": 14,
+                "local": "RectOrSize"
+            }
+        },
+        "LayoutEvent": {
+            "source": {
+                "row": 13,
+                "column": 14,
+                "local": "LayoutEvent"
+            }
+        },
+        "PressEvent": {
+            "source": {
+                "row": 14,
+                "column": 14,
+                "local": "PressEvent"
+            }
+        },
+        "View": {
+            "source": {
+                "row": 15,
+                "column": 8,
+                "local": "View"
+            }
+        }
+    },
+    "decls": []
+}

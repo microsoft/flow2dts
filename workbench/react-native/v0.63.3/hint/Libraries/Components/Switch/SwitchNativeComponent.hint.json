@@ -1,1 +1,47 @@
-{}
+{
+    "imports": {
+        "BubblingEventHandler": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "BubblingEventHandler"
+            }
+        },
+        "WithDefault": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "WithDefault"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        },
+        "React": {
+            "source": {
+                "row": 6,
+                "column": 13,
+                "local": "React"
+            }
+        },
+        "HostComponent": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        }
+    },
+    "decls": []
+}

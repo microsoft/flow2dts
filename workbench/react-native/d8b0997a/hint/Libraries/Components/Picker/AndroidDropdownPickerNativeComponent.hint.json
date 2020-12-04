@@ -1,1 +1,68 @@
-{}
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "React"
+            }
+        },
+        "DirectEventHandler": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "DirectEventHandler"
+            }
+        },
+        "Int32": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "Int32"
+            }
+        },
+        "WithDefault": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "WithDefault"
+            }
+        },
+        "HostComponent": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        },
+        "TextStyleProp": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "TextStyleProp"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        },
+        "ProcessedColorValue": {
+            "source": {
+                "row": 10,
+                "column": 14,
+                "local": "ProcessedColorValue"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 11,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        }
+    },
+    "decls": []
+}

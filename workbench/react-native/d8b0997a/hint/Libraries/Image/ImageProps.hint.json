@@ -1,1 +1,54 @@
-{}
+{
+    "imports": {
+        "SyntheticEvent": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "SyntheticEvent"
+            }
+        },
+        "LayoutEvent": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "LayoutEvent"
+            }
+        },
+        "EdgeInsetsProp": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "EdgeInsetsProp"
+            }
+        },
+        "ImageSource": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ImageSource"
+            }
+        },
+        "ViewStyleProp": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "ViewStyleProp"
+            }
+        },
+        "ImageStyleProp": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "ImageStyleProp"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        }
+    },
+    "decls": []
+}

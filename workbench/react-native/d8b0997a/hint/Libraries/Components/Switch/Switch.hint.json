@@ -1,1 +1,33 @@
-{}
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "React"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        },
+        "SyntheticEvent": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "SyntheticEvent"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        }
+    },
+    "decls": []
+}

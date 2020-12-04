@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "ElementRef": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ElementRef"
+            }
+        },
+        "Ref": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "Ref"
+            }
+        }
+    },
+    "decls": []
+}

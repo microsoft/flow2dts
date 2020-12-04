@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "HostComponent": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        },
+        "TextProps": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "TextProps"
+            }
+        }
+    },
+    "decls": []
+}

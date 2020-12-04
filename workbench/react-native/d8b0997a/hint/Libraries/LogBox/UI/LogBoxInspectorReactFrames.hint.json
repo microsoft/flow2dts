@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "React"
+            }
+        },
+        "LogBoxLog": {
+            "source": {
+                "row": 4,
+                "column": 13,
+                "local": "LogBoxLog"
+            }
+        }
+    },
+    "decls": []
+}

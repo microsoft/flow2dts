@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "AppearancePreferences": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "AppearancePreferences"
+            }
+        },
+        "ColorSchemeName": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "ColorSchemeName"
+            }
+        }
+    },
+    "decls": []
+}

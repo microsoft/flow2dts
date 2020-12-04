@@ -1,1 +1,40 @@
-{}
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "React"
+            }
+        },
+        "HostComponent": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        },
+        "SyntheticEvent": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "SyntheticEvent"
+            }
+        },
+        "ProcessedColorValue": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "ProcessedColorValue"
+            }
+        }
+    },
+    "decls": []
+}

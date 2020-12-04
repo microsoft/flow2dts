@@ -1,1 +1,12 @@
-{}
+{
+    "imports": {
+        "ImageURISource": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ImageURISource"
+            }
+        }
+    },
+    "decls": []
+}

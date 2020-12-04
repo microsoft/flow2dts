@@ -1,1 +1,40 @@
-{}
+{
+    "imports": {
+        "SliderNativeComponent": {
+            "source": {
+                "row": 2,
+                "column": 8,
+                "local": "SliderNativeComponent"
+            }
+        },
+        "ImageSource": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "ImageSource"
+            }
+        },
+        "ViewStyleProp": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "ViewStyleProp"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        }
+    },
+    "decls": []
+}

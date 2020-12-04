@@ -1,1 +1,54 @@
-{}
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 8,
+                "column": 13,
+                "local": "React"
+            }
+        },
+        "ScrollResponderType": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "ScrollResponderType"
+            }
+        },
+        "ViewStyleProp": {
+            "source": {
+                "row": 10,
+                "column": 14,
+                "local": "ViewStyleProp"
+            }
+        },
+        "ViewabilityConfig": {
+            "source": {
+                "row": 11,
+                "column": 14,
+                "local": "ViewabilityConfig"
+            }
+        },
+        "ViewToken": {
+            "source": {
+                "row": 12,
+                "column": 14,
+                "local": "ViewToken"
+            }
+        },
+        "ViewabilityConfigCallbackPair": {
+            "source": {
+                "row": 13,
+                "column": 14,
+                "local": "ViewabilityConfigCallbackPair"
+            }
+        },
+        "VirtualizedListContext": {
+            "source": {
+                "row": 14,
+                "column": 9,
+                "local": "VirtualizedListContext"
+            }
+        }
+    },
+    "decls": []
+}

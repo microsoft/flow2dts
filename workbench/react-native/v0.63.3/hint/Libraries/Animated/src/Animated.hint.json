@@ -1,1 +1,12 @@
-{}
+{
+    "imports": {
+        "AnimatedComponentType": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "AnimatedComponentType"
+            }
+        }
+    },
+    "decls": []
+}

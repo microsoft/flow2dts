@@ -1,1 +1,40 @@
-{}
+{
+    "imports": {
+        "PressEvent": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "PressEvent"
+            }
+        },
+        "ScrollEvent": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "ScrollEvent"
+            }
+        },
+        "KeyboardEvent": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "KeyboardEvent"
+            }
+        },
+        "EmitterSubscription": {
+            "source": {
+                "row": 9,
+                "column": 13,
+                "local": "EmitterSubscription"
+            }
+        },
+        "HostComponent": {
+            "source": {
+                "row": 10,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        }
+    },
+    "decls": []
+}

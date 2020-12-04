@@ -1,1 +1,26 @@
-{}
+{
+    "imports": {
+        "AnimatedValue": {
+            "source": {
+                "row": 5,
+                "column": 13,
+                "local": "AnimatedValue"
+            }
+        },
+        "AnimationConfig": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "AnimationConfig"
+            }
+        },
+        "EndCallback": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "EndCallback"
+            }
+        }
+    },
+    "decls": []
+}

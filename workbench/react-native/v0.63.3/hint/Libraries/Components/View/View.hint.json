@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "ViewProps": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        },
+        "ViewNativeComponent": {
+            "source": {
+                "row": 6,
+                "column": 8,
+                "local": "ViewNativeComponent"
+            }
+        }
+    },
+    "decls": []
+}

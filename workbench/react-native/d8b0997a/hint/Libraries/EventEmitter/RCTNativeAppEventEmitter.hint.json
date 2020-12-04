@@ -1,1 +1,12 @@
-{}
+{
+    "imports": {
+        "RCTDeviceEventEmitter": {
+            "source": {
+                "row": 2,
+                "column": 8,
+                "local": "RCTDeviceEventEmitter"
+            }
+        }
+    },
+    "decls": []
+}

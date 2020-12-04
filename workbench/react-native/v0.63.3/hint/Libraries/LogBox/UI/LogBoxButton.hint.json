@@ -1,1 +1,33 @@
-{}
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "React"
+            }
+        },
+        "EdgeInsetsProp": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "EdgeInsetsProp"
+            }
+        },
+        "ViewStyleProp": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ViewStyleProp"
+            }
+        },
+        "PressEvent": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "PressEvent"
+            }
+        }
+    },
+    "decls": []
+}

@@ -1,1 +1,33 @@
-{}
+{
+    "imports": {
+        "ScrollResponderType": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "ScrollResponderType"
+            }
+        },
+        "ScrollViewNativeComponentType": {
+            "source": {
+                "row": 10,
+                "column": 14,
+                "local": "ScrollViewNativeComponentType"
+            }
+        },
+        "ViewStyleProp": {
+            "source": {
+                "row": 11,
+                "column": 14,
+                "local": "ViewStyleProp"
+            }
+        },
+        "RenderItemType": {
+            "source": {
+                "row": 13,
+                "column": 14,
+                "local": "RenderItemType"
+            }
+        }
+    },
+    "decls": []
+}

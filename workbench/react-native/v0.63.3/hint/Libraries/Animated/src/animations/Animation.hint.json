@@ -1,1 +1,12 @@
-{}
+{
+    "imports": {
+        "AnimatedValue": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "AnimatedValue"
+            }
+        }
+    },
+    "decls": []
+}

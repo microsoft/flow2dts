@@ -1,1 +1,12 @@
-{}
+{
+    "imports": {
+        "ResolvedAssetSource": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ResolvedAssetSource"
+            }
+        }
+    },
+    "decls": []
+}

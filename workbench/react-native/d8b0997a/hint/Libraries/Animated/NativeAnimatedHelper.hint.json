@@ -1,1 +1,61 @@
-{}
+{
+    "imports": {
+        "NativeEventEmitter": {
+            "source": {
+                "row": 2,
+                "column": 8,
+                "local": "NativeEventEmitter"
+            }
+        },
+        "EventConfig": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "EventConfig"
+            }
+        },
+        "EventMapping": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "EventMapping"
+            }
+        },
+        "AnimatedNodeConfig": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "AnimatedNodeConfig"
+            }
+        },
+        "AnimatingNodeConfig": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "AnimatingNodeConfig"
+            }
+        },
+        "AnimationConfig": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "AnimationConfig"
+            }
+        },
+        "EndCallback": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "EndCallback"
+            }
+        },
+        "InterpolationConfigType": {
+            "source": {
+                "row": 10,
+                "column": 14,
+                "local": "InterpolationConfigType"
+            }
+        }
+    },
+    "decls": []
+}

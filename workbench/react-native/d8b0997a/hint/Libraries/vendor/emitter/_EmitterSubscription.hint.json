@@ -1,1 +1,26 @@
-{}
+{
+    "imports": {
+        "EventEmitter": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "EventEmitter"
+            }
+        },
+        "EventSubscription": {
+            "source": {
+                "row": 3,
+                "column": 8,
+                "local": "EventSubscription"
+            }
+        },
+        "EventSubscriptionVendor": {
+            "source": {
+                "row": 4,
+                "column": 13,
+                "local": "EventSubscriptionVendor"
+            }
+        }
+    },
+    "decls": []
+}

@@ -1,1 +1,26 @@
-{}
+{
+    "imports": {
+        "HostComponent": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        }
+    },
+    "decls": []
+}

@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "PressEvent": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "PressEvent"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        }
+    },
+    "decls": []
+}

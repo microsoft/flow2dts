@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "StackFrame": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "StackFrame"
+            }
+        },
+        "SymbolicatedStackTrace": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "SymbolicatedStackTrace"
+            }
+        }
+    },
+    "decls": []
+}

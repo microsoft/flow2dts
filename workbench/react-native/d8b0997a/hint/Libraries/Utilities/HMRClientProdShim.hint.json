@@ -1,1 +1,12 @@
-{}
+{
+    "imports": {
+        "HMRClientNativeInterface": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "HMRClientNativeInterface"
+            }
+        }
+    },
+    "decls": []
+}

@@ -1,1 +1,61 @@
-{}
+{
+    "imports": {
+        "BubblingEventHandler": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "BubblingEventHandler"
+            }
+        },
+        "DirectEventHandler": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "DirectEventHandler"
+            }
+        },
+        "Double": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "Double"
+            }
+        },
+        "WithDefault": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "WithDefault"
+            }
+        },
+        "HostComponent": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        },
+        "ImageSource": {
+            "source": {
+                "row": 10,
+                "column": 14,
+                "local": "ImageSource"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 11,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        }
+    },
+    "decls": []
+}

@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "BlobData": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "BlobData"
+            }
+        },
+        "BlobOptions": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "BlobOptions"
+            }
+        }
+    },
+    "decls": []
+}

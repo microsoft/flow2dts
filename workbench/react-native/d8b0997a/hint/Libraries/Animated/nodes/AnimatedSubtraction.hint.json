@@ -1,1 +1,12 @@
-{}
+{
+    "imports": {
+        "InterpolationConfigType": {
+            "source": {
+                "row": 10,
+                "column": 14,
+                "local": "InterpolationConfigType"
+            }
+        }
+    },
+    "decls": []
+}

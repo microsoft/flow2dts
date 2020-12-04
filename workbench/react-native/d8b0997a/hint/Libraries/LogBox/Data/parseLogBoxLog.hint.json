@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "ExceptionData": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ExceptionData"
+            }
+        },
+        "LogBoxLogData": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "LogBoxLogData"
+            }
+        }
+    },
+    "decls": []
+}

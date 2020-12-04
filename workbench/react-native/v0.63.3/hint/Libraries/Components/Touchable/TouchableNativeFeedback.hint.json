@@ -1,1 +1,26 @@
-{}
+{
+    "imports": {
+        "Pressability": {
+            "source": {
+                "row": 2,
+                "column": 8,
+                "local": "Pressability"
+            }
+        },
+        "TouchableWithoutFeedback": {
+            "source": {
+                "row": 4,
+                "column": 15,
+                "local": "TouchableWithoutFeedback"
+            }
+        },
+        "React": {
+            "source": {
+                "row": 6,
+                "column": 13,
+                "local": "React"
+            }
+        }
+    },
+    "decls": []
+}

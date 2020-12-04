@@ -1,1 +1,40 @@
-{}
+{
+    "imports": {
+        "ColorValue": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        },
+        "Double": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "Double"
+            }
+        },
+        "WithDefault": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "WithDefault"
+            }
+        },
+        "HostComponent": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        }
+    },
+    "decls": []
+}

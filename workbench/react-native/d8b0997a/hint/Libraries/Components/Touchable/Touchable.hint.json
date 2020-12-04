@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "EdgeInsetsProp": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "EdgeInsetsProp"
+            }
+        },
+        "PressEvent": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "PressEvent"
+            }
+        }
+    },
+    "decls": []
+}

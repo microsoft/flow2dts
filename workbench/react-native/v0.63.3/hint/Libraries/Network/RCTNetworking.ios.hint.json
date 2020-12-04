@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "NativeResponseType": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "NativeResponseType"
+            }
+        },
+        "RequestBody": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "RequestBody"
+            }
+        }
+    },
+    "decls": []
+}

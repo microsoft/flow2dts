@@ -1,1 +1,110 @@
-{}
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "React"
+            }
+        },
+        "ScrollResponder": {
+            "source": {
+                "row": 4,
+                "column": 8,
+                "local": "ScrollResponder"
+            }
+        },
+        "View": {
+            "source": {
+                "row": 6,
+                "column": 8,
+                "local": "View"
+            }
+        },
+        "EdgeInsetsProp": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "EdgeInsetsProp"
+            }
+        },
+        "PointProp": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "PointProp"
+            }
+        },
+        "ViewStyleProp": {
+            "source": {
+                "row": 10,
+                "column": 14,
+                "local": "ViewStyleProp"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 11,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        },
+        "PressEvent": {
+            "source": {
+                "row": 12,
+                "column": 14,
+                "local": "PressEvent"
+            }
+        },
+        "ScrollEvent": {
+            "source": {
+                "row": 13,
+                "column": 14,
+                "local": "ScrollEvent"
+            }
+        },
+        "HostComponent": {
+            "source": {
+                "row": 14,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        },
+        "ScrollResponderState": {
+            "source": {
+                "row": 15,
+                "column": 14,
+                "local": "State"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 16,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        },
+        "ScrollViewStickyHeaderProps": {
+            "source": {
+                "row": 17,
+                "column": 14,
+                "local": "Props"
+            }
+        },
+        "ScrollViewContext": {
+            "source": {
+                "row": 19,
+                "column": 8,
+                "local": "ScrollViewContext"
+            }
+        },
+        "ScrollViewNativeComponent": {
+            "source": {
+                "row": 20,
+                "column": 8,
+                "local": "ScrollViewNativeComponent"
+            }
+        }
+    },
+    "decls": []
+}

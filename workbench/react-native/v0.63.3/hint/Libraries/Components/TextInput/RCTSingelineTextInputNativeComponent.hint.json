@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "HostComponent": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        },
+        "TextInputNativeCommands": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "TextInputNativeCommands"
+            }
+        }
+    },
+    "decls": []
+}

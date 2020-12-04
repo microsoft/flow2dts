@@ -1,1 +1,12 @@
-{}
+{
+    "imports": {
+        "ScrollViewNativeComponentType": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ScrollViewNativeComponentType"
+            }
+        }
+    },
+    "decls": []
+}

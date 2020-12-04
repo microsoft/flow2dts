@@ -1,1 +1,12 @@
-{}
+{
+    "imports": {
+        "ExceptionData": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ExceptionData"
+            }
+        }
+    },
+    "decls": []
+}

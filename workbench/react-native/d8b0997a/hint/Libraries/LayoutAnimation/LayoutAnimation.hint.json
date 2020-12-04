@@ -1,1 +1,26 @@
-{}
+{
+    "imports": {
+        "LayoutAnimationType": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "LayoutAnimationType"
+            }
+        },
+        "LayoutAnimationProperty": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "LayoutAnimationProperty"
+            }
+        },
+        "LayoutAnimationConfig_": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "LayoutAnimationConfig"
+            }
+        }
+    },
+    "decls": []
+}

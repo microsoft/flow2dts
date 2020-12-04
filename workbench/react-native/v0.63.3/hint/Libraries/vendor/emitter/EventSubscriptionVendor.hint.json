@@ -1,1 +1,12 @@
-{}
+{
+    "imports": {
+        "EventSubscription": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "EventSubscription"
+            }
+        }
+    },
+    "decls": []
+}

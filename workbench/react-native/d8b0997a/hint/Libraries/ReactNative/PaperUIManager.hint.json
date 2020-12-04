@@ -1,1 +1,12 @@
-{}
+{
+    "imports": {
+        "NativeUIManager": {
+            "source": {
+                "row": 2,
+                "column": 8,
+                "local": "NativeUIManager"
+            }
+        }
+    },
+    "decls": []
+}

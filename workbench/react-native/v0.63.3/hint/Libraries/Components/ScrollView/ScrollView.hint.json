@@ -1,1 +1,82 @@
-{}
+{
+    "imports": {
+        "EdgeInsetsProp": {
+            "source": {
+                "row": 11,
+                "column": 14,
+                "local": "EdgeInsetsProp"
+            }
+        },
+        "PointProp": {
+            "source": {
+                "row": 12,
+                "column": 14,
+                "local": "PointProp"
+            }
+        },
+        "ViewStyleProp": {
+            "source": {
+                "row": 13,
+                "column": 14,
+                "local": "ViewStyleProp"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 14,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        },
+        "PressEvent": {
+            "source": {
+                "row": 15,
+                "column": 14,
+                "local": "PressEvent"
+            }
+        },
+        "ScrollEvent": {
+            "source": {
+                "row": 16,
+                "column": 14,
+                "local": "ScrollEvent"
+            }
+        },
+        "HostComponent": {
+            "source": {
+                "row": 17,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        },
+        "ScrollResponderState": {
+            "source": {
+                "row": 18,
+                "column": 14,
+                "local": "State"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 19,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        },
+        "ScrollViewStickyHeaderProps": {
+            "source": {
+                "row": 20,
+                "column": 14,
+                "local": "Props"
+            }
+        },
+        "ScrollViewNativeComponent": {
+            "source": {
+                "row": 22,
+                "column": 8,
+                "local": "ScrollViewNativeComponent"
+            }
+        }
+    },
+    "decls": []
+}

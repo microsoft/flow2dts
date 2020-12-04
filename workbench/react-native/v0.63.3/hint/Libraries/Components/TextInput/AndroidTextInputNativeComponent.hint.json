@@ -1,1 +1,89 @@
-{}
+{
+    "imports": {
+        "ViewProps": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        },
+        "BubblingEventHandler": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "BubblingEventHandler"
+            }
+        },
+        "DirectEventHandler": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "DirectEventHandler"
+            }
+        },
+        "Double": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "Double"
+            }
+        },
+        "Float": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "Float"
+            }
+        },
+        "Int32": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "Int32"
+            }
+        },
+        "WithDefault": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "WithDefault"
+            }
+        },
+        "HostComponent": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        },
+        "TextStyleProp": {
+            "source": {
+                "row": 10,
+                "column": 14,
+                "local": "TextStyleProp"
+            }
+        },
+        "ViewStyleProp": {
+            "source": {
+                "row": 11,
+                "column": 14,
+                "local": "ViewStyleProp"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 12,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        },
+        "TextInputNativeCommands": {
+            "source": {
+                "row": 14,
+                "column": 14,
+                "local": "TextInputNativeCommands"
+            }
+        }
+    },
+    "decls": []
+}

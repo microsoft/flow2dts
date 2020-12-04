@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "ViewStyleProp": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ViewStyleProp"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        }
+    },
+    "decls": []
+}

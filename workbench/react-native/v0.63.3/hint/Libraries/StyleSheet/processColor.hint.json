@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "ColorValue": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        },
+        "NativeColorValue": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "NativeColorValue"
+            }
+        }
+    },
+    "decls": []
+}

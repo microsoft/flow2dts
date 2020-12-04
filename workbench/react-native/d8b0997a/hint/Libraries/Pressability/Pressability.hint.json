@@ -1,1 +1,40 @@
-{}
+{
+    "imports": {
+        "RectOrSize": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "RectOrSize"
+            }
+        },
+        "BlurEvent": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "BlurEvent"
+            }
+        },
+        "FocusEvent": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "FocusEvent"
+            }
+        },
+        "PressEvent": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "PressEvent"
+            }
+        },
+        "MouseEvent": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "MouseEvent"
+            }
+        }
+    },
+    "decls": []
+}

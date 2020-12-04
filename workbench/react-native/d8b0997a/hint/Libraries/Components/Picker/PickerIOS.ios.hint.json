@@ -1,1 +1,40 @@
-{}
+{
+    "imports": {
+        "TextStyleProp": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "TextStyleProp"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        },
+        "ProcessedColorValue": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "ProcessedColorValue"
+            }
+        },
+        "SyntheticEvent": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "SyntheticEvent"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        }
+    },
+    "decls": []
+}

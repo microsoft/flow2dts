@@ -1,1 +1,54 @@
-{}
+{
+    "imports": {
+        "LayoutEvent": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "LayoutEvent"
+            }
+        },
+        "PressEvent": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "PressEvent"
+            }
+        },
+        "TextLayoutEvent": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "TextLayoutEvent"
+            }
+        },
+        "Node": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "Node"
+            }
+        },
+        "TextStyleProp": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "TextStyleProp"
+            }
+        },
+        "AccessibilityRole": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "AccessibilityRole"
+            }
+        },
+        "AccessibilityState": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "AccessibilityState"
+            }
+        }
+    },
+    "decls": []
+}

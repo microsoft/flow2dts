@@ -1,1 +1,26 @@
-{}
+{
+    "imports": {
+        "ViewProps": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        },
+        "RootTag": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "RootTag"
+            }
+        },
+        "DirectEventHandler": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "DirectEventHandler"
+            }
+        }
+    },
+    "decls": []
+}

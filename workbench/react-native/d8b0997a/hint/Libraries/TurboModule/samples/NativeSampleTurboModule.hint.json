@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "RootTag": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "RootTag"
+            }
+        },
+        "TurboModule": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "TurboModule"
+            }
+        }
+    },
+    "decls": []
+}

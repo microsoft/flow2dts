@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "HostComponent": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        },
+        "ScrollViewNativeProps": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "ScrollViewNativeProps"
+            }
+        }
+    },
+    "decls": []
+}

@@ -1,1 +1,26 @@
-{}
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "React"
+            }
+        },
+        "PressEvent": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "PressEvent"
+            }
+        },
+        "StackFrame": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "StackFrame"
+            }
+        }
+    },
+    "decls": []
+}

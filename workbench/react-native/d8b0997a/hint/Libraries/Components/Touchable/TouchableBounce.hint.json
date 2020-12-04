@@ -1,1 +1,33 @@
-{}
+{
+    "imports": {
+        "ViewStyleProp": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ViewStyleProp"
+            }
+        },
+        "TouchableWithoutFeedback": {
+            "source": {
+                "row": 3,
+                "column": 15,
+                "local": "TouchableWithoutFeedback"
+            }
+        },
+        "Animated": {
+            "source": {
+                "row": 4,
+                "column": 9,
+                "local": "Animated"
+            }
+        },
+        "React": {
+            "source": {
+                "row": 5,
+                "column": 13,
+                "local": "React"
+            }
+        }
+    },
+    "decls": []
+}

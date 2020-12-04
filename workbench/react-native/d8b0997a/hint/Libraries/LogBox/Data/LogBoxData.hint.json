@@ -1,1 +1,61 @@
-{}
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "React"
+            }
+        },
+        "LogBoxLog": {
+            "source": {
+                "row": 3,
+                "column": 8,
+                "local": "LogBoxLog"
+            }
+        },
+        "LogLevel": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "LogLevel"
+            }
+        },
+        "Message": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "Message"
+            }
+        },
+        "Category": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "Category"
+            }
+        },
+        "ComponentStack": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "ComponentStack"
+            }
+        },
+        "ExtendedExceptionData": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "ExtendedExceptionData"
+            }
+        },
+        "ExtendedError": {
+            "source": {
+                "row": 11,
+                "column": 14,
+                "local": "ExtendedError"
+            }
+        }
+    },
+    "decls": []
+}

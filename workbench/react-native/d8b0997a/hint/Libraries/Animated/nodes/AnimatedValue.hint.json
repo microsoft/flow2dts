@@ -1,1 +1,33 @@
-{}
+{
+    "imports": {
+        "EndCallback": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "EndCallback"
+            }
+        },
+        "Animation": {
+            "source": {
+                "row": 8,
+                "column": 13,
+                "local": "Animation"
+            }
+        },
+        "InterpolationConfigType": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "InterpolationConfigType"
+            }
+        },
+        "AnimatedTracking": {
+            "source": {
+                "row": 10,
+                "column": 13,
+                "local": "AnimatedTracking"
+            }
+        }
+    },
+    "decls": []
+}

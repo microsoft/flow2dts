@@ -1,1 +1,61 @@
-{}
+{
+    "imports": {
+        "HostComponent": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        },
+        "ViewStyleProp": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "ViewStyleProp"
+            }
+        },
+        "DangerouslyImpreciseStyle": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "DangerouslyImpreciseStyle"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        },
+        "EdgeInsetsProp": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "EdgeInsetsProp"
+            }
+        },
+        "ScrollEvent": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "ScrollEvent"
+            }
+        },
+        "PointProp": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "PointProp"
+            }
+        }
+    },
+    "decls": []
+}

@@ -1,1 +1,12 @@
-{}
+{
+    "imports": {
+        "ColorValue": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        }
+    },
+    "decls": []
+}

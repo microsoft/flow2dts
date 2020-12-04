@@ -1,1 +1,33 @@
-{}
+{
+    "imports": {
+        "ScrollResponderType": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "ScrollResponderType"
+            }
+        },
+        "ScrollToLocationParamsType": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "ScrollToLocationParamsType"
+            }
+        },
+        "_SectionBase": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "SectionBase"
+            }
+        },
+        "VirtualizedSectionListProps": {
+            "source": {
+                "row": 10,
+                "column": 14,
+                "local": "Props"
+            }
+        }
+    },
+    "decls": []
+}

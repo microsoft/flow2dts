@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "SyntheticEvent": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "SyntheticEvent"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        }
+    },
+    "decls": []
+}

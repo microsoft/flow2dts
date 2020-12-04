@@ -1,1 +1,12 @@
-{}
+{
+    "imports": {
+        "ReactTestRendererType": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "ReactTestRenderer"
+            }
+        }
+    },
+    "decls": []
+}

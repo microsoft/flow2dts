@@ -1,1 +1,40 @@
-{}
+{
+    "imports": {
+        "ViewStyleProp": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ViewStyleProp"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        },
+        "TouchableWithoutFeedback": {
+            "source": {
+                "row": 5,
+                "column": 15,
+                "local": "TouchableWithoutFeedback"
+            }
+        },
+        "View": {
+            "source": {
+                "row": 7,
+                "column": 8,
+                "local": "View"
+            }
+        },
+        "React": {
+            "source": {
+                "row": 8,
+                "column": 13,
+                "local": "React"
+            }
+        }
+    },
+    "decls": []
+}

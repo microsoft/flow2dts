@@ -1,1 +1,33 @@
-{}
+{
+    "imports": {
+        "MeasureOnSuccessCallback": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "MeasureOnSuccessCallback"
+            }
+        },
+        "MeasureInWindowOnSuccessCallback": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "MeasureInWindowOnSuccessCallback"
+            }
+        },
+        "MeasureLayoutOnSuccessCallback": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "MeasureLayoutOnSuccessCallback"
+            }
+        },
+        "LayoutAnimationConfig": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "LayoutAnimationConfig"
+            }
+        }
+    },
+    "decls": []
+}

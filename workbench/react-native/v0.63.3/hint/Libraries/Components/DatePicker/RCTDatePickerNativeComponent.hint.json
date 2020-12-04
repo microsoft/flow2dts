@@ -1,1 +1,47 @@
-{}
+{
+    "imports": {
+        "HostComponent": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        },
+        "React": {
+            "source": {
+                "row": 5,
+                "column": 13,
+                "local": "React"
+            }
+        },
+        "Float": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "Float"
+            }
+        },
+        "WithDefault": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "WithDefault"
+            }
+        },
+        "BubblingEventHandler": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "BubblingEventHandler"
+            }
+        }
+    },
+    "decls": []
+}

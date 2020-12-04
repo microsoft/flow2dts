@@ -1,1 +1,75 @@
-{}
+{
+    "imports": {
+        "____ColorValue_Internal": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "____ColorValue_Internal"
+            }
+        },
+        "____Styles_Internal": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "____Styles_Internal"
+            }
+        },
+        "____DangerouslyImpreciseStyle_Internal": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "____DangerouslyImpreciseStyle_Internal"
+            }
+        },
+        "____DangerouslyImpreciseStyleProp_Internal": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "____DangerouslyImpreciseStyleProp_Internal"
+            }
+        },
+        "____ViewStyle_Internal": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "____ViewStyle_Internal"
+            }
+        },
+        "____ViewStyleProp_Internal": {
+            "source": {
+                "row": 10,
+                "column": 14,
+                "local": "____ViewStyleProp_Internal"
+            }
+        },
+        "____TextStyle_Internal": {
+            "source": {
+                "row": 11,
+                "column": 14,
+                "local": "____TextStyle_Internal"
+            }
+        },
+        "____TextStyleProp_Internal": {
+            "source": {
+                "row": 12,
+                "column": 14,
+                "local": "____TextStyleProp_Internal"
+            }
+        },
+        "____ImageStyle_Internal": {
+            "source": {
+                "row": 13,
+                "column": 14,
+                "local": "____ImageStyle_Internal"
+            }
+        },
+        "____ImageStyleProp_Internal": {
+            "source": {
+                "row": 14,
+                "column": 14,
+                "local": "____ImageStyleProp_Internal"
+            }
+        }
+    },
+    "decls": []
+}

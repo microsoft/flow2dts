@@ -1,1 +1,40 @@
-{}
+{
+    "imports": {
+        "Category": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "Category"
+            }
+        },
+        "Message": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "Message"
+            }
+        },
+        "ComponentStack": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "ComponentStack"
+            }
+        },
+        "CodeFrame": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "CodeFrame"
+            }
+        },
+        "Stack": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "Stack"
+            }
+        }
+    },
+    "decls": []
+}

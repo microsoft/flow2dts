@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "ViewStyleProp": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ViewStyleProp"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        }
+    },
+    "decls": []
+}

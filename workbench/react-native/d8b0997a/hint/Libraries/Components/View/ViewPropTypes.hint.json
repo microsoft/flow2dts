@@ -1,1 +1,103 @@
-{}
+{
+    "imports": {
+        "BlurEvent": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "BlurEvent"
+            }
+        },
+        "FocusEvent": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "FocusEvent"
+            }
+        },
+        "MouseEvent": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "MouseEvent"
+            }
+        },
+        "PressEvent": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "PressEvent"
+            }
+        },
+        "Layout": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "Layout"
+            }
+        },
+        "LayoutEvent": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "LayoutEvent"
+            }
+        },
+        "EdgeInsetsProp": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "EdgeInsetsProp"
+            }
+        },
+        "Node": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "Node"
+            }
+        },
+        "ViewStyleProp": {
+            "source": {
+                "row": 10,
+                "column": 14,
+                "local": "ViewStyleProp"
+            }
+        },
+        "AccessibilityRole": {
+            "source": {
+                "row": 11,
+                "column": 14,
+                "local": "AccessibilityRole"
+            }
+        },
+        "AccessibilityState": {
+            "source": {
+                "row": 12,
+                "column": 14,
+                "local": "AccessibilityState"
+            }
+        },
+        "AccessibilityValue": {
+            "source": {
+                "row": 13,
+                "column": 14,
+                "local": "AccessibilityValue"
+            }
+        },
+        "AccessibilityActionEvent": {
+            "source": {
+                "row": 14,
+                "column": 14,
+                "local": "AccessibilityActionEvent"
+            }
+        },
+        "AccessibilityActionInfo": {
+            "source": {
+                "row": 15,
+                "column": 14,
+                "local": "AccessibilityActionInfo"
+            }
+        }
+    },
+    "decls": []
+}

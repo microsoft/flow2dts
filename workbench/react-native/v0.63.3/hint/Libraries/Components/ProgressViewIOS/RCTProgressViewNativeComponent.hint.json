@@ -1,1 +1,47 @@
-{}
+{
+    "imports": {
+        "Float": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "Float"
+            }
+        },
+        "WithDefault": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "WithDefault"
+            }
+        },
+        "ImageSource": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "ImageSource"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        },
+        "HostComponent": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        }
+    },
+    "decls": []
+}

@@ -1,1 +1,12 @@
-{}
+{
+    "imports": {
+        "PackagerAsset": {
+            "source": {
+                "row": 10,
+                "column": 14,
+                "local": "PackagerAsset"
+            }
+        }
+    },
+    "decls": []
+}

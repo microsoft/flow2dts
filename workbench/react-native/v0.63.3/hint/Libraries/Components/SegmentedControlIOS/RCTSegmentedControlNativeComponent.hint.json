@@ -1,1 +1,47 @@
-{}
+{
+    "imports": {
+        "HostComponent": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "HostComponent"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "ViewProps"
+            }
+        },
+        "BubblingEventHandler": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "BubblingEventHandler"
+            }
+        },
+        "WithDefault": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "WithDefault"
+            }
+        },
+        "Int32": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "Int32"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "ColorValue"
+            }
+        }
+    },
+    "decls": []
+}

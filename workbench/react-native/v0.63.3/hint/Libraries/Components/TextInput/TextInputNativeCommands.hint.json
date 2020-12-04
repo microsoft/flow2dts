@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "React"
+            }
+        },
+        "Int32": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "Int32"
+            }
+        }
+    },
+    "decls": []
+}

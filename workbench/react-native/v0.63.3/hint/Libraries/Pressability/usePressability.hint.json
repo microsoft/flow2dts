@@ -1,1 +1,19 @@
-{}
+{
+    "imports": {
+        "EventHandlers": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "EventHandlers"
+            }
+        },
+        "PressabilityConfig": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "PressabilityConfig"
+            }
+        }
+    },
+    "decls": []
+}

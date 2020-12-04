@@ -1,1 +1,26 @@
-{}
+{
+    "imports": {
+        "AnimatedImplementation": {
+            "source": {
+                "row": 2,
+                "column": 8,
+                "local": "AnimatedImplementation"
+            }
+        },
+        "React": {
+            "source": {
+                "row": 3,
+                "column": 13,
+                "local": "React"
+            }
+        },
+        "LayoutEvent": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "LayoutEvent"
+            }
+        }
+    },
+    "decls": []
+}

@@ -1,1 +1,12 @@
-{}
+{
+    "imports": {
+        "EmitterSubscription": {
+            "source": {
+                "row": 7,
+                "column": 13,
+                "local": "EmitterSubscription"
+            }
+        }
+    },
+    "decls": []
+}
