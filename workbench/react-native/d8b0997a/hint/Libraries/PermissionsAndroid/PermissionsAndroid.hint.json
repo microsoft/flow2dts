@@ -5,14 +5,16 @@
                 "row": 2,
                 "column": 14,
                 "local": "PermissionStatus"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\PermissionsAndroid\\NativePermissionsAndroid.js.flow:4:6,4:21\r\n"
         },
         "PermissionType": {
             "source": {
                 "row": 3,
                 "column": 14,
                 "local": "PermissionType"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\PermissionsAndroid\\NativePermissionsAndroid.js.flow:5:6,5:19\r\n"
         }
     },
     "decls": []

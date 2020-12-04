@@ -12,42 +12,48 @@
                 "row": 9,
                 "column": 14,
                 "local": "ScrollResponderType"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\ScrollView\\ScrollView.js.flow:45:6,45:24\r\n"
         },
         "ViewStyleProp": {
             "source": {
                 "row": 10,
                 "column": 14,
                 "local": "ViewStyleProp"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:18:6,18:18\r\n"
         },
         "ViewabilityConfig": {
             "source": {
                 "row": 11,
                 "column": 14,
                 "local": "ViewabilityConfig"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Lists\\ViewabilityHelper.js.flow:23:6,23:22\r\n"
         },
         "ViewToken": {
             "source": {
                 "row": 12,
                 "column": 14,
                 "local": "ViewToken"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Lists\\ViewabilityHelper.js.flow:2:6,2:14\r\n"
         },
         "ViewabilityConfigCallbackPair": {
             "source": {
                 "row": 13,
                 "column": 14,
                 "local": "ViewabilityConfigCallbackPair"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Lists\\ViewabilityHelper.js.flow:11:6,11:34\r\n"
         },
         "VirtualizedListContext": {
             "source": {
                 "row": 14,
                 "column": 9,
                 "local": "VirtualizedListContext"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Lists\\VirtualizedListContext.js.flow:66:37,66:59\r\n"
         }
     },
     "decls": []

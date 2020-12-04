@@ -5,49 +5,56 @@
                 "row": 2,
                 "column": 14,
                 "local": "LayoutEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:79:6,79:16\r\n"
         },
         "PressEvent": {
             "source": {
                 "row": 3,
                 "column": 14,
                 "local": "PressEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:95:6,95:15\r\n"
         },
         "TextLayoutEvent": {
             "source": {
                 "row": 4,
                 "column": 14,
                 "local": "TextLayoutEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:87:6,87:20\r\n"
         },
         "Node": {
             "source": {
                 "row": 5,
                 "column": 14,
                 "local": "Node"
-            }
+            },
+            "stdout": "C:\\Users\\zihanc\\AppData\\Local\\Temp\\flow\\flowlib_3beffeed\\react.js:268:23,268:26\r\n"
         },
         "TextStyleProp": {
             "source": {
                 "row": 6,
                 "column": 14,
                 "local": "TextStyleProp"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:20:6,20:18\r\n"
         },
         "AccessibilityRole": {
             "source": {
                 "row": 7,
                 "column": 14,
                 "local": "AccessibilityRole"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewAccessibility.js.flow:4:6,4:22\r\n"
         },
         "AccessibilityState": {
             "source": {
                 "row": 8,
                 "column": 14,
                 "local": "AccessibilityState"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewAccessibility.js.flow:45:6,45:23\r\n"
         }
     },
     "decls": []

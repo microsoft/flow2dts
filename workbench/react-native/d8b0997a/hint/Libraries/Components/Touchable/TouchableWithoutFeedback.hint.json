@@ -5,77 +5,88 @@
                 "row": 2,
                 "column": 8,
                 "local": "Pressability"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Pressability\\Pressability.js.flow:153:15,153:26\r\n"
         },
         "AccessibilityActionEvent": {
             "source": {
                 "row": 4,
                 "column": 14,
                 "local": "AccessibilityActionEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewAccessibility.js.flow:41:6,41:29\r\n"
         },
         "AccessibilityActionInfo": {
             "source": {
                 "row": 5,
                 "column": 14,
                 "local": "AccessibilityActionInfo"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewAccessibility.js.flow:33:6,33:28\r\n"
         },
         "AccessibilityRole": {
             "source": {
                 "row": 6,
                 "column": 14,
                 "local": "AccessibilityRole"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewAccessibility.js.flow:4:6,4:22\r\n"
         },
         "AccessibilityState": {
             "source": {
                 "row": 7,
                 "column": 14,
                 "local": "AccessibilityState"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewAccessibility.js.flow:45:6,45:23\r\n"
         },
         "AccessibilityValue": {
             "source": {
                 "row": 8,
                 "column": 14,
                 "local": "AccessibilityValue"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewAccessibility.js.flow:54:6,54:23\r\n"
         },
         "EdgeInsetsProp": {
             "source": {
                 "row": 9,
                 "column": 14,
                 "local": "EdgeInsetsProp"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\EdgeInsetsPropType.js.flow:4:6,4:19\r\n"
         },
         "BlurEvent": {
             "source": {
                 "row": 10,
                 "column": 14,
                 "local": "BlurEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:159:6,159:14\r\n"
         },
         "FocusEvent": {
             "source": {
                 "row": 11,
                 "column": 14,
                 "local": "FocusEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:167:6,167:15\r\n"
         },
         "LayoutEvent": {
             "source": {
                 "row": 12,
                 "column": 14,
                 "local": "LayoutEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:79:6,79:16\r\n"
         },
         "PressEvent": {
             "source": {
                 "row": 13,
                 "column": 14,
                 "local": "PressEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:95:6,95:15\r\n"
         },
         "React": {
             "source": {

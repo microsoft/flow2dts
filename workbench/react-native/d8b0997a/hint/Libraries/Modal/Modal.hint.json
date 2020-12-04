@@ -5,21 +5,24 @@
                 "row": 5,
                 "column": 14,
                 "local": "ViewProps"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:377:6,377:14\r\n"
         },
         "RootTag": {
             "source": {
                 "row": 7,
                 "column": 14,
                 "local": "RootTag"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\ReactNative\\RootTag.js.flow:2:6,2:12\r\n"
         },
         "DirectEventHandler": {
             "source": {
                 "row": 8,
                 "column": 14,
                 "local": "DirectEventHandler"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:9:6,9:23\r\n"
         }
     },
     "decls": []

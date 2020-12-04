@@ -5,70 +5,80 @@
                 "row": 5,
                 "column": 14,
                 "local": "____ColorValue_Internal"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:7:6,7:28\r\n"
         },
         "____Styles_Internal": {
             "source": {
                 "row": 6,
                 "column": 14,
                 "local": "____Styles_Internal"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:660:6,660:24\r\n"
         },
         "____DangerouslyImpreciseStyle_Internal": {
             "source": {
                 "row": 7,
                 "column": 14,
                 "local": "____DangerouslyImpreciseStyle_Internal"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:631:6,631:43\r\n"
         },
         "____DangerouslyImpreciseStyleProp_Internal": {
             "source": {
                 "row": 8,
                 "column": 14,
                 "local": "____DangerouslyImpreciseStyleProp_Internal"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:647:6,647:47\r\n"
         },
         "____ViewStyle_Internal": {
             "source": {
                 "row": 9,
                 "column": 14,
                 "local": "____ViewStyle_Internal"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:532:6,532:27\r\n"
         },
         "____ViewStyleProp_Internal": {
             "source": {
                 "row": 10,
                 "column": 14,
                 "local": "____ViewStyleProp_Internal"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:650:6,650:31\r\n"
         },
         "____TextStyle_Internal": {
             "source": {
                 "row": 11,
                 "column": 14,
                 "local": "____TextStyle_Internal"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:581:6,581:27\r\n"
         },
         "____TextStyleProp_Internal": {
             "source": {
                 "row": 12,
                 "column": 14,
                 "local": "____TextStyleProp_Internal"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:653:6,653:31\r\n"
         },
         "____ImageStyle_Internal": {
             "source": {
                 "row": 13,
                 "column": 14,
                 "local": "____ImageStyle_Internal"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:622:6,622:28\r\n"
         },
         "____ImageStyleProp_Internal": {
             "source": {
                 "row": 14,
                 "column": 14,
                 "local": "____ImageStyleProp_Internal"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:656:6,656:32\r\n"
         }
     },
     "decls": []

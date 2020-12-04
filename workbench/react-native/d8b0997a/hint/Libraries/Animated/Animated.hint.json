@@ -5,42 +5,48 @@
                 "row": 2,
                 "column": 15,
                 "local": "AnimatedFlatList"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\components\\AnimatedFlatList.js.flow:9:25,12:1\r\n"
         },
         "AnimatedImage": {
             "source": {
                 "row": 3,
                 "column": 15,
                 "local": "AnimatedImage"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\components\\AnimatedImage.js.flow:9:25,12:1\r\n"
         },
         "AnimatedScrollView": {
             "source": {
                 "row": 4,
                 "column": 15,
                 "local": "AnimatedScrollView"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\components\\AnimatedScrollView.js.flow:9:25,12:1\r\n"
         },
         "AnimatedSectionList": {
             "source": {
                 "row": 5,
                 "column": 15,
                 "local": "AnimatedSectionList"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\components\\AnimatedSectionList.js.flow:9:25,12:1\r\n"
         },
         "AnimatedText": {
             "source": {
                 "row": 6,
                 "column": 15,
                 "local": "AnimatedText"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\components\\AnimatedText.js.flow:9:25,12:1\r\n"
         },
         "AnimatedView": {
             "source": {
                 "row": 7,
                 "column": 15,
                 "local": "AnimatedView"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\components\\AnimatedView.js.flow:9:25,12:1\r\n"
         }
     },
     "decls": []

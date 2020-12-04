@@ -5,7 +5,8 @@
                 "row": 9,
                 "column": 14,
                 "local": "InterpolationConfigType"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\nodes\\AnimatedInterpolation.js.flow:9:6,9:28\r\n"
         }
     },
     "decls": []

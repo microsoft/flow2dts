@@ -5,7 +5,8 @@
                 "row": 2,
                 "column": 13,
                 "local": "AnimatedValue"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\nodes\\AnimatedValue.js.flow:12:15,12:27\r\n"
         }
     },
     "decls": []

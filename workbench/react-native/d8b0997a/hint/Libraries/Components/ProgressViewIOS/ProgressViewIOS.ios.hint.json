@@ -5,7 +5,8 @@
                 "row": 2,
                 "column": 8,
                 "local": "RCTProgressViewNativeComponent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\ProgressViewIOS\\RCTProgressViewNativeComponent.js.flow:24:24,24:49\r\n"
         }
     },
     "decls": []

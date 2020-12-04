@@ -5,7 +5,8 @@
                 "row": 2,
                 "column": 14,
                 "local": "SyntheticEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:5:6,5:19\r\n"
         }
     },
     "decls": []

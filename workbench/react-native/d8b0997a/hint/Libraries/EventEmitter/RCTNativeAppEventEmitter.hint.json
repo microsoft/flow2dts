@@ -5,7 +5,8 @@
                 "row": 2,
                 "column": 8,
                 "local": "RCTDeviceEventEmitter"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\EventEmitter\\RCTDeviceEventEmitter.js.flow:6:15,6:35\r\n"
         }
     },
     "decls": []

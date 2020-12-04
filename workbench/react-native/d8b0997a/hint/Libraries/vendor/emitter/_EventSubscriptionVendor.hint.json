@@ -5,7 +5,8 @@
                 "row": 2,
                 "column": 13,
                 "local": "EventSubscription"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\vendor\\emitter\\_EventSubscription.js.flow:4:15,4:31\r\n"
         }
     },
     "decls": []

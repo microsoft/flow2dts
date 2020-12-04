@@ -5,7 +5,8 @@
                 "row": 2,
                 "column": 14,
                 "local": "ReactNativeBaseComponentViewConfig"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:45:6,45:39\r\n"
         }
     },
     "decls": []

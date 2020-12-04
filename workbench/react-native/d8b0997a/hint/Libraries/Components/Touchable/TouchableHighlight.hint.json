@@ -5,28 +5,32 @@
                 "row": 2,
                 "column": 14,
                 "local": "ViewStyleProp"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:18:6,18:18\r\n"
         },
         "ColorValue": {
             "source": {
                 "row": 3,
                 "column": 14,
                 "local": "ColorValue"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:16:6,16:15\r\n"
         },
         "TouchableWithoutFeedback": {
             "source": {
                 "row": 4,
                 "column": 15,
                 "local": "TouchableWithoutFeedback"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\Touchable\\TouchableWithoutFeedback.js.flow:60:15,60:38\r\n"
         },
         "View": {
             "source": {
                 "row": 6,
                 "column": 8,
                 "local": "View"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\View.js.flow:10:19,13:1\r\n"
         },
         "React": {
             "source": {

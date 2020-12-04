@@ -5,7 +5,8 @@
                 "row": 2,
                 "column": 14,
                 "local": "Args"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Alert\\NativeAlertManager.js.flow:4:6,4:9\r\n"
         }
     },
     "decls": []

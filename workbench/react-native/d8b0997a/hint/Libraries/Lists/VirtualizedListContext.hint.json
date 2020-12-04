@@ -5,7 +5,8 @@
                 "row": 2,
                 "column": 13,
                 "local": "VirtualizedList"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Lists\\VirtualizedList.js.flow:289:15,289:29\r\n"
         },
         "React": {
             "source": {

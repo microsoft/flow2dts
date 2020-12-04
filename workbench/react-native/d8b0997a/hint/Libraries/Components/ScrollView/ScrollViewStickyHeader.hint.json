@@ -5,7 +5,8 @@
                 "row": 2,
                 "column": 8,
                 "local": "AnimatedImplementation"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\AnimatedImplementation.js.flow:142:25,316:2\r\n"
         },
         "React": {
             "source": {
@@ -19,7 +20,8 @@
                 "row": 5,
                 "column": 14,
                 "local": "LayoutEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:79:6,79:16\r\n"
         }
     },
     "decls": []

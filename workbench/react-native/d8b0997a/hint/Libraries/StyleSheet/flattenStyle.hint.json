@@ -5,14 +5,16 @@
                 "row": 2,
                 "column": 14,
                 "local": "DangerouslyImpreciseStyle"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:37:6,37:30\r\n"
         },
         "DangerouslyImpreciseStyleProp": {
             "source": {
                 "row": 3,
                 "column": 14,
                 "local": "DangerouslyImpreciseStyleProp"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:24:6,24:34\r\n"
         }
     },
     "decls": []

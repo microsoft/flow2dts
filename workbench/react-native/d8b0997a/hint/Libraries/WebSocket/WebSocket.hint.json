@@ -5,7 +5,8 @@
                 "row": 2,
                 "column": 8,
                 "local": "Blob"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Blob\\Blob.js.flow:5:15,5:18\r\n"
         }
     },
     "decls": []

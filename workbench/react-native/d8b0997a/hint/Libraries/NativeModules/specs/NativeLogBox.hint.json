@@ -5,7 +5,8 @@
                 "row": 2,
                 "column": 14,
                 "local": "TurboModule"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\NativeModules\\specs\\NativeLogBox.js.flow:2:14,2:24\r\n"
         }
     },
     "decls": []

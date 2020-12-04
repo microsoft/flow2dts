@@ -5,84 +5,96 @@
                 "row": 2,
                 "column": 14,
                 "local": "ViewProps"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:377:6,377:14\r\n"
         },
         "BubblingEventHandler": {
             "source": {
                 "row": 3,
                 "column": 14,
                 "local": "BubblingEventHandler"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:4:6,4:25\r\n"
         },
         "DirectEventHandler": {
             "source": {
                 "row": 4,
                 "column": 14,
                 "local": "DirectEventHandler"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:9:6,9:23\r\n"
         },
         "Double": {
             "source": {
                 "row": 5,
                 "column": 14,
                 "local": "Double"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:15:6,15:11\r\n"
         },
         "Float": {
             "source": {
                 "row": 6,
                 "column": 14,
                 "local": "Float"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:16:6,16:10\r\n"
         },
         "Int32": {
             "source": {
                 "row": 7,
                 "column": 14,
                 "local": "Int32"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:17:6,17:10\r\n"
         },
         "WithDefault": {
             "source": {
                 "row": 8,
                 "column": 14,
                 "local": "WithDefault"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:21:6,21:16\r\n"
         },
         "HostComponent": {
             "source": {
                 "row": 9,
                 "column": 14,
                 "local": "HostComponent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
         },
         "TextStyleProp": {
             "source": {
                 "row": 10,
                 "column": 14,
                 "local": "TextStyleProp"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:20:6,20:18\r\n"
         },
         "ViewStyleProp": {
             "source": {
                 "row": 11,
                 "column": 14,
                 "local": "ViewStyleProp"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:18:6,18:18\r\n"
         },
         "ColorValue": {
             "source": {
                 "row": 12,
                 "column": 14,
                 "local": "ColorValue"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:16:6,16:15\r\n"
         },
         "TextInputNativeCommands": {
             "source": {
                 "row": 14,
                 "column": 14,
                 "local": "TextInputNativeCommands"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\TextInput\\AndroidTextInputNativeComponent.js.flow:14:14,14:36\r\n"
         }
     },
     "decls": []

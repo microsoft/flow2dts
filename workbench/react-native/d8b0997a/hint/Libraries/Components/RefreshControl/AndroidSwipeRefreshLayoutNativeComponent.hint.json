@@ -12,49 +12,56 @@
                 "row": 4,
                 "column": 14,
                 "local": "HostComponent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
         },
         "DirectEventHandler": {
             "source": {
                 "row": 6,
                 "column": 14,
                 "local": "DirectEventHandler"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:9:6,9:23\r\n"
         },
         "Float": {
             "source": {
                 "row": 7,
                 "column": 14,
                 "local": "Float"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:16:6,16:10\r\n"
         },
         "Int32": {
             "source": {
                 "row": 8,
                 "column": 14,
                 "local": "Int32"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:17:6,17:10\r\n"
         },
         "WithDefault": {
             "source": {
                 "row": 9,
                 "column": 14,
                 "local": "WithDefault"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:21:6,21:16\r\n"
         },
         "ColorValue": {
             "source": {
                 "row": 10,
                 "column": 14,
                 "local": "ColorValue"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:16:6,16:15\r\n"
         },
         "ViewProps": {
             "source": {
                 "row": 11,
                 "column": 14,
                 "local": "ViewProps"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:377:6,377:14\r\n"
         }
     },
     "decls": []

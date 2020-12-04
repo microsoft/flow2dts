@@ -5,21 +5,24 @@
                 "row": 2,
                 "column": 9,
                 "local": "NativeText"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Text\\TextNativeComponent.js.flow:15:25,15:54\r\n"
         },
         "NativeVirtualText": {
             "source": {
                 "row": 3,
                 "column": 9,
                 "local": "NativeVirtualText"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Text\\TextNativeComponent.js.flow:17:32,17:61\r\n"
         },
         "TextProps": {
             "source": {
                 "row": 10,
                 "column": 14,
                 "local": "TextProps"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Text\\TextProps.js.flow:19:6,19:14\r\n"
         }
     },
     "decls": []

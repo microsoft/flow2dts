@@ -5,42 +5,48 @@
                 "row": 35,
                 "column": 14,
                 "local": "EndCallback"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\animations\\Animation.js.flow:5:6,5:16\r\n"
         },
         "TimingAnimationConfig": {
             "source": {
                 "row": 36,
                 "column": 14,
                 "local": "TimingAnimationConfig"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\animations\\TimingAnimation.js.flow:14:6,14:26\r\n"
         },
         "DecayAnimationConfig": {
             "source": {
                 "row": 37,
                 "column": 14,
                 "local": "DecayAnimationConfig"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\animations\\DecayAnimation.js.flow:9:6,9:25\r\n"
         },
         "SpringAnimationConfig": {
             "source": {
                 "row": 38,
                 "column": 14,
                 "local": "SpringAnimationConfig"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\animations\\SpringAnimation.js.flow:14:6,14:26\r\n"
         },
         "Mapping": {
             "source": {
                 "row": 39,
                 "column": 14,
                 "local": "Mapping"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\AnimatedEvent.js.flow:5:6,5:12\r\n"
         },
         "EventConfig": {
             "source": {
                 "row": 40,
                 "column": 14,
                 "local": "EventConfig"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\AnimatedEvent.js.flow:6:6,6:16\r\n"
         }
     },
     "decls": []

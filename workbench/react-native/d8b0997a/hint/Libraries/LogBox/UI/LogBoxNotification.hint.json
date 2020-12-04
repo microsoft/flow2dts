@@ -12,7 +12,8 @@
                 "row": 4,
                 "column": 8,
                 "local": "LogBoxLog"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\LogBox\\Data\\LogBoxLog.js.flow:25:15,25:23\r\n"
         }
     },
     "decls": []

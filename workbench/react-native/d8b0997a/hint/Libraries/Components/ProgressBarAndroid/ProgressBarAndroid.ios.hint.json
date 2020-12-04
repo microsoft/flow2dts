@@ -5,7 +5,8 @@
                 "row": 1,
                 "column": 8,
                 "local": "UnimplementedView"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\UnimplementedViews\\UnimplementedView.js.flow:5:15,5:31\r\n"
         }
     },
     "decls": []

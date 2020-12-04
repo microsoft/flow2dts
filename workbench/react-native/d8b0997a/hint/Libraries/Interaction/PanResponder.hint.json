@@ -5,7 +5,8 @@
                 "row": 2,
                 "column": 14,
                 "local": "PressEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:95:6,95:15\r\n"
         }
     },
     "decls": []

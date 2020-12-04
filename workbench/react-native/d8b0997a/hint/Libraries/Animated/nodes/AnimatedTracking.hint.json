@@ -5,7 +5,8 @@
                 "row": 7,
                 "column": 14,
                 "local": "EndCallback"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\animations\\Animation.js.flow:5:6,5:16\r\n"
         }
     },
     "decls": []

@@ -5,56 +5,64 @@
                 "row": 2,
                 "column": 14,
                 "local": "HostComponent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
         },
         "ViewProps": {
             "source": {
                 "row": 3,
                 "column": 14,
                 "local": "ViewProps"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:377:6,377:14\r\n"
         },
         "ViewStyleProp": {
             "source": {
                 "row": 4,
                 "column": 14,
                 "local": "ViewStyleProp"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:18:6,18:18\r\n"
         },
         "DangerouslyImpreciseStyle": {
             "source": {
                 "row": 5,
                 "column": 14,
                 "local": "DangerouslyImpreciseStyle"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:37:6,37:30\r\n"
         },
         "ColorValue": {
             "source": {
                 "row": 6,
                 "column": 14,
                 "local": "ColorValue"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:16:6,16:15\r\n"
         },
         "EdgeInsetsProp": {
             "source": {
                 "row": 7,
                 "column": 14,
                 "local": "EdgeInsetsProp"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\EdgeInsetsPropType.js.flow:4:6,4:19\r\n"
         },
         "ScrollEvent": {
             "source": {
                 "row": 8,
                 "column": 14,
                 "local": "ScrollEvent"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:112:6,112:16\r\n"
         },
         "PointProp": {
             "source": {
                 "row": 9,
                 "column": 14,
                 "local": "PointProp"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\PointPropType.js.flow:2:6,2:14\r\n"
         }
     },
     "decls": []

@@ -5,35 +5,40 @@
                 "row": 2,
                 "column": 14,
                 "local": "Category"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\LogBox\\Data\\parseLogBoxLog.js.flow:11:6,11:13\r\n"
         },
         "Message": {
             "source": {
                 "row": 3,
                 "column": 14,
                 "local": "Message"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\LogBox\\Data\\parseLogBoxLog.js.flow:28:6,28:12\r\n"
         },
         "ComponentStack": {
             "source": {
                 "row": 4,
                 "column": 14,
                 "local": "ComponentStack"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\LogBox\\Data\\parseLogBoxLog.js.flow:42:6,42:19\r\n"
         },
         "CodeFrame": {
             "source": {
                 "row": 5,
                 "column": 14,
                 "local": "CodeFrame"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\LogBox\\Data\\parseLogBoxLog.js.flow:12:6,12:14\r\n"
         },
         "Stack": {
             "source": {
                 "row": 6,
                 "column": 14,
                 "local": "Stack"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\LogBox\\Data\\LogBoxSymbolication.js.flow:5:6,5:10\r\n"
         }
     },
     "decls": []

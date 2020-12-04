@@ -5,7 +5,8 @@
                 "row": 5,
                 "column": 14,
                 "local": "ViewProps"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:377:6,377:14\r\n"
         }
     },
     "decls": []

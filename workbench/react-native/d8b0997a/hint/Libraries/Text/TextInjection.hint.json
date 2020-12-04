@@ -5,7 +5,8 @@
                 "row": 2,
                 "column": 15,
                 "local": "Text"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Text\\Text.js.flow:18:5,23:3\r\n"
         }
     },
     "decls": []

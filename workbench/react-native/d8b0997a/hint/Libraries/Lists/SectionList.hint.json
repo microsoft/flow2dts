@@ -5,28 +5,32 @@
                 "row": 7,
                 "column": 14,
                 "local": "ScrollResponderType"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\ScrollView\\ScrollView.js.flow:45:6,45:24\r\n"
         },
         "ScrollToLocationParamsType": {
             "source": {
                 "row": 8,
                 "column": 14,
                 "local": "ScrollToLocationParamsType"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Lists\\VirtualizedSectionList.js.flow:107:6,107:31\r\n"
         },
         "_SectionBase": {
             "source": {
                 "row": 9,
                 "column": 14,
                 "local": "SectionBase"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Lists\\VirtualizedSectionList.js.flow:10:6,10:16\r\n"
         },
         "VirtualizedSectionListProps": {
             "source": {
                 "row": 10,
                 "column": 14,
                 "local": "Props"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Lists\\VirtualizedSectionList.js.flow:99:6,99:10\r\n"
         }
     },
     "decls": []

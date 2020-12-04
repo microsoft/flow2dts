@@ -5,28 +5,32 @@
                 "row": 7,
                 "column": 14,
                 "local": "EndCallback"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\animations\\Animation.js.flow:5:6,5:16\r\n"
         },
         "Animation": {
             "source": {
                 "row": 8,
                 "column": 13,
                 "local": "Animation"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\animations\\Animation.js.flow:14:15,14:23\r\n"
         },
         "InterpolationConfigType": {
             "source": {
                 "row": 9,
                 "column": 14,
                 "local": "InterpolationConfigType"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\nodes\\AnimatedInterpolation.js.flow:9:6,9:28\r\n"
         },
         "AnimatedTracking": {
             "source": {
                 "row": 10,
                 "column": 13,
                 "local": "AnimatedTracking"
-            }
+            },
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\nodes\\AnimatedTracking.js.flow:9:15,9:30\r\n"
         }
     },
     "decls": []
