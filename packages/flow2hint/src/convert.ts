@@ -102,16 +102,6 @@ export async function convert({
     const relativePath = "." + filename.substr(rootDir.length)
     const args = [FLOW_BIN, "get-def", relativePath, `${hintImport.source?.row}`, `${hintImport.source?.column}`]
     await new Promise<void>((resolve, reject) => {
-      console.log(chalk.yellow("node " + args.join(" ")))
-      const spawnResult = spawn("node", args, { cwd: rootDir })
-      spawnResult.stdout.on("data", (data) => {
-        hintImport.stdout = `${data}`
-        console.log(chalk.blueBright(`${data}`))
-      })
-      spawnResult.stderr.on("data", (data) => {
-        console.log(`${data}`)
-      })
-
       let resolved = false
       function callResolve() {
         if (!resolved) {
@@ -120,9 +110,26 @@ export async function convert({
         }
       }
 
+      console.log(chalk.yellow("node " + args.join(" ")))
+      const spawnResult = spawn("node", args, { cwd: rootDir })
+
+      spawnResult.stdout.on("data", (data) => {
+        if (!resolved) {
+          hintImport.stdout = `${data}`
+          console.log(chalk.blueBright(`${data}`))
+        }
+      })
+      spawnResult.stderr.on("data", (data) => {
+        if (!resolved) {
+          console.log(`${data}`)
+        }
+      })
+
       spawnResult.on("error", (error) => {
-        console.log(chalk.red(error.message))
-        callResolve()
+        if (!resolved) {
+          console.log(chalk.red(error.message))
+          callResolve()
+        }
       })
       spawnResult.on("disconnect", () => {
         callResolve()
