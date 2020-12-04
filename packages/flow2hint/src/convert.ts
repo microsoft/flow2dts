@@ -4,7 +4,7 @@ import babelTraverse from "@babel/traverse"
 // @ts-ignore
 import path from "path"
 import fs from "fs"
-import { exec } from "child_process"
+import { exec, spawn } from "child_process"
 import chalk from "chalk"
 
 interface HintPos {
@@ -23,7 +23,7 @@ interface HintResolved extends HintPos {
 interface HintImport {
   source: HintIdentifier
   resolved?: HintResolved
-  error?: string
+  stdout?: string
 }
 
 interface HintDecl extends HintIdentifier {
@@ -75,6 +75,8 @@ function pluginFlow2Hint(rootDir: string, filename: string): Visitor<HintFile> {
   }
 }
 
+const FLOW_BIN = require.resolve("flow-bin/cli.js")
+
 export async function convert({
   rootDir,
   filename,
@@ -98,20 +100,23 @@ export async function convert({
     const hintImport = hint.imports[key]
 
     const relativePath = "." + filename.substr(rootDir.length)
-    const execCommand = `flow get-def ${relativePath} ${hintImport.source?.row} ${hintImport.source?.column}`
+    const args = [FLOW_BIN, "get-def", relativePath, `${hintImport.source?.row}`, `${hintImport.source?.column}`]
     await new Promise<void>((resolve, reject) => {
-      console.log(chalk.yellow(execCommand))
-      resolve()
-      /*exec(execCommand, { cwd: rootDir, encoding: "utf-8" }, (error, stdout, stderr) => {
-        if (error) {
-          hintImport.error = error.message
-        } else if (stderr) {
-          hintImport.error = stderr
-        } else {
-          hintImport.resolved = { row: 0, column: 0, file: stdout }
-        }
+      console.log(chalk.yellow("node " + args.join(" ")))
+      const spawnResult = spawn("node", args, { cwd: rootDir })
+      spawnResult.stdout.on("data", (data) => {
+        hintImport.stdout = `${data}`
+        console.log(chalk.blueBright(`${data}`))
+      })
+      spawnResult.stderr.on("data", (data) => {
+        console.log(`${data}`)
+      })
+      spawnResult.on("error", (error) => {
+        console.log(chalk.red(error.message))
+      })
+      spawnResult.on("exit", () => {
         resolve()
-      })*/
+      })
     })
   }
 
