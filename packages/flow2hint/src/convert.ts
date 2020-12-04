@@ -4,6 +4,8 @@ import babelTraverse from "@babel/traverse"
 // @ts-ignore
 import path from "path"
 import fs from "fs"
+import { exec } from "child_process"
+import chalk from "chalk"
 
 interface HintPos {
   row: number
@@ -21,6 +23,7 @@ interface HintResolved extends HintPos {
 interface HintImport {
   source: HintIdentifier
   resolved?: HintResolved
+  error?: string
 }
 
 interface HintDecl extends HintIdentifier {
@@ -40,37 +43,47 @@ function id2hint(id: t.Identifier): HintIdentifier {
   }
 }
 
-const pluginFlow2Hint: Visitor<HintFile> = {
-  ImportDeclaration: {
-    exit(path, state) {
-      for (const specifier of path.node.specifiers) {
-        let hintImport: HintImport
-        switch (specifier.type) {
-          case "ImportDefaultSpecifier": {
-            hintImport = { source: id2hint(specifier.local) }
-            state.imports[specifier.local.name] = hintImport
-            break
-          }
-          case "ImportNamespaceSpecifier": {
-            hintImport = { source: id2hint(specifier.local) }
-            state.imports[specifier.local.name] = hintImport
-            break
-          }
-          case "ImportSpecifier": {
-            if (specifier.imported.type === "Identifier") {
-              hintImport = { source: id2hint(specifier.imported) }
-              state.imports[specifier.local.name] = hintImport
+function pluginFlow2Hint(rootDir: string, filename: string): Visitor<HintFile> {
+  return {
+    ImportDeclaration: {
+      exit(path, state) {
+        for (const specifier of path.node.specifiers) {
+          let source: HintIdentifier | undefined
+          switch (specifier.type) {
+            case "ImportDefaultSpecifier": {
+              source = id2hint(specifier.local)
+              break
             }
-            break
+            case "ImportNamespaceSpecifier": {
+              source = id2hint(specifier.local)
+              break
+            }
+            case "ImportSpecifier": {
+              if (specifier.imported.type === "Identifier") {
+                source = id2hint(specifier.imported)
+              }
+              break
+            }
+          }
+
+          if (source) {
+            state.imports[specifier.local.name] = { source }
           }
         }
-        // assign hintImport.resolved
-      }
+      },
     },
-  },
+  }
 }
 
-export async function convert({ filename, outFilename }: { filename: string; outFilename: string }): Promise<string> {
+export async function convert({
+  rootDir,
+  filename,
+  outFilename,
+}: {
+  rootDir: string
+  filename: string
+  outFilename: string
+}): Promise<string> {
   const flowCode = fs.readFileSync(filename, { encoding: "utf8" })
   const flowAst = babelParser.parse(flowCode, {
     plugins: ["flow"],
@@ -79,7 +92,29 @@ export async function convert({ filename, outFilename }: { filename: string; out
   })
 
   const hint: HintFile = { imports: {}, decls: [] }
-  babelTraverse<HintFile>(flowAst, pluginFlow2Hint, undefined, hint)
+  babelTraverse<HintFile>(flowAst, pluginFlow2Hint(rootDir, filename), undefined, hint)
+
+  for (const key in hint.imports) {
+    const hintImport = hint.imports[key]
+
+    const relativePath = "." + filename.substr(rootDir.length)
+    const execCommand = `flow get-def ${relativePath} ${hintImport.source?.row} ${hintImport.source?.column}`
+    await new Promise<void>((resolve, reject) => {
+      console.log(chalk.yellow(execCommand))
+      resolve()
+      /*exec(execCommand, { cwd: rootDir, encoding: "utf-8" }, (error, stdout, stderr) => {
+        if (error) {
+          hintImport.error = error.message
+        } else if (stderr) {
+          hintImport.error = stderr
+        } else {
+          hintImport.resolved = { row: 0, column: 0, file: stdout }
+        }
+        resolve()
+      })*/
+    })
+  }
+
   const outData = JSON.stringify(hint, undefined, 4)
 
   await fs.promises.mkdir(path.dirname(outFilename), { recursive: true })

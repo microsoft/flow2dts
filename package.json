@@ -41,8 +41,7 @@
     "hint:react-native:v0.63.3:cli-with-globs": "yarn hint:react-native:v0.63.3:cli \"./workbench/react-native/v0.63.3/inputs/{index,Libraries/**/*}.js.flow\" \"!./workbench/react-native/v0.63.3/inputs/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow\" \"!./workbench/react-native/v0.63.3/inputs/Libraries/{Inspector,JSInspector,NewAppScreen,ReactPrivate}/**/*.js.flow\" \"!./workbench/react-native/v0.63.3/inputs/Libraries/Animated/AnimatedWeb.js.flow\" \"!./workbench/react-native/v0.63.3/inputs/Libraries/{Promise,promiseRejectionIsError,promiseRejectionTrackingOptions}.js.flow\" \"!./workbench/react-native/v0.63.3/inputs/Libraries/vendor/core/ErrorUtils.js.flow\"",
     "prettify": "prettier --write \"packages/**/*.ts\" && prettier --write \"packages/**/*.d.ts\" && prettier --write \"packages/**/*.js\"",
     "postinstall": "patch-package",
-    "experiment:flowcheck": "pushd \"workbench/react-native/v0.63.3/inputs\" && flow check && popd",
-    "experiment:flowgetdef": "pushd \"workbench/react-native/v0.63.3/inputs\" && flow get-def index.js.flow 50 15 && popd"
+    "experiment:flowgetdef": "pushd \"workbench/react-native/v0.63.3/inputs\" && flow get-def ./index.js.flow 50 15 && popd"
   },
   "resolutions": {
     "@types/react": "16.9.56",

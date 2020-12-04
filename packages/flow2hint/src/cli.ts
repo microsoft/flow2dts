@@ -18,20 +18,21 @@ async function run({
   outDir: string
   patterns: string[]
   cwd?: string
-}): Promise<number> {
-  const conversions: Array<Promise<void>> = []
+}): Promise<[number, number]> {
+  let totalCount = 0
+  let successCount = 0
   for await (const _filename of glob.stream(patterns, { absolute: true, cwd })) {
     const filename = _filename as string
     const outFilename = getOutFilename(outDir, rootDir, filename, FLOW_EXTNAME)
-    conversions.push(
-      convert({ filename, outFilename }).then((outFilename) => {
-        const relativeOutFilename = relativePath(cwd, outFilename)
-        console.log(chalk.green(`✓ ${relativePath(cwd, outFilename)}`))
-      })
-    )
+    totalCount++
+
+    console.log(`⚒️ ${chalk.dim(relativePath(cwd, filename))}`)
+    await convert({ rootDir, filename, outFilename }).then((outFilename) => {
+      console.log(chalk.green(`✓ ${relativePath(cwd, outFilename)}`))
+      successCount++
+    })
   }
-  await Promise.all(conversions)
-  return conversions.length
+  return [totalCount, successCount]
 }
 
 function relativePath(cwd: string | undefined, filename: string) {
@@ -73,9 +74,9 @@ async function main() {
   const rootDir = path.resolve(cwd || "", argv.rootDir)
   const patterns = argv._
 
-  const totalCount = await run({ cwd, outDir, rootDir, patterns })
-  console.log(`\nSuccessfully converted ${totalCount}\n`)
-  process.exit(0)
+  const [totalCount, successCount] = await run({ cwd, outDir, rootDir, patterns })
+  console.log(`\nSuccessfully converted ${successCount} of ${totalCount}\n`)
+  process.exit(totalCount - successCount)
 }
 
 main()
