@@ -3,6 +3,27 @@ import $1 from "./DeprecatedColorPropType";
 import $2 from "./DeprecatedEdgeInsetsPropType";
 import $3 from "prop-types";
 declare var stylePropType: ReactPropsCheckType;
+declare const $f2t_ellipsizeMode: React$PropType$Primitive<"head" | "middle" | "tail" | "clip">;
+declare const $f2t_numberOfLines: $TypeOf<typeof $3.number>;
+declare const $f2t_textBreakStrategy: React$PropType$Primitive<"simple" | "highQuality" | "balanced">;
+declare const $f2t_onLayout: $TypeOf<typeof $3.func>;
+declare const $f2t_onPress: $TypeOf<typeof $3.func>;
+declare const $f2t_onLongPress: $TypeOf<typeof $3.func>;
+declare const $f2t_pressRetentionOffset: $TypeOf<typeof $2>;
+declare const $f2t_selectable: $TypeOf<typeof $3.bool>;
+declare const $f2t_selectionColor: $TypeOf<typeof $1>;
+declare const $f2t_suppressHighlighting: $TypeOf<typeof $3.bool>;
+declare const $f2t_style: $TypeOf<typeof stylePropType>;
+declare const $f2t_testID: $TypeOf<typeof $3.string>;
+declare const $f2t_nativeID: $TypeOf<typeof $3.string>;
+declare const $f2t_allowFontScaling: $TypeOf<typeof $3.bool>;
+declare const $f2t_maxFontSizeMultiplier: $TypeOf<typeof $3.number>;
+declare const $f2t_accessible: $TypeOf<typeof $3.bool>;
+declare const $f2t_adjustsFontSizeToFit: $TypeOf<typeof $3.bool>;
+declare const $f2t_minimumFontScale: $TypeOf<typeof $3.number>;
+declare const $f2t_disabled: $TypeOf<typeof $3.bool>;
+declare const $f2t_dataDetectorType: React$PropType$Primitive<"phoneNumber" | "link" | "email" | "none" | "all">;
+export { $f2t_ellipsizeMode as ellipsizeMode, $f2t_numberOfLines as numberOfLines, $f2t_textBreakStrategy as textBreakStrategy, $f2t_onLayout as onLayout, $f2t_onPress as onPress, $f2t_onLongPress as onLongPress, $f2t_pressRetentionOffset as pressRetentionOffset, $f2t_selectable as selectable, $f2t_selectionColor as selectionColor, $f2t_suppressHighlighting as suppressHighlighting, $f2t_style as style, $f2t_testID as testID, $f2t_nativeID as nativeID, $f2t_allowFontScaling as allowFontScaling, $f2t_maxFontSizeMultiplier as maxFontSizeMultiplier, $f2t_accessible as accessible, $f2t_adjustsFontSizeToFit as adjustsFontSizeToFit, $f2t_minimumFontScale as minimumFontScale, $f2t_disabled as disabled, $f2t_dataDetectorType as dataDetectorType };
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

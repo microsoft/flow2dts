@@ -2,6 +2,10 @@
 import { AppearancePreferences } from "./NativeAppearance";
 import { ColorSchemeName } from "./NativeAppearance";
 declare type AppearanceListener = (preferences: AppearancePreferences) => void;
+declare const $f2t_getColorScheme: () => null | undefined | ColorSchemeName;
+declare const $f2t_addChangeListener: (listener: AppearanceListener) => void;
+declare const $f2t_removeChangeListener: (listener: AppearanceListener) => void;
+export { $f2t_getColorScheme as getColorScheme, $f2t_addChangeListener as addChangeListener, $f2t_removeChangeListener as removeChangeListener };
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

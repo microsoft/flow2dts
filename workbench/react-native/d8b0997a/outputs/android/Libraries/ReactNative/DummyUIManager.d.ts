@@ -1,4 +1,32 @@
 import { $FlowFixMe } from "flow2dts-flow-types-polyfill";
+declare const $f2t_getViewManagerConfig: (viewManagerName: string) => unknown;
+declare const $f2t_getConstants: () => {};
+declare const $f2t_getConstantsForViewManager: (viewManagerName: string) => void;
+declare const $f2t_getDefaultEventTypes: () => $FlowFixMe[];
+declare const $f2t_lazilyLoadView: (name: string) => void;
+declare const $f2t_createView: (reactTag: null | undefined | number, viewName: string, rootTag: number, props: Object) => void;
+declare const $f2t_updateView: (reactTag: number, viewName: string, props: Object) => void;
+declare const $f2t_focus: (reactTag: null | undefined | number) => void;
+declare const $f2t_blur: (reactTag: null | undefined | number) => void;
+declare const $f2t_findSubviewIn: (reactTag: null | undefined | number, point: number[], callback: (nativeViewTag: number, left: number, top: number, width: number, height: number) => void) => void;
+declare const $f2t_dispatchViewManagerCommand: (reactTag: null | undefined | number, commandID: number, commandArgs: null | undefined | (string | number | boolean)[]) => void;
+declare const $f2t_measure: (reactTag: null | undefined | number, callback: (left: number, top: number, width: number, height: number, pageX: number, pageY: number) => void) => void;
+declare const $f2t_measureInWindow: (reactTag: null | undefined | number, callback: (x: number, y: number, width: number, height: number) => void) => void;
+declare const $f2t_viewIsDescendantOf: (reactTag: null | undefined | number, ancestorReactTag: null | undefined | number, callback: (result: boolean[]) => void) => void;
+declare const $f2t_measureLayout: (reactTag: null | undefined | number, ancestorReactTag: null | undefined | number, errorCallback: (error: Object) => void, callback: (left: number, top: number, width: number, height: number) => void) => void;
+declare const $f2t_measureLayoutRelativeToParent: (reactTag: null | undefined | number, errorCallback: (error: Object) => void, callback: (left: number, top: number, width: number, height: number) => void) => void;
+declare const $f2t_setJSResponder: (reactTag: null | undefined | number, blockNativeResponder: boolean) => void;
+declare const $f2t_clearJSResponder: () => void;
+declare const $f2t_configureNextLayoutAnimation: (config: Object, callback: () => void, errorCallback: (error: Object) => void) => void;
+declare const $f2t_removeSubviewsFromContainerWithID: (containerID: number) => void;
+declare const $f2t_replaceExistingNonRootView: (reactTag: null | undefined | number, newReactTag: null | undefined | number) => void;
+declare const $f2t_setChildren: (containerTag: null | undefined | number, reactTags: number[]) => void;
+declare const $f2t_manageChildren: (containerTag: null | undefined | number, moveFromIndices: number[], moveToIndices: number[], addChildReactTags: number[], addAtIndices: number[], removeAtIndices: number[]) => void;
+declare const $f2t_setLayoutAnimationEnabledExperimental: (enabled: boolean) => void;
+declare const $f2t_sendAccessibilityEvent: (reactTag: null | undefined | number, eventType: number) => void;
+declare const $f2t_showPopupMenu: (reactTag: null | undefined | number, items: string[], error: (error: Object) => void, success: (event: string, selected?: number) => void) => void;
+declare const $f2t_dismissPopupMenu: () => void;
+export { $f2t_getViewManagerConfig as getViewManagerConfig, $f2t_getConstants as getConstants, $f2t_getConstantsForViewManager as getConstantsForViewManager, $f2t_getDefaultEventTypes as getDefaultEventTypes, $f2t_lazilyLoadView as lazilyLoadView, $f2t_createView as createView, $f2t_updateView as updateView, $f2t_focus as focus, $f2t_blur as blur, $f2t_findSubviewIn as findSubviewIn, $f2t_dispatchViewManagerCommand as dispatchViewManagerCommand, $f2t_measure as measure, $f2t_measureInWindow as measureInWindow, $f2t_viewIsDescendantOf as viewIsDescendantOf, $f2t_measureLayout as measureLayout, $f2t_measureLayoutRelativeToParent as measureLayoutRelativeToParent, $f2t_setJSResponder as setJSResponder, $f2t_clearJSResponder as clearJSResponder, $f2t_configureNextLayoutAnimation as configureNextLayoutAnimation, $f2t_removeSubviewsFromContainerWithID as removeSubviewsFromContainerWithID, $f2t_replaceExistingNonRootView as replaceExistingNonRootView, $f2t_setChildren as setChildren, $f2t_manageChildren as manageChildren, $f2t_setLayoutAnimationEnabledExperimental as setLayoutAnimationEnabledExperimental, $f2t_sendAccessibilityEvent as sendAccessibilityEvent, $f2t_showPopupMenu as showPopupMenu, $f2t_dismissPopupMenu as dismissPopupMenu };
 // @flow
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
