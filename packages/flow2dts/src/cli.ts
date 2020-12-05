@@ -86,8 +86,7 @@ async function main() {
   const argv = yargs
     .scriptName("flow2dts")
     .usage(
-      "$0 --root path/to/flow/inputs --out path/to/ts/outputs [FILES]",
-      "FILES can be a list of include patterns or exclude by prepending the ! operator."
+      "$0 --root path/to/flow/inputs --out path/to/ts/outputs [FILES]\n\nFILES can be a list of include patterns or exclude by prepending the ! operator."
     )
     .options({
       rootDir: {
