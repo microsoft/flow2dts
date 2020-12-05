@@ -108,6 +108,31 @@ export const exportVisitor: Visitor<State> = {
         t.assertIdentifier(typeAnnotation.typeName)
         path.replaceWith(t.exportDefaultDeclaration(typeAnnotation.typeName))
       } else {
+        // Export each value separately as ES6 named exports
+        if (t.isTSTypeLiteral(typeAnnotation)) {
+          const exportSpecifiers = typeAnnotation.members.map((property) => {
+            t.assertTSPropertySignature(property)
+            t.assertTSTypeAnnotation(property.typeAnnotation)
+            const propertyTypeAnnotation = property.typeAnnotation.typeAnnotation
+            t.assertIdentifier(property.key)
+            let inlineType: null | t.TSType = null
+            if (
+              !t.isTSTypeReference(propertyTypeAnnotation) ||
+              (t.isIdentifier(propertyTypeAnnotation.typeName) &&
+                propertyTypeAnnotation.typeName.name !== property.key.name)
+            ) {
+              inlineType = property.typeAnnotation.typeAnnotation
+            }
+            const id = t.identifier(`$f2t_${property.key.name}`)
+            id.typeAnnotation = t.tsTypeAnnotation(inlineType || t.tsTypeReference(property.key))
+            const variableDeclaration = t.variableDeclaration("const", [t.variableDeclarator(id)])
+            variableDeclaration.declare = true
+            path.insertBefore(variableDeclaration)
+            return t.exportSpecifier(id, property.key)
+          })
+          path.insertBefore(t.exportNamedDeclaration(undefined, exportSpecifiers))
+        }
+        // Export the entire object as the ES6 default export
         const id = t.identifier(nameForExportDefault)
         id.typeAnnotation = t.tsTypeAnnotation(typeAnnotation)
         path.replaceWithMultiple([

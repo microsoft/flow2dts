@@ -125,41 +125,6 @@ const visitors: OverridesVisitors = {
         )
       },
     },
-    // Also export values using ES6 named exports, as users typically import from react-native using ES6 named imports.
-    // TODO: Make upstream export as ES6 named exports.
-    VariableDeclaration: {
-      exit(path) {
-        const declarator = path.node.declarations[0]
-        t.assertIdentifier(declarator.id)
-        if (declarator.id.name === "$f2tExportDefault") {
-          const defaultExportObjectType = declarator.id.typeAnnotation
-          t.assertTSTypeAnnotation(defaultExportObjectType)
-          t.assertTSTypeLiteral(defaultExportObjectType.typeAnnotation)
-
-          const exportSpecifiers = defaultExportObjectType.typeAnnotation.members.map((property) => {
-            t.assertTSPropertySignature(property)
-            t.assertTSTypeAnnotation(property.typeAnnotation)
-            const propertyTypeAnnotation = property.typeAnnotation.typeAnnotation
-            t.assertIdentifier(property.key)
-            let inlineType: null | t.TSType = null
-            if (
-              !t.isTSTypeReference(propertyTypeAnnotation) ||
-              (t.isIdentifier(propertyTypeAnnotation.typeName) &&
-                propertyTypeAnnotation.typeName.name !== property.key.name)
-            ) {
-              inlineType = property.typeAnnotation.typeAnnotation
-            }
-            const id = t.identifier(`$f2t_${property.key.name}`)
-            id.typeAnnotation = t.tsTypeAnnotation(inlineType || t.tsTypeReference(property.key))
-            const variableDeclaration = t.variableDeclaration("const", [t.variableDeclarator(id)])
-            variableDeclaration.declare = true
-            path.insertBefore(variableDeclaration)
-            return t.exportSpecifier(id, property.key)
-          })
-          path.insertBefore(t.exportNamedDeclaration(undefined, exportSpecifiers))
-        }
-      },
-    },
   },
   "Libraries/Lists/SectionList.d.ts": listsVisitor,
   "Libraries/Lists/VirtualizedSectionList.d.ts": listsVisitor,
