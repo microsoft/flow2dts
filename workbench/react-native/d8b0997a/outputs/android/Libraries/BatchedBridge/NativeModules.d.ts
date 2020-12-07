@@ -12,9 +12,10 @@ declare type ModuleConfig = [string
 /* sync method IDs */
 ];
 declare type MethodType = "async" | "promise" | "sync";
-declare var NativeModules: {
+export interface NativeModules {
   [moduleName: string]: $FlowFixMe;
-};
+}
+declare var NativeModules: NativeModules;
 export type { ModuleConfig };
 export type { MethodType };
 declare const $f2tExportDefault: $TypeOf<typeof NativeModules>;

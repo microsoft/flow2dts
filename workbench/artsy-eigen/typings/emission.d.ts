@@ -1,9 +1,9 @@
 import type { ViewDescriptor } from "lib/navigation/navigate"
 import { PushAuthorizationStatus } from "lib/Scenes/MyProfile/MyProfilePushNotifications"
 import type { NativeState } from "lib/store/NativeModel"
-import { NativeModulesStatic } from "react-native"
-declare module "react-native" {
-  interface NativeModulesStatic {
+
+declare module "react-native/outputs/ios/Libraries/BatchedBridge/NativeModules" {
+  interface NativeModules {
     ARTemporaryAPIModule: {
       appVersion: string
       requestNotificationPermissions(): void

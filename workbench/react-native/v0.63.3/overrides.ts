@@ -367,6 +367,26 @@ const visitors: OverridesVisitors = {
       },
     },
   },
+  // This is done so people can merge their own NativeModules interface declaration.
+  "Libraries/BatchedBridge/NativeModules.d.ts": {
+    DeclareVariable: {
+      exit(path) {
+        const id = path.node.id
+        if (t.isIdentifier(id) && id.name === "NativeModules") {
+          t.assertTypeAnnotation(id.typeAnnotation)
+          const typeLiteral = id.typeAnnotation.typeAnnotation as any
+          t.assertTSTypeLiteral(typeLiteral)
+          const members = typeLiteral.members
+          path.insertBefore(
+            t.exportNamedDeclaration(
+              t.tsInterfaceDeclaration(t.identifier("NativeModules"), undefined, undefined, t.tsInterfaceBody(members))
+            )
+          )
+          id.typeAnnotation.typeAnnotation = t.tsTypeReference(t.identifier("NativeModules")) as any
+        }
+      },
+    },
+  },
 }
 
 export default visitors
