@@ -25,7 +25,7 @@ export const typeReferenceRecognizerVisitor: Visitor<State> = {
       if (decl.id.typeAnnotation.typeAnnotation.argument.type !== "GenericTypeAnnotation") return
 
       if (state.typeReferences.records[decl.id.name]) {
-        throw new Error(`Found duplicated variables in module: ${decl.id.name}`)
+        throw path.buildCodeFrameError(`Found duplicated variables in module: ${decl.id.name}`)
       }
 
       state.typeReferences.records[decl.id.name] = {
@@ -43,7 +43,7 @@ export const typeReferenceRecognizerVisitor: Visitor<State> = {
         const [name] = requireDecl
 
         if (state.typeReferences.imports[name]) {
-          throw new Error(`Found duplicated import in module: ${name}`)
+          throw path.buildCodeFrameError(`Found duplicated import in module: ${name}`)
         }
         state.typeReferences.imports[name] = decl
       }
@@ -69,7 +69,7 @@ export const typeReferenceRecognizerVisitor: Visitor<State> = {
 
         const name = specifier.local.name
         if (state.typeReferences.imports[name]) {
-          throw new Error(`Found duplicated import in module: ${name}`)
+          throw path.buildCodeFrameError(`Found duplicated import in module: ${name}`)
         }
         state.typeReferences.imports[name] = path.node
       }

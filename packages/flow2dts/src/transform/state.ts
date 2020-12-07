@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import { Visitor, types as t } from "@babel/core"
+import { Visitor } from "@babel/core"
 import { RecognizedTypeReferences } from "./typeReferenceResolver"
 
 export { isVariableDiscardable } from "./typeReferenceResolver"

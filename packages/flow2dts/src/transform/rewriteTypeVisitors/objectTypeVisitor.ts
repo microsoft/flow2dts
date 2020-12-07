@@ -232,7 +232,7 @@ export const objectTypeVisitor: Visitor<State> = {
         } else if (t.isTSTypeElement(prop) || t.isTSMethodSignature(prop)) {
           elements.push(prop)
         } else {
-          throw new Error("Unexpected property type")
+          throw path.buildCodeFrameError("Unexpected property type")
         }
       }
 

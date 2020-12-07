@@ -58,14 +58,14 @@ export const typeReferenceVisitor: Visitor<State> = {
           )
         } else if (name === "Array" && typeParameters) {
           if (typeParameters.length !== 1) {
-            throw new Error(
+            throw path.buildCodeFrameError(
               `Array must have exactly one type argument:\r\n${JSON.stringify(path.node.id, undefined, 4)}`
             )
           }
           path.replaceWith(t.tsArrayType(typeParameters[0]))
         } else if (name === "$ReadOnlyArray") {
           if (!typeParameters || typeParameters.length !== 1) {
-            throw new Error(
+            throw path.buildCodeFrameError(
               `$ReadOnlyArray must have exactly one type argument:\r\n${JSON.stringify(path.node.id, undefined, 4)}`
             )
           }
@@ -74,14 +74,14 @@ export const typeReferenceVisitor: Visitor<State> = {
           )
         } else if (name === "$ReadOnly") {
           if (!typeParameters || typeParameters.length !== 1) {
-            throw new Error(
+            throw path.buildCodeFrameError(
               `$ReadOnly must have exactly one type argument:\r\n${JSON.stringify(path.node.id, undefined, 4)}`
             )
           }
           path.replaceWith(t.tsTypeReference(t.identifier("Readonly"), t.tsTypeParameterInstantiation(typeParameters)))
         } else if (name === "$Exact") {
           if (!typeParameters || typeParameters.length !== 1) {
-            throw new Error(
+            throw path.buildCodeFrameError(
               `$Exact must have exactly one type argument:\r\n${JSON.stringify(path.node.id, undefined, 4)}`
             )
           }

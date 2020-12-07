@@ -164,7 +164,7 @@ export const exportVisitor: Visitor<State> = {
           break
         }
         default:
-          throw new Error(
+          throw path.buildCodeFrameError(
             `Only identifiers and type cast expressions are allowed in export default:\r\n${JSON.stringify(
               decl,
               undefined,

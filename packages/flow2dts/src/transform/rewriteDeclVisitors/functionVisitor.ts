@@ -1,11 +1,12 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import { Visitor, types as t } from "@babel/core"
+import { Visitor, types as t, NodePath } from "@babel/core"
 import { State } from "../state"
 import { assertTSType } from "../utilities"
 
 function convertParameters(
+  path: NodePath<any>,
   params: Array<t.Identifier | t.Pattern | t.RestElement | t.TSParameterProperty>
 ): (t.Identifier | t.RestElement)[] {
   return params.map((flowParam, index) => {
@@ -27,7 +28,7 @@ function convertParameters(
         return rarg
       }
       default: {
-        throw new Error("Pattern function parameters are not supported yet.")
+        throw path.buildCodeFrameError("Pattern function parameters are not supported yet.")
       }
     }
   })
@@ -61,7 +62,7 @@ export const functionVisitor: Visitor<State> = {
           : (<t.TypeAnnotation>returnType).typeAnnotation
       assertTSType(returnTSType)
 
-      const args = convertParameters(params)
+      const args = convertParameters(path, params)
 
       const newAst = t.tsDeclareFunction(id, typeParameters, args, t.tsTypeAnnotation(returnTSType))
       newAst.declare = true
@@ -72,7 +73,7 @@ export const functionVisitor: Visitor<State> = {
     exit(path) {
       const { kind, key, returnType, params, typeParameters } = path.node
       if (typeParameters !== null && typeParameters !== undefined) {
-        throw new Error("Generic function not supported yet.")
+        throw path.buildCodeFrameError("Generic function not supported yet.")
       }
 
       const returnTSType =
@@ -83,7 +84,7 @@ export const functionVisitor: Visitor<State> = {
           : (<t.TypeAnnotation>returnType).typeAnnotation
       assertTSType(returnTSType)
 
-      const args = convertParameters(params)
+      const args = convertParameters(path, params)
 
       const newAst = t.tsDeclareMethod(
         null,
