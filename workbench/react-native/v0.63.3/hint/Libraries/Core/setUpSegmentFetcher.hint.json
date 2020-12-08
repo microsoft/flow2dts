@@ -1,4 +1,53 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 6,
+            "local": "FetchSegmentFunction",
+            "type": "type"
+        },
+        {
+            "row": 3,
+            "column": 6,
+            "local": "GetSegmentFunction",
+            "type": "type"
+        },
+        {
+            "row": 8,
+            "column": 6,
+            "local": "otaBuildNumber",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 6,
+            "local": "requestedModuleName",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 18,
+            "local": "__fetchSegment",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 6,
+            "local": "otaBuildNumber",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 6,
+            "local": "requestedModuleName",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 18,
+            "local": "__getSegment",
+            "type": "value"
+        }
+    ]
 }

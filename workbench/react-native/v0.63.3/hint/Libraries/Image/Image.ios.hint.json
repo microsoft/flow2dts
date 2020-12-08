@@ -17,5 +17,108 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Image\\ImageViewNativeComponent.js.flow:29:24,29:49\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "DeprecatedImagePropType",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 13,
+            "local": "resolveAssetSource",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 18,
+            "local": "getSize",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 18,
+            "local": "getSizeWithHeaders",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 18,
+            "local": "prefetch",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 18,
+            "local": "queryCache",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 5,
+            "local": "getSize",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 5,
+            "local": "getSizeWithHeaders",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 5,
+            "local": "prefetch",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 5,
+            "local": "queryCache",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 5,
+            "local": "resolveAssetSource",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 5,
+            "local": "propTypes",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 6,
+            "local": "ImageComponentStatics",
+            "type": "type"
+        }
+    ]
 }

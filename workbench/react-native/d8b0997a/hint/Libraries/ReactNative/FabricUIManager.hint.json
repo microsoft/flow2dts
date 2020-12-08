@@ -33,5 +33,126 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:249:6,249:26\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 7,
+            "column": 6,
+            "local": "Node",
+            "type": "type"
+        },
+        {
+            "row": 8,
+            "column": 6,
+            "local": "NodeSet",
+            "type": "type"
+        },
+        {
+            "row": 9,
+            "column": 6,
+            "local": "NodeProps",
+            "type": "type"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "InstanceHandle",
+            "type": "type"
+        },
+        {
+            "row": 12,
+            "column": 4,
+            "local": "createNode",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 4,
+            "local": "cloneNode",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 4,
+            "local": "cloneNodeWithNewChildren",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 4,
+            "local": "cloneNodeWithNewProps",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 4,
+            "local": "cloneNodeWithNewChildrenAndProps",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 4,
+            "local": "createChildSet",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 4,
+            "local": "appendChild",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 4,
+            "local": "appendChildToSet",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 4,
+            "local": "completeRoot",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 4,
+            "local": "setNativeProps",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 4,
+            "local": "measure",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 4,
+            "local": "measureInWindow",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 4,
+            "local": "measureLayout",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 4,
+            "local": "configureNextLayoutAnimation",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 6,
+            "local": "Spec",
+            "type": "type"
+        },
+        {
+            "row": 49,
+            "column": 13,
+            "local": "FabricUIManager",
+            "type": "value"
+        }
+    ]
 }

@@ -1,4 +1,215 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 6,
+            "local": "FillRateInfo",
+            "type": "type"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "local": "any_blank_count",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 3,
+            "local": "any_blank_ms",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "any_blank_speed_sum",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "mostly_blank_count",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "mostly_blank_ms",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "pixels_blank",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "pixels_sampled",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "pixels_scrolled",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "total_time_spent",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "sample_count",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 15,
+            "local": "Info",
+            "type": "class"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "inLayout",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "length",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 3,
+            "local": "offset",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 6,
+            "local": "FrameMetrics",
+            "type": "type"
+        },
+        {
+            "row": 25,
+            "column": 58,
+            "local": "remove",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 10,
+            "local": "addListener",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 10,
+            "local": "setSampleRate",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 10,
+            "local": "setMinSampleCount",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 3,
+            "local": "activate",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "deactivateAndFlush",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 7,
+            "local": "data",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 7,
+            "local": "getItemCount",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 7,
+            "local": "initialNumToRender",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 7,
+            "local": "first",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 7,
+            "local": "last",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 7,
+            "local": "dOffset",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 7,
+            "local": "offset",
+            "type": "value"
+        },
+        {
+            "row": 52,
+            "column": 7,
+            "local": "velocity",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 7,
+            "local": "visibleLength",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 3,
+            "local": "computeBlankness",
+            "type": "value"
+        },
+        {
+            "row": 58,
+            "column": 3,
+            "local": "enabled",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 15,
+            "local": "FillRateHelper",
+            "type": "class"
+        }
+    ]
 }

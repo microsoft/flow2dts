@@ -48,5 +48,102 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\DatePicker\\RCTDatePickerNativeComponent.js.flow:8:14,8:33\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 12,
+            "column": 5,
+            "local": "timestamp",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "Event",
+            "type": "type"
+        },
+        {
+            "row": 19,
+            "column": 5,
+            "local": "date",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 5,
+            "local": "initialDate",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 5,
+            "local": "locale",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 5,
+            "local": "maximumDate",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 5,
+            "local": "minimumDate",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 5,
+            "local": "minuteInterval",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 5,
+            "local": "mode",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 5,
+            "local": "onChange",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 5,
+            "local": "timeZoneOffsetInMinutes",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 6,
+            "local": "NativeProps",
+            "type": "type"
+        },
+        {
+            "row": 34,
+            "column": 6,
+            "local": "ComponentType",
+            "type": "type"
+        },
+        {
+            "row": 37,
+            "column": 4,
+            "local": "setNativeDate",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 11,
+            "local": "NativeCommands",
+            "type": "type"
+        },
+        {
+            "row": 43,
+            "column": 13,
+            "local": "Commands",
+            "type": "value"
+        }
+    ]
 }

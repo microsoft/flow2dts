@@ -17,5 +17,138 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:377:6,377:14\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 13,
+            "local": "RefreshLayoutConsts",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 5,
+            "local": "tintColor",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 5,
+            "local": "titleColor",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 5,
+            "local": "title",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "IOSProps",
+            "type": "type"
+        },
+        {
+            "row": 32,
+            "column": 5,
+            "local": "enabled",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 5,
+            "local": "colors",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 5,
+            "local": "progressBackgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 5,
+            "local": "size",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 5,
+            "local": "progressViewOffset",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 6,
+            "local": "AndroidProps",
+            "type": "type"
+        },
+        {
+            "row": 63,
+            "column": 5,
+            "local": "onRefresh",
+            "type": "value"
+        },
+        {
+            "row": 68,
+            "column": 5,
+            "local": "refreshing",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 6,
+            "local": "RefreshControlProps",
+            "type": "type"
+        },
+        {
+            "row": 74,
+            "column": 10,
+            "local": "SIZE",
+            "type": "value"
+        },
+        {
+            "row": 76,
+            "column": 3,
+            "local": "componentDidMount",
+            "type": "value"
+        },
+        {
+            "row": 78,
+            "column": 3,
+            "local": "componentDidUpdate",
+            "type": "value"
+        },
+        {
+            "row": 80,
+            "column": 3,
+            "local": "render",
+            "type": "value"
+        },
+        {
+            "row": 72,
+            "column": 15,
+            "local": "RefreshControl",
+            "type": "class"
+        },
+        {
+            "row": 82,
+            "column": 13,
+            "local": "$2",
+            "type": "value"
+        }
+    ]
 }

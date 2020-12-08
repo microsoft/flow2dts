@@ -1,4 +1,89 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "NativeEventEmitter",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "addEventListener",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 3,
+            "local": "removeEventListener",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 3,
+            "local": "openURL",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "canOpenURL",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "openSettings",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 3,
+            "local": "getInitialURL",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 9,
+            "local": "key",
+            "type": "value"
+        },
+        {
+            "row": 65,
+            "column": 9,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 60,
+            "column": 3,
+            "local": "sendIntent",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 15,
+            "local": "Linking",
+            "type": "class"
+        },
+        {
+            "row": 71,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
 }

@@ -1,4 +1,23 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 5,
+            "local": "supportedCommands",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "local": "Options",
+            "type": "type"
+        },
+        {
+            "row": 8,
+            "column": 18,
+            "local": "codegenNativeCommands",
+            "type": "value"
+        }
+    ]
 }

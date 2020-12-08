@@ -1,4 +1,11 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 18,
+            "local": "mapWithSeparator",
+            "type": "value"
+        }
+    ]
 }

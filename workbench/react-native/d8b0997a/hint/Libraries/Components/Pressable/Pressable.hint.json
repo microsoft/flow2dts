@@ -88,5 +88,210 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\View.js.flow:10:19,13:1\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 16,
+            "column": 6,
+            "local": "ViewStyleProp",
+            "type": "type"
+        },
+        {
+            "row": 20,
+            "column": 5,
+            "local": "pressed",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 6,
+            "local": "StateCallbackType",
+            "type": "type"
+        },
+        {
+            "row": 29,
+            "column": 5,
+            "local": "accessibilityActions",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 5,
+            "local": "accessibilityElementsHidden",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 5,
+            "local": "accessibilityHint",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 5,
+            "local": "accessibilityIgnoresInvertColors",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 5,
+            "local": "accessibilityLabel",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 5,
+            "local": "accessibilityLiveRegion",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 5,
+            "local": "accessibilityRole",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 5,
+            "local": "accessibilityState",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 5,
+            "local": "accessibilityValue",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 5,
+            "local": "accessibilityViewIsModal",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 5,
+            "local": "accessible",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 5,
+            "local": "focusable",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 5,
+            "local": "importantForAccessibility",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 5,
+            "local": "onAccessibilityAction",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 5,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 5,
+            "local": "delayLongPress",
+            "type": "value"
+        },
+        {
+            "row": 58,
+            "column": 5,
+            "local": "disabled",
+            "type": "value"
+        },
+        {
+            "row": 63,
+            "column": 5,
+            "local": "hitSlop",
+            "type": "value"
+        },
+        {
+            "row": 69,
+            "column": 5,
+            "local": "pressRetentionOffset",
+            "type": "value"
+        },
+        {
+            "row": 74,
+            "column": 5,
+            "local": "onLayout",
+            "type": "value"
+        },
+        {
+            "row": 79,
+            "column": 5,
+            "local": "onLongPress",
+            "type": "value"
+        },
+        {
+            "row": 84,
+            "column": 5,
+            "local": "onPress",
+            "type": "value"
+        },
+        {
+            "row": 89,
+            "column": 5,
+            "local": "onPressIn",
+            "type": "value"
+        },
+        {
+            "row": 94,
+            "column": 5,
+            "local": "onPressOut",
+            "type": "value"
+        },
+        {
+            "row": 100,
+            "column": 5,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 105,
+            "column": 5,
+            "local": "testID",
+            "type": "value"
+        },
+        {
+            "row": 110,
+            "column": 5,
+            "local": "android_disableSound",
+            "type": "value"
+        },
+        {
+            "row": 115,
+            "column": 5,
+            "local": "android_ripple",
+            "type": "value"
+        },
+        {
+            "row": 120,
+            "column": 5,
+            "local": "testOnly_pressed",
+            "type": "value"
+        },
+        {
+            "row": 125,
+            "column": 5,
+            "local": "unstable_pressDelay",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        }
+    ]
 }

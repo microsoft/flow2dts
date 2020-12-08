@@ -1,4 +1,95 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "_getRequests",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 3,
+            "local": "_getKeys",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "local": "_immediate",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "getItem",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 3,
+            "local": "setItem",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 3,
+            "local": "removeItem",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "mergeItem",
+            "type": "value"
+        },
+        {
+            "row": 56,
+            "column": 3,
+            "local": "clear",
+            "type": "value"
+        },
+        {
+            "row": 63,
+            "column": 3,
+            "local": "getAllKeys",
+            "type": "value"
+        },
+        {
+            "row": 82,
+            "column": 3,
+            "local": "flushGetRequests",
+            "type": "value"
+        },
+        {
+            "row": 91,
+            "column": 3,
+            "local": "multiGet",
+            "type": "value"
+        },
+        {
+            "row": 102,
+            "column": 3,
+            "local": "multiSet",
+            "type": "value"
+        },
+        {
+            "row": 112,
+            "column": 3,
+            "local": "multiRemove",
+            "type": "value"
+        },
+        {
+            "row": 125,
+            "column": 3,
+            "local": "multiMerge",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 13,
+            "local": "AsyncStorage",
+            "type": "value"
+        }
+    ]
 }

@@ -17,5 +17,72 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\processColor.js.flow:5:6,5:24\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 24,
+            "column": 8,
+            "local": "title",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 8,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 8,
+            "local": "options",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 8,
+            "local": "destructiveButtonIndex",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 8,
+            "local": "cancelButtonIndex",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 8,
+            "local": "anchor",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 8,
+            "local": "tintColor",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 8,
+            "local": "userInterfaceStyle",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 3,
+            "local": "showActionSheetWithOptions",
+            "type": "value"
+        },
+        {
+            "row": 59,
+            "column": 3,
+            "local": "showShareActionSheetWithOptions",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 13,
+            "local": "ActionSheetIOS",
+            "type": "value"
+        }
+    ]
 }

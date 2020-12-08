@@ -1,4 +1,89 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 5,
+            "local": "title",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 5,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 5,
+            "local": "title",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 5,
+            "local": "url",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "local": "Content",
+            "type": "type"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "dialogTitle",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "excludedActivityTypes",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "tintColor",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "subject",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 6,
+            "local": "Options",
+            "type": "type"
+        },
+        {
+            "row": 22,
+            "column": 10,
+            "local": "share",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 10,
+            "local": "sharedAction",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 10,
+            "local": "dismissedAction",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 15,
+            "local": "Share",
+            "type": "class"
+        }
+    ]
 }

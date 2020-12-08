@@ -1,4 +1,41 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 3,
+            "column": 4,
+            "local": "componentStack",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 4,
+            "local": "error",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 4,
+            "local": "errorBoundary",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "local": "CapturedError",
+            "type": "type"
+        },
+        {
+            "row": 9,
+            "column": 18,
+            "local": "showErrorDialog",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 27,
+            "local": "showErrorDialog",
+            "type": "value"
+        }
+    ]
 }

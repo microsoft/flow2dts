@@ -1,4 +1,233 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "DeprecatedImageStylePropTypes",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "DeprecatedTextStylePropTypes",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 13,
+            "local": "DeprecatedViewStylePropTypes",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 13,
+            "local": "processColor",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 7,
+            "local": "$4",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 13,
+            "local": "processTransform",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 7,
+            "local": "$5",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 13,
+            "local": "sizesDiffer",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 7,
+            "local": "$6",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 6,
+            "local": "ReturnBoolType",
+            "type": "type"
+        },
+        {
+            "row": 17,
+            "column": 6,
+            "local": "BoolifiedDeprecatedViewStylePropTypes",
+            "type": "type"
+        },
+        {
+            "row": 21,
+            "column": 6,
+            "local": "BoolifiedDeprecatedTextStylePropTypes",
+            "type": "type"
+        },
+        {
+            "row": 25,
+            "column": 6,
+            "local": "BoolifiedDeprecatedImageStylePropTypes",
+            "type": "type"
+        },
+        {
+            "row": 34,
+            "column": 26,
+            "local": "process",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 3,
+            "local": "transform",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 29,
+            "local": "diff",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "shadowOffset",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "backgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 3,
+            "local": "borderBottomColor",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 3,
+            "local": "borderColor",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 3,
+            "local": "borderLeftColor",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 3,
+            "local": "borderRightColor",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 3,
+            "local": "borderTopColor",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 3,
+            "local": "borderStartColor",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "borderEndColor",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 3,
+            "local": "color",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 3,
+            "local": "shadowColor",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 3,
+            "local": "textDecorationColor",
+            "type": "value"
+        },
+        {
+            "row": 47,
+            "column": 3,
+            "local": "tintColor",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 3,
+            "local": "textShadowColor",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 3,
+            "local": "overlayColor",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 6,
+            "local": "StyleAttributesType",
+            "type": "type"
+        },
+        {
+            "row": 53,
+            "column": 13,
+            "local": "ReactNativeStyleAttributes",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 32,
+            "local": "process",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 13,
+            "local": "colorAttributes",
+            "type": "value"
+        }
+    ]
 }

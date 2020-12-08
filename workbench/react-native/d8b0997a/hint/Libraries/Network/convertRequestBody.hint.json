@@ -1,4 +1,47 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "Blob",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "FormData",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 6,
+            "local": "uri",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 6,
+            "local": "RequestBody",
+            "type": "type"
+        },
+        {
+            "row": 15,
+            "column": 18,
+            "local": "convertRequestBody",
+            "type": "value"
+        }
+    ]
 }

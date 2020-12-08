@@ -40,5 +40,102 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\processColor.js.flow:5:6,5:24\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 12,
+            "column": 7,
+            "local": "target",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 7,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 6,
+            "local": "CheckBoxEvent",
+            "type": "type"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "onChange",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 5,
+            "local": "onValueChange",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 5,
+            "local": "testID",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 5,
+            "local": "on",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 5,
+            "local": "enabled",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 9,
+            "local": "true",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 9,
+            "local": "false",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 5,
+            "local": "tintColors",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 6,
+            "local": "NativeProps",
+            "type": "type"
+        },
+        {
+            "row": 48,
+            "column": 6,
+            "local": "NativeType",
+            "type": "type"
+        },
+        {
+            "row": 51,
+            "column": 4,
+            "local": "setNativeValue",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 11,
+            "local": "NativeCommands",
+            "type": "type"
+        },
+        {
+            "row": 57,
+            "column": 13,
+            "local": "Commands",
+            "type": "value"
+        }
+    ]
 }

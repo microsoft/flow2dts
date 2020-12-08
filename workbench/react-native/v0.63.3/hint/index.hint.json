@@ -745,5 +745,582 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 97,
+            "column": 6,
+            "local": "HostComponent",
+            "type": "type"
+        },
+        {
+            "row": 101,
+            "column": 7,
+            "local": "AccessibilityInfo",
+            "type": "value"
+        },
+        {
+            "row": 102,
+            "column": 7,
+            "local": "ActivityIndicator",
+            "type": "value"
+        },
+        {
+            "row": 103,
+            "column": 7,
+            "local": "Button",
+            "type": "value"
+        },
+        {
+            "row": 104,
+            "column": 7,
+            "local": "CheckBox",
+            "type": "value"
+        },
+        {
+            "row": 105,
+            "column": 7,
+            "local": "DatePickerIOS",
+            "type": "value"
+        },
+        {
+            "row": 106,
+            "column": 7,
+            "local": "DrawerLayoutAndroid",
+            "type": "value"
+        },
+        {
+            "row": 107,
+            "column": 7,
+            "local": "FlatList",
+            "type": "value"
+        },
+        {
+            "row": 108,
+            "column": 7,
+            "local": "Image",
+            "type": "value"
+        },
+        {
+            "row": 109,
+            "column": 7,
+            "local": "ImageBackground",
+            "type": "value"
+        },
+        {
+            "row": 110,
+            "column": 7,
+            "local": "InputAccessoryView",
+            "type": "value"
+        },
+        {
+            "row": 111,
+            "column": 7,
+            "local": "KeyboardAvoidingView",
+            "type": "value"
+        },
+        {
+            "row": 112,
+            "column": 7,
+            "local": "MaskedViewIOS",
+            "type": "value"
+        },
+        {
+            "row": 113,
+            "column": 7,
+            "local": "Modal",
+            "type": "value"
+        },
+        {
+            "row": 114,
+            "column": 7,
+            "local": "Picker",
+            "type": "value"
+        },
+        {
+            "row": 115,
+            "column": 7,
+            "local": "PickerIOS",
+            "type": "value"
+        },
+        {
+            "row": 116,
+            "column": 7,
+            "local": "Pressable",
+            "type": "value"
+        },
+        {
+            "row": 117,
+            "column": 7,
+            "local": "ProgressBarAndroid",
+            "type": "value"
+        },
+        {
+            "row": 118,
+            "column": 7,
+            "local": "ProgressViewIOS",
+            "type": "value"
+        },
+        {
+            "row": 119,
+            "column": 7,
+            "local": "SafeAreaView",
+            "type": "value"
+        },
+        {
+            "row": 120,
+            "column": 7,
+            "local": "ScrollView",
+            "type": "value"
+        },
+        {
+            "row": 121,
+            "column": 7,
+            "local": "SectionList",
+            "type": "value"
+        },
+        {
+            "row": 122,
+            "column": 7,
+            "local": "SegmentedControlIOS",
+            "type": "value"
+        },
+        {
+            "row": 123,
+            "column": 7,
+            "local": "Slider",
+            "type": "value"
+        },
+        {
+            "row": 124,
+            "column": 7,
+            "local": "Switch",
+            "type": "value"
+        },
+        {
+            "row": 125,
+            "column": 7,
+            "local": "RefreshControl",
+            "type": "value"
+        },
+        {
+            "row": 126,
+            "column": 7,
+            "local": "StatusBar",
+            "type": "value"
+        },
+        {
+            "row": 127,
+            "column": 7,
+            "local": "Text",
+            "type": "value"
+        },
+        {
+            "row": 128,
+            "column": 7,
+            "local": "TextInput",
+            "type": "value"
+        },
+        {
+            "row": 129,
+            "column": 7,
+            "local": "Touchable",
+            "type": "value"
+        },
+        {
+            "row": 130,
+            "column": 7,
+            "local": "TouchableHighlight",
+            "type": "value"
+        },
+        {
+            "row": 131,
+            "column": 7,
+            "local": "TouchableNativeFeedback",
+            "type": "value"
+        },
+        {
+            "row": 132,
+            "column": 7,
+            "local": "TouchableOpacity",
+            "type": "value"
+        },
+        {
+            "row": 133,
+            "column": 7,
+            "local": "TouchableWithoutFeedback",
+            "type": "value"
+        },
+        {
+            "row": 134,
+            "column": 7,
+            "local": "View",
+            "type": "value"
+        },
+        {
+            "row": 135,
+            "column": 7,
+            "local": "VirtualizedList",
+            "type": "value"
+        },
+        {
+            "row": 136,
+            "column": 7,
+            "local": "VirtualizedSectionList",
+            "type": "value"
+        },
+        {
+            "row": 138,
+            "column": 7,
+            "local": "ActionSheetIOS",
+            "type": "value"
+        },
+        {
+            "row": 139,
+            "column": 7,
+            "local": "Alert",
+            "type": "value"
+        },
+        {
+            "row": 140,
+            "column": 7,
+            "local": "Animated",
+            "type": "value"
+        },
+        {
+            "row": 141,
+            "column": 7,
+            "local": "Appearance",
+            "type": "value"
+        },
+        {
+            "row": 142,
+            "column": 7,
+            "local": "AppRegistry",
+            "type": "value"
+        },
+        {
+            "row": 143,
+            "column": 7,
+            "local": "AppState",
+            "type": "value"
+        },
+        {
+            "row": 144,
+            "column": 7,
+            "local": "AsyncStorage",
+            "type": "value"
+        },
+        {
+            "row": 145,
+            "column": 7,
+            "local": "BackHandler",
+            "type": "value"
+        },
+        {
+            "row": 146,
+            "column": 7,
+            "local": "Clipboard",
+            "type": "value"
+        },
+        {
+            "row": 147,
+            "column": 7,
+            "local": "DatePickerAndroid",
+            "type": "value"
+        },
+        {
+            "row": 148,
+            "column": 7,
+            "local": "DeviceInfo",
+            "type": "value"
+        },
+        {
+            "row": 149,
+            "column": 7,
+            "local": "DevSettings",
+            "type": "value"
+        },
+        {
+            "row": 150,
+            "column": 7,
+            "local": "Dimensions",
+            "type": "value"
+        },
+        {
+            "row": 151,
+            "column": 7,
+            "local": "Easing",
+            "type": "value"
+        },
+        {
+            "row": 152,
+            "column": 7,
+            "local": "findNodeHandle",
+            "type": "value"
+        },
+        {
+            "row": 153,
+            "column": 7,
+            "local": "I18nManager",
+            "type": "value"
+        },
+        {
+            "row": 154,
+            "column": 7,
+            "local": "ImagePickerIOS",
+            "type": "value"
+        },
+        {
+            "row": 155,
+            "column": 7,
+            "local": "InteractionManager",
+            "type": "value"
+        },
+        {
+            "row": 156,
+            "column": 7,
+            "local": "Keyboard",
+            "type": "value"
+        },
+        {
+            "row": 157,
+            "column": 7,
+            "local": "LayoutAnimation",
+            "type": "value"
+        },
+        {
+            "row": 158,
+            "column": 7,
+            "local": "Linking",
+            "type": "value"
+        },
+        {
+            "row": 159,
+            "column": 7,
+            "local": "LogBox",
+            "type": "value"
+        },
+        {
+            "row": 160,
+            "column": 7,
+            "local": "NativeDialogManagerAndroid",
+            "type": "value"
+        },
+        {
+            "row": 161,
+            "column": 7,
+            "local": "NativeEventEmitter",
+            "type": "value"
+        },
+        {
+            "row": 162,
+            "column": 7,
+            "local": "Networking",
+            "type": "value"
+        },
+        {
+            "row": 163,
+            "column": 7,
+            "local": "PanResponder",
+            "type": "value"
+        },
+        {
+            "row": 164,
+            "column": 7,
+            "local": "PermissionsAndroid",
+            "type": "value"
+        },
+        {
+            "row": 165,
+            "column": 7,
+            "local": "PixelRatio",
+            "type": "value"
+        },
+        {
+            "row": 166,
+            "column": 7,
+            "local": "PushNotificationIOS",
+            "type": "value"
+        },
+        {
+            "row": 167,
+            "column": 7,
+            "local": "Settings",
+            "type": "value"
+        },
+        {
+            "row": 168,
+            "column": 7,
+            "local": "Share",
+            "type": "value"
+        },
+        {
+            "row": 169,
+            "column": 7,
+            "local": "StatusBarIOS",
+            "type": "value"
+        },
+        {
+            "row": 170,
+            "column": 7,
+            "local": "StyleSheet",
+            "type": "value"
+        },
+        {
+            "row": 171,
+            "column": 7,
+            "local": "Systrace",
+            "type": "value"
+        },
+        {
+            "row": 172,
+            "column": 7,
+            "local": "ToastAndroid",
+            "type": "value"
+        },
+        {
+            "row": 173,
+            "column": 7,
+            "local": "TurboModuleRegistry",
+            "type": "value"
+        },
+        {
+            "row": 174,
+            "column": 7,
+            "local": "TVEventHandler",
+            "type": "value"
+        },
+        {
+            "row": 175,
+            "column": 7,
+            "local": "UIManager",
+            "type": "value"
+        },
+        {
+            "row": 176,
+            "column": 7,
+            "local": "unstable_batchedUpdates",
+            "type": "value"
+        },
+        {
+            "row": 180,
+            "column": 7,
+            "local": "useColorScheme",
+            "type": "value"
+        },
+        {
+            "row": 181,
+            "column": 7,
+            "local": "useWindowDimensions",
+            "type": "value"
+        },
+        {
+            "row": 182,
+            "column": 7,
+            "local": "UTFSequence",
+            "type": "value"
+        },
+        {
+            "row": 183,
+            "column": 7,
+            "local": "Vibration",
+            "type": "value"
+        },
+        {
+            "row": 184,
+            "column": 7,
+            "local": "YellowBox",
+            "type": "value"
+        },
+        {
+            "row": 186,
+            "column": 7,
+            "local": "DeviceEventEmitter",
+            "type": "value"
+        },
+        {
+            "row": 187,
+            "column": 7,
+            "local": "NativeAppEventEmitter",
+            "type": "value"
+        },
+        {
+            "row": 188,
+            "column": 7,
+            "local": "NativeModules",
+            "type": "value"
+        },
+        {
+            "row": 189,
+            "column": 7,
+            "local": "Platform",
+            "type": "value"
+        },
+        {
+            "row": 190,
+            "column": 7,
+            "local": "processColor",
+            "type": "value"
+        },
+        {
+            "row": 191,
+            "column": 7,
+            "local": "PlatformColor",
+            "type": "value"
+        },
+        {
+            "row": 192,
+            "column": 7,
+            "local": "DynamicColorIOS",
+            "type": "value"
+        },
+        {
+            "row": 193,
+            "column": 7,
+            "local": "ColorAndroid",
+            "type": "value"
+        },
+        {
+            "row": 194,
+            "column": 7,
+            "local": "requireNativeComponent",
+            "type": "value"
+        },
+        {
+            "row": 195,
+            "column": 7,
+            "local": "unstable_RootTagContext",
+            "type": "value"
+        },
+        {
+            "row": 196,
+            "column": 7,
+            "local": "unstable_enableLogBox",
+            "type": "value"
+        },
+        {
+            "row": 198,
+            "column": 7,
+            "local": "ColorPropType",
+            "type": "value"
+        },
+        {
+            "row": 199,
+            "column": 7,
+            "local": "EdgeInsetsPropType",
+            "type": "value"
+        },
+        {
+            "row": 200,
+            "column": 7,
+            "local": "PointPropType",
+            "type": "value"
+        },
+        {
+            "row": 201,
+            "column": 7,
+            "local": "ViewPropTypes",
+            "type": "value"
+        }
+    ]
 }

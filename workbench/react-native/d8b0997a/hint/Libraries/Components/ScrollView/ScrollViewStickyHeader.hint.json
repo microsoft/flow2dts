@@ -24,5 +24,132 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:79:6,79:16\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 8,
+            "column": 3,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "nextHeaderLayoutY",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "onLayout",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "scrollAnimatedValue",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "inverted",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "scrollViewHeight",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "nativeID",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 22,
+            "column": 3,
+            "local": "measured",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 3,
+            "local": "layoutY",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 3,
+            "local": "layoutHeight",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 3,
+            "local": "nextHeaderLayoutY",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 3,
+            "local": "translateY",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 6,
+            "local": "State",
+            "type": "type"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "state",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 3,
+            "local": "setNextHeaderY",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "UNSAFE_componentWillReceiveProps",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 3,
+            "local": "updateTranslateListener",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "render",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 15,
+            "local": "ScrollViewStickyHeader",
+            "type": "class"
+        },
+        {
+            "row": 45,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
 }

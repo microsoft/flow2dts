@@ -1,4 +1,203 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "item",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 3,
+            "local": "key",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "local": "index",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 3,
+            "local": "isViewable",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "section",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "local": "ViewToken",
+            "type": "type"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "viewabilityConfig",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 7,
+            "local": "viewableItems",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 7,
+            "local": "changed",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "onViewableItemsChanged",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 6,
+            "local": "ViewabilityConfigCallbackPair",
+            "type": "type"
+        },
+        {
+            "row": 29,
+            "column": 3,
+            "local": "minimumViewTime",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 3,
+            "local": "viewAreaCoveragePercentThreshold",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "itemVisiblePercentThreshold",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 3,
+            "local": "waitForInteraction",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 6,
+            "local": "ViewabilityConfig",
+            "type": "type"
+        },
+        {
+            "row": 53,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 58,
+            "column": 3,
+            "local": "dispose",
+            "type": "value"
+        },
+        {
+            "row": 70,
+            "column": 7,
+            "local": "length",
+            "type": "value"
+        },
+        {
+            "row": 71,
+            "column": 7,
+            "local": "offset",
+            "type": "value"
+        },
+        {
+            "row": 76,
+            "column": 7,
+            "local": "first",
+            "type": "value"
+        },
+        {
+            "row": 77,
+            "column": 7,
+            "local": "last",
+            "type": "value"
+        },
+        {
+            "row": 63,
+            "column": 3,
+            "local": "computeViewableItems",
+            "type": "value"
+        },
+        {
+            "row": 93,
+            "column": 7,
+            "local": "length",
+            "type": "value"
+        },
+        {
+            "row": 94,
+            "column": 7,
+            "local": "offset",
+            "type": "value"
+        },
+        {
+            "row": 100,
+            "column": 9,
+            "local": "viewableItems",
+            "type": "value"
+        },
+        {
+            "row": 101,
+            "column": 9,
+            "local": "changed",
+            "type": "value"
+        },
+        {
+            "row": 107,
+            "column": 7,
+            "local": "first",
+            "type": "value"
+        },
+        {
+            "row": 108,
+            "column": 7,
+            "local": "last",
+            "type": "value"
+        },
+        {
+            "row": 86,
+            "column": 3,
+            "local": "onUpdate",
+            "type": "value"
+        },
+        {
+            "row": 116,
+            "column": 3,
+            "local": "resetViewableIndices",
+            "type": "value"
+        },
+        {
+            "row": 121,
+            "column": 3,
+            "local": "recordInteraction",
+            "type": "value"
+        },
+        {
+            "row": 52,
+            "column": 15,
+            "local": "ViewabilityHelper",
+            "type": "class"
+        }
+    ]
 }

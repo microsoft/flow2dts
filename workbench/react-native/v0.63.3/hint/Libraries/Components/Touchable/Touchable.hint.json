@@ -17,5 +17,342 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:95:6,95:15\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "NOT_RESPONDER",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "RESPONDER_INACTIVE_PRESS_IN",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "RESPONDER_INACTIVE_PRESS_OUT",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "RESPONDER_ACTIVE_PRESS_IN",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "RESPONDER_ACTIVE_PRESS_OUT",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "RESPONDER_ACTIVE_LONG_PRESS_IN",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "RESPONDER_ACTIVE_LONG_PRESS_OUT",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "ERROR",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 13,
+            "local": "States",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 6,
+            "local": "State",
+            "type": "type"
+        },
+        {
+            "row": 30,
+            "column": 3,
+            "local": "DELAY",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 3,
+            "local": "RESPONDER_GRANT",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "RESPONDER_RELEASE",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 3,
+            "local": "RESPONDER_TERMINATED",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 3,
+            "local": "ENTER_PRESS_RECT",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "LEAVE_PRESS_RECT",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "LONG_PRESS_DETECTED",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 13,
+            "local": "Signals",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 6,
+            "local": "Signal",
+            "type": "type"
+        },
+        {
+            "row": 49,
+            "column": 3,
+            "local": "componentDidMount",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 3,
+            "local": "componentWillUnmount",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 18,
+            "local": "responderID",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 37,
+            "local": "touchState",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 5,
+            "local": "touchable",
+            "type": "value"
+        },
+        {
+            "row": 63,
+            "column": 3,
+            "local": "touchableGetInitialState",
+            "type": "value"
+        },
+        {
+            "row": 71,
+            "column": 3,
+            "local": "touchableHandleResponderTerminationRequest",
+            "type": "value"
+        },
+        {
+            "row": 76,
+            "column": 3,
+            "local": "touchableHandleStartShouldSetResponder",
+            "type": "value"
+        },
+        {
+            "row": 81,
+            "column": 3,
+            "local": "touchableLongPressCancelsPress",
+            "type": "value"
+        },
+        {
+            "row": 88,
+            "column": 3,
+            "local": "touchableHandleResponderGrant",
+            "type": "value"
+        },
+        {
+            "row": 93,
+            "column": 3,
+            "local": "touchableHandleResponderRelease",
+            "type": "value"
+        },
+        {
+            "row": 98,
+            "column": 3,
+            "local": "touchableHandleResponderTerminate",
+            "type": "value"
+        },
+        {
+            "row": 103,
+            "column": 3,
+            "local": "touchableHandleResponderMove",
+            "type": "value"
+        },
+        {
+            "row": 113,
+            "column": 3,
+            "local": "touchableHandleFocus",
+            "type": "value"
+        },
+        {
+            "row": 123,
+            "column": 3,
+            "local": "touchableHandleBlur",
+            "type": "value"
+        },
+        {
+            "row": 201,
+            "column": 3,
+            "local": "_remeasureMetricsOnActivation",
+            "type": "value"
+        },
+        {
+            "row": 203,
+            "column": 3,
+            "local": "_handleQueryLayout",
+            "type": "value"
+        },
+        {
+            "row": 212,
+            "column": 3,
+            "local": "_handleDelay",
+            "type": "value"
+        },
+        {
+            "row": 214,
+            "column": 3,
+            "local": "_handleLongDelay",
+            "type": "value"
+        },
+        {
+            "row": 224,
+            "column": 3,
+            "local": "_receiveSignal",
+            "type": "value"
+        },
+        {
+            "row": 226,
+            "column": 3,
+            "local": "_cancelLongPressDelayTimeout",
+            "type": "value"
+        },
+        {
+            "row": 228,
+            "column": 3,
+            "local": "_isHighlight",
+            "type": "value"
+        },
+        {
+            "row": 230,
+            "column": 3,
+            "local": "_savePressInLocation",
+            "type": "value"
+        },
+        {
+            "row": 232,
+            "column": 3,
+            "local": "_getDistanceBetweenPoints",
+            "type": "value"
+        },
+        {
+            "row": 250,
+            "column": 3,
+            "local": "_performSideEffectsForTransition",
+            "type": "value"
+        },
+        {
+            "row": 257,
+            "column": 3,
+            "local": "_startHighlight",
+            "type": "value"
+        },
+        {
+            "row": 259,
+            "column": 3,
+            "local": "_endHighlight",
+            "type": "value"
+        },
+        {
+            "row": 261,
+            "column": 3,
+            "local": "withoutDefaultFocusAndBlur",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 13,
+            "local": "TouchableMixin",
+            "type": "value"
+        },
+        {
+            "row": 265,
+            "column": 3,
+            "local": "Mixin",
+            "type": "value"
+        },
+        {
+            "row": 266,
+            "column": 3,
+            "local": "TOUCH_TARGET_DEBUG",
+            "type": "value"
+        },
+        {
+            "row": 272,
+            "column": 7,
+            "local": "color",
+            "type": "value"
+        },
+        {
+            "row": 273,
+            "column": 7,
+            "local": "hitSlop",
+            "type": "value"
+        },
+        {
+            "row": 270,
+            "column": 3,
+            "local": "renderDebugView",
+            "type": "value"
+        },
+        {
+            "row": 264,
+            "column": 13,
+            "local": "Touchable",
+            "type": "value"
+        }
+    ]
 }

@@ -1,4 +1,23 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 6,
+            "local": "RootTag",
+            "type": "type"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "RootTagContext",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 18,
+            "local": "createRootTag",
+            "type": "value"
+        }
+    ]
 }

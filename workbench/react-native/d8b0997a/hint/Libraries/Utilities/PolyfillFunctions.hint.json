@@ -1,4 +1,29 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 18,
+            "local": "polyfillObjectProperty",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 18,
+            "local": "polyfillGlobal",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "polyfillObjectProperty",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "polyfillGlobal",
+            "type": "value"
+        }
+    ]
 }

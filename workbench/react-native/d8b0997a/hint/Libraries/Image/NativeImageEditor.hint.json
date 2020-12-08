@@ -9,5 +9,96 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\TurboModule\\RCTExport.js.flow:6:11,6:21\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 6,
+            "column": 6,
+            "local": "x",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 6,
+            "local": "y",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 4,
+            "local": "offset",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 6,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 4,
+            "local": "size",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 6,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 6,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 4,
+            "local": "displaySize",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 4,
+            "local": "resizeMode",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 4,
+            "local": "allowExternalStorage",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 6,
+            "local": "Options",
+            "type": "type"
+        },
+        {
+            "row": 30,
+            "column": 4,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 4,
+            "local": "cropImage",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
 }

@@ -1,4 +1,167 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "description",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 3,
+            "local": "totalTime",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "local": "startTime",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 3,
+            "local": "endTime",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "local": "Timespan",
+            "type": "type"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "addTimespan",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "startTimespan",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 35,
+            "local": "update",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "stopTimespan",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "clear",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "clearCompleted",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "clearExceptTimespans",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "currentTimestamp",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "getTimespans",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "hasTimespan",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 3,
+            "local": "logTimespans",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "addTimespans",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 3,
+            "local": "setExtra",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 3,
+            "local": "getExtras",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 3,
+            "local": "removeExtra",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 3,
+            "local": "logExtras",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 3,
+            "local": "markPoint",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 3,
+            "local": "getPoints",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 3,
+            "local": "logPoints",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 3,
+            "local": "logEverything",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "IPerformanceLogger",
+            "type": "type"
+        },
+        {
+            "row": 33,
+            "column": 18,
+            "local": "createPerformanceLogger",
+            "type": "value"
+        }
+    ]
 }

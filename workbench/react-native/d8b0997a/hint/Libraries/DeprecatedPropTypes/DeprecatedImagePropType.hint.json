@@ -1,4 +1,167 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "DeprecatedEdgeInsetsPropType",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "DeprecatedImageSourcePropType",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 13,
+            "local": "PropTypes",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "source",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 9,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 9,
+            "local": "scale",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 9,
+            "local": "uri",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 9,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "defaultSource",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 3,
+            "local": "accessible",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 3,
+            "local": "accessibilityLabel",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 3,
+            "local": "blurRadius",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 3,
+            "local": "capInsets",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 3,
+            "local": "resizeMethod",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "resizeMode",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 3,
+            "local": "testID",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 3,
+            "local": "onLayout",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "onLoadStart",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 3,
+            "local": "onProgress",
+            "type": "value"
+        },
+        {
+            "row": 47,
+            "column": 3,
+            "local": "onError",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 3,
+            "local": "onPartialLoad",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 3,
+            "local": "onLoad",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 3,
+            "local": "onLoadEnd",
+            "type": "value"
+        }
+    ]
 }

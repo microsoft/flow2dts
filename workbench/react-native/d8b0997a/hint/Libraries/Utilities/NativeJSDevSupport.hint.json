@@ -9,5 +9,42 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\TurboModule\\RCTExport.js.flow:6:11,6:21\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 6,
+            "column": 5,
+            "local": "ERROR_CODE_EXCEPTION",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 5,
+            "local": "ERROR_CODE_VIEW_NOT_FOUND",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 4,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 4,
+            "local": "onSuccess",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 4,
+            "local": "onFailure",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
 }

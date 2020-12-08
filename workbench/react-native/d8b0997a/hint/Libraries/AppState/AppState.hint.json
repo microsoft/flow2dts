@@ -17,5 +17,90 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\vendor\\emitter\\EventEmitter.js.flow:8:24,8:42\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 7,
+            "column": 3,
+            "local": "currentState",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "isAvailable",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 3,
+            "local": "addEventListener",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 3,
+            "local": "removeEventListener",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 15,
+            "local": "AppState",
+            "type": "class"
+        },
+        {
+            "row": 32,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "isAvailable",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 3,
+            "local": "currentState",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 3,
+            "local": "addEventListener",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 3,
+            "local": "removeEventListener",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 15,
+            "local": "MissingNativeAppStateShim",
+            "type": "class"
+        },
+        {
+            "row": 49,
+            "column": 13,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 13,
+            "local": "AppStateInstance",
+            "type": "value"
+        }
+    ]
 }

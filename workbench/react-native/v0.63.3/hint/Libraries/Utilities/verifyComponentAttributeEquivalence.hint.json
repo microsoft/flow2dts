@@ -9,5 +9,30 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:45:6,45:39\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 18,
+            "local": "verifyComponentAttributeEquivalence",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 18,
+            "local": "lefthandObjectDiff",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 18,
+            "local": "getConfigWithoutViewProps",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 18,
+            "local": "stringifyViewConfig",
+            "type": "value"
+        }
+    ]
 }

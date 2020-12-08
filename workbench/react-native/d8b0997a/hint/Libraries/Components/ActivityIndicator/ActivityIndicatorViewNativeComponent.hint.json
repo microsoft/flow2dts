@@ -33,5 +33,36 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 18,
+            "column": 5,
+            "local": "hidesWhenStopped",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "animating",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 5,
+            "local": "color",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 5,
+            "local": "size",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 6,
+            "local": "NativeProps",
+            "type": "type"
+        }
+    ]
 }

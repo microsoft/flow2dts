@@ -64,5 +64,78 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:377:6,377:14\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 20,
+            "column": 5,
+            "local": "enabled",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 5,
+            "local": "colors",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 5,
+            "local": "progressBackgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 5,
+            "local": "size",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 5,
+            "local": "progressViewOffset",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 5,
+            "local": "onRefresh",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 5,
+            "local": "refreshing",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 6,
+            "local": "NativeProps",
+            "type": "type"
+        },
+        {
+            "row": 58,
+            "column": 6,
+            "local": "NativeType",
+            "type": "type"
+        },
+        {
+            "row": 61,
+            "column": 4,
+            "local": "setNativeRefreshing",
+            "type": "value"
+        },
+        {
+            "row": 60,
+            "column": 11,
+            "local": "NativeCommands",
+            "type": "type"
+        },
+        {
+            "row": 67,
+            "column": 13,
+            "local": "Commands",
+            "type": "value"
+        }
+    ]
 }

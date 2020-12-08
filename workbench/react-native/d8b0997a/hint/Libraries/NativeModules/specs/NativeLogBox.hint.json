@@ -9,5 +9,24 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\NativeModules\\specs\\NativeLogBox.js.flow:2:14,2:24\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 5,
+            "column": 4,
+            "local": "show",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 4,
+            "local": "hide",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
 }

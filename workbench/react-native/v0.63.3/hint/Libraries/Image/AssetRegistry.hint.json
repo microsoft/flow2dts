@@ -1,4 +1,89 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 3,
+            "column": 4,
+            "local": "__packager_asset",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 4,
+            "local": "fileSystemLocation",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 4,
+            "local": "httpServerLocation",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 4,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 4,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 4,
+            "local": "scales",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 4,
+            "local": "hash",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 4,
+            "local": "name",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 4,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "local": "PackagerAsset",
+            "type": "type"
+        },
+        {
+            "row": 15,
+            "column": 18,
+            "local": "registerAsset",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 18,
+            "local": "getAssetByID",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "registerAsset",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 3,
+            "local": "getAssetByID",
+            "type": "value"
+        }
+    ]
 }

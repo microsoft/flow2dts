@@ -1,4 +1,77 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 6,
+            "local": "AlertType",
+            "type": "type"
+        },
+        {
+            "row": 3,
+            "column": 6,
+            "local": "AlertButtonStyle",
+            "type": "type"
+        },
+        {
+            "row": 6,
+            "column": 5,
+            "local": "text",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 5,
+            "local": "onPress",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 5,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 6,
+            "local": "Buttons",
+            "type": "type"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "cancelable",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "onDismiss",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 6,
+            "local": "Options",
+            "type": "type"
+        },
+        {
+            "row": 20,
+            "column": 10,
+            "local": "alert",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 10,
+            "local": "prompt",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 15,
+            "local": "Alert",
+            "type": "class"
+        }
+    ]
 }

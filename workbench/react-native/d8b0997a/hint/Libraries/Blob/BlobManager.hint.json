@@ -17,5 +17,72 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Blob\\BlobTypes.js.flow:15:6,15:16\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "Blob",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 10,
+            "local": "isAvailable",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 10,
+            "local": "createFromParts",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 10,
+            "local": "createFromOptions",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 10,
+            "local": "release",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 10,
+            "local": "addNetworkingHandler",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 10,
+            "local": "addWebSocketHandler",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 10,
+            "local": "removeWebSocketHandler",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 10,
+            "local": "sendOverSocket",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 15,
+            "local": "BlobManager",
+            "type": "class"
+        }
+    ]
 }

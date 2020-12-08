@@ -25,5 +25,162 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:9:6,9:23\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 5,
+            "local": "orientation",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "OrientationChangeEvent",
+            "type": "type"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "animationType",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 5,
+            "local": "presentationStyle",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 5,
+            "local": "transparent",
+            "type": "value"
+        },
+        {
+            "row": 52,
+            "column": 5,
+            "local": "statusBarTranslucent",
+            "type": "value"
+        },
+        {
+            "row": 62,
+            "column": 5,
+            "local": "hardwareAccelerated",
+            "type": "value"
+        },
+        {
+            "row": 69,
+            "column": 5,
+            "local": "visible",
+            "type": "value"
+        },
+        {
+            "row": 79,
+            "column": 5,
+            "local": "onRequestClose",
+            "type": "value"
+        },
+        {
+            "row": 87,
+            "column": 5,
+            "local": "onShow",
+            "type": "value"
+        },
+        {
+            "row": 95,
+            "column": 5,
+            "local": "onDismiss",
+            "type": "value"
+        },
+        {
+            "row": 102,
+            "column": 5,
+            "local": "supportedOrientations",
+            "type": "value"
+        },
+        {
+            "row": 116,
+            "column": 5,
+            "local": "onOrientationChange",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 122,
+            "column": 26,
+            "local": "hardwareAccelerated",
+            "type": "value"
+        },
+        {
+            "row": 122,
+            "column": 56,
+            "local": "visible",
+            "type": "value"
+        },
+        {
+            "row": 122,
+            "column": 10,
+            "local": "defaultProps",
+            "type": "value"
+        },
+        {
+            "row": 124,
+            "column": 10,
+            "local": "contextType",
+            "type": "value"
+        },
+        {
+            "row": 126,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 128,
+            "column": 3,
+            "local": "componentWillUnmount",
+            "type": "value"
+        },
+        {
+            "row": 130,
+            "column": 3,
+            "local": "UNSAFE_componentWillReceiveProps",
+            "type": "value"
+        },
+        {
+            "row": 132,
+            "column": 3,
+            "local": "render",
+            "type": "value"
+        },
+        {
+            "row": 120,
+            "column": 15,
+            "local": "Modal",
+            "type": "class"
+        },
+        {
+            "row": 134,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
 }

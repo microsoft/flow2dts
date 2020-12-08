@@ -9,5 +9,138 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Utilities\\ReactNativeTestTools.js.flow:8:14,8:30\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 13,
+            "local": "ReactTestRenderer",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "ReactTestInstance",
+            "type": "type"
+        },
+        {
+            "row": 12,
+            "column": 6,
+            "local": "Predicate",
+            "type": "type"
+        },
+        {
+            "row": 14,
+            "column": 6,
+            "local": "$ReturnType",
+            "type": "type"
+        },
+        {
+            "row": 16,
+            "column": 6,
+            "local": "ReactTestRendererJSON",
+            "type": "type"
+        },
+        {
+            "row": 18,
+            "column": 18,
+            "local": "byClickable",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 18,
+            "local": "byTestID",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 18,
+            "local": "byTextMatching",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 18,
+            "local": "enter",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 18,
+            "local": "maximumDepthError",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 18,
+            "local": "expectNoConsoleWarn",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 18,
+            "local": "expectNoConsoleError",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 18,
+            "local": "expectRendersMatchingSnapshot",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 18,
+            "local": "maximumDepthOfJSON",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 18,
+            "local": "renderAndEnforceStrictMode",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 18,
+            "local": "renderWithStrictMode",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 18,
+            "local": "tap",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 18,
+            "local": "scrollToBottom",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 18,
+            "local": "withMessage",
+            "type": "value"
+        }
+    ]
 }

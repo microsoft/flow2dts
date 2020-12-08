@@ -25,5 +25,36 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Text\\TextProps.js.flow:19:6,19:14\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 10,
+            "column": 5,
+            "local": "isHighlighted",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 5,
+            "local": "selectionColor",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 6,
+            "local": "NativeTextProps",
+            "type": "type"
+        },
+        {
+            "row": 15,
+            "column": 13,
+            "local": "NativeText",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 13,
+            "local": "NativeVirtualText",
+            "type": "value"
+        }
+    ]
 }

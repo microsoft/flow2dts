@@ -1,4 +1,167 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 8,
+            "column": 5,
+            "local": "length",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 5,
+            "local": "offset",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 18,
+            "local": "elementsThatOverlapOffsets",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 5,
+            "local": "first",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 5,
+            "local": "last",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 5,
+            "local": "first",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 5,
+            "local": "last",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 18,
+            "local": "newRangeCount",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 5,
+            "local": "data",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 5,
+            "local": "getItemCount",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 5,
+            "local": "maxToRenderPerBatch",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 5,
+            "local": "windowSize",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 5,
+            "local": "first",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 5,
+            "local": "last",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 5,
+            "local": "length",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 5,
+            "local": "offset",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 5,
+            "local": "dt",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 5,
+            "local": "offset",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 5,
+            "local": "velocity",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 5,
+            "local": "visibleLength",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 3,
+            "local": "first",
+            "type": "value"
+        },
+        {
+            "row": 56,
+            "column": 3,
+            "local": "last",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 18,
+            "local": "computeWindowedRenderLimits",
+            "type": "value"
+        },
+        {
+            "row": 61,
+            "column": 3,
+            "local": "computeWindowedRenderLimits",
+            "type": "value"
+        },
+        {
+            "row": 62,
+            "column": 3,
+            "local": "elementsThatOverlapOffsets",
+            "type": "value"
+        },
+        {
+            "row": 63,
+            "column": 3,
+            "local": "newRangeCount",
+            "type": "value"
+        },
+        {
+            "row": 60,
+            "column": 13,
+            "local": "VirtualizeUtils",
+            "type": "value"
+        }
+    ]
 }

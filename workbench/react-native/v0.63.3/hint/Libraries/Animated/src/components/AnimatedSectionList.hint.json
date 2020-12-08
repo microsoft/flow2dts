@@ -16,5 +16,18 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\createAnimatedComponent.js.flow:5:6,5:26\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 13,
+            "local": "SectionList",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
 }

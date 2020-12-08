@@ -17,5 +17,72 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\vendor\\emitter\\EventEmitter.js.flow:5:11,5:27\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 6,
+            "column": 4,
+            "local": "addListener",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 4,
+            "local": "removeListeners",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 6,
+            "local": "NativeModule",
+            "type": "type"
+        },
+        {
+            "row": 13,
+            "column": 5,
+            "local": "__SECRET_DISABLE_CALLS_INTO_MODULE_DO_NOT_USE_OR_YOU_WILL_BE_FIRED",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 6,
+            "local": "NativeEventEmitterOptions",
+            "type": "type"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 3,
+            "local": "addListener",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 3,
+            "local": "removeAllListeners",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "removeSubscription",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 15,
+            "local": "NativeEventEmitter",
+            "type": "class"
+        },
+        {
+            "row": 34,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
 }

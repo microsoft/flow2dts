@@ -1,4 +1,113 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "AnimatedValue",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 6,
+            "local": "Mapping",
+            "type": "type"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "listener",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "useNativeDriver",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 6,
+            "local": "EventConfig",
+            "type": "type"
+        },
+        {
+            "row": 15,
+            "column": 5,
+            "local": "detach",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 18,
+            "local": "attachNativeEvent",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "__isNative",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 3,
+            "local": "__addListener",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 3,
+            "local": "__removeListener",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 3,
+            "local": "__attach",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 3,
+            "local": "__detach",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 3,
+            "local": "__getHandler",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 15,
+            "local": "AnimatedEvent",
+            "type": "class"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "AnimatedEvent",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 3,
+            "local": "attachNativeEvent",
+            "type": "value"
+        }
+    ]
 }

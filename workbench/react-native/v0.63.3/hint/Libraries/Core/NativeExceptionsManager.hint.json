@@ -9,5 +9,168 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\TurboModule\\RCTExport.js.flow:6:11,6:21\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 5,
+            "column": 3,
+            "local": "column",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 3,
+            "local": "file",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "lineNumber",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "methodName",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "collapse",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 6,
+            "local": "StackFrame",
+            "type": "type"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "originalMessage",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "name",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "componentStack",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "stack",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "id",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "isFatal",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "extraData",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 6,
+            "local": "ExceptionData",
+            "type": "type"
+        },
+        {
+            "row": 27,
+            "column": 4,
+            "local": "reportFatalException",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 4,
+            "local": "reportSoftException",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 4,
+            "local": "reportException",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 4,
+            "local": "updateExceptionMessage",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 4,
+            "local": "dismissRedbox",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        },
+        {
+            "row": 50,
+            "column": 3,
+            "local": "reportFatalException",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 3,
+            "local": "reportSoftException",
+            "type": "value"
+        },
+        {
+            "row": 60,
+            "column": 3,
+            "local": "updateExceptionMessage",
+            "type": "value"
+        },
+        {
+            "row": 65,
+            "column": 3,
+            "local": "dismissRedbox",
+            "type": "value"
+        },
+        {
+            "row": 66,
+            "column": 3,
+            "local": "reportException",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 13,
+            "local": "ExceptionsManager",
+            "type": "value"
+        }
+    ]
 }

@@ -17,5 +17,12 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:21:6,21:34\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 5,
+            "column": 18,
+            "local": "flattenStyle",
+            "type": "value"
+        }
+    ]
 }

@@ -64,5 +64,318 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Core\\Devtools\\parseErrorStack.js.flow:4:6,4:18\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 13,
+            "column": 6,
+            "local": "LogBoxLogs",
+            "type": "type"
+        },
+        {
+            "row": 16,
+            "column": 5,
+            "local": "level",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 5,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 5,
+            "local": "category",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 5,
+            "local": "componentStack",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 6,
+            "local": "LogData",
+            "type": "type"
+        },
+        {
+            "row": 26,
+            "column": 7,
+            "local": "logs",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 7,
+            "local": "isDisabled",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 7,
+            "local": "selectedLogIndex",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 6,
+            "local": "Observer",
+            "type": "type"
+        },
+        {
+            "row": 33,
+            "column": 6,
+            "local": "IgnorePattern",
+            "type": "type"
+        },
+        {
+            "row": 37,
+            "column": 5,
+            "local": "unsubscribe",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 6,
+            "local": "Subscription",
+            "type": "type"
+        },
+        {
+            "row": 42,
+            "column": 3,
+            "local": "finalFormat",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "forceDialogImmediately",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 3,
+            "local": "suppressDialog_LEGACY",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 3,
+            "local": "suppressCompletely",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 3,
+            "local": "monitorEvent",
+            "type": "value"
+        },
+        {
+            "row": 47,
+            "column": 3,
+            "local": "monitorListVersion",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 3,
+            "local": "monitorSampleRate",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 6,
+            "local": "WarningInfo",
+            "type": "type"
+        },
+        {
+            "row": 51,
+            "column": 6,
+            "local": "WarningFilter",
+            "type": "type"
+        },
+        {
+            "row": 55,
+            "column": 5,
+            "local": "appVersion",
+            "type": "value"
+        },
+        {
+            "row": 56,
+            "column": 5,
+            "local": "engine",
+            "type": "value"
+        },
+        {
+            "row": 57,
+            "column": 5,
+            "local": "onPress",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 6,
+            "local": "AppInfo",
+            "type": "type"
+        },
+        {
+            "row": 61,
+            "column": 18,
+            "local": "reportLogBoxError",
+            "type": "value"
+        },
+        {
+            "row": 66,
+            "column": 18,
+            "local": "isLogBoxErrorMessage",
+            "type": "value"
+        },
+        {
+            "row": 68,
+            "column": 18,
+            "local": "isMessageIgnored",
+            "type": "value"
+        },
+        {
+            "row": 70,
+            "column": 18,
+            "local": "addLog",
+            "type": "value"
+        },
+        {
+            "row": 72,
+            "column": 18,
+            "local": "addException",
+            "type": "value"
+        },
+        {
+            "row": 74,
+            "column": 18,
+            "local": "symbolicateLogNow",
+            "type": "value"
+        },
+        {
+            "row": 76,
+            "column": 18,
+            "local": "retrySymbolicateLogNow",
+            "type": "value"
+        },
+        {
+            "row": 78,
+            "column": 18,
+            "local": "symbolicateLogLazy",
+            "type": "value"
+        },
+        {
+            "row": 80,
+            "column": 18,
+            "local": "clear",
+            "type": "value"
+        },
+        {
+            "row": 82,
+            "column": 18,
+            "local": "setSelectedLog",
+            "type": "value"
+        },
+        {
+            "row": 84,
+            "column": 18,
+            "local": "clearWarnings",
+            "type": "value"
+        },
+        {
+            "row": 86,
+            "column": 18,
+            "local": "clearErrors",
+            "type": "value"
+        },
+        {
+            "row": 88,
+            "column": 18,
+            "local": "dismiss",
+            "type": "value"
+        },
+        {
+            "row": 90,
+            "column": 18,
+            "local": "setWarningFilter",
+            "type": "value"
+        },
+        {
+            "row": 92,
+            "column": 18,
+            "local": "setAppInfo",
+            "type": "value"
+        },
+        {
+            "row": 94,
+            "column": 18,
+            "local": "getAppInfo",
+            "type": "value"
+        },
+        {
+            "row": 96,
+            "column": 18,
+            "local": "checkWarningFilter",
+            "type": "value"
+        },
+        {
+            "row": 98,
+            "column": 18,
+            "local": "addIgnorePatterns",
+            "type": "value"
+        },
+        {
+            "row": 102,
+            "column": 18,
+            "local": "setDisabled",
+            "type": "value"
+        },
+        {
+            "row": 104,
+            "column": 18,
+            "local": "isDisabled",
+            "type": "value"
+        },
+        {
+            "row": 106,
+            "column": 18,
+            "local": "observe",
+            "type": "value"
+        },
+        {
+            "row": 111,
+            "column": 7,
+            "local": "logs",
+            "type": "value"
+        },
+        {
+            "row": 112,
+            "column": 7,
+            "local": "isDisabled",
+            "type": "value"
+        },
+        {
+            "row": 113,
+            "column": 7,
+            "local": "selectedLogIndex",
+            "type": "value"
+        },
+        {
+            "row": 108,
+            "column": 6,
+            "local": "SubscribedComponent",
+            "type": "type"
+        },
+        {
+            "row": 118,
+            "column": 18,
+            "local": "withSubscription",
+            "type": "value"
+        }
+    ]
 }

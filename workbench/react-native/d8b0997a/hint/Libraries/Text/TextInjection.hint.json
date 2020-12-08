@@ -9,5 +9,12 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Text\\Text.js.flow:18:5,23:3\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 5,
+            "column": 3,
+            "local": "unstable_Text",
+            "type": "value"
+        }
+    ]
 }

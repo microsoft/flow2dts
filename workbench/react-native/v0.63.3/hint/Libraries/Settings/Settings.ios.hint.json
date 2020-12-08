@@ -1,4 +1,47 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "_settings",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "local": "get",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "set",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "watchKeys",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "clearWatch",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "_sendObservations",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 13,
+            "local": "Settings",
+            "type": "value"
+        }
+    ]
 }

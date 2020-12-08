@@ -9,5 +9,24 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:37:6,37:30\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 7,
+            "column": 3,
+            "local": "outer",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "inner",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 18,
+            "local": "splitLayoutProps",
+            "type": "value"
+        }
+    ]
 }

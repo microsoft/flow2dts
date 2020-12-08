@@ -9,5 +9,48 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\TurboModule\\RCTExport.js.flow:6:11,6:21\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 6,
+            "column": 4,
+            "local": "getInitialURL",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 4,
+            "local": "canOpenURL",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 4,
+            "local": "openURL",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 4,
+            "local": "openSettings",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 4,
+            "local": "addListener",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 4,
+            "local": "removeListeners",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
 }

@@ -9,5 +9,42 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\vendor\\emitter\\EventSubscriptionVendor.js.flow:4:15,4:37\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 5,
+            "column": 3,
+            "local": "eventType",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 3,
+            "local": "key",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "subscriber",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "remove",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 15,
+            "local": "EventSubscription",
+            "type": "class"
+        }
+    ]
 }

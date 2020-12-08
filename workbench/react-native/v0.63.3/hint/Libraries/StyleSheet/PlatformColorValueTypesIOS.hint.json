@@ -9,5 +9,30 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:7:6,7:15\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 5,
+            "column": 3,
+            "local": "light",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 3,
+            "local": "dark",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 6,
+            "local": "DynamicColorIOSTuple",
+            "type": "type"
+        },
+        {
+            "row": 9,
+            "column": 13,
+            "local": "DynamicColorIOS",
+            "type": "value"
+        }
+    ]
 }

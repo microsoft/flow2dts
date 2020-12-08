@@ -9,5 +9,108 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:5:6,5:19\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 6,
+            "local": "AccessibilityRole",
+            "type": "type"
+        },
+        {
+            "row": 35,
+            "column": 5,
+            "local": "name",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 5,
+            "local": "label",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 6,
+            "local": "AccessibilityActionInfo",
+            "type": "type"
+        },
+        {
+            "row": 42,
+            "column": 14,
+            "local": "actionName",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 6,
+            "local": "AccessibilityActionEvent",
+            "type": "type"
+        },
+        {
+            "row": 46,
+            "column": 3,
+            "local": "disabled",
+            "type": "value"
+        },
+        {
+            "row": 47,
+            "column": 3,
+            "local": "selected",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 3,
+            "local": "checked",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 3,
+            "local": "busy",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 3,
+            "local": "expanded",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 6,
+            "local": "AccessibilityState",
+            "type": "type"
+        },
+        {
+            "row": 59,
+            "column": 5,
+            "local": "min",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 5,
+            "local": "max",
+            "type": "value"
+        },
+        {
+            "row": 69,
+            "column": 5,
+            "local": "now",
+            "type": "value"
+        },
+        {
+            "row": 74,
+            "column": 5,
+            "local": "text",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 6,
+            "local": "AccessibilityValue",
+            "type": "type"
+        }
+    ]
 }

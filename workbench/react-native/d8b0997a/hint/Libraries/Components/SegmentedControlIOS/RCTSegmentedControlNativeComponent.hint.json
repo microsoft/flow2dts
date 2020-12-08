@@ -49,5 +49,78 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:16:6,16:15\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 11,
+            "column": 5,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 5,
+            "local": "selectedSegmentIndex",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 6,
+            "local": "OnChangeEvent",
+            "type": "type"
+        },
+        {
+            "row": 21,
+            "column": 5,
+            "local": "values",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 5,
+            "local": "selectedIndex",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 5,
+            "local": "enabled",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 5,
+            "local": "tintColor",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "textColor",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 5,
+            "local": "backgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 5,
+            "local": "momentary",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 5,
+            "local": "onChange",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 6,
+            "local": "NativeProps",
+            "type": "type"
+        }
+    ]
 }

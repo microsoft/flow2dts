@@ -1,4 +1,29 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "x",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 3,
+            "local": "y",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "local": "Point",
+            "type": "type"
+        },
+        {
+            "row": 8,
+            "column": 13,
+            "local": "pointsDiffer",
+            "type": "value"
+        }
+    ]
 }

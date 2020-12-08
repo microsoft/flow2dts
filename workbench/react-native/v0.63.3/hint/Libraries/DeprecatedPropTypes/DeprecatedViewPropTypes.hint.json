@@ -1,4 +1,251 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "DeprecatedEdgeInsetsPropType",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 13,
+            "local": "PropTypes",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 13,
+            "local": "stylePropType",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "accessible",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 3,
+            "local": "accessibilityLabel",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "accessibilityHint",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "accessibilityActions",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 3,
+            "local": "accessibilityIgnoresInvertColors",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 3,
+            "local": "accessibilityRole",
+            "type": "value"
+        },
+        {
+            "row": 86,
+            "column": 3,
+            "local": "accessibilityState",
+            "type": "value"
+        },
+        {
+            "row": 87,
+            "column": 3,
+            "local": "accessibilityValue",
+            "type": "value"
+        },
+        {
+            "row": 96,
+            "column": 3,
+            "local": "accessibilityLiveRegion",
+            "type": "value"
+        },
+        {
+            "row": 109,
+            "column": 3,
+            "local": "importantForAccessibility",
+            "type": "value"
+        },
+        {
+            "row": 122,
+            "column": 3,
+            "local": "accessibilityViewIsModal",
+            "type": "value"
+        },
+        {
+            "row": 132,
+            "column": 3,
+            "local": "accessibilityElementsHidden",
+            "type": "value"
+        },
+        {
+            "row": 140,
+            "column": 3,
+            "local": "onAccessibilityAction",
+            "type": "value"
+        },
+        {
+            "row": 148,
+            "column": 3,
+            "local": "onAccessibilityTap",
+            "type": "value"
+        },
+        {
+            "row": 156,
+            "column": 3,
+            "local": "onMagicTap",
+            "type": "value"
+        },
+        {
+            "row": 165,
+            "column": 3,
+            "local": "testID",
+            "type": "value"
+        },
+        {
+            "row": 174,
+            "column": 3,
+            "local": "nativeID",
+            "type": "value"
+        },
+        {
+            "row": 191,
+            "column": 3,
+            "local": "onResponderGrant",
+            "type": "value"
+        },
+        {
+            "row": 201,
+            "column": 3,
+            "local": "onResponderMove",
+            "type": "value"
+        },
+        {
+            "row": 212,
+            "column": 3,
+            "local": "onResponderReject",
+            "type": "value"
+        },
+        {
+            "row": 222,
+            "column": 3,
+            "local": "onResponderRelease",
+            "type": "value"
+        },
+        {
+            "row": 235,
+            "column": 3,
+            "local": "onResponderTerminate",
+            "type": "value"
+        },
+        {
+            "row": 246,
+            "column": 3,
+            "local": "onResponderTerminationRequest",
+            "type": "value"
+        },
+        {
+            "row": 256,
+            "column": 3,
+            "local": "onStartShouldSetResponder",
+            "type": "value"
+        },
+        {
+            "row": 267,
+            "column": 3,
+            "local": "onStartShouldSetResponderCapture",
+            "type": "value"
+        },
+        {
+            "row": 278,
+            "column": 3,
+            "local": "onMoveShouldSetResponder",
+            "type": "value"
+        },
+        {
+            "row": 289,
+            "column": 3,
+            "local": "onMoveShouldSetResponderCapture",
+            "type": "value"
+        },
+        {
+            "row": 302,
+            "column": 3,
+            "local": "hitSlop",
+            "type": "value"
+        },
+        {
+            "row": 315,
+            "column": 3,
+            "local": "onLayout",
+            "type": "value"
+        },
+        {
+            "row": 322,
+            "column": 3,
+            "local": "pointerEvents",
+            "type": "value"
+        },
+        {
+            "row": 329,
+            "column": 3,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 341,
+            "column": 3,
+            "local": "removeClippedSubviews",
+            "type": "value"
+        },
+        {
+            "row": 351,
+            "column": 3,
+            "local": "renderToHardwareTextureAndroid",
+            "type": "value"
+        },
+        {
+            "row": 360,
+            "column": 3,
+            "local": "shouldRasterizeIOS",
+            "type": "value"
+        },
+        {
+            "row": 372,
+            "column": 3,
+            "local": "collapsable",
+            "type": "value"
+        },
+        {
+            "row": 382,
+            "column": 3,
+            "local": "needsOffscreenAlphaCompositing",
+            "type": "value"
+        }
+    ]
 }

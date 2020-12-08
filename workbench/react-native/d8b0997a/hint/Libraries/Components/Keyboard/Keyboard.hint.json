@@ -9,5 +9,120 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\EventEmitter\\NativeEventEmitter.js.flow:17:15,17:32\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 13,
+            "local": "KeyboardEventEmitter",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 6,
+            "local": "KeyboardEventName",
+            "type": "type"
+        },
+        {
+            "row": 14,
+            "column": 6,
+            "local": "KeyboardEventEasing",
+            "type": "type"
+        },
+        {
+            "row": 23,
+            "column": 5,
+            "local": "screenX",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 5,
+            "local": "screenY",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 5,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 6,
+            "local": "KeyboardEventCoordinates",
+            "type": "type"
+        },
+        {
+            "row": 30,
+            "column": 6,
+            "local": "KeyboardEvent",
+            "type": "type"
+        },
+        {
+            "row": 33,
+            "column": 3,
+            "local": "duration",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 3,
+            "local": "easing",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "endCoordinates",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 6,
+            "local": "BaseKeyboardEvent",
+            "type": "type"
+        },
+        {
+            "row": 41,
+            "column": 5,
+            "local": "duration",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 5,
+            "local": "easing",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 6,
+            "local": "AndroidKeyboardEvent",
+            "type": "type"
+        },
+        {
+            "row": 49,
+            "column": 5,
+            "local": "startCoordinates",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 5,
+            "local": "isEventFromThisApp",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 6,
+            "local": "IOSKeyboardEvent",
+            "type": "type"
+        }
+    ]
 }

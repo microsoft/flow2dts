@@ -9,5 +9,420 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Utilities\\createPerformanceLogger.js.flow:14:11,14:28\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 6,
+            "local": "NativeResponseType",
+            "type": "type"
+        },
+        {
+            "row": 5,
+            "column": 6,
+            "local": "ResponseType",
+            "type": "type"
+        },
+        {
+            "row": 6,
+            "column": 6,
+            "local": "Response",
+            "type": "type"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "requestSent",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "responseReceived",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "dataReceived",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "loadingFinished",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "loadingFailed",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 6,
+            "local": "XHRInterceptor",
+            "type": "type"
+        },
+        {
+            "row": 24,
+            "column": 3,
+            "local": "onload",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 3,
+            "local": "onloadstart",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 3,
+            "local": "onprogress",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 3,
+            "local": "ontimeout",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 3,
+            "local": "onerror",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 3,
+            "local": "onabort",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 3,
+            "local": "onloadend",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 15,
+            "local": "XMLHttpRequestEventTarget",
+            "type": "class"
+        },
+        {
+            "row": 32,
+            "column": 13,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 10,
+            "local": "UNSENT",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 10,
+            "local": "OPENED",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 10,
+            "local": "HEADERS_RECEIVED",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 10,
+            "local": "LOADING",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 10,
+            "local": "DONE",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 3,
+            "local": "UNSENT",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "OPENED",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 3,
+            "local": "HEADERS_RECEIVED",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 3,
+            "local": "LOADING",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 3,
+            "local": "DONE",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 3,
+            "local": "onload",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 3,
+            "local": "onloadstart",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 3,
+            "local": "onprogress",
+            "type": "value"
+        },
+        {
+            "row": 52,
+            "column": 3,
+            "local": "ontimeout",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 3,
+            "local": "onerror",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 3,
+            "local": "onabort",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 3,
+            "local": "onloadend",
+            "type": "value"
+        },
+        {
+            "row": 56,
+            "column": 3,
+            "local": "onreadystatechange",
+            "type": "value"
+        },
+        {
+            "row": 58,
+            "column": 3,
+            "local": "readyState",
+            "type": "value"
+        },
+        {
+            "row": 59,
+            "column": 3,
+            "local": "responseHeaders",
+            "type": "value"
+        },
+        {
+            "row": 60,
+            "column": 3,
+            "local": "status",
+            "type": "value"
+        },
+        {
+            "row": 61,
+            "column": 3,
+            "local": "timeout",
+            "type": "value"
+        },
+        {
+            "row": 62,
+            "column": 3,
+            "local": "responseURL",
+            "type": "value"
+        },
+        {
+            "row": 63,
+            "column": 3,
+            "local": "withCredentials",
+            "type": "value"
+        },
+        {
+            "row": 65,
+            "column": 3,
+            "local": "upload",
+            "type": "value"
+        },
+        {
+            "row": 67,
+            "column": 10,
+            "local": "setInterceptor",
+            "type": "value"
+        },
+        {
+            "row": 69,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 71,
+            "column": 7,
+            "local": "responseType",
+            "type": "value"
+        },
+        {
+            "row": 73,
+            "column": 7,
+            "local": "responseType",
+            "type": "value"
+        },
+        {
+            "row": 75,
+            "column": 7,
+            "local": "responseText",
+            "type": "value"
+        },
+        {
+            "row": 77,
+            "column": 7,
+            "local": "response",
+            "type": "value"
+        },
+        {
+            "row": 80,
+            "column": 3,
+            "local": "__didCreateRequest",
+            "type": "value"
+        },
+        {
+            "row": 83,
+            "column": 3,
+            "local": "__didUploadProgress",
+            "type": "value"
+        },
+        {
+            "row": 85,
+            "column": 3,
+            "local": "__didReceiveResponse",
+            "type": "value"
+        },
+        {
+            "row": 92,
+            "column": 3,
+            "local": "__didReceiveData",
+            "type": "value"
+        },
+        {
+            "row": 94,
+            "column": 3,
+            "local": "__didReceiveIncrementalData",
+            "type": "value"
+        },
+        {
+            "row": 101,
+            "column": 3,
+            "local": "__didReceiveDataProgress",
+            "type": "value"
+        },
+        {
+            "row": 108,
+            "column": 3,
+            "local": "__didCompleteResponse",
+            "type": "value"
+        },
+        {
+            "row": 114,
+            "column": 3,
+            "local": "getAllResponseHeaders",
+            "type": "value"
+        },
+        {
+            "row": 116,
+            "column": 3,
+            "local": "getResponseHeader",
+            "type": "value"
+        },
+        {
+            "row": 118,
+            "column": 3,
+            "local": "setRequestHeader",
+            "type": "value"
+        },
+        {
+            "row": 123,
+            "column": 3,
+            "local": "setTrackingName",
+            "type": "value"
+        },
+        {
+            "row": 128,
+            "column": 3,
+            "local": "setPerformanceLogger",
+            "type": "value"
+        },
+        {
+            "row": 130,
+            "column": 3,
+            "local": "open",
+            "type": "value"
+        },
+        {
+            "row": 132,
+            "column": 3,
+            "local": "send",
+            "type": "value"
+        },
+        {
+            "row": 134,
+            "column": 3,
+            "local": "abort",
+            "type": "value"
+        },
+        {
+            "row": 136,
+            "column": 3,
+            "local": "setResponseHeaders",
+            "type": "value"
+        },
+        {
+            "row": 138,
+            "column": 3,
+            "local": "setReadyState",
+            "type": "value"
+        },
+        {
+            "row": 141,
+            "column": 3,
+            "local": "addEventListener",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 15,
+            "local": "XMLHttpRequest",
+            "type": "class"
+        },
+        {
+            "row": 143,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
 }

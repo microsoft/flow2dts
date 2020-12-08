@@ -16,5 +16,36 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:17:6,17:10\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 7,
+            "column": 4,
+            "local": "focus",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 4,
+            "local": "blur",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 4,
+            "local": "setTextAndSelection",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 11,
+            "local": "TextInputNativeCommands",
+            "type": "type"
+        },
+        {
+            "row": 19,
+            "column": 13,
+            "local": "supportedCommands",
+            "type": "value"
+        }
+    ]
 }

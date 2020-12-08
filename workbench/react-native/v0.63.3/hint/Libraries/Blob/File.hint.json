@@ -9,5 +9,48 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Blob\\BlobTypes.js.flow:15:6,15:16\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "Blob",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 7,
+            "local": "name",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 7,
+            "local": "lastModified",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 15,
+            "local": "File",
+            "type": "class"
+        },
+        {
+            "row": 22,
+            "column": 13,
+            "local": "$2",
+            "type": "value"
+        }
+    ]
 }

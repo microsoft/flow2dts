@@ -65,5 +65,306 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\nodes\\AnimatedInterpolation.js.flow:9:6,9:28\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 13,
+            "column": 3,
+            "local": "enableQueue",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "disableQueue",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "createAnimatedNode",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "startListeningToAnimatedNodeValue",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "stopListeningToAnimatedNodeValue",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "connectAnimatedNodes",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "disconnectAnimatedNodes",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 3,
+            "local": "startAnimatingNode",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 3,
+            "local": "stopAnimation",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 3,
+            "local": "setAnimatedNodeValue",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 3,
+            "local": "setAnimatedNodeOffset",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 3,
+            "local": "flattenAnimatedNodeOffset",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 3,
+            "local": "extractAnimatedNodeOffset",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 3,
+            "local": "connectAnimatedNodeToView",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "disconnectAnimatedNodeFromView",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 3,
+            "local": "restoreDefaultValues",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 3,
+            "local": "dropAnimatedNode",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "addAnimatedEventToView",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 3,
+            "local": "removeAnimatedEventFromView",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 13,
+            "local": "API",
+            "type": "value"
+        },
+        {
+            "row": 47,
+            "column": 18,
+            "local": "addWhitelistedStyleProp",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 18,
+            "local": "addWhitelistedTransformProp",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 18,
+            "local": "addWhitelistedInterpolationParam",
+            "type": "value"
+        },
+        {
+            "row": 57,
+            "column": 9,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 58,
+            "column": 9,
+            "local": "property",
+            "type": "value"
+        },
+        {
+            "row": 59,
+            "column": 9,
+            "local": "nodeTag",
+            "type": "value"
+        },
+        {
+            "row": 63,
+            "column": 9,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 9,
+            "local": "property",
+            "type": "value"
+        },
+        {
+            "row": 65,
+            "column": 9,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 18,
+            "local": "validateTransform",
+            "type": "value"
+        },
+        {
+            "row": 71,
+            "column": 18,
+            "local": "validateStyles",
+            "type": "value"
+        },
+        {
+            "row": 73,
+            "column": 18,
+            "local": "validateInterpolation",
+            "type": "value"
+        },
+        {
+            "row": 75,
+            "column": 18,
+            "local": "generateNewNodeTag",
+            "type": "value"
+        },
+        {
+            "row": 77,
+            "column": 18,
+            "local": "generateNewAnimationId",
+            "type": "value"
+        },
+        {
+            "row": 79,
+            "column": 18,
+            "local": "assertNativeAnimatedModule",
+            "type": "value"
+        },
+        {
+            "row": 81,
+            "column": 18,
+            "local": "shouldUseNativeDriver",
+            "type": "value"
+        },
+        {
+            "row": 85,
+            "column": 18,
+            "local": "transformDataType",
+            "type": "value"
+        },
+        {
+            "row": 88,
+            "column": 3,
+            "local": "API",
+            "type": "value"
+        },
+        {
+            "row": 89,
+            "column": 3,
+            "local": "addWhitelistedStyleProp",
+            "type": "value"
+        },
+        {
+            "row": 90,
+            "column": 3,
+            "local": "addWhitelistedTransformProp",
+            "type": "value"
+        },
+        {
+            "row": 91,
+            "column": 3,
+            "local": "addWhitelistedInterpolationParam",
+            "type": "value"
+        },
+        {
+            "row": 92,
+            "column": 3,
+            "local": "validateStyles",
+            "type": "value"
+        },
+        {
+            "row": 93,
+            "column": 3,
+            "local": "validateTransform",
+            "type": "value"
+        },
+        {
+            "row": 94,
+            "column": 3,
+            "local": "validateInterpolation",
+            "type": "value"
+        },
+        {
+            "row": 95,
+            "column": 3,
+            "local": "generateNewNodeTag",
+            "type": "value"
+        },
+        {
+            "row": 96,
+            "column": 3,
+            "local": "generateNewAnimationId",
+            "type": "value"
+        },
+        {
+            "row": 97,
+            "column": 3,
+            "local": "assertNativeAnimatedModule",
+            "type": "value"
+        },
+        {
+            "row": 98,
+            "column": 3,
+            "local": "shouldUseNativeDriver",
+            "type": "value"
+        },
+        {
+            "row": 99,
+            "column": 3,
+            "local": "transformDataType",
+            "type": "value"
+        },
+        {
+            "row": 101,
+            "column": 7,
+            "local": "nativeEventEmitter",
+            "type": "value"
+        }
+    ]
 }

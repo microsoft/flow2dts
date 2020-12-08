@@ -9,5 +9,84 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\createAnimatedComponent.js.flow:5:6,5:26\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "View",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 13,
+            "local": "AnimatedMock",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 13,
+            "local": "Animated",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 7,
+            "local": "FlatList",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 7,
+            "local": "Image",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 7,
+            "local": "ScrollView",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 7,
+            "local": "SectionList",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 7,
+            "local": "Text",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 7,
+            "local": "View",
+            "type": "value"
+        }
+    ]
 }

@@ -1,4 +1,353 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 13,
+            "local": "VirtualizedList",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 6,
+            "local": "Item",
+            "type": "type"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "data",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "key",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 7,
+            "local": "item",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 7,
+            "local": "index",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 7,
+            "local": "section",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 9,
+            "local": "highlight",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 9,
+            "local": "unhighlight",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 9,
+            "local": "updateProps",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 7,
+            "local": "separators",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "renderItem",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "ItemSeparatorComponent",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "keyExtractor",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "SectionBase",
+            "type": "type"
+        },
+        {
+            "row": 41,
+            "column": 3,
+            "local": "sections",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 6,
+            "local": "RequiredProps",
+            "type": "type"
+        },
+        {
+            "row": 50,
+            "column": 7,
+            "local": "item",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 7,
+            "local": "index",
+            "type": "value"
+        },
+        {
+            "row": 52,
+            "column": 7,
+            "local": "section",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 9,
+            "local": "highlight",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 9,
+            "local": "unhighlight",
+            "type": "value"
+        },
+        {
+            "row": 56,
+            "column": 9,
+            "local": "updateProps",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 7,
+            "local": "separators",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 3,
+            "local": "renderItem",
+            "type": "value"
+        },
+        {
+            "row": 68,
+            "column": 7,
+            "local": "section",
+            "type": "value"
+        },
+        {
+            "row": 66,
+            "column": 3,
+            "local": "renderSectionHeader",
+            "type": "value"
+        },
+        {
+            "row": 77,
+            "column": 7,
+            "local": "section",
+            "type": "value"
+        },
+        {
+            "row": 75,
+            "column": 3,
+            "local": "renderSectionFooter",
+            "type": "value"
+        },
+        {
+            "row": 88,
+            "column": 3,
+            "local": "SectionSeparatorComponent",
+            "type": "value"
+        },
+        {
+            "row": 93,
+            "column": 3,
+            "local": "stickySectionHeadersEnabled",
+            "type": "value"
+        },
+        {
+            "row": 94,
+            "column": 22,
+            "local": "distanceFromEnd",
+            "type": "value"
+        },
+        {
+            "row": 94,
+            "column": 3,
+            "local": "onEndReached",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 6,
+            "local": "OptionalProps",
+            "type": "type"
+        },
+        {
+            "row": 97,
+            "column": 6,
+            "local": "VirtualizedListProps",
+            "type": "type"
+        },
+        {
+            "row": 104,
+            "column": 6,
+            "local": "renderItem",
+            "type": "value"
+        },
+        {
+            "row": 99,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 108,
+            "column": 3,
+            "local": "animated",
+            "type": "value"
+        },
+        {
+            "row": 109,
+            "column": 3,
+            "local": "itemIndex",
+            "type": "value"
+        },
+        {
+            "row": 110,
+            "column": 3,
+            "local": "sectionIndex",
+            "type": "value"
+        },
+        {
+            "row": 111,
+            "column": 3,
+            "local": "viewOffset",
+            "type": "value"
+        },
+        {
+            "row": 112,
+            "column": 3,
+            "local": "viewPosition",
+            "type": "value"
+        },
+        {
+            "row": 107,
+            "column": 6,
+            "local": "ScrollToLocationParamsType",
+            "type": "type"
+        },
+        {
+            "row": 117,
+            "column": 3,
+            "local": "data",
+            "type": "value"
+        },
+        {
+            "row": 115,
+            "column": 6,
+            "local": "DefaultProps",
+            "type": "type"
+        },
+        {
+            "row": 120,
+            "column": 15,
+            "local": "childProps",
+            "type": "value"
+        },
+        {
+            "row": 120,
+            "column": 6,
+            "local": "State",
+            "type": "type"
+        },
+        {
+            "row": 124,
+            "column": 10,
+            "local": "defaultProps",
+            "type": "value"
+        },
+        {
+            "row": 126,
+            "column": 3,
+            "local": "scrollToLocation",
+            "type": "value"
+        },
+        {
+            "row": 128,
+            "column": 3,
+            "local": "getListRef",
+            "type": "value"
+        },
+        {
+            "row": 130,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 132,
+            "column": 3,
+            "local": "UNSAFE_componentWillReceiveProps",
+            "type": "value"
+        },
+        {
+            "row": 134,
+            "column": 3,
+            "local": "render",
+            "type": "value"
+        },
+        {
+            "row": 122,
+            "column": 15,
+            "local": "VirtualizedSectionList",
+            "type": "class"
+        },
+        {
+            "row": 136,
+            "column": 13,
+            "local": "$3",
+            "type": "value"
+        }
+    ]
 }

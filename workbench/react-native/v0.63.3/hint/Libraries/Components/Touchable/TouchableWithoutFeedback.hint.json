@@ -96,5 +96,258 @@
             }
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 19,
+            "column": 5,
+            "local": "accessibilityActions",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 5,
+            "local": "accessibilityElementsHidden",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 5,
+            "local": "accessibilityHint",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 5,
+            "local": "accessibilityIgnoresInvertColors",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 5,
+            "local": "accessibilityLabel",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 5,
+            "local": "accessibilityLiveRegion",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "accessibilityRole",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 5,
+            "local": "accessibilityState",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 5,
+            "local": "accessibilityValue",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 5,
+            "local": "accessibilityViewIsModal",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 5,
+            "local": "accessible",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 5,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 5,
+            "local": "delayLongPress",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 5,
+            "local": "delayPressIn",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 5,
+            "local": "delayPressOut",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 5,
+            "local": "disabled",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 5,
+            "local": "focusable",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 5,
+            "local": "hitSlop",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 5,
+            "local": "importantForAccessibility",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 5,
+            "local": "nativeID",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 5,
+            "local": "onAccessibilityAction",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 5,
+            "local": "onBlur",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 5,
+            "local": "onFocus",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 5,
+            "local": "onLayout",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 5,
+            "local": "onLongPress",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 5,
+            "local": "onPress",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 5,
+            "local": "onPressIn",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 5,
+            "local": "onPressOut",
+            "type": "value"
+        },
+        {
+            "row": 47,
+            "column": 5,
+            "local": "pressRetentionOffset",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 5,
+            "local": "rejectResponderTermination",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 5,
+            "local": "testID",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 5,
+            "local": "touchSoundDisabled",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 56,
+            "column": 5,
+            "local": "pressability",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 6,
+            "local": "State",
+            "type": "type"
+        },
+        {
+            "row": 62,
+            "column": 3,
+            "local": "state",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 3,
+            "local": "render",
+            "type": "value"
+        },
+        {
+            "row": 66,
+            "column": 3,
+            "local": "componentDidMount",
+            "type": "value"
+        },
+        {
+            "row": 68,
+            "column": 3,
+            "local": "componentDidUpdate",
+            "type": "value"
+        },
+        {
+            "row": 70,
+            "column": 3,
+            "local": "componentWillUnmount",
+            "type": "value"
+        },
+        {
+            "row": 60,
+            "column": 15,
+            "local": "TouchableWithoutFeedback",
+            "type": "class"
+        },
+        {
+            "row": 72,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
 }

@@ -1,4 +1,23 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 6,
+            "local": "OnSuccessCallback",
+            "type": "type"
+        },
+        {
+            "row": 11,
+            "column": 6,
+            "local": "OnErrorCallback",
+            "type": "type"
+        },
+        {
+            "row": 13,
+            "column": 13,
+            "local": "queryLayoutByID",
+            "type": "value"
+        }
+    ]
 }

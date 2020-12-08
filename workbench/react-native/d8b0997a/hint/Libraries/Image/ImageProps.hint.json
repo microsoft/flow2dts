@@ -57,5 +57,222 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:377:6,377:14\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 15,
+            "column": 11,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 11,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 11,
+            "local": "uri",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 7,
+            "local": "source",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "ImageLoadEvent",
+            "type": "type"
+        },
+        {
+            "row": 31,
+            "column": 5,
+            "local": "defaultSource",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 5,
+            "local": "onPartialLoad",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 41,
+            "local": "loaded",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 57,
+            "local": "total",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 5,
+            "local": "onProgress",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 6,
+            "local": "IOSImageProps",
+            "type": "type"
+        },
+        {
+            "row": 51,
+            "column": 53,
+            "local": "uri",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 5,
+            "local": "loadingIndicatorSource",
+            "type": "value"
+        },
+        {
+            "row": 52,
+            "column": 5,
+            "local": "progressiveRenderingEnabled",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 5,
+            "local": "fadeDuration",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 6,
+            "local": "AndroidImageProps",
+            "type": "type"
+        },
+        {
+            "row": 58,
+            "column": 35,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 67,
+            "column": 3,
+            "local": "accessible",
+            "type": "value"
+        },
+        {
+            "row": 72,
+            "column": 3,
+            "local": "internal_analyticTag",
+            "type": "value"
+        },
+        {
+            "row": 80,
+            "column": 3,
+            "local": "accessibilityLabel",
+            "type": "value"
+        },
+        {
+            "row": 87,
+            "column": 3,
+            "local": "blurRadius",
+            "type": "value"
+        },
+        {
+            "row": 92,
+            "column": 3,
+            "local": "capInsets",
+            "type": "value"
+        },
+        {
+            "row": 103,
+            "column": 11,
+            "local": "error",
+            "type": "value"
+        },
+        {
+            "row": 99,
+            "column": 3,
+            "local": "onError",
+            "type": "value"
+        },
+        {
+            "row": 116,
+            "column": 3,
+            "local": "onLayout",
+            "type": "value"
+        },
+        {
+            "row": 123,
+            "column": 3,
+            "local": "onLoad",
+            "type": "value"
+        },
+        {
+            "row": 130,
+            "column": 3,
+            "local": "onLoadEnd",
+            "type": "value"
+        },
+        {
+            "row": 137,
+            "column": 3,
+            "local": "onLoadStart",
+            "type": "value"
+        },
+        {
+            "row": 142,
+            "column": 3,
+            "local": "resizeMethod",
+            "type": "value"
+        },
+        {
+            "row": 149,
+            "column": 3,
+            "local": "source",
+            "type": "value"
+        },
+        {
+            "row": 154,
+            "column": 3,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 162,
+            "column": 3,
+            "local": "resizeMode",
+            "type": "value"
+        },
+        {
+            "row": 170,
+            "column": 3,
+            "local": "testID",
+            "type": "value"
+        },
+        {
+            "row": 172,
+            "column": 3,
+            "local": "src",
+            "type": "value"
+        },
+        {
+            "row": 173,
+            "column": 3,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 57,
+            "column": 6,
+            "local": "ImageProps",
+            "type": "type"
+        }
+    ]
 }

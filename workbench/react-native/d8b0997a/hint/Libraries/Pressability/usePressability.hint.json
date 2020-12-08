@@ -17,5 +17,12 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Pressability\\Pressability.js.flow:8:6,8:23\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 5,
+            "column": 18,
+            "local": "usePressability",
+            "type": "value"
+        }
+    ]
 }

@@ -32,5 +32,144 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:9:6,9:23\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 10,
+            "column": 6,
+            "local": "DrawerStates",
+            "type": "type"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "offset",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 6,
+            "local": "DrawerSlideEvent",
+            "type": "type"
+        },
+        {
+            "row": 22,
+            "column": 3,
+            "local": "keyboardDismissMode",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "drawerBackgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 3,
+            "local": "drawerPosition",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 3,
+            "local": "drawerWidth",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 3,
+            "local": "drawerLockMode",
+            "type": "value"
+        },
+        {
+            "row": 60,
+            "column": 3,
+            "local": "onDrawerSlide",
+            "type": "value"
+        },
+        {
+            "row": 69,
+            "column": 3,
+            "local": "onDrawerStateChanged",
+            "type": "value"
+        },
+        {
+            "row": 74,
+            "column": 3,
+            "local": "onDrawerOpen",
+            "type": "value"
+        },
+        {
+            "row": 79,
+            "column": 3,
+            "local": "onDrawerClose",
+            "type": "value"
+        },
+        {
+            "row": 84,
+            "column": 3,
+            "local": "renderNavigationView",
+            "type": "value"
+        },
+        {
+            "row": 91,
+            "column": 3,
+            "local": "statusBarBackgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 93,
+            "column": 3,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 94,
+            "column": 3,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 129,
+            "column": 10,
+            "local": "positions",
+            "type": "value"
+        },
+        {
+            "row": 132,
+            "column": 5,
+            "local": "drawerBackgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 131,
+            "column": 10,
+            "local": "defaultProps",
+            "type": "value"
+        },
+        {
+            "row": 138,
+            "column": 3,
+            "local": "openDrawer",
+            "type": "value"
+        },
+        {
+            "row": 143,
+            "column": 3,
+            "local": "closeDrawer",
+            "type": "value"
+        },
+        {
+            "row": 128,
+            "column": 15,
+            "local": "DrawerLayoutAndroid",
+            "type": "class"
+        }
+    ]
 }

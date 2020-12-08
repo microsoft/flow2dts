@@ -8,5 +8,18 @@
             }
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 6,
+            "local": "ContextType",
+            "type": "type"
+        },
+        {
+            "row": 6,
+            "column": 13,
+            "local": "Context",
+            "type": "value"
+        }
+    ]
 }

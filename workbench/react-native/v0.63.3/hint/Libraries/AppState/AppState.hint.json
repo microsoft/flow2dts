@@ -1,4 +1,113 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "EventEmitter",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "NativeEventEmitter",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$4",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "currentState",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "isAvailable",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 3,
+            "local": "addEventListener",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "removeEventListener",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 15,
+            "local": "AppState",
+            "type": "class"
+        },
+        {
+            "row": 34,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 3,
+            "local": "isAvailable",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 3,
+            "local": "currentState",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 3,
+            "local": "addEventListener",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 3,
+            "local": "removeEventListener",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 15,
+            "local": "MissingNativeAppStateShim",
+            "type": "class"
+        },
+        {
+            "row": 52,
+            "column": 13,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 13,
+            "local": "AppStateInstance",
+            "type": "value"
+        }
+    ]
 }

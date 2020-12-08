@@ -1,4 +1,23 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 5,
+            "local": "x",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 5,
+            "local": "y",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "local": "PointProp",
+            "type": "type"
+        }
+    ]
 }

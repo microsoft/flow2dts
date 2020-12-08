@@ -25,5 +25,132 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\animations\\Animation.js.flow:5:6,5:16\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "Animation",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 7,
+            "local": "x",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 7,
+            "local": "y",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "velocity",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "deceleration",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 6,
+            "local": "DecayAnimationConfig",
+            "type": "type"
+        },
+        {
+            "row": 23,
+            "column": 3,
+            "local": "velocity",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 3,
+            "local": "deceleration",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 6,
+            "local": "DecayAnimationConfigSingle",
+            "type": "type"
+        },
+        {
+            "row": 29,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 5,
+            "local": "deceleration",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 5,
+            "local": "iterations",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 5,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 5,
+            "local": "velocity",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 3,
+            "local": "__getNativeAnimationConfig",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 3,
+            "local": "start",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 3,
+            "local": "onUpdate",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 3,
+            "local": "stop",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 15,
+            "local": "DecayAnimation",
+            "type": "class"
+        },
+        {
+            "row": 50,
+            "column": 13,
+            "local": "$2",
+            "type": "value"
+        }
+    ]
 }

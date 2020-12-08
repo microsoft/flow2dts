@@ -1,4 +1,95 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "DeprecatedImageStylePropTypes",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "DeprecatedTextStylePropTypes",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 13,
+            "local": "DeprecatedViewStylePropTypes",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 13,
+            "local": "invariant",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 7,
+            "local": "$4",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 13,
+            "local": "ReactPropTypesSecret",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 10,
+            "local": "validateStyleProp",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 10,
+            "local": "validateStyle",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 10,
+            "local": "addValidStylePropTypes",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 15,
+            "local": "StyleSheetValidation",
+            "type": "class"
+        },
+        {
+            "row": 22,
+            "column": 13,
+            "local": "styleError",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 13,
+            "local": "allStylePropTypes",
+            "type": "value"
+        }
+    ]
 }

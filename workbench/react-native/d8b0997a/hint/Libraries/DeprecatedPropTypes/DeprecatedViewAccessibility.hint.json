@@ -1,4 +1,11 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 3,
+            "local": "DeprecatedAccessibilityRoles",
+            "type": "value"
+        }
+    ]
 }

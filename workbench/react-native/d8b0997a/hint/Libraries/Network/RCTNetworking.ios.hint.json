@@ -25,5 +25,42 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Network\\convertRequestBody.js.flow:7:6,7:16\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 10,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "sendRequest",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 3,
+            "local": "abortRequest",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 3,
+            "local": "clearCookies",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 15,
+            "local": "RCTNetworking",
+            "type": "class"
+        },
+        {
+            "row": 29,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
 }

@@ -1,4 +1,71 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "AnimatedWithChildren",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "__makeNative",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "__getValue",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "__getAnimatedValue",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "__attach",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "__detach",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "__getNativeConfig",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 15,
+            "local": "AnimatedTransform",
+            "type": "class"
+        },
+        {
+            "row": 21,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
 }

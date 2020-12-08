@@ -17,5 +17,30 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\ViewNativeComponent.js.flow:7:32,7:55\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 10,
+            "column": 13,
+            "local": "View",
+            "type": "value"
+        }
+    ]
 }

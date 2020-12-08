@@ -9,5 +9,42 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\ReactNative\\NativeUIManager.js.flow:4:11,4:14\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 5,
+            "column": 4,
+            "local": "getViewManagerConfig",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 4,
+            "local": "createView",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 4,
+            "local": "updateView",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 4,
+            "local": "manageChildren",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "UIManagerJSInterface",
+            "type": "type"
+        },
+        {
+            "row": 23,
+            "column": 13,
+            "local": "UIManager",
+            "type": "value"
+        }
+    ]
 }

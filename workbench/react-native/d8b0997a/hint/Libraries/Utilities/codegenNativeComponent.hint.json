@@ -9,5 +9,48 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 6,
+            "column": 5,
+            "local": "interfaceOnly",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 5,
+            "local": "paperComponentName",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 5,
+            "local": "paperComponentNameDeprecated",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 5,
+            "local": "excludedPlatforms",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 6,
+            "local": "Options",
+            "type": "type"
+        },
+        {
+            "row": 13,
+            "column": 6,
+            "local": "NativeComponentType",
+            "type": "type"
+        },
+        {
+            "row": 15,
+            "column": 18,
+            "local": "codegenNativeComponent",
+            "type": "value"
+        }
+    ]
 }

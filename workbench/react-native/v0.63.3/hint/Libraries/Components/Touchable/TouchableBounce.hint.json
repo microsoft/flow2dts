@@ -32,5 +32,54 @@
             }
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 12,
+            "column": 5,
+            "local": "onPressAnimationComplete",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 5,
+            "local": "onPressWithCompletion",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 5,
+            "local": "releaseBounciness",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 5,
+            "local": "releaseVelocity",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 5,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 5,
+            "local": "hostRef",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 23,
+            "column": 28,
+            "local": "hostRef",
+            "type": "value"
+        }
+    ]
 }

@@ -25,5 +25,66 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:16:6,16:15\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 6,
+            "local": "IndicatorSize",
+            "type": "type"
+        },
+        {
+            "row": 18,
+            "column": 5,
+            "local": "hidesWhenStopped",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 6,
+            "local": "IOSProps",
+            "type": "type"
+        },
+        {
+            "row": 29,
+            "column": 5,
+            "local": "animating",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 5,
+            "local": "color",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 5,
+            "local": "size",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 49,
+            "column": 13,
+            "local": "ActivityIndicatorWithRef",
+            "type": "value"
+        }
+    ]
 }

@@ -17,5 +17,120 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:16:6,16:15\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 5,
+            "local": "title",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 5,
+            "local": "onPress",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 5,
+            "local": "touchSoundDisabled",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 5,
+            "local": "color",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 5,
+            "local": "hasTVPreferredFocus",
+            "type": "value"
+        },
+        {
+            "row": 57,
+            "column": 5,
+            "local": "nextFocusDown",
+            "type": "value"
+        },
+        {
+            "row": 68,
+            "column": 5,
+            "local": "nextFocusForward",
+            "type": "value"
+        },
+        {
+            "row": 79,
+            "column": 5,
+            "local": "nextFocusLeft",
+            "type": "value"
+        },
+        {
+            "row": 90,
+            "column": 5,
+            "local": "nextFocusRight",
+            "type": "value"
+        },
+        {
+            "row": 101,
+            "column": 5,
+            "local": "nextFocusUp",
+            "type": "value"
+        },
+        {
+            "row": 106,
+            "column": 5,
+            "local": "accessibilityLabel",
+            "type": "value"
+        },
+        {
+            "row": 113,
+            "column": 5,
+            "local": "disabled",
+            "type": "value"
+        },
+        {
+            "row": 118,
+            "column": 5,
+            "local": "testID",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 6,
+            "local": "ButtonProps",
+            "type": "type"
+        },
+        {
+            "row": 124,
+            "column": 3,
+            "local": "render",
+            "type": "value"
+        },
+        {
+            "row": 122,
+            "column": 15,
+            "local": "Button",
+            "type": "class"
+        },
+        {
+            "row": 126,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
 }

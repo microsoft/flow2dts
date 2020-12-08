@@ -9,5 +9,156 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 6,
+            "local": "ComponentRef",
+            "type": "type"
+        },
+        {
+            "row": 8,
+            "column": 18,
+            "local": "currentlyFocusedInput",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 18,
+            "local": "currentlyFocusedField",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 18,
+            "local": "focusInput",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 18,
+            "local": "blurInput",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 18,
+            "local": "focusField",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 18,
+            "local": "blurField",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 18,
+            "local": "focusTextInput",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 18,
+            "local": "blurTextInput",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 18,
+            "local": "registerInput",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 18,
+            "local": "unregisterInput",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 18,
+            "local": "isTextInput",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 3,
+            "local": "currentlyFocusedInput",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "focusInput",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 3,
+            "local": "blurInput",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "currentlyFocusedField",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "focusField",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 3,
+            "local": "blurField",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 3,
+            "local": "focusTextInput",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 3,
+            "local": "blurTextInput",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 3,
+            "local": "registerInput",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 3,
+            "local": "unregisterInput",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 3,
+            "local": "isTextInput",
+            "type": "value"
+        }
+    ]
 }

@@ -9,5 +9,48 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:5:6,5:19\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 6,
+            "local": "BubblingEventHandler",
+            "type": "type"
+        },
+        {
+            "row": 9,
+            "column": 6,
+            "local": "DirectEventHandler",
+            "type": "type"
+        },
+        {
+            "row": 15,
+            "column": 6,
+            "local": "Double",
+            "type": "type"
+        },
+        {
+            "row": 16,
+            "column": 6,
+            "local": "Float",
+            "type": "type"
+        },
+        {
+            "row": 17,
+            "column": 6,
+            "local": "Int32",
+            "type": "type"
+        },
+        {
+            "row": 19,
+            "column": 6,
+            "local": "DefaultTypes",
+            "type": "type"
+        },
+        {
+            "row": 21,
+            "column": 6,
+            "local": "WithDefault",
+            "type": "type"
+        }
+    ]
 }

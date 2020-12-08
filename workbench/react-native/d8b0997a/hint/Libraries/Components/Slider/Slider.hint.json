@@ -41,5 +41,132 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:377:6,377:14\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 3,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 5,
+            "local": "trackImage",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 5,
+            "local": "minimumTrackImage",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 5,
+            "local": "maximumTrackImage",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 5,
+            "local": "thumbImage",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 6,
+            "local": "IOSProps",
+            "type": "type"
+        },
+        {
+            "row": 47,
+            "column": 5,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 57,
+            "column": 5,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 5,
+            "local": "step",
+            "type": "value"
+        },
+        {
+            "row": 69,
+            "column": 5,
+            "local": "minimumValue",
+            "type": "value"
+        },
+        {
+            "row": 74,
+            "column": 5,
+            "local": "maximumValue",
+            "type": "value"
+        },
+        {
+            "row": 80,
+            "column": 5,
+            "local": "minimumTrackTintColor",
+            "type": "value"
+        },
+        {
+            "row": 86,
+            "column": 5,
+            "local": "maximumTrackTintColor",
+            "type": "value"
+        },
+        {
+            "row": 91,
+            "column": 5,
+            "local": "thumbTintColor",
+            "type": "value"
+        },
+        {
+            "row": 97,
+            "column": 5,
+            "local": "disabled",
+            "type": "value"
+        },
+        {
+            "row": 102,
+            "column": 5,
+            "local": "onValueChange",
+            "type": "value"
+        },
+        {
+            "row": 109,
+            "column": 5,
+            "local": "onSlidingComplete",
+            "type": "value"
+        },
+        {
+            "row": 114,
+            "column": 5,
+            "local": "testID",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 118,
+            "column": 13,
+            "local": "SliderWithRef",
+            "type": "value"
+        }
+    ]
 }

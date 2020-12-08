@@ -1,4 +1,29 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "NativeEventEmitter",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 15,
+            "local": "StatusBarIOS",
+            "type": "class"
+        },
+        {
+            "row": 6,
+            "column": 13,
+            "local": "$2",
+            "type": "value"
+        }
+    ]
 }

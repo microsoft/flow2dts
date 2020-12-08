@@ -1,4 +1,23 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 5,
+            "column": 13,
+            "local": "colorPropType",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "isRequired",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 13,
+            "local": "ColorPropType",
+            "type": "value"
+        }
+    ]
 }

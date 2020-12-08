@@ -17,5 +17,192 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:9:6,9:23\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 5,
+            "local": "orientation",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 6,
+            "local": "OrientationChangeEvent",
+            "type": "type"
+        },
+        {
+            "row": 23,
+            "column": 5,
+            "local": "animationType",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 5,
+            "local": "presentationStyle",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 5,
+            "local": "transparent",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 5,
+            "local": "statusBarTranslucent",
+            "type": "value"
+        },
+        {
+            "row": 60,
+            "column": 5,
+            "local": "hardwareAccelerated",
+            "type": "value"
+        },
+        {
+            "row": 67,
+            "column": 5,
+            "local": "visible",
+            "type": "value"
+        },
+        {
+            "row": 77,
+            "column": 5,
+            "local": "onRequestClose",
+            "type": "value"
+        },
+        {
+            "row": 85,
+            "column": 5,
+            "local": "onShow",
+            "type": "value"
+        },
+        {
+            "row": 93,
+            "column": 5,
+            "local": "onDismiss",
+            "type": "value"
+        },
+        {
+            "row": 100,
+            "column": 5,
+            "local": "supportedOrientations",
+            "type": "value"
+        },
+        {
+            "row": 114,
+            "column": 5,
+            "local": "onOrientationChange",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 120,
+            "column": 26,
+            "local": "hardwareAccelerated",
+            "type": "value"
+        },
+        {
+            "row": 120,
+            "column": 56,
+            "local": "visible",
+            "type": "value"
+        },
+        {
+            "row": 120,
+            "column": 10,
+            "local": "defaultProps",
+            "type": "value"
+        },
+        {
+            "row": 122,
+            "column": 32,
+            "local": "rootTag",
+            "type": "value"
+        },
+        {
+            "row": 122,
+            "column": 10,
+            "local": "contextTypes",
+            "type": "value"
+        },
+        {
+            "row": 124,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 128,
+            "column": 9,
+            "local": "virtualizedList",
+            "type": "value"
+        },
+        {
+            "row": 126,
+            "column": 10,
+            "local": "childContextTypes",
+            "type": "value"
+        },
+        {
+            "row": 130,
+            "column": 24,
+            "local": "virtualizedList",
+            "type": "value"
+        },
+        {
+            "row": 130,
+            "column": 3,
+            "local": "getChildContext",
+            "type": "value"
+        },
+        {
+            "row": 132,
+            "column": 3,
+            "local": "componentWillUnmount",
+            "type": "value"
+        },
+        {
+            "row": 134,
+            "column": 3,
+            "local": "UNSAFE_componentWillReceiveProps",
+            "type": "value"
+        },
+        {
+            "row": 136,
+            "column": 3,
+            "local": "render",
+            "type": "value"
+        },
+        {
+            "row": 118,
+            "column": 15,
+            "local": "Modal",
+            "type": "class"
+        },
+        {
+            "row": 138,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
 }

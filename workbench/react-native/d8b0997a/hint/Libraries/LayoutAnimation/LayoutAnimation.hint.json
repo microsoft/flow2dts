@@ -25,5 +25,240 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:249:6,249:26\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 6,
+            "column": 6,
+            "local": "LayoutAnimationConfig",
+            "type": "type"
+        },
+        {
+            "row": 8,
+            "column": 6,
+            "local": "OnAnimationDidEndCallback",
+            "type": "type"
+        },
+        {
+            "row": 9,
+            "column": 6,
+            "local": "OnAnimationDidFailCallback",
+            "type": "type"
+        },
+        {
+            "row": 11,
+            "column": 18,
+            "local": "configureNext",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 18,
+            "local": "create",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 3,
+            "local": "easeInEaseOut",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 3,
+            "local": "linear",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 5,
+            "local": "duration",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 7,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 7,
+            "local": "property",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 5,
+            "local": "create",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 7,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 7,
+            "local": "springDamping",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 5,
+            "local": "update",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 7,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 7,
+            "local": "property",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 5,
+            "local": "delete",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 3,
+            "local": "spring",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 13,
+            "local": "Presets",
+            "type": "value"
+        },
+        {
+            "row": 57,
+            "column": 3,
+            "local": "configureNext",
+            "type": "value"
+        },
+        {
+            "row": 61,
+            "column": 3,
+            "local": "create",
+            "type": "value"
+        },
+        {
+            "row": 63,
+            "column": 5,
+            "local": "spring",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 5,
+            "local": "linear",
+            "type": "value"
+        },
+        {
+            "row": 65,
+            "column": 5,
+            "local": "easeInEaseOut",
+            "type": "value"
+        },
+        {
+            "row": 66,
+            "column": 5,
+            "local": "easeIn",
+            "type": "value"
+        },
+        {
+            "row": 67,
+            "column": 5,
+            "local": "easeOut",
+            "type": "value"
+        },
+        {
+            "row": 68,
+            "column": 5,
+            "local": "keyboard",
+            "type": "value"
+        },
+        {
+            "row": 62,
+            "column": 3,
+            "local": "Types",
+            "type": "value"
+        },
+        {
+            "row": 71,
+            "column": 5,
+            "local": "opacity",
+            "type": "value"
+        },
+        {
+            "row": 72,
+            "column": 5,
+            "local": "scaleX",
+            "type": "value"
+        },
+        {
+            "row": 73,
+            "column": 5,
+            "local": "scaleY",
+            "type": "value"
+        },
+        {
+            "row": 74,
+            "column": 5,
+            "local": "scaleXY",
+            "type": "value"
+        },
+        {
+            "row": 70,
+            "column": 3,
+            "local": "Properties",
+            "type": "value"
+        },
+        {
+            "row": 76,
+            "column": 3,
+            "local": "checkConfig",
+            "type": "value"
+        },
+        {
+            "row": 77,
+            "column": 3,
+            "local": "Presets",
+            "type": "value"
+        },
+        {
+            "row": 78,
+            "column": 3,
+            "local": "easeInEaseOut",
+            "type": "value"
+        },
+        {
+            "row": 79,
+            "column": 3,
+            "local": "linear",
+            "type": "value"
+        },
+        {
+            "row": 80,
+            "column": 3,
+            "local": "spring",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 13,
+            "local": "LayoutAnimation",
+            "type": "value"
+        }
+    ]
 }

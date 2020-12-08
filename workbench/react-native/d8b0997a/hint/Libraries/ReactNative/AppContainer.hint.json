@@ -8,5 +8,150 @@
             }
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 17,
+            "local": "rootTag",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 6,
+            "local": "Context",
+            "type": "type"
+        },
+        {
+            "row": 8,
+            "column": 5,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 5,
+            "local": "fabric",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 5,
+            "local": "rootTag",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 5,
+            "local": "initialProps",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 5,
+            "local": "showArchitectureIndicator",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 5,
+            "local": "WrapperComponent",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 5,
+            "local": "internal_excludeLogBox",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "inspector",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 3,
+            "local": "mainKey",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "hasError",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 6,
+            "local": "State",
+            "type": "type"
+        },
+        {
+            "row": 26,
+            "column": 3,
+            "local": "state",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 10,
+            "local": "getDerivedStateFromError",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 37,
+            "local": "rootTag",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 10,
+            "local": "childContextTypes",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "getChildContext",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 3,
+            "local": "componentDidMount",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "componentWillUnmount",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 3,
+            "local": "render",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 15,
+            "local": "AppContainer",
+            "type": "class"
+        },
+        {
+            "row": 40,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
 }

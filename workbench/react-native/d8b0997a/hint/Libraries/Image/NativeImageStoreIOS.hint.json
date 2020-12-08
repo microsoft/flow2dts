@@ -9,5 +9,54 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\TurboModule\\RCTExport.js.flow:6:11,6:21\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 5,
+            "column": 4,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 30,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 4,
+            "local": "getBase64ForTag",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 4,
+            "local": "hasImageForTag",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 4,
+            "local": "removeImageForTag",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 30,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 4,
+            "local": "addImageFromBase64",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
 }

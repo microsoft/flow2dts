@@ -9,5 +9,84 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Interaction\\TaskQueue.js.flow:12:6,12:9\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 6,
+            "local": "Handle",
+            "type": "type"
+        },
+        {
+            "row": 7,
+            "column": 5,
+            "local": "interactionStart",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 5,
+            "local": "interactionComplete",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 3,
+            "local": "Events",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 5,
+            "local": "then",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 5,
+            "local": "done",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 5,
+            "local": "cancel",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "runAfterInteractions",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 3,
+            "local": "createInteractionHandle",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "clearInteractionHandle",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 3,
+            "local": "addListener",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 3,
+            "local": "setDeadline",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 13,
+            "local": "InteractionManager",
+            "type": "value"
+        }
+    ]
 }

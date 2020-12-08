@@ -1,4 +1,71 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 10,
+            "column": 5,
+            "local": "uri",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 5,
+            "local": "bundle",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 5,
+            "local": "method",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 5,
+            "local": "headers",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 5,
+            "local": "body",
+            "type": "value"
+        },
+        {
+            "row": 57,
+            "column": 5,
+            "local": "cache",
+            "type": "value"
+        },
+        {
+            "row": 63,
+            "column": 5,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 5,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 70,
+            "column": 5,
+            "local": "scale",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "local": "ImageURISource",
+            "type": "type"
+        },
+        {
+            "row": 75,
+            "column": 6,
+            "local": "ImageSource",
+            "type": "type"
+        }
+    ]
 }

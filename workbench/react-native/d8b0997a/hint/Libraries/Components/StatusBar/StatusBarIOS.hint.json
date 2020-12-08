@@ -9,5 +9,18 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\EventEmitter\\NativeEventEmitter.js.flow:17:15,17:32\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 15,
+            "local": "StatusBarIOS",
+            "type": "class"
+        },
+        {
+            "row": 5,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
 }

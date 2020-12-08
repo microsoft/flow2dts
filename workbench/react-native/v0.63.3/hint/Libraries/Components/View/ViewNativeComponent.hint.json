@@ -24,5 +24,108 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 7,
+            "column": 6,
+            "local": "ViewNativeComponentType",
+            "type": "type"
+        },
+        {
+            "row": 18,
+            "column": 17,
+            "local": "bubbled",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 17,
+            "local": "captured",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 13,
+            "local": "phasedRegistrationNames",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 5,
+            "local": "bubblingEventTypes",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 42,
+            "local": "registrationName",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 5,
+            "local": "directEventTypes",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 5,
+            "local": "uiViewClassName",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 13,
+            "local": "diff",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 13,
+            "local": "process",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 5,
+            "local": "validAttributes",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 13,
+            "local": "viewConfig",
+            "type": "value"
+        },
+        {
+            "row": 47,
+            "column": 13,
+            "local": "__INTERNAL_VIEW_CONFIG",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 4,
+            "local": "hotspotUpdate",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 4,
+            "local": "setPressed",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 11,
+            "local": "NativeCommands",
+            "type": "type"
+        },
+        {
+            "row": 61,
+            "column": 13,
+            "local": "Commands",
+            "type": "value"
+        }
+    ]
 }

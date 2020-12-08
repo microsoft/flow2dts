@@ -16,5 +16,276 @@
             }
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 7,
+            "column": 5,
+            "local": "offset",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 5,
+            "local": "length",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 5,
+            "local": "index",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 5,
+            "local": "inLayout",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 6,
+            "local": "Frame",
+            "type": "type"
+        },
+        {
+            "row": 16,
+            "column": 5,
+            "local": "first",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 5,
+            "local": "last",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 5,
+            "local": "frames",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 6,
+            "local": "ChildListState",
+            "type": "type"
+        },
+        {
+            "row": 24,
+            "column": 5,
+            "local": "cellKey",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "listKey",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 5,
+            "local": "parent",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 5,
+            "local": "horizontal",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 6,
+            "local": "ListDebugInfo",
+            "type": "type"
+        },
+        {
+            "row": 35,
+            "column": 5,
+            "local": "cellKey",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 7,
+            "local": "contentLength",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 7,
+            "local": "dOffset",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 7,
+            "local": "dt",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 7,
+            "local": "offset",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 7,
+            "local": "timestamp",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 7,
+            "local": "velocity",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 7,
+            "local": "visibleLength",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 5,
+            "local": "getScrollMetrics",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 5,
+            "local": "horizontal",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 5,
+            "local": "getOutermostParentListRef",
+            "type": "value"
+        },
+        {
+            "row": 47,
+            "column": 5,
+            "local": "getNestedChildState",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 9,
+            "local": "cellKey",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 9,
+            "local": "key",
+            "type": "value"
+        },
+        {
+            "row": 52,
+            "column": 9,
+            "local": "ref",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 9,
+            "local": "parentDebugInfo",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 5,
+            "local": "registerAsNestedChild",
+            "type": "value"
+        },
+        {
+            "row": 58,
+            "column": 9,
+            "local": "key",
+            "type": "value"
+        },
+        {
+            "row": 59,
+            "column": 9,
+            "local": "state",
+            "type": "value"
+        },
+        {
+            "row": 56,
+            "column": 5,
+            "local": "unregisterAsNestedChild",
+            "type": "value"
+        },
+        {
+            "row": 62,
+            "column": 5,
+            "local": "debugInfo",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 6,
+            "local": "Context",
+            "type": "type"
+        },
+        {
+            "row": 66,
+            "column": 13,
+            "local": "VirtualizedListContext",
+            "type": "value"
+        },
+        {
+            "row": 70,
+            "column": 5,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 68,
+            "column": 18,
+            "local": "VirtualizedListContextResetter",
+            "type": "value"
+        },
+        {
+            "row": 76,
+            "column": 5,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 77,
+            "column": 5,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 74,
+            "column": 18,
+            "local": "VirtualizedListContextProvider",
+            "type": "value"
+        },
+        {
+            "row": 83,
+            "column": 5,
+            "local": "cellKey",
+            "type": "value"
+        },
+        {
+            "row": 84,
+            "column": 5,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 81,
+            "column": 18,
+            "local": "VirtualizedListCellContextProvider",
+            "type": "value"
+        }
+    ]
 }

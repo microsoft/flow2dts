@@ -1,4 +1,23 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 8,
+            "column": 3,
+            "local": "vibrate",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "cancel",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 13,
+            "local": "Vibration",
+            "type": "value"
+        }
+    ]
 }

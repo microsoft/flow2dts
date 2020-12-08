@@ -49,5 +49,396 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\AnimatedEvent.js.flow:6:6,6:16\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "AnimatedEvent",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 13,
+            "local": "attachNativeEvent",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 13,
+            "local": "$10",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 7,
+            "local": "$9",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 13,
+            "local": "AnimatedImplementation",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 13,
+            "local": "AnimatedInterpolation",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 7,
+            "local": "$4",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 13,
+            "local": "AnimatedNode",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 7,
+            "local": "$5",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 13,
+            "local": "AnimatedProps",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 7,
+            "local": "$6",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 13,
+            "local": "AnimatedValue",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 7,
+            "local": "$7",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 13,
+            "local": "AnimatedValueXY",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 7,
+            "local": "$8",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 13,
+            "local": "createAnimatedComponent",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 7,
+            "local": "$11",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "start",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 3,
+            "local": "stop",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 3,
+            "local": "reset",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "_startNativeLoop",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "_isUsingNativeDriver",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 6,
+            "local": "CompositeAnimation",
+            "type": "type"
+        },
+        {
+            "row": 40,
+            "column": 13,
+            "local": "spring",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 13,
+            "local": "timing",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 13,
+            "local": "decay",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 13,
+            "local": "sequence",
+            "type": "value"
+        },
+        {
+            "row": 59,
+            "column": 24,
+            "local": "stopTogether",
+            "type": "value"
+        },
+        {
+            "row": 59,
+            "column": 6,
+            "local": "ParallelConfig",
+            "type": "type"
+        },
+        {
+            "row": 60,
+            "column": 13,
+            "local": "parallel",
+            "type": "value"
+        },
+        {
+            "row": 65,
+            "column": 13,
+            "local": "delay",
+            "type": "value"
+        },
+        {
+            "row": 67,
+            "column": 13,
+            "local": "stagger",
+            "type": "value"
+        },
+        {
+            "row": 73,
+            "column": 3,
+            "local": "iterations",
+            "type": "value"
+        },
+        {
+            "row": 74,
+            "column": 3,
+            "local": "resetBeforeIteration",
+            "type": "value"
+        },
+        {
+            "row": 72,
+            "column": 6,
+            "local": "LoopAnimationConfig",
+            "type": "type"
+        },
+        {
+            "row": 78,
+            "column": 13,
+            "local": "loop",
+            "type": "value"
+        },
+        {
+            "row": 83,
+            "column": 13,
+            "local": "event",
+            "type": "value"
+        },
+        {
+            "row": 87,
+            "column": 3,
+            "local": "Value",
+            "type": "value"
+        },
+        {
+            "row": 88,
+            "column": 3,
+            "local": "ValueXY",
+            "type": "value"
+        },
+        {
+            "row": 89,
+            "column": 3,
+            "local": "Interpolation",
+            "type": "value"
+        },
+        {
+            "row": 90,
+            "column": 3,
+            "local": "Node",
+            "type": "value"
+        },
+        {
+            "row": 91,
+            "column": 3,
+            "local": "decay",
+            "type": "value"
+        },
+        {
+            "row": 92,
+            "column": 3,
+            "local": "timing",
+            "type": "value"
+        },
+        {
+            "row": 93,
+            "column": 3,
+            "local": "spring",
+            "type": "value"
+        },
+        {
+            "row": 94,
+            "column": 3,
+            "local": "add",
+            "type": "value"
+        },
+        {
+            "row": 95,
+            "column": 3,
+            "local": "subtract",
+            "type": "value"
+        },
+        {
+            "row": 96,
+            "column": 3,
+            "local": "divide",
+            "type": "value"
+        },
+        {
+            "row": 97,
+            "column": 3,
+            "local": "multiply",
+            "type": "value"
+        },
+        {
+            "row": 98,
+            "column": 3,
+            "local": "modulo",
+            "type": "value"
+        },
+        {
+            "row": 99,
+            "column": 3,
+            "local": "diffClamp",
+            "type": "value"
+        },
+        {
+            "row": 100,
+            "column": 3,
+            "local": "delay",
+            "type": "value"
+        },
+        {
+            "row": 101,
+            "column": 3,
+            "local": "sequence",
+            "type": "value"
+        },
+        {
+            "row": 102,
+            "column": 3,
+            "local": "parallel",
+            "type": "value"
+        },
+        {
+            "row": 103,
+            "column": 3,
+            "local": "stagger",
+            "type": "value"
+        },
+        {
+            "row": 104,
+            "column": 3,
+            "local": "loop",
+            "type": "value"
+        },
+        {
+            "row": 105,
+            "column": 3,
+            "local": "event",
+            "type": "value"
+        },
+        {
+            "row": 106,
+            "column": 3,
+            "local": "createAnimatedComponent",
+            "type": "value"
+        },
+        {
+            "row": 107,
+            "column": 3,
+            "local": "attachNativeEvent",
+            "type": "value"
+        },
+        {
+            "row": 108,
+            "column": 3,
+            "local": "forkEvent",
+            "type": "value"
+        },
+        {
+            "row": 109,
+            "column": 3,
+            "local": "unforkEvent",
+            "type": "value"
+        },
+        {
+            "row": 110,
+            "column": 3,
+            "local": "Event",
+            "type": "value"
+        },
+        {
+            "row": 111,
+            "column": 3,
+            "local": "__PropsOnlyForTests",
+            "type": "value"
+        }
+    ]
 }

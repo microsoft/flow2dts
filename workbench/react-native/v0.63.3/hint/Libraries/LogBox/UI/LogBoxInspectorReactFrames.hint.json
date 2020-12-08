@@ -16,5 +16,24 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\LogBox\\Data\\LogBoxLog.js.flow:25:15,25:23\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 8,
+            "column": 5,
+            "local": "log",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 12,
+            "column": 18,
+            "local": "LogBoxInspectorReactFrames",
+            "type": "value"
+        }
+    ]
 }

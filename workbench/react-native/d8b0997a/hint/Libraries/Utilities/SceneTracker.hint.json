@@ -1,4 +1,47 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 15,
+            "local": "name",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "local": "Scene",
+            "type": "type"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "local": "setActiveScene",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "getActiveScene",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 7,
+            "local": "remove",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "addActiveSceneChangedListener",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "SceneTracker",
+            "type": "value"
+        }
+    ]
 }

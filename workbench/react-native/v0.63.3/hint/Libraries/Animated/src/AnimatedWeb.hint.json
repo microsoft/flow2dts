@@ -1,4 +1,35 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "AnimatedImplementation",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "div",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "span",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "img",
+            "type": "value"
+        }
+    ]
 }

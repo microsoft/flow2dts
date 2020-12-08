@@ -1,4 +1,167 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "DeprecatedColorPropType",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "DeprecatedEdgeInsetsPropType",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 13,
+            "local": "PropTypes",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 13,
+            "local": "stylePropType",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "ellipsizeMode",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 3,
+            "local": "numberOfLines",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 3,
+            "local": "textBreakStrategy",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 3,
+            "local": "onLayout",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 3,
+            "local": "onPress",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 3,
+            "local": "onLongPress",
+            "type": "value"
+        },
+        {
+            "row": 58,
+            "column": 3,
+            "local": "pressRetentionOffset",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 3,
+            "local": "selectable",
+            "type": "value"
+        },
+        {
+            "row": 70,
+            "column": 3,
+            "local": "selectionColor",
+            "type": "value"
+        },
+        {
+            "row": 76,
+            "column": 3,
+            "local": "suppressHighlighting",
+            "type": "value"
+        },
+        {
+            "row": 77,
+            "column": 3,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 83,
+            "column": 3,
+            "local": "testID",
+            "type": "value"
+        },
+        {
+            "row": 89,
+            "column": 3,
+            "local": "nativeID",
+            "type": "value"
+        },
+        {
+            "row": 95,
+            "column": 3,
+            "local": "allowFontScaling",
+            "type": "value"
+        },
+        {
+            "row": 103,
+            "column": 3,
+            "local": "maxFontSizeMultiplier",
+            "type": "value"
+        },
+        {
+            "row": 109,
+            "column": 3,
+            "local": "accessible",
+            "type": "value"
+        },
+        {
+            "row": 115,
+            "column": 3,
+            "local": "adjustsFontSizeToFit",
+            "type": "value"
+        },
+        {
+            "row": 121,
+            "column": 3,
+            "local": "minimumFontScale",
+            "type": "value"
+        },
+        {
+            "row": 127,
+            "column": 3,
+            "local": "disabled",
+            "type": "value"
+        },
+        {
+            "row": 133,
+            "column": 3,
+            "local": "dataDetectorType",
+            "type": "value"
+        }
+    ]
 }

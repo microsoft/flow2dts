@@ -17,5 +17,150 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\LogBox\\Data\\LogBoxLog.js.flow:12:6,12:18\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 8,
+            "column": 5,
+            "local": "isComponentError",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 6,
+            "local": "ExtendedExceptionData",
+            "type": "type"
+        },
+        {
+            "row": 11,
+            "column": 6,
+            "local": "Category",
+            "type": "type"
+        },
+        {
+            "row": 14,
+            "column": 5,
+            "local": "content",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 7,
+            "local": "row",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 7,
+            "local": "column",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 5,
+            "local": "location",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 5,
+            "local": "fileName",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 6,
+            "local": "CodeFrame",
+            "type": "type"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "content",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 11,
+            "local": "length",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 11,
+            "local": "offset",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 5,
+            "local": "substitutions",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 6,
+            "local": "Message",
+            "type": "type"
+        },
+        {
+            "row": 37,
+            "column": 6,
+            "local": "ComponentStack",
+            "type": "type"
+        },
+        {
+            "row": 43,
+            "column": 5,
+            "local": "category",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 5,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 18,
+            "local": "parseInterpolation",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 18,
+            "local": "parseComponentStack",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 18,
+            "local": "parseLogBoxException",
+            "type": "value"
+        },
+        {
+            "row": 57,
+            "column": 3,
+            "local": "componentStack",
+            "type": "value"
+        },
+        {
+            "row": 58,
+            "column": 3,
+            "local": "category",
+            "type": "value"
+        },
+        {
+            "row": 59,
+            "column": 3,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 18,
+            "local": "parseLogBoxLog",
+            "type": "value"
+        }
+    ]
 }

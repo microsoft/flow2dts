@@ -56,5 +56,672 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Lists\\VirtualizedListContext.js.flow:66:37,66:59\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "ScrollView",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 13,
+            "local": "View",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 6,
+            "local": "Item",
+            "type": "type"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "highlight",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 3,
+            "local": "unhighlight",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "updateProps",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 6,
+            "local": "Separators",
+            "type": "type"
+        },
+        {
+            "row": 26,
+            "column": 3,
+            "local": "item",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 3,
+            "local": "index",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 3,
+            "local": "separators",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 6,
+            "local": "RenderItemProps",
+            "type": "type"
+        },
+        {
+            "row": 32,
+            "column": 6,
+            "local": "RenderItemType",
+            "type": "type"
+        },
+        {
+            "row": 39,
+            "column": 3,
+            "local": "data",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "getItem",
+            "type": "value"
+        },
+        {
+            "row": 47,
+            "column": 3,
+            "local": "getItemCount",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 6,
+            "local": "RequiredProps",
+            "type": "type"
+        },
+        {
+            "row": 50,
+            "column": 3,
+            "local": "renderItem",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 3,
+            "local": "debug",
+            "type": "value"
+        },
+        {
+            "row": 61,
+            "column": 3,
+            "local": "disableVirtualization",
+            "type": "value"
+        },
+        {
+            "row": 67,
+            "column": 3,
+            "local": "extraData",
+            "type": "value"
+        },
+        {
+            "row": 73,
+            "column": 5,
+            "local": "length",
+            "type": "value"
+        },
+        {
+            "row": 74,
+            "column": 5,
+            "local": "offset",
+            "type": "value"
+        },
+        {
+            "row": 75,
+            "column": 5,
+            "local": "index",
+            "type": "value"
+        },
+        {
+            "row": 69,
+            "column": 3,
+            "local": "getItemLayout",
+            "type": "value"
+        },
+        {
+            "row": 78,
+            "column": 3,
+            "local": "horizontal",
+            "type": "value"
+        },
+        {
+            "row": 84,
+            "column": 3,
+            "local": "initialNumToRender",
+            "type": "value"
+        },
+        {
+            "row": 91,
+            "column": 3,
+            "local": "initialScrollIndex",
+            "type": "value"
+        },
+        {
+            "row": 95,
+            "column": 3,
+            "local": "inverted",
+            "type": "value"
+        },
+        {
+            "row": 96,
+            "column": 3,
+            "local": "keyExtractor",
+            "type": "value"
+        },
+        {
+            "row": 101,
+            "column": 3,
+            "local": "CellRendererComponent",
+            "type": "value"
+        },
+        {
+            "row": 108,
+            "column": 3,
+            "local": "ItemSeparatorComponent",
+            "type": "value"
+        },
+        {
+            "row": 135,
+            "column": 3,
+            "local": "ListItemComponent",
+            "type": "value"
+        },
+        {
+            "row": 140,
+            "column": 3,
+            "local": "ListEmptyComponent",
+            "type": "value"
+        },
+        {
+            "row": 145,
+            "column": 3,
+            "local": "ListFooterComponent",
+            "type": "value"
+        },
+        {
+            "row": 149,
+            "column": 3,
+            "local": "ListFooterComponentStyle",
+            "type": "value"
+        },
+        {
+            "row": 154,
+            "column": 3,
+            "local": "ListHeaderComponent",
+            "type": "value"
+        },
+        {
+            "row": 158,
+            "column": 3,
+            "local": "ListHeaderComponentStyle",
+            "type": "value"
+        },
+        {
+            "row": 164,
+            "column": 3,
+            "local": "listKey",
+            "type": "value"
+        },
+        {
+            "row": 170,
+            "column": 3,
+            "local": "maxToRenderPerBatch",
+            "type": "value"
+        },
+        {
+            "row": 175,
+            "column": 28,
+            "local": "distanceFromEnd",
+            "type": "value"
+        },
+        {
+            "row": 175,
+            "column": 3,
+            "local": "onEndReached",
+            "type": "value"
+        },
+        {
+            "row": 182,
+            "column": 3,
+            "local": "onEndReachedThreshold",
+            "type": "value"
+        },
+        {
+            "row": 187,
+            "column": 3,
+            "local": "onRefresh",
+            "type": "value"
+        },
+        {
+            "row": 195,
+            "column": 7,
+            "local": "index",
+            "type": "value"
+        },
+        {
+            "row": 196,
+            "column": 7,
+            "local": "highestMeasuredFrameIndex",
+            "type": "value"
+        },
+        {
+            "row": 197,
+            "column": 7,
+            "local": "averageItemLength",
+            "type": "value"
+        },
+        {
+            "row": 193,
+            "column": 3,
+            "local": "onScrollToIndexFailed",
+            "type": "value"
+        },
+        {
+            "row": 207,
+            "column": 7,
+            "local": "viewableItems",
+            "type": "value"
+        },
+        {
+            "row": 208,
+            "column": 7,
+            "local": "changed",
+            "type": "value"
+        },
+        {
+            "row": 205,
+            "column": 3,
+            "local": "onViewableItemsChanged",
+            "type": "value"
+        },
+        {
+            "row": 212,
+            "column": 3,
+            "local": "persistentScrollbar",
+            "type": "value"
+        },
+        {
+            "row": 217,
+            "column": 3,
+            "local": "progressViewOffset",
+            "type": "value"
+        },
+        {
+            "row": 223,
+            "column": 3,
+            "local": "refreshControl",
+            "type": "value"
+        },
+        {
+            "row": 227,
+            "column": 3,
+            "local": "refreshing",
+            "type": "value"
+        },
+        {
+            "row": 233,
+            "column": 3,
+            "local": "removeClippedSubviews",
+            "type": "value"
+        },
+        {
+            "row": 237,
+            "column": 3,
+            "local": "renderScrollComponent",
+            "type": "value"
+        },
+        {
+            "row": 242,
+            "column": 3,
+            "local": "updateCellsBatchingPeriod",
+            "type": "value"
+        },
+        {
+            "row": 246,
+            "column": 3,
+            "local": "viewabilityConfig",
+            "type": "value"
+        },
+        {
+            "row": 251,
+            "column": 3,
+            "local": "viewabilityConfigCallbackPairs",
+            "type": "value"
+        },
+        {
+            "row": 259,
+            "column": 3,
+            "local": "windowSize",
+            "type": "value"
+        },
+        {
+            "row": 263,
+            "column": 3,
+            "local": "legacyImplementation",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 6,
+            "local": "OptionalProps",
+            "type": "type"
+        },
+        {
+            "row": 266,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 273,
+            "column": 3,
+            "local": "disableVirtualization",
+            "type": "value"
+        },
+        {
+            "row": 274,
+            "column": 3,
+            "local": "horizontal",
+            "type": "value"
+        },
+        {
+            "row": 275,
+            "column": 3,
+            "local": "initialNumToRender",
+            "type": "value"
+        },
+        {
+            "row": 276,
+            "column": 3,
+            "local": "keyExtractor",
+            "type": "value"
+        },
+        {
+            "row": 277,
+            "column": 3,
+            "local": "maxToRenderPerBatch",
+            "type": "value"
+        },
+        {
+            "row": 278,
+            "column": 3,
+            "local": "onEndReachedThreshold",
+            "type": "value"
+        },
+        {
+            "row": 279,
+            "column": 3,
+            "local": "scrollEventThrottle",
+            "type": "value"
+        },
+        {
+            "row": 280,
+            "column": 3,
+            "local": "updateCellsBatchingPeriod",
+            "type": "value"
+        },
+        {
+            "row": 281,
+            "column": 3,
+            "local": "windowSize",
+            "type": "value"
+        },
+        {
+            "row": 272,
+            "column": 6,
+            "local": "DefaultProps",
+            "type": "type"
+        },
+        {
+            "row": 285,
+            "column": 3,
+            "local": "first",
+            "type": "value"
+        },
+        {
+            "row": 286,
+            "column": 3,
+            "local": "last",
+            "type": "value"
+        },
+        {
+            "row": 284,
+            "column": 6,
+            "local": "State",
+            "type": "type"
+        },
+        {
+            "row": 291,
+            "column": 10,
+            "local": "contextType",
+            "type": "value"
+        },
+        {
+            "row": 294,
+            "column": 26,
+            "local": "animated",
+            "type": "value"
+        },
+        {
+            "row": 294,
+            "column": 3,
+            "local": "scrollToEnd",
+            "type": "value"
+        },
+        {
+            "row": 299,
+            "column": 7,
+            "local": "animated",
+            "type": "value"
+        },
+        {
+            "row": 300,
+            "column": 7,
+            "local": "index",
+            "type": "value"
+        },
+        {
+            "row": 301,
+            "column": 7,
+            "local": "viewOffset",
+            "type": "value"
+        },
+        {
+            "row": 302,
+            "column": 7,
+            "local": "viewPosition",
+            "type": "value"
+        },
+        {
+            "row": 297,
+            "column": 3,
+            "local": "scrollToIndex",
+            "type": "value"
+        },
+        {
+            "row": 311,
+            "column": 7,
+            "local": "animated",
+            "type": "value"
+        },
+        {
+            "row": 312,
+            "column": 7,
+            "local": "item",
+            "type": "value"
+        },
+        {
+            "row": 313,
+            "column": 7,
+            "local": "viewPosition",
+            "type": "value"
+        },
+        {
+            "row": 309,
+            "column": 3,
+            "local": "scrollToItem",
+            "type": "value"
+        },
+        {
+            "row": 328,
+            "column": 27,
+            "local": "animated",
+            "type": "value"
+        },
+        {
+            "row": 328,
+            "column": 48,
+            "local": "offset",
+            "type": "value"
+        },
+        {
+            "row": 328,
+            "column": 3,
+            "local": "scrollToOffset",
+            "type": "value"
+        },
+        {
+            "row": 330,
+            "column": 3,
+            "local": "recordInteraction",
+            "type": "value"
+        },
+        {
+            "row": 332,
+            "column": 3,
+            "local": "flashScrollIndicators",
+            "type": "value"
+        },
+        {
+            "row": 339,
+            "column": 3,
+            "local": "getScrollResponder",
+            "type": "value"
+        },
+        {
+            "row": 341,
+            "column": 3,
+            "local": "getScrollableNode",
+            "type": "value"
+        },
+        {
+            "row": 343,
+            "column": 3,
+            "local": "getScrollRef",
+            "type": "value"
+        },
+        {
+            "row": 347,
+            "column": 3,
+            "local": "setNativeProps",
+            "type": "value"
+        },
+        {
+            "row": 349,
+            "column": 10,
+            "local": "defaultProps",
+            "type": "value"
+        },
+        {
+            "row": 351,
+            "column": 3,
+            "local": "hasMore",
+            "type": "value"
+        },
+        {
+            "row": 353,
+            "column": 3,
+            "local": "state",
+            "type": "value"
+        },
+        {
+            "row": 355,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 357,
+            "column": 3,
+            "local": "componentDidMount",
+            "type": "value"
+        },
+        {
+            "row": 359,
+            "column": 3,
+            "local": "componentWillUnmount",
+            "type": "value"
+        },
+        {
+            "row": 361,
+            "column": 10,
+            "local": "getDerivedStateFromProps",
+            "type": "value"
+        },
+        {
+            "row": 363,
+            "column": 3,
+            "local": "render",
+            "type": "value"
+        },
+        {
+            "row": 365,
+            "column": 3,
+            "local": "componentDidUpdate",
+            "type": "value"
+        },
+        {
+            "row": 367,
+            "column": 3,
+            "local": "measureLayoutRelativeToContainingList",
+            "type": "value"
+        },
+        {
+            "row": 289,
+            "column": 15,
+            "local": "VirtualizedList",
+            "type": "class"
+        },
+        {
+            "row": 369,
+            "column": 13,
+            "local": "$3",
+            "type": "value"
+        }
+    ]
 }

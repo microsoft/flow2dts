@@ -1,4 +1,155 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "DeprecatedColorPropType",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "DeprecatedLayoutPropTypes",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 13,
+            "local": "DeprecatedShadowPropTypesIOS",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 13,
+            "local": "DeprecatedTransformPropTypes",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 7,
+            "local": "$4",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 13,
+            "local": "ReactPropTypes",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 7,
+            "local": "$5",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "resizeMode",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 3,
+            "local": "backfaceVisibility",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "backgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 3,
+            "local": "borderColor",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 3,
+            "local": "borderWidth",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 3,
+            "local": "borderRadius",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 3,
+            "local": "overflow",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 3,
+            "local": "tintColor",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 3,
+            "local": "opacity",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 3,
+            "local": "overlayColor",
+            "type": "value"
+        },
+        {
+            "row": 52,
+            "column": 3,
+            "local": "borderTopLeftRadius",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 3,
+            "local": "borderTopRightRadius",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 3,
+            "local": "borderBottomLeftRadius",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 3,
+            "local": "borderBottomRightRadius",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 13,
+            "local": "ImageStylePropTypes",
+            "type": "value"
+        }
+    ]
 }

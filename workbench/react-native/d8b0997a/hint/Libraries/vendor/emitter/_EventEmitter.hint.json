@@ -1,4 +1,77 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 9,
+            "column": 7,
+            "local": "EmitterSubscription",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 7,
+            "local": "EventSubscriptionVendor",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 3,
+            "local": "addListener",
+            "type": "value"
+        },
+        {
+            "row": 60,
+            "column": 3,
+            "local": "once",
+            "type": "value"
+        },
+        {
+            "row": 69,
+            "column": 3,
+            "local": "removeAllListeners",
+            "type": "value"
+        },
+        {
+            "row": 92,
+            "column": 3,
+            "local": "removeCurrentListener",
+            "type": "value"
+        },
+        {
+            "row": 98,
+            "column": 3,
+            "local": "removeSubscription",
+            "type": "value"
+        },
+        {
+            "row": 107,
+            "column": 3,
+            "local": "listeners",
+            "type": "value"
+        },
+        {
+            "row": 123,
+            "column": 3,
+            "local": "emit",
+            "type": "value"
+        },
+        {
+            "row": 138,
+            "column": 3,
+            "local": "removeListener",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 15,
+            "local": "EventEmitter",
+            "type": "class"
+        }
+    ]
 }

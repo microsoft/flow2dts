@@ -9,5 +9,48 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Image\\ImageSource.js.flow:2:6,2:19\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 6,
+            "column": 5,
+            "local": "android",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 5,
+            "local": "ios",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 5,
+            "local": "default",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 5,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 5,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 6,
+            "local": "NativeImageSourceSpec",
+            "type": "type"
+        },
+        {
+            "row": 17,
+            "column": 18,
+            "local": "nativeImageSource",
+            "type": "value"
+        }
+    ]
 }

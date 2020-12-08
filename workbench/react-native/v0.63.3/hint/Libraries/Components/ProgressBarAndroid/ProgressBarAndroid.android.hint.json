@@ -25,5 +25,60 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\ProgressBarAndroid\\ProgressBarAndroid.android.js.flow:9:15,9:24\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 22,
+            "column": 9,
+            "local": "styleAttr",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 9,
+            "local": "indeterminate",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 9,
+            "local": "progress",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 9,
+            "local": "typeAttr",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 9,
+            "local": "indeterminate",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 3,
+            "local": "animating",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 3,
+            "local": "color",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 3,
+            "local": "testID",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 13,
+            "local": "ProgressBarAndroidProps",
+            "type": "type"
+        }
+    ]
 }

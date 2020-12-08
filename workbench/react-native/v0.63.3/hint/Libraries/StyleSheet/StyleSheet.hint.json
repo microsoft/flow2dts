@@ -73,5 +73,156 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:656:6,656:32\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "flatten",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 6,
+            "local": "ViewStyleProp",
+            "type": "type"
+        },
+        {
+            "row": 17,
+            "column": 6,
+            "local": "TextStyleProp",
+            "type": "type"
+        },
+        {
+            "row": 19,
+            "column": 6,
+            "local": "ImageStyleProp",
+            "type": "type"
+        },
+        {
+            "row": 21,
+            "column": 6,
+            "local": "DangerouslyImpreciseStyleProp",
+            "type": "type"
+        },
+        {
+            "row": 23,
+            "column": 6,
+            "local": "TypeForStyleKey",
+            "type": "type"
+        },
+        {
+            "row": 28,
+            "column": 6,
+            "local": "ViewStyle",
+            "type": "type"
+        },
+        {
+            "row": 30,
+            "column": 6,
+            "local": "TextStyle",
+            "type": "type"
+        },
+        {
+            "row": 32,
+            "column": 6,
+            "local": "ImageStyle",
+            "type": "type"
+        },
+        {
+            "row": 34,
+            "column": 6,
+            "local": "DangerouslyImpreciseStyle",
+            "type": "type"
+        },
+        {
+            "row": 36,
+            "column": 13,
+            "local": "hairlineWidth",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 3,
+            "local": "position",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 3,
+            "local": "left",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 3,
+            "local": "right",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 3,
+            "local": "top",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "bottom",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 13,
+            "local": "absoluteFill",
+            "type": "value"
+        },
+        {
+            "row": 83,
+            "column": 3,
+            "local": "hairlineWidth",
+            "type": "value"
+        },
+        {
+            "row": 90,
+            "column": 3,
+            "local": "absoluteFill",
+            "type": "value"
+        },
+        {
+            "row": 104,
+            "column": 3,
+            "local": "absoluteFillObject",
+            "type": "value"
+        },
+        {
+            "row": 112,
+            "column": 3,
+            "local": "compose",
+            "type": "value"
+        },
+        {
+            "row": 156,
+            "column": 3,
+            "local": "flatten",
+            "type": "value"
+        },
+        {
+            "row": 167,
+            "column": 3,
+            "local": "setStyleAttributePreprocessor",
+            "type": "value"
+        },
+        {
+            "row": 175,
+            "column": 3,
+            "local": "create",
+            "type": "value"
+        }
+    ]
 }

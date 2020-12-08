@@ -1,4 +1,383 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "DeprecatedColorPropType",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "DeprecatedViewPropTypes",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 13,
+            "local": "PropTypes",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 13,
+            "local": "Text",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 7,
+            "local": "$4",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "autoCapitalize",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 3,
+            "local": "autoCompleteType",
+            "type": "value"
+        },
+        {
+            "row": 67,
+            "column": 3,
+            "local": "autoCorrect",
+            "type": "value"
+        },
+        {
+            "row": 73,
+            "column": 3,
+            "local": "spellCheck",
+            "type": "value"
+        },
+        {
+            "row": 78,
+            "column": 3,
+            "local": "autoFocus",
+            "type": "value"
+        },
+        {
+            "row": 83,
+            "column": 3,
+            "local": "allowFontScaling",
+            "type": "value"
+        },
+        {
+            "row": 91,
+            "column": 3,
+            "local": "maxFontSizeMultiplier",
+            "type": "value"
+        },
+        {
+            "row": 95,
+            "column": 3,
+            "local": "editable",
+            "type": "value"
+        },
+        {
+            "row": 126,
+            "column": 3,
+            "local": "keyboardType",
+            "type": "value"
+        },
+        {
+            "row": 147,
+            "column": 3,
+            "local": "keyboardAppearance",
+            "type": "value"
+        },
+        {
+            "row": 180,
+            "column": 3,
+            "local": "returnKeyType",
+            "type": "value"
+        },
+        {
+            "row": 200,
+            "column": 3,
+            "local": "returnKeyLabel",
+            "type": "value"
+        },
+        {
+            "row": 205,
+            "column": 3,
+            "local": "maxLength",
+            "type": "value"
+        },
+        {
+            "row": 211,
+            "column": 3,
+            "local": "numberOfLines",
+            "type": "value"
+        },
+        {
+            "row": 220,
+            "column": 3,
+            "local": "disableFullscreenUI",
+            "type": "value"
+        },
+        {
+            "row": 226,
+            "column": 3,
+            "local": "enablesReturnKeyAutomatically",
+            "type": "value"
+        },
+        {
+            "row": 231,
+            "column": 3,
+            "local": "multiline",
+            "type": "value"
+        },
+        {
+            "row": 237,
+            "column": 3,
+            "local": "textBreakStrategy",
+            "type": "value"
+        },
+        {
+            "row": 243,
+            "column": 3,
+            "local": "onBlur",
+            "type": "value"
+        },
+        {
+            "row": 247,
+            "column": 3,
+            "local": "onFocus",
+            "type": "value"
+        },
+        {
+            "row": 251,
+            "column": 3,
+            "local": "onChange",
+            "type": "value"
+        },
+        {
+            "row": 256,
+            "column": 3,
+            "local": "onChangeText",
+            "type": "value"
+        },
+        {
+            "row": 264,
+            "column": 3,
+            "local": "onContentSizeChange",
+            "type": "value"
+        },
+        {
+            "row": 265,
+            "column": 3,
+            "local": "onTextInput",
+            "type": "value"
+        },
+        {
+            "row": 269,
+            "column": 3,
+            "local": "onEndEditing",
+            "type": "value"
+        },
+        {
+            "row": 275,
+            "column": 3,
+            "local": "onSelectionChange",
+            "type": "value"
+        },
+        {
+            "row": 280,
+            "column": 3,
+            "local": "onSubmitEditing",
+            "type": "value"
+        },
+        {
+            "row": 288,
+            "column": 3,
+            "local": "onKeyPress",
+            "type": "value"
+        },
+        {
+            "row": 292,
+            "column": 3,
+            "local": "onLayout",
+            "type": "value"
+        },
+        {
+            "row": 298,
+            "column": 3,
+            "local": "onScroll",
+            "type": "value"
+        },
+        {
+            "row": 302,
+            "column": 3,
+            "local": "placeholder",
+            "type": "value"
+        },
+        {
+            "row": 306,
+            "column": 3,
+            "local": "placeholderTextColor",
+            "type": "value"
+        },
+        {
+            "row": 312,
+            "column": 3,
+            "local": "scrollEnabled",
+            "type": "value"
+        },
+        {
+            "row": 317,
+            "column": 3,
+            "local": "secureTextEntry",
+            "type": "value"
+        },
+        {
+            "row": 321,
+            "column": 3,
+            "local": "selectionColor",
+            "type": "value"
+        },
+        {
+            "row": 328,
+            "column": 7,
+            "local": "end",
+            "type": "value"
+        },
+        {
+            "row": 329,
+            "column": 7,
+            "local": "start",
+            "type": "value"
+        },
+        {
+            "row": 326,
+            "column": 3,
+            "local": "selection",
+            "type": "value"
+        },
+        {
+            "row": 342,
+            "column": 3,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 348,
+            "column": 3,
+            "local": "defaultValue",
+            "type": "value"
+        },
+        {
+            "row": 354,
+            "column": 3,
+            "local": "clearButtonMode",
+            "type": "value"
+        },
+        {
+            "row": 361,
+            "column": 3,
+            "local": "clearTextOnFocus",
+            "type": "value"
+        },
+        {
+            "row": 365,
+            "column": 3,
+            "local": "selectTextOnFocus",
+            "type": "value"
+        },
+        {
+            "row": 373,
+            "column": 3,
+            "local": "blurOnSubmit",
+            "type": "value"
+        },
+        {
+            "row": 391,
+            "column": 3,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 396,
+            "column": 3,
+            "local": "underlineColorAndroid",
+            "type": "value"
+        },
+        {
+            "row": 409,
+            "column": 3,
+            "local": "inlineImageLeft",
+            "type": "value"
+        },
+        {
+            "row": 415,
+            "column": 3,
+            "local": "inlineImagePadding",
+            "type": "value"
+        },
+        {
+            "row": 424,
+            "column": 3,
+            "local": "rejectResponderTermination",
+            "type": "value"
+        },
+        {
+            "row": 444,
+            "column": 3,
+            "local": "dataDetectorTypes",
+            "type": "value"
+        },
+        {
+            "row": 460,
+            "column": 3,
+            "local": "caretHidden",
+            "type": "value"
+        },
+        {
+            "row": 464,
+            "column": 3,
+            "local": "contextMenuHidden",
+            "type": "value"
+        },
+        {
+            "row": 471,
+            "column": 3,
+            "local": "inputAccessoryViewID",
+            "type": "value"
+        },
+        {
+            "row": 477,
+            "column": 3,
+            "local": "textContentType",
+            "type": "value"
+        },
+        {
+            "row": 513,
+            "column": 3,
+            "local": "showSoftInputOnFocus",
+            "type": "value"
+        }
+    ]
 }

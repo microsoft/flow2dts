@@ -1,4 +1,59 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 7,
+            "column": 3,
+            "local": "SHORT",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "LONG",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "TOP",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "BOTTOM",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "CENTER",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "show",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "showWithGravity",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "showWithGravityAndOffset",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 13,
+            "local": "ToastAndroid",
+            "type": "value"
+        }
+    ]
 }

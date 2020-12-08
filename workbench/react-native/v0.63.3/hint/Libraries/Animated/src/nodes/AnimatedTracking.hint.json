@@ -9,5 +9,84 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\animations\\Animation.js.flow:5:6,5:16\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "AnimatedValue",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "AnimatedNode",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "__makeNative",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "__getValue",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 3,
+            "local": "__attach",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 3,
+            "local": "__detach",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 3,
+            "local": "update",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 3,
+            "local": "__getNativeConfig",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 15,
+            "local": "AnimatedTracking",
+            "type": "class"
+        },
+        {
+            "row": 31,
+            "column": 13,
+            "local": "$2",
+            "type": "value"
+        }
+    ]
 }

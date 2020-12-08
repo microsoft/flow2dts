@@ -1,4 +1,143 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "AnimatedNode",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "AnimatedWithChildren",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 6,
+            "local": "ExtrapolateType",
+            "type": "type"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "inputRange",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "outputRange",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "easing",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "extrapolate",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "extrapolateLeft",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "extrapolateRight",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 6,
+            "local": "InterpolationConfigType",
+            "type": "type"
+        },
+        {
+            "row": 20,
+            "column": 10,
+            "local": "__createInterpolation",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 3,
+            "local": "__makeNative",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 3,
+            "local": "__getValue",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 3,
+            "local": "interpolate",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "__attach",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 3,
+            "local": "__detach",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "__transformDataType",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 3,
+            "local": "__getNativeConfig",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 15,
+            "local": "AnimatedInterpolation",
+            "type": "class"
+        },
+        {
+            "row": 40,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
 }

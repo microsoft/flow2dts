@@ -40,5 +40,120 @@
             }
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 12,
+            "column": 7,
+            "local": "newValue",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 7,
+            "local": "newIndex",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 6,
+            "local": "PickerIOSChangeEvent",
+            "type": "type"
+        },
+        {
+            "row": 20,
+            "column": 5,
+            "local": "label",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 5,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 5,
+            "local": "textColor",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 6,
+            "local": "RCTPickerIOSItemType",
+            "type": "type"
+        },
+        {
+            "row": 26,
+            "column": 6,
+            "local": "Label",
+            "type": "type"
+        },
+        {
+            "row": 30,
+            "column": 5,
+            "local": "items",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 5,
+            "local": "onChange",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 5,
+            "local": "selectedIndex",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 5,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 5,
+            "local": "testID",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 5,
+            "local": "accessibilityLabel",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 6,
+            "local": "NativeProps",
+            "type": "type"
+        },
+        {
+            "row": 39,
+            "column": 6,
+            "local": "ComponentType",
+            "type": "type"
+        },
+        {
+            "row": 42,
+            "column": 4,
+            "local": "setNativeSelectedIndex",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 11,
+            "local": "NativeCommands",
+            "type": "type"
+        },
+        {
+            "row": 48,
+            "column": 13,
+            "local": "Commands",
+            "type": "value"
+        }
+    ]
 }

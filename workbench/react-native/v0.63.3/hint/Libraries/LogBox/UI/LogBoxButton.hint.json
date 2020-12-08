@@ -32,5 +32,60 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:95:6,95:15\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 12,
+            "column": 9,
+            "local": "default",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 9,
+            "local": "pressed",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 5,
+            "local": "backgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 5,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 5,
+            "local": "hitSlop",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 5,
+            "local": "onPress",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 5,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 23,
+            "column": 18,
+            "local": "LogBoxButton",
+            "type": "value"
+        }
+    ]
 }

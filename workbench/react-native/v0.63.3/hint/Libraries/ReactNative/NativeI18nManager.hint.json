@@ -9,5 +9,48 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\TurboModule\\RCTExport.js.flow:6:11,6:21\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 6,
+            "column": 5,
+            "local": "isRTL",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 5,
+            "local": "doLeftAndRightSwapInRTL",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 4,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "allowRTL",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "forceRTL",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "swapLeftAndRightInRTL",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
 }

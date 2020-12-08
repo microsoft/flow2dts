@@ -1,4 +1,83 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 1,
+            "column": 13,
+            "local": "PropTypes",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "local": "uri",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 3,
+            "local": "bundle",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "method",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "headers",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "body",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "cache",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "scale",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "ImageURISourcePropType",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 13,
+            "local": "ImageSourcePropType",
+            "type": "value"
+        }
+    ]
 }

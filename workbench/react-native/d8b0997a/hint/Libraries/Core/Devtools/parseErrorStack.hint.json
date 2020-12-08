@@ -9,5 +9,48 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Core\\NativeExceptionsManager.js.flow:4:6,4:15\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 7,
+            "column": 5,
+            "local": "jsEngine",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 5,
+            "local": "preventSymbolication",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 5,
+            "local": "componentStack",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 5,
+            "local": "forceRedbox",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 5,
+            "local": "isComponentError",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 6,
+            "local": "ExtendedError",
+            "type": "type"
+        },
+        {
+            "row": 15,
+            "column": 18,
+            "local": "parseErrorStack",
+            "type": "value"
+        }
+    ]
 }

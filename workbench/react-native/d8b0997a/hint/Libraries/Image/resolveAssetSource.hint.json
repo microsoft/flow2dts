@@ -9,5 +9,42 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Image\\AssetSourceResolver.js.flow:2:6,2:24\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "AssetSourceResolver",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 18,
+            "local": "setCustomSourceTransformer",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 18,
+            "local": "resolveAssetSource",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 5,
+            "local": "setCustomSourceTransformer",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 5,
+            "local": "pickScale",
+            "type": "value"
+        }
+    ]
 }

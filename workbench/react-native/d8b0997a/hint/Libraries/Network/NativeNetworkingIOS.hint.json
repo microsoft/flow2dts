@@ -9,5 +9,90 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\TurboModule\\RCTExport.js.flow:6:11,6:21\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 7,
+            "column": 7,
+            "local": "method",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 7,
+            "local": "url",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 7,
+            "local": "data",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 7,
+            "local": "headers",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 7,
+            "local": "responseType",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 7,
+            "local": "incrementalUpdates",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 7,
+            "local": "timeout",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 7,
+            "local": "withCredentials",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 4,
+            "local": "sendRequest",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 4,
+            "local": "abortRequest",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 4,
+            "local": "clearCookies",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 4,
+            "local": "addListener",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 4,
+            "local": "removeListeners",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
 }

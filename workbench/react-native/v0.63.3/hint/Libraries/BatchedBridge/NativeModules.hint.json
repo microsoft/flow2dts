@@ -1,4 +1,23 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 6,
+            "local": "ModuleConfig",
+            "type": "type"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "MethodType",
+            "type": "type"
+        },
+        {
+            "row": 12,
+            "column": 13,
+            "local": "NativeModules",
+            "type": "value"
+        }
+    ]
 }

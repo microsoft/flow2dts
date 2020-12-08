@@ -62,7 +62,7 @@
                 "column": 14,
                 "local": "Node"
             },
-            "stdout": "C:\\Users\\zihanc\\AppData\\Local\\Temp\\flow\\flowlib_3f5eb6ec\\react.js:268:23,268:26\r\n"
+            "stdout": "C:\\Users\\zihanc\\AppData\\Local\\Temp\\flow\\flowlib_23f2986\\react.js:268:23,268:26\r\n"
         },
         "ViewStyleProp": {
             "source": {
@@ -113,5 +113,492 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\ViewAccessibility.js.flow:33:6,33:28\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 17,
+            "column": 6,
+            "local": "ViewLayout",
+            "type": "type"
+        },
+        {
+            "row": 18,
+            "column": 6,
+            "local": "ViewLayoutEvent",
+            "type": "type"
+        },
+        {
+            "row": 22,
+            "column": 5,
+            "local": "onBlur",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 5,
+            "local": "onFocus",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 6,
+            "local": "BubblingEventProps",
+            "type": "type"
+        },
+        {
+            "row": 34,
+            "column": 5,
+            "local": "onAccessibilityAction",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 5,
+            "local": "onAccessibilityTap",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 5,
+            "local": "onLayout",
+            "type": "value"
+        },
+        {
+            "row": 63,
+            "column": 5,
+            "local": "onMagicTap",
+            "type": "value"
+        },
+        {
+            "row": 71,
+            "column": 5,
+            "local": "onAccessibilityEscape",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 6,
+            "local": "DirectEventProps",
+            "type": "type"
+        },
+        {
+            "row": 77,
+            "column": 5,
+            "local": "onMouseEnter",
+            "type": "value"
+        },
+        {
+            "row": 78,
+            "column": 5,
+            "local": "onMouseLeave",
+            "type": "value"
+        },
+        {
+            "row": 75,
+            "column": 6,
+            "local": "MouseEventProps",
+            "type": "type"
+        },
+        {
+            "row": 84,
+            "column": 5,
+            "local": "onTouchCancel",
+            "type": "value"
+        },
+        {
+            "row": 85,
+            "column": 5,
+            "local": "onTouchCancelCapture",
+            "type": "value"
+        },
+        {
+            "row": 86,
+            "column": 5,
+            "local": "onTouchEnd",
+            "type": "value"
+        },
+        {
+            "row": 87,
+            "column": 5,
+            "local": "onTouchEndCapture",
+            "type": "value"
+        },
+        {
+            "row": 88,
+            "column": 5,
+            "local": "onTouchMove",
+            "type": "value"
+        },
+        {
+            "row": 89,
+            "column": 5,
+            "local": "onTouchMoveCapture",
+            "type": "value"
+        },
+        {
+            "row": 90,
+            "column": 5,
+            "local": "onTouchStart",
+            "type": "value"
+        },
+        {
+            "row": 91,
+            "column": 5,
+            "local": "onTouchStartCapture",
+            "type": "value"
+        },
+        {
+            "row": 82,
+            "column": 6,
+            "local": "TouchEventProps",
+            "type": "type"
+        },
+        {
+            "row": 106,
+            "column": 5,
+            "local": "onMoveShouldSetResponder",
+            "type": "value"
+        },
+        {
+            "row": 117,
+            "column": 5,
+            "local": "onMoveShouldSetResponderCapture",
+            "type": "value"
+        },
+        {
+            "row": 131,
+            "column": 5,
+            "local": "onResponderGrant",
+            "type": "value"
+        },
+        {
+            "row": 141,
+            "column": 5,
+            "local": "onResponderMove",
+            "type": "value"
+        },
+        {
+            "row": 152,
+            "column": 5,
+            "local": "onResponderReject",
+            "type": "value"
+        },
+        {
+            "row": 162,
+            "column": 5,
+            "local": "onResponderRelease",
+            "type": "value"
+        },
+        {
+            "row": 164,
+            "column": 5,
+            "local": "onResponderStart",
+            "type": "value"
+        },
+        {
+            "row": 165,
+            "column": 5,
+            "local": "onResponderEnd",
+            "type": "value"
+        },
+        {
+            "row": 178,
+            "column": 5,
+            "local": "onResponderTerminate",
+            "type": "value"
+        },
+        {
+            "row": 189,
+            "column": 5,
+            "local": "onResponderTerminationRequest",
+            "type": "value"
+        },
+        {
+            "row": 199,
+            "column": 5,
+            "local": "onStartShouldSetResponder",
+            "type": "value"
+        },
+        {
+            "row": 210,
+            "column": 5,
+            "local": "onStartShouldSetResponderCapture",
+            "type": "value"
+        },
+        {
+            "row": 95,
+            "column": 6,
+            "local": "GestureResponderEventProps",
+            "type": "type"
+        },
+        {
+            "row": 216,
+            "column": 5,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 217,
+            "column": 5,
+            "local": "attribute",
+            "type": "value"
+        },
+        {
+            "row": 214,
+            "column": 6,
+            "local": "AndroidDrawableThemeAttr",
+            "type": "type"
+        },
+        {
+            "row": 223,
+            "column": 5,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 224,
+            "column": 5,
+            "local": "color",
+            "type": "value"
+        },
+        {
+            "row": 225,
+            "column": 5,
+            "local": "borderless",
+            "type": "value"
+        },
+        {
+            "row": 226,
+            "column": 5,
+            "local": "rippleRadius",
+            "type": "value"
+        },
+        {
+            "row": 221,
+            "column": 6,
+            "local": "AndroidDrawableRipple",
+            "type": "type"
+        },
+        {
+            "row": 230,
+            "column": 6,
+            "local": "AndroidDrawable",
+            "type": "type"
+        },
+        {
+            "row": 234,
+            "column": 5,
+            "local": "nativeBackgroundAndroid",
+            "type": "value"
+        },
+        {
+            "row": 235,
+            "column": 5,
+            "local": "nativeForegroundAndroid",
+            "type": "value"
+        },
+        {
+            "row": 245,
+            "column": 5,
+            "local": "renderToHardwareTextureAndroid",
+            "type": "value"
+        },
+        {
+            "row": 257,
+            "column": 5,
+            "local": "collapsable",
+            "type": "value"
+        },
+        {
+            "row": 267,
+            "column": 5,
+            "local": "needsOffscreenAlphaCompositing",
+            "type": "value"
+        },
+        {
+            "row": 277,
+            "column": 5,
+            "local": "accessibilityLiveRegion",
+            "type": "value"
+        },
+        {
+            "row": 288,
+            "column": 5,
+            "local": "importantForAccessibility",
+            "type": "value"
+        },
+        {
+            "row": 295,
+            "column": 5,
+            "local": "hasTVPreferredFocus",
+            "type": "value"
+        },
+        {
+            "row": 302,
+            "column": 5,
+            "local": "nextFocusDown",
+            "type": "value"
+        },
+        {
+            "row": 309,
+            "column": 5,
+            "local": "nextFocusForward",
+            "type": "value"
+        },
+        {
+            "row": 316,
+            "column": 5,
+            "local": "nextFocusLeft",
+            "type": "value"
+        },
+        {
+            "row": 323,
+            "column": 5,
+            "local": "nextFocusRight",
+            "type": "value"
+        },
+        {
+            "row": 330,
+            "column": 5,
+            "local": "nextFocusUp",
+            "type": "value"
+        },
+        {
+            "row": 337,
+            "column": 5,
+            "local": "focusable",
+            "type": "value"
+        },
+        {
+            "row": 344,
+            "column": 5,
+            "local": "onClick",
+            "type": "value"
+        },
+        {
+            "row": 232,
+            "column": 6,
+            "local": "AndroidViewProps",
+            "type": "type"
+        },
+        {
+            "row": 355,
+            "column": 5,
+            "local": "accessibilityIgnoresInvertColors",
+            "type": "value"
+        },
+        {
+            "row": 366,
+            "column": 5,
+            "local": "accessibilityViewIsModal",
+            "type": "value"
+        },
+        {
+            "row": 376,
+            "column": 5,
+            "local": "accessibilityElementsHidden",
+            "type": "value"
+        },
+        {
+            "row": 385,
+            "column": 5,
+            "local": "shouldRasterizeIOS",
+            "type": "value"
+        },
+        {
+            "row": 348,
+            "column": 6,
+            "local": "IOSViewProps",
+            "type": "type"
+        },
+        {
+            "row": 399,
+            "column": 5,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 400,
+            "column": 5,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 408,
+            "column": 5,
+            "local": "accessible",
+            "type": "value"
+        },
+        {
+            "row": 417,
+            "column": 5,
+            "local": "accessibilityLabel",
+            "type": "value"
+        },
+        {
+            "row": 427,
+            "column": 5,
+            "local": "accessibilityHint",
+            "type": "value"
+        },
+        {
+            "row": 432,
+            "column": 5,
+            "local": "accessibilityRole",
+            "type": "value"
+        },
+        {
+            "row": 437,
+            "column": 5,
+            "local": "accessibilityState",
+            "type": "value"
+        },
+        {
+            "row": 438,
+            "column": 5,
+            "local": "accessibilityValue",
+            "type": "value"
+        },
+        {
+            "row": 444,
+            "column": 5,
+            "local": "accessibilityActions",
+            "type": "value"
+        },
+        {
+            "row": 453,
+            "column": 5,
+            "local": "testID",
+            "type": "value"
+        },
+        {
+            "row": 462,
+            "column": 5,
+            "local": "nativeID",
+            "type": "value"
+        },
+        {
+            "row": 475,
+            "column": 5,
+            "local": "hitSlop",
+            "type": "value"
+        },
+        {
+            "row": 482,
+            "column": 5,
+            "local": "pointerEvents",
+            "type": "value"
+        },
+        {
+            "row": 494,
+            "column": 5,
+            "local": "removeClippedSubviews",
+            "type": "value"
+        },
+        {
+            "row": 389,
+            "column": 6,
+            "local": "ViewProps",
+            "type": "type"
+        }
+    ]
 }

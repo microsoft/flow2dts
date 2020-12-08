@@ -9,5 +9,198 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\TurboModule\\RCTExport.js.flow:6:11,6:21\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 19,
+            "local": "finished",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 6,
+            "local": "EndResult",
+            "type": "type"
+        },
+        {
+            "row": 5,
+            "column": 6,
+            "local": "EndCallback",
+            "type": "type"
+        },
+        {
+            "row": 6,
+            "column": 6,
+            "local": "SaveValueCallback",
+            "type": "type"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "nativeEventPath",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "animatedValueTag",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 6,
+            "local": "EventMapping",
+            "type": "type"
+        },
+        {
+            "row": 13,
+            "column": 6,
+            "local": "AnimatedNodeConfig",
+            "type": "type"
+        },
+        {
+            "row": 14,
+            "column": 6,
+            "local": "AnimatingNodeConfig",
+            "type": "type"
+        },
+        {
+            "row": 17,
+            "column": 4,
+            "local": "startOperationBatch",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 4,
+            "local": "finishOperationBatch",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 4,
+            "local": "createAnimatedNode",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 4,
+            "local": "getValue",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 4,
+            "local": "startListeningToAnimatedNodeValue",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 4,
+            "local": "stopListeningToAnimatedNodeValue",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 4,
+            "local": "connectAnimatedNodes",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 4,
+            "local": "disconnectAnimatedNodes",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 4,
+            "local": "startAnimatingNode",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 4,
+            "local": "stopAnimation",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 4,
+            "local": "setAnimatedNodeValue",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 4,
+            "local": "setAnimatedNodeOffset",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 4,
+            "local": "flattenAnimatedNodeOffset",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 4,
+            "local": "extractAnimatedNodeOffset",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 4,
+            "local": "connectAnimatedNodeToView",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 4,
+            "local": "disconnectAnimatedNodeFromView",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 4,
+            "local": "restoreDefaultValues",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 4,
+            "local": "dropAnimatedNode",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 4,
+            "local": "addAnimatedEventToView",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 4,
+            "local": "removeAnimatedEventFromView",
+            "type": "value"
+        },
+        {
+            "row": 52,
+            "column": 4,
+            "local": "addListener",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 4,
+            "local": "removeListeners",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
 }

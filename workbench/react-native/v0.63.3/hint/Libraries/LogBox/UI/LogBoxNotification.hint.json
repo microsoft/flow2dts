@@ -16,5 +16,48 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\LogBox\\Data\\LogBoxLog.js.flow:25:15,25:23\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 8,
+            "column": 5,
+            "local": "log",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 5,
+            "local": "totalLogCount",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 5,
+            "local": "level",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 5,
+            "local": "onPressOpen",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 5,
+            "local": "onPressDismiss",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 16,
+            "column": 18,
+            "local": "LogBoxLogNotification",
+            "type": "value"
+        }
+    ]
 }

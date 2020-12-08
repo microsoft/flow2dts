@@ -1,4 +1,95 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "name",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 3,
+            "local": "run",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "local": "SimpleTask",
+            "type": "type"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "name",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "gen",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 6,
+            "local": "PromiseTask",
+            "type": "type"
+        },
+        {
+            "row": 12,
+            "column": 6,
+            "local": "Task",
+            "type": "type"
+        },
+        {
+            "row": 22,
+            "column": 16,
+            "local": "onMoreTasks",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 3,
+            "local": "enqueue",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 3,
+            "local": "enqueueTasks",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 3,
+            "local": "cancelTasks",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 3,
+            "local": "hasTasksToProcess",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 3,
+            "local": "processNext",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 15,
+            "local": "TaskQueue",
+            "type": "class"
+        }
+    ]
 }

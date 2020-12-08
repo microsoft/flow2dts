@@ -9,5 +9,234 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Utilities\\createPerformanceLogger.js.flow:10:6,10:23\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 6,
+            "local": "Task",
+            "type": "type"
+        },
+        {
+            "row": 5,
+            "column": 6,
+            "local": "TaskProvider",
+            "type": "type"
+        },
+        {
+            "row": 6,
+            "column": 6,
+            "local": "TaskCanceller",
+            "type": "type"
+        },
+        {
+            "row": 7,
+            "column": 6,
+            "local": "TaskCancelProvider",
+            "type": "type"
+        },
+        {
+            "row": 9,
+            "column": 6,
+            "local": "ComponentProvider",
+            "type": "type"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "ComponentProviderInstrumentationHook",
+            "type": "type"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "appKey",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "component",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "run",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "section",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 6,
+            "local": "AppConfig",
+            "type": "type"
+        },
+        {
+            "row": 22,
+            "column": 3,
+            "local": "component",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 3,
+            "local": "run",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 6,
+            "local": "Runnable",
+            "type": "type"
+        },
+        {
+            "row": 26,
+            "column": 6,
+            "local": "Runnables",
+            "type": "type"
+        },
+        {
+            "row": 28,
+            "column": 3,
+            "local": "sections",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 3,
+            "local": "runnables",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 6,
+            "local": "Registry",
+            "type": "type"
+        },
+        {
+            "row": 32,
+            "column": 6,
+            "local": "WrapperComponentProvider",
+            "type": "type"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "setWrapperComponentProvider",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 3,
+            "local": "enableArchitectureIndicator",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 3,
+            "local": "registerConfig",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 3,
+            "local": "registerComponent",
+            "type": "value"
+        },
+        {
+            "row": 52,
+            "column": 3,
+            "local": "registerRunnable",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 3,
+            "local": "registerSection",
+            "type": "value"
+        },
+        {
+            "row": 56,
+            "column": 3,
+            "local": "getAppKeys",
+            "type": "value"
+        },
+        {
+            "row": 58,
+            "column": 3,
+            "local": "getSectionKeys",
+            "type": "value"
+        },
+        {
+            "row": 60,
+            "column": 3,
+            "local": "getSections",
+            "type": "value"
+        },
+        {
+            "row": 62,
+            "column": 3,
+            "local": "getRunnable",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 3,
+            "local": "getRegistry",
+            "type": "value"
+        },
+        {
+            "row": 66,
+            "column": 3,
+            "local": "setComponentProviderInstrumentationHook",
+            "type": "value"
+        },
+        {
+            "row": 75,
+            "column": 3,
+            "local": "runApplication",
+            "type": "value"
+        },
+        {
+            "row": 82,
+            "column": 3,
+            "local": "unmountApplicationComponentAtRootTag",
+            "type": "value"
+        },
+        {
+            "row": 89,
+            "column": 3,
+            "local": "registerHeadlessTask",
+            "type": "value"
+        },
+        {
+            "row": 96,
+            "column": 3,
+            "local": "registerCancellableHeadlessTask",
+            "type": "value"
+        },
+        {
+            "row": 107,
+            "column": 3,
+            "local": "startHeadlessTask",
+            "type": "value"
+        },
+        {
+            "row": 114,
+            "column": 3,
+            "local": "cancelHeadlessTask",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 13,
+            "local": "AppRegistry",
+            "type": "value"
+        }
+    ]
 }

@@ -9,5 +9,12 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\Rect.js.flow:2:6,2:9\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 6,
+            "local": "EdgeInsetsProp",
+            "type": "type"
+        }
+    ]
 }

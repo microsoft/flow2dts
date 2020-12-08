@@ -24,5 +24,72 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 7,
+            "column": 6,
+            "local": "ScrollViewNativeComponentType",
+            "type": "type"
+        },
+        {
+            "row": 9,
+            "column": 4,
+            "local": "flashScrollIndicators",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 4,
+            "local": "scrollTo",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 4,
+            "local": "scrollToEnd",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 7,
+            "local": "x",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 7,
+            "local": "y",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 7,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 7,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 7,
+            "local": "animated",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 4,
+            "local": "zoomToRect",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 11,
+            "local": "NativeCommands",
+            "type": "type"
+        }
+    ]
 }

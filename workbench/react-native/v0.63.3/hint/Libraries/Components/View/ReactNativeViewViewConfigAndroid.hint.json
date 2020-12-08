@@ -1,4 +1,257 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "uiViewClassName",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 9,
+            "local": "bubbled",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 9,
+            "local": "captured",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 7,
+            "local": "phasedRegistrationNames",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 5,
+            "local": "topSelect",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 3,
+            "local": "bubblingEventTypes",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 7,
+            "local": "registrationName",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 5,
+            "local": "topClick",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 7,
+            "local": "registrationName",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 5,
+            "local": "topContentSizeChange",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 7,
+            "local": "registrationName",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 5,
+            "local": "topLoadingError",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 7,
+            "local": "registrationName",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 5,
+            "local": "topLoadingFinish",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 7,
+            "local": "registrationName",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "topLoadingStart",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 7,
+            "local": "registrationName",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 5,
+            "local": "topMessage",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 7,
+            "local": "registrationName",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 5,
+            "local": "topMomentumScrollBegin",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 7,
+            "local": "registrationName",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 5,
+            "local": "topMomentumScrollEnd",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 7,
+            "local": "registrationName",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 5,
+            "local": "topScroll",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 7,
+            "local": "registrationName",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 5,
+            "local": "topScrollBeginDrag",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 7,
+            "local": "registrationName",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 5,
+            "local": "topScrollEndDrag",
+            "type": "value"
+        },
+        {
+            "row": 47,
+            "column": 7,
+            "local": "registrationName",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 5,
+            "local": "topSelectionChange",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "directEventTypes",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 5,
+            "local": "hasTVPreferredFocus",
+            "type": "value"
+        },
+        {
+            "row": 52,
+            "column": 5,
+            "local": "focusable",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 5,
+            "local": "nativeBackgroundAndroid",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 5,
+            "local": "nativeForegroundAndroid",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 5,
+            "local": "nextFocusDown",
+            "type": "value"
+        },
+        {
+            "row": 56,
+            "column": 5,
+            "local": "nextFocusForward",
+            "type": "value"
+        },
+        {
+            "row": 57,
+            "column": 5,
+            "local": "nextFocusLeft",
+            "type": "value"
+        },
+        {
+            "row": 58,
+            "column": 5,
+            "local": "nextFocusRight",
+            "type": "value"
+        },
+        {
+            "row": 59,
+            "column": 5,
+            "local": "nextFocusUp",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 3,
+            "local": "validAttributes",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 13,
+            "local": "ReactNativeViewViewConfigAndroid",
+            "type": "value"
+        }
+    ]
 }

@@ -9,5 +9,144 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\TurboModule\\RCTExport.js.flow:6:11,6:21\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 5,
+            "column": 4,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 8,
+            "local": "title",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 8,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 8,
+            "local": "options",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 8,
+            "local": "destructiveButtonIndices",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 8,
+            "local": "cancelButtonIndex",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 8,
+            "local": "anchor",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 8,
+            "local": "tintColor",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 8,
+            "local": "userInterfaceStyle",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 4,
+            "local": "showActionSheetWithOptions",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 8,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 8,
+            "local": "url",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 8,
+            "local": "subject",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 8,
+            "local": "anchor",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 8,
+            "local": "tintColor",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 8,
+            "local": "excludedActivityTypes",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 8,
+            "local": "userInterfaceStyle",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 10,
+            "local": "domain",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 10,
+            "local": "code",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 10,
+            "local": "userInfo",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 10,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 4,
+            "local": "showShareActionSheetWithOptions",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
 }

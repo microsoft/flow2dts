@@ -16,5 +16,564 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 7,
+            "column": 5,
+            "local": "bubbles",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 5,
+            "local": "cancelable",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 5,
+            "local": "currentTarget",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 5,
+            "local": "defaultPrevented",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 9,
+            "local": "registrationName",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 5,
+            "local": "dispatchConfig",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 5,
+            "local": "eventPhase",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 5,
+            "local": "preventDefault",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 5,
+            "local": "isDefaultPrevented",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 5,
+            "local": "stopPropagation",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 5,
+            "local": "isPropagationStopped",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 5,
+            "local": "isTrusted",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 5,
+            "local": "nativeEvent",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 5,
+            "local": "persist",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 5,
+            "local": "target",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "timeStamp",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 5,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 6,
+            "local": "SyntheticEvent",
+            "type": "type"
+        },
+        {
+            "row": 35,
+            "column": 9,
+            "local": "indexOfSingleActiveTouch",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 9,
+            "local": "mostRecentTimeStamp",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 9,
+            "local": "numberActiveTouches",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 15,
+            "local": "touchActive",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 15,
+            "local": "startPageX",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 15,
+            "local": "startPageY",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 15,
+            "local": "startTimeStamp",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 15,
+            "local": "currentPageX",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 15,
+            "local": "currentPageY",
+            "type": "value"
+        },
+        {
+            "row": 47,
+            "column": 15,
+            "local": "currentTimeStamp",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 15,
+            "local": "previousPageX",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 15,
+            "local": "previousPageY",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 15,
+            "local": "previousTimeStamp",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 9,
+            "local": "touchBank",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 5,
+            "local": "touchHistory",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 6,
+            "local": "ResponderSyntheticEvent",
+            "type": "type"
+        },
+        {
+            "row": 61,
+            "column": 5,
+            "local": "x",
+            "type": "value"
+        },
+        {
+            "row": 62,
+            "column": 5,
+            "local": "y",
+            "type": "value"
+        },
+        {
+            "row": 63,
+            "column": 5,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 5,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 59,
+            "column": 6,
+            "local": "Layout",
+            "type": "type"
+        },
+        {
+            "row": 71,
+            "column": 5,
+            "local": "ascender",
+            "type": "value"
+        },
+        {
+            "row": 72,
+            "column": 5,
+            "local": "capHeight",
+            "type": "value"
+        },
+        {
+            "row": 73,
+            "column": 5,
+            "local": "descender",
+            "type": "value"
+        },
+        {
+            "row": 74,
+            "column": 5,
+            "local": "text",
+            "type": "value"
+        },
+        {
+            "row": 75,
+            "column": 5,
+            "local": "xHeight",
+            "type": "value"
+        },
+        {
+            "row": 68,
+            "column": 6,
+            "local": "TextLayout",
+            "type": "type"
+        },
+        {
+            "row": 82,
+            "column": 7,
+            "local": "layout",
+            "type": "value"
+        },
+        {
+            "row": 79,
+            "column": 6,
+            "local": "LayoutEvent",
+            "type": "type"
+        },
+        {
+            "row": 90,
+            "column": 7,
+            "local": "lines",
+            "type": "value"
+        },
+        {
+            "row": 87,
+            "column": 6,
+            "local": "TextLayoutEvent",
+            "type": "type"
+        },
+        {
+            "row": 98,
+            "column": 7,
+            "local": "changedTouches",
+            "type": "value"
+        },
+        {
+            "row": 99,
+            "column": 7,
+            "local": "force",
+            "type": "value"
+        },
+        {
+            "row": 100,
+            "column": 7,
+            "local": "identifier",
+            "type": "value"
+        },
+        {
+            "row": 101,
+            "column": 7,
+            "local": "locationX",
+            "type": "value"
+        },
+        {
+            "row": 102,
+            "column": 7,
+            "local": "locationY",
+            "type": "value"
+        },
+        {
+            "row": 103,
+            "column": 7,
+            "local": "pageX",
+            "type": "value"
+        },
+        {
+            "row": 104,
+            "column": 7,
+            "local": "pageY",
+            "type": "value"
+        },
+        {
+            "row": 105,
+            "column": 7,
+            "local": "target",
+            "type": "value"
+        },
+        {
+            "row": 106,
+            "column": 7,
+            "local": "timestamp",
+            "type": "value"
+        },
+        {
+            "row": 107,
+            "column": 7,
+            "local": "touches",
+            "type": "value"
+        },
+        {
+            "row": 95,
+            "column": 6,
+            "local": "PressEvent",
+            "type": "type"
+        },
+        {
+            "row": 117,
+            "column": 11,
+            "local": "bottom",
+            "type": "value"
+        },
+        {
+            "row": 118,
+            "column": 11,
+            "local": "left",
+            "type": "value"
+        },
+        {
+            "row": 119,
+            "column": 11,
+            "local": "right",
+            "type": "value"
+        },
+        {
+            "row": 120,
+            "column": 11,
+            "local": "top",
+            "type": "value"
+        },
+        {
+            "row": 115,
+            "column": 7,
+            "local": "contentInset",
+            "type": "value"
+        },
+        {
+            "row": 125,
+            "column": 11,
+            "local": "y",
+            "type": "value"
+        },
+        {
+            "row": 126,
+            "column": 11,
+            "local": "x",
+            "type": "value"
+        },
+        {
+            "row": 123,
+            "column": 7,
+            "local": "contentOffset",
+            "type": "value"
+        },
+        {
+            "row": 131,
+            "column": 11,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 132,
+            "column": 11,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 129,
+            "column": 7,
+            "local": "contentSize",
+            "type": "value"
+        },
+        {
+            "row": 137,
+            "column": 11,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 138,
+            "column": 11,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 135,
+            "column": 7,
+            "local": "layoutMeasurement",
+            "type": "value"
+        },
+        {
+            "row": 143,
+            "column": 11,
+            "local": "y",
+            "type": "value"
+        },
+        {
+            "row": 144,
+            "column": 11,
+            "local": "x",
+            "type": "value"
+        },
+        {
+            "row": 141,
+            "column": 7,
+            "local": "targetContentOffset",
+            "type": "value"
+        },
+        {
+            "row": 149,
+            "column": 11,
+            "local": "y",
+            "type": "value"
+        },
+        {
+            "row": 150,
+            "column": 11,
+            "local": "x",
+            "type": "value"
+        },
+        {
+            "row": 147,
+            "column": 7,
+            "local": "velocity",
+            "type": "value"
+        },
+        {
+            "row": 153,
+            "column": 7,
+            "local": "zoomScale",
+            "type": "value"
+        },
+        {
+            "row": 154,
+            "column": 7,
+            "local": "responderIgnoreScroll",
+            "type": "value"
+        },
+        {
+            "row": 112,
+            "column": 6,
+            "local": "ScrollEvent",
+            "type": "type"
+        },
+        {
+            "row": 162,
+            "column": 7,
+            "local": "target",
+            "type": "value"
+        },
+        {
+            "row": 159,
+            "column": 6,
+            "local": "BlurEvent",
+            "type": "type"
+        },
+        {
+            "row": 170,
+            "column": 7,
+            "local": "target",
+            "type": "value"
+        },
+        {
+            "row": 167,
+            "column": 6,
+            "local": "FocusEvent",
+            "type": "type"
+        },
+        {
+            "row": 178,
+            "column": 7,
+            "local": "clientX",
+            "type": "value"
+        },
+        {
+            "row": 179,
+            "column": 7,
+            "local": "clientY",
+            "type": "value"
+        },
+        {
+            "row": 180,
+            "column": 7,
+            "local": "pageX",
+            "type": "value"
+        },
+        {
+            "row": 181,
+            "column": 7,
+            "local": "pageY",
+            "type": "value"
+        },
+        {
+            "row": 182,
+            "column": 7,
+            "local": "timestamp",
+            "type": "value"
+        },
+        {
+            "row": 175,
+            "column": 6,
+            "local": "MouseEvent",
+            "type": "type"
+        }
+    ]
 }

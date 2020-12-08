@@ -57,5 +57,60 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:7:6,7:15\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 15,
+            "column": 5,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 5,
+            "local": "tintColor",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 5,
+            "local": "shouldNotifyLoadEvents",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 50,
+            "local": "uri",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 5,
+            "local": "src",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 5,
+            "local": "headers",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 5,
+            "local": "defaultSrc",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "loadingIndicatorSrc",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "NativeProps",
+            "type": "type"
+        }
+    ]
 }

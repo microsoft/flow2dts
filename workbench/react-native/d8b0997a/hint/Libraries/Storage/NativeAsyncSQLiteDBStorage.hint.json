@@ -9,5 +9,90 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\TurboModule\\RCTExport.js.flow:6:11,6:21\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 5,
+            "column": 4,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 24,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 4,
+            "local": "multiGet",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 33,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 4,
+            "local": "multiSet",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 33,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 4,
+            "local": "multiMerge",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 33,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 4,
+            "local": "multiRemove",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 32,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 4,
+            "local": "clear",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 26,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 4,
+            "local": "getAllKeys",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
 }

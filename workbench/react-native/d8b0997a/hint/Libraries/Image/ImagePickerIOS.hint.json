@@ -1,4 +1,71 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "canRecordVideos",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 3,
+            "local": "canUseCamera",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 9,
+            "local": "unmirrorFrontFacingCamera",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 9,
+            "local": "videoMode",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "local": "openCameraDialog",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 9,
+            "local": "showImages",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 9,
+            "local": "showVideos",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "openSelectDialog",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 3,
+            "local": "removePendingVideo",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 3,
+            "local": "clearAllPendingVideos",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 13,
+            "local": "ImagePickerIOS",
+            "type": "value"
+        }
+    ]
 }

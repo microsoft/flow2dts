@@ -1,4 +1,65 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 6,
+            "local": "Pooler",
+            "type": "type"
+        },
+        {
+            "row": 10,
+            "column": 5,
+            "local": "getPooled",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 5,
+            "local": "release",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "addPoolingTo",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "addPoolingTo",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "oneArgumentPooler",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 3,
+            "local": "twoArgumentPooler",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "threeArgumentPooler",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 3,
+            "local": "fourArgumentPooler",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 13,
+            "local": "PooledClass",
+            "type": "value"
+        }
+    ]
 }

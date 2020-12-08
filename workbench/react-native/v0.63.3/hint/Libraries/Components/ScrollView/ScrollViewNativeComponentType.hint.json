@@ -65,5 +65,324 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\PointPropType.js.flow:2:6,2:14\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 14,
+            "column": 5,
+            "local": "alwaysBounceHorizontal",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 5,
+            "local": "alwaysBounceVertical",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 5,
+            "local": "automaticallyAdjustContentInsets",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 5,
+            "local": "bounces",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 5,
+            "local": "bouncesZoom",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 5,
+            "local": "canCancelContentTouches",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 5,
+            "local": "centerContent",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 5,
+            "local": "contentInset",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 5,
+            "local": "contentInsetAdjustmentBehavior",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 5,
+            "local": "contentOffset",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 5,
+            "local": "decelerationRate",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 5,
+            "local": "directionalLockEnabled",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 5,
+            "local": "disableIntervalMomentum",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 5,
+            "local": "endFillColor",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 5,
+            "local": "fadingEdgeLength",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 5,
+            "local": "indicatorStyle",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 5,
+            "local": "keyboardDismissMode",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 9,
+            "local": "minIndexForVisible",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 9,
+            "local": "autoscrollToTopThreshold",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 5,
+            "local": "maintainVisibleContentPosition",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 5,
+            "local": "maximumZoomScale",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 5,
+            "local": "minimumZoomScale",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 5,
+            "local": "nestedScrollEnabled",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 5,
+            "local": "onMomentumScrollBegin",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 5,
+            "local": "onMomentumScrollEnd",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 5,
+            "local": "onScroll",
+            "type": "value"
+        },
+        {
+            "row": 47,
+            "column": 5,
+            "local": "onScrollBeginDrag",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 5,
+            "local": "onScrollEndDrag",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 5,
+            "local": "onScrollToTop",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 5,
+            "local": "overScrollMode",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 5,
+            "local": "pagingEnabled",
+            "type": "value"
+        },
+        {
+            "row": 52,
+            "column": 5,
+            "local": "persistentScrollbar",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 5,
+            "local": "pinchGestureEnabled",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 5,
+            "local": "scrollEnabled",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 5,
+            "local": "scrollEventThrottle",
+            "type": "value"
+        },
+        {
+            "row": 56,
+            "column": 5,
+            "local": "scrollIndicatorInsets",
+            "type": "value"
+        },
+        {
+            "row": 57,
+            "column": 5,
+            "local": "scrollPerfTag",
+            "type": "value"
+        },
+        {
+            "row": 58,
+            "column": 5,
+            "local": "scrollToOverflowEnabled",
+            "type": "value"
+        },
+        {
+            "row": 59,
+            "column": 5,
+            "local": "scrollsToTop",
+            "type": "value"
+        },
+        {
+            "row": 60,
+            "column": 5,
+            "local": "sendMomentumEvents",
+            "type": "value"
+        },
+        {
+            "row": 61,
+            "column": 5,
+            "local": "showsHorizontalScrollIndicator",
+            "type": "value"
+        },
+        {
+            "row": 62,
+            "column": 5,
+            "local": "showsVerticalScrollIndicator",
+            "type": "value"
+        },
+        {
+            "row": 63,
+            "column": 5,
+            "local": "snapToAlignment",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 5,
+            "local": "snapToEnd",
+            "type": "value"
+        },
+        {
+            "row": 65,
+            "column": 5,
+            "local": "snapToInterval",
+            "type": "value"
+        },
+        {
+            "row": 66,
+            "column": 5,
+            "local": "snapToOffsets",
+            "type": "value"
+        },
+        {
+            "row": 67,
+            "column": 5,
+            "local": "snapToStart",
+            "type": "value"
+        },
+        {
+            "row": 68,
+            "column": 5,
+            "local": "zoomScale",
+            "type": "value"
+        },
+        {
+            "row": 69,
+            "column": 5,
+            "local": "DEPRECATED_sendUpdatedChildFrames",
+            "type": "value"
+        },
+        {
+            "row": 71,
+            "column": 5,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 72,
+            "column": 5,
+            "local": "onResponderGrant",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 6,
+            "local": "ScrollViewNativeProps",
+            "type": "type"
+        },
+        {
+            "row": 77,
+            "column": 6,
+            "local": "ScrollViewNativeComponentType",
+            "type": "type"
+        }
+    ]
 }

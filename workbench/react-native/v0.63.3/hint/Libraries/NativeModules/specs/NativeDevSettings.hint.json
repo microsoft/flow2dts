@@ -9,5 +9,78 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\TurboModule\\RCTExport.js.flow:6:11,6:21\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 5,
+            "column": 4,
+            "local": "reload",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 4,
+            "local": "reloadWithReason",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 4,
+            "local": "onFastRefresh",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 4,
+            "local": "setHotLoadingEnabled",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 4,
+            "local": "setIsDebuggingRemotely",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 4,
+            "local": "setProfilingEnabled",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 4,
+            "local": "toggleElementInspector",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 4,
+            "local": "addMenuItem",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 4,
+            "local": "addListener",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 4,
+            "local": "removeListeners",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 4,
+            "local": "setIsShakeToShowDevMenuEnabled",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
 }

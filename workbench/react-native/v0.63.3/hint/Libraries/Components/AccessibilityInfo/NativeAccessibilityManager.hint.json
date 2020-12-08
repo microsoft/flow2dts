@@ -9,5 +9,138 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\TurboModule\\RCTExport.js.flow:6:11,6:21\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 5,
+            "column": 4,
+            "local": "getCurrentBoldTextState",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 4,
+            "local": "getCurrentGrayscaleState",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 4,
+            "local": "getCurrentInvertColorsState",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 4,
+            "local": "getCurrentReduceMotionState",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 4,
+            "local": "getCurrentReduceTransparencyState",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 4,
+            "local": "getCurrentVoiceOverState",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 8,
+            "local": "extraSmall",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 8,
+            "local": "small",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 8,
+            "local": "medium",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 8,
+            "local": "large",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 8,
+            "local": "extraLarge",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 8,
+            "local": "extraExtraLarge",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 8,
+            "local": "extraExtraExtraLarge",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 8,
+            "local": "accessibilityMedium",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 8,
+            "local": "accessibilityLarge",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 8,
+            "local": "accessibilityExtraLarge",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 8,
+            "local": "accessibilityExtraExtraLarge",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 8,
+            "local": "accessibilityExtraExtraExtraLarge",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 4,
+            "local": "setAccessibilityContentSizeMultipliers",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 4,
+            "local": "setAccessibilityFocus",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 4,
+            "local": "announceForAccessibility",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
 }

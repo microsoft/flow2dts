@@ -9,5 +9,72 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\TurboModule\\RCTExport.js.flow:6:11,6:21\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 6,
+            "column": 6,
+            "local": "HEIGHT",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 6,
+            "local": "DEFAULT_BACKGROUND_COLOR",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 4,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 37,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 4,
+            "local": "getHeight",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 4,
+            "local": "setNetworkActivityIndicatorVisible",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 4,
+            "local": "addListener",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 4,
+            "local": "removeListeners",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 4,
+            "local": "setStyle",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 4,
+            "local": "setHidden",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
 }

@@ -1,4 +1,71 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "DeprecatedColorPropType",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "ReactPropTypes",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "shadowColor",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 7,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 7,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "shadowOffset",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "shadowOpacity",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "shadowRadius",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 13,
+            "local": "DeprecatedShadowPropTypesIOS",
+            "type": "value"
+        }
+    ]
 }

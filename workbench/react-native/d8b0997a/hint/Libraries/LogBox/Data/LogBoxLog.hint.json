@@ -41,5 +41,252 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\LogBox\\Data\\LogBoxSymbolication.js.flow:5:6,5:10\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 8,
+            "column": 6,
+            "local": "SymbolicationStatus",
+            "type": "type"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "LogLevel",
+            "type": "type"
+        },
+        {
+            "row": 14,
+            "column": 5,
+            "local": "level",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 5,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 5,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 5,
+            "local": "stack",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 5,
+            "local": "category",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 5,
+            "local": "componentStack",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 5,
+            "local": "codeFrame",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 5,
+            "local": "isComponentError",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 6,
+            "local": "LogBoxLogData",
+            "type": "type"
+        },
+        {
+            "row": 26,
+            "column": 3,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 3,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 3,
+            "local": "category",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 3,
+            "local": "componentStack",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 3,
+            "local": "stack",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 3,
+            "local": "count",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "level",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 3,
+            "local": "codeFrame",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 3,
+            "local": "isComponentError",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 19,
+            "local": "error",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 32,
+            "local": "stack",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 45,
+            "local": "status",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 19,
+            "local": "error",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 32,
+            "local": "stack",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 45,
+            "local": "status",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 19,
+            "local": "error",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 32,
+            "local": "stack",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 46,
+            "local": "status",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 19,
+            "local": "error",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 33,
+            "local": "stack",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 46,
+            "local": "status",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "symbolicated",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "incrementCount",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 3,
+            "local": "getAvailableStack",
+            "type": "value"
+        },
+        {
+            "row": 47,
+            "column": 3,
+            "local": "retrySymbolicate",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 3,
+            "local": "symbolicate",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 3,
+            "local": "handleSymbolicate",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 3,
+            "local": "updateStatus",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 15,
+            "local": "LogBoxLog",
+            "type": "class"
+        }
+    ]
 }

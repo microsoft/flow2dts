@@ -25,5 +25,54 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:95:6,95:15\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 8,
+            "column": 5,
+            "local": "getDisabled",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 5,
+            "local": "onBlur",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 5,
+            "local": "onFocus",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 5,
+            "local": "onPress",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 6,
+            "local": "TVTouchableConfig",
+            "type": "type"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "destroy",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 15,
+            "local": "TVTouchable",
+            "type": "class"
+        }
+    ]
 }

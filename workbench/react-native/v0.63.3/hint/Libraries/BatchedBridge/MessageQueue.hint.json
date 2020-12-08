@@ -1,4 +1,167 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 3,
+            "local": "module",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "local": "method",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 3,
+            "local": "args",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "local": "SpyData",
+            "type": "type"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "__spy",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 10,
+            "local": "spy",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "callFunctionReturnFlushedQueue",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 3,
+            "local": "callFunctionReturnResultAndFlushedQueue",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 3,
+            "local": "invokeCallbackAndReturnFlushedQueue",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "flushedQueue",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 3,
+            "local": "getEventLoopRunningTime",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 3,
+            "local": "registerCallableModule",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 3,
+            "local": "registerLazyCallableModule",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "getCallableModule",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 3,
+            "local": "callNativeSyncHook",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 3,
+            "local": "processCallbacks",
+            "type": "value"
+        },
+        {
+            "row": 61,
+            "column": 3,
+            "local": "enqueueNativeCall",
+            "type": "value"
+        },
+        {
+            "row": 69,
+            "column": 3,
+            "local": "createDebugLookup",
+            "type": "value"
+        },
+        {
+            "row": 78,
+            "column": 3,
+            "local": "setImmediatesCallback",
+            "type": "value"
+        },
+        {
+            "row": 84,
+            "column": 3,
+            "local": "__guard",
+            "type": "value"
+        },
+        {
+            "row": 91,
+            "column": 3,
+            "local": "__shouldPauseOnThrow",
+            "type": "value"
+        },
+        {
+            "row": 93,
+            "column": 3,
+            "local": "__callImmediates",
+            "type": "value"
+        },
+        {
+            "row": 95,
+            "column": 3,
+            "local": "__callFunction",
+            "type": "value"
+        },
+        {
+            "row": 97,
+            "column": 3,
+            "local": "__invokeCallback",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 15,
+            "local": "MessageQueue",
+            "type": "class"
+        }
+    ]
 }

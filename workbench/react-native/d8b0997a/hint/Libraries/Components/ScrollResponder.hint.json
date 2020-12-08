@@ -41,5 +41,342 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\Keyboard\\Keyboard.js.flow:30:6,30:18\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "isTouching",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "lastMomentumScrollBeginTime",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "lastMomentumScrollEndTime",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "observedScrollSinceBecomingResponder",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "becameResponderWhileAnimating",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 6,
+            "local": "State",
+            "type": "type"
+        },
+        {
+            "row": 20,
+            "column": 3,
+            "local": "_subscriptionKeyboardWillShow",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "_subscriptionKeyboardWillHide",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 3,
+            "local": "_subscriptionKeyboardDidShow",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 3,
+            "local": "_subscriptionKeyboardDidHide",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 3,
+            "local": "scrollResponderMixinGetInitialState",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 3,
+            "local": "scrollResponderHandleScrollShouldSetResponder",
+            "type": "value"
+        },
+        {
+            "row": 56,
+            "column": 3,
+            "local": "scrollResponderHandleStartShouldSetResponder",
+            "type": "value"
+        },
+        {
+            "row": 69,
+            "column": 3,
+            "local": "scrollResponderHandleStartShouldSetResponderCapture",
+            "type": "value"
+        },
+        {
+            "row": 83,
+            "column": 3,
+            "local": "scrollResponderHandleResponderReject",
+            "type": "value"
+        },
+        {
+            "row": 100,
+            "column": 3,
+            "local": "scrollResponderHandleTerminationRequest",
+            "type": "value"
+        },
+        {
+            "row": 107,
+            "column": 3,
+            "local": "scrollResponderHandleTouchEnd",
+            "type": "value"
+        },
+        {
+            "row": 114,
+            "column": 3,
+            "local": "scrollResponderHandleTouchCancel",
+            "type": "value"
+        },
+        {
+            "row": 119,
+            "column": 3,
+            "local": "scrollResponderHandleResponderRelease",
+            "type": "value"
+        },
+        {
+            "row": 121,
+            "column": 3,
+            "local": "scrollResponderHandleScroll",
+            "type": "value"
+        },
+        {
+            "row": 126,
+            "column": 3,
+            "local": "scrollResponderHandleResponderGrant",
+            "type": "value"
+        },
+        {
+            "row": 135,
+            "column": 3,
+            "local": "scrollResponderHandleScrollBeginDrag",
+            "type": "value"
+        },
+        {
+            "row": 140,
+            "column": 3,
+            "local": "scrollResponderHandleScrollEndDrag",
+            "type": "value"
+        },
+        {
+            "row": 145,
+            "column": 3,
+            "local": "scrollResponderHandleMomentumScrollBegin",
+            "type": "value"
+        },
+        {
+            "row": 150,
+            "column": 3,
+            "local": "scrollResponderHandleMomentumScrollEnd",
+            "type": "value"
+        },
+        {
+            "row": 163,
+            "column": 3,
+            "local": "scrollResponderHandleTouchStart",
+            "type": "value"
+        },
+        {
+            "row": 176,
+            "column": 3,
+            "local": "scrollResponderHandleTouchMove",
+            "type": "value"
+        },
+        {
+            "row": 183,
+            "column": 3,
+            "local": "scrollResponderIsAnimating",
+            "type": "value"
+        },
+        {
+            "row": 190,
+            "column": 3,
+            "local": "scrollResponderGetScrollableNode",
+            "type": "value"
+        },
+        {
+            "row": 207,
+            "column": 9,
+            "local": "x",
+            "type": "value"
+        },
+        {
+            "row": 208,
+            "column": 9,
+            "local": "y",
+            "type": "value"
+        },
+        {
+            "row": 209,
+            "column": 9,
+            "local": "animated",
+            "type": "value"
+        },
+        {
+            "row": 203,
+            "column": 3,
+            "local": "scrollResponderScrollTo",
+            "type": "value"
+        },
+        {
+            "row": 224,
+            "column": 43,
+            "local": "animated",
+            "type": "value"
+        },
+        {
+            "row": 224,
+            "column": 3,
+            "local": "scrollResponderScrollToEnd",
+            "type": "value"
+        },
+        {
+            "row": 234,
+            "column": 7,
+            "local": "x",
+            "type": "value"
+        },
+        {
+            "row": 235,
+            "column": 7,
+            "local": "y",
+            "type": "value"
+        },
+        {
+            "row": 236,
+            "column": 7,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 237,
+            "column": 7,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 238,
+            "column": 7,
+            "local": "animated",
+            "type": "value"
+        },
+        {
+            "row": 232,
+            "column": 3,
+            "local": "scrollResponderZoomTo",
+            "type": "value"
+        },
+        {
+            "row": 247,
+            "column": 3,
+            "local": "scrollResponderFlashScrollIndicators",
+            "type": "value"
+        },
+        {
+            "row": 259,
+            "column": 3,
+            "local": "scrollResponderScrollNativeHandleToKeyboard",
+            "type": "value"
+        },
+        {
+            "row": 275,
+            "column": 3,
+            "local": "scrollResponderInputMeasureAndScrollToKeyboard",
+            "type": "value"
+        },
+        {
+            "row": 282,
+            "column": 3,
+            "local": "scrollResponderTextInputFocusError",
+            "type": "value"
+        },
+        {
+            "row": 290,
+            "column": 3,
+            "local": "UNSAFE_componentWillMount",
+            "type": "value"
+        },
+        {
+            "row": 292,
+            "column": 3,
+            "local": "componentWillUnmount",
+            "type": "value"
+        },
+        {
+            "row": 322,
+            "column": 3,
+            "local": "scrollResponderKeyboardWillShow",
+            "type": "value"
+        },
+        {
+            "row": 324,
+            "column": 3,
+            "local": "scrollResponderKeyboardWillHide",
+            "type": "value"
+        },
+        {
+            "row": 326,
+            "column": 3,
+            "local": "scrollResponderKeyboardDidShow",
+            "type": "value"
+        },
+        {
+            "row": 328,
+            "column": 3,
+            "local": "scrollResponderKeyboardDidHide",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 13,
+            "local": "ScrollResponderMixin",
+            "type": "value"
+        },
+        {
+            "row": 332,
+            "column": 3,
+            "local": "Mixin",
+            "type": "value"
+        },
+        {
+            "row": 331,
+            "column": 13,
+            "local": "ScrollResponder",
+            "type": "value"
+        }
+    ]
 }

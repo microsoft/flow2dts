@@ -9,5 +9,48 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\vendor\\emitter\\EmitterSubscription.js.flow:8:15,8:33\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "NativeEventEmitter",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "__nativeTVNavigationEventListener",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "__nativeTVNavigationEventEmitter",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "enable",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "disable",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 15,
+            "local": "TVEventHandler",
+            "type": "class"
+        }
+    ]
 }

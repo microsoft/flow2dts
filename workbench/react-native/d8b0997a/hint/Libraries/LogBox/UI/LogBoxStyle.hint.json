@@ -1,4 +1,89 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 18,
+            "local": "getBackgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 18,
+            "local": "getBackgroundLightColor",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 18,
+            "local": "getBackgroundDarkColor",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 18,
+            "local": "getWarningColor",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 18,
+            "local": "getWarningDarkColor",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 18,
+            "local": "getFatalColor",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 18,
+            "local": "getFatalDarkColor",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 18,
+            "local": "getErrorColor",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 18,
+            "local": "getErrorDarkColor",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 18,
+            "local": "getLogColor",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 18,
+            "local": "getWarningHighlightColor",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 18,
+            "local": "getDividerColor",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 18,
+            "local": "getHighlightColor",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 18,
+            "local": "getTextColor",
+            "type": "value"
+        }
+    ]
 }

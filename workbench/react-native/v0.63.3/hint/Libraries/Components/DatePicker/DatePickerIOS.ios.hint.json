@@ -17,5 +17,132 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:389:6,389:14\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 7,
+            "local": "timestamp",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 6,
+            "local": "Event",
+            "type": "type"
+        },
+        {
+            "row": 23,
+            "column": 5,
+            "local": "date",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 5,
+            "local": "initialDate",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 5,
+            "local": "locale",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 5,
+            "local": "maximumDate",
+            "type": "value"
+        },
+        {
+            "row": 52,
+            "column": 5,
+            "local": "minimumDate",
+            "type": "value"
+        },
+        {
+            "row": 57,
+            "column": 5,
+            "local": "minuteInterval",
+            "type": "value"
+        },
+        {
+            "row": 62,
+            "column": 5,
+            "local": "mode",
+            "type": "value"
+        },
+        {
+            "row": 71,
+            "column": 5,
+            "local": "onChange",
+            "type": "value"
+        },
+        {
+            "row": 80,
+            "column": 5,
+            "local": "onDateChange",
+            "type": "value"
+        },
+        {
+            "row": 89,
+            "column": 5,
+            "local": "timeZoneOffsetInMinutes",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 95,
+            "column": 26,
+            "local": "mode",
+            "type": "value"
+        },
+        {
+            "row": 95,
+            "column": 10,
+            "local": "DefaultProps",
+            "type": "value"
+        },
+        {
+            "row": 97,
+            "column": 3,
+            "local": "componentDidUpdate",
+            "type": "value"
+        },
+        {
+            "row": 99,
+            "column": 3,
+            "local": "render",
+            "type": "value"
+        },
+        {
+            "row": 93,
+            "column": 15,
+            "local": "DatePickerIOS",
+            "type": "class"
+        },
+        {
+            "row": 101,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
 }

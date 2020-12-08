@@ -1,4 +1,41 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "register",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "unregister",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 13,
+            "local": "has",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "register",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "unregister",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "has",
+            "type": "value"
+        }
+    ]
 }

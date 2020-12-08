@@ -17,5 +17,168 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\animations\\Animation.js.flow:5:6,5:16\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "AnimatedValue",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "AnimatedValueXY",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 13,
+            "local": "AnimatedInterpolation",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 13,
+            "local": "Animation",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 7,
+            "local": "$4",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 7,
+            "local": "x",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 7,
+            "local": "y",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "toValue",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 3,
+            "local": "easing",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 3,
+            "local": "duration",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 3,
+            "local": "delay",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 6,
+            "local": "TimingAnimationConfig",
+            "type": "type"
+        },
+        {
+            "row": 33,
+            "column": 3,
+            "local": "toValue",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 3,
+            "local": "easing",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "duration",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "delay",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 6,
+            "local": "TimingAnimationConfigSingle",
+            "type": "type"
+        },
+        {
+            "row": 41,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "__getNativeAnimationConfig",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 3,
+            "local": "start",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 3,
+            "local": "onUpdate",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 3,
+            "local": "stop",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 15,
+            "local": "TimingAnimation",
+            "type": "class"
+        },
+        {
+            "row": 57,
+            "column": 13,
+            "local": "$5",
+            "type": "value"
+        }
+    ]
 }

@@ -9,5 +9,12 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Alert\\NativeAlertManager.js.flow:4:6,4:9\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 5,
+            "column": 3,
+            "local": "alertWithArgs",
+            "type": "value"
+        }
+    ]
 }

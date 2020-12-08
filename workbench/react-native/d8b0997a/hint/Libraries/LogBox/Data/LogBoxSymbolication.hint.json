@@ -17,5 +17,24 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Core\\Devtools\\symbolicateStackTrace.js.flow:16:6,16:27\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 5,
+            "column": 6,
+            "local": "Stack",
+            "type": "type"
+        },
+        {
+            "row": 7,
+            "column": 18,
+            "local": "deleteStack",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 18,
+            "local": "symbolicate",
+            "type": "value"
+        }
+    ]
 }

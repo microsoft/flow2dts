@@ -1,4 +1,191 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "Blob",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 6,
+            "local": "ArrayBufferView",
+            "type": "type"
+        },
+        {
+            "row": 17,
+            "column": 6,
+            "local": "BinaryType",
+            "type": "type"
+        },
+        {
+            "row": 21,
+            "column": 10,
+            "local": "CONNECTING",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 10,
+            "local": "OPEN",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 10,
+            "local": "CLOSING",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 10,
+            "local": "CLOSED",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 3,
+            "local": "CONNECTING",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 3,
+            "local": "OPEN",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 3,
+            "local": "CLOSING",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 3,
+            "local": "CLOSED",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 3,
+            "local": "onclose",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "onerror",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 3,
+            "local": "onmessage",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 3,
+            "local": "onopen",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "bufferedAmount",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 3,
+            "local": "extension",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 3,
+            "local": "protocol",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 3,
+            "local": "readyState",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 3,
+            "local": "url",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 27,
+            "local": "origin",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 16,
+            "local": "headers",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 7,
+            "local": "binaryType",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 7,
+            "local": "binaryType",
+            "type": "value"
+        },
+        {
+            "row": 52,
+            "column": 3,
+            "local": "close",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 3,
+            "local": "send",
+            "type": "value"
+        },
+        {
+            "row": 56,
+            "column": 3,
+            "local": "ping",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 15,
+            "local": "WebSocket",
+            "type": "class"
+        },
+        {
+            "row": 58,
+            "column": 13,
+            "local": "$2",
+            "type": "value"
+        }
+    ]
 }

@@ -48,5 +48,66 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 17,
+            "column": 5,
+            "local": "tintColor",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 5,
+            "local": "titleColor",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "title",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 5,
+            "local": "onRefresh",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 5,
+            "local": "refreshing",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "NativeProps",
+            "type": "type"
+        },
+        {
+            "row": 39,
+            "column": 6,
+            "local": "ComponentType",
+            "type": "type"
+        },
+        {
+            "row": 42,
+            "column": 4,
+            "local": "setNativeRefreshing",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 11,
+            "local": "NativeCommands",
+            "type": "type"
+        },
+        {
+            "row": 48,
+            "column": 13,
+            "local": "Commands",
+            "type": "value"
+        }
+    ]
 }

@@ -1,4 +1,269 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 6,
+            "local": "ContentAvailable",
+            "type": "type"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "local": "NewData",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 3,
+            "local": "NoData",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "ResultFailed",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 6,
+            "local": "FetchResult",
+            "type": "type"
+        },
+        {
+            "row": 17,
+            "column": 5,
+            "local": "notification",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 5,
+            "local": "localNotification",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 5,
+            "local": "register",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 5,
+            "local": "registrationError",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 6,
+            "local": "PushNotificationEventName",
+            "type": "type"
+        },
+        {
+            "row": 39,
+            "column": 10,
+            "local": "FetchResult",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 10,
+            "local": "presentLocalNotification",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 10,
+            "local": "scheduleLocalNotification",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 10,
+            "local": "cancelAllLocalNotifications",
+            "type": "value"
+        },
+        {
+            "row": 47,
+            "column": 10,
+            "local": "removeAllDeliveredNotifications",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 10,
+            "local": "getDeliveredNotifications",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 10,
+            "local": "removeDeliveredNotifications",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 10,
+            "local": "setApplicationIconBadgeNumber",
+            "type": "value"
+        },
+        {
+            "row": 57,
+            "column": 10,
+            "local": "getApplicationIconBadgeNumber",
+            "type": "value"
+        },
+        {
+            "row": 59,
+            "column": 10,
+            "local": "cancelLocalNotifications",
+            "type": "value"
+        },
+        {
+            "row": 61,
+            "column": 10,
+            "local": "getScheduledLocalNotifications",
+            "type": "value"
+        },
+        {
+            "row": 63,
+            "column": 10,
+            "local": "addEventListener",
+            "type": "value"
+        },
+        {
+            "row": 68,
+            "column": 10,
+            "local": "removeEventListener",
+            "type": "value"
+        },
+        {
+            "row": 75,
+            "column": 7,
+            "local": "alert",
+            "type": "value"
+        },
+        {
+            "row": 76,
+            "column": 7,
+            "local": "badge",
+            "type": "value"
+        },
+        {
+            "row": 77,
+            "column": 7,
+            "local": "sound",
+            "type": "value"
+        },
+        {
+            "row": 82,
+            "column": 7,
+            "local": "alert",
+            "type": "value"
+        },
+        {
+            "row": 83,
+            "column": 7,
+            "local": "badge",
+            "type": "value"
+        },
+        {
+            "row": 84,
+            "column": 7,
+            "local": "sound",
+            "type": "value"
+        },
+        {
+            "row": 73,
+            "column": 10,
+            "local": "requestPermissions",
+            "type": "value"
+        },
+        {
+            "row": 89,
+            "column": 10,
+            "local": "abandonPermissions",
+            "type": "value"
+        },
+        {
+            "row": 91,
+            "column": 10,
+            "local": "checkPermissions",
+            "type": "value"
+        },
+        {
+            "row": 93,
+            "column": 10,
+            "local": "getInitialNotification",
+            "type": "value"
+        },
+        {
+            "row": 101,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 109,
+            "column": 3,
+            "local": "finish",
+            "type": "value"
+        },
+        {
+            "row": 114,
+            "column": 3,
+            "local": "getMessage",
+            "type": "value"
+        },
+        {
+            "row": 121,
+            "column": 3,
+            "local": "getSound",
+            "type": "value"
+        },
+        {
+            "row": 128,
+            "column": 3,
+            "local": "getCategory",
+            "type": "value"
+        },
+        {
+            "row": 135,
+            "column": 3,
+            "local": "getAlert",
+            "type": "value"
+        },
+        {
+            "row": 142,
+            "column": 3,
+            "local": "getContentAvailable",
+            "type": "value"
+        },
+        {
+            "row": 149,
+            "column": 3,
+            "local": "getBadgeCount",
+            "type": "value"
+        },
+        {
+            "row": 156,
+            "column": 3,
+            "local": "getData",
+            "type": "value"
+        },
+        {
+            "row": 163,
+            "column": 3,
+            "local": "getThreadID",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 15,
+            "local": "PushNotificationIOS",
+            "type": "class"
+        }
+    ]
 }

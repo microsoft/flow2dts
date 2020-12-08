@@ -9,5 +9,120 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\nodes\\AnimatedValue.js.flow:12:15,12:27\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 19,
+            "local": "finished",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 6,
+            "local": "EndResult",
+            "type": "type"
+        },
+        {
+            "row": 5,
+            "column": 6,
+            "local": "EndCallback",
+            "type": "type"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "isInteraction",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "useNativeDriver",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "onComplete",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "iterations",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 6,
+            "local": "AnimationConfig",
+            "type": "type"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "__active",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "__isInteraction",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "__nativeId",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "__onEnd",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "__iterations",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 3,
+            "local": "start",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 3,
+            "local": "stop",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 3,
+            "local": "__getNativeAnimationConfig",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 3,
+            "local": "__debouncedOnEnd",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 3,
+            "local": "__startNativeAnimation",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 15,
+            "local": "Animation",
+            "type": "class"
+        }
+    ]
 }

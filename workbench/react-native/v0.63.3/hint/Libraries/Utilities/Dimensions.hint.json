@@ -1,4 +1,35 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 3,
+            "column": 10,
+            "local": "get",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 10,
+            "local": "set",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 10,
+            "local": "addEventListener",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 10,
+            "local": "removeEventListener",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 15,
+            "local": "Dimensions",
+            "type": "class"
+        }
+    ]
 }

@@ -17,5 +17,66 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:80:6,80:21\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 10,
+            "column": 11,
+            "local": "captured",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 11,
+            "local": "bubbled",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 7,
+            "local": "phasedRegistrationNames",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 13,
+            "local": "customBubblingEventTypes",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 7,
+            "local": "registrationName",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 13,
+            "local": "customDirectEventTypes",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 3,
+            "local": "get",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 3,
+            "local": "register",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 3,
+            "local": "customDirectEventTypes",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 3,
+            "local": "customBubblingEventTypes",
+            "type": "value"
+        }
+    ]
 }

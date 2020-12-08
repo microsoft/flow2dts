@@ -1,4 +1,47 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "stiffness",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 3,
+            "local": "damping",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "local": "SpringConfigType",
+            "type": "type"
+        },
+        {
+            "row": 8,
+            "column": 18,
+            "local": "fromOrigamiTensionAndFriction",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 18,
+            "local": "fromBouncinessAndSpeed",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "fromOrigamiTensionAndFriction",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 3,
+            "local": "fromBouncinessAndSpeed",
+            "type": "value"
+        }
+    ]
 }

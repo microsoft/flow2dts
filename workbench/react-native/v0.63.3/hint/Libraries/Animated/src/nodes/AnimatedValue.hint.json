@@ -33,5 +33,126 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\nodes\\AnimatedTracking.js.flow:9:15,9:30\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "AnimatedInterpolation",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "AnimatedWithChildren",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "__detach",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "__getValue",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 3,
+            "local": "setValue",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "setOffset",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "flattenOffset",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 3,
+            "local": "extractOffset",
+            "type": "value"
+        },
+        {
+            "row": 60,
+            "column": 3,
+            "local": "stopAnimation",
+            "type": "value"
+        },
+        {
+            "row": 67,
+            "column": 3,
+            "local": "resetAnimation",
+            "type": "value"
+        },
+        {
+            "row": 73,
+            "column": 3,
+            "local": "interpolate",
+            "type": "value"
+        },
+        {
+            "row": 81,
+            "column": 3,
+            "local": "animate",
+            "type": "value"
+        },
+        {
+            "row": 86,
+            "column": 3,
+            "local": "stopTracking",
+            "type": "value"
+        },
+        {
+            "row": 91,
+            "column": 3,
+            "local": "track",
+            "type": "value"
+        },
+        {
+            "row": 93,
+            "column": 3,
+            "local": "__getNativeConfig",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 15,
+            "local": "AnimatedValue",
+            "type": "class"
+        },
+        {
+            "row": 95,
+            "column": 13,
+            "local": "$2",
+            "type": "value"
+        }
+    ]
 }

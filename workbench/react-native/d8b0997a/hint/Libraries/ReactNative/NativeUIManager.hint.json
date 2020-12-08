@@ -9,5 +9,168 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\TurboModule\\RCTExport.js.flow:6:11,6:21\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 5,
+            "column": 4,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 4,
+            "local": "getConstantsForViewManager",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 4,
+            "local": "getDefaultEventTypes",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 4,
+            "local": "lazilyLoadView",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 4,
+            "local": "createView",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 4,
+            "local": "updateView",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 4,
+            "local": "focus",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 4,
+            "local": "blur",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 4,
+            "local": "findSubviewIn",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 4,
+            "local": "dispatchViewManagerCommand",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 4,
+            "local": "measure",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 4,
+            "local": "measureInWindow",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 4,
+            "local": "viewIsDescendantOf",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 4,
+            "local": "measureLayout",
+            "type": "value"
+        },
+        {
+            "row": 61,
+            "column": 4,
+            "local": "measureLayoutRelativeToParent",
+            "type": "value"
+        },
+        {
+            "row": 66,
+            "column": 4,
+            "local": "setJSResponder",
+            "type": "value"
+        },
+        {
+            "row": 67,
+            "column": 4,
+            "local": "clearJSResponder",
+            "type": "value"
+        },
+        {
+            "row": 68,
+            "column": 4,
+            "local": "configureNextLayoutAnimation",
+            "type": "value"
+        },
+        {
+            "row": 74,
+            "column": 4,
+            "local": "removeSubviewsFromContainerWithID",
+            "type": "value"
+        },
+        {
+            "row": 75,
+            "column": 4,
+            "local": "replaceExistingNonRootView",
+            "type": "value"
+        },
+        {
+            "row": 76,
+            "column": 4,
+            "local": "setChildren",
+            "type": "value"
+        },
+        {
+            "row": 77,
+            "column": 4,
+            "local": "manageChildren",
+            "type": "value"
+        },
+        {
+            "row": 87,
+            "column": 4,
+            "local": "setLayoutAnimationEnabledExperimental",
+            "type": "value"
+        },
+        {
+            "row": 88,
+            "column": 4,
+            "local": "sendAccessibilityEvent",
+            "type": "value"
+        },
+        {
+            "row": 89,
+            "column": 4,
+            "local": "showPopupMenu",
+            "type": "value"
+        },
+        {
+            "row": 95,
+            "column": 4,
+            "local": "dismissPopupMenu",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
 }

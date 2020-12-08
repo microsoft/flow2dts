@@ -9,5 +9,942 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:5:14,5:29\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "AnimatedNode",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 6,
+            "local": "____ColorValue_Internal",
+            "type": "type"
+        },
+        {
+            "row": 9,
+            "column": 6,
+            "local": "ColorArrayValue",
+            "type": "type"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "x",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "y",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "PointValue",
+            "type": "type"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "top",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "left",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "right",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "bottom",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 6,
+            "local": "EdgeInsetsValue",
+            "type": "type"
+        },
+        {
+            "row": 20,
+            "column": 6,
+            "local": "DimensionValue",
+            "type": "type"
+        },
+        {
+            "row": 29,
+            "column": 5,
+            "local": "display",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 5,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 5,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 56,
+            "column": 5,
+            "local": "bottom",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 5,
+            "local": "end",
+            "type": "value"
+        },
+        {
+            "row": 75,
+            "column": 5,
+            "local": "left",
+            "type": "value"
+        },
+        {
+            "row": 86,
+            "column": 5,
+            "local": "right",
+            "type": "value"
+        },
+        {
+            "row": 94,
+            "column": 5,
+            "local": "start",
+            "type": "value"
+        },
+        {
+            "row": 105,
+            "column": 5,
+            "local": "top",
+            "type": "value"
+        },
+        {
+            "row": 115,
+            "column": 5,
+            "local": "minWidth",
+            "type": "value"
+        },
+        {
+            "row": 125,
+            "column": 5,
+            "local": "maxWidth",
+            "type": "value"
+        },
+        {
+            "row": 135,
+            "column": 5,
+            "local": "minHeight",
+            "type": "value"
+        },
+        {
+            "row": 145,
+            "column": 5,
+            "local": "maxHeight",
+            "type": "value"
+        },
+        {
+            "row": 152,
+            "column": 5,
+            "local": "margin",
+            "type": "value"
+        },
+        {
+            "row": 158,
+            "column": 5,
+            "local": "marginBottom",
+            "type": "value"
+        },
+        {
+            "row": 164,
+            "column": 5,
+            "local": "marginEnd",
+            "type": "value"
+        },
+        {
+            "row": 169,
+            "column": 5,
+            "local": "marginHorizontal",
+            "type": "value"
+        },
+        {
+            "row": 175,
+            "column": 5,
+            "local": "marginLeft",
+            "type": "value"
+        },
+        {
+            "row": 181,
+            "column": 5,
+            "local": "marginRight",
+            "type": "value"
+        },
+        {
+            "row": 187,
+            "column": 5,
+            "local": "marginStart",
+            "type": "value"
+        },
+        {
+            "row": 193,
+            "column": 5,
+            "local": "marginTop",
+            "type": "value"
+        },
+        {
+            "row": 198,
+            "column": 5,
+            "local": "marginVertical",
+            "type": "value"
+        },
+        {
+            "row": 205,
+            "column": 5,
+            "local": "padding",
+            "type": "value"
+        },
+        {
+            "row": 211,
+            "column": 5,
+            "local": "paddingBottom",
+            "type": "value"
+        },
+        {
+            "row": 217,
+            "column": 5,
+            "local": "paddingEnd",
+            "type": "value"
+        },
+        {
+            "row": 222,
+            "column": 5,
+            "local": "paddingHorizontal",
+            "type": "value"
+        },
+        {
+            "row": 228,
+            "column": 5,
+            "local": "paddingLeft",
+            "type": "value"
+        },
+        {
+            "row": 234,
+            "column": 5,
+            "local": "paddingRight",
+            "type": "value"
+        },
+        {
+            "row": 240,
+            "column": 5,
+            "local": "paddingStart",
+            "type": "value"
+        },
+        {
+            "row": 246,
+            "column": 5,
+            "local": "paddingTop",
+            "type": "value"
+        },
+        {
+            "row": 251,
+            "column": 5,
+            "local": "paddingVertical",
+            "type": "value"
+        },
+        {
+            "row": 257,
+            "column": 5,
+            "local": "borderWidth",
+            "type": "value"
+        },
+        {
+            "row": 263,
+            "column": 5,
+            "local": "borderBottomWidth",
+            "type": "value"
+        },
+        {
+            "row": 269,
+            "column": 5,
+            "local": "borderEndWidth",
+            "type": "value"
+        },
+        {
+            "row": 275,
+            "column": 5,
+            "local": "borderLeftWidth",
+            "type": "value"
+        },
+        {
+            "row": 281,
+            "column": 5,
+            "local": "borderRightWidth",
+            "type": "value"
+        },
+        {
+            "row": 287,
+            "column": 5,
+            "local": "borderStartWidth",
+            "type": "value"
+        },
+        {
+            "row": 293,
+            "column": 5,
+            "local": "borderTopWidth",
+            "type": "value"
+        },
+        {
+            "row": 311,
+            "column": 5,
+            "local": "position",
+            "type": "value"
+        },
+        {
+            "row": 320,
+            "column": 5,
+            "local": "flexDirection",
+            "type": "value"
+        },
+        {
+            "row": 328,
+            "column": 5,
+            "local": "flexWrap",
+            "type": "value"
+        },
+        {
+            "row": 337,
+            "column": 5,
+            "local": "justifyContent",
+            "type": "value"
+        },
+        {
+            "row": 352,
+            "column": 5,
+            "local": "alignItems",
+            "type": "value"
+        },
+        {
+            "row": 360,
+            "column": 5,
+            "local": "alignSelf",
+            "type": "value"
+        },
+        {
+            "row": 373,
+            "column": 5,
+            "local": "alignContent",
+            "type": "value"
+        },
+        {
+            "row": 390,
+            "column": 5,
+            "local": "overflow",
+            "type": "value"
+        },
+        {
+            "row": 411,
+            "column": 5,
+            "local": "flex",
+            "type": "value"
+        },
+        {
+            "row": 412,
+            "column": 5,
+            "local": "flexGrow",
+            "type": "value"
+        },
+        {
+            "row": 413,
+            "column": 5,
+            "local": "flexShrink",
+            "type": "value"
+        },
+        {
+            "row": 414,
+            "column": 5,
+            "local": "flexBasis",
+            "type": "value"
+        },
+        {
+            "row": 429,
+            "column": 5,
+            "local": "aspectRatio",
+            "type": "value"
+        },
+        {
+            "row": 443,
+            "column": 5,
+            "local": "zIndex",
+            "type": "value"
+        },
+        {
+            "row": 452,
+            "column": 5,
+            "local": "direction",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 6,
+            "local": "____LayoutStyle_Internal",
+            "type": "type"
+        },
+        {
+            "row": 476,
+            "column": 14,
+            "local": "perspective",
+            "type": "value"
+        },
+        {
+            "row": 477,
+            "column": 14,
+            "local": "rotate",
+            "type": "value"
+        },
+        {
+            "row": 478,
+            "column": 14,
+            "local": "rotateX",
+            "type": "value"
+        },
+        {
+            "row": 479,
+            "column": 14,
+            "local": "rotateY",
+            "type": "value"
+        },
+        {
+            "row": 480,
+            "column": 14,
+            "local": "rotateZ",
+            "type": "value"
+        },
+        {
+            "row": 481,
+            "column": 14,
+            "local": "scale",
+            "type": "value"
+        },
+        {
+            "row": 482,
+            "column": 14,
+            "local": "scaleX",
+            "type": "value"
+        },
+        {
+            "row": 483,
+            "column": 14,
+            "local": "scaleY",
+            "type": "value"
+        },
+        {
+            "row": 484,
+            "column": 14,
+            "local": "translateX",
+            "type": "value"
+        },
+        {
+            "row": 485,
+            "column": 14,
+            "local": "translateY",
+            "type": "value"
+        },
+        {
+            "row": 487,
+            "column": 12,
+            "local": "translate",
+            "type": "value"
+        },
+        {
+            "row": 491,
+            "column": 14,
+            "local": "skewX",
+            "type": "value"
+        },
+        {
+            "row": 492,
+            "column": 14,
+            "local": "skewY",
+            "type": "value"
+        },
+        {
+            "row": 496,
+            "column": 12,
+            "local": "matrix",
+            "type": "value"
+        },
+        {
+            "row": 474,
+            "column": 5,
+            "local": "transform",
+            "type": "value"
+        },
+        {
+            "row": 456,
+            "column": 6,
+            "local": "____TransformStyle_Internal",
+            "type": "type"
+        },
+        {
+            "row": 508,
+            "column": 5,
+            "local": "shadowColor",
+            "type": "value"
+        },
+        {
+            "row": 515,
+            "column": 9,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 516,
+            "column": 9,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 513,
+            "column": 5,
+            "local": "shadowOffset",
+            "type": "value"
+        },
+        {
+            "row": 523,
+            "column": 5,
+            "local": "shadowOpacity",
+            "type": "value"
+        },
+        {
+            "row": 528,
+            "column": 5,
+            "local": "shadowRadius",
+            "type": "value"
+        },
+        {
+            "row": 502,
+            "column": 6,
+            "local": "____ShadowStyle_Internal",
+            "type": "type"
+        },
+        {
+            "row": 537,
+            "column": 5,
+            "local": "backfaceVisibility",
+            "type": "value"
+        },
+        {
+            "row": 538,
+            "column": 5,
+            "local": "backgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 539,
+            "column": 5,
+            "local": "borderColor",
+            "type": "value"
+        },
+        {
+            "row": 540,
+            "column": 5,
+            "local": "borderBottomColor",
+            "type": "value"
+        },
+        {
+            "row": 541,
+            "column": 5,
+            "local": "borderEndColor",
+            "type": "value"
+        },
+        {
+            "row": 542,
+            "column": 5,
+            "local": "borderLeftColor",
+            "type": "value"
+        },
+        {
+            "row": 543,
+            "column": 5,
+            "local": "borderRightColor",
+            "type": "value"
+        },
+        {
+            "row": 544,
+            "column": 5,
+            "local": "borderStartColor",
+            "type": "value"
+        },
+        {
+            "row": 545,
+            "column": 5,
+            "local": "borderTopColor",
+            "type": "value"
+        },
+        {
+            "row": 546,
+            "column": 5,
+            "local": "borderRadius",
+            "type": "value"
+        },
+        {
+            "row": 547,
+            "column": 5,
+            "local": "borderBottomEndRadius",
+            "type": "value"
+        },
+        {
+            "row": 548,
+            "column": 5,
+            "local": "borderBottomLeftRadius",
+            "type": "value"
+        },
+        {
+            "row": 549,
+            "column": 5,
+            "local": "borderBottomRightRadius",
+            "type": "value"
+        },
+        {
+            "row": 550,
+            "column": 5,
+            "local": "borderBottomStartRadius",
+            "type": "value"
+        },
+        {
+            "row": 551,
+            "column": 5,
+            "local": "borderTopEndRadius",
+            "type": "value"
+        },
+        {
+            "row": 552,
+            "column": 5,
+            "local": "borderTopLeftRadius",
+            "type": "value"
+        },
+        {
+            "row": 553,
+            "column": 5,
+            "local": "borderTopRightRadius",
+            "type": "value"
+        },
+        {
+            "row": 554,
+            "column": 5,
+            "local": "borderTopStartRadius",
+            "type": "value"
+        },
+        {
+            "row": 555,
+            "column": 5,
+            "local": "borderStyle",
+            "type": "value"
+        },
+        {
+            "row": 556,
+            "column": 5,
+            "local": "borderWidth",
+            "type": "value"
+        },
+        {
+            "row": 557,
+            "column": 5,
+            "local": "borderBottomWidth",
+            "type": "value"
+        },
+        {
+            "row": 558,
+            "column": 5,
+            "local": "borderEndWidth",
+            "type": "value"
+        },
+        {
+            "row": 559,
+            "column": 5,
+            "local": "borderLeftWidth",
+            "type": "value"
+        },
+        {
+            "row": 560,
+            "column": 5,
+            "local": "borderRightWidth",
+            "type": "value"
+        },
+        {
+            "row": 561,
+            "column": 5,
+            "local": "borderStartWidth",
+            "type": "value"
+        },
+        {
+            "row": 562,
+            "column": 5,
+            "local": "borderTopWidth",
+            "type": "value"
+        },
+        {
+            "row": 563,
+            "column": 5,
+            "local": "opacity",
+            "type": "value"
+        },
+        {
+            "row": 564,
+            "column": 5,
+            "local": "elevation",
+            "type": "value"
+        },
+        {
+            "row": 532,
+            "column": 6,
+            "local": "____ViewStyle_Internal",
+            "type": "type"
+        },
+        {
+            "row": 568,
+            "column": 6,
+            "local": "____FontWeight_Internal",
+            "type": "type"
+        },
+        {
+            "row": 584,
+            "column": 5,
+            "local": "color",
+            "type": "value"
+        },
+        {
+            "row": 585,
+            "column": 5,
+            "local": "fontFamily",
+            "type": "value"
+        },
+        {
+            "row": 586,
+            "column": 5,
+            "local": "fontSize",
+            "type": "value"
+        },
+        {
+            "row": 587,
+            "column": 5,
+            "local": "fontStyle",
+            "type": "value"
+        },
+        {
+            "row": 588,
+            "column": 5,
+            "local": "fontWeight",
+            "type": "value"
+        },
+        {
+            "row": 589,
+            "column": 5,
+            "local": "fontVariant",
+            "type": "value"
+        },
+        {
+            "row": 599,
+            "column": 9,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 600,
+            "column": 9,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 597,
+            "column": 5,
+            "local": "textShadowOffset",
+            "type": "value"
+        },
+        {
+            "row": 603,
+            "column": 5,
+            "local": "textShadowRadius",
+            "type": "value"
+        },
+        {
+            "row": 604,
+            "column": 5,
+            "local": "textShadowColor",
+            "type": "value"
+        },
+        {
+            "row": 605,
+            "column": 5,
+            "local": "letterSpacing",
+            "type": "value"
+        },
+        {
+            "row": 606,
+            "column": 5,
+            "local": "lineHeight",
+            "type": "value"
+        },
+        {
+            "row": 607,
+            "column": 5,
+            "local": "textAlign",
+            "type": "value"
+        },
+        {
+            "row": 608,
+            "column": 5,
+            "local": "textAlignVertical",
+            "type": "value"
+        },
+        {
+            "row": 609,
+            "column": 5,
+            "local": "includeFontPadding",
+            "type": "value"
+        },
+        {
+            "row": 610,
+            "column": 5,
+            "local": "textDecorationLine",
+            "type": "value"
+        },
+        {
+            "row": 615,
+            "column": 5,
+            "local": "textDecorationStyle",
+            "type": "value"
+        },
+        {
+            "row": 616,
+            "column": 5,
+            "local": "textDecorationColor",
+            "type": "value"
+        },
+        {
+            "row": 617,
+            "column": 5,
+            "local": "textTransform",
+            "type": "value"
+        },
+        {
+            "row": 618,
+            "column": 5,
+            "local": "writingDirection",
+            "type": "value"
+        },
+        {
+            "row": 581,
+            "column": 6,
+            "local": "____TextStyle_Internal",
+            "type": "type"
+        },
+        {
+            "row": 625,
+            "column": 5,
+            "local": "resizeMode",
+            "type": "value"
+        },
+        {
+            "row": 626,
+            "column": 5,
+            "local": "tintColor",
+            "type": "value"
+        },
+        {
+            "row": 627,
+            "column": 5,
+            "local": "overlayColor",
+            "type": "value"
+        },
+        {
+            "row": 622,
+            "column": 6,
+            "local": "____ImageStyle_Internal",
+            "type": "type"
+        },
+        {
+            "row": 633,
+            "column": 4,
+            "local": "resizeMode",
+            "type": "value"
+        },
+        {
+            "row": 634,
+            "column": 4,
+            "local": "tintColor",
+            "type": "value"
+        },
+        {
+            "row": 635,
+            "column": 4,
+            "local": "overlayColor",
+            "type": "value"
+        },
+        {
+            "row": 631,
+            "column": 6,
+            "local": "____DangerouslyImpreciseStyle_Internal",
+            "type": "type"
+        },
+        {
+            "row": 639,
+            "column": 6,
+            "local": "GenericStyleProp",
+            "type": "type"
+        },
+        {
+            "row": 647,
+            "column": 6,
+            "local": "____DangerouslyImpreciseStyleProp_Internal",
+            "type": "type"
+        },
+        {
+            "row": 650,
+            "column": 6,
+            "local": "____ViewStyleProp_Internal",
+            "type": "type"
+        },
+        {
+            "row": 653,
+            "column": 6,
+            "local": "____TextStyleProp_Internal",
+            "type": "type"
+        },
+        {
+            "row": 656,
+            "column": 6,
+            "local": "____ImageStyleProp_Internal",
+            "type": "type"
+        },
+        {
+            "row": 660,
+            "column": 6,
+            "local": "____Styles_Internal",
+            "type": "type"
+        }
+    ]
 }

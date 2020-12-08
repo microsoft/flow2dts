@@ -65,5 +65,744 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "DeprecatedTextInputPropTypes",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 13,
+            "local": "TextInputState",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 27,
+            "local": "current",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 6,
+            "local": "ReactRefSetter",
+            "type": "type"
+        },
+        {
+            "row": 25,
+            "column": 7,
+            "local": "eventCount",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 7,
+            "local": "target",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 7,
+            "local": "text",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 6,
+            "local": "ChangeEvent",
+            "type": "type"
+        },
+        {
+            "row": 35,
+            "column": 7,
+            "local": "eventCount",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 7,
+            "local": "previousText",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 11,
+            "local": "start",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 11,
+            "local": "end",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 7,
+            "local": "range",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 7,
+            "local": "target",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 7,
+            "local": "text",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 6,
+            "local": "TextInputEvent",
+            "type": "type"
+        },
+        {
+            "row": 52,
+            "column": 7,
+            "local": "target",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 11,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 56,
+            "column": 11,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 7,
+            "local": "contentSize",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 6,
+            "local": "ContentSizeChangeEvent",
+            "type": "type"
+        },
+        {
+            "row": 66,
+            "column": 7,
+            "local": "target",
+            "type": "value"
+        },
+        {
+            "row": 63,
+            "column": 6,
+            "local": "TargetEvent",
+            "type": "type"
+        },
+        {
+            "row": 71,
+            "column": 6,
+            "local": "BlurEvent",
+            "type": "type"
+        },
+        {
+            "row": 72,
+            "column": 6,
+            "local": "FocusEvent",
+            "type": "type"
+        },
+        {
+            "row": 76,
+            "column": 5,
+            "local": "start",
+            "type": "value"
+        },
+        {
+            "row": 77,
+            "column": 5,
+            "local": "end",
+            "type": "value"
+        },
+        {
+            "row": 74,
+            "column": 6,
+            "local": "Selection",
+            "type": "type"
+        },
+        {
+            "row": 84,
+            "column": 7,
+            "local": "selection",
+            "type": "value"
+        },
+        {
+            "row": 85,
+            "column": 7,
+            "local": "target",
+            "type": "value"
+        },
+        {
+            "row": 81,
+            "column": 6,
+            "local": "SelectionChangeEvent",
+            "type": "type"
+        },
+        {
+            "row": 93,
+            "column": 7,
+            "local": "key",
+            "type": "value"
+        },
+        {
+            "row": 94,
+            "column": 7,
+            "local": "target",
+            "type": "value"
+        },
+        {
+            "row": 95,
+            "column": 7,
+            "local": "eventCount",
+            "type": "value"
+        },
+        {
+            "row": 90,
+            "column": 6,
+            "local": "KeyPressEvent",
+            "type": "type"
+        },
+        {
+            "row": 103,
+            "column": 7,
+            "local": "eventCount",
+            "type": "value"
+        },
+        {
+            "row": 104,
+            "column": 7,
+            "local": "text",
+            "type": "value"
+        },
+        {
+            "row": 105,
+            "column": 7,
+            "local": "target",
+            "type": "value"
+        },
+        {
+            "row": 100,
+            "column": 6,
+            "local": "EditingEvent",
+            "type": "type"
+        },
+        {
+            "row": 110,
+            "column": 6,
+            "local": "DataDetectorTypesType",
+            "type": "type"
+        },
+        {
+            "row": 118,
+            "column": 6,
+            "local": "KeyboardType",
+            "type": "type"
+        },
+        {
+            "row": 141,
+            "column": 6,
+            "local": "ReturnKeyType",
+            "type": "type"
+        },
+        {
+            "row": 161,
+            "column": 6,
+            "local": "AutoCapitalize",
+            "type": "type"
+        },
+        {
+            "row": 163,
+            "column": 6,
+            "local": "TextContentType",
+            "type": "type"
+        },
+        {
+            "row": 193,
+            "column": 6,
+            "local": "PasswordRules",
+            "type": "type"
+        },
+        {
+            "row": 202,
+            "column": 5,
+            "local": "spellCheck",
+            "type": "value"
+        },
+        {
+            "row": 208,
+            "column": 5,
+            "local": "keyboardAppearance",
+            "type": "value"
+        },
+        {
+            "row": 215,
+            "column": 5,
+            "local": "enablesReturnKeyAutomatically",
+            "type": "value"
+        },
+        {
+            "row": 222,
+            "column": 5,
+            "local": "clearButtonMode",
+            "type": "value"
+        },
+        {
+            "row": 228,
+            "column": 5,
+            "local": "clearTextOnFocus",
+            "type": "value"
+        },
+        {
+            "row": 248,
+            "column": 5,
+            "local": "dataDetectorTypes",
+            "type": "value"
+        },
+        {
+            "row": 258,
+            "column": 5,
+            "local": "inputAccessoryViewID",
+            "type": "value"
+        },
+        {
+            "row": 265,
+            "column": 5,
+            "local": "textContentType",
+            "type": "value"
+        },
+        {
+            "row": 273,
+            "column": 5,
+            "local": "passwordRules",
+            "type": "value"
+        },
+        {
+            "row": 282,
+            "column": 5,
+            "local": "rejectResponderTermination",
+            "type": "value"
+        },
+        {
+            "row": 289,
+            "column": 5,
+            "local": "scrollEnabled",
+            "type": "value"
+        },
+        {
+            "row": 195,
+            "column": 6,
+            "local": "IOSProps",
+            "type": "type"
+        },
+        {
+            "row": 319,
+            "column": 5,
+            "local": "autoCompleteType",
+            "type": "value"
+        },
+        {
+            "row": 338,
+            "column": 5,
+            "local": "returnKeyLabel",
+            "type": "value"
+        },
+        {
+            "row": 345,
+            "column": 5,
+            "local": "numberOfLines",
+            "type": "value"
+        },
+        {
+            "row": 355,
+            "column": 5,
+            "local": "disableFullscreenUI",
+            "type": "value"
+        },
+        {
+            "row": 362,
+            "column": 5,
+            "local": "textBreakStrategy",
+            "type": "value"
+        },
+        {
+            "row": 368,
+            "column": 5,
+            "local": "underlineColorAndroid",
+            "type": "value"
+        },
+        {
+            "row": 381,
+            "column": 5,
+            "local": "inlineImageLeft",
+            "type": "value"
+        },
+        {
+            "row": 387,
+            "column": 5,
+            "local": "inlineImagePadding",
+            "type": "value"
+        },
+        {
+            "row": 389,
+            "column": 5,
+            "local": "importantForAutofill",
+            "type": "value"
+        },
+        {
+            "row": 400,
+            "column": 5,
+            "local": "showSoftInputOnFocus",
+            "type": "value"
+        },
+        {
+            "row": 293,
+            "column": 6,
+            "local": "AndroidProps",
+            "type": "type"
+        },
+        {
+            "row": 406,
+            "column": 37,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 418,
+            "column": 5,
+            "local": "autoCapitalize",
+            "type": "value"
+        },
+        {
+            "row": 423,
+            "column": 5,
+            "local": "autoCorrect",
+            "type": "value"
+        },
+        {
+            "row": 429,
+            "column": 5,
+            "local": "autoFocus",
+            "type": "value"
+        },
+        {
+            "row": 435,
+            "column": 5,
+            "local": "allowFontScaling",
+            "type": "value"
+        },
+        {
+            "row": 444,
+            "column": 5,
+            "local": "maxFontSizeMultiplier",
+            "type": "value"
+        },
+        {
+            "row": 449,
+            "column": 5,
+            "local": "editable",
+            "type": "value"
+        },
+        {
+            "row": 481,
+            "column": 5,
+            "local": "keyboardType",
+            "type": "value"
+        },
+        {
+            "row": 515,
+            "column": 5,
+            "local": "returnKeyType",
+            "type": "value"
+        },
+        {
+            "row": 521,
+            "column": 5,
+            "local": "maxLength",
+            "type": "value"
+        },
+        {
+            "row": 527,
+            "column": 5,
+            "local": "multiline",
+            "type": "value"
+        },
+        {
+            "row": 532,
+            "column": 5,
+            "local": "onBlur",
+            "type": "value"
+        },
+        {
+            "row": 537,
+            "column": 5,
+            "local": "onFocus",
+            "type": "value"
+        },
+        {
+            "row": 542,
+            "column": 5,
+            "local": "onChange",
+            "type": "value"
+        },
+        {
+            "row": 548,
+            "column": 5,
+            "local": "onChangeText",
+            "type": "value"
+        },
+        {
+            "row": 557,
+            "column": 5,
+            "local": "onContentSizeChange",
+            "type": "value"
+        },
+        {
+            "row": 562,
+            "column": 5,
+            "local": "onEndEditing",
+            "type": "value"
+        },
+        {
+            "row": 567,
+            "column": 5,
+            "local": "onPressIn",
+            "type": "value"
+        },
+        {
+            "row": 572,
+            "column": 5,
+            "local": "onPressOut",
+            "type": "value"
+        },
+        {
+            "row": 579,
+            "column": 5,
+            "local": "onSelectionChange",
+            "type": "value"
+        },
+        {
+            "row": 585,
+            "column": 5,
+            "local": "onSubmitEditing",
+            "type": "value"
+        },
+        {
+            "row": 594,
+            "column": 5,
+            "local": "onKeyPress",
+            "type": "value"
+        },
+        {
+            "row": 601,
+            "column": 5,
+            "local": "onScroll",
+            "type": "value"
+        },
+        {
+            "row": 606,
+            "column": 5,
+            "local": "placeholder",
+            "type": "value"
+        },
+        {
+            "row": 611,
+            "column": 5,
+            "local": "placeholderTextColor",
+            "type": "value"
+        },
+        {
+            "row": 617,
+            "column": 5,
+            "local": "secureTextEntry",
+            "type": "value"
+        },
+        {
+            "row": 622,
+            "column": 5,
+            "local": "selectionColor",
+            "type": "value"
+        },
+        {
+            "row": 630,
+            "column": 9,
+            "local": "start",
+            "type": "value"
+        },
+        {
+            "row": 631,
+            "column": 9,
+            "local": "end",
+            "type": "value"
+        },
+        {
+            "row": 628,
+            "column": 5,
+            "local": "selection",
+            "type": "value"
+        },
+        {
+            "row": 644,
+            "column": 5,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 651,
+            "column": 5,
+            "local": "defaultValue",
+            "type": "value"
+        },
+        {
+            "row": 656,
+            "column": 5,
+            "local": "selectTextOnFocus",
+            "type": "value"
+        },
+        {
+            "row": 665,
+            "column": 5,
+            "local": "blurOnSubmit",
+            "type": "value"
+        },
+        {
+            "row": 684,
+            "column": 5,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 695,
+            "column": 5,
+            "local": "caretHidden",
+            "type": "value"
+        },
+        {
+            "row": 700,
+            "column": 5,
+            "local": "contextMenuHidden",
+            "type": "value"
+        },
+        {
+            "row": 702,
+            "column": 5,
+            "local": "forwardedRef",
+            "type": "value"
+        },
+        {
+            "row": 404,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 710,
+            "column": 5,
+            "local": "clear",
+            "type": "value"
+        },
+        {
+            "row": 711,
+            "column": 5,
+            "local": "isFocused",
+            "type": "value"
+        },
+        {
+            "row": 712,
+            "column": 5,
+            "local": "getNativeRef",
+            "type": "value"
+        },
+        {
+            "row": 708,
+            "column": 6,
+            "local": "ImperativeMethods",
+            "type": "type"
+        },
+        {
+            "row": 716,
+            "column": 18,
+            "local": "InternalTextInput",
+            "type": "value"
+        },
+        {
+            "row": 722,
+            "column": 9,
+            "local": "currentlyFocusedInput",
+            "type": "value"
+        },
+        {
+            "row": 723,
+            "column": 9,
+            "local": "currentlyFocusedField",
+            "type": "value"
+        },
+        {
+            "row": 724,
+            "column": 9,
+            "local": "focusTextInput",
+            "type": "value"
+        },
+        {
+            "row": 725,
+            "column": 9,
+            "local": "blurTextInput",
+            "type": "value"
+        },
+        {
+            "row": 720,
+            "column": 5,
+            "local": "State",
+            "type": "value"
+        },
+        {
+            "row": 728,
+            "column": 5,
+            "local": "propTypes",
+            "type": "value"
+        },
+        {
+            "row": 718,
+            "column": 6,
+            "local": "TextInputComponentStatics",
+            "type": "type"
+        }
+    ]
 }

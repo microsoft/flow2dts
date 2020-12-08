@@ -30,7 +30,7 @@
                 "column": 14,
                 "local": "Node"
             },
-            "stdout": "C:\\Users\\zihanc\\AppData\\Local\\Temp\\flow\\flowlib_3f5eb6ec\\react.js:268:23,268:26\r\n"
+            "stdout": "C:\\Users\\zihanc\\AppData\\Local\\Temp\\flow\\flowlib_23f2986\\react.js:268:23,268:26\r\n"
         },
         "TextStyleProp": {
             "source": {
@@ -57,5 +57,246 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\ViewAccessibility.js.flow:45:6,45:23\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 12,
+            "column": 5,
+            "local": "top",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 5,
+            "local": "left",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 5,
+            "local": "bottom",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 5,
+            "local": "right",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "PressRetentionOffset",
+            "type": "type"
+        },
+        {
+            "row": 26,
+            "column": 5,
+            "local": "accessible",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 5,
+            "local": "accessibilityHint",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 5,
+            "local": "accessibilityLabel",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 5,
+            "local": "accessibilityRole",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 5,
+            "local": "accessibilityState",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 5,
+            "local": "adjustsFontSizeToFit",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 5,
+            "local": "allowFontScaling",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 5,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 5,
+            "local": "ellipsizeMode",
+            "type": "value"
+        },
+        {
+            "row": 62,
+            "column": 5,
+            "local": "maxFontSizeMultiplier",
+            "type": "value"
+        },
+        {
+            "row": 69,
+            "column": 5,
+            "local": "nativeID",
+            "type": "value"
+        },
+        {
+            "row": 76,
+            "column": 5,
+            "local": "numberOfLines",
+            "type": "value"
+        },
+        {
+            "row": 83,
+            "column": 5,
+            "local": "onLayout",
+            "type": "value"
+        },
+        {
+            "row": 90,
+            "column": 5,
+            "local": "onLongPress",
+            "type": "value"
+        },
+        {
+            "row": 97,
+            "column": 5,
+            "local": "onPress",
+            "type": "value"
+        },
+        {
+            "row": 98,
+            "column": 5,
+            "local": "onResponderGrant",
+            "type": "value"
+        },
+        {
+            "row": 99,
+            "column": 5,
+            "local": "onResponderMove",
+            "type": "value"
+        },
+        {
+            "row": 100,
+            "column": 5,
+            "local": "onResponderRelease",
+            "type": "value"
+        },
+        {
+            "row": 101,
+            "column": 5,
+            "local": "onResponderTerminate",
+            "type": "value"
+        },
+        {
+            "row": 102,
+            "column": 5,
+            "local": "onResponderTerminationRequest",
+            "type": "value"
+        },
+        {
+            "row": 103,
+            "column": 5,
+            "local": "onStartShouldSetResponder",
+            "type": "value"
+        },
+        {
+            "row": 104,
+            "column": 5,
+            "local": "onMoveShouldSetResponder",
+            "type": "value"
+        },
+        {
+            "row": 105,
+            "column": 5,
+            "local": "onTextLayout",
+            "type": "value"
+        },
+        {
+            "row": 113,
+            "column": 5,
+            "local": "pressRetentionOffset",
+            "type": "value"
+        },
+        {
+            "row": 120,
+            "column": 5,
+            "local": "selectable",
+            "type": "value"
+        },
+        {
+            "row": 121,
+            "column": 5,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 128,
+            "column": 5,
+            "local": "testID",
+            "type": "value"
+        },
+        {
+            "row": 139,
+            "column": 5,
+            "local": "disabled",
+            "type": "value"
+        },
+        {
+            "row": 146,
+            "column": 5,
+            "local": "selectionColor",
+            "type": "value"
+        },
+        {
+            "row": 148,
+            "column": 5,
+            "local": "dataDetectorType",
+            "type": "value"
+        },
+        {
+            "row": 155,
+            "column": 5,
+            "local": "textBreakStrategy",
+            "type": "value"
+        },
+        {
+            "row": 160,
+            "column": 5,
+            "local": "adjustsFontSizeToFit",
+            "type": "value"
+        },
+        {
+            "row": 167,
+            "column": 5,
+            "local": "minimumFontScale",
+            "type": "value"
+        },
+        {
+            "row": 174,
+            "column": 5,
+            "local": "suppressHighlighting",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 6,
+            "local": "TextProps",
+            "type": "type"
+        }
+    ]
 }

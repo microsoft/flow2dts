@@ -48,5 +48,102 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 12,
+            "column": 5,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "SwitchChangeEvent",
+            "type": "type"
+        },
+        {
+            "row": 21,
+            "column": 5,
+            "local": "disabled",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 5,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 5,
+            "local": "tintColor",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 5,
+            "local": "onTintColor",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "thumbTintColor",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 5,
+            "local": "thumbColor",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 5,
+            "local": "trackColorForFalse",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 5,
+            "local": "trackColorForTrue",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 5,
+            "local": "onChange",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 6,
+            "local": "NativeProps",
+            "type": "type"
+        },
+        {
+            "row": 37,
+            "column": 6,
+            "local": "ComponentType",
+            "type": "type"
+        },
+        {
+            "row": 40,
+            "column": 4,
+            "local": "setValue",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 11,
+            "local": "NativeCommands",
+            "type": "type"
+        },
+        {
+            "row": 43,
+            "column": 13,
+            "local": "Commands",
+            "type": "value"
+        }
+    ]
 }

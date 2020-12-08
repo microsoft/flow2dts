@@ -32,5 +32,102 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:389:6,389:14\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 11,
+            "column": 7,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 6,
+            "local": "SwitchChangeEvent",
+            "type": "type"
+        },
+        {
+            "row": 23,
+            "column": 5,
+            "local": "disabled",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 5,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 5,
+            "local": "thumbColor",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 9,
+            "local": "false",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 9,
+            "local": "true",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 5,
+            "local": "trackColor",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 5,
+            "local": "ios_backgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 62,
+            "column": 5,
+            "local": "onChange",
+            "type": "value"
+        },
+        {
+            "row": 70,
+            "column": 5,
+            "local": "onValueChange",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 76,
+            "column": 3,
+            "local": "render",
+            "type": "value"
+        },
+        {
+            "row": 78,
+            "column": 3,
+            "local": "componentDidUpdate",
+            "type": "value"
+        },
+        {
+            "row": 74,
+            "column": 15,
+            "local": "Switch",
+            "type": "class"
+        },
+        {
+            "row": 80,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
 }

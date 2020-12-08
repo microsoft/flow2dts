@@ -9,5 +9,60 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\TurboModule\\RCTExport.js.flow:6:11,6:21\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 8,
+            "column": 16,
+            "local": "headers",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 4,
+            "local": "connect",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 4,
+            "local": "send",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 4,
+            "local": "sendBinary",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 4,
+            "local": "ping",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 4,
+            "local": "close",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 4,
+            "local": "addListener",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 4,
+            "local": "removeListeners",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
 }

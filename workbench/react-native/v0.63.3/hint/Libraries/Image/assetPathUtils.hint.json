@@ -9,5 +9,54 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Image\\AssetRegistry.js.flow:2:6,2:18\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 18,
+            "local": "getAndroidAssetSuffix",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 18,
+            "local": "getAndroidResourceFolderName",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 18,
+            "local": "getAndroidResourceIdentifier",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 18,
+            "local": "getBasePath",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "getAndroidAssetSuffix",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "getAndroidResourceFolderName",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "getAndroidResourceIdentifier",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "getBasePath",
+            "type": "value"
+        }
+    ]
 }

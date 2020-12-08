@@ -17,5 +17,30 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\TextInput\\RCTMultilineTextInputNativeComponent.js.flow:4:14,4:36\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 6,
+            "column": 6,
+            "local": "NativeType",
+            "type": "type"
+        },
+        {
+            "row": 8,
+            "column": 6,
+            "local": "NativeCommands",
+            "type": "type"
+        },
+        {
+            "row": 10,
+            "column": 13,
+            "local": "Commands",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 13,
+            "local": "SinglelineTextInputNativeComponent",
+            "type": "value"
+        }
+    ]
 }

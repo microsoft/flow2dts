@@ -24,5 +24,30 @@
             "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Core\\NativeExceptionsManager.js.flow:4:6,4:15\r\n"
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 9,
+            "column": 5,
+            "local": "frame",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 5,
+            "local": "onPress",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 14,
+            "column": 18,
+            "local": "LogBoxInspectorStackFrame",
+            "type": "value"
+        }
+    ]
 }

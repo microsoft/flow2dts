@@ -1,4 +1,59 @@
 {
     "imports": {},
-    "decls": []
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "installReactHook",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "local": "setEnabled",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "isEnabled",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "beginEvent",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "endEvent",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "beginAsyncEvent",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 3,
+            "local": "endAsyncEvent",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 3,
+            "local": "counterEvent",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 13,
+            "local": "Systrace",
+            "type": "value"
+        }
+    ]
 }

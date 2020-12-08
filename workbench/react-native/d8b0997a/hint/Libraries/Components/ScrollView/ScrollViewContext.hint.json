@@ -8,5 +8,36 @@
             }
         }
     },
-    "decls": []
+    "decls": [
+        {
+            "row": 4,
+            "column": 15,
+            "local": "horizontal",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 6,
+            "local": "Value",
+            "type": "type"
+        },
+        {
+            "row": 6,
+            "column": 13,
+            "local": "ScrollViewContext",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 13,
+            "local": "HORIZONTAL",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 13,
+            "local": "VERTICAL",
+            "type": "value"
+        }
+    ]
 }
