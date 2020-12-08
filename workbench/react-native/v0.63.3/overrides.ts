@@ -106,33 +106,35 @@ const visitors: OverridesVisitors = {
   "index.d.ts": {
     Program: {
       exit(path) {
+        const deprecatedConvenienceExports: [typeName: string, declaration: string, preferDeclaration: string][] = [
+          [
+            "GestureResponderEvent",
+            'import("./Libraries/Types/CoreEventTypes").PressEvent',
+            'import("react-native/Libraries/Types/CoreEventTypes").PressEvent',
+          ],
+          [
+            "NativeScrollEvent",
+            'import("./Libraries/Types/CoreEventTypes").ScrollEvent["nativeEvent"]',
+            'import("react-native/Libraries/Types/CoreEventTypes").ScrollEvent',
+          ],
+        ]
         // These are props interfaces for each component that exist in the manual DT RN types.
         // TODO: Should we be getting these from `$f2tExportDefault` or should we `import("..").Foo` them?
+        ;["Image", "Text", "TouchableWithoutFeedback", "View"].forEach((componentName) => {
+          deprecatedConvenienceExports.push([
+            `${componentName}Props`,
+            `React.ComponentPropsWithoutRef<typeof $f2tExportDefault.${componentName}>`,
+            `React.ComponentPropsWithoutRef<typeof ${componentName}>`,
+          ])
+        })
         path.pushContainer(
           "body",
           ast(
-            ["Image", "Text", "TouchableWithoutFeedback", "View"]
+            deprecatedConvenienceExports
               .map(
-                (componentName) => `
+                ([typeName, declaration, preferDeclaration]) => `
                   /**
-                   * @deprecated Instead use \`React.ComponentPropsWithoutRef<typeof ${componentName}>\`
-                   */
-                  export type ${componentName}Props = React.ComponentPropsWithoutRef<typeof $f2tExportDefault.${componentName}>
-                `
-              )
-              .join("\n"),
-            { preserveComments: true }
-          )
-        )
-        // These are just any types that need to be re-exported and possibly aliased.
-        path.pushContainer(
-          "body",
-          ast(
-            [["GestureResponderEvent", 'import("./Libraries/Types/CoreEventTypes").PressEvent']]
-              .map(
-                ([typeName, declaration]) => `
-                  /**
-                   * @deprecated Instead use \`${declaration}\`
+                   * @deprecated Instead use \`${preferDeclaration}\`
                    */
                   export type ${typeName} = ${declaration}
                 `

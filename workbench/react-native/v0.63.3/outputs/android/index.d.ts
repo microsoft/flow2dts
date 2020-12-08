@@ -385,8 +385,18 @@ declare const $f2tExportDefault:
 export default $f2tExportDefault;
 
 /**
+ * @deprecated Instead use `import("react-native/Libraries/Types/CoreEventTypes").PressEvent`
+ */
+export type GestureResponderEvent = import("./Libraries/Types/CoreEventTypes").PressEvent;
+/**
+ * @deprecated Instead use `import("react-native/Libraries/Types/CoreEventTypes").ScrollEvent`
+ */
+
+export type NativeScrollEvent = import("./Libraries/Types/CoreEventTypes").ScrollEvent["nativeEvent"];
+/**
  * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof Image>`
  */
+
 export type ImageProps = React.ComponentPropsWithoutRef<typeof $f2tExportDefault.Image>;
 /**
  * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof Text>`
@@ -403,4 +413,3 @@ export type TouchableWithoutFeedbackProps = React.ComponentPropsWithoutRef<typeo
  */
 
 export type ViewProps = React.ComponentPropsWithoutRef<typeof $f2tExportDefault.View>;
-export type GestureResponderEvent = import("./Libraries/Types/CoreEventTypes").PressEvent;
