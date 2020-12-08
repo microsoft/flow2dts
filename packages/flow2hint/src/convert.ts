@@ -46,6 +46,15 @@ function id2hint(id: t.Identifier): HintIdentifier {
   }
 }
 
+function id2decl(id: t.Identifier, t: HintDecl["type"]): HintDecl {
+  return {
+    row: <number>id.loc?.start.line,
+    column: <number>id.loc?.start.column + 1,
+    local: id.name,
+    type: t,
+  }
+}
+
 function pluginFlow2Hint(rootDir: string, filename: string): Visitor<HintFile> {
   return {
     ImportDeclaration: {
@@ -73,6 +82,83 @@ function pluginFlow2Hint(rootDir: string, filename: string): Visitor<HintFile> {
             state.imports[specifier.local.name] = { source }
           }
         }
+      },
+    },
+    VariableDeclaration: {
+      exit(path, state) {
+        for (const decl of path.node.declarations) {
+          if (decl.id.type === "Identifier") {
+            state.decls.push(id2decl(decl.id, "value"))
+          }
+        }
+      },
+    },
+    DeclareVariable: {
+      exit(path, state) {
+        state.decls.push(id2decl(path.node.id, "value"))
+      },
+    },
+    ClassDeclaration: {
+      exit(path, state) {
+        state.decls.push(id2decl(path.node.id, "class"))
+      },
+    },
+    DeclareClass: {
+      exit(path, state) {
+        state.decls.push(id2decl(path.node.id, "class"))
+      },
+    },
+    InterfaceDeclaration: {
+      exit(path, state) {
+        state.decls.push(id2decl(path.node.id, "type"))
+      },
+    },
+    DeclareInterface: {
+      exit(path, state) {
+        state.decls.push(id2decl(path.node.id, "type"))
+      },
+    },
+    ObjectTypeProperty: {
+      exit(path, state) {
+        if (path.node.key.type === "Identifier") {
+          state.decls.push(id2decl(path.node.key, "value"))
+        }
+      },
+    },
+    ClassProperty: {
+      exit(path, state) {
+        if (path.node.key.type === "Identifier") {
+          state.decls.push(id2decl(path.node.key, "value"))
+        }
+      },
+    },
+    DeclareFunction: {
+      exit(path, state) {
+        state.decls.push(id2decl(path.node.id, "value"))
+      },
+    },
+    FunctionDeclaration: {
+      exit(path, state) {
+        if (path.node.id) {
+          state.decls.push(id2decl(path.node.id, "value"))
+        }
+      },
+    },
+    ClassMethod: {
+      exit(path, state) {
+        if (path.node.key.type === "Identifier") {
+          state.decls.push(id2decl(path.node.key, "value"))
+        }
+      },
+    },
+    TypeAlias: {
+      exit(path, state) {
+        state.decls.push(id2decl(path.node.id, "type"))
+      },
+    },
+    OpaqueType: {
+      exit(path, state) {
+        state.decls.push(id2decl(path.node.id, "type"))
       },
     },
   }
