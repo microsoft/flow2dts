@@ -391,3 +391,4 @@ export type TouchableWithoutFeedbackProps = React.ComponentPropsWithoutRef<typeo
  */
 
 export type ViewProps = React.ComponentPropsWithoutRef<typeof $f2tExportDefault.View>;
+export type GestureResponderEvent = import("./Libraries/Types/CoreEventTypes").PressEvent;

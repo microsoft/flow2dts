@@ -123,6 +123,23 @@ const visitors: OverridesVisitors = {
             { preserveComments: true }
           )
         )
+        // These are just any types that need to be re-exported and possibly aliased.
+        path.pushContainer(
+          "body",
+          ast(
+            [["GestureResponderEvent", 'import("./Libraries/Types/CoreEventTypes").PressEvent']]
+              .map(
+                ([typeName, declaration]) => `
+                  /**
+                   * @deprecated Instead use \`${declaration}\`
+                   */
+                  export type ${typeName} = ${declaration}
+                `
+              )
+              .join("\n"),
+            { preserveComments: true }
+          )
+        )
       },
     },
   },

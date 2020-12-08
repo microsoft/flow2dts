@@ -107,6 +107,7 @@ const visitors: OverridesVisitors = {
     Program: {
       exit(path) {
         // These are props interfaces for each component that exist in the manual DT RN types.
+        // TODO: Should we be getting these from `$f2tExportDefault` or should we `import("..").Foo` them?
         path.pushContainer(
           "body",
           ast(
@@ -117,6 +118,23 @@ const visitors: OverridesVisitors = {
                    * @deprecated Instead use \`React.ComponentPropsWithoutRef<typeof ${componentName}>\`
                    */
                   export type ${componentName}Props = React.ComponentPropsWithoutRef<typeof $f2tExportDefault.${componentName}>
+                `
+              )
+              .join("\n"),
+            { preserveComments: true }
+          )
+        )
+        // These are just any types that need to be re-exported and possibly aliased.
+        path.pushContainer(
+          "body",
+          ast(
+            [["GestureResponderEvent", 'import("./Libraries/Types/CoreEventTypes").PressEvent']]
+              .map(
+                ([typeName, declaration]) => `
+                  /**
+                   * @deprecated Instead use \`${declaration}\`
+                   */
+                  export type ${typeName} = ${declaration}
                 `
               )
               .join("\n"),
