@@ -394,6 +394,11 @@ export type GestureResponderEvent = import("./Libraries/Types/CoreEventTypes").P
 
 export type NativeScrollEvent = import("./Libraries/Types/CoreEventTypes").ScrollEvent["nativeEvent"];
 /**
+ * @deprecated Instead use `import("react-native/Libraries/Types/CoreEventTypes").ScrollEvent<T>`
+ */
+
+export type NativeSyntheticEvent<T> = import("./Libraries/Types/CoreEventTypes").SyntheticEvent<T>;
+/**
  * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof Image>`
  */
 

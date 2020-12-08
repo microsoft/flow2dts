@@ -117,6 +117,11 @@ const visitors: OverridesVisitors = {
             'import("./Libraries/Types/CoreEventTypes").ScrollEvent["nativeEvent"]',
             'import("react-native/Libraries/Types/CoreEventTypes").ScrollEvent',
           ],
+          [
+            "NativeSyntheticEvent<T>",
+            'import("./Libraries/Types/CoreEventTypes").SyntheticEvent<T>',
+            'import("react-native/Libraries/Types/CoreEventTypes").ScrollEvent<T>',
+          ],
         ]
         // These are props interfaces for each component that exist in the manual DT RN types.
         // TODO: Should we be getting these from `$f2tExportDefault` or should we `import("..").Foo` them?
