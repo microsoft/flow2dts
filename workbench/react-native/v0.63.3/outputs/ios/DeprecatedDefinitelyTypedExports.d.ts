@@ -15,6 +15,11 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill"
 export type GestureResponderEvent = import("./Libraries/Types/CoreEventTypes").PressEvent
 
 /**
+ * @deprecated Instead use `import("react-native/Libraries/Types/CoreEventTypes").LayoutEvent`.
+ */
+export type LayoutChangeEvent = import("./Libraries/Types/CoreEventTypes").LayoutEvent
+
+/**
  * @deprecated Instead use `import("react-native/Libraries/Types/CoreEventTypes").ScrollEvent`.
  */
 export type NativeScrollEvent = import("./Libraries/Types/CoreEventTypes").ScrollEvent["nativeEvent"]
