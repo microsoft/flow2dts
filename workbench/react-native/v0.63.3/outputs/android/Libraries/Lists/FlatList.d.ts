@@ -145,7 +145,7 @@ $TypeOf<typeof $4.defaultProps> & {
   removeClippedSubviews: boolean;
 };
 declare type DefaultProps = $TypeOf<typeof defaultProps>;
-declare class FlatList<ItemT> extends $2.PureComponent<Props<ItemT>, null> {
+declare class FlatList<ItemT> extends $2.PureComponent<Props<ItemT>, {}> {
   static defaultProps: DefaultProps;
   props: Props<ItemT>;
 

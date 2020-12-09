@@ -96,7 +96,7 @@ $TypeOf<typeof $3.defaultProps> & {
   stickySectionHeadersEnabled: boolean;
 };
 declare type DefaultProps = $TypeOf<typeof defaultProps>;
-declare class SectionList<SectionT extends SectionBase<any>> extends $1.PureComponent<Props<SectionT>, null> {
+declare class SectionList<SectionT extends SectionBase<any>> extends $1.PureComponent<Props<SectionT>, {}> {
   props: Props<SectionT>;
   static defaultProps: DefaultProps;
 

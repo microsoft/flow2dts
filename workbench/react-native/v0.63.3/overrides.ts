@@ -52,7 +52,8 @@ function nullifyReactComponentState(path: NodePath<t.DeclareClass>) {
       if (id.right.name === "PureComponent") {
         const stateType = typeParameters.params[1]
         if (t.isTSVoidKeyword(stateType)) {
-          typeParameters.params[1] = t.tsNullKeyword()
+          // TODO: In reality this is `null`, but DT React types default to `{}`
+          typeParameters.params[1] = t.tsTypeLiteral([])
         }
       }
     }
