@@ -122,6 +122,17 @@ const visitors: OverridesVisitors = {
             'import("./Libraries/Types/CoreEventTypes").SyntheticEvent<T>',
             'import("react-native/Libraries/Types/CoreEventTypes").ScrollEvent<T>',
           ],
+          [
+            "ViewStyle",
+            'import("./Libraries/StyleSheet/StyleSheet").ViewStyle',
+            'import("react-native/Libraries/StyleSheet/StyleSheet").ViewStyle',
+          ],
+          // TODO: Test this with StyleSheet.flatten, as per current DT StyleProp typing.
+          [
+            "StyleProp<T>",
+            'null | void | T | false | "" | ReadonlyArray<StyleProp<T>>;',
+            'import("react-native/Libraries/StyleSheet/StyleSheetTypes").(View|Text|Image)StyleProp',
+          ],
         ]
         // These are props interfaces for each component that exist in the manual DT RN types.
         // TODO: Should we be getting these from `$f2tExportDefault` or should we `import("..").Foo` them?
@@ -139,7 +150,7 @@ const visitors: OverridesVisitors = {
               .map(
                 ([typeName, declaration, preferDeclaration]) => `
                   /**
-                   * @deprecated Instead use \`${preferDeclaration}\`
+                   * @deprecated Instead use \`${preferDeclaration}\`.
                    */
                   export type ${typeName} = ${declaration}
                 `
