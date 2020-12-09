@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "ScrollResponderType"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\ScrollView\\ScrollView.js.flow:47:6,47:24\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 47,
+                    "column": 6
+                },
+                "end": {
+                    "row": 47,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
+            }
         },
         "ViewStyleProp": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "ViewStyleProp"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:15:6,15:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 15,
+                    "column": 6
+                },
+                "end": {
+                    "row": 15,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
         },
         "ViewabilityConfig": {
             "source": {
@@ -22,7 +44,18 @@
                 "column": 14,
                 "local": "ViewabilityConfig"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Lists\\ViewabilityHelper.js.flow:23:6,23:22\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 23,
+                    "column": 6
+                },
+                "end": {
+                    "row": 23,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/ViewabilityHelper.js.flow"
+            }
         },
         "ViewToken": {
             "source": {
@@ -30,7 +63,18 @@
                 "column": 14,
                 "local": "ViewToken"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Lists\\ViewabilityHelper.js.flow:2:6,2:14\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 6
+                },
+                "end": {
+                    "row": 2,
+                    "column": 14
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/ViewabilityHelper.js.flow"
+            }
         },
         "ViewabilityConfigCallbackPair": {
             "source": {
@@ -38,7 +82,18 @@
                 "column": 14,
                 "local": "ViewabilityConfigCallbackPair"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Lists\\ViewabilityHelper.js.flow:11:6,11:34\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 6
+                },
+                "end": {
+                    "row": 11,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/ViewabilityHelper.js.flow"
+            }
         }
     },
     "decls": [

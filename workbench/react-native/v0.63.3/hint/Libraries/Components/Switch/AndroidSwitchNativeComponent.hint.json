@@ -13,7 +13,18 @@
                 "column": 14,
                 "local": "WithDefault"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Switch\\AndroidSwitchNativeComponent.js.flow:4:14,4:24\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 14
+                },
+                "end": {
+                    "row": 4,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Switch/AndroidSwitchNativeComponent.js.flow"
+            }
         },
         "BubblingEventHandler": {
             "source": {
@@ -21,7 +32,18 @@
                 "column": 14,
                 "local": "BubblingEventHandler"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Switch\\AndroidSwitchNativeComponent.js.flow:5:14,5:33\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 14
+                },
+                "end": {
+                    "row": 5,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Switch/AndroidSwitchNativeComponent.js.flow"
+            }
         },
         "HostComponent": {
             "source": {
@@ -29,7 +51,18 @@
                 "column": 14,
                 "local": "HostComponent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Switch\\AndroidSwitchNativeComponent.js.flow:7:14,7:26\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 14
+                },
+                "end": {
+                    "row": 7,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Switch/AndroidSwitchNativeComponent.js.flow"
+            }
         },
         "ColorValue": {
             "source": {
@@ -37,7 +70,18 @@
                 "column": 14,
                 "local": "ColorValue"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:7:6,7:15\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 6
+                },
+                "end": {
+                    "row": 7,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
+            }
         },
         "ViewProps": {
             "source": {
@@ -45,7 +89,18 @@
                 "column": 14,
                 "local": "ViewProps"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:389:6,389:14\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 389,
+                    "column": 6
+                },
+                "end": {
+                    "row": 389,
+                    "column": 14
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
+            }
         }
     },
     "decls": [

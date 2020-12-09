@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "ViewStyleProp"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:15:6,15:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 15,
+                    "column": 6
+                },
+                "end": {
+                    "row": 15,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
         },
         "TouchableWithoutFeedback": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 15,
                 "local": "TouchableWithoutFeedback"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Touchable\\TouchableWithoutFeedback.js.flow:60:15,60:38\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 60,
+                    "column": 15
+                },
+                "end": {
+                    "row": 60,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/TouchableWithoutFeedback.js.flow"
+            }
         },
         "Animated": {
             "source": {
@@ -22,7 +44,18 @@
                 "column": 9,
                 "local": "Animated"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Touchable\\TouchableBounce.js.flow:5:9,5:16\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 9
+                },
+                "end": {
+                    "row": 5,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/TouchableBounce.js.flow"
+            }
         },
         "React": {
             "source": {

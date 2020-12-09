@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "HostComponent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 96,
+                    "column": 6
+                },
+                "end": {
+                    "row": 96,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
         },
         "TextInputNativeCommands": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "TextInputNativeCommands"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\TextInput\\RCTMultilineTextInputNativeComponent.js.flow:4:14,4:36\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 14
+                },
+                "end": {
+                    "row": 4,
+                    "column": 36
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/TextInput/RCTMultilineTextInputNativeComponent.js.flow"
+            }
         }
     },
     "decls": [

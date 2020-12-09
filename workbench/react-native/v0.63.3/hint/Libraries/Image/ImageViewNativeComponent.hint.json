@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "DangerouslyImpreciseStyle"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:34:6,34:30\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 34,
+                    "column": 6
+                },
+                "end": {
+                    "row": 34,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
         },
         "ResolvedAssetSource": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "ResolvedAssetSource"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Image\\AssetSourceResolver.js.flow:2:6,2:24\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 6
+                },
+                "end": {
+                    "row": 2,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/AssetSourceResolver.js.flow"
+            }
         },
         "HostComponent": {
             "source": {
@@ -22,7 +44,18 @@
                 "column": 14,
                 "local": "HostComponent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 96,
+                    "column": 6
+                },
+                "end": {
+                    "row": 96,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
         },
         "ImageProps": {
             "source": {
@@ -30,7 +63,18 @@
                 "column": 14,
                 "local": "ImageProps"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Image\\ImageProps.js.flow:59:6,59:15\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 59,
+                    "column": 6
+                },
+                "end": {
+                    "row": 59,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/ImageProps.js.flow"
+            }
         },
         "ViewProps": {
             "source": {
@@ -38,7 +82,18 @@
                 "column": 14,
                 "local": "ViewProps"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:389:6,389:14\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 389,
+                    "column": 6
+                },
+                "end": {
+                    "row": 389,
+                    "column": 14
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
+            }
         },
         "ImageStyleProp": {
             "source": {
@@ -46,7 +101,18 @@
                 "column": 14,
                 "local": "ImageStyleProp"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:19:6,19:19\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 19,
+                    "column": 6
+                },
+                "end": {
+                    "row": 19,
+                    "column": 19
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
         },
         "ColorValue": {
             "source": {
@@ -54,7 +120,18 @@
                 "column": 14,
                 "local": "ColorValue"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:7:6,7:15\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 6
+                },
+                "end": {
+                    "row": 7,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
+            }
         }
     },
     "decls": [

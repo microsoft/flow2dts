@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "HMRClientNativeInterface"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Utilities\\HMRClient.js.flow:13:6,13:29\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 13,
+                    "column": 6
+                },
+                "end": {
+                    "row": 13,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/HMRClient.js.flow"
+            }
         }
     },
     "decls": [

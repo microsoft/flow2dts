@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "ViewProps"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:377:6,377:14\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 377,
+                    "column": 6
+                },
+                "end": {
+                    "row": 377,
+                    "column": 14
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
+            }
         },
         "RootTag": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "RootTag"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\ReactNative\\RootTag.js.flow:2:6,2:12\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 6
+                },
+                "end": {
+                    "row": 2,
+                    "column": 12
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ReactNative/RootTag.js.flow"
+            }
         },
         "DirectEventHandler": {
             "source": {
@@ -22,7 +44,18 @@
                 "column": 14,
                 "local": "DirectEventHandler"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:9:6,9:23\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 6
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CodegenTypes.js.flow"
+            }
         }
     },
     "decls": [

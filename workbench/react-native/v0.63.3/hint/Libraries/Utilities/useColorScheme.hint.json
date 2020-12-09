@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "ColorSchemeName"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Utilities\\NativeAppearance.js.flow:4:6,4:20\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 6
+                },
+                "end": {
+                    "row": 4,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/NativeAppearance.js.flow"
+            }
         }
     },
     "decls": [

@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "ScrollResponderType"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\ScrollView\\ScrollView.js.flow:45:6,45:24\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 45,
+                    "column": 6
+                },
+                "end": {
+                    "row": 45,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
+            }
         },
         "ScrollViewNativeComponentType": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "ScrollViewNativeComponentType"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\ScrollView\\ScrollViewNativeComponentType.js.flow:76:6,76:34\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 76,
+                    "column": 6
+                },
+                "end": {
+                    "row": 76,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollView/ScrollViewNativeComponentType.js.flow"
+            }
         },
         "ViewStyleProp": {
             "source": {
@@ -22,7 +44,18 @@
                 "column": 14,
                 "local": "ViewStyleProp"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:18:6,18:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 6
+                },
+                "end": {
+                    "row": 18,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
         },
         "RenderItemType": {
             "source": {
@@ -30,7 +63,18 @@
                 "column": 14,
                 "local": "RenderItemType"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Lists\\VirtualizedList.js.flow:32:6,32:19\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 32,
+                    "column": 6
+                },
+                "end": {
+                    "row": 32,
+                    "column": 19
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizedList.js.flow"
+            }
         }
     },
     "decls": [

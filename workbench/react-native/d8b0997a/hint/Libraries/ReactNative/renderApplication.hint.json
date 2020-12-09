@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "IPerformanceLogger"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Utilities\\createPerformanceLogger.js.flow:14:11,14:28\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 11
+                },
+                "end": {
+                    "row": 14,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/createPerformanceLogger.js.flow"
+            }
         }
     },
     "decls": [

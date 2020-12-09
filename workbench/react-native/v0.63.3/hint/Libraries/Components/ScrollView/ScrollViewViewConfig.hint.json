@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "GeneratedViewConfig"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Utilities\\registerGeneratedViewConfig.js.flow:2:6,2:24\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 6
+                },
+                "end": {
+                    "row": 2,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/registerGeneratedViewConfig.js.flow"
+            }
         }
     },
     "decls": []

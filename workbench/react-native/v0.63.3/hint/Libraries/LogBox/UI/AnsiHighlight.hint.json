@@ -13,7 +13,18 @@
                 "column": 14,
                 "local": "TextStyleProp"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\LogBox\\UI\\AnsiHighlight.js.flow:4:14,4:26\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 14
+                },
+                "end": {
+                    "row": 4,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/UI/AnsiHighlight.js.flow"
+            }
         }
     },
     "decls": [

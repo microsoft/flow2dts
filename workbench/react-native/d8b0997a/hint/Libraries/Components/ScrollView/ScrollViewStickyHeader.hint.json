@@ -6,7 +6,18 @@
                 "column": 8,
                 "local": "AnimatedImplementation"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\AnimatedImplementation.js.flow:142:25,316:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 142,
+                    "column": 25
+                },
+                "end": {
+                    "row": 316,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
+            }
         },
         "React": {
             "source": {
@@ -21,7 +32,18 @@
                 "column": 14,
                 "local": "LayoutEvent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:79:6,79:16\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 79,
+                    "column": 6
+                },
+                "end": {
+                    "row": 79,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
         }
     },
     "decls": [

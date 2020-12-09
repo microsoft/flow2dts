@@ -6,7 +6,18 @@
                 "column": 8,
                 "local": "UnimplementedView"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\UnimplementedViews\\UnimplementedView.js.flow:5:15,5:31\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 31
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/UnimplementedViews/UnimplementedView.js.flow"
+            }
         }
     },
     "decls": []

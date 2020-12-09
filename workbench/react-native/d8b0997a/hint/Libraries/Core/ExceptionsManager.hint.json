@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "ExceptionData"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Core\\NativeExceptionsManager.js.flow:12:6,12:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 6
+                },
+                "end": {
+                    "row": 12,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Core/NativeExceptionsManager.js.flow"
+            }
         }
     },
     "decls": [

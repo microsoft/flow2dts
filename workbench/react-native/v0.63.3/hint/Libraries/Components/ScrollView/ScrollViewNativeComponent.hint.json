@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "ScrollViewNativeComponentType"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\ScrollView\\ScrollViewNativeComponentType.js.flow:77:6,77:34\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 77,
+                    "column": 6
+                },
+                "end": {
+                    "row": 77,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollView/ScrollViewNativeComponentType.js.flow"
+            }
         }
     },
     "decls": []

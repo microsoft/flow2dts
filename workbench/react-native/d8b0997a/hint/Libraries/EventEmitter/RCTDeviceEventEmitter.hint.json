@@ -6,7 +6,18 @@
                 "column": 8,
                 "local": "EventEmitter"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\vendor\\emitter\\EventEmitter.js.flow:8:24,8:42\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 24
+                },
+                "end": {
+                    "row": 8,
+                    "column": 42
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/vendor/emitter/EventEmitter.js.flow"
+            }
         },
         "EmitterSubscription": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 13,
                 "local": "EmitterSubscription"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\vendor\\emitter\\_EmitterSubscription.js.flow:6:15,6:33\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 15
+                },
+                "end": {
+                    "row": 6,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/vendor/emitter/_EmitterSubscription.js.flow"
+            }
         },
         "EventSubscriptionVendor": {
             "source": {
@@ -22,7 +44,18 @@
                 "column": 8,
                 "local": "EventSubscriptionVendor"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\vendor\\emitter\\_EventSubscriptionVendor.js.flow:4:15,4:37\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 15
+                },
+                "end": {
+                    "row": 4,
+                    "column": 37
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/vendor/emitter/_EventSubscriptionVendor.js.flow"
+            }
         }
     },
     "decls": [

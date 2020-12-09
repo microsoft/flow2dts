@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "LayoutEvent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:79:6,79:16\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 79,
+                    "column": 6
+                },
+                "end": {
+                    "row": 79,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
         }
     },
     "decls": [

@@ -6,7 +6,18 @@
                 "column": 8,
                 "local": "NativeEventEmitter"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\EventEmitter\\NativeEventEmitter.js.flow:13:15,13:32\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 13,
+                    "column": 15
+                },
+                "end": {
+                    "row": 13,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
+            }
         },
         "EventConfig": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "EventConfig"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\AnimatedEvent.js.flow:6:6,6:16\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 6
+                },
+                "end": {
+                    "row": 6,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedEvent.js.flow"
+            }
         },
         "EventMapping": {
             "source": {
@@ -22,7 +44,18 @@
                 "column": 14,
                 "local": "EventMapping"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\NativeAnimatedModule.js.flow:7:6,7:17\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 6
+                },
+                "end": {
+                    "row": 7,
+                    "column": 17
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/NativeAnimatedModule.js.flow"
+            }
         },
         "AnimatedNodeConfig": {
             "source": {
@@ -30,7 +63,18 @@
                 "column": 14,
                 "local": "AnimatedNodeConfig"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\NativeAnimatedModule.js.flow:12:6,12:23\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 6
+                },
+                "end": {
+                    "row": 12,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/NativeAnimatedModule.js.flow"
+            }
         },
         "AnimatingNodeConfig": {
             "source": {
@@ -38,7 +82,18 @@
                 "column": 14,
                 "local": "AnimatingNodeConfig"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\NativeAnimatedModule.js.flow:13:6,13:24\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 13,
+                    "column": 6
+                },
+                "end": {
+                    "row": 13,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/NativeAnimatedModule.js.flow"
+            }
         },
         "AnimationConfig": {
             "source": {
@@ -46,7 +101,18 @@
                 "column": 14,
                 "local": "AnimationConfig"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\animations\\Animation.js.flow:7:6,7:20\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 6
+                },
+                "end": {
+                    "row": 7,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/animations/Animation.js.flow"
+            }
         },
         "EndCallback": {
             "source": {
@@ -54,7 +120,18 @@
                 "column": 14,
                 "local": "EndCallback"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\animations\\Animation.js.flow:5:6,5:16\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/animations/Animation.js.flow"
+            }
         },
         "InterpolationConfigType": {
             "source": {
@@ -62,7 +139,18 @@
                 "column": 14,
                 "local": "InterpolationConfigType"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\nodes\\AnimatedInterpolation.js.flow:9:6,9:28\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 6
+                },
+                "end": {
+                    "row": 9,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedInterpolation.js.flow"
+            }
         }
     },
     "decls": [

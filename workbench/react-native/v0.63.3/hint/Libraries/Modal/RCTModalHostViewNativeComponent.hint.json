@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "HostComponent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 96,
+                    "column": 6
+                },
+                "end": {
+                    "row": 96,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
         },
         "WithDefault": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "WithDefault"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:21:6,21:16\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 21,
+                    "column": 6
+                },
+                "end": {
+                    "row": 21,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CodegenTypes.js.flow"
+            }
         },
         "DirectEventHandler": {
             "source": {
@@ -22,7 +44,18 @@
                 "column": 14,
                 "local": "DirectEventHandler"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:9:6,9:23\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 6
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CodegenTypes.js.flow"
+            }
         },
         "Int32": {
             "source": {
@@ -30,7 +63,18 @@
                 "column": 14,
                 "local": "Int32"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:17:6,17:10\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 6
+                },
+                "end": {
+                    "row": 17,
+                    "column": 10
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CodegenTypes.js.flow"
+            }
         },
         "ViewProps": {
             "source": {
@@ -38,7 +82,18 @@
                 "column": 14,
                 "local": "ViewProps"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:389:6,389:14\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 389,
+                    "column": 6
+                },
+                "end": {
+                    "row": 389,
+                    "column": 14
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
+            }
         }
     },
     "decls": [

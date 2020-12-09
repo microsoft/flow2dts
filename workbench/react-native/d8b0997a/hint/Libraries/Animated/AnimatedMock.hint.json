@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "EndCallback"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\animations\\Animation.js.flow:5:6,5:16\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/animations/Animation.js.flow"
+            }
         },
         "TimingAnimationConfig": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "TimingAnimationConfig"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\animations\\TimingAnimation.js.flow:14:6,14:26\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 6
+                },
+                "end": {
+                    "row": 14,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/animations/TimingAnimation.js.flow"
+            }
         },
         "DecayAnimationConfig": {
             "source": {
@@ -22,7 +44,18 @@
                 "column": 14,
                 "local": "DecayAnimationConfig"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\animations\\DecayAnimation.js.flow:9:6,9:25\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 6
+                },
+                "end": {
+                    "row": 9,
+                    "column": 25
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/animations/DecayAnimation.js.flow"
+            }
         },
         "SpringAnimationConfig": {
             "source": {
@@ -30,7 +63,18 @@
                 "column": 14,
                 "local": "SpringAnimationConfig"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\animations\\SpringAnimation.js.flow:14:6,14:26\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 6
+                },
+                "end": {
+                    "row": 14,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/animations/SpringAnimation.js.flow"
+            }
         },
         "Mapping": {
             "source": {
@@ -38,7 +82,18 @@
                 "column": 14,
                 "local": "Mapping"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\AnimatedEvent.js.flow:5:6,5:12\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 12
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/AnimatedEvent.js.flow"
+            }
         },
         "EventConfig": {
             "source": {
@@ -46,7 +101,18 @@
                 "column": 14,
                 "local": "EventConfig"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\AnimatedEvent.js.flow:6:6,6:16\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 6
+                },
+                "end": {
+                    "row": 6,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/AnimatedEvent.js.flow"
+            }
         }
     },
     "decls": [

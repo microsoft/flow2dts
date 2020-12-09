@@ -13,7 +13,18 @@
                 "column": 14,
                 "local": "LogLevel"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\LogBox\\Data\\LogBoxLog.js.flow:10:6,10:13\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 6
+                },
+                "end": {
+                    "row": 10,
+                    "column": 13
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/Data/LogBoxLog.js.flow"
+            }
         },
         "LogBoxLog": {
             "source": {
@@ -21,7 +32,18 @@
                 "column": 8,
                 "local": "LogBoxLog"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\LogBox\\Data\\LogBoxLog.js.flow:25:15,25:23\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 25,
+                    "column": 15
+                },
+                "end": {
+                    "row": 25,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/Data/LogBoxLog.js.flow"
+            }
         }
     },
     "decls": [

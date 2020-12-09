@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "HostComponent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 96,
+                    "column": 6
+                },
+                "end": {
+                    "row": 96,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
         },
         "SyntheticEvent": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "SyntheticEvent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:5:6,5:19\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 19
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
         },
         "TextStyleProp": {
             "source": {
@@ -22,7 +44,18 @@
                 "column": 14,
                 "local": "TextStyleProp"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:20:6,20:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 20,
+                    "column": 6
+                },
+                "end": {
+                    "row": 20,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
         },
         "ProcessedColorValue": {
             "source": {
@@ -30,7 +63,18 @@
                 "column": 14,
                 "local": "ProcessedColorValue"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\processColor.js.flow:5:6,5:24\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
         },
         "React": {
             "source": {

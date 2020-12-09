@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "PackagerAsset"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Image\\AssetSourceResolver.js.flow:10:14,10:26\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 14
+                },
+                "end": {
+                    "row": 10,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/AssetSourceResolver.js.flow"
+            }
         }
     },
     "decls": [

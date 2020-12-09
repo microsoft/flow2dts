@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "TextStyleProp"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:20:6,20:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 20,
+                    "column": 6
+                },
+                "end": {
+                    "row": 20,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
         },
         "ViewStyleProp": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "ViewStyleProp"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:18:6,18:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 6
+                },
+                "end": {
+                    "row": 18,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
         },
         "ColorValue": {
             "source": {
@@ -22,7 +44,18 @@
                 "column": 14,
                 "local": "ColorValue"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:16:6,16:15\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 6
+                },
+                "end": {
+                    "row": 16,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
         },
         "ViewProps": {
             "source": {
@@ -30,7 +63,18 @@
                 "column": 14,
                 "local": "ViewProps"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:377:6,377:14\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 377,
+                    "column": 6
+                },
+                "end": {
+                    "row": 377,
+                    "column": 14
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
+            }
         },
         "SyntheticEvent": {
             "source": {
@@ -38,7 +82,18 @@
                 "column": 14,
                 "local": "SyntheticEvent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:5:6,5:19\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 19
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
         },
         "ScrollEvent": {
             "source": {
@@ -46,7 +101,18 @@
                 "column": 14,
                 "local": "ScrollEvent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:112:6,112:16\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 112,
+                    "column": 6
+                },
+                "end": {
+                    "row": 112,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
         },
         "PressEvent": {
             "source": {
@@ -54,7 +120,18 @@
                 "column": 14,
                 "local": "PressEvent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:95:6,95:15\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 95,
+                    "column": 6
+                },
+                "end": {
+                    "row": 95,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
         },
         "HostComponent": {
             "source": {
@@ -62,7 +139,18 @@
                 "column": 14,
                 "local": "HostComponent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 96,
+                    "column": 6
+                },
+                "end": {
+                    "row": 96,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
         }
     },
     "decls": [

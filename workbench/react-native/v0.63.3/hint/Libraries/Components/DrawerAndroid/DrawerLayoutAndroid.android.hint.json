@@ -13,7 +13,18 @@
                 "column": 15,
                 "local": "ColorValue"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\DrawerAndroid\\DrawerLayoutAndroid.android.js.flow:7:15,7:24\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 15
+                },
+                "end": {
+                    "row": 7,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/DrawerAndroid/DrawerLayoutAndroid.android.js.flow"
+            }
         },
         "ViewStyleProp": {
             "source": {
@@ -21,7 +32,18 @@
                 "column": 27,
                 "local": "ViewStyleProp"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:15:6,15:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 15,
+                    "column": 6
+                },
+                "end": {
+                    "row": 15,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
         },
         "DirectEventHandler": {
             "source": {
@@ -29,7 +51,18 @@
                 "column": 15,
                 "local": "DirectEventHandler"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CodegenTypes.js.flow:9:6,9:23\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 6
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CodegenTypes.js.flow"
+            }
         }
     },
     "decls": [

@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "Spec"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\ReactNative\\NativeUIManager.js.flow:4:11,4:14\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 11
+                },
+                "end": {
+                    "row": 4,
+                    "column": 14
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ReactNative/NativeUIManager.js.flow"
+            }
         }
     },
     "decls": [

@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "RectOrSize"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\Rect.js.flow:11:6,11:15\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 6
+                },
+                "end": {
+                    "row": 11,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/Rect.js.flow"
+            }
         },
         "BlurEvent": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "BlurEvent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:159:6,159:14\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 159,
+                    "column": 6
+                },
+                "end": {
+                    "row": 159,
+                    "column": 14
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
         },
         "FocusEvent": {
             "source": {
@@ -22,7 +44,18 @@
                 "column": 14,
                 "local": "FocusEvent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:167:6,167:15\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 167,
+                    "column": 6
+                },
+                "end": {
+                    "row": 167,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
         },
         "PressEvent": {
             "source": {
@@ -30,7 +63,18 @@
                 "column": 14,
                 "local": "PressEvent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:95:6,95:15\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 95,
+                    "column": 6
+                },
+                "end": {
+                    "row": 95,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
         },
         "MouseEvent": {
             "source": {
@@ -38,7 +82,18 @@
                 "column": 14,
                 "local": "MouseEvent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:175:6,175:15\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 175,
+                    "column": 6
+                },
+                "end": {
+                    "row": 175,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
         }
     },
     "decls": [

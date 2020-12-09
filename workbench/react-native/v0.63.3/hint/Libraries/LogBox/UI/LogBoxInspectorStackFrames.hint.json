@@ -13,7 +13,18 @@
                 "column": 14,
                 "local": "Stack"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\LogBox\\Data\\LogBoxSymbolication.js.flow:5:6,5:10\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 10
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/Data/LogBoxSymbolication.js.flow"
+            }
         },
         "LogBoxLog": {
             "source": {
@@ -21,7 +32,18 @@
                 "column": 13,
                 "local": "LogBoxLog"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\LogBox\\Data\\LogBoxLog.js.flow:25:15,25:23\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 25,
+                    "column": 15
+                },
+                "end": {
+                    "row": 25,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/Data/LogBoxLog.js.flow"
+            }
         }
     },
     "decls": [

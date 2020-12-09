@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "ImageProps"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Image\\ImageProps.js.flow:59:6,59:15\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 59,
+                    "column": 6
+                },
+                "end": {
+                    "row": 59,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/ImageProps.js.flow"
+            }
         },
         "ImageViewNativeComponent": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 8,
                 "local": "ImageViewNativeComponent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Image\\ImageViewNativeComponent.js.flow:29:24,29:49\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 29,
+                    "column": 24
+                },
+                "end": {
+                    "row": 29,
+                    "column": 49
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/ImageViewNativeComponent.js.flow"
+            }
         }
     },
     "decls": [

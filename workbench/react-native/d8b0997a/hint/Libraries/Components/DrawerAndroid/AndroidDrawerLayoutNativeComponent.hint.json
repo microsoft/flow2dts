@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "ViewProps"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\DrawerAndroid\\AndroidDrawerLayoutNativeComponent.js.flow:2:14,2:22\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 14
+                },
+                "end": {
+                    "row": 2,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow"
+            }
         },
         "ColorValue": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "ColorValue"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\DrawerAndroid\\AndroidDrawerLayoutNativeComponent.js.flow:3:14,3:23\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 14
+                },
+                "end": {
+                    "row": 3,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow"
+            }
         },
         "WithDefault": {
             "source": {
@@ -22,7 +44,18 @@
                 "column": 14,
                 "local": "WithDefault"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\DrawerAndroid\\AndroidDrawerLayoutNativeComponent.js.flow:4:14,4:24\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 14
+                },
+                "end": {
+                    "row": 4,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow"
+            }
         },
         "DirectEventHandler": {
             "source": {
@@ -30,7 +63,18 @@
                 "column": 14,
                 "local": "DirectEventHandler"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\DrawerAndroid\\AndroidDrawerLayoutNativeComponent.js.flow:5:14,5:31\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 14
+                },
+                "end": {
+                    "row": 5,
+                    "column": 31
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow"
+            }
         },
         "Int32": {
             "source": {
@@ -38,7 +82,18 @@
                 "column": 14,
                 "local": "Int32"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\DrawerAndroid\\AndroidDrawerLayoutNativeComponent.js.flow:6:14,6:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 14
+                },
+                "end": {
+                    "row": 6,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow"
+            }
         },
         "Float": {
             "source": {
@@ -46,7 +101,18 @@
                 "column": 14,
                 "local": "Float"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\DrawerAndroid\\AndroidDrawerLayoutNativeComponent.js.flow:7:14,7:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 14
+                },
+                "end": {
+                    "row": 7,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow"
+            }
         },
         "HostComponent": {
             "source": {
@@ -54,7 +120,18 @@
                 "column": 14,
                 "local": "HostComponent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\DrawerAndroid\\AndroidDrawerLayoutNativeComponent.js.flow:9:14,9:26\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 14
+                },
+                "end": {
+                    "row": 9,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow"
+            }
         },
         "React": {
             "source": {

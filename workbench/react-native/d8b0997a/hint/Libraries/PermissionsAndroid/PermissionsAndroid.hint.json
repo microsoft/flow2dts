@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "PermissionStatus"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\PermissionsAndroid\\NativePermissionsAndroid.js.flow:4:6,4:21\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 6
+                },
+                "end": {
+                    "row": 4,
+                    "column": 21
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/PermissionsAndroid/NativePermissionsAndroid.js.flow"
+            }
         },
         "PermissionType": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "PermissionType"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\PermissionsAndroid\\NativePermissionsAndroid.js.flow:5:6,5:19\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 19
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/PermissionsAndroid/NativePermissionsAndroid.js.flow"
+            }
         }
     },
     "decls": [

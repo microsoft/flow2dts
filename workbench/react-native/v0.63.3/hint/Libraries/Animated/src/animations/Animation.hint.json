@@ -6,7 +6,18 @@
                 "column": 13,
                 "local": "AnimatedValue"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\nodes\\AnimatedValue.js.flow:12:15,12:27\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 15
+                },
+                "end": {
+                    "row": 12,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedValue.js.flow"
+            }
         }
     },
     "decls": [

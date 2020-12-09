@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "IgnorePattern"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\LogBox\\Data\\LogBoxData.js.flow:33:6,33:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 33,
+                    "column": 6
+                },
+                "end": {
+                    "row": 33,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/Data/LogBoxData.js.flow"
+            }
         }
     },
     "decls": [

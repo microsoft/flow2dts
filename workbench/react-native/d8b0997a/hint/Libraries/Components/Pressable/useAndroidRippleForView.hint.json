@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "ColorValue"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:16:6,16:15\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 6
+                },
+                "end": {
+                    "row": 16,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
         },
         "PressEvent": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "PressEvent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:95:6,95:15\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 95,
+                    "column": 6
+                },
+                "end": {
+                    "row": 95,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
         },
         "View": {
             "source": {
@@ -22,7 +44,18 @@
                 "column": 9,
                 "local": "View"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\Pressable\\useAndroidRippleForView.js.flow:4:9,4:12\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 9
+                },
+                "end": {
+                    "row": 4,
+                    "column": 12
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Pressable/useAndroidRippleForView.js.flow"
+            }
         },
         "React": {
             "source": {

@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "Rect"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\Rect.js.flow:2:6,2:9\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 6
+                },
+                "end": {
+                    "row": 2,
+                    "column": 9
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/Rect.js.flow"
+            }
         }
     },
     "decls": [

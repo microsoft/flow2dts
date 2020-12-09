@@ -13,7 +13,18 @@
                 "column": 14,
                 "local": "CodeFrame"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\LogBox\\Data\\parseLogBoxLog.js.flow:12:6,12:14\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 6
+                },
+                "end": {
+                    "row": 12,
+                    "column": 14
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/Data/parseLogBoxLog.js.flow"
+            }
         }
     },
     "decls": [

@@ -6,7 +6,18 @@
                 "column": 8,
                 "local": "ReactNativeViewViewConfigAndroid"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ReactNativeViewViewConfigAndroid.js.flow:2:47,70:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 47
+                },
+                "end": {
+                    "row": 70,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ReactNativeViewViewConfigAndroid.js.flow"
+            }
         }
     },
     "decls": [

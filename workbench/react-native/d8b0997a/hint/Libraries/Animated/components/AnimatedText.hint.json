@@ -13,7 +13,18 @@
                 "column": 14,
                 "local": "AnimatedComponentType"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Animated\\createAnimatedComponent.js.flow:8:6,8:26\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 6
+                },
+                "end": {
+                    "row": 8,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/createAnimatedComponent.js.flow"
+            }
         }
     },
     "decls": [

@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "InterpolationConfigType"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\nodes\\AnimatedInterpolation.js.flow:9:6,9:28\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 6
+                },
+                "end": {
+                    "row": 9,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedInterpolation.js.flow"
+            }
         }
     },
     "decls": [

@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "MeasureOnSuccessCallback"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:5:6,5:29\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
         },
         "MeasureInWindowOnSuccessCallback": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "MeasureInWindowOnSuccessCallback"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:14:6,14:37\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 6
+                },
+                "end": {
+                    "row": 14,
+                    "column": 37
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
         },
         "MeasureLayoutOnSuccessCallback": {
             "source": {
@@ -22,7 +44,18 @@
                 "column": 14,
                 "local": "MeasureLayoutOnSuccessCallback"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:21:6,21:35\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 21,
+                    "column": 6
+                },
+                "end": {
+                    "row": 21,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
         }
     },
     "decls": [

@@ -6,7 +6,18 @@
                 "column": 8,
                 "local": "EventEmitter"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\vendor\\emitter\\EventEmitter.js.flow:8:24,8:42\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 24
+                },
+                "end": {
+                    "row": 8,
+                    "column": 42
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/vendor/emitter/EventEmitter.js.flow"
+            }
         },
         "EventSubscription": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "EventSubscription"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\vendor\\emitter\\EventEmitter.js.flow:5:11,5:27\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 11
+                },
+                "end": {
+                    "row": 5,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/vendor/emitter/EventEmitter.js.flow"
+            }
         }
     },
     "decls": [

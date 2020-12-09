@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "ScrollResponderType"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\ScrollView\\ScrollView.js.flow:47:6,47:24\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 47,
+                    "column": 6
+                },
+                "end": {
+                    "row": 47,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
+            }
         },
         "ScrollToLocationParamsType": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "ScrollToLocationParamsType"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Lists\\VirtualizedSectionList.js.flow:107:6,107:31\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 107,
+                    "column": 6
+                },
+                "end": {
+                    "row": 107,
+                    "column": 31
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
+            }
         },
         "_SectionBase": {
             "source": {
@@ -22,7 +44,18 @@
                 "column": 14,
                 "local": "SectionBase"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Lists\\VirtualizedSectionList.js.flow:10:6,10:16\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 6
+                },
+                "end": {
+                    "row": 10,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
+            }
         },
         "VirtualizedSectionListProps": {
             "source": {
@@ -30,7 +63,18 @@
                 "column": 14,
                 "local": "Props"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Lists\\VirtualizedSectionList.js.flow:99:6,99:10\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 99,
+                    "column": 6
+                },
+                "end": {
+                    "row": 99,
+                    "column": 10
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
+            }
         }
     },
     "decls": [

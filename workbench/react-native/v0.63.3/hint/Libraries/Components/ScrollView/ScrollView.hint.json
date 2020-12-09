@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "EdgeInsetsProp"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\EdgeInsetsPropType.js.flow:4:6,4:19\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 6
+                },
+                "end": {
+                    "row": 4,
+                    "column": 19
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/EdgeInsetsPropType.js.flow"
+            }
         },
         "PointProp": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "PointProp"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\PointPropType.js.flow:2:6,2:14\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 6
+                },
+                "end": {
+                    "row": 2,
+                    "column": 14
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/PointPropType.js.flow"
+            }
         },
         "ViewStyleProp": {
             "source": {
@@ -22,7 +44,18 @@
                 "column": 14,
                 "local": "ViewStyleProp"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:15:6,15:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 15,
+                    "column": 6
+                },
+                "end": {
+                    "row": 15,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
         },
         "ColorValue": {
             "source": {
@@ -30,7 +63,18 @@
                 "column": 14,
                 "local": "ColorValue"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheetTypes.js.flow:7:6,7:15\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 6
+                },
+                "end": {
+                    "row": 7,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
+            }
         },
         "PressEvent": {
             "source": {
@@ -38,7 +82,18 @@
                 "column": 14,
                 "local": "PressEvent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:95:6,95:15\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 95,
+                    "column": 6
+                },
+                "end": {
+                    "row": 95,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
         },
         "ScrollEvent": {
             "source": {
@@ -46,7 +101,18 @@
                 "column": 14,
                 "local": "ScrollEvent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:112:6,112:16\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 112,
+                    "column": 6
+                },
+                "end": {
+                    "row": 112,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
         },
         "HostComponent": {
             "source": {
@@ -54,7 +120,18 @@
                 "column": 14,
                 "local": "HostComponent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 96,
+                    "column": 6
+                },
+                "end": {
+                    "row": 96,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
         },
         "ScrollResponderState": {
             "source": {
@@ -62,7 +139,18 @@
                 "column": 14,
                 "local": "State"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\ScrollResponder.js.flow:12:6,12:10\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 6
+                },
+                "end": {
+                    "row": 12,
+                    "column": 10
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollResponder.js.flow"
+            }
         },
         "ViewProps": {
             "source": {
@@ -70,7 +158,18 @@
                 "column": 14,
                 "local": "ViewProps"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:389:6,389:14\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 389,
+                    "column": 6
+                },
+                "end": {
+                    "row": 389,
+                    "column": 14
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
+            }
         },
         "ScrollViewStickyHeaderProps": {
             "source": {
@@ -78,7 +177,18 @@
                 "column": 14,
                 "local": "Props"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\ScrollView\\ScrollViewStickyHeader.js.flow:9:6,9:10\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 6
+                },
+                "end": {
+                    "row": 9,
+                    "column": 10
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollView/ScrollViewStickyHeader.js.flow"
+            }
         },
         "ScrollViewNativeComponent": {
             "source": {
@@ -86,7 +196,18 @@
                 "column": 8,
                 "local": "ScrollViewNativeComponent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\ScrollView\\ScrollViewNativeComponentType.js.flow:77:38,77:73\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 77,
+                    "column": 38
+                },
+                "end": {
+                    "row": 77,
+                    "column": 73
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollView/ScrollViewNativeComponentType.js.flow"
+            }
         }
     },
     "decls": [

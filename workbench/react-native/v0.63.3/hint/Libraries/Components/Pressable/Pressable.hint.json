@@ -13,7 +13,18 @@
                 "column": 14,
                 "local": "RippleConfig"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Pressable\\useAndroidRippleForView.js.flow:16:6,16:17\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 6
+                },
+                "end": {
+                    "row": 16,
+                    "column": 17
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Pressable/useAndroidRippleForView.js.flow"
+            }
         },
         "AccessibilityActionEvent": {
             "source": {
@@ -21,7 +32,18 @@
                 "column": 14,
                 "local": "AccessibilityActionEvent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\ViewAccessibility.js.flow:41:6,41:29\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 41,
+                    "column": 6
+                },
+                "end": {
+                    "row": 41,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ViewAccessibility.js.flow"
+            }
         },
         "AccessibilityActionInfo": {
             "source": {
@@ -29,7 +51,18 @@
                 "column": 14,
                 "local": "AccessibilityActionInfo"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\ViewAccessibility.js.flow:33:6,33:28\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 33,
+                    "column": 6
+                },
+                "end": {
+                    "row": 33,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ViewAccessibility.js.flow"
+            }
         },
         "AccessibilityRole": {
             "source": {
@@ -37,7 +70,18 @@
                 "column": 14,
                 "local": "AccessibilityRole"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\ViewAccessibility.js.flow:4:6,4:22\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 6
+                },
+                "end": {
+                    "row": 4,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ViewAccessibility.js.flow"
+            }
         },
         "AccessibilityState": {
             "source": {
@@ -45,7 +89,18 @@
                 "column": 14,
                 "local": "AccessibilityState"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\ViewAccessibility.js.flow:45:6,45:23\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 45,
+                    "column": 6
+                },
+                "end": {
+                    "row": 45,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ViewAccessibility.js.flow"
+            }
         },
         "AccessibilityValue": {
             "source": {
@@ -53,7 +108,18 @@
                 "column": 14,
                 "local": "AccessibilityValue"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\ViewAccessibility.js.flow:54:6,54:23\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 54,
+                    "column": 6
+                },
+                "end": {
+                    "row": 54,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ViewAccessibility.js.flow"
+            }
         },
         "RectOrSize": {
             "source": {
@@ -61,7 +127,18 @@
                 "column": 14,
                 "local": "RectOrSize"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\Rect.js.flow:11:6,11:15\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 6
+                },
+                "end": {
+                    "row": 11,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/Rect.js.flow"
+            }
         },
         "LayoutEvent": {
             "source": {
@@ -69,7 +146,18 @@
                 "column": 14,
                 "local": "LayoutEvent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:79:6,79:16\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 79,
+                    "column": 6
+                },
+                "end": {
+                    "row": 79,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
         },
         "PressEvent": {
             "source": {
@@ -77,7 +165,18 @@
                 "column": 14,
                 "local": "PressEvent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Types\\CoreEventTypes.js.flow:95:6,95:15\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 95,
+                    "column": 6
+                },
+                "end": {
+                    "row": 95,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
         },
         "View": {
             "source": {
@@ -85,7 +184,18 @@
                 "column": 8,
                 "local": "View"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\View.js.flow:10:19,13:1\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 19
+                },
+                "end": {
+                    "row": 13,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/View.js.flow"
+            }
         }
     },
     "decls": [

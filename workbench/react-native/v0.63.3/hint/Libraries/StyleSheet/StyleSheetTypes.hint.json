@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "NativeColorValue"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\PlatformColorValueTypes.ios.js.flow:5:13,5:28\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/PlatformColorValueTypes.ios.js.flow"
+            }
         }
     },
     "decls": [

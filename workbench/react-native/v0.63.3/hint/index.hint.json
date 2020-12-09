@@ -6,7 +6,18 @@
                 "column": 15,
                 "local": "AccessibilityInfo"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\AccessibilityInfo\\AccessibilityInfo.ios.js.flow:19:32,135:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 19,
+                    "column": 32
+                },
+                "end": {
+                    "row": 135,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.js.flow"
+            }
         },
         "ActivityIndicator": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 15,
                 "local": "ActivityIndicator"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\ActivityIndicator\\ActivityIndicator.js.flow:50:39,53:1\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 50,
+                    "column": 39
+                },
+                "end": {
+                    "row": 53,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ActivityIndicator/ActivityIndicator.js.flow"
+            }
         },
         "Button": {
             "source": {
@@ -22,7 +44,18 @@
                 "column": 15,
                 "local": "Button"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Button.js.flow:87:15,87:20\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 87,
+                    "column": 15
+                },
+                "end": {
+                    "row": 87,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Button.js.flow"
+            }
         },
         "CheckBox": {
             "source": {
@@ -30,7 +63,18 @@
                 "column": 15,
                 "local": "CheckBox"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\index.js.flow:5:15,5:22\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/index.js.flow"
+            }
         },
         "DatePickerIOS": {
             "source": {
@@ -38,7 +82,18 @@
                 "column": 15,
                 "local": "DatePickerIOS"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\DatePicker\\DatePickerIOS.ios.js.flow:93:15,93:27\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 93,
+                    "column": 15
+                },
+                "end": {
+                    "row": 93,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/DatePicker/DatePickerIOS.ios.js.flow"
+            }
         },
         "DrawerLayoutAndroid": {
             "source": {
@@ -46,7 +101,18 @@
                 "column": 15,
                 "local": "DrawerLayoutAndroid"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\index.js.flow:7:15,7:33\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 15
+                },
+                "end": {
+                    "row": 7,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/index.js.flow"
+            }
         },
         "FlatList": {
             "source": {
@@ -54,7 +120,18 @@
                 "column": 15,
                 "local": "FlatList"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Lists\\FlatList.js.flow:156:15,156:22\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 156,
+                    "column": 15
+                },
+                "end": {
+                    "row": 156,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/FlatList.js.flow"
+            }
         },
         "Image": {
             "source": {
@@ -62,7 +139,18 @@
                 "column": 15,
                 "local": "Image"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Image\\Image.ios.js.flow:45:5,49:25\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 45,
+                    "column": 5
+                },
+                "end": {
+                    "row": 49,
+                    "column": 25
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/Image.ios.js.flow"
+            }
         },
         "ImageBackground": {
             "source": {
@@ -70,7 +158,18 @@
                 "column": 15,
                 "local": "ImageBackground"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Image\\ImageBackground.js.flow:5:15,5:29\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/ImageBackground.js.flow"
+            }
         },
         "InputAccessoryView": {
             "source": {
@@ -78,7 +177,18 @@
                 "column": 15,
                 "local": "InputAccessoryView"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\TextInput\\InputAccessoryView.js.flow:21:15,21:32\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 21,
+                    "column": 15
+                },
+                "end": {
+                    "row": 21,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/TextInput/InputAccessoryView.js.flow"
+            }
         },
         "KeyboardAvoidingView": {
             "source": {
@@ -86,7 +196,18 @@
                 "column": 15,
                 "local": "KeyboardAvoidingView"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Keyboard\\KeyboardAvoidingView.js.flow:41:15,41:34\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 41,
+                    "column": 15
+                },
+                "end": {
+                    "row": 41,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Keyboard/KeyboardAvoidingView.js.flow"
+            }
         },
         "MaskedViewIOS": {
             "source": {
@@ -94,7 +215,18 @@
                 "column": 15,
                 "local": "MaskedViewIOS"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\MaskedView\\MaskedViewIOS.ios.js.flow:20:15,20:27\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 20,
+                    "column": 15
+                },
+                "end": {
+                    "row": 20,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/MaskedView/MaskedViewIOS.ios.js.flow"
+            }
         },
         "Modal": {
             "source": {
@@ -102,7 +234,18 @@
                 "column": 15,
                 "local": "Modal"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Modal\\Modal.js.flow:118:15,118:19\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 118,
+                    "column": 15
+                },
+                "end": {
+                    "row": 118,
+                    "column": 19
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Modal/Modal.js.flow"
+            }
         },
         "Picker": {
             "source": {
@@ -110,7 +253,18 @@
                 "column": 15,
                 "local": "Picker"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Picker\\Picker.js.flow:103:15,103:20\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 103,
+                    "column": 15
+                },
+                "end": {
+                    "row": 103,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Picker/Picker.js.flow"
+            }
         },
         "PickerIOS": {
             "source": {
@@ -118,7 +272,18 @@
                 "column": 15,
                 "local": "PickerIOS"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Picker\\PickerIOS.ios.js.flow:57:15,57:23\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 57,
+                    "column": 15
+                },
+                "end": {
+                    "row": 57,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Picker/PickerIOS.ios.js.flow"
+            }
         },
         "Pressable": {
             "source": {
@@ -126,7 +291,18 @@
                 "column": 15,
                 "local": "Pressable"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Pressable\\Pressable.js.flow:126:24,129:1\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 126,
+                    "column": 24
+                },
+                "end": {
+                    "row": 129,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Pressable/Pressable.js.flow"
+            }
         },
         "ProgressBarAndroid": {
             "source": {
@@ -134,7 +310,18 @@
                 "column": 15,
                 "local": "ProgressBarAndroid"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\index.js.flow:18:15,18:32\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 15
+                },
+                "end": {
+                    "row": 18,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/index.js.flow"
+            }
         },
         "ProgressViewIOS": {
             "source": {
@@ -142,7 +329,18 @@
                 "column": 15,
                 "local": "ProgressViewIOS"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\ProgressViewIOS\\RCTProgressViewNativeComponent.js.flow:24:24,24:49\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 24,
+                    "column": 24
+                },
+                "end": {
+                    "row": 24,
+                    "column": 49
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ProgressViewIOS/RCTProgressViewNativeComponent.js.flow"
+            }
         },
         "SafeAreaView": {
             "source": {
@@ -150,7 +348,18 @@
                 "column": 15,
                 "local": "SafeAreaView"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\SafeAreaView\\SafeAreaView.js.flow:15:23,18:1\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 15,
+                    "column": 23
+                },
+                "end": {
+                    "row": 18,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/SafeAreaView/SafeAreaView.js.flow"
+            }
         },
         "ScrollView": {
             "source": {
@@ -158,7 +367,18 @@
                 "column": 15,
                 "local": "ScrollView"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\ScrollView\\ScrollView.js.flow:674:5,683:30\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 674,
+                    "column": 5
+                },
+                "end": {
+                    "row": 683,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
+            }
         },
         "SectionList": {
             "source": {
@@ -166,7 +386,18 @@
                 "column": 15,
                 "local": "SectionList"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Lists\\SectionList.js.flow:112:15,112:25\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 112,
+                    "column": 15
+                },
+                "end": {
+                    "row": 112,
+                    "column": 25
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/SectionList.js.flow"
+            }
         },
         "SegmentedControlIOS": {
             "source": {
@@ -174,7 +405,18 @@
                 "column": 15,
                 "local": "SegmentedControlIOS"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\index.js.flow:23:15,23:33\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 23,
+                    "column": 15
+                },
+                "end": {
+                    "row": 23,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/index.js.flow"
+            }
         },
         "Slider": {
             "source": {
@@ -182,7 +424,18 @@
                 "column": 15,
                 "local": "Slider"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Slider\\Slider.js.flow:118:28,121:1\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 118,
+                    "column": 28
+                },
+                "end": {
+                    "row": 121,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Slider/Slider.js.flow"
+            }
         },
         "Switch": {
             "source": {
@@ -190,7 +443,18 @@
                 "column": 15,
                 "local": "Switch"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Switch\\Switch.js.flow:74:15,74:20\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 74,
+                    "column": 15
+                },
+                "end": {
+                    "row": 74,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Switch/Switch.js.flow"
+            }
         },
         "RefreshControl": {
             "source": {
@@ -198,7 +462,18 @@
                 "column": 15,
                 "local": "RefreshControl"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\RefreshControl\\RefreshControl.js.flow:72:15,72:28\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 72,
+                    "column": 15
+                },
+                "end": {
+                    "row": 72,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/RefreshControl/RefreshControl.js.flow"
+            }
         },
         "StatusBar": {
             "source": {
@@ -206,7 +481,18 @@
                 "column": 15,
                 "local": "StatusBar"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\StatusBar\\StatusBar.js.flow:99:15,99:23\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 99,
+                    "column": 15
+                },
+                "end": {
+                    "row": 99,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/StatusBar/StatusBar.js.flow"
+            }
         },
         "Text": {
             "source": {
@@ -214,7 +500,18 @@
                 "column": 15,
                 "local": "Text"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Text\\Text.js.flow:17:5,21:15\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 5
+                },
+                "end": {
+                    "row": 21,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Text/Text.js.flow"
+            }
         },
         "TextInput": {
             "source": {
@@ -222,7 +519,18 @@
                 "column": 15,
                 "local": "TextInput"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\TextInput\\TextInput.js.flow:745:5,754:29\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 745,
+                    "column": 5
+                },
+                "end": {
+                    "row": 754,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/TextInput/TextInput.js.flow"
+            }
         },
         "Touchable": {
             "source": {
@@ -230,7 +538,18 @@
                 "column": 15,
                 "local": "Touchable"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Touchable\\Touchable.js.flow:264:24,277:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 264,
+                    "column": 24
+                },
+                "end": {
+                    "row": 277,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
         },
         "TouchableHighlight": {
             "source": {
@@ -238,7 +557,18 @@
                 "column": 15,
                 "local": "TouchableHighlight"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Touchable\\TouchableHighlight.js.flow:43:25,45:1\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 43,
+                    "column": 25
+                },
+                "end": {
+                    "row": 45,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/TouchableHighlight.js.flow"
+            }
         },
         "TouchableNativeFeedback": {
             "source": {
@@ -246,7 +576,18 @@
                 "column": 15,
                 "local": "TouchableNativeFeedback"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Touchable\\TouchableNativeFeedback.js.flow:87:15,87:37\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 87,
+                    "column": 15
+                },
+                "end": {
+                    "row": 87,
+                    "column": 37
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/TouchableNativeFeedback.js.flow"
+            }
         },
         "TouchableOpacity": {
             "source": {
@@ -254,7 +595,18 @@
                 "column": 15,
                 "local": "TouchableOpacity"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Touchable\\TouchableOpacity.js.flow:32:25,34:1\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 32,
+                    "column": 25
+                },
+                "end": {
+                    "row": 34,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/TouchableOpacity.js.flow"
+            }
         },
         "TouchableWithoutFeedback": {
             "source": {
@@ -262,7 +614,18 @@
                 "column": 15,
                 "local": "TouchableWithoutFeedback"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Touchable\\TouchableWithoutFeedback.js.flow:60:15,60:38\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 60,
+                    "column": 15
+                },
+                "end": {
+                    "row": 60,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/TouchableWithoutFeedback.js.flow"
+            }
         },
         "View": {
             "source": {
@@ -270,7 +633,18 @@
                 "column": 15,
                 "local": "View"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\View\\View.js.flow:10:19,13:1\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 19
+                },
+                "end": {
+                    "row": 13,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/View.js.flow"
+            }
         },
         "VirtualizedList": {
             "source": {
@@ -278,7 +652,18 @@
                 "column": 15,
                 "local": "VirtualizedList"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Lists\\VirtualizedList.js.flow:315:15,315:29\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 315,
+                    "column": 15
+                },
+                "end": {
+                    "row": 315,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizedList.js.flow"
+            }
         },
         "VirtualizedSectionList": {
             "source": {
@@ -286,7 +671,18 @@
                 "column": 15,
                 "local": "VirtualizedSectionList"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Lists\\VirtualizedSectionList.js.flow:122:15,122:36\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 122,
+                    "column": 15
+                },
+                "end": {
+                    "row": 122,
+                    "column": 36
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
+            }
         },
         "ActionSheetIOS": {
             "source": {
@@ -294,7 +690,18 @@
                 "column": 15,
                 "local": "ActionSheetIOS"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\ActionSheetIOS\\ActionSheetIOS.js.flow:5:29,64:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 29
+                },
+                "end": {
+                    "row": 64,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ActionSheetIOS/ActionSheetIOS.js.flow"
+            }
         },
         "Alert": {
             "source": {
@@ -302,7 +709,18 @@
                 "column": 15,
                 "local": "Alert"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Alert\\Alert.js.flow:19:15,19:19\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 19,
+                    "column": 15
+                },
+                "end": {
+                    "row": 19,
+                    "column": 19
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Alert/Alert.js.flow"
+            }
         },
         "Animated": {
             "source": {
@@ -310,7 +728,18 @@
                 "column": 15,
                 "local": "Animated"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\index.js.flow:40:15,40:22\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 40,
+                    "column": 15
+                },
+                "end": {
+                    "row": 40,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/index.js.flow"
+            }
         },
         "Appearance": {
             "source": {
@@ -318,7 +747,18 @@
                 "column": 15,
                 "local": "Appearance"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Utilities\\Appearance.js.flow:7:25,27:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 25
+                },
+                "end": {
+                    "row": 27,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/Appearance.js.flow"
+            }
         },
         "AppRegistry": {
             "source": {
@@ -326,7 +766,18 @@
                 "column": 15,
                 "local": "AppRegistry"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\ReactNative\\AppRegistry.js.flow:34:26,115:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 34,
+                    "column": 26
+                },
+                "end": {
+                    "row": 115,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ReactNative/AppRegistry.js.flow"
+            }
         },
         "AppState": {
             "source": {
@@ -334,7 +785,18 @@
                 "column": 15,
                 "local": "AppState"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\AppState\\AppState.js.flow:54:31,54:66\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 54,
+                    "column": 31
+                },
+                "end": {
+                    "row": 54,
+                    "column": 66
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/AppState/AppState.js.flow"
+            }
         },
         "AsyncStorage": {
             "source": {
@@ -342,7 +804,18 @@
                 "column": 15,
                 "local": "AsyncStorage"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Storage\\AsyncStorage.js.flow:2:27,129:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 27
+                },
+                "end": {
+                    "row": 129,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Storage/AsyncStorage.js.flow"
+            }
         },
         "BackHandler": {
             "source": {
@@ -350,7 +823,18 @@
                 "column": 15,
                 "local": "BackHandler"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Utilities\\BackHandler.ios.js.flow:4:21,14:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 21
+                },
+                "end": {
+                    "row": 14,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/BackHandler.ios.js.flow"
+            }
         },
         "Clipboard": {
             "source": {
@@ -358,7 +842,18 @@
                 "column": 15,
                 "local": "Clipboard"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\Clipboard\\Clipboard.js.flow:2:25,22:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 25
+                },
+                "end": {
+                    "row": 22,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Clipboard/Clipboard.js.flow"
+            }
         },
         "DatePickerAndroid": {
             "source": {
@@ -366,7 +861,18 @@
                 "column": 15,
                 "local": "DatePickerAndroid"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\DatePickerAndroid\\DatePickerAndroid.ios.js.flow:5:15,5:31\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 31
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/DatePickerAndroid/DatePickerAndroid.ios.js.flow"
+            }
         },
         "DeviceInfo": {
             "source": {
@@ -374,7 +880,18 @@
                 "column": 15,
                 "local": "DeviceInfo"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Utilities\\NativeDeviceInfo.js.flow:26:11,26:14\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 26,
+                    "column": 11
+                },
+                "end": {
+                    "row": 26,
+                    "column": 14
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/NativeDeviceInfo.js.flow"
+            }
         },
         "DevSettings": {
             "source": {
@@ -382,7 +899,18 @@
                 "column": 15,
                 "local": "DevSettings"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Utilities\\DevSettings.js.flow:2:11,2:22\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 11
+                },
+                "end": {
+                    "row": 2,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/DevSettings.js.flow"
+            }
         },
         "Dimensions": {
             "source": {
@@ -390,7 +918,18 @@
                 "column": 15,
                 "local": "Dimensions"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Utilities\\Dimensions.js.flow:2:15,2:24\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 15
+                },
+                "end": {
+                    "row": 2,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/Dimensions.js.flow"
+            }
         },
         "Easing": {
             "source": {
@@ -398,7 +937,18 @@
                 "column": 15,
                 "local": "Easing"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Animated\\src\\Easing.js.flow:2:15,2:20\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 15
+                },
+                "end": {
+                    "row": 2,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/Easing.js.flow"
+            }
         },
         "ReactNative": {
             "source": {
@@ -406,7 +956,18 @@
                 "column": 15,
                 "local": "ReactNative"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:160:24,177:1\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 160,
+                    "column": 24
+                },
+                "end": {
+                    "row": 177,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
         },
         "I18nManager": {
             "source": {
@@ -414,7 +975,18 @@
                 "column": 15,
                 "local": "I18nManager"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\ReactNative\\I18nManager.js.flow:7:25,18:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 25
+                },
+                "end": {
+                    "row": 18,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ReactNative/I18nManager.js.flow"
+            }
         },
         "ImagePickerIOS": {
             "source": {
@@ -422,7 +994,18 @@
                 "column": 15,
                 "local": "ImagePickerIOS"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Image\\ImagePickerIOS.js.flow:2:29,39:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 29
+                },
+                "end": {
+                    "row": 39,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/ImagePickerIOS.js.flow"
+            }
         },
         "InteractionManager": {
             "source": {
@@ -430,7 +1013,18 @@
                 "column": 15,
                 "local": "InteractionManager"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Interaction\\InteractionManager.js.flow:5:33,42:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 33
+                },
+                "end": {
+                    "row": 42,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Interaction/InteractionManager.js.flow"
+            }
         },
         "Keyboard": {
             "source": {
@@ -438,7 +1032,18 @@
                 "column": 15,
                 "local": "Keyboard"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\index.js.flow:56:15,56:22\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 56,
+                    "column": 15
+                },
+                "end": {
+                    "row": 56,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/index.js.flow"
+            }
         },
         "LayoutAnimation": {
             "source": {
@@ -446,7 +1051,18 @@
                 "column": 15,
                 "local": "LayoutAnimation"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\LayoutAnimation\\LayoutAnimation.js.flow:63:30,101:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 63,
+                    "column": 30
+                },
+                "end": {
+                    "row": 101,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LayoutAnimation/LayoutAnimation.js.flow"
+            }
         },
         "Linking": {
             "source": {
@@ -454,7 +1070,18 @@
                 "column": 15,
                 "local": "Linking"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Linking\\Linking.js.flow:5:15,5:21\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 21
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Linking/Linking.js.flow"
+            }
         },
         "NativeDialogManagerAndroid": {
             "source": {
@@ -462,7 +1089,18 @@
                 "column": 15,
                 "local": "NativeDialogManagerAndroid"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\NativeModules\\specs\\NativeDialogManagerAndroid.js.flow:35:24,35:28\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 35,
+                    "column": 24
+                },
+                "end": {
+                    "row": 35,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/NativeModules/specs/NativeDialogManagerAndroid.js.flow"
+            }
         },
         "NativeEventEmitter": {
             "source": {
@@ -470,7 +1108,18 @@
                 "column": 15,
                 "local": "NativeEventEmitter"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\EventEmitter\\NativeEventEmitter.js.flow:13:15,13:32\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 13,
+                    "column": 15
+                },
+                "end": {
+                    "row": 13,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
+            }
         },
         "Networking": {
             "source": {
@@ -478,7 +1127,18 @@
                 "column": 15,
                 "local": "Networking"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Network\\RCTNetworking.ios.js.flow:8:15,8:27\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 15
+                },
+                "end": {
+                    "row": 8,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Network/RCTNetworking.ios.js.flow"
+            }
         },
         "PanResponder": {
             "source": {
@@ -486,7 +1146,18 @@
                 "column": 15,
                 "local": "PanResponder"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Interaction\\PanResponder.js.flow:90:27,236:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 90,
+                    "column": 27
+                },
+                "end": {
+                    "row": 236,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Interaction/PanResponder.js.flow"
+            }
         },
         "PermissionsAndroid": {
             "source": {
@@ -494,7 +1165,18 @@
                 "column": 15,
                 "local": "PermissionsAndroid"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\PermissionsAndroid\\PermissionsAndroid.js.flow:14:15,14:32\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 15
+                },
+                "end": {
+                    "row": 14,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/PermissionsAndroid/PermissionsAndroid.js.flow"
+            }
         },
         "PixelRatio": {
             "source": {
@@ -502,7 +1184,18 @@
                 "column": 15,
                 "local": "PixelRatio"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Utilities\\PixelRatio.js.flow:2:15,2:24\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 15
+                },
+                "end": {
+                    "row": 2,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/PixelRatio.js.flow"
+            }
         },
         "PushNotificationIOS": {
             "source": {
@@ -510,7 +1203,18 @@
                 "column": 15,
                 "local": "PushNotificationIOS"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\PushNotificationIOS\\PushNotificationIOS.js.flow:38:15,38:33\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 38,
+                    "column": 15
+                },
+                "end": {
+                    "row": 38,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/PushNotificationIOS/PushNotificationIOS.js.flow"
+            }
         },
         "Settings": {
             "source": {
@@ -518,7 +1222,18 @@
                 "column": 15,
                 "local": "Settings"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Settings\\Settings.ios.js.flow:2:23,14:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 23
+                },
+                "end": {
+                    "row": 14,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Settings/Settings.ios.js.flow"
+            }
         },
         "Share": {
             "source": {
@@ -526,7 +1241,18 @@
                 "column": 15,
                 "local": "Share"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Share\\Share.js.flow:21:15,21:19\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 21,
+                    "column": 15
+                },
+                "end": {
+                    "row": 21,
+                    "column": 19
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Share/Share.js.flow"
+            }
         },
         "StatusBarIOS": {
             "source": {
@@ -534,7 +1260,18 @@
                 "column": 15,
                 "local": "StatusBarIOS"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\StatusBar\\StatusBarIOS.js.flow:5:15,5:26\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/StatusBar/StatusBarIOS.js.flow"
+            }
         },
         "StyleSheet": {
             "source": {
@@ -542,7 +1279,18 @@
                 "column": 15,
                 "local": "StyleSheet"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:63:25,176:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 63,
+                    "column": 25
+                },
+                "end": {
+                    "row": 176,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
         },
         "Systrace": {
             "source": {
@@ -550,7 +1298,18 @@
                 "column": 15,
                 "local": "Systrace"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Performance\\Systrace.js.flow:2:23,29:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 23
+                },
+                "end": {
+                    "row": 29,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Performance/Systrace.js.flow"
+            }
         },
         "ToastAndroid": {
             "source": {
@@ -558,7 +1317,18 @@
                 "column": 15,
                 "local": "ToastAndroid"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\index.js.flow:71:15,71:26\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 71,
+                    "column": 15
+                },
+                "end": {
+                    "row": 71,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/index.js.flow"
+            }
         },
         "TurboModuleRegistry": {
             "source": {
@@ -566,7 +1336,18 @@
                 "column": 20,
                 "local": "TurboModuleRegistry"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\TurboModule\\TurboModuleRegistry.js.flow:0:1,0:0\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 0,
+                    "column": 1
+                },
+                "end": {
+                    "row": 0,
+                    "column": 0
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/TurboModule/TurboModuleRegistry.js.flow"
+            }
         },
         "TVEventHandler": {
             "source": {
@@ -574,7 +1355,18 @@
                 "column": 15,
                 "local": "TVEventHandler"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Components\\AppleTV\\TVEventHandler.js.flow:7:15,7:28\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 15
+                },
+                "end": {
+                    "row": 7,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/AppleTV/TVEventHandler.js.flow"
+            }
         },
         "UIManager": {
             "source": {
@@ -582,7 +1374,18 @@
                 "column": 15,
                 "local": "UIManager"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\ReactNative\\UIManager.js.flow:4:11,4:30\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 11
+                },
+                "end": {
+                    "row": 4,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ReactNative/UIManager.js.flow"
+            }
         },
         "useColorScheme": {
             "source": {
@@ -590,7 +1393,18 @@
                 "column": 15,
                 "local": "useColorScheme"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Utilities\\useColorScheme.js.flow:4:32,4:51\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 32
+                },
+                "end": {
+                    "row": 4,
+                    "column": 51
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/useColorScheme.js.flow"
+            }
         },
         "useWindowDimensions": {
             "source": {
@@ -598,7 +1412,18 @@
                 "column": 15,
                 "local": "useWindowDimensions"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Utilities\\useWindowDimensions.js.flow:4:37,4:54\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 37
+                },
+                "end": {
+                    "row": 4,
+                    "column": 54
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/useWindowDimensions.js.flow"
+            }
         },
         "UTFSequence": {
             "source": {
@@ -606,7 +1431,18 @@
                 "column": 15,
                 "local": "UTFSequence"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\UTFSequence.js.flow:2:26,17:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 26
+                },
+                "end": {
+                    "row": 17,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/UTFSequence.js.flow"
+            }
         },
         "Vibration": {
             "source": {
@@ -614,7 +1450,18 @@
                 "column": 15,
                 "local": "Vibration"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Vibration\\Vibration.js.flow:2:24,15:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 24
+                },
+                "end": {
+                    "row": 15,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Vibration/Vibration.js.flow"
+            }
         },
         "YellowBox": {
             "source": {
@@ -622,7 +1469,18 @@
                 "column": 15,
                 "local": "YellowBox"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\YellowBox\\YellowBoxDeprecated.js.flow:10:5,16:3\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 5
+                },
+                "end": {
+                    "row": 16,
+                    "column": 3
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/YellowBox/YellowBoxDeprecated.js.flow"
+            }
         },
         "LogBox": {
             "source": {
@@ -630,7 +1488,18 @@
                 "column": 15,
                 "local": "LogBox"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\LogBox\\LogBox.js.flow:4:25,10:1\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 25
+                },
+                "end": {
+                    "row": 10,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/LogBox.js.flow"
+            }
         },
         "RCTDeviceEventEmitter": {
             "source": {
@@ -638,7 +1507,18 @@
                 "column": 15,
                 "local": "RCTDeviceEventEmitter"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\EventEmitter\\RCTDeviceEventEmitter.js.flow:9:15,9:35\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 15
+                },
+                "end": {
+                    "row": 9,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/EventEmitter/RCTDeviceEventEmitter.js.flow"
+            }
         },
         "RCTNativeAppEventEmitter": {
             "source": {
@@ -646,7 +1526,18 @@
                 "column": 15,
                 "local": "RCTNativeAppEventEmitter"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\index.js.flow:82:15,82:38\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 82,
+                    "column": 15
+                },
+                "end": {
+                    "row": 82,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/index.js.flow"
+            }
         },
         "NativeModules": {
             "source": {
@@ -654,7 +1545,18 @@
                 "column": 15,
                 "local": "NativeModules"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\BatchedBridge\\NativeModules.js.flow:12:28,12:61\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 28
+                },
+                "end": {
+                    "row": 12,
+                    "column": 61
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/BatchedBridge/NativeModules.js.flow"
+            }
         },
         "Platform": {
             "source": {
@@ -662,7 +1564,18 @@
                 "column": 15,
                 "local": "Platform"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Utilities\\Platform.ios.js.flow:9:23,32:2\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 23
+                },
+                "end": {
+                    "row": 32,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/Platform.ios.js.flow"
+            }
         },
         "processColor": {
             "source": {
@@ -670,7 +1583,18 @@
                 "column": 15,
                 "local": "processColor"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\processColor.js.flow:7:30,9:23\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
         },
         "PlatformColor": {
             "source": {
@@ -678,7 +1602,18 @@
                 "column": 16,
                 "local": "PlatformColor"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\PlatformColorValueTypes.ios.js.flow:13:28,13:66\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 13,
+                    "column": 28
+                },
+                "end": {
+                    "row": 13,
+                    "column": 66
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/PlatformColorValueTypes.ios.js.flow"
+            }
         },
         "DynamicColorIOS": {
             "source": {
@@ -686,7 +1621,18 @@
                 "column": 16,
                 "local": "DynamicColorIOS"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\PlatformColorValueTypesIOS.ios.js.flow:9:30,9:72\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 72
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/PlatformColorValueTypesIOS.ios.js.flow"
+            }
         },
         "ColorAndroid": {
             "source": {
@@ -694,7 +1640,18 @@
                 "column": 16,
                 "local": "ColorAndroid"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\StyleSheet\\PlatformColorValueTypesAndroid.js.flow:4:27,4:55\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 27
+                },
+                "end": {
+                    "row": 4,
+                    "column": 55
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/PlatformColorValueTypesAndroid.js.flow"
+            }
         },
         "RootTagContext": {
             "source": {
@@ -702,7 +1659,18 @@
                 "column": 15,
                 "local": "RootTagContext"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\ReactNative\\RootTagContext.js.flow:2:25,2:45\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 25
+                },
+                "end": {
+                    "row": 2,
+                    "column": 45
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ReactNative/RootTagContext.js.flow"
+            }
         },
         "DeprecatedColorPropType": {
             "source": {
@@ -710,7 +1678,18 @@
                 "column": 15,
                 "local": "DeprecatedColorPropType"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\index.js.flow:90:15,90:37\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 90,
+                    "column": 15
+                },
+                "end": {
+                    "row": 90,
+                    "column": 37
+                },
+                "fromLibrary": false,
+                "file": "/index.js.flow"
+            }
         },
         "DeprecatedEdgeInsetsPropType": {
             "source": {
@@ -718,7 +1697,18 @@
                 "column": 15,
                 "local": "DeprecatedEdgeInsetsPropType"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\DeprecatedPropTypes\\DeprecatedEdgeInsetsPropType.js.flow:2:43,10:1\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 43
+                },
+                "end": {
+                    "row": 10,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedEdgeInsetsPropType.js.flow"
+            }
         },
         "DeprecatedPointPropType": {
             "source": {
@@ -726,7 +1716,18 @@
                 "column": 15,
                 "local": "DeprecatedPointPropType"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\DeprecatedPropTypes\\DeprecatedPointPropType.js.flow:2:28,8:1\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 28
+                },
+                "end": {
+                    "row": 8,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedPointPropType.js.flow"
+            }
         },
         "DeprecatedViewPropTypes": {
             "source": {
@@ -734,7 +1735,18 @@
                 "column": 15,
                 "local": "DeprecatedViewPropTypes"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\index.js.flow:93:15,93:37\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 93,
+                    "column": 15
+                },
+                "end": {
+                    "row": 93,
+                    "column": 37
+                },
+                "fromLibrary": false,
+                "file": "/index.js.flow"
+            }
         },
         "_HostComponentInternal": {
             "source": {
@@ -742,7 +1754,18 @@
                 "column": 14,
                 "local": "HostComponent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Renderer\\shims\\ReactNativeTypes.js.flow:96:6,96:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 96,
+                    "column": 6
+                },
+                "end": {
+                    "row": 96,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
         }
     },
     "decls": [

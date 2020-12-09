@@ -6,7 +6,18 @@
                 "column": 8,
                 "local": "NativeEventEmitter"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\EventEmitter\\NativeEventEmitter.js.flow:17:15,17:32\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 15
+                },
+                "end": {
+                    "row": 17,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
+            }
         },
         "NativeResponseType": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "NativeResponseType"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Network\\XMLHttpRequest.js.flow:4:6,4:23\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 6
+                },
+                "end": {
+                    "row": 4,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Network/XMLHttpRequest.js.flow"
+            }
         },
         "RequestBody": {
             "source": {
@@ -22,7 +44,18 @@
                 "column": 14,
                 "local": "RequestBody"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Network\\convertRequestBody.js.flow:7:6,7:16\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 6
+                },
+                "end": {
+                    "row": 7,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Network/convertRequestBody.js.flow"
+            }
         }
     },
     "decls": [

@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "ViewProps"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewPropTypes.js.flow:377:6,377:14\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 377,
+                    "column": 6
+                },
+                "end": {
+                    "row": 377,
+                    "column": 14
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
+            }
         },
         "ViewNativeComponent": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 8,
                 "local": "ViewNativeComponent"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\View\\ViewNativeComponent.js.flow:7:32,7:55\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 32
+                },
+                "end": {
+                    "row": 7,
+                    "column": 55
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ViewNativeComponent.js.flow"
+            }
         }
     },
     "decls": [

@@ -6,7 +6,18 @@
                 "column": 8,
                 "local": "Pressability"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Pressability\\Pressability.js.flow:153:15,153:26\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 153,
+                    "column": 15
+                },
+                "end": {
+                    "row": 153,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Pressability/Pressability.js.flow"
+            }
         },
         "TouchableWithoutFeedback": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 15,
                 "local": "TouchableWithoutFeedback"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\Touchable\\TouchableWithoutFeedback.js.flow:60:15,60:38\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 60,
+                    "column": 15
+                },
+                "end": {
+                    "row": 60,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/TouchableWithoutFeedback.js.flow"
+            }
         },
         "React": {
             "source": {

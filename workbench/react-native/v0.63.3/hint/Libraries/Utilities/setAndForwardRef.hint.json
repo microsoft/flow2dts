@@ -5,16 +5,14 @@
                 "row": 2,
                 "column": 14,
                 "local": "ElementRef"
-            },
-            "stdout": "C:\\Users\\zihanc\\AppData\\Local\\Temp\\flow\\flowlib_2b63dd24\\react.js:282:23,282:32\r\n"
+            }
         },
         "Ref": {
             "source": {
                 "row": 3,
                 "column": 14,
                 "local": "Ref"
-            },
-            "stdout": "C:\\Users\\zihanc\\AppData\\Local\\Temp\\flow\\flowlib_2b63dd24\\react.js:267:23,267:25\r\n"
+            }
         }
     },
     "decls": [

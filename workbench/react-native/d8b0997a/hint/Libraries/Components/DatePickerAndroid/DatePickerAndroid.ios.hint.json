@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "Options"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\DatePickerAndroid\\DatePickerAndroidTypes.js.flow:2:6,2:12\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 6
+                },
+                "end": {
+                    "row": 2,
+                    "column": 12
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/DatePickerAndroid/DatePickerAndroidTypes.js.flow"
+            }
         },
         "DatePickerOpenAction": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "DatePickerOpenAction"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\DatePickerAndroid\\DatePickerAndroidTypes.js.flow:11:6,11:25\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 6
+                },
+                "end": {
+                    "row": 11,
+                    "column": 25
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/DatePickerAndroid/DatePickerAndroidTypes.js.flow"
+            }
         }
     },
     "decls": [

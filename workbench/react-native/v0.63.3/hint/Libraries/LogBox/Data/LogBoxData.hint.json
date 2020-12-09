@@ -13,7 +13,18 @@
                 "column": 8,
                 "local": "LogBoxLog"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\LogBox\\Data\\LogBoxLog.js.flow:25:15,25:23\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 25,
+                    "column": 15
+                },
+                "end": {
+                    "row": 25,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/Data/LogBoxLog.js.flow"
+            }
         },
         "LogLevel": {
             "source": {
@@ -21,7 +32,18 @@
                 "column": 14,
                 "local": "LogLevel"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\LogBox\\Data\\LogBoxLog.js.flow:10:6,10:13\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 6
+                },
+                "end": {
+                    "row": 10,
+                    "column": 13
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/Data/LogBoxLog.js.flow"
+            }
         },
         "Message": {
             "source": {
@@ -29,7 +51,18 @@
                 "column": 14,
                 "local": "Message"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\LogBox\\Data\\parseLogBoxLog.js.flow:23:6,23:12\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 23,
+                    "column": 6
+                },
+                "end": {
+                    "row": 23,
+                    "column": 12
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/Data/parseLogBoxLog.js.flow"
+            }
         },
         "Category": {
             "source": {
@@ -37,7 +70,18 @@
                 "column": 14,
                 "local": "Category"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\LogBox\\Data\\parseLogBoxLog.js.flow:11:6,11:13\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 6
+                },
+                "end": {
+                    "row": 11,
+                    "column": 13
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/Data/parseLogBoxLog.js.flow"
+            }
         },
         "ComponentStack": {
             "source": {
@@ -45,7 +89,18 @@
                 "column": 14,
                 "local": "ComponentStack"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\LogBox\\Data\\parseLogBoxLog.js.flow:37:6,37:19\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 37,
+                    "column": 6
+                },
+                "end": {
+                    "row": 37,
+                    "column": 19
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/Data/parseLogBoxLog.js.flow"
+            }
         },
         "ExtendedExceptionData": {
             "source": {
@@ -53,7 +108,18 @@
                 "column": 14,
                 "local": "ExtendedExceptionData"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\LogBox\\Data\\parseLogBoxLog.js.flow:5:6,5:26\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/Data/parseLogBoxLog.js.flow"
+            }
         },
         "ExtendedError": {
             "source": {
@@ -61,7 +127,18 @@
                 "column": 14,
                 "local": "ExtendedError"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\v0.63.3\\inputs\\Libraries\\Core\\Devtools\\parseErrorStack.js.flow:4:6,4:18\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 6
+                },
+                "end": {
+                    "row": 4,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Core/Devtools/parseErrorStack.js.flow"
+            }
         }
     },
     "decls": [

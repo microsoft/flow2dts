@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "DangerouslyImpreciseStyle"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:37:6,37:30\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 37,
+                    "column": 6
+                },
+                "end": {
+                    "row": 37,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
         },
         "DangerouslyImpreciseStyleProp": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "DangerouslyImpreciseStyleProp"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\StyleSheet.js.flow:24:6,24:34\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 24,
+                    "column": 6
+                },
+                "end": {
+                    "row": 24,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
         }
     },
     "decls": [
