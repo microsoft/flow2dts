@@ -14,7 +14,7 @@
                 "column": 14,
                 "local": "NativeColorValue"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\processColor.js.flow:3:14,3:29\r\n"
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\PlatformColorValueTypes.ios.js.flow:5:13,5:28\r\n"
         }
     },
     "decls": [

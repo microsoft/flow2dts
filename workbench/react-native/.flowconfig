@@ -1,3 +1,8 @@
 [ignore]
 .*\.ts
 .*\.json
+
+[options]
+module.file_ext=.ios.js
+module.file_ext=.android.js
+module.file_ext=.js

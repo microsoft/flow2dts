@@ -6,7 +6,7 @@
                 "column": 15,
                 "local": "AccessibilityInfo"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\index.js.flow:2:15,2:31\r\n"
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\AccessibilityInfo\\AccessibilityInfo.ios.js.flow:16:32,135:2\r\n"
         },
         "ActivityIndicator": {
             "source": {
@@ -30,7 +30,7 @@
                 "column": 15,
                 "local": "DatePickerIOS"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\index.js.flow:5:15,5:27\r\n"
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\DatePicker\\DatePickerIOS.ios.js.flow:93:15,93:27\r\n"
         },
         "DrawerLayoutAndroid": {
             "source": {
@@ -54,7 +54,7 @@
                 "column": 15,
                 "local": "Image"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\index.js.flow:8:15,8:19\r\n"
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Image\\Image.ios.js.flow:45:5,49:25\r\n"
         },
         "ImageBackground": {
             "source": {
@@ -86,7 +86,7 @@
                 "column": 15,
                 "local": "MaskedViewIOS"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\index.js.flow:12:15,12:27\r\n"
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\MaskedView\\MaskedViewIOS.ios.js.flow:20:15,20:27\r\n"
         },
         "Modal": {
             "source": {
@@ -110,7 +110,7 @@
                 "column": 15,
                 "local": "PickerIOS"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\index.js.flow:15:15,15:23\r\n"
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\Picker\\PickerIOS.ios.js.flow:57:15,57:23\r\n"
         },
         "Pressable": {
             "source": {
@@ -134,7 +134,7 @@
                 "column": 15,
                 "local": "ProgressViewIOS"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\index.js.flow:18:15,18:29\r\n"
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\ProgressViewIOS\\RCTProgressViewNativeComponent.js.flow:24:24,24:49\r\n"
         },
         "RefreshControl": {
             "source": {
@@ -342,7 +342,7 @@
                 "column": 15,
                 "local": "BackHandler"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\index.js.flow:45:15,45:25\r\n"
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Utilities\\BackHandler.ios.js.flow:4:21,14:2\r\n"
         },
         "Clipboard": {
             "source": {
@@ -358,7 +358,7 @@
                 "column": 15,
                 "local": "DatePickerAndroid"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\index.js.flow:47:15,47:31\r\n"
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Components\\DatePickerAndroid\\DatePickerAndroid.ios.js.flow:5:15,5:31\r\n"
         },
         "DeviceInfo": {
             "source": {
@@ -478,7 +478,7 @@
                 "column": 15,
                 "local": "Networking"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\index.js.flow:62:15,62:24\r\n"
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Network\\RCTNetworking.ios.js.flow:8:15,8:27\r\n"
         },
         "PanResponder": {
             "source": {
@@ -518,7 +518,7 @@
                 "column": 15,
                 "local": "Settings"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\index.js.flow:67:15,67:22\r\n"
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Settings\\Settings.ios.js.flow:2:23,14:2\r\n"
         },
         "Share": {
             "source": {
@@ -622,7 +622,7 @@
                 "column": 16,
                 "local": "DynamicColorIOS"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\PlatformColorValueTypesIOS.js.flow:9:30,9:72\r\n"
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\PlatformColorValueTypesIOS.ios.js.flow:9:30,9:72\r\n"
         },
         "NativeModules": {
             "source": {
@@ -638,7 +638,7 @@
                 "column": 15,
                 "local": "Platform"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\index.js.flow:83:15,83:22\r\n"
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\Utilities\\Platform.ios.js.flow:9:23,37:2\r\n"
         },
         "PlatformColor": {
             "source": {
@@ -646,7 +646,7 @@
                 "column": 16,
                 "local": "PlatformColor"
             },
-            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\index.js.flow:84:16,84:28\r\n"
+            "stdout": "C:\\Code\\ZihanChen-MSFT\\flow2dts\\workbench\\react-native\\d8b0997a\\inputs\\Libraries\\StyleSheet\\PlatformColorValueTypes.ios.js.flow:13:28,13:66\r\n"
         },
         "processColor": {
             "source": {
