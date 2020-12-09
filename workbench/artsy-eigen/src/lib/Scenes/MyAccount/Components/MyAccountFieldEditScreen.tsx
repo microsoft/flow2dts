@@ -4,29 +4,21 @@ import { goBack } from "lib/navigation/navigate"
 import { useScreenDimensions } from "lib/utils/useScreenDimensions"
 import { Sans } from "palette"
 import React, { useImperativeHandle, useRef, useState } from "react"
-import {
-  Alert,
-  AlertButton,
-  AlertOptions,
-  AlertStatic,
-  KeyboardAvoidingView,
-  ScrollView,
-  TouchableOpacity,
-  ViewStyle,
-} from "react-native"
+import { Alert, KeyboardAvoidingView, ScrollView, TouchableOpacity, ViewStyle } from "react-native"
 
 export interface MyAccountFieldEditScreen {
   scrollToEnd(): void
   save(): Promise<void>
 }
 
-export type AlertArgs = [title: string, message?: string, buttons?: AlertButton[], options?: AlertOptions]
+// export type AlertArgs = [title: string, message?: string, buttons?: AlertButton[], options?: AlertOptions]
+export type AlertArgs = Parameters<typeof Alert.alert>
 
 export interface MyAccountFieldEditScreenProps {
   title: string
   canSave: boolean
   contentContainerStyle?: ViewStyle
-  onSave(dismiss: () => void, alert: AlertStatic["alert"]): Promise<any>
+  onSave(dismiss: () => void, alert: typeof Alert.alert): Promise<any>
 }
 
 export const MyAccountFieldEditScreen = React.forwardRef<
@@ -38,7 +30,7 @@ export const MyAccountFieldEditScreen = React.forwardRef<
   const scrollViewRef = useRef<ScrollView>(null)
   const screen = useScreenDimensions()
 
-  const doTheAlert: AlertStatic["alert"] = (...args) => {
+  const doTheAlert: typeof Alert.alert = (...args) => {
     afterLoadingAlert.current = args
   }
 

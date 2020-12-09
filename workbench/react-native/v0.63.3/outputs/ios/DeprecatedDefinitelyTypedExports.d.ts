@@ -93,6 +93,35 @@ export { Props as TextInputProps } from "./Libraries/Components/TextInput/TextIn
 export type FlatListProps<ItemT> = import("./Libraries/Lists/FlatList").Props<ItemT>
 
 /**
- * @deprecated Instead use `import("reac-native/Libraries/Lists/ViewabilityHelper").ViewToken`.
+ * @deprecated Instead use `import("react-native/Components/ScrollView/ScrollView").Props`.
+ */
+export type ScrollViewProps = import("./Libraries/Components/ScrollView/ScrollView").Props
+/**
+ * @deprecated Instead use `import("react-native/Components/Switch/Switch").Props`.
+ */
+export type SwitchProps = import("./Libraries/Components/Switch/Switch").Props
+
+/**
+ * @deprecated Instead use `import("react-native/Libraries/Lists/ViewabilityHelper").ViewToken`.
  */
 export { ViewToken } from "./Libraries/Lists/ViewabilityHelper"
+
+/**
+ * @deprecated Instead use `import("react-native/Libraries/Types/CoreEventTypes").Layout`.
+ */
+export type LayoutRectangle = import("./Libraries/Types/CoreEventTypes").Layout
+
+/**
+ * @deprecated Instead use `import("react-native/Libraries/Image/ImageSource").ImageURISource`.
+ */
+export type ImageURISource = import("./Libraries/Image/ImageSource").ImageURISource
+
+/**
+ * @deprecated Instead use `import("react-native/Libraries/vendor/emitter/EmitterSubscription")`.
+ */
+export { default as EmitterSubscription } from "./Libraries/vendor/emitter/EmitterSubscription"
+
+/**
+ * @deprecated Instead use `import("react-native/Libraries/Alert/Alert").Buttons`.
+ */
+export type AlertButton = import("./Libraries/Alert/Alert").Buttons

@@ -2,6 +2,13 @@ import type { ViewDescriptor } from "lib/navigation/navigate"
 import { PushAuthorizationStatus } from "lib/Scenes/MyProfile/MyProfilePushNotifications"
 import type { NativeState } from "lib/store/NativeModel"
 
+declare module "react-native" {
+  /**
+   * @deprecated This no longer exists
+   */
+  export type Route = any
+}
+
 declare module "react-native/outputs/ios/Libraries/BatchedBridge/NativeModules" {
   interface NativeModules {
     ARTemporaryAPIModule: {

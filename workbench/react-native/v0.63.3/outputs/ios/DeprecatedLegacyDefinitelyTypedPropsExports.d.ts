@@ -18,7 +18,7 @@ import {
   // ToolbarAndroidProps,
   // ViewPagerAndroidProps,
   // SegmentedControlIOSProps,
-  // ScrollViewProps,
+  ScrollViewProps,
   // ScrollViewPropsIOS,
   // ScrollViewPropsAndroid,
   // InputAccessoryViewProps,
@@ -65,7 +65,7 @@ import {
   // StatusBarProps,
   // StatusBarPropsIOS,
   // StatusBarPropsAndroid,
-  // SwitchProps,
+  SwitchProps,
   // SwitchPropsIOS,
 } from "react-native"
 
@@ -120,8 +120,8 @@ export type ViewProperties = ViewProps
 // /** @deprecated Use SegmentedControlIOSProps */
 // export type SegmentedControlIOSProperties = SegmentedControlIOSProps
 
-// /** @deprecated Use ScrollViewProps */
-// export type ScrollViewProperties = ScrollViewProps
+/** @deprecated Use ScrollViewProps */
+export type ScrollViewProperties = ScrollViewProps
 
 // /** @deprecated Use ScrollViewPropsIOS */
 // export type ScrollViewPropertiesIOS = ScrollViewPropsIOS
@@ -261,8 +261,8 @@ export type TouchableHighlightProperties = TouchableHighlightProps
 // /** @deprecated Use StatusBarPropsAndroid */
 // export type StatusBarPropertiesAndroid = StatusBarPropsAndroid
 
-// /** @deprecated Use SwitchProps */
-// export type SwitchProperties = SwitchProps
+/** @deprecated Use SwitchProps */
+export type SwitchProperties = SwitchProps
 
 // /** @deprecated Use SwitchPropsIOS */
 // export type SwitchPropertiesIOS = SwitchPropsIOS
