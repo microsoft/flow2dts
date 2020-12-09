@@ -7,7 +7,7 @@ import path from "path"
 import fs from "fs"
 import chalk from "chalk"
 
-import { convert } from "./convert"
+import { singleFlow2Hint } from "./singleFlow2Hint"
 
 const FLOW_EXTNAME = ".js.flow"
 const HINT_EXTNAME = ".hint.json"
@@ -35,7 +35,7 @@ async function run({
       successCount++
     } else {
       console.log(`⚒️ ${chalk.dim(relativePath(cwd, filename))}`)
-      await convert({ rootDir, filename, outFilename }).then((outFilename) => {
+      await singleFlow2Hint({ rootDir, filename, outFilename }).then((outFilename) => {
         console.log(chalk.green(`✓ ${relativePath(cwd, outFilename)}`))
         successCount++
       })

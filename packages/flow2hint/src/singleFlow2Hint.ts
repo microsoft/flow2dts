@@ -1,6 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
+import { HintPos, HintIdentifier, HintResolved, HintDecl, HintFile } from "./hintfile"
 import { Visitor, types as t } from "@babel/core"
 import * as babelParser from "@babel/parser"
 import babelTraverse from "@babel/traverse"
@@ -9,34 +10,6 @@ import path from "path"
 import fs from "fs"
 import { exec, spawn } from "child_process"
 import chalk from "chalk"
-
-interface HintPos {
-  row: number
-  column: number
-}
-
-interface HintIdentifier extends HintPos {
-  local: string
-}
-
-interface HintResolved extends HintPos {
-  file: string
-}
-
-interface HintImport {
-  source: HintIdentifier
-  resolved?: HintResolved
-  stdout?: string
-}
-
-interface HintDecl extends HintIdentifier {
-  type: "type" | "value" | "class"
-}
-
-interface HintFile {
-  imports: { [key: string]: HintImport }
-  decls: HintDecl[]
-}
 
 function id2hint(id: t.Identifier): HintIdentifier {
   return {
@@ -55,7 +28,7 @@ function id2decl(id: t.Identifier, t: HintDecl["type"]): HintDecl {
   }
 }
 
-function pluginFlow2Hint(rootDir: string, filename: string): Visitor<HintFile> {
+function flowImportAndDeclVisitor(rootDir: string, filename: string): Visitor<HintFile> {
   return {
     ImportDeclaration: {
       exit(path, state) {
@@ -166,7 +139,9 @@ function pluginFlow2Hint(rootDir: string, filename: string): Visitor<HintFile> {
 
 const FLOW_BIN = require.resolve("flow-bin/cli.js")
 
-export async function convert({
+const regexStdout = /^(.+):(\d+):(\d+),(\d+):(\d+)/
+
+export async function singleFlow2Hint({
   rootDir,
   filename,
   outFilename,
@@ -175,6 +150,8 @@ export async function convert({
   filename: string
   outFilename: string
 }): Promise<string> {
+  const normalizedRootDir = rootDir.replace(/\\/g, "/")
+
   const flowCode = fs.readFileSync(filename, { encoding: "utf8" })
   const flowAst = babelParser.parse(flowCode, {
     plugins: ["flow"],
@@ -183,7 +160,7 @@ export async function convert({
   })
 
   const hint: HintFile = { imports: {}, decls: [] }
-  babelTraverse<HintFile>(flowAst, pluginFlow2Hint(rootDir, filename), undefined, hint)
+  babelTraverse<HintFile>(flowAst, flowImportAndDeclVisitor(rootDir, filename), undefined, hint)
 
   for (const key in hint.imports) {
     const hintImport = hint.imports[key]
@@ -204,8 +181,15 @@ export async function convert({
 
       spawnResult.stdout.on("data", (data) => {
         if (!resolved) {
-          hintImport.stdout = `${data}`
           console.log(chalk.blueBright(`${data}`))
+          const match = `${data}`.match(regexStdout)
+          if (match) {
+            const begin: HintPos = { row: +match[2], column: +match[3] }
+            const end: HintPos = { row: +match[4], column: +match[5] }
+            const file = match[1].replace(/\\/g, "/")
+            const fromLibrary = file.substr(0, normalizedRootDir.length) === normalizedRootDir
+            hintImport.resolved = { begin, end, file, fromLibrary }
+          }
         }
       })
       spawnResult.stderr.on("data", (data) => {
