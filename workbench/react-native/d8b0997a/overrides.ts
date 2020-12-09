@@ -102,63 +102,12 @@ const visitors: OverridesVisitors = {
       },
     },
   },
-  // These are convenience overrides for TS users of RN.
   "index.d.ts": {
     Program: {
       exit(path) {
-        const deprecatedConvenienceExports: [typeName: string, declaration: string, preferDeclaration: string][] = [
-          [
-            "GestureResponderEvent",
-            'import("./Libraries/Types/CoreEventTypes").PressEvent',
-            'import("react-native/Libraries/Types/CoreEventTypes").PressEvent',
-          ],
-          [
-            "NativeScrollEvent",
-            'import("./Libraries/Types/CoreEventTypes").ScrollEvent["nativeEvent"]',
-            'import("react-native/Libraries/Types/CoreEventTypes").ScrollEvent',
-          ],
-          [
-            "NativeSyntheticEvent<T>",
-            'import("./Libraries/Types/CoreEventTypes").SyntheticEvent<T>',
-            'import("react-native/Libraries/Types/CoreEventTypes").ScrollEvent<T>',
-          ],
-          [
-            "ViewStyle",
-            'import("./Libraries/StyleSheet/StyleSheet").ViewStyle',
-            'import("react-native/Libraries/StyleSheet/StyleSheet").ViewStyle',
-          ],
-          // TODO: Test this with StyleSheet.flatten, as per current DT StyleProp typing.
-          [
-            "StyleProp<T>",
-            'null | void | T | false | "" | ReadonlyArray<StyleProp<T>>;',
-            'import("react-native/Libraries/StyleSheet/StyleSheetTypes").(View|Text|Image)StyleProp',
-          ],
-        ]
-        // These are props interfaces for each component that exist in the manual DT RN types.
-        // TODO: Should we be getting these from `$f2tExportDefault` or should we `import("..").Foo` them?
-        ;["Image", "Text", "TouchableWithoutFeedback", "View"].forEach((componentName) => {
-          deprecatedConvenienceExports.push([
-            `${componentName}Props`,
-            `React.ComponentPropsWithoutRef<typeof $f2tExportDefault.${componentName}>`,
-            `React.ComponentPropsWithoutRef<typeof ${componentName}>`,
-          ])
-        })
-        path.pushContainer(
-          "body",
-          ast(
-            deprecatedConvenienceExports
-              .map(
-                ([typeName, declaration, preferDeclaration]) => `
-                  /**
-                   * @deprecated Instead use \`${preferDeclaration}\`.
-                   */
-                  export type ${typeName} = ${declaration}
-                `
-              )
-              .join("\n"),
-            { preserveComments: true }
-          )
-        )
+        // TODO: Copy this from the v0.63.3 typings
+        // These deprecated DT types are defined in a separate file for ease of external contribution.
+        // path.pushContainer("body", ast`export * from "./DeprecatedDefinitelyTypedExports"` as t.Statement[])
       },
     },
   },
