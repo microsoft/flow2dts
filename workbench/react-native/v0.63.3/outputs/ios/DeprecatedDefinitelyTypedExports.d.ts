@@ -9,6 +9,8 @@
 // TODO: This shouldn't be necessarty to use here. This is likely needed because of TS React AbstractComponent handling.
 import { $TypeOf } from "flow2dts-flow-types-polyfill"
 
+export * from "./DeprecatedLegacyDefinitelyTypedPropsExports"
+
 /**
  * @deprecated Instead use `import("react-native/Libraries/Types/CoreEventTypes").PressEvent`.
  */
@@ -33,6 +35,16 @@ export type NativeSyntheticEvent<T> = import("./Libraries/Types/CoreEventTypes")
  * @deprecated Instead use `import("react-native/Libraries/StyleSheet/StyleSheet").ViewStyle`.
  */
 export type ViewStyle = import("./Libraries/StyleSheet/StyleSheet").ViewStyle
+
+/**
+ * @deprecated Instead use `import("react-native/Libraries/StyleSheet/StyleSheet").TextStyle`.
+ */
+export type TextStyle = import("./Libraries/StyleSheet/StyleSheet").TextStyle
+
+/**
+ * @deprecated Instead use `import("react-native/Libraries/StyleSheet/StyleSheet").ImageStyle`.
+ */
+export type ImageStyle = import("./Libraries/StyleSheet/StyleSheet").ImageStyle
 
 /**
  * @deprecated Instead use `import("react-native/Libraries/StyleSheet/StyleSheetTypes").(View|Text|Image)StyleProp`.
@@ -62,3 +74,25 @@ export type TouchableWithoutFeedbackProps = React.ComponentPropsWithoutRef<
 export type ViewProps = React.ComponentPropsWithoutRef<
   $TypeOf<typeof import("./Libraries/Components/View/View").default>
 >
+
+/**
+ * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof TouchableHighlight>`.
+ */
+export type TouchableHighlightProps = React.ComponentPropsWithoutRef<
+  $TypeOf<typeof import("./Libraries/Components/Touchable/TouchableHighlight").default>
+>
+
+/**
+ * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof TouchableHighlight>`.
+ */
+export { Props as TextInputProps } from "./Libraries/Components/TextInput/TextInput"
+
+/**
+ * @deprecated Instead use `import("react-native/Libraries/Lists/FlatList").Props`.
+ */
+export type FlatListProps<ItemT> = import("./Libraries/Lists/FlatList").Props<ItemT>
+
+/**
+ * @deprecated Instead use `import("reac-native/Libraries/Lists/ViewabilityHelper").ViewToken`.
+ */
+export { ViewToken } from "./Libraries/Lists/ViewabilityHelper"
