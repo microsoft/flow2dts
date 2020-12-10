@@ -178,7 +178,7 @@ export class GenericArtworksGrid extends React.Component<Props, State> {
   }
 }
 
-interface Styles {
+type Styles = {
   container: ViewStyle
   section: ViewStyle
   spinner: ViewStyle

@@ -29,7 +29,7 @@ const About: React.FC<Props> = ({ gene }) => {
   )
 }
 
-interface Styles {
+type Styles = {
   sectionSeparator: ViewStyle
 }
 

@@ -284,7 +284,7 @@ export class Gene extends React.Component<Props, State> {
   }
 }
 
-interface Styles {
+type Styles = {
   header: ViewStyle
   stickyHeader: ViewStyle
   refineContainer: ViewStyle

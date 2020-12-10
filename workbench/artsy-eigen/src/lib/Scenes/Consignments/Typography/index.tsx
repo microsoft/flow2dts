@@ -56,7 +56,7 @@ const SmallPrint: React.FC<TextProperties> = (props: TextProperties) => {
 
 export { LargeHeadline, SmallHeadline, Subtitle, BodyText, SmallPrint }
 
-interface Styles {
+type Styles = {
   largeHeadlineRequired: TextStyle
   largeHeadlineDefault: TextStyle
   smallHeadlineRequired: TextStyle

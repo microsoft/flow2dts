@@ -314,7 +314,7 @@ class InfiniteScrollArtworksGrid extends React.Component<Props & PrivateProps, S
   }
 }
 
-interface Styles {
+type Styles = {
   container: ViewStyle
   section: ViewStyle
 }

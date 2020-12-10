@@ -59,7 +59,7 @@ export class Notification extends React.Component<Props> {
   }
 }
 
-interface Styles {
+type Styles = {
   container: ViewStyle
   header: ViewStyle
   artistAvatar: ImageStyle

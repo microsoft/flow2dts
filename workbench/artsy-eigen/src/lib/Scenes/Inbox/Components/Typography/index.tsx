@@ -76,7 +76,7 @@ const BodyText: React.FC<TextProperties & { disabled?: boolean }> = (props) => {
 
 export { LargeHeadline, SmallHeadline, Subtitle, FromSignatureText, MetadataText, PreviewText, BodyText }
 
-interface Styles {
+type Styles = {
   largeRequired: TextStyle
   largeDefault: TextStyle
   smallRequired: TextStyle
