@@ -108,7 +108,7 @@ const visitors: OverridesVisitors = {
       exit(path) {
         // TODO: Copy this from the v0.63.3 typings
         // These deprecated DT types are defined in a separate file for ease of external contribution.
-        // path.pushContainer("body", ast`export * from "./DeprecatedDefinitelyTypedExports"` as t.Statement[])
+        // path.pushContainer("body", ast`export * from "./TypeScriptSupplementals"` as t.Statement[])
       },
     },
   },

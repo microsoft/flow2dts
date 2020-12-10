@@ -9,42 +9,40 @@
 // TODO: This shouldn't be necessarty to use here. This is likely needed because of TS React AbstractComponent handling.
 import { $TypeOf } from "flow2dts-flow-types-polyfill"
 
-export * from "./DeprecatedLegacyDefinitelyTypedPropsExports"
-
 /**
  * @deprecated Instead use `import("react-native/Libraries/Types/CoreEventTypes").PressEvent`.
  */
-export type GestureResponderEvent = import("./Libraries/Types/CoreEventTypes").PressEvent
+export type GestureResponderEvent = import("../Libraries/Types/CoreEventTypes").PressEvent
 
 /**
  * @deprecated Instead use `import("react-native/Libraries/Types/CoreEventTypes").LayoutEvent`.
  */
-export type LayoutChangeEvent = import("./Libraries/Types/CoreEventTypes").LayoutEvent
+export type LayoutChangeEvent = import("../Libraries/Types/CoreEventTypes").LayoutEvent
 
 /**
  * @deprecated Instead use `import("react-native/Libraries/Types/CoreEventTypes").ScrollEvent`.
  */
-export type NativeScrollEvent = import("./Libraries/Types/CoreEventTypes").ScrollEvent["nativeEvent"]
+export type NativeScrollEvent = import("../Libraries/Types/CoreEventTypes").ScrollEvent["nativeEvent"]
 
 /**
  * @deprecated Instead use `import("react-native/Libraries/Types/CoreEventTypes").ScrollEvent<T>`.
  */
-export type NativeSyntheticEvent<T> = import("./Libraries/Types/CoreEventTypes").SyntheticEvent<T>
+export type NativeSyntheticEvent<T> = import("../Libraries/Types/CoreEventTypes").SyntheticEvent<T>
 
 /**
  * @deprecated Instead use `import("react-native/Libraries/StyleSheet/StyleSheet").ViewStyle`.
  */
-export type ViewStyle = import("./Libraries/StyleSheet/StyleSheet").ViewStyle
+export type ViewStyle = import("../Libraries/StyleSheet/StyleSheet").ViewStyle
 
 /**
  * @deprecated Instead use `import("react-native/Libraries/StyleSheet/StyleSheet").TextStyle`.
  */
-export type TextStyle = import("./Libraries/StyleSheet/StyleSheet").TextStyle
+export type TextStyle = import("../Libraries/StyleSheet/StyleSheet").TextStyle
 
 /**
  * @deprecated Instead use `import("react-native/Libraries/StyleSheet/StyleSheet").ImageStyle`.
  */
-export type ImageStyle = import("./Libraries/StyleSheet/StyleSheet").ImageStyle
+export type ImageStyle = import("../Libraries/StyleSheet/StyleSheet").ImageStyle
 
 /**
  * @deprecated Instead use `import("react-native/Libraries/StyleSheet/StyleSheetTypes").(View|Text|Image)StyleProp`.
@@ -54,74 +52,74 @@ export type StyleProp<T> = null | void | T | false | "" | ReadonlyArray<StylePro
 /**
  * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof Image>`.
  */
-export type ImageProps = React.ComponentPropsWithoutRef<$TypeOf<typeof import("./Libraries/Image/Image").default>>
+export type ImageProps = React.ComponentPropsWithoutRef<$TypeOf<typeof import("../Libraries/Image/Image").default>>
 
 /**
  * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof Text>`.
  */
-export type TextProps = React.ComponentPropsWithoutRef<$TypeOf<typeof import("./Libraries/Text/Text").default>>
+export type TextProps = React.ComponentPropsWithoutRef<$TypeOf<typeof import("../Libraries/Text/Text").default>>
 
 /**
  * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof TouchableWithoutFeedback>`.
  */
 export type TouchableWithoutFeedbackProps = React.ComponentPropsWithoutRef<
-  $TypeOf<typeof import("./Libraries/Components/Touchable/TouchableWithoutFeedback").default>
+  $TypeOf<typeof import("../Libraries/Components/Touchable/TouchableWithoutFeedback").default>
 >
 
 /**
  * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof View>`.
  */
 export type ViewProps = React.ComponentPropsWithoutRef<
-  $TypeOf<typeof import("./Libraries/Components/View/View").default>
+  $TypeOf<typeof import("../Libraries/Components/View/View").default>
 >
 
 /**
  * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof TouchableHighlight>`.
  */
 export type TouchableHighlightProps = React.ComponentPropsWithoutRef<
-  $TypeOf<typeof import("./Libraries/Components/Touchable/TouchableHighlight").default>
+  $TypeOf<typeof import("../Libraries/Components/Touchable/TouchableHighlight").default>
 >
 
 /**
  * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof TouchableHighlight>`.
  */
-export { Props as TextInputProps } from "./Libraries/Components/TextInput/TextInput"
+export { Props as TextInputProps } from "../Libraries/Components/TextInput/TextInput"
 
 /**
  * @deprecated Instead use `import("react-native/Libraries/Lists/FlatList").Props`.
  */
-export type FlatListProps<ItemT> = import("./Libraries/Lists/FlatList").Props<ItemT>
+export type FlatListProps<ItemT> = import("../Libraries/Lists/FlatList").Props<ItemT>
 
 /**
  * @deprecated Instead use `import("react-native/Components/ScrollView/ScrollView").Props`.
  */
-export type ScrollViewProps = import("./Libraries/Components/ScrollView/ScrollView").Props
+export type ScrollViewProps = import("../Libraries/Components/ScrollView/ScrollView").Props
 /**
  * @deprecated Instead use `import("react-native/Components/Switch/Switch").Props`.
  */
-export type SwitchProps = import("./Libraries/Components/Switch/Switch").Props
+export type SwitchProps = import("../Libraries/Components/Switch/Switch").Props
 
 /**
  * @deprecated Instead use `import("react-native/Libraries/Lists/ViewabilityHelper").ViewToken`.
  */
-export { ViewToken } from "./Libraries/Lists/ViewabilityHelper"
+export { ViewToken } from "../Libraries/Lists/ViewabilityHelper"
 
 /**
  * @deprecated Instead use `import("react-native/Libraries/Types/CoreEventTypes").Layout`.
  */
-export type LayoutRectangle = import("./Libraries/Types/CoreEventTypes").Layout
+export type LayoutRectangle = import("../Libraries/Types/CoreEventTypes").Layout
 
 /**
  * @deprecated Instead use `import("react-native/Libraries/Image/ImageSource").ImageURISource`.
  */
-export type ImageURISource = import("./Libraries/Image/ImageSource").ImageURISource
+export type ImageURISource = import("../Libraries/Image/ImageSource").ImageURISource
 
 /**
  * @deprecated Instead use `import("react-native/Libraries/vendor/emitter/EmitterSubscription")`.
  */
-export { default as EmitterSubscription } from "./Libraries/vendor/emitter/EmitterSubscription"
+export { default as EmitterSubscription } from "../Libraries/vendor/emitter/EmitterSubscription"
 
 /**
  * @deprecated Instead use `import("react-native/Libraries/Alert/Alert").Buttons`.
  */
-export type AlertButton = import("./Libraries/Alert/Alert").Buttons
+export type AlertButton = import("../Libraries/Alert/Alert").Buttons
