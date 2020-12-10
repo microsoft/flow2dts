@@ -33,12 +33,13 @@ function isReactImportSpecifier(scope: Scope, id: t.Identifier) {
 
 /**
  * Flow code tends to use `void` as the type of the `state` instance property,
- * however the React DT typings do not allow that and in reality React sets it
- * to `null` at runtime. So here we simply replace `void` with `null`.
+ * however the React DT typings do not allow that. In reality React sets it to
+ * `null` at runtime, but the DT typings of React don't allow that either, it
+ * defaults to `{}` istead. So here we simply replace `void` with `{}`.
  *
  * TODO: Currently only handling PureComponent
  */
-function nullifyReactComponentState(path: NodePath<t.DeclareClass>) {
+function noVoidForReactComponentState(path: NodePath<t.DeclareClass>) {
   const superclass = path.node.extends![0]
   if (superclass) {
     const id = superclass.id as any
@@ -75,6 +76,7 @@ function unwrapTypeOfHelper(type: t.TSType): t.TSType {
   }
 }
 
+// React.ElementRef actually requires the typeof a class based component.
 function removeTypeOfHelperForReactElementRef(path: NodePath<t.TSTypeReference>) {
   const id = path.node.typeName
   if (
@@ -89,17 +91,32 @@ function removeTypeOfHelperForReactElementRef(path: NodePath<t.TSTypeReference>)
   }
 }
 
+// `HostComponent<unknown>` does not satisfy some of the React DT typings, so change it to `HostComponent<any>`.
+// TODO: Unsure if this should ideally still be `unknown`.
+function removeUnknownFromHostComponent(path: NodePath<t.TSTypeReference>) {
+  const id = path.node.typeName
+  if (
+    t.isIdentifier(id) &&
+    id.name === "HostComponent" &&
+    t.isTSTypeParameterInstantiation(path.node.typeParameters) &&
+    t.isTSUnknownKeyword(path.node.typeParameters.params[0])
+  ) {
+    path.node.typeParameters.params[0] = t.tsAnyKeyword()
+  }
+}
+
 const visitors: OverridesVisitors = {
   all: {
     // TODO: We should convert DeclareClass, which is a Flow type, to ClassDeclaration.
     DeclareClass: {
       exit(path) {
-        nullifyReactComponentState(path)
+        noVoidForReactComponentState(path)
       },
     },
     TSTypeReference: {
       exit(path) {
         removeTypeOfHelperForReactElementRef(path)
+        removeUnknownFromHostComponent(path)
       },
     },
   },

@@ -60,7 +60,7 @@ declare type NativeMethods = {
   focus: () => void;
   measure: (callback: MeasureOnSuccessCallback) => void;
   measureInWindow: (callback: MeasureInWindowOnSuccessCallback) => void;
-  measureLayout: (relativeToNativeNode: number | ElementRef<HostComponent<unknown>>, onSuccess: MeasureLayoutOnSuccessCallback, onFail?: () => void) => void;
+  measureLayout: (relativeToNativeNode: number | ElementRef<HostComponent<any>>, onSuccess: MeasureLayoutOnSuccessCallback, onFail?: () => void) => void;
   setNativeProps: (nativeProps: Object) => void;
 };
 declare type HostComponent<T> = AbstractComponent<T, Readonly<NativeMethods>>;
@@ -111,7 +111,7 @@ InspectorData & {
   }>;
 }>;
 declare type ReactNativeType = {
-  findHostInstance_DEPRECATED: (componentOrHandle: any) => null | undefined | ElementRef<HostComponent<unknown>>;
+  findHostInstance_DEPRECATED: (componentOrHandle: any) => null | undefined | ElementRef<HostComponent<any>>;
   findNodeHandle: (componentOrHandle: any) => null | undefined | number;
   dispatchCommand: (handle: any, command: string, args: any[]) => void;
   render: (element: React$Element<any>, containerTag: any, callback: null | undefined | Function) => any;
@@ -122,7 +122,7 @@ declare type ReactNativeType = {
   __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: SecretInternalsType;
 };
 declare type ReactFabricType = {
-  findHostInstance_DEPRECATED: (componentOrHandle: any) => null | undefined | ElementRef<HostComponent<unknown>>;
+  findHostInstance_DEPRECATED: (componentOrHandle: any) => null | undefined | ElementRef<HostComponent<any>>;
   findNodeHandle: (componentOrHandle: any) => null | undefined | number;
   dispatchCommand: (handle: any, command: string, args: any[]) => void;
   render: (element: React$Element<any>, containerTag: any, callback: null | undefined | Function) => any;

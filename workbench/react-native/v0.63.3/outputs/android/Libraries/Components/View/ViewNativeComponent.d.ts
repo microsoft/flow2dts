@@ -38,8 +38,8 @@ declare var viewConfig: {} |
 };
 declare var __INTERNAL_VIEW_CONFIG: $TypeOf<typeof viewConfig>;
 interface NativeCommands {
-  readonly hotspotUpdate: (viewRef: React.ElementRef<HostComponent<unknown>>, x: number, y: number) => void;
-  readonly setPressed: (viewRef: React.ElementRef<HostComponent<unknown>>, pressed: boolean) => void;
+  readonly hotspotUpdate: (viewRef: React.ElementRef<HostComponent<any>>, x: number, y: number) => void;
+  readonly setPressed: (viewRef: React.ElementRef<HostComponent<any>>, pressed: boolean) => void;
 }
 declare var Commands: NativeCommands;
 export type { ViewNativeComponentType };

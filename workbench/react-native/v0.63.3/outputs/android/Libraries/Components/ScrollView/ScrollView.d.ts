@@ -627,7 +627,7 @@ declare class ScrollView extends $1.Component<Props, State> {
   getScrollableNode(): null | undefined | number;
   getInnerViewNode(): null | undefined | number;
   getInnerViewRef(): null | undefined | $1.ElementRef<typeof $4>;
-  getNativeScrollRef(): null | undefined | $1.ElementRef<HostComponent<unknown>>;
+  getNativeScrollRef(): null | undefined | $1.ElementRef<HostComponent<any>>;
 
   /**
    * Scrolls to a given x, y offset, either immediately or with a smooth animation.
@@ -673,5 +673,5 @@ declare const $f2tExportDefault: $1.AbstractComponent<$1.ElementConfig<ScrollVie
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$1.ElementRef<HostComponent<unknown>> & ScrollViewImperativeMethods & {}>> & ScrollViewComponentStatics;
+$1.ElementRef<HostComponent<any>> & ScrollViewImperativeMethods & {}>> & ScrollViewComponentStatics;
 export default $f2tExportDefault;
