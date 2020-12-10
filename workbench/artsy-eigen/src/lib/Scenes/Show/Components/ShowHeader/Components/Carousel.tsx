@@ -37,7 +37,6 @@ export class Carousel extends React.Component<Props> {
         <PageList
           {...this.props}
           ref={(ref) => {
-            // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
             this.scrollView = ref
           }}
           horizontal

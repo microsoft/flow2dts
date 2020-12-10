@@ -116,7 +116,6 @@ export class FairExhibitors extends React.Component<Props, State> {
           )}
           // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
           renderSectionFooter={({ section }) => {
-            // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
             if (section.index < this.state.sections.length - 1) {
               return (
                 <Box px={2} pb={2}>

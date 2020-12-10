@@ -222,18 +222,14 @@ describe("Filter modal navigation flow", () => {
           dispatch: jest.fn(),
         }}
       >
-        {React.createElement(
-          // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
-          nextRoute.component,
-          {
-            ...nextRoute.passProps,
-            nextScreen: true,
-            navigator: MockNavigator,
-            relay: {
-              environment: null,
-            },
-          }
-        )}
+        {React.createElement(nextRoute.component, {
+          ...nextRoute.passProps,
+          nextScreen: true,
+          navigator: MockNavigator,
+          relay: {
+            environment: null,
+          },
+        })}
       </ArtworkFilterContext.Provider>
     )
 
@@ -291,18 +287,14 @@ describe("Filter modal navigation flow", () => {
           dispatch: null,
         }}
       >
-        {React.createElement(
-          // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
-          nextRoute.component,
-          {
-            ...nextRoute.passProps,
-            nextScreen: true,
-            navigator: MockNavigator,
-            relay: {
-              environment: null,
-            },
-          }
-        )}
+        {React.createElement(nextRoute.component, {
+          ...nextRoute.passProps,
+          nextScreen: true,
+          navigator: MockNavigator,
+          relay: {
+            environment: null,
+          },
+        })}
       </ArtworkFilterContext.Provider>
     )
 

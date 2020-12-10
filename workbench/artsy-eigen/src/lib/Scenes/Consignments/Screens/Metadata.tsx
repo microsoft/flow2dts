@@ -152,7 +152,6 @@ export default class Metadata extends React.Component<Props, State> {
                       placeholder: "Title",
                       onFocus: this.hideCategorySelection,
                       onChangeText: this.updateTitle,
-                      // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
                       value: this.state.title,
                       onSubmitEditing: this.selectNextInput,
                       returnKeyType: "next",
@@ -169,7 +168,6 @@ export default class Metadata extends React.Component<Props, State> {
                     text={{
                       placeholder: "Year",
                       onChangeText: this.updateYear,
-                      // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
                       value: this.state.year,
                       onFocus: this.hideCategorySelection,
                       onSubmitEditing: this.selectNextInput,
@@ -185,7 +183,6 @@ export default class Metadata extends React.Component<Props, State> {
                     text={{
                       placeholder: "Medium",
                       onChangeText: this.updateMedium,
-                      // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
                       value: this.state.medium,
                       onFocus: this.hideCategorySelection,
                       onSubmitEditing: this.selectNextInput,
@@ -202,7 +199,6 @@ export default class Metadata extends React.Component<Props, State> {
                       keyboardType: "numeric",
                       placeholder: "Width",
                       onChangeText: this.updateWidth,
-                      // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
                       value: this.state.width,
                       onFocus: this.hideCategorySelection,
                       onSubmitEditing: this.selectNextInput,
@@ -216,7 +212,6 @@ export default class Metadata extends React.Component<Props, State> {
                       keyboardType: "numeric",
                       placeholder: "Height",
                       onChangeText: this.updateHeight,
-                      // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
                       value: this.state.height,
                       onFocus: this.hideCategorySelection,
                       onSubmitEditing: this.selectNextInput,
@@ -258,7 +253,6 @@ export default class Metadata extends React.Component<Props, State> {
                     <Text
                       text={{
                         placeholder: "Category",
-                        // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
                         value: this.state.categoryName,
                       }}
                       readonly={true}

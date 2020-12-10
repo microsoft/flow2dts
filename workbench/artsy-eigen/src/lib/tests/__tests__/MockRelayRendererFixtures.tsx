@@ -26,10 +26,7 @@ const Metadata = createFragmentContainer(
 export const Artwork = createFragmentContainer(
   (props: { artwork: MockRelayRendererFixtures_artwork }) => (
     <View>
-      <Image
-        // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
-        source={{ uri: props.artwork && props.artwork.image && props.artwork.image.url }}
-      />
+      <Image source={{ uri: props.artwork && props.artwork.image && props.artwork.image.url }} />
       <Metadata artworkMetadata={props.artwork} />
       {/* FIXME: Should this be a slug? */}
       {!!props.artwork.artist && <ArtistQueryRenderer id={props.artwork.artist.slug} />}

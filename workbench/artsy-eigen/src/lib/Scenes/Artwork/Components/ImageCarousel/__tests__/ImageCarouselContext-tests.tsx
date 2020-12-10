@@ -110,11 +110,9 @@ describe("image carousel context", () => {
     expect(context.fullScreenState.current).toBe("entered")
 
     context.dispatch({ type: "IMAGE_INDEX_CHANGED", nextImageIndex: 1 })
-    // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
     expect(context.embeddedFlatListRef.current.scrollToIndex).toHaveBeenCalledWith({ animated: false, index: 1 })
 
     context.dispatch({ type: "IMAGE_INDEX_CHANGED", nextImageIndex: 0 })
-    // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
     expect(context.embeddedFlatListRef.current.scrollToIndex).toHaveBeenCalledWith({ animated: false, index: 0 })
   })
 

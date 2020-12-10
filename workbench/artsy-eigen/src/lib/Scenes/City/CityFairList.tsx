@@ -82,7 +82,6 @@ class CityFairList extends React.Component<Props, State> {
             keyExtractor={(item) => item.node.internalID}
             renderItem={({ item }) => this.renderItem(item)}
             onScroll={isCloseToBottom(this.fetchData)}
-            // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
             ListFooterComponent={!!fetchingNextPage && <Spinner style={{ marginTop: 20, marginBottom: 20 }} />}
           />
         </Box>

@@ -84,7 +84,6 @@ function render<T>(props: SearchQueryProps<T>) {
       />
       <ScrollView
         style={{ height: 182, paddingTop: 16 }}
-        // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
         scrollEnabled={props.results && !!props.results.length}
         keyboardShouldPersistTaps="always"
       >

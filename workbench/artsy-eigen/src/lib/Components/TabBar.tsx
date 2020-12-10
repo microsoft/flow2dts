@@ -88,7 +88,6 @@ export default class TabBar extends React.Component<TabBarProps> {
     const containerWidth = this.props.containerWidth - space(4)
     const numberOfTabs = this.props.tabs.length
 
-    // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
     const translateX = this.props.scrollValue.interpolate({
       inputRange: [0, 1],
       outputRange: [0, containerWidth / numberOfTabs],

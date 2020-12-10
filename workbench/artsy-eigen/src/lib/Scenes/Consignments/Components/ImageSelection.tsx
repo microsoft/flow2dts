@@ -165,7 +165,6 @@ export default class ImageSelection extends React.Component<Props, State> {
             return item.image.uri
           }
         }}
-        // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
         renderItem={({ item }) => {
           if (typeof item === "string") {
             if (item === TakePhotoID) {

@@ -292,10 +292,8 @@ type Styles = {
 
 const styles = StyleSheet.create<Styles>({
   header: {
-    // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
     width: isPad ? 330 : null,
-    // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
-    alignSelf: isPad ? "center" : null,
+    alignSelf: isPad ? "center" : undefined,
   },
   stickyHeader: {
     flexDirection: "row",
