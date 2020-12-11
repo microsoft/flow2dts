@@ -11,7 +11,7 @@ interface Spec extends TurboModule {
       major: number;
       minor: number;
       patch: number;
-      prerelease: null | undefined | number;
+      prerelease?: null | undefined | number;
     };
     Version: number;
     Release: string;

@@ -6,8 +6,8 @@ import { ProcessedColorValue } from "./processColor";
 declare type NativeColorValue = {
   semantic?: string[];
   dynamic?: {
-    light: null | undefined | (ColorValue | ProcessedColorValue);
-    dark: null | undefined | (ColorValue | ProcessedColorValue);
+    light?: null | undefined | (ColorValue | ProcessedColorValue);
+    dark?: null | undefined | (ColorValue | ProcessedColorValue);
   };
 };
 declare var PlatformColor: (...names: string[]) => ColorValue;

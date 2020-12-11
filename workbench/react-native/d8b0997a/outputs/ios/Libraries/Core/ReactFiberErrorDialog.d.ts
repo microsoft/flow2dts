@@ -3,7 +3,7 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 declare type CapturedError = {
   readonly componentStack: string;
   readonly error: unknown;
-  readonly errorBoundary: null | undefined | {};
+  readonly errorBoundary?: null | undefined | {};
 };
 declare function showErrorDialog(capturedError: CapturedError): boolean;
 export type { CapturedError };

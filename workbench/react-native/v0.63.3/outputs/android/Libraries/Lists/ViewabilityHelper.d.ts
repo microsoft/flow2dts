@@ -2,7 +2,7 @@
 declare type ViewToken = {
   item: any;
   key: string;
-  index: null | undefined | number;
+  index?: null | undefined | number;
   isViewable: boolean;
   section?: any;
 };

@@ -1,12 +1,12 @@
 // @flow
 declare type SpyData = {
   type: number;
-  module: null | undefined | string;
+  module?: null | undefined | string;
   method: string | number;
   args: any[];
 };
 declare class MessageQueue {
-  __spy: null | undefined | ((data: SpyData) => void);
+  __spy?: null | undefined | ((data: SpyData) => void);
   constructor();
   static spy(spyOrToggle: boolean | ((data: SpyData) => void)): void;
   callFunctionReturnFlushedQueue(module: string, method: string, args: any[]): null | [number[], number[], any[], number];

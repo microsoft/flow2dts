@@ -9,7 +9,7 @@ interface Spec extends TurboModule {
   {
     readonly title?: null | undefined | string;
     readonly message?: null | undefined | string;
-    readonly options: null | undefined | string[];
+    readonly options?: null | undefined | string[];
     readonly destructiveButtonIndices?: null | undefined | number[];
     readonly cancelButtonIndex?: null | undefined | number;
     readonly anchor?: null | undefined | number;

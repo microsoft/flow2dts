@@ -28,5 +28,5 @@ declare class CE {
   foo(b: string): number
   static a: string
   static b(): string
-  c: null | undefined | string
+  c?: null | undefined | string
 }

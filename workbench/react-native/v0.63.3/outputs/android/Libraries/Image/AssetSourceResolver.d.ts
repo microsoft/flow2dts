@@ -3,16 +3,16 @@ declare type ResolvedAssetSource =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
   readonly __packager_asset: boolean;
-  readonly width: null | undefined | number;
-  readonly height: null | undefined | number;
+  readonly width?: null | undefined | number;
+  readonly height?: null | undefined | number;
   readonly uri: string;
   readonly scale: number;
 };
 import { PackagerAsset } from "./AssetRegistry";
 declare class AssetSourceResolver {
-  serverUrl: null | undefined | string;
+  serverUrl?: null | undefined | string;
   // where the jsbundle is being run from
-  jsbundleUrl: null | undefined | string;
+  jsbundleUrl?: null | undefined | string;
   // the asset to resolve
   asset: PackagerAsset;
   constructor(serverUrl: null | undefined | string, jsbundleUrl: null | undefined | string, asset: PackagerAsset);

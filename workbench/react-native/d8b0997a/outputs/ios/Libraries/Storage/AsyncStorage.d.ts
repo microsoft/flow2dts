@@ -5,7 +5,7 @@ declare var AsyncStorage:
 {
   _getRequests: any[];
   _getKeys: string[];
-  _immediate: null | undefined | number;
+  _immediate?: null | undefined | number;
 
   /**
    * Fetches an item for a `key` and invokes a callback upon completion.

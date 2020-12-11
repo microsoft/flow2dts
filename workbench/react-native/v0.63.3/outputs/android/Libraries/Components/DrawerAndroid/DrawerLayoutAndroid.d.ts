@@ -36,7 +36,7 @@ declare type Props = Readonly<
   /**
    * Specifies the side of the screen from which the drawer will slide in.
    */
-  drawerPosition: null | undefined | ("left" | "right");
+  drawerPosition?: null | undefined | ("left" | "right");
 
   /**
    * Specifies the width of the drawer, more precisely the width of the view that be pulled in

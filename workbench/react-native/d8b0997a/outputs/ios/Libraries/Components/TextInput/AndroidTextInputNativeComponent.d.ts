@@ -25,7 +25,7 @@ declare type NativeProps = Readonly<
 $Diff<ViewProps, Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  style: null | undefined | ViewStyleProp;
+  style?: null | undefined | ViewStyleProp;
 }>> & {
   /**
   * Android props after this

@@ -89,12 +89,12 @@ declare type InspectorData = Readonly<
   hierarchy:
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    name: null | undefined | string;
+    name?: null | undefined | string;
     getInspectorData: InspectorDataGetter;
   }[];
-  selectedIndex: null | undefined | number;
+  selectedIndex?: null | undefined | number;
   props: InspectorDataProps;
-  source: null | undefined | InspectorDataSource;
+  source?: null | undefined | InspectorDataSource;
 }>;
 declare type TouchedViewDataAtPoint = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

@@ -24,7 +24,7 @@ declare var Platform:
       major: number;
       minor: number;
       patch: number;
-      prerelease: null | undefined | number;
+      prerelease?: null | undefined | number;
     };
     systemName: string;
   };

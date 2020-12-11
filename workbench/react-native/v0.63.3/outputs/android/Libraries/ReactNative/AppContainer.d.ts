@@ -16,7 +16,7 @@ declare type Props = Readonly<
 declare type State =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  inspector: null | undefined | $2.Node;
+  inspector?: null | undefined | $2.Node;
   mainKey: number;
   hasError: boolean;
 };

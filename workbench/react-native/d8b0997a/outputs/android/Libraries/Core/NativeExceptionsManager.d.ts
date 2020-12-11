@@ -4,17 +4,17 @@ import { TurboModule } from "../TurboModule/RCTExport";
 declare type StackFrame =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  column: null | undefined | number;
-  file: null | undefined | string;
-  lineNumber: null | undefined | number;
+  column?: null | undefined | number;
+  file?: null | undefined | string;
+  lineNumber?: null | undefined | number;
   methodName: string;
   collapse?: boolean;
 };
 declare type ExceptionData = {
   message: string;
-  originalMessage: null | undefined | string;
-  name: null | undefined | string;
-  componentStack: null | undefined | string;
+  originalMessage?: null | undefined | string;
+  name?: null | undefined | string;
+  componentStack?: null | undefined | string;
   stack: StackFrame[];
   id: number;
   isFatal: boolean;

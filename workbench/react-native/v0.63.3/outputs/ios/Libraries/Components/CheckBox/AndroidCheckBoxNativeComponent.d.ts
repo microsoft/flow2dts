@@ -32,8 +32,8 @@ ViewProps & {
   tintColors:
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    true: null | undefined | ProcessedColorValue;
-    false: null | undefined | ProcessedColorValue;
+    true?: null | undefined | ProcessedColorValue;
+    false?: null | undefined | ProcessedColorValue;
   } | undefined;
 }>;
 declare type NativeType = HostComponent<NativeProps>;

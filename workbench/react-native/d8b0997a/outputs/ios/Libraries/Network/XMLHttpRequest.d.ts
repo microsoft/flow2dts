@@ -11,13 +11,13 @@ declare type XHRInterceptor = {
   loadingFailed: (id: number, error: string) => void;
 };
 declare class XMLHttpRequestEventTarget extends $2 {
-  onload: null | undefined | Function;
-  onloadstart: null | undefined | Function;
-  onprogress: null | undefined | Function;
-  ontimeout: null | undefined | Function;
-  onerror: null | undefined | Function;
-  onabort: null | undefined | Function;
-  onloadend: null | undefined | Function;
+  onload?: null | undefined | Function;
+  onloadstart?: null | undefined | Function;
+  onprogress?: null | undefined | Function;
+  ontimeout?: null | undefined | Function;
+  onerror?: null | undefined | Function;
+  onabort?: null | undefined | Function;
+  onloadend?: null | undefined | Function;
 }
 declare var $2: any;
 declare class XMLHttpRequest extends $1 {
@@ -32,19 +32,19 @@ declare class XMLHttpRequest extends $1 {
   LOADING: number;
   DONE: number;
   // EventTarget automatically initializes these to `null`.
-  onload: null | undefined | Function;
-  onloadstart: null | undefined | Function;
-  onprogress: null | undefined | Function;
-  ontimeout: null | undefined | Function;
-  onerror: null | undefined | Function;
-  onabort: null | undefined | Function;
-  onloadend: null | undefined | Function;
-  onreadystatechange: null | undefined | Function;
+  onload?: null | undefined | Function;
+  onloadstart?: null | undefined | Function;
+  onprogress?: null | undefined | Function;
+  ontimeout?: null | undefined | Function;
+  onerror?: null | undefined | Function;
+  onabort?: null | undefined | Function;
+  onloadend?: null | undefined | Function;
+  onreadystatechange?: null | undefined | Function;
   readyState: number;
-  responseHeaders: null | undefined | Object;
+  responseHeaders?: null | undefined | Object;
   status: number;
   timeout: number;
-  responseURL: null | undefined | string;
+  responseURL?: null | undefined | string;
   withCredentials: boolean;
   upload: XMLHttpRequestEventTarget;
   static setInterceptor(interceptor?: null | undefined | XHRInterceptor): void;

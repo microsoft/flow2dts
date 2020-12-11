@@ -14,9 +14,9 @@ declare type PickerIOSChangeEvent = SyntheticEvent<Readonly<
 declare type RCTPickerIOSItemType = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  label: null | undefined | Label;
-  value: null | undefined | (number | string);
-  textColor: null | undefined | ProcessedColorValue;
+  label?: null | undefined | Label;
+  value?: null | undefined | (number | string);
+  textColor?: null | undefined | ProcessedColorValue;
 }>;
 declare type Label = Stringish | number;
 declare type NativeProps = Readonly<

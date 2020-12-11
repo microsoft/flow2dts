@@ -3,7 +3,7 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { StackFrame } from "../NativeExceptionsManager";
 declare type CodeFrame = Readonly<{
   content: string;
-  location: null | undefined | {
+  location?: null | undefined | {
     row: number;
     column: number;
   };
@@ -11,7 +11,7 @@ declare type CodeFrame = Readonly<{
 }>;
 declare type SymbolicatedStackTrace = Readonly<{
   stack: StackFrame[];
-  codeFrame: null | undefined | CodeFrame;
+  codeFrame?: null | undefined | CodeFrame;
 }>;
 declare function symbolicateStackTrace(stack: StackFrame[]): Promise<SymbolicatedStackTrace>;
 export type { CodeFrame };

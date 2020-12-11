@@ -2,7 +2,7 @@ import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "../vendor/emitter/EventEmitter";
 import $4 from "../EventEmitter/NativeEventEmitter";
 declare class AppState extends $4 {
-  currentState: null | undefined | string;
+  currentState?: null | undefined | string;
   isAvailable: boolean;
   constructor();
   // TODO: now that AppState is a subclass of NativeEventEmitter, we could
@@ -29,7 +29,7 @@ declare class AppState extends $4 {
 declare class MissingNativeAppStateShim extends $2 {
   // AppState
   isAvailable: boolean;
-  currentState: null | undefined | string;
+  currentState?: null | undefined | string;
   addEventListener(type: string, handler: Function): void;
   removeEventListener(type: string, handler: Function): void;
 }

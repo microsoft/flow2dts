@@ -8,7 +8,7 @@ declare class EmitterSubscription extends EventSubscription {
   // $FlowFixMe[value-as-type]
   emitter: EventEmitter;
   listener: Function;
-  context: null | undefined | Object;
+  context?: null | undefined | Object;
 
   /**
    * @param {EventEmitter} emitter - The event emitter that registered this

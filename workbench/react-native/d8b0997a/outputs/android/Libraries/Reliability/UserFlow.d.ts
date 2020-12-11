@@ -6,28 +6,28 @@ declare type FlowId = {
   instanceKey: number;
 };
 declare type PointData = $Shape<{
-  string: null | undefined | {
+  string?: null | undefined | {
     [$f2tKey: string]: string;
   };
-  int: null | undefined | {
+  int?: null | undefined | {
     [$f2tKey: string]: number;
   };
-  double: null | undefined | {
+  double?: null | undefined | {
     [$f2tKey: string]: number;
   };
-  bool: null | undefined | {
+  bool?: null | undefined | {
     [$f2tKey: string]: boolean;
   };
-  string_array: null | undefined | {
+  string_array?: null | undefined | {
     [$f2tKey: string]: ReadonlyArray<string>;
   };
-  int_array: null | undefined | {
+  int_array?: null | undefined | {
     [$f2tKey: string]: ReadonlyArray<number>;
   };
-  double_array: null | undefined | {
+  double_array?: null | undefined | {
     [$f2tKey: string]: ReadonlyArray<number>;
   };
-  bool_array: null | undefined | {
+  bool_array?: null | undefined | {
     [$f2tKey: string]: ReadonlyArray<boolean>;
   };
 }>;
