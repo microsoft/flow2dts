@@ -6,7 +6,18 @@
                 "column": 14,
                 "local": "ElementRef"
             },
-            "error": "[unrecognizable stdout]C:\\Users\\zihanc\\AppData\\Local\\Temp\\flow\\flowlib_3681ab22\\react.js:282:23,282:32\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 282,
+                    "column": 23
+                },
+                "end": {
+                    "row": 282,
+                    "column": 32
+                },
+                "fromLibrary": true,
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_1e4b5f32/react.js"
+            }
         },
         "AbstractComponent": {
             "source": {
@@ -14,7 +25,18 @@
                 "column": 14,
                 "local": "AbstractComponent"
             },
-            "error": "[unrecognizable stdout]C:\\Users\\zihanc\\AppData\\Local\\Temp\\flow\\flowlib_3681ab22\\react.js:258:23,258:39\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 258,
+                    "column": 23
+                },
+                "end": {
+                    "row": 258,
+                    "column": 39
+                },
+                "fromLibrary": true,
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_1e4b5f32/react.js"
+            }
         }
     },
     "decls": [

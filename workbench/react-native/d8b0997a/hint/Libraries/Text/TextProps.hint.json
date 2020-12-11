@@ -63,7 +63,18 @@
                 "column": 14,
                 "local": "Node"
             },
-            "error": "[unrecognizable stdout]C:\\Users\\zihanc\\AppData\\Local\\Temp\\flow\\flowlib_3681ab22\\react.js:268:23,268:26\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 268,
+                    "column": 23
+                },
+                "end": {
+                    "row": 268,
+                    "column": 26
+                },
+                "fromLibrary": true,
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_5585e15/react.js"
+            }
         },
         "TextStyleProp": {
             "source": {

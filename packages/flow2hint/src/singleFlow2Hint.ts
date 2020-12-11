@@ -139,7 +139,7 @@ function flowImportAndDeclVisitor(rootDir: string, filename: string): Visitor<Hi
 
 const FLOW_BIN = require.resolve("flow-bin/cli.js")
 
-const regexStdout = /^(.+\.js\.flow):(\d+):(\d+),(\d+):(\d+)/
+const regexStdout = /^(.+\.js(\.flow)?):(\d+):(\d+),(\d+):(\d+)/
 
 export type HintFileEntries = { [key: string]: HintFile }
 
@@ -190,8 +190,8 @@ export async function singleFlow2Hint({
           console.log(chalk.blueBright(`${data}`))
           const match = `${data}`.match(regexStdout)
           if (match) {
-            const begin: HintPos = { row: +match[2], column: +match[3] }
-            const end: HintPos = { row: +match[4], column: +match[5] }
+            const begin: HintPos = { row: +match[3], column: +match[4] }
+            const end: HintPos = { row: +match[5], column: +match[6] }
             const file = match[1].replace(/\\/g, "/")
             const fromLibrary = file.substr(0, normalizedRootDir.length) !== normalizedRootDir
             hintImport.resolved = {
