@@ -211,7 +211,7 @@ export async function singleFlow2Hint({
           const error = `${data}`
           console.log(error)
           if (!error.startsWith("Please wait.")) {
-            hintImport.error += error
+            hintImport.error += error.replace(/\\/g, "/").replace(normalizedRootDir, "")
           }
         }
       })

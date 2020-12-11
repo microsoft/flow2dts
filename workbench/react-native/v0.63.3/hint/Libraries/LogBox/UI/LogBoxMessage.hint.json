@@ -5,7 +5,8 @@
                 "row": 2,
                 "column": 13,
                 "local": "React"
-            }
+            },
+            "error": "Could not get definition for /Libraries/LogBox/UI/LogBoxMessage.js.flow:2:12\r\nFailed to find imported file react\r\n"
         },
         "TextStyleProp": {
             "source": {

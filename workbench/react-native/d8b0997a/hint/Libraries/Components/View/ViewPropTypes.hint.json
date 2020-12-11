@@ -138,7 +138,8 @@
                 "row": 9,
                 "column": 14,
                 "local": "Node"
-            }
+            },
+            "error": "[unrecognizable stdout]C:\\Users\\zihanc\\AppData\\Local\\Temp\\flow\\flowlib_3681ab22\\react.js:268:23,268:26\r\n"
         },
         "ViewStyleProp": {
             "source": {

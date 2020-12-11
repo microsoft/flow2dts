@@ -138,7 +138,8 @@
                 "row": 10,
                 "column": 13,
                 "local": "React"
-            }
+            },
+            "error": "Could not get definition for /Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow:10:12\r\nFailed to find imported file react\r\n"
         }
     },
     "decls": [

@@ -62,7 +62,8 @@
                 "row": 7,
                 "column": 13,
                 "local": "React"
-            }
+            },
+            "error": "Could not get definition for /Libraries/Components/Touchable/TouchableOpacity.js.flow:7:12\r\nFailed to find imported file react\r\n"
         }
     },
     "decls": [

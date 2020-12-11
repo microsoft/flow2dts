@@ -5,14 +5,16 @@
                 "row": 2,
                 "column": 14,
                 "local": "ElementRef"
-            }
+            },
+            "error": "[unrecognizable stdout]C:\\Users\\zihanc\\AppData\\Local\\Temp\\flow\\flowlib_3681ab22\\react.js:282:23,282:32\r\n"
         },
         "AbstractComponent": {
             "source": {
                 "row": 3,
                 "column": 14,
                 "local": "AbstractComponent"
-            }
+            },
+            "error": "[unrecognizable stdout]C:\\Users\\zihanc\\AppData\\Local\\Temp\\flow\\flowlib_3681ab22\\react.js:258:23,258:39\r\n"
         }
     },
     "decls": [

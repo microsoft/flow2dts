@@ -214,7 +214,8 @@
                 "row": 15,
                 "column": 13,
                 "local": "React"
-            }
+            },
+            "error": "Could not get definition for /Libraries/Components/Touchable/TouchableWithoutFeedback.js.flow:15:12\r\nFailed to find imported file react\r\n"
         }
     },
     "decls": [

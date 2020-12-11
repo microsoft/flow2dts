@@ -30,7 +30,7 @@ export interface HintFile {
 }
 
 export interface ResolvedHintImport {
-  type: "type" | "value" | "class" | "unresolved" | "unresolved[library]"
+  type: "type" | "value" | "class" | "unresolved[error]" | "unresolved[library]"
 }
 
 export interface ResolvedHintFile {
