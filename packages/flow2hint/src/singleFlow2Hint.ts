@@ -164,7 +164,7 @@ export async function singleFlow2Hint({
   })
 
   const hint: HintFile = { imports: {}, decls: [] }
-  collectedHintFiles[filename.substr(0, rootDir.length).replace(/\\/g, "/")] = hint
+  collectedHintFiles[filename.substr(rootDir.length).replace(/\\/g, "/")] = hint
   babelTraverse<HintFile>(flowAst, flowImportAndDeclVisitor(rootDir, filename), undefined, hint)
 
   for (const key in hint.imports) {

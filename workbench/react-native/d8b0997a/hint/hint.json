@@ -1,0 +1,3722 @@
+{
+    "files": {
+        "/index.js.flow": {
+            "imports": {
+                "AccessibilityInfo": {
+                    "type": "type"
+                },
+                "ActivityIndicator": {
+                    "type": "value"
+                },
+                "Button": {
+                    "type": "type"
+                },
+                "DatePickerIOS": {
+                    "type": "type"
+                },
+                "DrawerLayoutAndroid": {
+                    "type": "unresolved[missing]"
+                },
+                "FlatList": {
+                    "type": "type"
+                },
+                "Image": {
+                    "type": "type"
+                },
+                "ImageBackground": {
+                    "type": "value"
+                },
+                "InputAccessoryView": {
+                    "type": "type"
+                },
+                "KeyboardAvoidingView": {
+                    "type": "type"
+                },
+                "MaskedViewIOS": {
+                    "type": "type"
+                },
+                "Modal": {
+                    "type": "type"
+                },
+                "Picker": {
+                    "type": "type"
+                },
+                "PickerIOS": {
+                    "type": "value"
+                },
+                "Pressable": {
+                    "type": "type"
+                },
+                "ProgressBarAndroid": {
+                    "type": "unresolved[missing]"
+                },
+                "ProgressViewIOS": {
+                    "type": "type"
+                },
+                "RefreshControl": {
+                    "type": "type"
+                },
+                "SafeAreaView": {
+                    "type": "value"
+                },
+                "ScrollView": {
+                    "type": "value"
+                },
+                "SectionList": {
+                    "type": "type"
+                },
+                "SegmentedControlIOS": {
+                    "type": "unresolved[missing]"
+                },
+                "Slider": {
+                    "type": "value"
+                },
+                "StatusBar": {
+                    "type": "type"
+                },
+                "Switch": {
+                    "type": "type"
+                },
+                "Text": {
+                    "type": "value"
+                },
+                "TextInput": {
+                    "type": "type"
+                },
+                "Touchable": {
+                    "type": "value"
+                },
+                "TouchableHighlight": {
+                    "type": "type"
+                },
+                "TouchableNativeFeedback": {
+                    "type": "type"
+                },
+                "TouchableOpacity": {
+                    "type": "type"
+                },
+                "TouchableWithoutFeedback": {
+                    "type": "type"
+                },
+                "View": {
+                    "type": "value"
+                },
+                "VirtualizedList": {
+                    "type": "type"
+                },
+                "VirtualizedSectionList": {
+                    "type": "type"
+                },
+                "ActionSheetIOS": {
+                    "type": "unresolved[missing]"
+                },
+                "Alert": {
+                    "type": "type"
+                },
+                "Animated": {
+                    "type": "unresolved[missing]"
+                },
+                "Appearance": {
+                    "type": "type"
+                },
+                "AppRegistry": {
+                    "type": "type"
+                },
+                "AppState": {
+                    "type": "value"
+                },
+                "AsyncStorage": {
+                    "type": "unresolved[missing]"
+                },
+                "BackHandler": {
+                    "type": "type"
+                },
+                "Clipboard": {
+                    "type": "unresolved[missing]"
+                },
+                "DatePickerAndroid": {
+                    "type": "unresolved[missing]"
+                },
+                "DeviceInfo": {
+                    "type": "type"
+                },
+                "DevSettings": {
+                    "type": "unresolved[missing]"
+                },
+                "Dimensions": {
+                    "type": "unresolved[missing]"
+                },
+                "Easing": {
+                    "type": "unresolved[missing]"
+                },
+                "ReactNative": {
+                    "type": "type"
+                },
+                "I18nManager": {
+                    "type": "value"
+                },
+                "ImagePickerIOS": {
+                    "type": "unresolved[missing]"
+                },
+                "InteractionManager": {
+                    "type": "type"
+                },
+                "Keyboard": {
+                    "type": "type"
+                },
+                "LayoutAnimation": {
+                    "type": "value"
+                },
+                "Linking": {
+                    "type": "unresolved[missing]"
+                },
+                "LogBox": {
+                    "type": "unresolved[missing]"
+                },
+                "NativeDialogManagerAndroid": {
+                    "type": "type"
+                },
+                "NativeEventEmitter": {
+                    "type": "type"
+                },
+                "Networking": {
+                    "type": "unresolved[missing]"
+                },
+                "PanResponder": {
+                    "type": "type"
+                },
+                "PermissionsAndroid": {
+                    "type": "type"
+                },
+                "PixelRatio": {
+                    "type": "unresolved[missing]"
+                },
+                "PushNotificationIOS": {
+                    "type": "type"
+                },
+                "Settings": {
+                    "type": "unresolved[missing]"
+                },
+                "Share": {
+                    "type": "type"
+                },
+                "StatusBarIOS": {
+                    "type": "class"
+                },
+                "StyleSheet": {
+                    "type": "value"
+                },
+                "Systrace": {
+                    "type": "unresolved[missing]"
+                },
+                "ToastAndroid": {
+                    "type": "unresolved[missing]"
+                },
+                "TurboModuleRegistry": {
+                    "type": "unresolved[missing]"
+                },
+                "UIManager": {
+                    "type": "unresolved[missing]"
+                },
+                "useColorScheme": {
+                    "type": "value"
+                },
+                "useWindowDimensions": {
+                    "type": "value"
+                },
+                "UTFSequence": {
+                    "type": "unresolved[missing]"
+                },
+                "Vibration": {
+                    "type": "unresolved[missing]"
+                },
+                "YellowBox": {
+                    "type": "type"
+                },
+                "DynamicColorIOS": {
+                    "type": "value"
+                },
+                "NativeModules": {
+                    "type": "value"
+                },
+                "Platform": {
+                    "type": "type"
+                },
+                "PlatformColor": {
+                    "type": "value"
+                },
+                "processColor": {
+                    "type": "value"
+                },
+                "RCTDeviceEventEmitter": {
+                    "type": "unresolved[missing]"
+                },
+                "RCTNativeAppEventEmitter": {
+                    "type": "unresolved[missing]"
+                },
+                "RootTagContext": {
+                    "type": "value"
+                },
+                "DeprecatedColorPropType": {
+                    "type": "unresolved[missing]"
+                },
+                "DeprecatedEdgeInsetsPropType": {
+                    "type": "unresolved[missing]"
+                },
+                "DeprecatedPointPropType": {
+                    "type": "unresolved[missing]"
+                },
+                "DeprecatedViewPropTypes": {
+                    "type": "unresolved[missing]"
+                },
+                "_HostComponentInternal": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/UTFSequence.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/ActionSheetIOS/ActionSheetIOS.js.flow": {
+            "imports": {
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ProcessedColorValue": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/ActionSheetIOS/NativeActionSheetManager.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Alert/Alert.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Alert/NativeAlertManager.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Alert/RCTAlertManager.ios.js.flow": {
+            "imports": {
+                "Args": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/Animated/Animated.js.flow": {
+            "imports": {
+                "AnimatedFlatList": {
+                    "type": "value"
+                },
+                "AnimatedImage": {
+                    "type": "value"
+                },
+                "AnimatedScrollView": {
+                    "type": "value"
+                },
+                "AnimatedSectionList": {
+                    "type": "value"
+                },
+                "AnimatedText": {
+                    "type": "value"
+                },
+                "AnimatedView": {
+                    "type": "value"
+                }
+            }
+        },
+        "/Libraries/Animated/AnimatedEvent.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Animated/AnimatedImplementation.js.flow": {
+            "imports": {
+                "EndCallback": {
+                    "type": "type"
+                },
+                "TimingAnimationConfig": {
+                    "type": "value"
+                },
+                "DecayAnimationConfig": {
+                    "type": "value"
+                },
+                "SpringAnimationConfig": {
+                    "type": "value"
+                },
+                "Mapping": {
+                    "type": "type"
+                },
+                "EventConfig": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Animated/AnimatedMock.js.flow": {
+            "imports": {
+                "EndCallback": {
+                    "type": "type"
+                },
+                "TimingAnimationConfig": {
+                    "type": "value"
+                },
+                "DecayAnimationConfig": {
+                    "type": "value"
+                },
+                "SpringAnimationConfig": {
+                    "type": "value"
+                },
+                "Mapping": {
+                    "type": "type"
+                },
+                "EventConfig": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Animated/bezier.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Animated/createAnimatedComponent.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Animated/Easing.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Animated/NativeAnimatedHelper.js.flow": {
+            "imports": {
+                "NativeEventEmitter": {
+                    "type": "type"
+                },
+                "EventConfig": {
+                    "type": "type"
+                },
+                "EventMapping": {
+                    "type": "type"
+                },
+                "AnimatedNodeConfig": {
+                    "type": "type"
+                },
+                "AnimatingNodeConfig": {
+                    "type": "type"
+                },
+                "AnimationConfig": {
+                    "type": "type"
+                },
+                "EndCallback": {
+                    "type": "type"
+                },
+                "InterpolationConfigType": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Animated/NativeAnimatedModule.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Animated/NativeAnimatedTurboModule.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Animated/SpringConfig.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/AppState/AppState.js.flow": {
+            "imports": {
+                "NativeEventEmitter": {
+                    "type": "type"
+                },
+                "EventEmitter": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/AppState/NativeAppState.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/BatchedBridge/BatchedBridge.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/BatchedBridge/MessageQueue.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/BatchedBridge/NativeModules.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Blob/Blob.js.flow": {
+            "imports": {
+                "BlobData": {
+                    "type": "type"
+                },
+                "BlobOptions": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Blob/BlobManager.js.flow": {
+            "imports": {
+                "BlobData": {
+                    "type": "type"
+                },
+                "BlobOptions": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Blob/BlobRegistry.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Blob/BlobTypes.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Blob/File.js.flow": {
+            "imports": {
+                "BlobOptions": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Blob/FileReader.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Blob/NativeBlobModule.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Blob/NativeFileReaderModule.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/BugReporting/BugReporting.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/BugReporting/dumpReactTree.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/BugReporting/getReactData.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/BugReporting/NativeBugReporting.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/Button.js.flow": {
+            "imports": {
+                "PressEvent": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/ScrollResponder.js.flow": {
+            "imports": {
+                "HostComponent": {
+                    "type": "type"
+                },
+                "PressEvent": {
+                    "type": "type"
+                },
+                "ScrollEvent": {
+                    "type": "type"
+                },
+                "EventSubscription": {
+                    "type": "value"
+                },
+                "KeyboardEvent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/StaticContainer.react.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Components/StaticRenderer.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/checkNativeVersion.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/ExceptionsManager.js.flow": {
+            "imports": {
+                "ExceptionData": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Core/InitializeCore.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/NativeExceptionsManager.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Core/polyfillPromise.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/ReactFiberErrorDialog.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/ReactNativeVersion.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/ReactNativeVersionCheck.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/setUpAlert.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/setUpBatchedBridge.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/setUpDeveloperTools.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/setUpErrorHandling.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/setUpGlobals.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/setUpNavigator.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/setUpPerformance.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/setUpReactDevTools.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/setUpReactRefresh.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/setUpRegeneratorRuntime.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/setUpSegmentFetcher.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/setUpSystrace.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/setUpTimers.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/setUpXHR.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/DeprecatedPropTypes/DeprecatedColorPropType.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/DeprecatedPropTypes/deprecatedCreateStrictShapeTypeChecker.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/DeprecatedPropTypes/DeprecatedEdgeInsetsPropType.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/DeprecatedPropTypes/DeprecatedPointPropType.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/DeprecatedPropTypes/DeprecatedStyleSheetPropType.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/DeprecatedPropTypes/DeprecatedTextStylePropTypes.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/DeprecatedPropTypes/DeprecatedTransformPropTypes.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/DeprecatedPropTypes/DeprecatedViewAccessibility.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/DeprecatedPropTypes/DeprecatedViewPropTypes.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/EventEmitter/NativeEventEmitter.js.flow": {
+            "imports": {
+                "EventEmitter": {
+                    "type": "type"
+                },
+                "EventSubscription": {
+                    "type": "value"
+                }
+            }
+        },
+        "/Libraries/EventEmitter/RCTDeviceEventEmitter.js.flow": {
+            "imports": {
+                "EventEmitter": {
+                    "type": "type"
+                },
+                "EmitterSubscription": {
+                    "type": "unresolved[missing]"
+                },
+                "EventSubscriptionVendor": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/EventEmitter/RCTEventEmitter.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/EventEmitter/RCTNativeAppEventEmitter.js.flow": {
+            "imports": {
+                "RCTDeviceEventEmitter": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/HeapCapture/HeapCapture.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/HeapCapture/NativeJSCHeapCapture.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Image/AssetRegistry.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Image/AssetSourceResolver.js.flow": {
+            "imports": {
+                "PackagerAsset": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Image/Image.ios.js.flow": {
+            "imports": {
+                "ImagePropsType": {
+                    "type": "type"
+                },
+                "ImageViewNativeComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Image/ImageAnalyticsTagContext.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                }
+            }
+        },
+        "/Libraries/Image/ImageBackground.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Image/ImagePickerIOS.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Image/ImageProps.js.flow": {
+            "imports": {
+                "SyntheticEvent": {
+                    "type": "unresolved[missing]"
+                },
+                "LayoutEvent": {
+                    "type": "type"
+                },
+                "EdgeInsetsProp": {
+                    "type": "type"
+                },
+                "ImageSource": {
+                    "type": "type"
+                },
+                "ViewStyleProp": {
+                    "type": "type"
+                },
+                "ImageStyleProp": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Image/ImageResizeMode.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Image/ImageSource.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Image/ImageViewNativeComponent.js.flow": {
+            "imports": {
+                "DangerouslyImpreciseStyle": {
+                    "type": "type"
+                },
+                "ResolvedAssetSource": {
+                    "type": "unresolved[missing]"
+                },
+                "HostComponent": {
+                    "type": "type"
+                },
+                "ImageProps": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                },
+                "ImageStyleProp": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Image/ImageViewViewConfig.js.flow": {
+            "imports": {
+                "ReactNativeBaseComponentViewConfig": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Image/NativeImageEditor.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Image/NativeImageLoaderAndroid.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Image/NativeImageLoaderIOS.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Image/NativeImagePickerIOS.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Image/nativeImageSource.js.flow": {
+            "imports": {
+                "ImageURISource": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/Image/NativeImageStoreAndroid.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Image/NativeImageStoreIOS.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Image/RelativeImageStub.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Image/resolveAssetSource.js.flow": {
+            "imports": {
+                "ResolvedAssetSource": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/Image/TextInlineImageNativeComponent.js.flow": {
+            "imports": {
+                "HostComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Interaction/Batchinator.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Interaction/BridgeSpyStallHandler.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Interaction/FrameRateLogger.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Interaction/InteractionManager.js.flow": {
+            "imports": {
+                "Task": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Interaction/InteractionMixin.js.flow": {
+            "imports": {
+                "Handle": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Interaction/InteractionStallDebugger.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Interaction/JSEventLoopWatchdog.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Interaction/NativeFrameRateLogger.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Interaction/PanResponder.js.flow": {
+            "imports": {
+                "PressEvent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Interaction/TaskQueue.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/LayoutAnimation/LayoutAnimation.js.flow": {
+            "imports": {
+                "LayoutAnimationType": {
+                    "type": "type"
+                },
+                "LayoutAnimationProperty": {
+                    "type": "type"
+                },
+                "LayoutAnimationConfig_": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Linking/Linking.js.flow": {
+            "imports": {
+                "NativeEventEmitter": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Linking/NativeIntentAndroid.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Linking/NativeLinkingManager.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Lists/FillRateHelper.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Lists/FlatList.js.flow": {
+            "imports": {
+                "ScrollResponderType": {
+                    "type": "type"
+                },
+                "ScrollViewNativeComponentType": {
+                    "type": "type"
+                },
+                "ViewStyleProp": {
+                    "type": "type"
+                },
+                "RenderItemType": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Lists/SectionList.js.flow": {
+            "imports": {
+                "ScrollResponderType": {
+                    "type": "type"
+                },
+                "ScrollToLocationParamsType": {
+                    "type": "type"
+                },
+                "_SectionBase": {
+                    "type": "type"
+                },
+                "VirtualizedSectionListProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Lists/ViewabilityHelper.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Lists/VirtualizedList.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "ScrollResponderType": {
+                    "type": "type"
+                },
+                "ViewStyleProp": {
+                    "type": "type"
+                },
+                "ViewabilityConfig": {
+                    "type": "type"
+                },
+                "ViewToken": {
+                    "type": "unresolved[missing]"
+                },
+                "ViewabilityConfigCallbackPair": {
+                    "type": "type"
+                },
+                "VirtualizedListContext": {
+                    "type": "value"
+                }
+            }
+        },
+        "/Libraries/Lists/VirtualizedListContext.js.flow": {
+            "imports": {
+                "VirtualizedList": {
+                    "type": "type"
+                },
+                "React": {
+                    "type": "unresolved[error]"
+                }
+            }
+        },
+        "/Libraries/Lists/VirtualizedSectionList.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Lists/VirtualizeUtils.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/LogBox/LogBox.js.flow": {
+            "imports": {
+                "IgnorePattern": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/LogBox/LogBoxInspectorContainer.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "LogBoxLog": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/LogBox/LogBoxNotificationContainer.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "LogBoxLog": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Modal/Modal.js.flow": {
+            "imports": {
+                "ViewProps": {
+                    "type": "type"
+                },
+                "RootTag": {
+                    "type": "type"
+                },
+                "DirectEventHandler": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Modal/NativeModalManager.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Modal/RCTModalHostViewNativeComponent.js.flow": {
+            "imports": {
+                "HostComponent": {
+                    "type": "type"
+                },
+                "WithDefault": {
+                    "type": "type"
+                },
+                "DirectEventHandler": {
+                    "type": "type"
+                },
+                "Int32": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Network/convertRequestBody.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Network/fetch.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Network/FormData.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Network/NativeNetworkingAndroid.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Network/NativeNetworkingIOS.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Network/RCTNetworking.ios.js.flow": {
+            "imports": {
+                "NativeEventEmitter": {
+                    "type": "type"
+                },
+                "NativeResponseType": {
+                    "type": "type"
+                },
+                "RequestBody": {
+                    "type": "value"
+                }
+            }
+        },
+        "/Libraries/Network/XMLHttpRequest.js.flow": {
+            "imports": {
+                "IPerformanceLogger": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Performance/NativeJSCSamplingProfiler.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Performance/PureComponentDebug.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Performance/QuickPerformanceLogger.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Performance/SamplingProfiler.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Performance/Systrace.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/PermissionsAndroid/NativePermissionsAndroid.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/PermissionsAndroid/PermissionsAndroid.js.flow": {
+            "imports": {
+                "PermissionStatus": {
+                    "type": "type"
+                },
+                "PermissionType": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Pressability/HoverState.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Pressability/Pressability.js.flow": {
+            "imports": {
+                "RectOrSize": {
+                    "type": "type"
+                },
+                "BlurEvent": {
+                    "type": "type"
+                },
+                "FocusEvent": {
+                    "type": "type"
+                },
+                "PressEvent": {
+                    "type": "type"
+                },
+                "MouseEvent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Pressability/PressabilityDebug.js.flow": {
+            "imports": {
+                "ColorValue": {
+                    "type": "type"
+                },
+                "React": {
+                    "type": "unresolved[error]"
+                }
+            }
+        },
+        "/Libraries/Pressability/usePressability.js.flow": {
+            "imports": {
+                "EventHandlers": {
+                    "type": "type"
+                },
+                "PressabilityConfig": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/PushNotificationIOS/NativePushNotificationManagerIOS.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/PushNotificationIOS/PushNotificationIOS.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/ReactNative/AppContainer.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                }
+            }
+        },
+        "/Libraries/ReactNative/AppRegistry.js.flow": {
+            "imports": {
+                "IPerformanceLogger": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/ReactNative/DummyUIManager.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/ReactNative/FabricUIManager.js.flow": {
+            "imports": {
+                "MeasureOnSuccessCallback": {
+                    "type": "type"
+                },
+                "MeasureInWindowOnSuccessCallback": {
+                    "type": "type"
+                },
+                "MeasureLayoutOnSuccessCallback": {
+                    "type": "type"
+                },
+                "LayoutAnimationConfig": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/ReactNative/getNativeComponentAttributes.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/ReactNative/HeadlessJsTaskError.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/ReactNative/I18nManager.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/ReactNative/NativeHeadlessJsTaskSupport.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/ReactNative/NativeI18nManager.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/ReactNative/NativeUIManager.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/ReactNative/PaperUIManager.js.flow": {
+            "imports": {
+                "NativeUIManager": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/ReactNative/queryLayoutByID.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/ReactNative/ReactFabricInternals.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/ReactNative/renderApplication.js.flow": {
+            "imports": {
+                "IPerformanceLogger": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/ReactNative/requireNativeComponent.js.flow": {
+            "imports": {
+                "HostComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/ReactNative/RootTag.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/ReactNative/UIManager.js.flow": {
+            "imports": {
+                "Spec": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/ReactNative/UIManagerProperties.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Reliability/UserFlow.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Settings/NativeSettingsManager.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Settings/Settings.ios.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Share/NativeShareModule.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Share/Share.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Storage/AsyncStorage.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Storage/NativeAsyncLocalStorage.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Storage/NativeAsyncSQLiteDBStorage.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/StyleSheet/EdgeInsetsPropType.js.flow": {
+            "imports": {
+                "Rect": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/StyleSheet/flattenStyle.js.flow": {
+            "imports": {
+                "DangerouslyImpreciseStyle": {
+                    "type": "type"
+                },
+                "DangerouslyImpreciseStyleProp": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/StyleSheet/normalizeColor.js.flow": {
+            "imports": {
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ProcessedColorValue": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/StyleSheet/PlatformColorValueTypes.ios.js.flow": {
+            "imports": {
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ProcessedColorValue": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/StyleSheet/PlatformColorValueTypesIOS.ios.js.flow": {
+            "imports": {
+                "ColorValue": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/StyleSheet/PlatformColorValueTypesIOS.js.flow": {
+            "imports": {
+                "ColorValue": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/StyleSheet/PointPropType.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/StyleSheet/processColor.js.flow": {
+            "imports": {
+                "ColorValue": {
+                    "type": "type"
+                },
+                "NativeColorValue": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/StyleSheet/processColorArray.js.flow": {
+            "imports": {
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ProcessedColorValue": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/StyleSheet/processTransform.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/StyleSheet/Rect.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/StyleSheet/setNormalizedColorAlpha.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/StyleSheet/splitLayoutProps.js.flow": {
+            "imports": {
+                "DangerouslyImpreciseStyle": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/StyleSheet/StyleSheet.js.flow": {
+            "imports": {
+                "____ColorValue_Internal": {
+                    "type": "type"
+                },
+                "____Styles_Internal": {
+                    "type": "type"
+                },
+                "____DangerouslyImpreciseStyle_Internal": {
+                    "type": "type"
+                },
+                "____DangerouslyImpreciseStyleProp_Internal": {
+                    "type": "type"
+                },
+                "____ViewStyle_Internal": {
+                    "type": "type"
+                },
+                "____ViewStyleProp_Internal": {
+                    "type": "type"
+                },
+                "____TextStyle_Internal": {
+                    "type": "type"
+                },
+                "____TextStyleProp_Internal": {
+                    "type": "type"
+                },
+                "____ImageStyle_Internal": {
+                    "type": "type"
+                },
+                "____ImageStyleProp_Internal": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/StyleSheet/StyleSheetTypes.js.flow": {
+            "imports": {
+                "NativeColorValue": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/StyleSheet/StyleSheetValidation.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Text/Text.js.flow": {
+            "imports": {
+                "NativeText": {
+                    "type": "value"
+                },
+                "NativeVirtualText": {
+                    "type": "value"
+                },
+                "TextProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Text/TextAncestor.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Text/TextInjection.js.flow": {
+            "imports": {
+                "Text": {
+                    "type": "value"
+                }
+            }
+        },
+        "/Libraries/Text/TextNativeComponent.js.flow": {
+            "imports": {
+                "HostComponent": {
+                    "type": "type"
+                },
+                "ProcessedColorValue": {
+                    "type": "type"
+                },
+                "TextProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Text/TextProps.js.flow": {
+            "imports": {
+                "LayoutEvent": {
+                    "type": "type"
+                },
+                "PressEvent": {
+                    "type": "type"
+                },
+                "TextLayoutEvent": {
+                    "type": "type"
+                },
+                "Node": {
+                    "type": "unresolved[library]"
+                },
+                "TextStyleProp": {
+                    "type": "type"
+                },
+                "AccessibilityRole": {
+                    "type": "type"
+                },
+                "AccessibilityState": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/TurboModule/RCTExport.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/TurboModule/TurboModuleRegistry.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Types/CodegenTypes.js.flow": {
+            "imports": {
+                "SyntheticEvent": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/Types/CoreEventTypes.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "HostComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Utilities/Appearance.js.flow": {
+            "imports": {
+                "AppearancePreferences": {
+                    "type": "type"
+                },
+                "ColorSchemeName": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Utilities/BackHandler.ios.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/binaryToBase64.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/clamp.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/codegenNativeCommands.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/codegenNativeComponent.js.flow": {
+            "imports": {
+                "HostComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Utilities/createPerformanceLogger.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/DebugEnvironment.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/deepFreezeAndThrowOnMutationInDev.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/defineLazyObjectProperty.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/deprecatedPropType.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/DeviceInfo.js.flow": {
+            "imports": {
+                "NativeDeviceInfo": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Utilities/DevSettings.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/Dimensions.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/dismissKeyboard.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/GlobalPerformanceLogger.js.flow": {
+            "imports": {
+                "IPerformanceLogger": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Utilities/groupByEveryN.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/HMRClient.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/HMRClientProdShim.js.flow": {
+            "imports": {
+                "HMRClientNativeInterface": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Utilities/infoLog.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/JSDevSupportModule.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/LoadingView.ios.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/logError.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/mapWithSeparator.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/mergeIntoFast.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/NativeAppearance.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Utilities/NativeDeviceInfo.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Utilities/NativeDevLoadingView.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Utilities/NativeDevSplitBundleLoader.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Utilities/NativeJSDevSupport.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Utilities/NativePlatformConstantsAndroid.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Utilities/NativePlatformConstantsIOS.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Utilities/PerformanceLoggerContext.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "IPerformanceLogger": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Utilities/PixelRatio.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/Platform.ios.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/PolyfillFunctions.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/RCTLog.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/ReactNativeTestTools.js.flow": {
+            "imports": {
+                "ReactTestRendererType": {
+                    "type": "value"
+                }
+            }
+        },
+        "/Libraries/Utilities/registerGeneratedViewConfig.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/SceneTracker.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/setAndForwardRef.js.flow": {
+            "imports": {
+                "ElementRef": {
+                    "type": "unresolved[library]"
+                },
+                "Ref": {
+                    "type": "unresolved[library]"
+                }
+            }
+        },
+        "/Libraries/Utilities/stringifySafe.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/truncate.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/useColorScheme.js.flow": {
+            "imports": {
+                "ColorSchemeName": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Utilities/useWindowDimensions.js.flow": {
+            "imports": {
+                "DisplayMetrics": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Utilities/verifyComponentAttributeEquivalence.js.flow": {
+            "imports": {
+                "ReactNativeBaseComponentViewConfig": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Utilities/warnOnce.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Vibration/NativeVibration.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Vibration/Vibration.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/WebSocket/NativeWebSocketModule.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/WebSocket/WebSocket.js.flow": {
+            "imports": {
+                "Blob": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/YellowBox/YellowBoxDeprecated.js.flow": {
+            "imports": {
+                "IgnorePattern": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Animated/animations/Animation.js.flow": {
+            "imports": {
+                "AnimatedValue": {
+                    "type": "value"
+                }
+            }
+        },
+        "/Libraries/Animated/animations/DecayAnimation.js.flow": {
+            "imports": {
+                "AnimatedValue": {
+                    "type": "value"
+                },
+                "AnimationConfig": {
+                    "type": "type"
+                },
+                "EndCallback": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Animated/animations/SpringAnimation.js.flow": {
+            "imports": {
+                "AnimationConfig": {
+                    "type": "type"
+                },
+                "EndCallback": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Animated/animations/TimingAnimation.js.flow": {
+            "imports": {
+                "AnimationConfig": {
+                    "type": "type"
+                },
+                "EndCallback": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Animated/components/AnimatedFlatList.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "AnimatedComponentType": {
+                    "type": "value"
+                }
+            }
+        },
+        "/Libraries/Animated/components/AnimatedImage.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "AnimatedComponentType": {
+                    "type": "value"
+                }
+            }
+        },
+        "/Libraries/Animated/components/AnimatedScrollView.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "AnimatedComponentType": {
+                    "type": "value"
+                }
+            }
+        },
+        "/Libraries/Animated/components/AnimatedSectionList.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "AnimatedComponentType": {
+                    "type": "value"
+                }
+            }
+        },
+        "/Libraries/Animated/components/AnimatedText.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "AnimatedComponentType": {
+                    "type": "value"
+                }
+            }
+        },
+        "/Libraries/Animated/components/AnimatedView.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "AnimatedComponentType": {
+                    "type": "value"
+                }
+            }
+        },
+        "/Libraries/Animated/nodes/AnimatedAddition.js.flow": {
+            "imports": {
+                "InterpolationConfigType": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Animated/nodes/AnimatedDiffClamp.js.flow": {
+            "imports": {
+                "InterpolationConfigType": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Animated/nodes/AnimatedDivision.js.flow": {
+            "imports": {
+                "InterpolationConfigType": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Animated/nodes/AnimatedInterpolation.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Animated/nodes/AnimatedModulo.js.flow": {
+            "imports": {
+                "InterpolationConfigType": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Animated/nodes/AnimatedMultiplication.js.flow": {
+            "imports": {
+                "InterpolationConfigType": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Animated/nodes/AnimatedNode.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Animated/nodes/AnimatedProps.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Animated/nodes/AnimatedStyle.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Animated/nodes/AnimatedSubtraction.js.flow": {
+            "imports": {
+                "InterpolationConfigType": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Animated/nodes/AnimatedTracking.js.flow": {
+            "imports": {
+                "EndCallback": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Animated/nodes/AnimatedTransform.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Animated/nodes/AnimatedValue.js.flow": {
+            "imports": {
+                "EndCallback": {
+                    "type": "type"
+                },
+                "Animation": {
+                    "type": "type"
+                },
+                "InterpolationConfigType": {
+                    "type": "type"
+                },
+                "AnimatedTracking": {
+                    "type": "value"
+                }
+            }
+        },
+        "/Libraries/Animated/nodes/AnimatedValueXY.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Animated/nodes/AnimatedWithChildren.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Components/AccessibilityInfo/NativeAccessibilityInfo.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/AccessibilityInfo/NativeAccessibilityManager.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/ActivityIndicator/ActivityIndicator.js.flow": {
+            "imports": {
+                "HostComponent": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/ActivityIndicator/ActivityIndicatorViewNativeComponent.js.flow": {
+            "imports": {
+                "WithDefault": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                },
+                "HostComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/Clipboard/Clipboard.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Components/Clipboard/NativeClipboard.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/DatePicker/DatePickerIOS.ios.js.flow": {
+            "imports": {
+                "SyntheticEvent": {
+                    "type": "unresolved[missing]"
+                },
+                "ViewProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/DatePicker/RCTDatePickerNativeComponent.js.flow": {
+            "imports": {
+                "HostComponent": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                },
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "Float": {
+                    "type": "unresolved[missing]"
+                },
+                "WithDefault": {
+                    "type": "unresolved[missing]"
+                },
+                "BubblingEventHandler": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/Components/DatePickerAndroid/DatePickerAndroid.ios.js.flow": {
+            "imports": {
+                "Options": {
+                    "type": "unresolved[missing]"
+                },
+                "DatePickerOpenAction": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/DatePickerAndroid/DatePickerAndroidTypes.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Components/DatePickerAndroid/NativeDatePickerAndroid.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow": {
+            "imports": {
+                "ViewProps": {
+                    "type": "unresolved[missing]"
+                },
+                "ColorValue": {
+                    "type": "unresolved[missing]"
+                },
+                "WithDefault": {
+                    "type": "unresolved[missing]"
+                },
+                "DirectEventHandler": {
+                    "type": "unresolved[missing]"
+                },
+                "Int32": {
+                    "type": "unresolved[missing]"
+                },
+                "Float": {
+                    "type": "unresolved[missing]"
+                },
+                "HostComponent": {
+                    "type": "unresolved[missing]"
+                },
+                "React": {
+                    "type": "unresolved[error]"
+                }
+            }
+        },
+        "/Libraries/Components/DrawerAndroid/DrawerLayoutAndroid.android.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ViewStyleProp": {
+                    "type": "type"
+                },
+                "DirectEventHandler": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/DrawerAndroid/DrawerLayoutAndroid.ios.js.flow": {
+            "imports": {
+                "UnimplementedView": {
+                    "type": "value"
+                }
+            }
+        },
+        "/Libraries/Components/Keyboard/Keyboard.js.flow": {
+            "imports": {
+                "NativeEventEmitter": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/Keyboard/KeyboardAvoidingView.js.flow": {
+            "imports": {
+                "ViewStyleProp": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/Keyboard/NativeKeyboardObserver.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/MaskedView/MaskedViewIOS.ios.js.flow": {
+            "imports": {
+                "ViewProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/MaskedView/RCTMaskedViewNativeComponent.js.flow": {
+            "imports": {
+                "ViewProps": {
+                    "type": "type"
+                },
+                "HostComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/Picker/AndroidDialogPickerNativeComponent.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "DirectEventHandler": {
+                    "type": "type"
+                },
+                "Int32": {
+                    "type": "type"
+                },
+                "WithDefault": {
+                    "type": "type"
+                },
+                "HostComponent": {
+                    "type": "type"
+                },
+                "TextStyleProp": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ProcessedColorValue": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/Picker/AndroidDialogPickerViewConfig.js.flow": {
+            "imports": {
+                "GeneratedViewConfig": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/Components/Picker/AndroidDropdownPickerNativeComponent.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "DirectEventHandler": {
+                    "type": "type"
+                },
+                "Int32": {
+                    "type": "type"
+                },
+                "WithDefault": {
+                    "type": "type"
+                },
+                "HostComponent": {
+                    "type": "type"
+                },
+                "TextStyleProp": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ProcessedColorValue": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/Picker/Picker.js.flow": {
+            "imports": {
+                "TextStyleProp": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/Picker/PickerIOS.ios.js.flow": {
+            "imports": {
+                "TextStyleProp": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ProcessedColorValue": {
+                    "type": "type"
+                },
+                "SyntheticEvent": {
+                    "type": "unresolved[missing]"
+                },
+                "ViewProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/Picker/RCTPickerNativeComponent.js.flow": {
+            "imports": {
+                "HostComponent": {
+                    "type": "type"
+                },
+                "SyntheticEvent": {
+                    "type": "unresolved[missing]"
+                },
+                "TextStyleProp": {
+                    "type": "type"
+                },
+                "ProcessedColorValue": {
+                    "type": "type"
+                },
+                "React": {
+                    "type": "unresolved[error]"
+                }
+            }
+        },
+        "/Libraries/Components/Picker/RCTPickerViewConfig.js.flow": {
+            "imports": {
+                "ReactNativeBaseComponentViewConfig": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/Pressable/Pressable.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "RippleConfig": {
+                    "type": "type"
+                },
+                "AccessibilityActionEvent": {
+                    "type": "type"
+                },
+                "AccessibilityActionInfo": {
+                    "type": "type"
+                },
+                "AccessibilityRole": {
+                    "type": "type"
+                },
+                "AccessibilityState": {
+                    "type": "type"
+                },
+                "AccessibilityValue": {
+                    "type": "type"
+                },
+                "RectOrSize": {
+                    "type": "type"
+                },
+                "LayoutEvent": {
+                    "type": "type"
+                },
+                "PressEvent": {
+                    "type": "type"
+                },
+                "View": {
+                    "type": "value"
+                }
+            }
+        },
+        "/Libraries/Components/Pressable/useAndroidRippleForView.js.flow": {
+            "imports": {
+                "ColorValue": {
+                    "type": "type"
+                },
+                "PressEvent": {
+                    "type": "type"
+                },
+                "View": {
+                    "type": "unresolved[missing]"
+                },
+                "React": {
+                    "type": "unresolved[error]"
+                }
+            }
+        },
+        "/Libraries/Components/ProgressBarAndroid/ProgressBarAndroid.android.js.flow": {
+            "imports": {
+                "ProgressBarAndroidNativeComponent": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/ProgressBarAndroid/ProgressBarAndroid.ios.js.flow": {
+            "imports": {
+                "UnimplementedView": {
+                    "type": "value"
+                }
+            }
+        },
+        "/Libraries/Components/ProgressBarAndroid/ProgressBarAndroidNativeComponent.js.flow": {
+            "imports": {
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                },
+                "Double": {
+                    "type": "type"
+                },
+                "WithDefault": {
+                    "type": "type"
+                },
+                "HostComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/ProgressViewIOS/ProgressViewIOS.ios.js.flow": {
+            "imports": {
+                "RCTProgressViewNativeComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/ProgressViewIOS/RCTProgressViewNativeComponent.js.flow": {
+            "imports": {
+                "Float": {
+                    "type": "type"
+                },
+                "WithDefault": {
+                    "type": "type"
+                },
+                "ImageSource": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                },
+                "HostComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/RefreshControl/AndroidSwipeRefreshLayoutNativeComponent.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "HostComponent": {
+                    "type": "type"
+                },
+                "DirectEventHandler": {
+                    "type": "type"
+                },
+                "Float": {
+                    "type": "type"
+                },
+                "Int32": {
+                    "type": "type"
+                },
+                "WithDefault": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/RefreshControl/PullToRefreshViewNativeComponent.js.flow": {
+            "imports": {
+                "DirectEventHandler": {
+                    "type": "type"
+                },
+                "WithDefault": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                },
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "HostComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/RefreshControl/RefreshControl.js.flow": {
+            "imports": {
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/SafeAreaView/RCTSafeAreaViewNativeComponent.js.flow": {
+            "imports": {
+                "ViewProps": {
+                    "type": "type"
+                },
+                "WithDefault": {
+                    "type": "type"
+                },
+                "HostComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/SafeAreaView/SafeAreaView.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "HostComponent": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/ScrollView/AndroidHorizontalScrollContentViewNativeComponent.js.flow": {
+            "imports": {
+                "HostComponent": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/ScrollView/AndroidHorizontalScrollViewNativeComponent.js.flow": {
+            "imports": {
+                "HostComponent": {
+                    "type": "type"
+                },
+                "ScrollViewNativeProps": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/Components/ScrollView/processDecelerationRate.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Components/ScrollView/ScrollContentViewNativeComponent.js.flow": {
+            "imports": {
+                "HostComponent": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/ScrollView/ScrollView.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "ScrollResponder": {
+                    "type": "value"
+                },
+                "View": {
+                    "type": "value"
+                },
+                "EdgeInsetsProp": {
+                    "type": "type"
+                },
+                "PointProp": {
+                    "type": "unresolved[missing]"
+                },
+                "ViewStyleProp": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                },
+                "PressEvent": {
+                    "type": "type"
+                },
+                "ScrollEvent": {
+                    "type": "type"
+                },
+                "HostComponent": {
+                    "type": "type"
+                },
+                "ScrollResponderState": {
+                    "type": "value"
+                },
+                "ViewProps": {
+                    "type": "type"
+                },
+                "ScrollViewStickyHeaderProps": {
+                    "type": "unresolved[missing]"
+                },
+                "ScrollViewContext": {
+                    "type": "value"
+                },
+                "ScrollViewNativeComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/ScrollView/ScrollViewCommands.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "Double": {
+                    "type": "unresolved[missing]"
+                },
+                "HostComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/ScrollView/ScrollViewContext.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                }
+            }
+        },
+        "/Libraries/Components/ScrollView/ScrollViewNativeComponent.js.flow": {
+            "imports": {
+                "ScrollViewNativeComponentType": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/ScrollView/ScrollViewNativeComponentType.js.flow": {
+            "imports": {
+                "HostComponent": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                },
+                "ViewStyleProp": {
+                    "type": "type"
+                },
+                "DangerouslyImpreciseStyle": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                },
+                "EdgeInsetsProp": {
+                    "type": "type"
+                },
+                "ScrollEvent": {
+                    "type": "type"
+                },
+                "PointProp": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/Components/ScrollView/ScrollViewStickyHeader.js.flow": {
+            "imports": {
+                "AnimatedImplementation": {
+                    "type": "value"
+                },
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "LayoutEvent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/ScrollView/ScrollViewViewConfig.js.flow": {
+            "imports": {
+                "GeneratedViewConfig": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/Components/SegmentedControlIOS/RCTSegmentedControlNativeComponent.js.flow": {
+            "imports": {
+                "HostComponent": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                },
+                "BubblingEventHandler": {
+                    "type": "type"
+                },
+                "WithDefault": {
+                    "type": "type"
+                },
+                "Int32": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/SegmentedControlIOS/SegmentedControlIOS.ios.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Components/Slider/Slider.js.flow": {
+            "imports": {
+                "SliderNativeComponent": {
+                    "type": "type"
+                },
+                "ImageSource": {
+                    "type": "type"
+                },
+                "ViewStyleProp": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/Slider/SliderNativeComponent.js.flow": {
+            "imports": {
+                "BubblingEventHandler": {
+                    "type": "type"
+                },
+                "DirectEventHandler": {
+                    "type": "type"
+                },
+                "Double": {
+                    "type": "type"
+                },
+                "WithDefault": {
+                    "type": "type"
+                },
+                "HostComponent": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ImageSource": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/Sound/NativeSoundManager.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/Sound/SoundManager.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Components/StatusBar/NativeStatusBarManagerAndroid.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/StatusBar/NativeStatusBarManagerIOS.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/StatusBar/StatusBar.js.flow": {
+            "imports": {
+                "ColorValue": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/StatusBar/StatusBarIOS.js.flow": {
+            "imports": {
+                "NativeEventEmitter": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/Switch/AndroidSwitchNativeComponent.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "WithDefault": {
+                    "type": "unresolved[missing]"
+                },
+                "BubblingEventHandler": {
+                    "type": "unresolved[missing]"
+                },
+                "HostComponent": {
+                    "type": "unresolved[missing]"
+                },
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/Switch/Switch.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "ColorValue": {
+                    "type": "type"
+                },
+                "SyntheticEvent": {
+                    "type": "unresolved[missing]"
+                },
+                "ViewProps": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/Switch/SwitchNativeComponent.js.flow": {
+            "imports": {
+                "BubblingEventHandler": {
+                    "type": "type"
+                },
+                "WithDefault": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                },
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "HostComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/TextInput/AndroidTextInputNativeComponent.js.flow": {
+            "imports": {
+                "ViewProps": {
+                    "type": "type"
+                },
+                "BubblingEventHandler": {
+                    "type": "type"
+                },
+                "DirectEventHandler": {
+                    "type": "type"
+                },
+                "Double": {
+                    "type": "type"
+                },
+                "Float": {
+                    "type": "type"
+                },
+                "Int32": {
+                    "type": "type"
+                },
+                "WithDefault": {
+                    "type": "type"
+                },
+                "HostComponent": {
+                    "type": "type"
+                },
+                "TextStyleProp": {
+                    "type": "type"
+                },
+                "ViewStyleProp": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                },
+                "TextInputNativeCommands": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/Components/TextInput/AndroidTextInputViewConfig.js.flow": {
+            "imports": {
+                "ReactNativeBaseComponentViewConfig": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/TextInput/InputAccessoryView.js.flow": {
+            "imports": {
+                "ViewStyleProp": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/TextInput/RCTInputAccessoryViewNativeComponent.js.flow": {
+            "imports": {
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                },
+                "HostComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/TextInput/RCTMultilineTextInputNativeComponent.js.flow": {
+            "imports": {
+                "HostComponent": {
+                    "type": "type"
+                },
+                "TextInputNativeCommands": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/Components/TextInput/RCTSingelineTextInputNativeComponent.js.flow": {
+            "imports": {
+                "HostComponent": {
+                    "type": "type"
+                },
+                "TextInputNativeCommands": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/Components/TextInput/RCTSinglelineTextInputViewConfig.js.flow": {
+            "imports": {
+                "ReactNativeBaseComponentViewConfig": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/TextInput/TextInput.js.flow": {
+            "imports": {
+                "TextStyleProp": {
+                    "type": "type"
+                },
+                "ViewStyleProp": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                },
+                "SyntheticEvent": {
+                    "type": "unresolved[missing]"
+                },
+                "ScrollEvent": {
+                    "type": "type"
+                },
+                "PressEvent": {
+                    "type": "type"
+                },
+                "HostComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/TextInput/TextInputNativeCommands.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "Int32": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/TextInput/TextInputState.js.flow": {
+            "imports": {
+                "HostComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/ToastAndroid/NativeToastAndroid.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/ToastAndroid/ToastAndroid.android.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Components/ToastAndroid/ToastAndroid.ios.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Components/Touchable/ensurePositiveDelayProps.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Components/Touchable/PooledClass.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Components/Touchable/Touchable.js.flow": {
+            "imports": {
+                "EdgeInsetsProp": {
+                    "type": "type"
+                },
+                "PressEvent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/Touchable/TouchableBounce.js.flow": {
+            "imports": {
+                "ViewStyleProp": {
+                    "type": "type"
+                },
+                "TouchableWithoutFeedback": {
+                    "type": "type"
+                },
+                "Animated": {
+                    "type": "unresolved[missing]"
+                },
+                "React": {
+                    "type": "unresolved[error]"
+                }
+            }
+        },
+        "/Libraries/Components/Touchable/TouchableHighlight.js.flow": {
+            "imports": {
+                "ViewStyleProp": {
+                    "type": "type"
+                },
+                "ColorValue": {
+                    "type": "type"
+                },
+                "TouchableWithoutFeedback": {
+                    "type": "type"
+                },
+                "View": {
+                    "type": "value"
+                },
+                "React": {
+                    "type": "unresolved[error]"
+                }
+            }
+        },
+        "/Libraries/Components/Touchable/TouchableNativeFeedback.js.flow": {
+            "imports": {
+                "Pressability": {
+                    "type": "type"
+                },
+                "TouchableWithoutFeedback": {
+                    "type": "type"
+                },
+                "React": {
+                    "type": "unresolved[error]"
+                }
+            }
+        },
+        "/Libraries/Components/Touchable/TouchableOpacity.js.flow": {
+            "imports": {
+                "TouchableWithoutFeedback": {
+                    "type": "type"
+                },
+                "Animated": {
+                    "type": "unresolved[missing]"
+                },
+                "ViewStyleProp": {
+                    "type": "unresolved[missing]"
+                },
+                "React": {
+                    "type": "unresolved[error]"
+                }
+            }
+        },
+        "/Libraries/Components/Touchable/TouchableWithoutFeedback.js.flow": {
+            "imports": {
+                "Pressability": {
+                    "type": "type"
+                },
+                "AccessibilityActionEvent": {
+                    "type": "type"
+                },
+                "AccessibilityActionInfo": {
+                    "type": "type"
+                },
+                "AccessibilityRole": {
+                    "type": "type"
+                },
+                "AccessibilityState": {
+                    "type": "type"
+                },
+                "AccessibilityValue": {
+                    "type": "type"
+                },
+                "EdgeInsetsProp": {
+                    "type": "type"
+                },
+                "BlurEvent": {
+                    "type": "type"
+                },
+                "FocusEvent": {
+                    "type": "type"
+                },
+                "LayoutEvent": {
+                    "type": "type"
+                },
+                "PressEvent": {
+                    "type": "type"
+                },
+                "React": {
+                    "type": "unresolved[error]"
+                }
+            }
+        },
+        "/Libraries/Components/UnimplementedViews/UnimplementedNativeViewNativeComponent.js.flow": {
+            "imports": {
+                "WithDefault": {
+                    "type": "type"
+                },
+                "ViewProps": {
+                    "type": "type"
+                },
+                "HostComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/UnimplementedViews/UnimplementedView.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Components/View/ReactNativeStyleAttributes.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Components/View/ReactNativeViewAttributes.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow": {
+            "imports": {
+                "ReactNativeViewViewConfigAndroid": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/Components/View/ReactNativeViewViewConfigAndroid.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Components/View/View.js.flow": {
+            "imports": {
+                "ViewProps": {
+                    "type": "type"
+                },
+                "ViewNativeComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/View/ViewAccessibility.js.flow": {
+            "imports": {
+                "SyntheticEvent": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/Components/View/ViewNativeComponent.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "ViewProps": {
+                    "type": "type"
+                },
+                "HostComponent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Components/View/ViewPropTypes.js.flow": {
+            "imports": {
+                "BlurEvent": {
+                    "type": "type"
+                },
+                "FocusEvent": {
+                    "type": "type"
+                },
+                "MouseEvent": {
+                    "type": "type"
+                },
+                "PressEvent": {
+                    "type": "type"
+                },
+                "Layout": {
+                    "type": "type"
+                },
+                "LayoutEvent": {
+                    "type": "type"
+                },
+                "EdgeInsetsProp": {
+                    "type": "type"
+                },
+                "Node": {
+                    "type": "unresolved[library]"
+                },
+                "ViewStyleProp": {
+                    "type": "type"
+                },
+                "AccessibilityRole": {
+                    "type": "type"
+                },
+                "AccessibilityState": {
+                    "type": "type"
+                },
+                "AccessibilityValue": {
+                    "type": "type"
+                },
+                "AccessibilityActionEvent": {
+                    "type": "type"
+                },
+                "AccessibilityActionInfo": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Core/Devtools/getDevServer.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/Devtools/openFileInEditor.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/Devtools/openURLInBrowser.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/Devtools/parseErrorStack.js.flow": {
+            "imports": {
+                "StackFrame": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/Core/Devtools/parseHermesStack.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/Devtools/symbolicateStackTrace.js.flow": {
+            "imports": {
+                "StackFrame": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/Core/SegmentFetcher/NativeSegmentFetcher.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Core/Timers/JSTimers.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Core/Timers/NativeTiming.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/LogBox/Data/LogBoxData.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "LogBoxLog": {
+                    "type": "type"
+                },
+                "LogLevel": {
+                    "type": "type"
+                },
+                "Message": {
+                    "type": "type"
+                },
+                "Category": {
+                    "type": "type"
+                },
+                "ComponentStack": {
+                    "type": "type"
+                },
+                "ExtendedExceptionData": {
+                    "type": "unresolved[missing]"
+                },
+                "ExtendedError": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/LogBox/Data/LogBoxLog.js.flow": {
+            "imports": {
+                "Category": {
+                    "type": "type"
+                },
+                "Message": {
+                    "type": "type"
+                },
+                "ComponentStack": {
+                    "type": "type"
+                },
+                "CodeFrame": {
+                    "type": "type"
+                },
+                "Stack": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/LogBox/Data/LogBoxSymbolication.js.flow": {
+            "imports": {
+                "StackFrame": {
+                    "type": "unresolved[missing]"
+                },
+                "SymbolicatedStackTrace": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/LogBox/Data/parseLogBoxLog.js.flow": {
+            "imports": {
+                "ExceptionData": {
+                    "type": "type"
+                },
+                "LogBoxLogData": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/LogBox/UI/AnsiHighlight.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "TextStyleProp": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/LogBox/UI/LogBoxButton.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "EdgeInsetsProp": {
+                    "type": "type"
+                },
+                "ViewStyleProp": {
+                    "type": "type"
+                },
+                "PressEvent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/LogBox/UI/LogBoxInspector.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "LogLevel": {
+                    "type": "type"
+                },
+                "LogBoxLog": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/LogBox/UI/LogBoxInspectorCodeFrame.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "CodeFrame": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/LogBox/UI/LogBoxInspectorFooter.js.flow": {
+            "imports": {
+                "LogLevel": {
+                    "type": "type"
+                },
+                "React": {
+                    "type": "unresolved[error]"
+                }
+            }
+        },
+        "/Libraries/LogBox/UI/LogBoxInspectorHeader.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "LogLevel": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/LogBox/UI/LogBoxInspectorMessageHeader.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "LogLevel": {
+                    "type": "type"
+                },
+                "Message": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/LogBox/UI/LogBoxInspectorReactFrames.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "LogBoxLog": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/LogBox/UI/LogBoxInspectorSection.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                }
+            }
+        },
+        "/Libraries/LogBox/UI/LogBoxInspectorSourceMapStatus.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "PressEvent": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/LogBox/UI/LogBoxInspectorStackFrame.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "PressEvent": {
+                    "type": "type"
+                },
+                "StackFrame": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/LogBox/UI/LogBoxInspectorStackFrames.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "Stack": {
+                    "type": "type"
+                },
+                "LogBoxLog": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/LogBox/UI/LogBoxMessage.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "TextStyleProp": {
+                    "type": "type"
+                },
+                "Message": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/LogBox/UI/LogBoxNotification.js.flow": {
+            "imports": {
+                "React": {
+                    "type": "unresolved[error]"
+                },
+                "LogBoxLog": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/LogBox/UI/LogBoxStyle.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/NativeModules/specs/NativeAnimationsDebugModule.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/NativeModules/specs/NativeDeviceEventManager.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/NativeModules/specs/NativeDevMenu.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/NativeModules/specs/NativeDevSettings.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/NativeModules/specs/NativeDialogManagerAndroid.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/NativeModules/specs/NativeLogBox.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/NativeModules/specs/NativeRedBox.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/NativeModules/specs/NativeSourceCode.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Renderer/shims/createReactNativeComponentClass.js.flow": {
+            "imports": {
+                "ViewConfigGetter": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Renderer/shims/ReactFabric.js.flow": {
+            "imports": {
+                "ReactNativeType": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Renderer/shims/ReactFeatureFlags.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Renderer/shims/ReactNative.js.flow": {
+            "imports": {
+                "ReactNativeType": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Renderer/shims/ReactNativeTypes.js.flow": {
+            "imports": {
+                "ElementRef": {
+                    "type": "unresolved[library]"
+                },
+                "AbstractComponent": {
+                    "type": "unresolved[library]"
+                }
+            }
+        },
+        "/Libraries/Renderer/shims/ReactNativeViewConfigRegistry.js.flow": {
+            "imports": {
+                "ReactNativeBaseComponentViewConfig": {
+                    "type": "type"
+                },
+                "ViewConfigGetter": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/TurboModule/samples/NativeSampleTurboModule.js.flow": {
+            "imports": {
+                "RootTag": {
+                    "type": "type"
+                },
+                "TurboModule": {
+                    "type": "type"
+                }
+            }
+        },
+        "/Libraries/Utilities/differ/deepDiffer.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/differ/insetsDiffer.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/differ/pointsDiffer.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/Utilities/differ/sizesDiffer.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/vendor/emitter/EventEmitter.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/vendor/emitter/_EmitterSubscription.js.flow": {
+            "imports": {
+                "EventEmitter": {
+                    "type": "type"
+                },
+                "EventSubscription": {
+                    "type": "unresolved[missing]"
+                },
+                "EventSubscriptionVendor": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/vendor/emitter/_EventEmitter.js.flow": {
+            "imports": {}
+        },
+        "/Libraries/vendor/emitter/_EventSubscription.js.flow": {
+            "imports": {
+                "EventSubscriptionVendor": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        },
+        "/Libraries/vendor/emitter/_EventSubscriptionVendor.js.flow": {
+            "imports": {
+                "EventSubscription": {
+                    "type": "unresolved[missing]"
+                }
+            }
+        }
+    }
+}
