@@ -9,7 +9,7 @@ function convertParameters(
   path: NodePath<any>,
   params: Array<t.Identifier | t.Pattern | t.RestElement | t.TSParameterProperty>
 ): (t.Identifier | t.RestElement)[] {
-  return params.map((flowParam, index) => {
+  return params.map((flowParam) => {
     switch (flowParam.type) {
       case "Identifier": {
         const paramType = (<t.TypeAnnotation>flowParam.typeAnnotation).typeAnnotation

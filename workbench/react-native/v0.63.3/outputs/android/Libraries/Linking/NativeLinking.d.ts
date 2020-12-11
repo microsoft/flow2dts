@@ -7,7 +7,7 @@ interface Spec extends TurboModule {
   readonly openURL: (url: string) => Promise<void>;
   readonly openSettings: () => Promise<void>;
   // Android only
-  readonly sendIntent: (action: string, extras: null | undefined | {
+  readonly sendIntent: (action: string, extras?: null | undefined | {
     key: string;
     value: string | number | boolean;
   }[]) => Promise<void>;

@@ -21,7 +21,7 @@ declare class WebSocket extends $1 {
   protocol: null | undefined | string;
   readyState: number;
   url: null | undefined | string;
-  constructor(url: string, protocols: (null | undefined | string) | (null | undefined | string[]), options: null | undefined | {
+  constructor(url: string, protocols: (null | undefined | string) | (null | undefined | string[]), options?: null | undefined | {
     headers?: {
       origin?: string;
     };

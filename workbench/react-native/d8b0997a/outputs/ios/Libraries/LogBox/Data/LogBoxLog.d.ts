@@ -59,7 +59,7 @@ declare class LogBoxLog {
   retrySymbolicate(callback?: (status: SymbolicationStatus) => void): void;
   symbolicate(callback?: (status: SymbolicationStatus) => void): void;
   handleSymbolicate(callback?: (status: SymbolicationStatus) => void): void;
-  updateStatus(error: null | undefined | Error, stack: null | undefined | Stack, codeFrame: null | undefined | CodeFrame, callback?: (status: SymbolicationStatus) => void): void;
+  updateStatus(error?: null | undefined | Error, stack?: null | undefined | Stack, codeFrame?: null | undefined | CodeFrame, callback?: (status: SymbolicationStatus) => void): void;
 }
 export type { LogLevel };
 export type { LogBoxLogData };

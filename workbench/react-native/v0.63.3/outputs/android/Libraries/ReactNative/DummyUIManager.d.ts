@@ -7,10 +7,10 @@ declare const $f2t_playTouchSound: () => void;
 declare const $f2t_lazilyLoadView: (name: string) => void;
 declare const $f2t_createView: (reactTag: null | undefined | number, viewName: string, rootTag: number, props: Object) => void;
 declare const $f2t_updateView: (reactTag: number, viewName: string, props: Object) => void;
-declare const $f2t_focus: (reactTag: null | undefined | number) => void;
-declare const $f2t_blur: (reactTag: null | undefined | number) => void;
+declare const $f2t_focus: (reactTag?: null | undefined | number) => void;
+declare const $f2t_blur: (reactTag?: null | undefined | number) => void;
 declare const $f2t_findSubviewIn: (reactTag: null | undefined | number, point: number[], callback: (nativeViewTag: number, left: number, top: number, width: number, height: number) => void) => void;
-declare const $f2t_dispatchViewManagerCommand: (reactTag: null | undefined | number, commandID: number, commandArgs: null | undefined | (string | number | boolean)[]) => void;
+declare const $f2t_dispatchViewManagerCommand: (reactTag: null | undefined | number, commandID: number, commandArgs?: null | undefined | (string | number | boolean)[]) => void;
 declare const $f2t_measure: (reactTag: null | undefined | number, callback: (left: number, top: number, width: number, height: number, pageX: number, pageY: number) => void) => void;
 declare const $f2t_measureInWindow: (reactTag: null | undefined | number, callback: (x: number, y: number, width: number, height: number) => void) => void;
 declare const $f2t_viewIsDescendantOf: (reactTag: null | undefined | number, ancestorReactTag: null | undefined | number, callback: (result: boolean[]) => void) => void;
@@ -20,7 +20,7 @@ declare const $f2t_setJSResponder: (reactTag: null | undefined | number, blockNa
 declare const $f2t_clearJSResponder: () => void;
 declare const $f2t_configureNextLayoutAnimation: (config: Object, callback: () => void, errorCallback: (error: Object) => void) => void;
 declare const $f2t_removeSubviewsFromContainerWithID: (containerID: number) => void;
-declare const $f2t_replaceExistingNonRootView: (reactTag: null | undefined | number, newReactTag: null | undefined | number) => void;
+declare const $f2t_replaceExistingNonRootView: (reactTag?: null | undefined | number, newReactTag?: null | undefined | number) => void;
 declare const $f2t_setChildren: (containerTag: null | undefined | number, reactTags: number[]) => void;
 declare const $f2t_manageChildren: (containerTag: null | undefined | number, moveFromIndices: number[], moveToIndices: number[], addChildReactTags: number[], addAtIndices: number[], removeAtIndices: number[]) => void;
 declare const $f2t_setLayoutAnimationEnabledExperimental: (enabled: boolean) => void;
@@ -40,10 +40,10 @@ declare const $f2tExportDefault:
   lazilyLoadView: (name: string) => void;
   createView: (reactTag: null | undefined | number, viewName: string, rootTag: number, props: Object) => void;
   updateView: (reactTag: number, viewName: string, props: Object) => void;
-  focus: (reactTag: null | undefined | number) => void;
-  blur: (reactTag: null | undefined | number) => void;
+  focus: (reactTag?: null | undefined | number) => void;
+  blur: (reactTag?: null | undefined | number) => void;
   findSubviewIn: (reactTag: null | undefined | number, point: number[], callback: (nativeViewTag: number, left: number, top: number, width: number, height: number) => void) => void;
-  dispatchViewManagerCommand: (reactTag: null | undefined | number, commandID: number, commandArgs: null | undefined | (string | number | boolean)[]) => void;
+  dispatchViewManagerCommand: (reactTag: null | undefined | number, commandID: number, commandArgs?: null | undefined | (string | number | boolean)[]) => void;
   measure: (reactTag: null | undefined | number, callback: (left: number, top: number, width: number, height: number, pageX: number, pageY: number) => void) => void;
   measureInWindow: (reactTag: null | undefined | number, callback: (x: number, y: number, width: number, height: number) => void) => void;
   viewIsDescendantOf: (reactTag: null | undefined | number, ancestorReactTag: null | undefined | number, callback: (result: boolean[]) => void) => void;
@@ -53,7 +53,7 @@ declare const $f2tExportDefault:
   clearJSResponder: () => void;
   configureNextLayoutAnimation: (config: Object, callback: () => void, errorCallback: (error: Object) => void) => void;
   removeSubviewsFromContainerWithID: (containerID: number) => void;
-  replaceExistingNonRootView: (reactTag: null | undefined | number, newReactTag: null | undefined | number) => void;
+  replaceExistingNonRootView: (reactTag?: null | undefined | number, newReactTag?: null | undefined | number) => void;
   setChildren: (containerTag: null | undefined | number, reactTags: number[]) => void;
   manageChildren: (containerTag: null | undefined | number, moveFromIndices: number[], moveToIndices: number[], addChildReactTags: number[], addAtIndices: number[], removeAtIndices: number[]) => void;
   // Android only

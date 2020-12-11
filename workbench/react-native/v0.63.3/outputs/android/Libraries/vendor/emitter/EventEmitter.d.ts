@@ -28,7 +28,7 @@ declare class EventEmitter {
    * @param {EventSubscriptionVendor} subscriber - Optional subscriber instance
    *   to use. If omitted, a new subscriber will be created for the emitter.
    */
-  constructor(subscriber: null | undefined | EventSubscriptionVendor);
+  constructor(subscriber?: null | undefined | EventSubscriptionVendor);
 
   /**
    * Adds a listener to be invoked when events of the specified type are
@@ -44,7 +44,7 @@ declare class EventEmitter {
    * @param {*} context - Optional context object to use when invoking the
    *   listener
    */
-  addListener(eventType: string, listener: Function, context: null | undefined | Object): EmitterSubscription;
+  addListener(eventType: string, listener: Function, context?: null | undefined | Object): EmitterSubscription;
 
   /**
    * Similar to addListener, except that the listener is removed after it is
@@ -56,7 +56,7 @@ declare class EventEmitter {
    * @param {*} context - Optional context object to use when invoking the
    *   listener
    */
-  once(eventType: string, listener: Function, context: null | undefined | Object): EmitterSubscription;
+  once(eventType: string, listener: Function, context?: null | undefined | Object): EmitterSubscription;
 
   /**
    * Removes all of the registered listeners, including those registered as
@@ -65,7 +65,7 @@ declare class EventEmitter {
    * @param {?string} eventType - Optional name of the event whose registered
    *   listeners to remove
    */
-  removeAllListeners(eventType: null | undefined | string): void;
+  removeAllListeners(eventType?: null | undefined | string): void;
 
   /**
    * Provides an API that can be called during an eventing cycle to remove the

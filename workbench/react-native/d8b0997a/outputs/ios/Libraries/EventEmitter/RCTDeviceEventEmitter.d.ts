@@ -7,8 +7,8 @@ import EventSubscriptionVendor from "../vendor/emitter/_EventSubscriptionVendor"
 declare class RCTDeviceEventEmitter extends EventEmitter {
   sharedSubscriber: $TypeOf<typeof EventSubscriptionVendor>;
   constructor();
-  addListener(eventType: string, listener: Function, context: null | undefined | Object): EmitterSubscription;
-  removeAllListeners(eventType: null | undefined | string): void;
+  addListener(eventType: string, listener: Function, context?: null | undefined | Object): EmitterSubscription;
+  removeAllListeners(eventType?: null | undefined | string): void;
   removeSubscription(subscription: EmitterSubscription): void;
 }
 declare const $f2tExportDefault: RCTDeviceEventEmitter;

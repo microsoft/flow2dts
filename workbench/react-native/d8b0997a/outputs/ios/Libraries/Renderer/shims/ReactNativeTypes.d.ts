@@ -114,7 +114,7 @@ declare type ReactNativeType = {
   findHostInstance_DEPRECATED: (componentOrHandle: any) => null | undefined | ElementRef<HostComponent<any>>;
   findNodeHandle: (componentOrHandle: any) => null | undefined | number;
   dispatchCommand: (handle: any, command: string, args: any[]) => void;
-  render: (element: React$Element<any>, containerTag: any, callback: null | undefined | Function) => any;
+  render: (element: React$Element<any>, containerTag: any, callback?: null | undefined | Function) => any;
   unmountComponentAtNode: (containerTag: number) => any;
   unmountComponentAtNodeAndRemoveContainer: (containerTag: number) => any;
   // TODO (bvaughn) Add types
@@ -125,7 +125,7 @@ declare type ReactFabricType = {
   findHostInstance_DEPRECATED: (componentOrHandle: any) => null | undefined | ElementRef<HostComponent<any>>;
   findNodeHandle: (componentOrHandle: any) => null | undefined | number;
   dispatchCommand: (handle: any, command: string, args: any[]) => void;
-  render: (element: React$Element<any>, containerTag: any, callback: null | undefined | Function) => any;
+  render: (element: React$Element<any>, containerTag: any, callback?: null | undefined | Function) => any;
   unmountComponentAtNode: (containerTag: number) => any;
 };
 declare type ReactNativeEventTarget = {

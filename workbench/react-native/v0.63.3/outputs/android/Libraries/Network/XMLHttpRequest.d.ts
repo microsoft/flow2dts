@@ -46,7 +46,7 @@ declare class XMLHttpRequest extends $1 {
   responseURL: null | undefined | string;
   withCredentials: boolean;
   upload: XMLHttpRequestEventTarget;
-  static setInterceptor(interceptor: null | undefined | XHRInterceptor): void;
+  static setInterceptor(interceptor?: null | undefined | XHRInterceptor): void;
   constructor();
   responseType(): ResponseType;
   responseType(responseType: ResponseType): void;
@@ -56,7 +56,7 @@ declare class XMLHttpRequest extends $1 {
   __didCreateRequest(requestId: number): void;
   // exposed for testing
   __didUploadProgress(requestId: number, progress: number, total: number): void;
-  __didReceiveResponse(requestId: number, status: number, responseHeaders: null | undefined | Object, responseURL: null | undefined | string): void;
+  __didReceiveResponse(requestId: number, status: number, responseHeaders?: null | undefined | Object, responseURL?: null | undefined | string): void;
   __didReceiveData(requestId: number, response: string): void;
   __didReceiveIncrementalData(requestId: number, responseText: string, progress: number, total: number): void;
   __didReceiveDataProgress(requestId: number, loaded: number, total: number): void;
@@ -70,10 +70,10 @@ declare class XMLHttpRequest extends $1 {
    * Custom extension for tracking origins of request.
    */
   setTrackingName(trackingName: string): XMLHttpRequest;
-  open(method: string, url: string, async: null | undefined | boolean): void;
+  open(method: string, url: string, async?: null | undefined | boolean): void;
   send(data: any): void;
   abort(): void;
-  setResponseHeaders(responseHeaders: null | undefined | Object): void;
+  setResponseHeaders(responseHeaders?: null | undefined | Object): void;
   setReadyState(newState: number): void;
 
   /* global EventListener */

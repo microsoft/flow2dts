@@ -5,7 +5,7 @@ interface Spec extends TurboModule {
   readonly canOpenURL: (url: string) => Promise<boolean>;
   readonly openURL: (url: string) => Promise<void>;
   readonly openSettings: () => Promise<void>;
-  readonly sendIntent: (action: string, extras: null | undefined | {
+  readonly sendIntent: (action: string, extras?: null | undefined | {
     key: string;
     value: string | number | boolean; // TODO(T67672788): Union types are not type safe
 

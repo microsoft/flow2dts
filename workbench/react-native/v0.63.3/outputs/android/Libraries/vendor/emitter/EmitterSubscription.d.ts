@@ -19,7 +19,7 @@ declare class EmitterSubscription extends $2 {
    * @param {*} context - Optional context object to use when invoking the
    *   listener
    */
-  constructor(emitter: EventEmitter, subscriber: EventSubscriptionVendor, listener: Function, context: null | undefined | Object);
+  constructor(emitter: EventEmitter, subscriber: EventSubscriptionVendor, listener: Function, context?: null | undefined | Object);
 
   /**
    * Removes this subscription from the emitter that registered it.

@@ -33,7 +33,7 @@ interface Spec extends TurboModule {
     readonly code: string;
     readonly userInfo?: null | undefined | Object;
     readonly message: string;
-  }) => void, successCallback: (completed: boolean, activityType: null | undefined | string) => void) => void;
+  }) => void, successCallback: (completed: boolean, activityType?: null | undefined | string) => void) => void;
 }
 export type { Spec };
 declare const $f2tExportDefault: null | undefined | Spec;

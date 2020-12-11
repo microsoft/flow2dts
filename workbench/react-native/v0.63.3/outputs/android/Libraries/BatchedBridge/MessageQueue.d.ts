@@ -18,10 +18,10 @@ declare class MessageQueue {
   registerCallableModule(name: string, module: Object): void;
   registerLazyCallableModule(name: string, factory: ($f2t1: void) => Object): void;
   getCallableModule(name: string): any | null;
-  callNativeSyncHook(moduleID: number, methodID: number, params: any[], onFail: null | undefined | Function, onSucc: null | undefined | Function): any;
-  processCallbacks(moduleID: number, methodID: number, params: any[], onFail: null | undefined | Function, onSucc: null | undefined | Function): void;
-  enqueueNativeCall(moduleID: number, methodID: number, params: any[], onFail: null | undefined | Function, onSucc: null | undefined | Function): void;
-  createDebugLookup(moduleID: number, name: string, methods: null | undefined | ReadonlyArray<string>): void;
+  callNativeSyncHook(moduleID: number, methodID: number, params: any[], onFail?: null | undefined | Function, onSucc?: null | undefined | Function): any;
+  processCallbacks(moduleID: number, methodID: number, params: any[], onFail?: null | undefined | Function, onSucc?: null | undefined | Function): void;
+  enqueueNativeCall(moduleID: number, methodID: number, params: any[], onFail?: null | undefined | Function, onSucc?: null | undefined | Function): void;
+  createDebugLookup(moduleID: number, name: string, methods?: null | undefined | ReadonlyArray<string>): void;
   // For JSTimers to register its callback. Otherwise a circular dependency
   // between modules is introduced. Note that only one callback may be
   // registered at a time.
