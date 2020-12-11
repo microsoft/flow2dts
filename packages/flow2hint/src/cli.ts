@@ -7,7 +7,7 @@ import path from "path"
 import fs from "fs"
 import chalk from "chalk"
 
-import { singleFlow2Hint } from "./singleFlow2Hint"
+import { singleFlow2Hint, HintFileEntries } from "./singleFlow2Hint"
 
 const FLOW_EXTNAME = ".js.flow"
 const HINT_EXTNAME = ".hint.json"
@@ -22,9 +22,10 @@ async function run({
   outDir: string
   patterns: string[]
   cwd?: string
-}): Promise<[number, number]> {
+}): Promise<[number, number, HintFileEntries]> {
   let totalCount = 0
   let successCount = 0
+  const collectedHintFiles: HintFileEntries = {}
   for await (const _filename of glob.stream(patterns, { absolute: true, cwd })) {
     const filename = _filename as string
     const outFilename = getOutFilename(outDir, rootDir, filename, FLOW_EXTNAME)
@@ -35,13 +36,13 @@ async function run({
       successCount++
     } else {
       console.log(`⚒️ ${chalk.dim(relativePath(cwd, filename))}`)
-      await singleFlow2Hint({ rootDir, filename, outFilename }).then((outFilename) => {
+      await singleFlow2Hint({ rootDir, filename, outFilename, collectedHintFiles }).then((outFilename) => {
         console.log(chalk.green(`✓ ${relativePath(cwd, outFilename)}`))
         successCount++
       })
     }
   }
-  return [totalCount, successCount]
+  return [totalCount, successCount, collectedHintFiles]
 }
 
 function relativePath(cwd: string | undefined, filename: string) {

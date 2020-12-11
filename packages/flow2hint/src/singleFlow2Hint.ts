@@ -141,14 +141,18 @@ const FLOW_BIN = require.resolve("flow-bin/cli.js")
 
 const regexStdout = /^(.+\.js\.flow):(\d+):(\d+),(\d+):(\d+)/
 
+export type HintFileEntries = { [key: string]: HintFile }
+
 export async function singleFlow2Hint({
   rootDir,
   filename,
   outFilename,
+  collectedHintFiles,
 }: {
   rootDir: string
   filename: string
   outFilename: string
+  collectedHintFiles: HintFileEntries
 }): Promise<string> {
   const normalizedRootDir = rootDir.replace(/\\/g, "/")
 
@@ -160,10 +164,12 @@ export async function singleFlow2Hint({
   })
 
   const hint: HintFile = { imports: {}, decls: [] }
+  collectedHintFiles[filename.substr(0, rootDir.length).replace(/\\/g, "/")] = hint
   babelTraverse<HintFile>(flowAst, flowImportAndDeclVisitor(rootDir, filename), undefined, hint)
 
   for (const key in hint.imports) {
     const hintImport = hint.imports[key]
+    hintImport.error = ""
 
     const relativePath = "." + filename.substr(rootDir.length)
     const args = [FLOW_BIN, "get-def", relativePath, `${hintImport.source?.row}`, `${hintImport.source?.column}`]
@@ -194,12 +200,19 @@ export async function singleFlow2Hint({
               fromLibrary,
               file: fromLibrary ? file : file.substr(normalizedRootDir.length),
             }
+            hintImport.error = undefined
+          } else {
+            hintImport.error += `[unrecognizable stdout]${data}`
           }
         }
       })
       spawnResult.stderr.on("data", (data) => {
         if (!resolved) {
-          console.log(`${data}`)
+          const error = `${data}`
+          console.log(error)
+          if (!error.startsWith("Please wait.")) {
+            hintImport.error += error
+          }
         }
       })
 
