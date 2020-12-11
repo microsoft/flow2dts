@@ -594,7 +594,7 @@ ViewProps & IOSProps & AndroidProps & VRProps & {
 declare type State =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 ScrollResponderState & {
-  layoutHeight: null | undefined | number;
+  layoutHeight?: null | undefined | number;
 };
 declare type ContextType =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

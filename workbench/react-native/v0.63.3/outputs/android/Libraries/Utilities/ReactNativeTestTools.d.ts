@@ -14,7 +14,7 @@ declare function maximumDepthError(tree: ReactTestRendererType, maxDepthLimit: n
 declare function expectNoConsoleWarn(): void;
 declare function expectNoConsoleError(): void;
 declare function expectRendersMatchingSnapshot(name: string, ComponentProvider: () => $1.Element<any>, unmockComponent: () => unknown): void;
-declare function maximumDepthOfJSON(node: null | undefined | ReactTestRendererJSON): number;
+declare function maximumDepthOfJSON(node?: null | undefined | ReactTestRendererJSON): number;
 declare function renderAndEnforceStrictMode(element: $1.Node): any;
 declare function renderWithStrictMode(element: $1.Node): ReactTestRendererType;
 declare function tap(instance: ReactTestInstance): void;

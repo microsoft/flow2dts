@@ -4,8 +4,8 @@ interface Spec extends TurboModule {
   readonly getConstants: () =>
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    BLOB_URI_SCHEME: null | undefined | string;
-    BLOB_URI_HOST: null | undefined | string;
+    BLOB_URI_SCHEME?: null | undefined | string;
+    BLOB_URI_HOST?: null | undefined | string;
   };
   readonly addNetworkingHandler: () => void;
   readonly addWebSocketHandler: (id: number) => void;

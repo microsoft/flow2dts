@@ -16,7 +16,7 @@ declare var InteractionManager:
    * Schedule a function to run after all interactions have completed. Returns a cancellable
    * "promise".
    */
-  runAfterInteractions: (task: null | undefined | Task) => {
+  runAfterInteractions: (task?: null | undefined | Task) => {
     then: <U>(onFulfill?: null | undefined | (($f2t1: void) => null | undefined | (Promise<U> | U)), onReject?: null | undefined | ((error: unknown) => null | undefined | (Promise<U> | U))) => Promise<U>;
     done: () => void;
     cancel: () => void;

@@ -15,7 +15,7 @@ class CB2 {
 
 class CC {
   c() {}
-  d(a: string, b?: ?number, ...c: Array<number>): boolean {}
+  d(a: string, b: ?number, ...c: Array<number>): boolean {}
 }
 
 class CD<T> {

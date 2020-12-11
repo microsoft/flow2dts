@@ -18,13 +18,13 @@ declare type ChildListState = Readonly<{
 declare type ListDebugInfo = Readonly<{
   cellKey: string;
   listKey: string;
-  parent: null | undefined | ListDebugInfo;
+  parent?: null | undefined | ListDebugInfo;
   // We include all ancestors regardless of orientation, so this is not always
   // identical to the child's orientation.
   horizontal: boolean;
 }>;
 declare type Context = Readonly<{
-  cellKey: null | undefined | string;
+  cellKey?: null | undefined | string;
   getScrollMetrics: () => {
     contentLength: number;
     dOffset: number;
@@ -34,7 +34,7 @@ declare type Context = Readonly<{
     velocity: number;
     visibleLength: number;
   };
-  horizontal: null | undefined | boolean;
+  horizontal?: null | undefined | boolean;
   getOutermostParentListRef: () => VirtualizedList;
   getNestedChildState: ($f2t1: string) => null | undefined | ChildListState;
   registerAsNestedChild: ($f2t1: {

@@ -15,7 +15,7 @@ declare class Animation {
   __active: boolean;
   __isInteraction: boolean;
   __nativeId: number;
-  __onEnd: null | undefined | EndCallback;
+  __onEnd?: null | undefined | EndCallback;
   __iterations: number;
   start(fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | Animation, animatedValue: AnimatedValue): void;
   stop(): void;

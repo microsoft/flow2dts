@@ -17,10 +17,10 @@ declare type State =
 declare var ScrollResponderMixin:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  _subscriptionKeyboardWillShow: null | undefined | EventSubscription;
-  _subscriptionKeyboardWillHide: null | undefined | EventSubscription;
-  _subscriptionKeyboardDidShow: null | undefined | EventSubscription;
-  _subscriptionKeyboardDidHide: null | undefined | EventSubscription;
+  _subscriptionKeyboardWillShow?: null | undefined | EventSubscription;
+  _subscriptionKeyboardWillHide?: null | undefined | EventSubscription;
+  _subscriptionKeyboardDidShow?: null | undefined | EventSubscription;
+  _subscriptionKeyboardDidHide?: null | undefined | EventSubscription;
   scrollResponderMixinGetInitialState: () => State;
 
   /**

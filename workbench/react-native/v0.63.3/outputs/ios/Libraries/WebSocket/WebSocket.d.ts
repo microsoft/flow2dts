@@ -11,16 +11,16 @@ declare class WebSocket extends $2 {
   OPEN: number;
   CLOSING: number;
   CLOSED: number;
-  onclose: null | undefined | Function;
-  onerror: null | undefined | Function;
-  onmessage: null | undefined | Function;
-  onopen: null | undefined | Function;
+  onclose?: null | undefined | Function;
+  onerror?: null | undefined | Function;
+  onmessage?: null | undefined | Function;
+  onopen?: null | undefined | Function;
   bufferedAmount: number;
-  extension: null | undefined | string;
-  protocol: null | undefined | string;
+  extension?: null | undefined | string;
+  protocol?: null | undefined | string;
   readyState: number;
-  url: null | undefined | string;
-  constructor(url: string, protocols: (null | undefined | string) | (null | undefined | string[]), options: null | undefined | {
+  url?: null | undefined | string;
+  constructor(url: string, protocols: (null | undefined | string) | (null | undefined | string[]), options?: null | undefined | {
     headers?: {
       origin?: string;
     };

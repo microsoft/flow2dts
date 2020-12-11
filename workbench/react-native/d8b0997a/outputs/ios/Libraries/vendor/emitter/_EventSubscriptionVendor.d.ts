@@ -18,7 +18,7 @@ declare class EventSubscriptionVendor {
    * @param {?string} eventType - Optional name of the event type whose
    *   registered supscriptions to remove, if null remove all subscriptions.
    */
-  removeAllSubscriptions(eventType: null | undefined | string): void;
+  removeAllSubscriptions(eventType?: null | undefined | string): void;
 
   /**
    * Removes a specific subscription. Instead of calling this function, call

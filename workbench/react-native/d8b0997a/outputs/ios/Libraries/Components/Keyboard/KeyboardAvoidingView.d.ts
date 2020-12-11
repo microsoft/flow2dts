@@ -18,7 +18,7 @@ ViewProps & {
   * Controls whether this `KeyboardAvoidingView` instance should take effect.
   * This is useful when more than one is on the screen. Defaults to true.
   */
-  enabled: null | undefined | boolean;
+  enabled?: null | undefined | boolean;
 
   /**
   * Distance between the top of the user screen and the React Native view. This

@@ -283,7 +283,7 @@ declare type Props = Readonly<
 $Diff<ViewProps, Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  style: null | undefined | ViewStyleProp;
+  style?: null | undefined | ViewStyleProp;
 }>> & IOSProps & AndroidProps & {
   /**
   * Can tell `TextInput` to automatically capitalize certain characters.

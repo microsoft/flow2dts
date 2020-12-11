@@ -5,7 +5,7 @@ declare type Props = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
   color: ColorValue;
-  hitSlop: null | undefined | Readonly<
+  hitSlop?: null | undefined | Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
     bottom?: null | undefined | number;

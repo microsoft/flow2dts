@@ -8,9 +8,9 @@ declare type NativeBackgroundProp = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
   type: "RippleAndroid";
-  color: null | undefined | number;
+  color?: null | undefined | number;
   borderless: boolean;
-  rippleRadius: null | undefined | number;
+  rippleRadius?: null | undefined | number;
 }>;
 declare type RippleConfig =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

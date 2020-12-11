@@ -8,7 +8,7 @@ declare class Blob {
    * Reference: https://developer.mozilla.org/en-US/docs/Web/API/Blob/Blob
    */
   constructor(parts?: (Blob | string)[], options?: BlobOptions);
-  data(data: null | undefined | BlobData): void;
+  data(data?: null | undefined | BlobData): void;
   data(): BlobData;
   slice(start?: number, end?: number): Blob;
 

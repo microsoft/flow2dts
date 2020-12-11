@@ -5,7 +5,7 @@ declare type CodeFrame = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
   content: string;
-  location: null | undefined | {
+  location?: null | undefined | {
     row: number;
     column: number;
   };
@@ -15,7 +15,7 @@ declare type SymbolicatedStackTrace = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
   stack: StackFrame[];
-  codeFrame: null | undefined | CodeFrame;
+  codeFrame?: null | undefined | CodeFrame;
 }>;
 declare function symbolicateStackTrace(stack: StackFrame[]): Promise<SymbolicatedStackTrace>;
 export type { CodeFrame };

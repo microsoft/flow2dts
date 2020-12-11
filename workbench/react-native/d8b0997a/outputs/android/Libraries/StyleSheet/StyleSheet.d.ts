@@ -46,7 +46,7 @@ export type { DangerouslyImpreciseStyle };
 declare const $f2t_hairlineWidth: $TypeOf<typeof hairlineWidth>;
 declare const $f2t_absoluteFill: any;
 declare const $f2t_absoluteFillObject: $TypeOf<typeof absoluteFill>;
-declare const $f2t_compose: <T extends DangerouslyImpreciseStyleProp>(style1: null | undefined | T, style2: null | undefined | T) => (null | undefined | T) | ReadonlyArray<T>;
+declare const $f2t_compose: <T extends DangerouslyImpreciseStyleProp>(style1?: null | undefined | T, style2?: null | undefined | T) => (null | undefined | T) | ReadonlyArray<T>;
 declare const $f2t_flatten: $TypeOf<typeof $1>;
 declare const $f2t_setStyleAttributePreprocessor: (property: string, process: (nextProp: unknown) => unknown) => void;
 declare const $f2t_create: <
@@ -104,7 +104,7 @@ declare const $f2tExportDefault:
    * array, saving allocations and maintaining reference equality for
    * PureComponent checks.
    */
-  compose: <T extends DangerouslyImpreciseStyleProp>(style1: null | undefined | T, style2: null | undefined | T) => (null | undefined | T) | ReadonlyArray<T>;
+  compose: <T extends DangerouslyImpreciseStyleProp>(style1?: null | undefined | T, style2?: null | undefined | T) => (null | undefined | T) | ReadonlyArray<T>;
 
   /**
    * Flattens an array of style objects, into one aggregated style object.

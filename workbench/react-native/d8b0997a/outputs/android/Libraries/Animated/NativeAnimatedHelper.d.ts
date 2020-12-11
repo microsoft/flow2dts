@@ -40,7 +40,7 @@ declare function addWhitelistedInterpolationParam(param: string): void;
 declare function validateTransform(configs: ({
   type: "animated";
   property: string;
-  nodeTag: null | undefined | number;
+  nodeTag?: null | undefined | number;
 } | {
   type: "static";
   property: string;

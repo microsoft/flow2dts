@@ -7,8 +7,8 @@ declare type NativeModule = {
   readonly removeListeners: (count: number) => void;
 };
 declare class NativeEventEmitter extends $1 {
-  constructor(nativeModule: null | undefined | NativeModule);
-  addListener(eventType: string, listener: Function, context: null | undefined | Object): EmitterSubscription;
+  constructor(nativeModule?: null | undefined | NativeModule);
+  addListener(eventType: string, listener: Function, context?: null | undefined | Object): EmitterSubscription;
   removeAllListeners(eventType: string): void;
   removeSubscription(subscription: EmitterSubscription): void;
 }

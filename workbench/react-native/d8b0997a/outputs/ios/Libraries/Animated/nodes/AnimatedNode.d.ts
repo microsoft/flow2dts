@@ -1,6 +1,6 @@
 // @flow
 declare class AnimatedNode {
-  __nativeAnimatedValueListener: null | undefined | any;
+  __nativeAnimatedValueListener?: null | undefined | any;
   __attach(): void;
   __detach(): void;
   __getValue(): any;
@@ -11,7 +11,7 @@ declare class AnimatedNode {
 
   /* Methods and props used by native Animated impl */
   __isNative: boolean;
-  __nativeTag: null | undefined | number;
+  __nativeTag?: null | undefined | number;
   __shouldUpdateListenersForNewNativeTag: boolean;
   constructor();
   __makeNative(): void;

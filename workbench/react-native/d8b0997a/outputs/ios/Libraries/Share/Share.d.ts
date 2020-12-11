@@ -15,7 +15,7 @@ declare type Options = {
 declare class Share {
   static share(content: Content, options?: Options): Promise<{
     action: string;
-    activityType: null | undefined | string;
+    activityType?: null | undefined | string;
   }>;
   static sharedAction: "sharedAction";
   static dismissedAction: "dismissedAction";

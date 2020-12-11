@@ -13,8 +13,8 @@ declare type NativeEventEmitterOptions = Readonly<
 type EventEmitterWithoutAddListenerType = new (...args: ConstructorParameters<typeof EventEmitter>) => Omit<InstanceType<typeof EventEmitter>, "addListener" | "removeAllListeners" | "removeSubscription">;
 declare const EventEmitterWithoutAddListener: EventEmitterWithoutAddListenerType;
 declare class NativeEventEmitter extends EventEmitterWithoutAddListener {
-  constructor(nativeModule: null | undefined | NativeModule, options?: NativeEventEmitterOptions);
-  addListener(eventType: string, listener: Function, context: null | undefined | Object): EventSubscription;
+  constructor(nativeModule?: null | undefined | NativeModule, options?: NativeEventEmitterOptions);
+  addListener(eventType: string, listener: Function, context?: null | undefined | Object): EventSubscription;
   removeAllListeners(eventType: string): void;
   removeSubscription(subscription: EventSubscription): void;
 }

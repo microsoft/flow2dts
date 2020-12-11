@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import { Visitor, types as t } from "@babel/core"
+import { Visitor, types as t, NodePath } from "@babel/core"
 import { State } from "../state"
 import { assertTSType, nameForParameter, nameForRestParameter } from "../utilities"
 
@@ -40,14 +40,10 @@ export const advancedTypeVisitor: Visitor<State> = {
       path.replaceWith(t.tsIntersectionType(types))
     },
   },
-  NullableTypeAnnotation: {
-    exit(path) {
-      const type = path.node.typeAnnotation as any
-      assertTSType(type)
-      path.replaceWith(t.tsUnionType([t.tsNullKeyword(), t.tsUndefinedKeyword(), type]))
-    },
-  },
   FunctionTypeAnnotation: {
+    enter(path) {
+      explicitlyMarkNullableParamAsOptional(path)
+    },
     exit(path) {
       const { returnType, params, rest, typeParameters } = path.node
       if (typeParameters) t.assertTSTypeParameterDeclaration(typeParameters)
@@ -71,4 +67,32 @@ export const advancedTypeVisitor: Visitor<State> = {
       path.replaceWith(t.tsFunctionType(typeParameters, args, t.tsTypeAnnotation(returnType)))
     },
   },
+  NullableTypeAnnotation: {
+    exit(path) {
+      const type = path.node.typeAnnotation as any
+      assertTSType(type)
+      path.replaceWith(t.tsUnionType([t.tsNullKeyword(), t.tsUndefinedKeyword(), type]))
+    },
+  },
+  // We don't actually rewrite the function declaration here, but record on the param node that params with a nullable
+  // type annotation can semantically be considered optional. This information is needed later on when we actually
+  // rewrite the function declaration.
+  Function: {
+    enter(path) {
+      explicitlyMarkNullableParamAsOptional(path)
+    },
+  },
+}
+
+function explicitlyMarkNullableParamAsOptional(path: NodePath<t.Function> | NodePath<t.FunctionTypeAnnotation>) {
+  path.node.params.forEach((param: t.Node) => {
+    if (
+      (t.isIdentifier(param) &&
+        t.isTypeAnnotation(param.typeAnnotation) &&
+        t.isNullableTypeAnnotation(param.typeAnnotation.typeAnnotation)) ||
+      (t.isFunctionTypeParam(param) && t.isNullableTypeAnnotation(param.typeAnnotation))
+    ) {
+      param.optional = true
+    }
+  })
 }

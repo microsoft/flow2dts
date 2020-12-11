@@ -95,6 +95,11 @@ export const objectTypeVisitor: Visitor<State> = {
     },
   },
   ObjectTypeProperty: {
+    enter(path) {
+      if (t.isNullableTypeAnnotation(path.node.value)) {
+        path.node.optional = true
+      }
+    },
     exit(path) {
       const { key, kind, variance, optional } = path.node
       let value = path.node.value as any

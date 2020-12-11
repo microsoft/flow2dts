@@ -9,7 +9,7 @@ declare type Rect = Readonly<
 }>;
 declare type RectOrSize = Rect | number;
 declare function createSquare(size: number): Rect;
-declare function normalizeRect(rectOrSize: null | undefined | RectOrSize): null | undefined | Rect;
+declare function normalizeRect(rectOrSize?: null | undefined | RectOrSize): null | undefined | Rect;
 export type { Rect };
 export type { RectOrSize };
 export { createSquare };

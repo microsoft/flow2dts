@@ -66,7 +66,7 @@ declare type ImageProps =
 $Diff<ViewProps, Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  style: null | undefined | ViewStyleProp;
+  style?: null | undefined | ViewStyleProp;
 }>> & IOSImageProps & AndroidImageProps & {
   /**
    * When true, indicates the image is an accessibility element.

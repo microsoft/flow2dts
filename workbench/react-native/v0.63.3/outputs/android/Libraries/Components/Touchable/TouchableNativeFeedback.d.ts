@@ -18,14 +18,14 @@ React.ElementConfig<TouchableWithoutFeedback> & {
   {
     type: "ThemeAttrAndroid";
     attribute: "selectableItemBackground" | "selectableItemBackgroundBorderless";
-    rippleRadius: null | undefined | number;
+    rippleRadius?: null | undefined | number;
   }> | Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
     type: "RippleAndroid";
-    color: null | undefined | number;
+    color?: null | undefined | number;
     borderless: boolean;
-    rippleRadius: null | undefined | number;
+    rippleRadius?: null | undefined | number;
   }>);
 
   /**
@@ -76,26 +76,26 @@ declare type State = Readonly<
   pressability: $TypeOf<typeof Pressability>;
 }>;
 declare class TouchableNativeFeedback extends React.Component<Props, State> {
-  static SelectableBackground(rippleRadius: null | undefined | number): Readonly<
+  static SelectableBackground(rippleRadius?: null | undefined | number): Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
     attribute: "selectableItemBackground";
     type: "ThemeAttrAndroid";
-    rippleRadius: null | undefined | number;
+    rippleRadius?: null | undefined | number;
   }>;
-  static SelectableBackgroundBorderless(rippleRadius: null | undefined | number): Readonly<
+  static SelectableBackgroundBorderless(rippleRadius?: null | undefined | number): Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
     attribute: "selectableItemBackgroundBorderless";
     type: "ThemeAttrAndroid";
-    rippleRadius: null | undefined | number;
+    rippleRadius?: null | undefined | number;
   }>;
-  static Ripple(color: string, borderless: boolean, rippleRadius: null | undefined | number): Readonly<
+  static Ripple(color: string, borderless: boolean, rippleRadius?: null | undefined | number): Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
     borderless: boolean;
-    color: null | undefined | number;
-    rippleRadius: null | undefined | number;
+    color?: null | undefined | number;
+    rippleRadius?: null | undefined | number;
     type: "RippleAndroid";
   }>;
   static canUseNativeForeground(): boolean;

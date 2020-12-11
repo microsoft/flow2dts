@@ -9,7 +9,7 @@ declare type EventMapping =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
   nativeEventPath: string[];
-  animatedValueTag: null | undefined | number;
+  animatedValueTag?: null | undefined | number;
 };
 declare type AnimatedNodeConfig = Object;
 declare type AnimatingNodeConfig = Object;

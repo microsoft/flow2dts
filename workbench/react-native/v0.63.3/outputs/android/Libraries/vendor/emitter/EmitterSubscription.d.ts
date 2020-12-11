@@ -7,7 +7,7 @@ declare type EventSubscriptionVendor = $TypeOf<typeof EventSubscriptionVendor$f2
 declare class EmitterSubscription extends $2 {
   emitter: EventEmitter;
   listener: Function;
-  context: null | undefined | Object;
+  context?: null | undefined | Object;
 
   /**
    * @param {EventEmitter} emitter - The event emitter that registered this
@@ -19,7 +19,7 @@ declare class EmitterSubscription extends $2 {
    * @param {*} context - Optional context object to use when invoking the
    *   listener
    */
-  constructor(emitter: EventEmitter, subscriber: EventSubscriptionVendor, listener: Function, context: null | undefined | Object);
+  constructor(emitter: EventEmitter, subscriber: EventSubscriptionVendor, listener: Function, context?: null | undefined | Object);
 
   /**
    * Removes this subscription from the emitter that registered it.

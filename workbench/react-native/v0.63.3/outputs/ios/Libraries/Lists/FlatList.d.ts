@@ -14,7 +14,7 @@ declare type RequiredProps<ItemT> =
    * For simplicity, data is just a plain array. If you want to use something else, like an
    * immutable list, use the underlying `VirtualizedList` directly.
    */
-  data: null | undefined | ReadonlyArray<ItemT>;
+  data?: null | undefined | ReadonlyArray<ItemT>;
 };
 declare type OptionalProps<ItemT> =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

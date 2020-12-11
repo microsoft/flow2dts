@@ -73,7 +73,7 @@ declare class AnimatedValue extends $3 {
    *
    * See https://reactnative.dev/docs/animatedvalue.html#animate
    */
-  animate(animation: Animation, callback: null | undefined | EndCallback): void;
+  animate(animation: Animation, callback?: null | undefined | EndCallback): void;
 
   /**
    * Typically only used internally.

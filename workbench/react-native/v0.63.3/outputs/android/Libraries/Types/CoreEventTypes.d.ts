@@ -5,26 +5,26 @@ import { HostComponent } from "../Renderer/shims/ReactNativeTypes";
 declare type SyntheticEvent<T> = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  bubbles: null | undefined | boolean;
-  cancelable: null | undefined | boolean;
+  bubbles?: null | undefined | boolean;
+  cancelable?: null | undefined | boolean;
   currentTarget: number | React.ElementRef<HostComponent<any>>;
-  defaultPrevented: null | undefined | boolean;
+  defaultPrevented?: null | undefined | boolean;
   dispatchConfig: Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
     registrationName: string;
   }>;
-  eventPhase: null | undefined | number;
+  eventPhase?: null | undefined | number;
   preventDefault: () => void;
   isDefaultPrevented: () => boolean;
   stopPropagation: () => void;
   isPropagationStopped: () => boolean;
-  isTrusted: null | undefined | boolean;
+  isTrusted?: null | undefined | boolean;
   nativeEvent: T;
   persist: () => void;
   target: (null | undefined | number) | React.ElementRef<HostComponent<any>>;
   timeStamp: number;
-  type: null | undefined | string;
+  type?: null | undefined | string;
 }>;
 declare type ResponderSyntheticEvent<T> = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -88,7 +88,7 @@ declare type PressEvent = ResponderSyntheticEvent<Readonly<
   locationY: number;
   pageX: number;
   pageY: number;
-  target: null | undefined | number;
+  target?: null | undefined | number;
   timestamp: number;
   touches: ReadonlyArray<$PropertyType<PressEvent, "nativeEvent">>;
 }>>;

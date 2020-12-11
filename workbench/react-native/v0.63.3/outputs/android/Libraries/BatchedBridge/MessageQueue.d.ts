@@ -1,12 +1,12 @@
 // @flow
 declare type SpyData = {
   type: number;
-  module: null | undefined | string;
+  module?: null | undefined | string;
   method: string | number;
   args: any[];
 };
 declare class MessageQueue {
-  __spy: null | undefined | ((data: SpyData) => void);
+  __spy?: null | undefined | ((data: SpyData) => void);
   constructor();
   static spy(spyOrToggle: boolean | ((data: SpyData) => void)): void;
   callFunctionReturnFlushedQueue(module: string, method: string, args: any[]): null | [number[], number[], any[], number];
@@ -18,10 +18,10 @@ declare class MessageQueue {
   registerCallableModule(name: string, module: Object): void;
   registerLazyCallableModule(name: string, factory: ($f2t1: void) => Object): void;
   getCallableModule(name: string): any | null;
-  callNativeSyncHook(moduleID: number, methodID: number, params: any[], onFail: null | undefined | Function, onSucc: null | undefined | Function): any;
-  processCallbacks(moduleID: number, methodID: number, params: any[], onFail: null | undefined | Function, onSucc: null | undefined | Function): void;
-  enqueueNativeCall(moduleID: number, methodID: number, params: any[], onFail: null | undefined | Function, onSucc: null | undefined | Function): void;
-  createDebugLookup(moduleID: number, name: string, methods: null | undefined | ReadonlyArray<string>): void;
+  callNativeSyncHook(moduleID: number, methodID: number, params: any[], onFail?: null | undefined | Function, onSucc?: null | undefined | Function): any;
+  processCallbacks(moduleID: number, methodID: number, params: any[], onFail?: null | undefined | Function, onSucc?: null | undefined | Function): void;
+  enqueueNativeCall(moduleID: number, methodID: number, params: any[], onFail?: null | undefined | Function, onSucc?: null | undefined | Function): void;
+  createDebugLookup(moduleID: number, name: string, methods?: null | undefined | ReadonlyArray<string>): void;
   // For JSTimers to register its callback. Otherwise a circular dependency
   // between modules is introduced. Note that only one callback may be
   // registered at a time.

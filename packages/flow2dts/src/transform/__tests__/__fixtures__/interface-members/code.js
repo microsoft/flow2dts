@@ -13,12 +13,12 @@ interface IB2 {
 
 interface IC {
   c(): void;
-  d(a: string, b?: ?number, ...c: Array<number>): boolean;
+  d(a: string, b: ?number, ...c: Array<number>): boolean;
 }
 
 interface ID {
   (): void;
-  (a: string, b?: ?number, ...c: Array<number>): boolean;
+  (a: string, b: ?number, ...c: Array<number>): boolean;
 }
 
 interface IE {

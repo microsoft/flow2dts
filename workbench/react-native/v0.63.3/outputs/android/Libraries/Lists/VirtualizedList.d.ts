@@ -315,7 +315,7 @@ declare type State = {
 declare type ListDebugInfo = {
   cellKey: string;
   listKey: string;
-  parent: null | undefined | ListDebugInfo;
+  parent?: null | undefined | ListDebugInfo;
   // We include all ancestors regardless of orientation, so this is not always
   // identical to the child's orientation.
   horizontal: boolean;
@@ -416,7 +416,7 @@ declare class VirtualizedList extends $1.PureComponent<Props, State> {
         velocity: number;
         visibleLength: number;
       };
-      horizontal: null | undefined | boolean;
+      horizontal?: null | undefined | boolean;
       getOutermostParentListRef: Function;
       getNestedChildState: ($f2t1: string) => null | undefined | ChildListState;
       registerAsNestedChild: ($f2t1: {

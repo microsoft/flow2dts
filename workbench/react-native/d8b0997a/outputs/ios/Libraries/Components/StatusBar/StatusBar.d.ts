@@ -89,7 +89,7 @@ AndroidProps & IOSProps & {
   barStyle?: null | undefined | ("default" | "light-content" | "dark-content");
 }>;
 declare class StatusBar extends $1.Component<Props> {
-  static currentHeight: null | undefined | number;
+  static currentHeight?: null | undefined | number;
   static setHidden(hidden: boolean, animation?: StatusBarAnimation): void;
   static setBarStyle(style: StatusBarStyle, animated?: boolean): void;
   static setNetworkActivityIndicatorVisible(visible: boolean): void;

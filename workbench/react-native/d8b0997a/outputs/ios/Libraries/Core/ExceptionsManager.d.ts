@@ -5,7 +5,7 @@ declare class SyntheticError extends Error {
   name: string;
 }
 declare type ExceptionDecorator = ($f2t1: ExceptionData) => ExceptionData;
-declare function unstable_setExceptionDecorator(exceptionDecorator: null | undefined | ExceptionDecorator): void;
+declare function unstable_setExceptionDecorator(exceptionDecorator?: null | undefined | ExceptionDecorator): void;
 declare function handleException(e: unknown, isFatal: boolean): void;
 declare function installConsoleErrorReporter(): void;
 declare namespace $f2tExportDefaultRedirect {

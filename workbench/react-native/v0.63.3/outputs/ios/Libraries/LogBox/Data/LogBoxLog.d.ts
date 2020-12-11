@@ -20,13 +20,13 @@ declare type LogBoxLogData = Readonly<
 }>;
 declare class LogBoxLog {
   message: Message;
-  type: null | undefined | string;
+  type?: null | undefined | string;
   category: Category;
   componentStack: ComponentStack;
   stack: Stack;
   count: number;
   level: LogLevel;
-  codeFrame: null | undefined | CodeFrame;
+  codeFrame?: null | undefined | CodeFrame;
   isComponentError: boolean;
   symbolicated: Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -59,7 +59,7 @@ declare class LogBoxLog {
   retrySymbolicate(callback?: (status: SymbolicationStatus) => void): void;
   symbolicate(callback?: (status: SymbolicationStatus) => void): void;
   handleSymbolicate(callback?: (status: SymbolicationStatus) => void): void;
-  updateStatus(error: null | undefined | Error, stack: null | undefined | Stack, codeFrame: null | undefined | CodeFrame, callback?: (status: SymbolicationStatus) => void): void;
+  updateStatus(error?: null | undefined | Error, stack?: null | undefined | Stack, codeFrame?: null | undefined | CodeFrame, callback?: (status: SymbolicationStatus) => void): void;
 }
 export type { LogLevel };
 export type { LogBoxLogData };
