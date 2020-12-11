@@ -8,6 +8,7 @@ import fs from "fs"
 import chalk from "chalk"
 
 import { singleFlow2Hint, HintFileEntries } from "./singleFlow2Hint"
+import { mergeHint } from "./mergeHint"
 
 const FLOW_EXTNAME = ".js.flow"
 const HINT_EXTNAME = ".hint.json"
@@ -84,8 +85,11 @@ async function main() {
   const rootDir = path.resolve(cwd || "", argv.rootDir)
   const patterns = argv._
 
-  const [totalCount, successCount] = await run({ cwd, outDir, rootDir, patterns })
+  const [totalCount, successCount, collectedHintFiles] = await run({ cwd, outDir, rootDir, patterns })
   console.log(`\nSuccessfully converted ${successCount} of ${totalCount}\n`)
+
+  const mergedEntries = mergeHint(collectedHintFiles)
+  await fs.promises.writeFile(path.join(outDir, "hint.json"), JSON.stringify(mergedEntries, undefined, 4), "utf8")
   process.exit(totalCount - successCount)
 }
 

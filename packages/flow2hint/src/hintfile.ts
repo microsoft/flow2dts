@@ -30,7 +30,12 @@ export interface HintFile {
 }
 
 export interface ResolvedHintImport {
-  type: "type" | "value" | "class" | "unresolved[error]" | "unresolved[library]"
+  /*
+   library: resolved to library files
+   missing: resolved to local file but don't know what it is
+   error: error while running `flow get-def`
+   */
+  type: "type" | "value" | "class" | "unresolved[library]" | "unresolved[missing]" | "unresolved[error]"
 }
 
 export interface ResolvedHintFile {
