@@ -1,8 +1,8 @@
 diff --git a/node_modules/@types/react/index.d.ts b/node_modules/@types/react/index.d.ts
-index 3289c78..eb547dd 100644
+index 3289c78..338db3c 100644
 --- a/node_modules/@types/react/index.d.ts
 +++ b/node_modules/@types/react/index.d.ts
-@@ -65,8 +65,73 @@ interface SchedulerInteraction {
+@@ -65,8 +65,33 @@ interface SchedulerInteraction {
  export = React;
  export as namespace React;
  
@@ -14,6 +14,7 @@ index 3289c78..eb547dd 100644
 +type _DOM_Element = Element;
 +
  declare namespace React {
+-    //
 +    type Node = ReactNode
 +    type Element<P> = ReactElement<P>
 +
@@ -29,6 +30,24 @@ index 3289c78..eb547dd 100644
 +
 +    type ChildrenArray<T> = T | Array<ChildrenArray<T>>
 +
++    /**************************************************************************
++     * flow2dts END
++    **************************************************************************/
++
+     // React Elements
+     // ----------------------------------------------------------------------
+ 
+@@ -125,6 +150,36 @@ declare namespace React {
+                 : never
+             : never;
+ 
++    /**
++     * Calculates a config object from props and default props. This is most useful for annotating HOCs that are abstracted over configs.
++     *
++     * @see https://flow.org/en/docs/react/types/#toc-react-config
++     */
++    type Config<Props extends DefaultProps, DefaultProps extends {}> = Omit<Props, keyof DefaultProps> & Partial<DefaultProps>;
++
 +    interface ComponentMethods<Props> {
 +        context: any;
 +        props: Props;
@@ -40,43 +59,22 @@ index 3289c78..eb547dd 100644
 +        render(): React.ReactNode;
 +        forceUpdate(callback?: () => void): void;
 +    }
-+    type AbstractComponent<Config extends {}, Instance = unknown> =
-+        // Either a function component that has a specific return type:
-+        (React.FunctionComponent<Config> & ((props: React.PropsWithChildren<Config>, context?: any) => Instance))
-+        // ...or a class component that has the required Component methods and the Instance methods
-+        | { new(props: Config, context?: any): (Instance & ComponentMethods<Config>) };
-+    // TESTS:
-+    // const FB: React.FunctionComponent<{ foo: string }> = props => (<div>{props.foo}</div>)
-+    // class CB extends React.Component<{ foo: string }> {
-+    //     someMethod(): boolean {
-+    //         return true
-+    //     }
-+    // }
-+    //
-+    // const FBA: AbstractComponent<{ foo: string }> = FB;
-+    // // const FBA: AbstractComponent<{ foo: string }, void> = FB;
-+    // // const FBA: AbstractComponent<{ foo: string }, number> = FB; // Error
-+    // const fba = <FBA foo="bar" 
-+    // // const fba = <FBA />; // Error, missing
-+    // // const fba = <FBA foo={42} />; // Error, number is not string
-+    //
-+    // const CBA: AbstractComponent<{ foo: string }, { someMethod: () => boolean }> = CB;
-+    // // const CBA: AbstractComponent<{ foo: string }, { someMethod: () => boolean }> = class { someMethod = () => true }; // Error, missing component methods (ComponentMethods)
-+    // // const CBA: AbstractComponent<{ foo: string }, { someMethod: () => boolean }> = class extends React.Component<{ foo: string }> { }; // Error, missing someMethod
-+    // // const CBA: AbstractComponent<{ foo: string }, { someMethod: () => boolean }> = class extends React.Component<{ foo: string }> { someMethod = () => 42 }; // Error, someMethod's return type is not boolean
-     //
-+    // const cba = <CBA foo="bar" />
-+    // // const cba = <CBA /> // Error, missing
-+    // // const cba = <CBA foo={42} /> // Error, number is not string
++    type AbstractComponent<Config extends {}, Instance = void> =
++        | ((
++              props: PropsWithChildren<Config> & RefAttributes<Instance>,
++              context?: any
++          ) => ReactElement<any, any> | null)
++        | {
++              new (
++                props: PropsWithChildren<Config> & RefAttributes<Instance>,
++                context?: any
++              ): Instance & ComponentMethods<Config>;
++          };
 +
-+    /**************************************************************************
-+     * flow2dts END
-+    **************************************************************************/
-+
-     // React Elements
-     // ----------------------------------------------------------------------
+     type ComponentState = any;
  
-@@ -171,7 +236,7 @@ declare namespace React {
+     type Key = string | number;
+@@ -171,7 +226,7 @@ declare namespace React {
      type ClassicElement<P> = CElement<P, ClassicComponent<P, ComponentState>>;
  
      // string fallback for custom web-components
@@ -85,7 +83,7 @@ index 3289c78..eb547dd 100644
          ref: LegacyRef<T>;
      }
  
-@@ -211,7 +276,7 @@ declare namespace React {
+@@ -211,7 +266,7 @@ declare namespace React {
      type CFactory<P, T extends Component<P, ComponentState>> = ComponentFactory<P, T>;
      type ClassicFactory<P> = CFactory<P, ClassicComponent<P, ComponentState>>;
  
@@ -94,7 +92,7 @@ index 3289c78..eb547dd 100644
          (props?: ClassAttributes<T> & P | null, ...children: ReactNode[]) => DOMElement<P, T>;
  
      interface HTMLFactory<T extends HTMLElement> extends DetailedHTMLFactory<AllHTMLAttributes<T>, T> {}
-@@ -245,10 +310,10 @@ declare namespace React {
+@@ -245,10 +300,10 @@ declare namespace React {
          type: keyof ReactHTML): HTMLFactory<T>;
      function createFactory(
          type: keyof ReactSVG): SVGFactory;
@@ -107,7 +105,7 @@ index 3289c78..eb547dd 100644
      function createFactory<P>(type: FunctionComponent<P>): FunctionComponentFactory<P>;
      function createFactory<P>(
          type: ClassType<P, ClassicComponent<P, ComponentState>, ClassicComponentClass<P>>): CFactory<P, ClassicComponent<P, ComponentState>>;
-@@ -270,7 +335,7 @@ declare namespace React {
+@@ -270,7 +325,7 @@ declare namespace React {
          type: keyof ReactSVG,
          props?: ClassAttributes<T> & P | null,
          ...children: ReactNode[]): ReactSVGElement;
@@ -116,7 +114,18 @@ index 3289c78..eb547dd 100644
          type: string,
          props?: ClassAttributes<T> & P | null,
          ...children: ReactNode[]): DOMElement<P, T>;
-@@ -311,7 +376,7 @@ declare namespace React {
+@@ -293,6 +348,10 @@ declare namespace React {
+         type: FunctionComponent<P> | ComponentClass<P> | string,
+         props?: Attributes & P | null,
+         ...children: ReactNode[]): ReactElement<P>;
++    function createElement<P extends {}>(
++        type: AbstractComponent<P, any>,
++        props?: Attributes & P | null,
++        ...children: ReactNode[]): ReactElement<P>;
+ 
+     // DOM Elements
+     // ReactHTMLElement
+@@ -311,7 +370,7 @@ declare namespace React {
          props?: P,
          ...children: ReactNode[]): ReactSVGElement;
      // DOM Element (has to be the last, because type checking stops at first overload that fits)
@@ -125,7 +134,7 @@ index 3289c78..eb547dd 100644
          element: DOMElement<P, T>,
          props?: DOMAttributes<T> & P,
          ...children: ReactNode[]): DOMElement<P, T>;
-@@ -426,7 +491,7 @@ declare namespace React {
+@@ -426,7 +485,7 @@ declare namespace React {
      // Component API
      // ----------------------------------------------------------------------
  
@@ -134,7 +143,29 @@ index 3289c78..eb547dd 100644
  
      // Base component for plain JS classes
      interface Component<P = {}, S = {}, SS = any> extends ComponentLifecycle<P, S, SS> { }
-@@ -1163,21 +1228,21 @@ declare namespace React {
+@@ -792,7 +851,20 @@ declare namespace React {
+         [propertyName: string]: any;
+     }
+ 
+-    function createRef<T>(): RefObject<T>;
++    function createRef<T>(): RefObject<
++        T extends (
++            props: infer Props,
++            context?: any
++        ) => ReactElement<any, any> | null
++            ? Props extends RefAttributes<infer Instance>
++                ? Instance
++                : never
++            : T extends { new (props: infer Props, context?: any): any }
++            ? Props extends RefAttributes<infer Instance>
++                ? Instance
++                : never
++            : T
++    >;
+ 
+     // will show `ForwardRef(${Component.displayName || Component.name})` in devtools by default,
+     // but can be given its own specific name
+@@ -1163,21 +1235,21 @@ declare namespace React {
       * This might be a child element to the element on which the event listener is registered.
       * If you thought this should be `EventTarget & T`, see https://github.com/DefinitelyTyped/DefinitelyTyped/issues/11508#issuecomment-256045682
       */
@@ -161,7 +192,7 @@ index 3289c78..eb547dd 100644
          pointerId: number;
          pressure: number;
          tangentialPressure: number;
-@@ -1190,23 +1255,23 @@ declare namespace React {
+@@ -1190,23 +1262,23 @@ declare namespace React {
          isPrimary: boolean;
      }
  
@@ -190,7 +221,7 @@ index 3289c78..eb547dd 100644
          altKey: boolean;
          /** @deprecated */
          charCode: number;
-@@ -1230,7 +1295,7 @@ declare namespace React {
+@@ -1230,7 +1302,7 @@ declare namespace React {
          which: number;
      }
  
@@ -199,7 +230,7 @@ index 3289c78..eb547dd 100644
          altKey: boolean;
          button: number;
          buttons: number;
-@@ -1252,7 +1317,7 @@ declare namespace React {
+@@ -1252,7 +1324,7 @@ declare namespace React {
          shiftKey: boolean;
      }
  
@@ -208,7 +239,7 @@ index 3289c78..eb547dd 100644
          altKey: boolean;
          changedTouches: TouchList;
          ctrlKey: boolean;
-@@ -1266,25 +1331,25 @@ declare namespace React {
+@@ -1266,25 +1338,25 @@ declare namespace React {
          touches: TouchList;
      }
  
@@ -238,7 +269,7 @@ index 3289c78..eb547dd 100644
          elapsedTime: number;
          propertyName: string;
          pseudoElement: string;
-@@ -1296,22 +1361,22 @@ declare namespace React {
+@@ -1296,22 +1368,22 @@ declare namespace React {
  
      type EventHandler<E extends SyntheticEvent<any>> = { bivarianceHack(event: E): void }["bivarianceHack"];
  
