@@ -25,7 +25,7 @@ interface State {
 
 /** Collapses content with animation when open is not true */
 export class Collapse extends React.Component<CollapseProps, State> {
-  measureRef: View | null = null
+  measureRef: React.ElementRef<typeof View> | null = null
 
   state: State = {
     isMounted: false,
@@ -38,7 +38,7 @@ export class Collapse extends React.Component<CollapseProps, State> {
     this.setState({ isMounted: true })
   }
 
-  handleMeasureRef = (ref: View) => {
+  handleMeasureRef = (ref: React.ElementRef<typeof View>) => {
     this.measureRef = ref
   }
 
@@ -52,8 +52,7 @@ export class Collapse extends React.Component<CollapseProps, State> {
           return
         }
 
-        // @ts-ignore
-        this.measureRef.measure((x, y, width, height) => {
+        this.measureRef.measure((_x, _y, _width, height) => {
           this.setState({
             isMeasuring: false,
             hasMeasured: true,

@@ -44,7 +44,7 @@ const track: Track<Props, State, Schema.Entity> = _track as any
 
 @track()
 export default class Composer extends React.Component<Props, State> {
-  input?: TextInput | any
+  input?: React.ElementRef<typeof TextInput> | any
 
   statusBarListener = null
 
