@@ -1,6 +1,16 @@
 import { HintDecl, ResolvedHintEntries, ResolvedHintFile } from "./hintfile"
 import { HintFileEntries } from "./singleFlow2Hint"
 
+function chooseLater(existing: HintDecl | undefined, comming: HintDecl): HintDecl {
+  if (existing) {
+    if (comming.row < existing.row) return comming
+    if (comming.row === existing.row && comming.column < existing.column) return comming
+    return existing
+  } else {
+    return comming
+  }
+}
+
 export function mergeHint(collectedHintFiles: HintFileEntries): ResolvedHintEntries {
   const mergedEntries: ResolvedHintEntries = { files: {} }
   for (const fileKey in collectedHintFiles) {
@@ -23,9 +33,9 @@ export function mergeHint(collectedHintFiles: HintFileEntries): ResolvedHintEntr
           let lastDeclBeforeResolved: HintDecl | undefined
           for (const hintDecl of resolvedHintFile.decls) {
             if (hintDecl.row < resolved.begin.row) {
-              lastDeclBeforeResolved = hintDecl
+              lastDeclBeforeResolved = chooseLater(lastDeclBeforeResolved, hintDecl)
             } else if (hintDecl.row === resolved.begin.row && hintDecl.column <= resolved.begin.column) {
-              lastDeclBeforeResolved = hintDecl
+              lastDeclBeforeResolved = chooseLater(lastDeclBeforeResolved, hintDecl)
             } else {
               break
             }
