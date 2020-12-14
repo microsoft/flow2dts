@@ -14,6 +14,8 @@ import stripAnsi from "strip-ansi"
 
 import { transform as pluginFlow2DTS, Options as PluginOptions } from "./transform"
 import { OverridesVisitors } from "./transform/applyOverridesVisitors"
+// "flow2hint" does't work, I guess because there is no generated .d.ts files
+import { ResolvedHintFile } from "../../flow2hint/src/hintfile"
 
 const regexFixPath = /^\[FLOW2DTS \- Error\] .*?[\\\/]workbench[\\\/]inputs[\\\/](?<path>.*?\.js\.flow):(?<message>.*)$/
 
@@ -33,24 +35,28 @@ export async function convert({
   rootDir,
   filename,
   outFilename,
+  hintFile,
   overrideFilename,
   overridesVisitors,
 }: {
   rootDir: string
   filename: string
   outFilename: string
+  hintFile?: ResolvedHintFile
   overrideFilename?: string
   overridesVisitors?: OverridesVisitors
 }): Promise<[string, boolean]> {
   let success = false
   let outData: string
+  const pluginOptions: PluginOptions = {
+    pathname: overrideFilename,
+    overridesVisitors,
+    hintFile,
+    moduleRelative: path.relative(path.dirname(filename), rootDir).replace(/\\/g, "/"),
+    moduleName: "react-native",
+  }
+
   try {
-    const pluginOptions: PluginOptions = {
-      pathname: overrideFilename,
-      overridesVisitors,
-      moduleRelative: path.relative(path.dirname(filename), rootDir).replace(/\\/g, "/"),
-      moduleName: "react-native",
-    }
     const result = await transformFileAsync(filename, {
       plugins: [pluginSyntaxFlow, [pluginFlow2DTS, pluginOptions]],
       sourceType: "module",
@@ -82,7 +88,7 @@ export async function convert({
       })
 
       phrase = "babelTraverse()"
-      babelTraverse<State>(flowAst, pluginFlow2DTS(undefined, {}, "").visitor, undefined, <State>{})
+      babelTraverse<State>(flowAst, pluginFlow2DTS(undefined, pluginOptions, "").visitor, undefined, <State>{})
 
       phrase = "babelGenerator()"
       const generatorResult = babelGenerator(flowAst)

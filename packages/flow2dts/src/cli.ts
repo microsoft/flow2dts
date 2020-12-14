@@ -8,6 +8,8 @@ import chalk from "chalk"
 
 import { convert } from "./convert"
 import { OverridesVisitors } from "./transform/applyOverridesVisitors"
+// "flow2hint" does't work, I guess because there is no generated .d.ts files
+import { ResolvedHintEntries, ResolvedHintFile } from "../../flow2hint/src/hintfile"
 
 const FLOW_EXTNAME = ".js.flow"
 const TS_EXTNAME = ".d.ts"
@@ -16,6 +18,7 @@ async function run({
   rootDir,
   outDir,
   overridesPath,
+  hintPath,
   platform,
   patterns,
   cwd,
@@ -23,23 +26,33 @@ async function run({
   rootDir: string
   outDir: string
   overridesPath?: string
+  hintPath?: string
   platform: string
   patterns: string[]
   cwd?: string
 }): Promise<[number, number]> {
   const overridesVisitors =
     overridesPath === undefined ? undefined : (require(overridesPath).default as OverridesVisitors)
+  const hintEntries = hintPath === undefined ? undefined : (require(hintPath).default as ResolvedHintEntries)
   let successCount = 0
   const conversions: Array<Promise<void>> = []
   for await (const _filename of glob.stream(patterns, { absolute: true, cwd })) {
     const filename = _filename as string
     const matchedExtname = getExtname(filename, platform)
     if (matchedExtname) {
+      let hintFile: ResolvedHintFile | undefined
+      if (hintEntries) {
+        const key = filename.substr(rootDir.length).replace(/\\/g, "/")
+        hintFile = hintEntries.files[key]
+        if (!hintFile) {
+          console.log(chalk.red(`Missing hint file for ${key}`))
+        }
+      }
       const outFilename = getOutFilename(outDir, rootDir, filename, matchedExtname)
       const overrideFilename = overridesVisitors && getOverrideFilename(rootDir, filename)
       logStart(cwd, filename)
       conversions.push(
-        convert({ rootDir, filename, outFilename, overridesVisitors, overrideFilename }).then(
+        convert({ rootDir, filename, outFilename, hintFile, overridesVisitors, overrideFilename }).then(
           ([outFilename, success]) => {
             if (success) {
               successCount++
@@ -121,6 +134,12 @@ async function main() {
           "A file that exports a OverridesVisitor object used to provide project specific overrides where conversion cannot accurately be made",
         type: "string",
       },
+      hint: {
+        nargs: 1,
+        demandOption: false,
+        describe: "A file that provide hint for imported symbols",
+        type: "string",
+      },
     })
     .help().argv
 
@@ -128,10 +147,11 @@ async function main() {
   const outDir = path.resolve(cwd || "", argv.outDir)
   const rootDir = path.resolve(cwd || "", argv.rootDir)
   const overridesPath = argv.overrides && path.resolve(cwd || "", argv.overrides)
+  const hintPath = argv.hint && path.resolve(cwd || "", argv.hint)
   const platform = argv.platform
   const patterns = argv._
 
-  const [totalCount, successCount] = await run({ cwd, outDir, rootDir, overridesPath, platform, patterns })
+  const [totalCount, successCount] = await run({ cwd, outDir, rootDir, overridesPath, hintPath, platform, patterns })
 
   console.log(`\nSuccessfully converted ${successCount} of ${totalCount}\n`)
 

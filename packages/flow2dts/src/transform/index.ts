@@ -10,9 +10,12 @@ import { createFixupVisitor, Options as FixupOptions } from "./fixupVisitor"
 import { applyOverridesVisitors, OverridesVisitors } from "./applyOverridesVisitors"
 import { emitImportsForTypeReferencesVisitor } from "./emitImportsForTypeReferencesVisitor"
 import { polyfillPackagesAndTypes } from "./polyfillPackagesAndTypes"
+// "flow2hint" does't work, I guess because there is no generated .d.ts files
+import { ResolvedHintFile } from "../../../flow2hint/src/hintfile"
 
 export interface Options extends FixupOptions {
   pathname?: string
+  hintFile?: ResolvedHintFile
   overridesVisitors?: OverridesVisitors
 }
 
