@@ -36,6 +36,7 @@ export interface ResolvedHintImport {
    error: error while running `flow get-def`
    */
   type: "type" | "value" | "class" | "unresolved[library]" | "unresolved[missing]" | "unresolved[error]"
+  resolvedDecl?: HintDecl
 }
 
 export interface ResolvedHintFile {

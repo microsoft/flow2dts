@@ -3,8 +3,8 @@ import { HintFileEntries } from "./singleFlow2Hint"
 
 function chooseLater(existing: HintDecl | undefined, comming: HintDecl): HintDecl {
   if (existing) {
-    if (comming.row < existing.row) return comming
-    if (comming.row === existing.row && comming.column < existing.column) return comming
+    if (comming.row > existing.row) return comming
+    if (comming.row === existing.row && comming.column > existing.column) return comming
     return existing
   } else {
     return comming
@@ -36,14 +36,12 @@ export function mergeHint(collectedHintFiles: HintFileEntries): ResolvedHintEntr
               lastDeclBeforeResolved = chooseLater(lastDeclBeforeResolved, hintDecl)
             } else if (hintDecl.row === resolved.begin.row && hintDecl.column <= resolved.begin.column) {
               lastDeclBeforeResolved = chooseLater(lastDeclBeforeResolved, hintDecl)
-            } else {
-              break
             }
           }
           if (!lastDeclBeforeResolved) {
             mergedFile.imports[importKey] = { type: "unresolved[missing]" }
           } else {
-            mergedFile.imports[importKey] = { type: lastDeclBeforeResolved.type }
+            mergedFile.imports[importKey] = { type: lastDeclBeforeResolved.type, resolvedDecl: lastDeclBeforeResolved }
           }
         }
       }
