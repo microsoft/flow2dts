@@ -32,7 +32,7 @@ async function run({
 }): Promise<[number, number]> {
   const overridesVisitors =
     overridesPath === undefined ? undefined : (require(overridesPath).default as OverridesVisitors)
-  const hintEntries = hintPath === undefined ? undefined : (require(hintPath).default as ResolvedHintEntries)
+  const hintEntries = hintPath === undefined ? undefined : (require(hintPath) as ResolvedHintEntries)
   let successCount = 0
   const conversions: Array<Promise<void>> = []
   for await (const _filename of glob.stream(patterns, { absolute: true, cwd })) {
@@ -44,7 +44,7 @@ async function run({
         const key = filename.substr(rootDir.length).replace(/\\/g, "/")
         hintFile = hintEntries.files[key]
         if (!hintFile) {
-          console.log(chalk.red(`Missing hint file for ${key}`))
+          throw new Error(`Missing hint file for ${key}`)
         }
       }
       const outFilename = getOutFilename(outDir, rootDir, filename, matchedExtname)
