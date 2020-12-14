@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import { Visitor } from "@babel/core"
-import { RecognizedTypeReferences, isVariableDiscardable } from "./typeReferenceResolver"
+import { RecognizedTypeReferences } from "./typeReferenceResolver"
 // "flow2hint" does't work, I guess because there is no generated .d.ts files
 import { ResolvedHintFile } from "../../../flow2hint/src/hintfile"
 
@@ -31,4 +31,5 @@ export function combineVisitorsSafe(...visitors: Visitor<State>[]): Visitor<Stat
   return combined
 }
 
+export { isVariableDiscardable } from "./typeReferenceResolver"
 export { ResolvedHintEntries, ResolvedHintFile } from "../../../flow2hint/src/hintfile"
