@@ -39,6 +39,65 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 4,
+                "column": 27,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 12
+                },
+                "end": {
+                    "row": 5,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/View.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 12,
+                "column": 27,
+                "local": "ViewNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 32
+                },
+                "end": {
+                    "row": 7,
+                    "column": 55
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ViewNativeComponent.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 16,
+                "column": 32,
+                "local": "View"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 13
+                },
+                "end": {
+                    "row": 10,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/View.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

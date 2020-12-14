@@ -1,5 +1,45 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 36,
+                "local": "__fetchSegment"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 18
+                },
+                "end": {
+                    "row": 5,
+                    "column": 31
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Core/setUpSegmentFetcher.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 3,
+                "column": 34,
+                "local": "__getSegment"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 18
+                },
+                "end": {
+                    "row": 17,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Core/setUpSegmentFetcher.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

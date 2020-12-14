@@ -1,5 +1,45 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 26,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Blob/Blob.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 60,
+                "column": 32,
+                "local": "WebSocket"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 19,
+                    "column": 15
+                },
+                "end": {
+                    "row": 19,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/WebSocket/WebSocket.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

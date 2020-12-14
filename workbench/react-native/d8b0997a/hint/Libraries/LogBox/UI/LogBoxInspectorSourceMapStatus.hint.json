@@ -28,6 +28,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 15,
+                "column": 31,
+                "local": "LogBoxInspectorSourceMapStatus"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 13,
+                    "column": 18
+                },
+                "end": {
+                    "row": 13,
+                    "column": 47
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/UI/LogBoxInspectorSourceMapStatus.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 8,

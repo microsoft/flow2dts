@@ -9,6 +9,27 @@
             "error": "Could not get definition for /Libraries/LogBox/UI/LogBoxInspectorSection.js.flow:2:12\r\nFailed to find imported file react\r\n"
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 14,
+                "column": 31,
+                "local": "LogBoxInspectorSection"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 18
+                },
+                "end": {
+                    "row": 12,
+                    "column": 39
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/UI/LogBoxInspectorSection.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 6,

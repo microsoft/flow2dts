@@ -66,6 +66,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 146,
+                "column": 32,
+                "local": "DrawerLayoutAndroid"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 128,
+                    "column": 15
+                },
+                "end": {
+                    "row": 128,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/DrawerAndroid/DrawerLayoutAndroid.android.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 10,

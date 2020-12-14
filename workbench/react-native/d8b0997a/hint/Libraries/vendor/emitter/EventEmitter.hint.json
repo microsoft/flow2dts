@@ -1,5 +1,45 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 34,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 25,
+                    "column": 15
+                },
+                "end": {
+                    "row": 25,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/vendor/emitter/_EventEmitter.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 8,
+                "column": 31,
+                "local": "EventEmitter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/vendor/emitter/EventEmitter.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

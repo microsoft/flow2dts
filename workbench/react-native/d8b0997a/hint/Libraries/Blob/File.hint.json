@@ -20,6 +20,65 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 26,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Blob/Blob.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 22,
+                "column": 24,
+                "local": "Blob"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Blob/File.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 24,
+                "column": 32,
+                "local": "File"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 15
+                },
+                "end": {
+                    "row": 7,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Blob/File.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

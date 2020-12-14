@@ -1,5 +1,64 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 35,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 15
+                },
+                "end": {
+                    "row": 12,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedValue.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 36,
+                "column": 25,
+                "local": "AnimatedEvent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 15
+                },
+                "end": {
+                    "row": 17,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedEvent.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 37,
+                "column": 29,
+                "local": "attachNativeEvent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 18
+                },
+                "end": {
+                    "row": 11,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedEvent.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

@@ -39,6 +39,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 9,
+                "column": 32,
+                "local": "flattenStyle"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 18
+                },
+                "end": {
+                    "row": 5,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/flattenStyle.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 5,

@@ -218,6 +218,46 @@
             "error": "Could not get definition for /Libraries/Components/Touchable/TouchableWithoutFeedback.js.flow:15:12\r\nFailed to find imported file react\r\n"
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 70,
+                "column": 30,
+                "local": "Component"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 26,
+                    "column": 15
+                },
+                "end": {
+                    "row": 26,
+                    "column": 29
+                },
+                "fromLibrary": true,
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/react.js"
+            }
+        },
+        {
+            "source": {
+                "row": 72,
+                "column": 32,
+                "local": "TouchableWithoutFeedback"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 60,
+                    "column": 15
+                },
+                "end": {
+                    "row": 60,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/TouchableWithoutFeedback.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 19,

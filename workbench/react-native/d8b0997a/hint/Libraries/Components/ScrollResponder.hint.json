@@ -96,6 +96,65 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 27,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 12
+                },
+                "end": {
+                    "row": 3,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollResponder.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 332,
+                "column": 17,
+                "local": "ScrollResponderMixin"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 19,
+                    "column": 13
+                },
+                "end": {
+                    "row": 19,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollResponder.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 336,
+                "column": 32,
+                "local": "ScrollResponder"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 331,
+                    "column": 13
+                },
+                "end": {
+                    "row": 331,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollResponder.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

@@ -1,5 +1,45 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 16,
+                "column": 31,
+                "local": "isRTL"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 10
+                },
+                "end": {
+                    "row": 4,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ReactNative/I18nManager.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 17,
+                "column": 49,
+                "local": "doLeftAndRightSwapInRTL"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 28
+                },
+                "end": {
+                    "row": 3,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ReactNative/I18nManager.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

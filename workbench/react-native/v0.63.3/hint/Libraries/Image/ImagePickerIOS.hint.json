@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 41,
+                "column": 32,
+                "local": "ImagePickerIOS"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/ImagePickerIOS.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

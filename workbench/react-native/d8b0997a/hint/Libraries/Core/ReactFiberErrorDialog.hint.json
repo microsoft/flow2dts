@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 12,
+                "column": 51,
+                "local": "showErrorDialog"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 18
+                },
+                "end": {
+                    "row": 9,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Core/ReactFiberErrorDialog.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

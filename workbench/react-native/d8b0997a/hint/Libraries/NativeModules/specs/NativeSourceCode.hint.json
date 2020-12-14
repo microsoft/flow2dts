@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 17,
+                "column": 31,
+                "local": "NativeSourceCode"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 13
+                },
+                "end": {
+                    "row": 10,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/NativeModules/specs/NativeSourceCode.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 6,

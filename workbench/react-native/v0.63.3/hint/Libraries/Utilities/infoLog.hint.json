@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 4,
+                "column": 32,
+                "local": "infoLog"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 18
+                },
+                "end": {
+                    "row": 2,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/infoLog.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

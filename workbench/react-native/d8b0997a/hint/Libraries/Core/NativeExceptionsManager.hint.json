@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 73,
+                "column": 31,
+                "local": "ExceptionsManager"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 48,
+                    "column": 13
+                },
+                "end": {
+                    "row": 48,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Core/NativeExceptionsManager.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 5,

@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 10,
+                "column": 32,
+                "local": "PointPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 25
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedPointPropType.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

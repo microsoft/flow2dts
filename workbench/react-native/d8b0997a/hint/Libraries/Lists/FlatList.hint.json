@@ -77,6 +77,179 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 27,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 12
+                },
+                "end": {
+                    "row": 3,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/FlatList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 26,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 19
+                },
+                "end": {
+                    "row": 13,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/View.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 6,
+                "column": 37,
+                "local": "$4"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 289,
+                    "column": 15
+                },
+                "end": {
+                    "row": 289,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizedList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 126,
+                "column": 56,
+                "local": "VirtualizedList"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 13
+                },
+                "end": {
+                    "row": 6,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/FlatList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 145,
+                "column": 29,
+                "local": "defaultProps"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 144,
+                    "column": 13
+                },
+                "end": {
+                    "row": 144,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/FlatList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 154,
+                "column": 28,
+                "local": "defaultProps"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 144,
+                    "column": 13
+                },
+                "end": {
+                    "row": 144,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/FlatList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 228,
+                "column": 32,
+                "local": "View"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/FlatList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 241,
+                "column": 30,
+                "local": "PureComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 100,
+                    "column": 15
+                },
+                "end": {
+                    "row": 100,
+                    "column": 33
+                },
+                "fromLibrary": true,
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/react.js"
+            }
+        },
+        {
+            "source": {
+                "row": 246,
+                "column": 32,
+                "local": "FlatList"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 156,
+                    "column": 15
+                },
+                "end": {
+                    "row": 156,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/FlatList.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

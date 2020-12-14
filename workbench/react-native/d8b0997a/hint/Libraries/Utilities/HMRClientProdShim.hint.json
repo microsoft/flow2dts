@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 6,
+                "column": 32,
+                "local": "HMRClientProdShim"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/HMRClientProdShim.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

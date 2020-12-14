@@ -96,6 +96,65 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 3,
+                "column": 27,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 12
+                },
+                "end": {
+                    "row": 4,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Slider/Slider.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 120,
+                "column": 27,
+                "local": "SliderNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 47,
+                    "column": 24
+                },
+                "end": {
+                    "row": 47,
+                    "column": 49
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Slider/SliderNativeComponent.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 123,
+                "column": 32,
+                "local": "SliderWithRef"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 118,
+                    "column": 13
+                },
+                "end": {
+                    "row": 118,
+                    "column": 25
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Slider/Slider.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

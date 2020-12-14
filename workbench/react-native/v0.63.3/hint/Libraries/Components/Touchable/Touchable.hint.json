@@ -39,6 +39,350 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 27,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 12
+                },
+                "end": {
+                    "row": 3,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 20,
+                "column": 19,
+                "local": "NOT_RESPONDER"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 18
+                },
+                "end": {
+                    "row": 9,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 21,
+                "column": 19,
+                "local": "RESPONDER_INACTIVE_PRESS_IN"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 32
+                },
+                "end": {
+                    "row": 10,
+                    "column": 60
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 22,
+                "column": 19,
+                "local": "RESPONDER_INACTIVE_PRESS_OUT"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 33
+                },
+                "end": {
+                    "row": 11,
+                    "column": 62
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 23,
+                "column": 19,
+                "local": "RESPONDER_ACTIVE_PRESS_IN"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 30
+                },
+                "end": {
+                    "row": 12,
+                    "column": 56
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 24,
+                "column": 19,
+                "local": "RESPONDER_ACTIVE_PRESS_OUT"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 13,
+                    "column": 31
+                },
+                "end": {
+                    "row": 13,
+                    "column": 58
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 25,
+                "column": 19,
+                "local": "RESPONDER_ACTIVE_LONG_PRESS_IN"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 35
+                },
+                "end": {
+                    "row": 14,
+                    "column": 66
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 26,
+                "column": 19,
+                "local": "RESPONDER_ACTIVE_LONG_PRESS_OUT"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 15,
+                    "column": 36
+                },
+                "end": {
+                    "row": 15,
+                    "column": 68
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 27,
+                "column": 19,
+                "local": "ERROR"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 10
+                },
+                "end": {
+                    "row": 16,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 40,
+                "column": 20,
+                "local": "DELAY"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 30,
+                    "column": 10
+                },
+                "end": {
+                    "row": 30,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 41,
+                "column": 20,
+                "local": "RESPONDER_GRANT"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 31,
+                    "column": 20
+                },
+                "end": {
+                    "row": 31,
+                    "column": 36
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 42,
+                "column": 20,
+                "local": "RESPONDER_RELEASE"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 32,
+                    "column": 22
+                },
+                "end": {
+                    "row": 32,
+                    "column": 40
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 43,
+                "column": 20,
+                "local": "RESPONDER_TERMINATED"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 33,
+                    "column": 25
+                },
+                "end": {
+                    "row": 33,
+                    "column": 46
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 44,
+                "column": 20,
+                "local": "ENTER_PRESS_RECT"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 34,
+                    "column": 21
+                },
+                "end": {
+                    "row": 34,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 45,
+                "column": 20,
+                "local": "LEAVE_PRESS_RECT"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 35,
+                    "column": 21
+                },
+                "end": {
+                    "row": 35,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 46,
+                "column": 20,
+                "local": "LONG_PRESS_DETECTED"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 36,
+                    "column": 24
+                },
+                "end": {
+                    "row": 36,
+                    "column": 44
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 265,
+                "column": 17,
+                "local": "TouchableMixin"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 48,
+                    "column": 13
+                },
+                "end": {
+                    "row": 48,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 279,
+                "column": 32,
+                "local": "Touchable"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 264,
+                    "column": 13
+                },
+                "end": {
+                    "row": 264,
+                    "column": 21
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

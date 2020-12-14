@@ -1,5 +1,45 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 21,
+                "column": 25,
+                "local": "registerAsset"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 15,
+                    "column": 18
+                },
+                "end": {
+                    "row": 15,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/AssetRegistry.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 22,
+                "column": 24,
+                "local": "getAssetByID"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 18
+                },
+                "end": {
+                    "row": 17,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/AssetRegistry.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

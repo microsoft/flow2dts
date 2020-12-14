@@ -20,5 +20,26 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 32,
+                "local": "UnimplementedView"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 31
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/UnimplementedViews/UnimplementedView.js.flow"
+            }
+        }
+    ],
     "decls": []
 }

@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 4,
+                "column": 32,
+                "local": "clamp"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 18
+                },
+                "end": {
+                    "row": 2,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/clamp.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

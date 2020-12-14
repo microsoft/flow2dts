@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 3,
+                "column": 24,
+                "local": "Error"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 1536,
+                    "column": 15
+                },
+                "end": {
+                    "row": 1536,
+                    "column": 19
+                },
+                "fromLibrary": true,
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_4ef3c26/core.js"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

@@ -20,6 +20,103 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 8,
+                "column": 24,
+                "local": "Error"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 1536,
+                    "column": 15
+                },
+                "end": {
+                    "row": 1536,
+                    "column": 19
+                },
+                "fromLibrary": true,
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_4ef3c26/core.js"
+            }
+        },
+        {
+            "source": {
+                "row": 21,
+                "column": 27,
+                "local": "handleException"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 18
+                },
+                "end": {
+                    "row": 16,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Core/ExceptionsManager.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 22,
+                "column": 39,
+                "local": "installConsoleErrorReporter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 18
+                },
+                "end": {
+                    "row": 18,
+                    "column": 44
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Core/ExceptionsManager.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 23,
+                "column": 26,
+                "local": "SyntheticError"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 15
+                },
+                "end": {
+                    "row": 4,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Core/ExceptionsManager.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 24,
+                "column": 42,
+                "local": "unstable_setExceptionDecorator"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 18
+                },
+                "end": {
+                    "row": 12,
+                    "column": 47
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Core/ExceptionsManager.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 6,

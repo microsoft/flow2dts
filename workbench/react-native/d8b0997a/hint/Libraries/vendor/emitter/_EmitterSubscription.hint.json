@@ -58,6 +58,46 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 39,
+                "column": 24,
+                "local": "EventSubscription"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 15
+                },
+                "end": {
+                    "row": 4,
+                    "column": 31
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/vendor/emitter/_EventSubscription.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 41,
+                "column": 32,
+                "local": "EmitterSubscription"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 15
+                },
+                "end": {
+                    "row": 6,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/vendor/emitter/_EmitterSubscription.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 9,

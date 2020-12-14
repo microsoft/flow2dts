@@ -1,5 +1,121 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 48,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 0,
+                    "column": 1
+                },
+                "end": {
+                    "row": 0,
+                    "column": 0
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ReactNativeStyleAttributes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 27,
+                "column": 17,
+                "local": "ReactNativeStyleAttributes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ReactNativeViewAttributes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 31,
+                "column": 13,
+                "local": "UIView"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ReactNativeViewAttributes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 42,
+                "column": 18,
+                "local": "UIView"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ReactNativeViewAttributes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 43,
+                "column": 19,
+                "local": "RCTView"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 30,
+                    "column": 13
+                },
+                "end": {
+                    "row": 30,
+                    "column": 19
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ReactNativeViewAttributes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 46,
+                "column": 32,
+                "local": "ReactNativeViewAttributes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 41,
+                    "column": 13
+                },
+                "end": {
+                    "row": 41,
+                    "column": 37
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ReactNativeViewAttributes.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

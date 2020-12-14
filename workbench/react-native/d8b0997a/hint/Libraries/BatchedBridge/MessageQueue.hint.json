@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 94,
+                "column": 32,
+                "local": "MessageQueue"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 15
+                },
+                "end": {
+                    "row": 10,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/BatchedBridge/MessageQueue.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

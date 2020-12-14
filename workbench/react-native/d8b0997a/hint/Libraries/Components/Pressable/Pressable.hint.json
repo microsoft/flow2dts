@@ -199,6 +199,46 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 16,
+                "column": 62,
+                "local": "View"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 19
+                },
+                "end": {
+                    "row": 13,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/View.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 132,
+                "column": 27,
+                "local": "View"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 19
+                },
+                "end": {
+                    "row": 13,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/View.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 16,

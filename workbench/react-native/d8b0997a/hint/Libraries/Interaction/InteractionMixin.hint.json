@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 21,
+                "column": 32,
+                "local": "InteractionMixin"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Interaction/InteractionMixin.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 5,

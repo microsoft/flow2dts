@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 21,
+                "column": 32,
+                "local": "EventSubscription"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 15
+                },
+                "end": {
+                    "row": 4,
+                    "column": 31
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/vendor/emitter/EventSubscription.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 5,

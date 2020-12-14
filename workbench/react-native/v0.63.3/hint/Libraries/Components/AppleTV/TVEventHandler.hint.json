@@ -20,6 +20,46 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 40,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 13,
+                    "column": 15
+                },
+                "end": {
+                    "row": 13,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 16,
+                "column": 32,
+                "local": "TVEventHandler"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 15
+                },
+                "end": {
+                    "row": 7,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/AppleTV/TVEventHandler.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

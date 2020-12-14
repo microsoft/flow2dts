@@ -58,6 +58,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 44,
+                "column": 32,
+                "local": "ProgressBarAndroidNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 24,
+                    "column": 24
+                },
+                "end": {
+                    "row": 24,
+                    "column": 49
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ProgressBarAndroid/ProgressBarAndroidNativeComponent.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 22,

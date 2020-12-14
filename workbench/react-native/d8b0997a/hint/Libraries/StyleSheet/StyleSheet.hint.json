@@ -191,6 +191,84 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 29,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 30
+                },
+                "end": {
+                    "row": 7,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/flattenStyle.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 88,
+                "column": 25,
+                "local": "hairlineWidth"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 39,
+                    "column": 13
+                },
+                "end": {
+                    "row": 39,
+                    "column": 25
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 109,
+                "column": 30,
+                "local": "absoluteFill"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 41,
+                    "column": 13
+                },
+                "end": {
+                    "row": 41,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 161,
+                "column": 19,
+                "local": "flatten"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 19
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

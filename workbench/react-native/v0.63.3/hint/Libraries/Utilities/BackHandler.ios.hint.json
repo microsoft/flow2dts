@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 18,
+                "column": 32,
+                "local": "BackHandler"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 13
+                },
+                "end": {
+                    "row": 16,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/BackHandler.ios.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

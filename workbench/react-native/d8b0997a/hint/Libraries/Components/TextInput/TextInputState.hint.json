@@ -20,6 +20,236 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 27,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 12
+                },
+                "end": {
+                    "row": 3,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 31,
+                "column": 33,
+                "local": "currentlyFocusedInput"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 18
+                },
+                "end": {
+                    "row": 8,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 32,
+                "column": 22,
+                "local": "focusInput"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 18
+                },
+                "end": {
+                    "row": 12,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 33,
+                "column": 21,
+                "local": "blurInput"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 18
+                },
+                "end": {
+                    "row": 14,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 35,
+                "column": 33,
+                "local": "currentlyFocusedField"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 18
+                },
+                "end": {
+                    "row": 10,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 36,
+                "column": 22,
+                "local": "focusField"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 18
+                },
+                "end": {
+                    "row": 16,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 37,
+                "column": 21,
+                "local": "blurField"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 18
+                },
+                "end": {
+                    "row": 18,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 38,
+                "column": 26,
+                "local": "focusTextInput"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 20,
+                    "column": 18
+                },
+                "end": {
+                    "row": 20,
+                    "column": 31
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 39,
+                "column": 25,
+                "local": "blurTextInput"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 22,
+                    "column": 18
+                },
+                "end": {
+                    "row": 22,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 40,
+                "column": 25,
+                "local": "registerInput"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 24,
+                    "column": 18
+                },
+                "end": {
+                    "row": 24,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 41,
+                "column": 27,
+                "local": "unregisterInput"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 26,
+                    "column": 18
+                },
+                "end": {
+                    "row": 26,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 42,
+                "column": 23,
+                "local": "isTextInput"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 28,
+                    "column": 18
+                },
+                "end": {
+                    "row": 28,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

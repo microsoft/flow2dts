@@ -1,5 +1,64 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 26,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Blob/Blob.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 30,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 19,
+                    "column": 15
+                },
+                "end": {
+                    "row": 19,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Network/FormData.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 18,
+                "column": 32,
+                "local": "convertRequestBody"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 15,
+                    "column": 18
+                },
+                "end": {
+                    "row": 15,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Network/convertRequestBody.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

@@ -39,6 +39,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 91,
+                "column": 32,
+                "local": "PermissionsAndroidInstance"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 88,
+                    "column": 13
+                },
+                "end": {
+                    "row": 88,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/PermissionsAndroid/PermissionsAndroid.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 6,

@@ -96,6 +96,160 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 27,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 12
+                },
+                "end": {
+                    "row": 3,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizedList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 5,
+                "column": 32,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 674,
+                    "column": 5
+                },
+                "end": {
+                    "row": 683,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 8,
+                "column": 26,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 19
+                },
+                "end": {
+                    "row": 13,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/View.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 268,
+                "column": 33,
+                "local": "ScrollView"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizedList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 370,
+                "column": 32,
+                "local": "ScrollView"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizedList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 371,
+                "column": 32,
+                "local": "View"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 13
+                },
+                "end": {
+                    "row": 8,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizedList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 462,
+                "column": 30,
+                "local": "PureComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 100,
+                    "column": 15
+                },
+                "end": {
+                    "row": 100,
+                    "column": 33
+                },
+                "fromLibrary": true,
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_4ef3c26/react.js"
+            }
+        },
+        {
+            "source": {
+                "row": 469,
+                "column": 32,
+                "local": "VirtualizedList"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 315,
+                    "column": 15
+                },
+                "end": {
+                    "row": 315,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizedList.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

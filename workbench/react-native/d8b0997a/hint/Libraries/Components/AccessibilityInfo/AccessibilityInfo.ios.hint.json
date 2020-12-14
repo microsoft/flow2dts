@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 137,
+                "column": 32,
+                "local": "AccessibilityInfo"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 13
+                },
+                "end": {
+                    "row": 16,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

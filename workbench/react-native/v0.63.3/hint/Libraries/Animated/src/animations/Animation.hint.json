@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 38,
+                "column": 32,
+                "local": "Animation"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 15
+                },
+                "end": {
+                    "row": 14,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/animations/Animation.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

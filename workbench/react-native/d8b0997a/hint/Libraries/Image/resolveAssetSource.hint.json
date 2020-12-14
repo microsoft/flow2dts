@@ -20,6 +20,84 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 41,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 15
+                },
+                "end": {
+                    "row": 12,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/AssetSourceResolver.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 14,
+                "column": 10,
+                "local": "resolveAssetSource"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 18
+                },
+                "end": {
+                    "row": 11,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/resolveAssetSource.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 16,
+                "column": 40,
+                "local": "setCustomSourceTransformer"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 18
+                },
+                "end": {
+                    "row": 7,
+                    "column": 43
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/resolveAssetSource.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 17,
+                "column": 43,
+                "local": "pickScale"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 66,
+                    "column": 3
+                },
+                "end": {
+                    "row": 66,
+                    "column": 70
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/AssetSourceResolver.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

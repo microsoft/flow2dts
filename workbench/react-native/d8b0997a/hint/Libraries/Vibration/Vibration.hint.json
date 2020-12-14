@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 17,
+                "column": 32,
+                "local": "Vibration"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 21
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Vibration/Vibration.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 8,

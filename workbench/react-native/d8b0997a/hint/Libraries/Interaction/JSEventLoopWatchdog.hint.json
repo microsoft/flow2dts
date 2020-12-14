@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 21,
+                "column": 32,
+                "local": "JSEventLoopWatchdog"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 13
+                },
+                "end": {
+                    "row": 14,
+                    "column": 31
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Interaction/JSEventLoopWatchdog.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

@@ -9,6 +9,27 @@
             "error": "Could not get definition for /Libraries/Image/ImageAnalyticsTagContext.js.flow:2:12\r\nFailed to find imported file react\r\n"
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 8,
+                "column": 31,
+                "local": "Context"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 13
+                },
+                "end": {
+                    "row": 6,
+                    "column": 19
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/ImageAnalyticsTagContext.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

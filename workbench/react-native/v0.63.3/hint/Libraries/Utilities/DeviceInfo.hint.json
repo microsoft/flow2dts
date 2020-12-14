@@ -20,5 +20,26 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 4,
+                "column": 32,
+                "local": "NativeDeviceInfo"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 26,
+                    "column": 11
+                },
+                "end": {
+                    "row": 26,
+                    "column": 14
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/NativeDeviceInfo.js.flow"
+            }
+        }
+    ],
     "decls": []
 }

@@ -28,6 +28,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 14,
+                "column": 31,
+                "local": "LogBoxInspectorReactFrames"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 18
+                },
+                "end": {
+                    "row": 12,
+                    "column": 43
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/UI/LogBoxInspectorReactFrames.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 8,

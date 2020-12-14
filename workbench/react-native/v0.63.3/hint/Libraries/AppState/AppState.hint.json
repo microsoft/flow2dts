@@ -1,5 +1,102 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 34,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 25,
+                    "column": 15
+                },
+                "end": {
+                    "row": 25,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/vendor/emitter/EventEmitter.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 40,
+                "local": "$4"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 13,
+                    "column": 15
+                },
+                "end": {
+                    "row": 13,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 34,
+                "column": 24,
+                "local": "NativeEventEmitter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/AppState/AppState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 52,
+                "column": 24,
+                "local": "EventEmitter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/AppState/AppState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 56,
+                "column": 32,
+                "local": "AppStateInstance"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 54,
+                    "column": 13
+                },
+                "end": {
+                    "row": 54,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/AppState/AppState.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

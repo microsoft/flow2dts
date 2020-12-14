@@ -1,5 +1,140 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 31,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 12
+                },
+                "end": {
+                    "row": 3,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTVViewPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 6,
+                "column": 41,
+                "local": "bool"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 41
+                },
+                "end": {
+                    "row": 6,
+                    "column": 44
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTVViewPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 7,
+                "column": 46,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 46
+                },
+                "end": {
+                    "row": 7,
+                    "column": 51
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTVViewPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 8,
+                "column": 46,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 46
+                },
+                "end": {
+                    "row": 8,
+                    "column": 51
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTVViewPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 9,
+                "column": 41,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 41
+                },
+                "end": {
+                    "row": 9,
+                    "column": 46
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTVViewPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 10,
+                "column": 45,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 45
+                },
+                "end": {
+                    "row": 10,
+                    "column": 50
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTVViewPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 13,
+                "column": 32,
+                "local": "DeprecatedTVViewPropTypes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 37
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTVViewPropTypes.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

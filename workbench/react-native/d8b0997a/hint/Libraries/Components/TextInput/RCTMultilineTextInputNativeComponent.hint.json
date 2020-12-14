@@ -39,6 +39,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 15,
+                "column": 31,
+                "local": "SinglelineTextInputNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 13
+                },
+                "end": {
+                    "row": 12,
+                    "column": 46
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/TextInput/RCTMultilineTextInputNativeComponent.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 6,

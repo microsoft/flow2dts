@@ -1,5 +1,45 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 11,
+                "column": 37,
+                "local": "warningHandler"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/RCTLog.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 14,
+                "column": 32,
+                "local": "RCTLog"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/RCTLog.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

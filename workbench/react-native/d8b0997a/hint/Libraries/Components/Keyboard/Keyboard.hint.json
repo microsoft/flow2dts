@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 65,
+                "column": 32,
+                "local": "KeyboardEventEmitter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Keyboard/Keyboard.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

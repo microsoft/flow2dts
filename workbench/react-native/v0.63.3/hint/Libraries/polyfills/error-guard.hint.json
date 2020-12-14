@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 32,
+                "column": 27,
+                "local": "ErrorUtils"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/polyfills/error-guard.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

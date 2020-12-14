@@ -210,6 +210,217 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 27,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 12
+                },
+                "end": {
+                    "row": 3,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 5,
+                "column": 37,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 332,
+                    "column": 30
+                },
+                "end": {
+                    "row": 334,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollResponder.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 8,
+                "column": 26,
+                "local": "$4"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 19
+                },
+                "end": {
+                    "row": 13,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/View.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 37,
+                "column": 30,
+                "local": "Mixin"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 20,
+                    "column": 35
+                },
+                "end": {
+                    "row": 330,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollResponder.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 41,
+                "column": 30,
+                "local": "Mixin"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 20,
+                    "column": 35
+                },
+                "end": {
+                    "row": 330,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollResponder.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 563,
+                "column": 37,
+                "local": "View"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 13
+                },
+                "end": {
+                    "row": 8,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 570,
+                "column": 14,
+                "local": "ScrollViewNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 77,
+                    "column": 38
+                },
+                "end": {
+                    "row": 77,
+                    "column": 73
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollView/ScrollViewNativeComponentType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 585,
+                "column": 21,
+                "local": "Context"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 581,
+                    "column": 13
+                },
+                "end": {
+                    "row": 581,
+                    "column": 19
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 619,
+                "column": 47,
+                "local": "View"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 13
+                },
+                "end": {
+                    "row": 8,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 666,
+                "column": 30,
+                "local": "Component"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 26,
+                    "column": 15
+                },
+                "end": {
+                    "row": 26,
+                    "column": 29
+                },
+                "fromLibrary": true,
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_4ef3c26/react.js"
+            }
+        },
+        {
+            "source": {
+                "row": 675,
+                "column": 32,
+                "local": "ScrollView"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 589,
+                    "column": 15
+                },
+                "end": {
+                    "row": 589,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

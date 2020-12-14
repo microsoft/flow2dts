@@ -77,6 +77,122 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 27,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 12
+                },
+                "end": {
+                    "row": 3,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/SectionList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 44,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 122,
+                    "column": 15
+                },
+                "end": {
+                    "row": 122,
+                    "column": 36
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 106,
+                "column": 36,
+                "local": "defaultProps"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 105,
+                    "column": 13
+                },
+                "end": {
+                    "row": 105,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/SectionList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 110,
+                "column": 28,
+                "local": "defaultProps"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 105,
+                    "column": 13
+                },
+                "end": {
+                    "row": 105,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/SectionList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 154,
+                "column": 30,
+                "local": "PureComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 100,
+                    "column": 15
+                },
+                "end": {
+                    "row": 100,
+                    "column": 33
+                },
+                "fromLibrary": true,
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/react.js"
+            }
+        },
+        {
+            "source": {
+                "row": 159,
+                "column": 32,
+                "local": "SectionList"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 112,
+                    "column": 15
+                },
+                "end": {
+                    "row": 112,
+                    "column": 25
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/SectionList.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

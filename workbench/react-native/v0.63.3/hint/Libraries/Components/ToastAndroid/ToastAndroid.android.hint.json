@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 27,
+                "column": 32,
+                "local": "ToastAndroid"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ToastAndroid/ToastAndroid.android.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 7,

@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 12,
+                "column": 32,
+                "local": "Dimensions"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 15
+                },
+                "end": {
+                    "row": 2,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/Dimensions.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

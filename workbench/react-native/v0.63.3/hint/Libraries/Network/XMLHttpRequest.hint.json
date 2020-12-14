@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 141,
+                "column": 32,
+                "local": "XMLHttpRequest"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 32,
+                    "column": 15
+                },
+                "end": {
+                    "row": 32,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Network/XMLHttpRequest.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

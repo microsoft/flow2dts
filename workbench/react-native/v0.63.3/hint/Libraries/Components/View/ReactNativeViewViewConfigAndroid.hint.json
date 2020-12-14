@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 63,
+                "column": 32,
+                "local": "ReactNativeViewViewConfigAndroid"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 44
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ReactNativeViewViewConfigAndroid.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

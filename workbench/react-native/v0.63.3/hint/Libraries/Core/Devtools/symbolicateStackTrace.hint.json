@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 30,
+                "column": 32,
+                "local": "symbolicateStackTrace"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 23,
+                    "column": 18
+                },
+                "end": {
+                    "row": 23,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Core/Devtools/symbolicateStackTrace.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 6,

@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 6,
+                "column": 32,
+                "local": "ReactFeatureFlags"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Renderer/shims/ReactFeatureFlags.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

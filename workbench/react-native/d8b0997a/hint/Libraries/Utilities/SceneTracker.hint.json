@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 15,
+                "column": 32,
+                "local": "SceneTracker"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/SceneTracker.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

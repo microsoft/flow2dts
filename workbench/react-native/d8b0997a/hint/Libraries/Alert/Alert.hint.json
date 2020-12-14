@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 40,
+                "column": 32,
+                "local": "Alert"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 19,
+                    "column": 15
+                },
+                "end": {
+                    "row": 19,
+                    "column": 19
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Alert/Alert.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

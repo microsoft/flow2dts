@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 141,
+                "column": 32,
+                "local": "EventEmitter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 25,
+                    "column": 15
+                },
+                "end": {
+                    "row": 25,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/vendor/emitter/EventEmitter.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 9,

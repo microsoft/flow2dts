@@ -28,6 +28,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 22,
+                "column": 31,
+                "local": "supportedCommands"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 19,
+                    "column": 13
+                },
+                "end": {
+                    "row": 19,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/TextInput/TextInputNativeCommands.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 7,

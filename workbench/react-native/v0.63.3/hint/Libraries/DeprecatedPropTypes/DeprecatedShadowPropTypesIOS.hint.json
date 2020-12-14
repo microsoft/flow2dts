@@ -1,5 +1,121 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 45,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 0,
+                    "column": 1
+                },
+                "end": {
+                    "row": 0,
+                    "column": 0
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedColorPropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 36,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 12
+                },
+                "end": {
+                    "row": 5,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 8,
+                "column": 23,
+                "local": "DeprecatedColorPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 16,
+                "column": 40,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 40
+                },
+                "end": {
+                    "row": 16,
+                    "column": 45
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 17,
+                "column": 39,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 39
+                },
+                "end": {
+                    "row": 17,
+                    "column": 44
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 20,
+                "column": 32,
+                "local": "DeprecatedShadowPropTypesIOS"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 13
+                },
+                "end": {
+                    "row": 7,
+                    "column": 40
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

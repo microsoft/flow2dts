@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 35,
+                "column": 32,
+                "local": "Platform"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 13
+                },
+                "end": {
+                    "row": 9,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/Platform.ios.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

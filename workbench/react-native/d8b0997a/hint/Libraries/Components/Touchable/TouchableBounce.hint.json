@@ -66,6 +66,27 @@
             "error": "Could not get definition for /Libraries/Components/Touchable/TouchableBounce.js.flow:5:12\r\nFailed to find imported file react\r\n"
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 17,
+                "column": 40,
+                "local": "View"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 40
+                },
+                "end": {
+                    "row": 17,
+                    "column": 43
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/TouchableBounce.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 11,

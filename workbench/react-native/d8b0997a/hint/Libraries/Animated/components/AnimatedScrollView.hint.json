@@ -28,6 +28,65 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 4,
+                "column": 32,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 660,
+                    "column": 5
+                },
+                "end": {
+                    "row": 669,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 10,
+                "column": 30,
+                "local": "ScrollView"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/components/AnimatedScrollView.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 11,
+                "column": 27,
+                "local": "ScrollView"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/components/AnimatedScrollView.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

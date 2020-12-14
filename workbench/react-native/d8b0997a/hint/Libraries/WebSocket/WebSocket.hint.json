@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 59,
+                "column": 32,
+                "local": "WebSocket"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 15
+                },
+                "end": {
+                    "row": 18,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/WebSocket/WebSocket.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

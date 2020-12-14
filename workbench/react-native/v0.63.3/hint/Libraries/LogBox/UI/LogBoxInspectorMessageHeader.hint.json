@@ -47,6 +47,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 19,
+                "column": 31,
+                "local": "LogBoxInspectorMessageHeader"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 18
+                },
+                "end": {
+                    "row": 17,
+                    "column": 45
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/UI/LogBoxInspectorMessageHeader.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 9,

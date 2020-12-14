@@ -20,6 +20,46 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 5,
+                "column": 13,
+                "local": "NativeUIManager"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 11
+                },
+                "end": {
+                    "row": 4,
+                    "column": 14
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ReactNative/NativeUIManager.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 10,
+                "column": 32,
+                "local": "UIManagerJS"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ReactNative/PaperUIManager.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 6,

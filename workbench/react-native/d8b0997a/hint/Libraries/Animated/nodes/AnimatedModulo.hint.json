@@ -20,6 +20,103 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 43,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 15
+                },
+                "end": {
+                    "row": 18,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/nodes/AnimatedInterpolation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 34,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 15
+                },
+                "end": {
+                    "row": 2,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/nodes/AnimatedNode.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 6,
+                "column": 42,
+                "local": "$4"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/nodes/AnimatedWithChildren.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 27,
+                "column": 24,
+                "local": "AnimatedWithChildren"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 13
+                },
+                "end": {
+                    "row": 6,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/nodes/AnimatedModulo.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 29,
+                "column": 32,
+                "local": "AnimatedModulo"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 15
+                },
+                "end": {
+                    "row": 11,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/nodes/AnimatedModulo.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

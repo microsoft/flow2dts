@@ -66,6 +66,46 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 82,
+                "column": 30,
+                "local": "Component"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 26,
+                    "column": 15
+                },
+                "end": {
+                    "row": 26,
+                    "column": 29
+                },
+                "fromLibrary": true,
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/react.js"
+            }
+        },
+        {
+            "source": {
+                "row": 85,
+                "column": 32,
+                "local": "Switch"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 76,
+                    "column": 15
+                },
+                "end": {
+                    "row": 76,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Switch/Switch.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 11,

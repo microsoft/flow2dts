@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 30,
+                "column": 32,
+                "local": "HMRClient"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 27,
+                    "column": 13
+                },
+                "end": {
+                    "row": 27,
+                    "column": 21
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/HMRClient.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

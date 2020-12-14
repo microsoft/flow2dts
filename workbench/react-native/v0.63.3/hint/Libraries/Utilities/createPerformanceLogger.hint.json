@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 36,
+                "column": 32,
+                "local": "createPerformanceLogger"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 33,
+                    "column": 18
+                },
+                "end": {
+                    "row": 33,
+                    "column": 40
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/createPerformanceLogger.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

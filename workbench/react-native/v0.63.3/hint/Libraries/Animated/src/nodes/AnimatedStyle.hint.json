@@ -1,5 +1,64 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 42,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedWithChildren.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 21,
+                "column": 24,
+                "local": "AnimatedWithChildren"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedStyle.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 23,
+                "column": 32,
+                "local": "AnimatedStyle"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedStyle.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

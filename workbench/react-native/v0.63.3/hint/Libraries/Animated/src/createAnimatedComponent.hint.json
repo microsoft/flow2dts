@@ -1,5 +1,45 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 27,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 12
+                },
+                "end": {
+                    "row": 3,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/createAnimatedComponent.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 18,
+                "column": 32,
+                "local": "createAnimatedComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 18
+                },
+                "end": {
+                    "row": 10,
+                    "column": 40
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/createAnimatedComponent.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

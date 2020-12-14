@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 8,
+                "column": 32,
+                "local": "mapWithSeparator"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 18
+                },
+                "end": {
+                    "row": 2,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/mapWithSeparator.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

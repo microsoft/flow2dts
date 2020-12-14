@@ -96,6 +96,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 64,
+                "column": 31,
+                "local": "LogBoxLog"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 25,
+                    "column": 15
+                },
+                "end": {
+                    "row": 25,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/Data/LogBoxLog.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 8,

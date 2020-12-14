@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 27,
+                "column": 32,
+                "local": "ExportedJSTimers"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 13
+                },
+                "end": {
+                    "row": 9,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Core/Timers/JSTimers.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

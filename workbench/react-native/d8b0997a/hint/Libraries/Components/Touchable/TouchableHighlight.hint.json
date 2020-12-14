@@ -85,6 +85,27 @@
             "error": "Could not get definition for /Libraries/Components/Touchable/TouchableHighlight.js.flow:7:12\r\nFailed to find imported file react\r\n"
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 38,
+                "column": 31,
+                "local": "View"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 19
+                },
+                "end": {
+                    "row": 13,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/View.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 11,

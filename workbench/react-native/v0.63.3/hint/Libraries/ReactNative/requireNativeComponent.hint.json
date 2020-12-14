@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 8,
+                "column": 32,
+                "local": "requireNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ReactNative/requireNativeComponent.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 4,
+                "column": 32,
+                "local": "dumpReactTree"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 18
+                },
+                "end": {
+                    "row": 2,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/BugReporting/dumpReactTree.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 17,
+                "column": 32,
+                "local": "NativeModules"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 13
+                },
+                "end": {
+                    "row": 12,
+                    "column": 25
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/BatchedBridge/NativeModules.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 49,
+                "column": 32,
+                "local": "UserFlow"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 20,
+                    "column": 13
+                },
+                "end": {
+                    "row": 20,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Reliability/UserFlow.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

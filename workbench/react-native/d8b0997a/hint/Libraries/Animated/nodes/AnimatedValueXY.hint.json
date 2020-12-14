@@ -1,5 +1,83 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 35,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 15
+                },
+                "end": {
+                    "row": 12,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/nodes/AnimatedValue.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 42,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/nodes/AnimatedWithChildren.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 139,
+                "column": 24,
+                "local": "AnimatedWithChildren"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/nodes/AnimatedValueXY.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 141,
+                "column": 32,
+                "local": "AnimatedValueXY"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 15,
+                    "column": 15
+                },
+                "end": {
+                    "row": 15,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/nodes/AnimatedValueXY.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

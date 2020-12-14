@@ -85,6 +85,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 44,
+                "column": 16,
+                "local": "undefined"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 24,
+                    "column": 24
+                },
+                "end": {
+                    "row": 24,
+                    "column": 27
+                },
+                "fromLibrary": true,
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_4ef3c26/core.js"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 12,

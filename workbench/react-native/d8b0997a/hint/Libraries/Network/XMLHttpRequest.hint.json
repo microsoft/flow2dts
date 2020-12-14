@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 148,
+                "column": 32,
+                "local": "XMLHttpRequest"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 34,
+                    "column": 15
+                },
+                "end": {
+                    "row": 34,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Network/XMLHttpRequest.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

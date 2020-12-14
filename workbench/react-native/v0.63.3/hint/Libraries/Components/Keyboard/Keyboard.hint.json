@@ -1,5 +1,45 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 40,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 13,
+                    "column": 15
+                },
+                "end": {
+                    "row": 13,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 66,
+                "column": 32,
+                "local": "KeyboardEventEmitter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Keyboard/Keyboard.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

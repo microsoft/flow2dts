@@ -39,6 +39,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 13,
+                "column": 32,
+                "local": "DatePickerAndroid"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 31
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/DatePickerAndroid/DatePickerAndroid.ios.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 6,

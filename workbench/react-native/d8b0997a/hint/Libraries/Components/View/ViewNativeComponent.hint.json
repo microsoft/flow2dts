@@ -47,6 +47,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 47,
+                "column": 44,
+                "local": "viewConfig"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 13
+                },
+                "end": {
+                    "row": 9,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ViewNativeComponent.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 7,

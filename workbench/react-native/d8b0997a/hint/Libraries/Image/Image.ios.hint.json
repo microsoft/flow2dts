@@ -39,6 +39,198 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 45,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 0,
+                    "column": 1
+                },
+                "end": {
+                    "row": 0,
+                    "column": 0
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 27,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 12
+                },
+                "end": {
+                    "row": 5,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/Image.ios.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 7,
+                "column": 40,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 36
+                },
+                "end": {
+                    "row": 11,
+                    "column": 70
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/resolveAssetSource.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 35,
+                "column": 21,
+                "local": "getSize"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 18
+                },
+                "end": {
+                    "row": 14,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/Image.ios.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 36,
+                "column": 32,
+                "local": "getSizeWithHeaders"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 20,
+                    "column": 18
+                },
+                "end": {
+                    "row": 20,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/Image.ios.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 37,
+                "column": 22,
+                "local": "prefetch"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 27,
+                    "column": 18
+                },
+                "end": {
+                    "row": 27,
+                    "column": 25
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/Image.ios.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 38,
+                "column": 24,
+                "local": "queryCache"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 29,
+                    "column": 18
+                },
+                "end": {
+                    "row": 29,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/Image.ios.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 39,
+                "column": 32,
+                "local": "resolveAssetSource"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 13
+                },
+                "end": {
+                    "row": 7,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/Image.ios.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 40,
+                "column": 23,
+                "local": "DeprecatedImagePropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/Image.ios.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 47,
+                "column": 29,
+                "local": "ImageViewNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 29,
+                    "column": 24
+                },
+                "end": {
+                    "row": 29,
+                    "column": 49
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/ImageViewNativeComponent.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

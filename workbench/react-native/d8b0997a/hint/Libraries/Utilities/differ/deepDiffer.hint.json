@@ -1,5 +1,45 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 18,
+                "column": 10,
+                "local": "deepDiffer"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 13
+                },
+                "end": {
+                    "row": 10,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/differ/deepDiffer.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 20,
+                "column": 38,
+                "local": "unstable_setLogListeners"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 18
+                },
+                "end": {
+                    "row": 8,
+                    "column": 41
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/differ/deepDiffer.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 70,
+                "column": 32,
+                "local": "AssetSourceResolver"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 15
+                },
+                "end": {
+                    "row": 12,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/AssetSourceResolver.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

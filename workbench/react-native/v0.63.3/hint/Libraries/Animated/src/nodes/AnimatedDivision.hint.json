@@ -20,6 +20,103 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 43,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 15
+                },
+                "end": {
+                    "row": 18,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedInterpolation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 34,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 15
+                },
+                "end": {
+                    "row": 2,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedNode.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 7,
+                "column": 42,
+                "local": "$4"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedWithChildren.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 28,
+                "column": 24,
+                "local": "AnimatedWithChildren"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 13
+                },
+                "end": {
+                    "row": 7,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedDivision.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 30,
+                "column": 32,
+                "local": "AnimatedDivision"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 15
+                },
+                "end": {
+                    "row": 12,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedDivision.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

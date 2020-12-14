@@ -39,6 +39,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 38,
+                "column": 32,
+                "local": "Blob"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Blob/Blob.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 11,

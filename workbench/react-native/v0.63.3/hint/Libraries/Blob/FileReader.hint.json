@@ -1,5 +1,45 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 26,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Blob/Blob.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 42,
+                "column": 32,
+                "local": "FileReader"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 15
+                },
+                "end": {
+                    "row": 14,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Blob/FileReader.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

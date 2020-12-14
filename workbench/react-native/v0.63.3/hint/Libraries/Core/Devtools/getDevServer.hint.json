@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 10,
+                "column": 32,
+                "local": "getDevServer"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 18
+                },
+                "end": {
+                    "row": 8,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Core/Devtools/getDevServer.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

@@ -58,6 +58,65 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 31,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 15
+                },
+                "end": {
+                    "row": 14,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/animations/Animation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 50,
+                "column": 24,
+                "local": "Animation"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 21
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/animations/DecayAnimation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 55,
+                "column": 32,
+                "local": "DecayAnimation"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 27,
+                    "column": 15
+                },
+                "end": {
+                    "row": 27,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/animations/DecayAnimation.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

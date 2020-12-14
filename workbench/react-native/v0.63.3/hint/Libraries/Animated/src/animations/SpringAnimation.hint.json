@@ -39,6 +39,122 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 35,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 15
+                },
+                "end": {
+                    "row": 12,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedValue.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 37,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 15,
+                    "column": 15
+                },
+                "end": {
+                    "row": 15,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedValueXY.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 6,
+                "column": 43,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 15
+                },
+                "end": {
+                    "row": 18,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedInterpolation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 8,
+                "column": 31,
+                "local": "$4"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 15
+                },
+                "end": {
+                    "row": 14,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/animations/Animation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 115,
+                "column": 24,
+                "local": "Animation"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 13
+                },
+                "end": {
+                    "row": 8,
+                    "column": 21
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/animations/SpringAnimation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 120,
+                "column": 32,
+                "local": "SpringAnimation"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 63,
+                    "column": 15
+                },
+                "end": {
+                    "row": 63,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/animations/SpringAnimation.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

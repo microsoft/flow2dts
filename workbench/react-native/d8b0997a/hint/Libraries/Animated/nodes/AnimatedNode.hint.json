@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 54,
+                "column": 32,
+                "local": "AnimatedNode"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 15
+                },
+                "end": {
+                    "row": 2,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/nodes/AnimatedNode.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

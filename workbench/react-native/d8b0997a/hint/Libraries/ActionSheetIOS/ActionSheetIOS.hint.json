@@ -39,6 +39,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 66,
+                "column": 32,
+                "local": "ActionSheetIOS"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ActionSheetIOS/ActionSheetIOS.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 24,

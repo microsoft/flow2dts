@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 14,
+                "column": 31,
+                "local": "stringifySafe"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 13
+                },
+                "end": {
+                    "row": 11,
+                    "column": 25
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/stringifySafe.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

@@ -66,6 +66,27 @@
             "error": "Could not get definition for /Libraries/Components/Pressable/useAndroidRippleForView.js.flow:5:12\r\nFailed to find imported file react\r\n"
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 24,
+                "column": 54,
+                "local": "View"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 9
+                },
+                "end": {
+                    "row": 4,
+                    "column": 12
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Pressable/useAndroidRippleForView.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 9,

@@ -115,6 +115,65 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 9,
+                "column": 34,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 86,
+                    "column": 25
+                },
+                "end": {
+                    "row": 112,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 12,
+                "column": 30,
+                "local": "AnimatedMock"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 13
+                },
+                "end": {
+                    "row": 9,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/Animated.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 21,
+                "column": 13,
+                "local": "Animated"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 13
+                },
+                "end": {
+                    "row": 12,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/Animated.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 9,

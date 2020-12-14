@@ -66,6 +66,27 @@
             "error": "Could not get definition for /Libraries/Components/Touchable/TouchableOpacity.js.flow:7:12\r\nFailed to find imported file react\r\n"
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 28,
+                "column": 40,
+                "local": "View"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 28,
+                    "column": 40
+                },
+                "end": {
+                    "row": 28,
+                    "column": 43
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/TouchableOpacity.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 11,

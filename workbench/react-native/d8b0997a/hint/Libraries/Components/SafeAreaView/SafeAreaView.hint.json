@@ -47,6 +47,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 19,
+                "column": 32,
+                "local": "exported"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 13
+                },
+                "end": {
+                    "row": 14,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/SafeAreaView/SafeAreaView.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 10,

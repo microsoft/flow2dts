@@ -1,5 +1,64 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 32,
+                "column": 27,
+                "local": "TransformMatrixPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTransformPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 33,
+                "column": 28,
+                "local": "DecomposedMatrixPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 13
+                },
+                "end": {
+                    "row": 8,
+                    "column": 36
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTransformPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 41,
+                "column": 32,
+                "local": "DeprecatedTransformPropTypes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 13
+                },
+                "end": {
+                    "row": 14,
+                    "column": 40
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTransformPropTypes.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

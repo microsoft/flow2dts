@@ -16,7 +16,7 @@
                     "column": 32
                 },
                 "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_1ad593de/react.js"
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_4ef3c26/react.js"
             }
         },
         "Ref": {
@@ -35,10 +35,31 @@
                     "column": 25
                 },
                 "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_1ad593de/react.js"
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_4ef3c26/react.js"
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 14,
+                "column": 32,
+                "local": "setAndForwardRef"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 18
+                },
+                "end": {
+                    "row": 12,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/setAndForwardRef.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 7,

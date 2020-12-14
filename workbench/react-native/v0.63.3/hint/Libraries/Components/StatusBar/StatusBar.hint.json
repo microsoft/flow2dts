@@ -20,6 +20,65 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 27,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 12
+                },
+                "end": {
+                    "row": 3,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/StatusBar/StatusBar.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 132,
+                "column": 30,
+                "local": "Component"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 26,
+                    "column": 15
+                },
+                "end": {
+                    "row": 26,
+                    "column": 29
+                },
+                "fromLibrary": true,
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_4ef3c26/react.js"
+            }
+        },
+        {
+            "source": {
+                "row": 137,
+                "column": 32,
+                "local": "StatusBar"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 99,
+                    "column": 15
+                },
+                "end": {
+                    "row": 99,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/StatusBar/StatusBar.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

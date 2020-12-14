@@ -1,5 +1,45 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 53,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 46
+                },
+                "end": {
+                    "row": 7,
+                    "column": 11
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Renderer/shims/createReactNativeComponentClass.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 6,
+                "column": 43,
+                "local": "createReactNativeComponentClass"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 43
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ReactNative/ReactFabricInternals.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

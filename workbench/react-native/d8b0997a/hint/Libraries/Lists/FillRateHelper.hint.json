@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 62,
+                "column": 32,
+                "local": "FillRateHelper"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 24,
+                    "column": 15
+                },
+                "end": {
+                    "row": 24,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/FillRateHelper.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

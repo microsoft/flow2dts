@@ -1,5 +1,273 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 36,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 12
+                },
+                "end": {
+                    "row": 3,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 37,
+                "column": 38,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 37,
+                    "column": 38
+                },
+                "end": {
+                    "row": 37,
+                    "column": 43
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 38,
+                "column": 41,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 38,
+                    "column": 41
+                },
+                "end": {
+                    "row": 38,
+                    "column": 46
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 39,
+                "column": 43,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 39,
+                    "column": 43
+                },
+                "end": {
+                    "row": 39,
+                    "column": 48
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 40,
+                "column": 41,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 40,
+                    "column": 41
+                },
+                "end": {
+                    "row": 40,
+                    "column": 46
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 41,
+                "column": 43,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 41,
+                    "column": 43
+                },
+                "end": {
+                    "row": 41,
+                    "column": 48
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 42,
+                "column": 44,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 42,
+                    "column": 44
+                },
+                "end": {
+                    "row": 42,
+                    "column": 49
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 43,
+                "column": 42,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 43,
+                    "column": 42
+                },
+                "end": {
+                    "row": 43,
+                    "column": 47
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 74,
+                "column": 31,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 74,
+                    "column": 31
+                },
+                "end": {
+                    "row": 74,
+                    "column": 36
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 75,
+                "column": 35,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 75,
+                    "column": 35
+                },
+                "end": {
+                    "row": 75,
+                    "column": 40
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 76,
+                "column": 37,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 76,
+                    "column": 37
+                },
+                "end": {
+                    "row": 76,
+                    "column": 42
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 78,
+                "column": 38,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 78,
+                    "column": 38
+                },
+                "end": {
+                    "row": 78,
+                    "column": 43
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 79,
+                "column": 33,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 79,
+                    "column": 33
+                },
+                "end": {
+                    "row": 79,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 83,
+                "column": 32,
+                "local": "LayoutPropTypes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

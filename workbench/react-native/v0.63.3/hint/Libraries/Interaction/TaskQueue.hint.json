@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 54,
+                "column": 32,
+                "local": "TaskQueue"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 15
+                },
+                "end": {
+                    "row": 14,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Interaction/TaskQueue.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

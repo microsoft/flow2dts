@@ -47,6 +47,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 16,
+                "column": 31,
+                "local": "LogBoxInspectorStackFrame"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 18
+                },
+                "end": {
+                    "row": 14,
+                    "column": 42
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/UI/LogBoxInspectorStackFrame.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 9,

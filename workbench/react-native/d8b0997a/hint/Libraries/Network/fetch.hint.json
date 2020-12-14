@@ -1,5 +1,83 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 3,
+                "column": 17,
+                "local": "fetch"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 1538,
+                    "column": 23
+                },
+                "end": {
+                    "row": 1538,
+                    "column": 84
+                },
+                "fromLibrary": true,
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/bom.js"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 19,
+                "local": "Headers"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 1406,
+                    "column": 15
+                },
+                "end": {
+                    "row": 1406,
+                    "column": 21
+                },
+                "fromLibrary": true,
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/bom.js"
+            }
+        },
+        {
+            "source": {
+                "row": 5,
+                "column": 19,
+                "local": "Request"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 1500,
+                    "column": 15
+                },
+                "end": {
+                    "row": 1500,
+                    "column": 21
+                },
+                "fromLibrary": true,
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/bom.js"
+            }
+        },
+        {
+            "source": {
+                "row": 6,
+                "column": 20,
+                "local": "Response"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 1474,
+                    "column": 15
+                },
+                "end": {
+                    "row": 1474,
+                    "column": 22
+                },
+                "fromLibrary": true,
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/bom.js"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

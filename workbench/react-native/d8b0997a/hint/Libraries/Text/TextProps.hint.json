@@ -73,7 +73,7 @@
                     "column": 26
                 },
                 "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_237c6444/react.js"
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/react.js"
             }
         },
         "TextStyleProp": {
@@ -134,6 +134,7 @@
             }
         }
     },
+    "typeofs": [],
     "decls": [
         {
             "row": 12,

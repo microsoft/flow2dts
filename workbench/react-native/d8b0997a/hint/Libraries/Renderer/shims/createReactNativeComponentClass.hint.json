@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 9,
+                "column": 32,
+                "local": "createReactNativeComponentClass"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 43
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Renderer/shims/createReactNativeComponentClass.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

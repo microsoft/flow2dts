@@ -1,5 +1,45 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 34,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 15
+                },
+                "end": {
+                    "row": 10,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/BatchedBridge/MessageQueue.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 7,
+                "column": 32,
+                "local": "BatchedBridge"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 25
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/BatchedBridge/BatchedBridge.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

@@ -28,6 +28,65 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 4,
+                "column": 30,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 156,
+                    "column": 15
+                },
+                "end": {
+                    "row": 156,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/FlatList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 10,
+                "column": 30,
+                "local": "FlatList"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/components/AnimatedFlatList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 11,
+                "column": 27,
+                "local": "FlatList"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/components/AnimatedFlatList.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

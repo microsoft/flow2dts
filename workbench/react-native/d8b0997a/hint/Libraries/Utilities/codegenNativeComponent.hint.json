@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 21,
+                "column": 31,
+                "local": "codegenNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 15,
+                    "column": 18
+                },
+                "end": {
+                    "row": 15,
+                    "column": 39
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/codegenNativeComponent.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 6,

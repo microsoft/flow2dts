@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 126,
+                "column": 32,
+                "local": "AppRegistry"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 34,
+                    "column": 13
+                },
+                "end": {
+                    "row": 34,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ReactNative/AppRegistry.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

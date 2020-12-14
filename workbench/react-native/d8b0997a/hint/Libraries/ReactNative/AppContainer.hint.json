@@ -9,6 +9,46 @@
             "error": "Could not get definition for /Libraries/ReactNative/AppContainer.js.flow:2:12\r\nFailed to find imported file react\r\n"
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 40,
+                "column": 30,
+                "local": "Component"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 26,
+                    "column": 15
+                },
+                "end": {
+                    "row": 26,
+                    "column": 29
+                },
+                "fromLibrary": true,
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/react.js"
+            }
+        },
+        {
+            "source": {
+                "row": 42,
+                "column": 32,
+                "local": "AppContainer"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 24,
+                    "column": 15
+                },
+                "end": {
+                    "row": 24,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ReactNative/AppContainer.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

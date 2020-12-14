@@ -28,6 +28,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 16,
+                "column": 31,
+                "local": "LogBoxInspectorHeader"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 18
+                },
+                "end": {
+                    "row": 14,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/UI/LogBoxInspectorHeader.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 7,

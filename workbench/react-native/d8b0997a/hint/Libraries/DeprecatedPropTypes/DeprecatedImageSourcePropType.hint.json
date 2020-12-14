@@ -1,5 +1,235 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 1,
+                "column": 31,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 7
+                },
+                "end": {
+                    "row": 2,
+                    "column": 8
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 5,
+                "column": 25,
+                "local": "string"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 25
+                },
+                "end": {
+                    "row": 5,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 6,
+                "column": 28,
+                "local": "string"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 28
+                },
+                "end": {
+                    "row": 6,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 7,
+                "column": 28,
+                "local": "string"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 28
+                },
+                "end": {
+                    "row": 7,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 9,
+                "column": 26,
+                "local": "string"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 26
+                },
+                "end": {
+                    "row": 9,
+                    "column": 31
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 11,
+                "column": 27,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 27
+                },
+                "end": {
+                    "row": 11,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 12,
+                "column": 28,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 28
+                },
+                "end": {
+                    "row": 12,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 13,
+                "column": 27,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 13,
+                    "column": 27
+                },
+                "end": {
+                    "row": 13,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 17,
+                "column": 10,
+                "local": "ImageURISourcePropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 17,
+                "column": 52,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 52
+                },
+                "end": {
+                    "row": 17,
+                    "column": 57
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 17,
+                "column": 74,
+                "local": "ImageURISourcePropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 20,
+                "column": 32,
+                "local": "ImageSourcePropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 13
+                },
+                "end": {
+                    "row": 16,
+                    "column": 31
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 1,

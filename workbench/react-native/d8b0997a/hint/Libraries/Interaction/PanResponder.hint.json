@@ -20,6 +20,46 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 239,
+                "column": 24,
+                "local": "PanResponder"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 90,
+                    "column": 13
+                },
+                "end": {
+                    "row": 90,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Interaction/PanResponder.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 246,
+                "column": 32,
+                "local": "PanResponder"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 90,
+                    "column": 13
+                },
+                "end": {
+                    "row": 90,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Interaction/PanResponder.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 8,

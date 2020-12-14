@@ -20,6 +20,84 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 35,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 15
+                },
+                "end": {
+                    "row": 12,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/nodes/AnimatedValue.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 34,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 15
+                },
+                "end": {
+                    "row": 2,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/nodes/AnimatedNode.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 31,
+                "column": 24,
+                "local": "AnimatedNode"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/nodes/AnimatedTracking.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 33,
+                "column": 32,
+                "local": "AnimatedTracking"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 15
+                },
+                "end": {
+                    "row": 9,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/nodes/AnimatedTracking.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

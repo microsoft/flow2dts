@@ -1,5 +1,311 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 50,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 43
+                },
+                "end": {
+                    "row": 10,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedEdgeInsetsPropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 51,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 0,
+                    "column": 1
+                },
+                "end": {
+                    "row": 0,
+                    "column": 0
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 7,
+                "column": 31,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 12
+                },
+                "end": {
+                    "row": 8,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 12,
+                "column": 18,
+                "local": "DeprecatedImageSourcePropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 41
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 25,
+                "column": 32,
+                "local": "bool"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 25,
+                    "column": 32
+                },
+                "end": {
+                    "row": 25,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 27,
+                "column": 40,
+                "local": "node"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 27,
+                    "column": 40
+                },
+                "end": {
+                    "row": 27,
+                    "column": 43
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 29,
+                "column": 32,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 29,
+                    "column": 32
+                },
+                "end": {
+                    "row": 29,
+                    "column": 37
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 31,
+                "column": 21,
+                "local": "DeprecatedEdgeInsetsPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 40
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 39,
+                "column": 28,
+                "local": "string"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 39,
+                    "column": 28
+                },
+                "end": {
+                    "row": 39,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 41,
+                "column": 30,
+                "local": "func"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 41,
+                    "column": 30
+                },
+                "end": {
+                    "row": 41,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 43,
+                "column": 33,
+                "local": "func"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 43,
+                    "column": 33
+                },
+                "end": {
+                    "row": 43,
+                    "column": 36
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 45,
+                "column": 32,
+                "local": "func"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 45,
+                    "column": 32
+                },
+                "end": {
+                    "row": 45,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 47,
+                "column": 29,
+                "local": "func"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 47,
+                    "column": 29
+                },
+                "end": {
+                    "row": 47,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 49,
+                "column": 35,
+                "local": "func"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 49,
+                    "column": 35
+                },
+                "end": {
+                    "row": 49,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 51,
+                "column": 28,
+                "local": "func"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 51,
+                    "column": 28
+                },
+                "end": {
+                    "row": 51,
+                    "column": 31
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 53,
+                "column": 31,
+                "local": "func"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 53,
+                    "column": 31
+                },
+                "end": {
+                    "row": 53,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

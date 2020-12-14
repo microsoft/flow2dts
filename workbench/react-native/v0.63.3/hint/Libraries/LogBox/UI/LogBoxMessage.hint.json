@@ -47,6 +47,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 17,
+                "column": 31,
+                "local": "LogBoxMessage"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 15,
+                    "column": 18
+                },
+                "end": {
+                    "row": 15,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/UI/LogBoxMessage.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 8,

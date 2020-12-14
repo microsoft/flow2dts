@@ -9,6 +9,27 @@
             "error": "Could not get definition for /Libraries/Components/ScrollView/ScrollViewContext.js.flow:2:12\r\nFailed to find imported file react\r\n"
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 10,
+                "column": 31,
+                "local": "ScrollViewContext"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 13
+                },
+                "end": {
+                    "row": 6,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ScrollView/ScrollViewContext.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

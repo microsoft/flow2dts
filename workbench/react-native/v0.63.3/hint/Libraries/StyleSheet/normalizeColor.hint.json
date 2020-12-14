@@ -39,6 +39,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 9,
+                "column": 32,
+                "local": "normalizeColor"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 18
+                },
+                "end": {
+                    "row": 5,
+                    "column": 31
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/normalizeColor.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 5,

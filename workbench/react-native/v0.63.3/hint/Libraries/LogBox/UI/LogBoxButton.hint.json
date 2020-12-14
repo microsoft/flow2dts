@@ -66,6 +66,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 25,
+                "column": 31,
+                "local": "LogBoxButton"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 23,
+                    "column": 18
+                },
+                "end": {
+                    "row": 23,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/UI/LogBoxButton.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 12,

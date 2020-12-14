@@ -39,6 +39,65 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 39,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 15
+                },
+                "end": {
+                    "row": 4,
+                    "column": 31
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/vendor/emitter/EventSubscription.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 39,
+                "column": 24,
+                "local": "EventSubscription"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/vendor/emitter/EmitterSubscription.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 41,
+                "column": 32,
+                "local": "EmitterSubscription"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 15
+                },
+                "end": {
+                    "row": 8,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/vendor/emitter/EmitterSubscription.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

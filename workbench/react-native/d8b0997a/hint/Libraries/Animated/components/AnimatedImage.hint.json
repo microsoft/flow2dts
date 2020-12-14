@@ -28,6 +28,65 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 4,
+                "column": 27,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 45,
+                    "column": 5
+                },
+                "end": {
+                    "row": 49,
+                    "column": 25
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/Image.ios.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 10,
+                "column": 30,
+                "local": "Image"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 17
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/components/AnimatedImage.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 11,
+                "column": 27,
+                "local": "Image"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 17
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/components/AnimatedImage.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

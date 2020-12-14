@@ -20,6 +20,559 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 11,
+                "column": 48,
+                "local": "bubblingEventTypes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 23
+                },
+                "end": {
+                    "row": 17,
+                    "column": 4
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ReactNativeViewViewConfigAndroid.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 80,
+                "column": 48,
+                "local": "directEventTypes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 21
+                },
+                "end": {
+                    "row": 58,
+                    "column": 4
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ReactNativeViewViewConfigAndroid.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 106,
+                "column": 48,
+                "local": "validAttributes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 59,
+                    "column": 20
+                },
+                "end": {
+                    "row": 69,
+                    "column": 4
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ReactNativeViewViewConfigAndroid.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 124,
+                "column": 40,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 125,
+                "column": 42,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 131,
+                "column": 36,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 132,
+                "column": 39,
+                "local": "$4"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 134,
+                "column": 40,
+                "local": "$5"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 137,
+                "column": 41,
+                "local": "$6"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 139,
+                "column": 41,
+                "local": "$7"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 142,
+                "column": 39,
+                "local": "$8"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 206,
+                "column": 36,
+                "local": "$9"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 207,
+                "column": 34,
+                "local": "$10"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 0,
+                    "column": 1
+                },
+                "end": {
+                    "row": 0,
+                    "column": 0
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/differ/sizesDiffer.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 218,
+                "column": 42,
+                "local": "$11"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 219,
+                "column": 44,
+                "local": "$12"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 225,
+                "column": 38,
+                "local": "$13"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 226,
+                "column": 41,
+                "local": "$14"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 228,
+                "column": 42,
+                "local": "$15"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 231,
+                "column": 43,
+                "local": "$16"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 233,
+                "column": 43,
+                "local": "$17"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 236,
+                "column": 41,
+                "local": "$18"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 244,
+                "column": 32,
+                "local": "$19"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 282,
+                "column": 39,
+                "local": "$20"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 298,
+                "column": 38,
+                "local": "$21"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 299,
+                "column": 36,
+                "local": "$22"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 0,
+                    "column": 1
+                },
+                "end": {
+                    "row": 0,
+                    "column": 0
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/differ/sizesDiffer.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 305,
+                "column": 46,
+                "local": "$23"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 308,
+                "column": 42,
+                "local": "$24"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 312,
+                "column": 36,
+                "local": "$25"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 375,
+                "column": 32,
+                "local": "ReactNativeViewConfig"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 5,

@@ -28,6 +28,27 @@
             "error": "Could not get definition for /Libraries/LogBox/UI/LogBoxInspectorFooter.js.flow:4:12\r\nFailed to find imported file react\r\n"
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 16,
+                "column": 31,
+                "local": "LogBoxInspectorFooter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 18
+                },
+                "end": {
+                    "row": 14,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/UI/LogBoxInspectorFooter.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 8,

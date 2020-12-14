@@ -1,5 +1,83 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 77,
+                "column": 25,
+                "local": "configureNext"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 32,
+                    "column": 18
+                },
+                "end": {
+                    "row": 32,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LayoutAnimation/LayoutAnimation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 81,
+                "column": 18,
+                "local": "create"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 37,
+                    "column": 18
+                },
+                "end": {
+                    "row": 37,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LayoutAnimation/LayoutAnimation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 97,
+                "column": 19,
+                "local": "Presets"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 43,
+                    "column": 13
+                },
+                "end": {
+                    "row": 43,
+                    "column": 19
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LayoutAnimation/LayoutAnimation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 104,
+                "column": 32,
+                "local": "LayoutAnimation"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 63,
+                    "column": 13
+                },
+                "end": {
+                    "row": 63,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LayoutAnimation/LayoutAnimation.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

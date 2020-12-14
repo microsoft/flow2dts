@@ -20,6 +20,46 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 27,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 12
+                },
+                "end": {
+                    "row": 3,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/ReactNativeTestTools.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 5,
+                "column": 39,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 12
+                },
+                "end": {
+                    "row": 6,
+                    "column": 41
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/ReactNativeTestTools.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

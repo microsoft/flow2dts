@@ -28,6 +28,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 18,
+                "column": 31,
+                "local": "LogBoxLogNotification"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 18
+                },
+                "end": {
+                    "row": 16,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/LogBox/UI/LogBoxNotification.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 8,

@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 59,
+                "column": 31,
+                "local": "NativeStatusBarManager"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 29,
+                    "column": 13
+                },
+                "end": {
+                    "row": 29,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/StatusBar/NativeStatusBarManagerIOS.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 6,

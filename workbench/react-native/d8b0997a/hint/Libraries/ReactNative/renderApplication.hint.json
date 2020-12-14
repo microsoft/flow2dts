@@ -20,6 +20,46 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 4,
+                "column": 27,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 12
+                },
+                "end": {
+                    "row": 5,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ReactNative/renderApplication.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 18,
+                "column": 32,
+                "local": "renderApplication"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 18
+                },
+                "end": {
+                    "row": 7,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ReactNative/renderApplication.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

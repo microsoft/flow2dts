@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 171,
+                "column": 32,
+                "local": "PushNotificationIOS"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 38,
+                    "column": 15
+                },
+                "end": {
+                    "row": 38,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/PushNotificationIOS/PushNotificationIOS.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

@@ -58,6 +58,46 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 27,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 12
+                },
+                "end": {
+                    "row": 3,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ActivityIndicator/ActivityIndicator.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 55,
+                "column": 32,
+                "local": "ActivityIndicatorWithRef"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 50,
+                    "column": 13
+                },
+                "end": {
+                    "row": 50,
+                    "column": 36
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/ActivityIndicator/ActivityIndicator.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

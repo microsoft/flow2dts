@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 27,
+                "column": 32,
+                "local": "FormData"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 19,
+                    "column": 15
+                },
+                "end": {
+                    "row": 19,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Network/FormData.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

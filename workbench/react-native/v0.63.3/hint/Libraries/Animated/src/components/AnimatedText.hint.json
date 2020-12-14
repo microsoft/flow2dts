@@ -28,6 +28,65 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 4,
+                "column": 26,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 5
+                },
+                "end": {
+                    "row": 21,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Text/Text.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 10,
+                "column": 30,
+                "local": "Text"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/components/AnimatedText.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 11,
+                "column": 27,
+                "local": "Text"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/components/AnimatedText.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

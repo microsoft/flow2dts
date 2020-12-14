@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 25,
+                "column": 32,
+                "local": "UIManager"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 23,
+                    "column": 13
+                },
+                "end": {
+                    "row": 23,
+                    "column": 21
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ReactNative/UIManager.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 5,

@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 48,
+                "column": 32,
+                "local": "InteractionManager"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Interaction/InteractionManager.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

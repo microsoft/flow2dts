@@ -20,6 +20,46 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 35,
+                "column": 38,
+                "local": "NativeModule"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 33,
+                    "column": 13
+                },
+                "end": {
+                    "row": 33,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/NativeDeviceInfo.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 42,
+                "column": 31,
+                "local": "NativeDeviceInfo"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 35,
+                    "column": 13
+                },
+                "end": {
+                    "row": 35,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/NativeDeviceInfo.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 5,

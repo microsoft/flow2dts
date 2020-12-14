@@ -1,5 +1,45 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 18,
+                "column": 24,
+                "local": "addPoolingTo"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/PooledClass.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 25,
+                "column": 32,
+                "local": "PooledClass"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 13
+                },
+                "end": {
+                    "row": 17,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Touchable/PooledClass.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

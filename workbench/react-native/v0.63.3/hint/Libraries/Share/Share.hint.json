@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 29,
+                "column": 32,
+                "local": "Share"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 21,
+                    "column": 15
+                },
+                "end": {
+                    "row": 21,
+                    "column": 19
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Share/Share.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

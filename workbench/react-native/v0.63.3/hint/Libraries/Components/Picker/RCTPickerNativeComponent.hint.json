@@ -85,6 +85,27 @@
             "error": "Could not get definition for /Libraries/Components/Picker/RCTPickerNativeComponent.js.flow:7:12\r\nFailed to find imported file react\r\n"
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 53,
+                "column": 31,
+                "local": "RCTPickerNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 50,
+                    "column": 13
+                },
+                "end": {
+                    "row": 50,
+                    "column": 36
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/Picker/RCTPickerNativeComponent.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 12,

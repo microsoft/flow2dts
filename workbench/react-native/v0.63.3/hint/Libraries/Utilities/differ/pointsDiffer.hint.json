@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 10,
+                "column": 32,
+                "local": "pointsDiffer"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 13
+                },
+                "end": {
+                    "row": 8,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/differ/pointsDiffer.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

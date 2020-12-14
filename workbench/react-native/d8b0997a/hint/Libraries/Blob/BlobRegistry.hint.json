@@ -1,5 +1,64 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 9,
+                "column": 20,
+                "local": "register"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Blob/BlobRegistry.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 10,
+                "column": 22,
+                "local": "unregister"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 22
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Blob/BlobRegistry.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 11,
+                "column": 15,
+                "local": "has"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 13
+                },
+                "end": {
+                    "row": 6,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Blob/BlobRegistry.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

@@ -142,6 +142,7 @@
             "error": "Could not get definition for /Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow:10:12\r\nFailed to find imported file react\r\n"
         }
     },
+    "typeofs": [],
     "decls": [
         {
             "row": 14,

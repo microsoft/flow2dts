@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 131,
+                "column": 32,
+                "local": "AsyncStorage"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Storage/AsyncStorage.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

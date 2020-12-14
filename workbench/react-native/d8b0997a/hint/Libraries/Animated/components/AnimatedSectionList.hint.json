@@ -28,6 +28,65 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 4,
+                "column": 33,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 112,
+                    "column": 15
+                },
+                "end": {
+                    "row": 112,
+                    "column": 25
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/SectionList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 10,
+                "column": 30,
+                "local": "SectionList"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/components/AnimatedSectionList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 11,
+                "column": 27,
+                "local": "SectionList"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 23
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/components/AnimatedSectionList.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 12,
+                "column": 32,
+                "local": "DeprecatedEdgeInsetsPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 40
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedEdgeInsetsPropType.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

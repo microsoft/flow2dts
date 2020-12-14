@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 18,
+                "column": 32,
+                "local": "parseErrorStack"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 15,
+                    "column": 18
+                },
+                "end": {
+                    "row": 15,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Core/Devtools/parseErrorStack.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 7,

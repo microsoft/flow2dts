@@ -20,6 +20,141 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 26,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 19
+                },
+                "end": {
+                    "row": 13,
+                    "column": 1
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/View/View.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 27,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 12
+                },
+                "end": {
+                    "row": 5,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/Animated.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 8,
+                "column": 34,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 86,
+                    "column": 25
+                },
+                "end": {
+                    "row": 112,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 11,
+                "column": 30,
+                "local": "AnimatedMock"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 13
+                },
+                "end": {
+                    "row": 8,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/Animated.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 20,
+                "column": 32,
+                "local": "View"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/Animated.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 21,
+                "column": 29,
+                "local": "View"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/Animated.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 23,
+                "column": 13,
+                "local": "Animated"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 13
+                },
+                "end": {
+                    "row": 11,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/Animated.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

@@ -1,5 +1,121 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 27,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 12
+                },
+                "end": {
+                    "row": 3,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 5,
+                "column": 37,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 289,
+                    "column": 15
+                },
+                "end": {
+                    "row": 289,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizedList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 97,
+                "column": 55,
+                "local": "VirtualizedList"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 116,
+                "column": 29,
+                "local": "defaultProps"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 272,
+                    "column": 21
+                },
+                "end": {
+                    "row": 282,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizedList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 136,
+                "column": 30,
+                "local": "PureComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 100,
+                    "column": 15
+                },
+                "end": {
+                    "row": 100,
+                    "column": 33
+                },
+                "fromLibrary": true,
+                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/react.js"
+            }
+        },
+        {
+            "source": {
+                "row": 142,
+                "column": 32,
+                "local": "VirtualizedSectionList"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 122,
+                    "column": 15
+                },
+                "end": {
+                    "row": 122,
+                    "column": 36
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

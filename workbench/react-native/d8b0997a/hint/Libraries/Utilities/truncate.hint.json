@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 15,
+                "column": 32,
+                "local": "truncate"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 13
+                },
+                "end": {
+                    "row": 9,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/truncate.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

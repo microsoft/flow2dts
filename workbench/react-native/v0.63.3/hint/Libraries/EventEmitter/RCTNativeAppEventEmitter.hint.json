@@ -1,5 +1,64 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 43,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 15
+                },
+                "end": {
+                    "row": 9,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/EventEmitter/RCTDeviceEventEmitter.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 5,
+                "column": 46,
+                "local": "RCTDeviceEventEmitter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/EventEmitter/RCTNativeAppEventEmitter.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 6,
+                "column": 32,
+                "local": "RCTNativeAppEventEmitter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 36
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/EventEmitter/RCTNativeAppEventEmitter.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

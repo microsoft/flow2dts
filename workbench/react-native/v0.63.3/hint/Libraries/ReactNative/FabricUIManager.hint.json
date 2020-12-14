@@ -58,6 +58,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 42,
+                "column": 32,
+                "local": "FabricUIManager"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 40,
+                    "column": 13
+                },
+                "end": {
+                    "row": 40,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/ReactNative/FabricUIManager.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 6,

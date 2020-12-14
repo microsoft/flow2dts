@@ -58,6 +58,141 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 5,
+                "column": 45,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 0,
+                    "column": 1
+                },
+                "end": {
+                    "row": 0,
+                    "column": 0
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 7,
+                "column": 27,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 12
+                },
+                "end": {
+                    "row": 8,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Text/Text.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 14,
+                "column": 27,
+                "local": "NativeText"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 15,
+                    "column": 25
+                },
+                "end": {
+                    "row": 15,
+                    "column": 54
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Text/TextNativeComponent.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 14,
+                "column": 47,
+                "local": "NativeVirtualText"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 32
+                },
+                "end": {
+                    "row": 17,
+                    "column": 61
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Text/TextNativeComponent.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 18,
+                "column": 12,
+                "local": "Text"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 13
+                },
+                "end": {
+                    "row": 12,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Text/Text.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 21,
+                "column": 25,
+                "local": "DeprecatedTextPropTypes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Text/Text.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 25,
+                "column": 32,
+                "local": "TextToExport"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 13
+                },
+                "end": {
+                    "row": 17,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Text/Text.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 5,

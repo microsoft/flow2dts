@@ -115,6 +115,787 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 38,
+                "local": "AnimatedEvent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 25
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 3,
+                "column": 43,
+                "local": "attachNativeEvent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 13
+                },
+                "end": {
+                    "row": 3,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 24,
+                "local": "$4"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 35,
+                    "column": 25
+                },
+                "end": {
+                    "row": 38,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedEvent.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 5,
+                "column": 25,
+                "local": "$14"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 35,
+                    "column": 25
+                },
+                "end": {
+                    "row": 38,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedEvent.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 8,
+                "column": 38,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 15
+                },
+                "end": {
+                    "row": 12,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedAddition.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 10,
+                "column": 39,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 15
+                },
+                "end": {
+                    "row": 11,
+                    "column": 31
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedDiffClamp.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 12,
+                "column": 38,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 15
+                },
+                "end": {
+                    "row": 12,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedDivision.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 14,
+                "column": 43,
+                "local": "$6"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 15
+                },
+                "end": {
+                    "row": 18,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedInterpolation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 16,
+                "column": 36,
+                "local": "$7"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 15
+                },
+                "end": {
+                    "row": 11,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedModulo.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 18,
+                "column": 44,
+                "local": "$8"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 15
+                },
+                "end": {
+                    "row": 12,
+                    "column": 36
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedMultiplication.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 20,
+                "column": 34,
+                "local": "$9"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 15
+                },
+                "end": {
+                    "row": 2,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedNode.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 22,
+                "column": 35,
+                "local": "$10"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedProps.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 24,
+                "column": 41,
+                "local": "$11"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 15
+                },
+                "end": {
+                    "row": 12,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedSubtraction.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 27,
+                "column": 35,
+                "local": "$12"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 15
+                },
+                "end": {
+                    "row": 12,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedValue.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 29,
+                "column": 37,
+                "local": "$13"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 15,
+                    "column": 15
+                },
+                "end": {
+                    "row": 15,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/nodes/AnimatedValueXY.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 32,
+                "column": 45,
+                "local": "$16"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 41
+                },
+                "end": {
+                    "row": 15,
+                    "column": 41
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/createAnimatedComponent.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 149,
+                "column": 17,
+                "local": "AnimatedValue"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 27,
+                    "column": 13
+                },
+                "end": {
+                    "row": 27,
+                    "column": 25
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 155,
+                "column": 19,
+                "local": "AnimatedValueXY"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 29,
+                    "column": 13
+                },
+                "end": {
+                    "row": 29,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 161,
+                "column": 25,
+                "local": "AnimatedInterpolation"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 13
+                },
+                "end": {
+                    "row": 14,
+                    "column": 33
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 168,
+                "column": 16,
+                "local": "AnimatedNode"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 20,
+                    "column": 13
+                },
+                "end": {
+                    "row": 20,
+                    "column": 24
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 176,
+                "column": 17,
+                "local": "decay"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 89,
+                    "column": 13
+                },
+                "end": {
+                    "row": 89,
+                    "column": 17
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 183,
+                "column": 18,
+                "local": "timing"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 84,
+                    "column": 13
+                },
+                "end": {
+                    "row": 84,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 190,
+                "column": 18,
+                "local": "spring"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 79,
+                    "column": 13
+                },
+                "end": {
+                    "row": 79,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 198,
+                "column": 15,
+                "local": "add"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 51,
+                    "column": 13
+                },
+                "end": {
+                    "row": 51,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 206,
+                "column": 20,
+                "local": "subtract"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 56,
+                    "column": 13
+                },
+                "end": {
+                    "row": 56,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 214,
+                "column": 18,
+                "local": "divide"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 61,
+                    "column": 13
+                },
+                "end": {
+                    "row": 61,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 222,
+                "column": 20,
+                "local": "multiply"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 66,
+                    "column": 13
+                },
+                "end": {
+                    "row": 66,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 230,
+                "column": 18,
+                "local": "modulo"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 71,
+                    "column": 13
+                },
+                "end": {
+                    "row": 71,
+                    "column": 18
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 239,
+                "column": 21,
+                "local": "diffClamp"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 73,
+                    "column": 13
+                },
+                "end": {
+                    "row": 73,
+                    "column": 21
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 246,
+                "column": 17,
+                "local": "delay"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 108,
+                    "column": 13
+                },
+                "end": {
+                    "row": 108,
+                    "column": 17
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 254,
+                "column": 20,
+                "local": "sequence"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 94,
+                    "column": 13
+                },
+                "end": {
+                    "row": 94,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 262,
+                "column": 20,
+                "local": "parallel"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 103,
+                    "column": 13
+                },
+                "end": {
+                    "row": 103,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 269,
+                "column": 19,
+                "local": "stagger"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 110,
+                    "column": 13
+                },
+                "end": {
+                    "row": 110,
+                    "column": 19
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 276,
+                "column": 16,
+                "local": "loop"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 121,
+                    "column": 13
+                },
+                "end": {
+                    "row": 121,
+                    "column": 16
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 284,
+                "column": 17,
+                "local": "event"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 136,
+                    "column": 13
+                },
+                "end": {
+                    "row": 136,
+                    "column": 17
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 291,
+                "column": 35,
+                "local": "createAnimatedComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 32,
+                    "column": 13
+                },
+                "end": {
+                    "row": 32,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 299,
+                "column": 29,
+                "local": "attachNativeEvent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 13
+                },
+                "end": {
+                    "row": 3,
+                    "column": 29
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 307,
+                "column": 21,
+                "local": "forkEvent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 126,
+                    "column": 18
+                },
+                "end": {
+                    "row": 126,
+                    "column": 26
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 308,
+                "column": 23,
+                "local": "unforkEvent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 131,
+                    "column": 18
+                },
+                "end": {
+                    "row": 131,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 313,
+                "column": 17,
+                "local": "AnimatedEvent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 25
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 315,
+                "column": 31,
+                "local": "AnimatedProps"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 22,
+                    "column": 13
+                },
+                "end": {
+                    "row": 22,
+                    "column": 25
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/AnimatedImplementation.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

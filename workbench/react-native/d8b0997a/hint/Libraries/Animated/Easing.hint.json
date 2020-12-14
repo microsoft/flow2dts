@@ -1,5 +1,26 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 43,
+                "column": 32,
+                "local": "Easing"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 15
+                },
+                "end": {
+                    "row": 2,
+                    "column": 20
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/Easing.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 3,

@@ -1,5 +1,45 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 40,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 13,
+                    "column": 15
+                },
+                "end": {
+                    "row": 13,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 6,
+                "column": 24,
+                "local": "NativeEventEmitter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Components/StatusBar/StatusBarIOS.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,

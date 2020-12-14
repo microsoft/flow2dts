@@ -1,5 +1,83 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 61,
+                "column": 39,
+                "local": "computeWindowedRenderLimits"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 27,
+                    "column": 18
+                },
+                "end": {
+                    "row": 27,
+                    "column": 44
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizeUtils.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 62,
+                "column": 38,
+                "local": "elementsThatOverlapOffsets"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 18
+                },
+                "end": {
+                    "row": 2,
+                    "column": 43
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizeUtils.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 63,
+                "column": 25,
+                "local": "newRangeCount"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 18
+                },
+                "end": {
+                    "row": 14,
+                    "column": 30
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizeUtils.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 66,
+                "column": 32,
+                "local": "VirtualizeUtils"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 60,
+                    "column": 13
+                },
+                "end": {
+                    "row": 60,
+                    "column": 27
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Lists/VirtualizeUtils.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 8,

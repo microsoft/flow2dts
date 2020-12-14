@@ -153,6 +153,236 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 88,
+                "column": 15,
+                "local": "API"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 13
+                },
+                "end": {
+                    "row": 12,
+                    "column": 15
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/NativeAnimatedHelper.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 89,
+                "column": 35,
+                "local": "addWhitelistedStyleProp"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 47,
+                    "column": 18
+                },
+                "end": {
+                    "row": 47,
+                    "column": 40
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/NativeAnimatedHelper.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 90,
+                "column": 39,
+                "local": "addWhitelistedTransformProp"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 49,
+                    "column": 18
+                },
+                "end": {
+                    "row": 49,
+                    "column": 44
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/NativeAnimatedHelper.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 91,
+                "column": 44,
+                "local": "addWhitelistedInterpolationParam"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 51,
+                    "column": 18
+                },
+                "end": {
+                    "row": 51,
+                    "column": 49
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/NativeAnimatedHelper.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 92,
+                "column": 26,
+                "local": "validateStyles"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 71,
+                    "column": 18
+                },
+                "end": {
+                    "row": 71,
+                    "column": 31
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/NativeAnimatedHelper.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 93,
+                "column": 29,
+                "local": "validateTransform"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 53,
+                    "column": 18
+                },
+                "end": {
+                    "row": 53,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/NativeAnimatedHelper.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 94,
+                "column": 33,
+                "local": "validateInterpolation"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 73,
+                    "column": 18
+                },
+                "end": {
+                    "row": 73,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/NativeAnimatedHelper.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 95,
+                "column": 30,
+                "local": "generateNewNodeTag"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 75,
+                    "column": 18
+                },
+                "end": {
+                    "row": 75,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/NativeAnimatedHelper.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 96,
+                "column": 34,
+                "local": "generateNewAnimationId"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 77,
+                    "column": 18
+                },
+                "end": {
+                    "row": 77,
+                    "column": 39
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/NativeAnimatedHelper.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 97,
+                "column": 38,
+                "local": "assertNativeAnimatedModule"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 79,
+                    "column": 18
+                },
+                "end": {
+                    "row": 79,
+                    "column": 43
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/NativeAnimatedHelper.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 98,
+                "column": 33,
+                "local": "shouldUseNativeDriver"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 81,
+                    "column": 18
+                },
+                "end": {
+                    "row": 81,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/NativeAnimatedHelper.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 99,
+                "column": 29,
+                "local": "transformDataType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 85,
+                    "column": 18
+                },
+                "end": {
+                    "row": 85,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Animated/src/NativeAnimatedHelper.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 13,

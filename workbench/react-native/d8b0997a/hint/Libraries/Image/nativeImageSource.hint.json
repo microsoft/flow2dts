@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 19,
+                "column": 32,
+                "local": "nativeImageSource"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 18
+                },
+                "end": {
+                    "row": 17,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/nativeImageSource.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 6,

@@ -20,6 +20,84 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 16,
+                "column": 33,
+                "local": "getAndroidAssetSuffix"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 18
+                },
+                "end": {
+                    "row": 4,
+                    "column": 38
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/assetPathUtils.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 17,
+                "column": 40,
+                "local": "getAndroidResourceFolderName"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 18
+                },
+                "end": {
+                    "row": 6,
+                    "column": 45
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/assetPathUtils.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 18,
+                "column": 40,
+                "local": "getAndroidResourceIdentifier"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 18
+                },
+                "end": {
+                    "row": 11,
+                    "column": 45
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/assetPathUtils.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 19,
+                "column": 23,
+                "local": "getBasePath"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 13,
+                    "column": 18
+                },
+                "end": {
+                    "row": 13,
+                    "column": 28
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Image/assetPathUtils.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

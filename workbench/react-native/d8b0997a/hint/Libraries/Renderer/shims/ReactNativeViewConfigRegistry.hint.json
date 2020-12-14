@@ -39,6 +39,46 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 30,
+                "column": 34,
+                "local": "customDirectEventTypes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 13
+                },
+                "end": {
+                    "row": 18,
+                    "column": 34
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Renderer/shims/ReactNativeViewConfigRegistry.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 31,
+                "column": 36,
+                "local": "customBubblingEventTypes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 36
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Renderer/shims/ReactNativeViewConfigRegistry.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 10,

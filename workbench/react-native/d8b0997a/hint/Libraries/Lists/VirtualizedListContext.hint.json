@@ -28,6 +28,7 @@
             "error": "Could not get definition for /Libraries/Lists/VirtualizedListContext.js.flow:3:12\r\nFailed to find imported file react\r\n"
         }
     },
+    "typeofs": [],
     "decls": [
         {
             "row": 7,

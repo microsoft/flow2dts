@@ -20,6 +20,27 @@
             }
         }
     },
+    "typeofs": [
+        {
+            "source": {
+                "row": 23,
+                "column": 31,
+                "local": "verifyComponentAttributeEquivalence"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 18
+                },
+                "end": {
+                    "row": 4,
+                    "column": 52
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/Utilities/verifyComponentAttributeEquivalence.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 4,

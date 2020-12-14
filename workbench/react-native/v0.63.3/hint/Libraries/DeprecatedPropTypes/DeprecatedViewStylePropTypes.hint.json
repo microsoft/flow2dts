@@ -1,5 +1,634 @@
 {
     "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 45,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 0,
+                    "column": 1
+                },
+                "end": {
+                    "row": 0,
+                    "column": 0
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedColorPropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 47,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 0,
+                    "column": 1
+                },
+                "end": {
+                    "row": 0,
+                    "column": 0
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 6,
+                "column": 50,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 0,
+                    "column": 1
+                },
+                "end": {
+                    "row": 0,
+                    "column": 0
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 8,
+                "column": 50,
+                "local": "$4"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 43
+                },
+                "end": {
+                    "row": 39,
+                    "column": 2
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTransformPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 10,
+                "column": 36,
+                "local": "$5"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 12
+                },
+                "end": {
+                    "row": 11,
+                    "column": 32
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 14,
+                "column": 13,
+                "local": "DeprecatedLayoutPropTypes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 37
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 15,
+                "column": 13,
+                "local": "DeprecatedShadowPropTypesIOS"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 13
+                },
+                "end": {
+                    "row": 6,
+                    "column": 40
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 16,
+                "column": 13,
+                "local": "DeprecatedTransformPropTypes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 13
+                },
+                "end": {
+                    "row": 8,
+                    "column": 40
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 18,
+                "column": 27,
+                "local": "DeprecatedColorPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 19,
+                "column": 23,
+                "local": "DeprecatedColorPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 20,
+                "column": 26,
+                "local": "DeprecatedColorPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 21,
+                "column": 28,
+                "local": "DeprecatedColorPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 22,
+                "column": 29,
+                "local": "DeprecatedColorPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 23,
+                "column": 27,
+                "local": "DeprecatedColorPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 24,
+                "column": 28,
+                "local": "DeprecatedColorPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 25,
+                "column": 26,
+                "local": "DeprecatedColorPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 35
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 26,
+                "column": 39,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 26,
+                    "column": 39
+                },
+                "end": {
+                    "row": 26,
+                    "column": 44
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 27,
+                "column": 46,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 27,
+                    "column": 46
+                },
+                "end": {
+                    "row": 27,
+                    "column": 51
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 28,
+                "column": 47,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 28,
+                    "column": 47
+                },
+                "end": {
+                    "row": 28,
+                    "column": 52
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 29,
+                "column": 47,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 29,
+                    "column": 47
+                },
+                "end": {
+                    "row": 29,
+                    "column": 52
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 30,
+                "column": 45,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 30,
+                    "column": 45
+                },
+                "end": {
+                    "row": 30,
+                    "column": 50
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 31,
+                "column": 49,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 31,
+                    "column": 49
+                },
+                "end": {
+                    "row": 31,
+                    "column": 54
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 32,
+                "column": 50,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 32,
+                    "column": 50
+                },
+                "end": {
+                    "row": 32,
+                    "column": 55
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 33,
+                "column": 50,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 33,
+                    "column": 50
+                },
+                "end": {
+                    "row": 33,
+                    "column": 55
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 34,
+                "column": 48,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 34,
+                    "column": 48
+                },
+                "end": {
+                    "row": 34,
+                    "column": 53
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 36,
+                "column": 38,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 36,
+                    "column": 38
+                },
+                "end": {
+                    "row": 36,
+                    "column": 43
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 37,
+                "column": 41,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 37,
+                    "column": 41
+                },
+                "end": {
+                    "row": 37,
+                    "column": 46
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 38,
+                "column": 43,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 38,
+                    "column": 43
+                },
+                "end": {
+                    "row": 38,
+                    "column": 48
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 39,
+                "column": 44,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 39,
+                    "column": 44
+                },
+                "end": {
+                    "row": 39,
+                    "column": 49
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 40,
+                "column": 42,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 40,
+                    "column": 42
+                },
+                "end": {
+                    "row": 40,
+                    "column": 47
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 41,
+                "column": 34,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 41,
+                    "column": 34
+                },
+                "end": {
+                    "row": 41,
+                    "column": 39
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 49,
+                "column": 36,
+                "local": "number"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 49,
+                    "column": 36
+                },
+                "end": {
+                    "row": 49,
+                    "column": 41
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 52,
+                "column": 32,
+                "local": "DeprecatedViewStylePropTypes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 13,
+                    "column": 13
+                },
+                "end": {
+                    "row": 13,
+                    "column": 40
+                },
+                "fromLibrary": false,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
+            }
+        }
+    ],
     "decls": [
         {
             "row": 2,
