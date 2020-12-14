@@ -18,67 +18,67 @@ declare type ButtonProps = Readonly<
 
   /**
   If `true`, doesn't play system sound on touch.
-   @platform android
-   @default false
+    @platform android
+    @default false
   */
   touchSoundDisabled?: null | undefined | boolean;
 
   /**
   Color of the text (iOS), or background color of the button (Android).
-   @default {@platform android} '#2196F3'
+    @default {@platform android} '#2196F3'
   @default {@platform ios} '#007AFF'
   */
   color?: null | undefined | ColorValue;
 
   /**
   TV preferred focus.
-   @platform tv
-   @default false
+    @platform tv
+    @default false
   */
   hasTVPreferredFocus?: null | undefined | boolean;
 
   /**
   Designates the next view to receive focus when the user navigates down. See
   the [Android documentation][android:nextFocusDown].
-   [android:nextFocusDown]:
+    [android:nextFocusDown]:
   https://developer.android.com/reference/android/view/View.html#attr_android:nextFocusDown
-   @platform android, tv
+    @platform android, tv
   */
   nextFocusDown?: null | undefined | number;
 
   /**
   Designates the next view to receive focus when the user navigates forward.
   See the [Android documentation][android:nextFocusForward].
-   [android:nextFocusForward]:
+    [android:nextFocusForward]:
   https://developer.android.com/reference/android/view/View.html#attr_android:nextFocusForward
-   @platform android, tv
+    @platform android, tv
   */
   nextFocusForward?: null | undefined | number;
 
   /**
   Designates the next view to receive focus when the user navigates left. See
   the [Android documentation][android:nextFocusLeft].
-   [android:nextFocusLeft]:
+    [android:nextFocusLeft]:
   https://developer.android.com/reference/android/view/View.html#attr_android:nextFocusLeft
-   @platform android, tv
+    @platform android, tv
   */
   nextFocusLeft?: null | undefined | number;
 
   /**
   Designates the next view to receive focus when the user navigates right. See
   the [Android documentation][android:nextFocusRight].
-   [android:nextFocusRight]:
+    [android:nextFocusRight]:
   https://developer.android.com/reference/android/view/View.html#attr_android:nextFocusRight
-   @platform android, tv
+    @platform android, tv
   */
   nextFocusRight?: null | undefined | number;
 
   /**
   Designates the next view to receive focus when the user navigates up. See
   the [Android documentation][android:nextFocusUp].
-   [android:nextFocusUp]:
+    [android:nextFocusUp]:
   https://developer.android.com/reference/android/view/View.html#attr_android:nextFocusUp
-   @platform android, tv
+    @platform android, tv
   */
   nextFocusUp?: null | undefined | number;
 
@@ -89,7 +89,7 @@ declare type ButtonProps = Readonly<
 
   /**
   If `true`, disable all interactions for this component.
-   @default false
+    @default false
   */
   disabled?: null | undefined | boolean;
 
