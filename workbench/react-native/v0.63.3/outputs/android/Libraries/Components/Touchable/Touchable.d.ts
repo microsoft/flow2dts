@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "react";
 import { EdgeInsetsProp } from "../../StyleSheet/EdgeInsetsPropType";
 import { PressEvent } from "../../Types/CoreEventTypes";
@@ -14,7 +13,7 @@ declare var States:
   RESPONDER_ACTIVE_LONG_PRESS_OUT: "RESPONDER_ACTIVE_LONG_PRESS_OUT";
   ERROR: "ERROR";
 };
-declare type State = $TypeOf<typeof States.NOT_RESPONDER> | $TypeOf<typeof States.RESPONDER_INACTIVE_PRESS_IN> | $TypeOf<typeof States.RESPONDER_INACTIVE_PRESS_OUT> | $TypeOf<typeof States.RESPONDER_ACTIVE_PRESS_IN> | $TypeOf<typeof States.RESPONDER_ACTIVE_PRESS_OUT> | $TypeOf<typeof States.RESPONDER_ACTIVE_LONG_PRESS_IN> | $TypeOf<typeof States.RESPONDER_ACTIVE_LONG_PRESS_OUT> | $TypeOf<typeof States.ERROR>;
+declare type State = typeof States.NOT_RESPONDER | typeof States.RESPONDER_INACTIVE_PRESS_IN | typeof States.RESPONDER_INACTIVE_PRESS_OUT | typeof States.RESPONDER_ACTIVE_PRESS_IN | typeof States.RESPONDER_ACTIVE_PRESS_OUT | typeof States.RESPONDER_ACTIVE_LONG_PRESS_IN | typeof States.RESPONDER_ACTIVE_LONG_PRESS_OUT | typeof States.ERROR;
 declare var Signals:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
@@ -26,7 +25,7 @@ declare var Signals:
   LEAVE_PRESS_RECT: "LEAVE_PRESS_RECT";
   LONG_PRESS_DETECTED: "LONG_PRESS_DETECTED";
 };
-declare type Signal = $TypeOf<typeof Signals.DELAY> | $TypeOf<typeof Signals.RESPONDER_GRANT> | $TypeOf<typeof Signals.RESPONDER_RELEASE> | $TypeOf<typeof Signals.RESPONDER_TERMINATED> | $TypeOf<typeof Signals.ENTER_PRESS_RECT> | $TypeOf<typeof Signals.LEAVE_PRESS_RECT> | $TypeOf<typeof Signals.LONG_PRESS_DETECTED>;
+declare type Signal = typeof Signals.DELAY | typeof Signals.RESPONDER_GRANT | typeof Signals.RESPONDER_RELEASE | typeof Signals.RESPONDER_TERMINATED | typeof Signals.ENTER_PRESS_RECT | typeof Signals.LEAVE_PRESS_RECT | typeof Signals.LONG_PRESS_DETECTED;
 declare var TouchableMixin:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

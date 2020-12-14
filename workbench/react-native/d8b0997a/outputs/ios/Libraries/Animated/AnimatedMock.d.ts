@@ -39,31 +39,31 @@ declare var loop: (animation: CompositeAnimation, _?: LoopAnimationConfig) => Co
 declare var event: (argMapping: (null | undefined | Mapping)[], config: EventConfig) => any;
 export type { CompositeAnimation };
 declare namespace $f2tExportDefaultRedirect {
-  export const $f2tHidden_Value: $TypeOf<typeof AnimatedValue>;
-  export const $f2tHidden_ValueXY: $TypeOf<typeof AnimatedValueXY>;
-  export const $f2tHidden_Interpolation: $TypeOf<typeof AnimatedInterpolation>;
-  export const $f2tHidden_Node: $TypeOf<typeof AnimatedNode>;
+  export const $f2tHidden_Value: $TypeOf<typeof $7>;
+  export const $f2tHidden_ValueXY: $TypeOf<typeof $8>;
+  export const $f2tHidden_Interpolation: $TypeOf<typeof $4>;
+  export const $f2tHidden_Node: $TypeOf<typeof $5>;
   export const $f2tHidden_decay: $TypeOf<typeof decay>;
   export const $f2tHidden_timing: $TypeOf<typeof timing>;
   export const $f2tHidden_spring: $TypeOf<typeof spring>;
-  export const $f2tHidden_add: $TypeOf<typeof AnimatedImplementation.add>;
-  export const $f2tHidden_subtract: $TypeOf<typeof AnimatedImplementation.subtract>;
-  export const $f2tHidden_divide: $TypeOf<typeof AnimatedImplementation.divide>;
-  export const $f2tHidden_multiply: $TypeOf<typeof AnimatedImplementation.multiply>;
-  export const $f2tHidden_modulo: $TypeOf<typeof AnimatedImplementation.modulo>;
-  export const $f2tHidden_diffClamp: $TypeOf<typeof AnimatedImplementation.diffClamp>;
+  export const $f2tHidden_add: $TypeOf<typeof $3.add>;
+  export const $f2tHidden_subtract: $TypeOf<typeof $3.subtract>;
+  export const $f2tHidden_divide: $TypeOf<typeof $3.divide>;
+  export const $f2tHidden_multiply: $TypeOf<typeof $3.multiply>;
+  export const $f2tHidden_modulo: $TypeOf<typeof $3.modulo>;
+  export const $f2tHidden_diffClamp: $TypeOf<typeof $3.diffClamp>;
   export const $f2tHidden_delay: $TypeOf<typeof delay>;
   export const $f2tHidden_sequence: $TypeOf<typeof sequence>;
   export const $f2tHidden_parallel: $TypeOf<typeof parallel>;
   export const $f2tHidden_stagger: $TypeOf<typeof stagger>;
   export const $f2tHidden_loop: $TypeOf<typeof loop>;
   export const $f2tHidden_event: $TypeOf<typeof event>;
-  export const $f2tHidden_createAnimatedComponent: $TypeOf<typeof createAnimatedComponent>;
-  export const $f2tHidden_attachNativeEvent: $TypeOf<typeof attachNativeEvent>;
-  export const $f2tHidden_forkEvent: $TypeOf<typeof AnimatedImplementation.forkEvent>;
-  export const $f2tHidden_unforkEvent: $TypeOf<typeof AnimatedImplementation.unforkEvent>;
-  export const $f2tHidden_Event: $TypeOf<typeof AnimatedEvent>;
-  export const $f2tHidden___PropsOnlyForTests: $TypeOf<typeof AnimatedProps>;
+  export const $f2tHidden_createAnimatedComponent: $TypeOf<typeof $11>;
+  export const $f2tHidden_attachNativeEvent: $TypeOf<typeof $9.attachNativeEvent>;
+  export const $f2tHidden_forkEvent: $TypeOf<typeof $3.forkEvent>;
+  export const $f2tHidden_unforkEvent: $TypeOf<typeof $3.unforkEvent>;
+  export const $f2tHidden_Event: $TypeOf<typeof $1.AnimatedEvent>;
+  export const $f2tHidden___PropsOnlyForTests: $TypeOf<typeof $6>;
 }
 declare namespace $f2tExportDefault {
   export const Value: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_Value>;

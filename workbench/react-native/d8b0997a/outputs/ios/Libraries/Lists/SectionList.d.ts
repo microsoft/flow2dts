@@ -91,7 +91,7 @@ $Diff<VirtualizedSectionListProps<SectionT>, {
 }> & RequiredProps<SectionT> & OptionalProps<SectionT> & {};
 declare var defaultProps:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-typeof VirtualizedSectionList.defaultProps & {
+typeof $3.defaultProps & {
   stickySectionHeadersEnabled: boolean;
 };
 declare type DefaultProps = typeof defaultProps;

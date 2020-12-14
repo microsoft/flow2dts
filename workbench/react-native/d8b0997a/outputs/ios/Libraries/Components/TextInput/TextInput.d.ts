@@ -1,4 +1,4 @@
-import { Stringish } from "flow2dts-flow-types-polyfill";
+import { $TypeOf, Stringish } from "flow2dts-flow-types-polyfill";
 import { $Diff } from "utility-types";
 import $1 from "../../DeprecatedPropTypes/DeprecatedTextInputPropTypes";
 import $2 from "react";
@@ -592,12 +592,12 @@ declare type TextInputComponentStatics = Readonly<
   State: Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    currentlyFocusedInput: typeof TextInputState.currentlyFocusedInput;
-    currentlyFocusedField: typeof TextInputState.currentlyFocusedField;
-    focusTextInput: typeof TextInputState.focusTextInput;
-    blurTextInput: typeof TextInputState.blurTextInput;
+    currentlyFocusedInput: typeof $3.currentlyFocusedInput;
+    currentlyFocusedField: typeof $3.currentlyFocusedField;
+    focusTextInput: typeof $3.focusTextInput;
+    blurTextInput: typeof $3.blurTextInput;
   }>;
-  propTypes: typeof DeprecatedTextInputPropTypes;
+  propTypes: $TypeOf<typeof $1>;
 }>;
 export type { ChangeEvent };
 export type { TextInputEvent };

@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "react";
 import { ColorValue } from "../../StyleSheet/StyleSheet";
 import { ViewProps } from "../View/ViewPropTypes";
@@ -42,7 +41,7 @@ declare type AndroidProps = Readonly<
   /**
   * Size of the refresh indicator, see RefreshControl.SIZE.
   */
-  size?: null | undefined | ($TypeOf<typeof RefreshLayoutConsts.SIZE.DEFAULT> | $TypeOf<typeof RefreshLayoutConsts.SIZE.LARGE>);
+  size?: null | undefined | (typeof RefreshLayoutConsts.SIZE.DEFAULT | typeof RefreshLayoutConsts.SIZE.LARGE);
 
   /**
   * Progress view top offset

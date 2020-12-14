@@ -28,8 +28,8 @@ declare type ScrollViewImperativeMethods = Readonly<
   scrollToEnd: $PropertyType<ScrollView, "scrollToEnd">;
   flashScrollIndicators: $PropertyType<ScrollView, "flashScrollIndicators">;
   // ScrollResponder.Mixin public methods
-  scrollResponderZoomTo: $PropertyType<$TypeOf<typeof ScrollResponder.Mixin>, "scrollResponderZoomTo">;
-  scrollResponderScrollNativeHandleToKeyboard: $PropertyType<$TypeOf<typeof ScrollResponder.Mixin>, "scrollResponderScrollNativeHandleToKeyboard">;
+  scrollResponderZoomTo: $PropertyType<typeof ScrollResponder.Mixin, "scrollResponderZoomTo">;
+  scrollResponderScrollNativeHandleToKeyboard: $PropertyType<typeof ScrollResponder.Mixin, "scrollResponderScrollNativeHandleToKeyboard">;
 }>;
 declare type ScrollResponderType = ScrollViewImperativeMethods;
 declare type IOSProps = Readonly<

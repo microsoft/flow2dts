@@ -309,12 +309,20 @@ const visitors: OverridesVisitors = {
           const typeAnnotation = declarator.id.typeAnnotation
           t.assertTSTypeAnnotation(typeAnnotation)
           const typeOfHelper = typeAnnotation.typeAnnotation
-          t.assertTSTypeReference(typeOfHelper)
-          if (!typeOfHelper.typeParameters || typeOfHelper.typeParameters.params.length !== 1) {
-            throw path.buildCodeFrameError("Expected $TypeOf to have 1 type parameter")
+
+          let typeQuery: t.TSTypeQuery
+          if (typeOfHelper.type === "TSTypeQuery") {
+            typeQuery = typeOfHelper
+          } else {
+            t.assertTSTypeReference(typeOfHelper)
+            if (!typeOfHelper.typeParameters || typeOfHelper.typeParameters.params.length !== 1) {
+              throw path.buildCodeFrameError("Expected $TypeOf to have 1 type parameter")
+            }
+            const typeofQueryParam = typeOfHelper.typeParameters.params[0]
+            t.assertTSTypeQuery(typeofQueryParam)
+            typeQuery = typeofQueryParam
           }
-          const typeQuery = typeOfHelper.typeParameters.params[0]
-          t.assertTSTypeQuery(typeQuery)
+
           t.assertIdentifier(typeQuery.exprName)
           state.eventEmitterClassVar = typeQuery.exprName
           path.remove()

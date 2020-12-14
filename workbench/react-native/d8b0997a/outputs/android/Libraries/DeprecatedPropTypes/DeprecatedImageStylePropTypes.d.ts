@@ -11,15 +11,15 @@ $TypeOf<typeof $2> & $TypeOf<typeof $3> & $TypeOf<typeof $4> & {
   backfaceVisibility: React$PropType$Primitive<"visible" | "hidden">;
   backgroundColor: $TypeOf<typeof $1>;
   borderColor: $TypeOf<typeof $1>;
-  borderWidth: $TypeOf<typeof $5.number>;
-  borderRadius: $TypeOf<typeof $5.number>;
+  borderWidth: typeof $5.number;
+  borderRadius: typeof $5.number;
   overflow: React$PropType$Primitive<"visible" | "hidden">;
 
   /**
    * Changes the color of all the non-transparent pixels to the tintColor.
    */
   tintColor: $TypeOf<typeof $1>;
-  opacity: $TypeOf<typeof $5.number>;
+  opacity: typeof $5.number;
 
   /**
    * When the image has rounded corners, specifying an overlayColor will
@@ -38,12 +38,12 @@ $TypeOf<typeof $2> & $TypeOf<typeof $3> & $TypeOf<typeof $4> & {
    *
    * @platform android
    */
-  overlayColor: $TypeOf<typeof $5.string>;
+  overlayColor: typeof $5.string;
   // Android-Specific styles
-  borderTopLeftRadius: $TypeOf<typeof $5.number>;
-  borderTopRightRadius: $TypeOf<typeof $5.number>;
-  borderBottomLeftRadius: $TypeOf<typeof $5.number>;
-  borderBottomRightRadius: $TypeOf<typeof $5.number>;
+  borderTopLeftRadius: typeof $5.number;
+  borderTopRightRadius: typeof $5.number;
+  borderBottomLeftRadius: typeof $5.number;
+  borderBottomRightRadius: typeof $5.number;
 };
 declare const $f2tExportDefault: typeof ImageStylePropTypes;
 export default $f2tExportDefault;

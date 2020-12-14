@@ -1,13 +1,13 @@
-import { React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
+import { $TypeOf, React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
 import $1 from "./DeprecatedColorPropType";
 import $2 from "./DeprecatedViewStylePropTypes";
 import $3 from "prop-types";
 declare var DeprecatedTextStylePropTypes:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-typeof DeprecatedViewStylePropTypes & {
-  color: typeof DeprecatedColorPropType;
-  fontFamily: typeof ReactPropTypes.string;
-  fontSize: typeof ReactPropTypes.number;
+$TypeOf<typeof $2> & {
+  color: $TypeOf<typeof $1>;
+  fontFamily: typeof $3.string;
+  fontSize: typeof $3.number;
   fontStyle: React$PropType$Primitive<"normal" | "italic">;
 
   /**
@@ -21,14 +21,14 @@ typeof DeprecatedViewStylePropTypes & {
     height?: number;
     width?: number;
   }>;
-  textShadowRadius: typeof ReactPropTypes.number;
-  textShadowColor: typeof DeprecatedColorPropType;
+  textShadowRadius: typeof $3.number;
+  textShadowColor: $TypeOf<typeof $1>;
 
   /**
    * @platform ios
    */
-  letterSpacing: typeof ReactPropTypes.number;
-  lineHeight: typeof ReactPropTypes.number;
+  letterSpacing: typeof $3.number;
+  lineHeight: typeof $3.number;
 
   /**
    * Specifies text alignment. The value 'justify' is only supported on iOS and
@@ -47,7 +47,7 @@ typeof DeprecatedViewStylePropTypes & {
    * For best results also set `textAlignVertical` to `center`. Default is true.
    * @platform android
    */
-  includeFontPadding: typeof ReactPropTypes.bool;
+  includeFontPadding: typeof $3.bool;
   textDecorationLine: React$PropType$Primitive<"none" | "underline" | "line-through" | "underline line-through">;
 
   /**
@@ -58,7 +58,7 @@ typeof DeprecatedViewStylePropTypes & {
   /**
    * @platform ios
    */
-  textDecorationColor: typeof DeprecatedColorPropType;
+  textDecorationColor: $TypeOf<typeof $1>;
   textTransform: React$PropType$Primitive<"none" | "capitalize" | "uppercase" | "lowercase">;
 
   /**

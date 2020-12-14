@@ -1,4 +1,4 @@
-import { React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
+import { $TypeOf, React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
 import $1 from "./DeprecatedColorPropType";
 import $2 from "./DeprecatedLayoutPropTypes";
 import $3 from "./DeprecatedShadowPropTypesIOS";
@@ -6,20 +6,20 @@ import $4 from "./DeprecatedTransformPropTypes";
 import $5 from "prop-types";
 declare var ImageStylePropTypes:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-typeof DeprecatedLayoutPropTypes & typeof DeprecatedShadowPropTypesIOS & typeof DeprecatedTransformPropTypes & {
+$TypeOf<typeof $2> & $TypeOf<typeof $3> & $TypeOf<typeof $4> & {
   resizeMode: React$PropType$Primitive<"center" | "contain" | "cover" | "repeat" | "stretch">;
   backfaceVisibility: React$PropType$Primitive<"visible" | "hidden">;
-  backgroundColor: typeof DeprecatedColorPropType;
-  borderColor: typeof DeprecatedColorPropType;
-  borderWidth: typeof ReactPropTypes.number;
-  borderRadius: typeof ReactPropTypes.number;
+  backgroundColor: $TypeOf<typeof $1>;
+  borderColor: $TypeOf<typeof $1>;
+  borderWidth: typeof $5.number;
+  borderRadius: typeof $5.number;
   overflow: React$PropType$Primitive<"visible" | "hidden">;
 
   /**
    * Changes the color of all the non-transparent pixels to the tintColor.
    */
-  tintColor: typeof DeprecatedColorPropType;
-  opacity: typeof ReactPropTypes.number;
+  tintColor: $TypeOf<typeof $1>;
+  opacity: typeof $5.number;
 
   /**
    * When the image has rounded corners, specifying an overlayColor will
@@ -38,12 +38,12 @@ typeof DeprecatedLayoutPropTypes & typeof DeprecatedShadowPropTypesIOS & typeof 
    *
    * @platform android
    */
-  overlayColor: typeof ReactPropTypes.string;
+  overlayColor: typeof $5.string;
   // Android-Specific styles
-  borderTopLeftRadius: typeof ReactPropTypes.number;
-  borderTopRightRadius: typeof ReactPropTypes.number;
-  borderBottomLeftRadius: typeof ReactPropTypes.number;
-  borderBottomRightRadius: typeof ReactPropTypes.number;
+  borderTopLeftRadius: typeof $5.number;
+  borderTopRightRadius: typeof $5.number;
+  borderBottomLeftRadius: typeof $5.number;
+  borderBottomRightRadius: typeof $5.number;
 };
 declare const $f2tExportDefault: typeof ImageStylePropTypes;
 export default $f2tExportDefault;

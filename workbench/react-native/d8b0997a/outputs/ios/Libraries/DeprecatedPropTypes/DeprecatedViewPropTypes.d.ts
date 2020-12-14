@@ -1,43 +1,43 @@
-import { React$PropType$Primitive, ReactPropsCheckType } from "flow2dts-flow-types-polyfill";
+import { $TypeOf, React$PropType$Primitive, ReactPropsCheckType } from "flow2dts-flow-types-polyfill";
 import $1 from "./DeprecatedEdgeInsetsPropType";
 import $2 from "prop-types";
 declare var stylePropType: ReactPropsCheckType;
-declare const $f2t_accessible: typeof PropTypes.bool;
-declare const $f2t_accessibilityLabel: typeof PropTypes.node;
-declare const $f2t_accessibilityHint: typeof PropTypes.string;
+declare const $f2t_accessible: typeof $2.bool;
+declare const $f2t_accessibilityLabel: typeof $2.node;
+declare const $f2t_accessibilityHint: typeof $2.string;
 declare const $f2t_accessibilityActions: React$PropType$Primitive<string[]>;
-declare const $f2t_accessibilityIgnoresInvertColors: typeof PropTypes.bool;
+declare const $f2t_accessibilityIgnoresInvertColors: typeof $2.bool;
 declare const $f2t_accessibilityRole: React$PropType$Primitive<"none" | "button" | "link" | "search" | "image" | "keyboardkey" | "text" | "adjustable" | "imagebutton" | "header" | "summary" | "alert" | "checkbox" | "combobox" | "menu" | "menubar" | "menuitem" | "progressbar" | "radio" | "radiogroup" | "scrollbar" | "spinbutton" | "switch" | "tab" | "tablist" | "timer" | "toolbar">;
-declare const $f2t_accessibilityState: typeof PropTypes.object;
-declare const $f2t_accessibilityValue: typeof PropTypes.object;
+declare const $f2t_accessibilityState: typeof $2.object;
+declare const $f2t_accessibilityValue: typeof $2.object;
 declare const $f2t_accessibilityLiveRegion: React$PropType$Primitive<"none" | "polite" | "assertive">;
 declare const $f2t_importantForAccessibility: React$PropType$Primitive<"auto" | "yes" | "no" | "no-hide-descendants">;
-declare const $f2t_accessibilityViewIsModal: typeof PropTypes.bool;
-declare const $f2t_accessibilityElementsHidden: typeof PropTypes.bool;
-declare const $f2t_onAccessibilityAction: typeof PropTypes.func;
-declare const $f2t_onAccessibilityTap: typeof PropTypes.func;
-declare const $f2t_onMagicTap: typeof PropTypes.func;
-declare const $f2t_testID: typeof PropTypes.string;
-declare const $f2t_nativeID: typeof PropTypes.string;
-declare const $f2t_onResponderGrant: typeof PropTypes.func;
-declare const $f2t_onResponderMove: typeof PropTypes.func;
-declare const $f2t_onResponderReject: typeof PropTypes.func;
-declare const $f2t_onResponderRelease: typeof PropTypes.func;
-declare const $f2t_onResponderTerminate: typeof PropTypes.func;
-declare const $f2t_onResponderTerminationRequest: typeof PropTypes.func;
-declare const $f2t_onStartShouldSetResponder: typeof PropTypes.func;
-declare const $f2t_onStartShouldSetResponderCapture: typeof PropTypes.func;
-declare const $f2t_onMoveShouldSetResponder: typeof PropTypes.func;
-declare const $f2t_onMoveShouldSetResponderCapture: typeof PropTypes.func;
-declare const $f2t_hitSlop: typeof DeprecatedEdgeInsetsPropType;
-declare const $f2t_onLayout: typeof PropTypes.func;
+declare const $f2t_accessibilityViewIsModal: typeof $2.bool;
+declare const $f2t_accessibilityElementsHidden: typeof $2.bool;
+declare const $f2t_onAccessibilityAction: typeof $2.func;
+declare const $f2t_onAccessibilityTap: typeof $2.func;
+declare const $f2t_onMagicTap: typeof $2.func;
+declare const $f2t_testID: typeof $2.string;
+declare const $f2t_nativeID: typeof $2.string;
+declare const $f2t_onResponderGrant: typeof $2.func;
+declare const $f2t_onResponderMove: typeof $2.func;
+declare const $f2t_onResponderReject: typeof $2.func;
+declare const $f2t_onResponderRelease: typeof $2.func;
+declare const $f2t_onResponderTerminate: typeof $2.func;
+declare const $f2t_onResponderTerminationRequest: typeof $2.func;
+declare const $f2t_onStartShouldSetResponder: typeof $2.func;
+declare const $f2t_onStartShouldSetResponderCapture: typeof $2.func;
+declare const $f2t_onMoveShouldSetResponder: typeof $2.func;
+declare const $f2t_onMoveShouldSetResponderCapture: typeof $2.func;
+declare const $f2t_hitSlop: $TypeOf<typeof $1>;
+declare const $f2t_onLayout: typeof $2.func;
 declare const $f2t_pointerEvents: React$PropType$Primitive<"box-none" | "none" | "box-only" | "auto">;
 declare const $f2t_style: typeof stylePropType;
-declare const $f2t_removeClippedSubviews: typeof PropTypes.bool;
-declare const $f2t_renderToHardwareTextureAndroid: typeof PropTypes.bool;
-declare const $f2t_shouldRasterizeIOS: typeof PropTypes.bool;
-declare const $f2t_collapsable: typeof PropTypes.bool;
-declare const $f2t_needsOffscreenAlphaCompositing: typeof PropTypes.bool;
+declare const $f2t_removeClippedSubviews: typeof $2.bool;
+declare const $f2t_renderToHardwareTextureAndroid: typeof $2.bool;
+declare const $f2t_shouldRasterizeIOS: typeof $2.bool;
+declare const $f2t_collapsable: typeof $2.bool;
+declare const $f2t_needsOffscreenAlphaCompositing: typeof $2.bool;
 export { $f2t_accessible as accessible, $f2t_accessibilityLabel as accessibilityLabel, $f2t_accessibilityHint as accessibilityHint, $f2t_accessibilityActions as accessibilityActions, $f2t_accessibilityIgnoresInvertColors as accessibilityIgnoresInvertColors, $f2t_accessibilityRole as accessibilityRole, $f2t_accessibilityState as accessibilityState, $f2t_accessibilityValue as accessibilityValue, $f2t_accessibilityLiveRegion as accessibilityLiveRegion, $f2t_importantForAccessibility as importantForAccessibility, $f2t_accessibilityViewIsModal as accessibilityViewIsModal, $f2t_accessibilityElementsHidden as accessibilityElementsHidden, $f2t_onAccessibilityAction as onAccessibilityAction, $f2t_onAccessibilityTap as onAccessibilityTap, $f2t_onMagicTap as onMagicTap, $f2t_testID as testID, $f2t_nativeID as nativeID, $f2t_onResponderGrant as onResponderGrant, $f2t_onResponderMove as onResponderMove, $f2t_onResponderReject as onResponderReject, $f2t_onResponderRelease as onResponderRelease, $f2t_onResponderTerminate as onResponderTerminate, $f2t_onResponderTerminationRequest as onResponderTerminationRequest, $f2t_onStartShouldSetResponder as onStartShouldSetResponder, $f2t_onStartShouldSetResponderCapture as onStartShouldSetResponderCapture, $f2t_onMoveShouldSetResponder as onMoveShouldSetResponder, $f2t_onMoveShouldSetResponderCapture as onMoveShouldSetResponderCapture, $f2t_hitSlop as hitSlop, $f2t_onLayout as onLayout, $f2t_pointerEvents as pointerEvents, $f2t_style as style, $f2t_removeClippedSubviews as removeClippedSubviews, $f2t_renderToHardwareTextureAndroid as renderToHardwareTextureAndroid, $f2t_shouldRasterizeIOS as shouldRasterizeIOS, $f2t_collapsable as collapsable, $f2t_needsOffscreenAlphaCompositing as needsOffscreenAlphaCompositing };
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -48,7 +48,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#accessible
    */
-  accessible: typeof PropTypes.bool;
+  accessible: typeof $2.bool;
 
   /**
    * Overrides the text that's read by the screen reader when the user interacts
@@ -57,7 +57,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#accessibilitylabel
    */
-  accessibilityLabel: typeof PropTypes.node;
+  accessibilityLabel: typeof $2.node;
 
   /**
    * An accessibility hint helps users understand what will happen when they perform
@@ -67,7 +67,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#accessibilityHint
    */
-  accessibilityHint: typeof PropTypes.string;
+  accessibilityHint: typeof $2.string;
 
   /**
    * Provides an array of custom actions available for accessibility.
@@ -81,14 +81,14 @@ declare const $f2tExportDefault:
    *
    * @platform ios
    */
-  accessibilityIgnoresInvertColors: typeof PropTypes.bool;
+  accessibilityIgnoresInvertColors: typeof $2.bool;
 
   /**
    * Indicates to accessibility services to treat UI component like a specific role.
    */
   accessibilityRole: React$PropType$Primitive<"none" | "button" | "link" | "search" | "image" | "keyboardkey" | "text" | "adjustable" | "imagebutton" | "header" | "summary" | "alert" | "checkbox" | "combobox" | "menu" | "menubar" | "menuitem" | "progressbar" | "radio" | "radiogroup" | "scrollbar" | "spinbutton" | "switch" | "tab" | "tablist" | "timer" | "toolbar">;
-  accessibilityState: typeof PropTypes.object;
-  accessibilityValue: typeof PropTypes.object;
+  accessibilityState: typeof $2.object;
+  accessibilityValue: typeof $2.object;
 
   /**
    * Indicates to accessibility services whether the user should be notified
@@ -120,7 +120,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#accessibilityviewismodal
    */
-  accessibilityViewIsModal: typeof PropTypes.bool;
+  accessibilityViewIsModal: typeof $2.bool;
 
   /**
    * A value indicating whether the accessibility elements contained within
@@ -130,7 +130,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#accessibilityElementsHidden
    */
-  accessibilityElementsHidden: typeof PropTypes.bool;
+  accessibilityElementsHidden: typeof $2.bool;
 
   /**
    * When `accessible` is true, the system will try to invoke this function
@@ -138,7 +138,7 @@ declare const $f2tExportDefault:
    *
    * @platform ios
    */
-  onAccessibilityAction: typeof PropTypes.func;
+  onAccessibilityAction: typeof $2.func;
 
   /**
    * When `accessible` is true, the system will try to invoke this function
@@ -146,7 +146,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onaccessibilitytap
    */
-  onAccessibilityTap: typeof PropTypes.func;
+  onAccessibilityTap: typeof $2.func;
 
   /**
    * When `accessible` is `true`, the system will invoke this function when the
@@ -154,7 +154,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onmagictap
    */
-  onMagicTap: typeof PropTypes.func;
+  onMagicTap: typeof $2.func;
 
   /**
    * Used to locate this view in end-to-end tests.
@@ -163,7 +163,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#testid
    */
-  testID: typeof PropTypes.string;
+  testID: typeof $2.string;
 
   /**
    * Used to locate this view from native classes.
@@ -172,7 +172,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#nativeid
    */
-  nativeID: typeof PropTypes.string;
+  nativeID: typeof $2.string;
 
   /**
    * For most touch interactions, you'll simply want to wrap your component in
@@ -189,7 +189,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onrespondergrant
    */
-  onResponderGrant: typeof PropTypes.func;
+  onResponderGrant: typeof $2.func;
 
   /**
    * The user is moving their finger.
@@ -199,7 +199,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onrespondermove
    */
-  onResponderMove: typeof PropTypes.func;
+  onResponderMove: typeof $2.func;
 
   /**
    * Another responder is already active and will not release it to that `View`
@@ -210,7 +210,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onresponderreject
    */
-  onResponderReject: typeof PropTypes.func;
+  onResponderReject: typeof $2.func;
 
   /**
    * Fired at the end of the touch.
@@ -220,7 +220,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onresponderrelease
    */
-  onResponderRelease: typeof PropTypes.func;
+  onResponderRelease: typeof $2.func;
 
   /**
    * The responder has been taken from the `View`. Might be taken by other
@@ -233,7 +233,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onresponderterminate
    */
-  onResponderTerminate: typeof PropTypes.func;
+  onResponderTerminate: typeof $2.func;
 
   /**
    * Some other `View` wants to become responder and is asking this `View` to
@@ -244,7 +244,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onresponderterminationrequest
    */
-  onResponderTerminationRequest: typeof PropTypes.func;
+  onResponderTerminationRequest: typeof $2.func;
 
   /**
    * Does this view want to become responder on the start of a touch?
@@ -254,7 +254,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onstartshouldsetresponder
    */
-  onStartShouldSetResponder: typeof PropTypes.func;
+  onStartShouldSetResponder: typeof $2.func;
 
   /**
    * If a parent `View` wants to prevent a child `View` from becoming responder
@@ -265,7 +265,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onstartshouldsetrespondercapture
    */
-  onStartShouldSetResponderCapture: typeof PropTypes.func;
+  onStartShouldSetResponderCapture: typeof $2.func;
 
   /**
    * Does this view want to "claim" touch responsiveness? This is called for
@@ -276,7 +276,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onmoveshouldsetresponder
    */
-  onMoveShouldSetResponder: typeof PropTypes.func;
+  onMoveShouldSetResponder: typeof $2.func;
 
   /**
    * If a parent `View` wants to prevent a child `View` from becoming responder
@@ -287,7 +287,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onMoveShouldsetrespondercapture
    */
-  onMoveShouldSetResponderCapture: typeof PropTypes.func;
+  onMoveShouldSetResponderCapture: typeof $2.func;
 
   /**
    * This defines how far a touch event can start away from the view.
@@ -300,7 +300,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#hitslop
    */
-  hitSlop: typeof DeprecatedEdgeInsetsPropType;
+  hitSlop: $TypeOf<typeof $1>;
 
   /**
    * Invoked on mount and layout changes with:
@@ -313,7 +313,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onlayout
    */
-  onLayout: typeof PropTypes.func;
+  onLayout: typeof $2.func;
 
   /**
    * Controls whether the `View` can be the target of touch events.
@@ -337,7 +337,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#removeclippedsubviews
    */
-  removeClippedSubviews: typeof PropTypes.bool;
+  removeClippedSubviews: typeof $2.bool;
 
   /**
    * Whether this `View` should render itself (and all of its children) into a
@@ -347,7 +347,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#rendertohardwaretextureandroid
    */
-  renderToHardwareTextureAndroid: typeof PropTypes.bool;
+  renderToHardwareTextureAndroid: typeof $2.bool;
 
   /**
    * Whether this `View` should be rendered as a bitmap before compositing.
@@ -356,7 +356,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#shouldrasterizeios
    */
-  shouldRasterizeIOS: typeof PropTypes.bool;
+  shouldRasterizeIOS: typeof $2.bool;
 
   /**
    * Views that are only used to layout their children or otherwise don't draw
@@ -368,7 +368,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#collapsable
    */
-  collapsable: typeof PropTypes.bool;
+  collapsable: typeof $2.bool;
 
   /**
    * Whether this `View` needs to rendered offscreen and composited with an
@@ -378,6 +378,6 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#needsoffscreenalphacompositing
    */
-  needsOffscreenAlphaCompositing: typeof PropTypes.bool;
+  needsOffscreenAlphaCompositing: typeof $2.bool;
 };
 export default $f2tExportDefault;

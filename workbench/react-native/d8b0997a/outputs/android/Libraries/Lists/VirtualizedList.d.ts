@@ -301,7 +301,7 @@ declare type State = {
   last: number;
 };
 declare class VirtualizedList extends React.PureComponent<Props, State> {
-  static contextType: $TypeOf<typeof VirtualizedListContext>;
+  static contextType: typeof VirtualizedListContext;
   // scrollToEnd may be janky without getItemLayout prop
   scrollToEnd(params?: null | undefined | {
     animated?: null | undefined | boolean;

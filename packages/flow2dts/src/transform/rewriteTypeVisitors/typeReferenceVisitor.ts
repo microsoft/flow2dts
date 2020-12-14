@@ -161,19 +161,22 @@ export const typeReferenceVisitor: Visitor<State> = {
 
         if (state.hintFile) {
           let selectedHintImport: ResolvedHintImport | undefined
-          let isResolvedToIdentifier = false
-          if (
-            resolved &&
-            resolved.type === "TSTypeReference" &&
-            resolved.typeName.type === "Identifier" &&
-            (!resolved.typeParameters || resolved.typeParameters.params.length === 0)
-          ) {
-            // it is resolved to an identifier, this identifier must comes from an import statement
-            selectedHintImport = state.hintFile.imports[resolved.typeName.name]
-            isResolvedToIdentifier = true
+          let skipHint = false
+          if (resolved) {
+            if (
+              resolved.type === "TSTypeReference" &&
+              (!resolved.typeParameters || resolved.typeParameters.params.length === 0)
+            ) {
+              if (resolved.typeName.type === "Identifier") {
+                // it is resolved to an identifier, this identifier must comes from an import statement
+                selectedHintImport = state.hintFile.imports[resolved.typeName.name]
+              }
+            } else {
+              skipHint = true
+            }
           }
 
-          if (!selectedHintImport) {
+          if (!selectedHintImport && !skipHint) {
             // if it is resolved to an identifier, it will not reach here.
             // if it is resolved to X.Y.Z, we need to look for Z
             const id = typeQueryOperator.id.type === "Identifier" ? typeQueryOperator.id : typeQueryOperator.id.id
@@ -189,7 +192,7 @@ export const typeReferenceVisitor: Visitor<State> = {
           }
 
           if (selectedHintImport) {
-            if (resolved && isResolvedToIdentifier) {
+            if (resolved) {
               switch (selectedHintImport.type) {
                 case "type":
                 case "class": {

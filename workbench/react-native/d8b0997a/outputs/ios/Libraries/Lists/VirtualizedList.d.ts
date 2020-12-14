@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "../Components/ScrollView/ScrollView";
 import $2 from "../Components/View/View";
 import * as React from "react";
@@ -281,7 +282,7 @@ declare type OptionalProps =
 };
 declare type Props =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-React.ElementConfig<typeof ScrollView> & RequiredProps & OptionalProps & {};
+React.ElementConfig<$TypeOf<typeof $1>> & RequiredProps & OptionalProps & {};
 declare type DefaultProps =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
@@ -344,7 +345,7 @@ declare class VirtualizedList extends React.PureComponent<Props, State> {
    */
   getScrollResponder(): null | undefined | ScrollResponderType;
   getScrollableNode(): null | undefined | number;
-  getScrollRef(): (null | undefined | React.ElementRef<typeof ScrollView>) | (null | undefined | React.ElementRef<typeof View>);
+  getScrollRef(): (null | undefined | React.ElementRef<typeof $1>) | (null | undefined | React.ElementRef<typeof $2>);
   setNativeProps(props: Object): void;
   static defaultProps: DefaultProps;
   hasMore(): boolean;

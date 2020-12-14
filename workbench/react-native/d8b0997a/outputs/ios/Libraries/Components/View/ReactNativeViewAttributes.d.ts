@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "./ReactNativeStyleAttributes";
 declare var UIView:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -23,7 +24,7 @@ declare var UIView:
   onAccessibilityEscape: boolean;
   collapsable: boolean;
   needsOffscreenAlphaCompositing: boolean;
-  style: typeof ReactNativeStyleAttributes;
+  style: $TypeOf<typeof $1>;
 };
 declare var RCTView:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

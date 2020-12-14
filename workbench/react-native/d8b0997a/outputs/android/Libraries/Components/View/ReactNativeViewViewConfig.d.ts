@@ -11,7 +11,7 @@ declare var ReactNativeViewConfig:
   Constants: {};
   bubblingEventTypes:
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-  $TypeOf<typeof ReactNativeViewViewConfigAndroid.bubblingEventTypes> & {
+  typeof ReactNativeViewViewConfigAndroid.bubblingEventTypes & {
     topBlur:
     /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
     {
@@ -125,7 +125,7 @@ declare var ReactNativeViewConfig:
   };
   directEventTypes:
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-  $TypeOf<typeof ReactNativeViewViewConfigAndroid.directEventTypes> & {
+  typeof ReactNativeViewViewConfigAndroid.directEventTypes & {
     topAccessibilityAction:
     /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
     {
@@ -166,7 +166,7 @@ declare var ReactNativeViewConfig:
   };
   validAttributes:
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-  $TypeOf<typeof ReactNativeViewViewConfigAndroid.validAttributes> & {
+  typeof ReactNativeViewViewConfigAndroid.validAttributes & {
     accessibilityActions: boolean;
     accessibilityElementsHidden: boolean;
     accessibilityHint: boolean;
@@ -187,12 +187,12 @@ declare var ReactNativeViewConfig:
     backgroundColor:
     /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
     {
-      process: $TypeOf<typeof $1>;
+      process: typeof $1;
     };
     borderBottomColor:
     /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
     {
-      process: $TypeOf<typeof $2>;
+      process: typeof $2;
     };
     borderBottomEndRadius: boolean;
     borderBottomLeftRadius: boolean;
@@ -202,38 +202,38 @@ declare var ReactNativeViewConfig:
     borderColor:
     /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
     {
-      process: $TypeOf<typeof $3>;
+      process: typeof $3;
     };
     borderEndColor:
     /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
     {
-      process: $TypeOf<typeof $4>;
+      process: typeof $4;
     };
     borderEndWidth: boolean;
     borderLeftColor:
     /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
     {
-      process: $TypeOf<typeof $5>;
+      process: typeof $5;
     };
     borderLeftWidth: boolean;
     borderRadius: boolean;
     borderRightColor:
     /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
     {
-      process: $TypeOf<typeof $6>;
+      process: typeof $6;
     };
     borderRightWidth: boolean;
     borderStartColor:
     /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
     {
-      process: $TypeOf<typeof $7>;
+      process: typeof $7;
     };
     borderStartWidth: boolean;
     borderStyle: boolean;
     borderTopColor:
     /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
     {
-      process: $TypeOf<typeof $8>;
+      process: typeof $8;
     };
     borderTopEndRadius: boolean;
     borderTopLeftRadius: boolean;
@@ -305,7 +305,7 @@ declare var ReactNativeViewConfig:
     shadowColor:
     /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
     {
-      process: $TypeOf<typeof $9>;
+      process: typeof $9;
     };
     shadowOffset:
     /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -327,12 +327,12 @@ declare var ReactNativeViewConfig:
       backgroundColor:
       /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
       {
-        process: $TypeOf<typeof $11>;
+        process: typeof $11;
       };
       borderBottomColor:
       /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
       {
-        process: $TypeOf<typeof $12>;
+        process: typeof $12;
       };
       borderBottomEndRadius: boolean;
       borderBottomLeftRadius: boolean;
@@ -342,38 +342,38 @@ declare var ReactNativeViewConfig:
       borderColor:
       /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
       {
-        process: $TypeOf<typeof $13>;
+        process: typeof $13;
       };
       borderEndColor:
       /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
       {
-        process: $TypeOf<typeof $14>;
+        process: typeof $14;
       };
       borderEndWidth: boolean;
       borderLeftColor:
       /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
       {
-        process: $TypeOf<typeof $15>;
+        process: typeof $15;
       };
       borderLeftWidth: boolean;
       borderRadius: boolean;
       borderRightColor:
       /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
       {
-        process: $TypeOf<typeof $16>;
+        process: typeof $16;
       };
       borderRightWidth: boolean;
       borderStartColor:
       /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
       {
-        process: $TypeOf<typeof $17>;
+        process: typeof $17;
       };
       borderStartWidth: boolean;
       borderStyle: boolean;
       borderTopColor:
       /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
       {
-        process: $TypeOf<typeof $18>;
+        process: typeof $18;
       };
       borderTopEndRadius: boolean;
       borderTopLeftRadius: boolean;
@@ -385,7 +385,7 @@ declare var ReactNativeViewConfig:
       color:
       /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
       {
-        process: $TypeOf<typeof $19>;
+        process: typeof $19;
       };
       decomposedMatrix: boolean;
       direction: boolean;
@@ -427,7 +427,7 @@ declare var ReactNativeViewConfig:
       overlayColor:
       /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
       {
-        process: $TypeOf<typeof $20>;
+        process: typeof $20;
       };
       padding: boolean;
       paddingBottom: boolean;
@@ -447,7 +447,7 @@ declare var ReactNativeViewConfig:
       shadowColor:
       /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
       {
-        process: $TypeOf<typeof $21>;
+        process: typeof $21;
       };
       shadowOffset:
       /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -462,14 +462,14 @@ declare var ReactNativeViewConfig:
       textDecorationColor:
       /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
       {
-        process: $TypeOf<typeof $23>;
+        process: typeof $23;
       };
       textDecorationLine: boolean;
       textDecorationStyle: boolean;
       textShadowColor:
       /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
       {
-        process: $TypeOf<typeof $24>;
+        process: typeof $24;
       };
       textShadowOffset: boolean;
       textShadowRadius: boolean;
@@ -477,7 +477,7 @@ declare var ReactNativeViewConfig:
       tintColor:
       /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
       {
-        process: $TypeOf<typeof $25>;
+        process: typeof $25;
       };
       top: boolean;
       transform: any;

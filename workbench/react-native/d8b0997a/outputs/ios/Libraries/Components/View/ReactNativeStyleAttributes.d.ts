@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "../../DeprecatedPropTypes/DeprecatedImageStylePropTypes";
 import $2 from "../../DeprecatedPropTypes/DeprecatedTextStylePropTypes";
 import $3 from "../../DeprecatedPropTypes/DeprecatedViewStylePropTypes";
@@ -7,23 +8,23 @@ import $6 from "../../Utilities/differ/sizesDiffer";
 declare type ReturnBoolType = <V>($f2t1: V) => true;
 declare type BoolifiedDeprecatedViewStylePropTypes =
 /*[FLOW2DTS - Warning] This type was a $ObjMap type in the original Flow source.*/
-{ [K in keyof typeof DeprecatedViewStylePropTypes]: ReturnType<ReturnBoolType> };
+{ [K in keyof $TypeOf<typeof $3>]: ReturnType<ReturnBoolType> };
 declare type BoolifiedDeprecatedTextStylePropTypes =
 /*[FLOW2DTS - Warning] This type was a $ObjMap type in the original Flow source.*/
-{ [K in keyof typeof DeprecatedTextStylePropTypes]: ReturnType<ReturnBoolType> };
+{ [K in keyof $TypeOf<typeof $2>]: ReturnType<ReturnBoolType> };
 declare type BoolifiedDeprecatedImageStylePropTypes =
 /*[FLOW2DTS - Warning] This type was a $ObjMap type in the original Flow source.*/
-{ [K in keyof typeof DeprecatedImageStylePropTypes]: ReturnType<ReturnBoolType> };
+{ [K in keyof $TypeOf<typeof $1>]: ReturnType<ReturnBoolType> };
 declare type StyleAttributesType = BoolifiedDeprecatedViewStylePropTypes & BoolifiedDeprecatedTextStylePropTypes & BoolifiedDeprecatedImageStylePropTypes & {
   transform: Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    process: typeof processTransform;
+    process: $TypeOf<typeof $5>;
   }> | true;
   shadowOffset: Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    diff: typeof sizesDiffer;
+    diff: $TypeOf<typeof $6>;
   }> | true;
   backgroundColor: typeof colorAttributes | true;
   borderBottomColor: typeof colorAttributes | true;
@@ -44,7 +45,7 @@ declare var ReactNativeStyleAttributes: StyleAttributesType;
 declare var colorAttributes:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  process: typeof processColor;
+  process: $TypeOf<typeof $4>;
 };
 declare const $f2tExportDefault: typeof ReactNativeStyleAttributes;
 export default $f2tExportDefault;

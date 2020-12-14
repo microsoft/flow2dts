@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { NativeText } from "./TextNativeComponent";
 import { NativeVirtualText } from "./TextNativeComponent";
@@ -8,7 +9,7 @@ declare var Text: $2.AbstractComponent<TextProps, $2.ElementRef<typeof NativeTex
 declare var TextToExport: typeof Text & Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  propTypes: typeof DeprecatedTextPropTypes;
+  propTypes: $TypeOf<typeof $1>;
 }>;
 declare const $f2tExportDefault: typeof TextToExport;
 export default $f2tExportDefault;

@@ -100,7 +100,7 @@ declare type ScrollToLocationParamsType =
 };
 declare type DefaultProps =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$TypeOf<typeof $2.defaultProps> & {
+$2.defaultProps & {
   data: ReadonlyArray<Item>;
 };
 declare type State = {

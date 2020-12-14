@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $Diff, $PropertyType } from "utility-types";
 import $1 from "react";
 import $3 from "./VirtualizedSectionList";
@@ -92,7 +91,7 @@ $Diff<VirtualizedSectionListProps<SectionT>, {
 }> & RequiredProps<SectionT> & OptionalProps<SectionT> & {};
 declare var defaultProps:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$TypeOf<typeof $3.defaultProps> & {
+typeof $3.defaultProps & {
   stickySectionHeadersEnabled: boolean;
 };
 declare type DefaultProps = typeof defaultProps;
