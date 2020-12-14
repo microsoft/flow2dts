@@ -26,6 +26,7 @@ export interface HintDecl extends HintIdentifier {
 
 export interface HintFile {
   imports: { [key: string]: HintImport }
+  typeofs: HintImport[]
   decls: HintDecl[]
 }
 
@@ -39,8 +40,11 @@ export interface ResolvedHintImport {
   resolvedDecl?: HintDecl
 }
 
+export interface ResolvedHintTypeof extends ResolvedHintImport, HintPos {}
+
 export interface ResolvedHintFile {
   imports: { [key: string]: ResolvedHintImport }
+  typeofs: { [key: string]: ResolvedHintTypeof[] }
 }
 
 export interface ResolvedHintEntries {

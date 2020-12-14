@@ -1,7 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import { HintPos, HintIdentifier, HintResolved, HintDecl, HintFile } from "./hintfile"
+import { HintPos, HintIdentifier, HintResolved, HintDecl, HintFile, HintImport } from "./hintfile"
 import { Visitor, types as t } from "@babel/core"
 import * as babelParser from "@babel/parser"
 import babelTraverse from "@babel/traverse"
@@ -30,6 +30,16 @@ function id2decl(id: t.Identifier, t: HintDecl["type"]): HintDecl {
 
 function flowImportAndDeclVisitor(rootDir: string, filename: string): Visitor<HintFile> {
   return {
+    TypeofTypeAnnotation: {
+      exit(path, state) {
+        const typeQueryOperator = path.node.argument
+        if (typeQueryOperator.type === "GenericTypeAnnotation") {
+          const local = typeQueryOperator.id.type === "Identifier" ? typeQueryOperator.id : typeQueryOperator.id.id
+          const source = id2hint(local)
+          state.typeofs.push({ source })
+        }
+      },
+    },
     ImportDeclaration: {
       exit(path, state) {
         for (const specifier of path.node.specifiers) {
@@ -143,6 +153,77 @@ const regexStdout = /^(.+\.js(\.flow)?):(\d+):(\d+),(\d+):(\d+)/
 
 export type HintFileEntries = { [key: string]: HintFile }
 
+async function resolveImport(
+  hintImport: HintImport,
+  filename: string,
+  rootDir: string,
+  normalizedRootDir: string
+): Promise<void> {
+  hintImport.error = ""
+
+  const relativePath = "." + filename.substr(rootDir.length)
+  const args = [FLOW_BIN, "get-def", relativePath, `${hintImport.source?.row}`, `${hintImport.source?.column}`]
+  await new Promise<void>((resolve, reject) => {
+    let resolved = false
+    function callResolve() {
+      if (!resolved) {
+        resolved = true
+        resolve()
+      }
+    }
+
+    console.log(chalk.yellow("node " + args.join(" ")))
+    const spawnResult = spawn("node", args, { cwd: rootDir })
+
+    spawnResult.stdout.on("data", (data) => {
+      if (!resolved) {
+        console.log(chalk.blueBright(`${data}`))
+        const match = `${data}`.match(regexStdout)
+        if (match) {
+          const begin: HintPos = { row: +match[3], column: +match[4] }
+          const end: HintPos = { row: +match[5], column: +match[6] }
+          const file = match[1].replace(/\\/g, "/")
+          const fromLibrary = file.substr(0, normalizedRootDir.length) !== normalizedRootDir
+          hintImport.resolved = {
+            begin,
+            end,
+            fromLibrary,
+            file: fromLibrary ? file : file.substr(normalizedRootDir.length),
+          }
+          hintImport.error = undefined
+        } else {
+          hintImport.error += `[unrecognizable stdout]${data}`
+        }
+      }
+    })
+    spawnResult.stderr.on("data", (data) => {
+      if (!resolved) {
+        const error = `${data}`
+        console.log(error)
+        if (!error.startsWith("Please wait.")) {
+          hintImport.error += error.replace(/\\/g, "/").replace(normalizedRootDir, "")
+        }
+      }
+    })
+
+    spawnResult.on("error", (error) => {
+      if (!resolved) {
+        console.log(chalk.red(error.message))
+        callResolve()
+      }
+    })
+    spawnResult.on("disconnect", () => {
+      callResolve()
+    })
+    spawnResult.on("close", () => {
+      callResolve()
+    })
+    spawnResult.on("exit", () => {
+      callResolve()
+    })
+  })
+}
+
 export async function singleFlow2Hint({
   rootDir,
   filename,
@@ -163,75 +244,16 @@ export async function singleFlow2Hint({
     allowUndeclaredExports: true,
   })
 
-  const hint: HintFile = { imports: {}, decls: [] }
+  const hint: HintFile = { imports: {}, typeofs: [], decls: [] }
   collectedHintFiles[filename.substr(rootDir.length).replace(/\\/g, "/")] = hint
   babelTraverse<HintFile>(flowAst, flowImportAndDeclVisitor(rootDir, filename), undefined, hint)
 
   for (const key in hint.imports) {
     const hintImport = hint.imports[key]
-    hintImport.error = ""
-
-    const relativePath = "." + filename.substr(rootDir.length)
-    const args = [FLOW_BIN, "get-def", relativePath, `${hintImport.source?.row}`, `${hintImport.source?.column}`]
-    await new Promise<void>((resolve, reject) => {
-      let resolved = false
-      function callResolve() {
-        if (!resolved) {
-          resolved = true
-          resolve()
-        }
-      }
-
-      console.log(chalk.yellow("node " + args.join(" ")))
-      const spawnResult = spawn("node", args, { cwd: rootDir })
-
-      spawnResult.stdout.on("data", (data) => {
-        if (!resolved) {
-          console.log(chalk.blueBright(`${data}`))
-          const match = `${data}`.match(regexStdout)
-          if (match) {
-            const begin: HintPos = { row: +match[3], column: +match[4] }
-            const end: HintPos = { row: +match[5], column: +match[6] }
-            const file = match[1].replace(/\\/g, "/")
-            const fromLibrary = file.substr(0, normalizedRootDir.length) !== normalizedRootDir
-            hintImport.resolved = {
-              begin,
-              end,
-              fromLibrary,
-              file: fromLibrary ? file : file.substr(normalizedRootDir.length),
-            }
-            hintImport.error = undefined
-          } else {
-            hintImport.error += `[unrecognizable stdout]${data}`
-          }
-        }
-      })
-      spawnResult.stderr.on("data", (data) => {
-        if (!resolved) {
-          const error = `${data}`
-          console.log(error)
-          if (!error.startsWith("Please wait.")) {
-            hintImport.error += error.replace(/\\/g, "/").replace(normalizedRootDir, "")
-          }
-        }
-      })
-
-      spawnResult.on("error", (error) => {
-        if (!resolved) {
-          console.log(chalk.red(error.message))
-          callResolve()
-        }
-      })
-      spawnResult.on("disconnect", () => {
-        callResolve()
-      })
-      spawnResult.on("close", () => {
-        callResolve()
-      })
-      spawnResult.on("exit", () => {
-        callResolve()
-      })
-    })
+    await resolveImport(hintImport, filename, rootDir, normalizedRootDir)
+  }
+  for (const hintTypeof of hint.typeofs) {
+    await resolveImport(hintTypeof, filename, rootDir, normalizedRootDir)
   }
 
   const outData = JSON.stringify(hint, undefined, 4)
