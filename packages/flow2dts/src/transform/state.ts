@@ -2,16 +2,18 @@
 // Licensed under the MIT License.
 
 import { Visitor } from "@babel/core"
-import { RecognizedTypeReferences } from "./typeReferenceResolver"
-
-export { isVariableDiscardable } from "./typeReferenceResolver"
+import { RecognizedTypeReferences, isVariableDiscardable } from "./typeReferenceResolver"
+// "flow2hint" does't work, I guess because there is no generated .d.ts files
+import { ResolvedHintFile } from "../../../flow2hint/src/hintfile"
 
 export interface State {
   typeReferences: RecognizedTypeReferences
+  hintFile?: ResolvedHintFile
 }
 
-export function initializeState(state: State): void {
+export function initializeState(state: State, hintFile: ResolvedHintFile | undefined): void {
   state.typeReferences = { records: {}, imports: {}, exports: {} }
+  state.hintFile = hintFile
 }
 
 export function combineVisitorsSafe(...visitors: Visitor<State>[]): Visitor<State> {
@@ -28,3 +30,5 @@ export function combineVisitorsSafe(...visitors: Visitor<State>[]): Visitor<Stat
   }
   return combined
 }
+
+export { ResolvedHintEntries, ResolvedHintFile } from "../../../flow2hint/src/hintfile"

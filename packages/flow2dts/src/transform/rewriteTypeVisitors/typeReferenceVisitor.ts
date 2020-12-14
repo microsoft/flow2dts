@@ -170,7 +170,30 @@ export const typeReferenceVisitor: Visitor<State> = {
           ) {
             let firstName = resolved.typeName
 
+            /*
+             TODO:
+             later more information will be added to hint file for "TSQualifiedName" like "React.ElementRef"
+             */
             if (firstName.type === "Identifier") {
+              if (state.hintFile) {
+                const hintImport = state.hintFile.imports[firstName.name]
+                if (hintImport) {
+                  switch (hintImport.type) {
+                    case "type":
+                    case "class": {
+                      // it is a type, just use the identifier
+                      path.replaceWith(resolved)
+                      return
+                    }
+                    case "value": {
+                      // it is a value, need to add "typeof"
+                      path.replaceWith(t.tsTypeQuery(firstName))
+                      return
+                    }
+                  }
+                }
+              }
+
               const binding = path.scope.getBinding(firstName.name)
               if (binding && (binding.path.isDeclareVariable() || binding.path.isVariableDeclaration())) {
                 path.replaceWith(wrappedTypeOf(resolved.typeName))

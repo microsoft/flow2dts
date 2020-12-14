@@ -14,8 +14,7 @@ import stripAnsi from "strip-ansi"
 
 import { transform as pluginFlow2DTS, Options as PluginOptions } from "./transform"
 import { OverridesVisitors } from "./transform/applyOverridesVisitors"
-// "flow2hint" does't work, I guess because there is no generated .d.ts files
-import { ResolvedHintFile } from "../../flow2hint/src/hintfile"
+import { ResolvedHintFile } from "./transform/state"
 
 const regexFixPath = /^\[FLOW2DTS \- Error\] .*?[\\\/]workbench[\\\/]inputs[\\\/](?<path>.*?\.js\.flow):(?<message>.*)$/
 

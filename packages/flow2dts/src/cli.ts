@@ -8,8 +8,7 @@ import chalk from "chalk"
 
 import { convert } from "./convert"
 import { OverridesVisitors } from "./transform/applyOverridesVisitors"
-// "flow2hint" does't work, I guess because there is no generated .d.ts files
-import { ResolvedHintEntries, ResolvedHintFile } from "../../flow2hint/src/hintfile"
+import { ResolvedHintEntries, ResolvedHintFile } from "./transform/state"
 
 const FLOW_EXTNAME = ".js.flow"
 const TS_EXTNAME = ".d.ts"
