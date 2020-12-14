@@ -14,8 +14,23 @@ export const importVisitor: Visitor<State> = {
           switch (id.type) {
             case "ImportDefaultSpecifier":
             case "ImportSpecifier": {
-              names.push(id.local.name)
-              id.local.name = nameForImportTypeof(id.local.name)
+              let skip = false
+              if (state.hintFile) {
+                const hintImport = state.hintFile.imports[id.local.name]
+                if (hintImport) {
+                  switch (hintImport.type) {
+                    case "class":
+                    case "type": {
+                      skip = true
+                      break
+                    }
+                  }
+                }
+              }
+              if (!skip) {
+                names.push(id.local.name)
+                id.local.name = nameForImportTypeof(id.local.name)
+              }
               break
             }
           }

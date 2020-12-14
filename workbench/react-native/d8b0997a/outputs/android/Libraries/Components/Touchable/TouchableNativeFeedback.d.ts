@@ -1,8 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import Pressability from "../../Pressability/Pressability";
-import TouchableWithoutFeedback$f2tTypeof from "./TouchableWithoutFeedback";
-declare type TouchableWithoutFeedback = $TypeOf<typeof TouchableWithoutFeedback$f2tTypeof>;
+import TouchableWithoutFeedback from "./TouchableWithoutFeedback";
 import * as React from "react";
 declare type Props = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

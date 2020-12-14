@@ -1,8 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $Diff } from "utility-types";
 // @flow
-import TouchableWithoutFeedback$f2tTypeof from "./TouchableWithoutFeedback";
-declare type TouchableWithoutFeedback = $TypeOf<typeof TouchableWithoutFeedback$f2tTypeof>;
+import TouchableWithoutFeedback from "./TouchableWithoutFeedback";
 import Animated from "../../../Libraries/Animated/src/Animated";
 import { ViewStyleProp } from "../../../Libraries/StyleSheet/StyleSheet";
 import * as React from "react";

@@ -3,8 +3,7 @@ import { $Diff } from "utility-types";
 // @flow
 import { ViewStyleProp } from "../../StyleSheet/StyleSheet";
 import { ColorValue } from "../../StyleSheet/StyleSheetTypes";
-import TouchableWithoutFeedback$f2tTypeof from "./TouchableWithoutFeedback";
-declare type TouchableWithoutFeedback = $TypeOf<typeof TouchableWithoutFeedback$f2tTypeof>;
+import TouchableWithoutFeedback from "./TouchableWithoutFeedback";
 import View from "../../Components/View/View";
 import * as React from "react";
 declare type AndroidProps = Readonly<
