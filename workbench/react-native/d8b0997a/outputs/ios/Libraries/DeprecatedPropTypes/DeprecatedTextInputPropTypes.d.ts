@@ -1,11 +1,11 @@
-import { $TypeOf, React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
+import { React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
 import $1 from "./DeprecatedColorPropType";
 import $2 from "./DeprecatedViewPropTypes";
 import $3 from "prop-types";
 import $4 from "../Text/Text";
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$TypeOf<typeof $2> & {
+typeof DeprecatedViewPropTypes & {
   /**
    * Can tell `TextInput` to automatically capitalize certain characters.
    *
@@ -45,26 +45,26 @@ $TypeOf<typeof $2> & {
   /**
    * If `false`, disables auto-correct. The default value is `true`.
    */
-  autoCorrect: $TypeOf<typeof $3.bool>;
+  autoCorrect: typeof PropTypes.bool;
 
   /**
    * If `false`, disables spell-check style (i.e. red underlines).
    * The default value is inherited from `autoCorrect`.
    * @platform ios
    */
-  spellCheck: $TypeOf<typeof $3.bool>;
+  spellCheck: typeof PropTypes.bool;
 
   /**
    * If `true`, focuses the input on `componentDidMount`.
    * The default value is `false`.
    */
-  autoFocus: $TypeOf<typeof $3.bool>;
+  autoFocus: typeof PropTypes.bool;
 
   /**
    * Specifies whether fonts should scale to respect Text Size accessibility settings. The
    * default is `true`.
    */
-  allowFontScaling: $TypeOf<typeof $3.bool>;
+  allowFontScaling: typeof PropTypes.bool;
 
   /**
    * Specifies largest possible scale a font can reach when `allowFontScaling` is enabled.
@@ -73,12 +73,12 @@ $TypeOf<typeof $2> & {
    * `0`: no max, ignore parent/global default
    * `>= 1`: sets the maxFontSizeMultiplier of this node to this value
    */
-  maxFontSizeMultiplier: $TypeOf<typeof $3.number>;
+  maxFontSizeMultiplier: typeof PropTypes.number;
 
   /**
    * If `false`, text is not editable. The default value is `true`.
    */
-  editable: $TypeOf<typeof $3.bool>;
+  editable: typeof PropTypes.bool;
 
   /**
    * Determines which keyboard to open, e.g.`numeric`.
@@ -156,20 +156,20 @@ $TypeOf<typeof $2> & {
    * Sets the return key to the label. Use it instead of `returnKeyType`.
    * @platform android
    */
-  returnKeyLabel: $TypeOf<typeof $3.string>;
+  returnKeyLabel: typeof PropTypes.string;
 
   /**
    * Limits the maximum number of characters that can be entered. Use this
    * instead of implementing the logic in JS to avoid flicker.
    */
-  maxLength: $TypeOf<typeof $3.number>;
+  maxLength: typeof PropTypes.number;
 
   /**
    * Sets the number of lines for a `TextInput`. Use it with multiline set to
    * `true` to be able to fill the lines.
    * @platform android
    */
-  numberOfLines: $TypeOf<typeof $3.number>;
+  numberOfLines: typeof PropTypes.number;
 
   /**
    * When `false`, if there is a small amount of space available around a text input
@@ -179,20 +179,20 @@ $TypeOf<typeof $2> & {
    * Defaults to `false`.
    * @platform android
    */
-  disableFullscreenUI: $TypeOf<typeof $3.bool>;
+  disableFullscreenUI: typeof PropTypes.bool;
 
   /**
    * If `true`, the keyboard disables the return key when there is no text and
    * automatically enables it when there is text. The default value is `false`.
    * @platform ios
    */
-  enablesReturnKeyAutomatically: $TypeOf<typeof $3.bool>;
+  enablesReturnKeyAutomatically: typeof PropTypes.bool;
 
   /**
    * If `true`, the text input can be multiple lines.
    * The default value is `false`.
    */
-  multiline: $TypeOf<typeof $3.bool>;
+  multiline: typeof PropTypes.bool;
 
   /**
    * Set text break strategy on Android API Level 23+, possible values are `simple`, `highQuality`, `balanced`
@@ -204,23 +204,23 @@ $TypeOf<typeof $2> & {
   /**
    * Callback that is called when the text input is blurred.
    */
-  onBlur: $TypeOf<typeof $3.func>;
+  onBlur: typeof PropTypes.func;
 
   /**
    * Callback that is called when the text input is focused.
    */
-  onFocus: $TypeOf<typeof $3.func>;
+  onFocus: typeof PropTypes.func;
 
   /**
    * Callback that is called when the text input's text changes.
    */
-  onChange: $TypeOf<typeof $3.func>;
+  onChange: typeof PropTypes.func;
 
   /**
    * Callback that is called when the text input's text changes.
    * Changed text is passed as an argument to the callback handler.
    */
-  onChangeText: $TypeOf<typeof $3.func>;
+  onChangeText: typeof PropTypes.func;
 
   /**
    * Callback that is called when the text input's content size changes.
@@ -229,26 +229,26 @@ $TypeOf<typeof $2> & {
    *
    * Only called for multiline text inputs.
    */
-  onContentSizeChange: $TypeOf<typeof $3.func>;
-  onTextInput: $TypeOf<typeof $3.func>;
+  onContentSizeChange: typeof PropTypes.func;
+  onTextInput: typeof PropTypes.func;
 
   /**
    * Callback that is called when text input ends.
    */
-  onEndEditing: $TypeOf<typeof $3.func>;
+  onEndEditing: typeof PropTypes.func;
 
   /**
    * Callback that is called when the text input selection is changed.
    * This will be called with
    * `{ nativeEvent: { selection: { start, end } } }`.
    */
-  onSelectionChange: $TypeOf<typeof $3.func>;
+  onSelectionChange: typeof PropTypes.func;
 
   /**
    * Callback that is called when the text input's submit button is pressed.
    * Invalid if `multiline={true}` is specified.
    */
-  onSubmitEditing: $TypeOf<typeof $3.func>;
+  onSubmitEditing: typeof PropTypes.func;
 
   /**
    * Callback that is called when a key is pressed.
@@ -257,47 +257,47 @@ $TypeOf<typeof $2> & {
    * the typed-in character otherwise including `' '` for space.
    * Fires before `onChange` callbacks.
    */
-  onKeyPress: $TypeOf<typeof $3.func>;
+  onKeyPress: typeof PropTypes.func;
 
   /**
    * Invoked on mount and layout changes with `{x, y, width, height}`.
    */
-  onLayout: $TypeOf<typeof $3.func>;
+  onLayout: typeof PropTypes.func;
 
   /**
    * Invoked on content scroll with `{ nativeEvent: { contentOffset: { x, y } } }`.
    * May also contain other properties from ScrollEvent but on Android contentSize
    * is not provided for performance reasons.
    */
-  onScroll: $TypeOf<typeof $3.func>;
+  onScroll: typeof PropTypes.func;
 
   /**
    * The string that will be rendered before text input has been entered.
    */
-  placeholder: $TypeOf<typeof $3.string>;
+  placeholder: typeof PropTypes.string;
 
   /**
    * The text color of the placeholder string.
    */
-  placeholderTextColor: $TypeOf<typeof $1>;
+  placeholderTextColor: typeof DeprecatedColorPropType;
 
   /**
    * If `false`, scrolling of the text view will be disabled.
    * The default value is `true`. Does only work with 'multiline={true}'.
    * @platform ios
    */
-  scrollEnabled: $TypeOf<typeof $3.bool>;
+  scrollEnabled: typeof PropTypes.bool;
 
   /**
    * If `true`, the text input obscures the text entered so that sensitive text
    * like passwords stay secure. The default value is `false`. Does not work with 'multiline={true}'.
    */
-  secureTextEntry: $TypeOf<typeof $3.bool>;
+  secureTextEntry: typeof PropTypes.bool;
 
   /**
    * The highlight and cursor color of the text input.
    */
-  selectionColor: $TypeOf<typeof $1>;
+  selectionColor: typeof DeprecatedColorPropType;
 
   /**
    * The start and end of the text input's selection. Set start and end to
@@ -317,14 +317,14 @@ $TypeOf<typeof $2> & {
    * either set `editable={false}`, or set/update `maxLength` to prevent
    * unwanted edits without flicker.
    */
-  value: $TypeOf<typeof $3.string>;
+  value: typeof PropTypes.string;
 
   /**
    * Provides an initial value that will change when the user starts typing.
    * Useful for simple use-cases where you do not want to deal with listening
    * to events and updating the value prop to keep the controlled state in sync.
    */
-  defaultValue: $TypeOf<typeof $3.string>;
+  defaultValue: typeof PropTypes.string;
 
   /**
    * When the clear button should appear on the right side of the text view.
@@ -337,12 +337,12 @@ $TypeOf<typeof $2> & {
    * If `true`, clears the text field automatically when editing begins.
    * @platform ios
    */
-  clearTextOnFocus: $TypeOf<typeof $3.bool>;
+  clearTextOnFocus: typeof PropTypes.bool;
 
   /**
    * If `true`, all text will automatically be selected on focus.
    */
-  selectTextOnFocus: $TypeOf<typeof $3.bool>;
+  selectTextOnFocus: typeof PropTypes.bool;
 
   /**
    * If `true`, the text field will blur when submitted.
@@ -351,7 +351,7 @@ $TypeOf<typeof $2> & {
    * to `true` means that pressing return will blur the field and trigger the
    * `onSubmitEditing` event instead of inserting a newline into the field.
    */
-  blurOnSubmit: $TypeOf<typeof $3.bool>;
+  blurOnSubmit: typeof PropTypes.bool;
 
   /**
    * Note that not all Text styles are supported, an incomplete list of what is not supported includes:
@@ -371,13 +371,13 @@ $TypeOf<typeof $2> & {
    * [Styles](docs/style.html)
    */
   // $FlowFixMe[incompatible-use]
-  style: $TypeOf<typeof $4.propTypes.style>;
+  style: typeof Text.propTypes.style;
 
   /**
    * The color of the `TextInput` underline.
    * @platform android
    */
-  underlineColorAndroid: $TypeOf<typeof $1>;
+  underlineColorAndroid: typeof DeprecatedColorPropType;
 
   /**
    * If defined, the provided image resource will be rendered on the left.
@@ -390,13 +390,13 @@ $TypeOf<typeof $2> & {
    * ```
    * @platform android
    */
-  inlineImageLeft: $TypeOf<typeof $3.string>;
+  inlineImageLeft: typeof PropTypes.string;
 
   /**
    * Padding between the inline image, if any, and the text input itself.
    * @platform android
    */
-  inlineImagePadding: $TypeOf<typeof $3.number>;
+  inlineImagePadding: typeof PropTypes.number;
 
   /**
    * If `true`, allows TextInput to pass touch events to the parent component.
@@ -405,7 +405,7 @@ $TypeOf<typeof $2> & {
    * If `false`, TextInput always asks to handle the input (except when disabled).
    * @platform ios
    */
-  rejectResponderTermination: $TypeOf<typeof $3.bool>;
+  rejectResponderTermination: typeof PropTypes.bool;
 
   /**
    * Determines the types of data converted to clickable URLs in the text input.
@@ -431,12 +431,12 @@ $TypeOf<typeof $2> & {
    * If `true`, caret is hidden. The default value is `false`.
    * This property is supported only for single-line TextInput component on iOS.
    */
-  caretHidden: $TypeOf<typeof $3.bool>;
+  caretHidden: typeof PropTypes.bool;
 
   /*
    * If `true`, contextMenuHidden is hidden. The default value is `false`.
    */
-  contextMenuHidden: $TypeOf<typeof $3.bool>;
+  contextMenuHidden: typeof PropTypes.bool;
 
   /**
    * An optional identifier which links a custom InputAccessoryView to
@@ -444,7 +444,7 @@ $TypeOf<typeof $2> & {
    * keyboard when this text input is focused.
    * @platform ios
    */
-  inputAccessoryViewID: $TypeOf<typeof $3.string>;
+  inputAccessoryViewID: typeof PropTypes.string;
 
   /**
    * Give the keyboard and the system information about the
@@ -457,6 +457,6 @@ $TypeOf<typeof $2> & {
    * When `false`, it will prevent the soft keyboard from showing when the field is focused.
    * Defaults to `true`.
    */
-  showSoftInputOnFocus: $TypeOf<typeof $3.bool>;
+  showSoftInputOnFocus: typeof PropTypes.bool;
 };
 export default $f2tExportDefault;

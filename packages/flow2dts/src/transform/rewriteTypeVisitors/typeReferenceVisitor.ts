@@ -254,12 +254,14 @@ export const typeReferenceVisitor: Visitor<State> = {
         path.replaceWith(typeOfType)
         return
       }
-      t.assertTSTypeReference(typeOfType)
-      if (isClass(typeOfType, path.scope)) {
-        path.replaceWith(typeOfType)
-        return
+      t.assertTSType(typeOfType)
+      if (typeOfType.type === "TSTypeReference") {
+        if (isClass(typeOfType, path.scope)) {
+          path.replaceWith(typeOfType)
+          return
+        }
+        path.replaceWith(wrappedTypeOf(typeOfType.typeName))
       }
-      path.replaceWith(wrappedTypeOf(typeOfType.typeName))
     },
   },
 }

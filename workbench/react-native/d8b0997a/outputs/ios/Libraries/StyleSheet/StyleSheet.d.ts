@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $ElementType, $Keys } from "utility-types";
 import $1 from "./flattenStyle";
 import { ____ColorValue_Internal } from "./StyleSheetTypes";
@@ -47,7 +46,7 @@ declare const $f2t_hairlineWidth: typeof hairlineWidth;
 declare const $f2t_absoluteFill: any;
 declare const $f2t_absoluteFillObject: typeof absoluteFill;
 declare const $f2t_compose: <T extends DangerouslyImpreciseStyleProp>(style1?: null | undefined | T, style2?: null | undefined | T) => (null | undefined | T) | ReadonlyArray<T>;
-declare const $f2t_flatten: $TypeOf<typeof $1>;
+declare const $f2t_flatten: typeof flatten;
 declare const $f2t_setStyleAttributePreprocessor: (property: string, process: (nextProp: unknown) => unknown) => void;
 declare const $f2t_create: <
 /*[FLOW2DTS - Warning] Covariance and contravariance are ignored.*/
@@ -145,7 +144,7 @@ declare const $f2tExportDefault:
    * their respective objects, merged as one and then returned. This also explains
    * the alternative use.
    */
-  flatten: $TypeOf<typeof $1>;
+  flatten: typeof flatten;
 
   /**
    * WARNING: EXPERIMENTAL. Breaking changes will probably happen a lot and will

@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "../Components/View/View";
 import $1 from "react";
 declare type AnimatedComponentType<Props extends {
@@ -6,7 +5,7 @@ declare type AnimatedComponentType<Props extends {
 }, Instance> = $1.AbstractComponent<
 /*[FLOW2DTS - Warning] This type was a $ObjMap type in the original Flow source.*/
 { [K in keyof Props & Readonly<{
-  passthroughAnimatedPropExplicitValues?: $1.ElementConfig<$TypeOf<typeof $2>>;
+  passthroughAnimatedPropExplicitValues?: $1.ElementConfig<typeof View>;
 }>]: ReturnType<() => any> }, Instance>;
 declare function createAnimatedComponent<Props extends {
   readonly [$f2tKey: string]: unknown;

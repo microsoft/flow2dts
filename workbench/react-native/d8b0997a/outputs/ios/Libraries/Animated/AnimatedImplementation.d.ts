@@ -53,10 +53,10 @@ declare function unforkEvent(event: (null | undefined | $4.AnimatedEvent) | (nul
 declare var event: (argMapping: ReadonlyArray<null | undefined | Mapping>, config: EventConfig) => any;
 export type { CompositeAnimation };
 declare namespace $f2tExportDefaultRedirect {
-  export const $f2tHidden_Value: $TypeOf<typeof $12>;
-  export const $f2tHidden_ValueXY: $TypeOf<typeof $13>;
-  export const $f2tHidden_Interpolation: $TypeOf<typeof $6>;
-  export const $f2tHidden_Node: $TypeOf<typeof $9>;
+  export const $f2tHidden_Value: $TypeOf<typeof AnimatedValue>;
+  export const $f2tHidden_ValueXY: $TypeOf<typeof AnimatedValueXY>;
+  export const $f2tHidden_Interpolation: $TypeOf<typeof AnimatedInterpolation>;
+  export const $f2tHidden_Node: $TypeOf<typeof AnimatedNode>;
   export const $f2tHidden_decay: $TypeOf<typeof decay>;
   export const $f2tHidden_timing: $TypeOf<typeof timing>;
   export const $f2tHidden_spring: $TypeOf<typeof spring>;
@@ -72,12 +72,12 @@ declare namespace $f2tExportDefaultRedirect {
   export const $f2tHidden_stagger: $TypeOf<typeof stagger>;
   export const $f2tHidden_loop: $TypeOf<typeof loop>;
   export const $f2tHidden_event: $TypeOf<typeof event>;
-  export const $f2tHidden_createAnimatedComponent: $TypeOf<typeof $16>;
-  export const $f2tHidden_attachNativeEvent: $TypeOf<typeof $14.attachNativeEvent>;
+  export const $f2tHidden_createAnimatedComponent: $TypeOf<typeof createAnimatedComponent>;
+  export const $f2tHidden_attachNativeEvent: $TypeOf<typeof attachNativeEvent>;
   export const $f2tHidden_forkEvent: $TypeOf<typeof forkEvent>;
   export const $f2tHidden_unforkEvent: $TypeOf<typeof unforkEvent>;
-  export const $f2tHidden_Event: $TypeOf<typeof $4.AnimatedEvent>;
-  export const $f2tHidden___PropsOnlyForTests: $TypeOf<typeof $10>;
+  export const $f2tHidden_Event: $TypeOf<typeof AnimatedEvent>;
+  export const $f2tHidden___PropsOnlyForTests: $TypeOf<typeof AnimatedProps>;
 }
 declare namespace $f2tExportDefault {
   export const Value: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_Value>;

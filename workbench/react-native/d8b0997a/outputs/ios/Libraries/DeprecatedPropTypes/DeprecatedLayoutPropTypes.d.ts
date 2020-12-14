@@ -1,4 +1,4 @@
-import { $TypeOf, React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
+import { React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
 import $1 from "prop-types";
 declare var LayoutPropTypes:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -34,13 +34,13 @@ declare var LayoutPropTypes:
   paddingRight: React$PropType$Primitive<number | string>;
   paddingStart: React$PropType$Primitive<number | string>;
   paddingEnd: React$PropType$Primitive<number | string>;
-  borderWidth: $TypeOf<typeof $1.number>;
-  borderTopWidth: $TypeOf<typeof $1.number>;
-  borderStartWidth: $TypeOf<typeof $1.number>;
-  borderEndWidth: $TypeOf<typeof $1.number>;
-  borderRightWidth: $TypeOf<typeof $1.number>;
-  borderBottomWidth: $TypeOf<typeof $1.number>;
-  borderLeftWidth: $TypeOf<typeof $1.number>;
+  borderWidth: typeof ReactPropTypes.number;
+  borderTopWidth: typeof ReactPropTypes.number;
+  borderStartWidth: typeof ReactPropTypes.number;
+  borderEndWidth: typeof ReactPropTypes.number;
+  borderRightWidth: typeof ReactPropTypes.number;
+  borderBottomWidth: typeof ReactPropTypes.number;
+  borderLeftWidth: typeof ReactPropTypes.number;
   position: React$PropType$Primitive<"absolute" | "relative">;
   flexDirection: React$PropType$Primitive<"row" | "row-reverse" | "column" | "column-reverse">;
   flexWrap: React$PropType$Primitive<"wrap" | "nowrap" | "wrap-reverse">;
@@ -49,12 +49,12 @@ declare var LayoutPropTypes:
   alignSelf: React$PropType$Primitive<"auto" | "flex-start" | "flex-end" | "center" | "stretch" | "baseline">;
   alignContent: React$PropType$Primitive<"flex-start" | "flex-end" | "center" | "stretch" | "space-between" | "space-around">;
   overflow: React$PropType$Primitive<"visible" | "hidden" | "scroll">;
-  flex: $TypeOf<typeof $1.number>;
-  flexGrow: $TypeOf<typeof $1.number>;
-  flexShrink: $TypeOf<typeof $1.number>;
+  flex: typeof ReactPropTypes.number;
+  flexGrow: typeof ReactPropTypes.number;
+  flexShrink: typeof ReactPropTypes.number;
   flexBasis: React$PropType$Primitive<number | string>;
-  aspectRatio: $TypeOf<typeof $1.number>;
-  zIndex: $TypeOf<typeof $1.number>;
+  aspectRatio: typeof ReactPropTypes.number;
+  zIndex: typeof ReactPropTypes.number;
   direction: React$PropType$Primitive<"inherit" | "ltr" | "rtl">;
 };
 declare const $f2tExportDefault: typeof LayoutPropTypes;

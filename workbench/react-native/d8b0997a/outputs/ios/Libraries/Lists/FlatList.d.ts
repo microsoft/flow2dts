@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $Diff, $PropertyType } from "utility-types";
 import $2 from "react";
 import $3 from "../Components/View/View";
@@ -124,7 +123,7 @@ declare type OptionalProps<ItemT> =
 declare type FlatListProps<ItemT> =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 RequiredProps<ItemT> & OptionalProps<ItemT> & {};
-declare type VirtualizedListProps = $2.ElementConfig<$TypeOf<typeof $4>>;
+declare type VirtualizedListProps = $2.ElementConfig<typeof VirtualizedList>;
 declare type Props<ItemT> = $Diff<VirtualizedListProps, {
   getItem: $PropertyType<VirtualizedListProps, "getItem">;
   getItemCount: $PropertyType<VirtualizedListProps, "getItemCount">;
@@ -134,7 +133,7 @@ declare type Props<ItemT> = $Diff<VirtualizedListProps, {
 }> & FlatListProps<ItemT> & {};
 declare var defaultProps:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$TypeOf<typeof $4.defaultProps> & {
+typeof VirtualizedList.defaultProps & {
   numColumns: number;
 
   /**
@@ -215,7 +214,7 @@ declare class FlatList<ItemT> extends $2.PureComponent<Props<ItemT>, {}> {
   /**
    * Provides a reference to the underlying host component
    */
-  getNativeScrollRef(): (null | undefined | $2.ElementRef<typeof $3>) | (null | undefined | $2.ElementRef<ScrollViewNativeComponentType>);
+  getNativeScrollRef(): (null | undefined | $2.ElementRef<typeof View>) | (null | undefined | $2.ElementRef<ScrollViewNativeComponentType>);
   getScrollableNode(): any;
   setNativeProps(props: {
     [$f2tKey: string]: unknown;

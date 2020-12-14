@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $PropertyType } from "utility-types";
 // @flow
 import * as React from "react";
@@ -28,8 +27,8 @@ declare type ScrollViewImperativeMethods = Readonly<
   scrollToEnd: $PropertyType<ScrollView, "scrollToEnd">;
   flashScrollIndicators: $PropertyType<ScrollView, "flashScrollIndicators">;
   // ScrollResponder.Mixin public methods
-  scrollResponderZoomTo: $PropertyType<$TypeOf<typeof ScrollResponder.Mixin>, "scrollResponderZoomTo">;
-  scrollResponderScrollNativeHandleToKeyboard: $PropertyType<$TypeOf<typeof ScrollResponder.Mixin>, "scrollResponderScrollNativeHandleToKeyboard">;
+  scrollResponderZoomTo: $PropertyType<typeof ScrollResponder.Mixin, "scrollResponderZoomTo">;
+  scrollResponderScrollNativeHandleToKeyboard: $PropertyType<typeof ScrollResponder.Mixin, "scrollResponderScrollNativeHandleToKeyboard">;
 }>;
 declare type ScrollResponderType = ScrollViewImperativeMethods;
 declare type IOSProps = Readonly<
@@ -574,14 +573,14 @@ ViewProps & IOSProps & AndroidProps & VRProps & {
   * A ref to the inner View element of the ScrollView. This should be used
   * instead of calling `getInnerViewRef`.
   */
-  innerViewRef?: React.Ref<$TypeOf<typeof View>>;
+  innerViewRef?: React.Ref<typeof View>;
 
   /**
   * A ref to the Native ScrollView component. This ref can be used to call
   * all of ScrollView's public methods, in addition to native methods like
   * measure, measureLayout, etc.
   */
-  scrollViewRef?: React.Ref<$TypeOf<typeof ScrollViewNativeComponent> & ScrollViewImperativeMethods>;
+  scrollViewRef?: React.Ref<ScrollViewNativeComponent & ScrollViewImperativeMethods>;
 }>;
 declare type State =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -591,10 +590,10 @@ ScrollResponderState & {
 declare type ScrollViewComponentStatics = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  Context: $TypeOf<typeof ScrollViewContext>;
+  Context: typeof ScrollViewContext;
 }>;
 declare class ScrollView extends React.Component<Props, State> {
-  static Context: $TypeOf<typeof ScrollViewContext>;
+  static Context: typeof ScrollViewContext;
   constructor(props: Props);
   state: State;
   UNSAFE_componentWillMount(): void;
