@@ -1,8 +1,8 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 
-import { Visitor, types as t, NodePath } from "@babel/core"
-import { State } from "../state"
+import { Visitor, types as t } from "@babel/core"
+import { State, ResolvedHintImport } from "../state"
 import { assertTSType, isClass, isPathDefinitelyValue, isPathDefinitelyType, wrappedTypeOf } from "../utilities"
 import { resolveGenericTypeAnnotation } from "../typeReferenceResolver"
 
@@ -158,57 +158,84 @@ export const typeReferenceVisitor: Visitor<State> = {
       const typeQueryOperator = path.node.argument
       if (typeQueryOperator.type === "GenericTypeAnnotation") {
         const resolved = resolveGenericTypeAnnotation(state, path, typeQueryOperator)
+
+        if (state.hintFile) {
+          let selectedHintImport: ResolvedHintImport | undefined
+          let isResolvedToIdentifier = false
+          if (
+            resolved &&
+            resolved.type === "TSTypeReference" &&
+            resolved.typeName.type === "Identifier" &&
+            (!resolved.typeParameters || resolved.typeParameters.params.length === 0)
+          ) {
+            // it is resolved to an identifier, this identifier must comes from an import statement
+            selectedHintImport = state.hintFile.imports[resolved.typeName.name]
+            isResolvedToIdentifier = true
+          }
+
+          if (!selectedHintImport) {
+            // if it is resolved to an identifier, it will not reach here.
+            // if it is resolved to X.Y.Z, we need to look for Z
+            const id = typeQueryOperator.id.type === "Identifier" ? typeQueryOperator.id : typeQueryOperator.id.id
+            const hintTypeofs = state.hintFile.typeofs[id.name]
+            if (hintTypeofs) {
+              for (const hintTypeof of hintTypeofs) {
+                if (hintTypeof.row === id.loc?.start.line && hintTypeof.column === id.loc.start.column + 1) {
+                  selectedHintImport = hintTypeof
+                  break
+                }
+              }
+            }
+          }
+
+          if (selectedHintImport) {
+            if (resolved && isResolvedToIdentifier) {
+              switch (selectedHintImport.type) {
+                case "type":
+                case "class": {
+                  // it is a type, just use the identifier
+                  path.replaceWith(resolved)
+                  return
+                }
+                case "value": {
+                  // it is a value, need to add "typeof"
+                  path.replaceWith(t.tsTypeQuery(resolved.typeName))
+                  return
+                }
+              }
+            } else {
+              switch (selectedHintImport.type) {
+                case "type":
+                case "class": {
+                  // it is a type, just use the identifier
+                  path.replaceWith(t.tsTypeReference(convertQID(typeQueryOperator.id)))
+                  return
+                }
+                case "value": {
+                  // it is a value, need to add "typeof"
+                  path.replaceWith(t.tsTypeQuery(convertQID(typeQueryOperator.id)))
+                  return
+                }
+              }
+            }
+          }
+        }
+
+        // if it reaches here, the hint file doesn't help, fallback to static translation
         if (resolved) {
           /*
            if it is resolved to be TSTypeReference(TSEntityName),
-           then check the first name to see if it is from an imports or a variable,
+           then check the first name to see if it is from an import or a variable,
            and translate to $TypeOf<typeof T> accordingly
+
+           when it is from an import,
+           it means the hint file is not correctly resolved library symbols
            */
           if (
             resolved.type === "TSTypeReference" &&
             (!resolved.typeParameters || resolved.typeParameters.params.length === 0)
           ) {
             let firstName = resolved.typeName
-
-            /*
-             TODO:
-             later more information will be added to hint file for "TSQualifiedName" like "React.ElementRef"
-             */
-            if (firstName.type === "Identifier") {
-              if (state.hintFile) {
-                const hintImport = state.hintFile.imports[firstName.name]
-                if (hintImport) {
-                  switch (hintImport.type) {
-                    case "type":
-                    case "class": {
-                      // it is a type, just use the identifier
-                      path.replaceWith(resolved)
-                      return
-                    }
-                    case "value": {
-                      // it is a value, need to add "typeof"
-                      path.replaceWith(t.tsTypeQuery(firstName))
-                      return
-                    }
-                  }
-                }
-              }
-
-              const binding = path.scope.getBinding(firstName.name)
-              if (binding) {
-                if (isPathDefinitelyValue(binding.path)) {
-                  path.replaceWith(t.tsTypeQuery(resolved.typeName))
-                  return
-                } else if (isPathDefinitelyType(binding.path)) {
-                  path.replaceWith(resolved)
-                  return
-                } else {
-                  path.replaceWith(wrappedTypeOf(resolved.typeName))
-                  return
-                }
-              }
-            }
-
             while (firstName.type !== "Identifier") {
               firstName = firstName.left
             }
@@ -218,19 +245,6 @@ export const typeReferenceVisitor: Visitor<State> = {
             }
           }
           path.replaceWith(resolved)
-        } else if (typeQueryOperator.id.type === "Identifier") {
-          const binding = path.scope.getBinding(typeQueryOperator.id.name)
-          if (binding) {
-            if (isPathDefinitelyValue(binding.path)) {
-              path.replaceWith(t.tsTypeQuery(typeQueryOperator.id))
-              return
-            } else if (isPathDefinitelyType(binding.path)) {
-              // do nothing
-            } else {
-              path.replaceWith(wrappedTypeOf(typeQueryOperator.id))
-              return
-            }
-          }
         }
       }
     },

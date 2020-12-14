@@ -32,4 +32,9 @@ export function combineVisitorsSafe(...visitors: Visitor<State>[]): Visitor<Stat
 }
 
 export { isVariableDiscardable } from "./typeReferenceResolver"
-export { ResolvedHintEntries, ResolvedHintFile } from "../../../flow2hint/src/hintfile"
+export {
+  ResolvedHintEntries,
+  ResolvedHintFile,
+  ResolvedHintImport,
+  ResolvedHintTypeof,
+} from "../../../flow2hint/src/hintfile"
