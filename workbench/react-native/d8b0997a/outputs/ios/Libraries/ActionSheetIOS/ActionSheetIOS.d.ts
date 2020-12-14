@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { ColorValue } from "../StyleSheet/StyleSheet";
 import { ProcessedColorValue } from "../StyleSheet/processColor";
@@ -59,5 +58,5 @@ declare var ActionSheetIOS:
    */
   showShareActionSheetWithOptions: (options: Object, failureCallback: Function, successCallback: Function) => void;
 };
-declare const $f2tExportDefault: $TypeOf<typeof ActionSheetIOS>;
+declare const $f2tExportDefault: typeof ActionSheetIOS;
 export default $f2tExportDefault;

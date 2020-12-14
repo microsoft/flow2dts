@@ -1,4 +1,4 @@
-import { $FlowFixMe, $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $FlowFixMe } from "flow2dts-flow-types-polyfill";
 import { $Keys } from "utility-types";
 // @flow
 declare type ChangeEventName = $Keys<{
@@ -131,5 +131,5 @@ declare var AccessibilityInfo:
    */
   removeEventListener: <T>(eventName: ChangeEventName, handler: T) => void;
 };
-declare const $f2tExportDefault: $TypeOf<typeof AccessibilityInfo>;
+declare const $f2tExportDefault: typeof AccessibilityInfo;
 export default $f2tExportDefault;

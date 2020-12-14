@@ -605,7 +605,7 @@ declare var Context: $1.Context<ContextType>;
 declare type ScrollViewComponentStatics = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  Context: $TypeOf<typeof Context>;
+  Context: typeof Context;
 }>;
 declare class ScrollView extends $1.Component<Props, State> {
   static Context: React$Context<ContextType>;

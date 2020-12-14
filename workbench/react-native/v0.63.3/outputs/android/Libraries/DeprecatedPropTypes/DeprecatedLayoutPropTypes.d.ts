@@ -57,5 +57,5 @@ declare var LayoutPropTypes:
   zIndex: $TypeOf<typeof $1.number>;
   direction: React$PropType$Primitive<"inherit" | "ltr" | "rtl">;
 };
-declare const $f2tExportDefault: $TypeOf<typeof LayoutPropTypes>;
+declare const $f2tExportDefault: typeof LayoutPropTypes;
 export default $f2tExportDefault;

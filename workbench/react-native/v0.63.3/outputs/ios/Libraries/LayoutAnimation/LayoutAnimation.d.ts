@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type Type = "spring" | "linear" | "easeInEaseOut" | "easeIn" | "easeOut" | "keyboard";
 declare type Property = "opacity" | "scaleX" | "scaleY" | "scaleXY";
@@ -67,12 +66,12 @@ declare var LayoutAnimation:
    * Only supported on iOS.
    * @param onError Called on error. Only supported on iOS.
    */
-  configureNext: $TypeOf<typeof configureNext>;
+  configureNext: typeof configureNext;
 
   /**
    * Helper for creating a config for `configureNext`.
    */
-  create: $TypeOf<typeof create>;
+  create: typeof create;
   Types:
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
@@ -92,11 +91,11 @@ declare var LayoutAnimation:
     scaleXY: string;
   };
   checkConfig: (...args: unknown[]) => void;
-  Presets: $TypeOf<typeof Presets>;
+  Presets: typeof Presets;
   easeInEaseOut: (onAnimationDidEnd?: any) => void;
   linear: (onAnimationDidEnd?: any) => void;
   spring: (onAnimationDidEnd?: any) => void;
 };
 export type { LayoutAnimationConfig };
-declare const $f2tExportDefault: $TypeOf<typeof LayoutAnimation>;
+declare const $f2tExportDefault: typeof LayoutAnimation;
 export default $f2tExportDefault;

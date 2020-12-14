@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { TurboModule } from "../TurboModule/RCTExport";
 declare type DisplayMetricsAndroid =
@@ -38,5 +37,5 @@ declare var NativeModule: Spec;
 export type { DisplayMetrics };
 export type { DimensionsPayload };
 export type { Spec };
-declare const $f2tExportDefault: $TypeOf<typeof NativeModule>;
+declare const $f2tExportDefault: typeof NativeModule;
 export default $f2tExportDefault;

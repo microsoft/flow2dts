@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type DevServerInfo = {
   url: string;
@@ -6,5 +5,5 @@ declare type DevServerInfo = {
   bundleLoadedFromServer: boolean;
 };
 declare function getDevServer(): DevServerInfo;
-declare const $f2tExportDefault: $TypeOf<typeof getDevServer>;
+declare const $f2tExportDefault: typeof getDevServer;
 export default $f2tExportDefault;

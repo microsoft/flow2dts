@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var warningHandler: null | undefined | (($f2t1: any[]) => void);
 declare var RCTLog:
@@ -8,7 +7,7 @@ declare var RCTLog:
   logIfNoNativeHook: (level: string, ...args: any[]) => void;
   // Log to console regardless of nativeLoggingHook
   logToConsole: (level: string, ...args: any[]) => void;
-  setWarningHandler: (handler: $TypeOf<typeof warningHandler>) => void;
+  setWarningHandler: (handler: typeof warningHandler) => void;
 };
-declare const $f2tExportDefault: $TypeOf<typeof RCTLog>;
+declare const $f2tExportDefault: typeof RCTLog;
 export default $f2tExportDefault;

@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var ReactNativeViewViewConfigAndroid:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -96,5 +95,5 @@ declare var ReactNativeViewViewConfigAndroid:
     nextFocusUp: boolean;
   };
 };
-declare const $f2tExportDefault: $TypeOf<typeof ReactNativeViewViewConfigAndroid>;
+declare const $f2tExportDefault: typeof ReactNativeViewViewConfigAndroid;
 export default $f2tExportDefault;

@@ -522,5 +522,5 @@ import $22 from "../../Utilities/differ/sizesDiffer";
 import $23 from "../../StyleSheet/processColor";
 import $24 from "../../StyleSheet/processColor";
 import $25 from "../../StyleSheet/processColor";
-declare const $f2tExportDefault: $TypeOf<typeof ReactNativeViewConfig>;
+declare const $f2tExportDefault: typeof ReactNativeViewConfig;
 export default $f2tExportDefault;

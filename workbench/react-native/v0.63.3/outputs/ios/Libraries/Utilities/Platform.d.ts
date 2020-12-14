@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type PlatformSelectSpec<D, N, I> = {
   default?: D;
@@ -35,5 +34,5 @@ declare var Platform:
   select: <D, N, I>(spec: PlatformSelectSpec<D, N, I>) => D | N | I;
 };
 export type { PlatformSelectSpec };
-declare const $f2tExportDefault: $TypeOf<typeof Platform>;
+declare const $f2tExportDefault: typeof Platform;
 export default $f2tExportDefault;

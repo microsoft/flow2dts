@@ -66,5 +66,5 @@ $TypeOf<typeof $2> & {
    */
   writingDirection: React$PropType$Primitive<"auto" | "ltr" | "rtl">;
 };
-declare const $f2tExportDefault: $TypeOf<typeof DeprecatedTextStylePropTypes>;
+declare const $f2tExportDefault: typeof DeprecatedTextStylePropTypes;
 export default $f2tExportDefault;

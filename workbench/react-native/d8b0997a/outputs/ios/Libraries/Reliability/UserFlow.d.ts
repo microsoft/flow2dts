@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $Shape } from "utility-types";
 // @flow
 declare type FlowId = {
@@ -50,5 +49,5 @@ declare var UserFlow:
 };
 export type { FlowId };
 export type { PointData };
-declare const $f2tExportDefault: $TypeOf<typeof UserFlow>;
+declare const $f2tExportDefault: typeof UserFlow;
 export default $f2tExportDefault;

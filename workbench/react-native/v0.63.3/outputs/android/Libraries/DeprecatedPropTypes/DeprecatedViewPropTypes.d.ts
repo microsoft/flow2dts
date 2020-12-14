@@ -32,7 +32,7 @@ declare const $f2t_onMoveShouldSetResponderCapture: $TypeOf<typeof $2.func>;
 declare const $f2t_hitSlop: $TypeOf<typeof $1>;
 declare const $f2t_onLayout: $TypeOf<typeof $2.func>;
 declare const $f2t_pointerEvents: React$PropType$Primitive<"box-none" | "none" | "box-only" | "auto">;
-declare const $f2t_style: $TypeOf<typeof stylePropType>;
+declare const $f2t_style: typeof stylePropType;
 declare const $f2t_removeClippedSubviews: $TypeOf<typeof $2.bool>;
 declare const $f2t_renderToHardwareTextureAndroid: $TypeOf<typeof $2.bool>;
 declare const $f2t_shouldRasterizeIOS: $TypeOf<typeof $2.bool>;
@@ -325,7 +325,7 @@ declare const $f2tExportDefault:
   /**
    * See https://reactnative.dev/docs/style.html
    */
-  style: $TypeOf<typeof stylePropType>;
+  style: typeof stylePropType;
 
   /**
    * This is a special performance property exposed by `RCTView` and is useful

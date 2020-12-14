@@ -13,5 +13,5 @@ declare type Props = Readonly<
 declare function getCollapseMessage(stackFrames: Stack, collapsed: boolean): string;
 declare function LogBoxInspectorStackFrames(props: Props): React.Node;
 export { getCollapseMessage };
-declare const $f2tExportDefault: $TypeOf<typeof LogBoxInspectorStackFrames>;
+declare const $f2tExportDefault: typeof LogBoxInspectorStackFrames;
 export default $f2tExportDefault;

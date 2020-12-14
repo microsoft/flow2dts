@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { TurboModule } from "../../TurboModule/RCTExport";
 interface Spec extends TurboModule {
@@ -18,5 +17,5 @@ declare var NativeSourceCode:
   };
 };
 export type { Spec };
-declare const $f2tExportDefault: $TypeOf<typeof NativeSourceCode>;
+declare const $f2tExportDefault: typeof NativeSourceCode;
 export default $f2tExportDefault;

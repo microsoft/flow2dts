@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import * as React from "react";
 declare type Value = {
@@ -7,7 +6,7 @@ declare type Value = {
 declare var ScrollViewContext: React.Context<Value>;
 declare var HORIZONTAL: Value;
 declare var VERTICAL: Value;
-declare const $f2tExportDefault: $TypeOf<typeof ScrollViewContext>;
+declare const $f2tExportDefault: typeof ScrollViewContext;
 export default $f2tExportDefault;
 export { HORIZONTAL };
 export { VERTICAL };

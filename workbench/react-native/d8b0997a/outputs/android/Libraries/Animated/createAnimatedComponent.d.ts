@@ -12,5 +12,5 @@ declare function createAnimatedComponent<Props extends {
   readonly [$f2tKey: string]: unknown;
 }, Instance>(Component: $1.AbstractComponent<Props, Instance>): AnimatedComponentType<Props, Instance>;
 export type { AnimatedComponentType };
-declare const $f2tExportDefault: $TypeOf<typeof createAnimatedComponent>;
+declare const $f2tExportDefault: typeof createAnimatedComponent;
 export default $f2tExportDefault;

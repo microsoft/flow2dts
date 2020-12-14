@@ -26,20 +26,20 @@ declare type StyleAttributesType = BoolifiedDeprecatedViewStylePropTypes & Booli
   {
     diff: $TypeOf<typeof $6>;
   }> | true;
-  backgroundColor: $TypeOf<typeof colorAttributes> | true;
-  borderBottomColor: $TypeOf<typeof colorAttributes> | true;
-  borderColor: $TypeOf<typeof colorAttributes> | true;
-  borderLeftColor: $TypeOf<typeof colorAttributes> | true;
-  borderRightColor: $TypeOf<typeof colorAttributes> | true;
-  borderTopColor: $TypeOf<typeof colorAttributes> | true;
-  borderStartColor: $TypeOf<typeof colorAttributes> | true;
-  borderEndColor: $TypeOf<typeof colorAttributes> | true;
-  color: $TypeOf<typeof colorAttributes> | true;
-  shadowColor: $TypeOf<typeof colorAttributes> | true;
-  textDecorationColor: $TypeOf<typeof colorAttributes> | true;
-  tintColor: $TypeOf<typeof colorAttributes> | true;
-  textShadowColor: $TypeOf<typeof colorAttributes> | true;
-  overlayColor: $TypeOf<typeof colorAttributes> | true;
+  backgroundColor: typeof colorAttributes | true;
+  borderBottomColor: typeof colorAttributes | true;
+  borderColor: typeof colorAttributes | true;
+  borderLeftColor: typeof colorAttributes | true;
+  borderRightColor: typeof colorAttributes | true;
+  borderTopColor: typeof colorAttributes | true;
+  borderStartColor: typeof colorAttributes | true;
+  borderEndColor: typeof colorAttributes | true;
+  color: typeof colorAttributes | true;
+  shadowColor: typeof colorAttributes | true;
+  textDecorationColor: typeof colorAttributes | true;
+  tintColor: typeof colorAttributes | true;
+  textShadowColor: typeof colorAttributes | true;
+  overlayColor: typeof colorAttributes | true;
 };
 declare var ReactNativeStyleAttributes: StyleAttributesType;
 declare var colorAttributes:
@@ -47,5 +47,5 @@ declare var colorAttributes:
 {
   process: $TypeOf<typeof $4>;
 };
-declare const $f2tExportDefault: $TypeOf<typeof ReactNativeStyleAttributes>;
+declare const $f2tExportDefault: typeof ReactNativeStyleAttributes;
 export default $f2tExportDefault;

@@ -37,5 +37,5 @@ export type { KeyboardEventCoordinates };
 export type { KeyboardEvent };
 export type { AndroidKeyboardEvent };
 export type { IOSKeyboardEvent };
-declare const $f2tExportDefault: $TypeOf<typeof KeyboardEventEmitter>;
+declare const $f2tExportDefault: typeof KeyboardEventEmitter;
 export default $f2tExportDefault;

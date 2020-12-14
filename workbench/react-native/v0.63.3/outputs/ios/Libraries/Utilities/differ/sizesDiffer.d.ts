@@ -1,5 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
-
 /**
  * TODO: Move these Flow typings upstream
  */
@@ -8,5 +6,5 @@ declare type Size = {
   height?: null | undefined | number;
 };
 declare var sizesDiffer: (one?: null | undefined | Size, two?: null | undefined | Size) => boolean;
-declare const $f2tExportDefault: $TypeOf<typeof sizesDiffer>;
+declare const $f2tExportDefault: typeof sizesDiffer;
 export default $f2tExportDefault;

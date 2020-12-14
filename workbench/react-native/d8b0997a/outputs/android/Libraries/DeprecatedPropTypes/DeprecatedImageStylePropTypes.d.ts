@@ -45,5 +45,5 @@ $TypeOf<typeof $2> & $TypeOf<typeof $3> & $TypeOf<typeof $4> & {
   borderBottomLeftRadius: $TypeOf<typeof $5.number>;
   borderBottomRightRadius: $TypeOf<typeof $5.number>;
 };
-declare const $f2tExportDefault: $TypeOf<typeof ImageStylePropTypes>;
+declare const $f2tExportDefault: typeof ImageStylePropTypes;
 export default $f2tExportDefault;

@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type JSTimerType = "setTimeout" | "setInterval" | "requestAnimationFrame" | "setImmediate" | "requestIdleCallback";
 declare var ExportedJSTimers:
@@ -20,5 +19,5 @@ declare var ExportedJSTimers:
   setTimeout: (func: any, duration: number, ...args: any) => number;
 };
 export type { JSTimerType };
-declare const $f2tExportDefault: $TypeOf<typeof ExportedJSTimers>;
+declare const $f2tExportDefault: typeof ExportedJSTimers;
 export default $f2tExportDefault;

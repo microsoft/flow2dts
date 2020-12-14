@@ -12,5 +12,5 @@ declare type Props = Readonly<
   onPressDismiss: () => void;
 }>;
 declare function LogBoxLogNotification(props: Props): React.Node;
-declare const $f2tExportDefault: $TypeOf<typeof LogBoxLogNotification>;
+declare const $f2tExportDefault: typeof LogBoxLogNotification;
 export default $f2tExportDefault;

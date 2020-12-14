@@ -15,10 +15,10 @@ declare function queryCache(urls: string[]): Promise<{
 declare type ImageComponentStatics = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  getSize: $TypeOf<typeof getSize>;
-  getSizeWithHeaders: $TypeOf<typeof getSizeWithHeaders>;
-  prefetch: $TypeOf<typeof prefetch>;
-  queryCache: $TypeOf<typeof queryCache>;
+  getSize: typeof getSize;
+  getSizeWithHeaders: typeof getSizeWithHeaders;
+  prefetch: typeof prefetch;
+  queryCache: typeof queryCache;
   resolveAssetSource: $TypeOf<typeof $3>;
   propTypes: $TypeOf<typeof $1>;
 }>;

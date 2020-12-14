@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var AsyncStorage:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -105,5 +104,5 @@ declare var AsyncStorage:
    */
   multiMerge: (keyValuePairs: string[][], callback?: null | undefined | ((errors?: null | undefined | Error[]) => void)) => Promise<void>;
 };
-declare const $f2tExportDefault: $TypeOf<typeof AsyncStorage>;
+declare const $f2tExportDefault: typeof AsyncStorage;
 export default $f2tExportDefault;

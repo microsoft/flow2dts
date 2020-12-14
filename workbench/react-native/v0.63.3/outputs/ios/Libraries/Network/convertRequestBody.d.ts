@@ -6,5 +6,5 @@ declare type RequestBody = string | $TypeOf<typeof $1> | $TypeOf<typeof $2> | {
 } | ArrayBuffer | $ArrayBufferView;
 declare function convertRequestBody(body: RequestBody): Object;
 export type { RequestBody };
-declare const $f2tExportDefault: $TypeOf<typeof convertRequestBody>;
+declare const $f2tExportDefault: typeof convertRequestBody;
 export default $f2tExportDefault;

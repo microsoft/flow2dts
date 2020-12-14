@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import * as React from "react";
 import { EdgeInsetsProp } from "../../StyleSheet/EdgeInsetsPropType";
@@ -19,5 +18,5 @@ declare type Props = Readonly<
   style?: ViewStyleProp;
 }>;
 declare function LogBoxButton(props: Props): React.Node;
-declare const $f2tExportDefault: $TypeOf<typeof LogBoxButton>;
+declare const $f2tExportDefault: typeof LogBoxButton;
 export default $f2tExportDefault;

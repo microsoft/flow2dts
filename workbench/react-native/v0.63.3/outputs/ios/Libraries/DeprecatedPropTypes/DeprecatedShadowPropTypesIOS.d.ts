@@ -12,5 +12,5 @@ declare var DeprecatedShadowPropTypesIOS:
   shadowOpacity: $TypeOf<typeof $2.number>;
   shadowRadius: $TypeOf<typeof $2.number>;
 };
-declare const $f2tExportDefault: $TypeOf<typeof DeprecatedShadowPropTypesIOS>;
+declare const $f2tExportDefault: typeof DeprecatedShadowPropTypesIOS;
 export default $f2tExportDefault;

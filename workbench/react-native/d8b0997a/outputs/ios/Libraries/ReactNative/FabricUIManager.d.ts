@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { MeasureOnSuccessCallback } from "../Renderer/shims/ReactNativeTypes";
 import { MeasureInWindowOnSuccessCallback } from "../Renderer/shims/ReactNativeTypes";
@@ -28,5 +27,5 @@ declare type Spec =
 };
 declare var FabricUIManager: null | undefined | Spec;
 export type { Spec };
-declare const $f2tExportDefault: $TypeOf<typeof FabricUIManager>;
+declare const $f2tExportDefault: typeof FabricUIManager;
 export default $f2tExportDefault;

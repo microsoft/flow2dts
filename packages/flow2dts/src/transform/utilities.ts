@@ -2,7 +2,7 @@
 // Licensed under the MIT License.
 
 import { types as t } from "@babel/core"
-import { Scope } from "@babel/traverse"
+import { NodePath, Scope } from "@babel/traverse"
 import { State } from "./state"
 
 export const nameForExportDefaultRedirect = "$f2tExportDefaultRedirect"
@@ -49,4 +49,29 @@ export function isClass(tsTypeReference: t.TSTypeReference, scope: Scope) {
     }
   }
   return false
+}
+
+export function isPathDefinitelyValue<T>(path: NodePath<T>): boolean {
+  return (
+    path.isDeclareVariable() ||
+    path.isVariableDeclaration() ||
+    path.isDeclareFunction() ||
+    path.isFunctionDeclaration() ||
+    path.isClassMethod() ||
+    path.isObjectMethod() ||
+    path.isTSDeclareFunction() ||
+    path.isTSMethodSignature() ||
+    path.isTSDeclareMethod()
+  )
+}
+
+export function isPathDefinitelyType<T>(path: NodePath<T>): boolean {
+  return (
+    path.isClassDeclaration() ||
+    path.isDeclareClass() ||
+    path.isInterfaceDeclaration() ||
+    path.isDeclareInterface() ||
+    path.isTSEnumDeclaration() ||
+    path.isTSInterfaceDeclaration()
+  )
 }

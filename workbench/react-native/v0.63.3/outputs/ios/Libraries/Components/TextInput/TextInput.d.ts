@@ -599,7 +599,7 @@ export type { ReturnKeyType };
 export type { AutoCapitalize };
 export type { TextContentType };
 export type { Props };
-declare const $f2tExportDefault: $2.AbstractComponent<$2.ElementConfig<$TypeOf<typeof InternalTextInput>>, Readonly<
+declare const $f2tExportDefault: $2.AbstractComponent<$2.ElementConfig<typeof InternalTextInput>, Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 $2.ElementRef<HostComponent<any>> & ImperativeMethods & {}>> & TextInputComponentStatics;
 export default $f2tExportDefault;

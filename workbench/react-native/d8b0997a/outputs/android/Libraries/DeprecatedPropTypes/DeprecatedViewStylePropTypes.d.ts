@@ -42,5 +42,5 @@ $TypeOf<typeof $2> & $TypeOf<typeof $3> & $TypeOf<typeof $4> & {
    */
   elevation: $TypeOf<typeof $5.number>;
 };
-declare const $f2tExportDefault: $TypeOf<typeof DeprecatedViewStylePropTypes>;
+declare const $f2tExportDefault: typeof DeprecatedViewStylePropTypes;
 export default $f2tExportDefault;

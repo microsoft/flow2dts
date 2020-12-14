@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { PermissionStatus } from "./NativePermissionsAndroid";
 import { PermissionType } from "./NativePermissionsAndroid";
@@ -82,5 +81,5 @@ declare class PermissionsAndroid {
 }
 declare var PermissionsAndroidInstance: PermissionsAndroid;
 export type { Rationale };
-declare const $f2tExportDefault: $TypeOf<typeof PermissionsAndroidInstance>;
+declare const $f2tExportDefault: typeof PermissionsAndroidInstance;
 export default $f2tExportDefault;

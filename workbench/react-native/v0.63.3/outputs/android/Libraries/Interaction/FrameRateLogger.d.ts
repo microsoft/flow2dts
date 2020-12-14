@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var FrameRateLogger:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -30,5 +29,5 @@ declare var FrameRateLogger:
    */
   endScroll: () => void;
 };
-declare const $f2tExportDefault: $TypeOf<typeof FrameRateLogger>;
+declare const $f2tExportDefault: typeof FrameRateLogger;
 export default $f2tExportDefault;

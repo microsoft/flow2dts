@@ -3,7 +3,7 @@
 
 import { Visitor, types as t, NodePath } from "@babel/core"
 import { State } from "../state"
-import { assertTSType, isClass, wrappedTypeOf } from "../utilities"
+import { assertTSType, isClass, isPathDefinitelyValue, isPathDefinitelyType, wrappedTypeOf } from "../utilities"
 import { resolveGenericTypeAnnotation } from "../typeReferenceResolver"
 
 function convertQID(input: t.Identifier | t.QualifiedTypeIdentifier): t.Identifier | t.TSQualifiedName {
@@ -195,9 +195,17 @@ export const typeReferenceVisitor: Visitor<State> = {
               }
 
               const binding = path.scope.getBinding(firstName.name)
-              if (binding && (binding.path.isDeclareVariable() || binding.path.isVariableDeclaration())) {
-                path.replaceWith(wrappedTypeOf(resolved.typeName))
-                return
+              if (binding) {
+                if (isPathDefinitelyValue(binding.path)) {
+                  path.replaceWith(t.tsTypeQuery(resolved.typeName))
+                  return
+                } else if (isPathDefinitelyType(binding.path)) {
+                  path.replaceWith(resolved)
+                  return
+                } else {
+                  path.replaceWith(wrappedTypeOf(resolved.typeName))
+                  return
+                }
               }
             }
 
@@ -210,6 +218,19 @@ export const typeReferenceVisitor: Visitor<State> = {
             }
           }
           path.replaceWith(resolved)
+        } else if (typeQueryOperator.id.type === "Identifier") {
+          const binding = path.scope.getBinding(typeQueryOperator.id.name)
+          if (binding) {
+            if (isPathDefinitelyValue(binding.path)) {
+              path.replaceWith(t.tsTypeQuery(typeQueryOperator.id))
+              return
+            } else if (isPathDefinitelyType(binding.path)) {
+              // do nothing
+            } else {
+              path.replaceWith(wrappedTypeOf(typeQueryOperator.id))
+              return
+            }
+          }
         }
       }
     },

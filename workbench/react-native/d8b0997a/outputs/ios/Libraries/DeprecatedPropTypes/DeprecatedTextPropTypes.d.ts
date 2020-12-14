@@ -13,7 +13,7 @@ declare const $f2t_pressRetentionOffset: $TypeOf<typeof $2>;
 declare const $f2t_selectable: $TypeOf<typeof $3.bool>;
 declare const $f2t_selectionColor: $TypeOf<typeof $1>;
 declare const $f2t_suppressHighlighting: $TypeOf<typeof $3.bool>;
-declare const $f2t_style: $TypeOf<typeof stylePropType>;
+declare const $f2t_style: typeof stylePropType;
 declare const $f2t_testID: $TypeOf<typeof $3.string>;
 declare const $f2t_nativeID: $TypeOf<typeof $3.string>;
 declare const $f2t_allowFontScaling: $TypeOf<typeof $3.bool>;
@@ -98,7 +98,7 @@ declare const $f2tExportDefault:
    * See https://reactnative.dev/docs/text.html#supperhighlighting
    */
   suppressHighlighting: $TypeOf<typeof $3.bool>;
-  style: $TypeOf<typeof stylePropType>;
+  style: typeof stylePropType;
 
   /**
    * Used to locate this view in end-to-end tests.

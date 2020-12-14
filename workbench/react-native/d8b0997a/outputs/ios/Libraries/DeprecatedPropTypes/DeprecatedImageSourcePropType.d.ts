@@ -13,6 +13,6 @@ declare var ImageURISourcePropType: {
   height: $TypeOf<typeof $3.number>;
   scale: $TypeOf<typeof $3.number>;
 };
-declare var ImageSourcePropType: React$PropType$Primitive<$TypeOf<typeof ImageURISourcePropType> | $TypeOf<typeof $3.number> | $TypeOf<typeof ImageURISourcePropType>[]>;
-declare const $f2tExportDefault: $TypeOf<typeof ImageSourcePropType>;
+declare var ImageSourcePropType: React$PropType$Primitive<typeof ImageURISourcePropType | $TypeOf<typeof $3.number> | typeof ImageURISourcePropType[]>;
+declare const $f2tExportDefault: typeof ImageSourcePropType;
 export default $f2tExportDefault;

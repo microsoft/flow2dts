@@ -1,7 +1,6 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
-declare type FetchSegmentFunction = $TypeOf<typeof __fetchSegment>;
-declare type GetSegmentFunction = $TypeOf<typeof __getSegment>;
+declare type FetchSegmentFunction = typeof __fetchSegment;
+declare type GetSegmentFunction = typeof __getSegment;
 declare function __fetchSegment(segmentId: number, options: Readonly<{
   otaBuildNumber?: null | undefined | string;
   requestedModuleName: string;

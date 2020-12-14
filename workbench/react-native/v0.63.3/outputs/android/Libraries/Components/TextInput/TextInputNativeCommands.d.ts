@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import * as React from "react";
 import { Int32 } from "../../Types/CodegenTypes";
@@ -11,5 +10,5 @@ interface TextInputNativeCommands<T extends React.ForwardRefExoticComponent<any>
 }
 declare var supportedCommands: (string | string | string)[];
 export type { TextInputNativeCommands };
-declare const $f2tExportDefault: $TypeOf<typeof supportedCommands>;
+declare const $f2tExportDefault: typeof supportedCommands;
 export default $f2tExportDefault;

@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { ImageURISource } from "./ImageSource";
 declare type NativeImageSourceSpec = Readonly<
@@ -13,5 +12,5 @@ declare type NativeImageSourceSpec = Readonly<
   width: number;
 }>;
 declare function nativeImageSource(spec: NativeImageSourceSpec): ImageURISource;
-declare const $f2tExportDefault: $TypeOf<typeof nativeImageSource>;
+declare const $f2tExportDefault: typeof nativeImageSource;
 export default $f2tExportDefault;

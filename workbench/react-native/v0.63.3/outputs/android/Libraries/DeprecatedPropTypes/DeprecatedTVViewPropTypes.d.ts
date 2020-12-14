@@ -9,5 +9,5 @@ declare var DeprecatedTVViewPropTypes:
   tvParallaxTiltAngle: $TypeOf<typeof $1.number>;
   tvParallaxMagnification: $TypeOf<typeof $1.number>;
 };
-declare const $f2tExportDefault: $TypeOf<typeof DeprecatedTVViewPropTypes>;
+declare const $f2tExportDefault: typeof DeprecatedTVViewPropTypes;
 export default $f2tExportDefault;

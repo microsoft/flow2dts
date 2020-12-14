@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { TurboModule } from "../../TurboModule/RCTExport";
 interface Spec extends TurboModule {
@@ -64,5 +63,5 @@ declare var NativeStatusBarManager:
   setHidden: (hidden: boolean, withAnimation: string) => void;
 };
 export type { Spec };
-declare const $f2tExportDefault: $TypeOf<typeof NativeStatusBarManager>;
+declare const $f2tExportDefault: typeof NativeStatusBarManager;
 export default $f2tExportDefault;

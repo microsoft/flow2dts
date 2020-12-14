@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { StackFrame } from "../NativeExceptionsManager";
 declare type ExtendedError = Error & {
@@ -10,5 +9,5 @@ declare type ExtendedError = Error & {
 };
 declare function parseErrorStack(errorStack?: string): StackFrame[];
 export type { ExtendedError };
-declare const $f2tExportDefault: $TypeOf<typeof parseErrorStack>;
+declare const $f2tExportDefault: typeof parseErrorStack;
 export default $f2tExportDefault;

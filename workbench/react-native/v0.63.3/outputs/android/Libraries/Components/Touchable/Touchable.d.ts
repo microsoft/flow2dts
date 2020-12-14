@@ -227,7 +227,7 @@ declare var TouchableMixin:
 declare var Touchable:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  Mixin: $TypeOf<typeof TouchableMixin>;
+  Mixin: typeof TouchableMixin;
   TOUCH_TARGET_DEBUG: boolean;
 
   /**
@@ -238,5 +238,5 @@ declare var Touchable:
     hitSlop: EdgeInsetsProp;
   }) => null | $1.Node;
 };
-declare const $f2tExportDefault: $TypeOf<typeof Touchable>;
+declare const $f2tExportDefault: typeof Touchable;
 export default $f2tExportDefault;

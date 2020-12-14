@@ -43,9 +43,9 @@ export type { ViewStyle };
 export type { TextStyle };
 export type { ImageStyle };
 export type { DangerouslyImpreciseStyle };
-declare const $f2t_hairlineWidth: $TypeOf<typeof hairlineWidth>;
+declare const $f2t_hairlineWidth: typeof hairlineWidth;
 declare const $f2t_absoluteFill: any;
-declare const $f2t_absoluteFillObject: $TypeOf<typeof absoluteFill>;
+declare const $f2t_absoluteFillObject: typeof absoluteFill;
 declare const $f2t_compose: <T extends DangerouslyImpreciseStyleProp>(style1?: null | undefined | T, style2?: null | undefined | T) => (null | undefined | T) | ReadonlyArray<T>;
 declare const $f2t_flatten: $TypeOf<typeof $1>;
 declare const $f2t_setStyleAttributePreprocessor: (property: string, process: (nextProp: unknown) => unknown) => void;
@@ -75,7 +75,7 @@ declare const $f2tExportDefault:
    *
    * A line with hairline width may not be visible if your simulator is downscaled.
    */
-  hairlineWidth: $TypeOf<typeof hairlineWidth>;
+  hairlineWidth: typeof hairlineWidth;
 
   /**
    * A very common pattern is to create overlays with position absolute and zero positioning,
@@ -96,7 +96,7 @@ declare const $f2tExportDefault:
    *     },
    *   });
    */
-  absoluteFillObject: $TypeOf<typeof absoluteFill>;
+  absoluteFillObject: typeof absoluteFill;
 
   /**
    * Combines two styles such that `style2` will override any styles in `style1`.
