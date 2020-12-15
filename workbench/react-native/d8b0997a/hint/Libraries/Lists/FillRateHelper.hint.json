@@ -16,7 +16,7 @@
                     "row": 24,
                     "column": 28
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/FillRateHelper.js.flow"
             }
         }

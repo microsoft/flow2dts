@@ -23,7 +23,7 @@
                     "row": 25,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LogBox/Data/LogBoxLog.js.flow"
             }
         }
@@ -44,8 +44,8 @@
                     "row": 26,
                     "column": 29
                 },
-                "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/react.js"
+                "libraryFolder": 0,
+                "file": "/react.js"
             }
         }
     ],

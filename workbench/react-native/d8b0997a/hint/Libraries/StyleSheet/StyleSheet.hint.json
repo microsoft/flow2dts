@@ -15,7 +15,7 @@
                     "row": 7,
                     "column": 28
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 660,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
             }
         },
@@ -53,7 +53,7 @@
                     "row": 631,
                     "column": 43
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
             }
         },
@@ -72,7 +72,7 @@
                     "row": 647,
                     "column": 47
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
             }
         },
@@ -91,7 +91,7 @@
                     "row": 532,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
             }
         },
@@ -110,7 +110,7 @@
                     "row": 650,
                     "column": 31
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
             }
         },
@@ -129,7 +129,7 @@
                     "row": 581,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
             }
         },
@@ -148,7 +148,7 @@
                     "row": 653,
                     "column": 31
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
             }
         },
@@ -167,7 +167,7 @@
                     "row": 622,
                     "column": 28
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
             }
         },
@@ -186,7 +186,7 @@
                     "row": 656,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
             }
         }
@@ -207,7 +207,7 @@
                     "row": 7,
                     "column": 29
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/flattenStyle.js.flow"
             }
         },
@@ -226,7 +226,7 @@
                     "row": 39,
                     "column": 25
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
@@ -245,7 +245,7 @@
                     "row": 41,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
@@ -264,7 +264,7 @@
                     "row": 2,
                     "column": 19
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         }

@@ -23,7 +23,7 @@
                     "row": 14,
                     "column": 28
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/createPerformanceLogger.js.flow"
             }
         }
@@ -44,7 +44,7 @@
                     "row": 6,
                     "column": 36
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/PerformanceLoggerContext.js.flow"
             }
         }

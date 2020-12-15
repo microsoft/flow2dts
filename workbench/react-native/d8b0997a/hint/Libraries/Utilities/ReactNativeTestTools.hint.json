@@ -15,7 +15,7 @@
                     "row": 8,
                     "column": 30
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/ReactNativeTestTools.js.flow"
             }
         }
@@ -36,7 +36,7 @@
                     "row": 3,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/ReactNativeTestTools.js.flow"
             }
         },
@@ -55,7 +55,7 @@
                     "row": 6,
                     "column": 41
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/ReactNativeTestTools.js.flow"
             }
         }

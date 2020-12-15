@@ -15,7 +15,7 @@
                     "row": 4,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Core/NativeExceptionsManager.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 16,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Core/Devtools/symbolicateStackTrace.js.flow"
             }
         }

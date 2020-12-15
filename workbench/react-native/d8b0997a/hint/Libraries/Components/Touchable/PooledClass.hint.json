@@ -16,7 +16,7 @@
                     "row": 4,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/PooledClass.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 17,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/PooledClass.js.flow"
             }
         }

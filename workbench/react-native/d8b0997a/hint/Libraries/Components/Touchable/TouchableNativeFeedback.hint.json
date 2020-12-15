@@ -15,7 +15,7 @@
                     "row": 153,
                     "column": 26
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Pressability/Pressability.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 60,
                     "column": 38
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/TouchableWithoutFeedback.js.flow"
             }
         },
@@ -63,8 +63,8 @@
                     "row": 26,
                     "column": 29
                 },
-                "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/react.js"
+                "libraryFolder": 0,
+                "file": "/react.js"
             }
         },
         {
@@ -82,7 +82,7 @@
                     "row": 87,
                     "column": 37
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/TouchableNativeFeedback.js.flow"
             }
         }

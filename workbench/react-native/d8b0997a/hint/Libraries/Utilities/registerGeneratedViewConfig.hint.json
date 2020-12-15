@@ -16,7 +16,7 @@
                     "row": 43,
                     "column": 44
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/registerGeneratedViewConfig.js.flow"
             }
         }

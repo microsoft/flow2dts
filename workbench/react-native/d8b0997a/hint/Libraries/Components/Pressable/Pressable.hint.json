@@ -23,7 +23,7 @@
                     "row": 16,
                     "column": 17
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Pressable/useAndroidRippleForView.js.flow"
             }
         },
@@ -42,7 +42,7 @@
                     "row": 41,
                     "column": 29
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ViewAccessibility.js.flow"
             }
         },
@@ -61,7 +61,7 @@
                     "row": 33,
                     "column": 28
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ViewAccessibility.js.flow"
             }
         },
@@ -80,7 +80,7 @@
                     "row": 4,
                     "column": 22
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ViewAccessibility.js.flow"
             }
         },
@@ -99,7 +99,7 @@
                     "row": 45,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ViewAccessibility.js.flow"
             }
         },
@@ -118,7 +118,7 @@
                     "row": 54,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ViewAccessibility.js.flow"
             }
         },
@@ -137,7 +137,7 @@
                     "row": 11,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/Rect.js.flow"
             }
         },
@@ -156,7 +156,7 @@
                     "row": 79,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CoreEventTypes.js.flow"
             }
         },
@@ -175,7 +175,7 @@
                     "row": 95,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CoreEventTypes.js.flow"
             }
         },
@@ -194,7 +194,7 @@
                     "row": 13,
                     "column": 1
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/View.js.flow"
             }
         }
@@ -215,7 +215,7 @@
                     "row": 13,
                     "column": 1
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/View.js.flow"
             }
         },
@@ -234,7 +234,7 @@
                     "row": 13,
                     "column": 1
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/View.js.flow"
             }
         }

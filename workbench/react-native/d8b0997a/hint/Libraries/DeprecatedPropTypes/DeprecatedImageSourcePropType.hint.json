@@ -16,7 +16,7 @@
                     "row": 2,
                     "column": 8
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 5,
                     "column": 30
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
             }
         },
@@ -54,7 +54,7 @@
                     "row": 6,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
             }
         },
@@ -73,7 +73,7 @@
                     "row": 7,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
             }
         },
@@ -92,7 +92,7 @@
                     "row": 9,
                     "column": 31
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
             }
         },
@@ -111,7 +111,7 @@
                     "row": 11,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
             }
         },
@@ -130,7 +130,7 @@
                     "row": 12,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
             }
         },
@@ -149,7 +149,7 @@
                     "row": 13,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
             }
         },
@@ -168,7 +168,7 @@
                     "row": 4,
                     "column": 34
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
             }
         },
@@ -187,7 +187,7 @@
                     "row": 17,
                     "column": 57
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
             }
         },
@@ -206,7 +206,7 @@
                     "row": 4,
                     "column": 34
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
             }
         },
@@ -225,7 +225,7 @@
                     "row": 16,
                     "column": 31
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
             }
         }

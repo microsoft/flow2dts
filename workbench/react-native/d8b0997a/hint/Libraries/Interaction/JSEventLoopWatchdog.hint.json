@@ -16,7 +16,7 @@
                     "row": 14,
                     "column": 31
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Interaction/JSEventLoopWatchdog.js.flow"
             }
         }

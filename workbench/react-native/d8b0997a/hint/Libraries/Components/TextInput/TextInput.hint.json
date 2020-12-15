@@ -15,7 +15,7 @@
                     "row": 20,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 18,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
@@ -53,7 +53,7 @@
                     "row": 16,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
@@ -72,7 +72,7 @@
                     "row": 377,
                     "column": 14
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
             }
         },
@@ -91,7 +91,7 @@
                     "row": 5,
                     "column": 19
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CoreEventTypes.js.flow"
             }
         },
@@ -110,7 +110,7 @@
                     "row": 112,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CoreEventTypes.js.flow"
             }
         },
@@ -129,7 +129,7 @@
                     "row": 95,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CoreEventTypes.js.flow"
             }
         },
@@ -148,7 +148,7 @@
                     "row": 96,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
             }
         }
@@ -169,7 +169,7 @@
                     "row": 0,
                     "column": 0
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -188,7 +188,7 @@
                     "row": 6,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/TextInput/TextInput.js.flow"
             }
         },
@@ -207,7 +207,7 @@
                     "row": 43,
                     "column": 2
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
             }
         },
@@ -226,7 +226,7 @@
                     "row": 8,
                     "column": 55
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
             }
         },
@@ -245,7 +245,7 @@
                     "row": 10,
                     "column": 49
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
             }
         },
@@ -264,7 +264,7 @@
                     "row": 20,
                     "column": 63
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
             }
         },
@@ -283,7 +283,7 @@
                     "row": 22,
                     "column": 62
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
             }
         },
@@ -302,7 +302,7 @@
                     "row": 2,
                     "column": 40
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/TextInput/TextInput.js.flow"
             }
         },
@@ -321,7 +321,7 @@
                     "row": 716,
                     "column": 34
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/TextInput/TextInput.js.flow"
             }
         }

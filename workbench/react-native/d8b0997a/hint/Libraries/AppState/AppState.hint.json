@@ -15,7 +15,7 @@
                     "row": 17,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 8,
                     "column": 42
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/vendor/emitter/EventEmitter.js.flow"
             }
         }
@@ -55,7 +55,7 @@
                     "row": 17,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
             }
         },
@@ -74,7 +74,7 @@
                     "row": 8,
                     "column": 42
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/vendor/emitter/EventEmitter.js.flow"
             }
         },
@@ -93,7 +93,7 @@
                     "row": 51,
                     "column": 28
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/AppState/AppState.js.flow"
             }
         }

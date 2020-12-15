@@ -16,7 +16,7 @@
                     "row": 38,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/PushNotificationIOS/PushNotificationIOS.js.flow"
             }
         }

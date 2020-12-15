@@ -15,7 +15,7 @@
                     "row": 12,
                     "column": 1
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/components/AnimatedFlatList.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 12,
                     "column": 1
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/components/AnimatedImage.js.flow"
             }
         },
@@ -53,7 +53,7 @@
                     "row": 12,
                     "column": 1
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/components/AnimatedScrollView.js.flow"
             }
         },
@@ -72,7 +72,7 @@
                     "row": 12,
                     "column": 1
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/components/AnimatedSectionList.js.flow"
             }
         },
@@ -91,7 +91,7 @@
                     "row": 12,
                     "column": 1
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/components/AnimatedText.js.flow"
             }
         },
@@ -110,7 +110,7 @@
                     "row": 12,
                     "column": 1
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/components/AnimatedView.js.flow"
             }
         }
@@ -131,7 +131,7 @@
                     "row": 112,
                     "column": 2
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedMock.js.flow"
             }
         },
@@ -150,7 +150,7 @@
                     "row": 9,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/Animated.js.flow"
             }
         },
@@ -169,7 +169,7 @@
                     "row": 12,
                     "column": 20
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/Animated.js.flow"
             }
         }

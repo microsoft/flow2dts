@@ -16,7 +16,7 @@
                     "row": 10,
                     "column": 26
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/BatchedBridge/MessageQueue.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 5,
                     "column": 25
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/BatchedBridge/BatchedBridge.js.flow"
             }
         }

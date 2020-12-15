@@ -15,7 +15,7 @@
                     "row": 17,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 6,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedEvent.js.flow"
             }
         },
@@ -53,7 +53,7 @@
                     "row": 8,
                     "column": 17
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/NativeAnimatedModule.js.flow"
             }
         },
@@ -72,7 +72,7 @@
                     "row": 13,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/NativeAnimatedModule.js.flow"
             }
         },
@@ -91,7 +91,7 @@
                     "row": 14,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/NativeAnimatedModule.js.flow"
             }
         },
@@ -110,7 +110,7 @@
                     "row": 7,
                     "column": 20
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/animations/Animation.js.flow"
             }
         },
@@ -129,7 +129,7 @@
                     "row": 5,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/animations/Animation.js.flow"
             }
         },
@@ -148,7 +148,7 @@
                     "row": 9,
                     "column": 28
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedInterpolation.js.flow"
             }
         }
@@ -169,7 +169,7 @@
                     "row": 12,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/NativeAnimatedHelper.js.flow"
             }
         },
@@ -188,7 +188,7 @@
                     "row": 50,
                     "column": 40
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/NativeAnimatedHelper.js.flow"
             }
         },
@@ -207,7 +207,7 @@
                     "row": 52,
                     "column": 44
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/NativeAnimatedHelper.js.flow"
             }
         },
@@ -226,7 +226,7 @@
                     "row": 54,
                     "column": 49
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/NativeAnimatedHelper.js.flow"
             }
         },
@@ -245,7 +245,7 @@
                     "row": 74,
                     "column": 31
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/NativeAnimatedHelper.js.flow"
             }
         },
@@ -264,7 +264,7 @@
                     "row": 56,
                     "column": 34
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/NativeAnimatedHelper.js.flow"
             }
         },
@@ -283,7 +283,7 @@
                     "row": 76,
                     "column": 38
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/NativeAnimatedHelper.js.flow"
             }
         },
@@ -302,7 +302,7 @@
                     "row": 78,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/NativeAnimatedHelper.js.flow"
             }
         },
@@ -321,7 +321,7 @@
                     "row": 80,
                     "column": 39
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/NativeAnimatedHelper.js.flow"
             }
         },
@@ -340,7 +340,7 @@
                     "row": 82,
                     "column": 43
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/NativeAnimatedHelper.js.flow"
             }
         },
@@ -359,7 +359,7 @@
                     "row": 84,
                     "column": 38
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/NativeAnimatedHelper.js.flow"
             }
         },
@@ -378,7 +378,7 @@
                     "row": 88,
                     "column": 34
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/NativeAnimatedHelper.js.flow"
             }
         }

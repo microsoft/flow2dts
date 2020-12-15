@@ -15,7 +15,7 @@
                     "row": 5,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/animations/Animation.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 14,
                     "column": 26
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/animations/TimingAnimation.js.flow"
             }
         },
@@ -53,7 +53,7 @@
                     "row": 9,
                     "column": 25
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/animations/DecayAnimation.js.flow"
             }
         },
@@ -72,7 +72,7 @@
                     "row": 14,
                     "column": 26
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/animations/SpringAnimation.js.flow"
             }
         },
@@ -91,7 +91,7 @@
                     "row": 5,
                     "column": 12
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedEvent.js.flow"
             }
         },
@@ -110,7 +110,7 @@
                     "row": 6,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedEvent.js.flow"
             }
         }
@@ -131,7 +131,7 @@
                     "row": 2,
                     "column": 25
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -150,7 +150,7 @@
                     "row": 3,
                     "column": 29
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -169,7 +169,7 @@
                     "row": 38,
                     "column": 2
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedEvent.js.flow"
             }
         },
@@ -188,7 +188,7 @@
                     "row": 38,
                     "column": 2
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedEvent.js.flow"
             }
         },
@@ -207,7 +207,7 @@
                     "row": 12,
                     "column": 30
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedAddition.js.flow"
             }
         },
@@ -226,7 +226,7 @@
                     "row": 11,
                     "column": 31
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedDiffClamp.js.flow"
             }
         },
@@ -245,7 +245,7 @@
                     "row": 12,
                     "column": 30
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedDivision.js.flow"
             }
         },
@@ -264,7 +264,7 @@
                     "row": 18,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedInterpolation.js.flow"
             }
         },
@@ -283,7 +283,7 @@
                     "row": 11,
                     "column": 28
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedModulo.js.flow"
             }
         },
@@ -302,7 +302,7 @@
                     "row": 12,
                     "column": 36
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedMultiplication.js.flow"
             }
         },
@@ -321,7 +321,7 @@
                     "row": 2,
                     "column": 26
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedNode.js.flow"
             }
         },
@@ -340,7 +340,7 @@
                     "row": 5,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedProps.js.flow"
             }
         },
@@ -359,7 +359,7 @@
                     "row": 12,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedSubtraction.js.flow"
             }
         },
@@ -378,7 +378,7 @@
                     "row": 12,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedValue.js.flow"
             }
         },
@@ -397,7 +397,7 @@
                     "row": 15,
                     "column": 29
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedValueXY.js.flow"
             }
         },
@@ -416,7 +416,7 @@
                     "row": 29,
                     "column": 41
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/createAnimatedComponent.js.flow"
             }
         },
@@ -435,7 +435,7 @@
                     "row": 27,
                     "column": 25
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -454,7 +454,7 @@
                     "row": 29,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -473,7 +473,7 @@
                     "row": 14,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -492,7 +492,7 @@
                     "row": 20,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -511,7 +511,7 @@
                     "row": 89,
                     "column": 17
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -530,7 +530,7 @@
                     "row": 84,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -549,7 +549,7 @@
                     "row": 79,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -568,7 +568,7 @@
                     "row": 51,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -587,7 +587,7 @@
                     "row": 56,
                     "column": 20
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -606,7 +606,7 @@
                     "row": 61,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -625,7 +625,7 @@
                     "row": 66,
                     "column": 20
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -644,7 +644,7 @@
                     "row": 71,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -663,7 +663,7 @@
                     "row": 73,
                     "column": 21
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -682,7 +682,7 @@
                     "row": 108,
                     "column": 17
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -701,7 +701,7 @@
                     "row": 94,
                     "column": 20
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -720,7 +720,7 @@
                     "row": 103,
                     "column": 20
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -739,7 +739,7 @@
                     "row": 110,
                     "column": 19
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -758,7 +758,7 @@
                     "row": 121,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -777,7 +777,7 @@
                     "row": 136,
                     "column": 17
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -796,7 +796,7 @@
                     "row": 32,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -815,7 +815,7 @@
                     "row": 3,
                     "column": 29
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -834,7 +834,7 @@
                     "row": 126,
                     "column": 26
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -853,7 +853,7 @@
                     "row": 131,
                     "column": 28
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -872,7 +872,7 @@
                     "row": 2,
                     "column": 25
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         },
@@ -891,7 +891,7 @@
                     "row": 22,
                     "column": 25
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
             }
         }

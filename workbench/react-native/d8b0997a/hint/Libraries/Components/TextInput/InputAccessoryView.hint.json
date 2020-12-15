@@ -15,7 +15,7 @@
                     "row": 18,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 16,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         }
@@ -55,7 +55,7 @@
                     "row": 3,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/TextInput/InputAccessoryView.js.flow"
             }
         },
@@ -74,8 +74,8 @@
                     "row": 26,
                     "column": 29
                 },
-                "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/react.js"
+                "libraryFolder": 0,
+                "file": "/react.js"
             }
         },
         {
@@ -93,7 +93,7 @@
                     "row": 21,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/TextInput/InputAccessoryView.js.flow"
             }
         }

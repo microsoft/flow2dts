@@ -23,7 +23,7 @@
                     "row": 8,
                     "column": 26
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/createAnimatedComponent.js.flow"
             }
         }
@@ -44,7 +44,7 @@
                     "row": 49,
                     "column": 25
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Image/Image.ios.js.flow"
             }
         },
@@ -63,7 +63,7 @@
                     "row": 4,
                     "column": 17
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/components/AnimatedImage.js.flow"
             }
         },
@@ -82,7 +82,7 @@
                     "row": 4,
                     "column": 17
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/components/AnimatedImage.js.flow"
             }
         }

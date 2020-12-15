@@ -23,7 +23,7 @@
                     "row": 4,
                     "column": 26
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LogBox/UI/AnsiHighlight.js.flow"
             }
         }

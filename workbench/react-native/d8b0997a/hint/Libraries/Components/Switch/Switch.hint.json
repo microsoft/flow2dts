@@ -23,7 +23,7 @@
                     "row": 16,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
@@ -42,7 +42,7 @@
                     "row": 5,
                     "column": 19
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CoreEventTypes.js.flow"
             }
         },
@@ -61,7 +61,7 @@
                     "row": 377,
                     "column": 14
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
             }
         }
@@ -82,8 +82,8 @@
                     "row": 26,
                     "column": 29
                 },
-                "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/react.js"
+                "libraryFolder": 0,
+                "file": "/react.js"
             }
         },
         {
@@ -101,7 +101,7 @@
                     "row": 76,
                     "column": 20
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Switch/Switch.js.flow"
             }
         }

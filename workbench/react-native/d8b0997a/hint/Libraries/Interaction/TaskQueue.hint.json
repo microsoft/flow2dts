@@ -16,7 +16,7 @@
                     "row": 12,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Interaction/TaskQueue.js.flow"
             }
         }

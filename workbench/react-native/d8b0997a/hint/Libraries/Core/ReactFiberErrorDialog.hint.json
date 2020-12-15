@@ -16,7 +16,7 @@
                     "row": 9,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Core/ReactFiberErrorDialog.js.flow"
             }
         }

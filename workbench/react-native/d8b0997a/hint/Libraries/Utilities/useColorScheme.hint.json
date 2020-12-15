@@ -15,7 +15,7 @@
                     "row": 4,
                     "column": 20
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/NativeAppearance.js.flow"
             }
         }

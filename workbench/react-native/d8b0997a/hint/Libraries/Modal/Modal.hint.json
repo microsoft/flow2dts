@@ -15,7 +15,7 @@
                     "row": 377,
                     "column": 14
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 2,
                     "column": 12
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/ReactNative/RootTag.js.flow"
             }
         },
@@ -53,7 +53,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CodegenTypes.js.flow"
             }
         }
@@ -74,7 +74,7 @@
                     "row": 3,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Modal/Modal.js.flow"
             }
         },
@@ -93,8 +93,8 @@
                     "row": 26,
                     "column": 29
                 },
-                "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/react.js"
+                "libraryFolder": 0,
+                "file": "/react.js"
             }
         },
         {
@@ -112,7 +112,7 @@
                     "row": 120,
                     "column": 19
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Modal/Modal.js.flow"
             }
         }

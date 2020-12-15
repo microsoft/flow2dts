@@ -16,7 +16,7 @@
                     "row": 8,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/differ/pointsDiffer.js.flow"
             }
         }

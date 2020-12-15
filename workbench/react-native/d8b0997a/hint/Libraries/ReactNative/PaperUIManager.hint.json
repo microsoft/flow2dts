@@ -15,7 +15,7 @@
                     "row": 4,
                     "column": 14
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/ReactNative/NativeUIManager.js.flow"
             }
         }
@@ -36,7 +36,7 @@
                     "row": 4,
                     "column": 14
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/ReactNative/NativeUIManager.js.flow"
             }
         },
@@ -55,7 +55,7 @@
                     "row": 4,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/ReactNative/PaperUIManager.js.flow"
             }
         }

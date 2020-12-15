@@ -16,7 +16,7 @@
                     "row": 12,
                     "column": 25
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/BatchedBridge/NativeModules.js.flow"
             }
         }

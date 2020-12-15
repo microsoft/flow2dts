@@ -16,7 +16,7 @@
                     "row": 0,
                     "column": 0
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedColorPropType.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 0,
                     "column": 0
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewPropTypes.js.flow"
             }
         },
@@ -54,7 +54,7 @@
                     "row": 7,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -73,7 +73,7 @@
                     "row": 23,
                     "column": 3
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Text/Text.js.flow"
             }
         },
@@ -92,7 +92,7 @@
                     "row": 4,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -111,7 +111,7 @@
                     "row": 67,
                     "column": 36
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -130,7 +130,7 @@
                     "row": 73,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -149,7 +149,7 @@
                     "row": 78,
                     "column": 34
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -168,7 +168,7 @@
                     "row": 83,
                     "column": 41
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -187,7 +187,7 @@
                     "row": 91,
                     "column": 48
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -206,7 +206,7 @@
                     "row": 95,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -225,7 +225,7 @@
                     "row": 200,
                     "column": 41
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -244,7 +244,7 @@
                     "row": 205,
                     "column": 36
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -263,7 +263,7 @@
                     "row": 211,
                     "column": 40
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -282,7 +282,7 @@
                     "row": 220,
                     "column": 44
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -301,7 +301,7 @@
                     "row": 226,
                     "column": 54
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -320,7 +320,7 @@
                     "row": 231,
                     "column": 34
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -339,7 +339,7 @@
                     "row": 243,
                     "column": 31
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -358,7 +358,7 @@
                     "row": 247,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -377,7 +377,7 @@
                     "row": 251,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -396,7 +396,7 @@
                     "row": 256,
                     "column": 37
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -415,7 +415,7 @@
                     "row": 264,
                     "column": 44
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -434,7 +434,7 @@
                     "row": 265,
                     "column": 36
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -453,7 +453,7 @@
                     "row": 269,
                     "column": 37
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -472,7 +472,7 @@
                     "row": 275,
                     "column": 42
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -491,7 +491,7 @@
                     "row": 280,
                     "column": 40
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -510,7 +510,7 @@
                     "row": 288,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -529,7 +529,7 @@
                     "row": 292,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -548,7 +548,7 @@
                     "row": 298,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -567,7 +567,7 @@
                     "row": 302,
                     "column": 38
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -586,7 +586,7 @@
                     "row": 2,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -605,7 +605,7 @@
                     "row": 312,
                     "column": 38
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -624,7 +624,7 @@
                     "row": 317,
                     "column": 40
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -643,7 +643,7 @@
                     "row": 2,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -662,7 +662,7 @@
                     "row": 342,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -681,7 +681,7 @@
                     "row": 348,
                     "column": 39
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -700,7 +700,7 @@
                     "row": 361,
                     "column": 41
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -719,7 +719,7 @@
                     "row": 365,
                     "column": 42
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -738,7 +738,7 @@
                     "row": 373,
                     "column": 37
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -757,7 +757,7 @@
                     "row": 392,
                     "column": 36
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -776,7 +776,7 @@
                     "row": 2,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -795,7 +795,7 @@
                     "row": 410,
                     "column": 42
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -814,7 +814,7 @@
                     "row": 416,
                     "column": 45
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -833,7 +833,7 @@
                     "row": 425,
                     "column": 51
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -852,7 +852,7 @@
                     "row": 461,
                     "column": 36
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -871,7 +871,7 @@
                     "row": 465,
                     "column": 42
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -890,7 +890,7 @@
                     "row": 472,
                     "column": 47
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         },
@@ -909,7 +909,7 @@
                     "row": 513,
                     "column": 45
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
             }
         }

@@ -16,8 +16,8 @@
                     "row": 1538,
                     "column": 84
                 },
-                "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/bom.js"
+                "libraryFolder": 0,
+                "file": "/bom.js"
             }
         },
         {
@@ -35,8 +35,8 @@
                     "row": 1406,
                     "column": 21
                 },
-                "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/bom.js"
+                "libraryFolder": 0,
+                "file": "/bom.js"
             }
         },
         {
@@ -54,8 +54,8 @@
                     "row": 1500,
                     "column": 21
                 },
-                "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/bom.js"
+                "libraryFolder": 0,
+                "file": "/bom.js"
             }
         },
         {
@@ -73,8 +73,8 @@
                     "row": 1474,
                     "column": 22
                 },
-                "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/bom.js"
+                "libraryFolder": 0,
+                "file": "/bom.js"
             }
         }
     ],

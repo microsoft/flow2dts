@@ -15,7 +15,7 @@
                     "row": 6,
                     "column": 21
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/TurboModule/RCTExport.js.flow"
             }
         }
@@ -36,7 +36,7 @@
                     "row": 10,
                     "column": 28
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/NativeModules/specs/NativeSourceCode.js.flow"
             }
         }

@@ -16,7 +16,7 @@
                     "row": 20,
                     "column": 20
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Reliability/UserFlow.js.flow"
             }
         }

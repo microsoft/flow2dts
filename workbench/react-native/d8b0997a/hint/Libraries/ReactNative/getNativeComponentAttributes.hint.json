@@ -16,7 +16,7 @@
                     "row": 2,
                     "column": 45
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/ReactNative/getNativeComponentAttributes.js.flow"
             }
         }

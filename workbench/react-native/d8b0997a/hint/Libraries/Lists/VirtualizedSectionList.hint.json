@@ -16,7 +16,7 @@
                     "row": 3,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 289,
                     "column": 29
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/VirtualizedList.js.flow"
             }
         },
@@ -54,7 +54,7 @@
                     "row": 5,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
             }
         },
@@ -73,7 +73,7 @@
                     "row": 282,
                     "column": 2
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/VirtualizedList.js.flow"
             }
         },
@@ -92,8 +92,8 @@
                     "row": 100,
                     "column": 33
                 },
-                "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/react.js"
+                "libraryFolder": 0,
+                "file": "/react.js"
             }
         },
         {
@@ -111,7 +111,7 @@
                     "row": 122,
                     "column": 36
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
             }
         }

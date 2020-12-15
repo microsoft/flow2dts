@@ -16,7 +16,7 @@
                     "row": 2,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Interaction/BridgeSpyStallHandler.js.flow"
             }
         }

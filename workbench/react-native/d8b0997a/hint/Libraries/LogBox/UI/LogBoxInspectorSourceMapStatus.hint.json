@@ -23,7 +23,7 @@
                     "row": 95,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CoreEventTypes.js.flow"
             }
         }
@@ -44,7 +44,7 @@
                     "row": 13,
                     "column": 47
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LogBox/UI/LogBoxInspectorSourceMapStatus.js.flow"
             }
         }

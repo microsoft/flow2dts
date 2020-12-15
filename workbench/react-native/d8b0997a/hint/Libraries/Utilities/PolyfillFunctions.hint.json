@@ -16,7 +16,7 @@
                     "row": 2,
                     "column": 39
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/PolyfillFunctions.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 8,
                     "column": 31
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/PolyfillFunctions.js.flow"
             }
         }

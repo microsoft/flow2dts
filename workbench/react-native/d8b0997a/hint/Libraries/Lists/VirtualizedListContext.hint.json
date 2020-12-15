@@ -15,7 +15,7 @@
                     "row": 289,
                     "column": 29
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/VirtualizedList.js.flow"
             }
         },

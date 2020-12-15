@@ -23,7 +23,7 @@
                     "row": 25,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LogBox/Data/LogBoxLog.js.flow"
             }
         }

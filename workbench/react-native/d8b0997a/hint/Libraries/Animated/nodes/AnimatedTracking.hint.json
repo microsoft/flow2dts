@@ -15,7 +15,7 @@
                     "row": 5,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/animations/Animation.js.flow"
             }
         }
@@ -36,7 +36,7 @@
                     "row": 12,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedValue.js.flow"
             }
         },
@@ -55,7 +55,7 @@
                     "row": 2,
                     "column": 26
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedNode.js.flow"
             }
         },
@@ -74,7 +74,7 @@
                     "row": 4,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedTracking.js.flow"
             }
         },
@@ -93,7 +93,7 @@
                     "row": 9,
                     "column": 30
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedTracking.js.flow"
             }
         }

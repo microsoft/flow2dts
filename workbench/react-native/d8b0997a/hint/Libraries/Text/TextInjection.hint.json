@@ -15,7 +15,7 @@
                     "row": 23,
                     "column": 3
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Text/Text.js.flow"
             }
         }

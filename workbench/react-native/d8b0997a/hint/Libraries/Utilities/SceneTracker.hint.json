@@ -16,7 +16,7 @@
                     "row": 4,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/SceneTracker.js.flow"
             }
         }

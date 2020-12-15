@@ -16,7 +16,7 @@
                     "row": 2,
                     "column": 40
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/setNormalizedColorAlpha.js.flow"
             }
         }

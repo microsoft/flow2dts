@@ -16,7 +16,7 @@
                     "row": 2,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTransformPropTypes.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 8,
                     "column": 36
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTransformPropTypes.js.flow"
             }
         },
@@ -54,7 +54,7 @@
                     "row": 14,
                     "column": 40
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTransformPropTypes.js.flow"
             }
         }

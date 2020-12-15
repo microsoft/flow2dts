@@ -16,7 +16,7 @@
                     "row": 8,
                     "column": 46
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/SpringConfig.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 13,
                     "column": 39
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/SpringConfig.js.flow"
             }
         }

@@ -23,7 +23,7 @@
                     "row": 4,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Switch/AndroidSwitchNativeComponent.js.flow"
             }
         },
@@ -42,7 +42,7 @@
                     "row": 5,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Switch/AndroidSwitchNativeComponent.js.flow"
             }
         },
@@ -61,7 +61,7 @@
                     "row": 7,
                     "column": 26
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Switch/AndroidSwitchNativeComponent.js.flow"
             }
         },
@@ -80,7 +80,7 @@
                     "row": 16,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
@@ -99,7 +99,7 @@
                     "row": 377,
                     "column": 14
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
             }
         }

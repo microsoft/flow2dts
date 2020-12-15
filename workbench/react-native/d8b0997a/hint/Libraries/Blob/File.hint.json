@@ -15,7 +15,7 @@
                     "row": 15,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Blob/BlobTypes.js.flow"
             }
         }
@@ -36,7 +36,7 @@
                     "row": 5,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Blob/Blob.js.flow"
             }
         },
@@ -55,7 +55,7 @@
                     "row": 2,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Blob/File.js.flow"
             }
         },
@@ -74,7 +74,7 @@
                     "row": 7,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Blob/File.js.flow"
             }
         }

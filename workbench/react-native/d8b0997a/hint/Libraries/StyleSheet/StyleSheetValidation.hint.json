@@ -16,7 +16,7 @@
                     "row": 0,
                     "column": 0
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 0,
                     "column": 0
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextStylePropTypes.js.flow"
             }
         },
@@ -54,7 +54,7 @@
                     "row": 0,
                     "column": 0
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -73,7 +73,7 @@
                     "row": 10,
                     "column": 31
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheetValidation.js.flow"
             }
         },
@@ -92,7 +92,7 @@
                     "row": 14,
                     "column": 34
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheetValidation.js.flow"
             }
         }

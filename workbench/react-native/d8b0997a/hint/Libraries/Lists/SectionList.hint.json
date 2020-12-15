@@ -15,7 +15,7 @@
                     "row": 45,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 107,
                     "column": 31
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
             }
         },
@@ -53,7 +53,7 @@
                     "row": 10,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
             }
         },
@@ -72,7 +72,7 @@
                     "row": 99,
                     "column": 10
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
             }
         }
@@ -93,7 +93,7 @@
                     "row": 3,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/SectionList.js.flow"
             }
         },
@@ -112,7 +112,7 @@
                     "row": 122,
                     "column": 36
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
             }
         },
@@ -131,7 +131,7 @@
                     "row": 105,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/SectionList.js.flow"
             }
         },
@@ -150,7 +150,7 @@
                     "row": 105,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/SectionList.js.flow"
             }
         },
@@ -169,8 +169,8 @@
                     "row": 100,
                     "column": 33
                 },
-                "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_2b99574a/react.js"
+                "libraryFolder": 0,
+                "file": "/react.js"
             }
         },
         {
@@ -188,7 +188,7 @@
                     "row": 112,
                     "column": 25
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/SectionList.js.flow"
             }
         }

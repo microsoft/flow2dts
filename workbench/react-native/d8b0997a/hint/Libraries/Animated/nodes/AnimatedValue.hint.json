@@ -15,7 +15,7 @@
                     "row": 5,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/animations/Animation.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 14,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/animations/Animation.js.flow"
             }
         },
@@ -53,7 +53,7 @@
                     "row": 9,
                     "column": 28
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedInterpolation.js.flow"
             }
         },
@@ -72,7 +72,7 @@
                     "row": 9,
                     "column": 30
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedTracking.js.flow"
             }
         }
@@ -93,7 +93,7 @@
                     "row": 18,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedInterpolation.js.flow"
             }
         },
@@ -112,7 +112,7 @@
                     "row": 5,
                     "column": 34
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedWithChildren.js.flow"
             }
         },
@@ -131,7 +131,7 @@
                     "row": 4,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedValue.js.flow"
             }
         },
@@ -150,7 +150,7 @@
                     "row": 12,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/nodes/AnimatedValue.js.flow"
             }
         }

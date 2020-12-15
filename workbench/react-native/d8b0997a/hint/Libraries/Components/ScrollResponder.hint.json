@@ -15,7 +15,7 @@
                     "row": 96,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 95,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CoreEventTypes.js.flow"
             }
         },
@@ -53,7 +53,7 @@
                     "row": 112,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CoreEventTypes.js.flow"
             }
         },
@@ -72,7 +72,7 @@
                     "row": 5,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/vendor/emitter/EventEmitter.js.flow"
             }
         },
@@ -91,7 +91,7 @@
                     "row": 30,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Keyboard/Keyboard.js.flow"
             }
         }
@@ -112,7 +112,7 @@
                     "row": 3,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollResponder.js.flow"
             }
         },
@@ -131,7 +131,7 @@
                     "row": 19,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollResponder.js.flow"
             }
         },
@@ -150,7 +150,7 @@
                     "row": 331,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollResponder.js.flow"
             }
         }

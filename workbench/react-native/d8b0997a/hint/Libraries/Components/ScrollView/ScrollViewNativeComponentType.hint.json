@@ -15,7 +15,7 @@
                     "row": 96,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 377,
                     "column": 14
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
             }
         },
@@ -53,7 +53,7 @@
                     "row": 18,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
@@ -72,7 +72,7 @@
                     "row": 37,
                     "column": 30
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
@@ -91,7 +91,7 @@
                     "row": 16,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
@@ -110,7 +110,7 @@
                     "row": 4,
                     "column": 19
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/EdgeInsetsPropType.js.flow"
             }
         },
@@ -129,7 +129,7 @@
                     "row": 112,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CoreEventTypes.js.flow"
             }
         },
@@ -148,7 +148,7 @@
                     "row": 2,
                     "column": 14
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/PointPropType.js.flow"
             }
         }

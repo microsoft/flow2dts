@@ -15,7 +15,7 @@
                     "row": 137,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Pressability/Pressability.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 8,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Pressability/Pressability.js.flow"
             }
         }

@@ -16,7 +16,7 @@
                     "row": 2,
                     "column": 41
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/defineLazyObjectProperty.js.flow"
             }
         }

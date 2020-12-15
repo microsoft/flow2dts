@@ -15,7 +15,7 @@
                     "row": 377,
                     "column": 14
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 4,
                     "column": 25
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CodegenTypes.js.flow"
             }
         },
@@ -53,7 +53,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CodegenTypes.js.flow"
             }
         },
@@ -72,7 +72,7 @@
                     "row": 15,
                     "column": 11
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CodegenTypes.js.flow"
             }
         },
@@ -91,7 +91,7 @@
                     "row": 16,
                     "column": 10
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CodegenTypes.js.flow"
             }
         },
@@ -110,7 +110,7 @@
                     "row": 17,
                     "column": 10
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CodegenTypes.js.flow"
             }
         },
@@ -129,7 +129,7 @@
                     "row": 21,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CodegenTypes.js.flow"
             }
         },
@@ -148,7 +148,7 @@
                     "row": 96,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
             }
         },
@@ -167,7 +167,7 @@
                     "row": 20,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
@@ -186,7 +186,7 @@
                     "row": 18,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
@@ -205,7 +205,7 @@
                     "row": 16,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
@@ -224,7 +224,7 @@
                     "row": 14,
                     "column": 36
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/TextInput/AndroidTextInputNativeComponent.js.flow"
             }
         }

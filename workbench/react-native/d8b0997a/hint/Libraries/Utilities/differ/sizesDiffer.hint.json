@@ -16,7 +16,7 @@
                     "row": 11,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/differ/sizesDiffer.js.flow"
             }
         }

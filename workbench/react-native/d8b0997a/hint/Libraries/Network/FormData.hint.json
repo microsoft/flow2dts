@@ -16,7 +16,7 @@
                     "row": 19,
                     "column": 22
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Network/FormData.js.flow"
             }
         }

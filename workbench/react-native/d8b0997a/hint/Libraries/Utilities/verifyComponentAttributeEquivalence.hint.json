@@ -15,7 +15,7 @@
                     "row": 45,
                     "column": 39
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
             }
         }
@@ -36,7 +36,7 @@
                     "row": 4,
                     "column": 52
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/verifyComponentAttributeEquivalence.js.flow"
             }
         }

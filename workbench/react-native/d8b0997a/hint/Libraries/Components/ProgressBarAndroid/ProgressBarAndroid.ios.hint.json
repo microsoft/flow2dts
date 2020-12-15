@@ -15,7 +15,7 @@
                     "row": 5,
                     "column": 31
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/UnimplementedViews/UnimplementedView.js.flow"
             }
         }
@@ -36,7 +36,7 @@
                     "row": 5,
                     "column": 31
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/UnimplementedViews/UnimplementedView.js.flow"
             }
         }

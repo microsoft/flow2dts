@@ -16,7 +16,7 @@
                     "row": 2,
                     "column": 34
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Performance/QuickPerformanceLogger.js.flow"
             }
         }

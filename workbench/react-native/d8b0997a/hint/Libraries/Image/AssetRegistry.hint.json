@@ -16,7 +16,7 @@
                     "row": 2,
                     "column": 51
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Image/AssetRegistry.js.flow"
             }
         }

@@ -16,7 +16,7 @@
                     "row": 8,
                     "column": 38
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/codegenNativeCommands.js.flow"
             }
         }

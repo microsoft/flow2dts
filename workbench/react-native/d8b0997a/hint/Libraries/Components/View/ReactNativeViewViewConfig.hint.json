@@ -15,7 +15,7 @@
                     "row": 70,
                     "column": 2
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ReactNativeViewViewConfigAndroid.js.flow"
             }
         }
@@ -36,7 +36,7 @@
                     "row": 17,
                     "column": 4
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ReactNativeViewViewConfigAndroid.js.flow"
             }
         },
@@ -55,7 +55,7 @@
                     "row": 58,
                     "column": 4
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ReactNativeViewViewConfigAndroid.js.flow"
             }
         },
@@ -74,7 +74,7 @@
                     "row": 69,
                     "column": 4
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ReactNativeViewViewConfigAndroid.js.flow"
             }
         },
@@ -93,7 +93,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -112,7 +112,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -131,7 +131,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -150,7 +150,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -169,7 +169,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -188,7 +188,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -207,7 +207,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -226,7 +226,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -245,7 +245,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -264,7 +264,7 @@
                     "row": 0,
                     "column": 0
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/differ/sizesDiffer.js.flow"
             }
         },
@@ -283,7 +283,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -302,7 +302,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -321,7 +321,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -340,7 +340,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -359,7 +359,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -378,7 +378,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -397,7 +397,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -416,7 +416,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -435,7 +435,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -454,7 +454,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -473,7 +473,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -492,7 +492,7 @@
                     "row": 0,
                     "column": 0
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/differ/sizesDiffer.js.flow"
             }
         },
@@ -511,7 +511,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -530,7 +530,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -549,7 +549,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -568,7 +568,7 @@
                     "row": 4,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
             }
         }

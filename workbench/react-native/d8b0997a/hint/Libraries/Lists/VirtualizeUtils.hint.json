@@ -16,7 +16,7 @@
                     "row": 27,
                     "column": 44
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/VirtualizeUtils.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 2,
                     "column": 43
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/VirtualizeUtils.js.flow"
             }
         },
@@ -54,7 +54,7 @@
                     "row": 14,
                     "column": 30
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/VirtualizeUtils.js.flow"
             }
         },
@@ -73,7 +73,7 @@
                     "row": 60,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/VirtualizeUtils.js.flow"
             }
         }

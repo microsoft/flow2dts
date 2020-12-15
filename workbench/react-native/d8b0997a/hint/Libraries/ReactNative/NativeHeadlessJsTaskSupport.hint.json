@@ -15,7 +15,7 @@
                     "row": 6,
                     "column": 21
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/TurboModule/RCTExport.js.flow"
             }
         }
