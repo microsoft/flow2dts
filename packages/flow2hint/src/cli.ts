@@ -74,7 +74,7 @@ async function processLibraryFiles(
   collectedHintFiles: HintFileEntries
 ) {
   const libraryFiles: string[] = []
-  for (const key in collectedHintFiles) {
+  for (const key in collectedHintFiles.files) {
     const hintFile = collectedHintFiles.files[key]
     for (const importKey in hintFile.imports) {
       collectLibraryFile(collectedHintFiles, hintFile.imports[importKey], libraryFiles)

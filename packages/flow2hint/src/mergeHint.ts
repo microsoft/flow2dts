@@ -66,7 +66,7 @@ function resolveImport<T extends ResolvedHintImport>(
 
 export function mergeHint(collectedHintFiles: HintFileEntries): ResolvedHintEntries {
   const mergedEntries: ResolvedHintEntries = { libraries: collectedHintFiles.libraries, files: {} }
-  for (const fileKey in collectedHintFiles) {
+  for (const fileKey in collectedHintFiles.files) {
     const hintFile = collectedHintFiles.files[fileKey]
     const mergedFile: ResolvedHintFile = { imports: {}, typeofs: {} }
     mergedEntries.files[fileKey] = mergedFile
