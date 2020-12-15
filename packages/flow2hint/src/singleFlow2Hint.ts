@@ -28,41 +28,45 @@ function id2decl(id: t.Identifier, t: HintDecl["type"]): HintDecl {
   }
 }
 
-function flowImportAndDeclVisitor(rootDir: string, filename: string): Visitor<HintFile> {
+function flowImportAndDeclVisitor(forLibraryFile: boolean): Visitor<HintFile> {
   return {
     TypeofTypeAnnotation: {
       exit(path, state) {
-        const typeQueryOperator = path.node.argument
-        if (typeQueryOperator.type === "GenericTypeAnnotation") {
-          const local = typeQueryOperator.id.type === "Identifier" ? typeQueryOperator.id : typeQueryOperator.id.id
-          const source = id2hint(local)
-          state.typeofs.push({ source })
+        if (!forLibraryFile) {
+          const typeQueryOperator = path.node.argument
+          if (typeQueryOperator.type === "GenericTypeAnnotation") {
+            const local = typeQueryOperator.id.type === "Identifier" ? typeQueryOperator.id : typeQueryOperator.id.id
+            const source = id2hint(local)
+            state.typeofs.push({ source })
+          }
         }
       },
     },
     ImportDeclaration: {
       exit(path, state) {
-        for (const specifier of path.node.specifiers) {
-          let source: HintIdentifier | undefined
-          switch (specifier.type) {
-            case "ImportDefaultSpecifier": {
-              source = id2hint(specifier.local)
-              break
-            }
-            case "ImportNamespaceSpecifier": {
-              source = id2hint(specifier.local)
-              break
-            }
-            case "ImportSpecifier": {
-              if (specifier.imported.type === "Identifier") {
-                source = id2hint(specifier.imported)
+        if (!forLibraryFile) {
+          for (const specifier of path.node.specifiers) {
+            let source: HintIdentifier | undefined
+            switch (specifier.type) {
+              case "ImportDefaultSpecifier": {
+                source = id2hint(specifier.local)
+                break
               }
-              break
+              case "ImportNamespaceSpecifier": {
+                source = id2hint(specifier.local)
+                break
+              }
+              case "ImportSpecifier": {
+                if (specifier.imported.type === "Identifier") {
+                  source = id2hint(specifier.imported)
+                }
+                break
+              }
             }
-          }
 
-          if (source) {
-            state.imports[specifier.local.name] = { source }
+            if (source) {
+              state.imports[specifier.local.name] = { source }
+            }
           }
         }
       },
@@ -229,11 +233,13 @@ export async function singleFlow2Hint({
   filename,
   outFilename,
   collectedHintFiles,
+  forLibraryFile,
 }: {
   rootDir: string
   filename: string
   outFilename: string
   collectedHintFiles: HintFileEntries
+  forLibraryFile: boolean
 }): Promise<string> {
   const normalizedRootDir = rootDir.replace(/\\/g, "/")
 
@@ -245,8 +251,12 @@ export async function singleFlow2Hint({
   })
 
   const hint: HintFile = { imports: {}, typeofs: [], decls: [] }
-  collectedHintFiles[filename.substr(rootDir.length).replace(/\\/g, "/")] = hint
-  babelTraverse<HintFile>(flowAst, flowImportAndDeclVisitor(rootDir, filename), undefined, hint)
+  if (forLibraryFile) {
+    collectedHintFiles[filename] = hint
+  } else {
+    collectedHintFiles[filename.substr(rootDir.length).replace(/\\/g, "/")] = hint
+  }
+  babelTraverse<HintFile>(flowAst, flowImportAndDeclVisitor(forLibraryFile), undefined, hint)
 
   for (const key in hint.imports) {
     const hintImport = hint.imports[key]
