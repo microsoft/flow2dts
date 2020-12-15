@@ -55,9 +55,9 @@ export type StyleProp<T> = null | void | T | false | "" | ReadonlyArray<StylePro
 export type ImageProps = React.ComponentPropsWithoutRef<$TypeOf<typeof import("../Libraries/Image/Image").default>>
 
 /**
- * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof Text>`.
+ * @deprecated Instead use `import("react-native/Libraries/Text/TextProps").TextProps`.
  */
-export type TextProps = React.ComponentPropsWithoutRef<$TypeOf<typeof import("../Libraries/Text/Text").default>>
+export { TextProps } from "../Libraries/Text/TextProps"
 
 /**
  * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof TouchableWithoutFeedback>`.
@@ -67,11 +67,9 @@ export type TouchableWithoutFeedbackProps = React.ComponentPropsWithoutRef<
 >
 
 /**
- * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof View>`.
+ * @deprecated Instead use `import("react-native/Libraries/Components/View/ViewPropTypes").ViewProps`.
  */
-export type ViewProps = React.ComponentPropsWithoutRef<
-  $TypeOf<typeof import("../Libraries/Components/View/View").default>
->
+export { ViewProps } from "../Libraries/Components/View/ViewPropTypes"
 
 /**
  * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof TouchableHighlight>`.
