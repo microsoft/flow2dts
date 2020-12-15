@@ -16,7 +16,7 @@
                     "row": 3,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 37,
                     "column": 43
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
             }
         },
@@ -54,7 +54,7 @@
                     "row": 38,
                     "column": 46
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
             }
         },
@@ -73,7 +73,7 @@
                     "row": 39,
                     "column": 48
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
             }
         },
@@ -92,7 +92,7 @@
                     "row": 40,
                     "column": 46
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
             }
         },
@@ -111,7 +111,7 @@
                     "row": 41,
                     "column": 48
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
             }
         },
@@ -130,7 +130,7 @@
                     "row": 42,
                     "column": 49
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
             }
         },
@@ -149,7 +149,7 @@
                     "row": 43,
                     "column": 47
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
             }
         },
@@ -168,7 +168,7 @@
                     "row": 74,
                     "column": 36
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
             }
         },
@@ -187,7 +187,7 @@
                     "row": 75,
                     "column": 40
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
             }
         },
@@ -206,7 +206,7 @@
                     "row": 76,
                     "column": 42
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
             }
         },
@@ -225,7 +225,7 @@
                     "row": 78,
                     "column": 43
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
             }
         },
@@ -244,7 +244,7 @@
                     "row": 79,
                     "column": 38
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
             }
         },
@@ -263,7 +263,7 @@
                     "row": 5,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
             }
         }

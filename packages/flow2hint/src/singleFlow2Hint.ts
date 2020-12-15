@@ -196,7 +196,7 @@ async function resolveImport(
             const dirname = path.dirname(file)
             const basename = "/" + path.basename(file)
             let libraryFolder = collectedHintFiles.libraries.indexOf(dirname)
-            if (libraryFolder === undefined) {
+            if (libraryFolder === -1) {
               libraryFolder = collectedHintFiles.libraries.length
               collectedHintFiles.libraries.push(dirname)
             }

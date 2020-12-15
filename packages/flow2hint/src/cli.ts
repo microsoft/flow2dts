@@ -67,7 +67,12 @@ function collectLibraryFile(collectedHintFiles: HintFileEntries, hintImport: Hin
 }
 
 // specifically for Flow's extracted library file
-async function processLibraryFiles(rootDir: string, cwd: string | undefined, collectedHintFiles: HintFileEntries) {
+async function processLibraryFiles(
+  rootDir: string,
+  outDir: string,
+  cwd: string | undefined,
+  collectedHintFiles: HintFileEntries
+) {
   const libraryFiles: string[] = []
   for (const key in collectedHintFiles) {
     const hintFile = collectedHintFiles.files[key]
@@ -81,7 +86,7 @@ async function processLibraryFiles(rootDir: string, cwd: string | undefined, col
 
   libraryFiles.sort()
   for (const filename of libraryFiles) {
-    const outFilename = path.join(rootDir, "__flow__", path.basename(filename, ".js") + ".hint.json")
+    const outFilename = path.join(outDir, "__flow__", path.basename(filename, ".js") + ".hint.json")
     await singleFlow2Hint({ rootDir, filename, outFilename, collectedHintFiles, forLibraryFile: true }).then(
       (outFilename) => {
         console.log(chalk.green(`✓ ${relativePath(cwd, outFilename)}`))
@@ -122,7 +127,7 @@ async function main() {
   const patterns = argv._
 
   const [totalCount, successCount, collectedHintFiles] = await run({ cwd, outDir, rootDir, patterns })
-  await processLibraryFiles(rootDir, cwd, collectedHintFiles)
+  await processLibraryFiles(rootDir, outDir, cwd, collectedHintFiles)
   console.log(`\nSuccessfully converted ${successCount} of ${totalCount}\n`)
 
   const mergedEntries = mergeHint(collectedHintFiles)
