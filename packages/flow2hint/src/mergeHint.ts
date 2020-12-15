@@ -1,10 +1,12 @@
 import {
   HintImport,
   HintDecl,
+  HintFile,
   ResolvedHintEntries,
   ResolvedHintFile,
   ResolvedHintImport,
   ResolvedHintTypeof,
+  HintResolved,
 } from "./hintfile"
 import { HintFileEntries } from "./singleFlow2Hint"
 
@@ -18,6 +20,31 @@ function chooseLater(existing: HintDecl | undefined, comming: HintDecl): HintDec
   }
 }
 
+function resolveImportInternal<T extends ResolvedHintImport>(
+  resolved: HintResolved,
+  resolvedHintFile: HintFile | undefined,
+  unresolvedType: ResolvedHintImport["type"],
+  callback: (type: ResolvedHintImport["type"], resolvedDecl?: HintDecl) => T
+): T {
+  if (!resolvedHintFile) {
+    return callback(unresolvedType)
+  } else {
+    let lastDeclBeforeResolved: HintDecl | undefined
+    for (const hintDecl of resolvedHintFile.decls) {
+      if (hintDecl.row < resolved.begin.row) {
+        lastDeclBeforeResolved = chooseLater(lastDeclBeforeResolved, hintDecl)
+      } else if (hintDecl.row === resolved.begin.row && hintDecl.column <= resolved.begin.column) {
+        lastDeclBeforeResolved = chooseLater(lastDeclBeforeResolved, hintDecl)
+      }
+    }
+    if (!lastDeclBeforeResolved) {
+      return callback(unresolvedType)
+    } else {
+      return callback(lastDeclBeforeResolved.type, lastDeclBeforeResolved)
+    }
+  }
+}
+
 function resolveImport<T extends ResolvedHintImport>(
   collectedHintFiles: HintFileEntries,
   hintImport: HintImport,
@@ -25,35 +52,22 @@ function resolveImport<T extends ResolvedHintImport>(
 ): T {
   if (!hintImport.resolved) {
     return callback("unresolved[error]")
-  } else if (hintImport.resolved.fromLibrary) {
-    return callback("unresolved[library]")
+  } else if (hintImport.resolved.libraryFolder !== -1) {
+    const resolved = hintImport.resolved
+    const resolvedHintFile =
+      collectedHintFiles.files[collectedHintFiles.libraries[resolved.libraryFolder] + resolved.file]
+    return resolveImportInternal<T>(hintImport.resolved, resolvedHintFile, "unresolved[library]", callback)
   } else {
     const resolved = hintImport.resolved
-    const resolvedHintFile = collectedHintFiles[resolved.file]
-    if (!resolvedHintFile) {
-      return callback("unresolved[missing]")
-    } else {
-      let lastDeclBeforeResolved: HintDecl | undefined
-      for (const hintDecl of resolvedHintFile.decls) {
-        if (hintDecl.row < resolved.begin.row) {
-          lastDeclBeforeResolved = chooseLater(lastDeclBeforeResolved, hintDecl)
-        } else if (hintDecl.row === resolved.begin.row && hintDecl.column <= resolved.begin.column) {
-          lastDeclBeforeResolved = chooseLater(lastDeclBeforeResolved, hintDecl)
-        }
-      }
-      if (!lastDeclBeforeResolved) {
-        return callback("unresolved[missing]")
-      } else {
-        return callback(lastDeclBeforeResolved.type, lastDeclBeforeResolved)
-      }
-    }
+    const resolvedHintFile = collectedHintFiles.files[resolved.file]
+    return resolveImportInternal<T>(hintImport.resolved, resolvedHintFile, "unresolved[missing]", callback)
   }
 }
 
 export function mergeHint(collectedHintFiles: HintFileEntries): ResolvedHintEntries {
-  const mergedEntries: ResolvedHintEntries = { files: {} }
+  const mergedEntries: ResolvedHintEntries = { libraries: collectedHintFiles.libraries, files: {} }
   for (const fileKey in collectedHintFiles) {
-    const hintFile = collectedHintFiles[fileKey]
+    const hintFile = collectedHintFiles.files[fileKey]
     const mergedFile: ResolvedHintFile = { imports: {}, typeofs: {} }
     mergedEntries.files[fileKey] = mergedFile
 

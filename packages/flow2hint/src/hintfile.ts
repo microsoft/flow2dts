@@ -10,7 +10,7 @@ export interface HintIdentifier extends HintPos {
 export interface HintResolved {
   begin: HintPos
   end: HintPos
-  fromLibrary: boolean
+  libraryFolder: number // -1: local file
   file: string
 }
 
@@ -32,7 +32,7 @@ export interface HintFile {
 
 export interface ResolvedHintImport {
   /*
-   library: resolved to library files
+   library: resolved to library file but don't know what it is
    missing: resolved to local file but don't know what it is
    error: error while running `flow get-def`
    */
@@ -48,5 +48,6 @@ export interface ResolvedHintFile {
 }
 
 export interface ResolvedHintEntries {
+  libraries: string[]
   files: { [key: string]: ResolvedHintFile }
 }

@@ -155,13 +155,17 @@ const FLOW_BIN = require.resolve("flow-bin/cli.js")
 
 const regexStdout = /^(.+\.js(\.flow)?):(\d+):(\d+),(\d+):(\d+)/
 
-export type HintFileEntries = { [key: string]: HintFile }
+export interface HintFileEntries {
+  libraries: string[]
+  files: { [key: string]: HintFile }
+}
 
 async function resolveImport(
   hintImport: HintImport,
   filename: string,
   rootDir: string,
-  normalizedRootDir: string
+  normalizedRootDir: string,
+  collectedHintFiles: HintFileEntries
 ): Promise<void> {
   hintImport.error = ""
 
@@ -188,11 +192,27 @@ async function resolveImport(
           const end: HintPos = { row: +match[5], column: +match[6] }
           const file = match[1].replace(/\\/g, "/")
           const fromLibrary = file.substr(0, normalizedRootDir.length) !== normalizedRootDir
-          hintImport.resolved = {
-            begin,
-            end,
-            fromLibrary,
-            file: fromLibrary ? file : file.substr(normalizedRootDir.length),
+          if (fromLibrary) {
+            const dirname = path.dirname(file)
+            const basename = "/" + path.basename(file)
+            let libraryFolder = collectedHintFiles.libraries.indexOf(dirname)
+            if (libraryFolder === undefined) {
+              libraryFolder = collectedHintFiles.libraries.length
+              collectedHintFiles.libraries.push(dirname)
+            }
+            hintImport.resolved = {
+              begin,
+              end,
+              libraryFolder,
+              file: basename,
+            }
+          } else {
+            hintImport.resolved = {
+              begin,
+              end,
+              libraryFolder: -1,
+              file: fromLibrary ? file : file.substr(normalizedRootDir.length),
+            }
           }
           hintImport.error = undefined
         } else {
@@ -252,18 +272,18 @@ export async function singleFlow2Hint({
 
   const hint: HintFile = { imports: {}, typeofs: [], decls: [] }
   if (forLibraryFile) {
-    collectedHintFiles[filename] = hint
+    collectedHintFiles.files[filename] = hint
   } else {
-    collectedHintFiles[filename.substr(rootDir.length).replace(/\\/g, "/")] = hint
+    collectedHintFiles.files[filename.substr(rootDir.length).replace(/\\/g, "/")] = hint
   }
   babelTraverse<HintFile>(flowAst, flowImportAndDeclVisitor(forLibraryFile), undefined, hint)
 
   for (const key in hint.imports) {
     const hintImport = hint.imports[key]
-    await resolveImport(hintImport, filename, rootDir, normalizedRootDir)
+    await resolveImport(hintImport, filename, rootDir, normalizedRootDir, collectedHintFiles)
   }
   for (const hintTypeof of hint.typeofs) {
-    await resolveImport(hintTypeof, filename, rootDir, normalizedRootDir)
+    await resolveImport(hintTypeof, filename, rootDir, normalizedRootDir, collectedHintFiles)
   }
 
   const outData = JSON.stringify(hint, undefined, 4)
