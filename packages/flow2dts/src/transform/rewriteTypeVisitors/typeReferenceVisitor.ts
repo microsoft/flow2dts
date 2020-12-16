@@ -216,8 +216,10 @@ export const typeReferenceVisitor: Visitor<State> = {
                 }
                 case "value": {
                   // it is a value, need to add "typeof"
-                  path.replaceWith(t.tsTypeQuery(convertQID(typeQueryOperator.id)))
-                  return
+                  if (typeQueryOperator.id.type !== "Identifier" || typeQueryOperator.id.name !== "undefined") {
+                    path.replaceWith(t.tsTypeQuery(convertQID(typeQueryOperator.id)))
+                    return
+                  }
                 }
               }
             }
