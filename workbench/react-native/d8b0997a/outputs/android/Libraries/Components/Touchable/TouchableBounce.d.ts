@@ -1,7 +1,8 @@
 import { $Diff } from "utility-types";
 // @flow
 import { ViewStyleProp } from "../../StyleSheet/StyleSheet";
-import TouchableWithoutFeedback from "./TouchableWithoutFeedback";
+import TouchableWithoutFeedback$f2tTypeof from "./TouchableWithoutFeedback";
+declare type TouchableWithoutFeedback = typeof TouchableWithoutFeedback$f2tTypeof;
 import Animated from "../../Animated/Animated";
 import * as React from "react";
 declare type Props = Readonly<

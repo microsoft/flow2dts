@@ -1,6 +1,7 @@
 import { $Diff } from "utility-types";
 // @flow
-import TouchableWithoutFeedback from "./TouchableWithoutFeedback";
+import TouchableWithoutFeedback$f2tTypeof from "./TouchableWithoutFeedback";
+declare type TouchableWithoutFeedback = typeof TouchableWithoutFeedback$f2tTypeof;
 import Animated from "../../../Libraries/Animated/src/Animated";
 import { ViewStyleProp } from "../../../Libraries/StyleSheet/StyleSheet";
 import * as React from "react";
