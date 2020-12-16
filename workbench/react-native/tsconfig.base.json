@@ -3,6 +3,7 @@
     "noEmit": true,
     "esModuleInterop": true,
     "lib": ["es2015"],
-    "types": []
+    "types": [],
+    "strict": true
   }
 }
