@@ -9,6 +9,7 @@ import {
   nameForExportDefault,
   nameForExportDefaultRedirect,
   nameForHidden,
+  nameForImportTypeof,
   wrappedTypeOf,
 } from "../utilities"
 
@@ -110,27 +111,23 @@ export const exportVisitor: Visitor<State> = {
       } else {
         // Export each value separately as ES6 named exports
         if (t.isTSTypeLiteral(typeAnnotation)) {
-          const exportSpecifiers = typeAnnotation.members.map((property) => {
-            t.assertTSPropertySignature(property)
-            t.assertTSTypeAnnotation(property.typeAnnotation)
-            const propertyTypeAnnotation = property.typeAnnotation.typeAnnotation
-            t.assertIdentifier(property.key)
-            let inlineType: null | t.TSType = null
-            if (
-              !t.isTSTypeReference(propertyTypeAnnotation) ||
-              (t.isIdentifier(propertyTypeAnnotation.typeName) &&
-                propertyTypeAnnotation.typeName.name !== property.key.name)
-            ) {
-              inlineType = property.typeAnnotation.typeAnnotation
-            }
-            const id = t.identifier(`$f2t_${property.key.name}`)
-            id.typeAnnotation = t.tsTypeAnnotation(inlineType || t.tsTypeReference(property.key))
-            const variableDeclaration = t.variableDeclaration("const", [t.variableDeclarator(id)])
-            variableDeclaration.declare = true
-            path.insertBefore(variableDeclaration)
-            return t.exportSpecifier(id, property.key)
-          })
-          path.insertBefore(t.exportNamedDeclaration(undefined, exportSpecifiers))
+          const exportSpecifiers = <t.ExportSpecifier[]>typeAnnotation.members
+            .map((property) => {
+              t.assertTSPropertySignature(property)
+              t.assertTSTypeAnnotation(property.typeAnnotation)
+              t.assertIdentifier(property.key)
+              // only export names begin with a upper case letter
+              // this is specifically for react-native where a name begins with a lower cased letter is not a react-native class
+              // now the only file still have such kind of export is index.d.ts
+              if (property.key.name === "" || property.key.name[0] !== property.key.name[0].toUpperCase()) {
+                return undefined
+              }
+              return t.exportSpecifier(t.identifier(nameForImportTypeof(property.key.name)), property.key)
+            })
+            .filter((value) => value !== undefined)
+          if (exportSpecifiers.length > 0) {
+            path.insertBefore(t.exportNamedDeclaration(undefined, exportSpecifiers))
+          }
         }
         // Export the entire object as the ES6 default export
         const id = t.identifier(nameForExportDefault)

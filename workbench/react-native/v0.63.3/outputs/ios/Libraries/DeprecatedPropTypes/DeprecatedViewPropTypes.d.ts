@@ -2,43 +2,6 @@ import { $TypeOf, React$PropType$Primitive, ReactPropsCheckType } from "flow2dts
 import $1 from "./DeprecatedEdgeInsetsPropType";
 import $2 from "prop-types";
 declare var stylePropType: ReactPropsCheckType;
-declare const $f2t_accessible: typeof $2.bool;
-declare const $f2t_accessibilityLabel: typeof $2.node;
-declare const $f2t_accessibilityHint: typeof $2.string;
-declare const $f2t_accessibilityActions: React$PropType$Primitive<string[]>;
-declare const $f2t_accessibilityIgnoresInvertColors: typeof $2.bool;
-declare const $f2t_accessibilityRole: React$PropType$Primitive<"none" | "button" | "link" | "search" | "image" | "keyboardkey" | "text" | "adjustable" | "imagebutton" | "header" | "summary" | "alert" | "checkbox" | "combobox" | "menu" | "menubar" | "menuitem" | "progressbar" | "radio" | "radiogroup" | "scrollbar" | "spinbutton" | "switch" | "tab" | "tablist" | "timer" | "toolbar">;
-declare const $f2t_accessibilityState: typeof $2.object;
-declare const $f2t_accessibilityValue: typeof $2.object;
-declare const $f2t_accessibilityLiveRegion: React$PropType$Primitive<"none" | "polite" | "assertive">;
-declare const $f2t_importantForAccessibility: React$PropType$Primitive<"auto" | "yes" | "no" | "no-hide-descendants">;
-declare const $f2t_accessibilityViewIsModal: typeof $2.bool;
-declare const $f2t_accessibilityElementsHidden: typeof $2.bool;
-declare const $f2t_onAccessibilityAction: typeof $2.func;
-declare const $f2t_onAccessibilityTap: typeof $2.func;
-declare const $f2t_onMagicTap: typeof $2.func;
-declare const $f2t_testID: typeof $2.string;
-declare const $f2t_nativeID: typeof $2.string;
-declare const $f2t_onResponderGrant: typeof $2.func;
-declare const $f2t_onResponderMove: typeof $2.func;
-declare const $f2t_onResponderReject: typeof $2.func;
-declare const $f2t_onResponderRelease: typeof $2.func;
-declare const $f2t_onResponderTerminate: typeof $2.func;
-declare const $f2t_onResponderTerminationRequest: typeof $2.func;
-declare const $f2t_onStartShouldSetResponder: typeof $2.func;
-declare const $f2t_onStartShouldSetResponderCapture: typeof $2.func;
-declare const $f2t_onMoveShouldSetResponder: typeof $2.func;
-declare const $f2t_onMoveShouldSetResponderCapture: typeof $2.func;
-declare const $f2t_hitSlop: $TypeOf<typeof $1>;
-declare const $f2t_onLayout: typeof $2.func;
-declare const $f2t_pointerEvents: React$PropType$Primitive<"box-none" | "none" | "box-only" | "auto">;
-declare const $f2t_style: typeof stylePropType;
-declare const $f2t_removeClippedSubviews: typeof $2.bool;
-declare const $f2t_renderToHardwareTextureAndroid: typeof $2.bool;
-declare const $f2t_shouldRasterizeIOS: typeof $2.bool;
-declare const $f2t_collapsable: typeof $2.bool;
-declare const $f2t_needsOffscreenAlphaCompositing: typeof $2.bool;
-export { $f2t_accessible as accessible, $f2t_accessibilityLabel as accessibilityLabel, $f2t_accessibilityHint as accessibilityHint, $f2t_accessibilityActions as accessibilityActions, $f2t_accessibilityIgnoresInvertColors as accessibilityIgnoresInvertColors, $f2t_accessibilityRole as accessibilityRole, $f2t_accessibilityState as accessibilityState, $f2t_accessibilityValue as accessibilityValue, $f2t_accessibilityLiveRegion as accessibilityLiveRegion, $f2t_importantForAccessibility as importantForAccessibility, $f2t_accessibilityViewIsModal as accessibilityViewIsModal, $f2t_accessibilityElementsHidden as accessibilityElementsHidden, $f2t_onAccessibilityAction as onAccessibilityAction, $f2t_onAccessibilityTap as onAccessibilityTap, $f2t_onMagicTap as onMagicTap, $f2t_testID as testID, $f2t_nativeID as nativeID, $f2t_onResponderGrant as onResponderGrant, $f2t_onResponderMove as onResponderMove, $f2t_onResponderReject as onResponderReject, $f2t_onResponderRelease as onResponderRelease, $f2t_onResponderTerminate as onResponderTerminate, $f2t_onResponderTerminationRequest as onResponderTerminationRequest, $f2t_onStartShouldSetResponder as onStartShouldSetResponder, $f2t_onStartShouldSetResponderCapture as onStartShouldSetResponderCapture, $f2t_onMoveShouldSetResponder as onMoveShouldSetResponder, $f2t_onMoveShouldSetResponderCapture as onMoveShouldSetResponderCapture, $f2t_hitSlop as hitSlop, $f2t_onLayout as onLayout, $f2t_pointerEvents as pointerEvents, $f2t_style as style, $f2t_removeClippedSubviews as removeClippedSubviews, $f2t_renderToHardwareTextureAndroid as renderToHardwareTextureAndroid, $f2t_shouldRasterizeIOS as shouldRasterizeIOS, $f2t_collapsable as collapsable, $f2t_needsOffscreenAlphaCompositing as needsOffscreenAlphaCompositing };
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
