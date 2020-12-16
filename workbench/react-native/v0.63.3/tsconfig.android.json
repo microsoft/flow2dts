@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "noEmit": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "lib": ["es2015"]
   },
   "include": ["./outputs/android/**/*.d.ts"]
 }
