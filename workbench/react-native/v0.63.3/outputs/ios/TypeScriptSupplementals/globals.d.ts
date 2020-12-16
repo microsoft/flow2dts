@@ -5,7 +5,7 @@ export interface ErrorUtils {
   getGlobalHandler: () => ErrorHandlerCallback
 }
 
-global {
+declare global {
   interface NodeRequire {
     (id: string): any
   }
