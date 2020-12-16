@@ -13,13 +13,13 @@ declare type Props = Readonly<
 ViewProps & {
   /**
   If true the user won't be able to toggle the switch.
-    @default false
+   @default false
   */
   disabled?: null | undefined | boolean;
 
   /**
   The value of the switch. If true the switch will be turned on.
-    @default false
+   @default false
   */
   value?: null | undefined | boolean;
 
@@ -30,7 +30,7 @@ ViewProps & {
 
   /**
   Custom colors for the switch track.
-    _iOS_: When the switch value is false, the track shrinks into the border. If you want to change the
+   _iOS_: When the switch value is false, the track shrinks into the border. If you want to change the
   color of the background exposed by the shrunken track, use
    [`ios_backgroundColor`](https://reactnative.dev/docs/switch#ios_backgroundColor).
   */
