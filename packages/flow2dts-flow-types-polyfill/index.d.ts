@@ -50,12 +50,7 @@ export type React$PropType$Primitive<T> = PropTypes.Requireable<T>
 /**
  * @see https://github.com/facebook/flow/blob/887103710b5e5ca5c2acc6af8adbf6d79d9cbc7b/lib/react.js#L458-L462
  */
-export type ReactPropsCheckType = (
-  props: any,
-  propName: string,
-  componentName: string,
-  href?: string
-) => Error | null | undefined
+export type ReactPropsCheckType = PropTypes.Validator<any>
 
 /**
  * @see https://github.com/facebook/flow/blob/887103710b5e5ca5c2acc6af8adbf6d79d9cbc7b/lib/react.js#L464-L468
