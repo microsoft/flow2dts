@@ -114,20 +114,21 @@ export const exportVisitor: Visitor<State> = {
           const exportSpecifiers = <t.ExportSpecifier[]>typeAnnotation.members
             .map((property) => {
               t.assertTSPropertySignature(property)
-              t.assertTSTypeAnnotation(property.typeAnnotation)
               t.assertIdentifier(property.key)
+              t.assertTSTypeAnnotation(property.typeAnnotation)
+              const typeAnnotation = property.typeAnnotation.typeAnnotation
               // only export names begin with a upper case letter
               // this is specifically for react-native where a name begins with a lower cased letter is not a react-native class
               // now the only file still have such kind of export is index.d.ts
-              if (property.key.name === "" || property.key.name[0] !== property.key.name[0].toUpperCase()) {
-                return undefined
+              if (
+                /^[A-Z]/.test(property.key.name) &&
+                t.isTSTypeReference(typeAnnotation) &&
+                t.isIdentifier(typeAnnotation.typeName) &&
+                /^[A-Z]/.test(typeAnnotation.typeName.name)
+              ) {
+                return t.exportSpecifier(t.identifier(nameForImportTypeof(typeAnnotation.typeName.name)), property.key)
               }
-              const typeAnnotation = property.typeAnnotation.typeAnnotation
-              const exportName =
-                t.isTSTypeReference(typeAnnotation) && t.isIdentifier(typeAnnotation.typeName)
-                  ? typeAnnotation.typeName.name
-                  : property.key.name
-              return t.exportSpecifier(t.identifier(nameForImportTypeof(exportName)), property.key)
+              return undefined
             })
             .filter((value) => value !== undefined)
           if (exportSpecifiers.length > 0) {
