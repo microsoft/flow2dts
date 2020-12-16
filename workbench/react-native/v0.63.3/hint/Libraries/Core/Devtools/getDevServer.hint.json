@@ -16,7 +16,7 @@
                     "row": 8,
                     "column": 29
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Core/Devtools/getDevServer.js.flow"
             }
         }

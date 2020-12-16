@@ -16,7 +16,7 @@
                     "row": 5,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ToastAndroid/ToastAndroid.ios.js.flow"
             }
         }

@@ -15,7 +15,7 @@
                     "row": 15,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 7,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
             }
         },
@@ -53,7 +53,7 @@
                     "row": 60,
                     "column": 38
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/TouchableWithoutFeedback.js.flow"
             }
         },
@@ -72,7 +72,7 @@
                     "row": 13,
                     "column": 1
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/View.js.flow"
             }
         },
@@ -101,7 +101,7 @@
                     "row": 13,
                     "column": 1
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/View.js.flow"
             }
         }

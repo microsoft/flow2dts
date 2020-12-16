@@ -16,7 +16,7 @@
                     "row": 33,
                     "column": 40
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/createPerformanceLogger.js.flow"
             }
         }

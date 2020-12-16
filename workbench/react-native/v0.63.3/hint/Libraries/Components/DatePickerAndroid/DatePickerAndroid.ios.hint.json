@@ -15,7 +15,7 @@
                     "row": 2,
                     "column": 12
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/DatePickerAndroid/DatePickerAndroidTypes.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 11,
                     "column": 25
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/DatePickerAndroid/DatePickerAndroidTypes.js.flow"
             }
         }
@@ -55,7 +55,7 @@
                     "row": 5,
                     "column": 31
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/DatePickerAndroid/DatePickerAndroid.ios.js.flow"
             }
         }

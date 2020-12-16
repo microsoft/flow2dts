@@ -16,7 +16,7 @@
                     "row": 2,
                     "column": 25
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/warnOnce.js.flow"
             }
         }

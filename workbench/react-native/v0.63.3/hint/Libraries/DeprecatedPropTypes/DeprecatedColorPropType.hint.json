@@ -16,7 +16,7 @@
                     "row": 5,
                     "column": 25
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedColorPropType.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 5,
                     "column": 25
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedColorPropType.js.flow"
             }
         },
@@ -54,7 +54,7 @@
                     "row": 15,
                     "column": 25
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedColorPropType.js.flow"
             }
         }

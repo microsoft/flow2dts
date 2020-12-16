@@ -15,8 +15,8 @@
                     "row": 282,
                     "column": 32
                 },
-                "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_4ef3c26/react.js"
+                "libraryFolder": 0,
+                "file": "/react.js"
             }
         },
         "Ref": {
@@ -34,8 +34,8 @@
                     "row": 267,
                     "column": 25
                 },
-                "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_4ef3c26/react.js"
+                "libraryFolder": 0,
+                "file": "/react.js"
             }
         }
     },
@@ -55,7 +55,7 @@
                     "row": 12,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/setAndForwardRef.js.flow"
             }
         }

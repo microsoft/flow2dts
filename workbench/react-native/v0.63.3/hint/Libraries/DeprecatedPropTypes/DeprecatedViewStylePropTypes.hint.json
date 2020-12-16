@@ -16,7 +16,7 @@
                     "row": 0,
                     "column": 0
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedColorPropType.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 0,
                     "column": 0
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
             }
         },
@@ -54,7 +54,7 @@
                     "row": 0,
                     "column": 0
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow"
             }
         },
@@ -73,7 +73,7 @@
                     "row": 39,
                     "column": 2
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTransformPropTypes.js.flow"
             }
         },
@@ -92,7 +92,7 @@
                     "row": 11,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -111,7 +111,7 @@
                     "row": 4,
                     "column": 37
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -130,7 +130,7 @@
                     "row": 6,
                     "column": 40
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -149,7 +149,7 @@
                     "row": 8,
                     "column": 40
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -168,7 +168,7 @@
                     "row": 2,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -187,7 +187,7 @@
                     "row": 2,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -206,7 +206,7 @@
                     "row": 2,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -225,7 +225,7 @@
                     "row": 2,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -244,7 +244,7 @@
                     "row": 2,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -263,7 +263,7 @@
                     "row": 2,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -282,7 +282,7 @@
                     "row": 2,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -301,7 +301,7 @@
                     "row": 2,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -320,7 +320,7 @@
                     "row": 26,
                     "column": 44
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -339,7 +339,7 @@
                     "row": 27,
                     "column": 51
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -358,7 +358,7 @@
                     "row": 28,
                     "column": 52
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -377,7 +377,7 @@
                     "row": 29,
                     "column": 52
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -396,7 +396,7 @@
                     "row": 30,
                     "column": 50
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -415,7 +415,7 @@
                     "row": 31,
                     "column": 54
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -434,7 +434,7 @@
                     "row": 32,
                     "column": 55
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -453,7 +453,7 @@
                     "row": 33,
                     "column": 55
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -472,7 +472,7 @@
                     "row": 34,
                     "column": 53
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -491,7 +491,7 @@
                     "row": 36,
                     "column": 43
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -510,7 +510,7 @@
                     "row": 37,
                     "column": 46
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -529,7 +529,7 @@
                     "row": 38,
                     "column": 48
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -548,7 +548,7 @@
                     "row": 39,
                     "column": 49
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -567,7 +567,7 @@
                     "row": 40,
                     "column": 47
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -586,7 +586,7 @@
                     "row": 41,
                     "column": 39
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -605,7 +605,7 @@
                     "row": 49,
                     "column": 41
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         },
@@ -624,7 +624,7 @@
                     "row": 13,
                     "column": 40
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow"
             }
         }

@@ -23,7 +23,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CodegenTypes.js.flow"
             }
         },
@@ -42,7 +42,7 @@
                     "row": 17,
                     "column": 10
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CodegenTypes.js.flow"
             }
         },
@@ -61,7 +61,7 @@
                     "row": 21,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CodegenTypes.js.flow"
             }
         },
@@ -80,7 +80,7 @@
                     "row": 96,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
             }
         },
@@ -99,7 +99,7 @@
                     "row": 17,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
@@ -118,7 +118,7 @@
                     "row": 7,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
             }
         },
@@ -137,7 +137,7 @@
                     "row": 5,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
@@ -156,7 +156,7 @@
                     "row": 389,
                     "column": 14
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
             }
         }

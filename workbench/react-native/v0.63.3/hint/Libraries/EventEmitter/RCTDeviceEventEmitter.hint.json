@@ -15,7 +15,7 @@
                     "row": 8,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/vendor/emitter/EmitterSubscription.js.flow"
             }
         }
@@ -36,7 +36,7 @@
                     "row": 25,
                     "column": 26
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/vendor/emitter/EventEmitter.js.flow"
             }
         },
@@ -55,7 +55,7 @@
                     "row": 4,
                     "column": 37
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/vendor/emitter/EventSubscriptionVendor.js.flow"
             }
         },
@@ -74,7 +74,7 @@
                     "row": 2,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/EventEmitter/RCTDeviceEventEmitter.js.flow"
             }
         }

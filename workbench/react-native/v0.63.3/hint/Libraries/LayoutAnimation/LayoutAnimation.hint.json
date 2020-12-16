@@ -16,7 +16,7 @@
                     "row": 32,
                     "column": 30
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LayoutAnimation/LayoutAnimation.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 37,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LayoutAnimation/LayoutAnimation.js.flow"
             }
         },
@@ -54,7 +54,7 @@
                     "row": 43,
                     "column": 19
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LayoutAnimation/LayoutAnimation.js.flow"
             }
         },
@@ -73,7 +73,7 @@
                     "row": 63,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LayoutAnimation/LayoutAnimation.js.flow"
             }
         }

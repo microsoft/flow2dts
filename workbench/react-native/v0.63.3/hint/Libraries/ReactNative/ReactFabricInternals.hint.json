@@ -16,7 +16,7 @@
                     "row": 7,
                     "column": 11
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Renderer/shims/createReactNativeComponentClass.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 2,
                     "column": 43
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/ReactNative/ReactFabricInternals.js.flow"
             }
         }

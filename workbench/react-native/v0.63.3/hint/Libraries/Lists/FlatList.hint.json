@@ -15,7 +15,7 @@
                     "row": 47,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 77,
                     "column": 34
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollView/ScrollViewNativeComponentType.js.flow"
             }
         },
@@ -53,7 +53,7 @@
                     "row": 15,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
@@ -72,7 +72,7 @@
                     "row": 33,
                     "column": 19
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/VirtualizedList.js.flow"
             }
         }
@@ -93,7 +93,7 @@
                     "row": 3,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/FlatList.js.flow"
             }
         },
@@ -112,7 +112,7 @@
                     "row": 13,
                     "column": 1
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/View.js.flow"
             }
         },
@@ -131,7 +131,7 @@
                     "row": 315,
                     "column": 29
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/VirtualizedList.js.flow"
             }
         },
@@ -150,7 +150,7 @@
                     "row": 6,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/FlatList.js.flow"
             }
         },
@@ -169,7 +169,7 @@
                     "row": 144,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/FlatList.js.flow"
             }
         },
@@ -188,7 +188,7 @@
                     "row": 144,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/FlatList.js.flow"
             }
         },
@@ -207,7 +207,7 @@
                     "row": 4,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/FlatList.js.flow"
             }
         },
@@ -226,8 +226,8 @@
                     "row": 100,
                     "column": 33
                 },
-                "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_4ef3c26/react.js"
+                "libraryFolder": 0,
+                "file": "/react.js"
             }
         },
         {
@@ -245,7 +245,7 @@
                     "row": 156,
                     "column": 22
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/FlatList.js.flow"
             }
         }

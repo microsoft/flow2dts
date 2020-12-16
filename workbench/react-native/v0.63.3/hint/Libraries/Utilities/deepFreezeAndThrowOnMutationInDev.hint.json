@@ -16,7 +16,7 @@
                     "row": 2,
                     "column": 50
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/deepFreezeAndThrowOnMutationInDev.js.flow"
             }
         }

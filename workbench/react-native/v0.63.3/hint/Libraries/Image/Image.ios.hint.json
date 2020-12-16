@@ -15,7 +15,7 @@
                     "row": 59,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Image/ImageProps.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 29,
                     "column": 49
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Image/ImageViewNativeComponent.js.flow"
             }
         }
@@ -55,7 +55,7 @@
                     "row": 0,
                     "column": 0
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow"
             }
         },
@@ -74,7 +74,7 @@
                     "row": 5,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Image/Image.ios.js.flow"
             }
         },
@@ -93,7 +93,7 @@
                     "row": 11,
                     "column": 70
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Image/resolveAssetSource.js.flow"
             }
         },
@@ -112,7 +112,7 @@
                     "row": 14,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Image/Image.ios.js.flow"
             }
         },
@@ -131,7 +131,7 @@
                     "row": 20,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Image/Image.ios.js.flow"
             }
         },
@@ -150,7 +150,7 @@
                     "row": 27,
                     "column": 25
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Image/Image.ios.js.flow"
             }
         },
@@ -169,7 +169,7 @@
                     "row": 29,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Image/Image.ios.js.flow"
             }
         },
@@ -188,7 +188,7 @@
                     "row": 7,
                     "column": 30
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Image/Image.ios.js.flow"
             }
         },
@@ -207,7 +207,7 @@
                     "row": 2,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Image/Image.ios.js.flow"
             }
         },
@@ -226,7 +226,7 @@
                     "row": 29,
                     "column": 49
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Image/ImageViewNativeComponent.js.flow"
             }
         }

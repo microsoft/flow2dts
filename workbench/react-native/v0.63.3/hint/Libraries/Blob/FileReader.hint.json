@@ -16,7 +16,7 @@
                     "row": 5,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Blob/Blob.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 14,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Blob/FileReader.js.flow"
             }
         }

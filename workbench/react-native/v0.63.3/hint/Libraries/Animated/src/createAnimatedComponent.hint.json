@@ -16,7 +16,7 @@
                     "row": 3,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/src/createAnimatedComponent.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 10,
                     "column": 40
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/src/createAnimatedComponent.js.flow"
             }
         }

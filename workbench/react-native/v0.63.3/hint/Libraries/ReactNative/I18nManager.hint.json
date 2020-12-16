@@ -16,7 +16,7 @@
                     "row": 4,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/ReactNative/I18nManager.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 3,
                     "column": 34
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/ReactNative/I18nManager.js.flow"
             }
         }

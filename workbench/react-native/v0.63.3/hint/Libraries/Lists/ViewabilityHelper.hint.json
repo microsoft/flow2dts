@@ -16,7 +16,7 @@
                     "row": 52,
                     "column": 31
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/ViewabilityHelper.js.flow"
             }
         }

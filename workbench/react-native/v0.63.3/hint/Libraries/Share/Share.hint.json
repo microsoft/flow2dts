@@ -16,7 +16,7 @@
                     "row": 21,
                     "column": 19
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Share/Share.js.flow"
             }
         }

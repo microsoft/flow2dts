@@ -15,7 +15,7 @@
                     "row": 2,
                     "column": 19
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Image/ImageSource.js.flow"
             }
         }
@@ -36,7 +36,7 @@
                     "row": 17,
                     "column": 34
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Image/nativeImageSource.js.flow"
             }
         }

@@ -15,7 +15,7 @@
                     "row": 12,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/src/nodes/AnimatedValue.js.flow"
             }
         }
@@ -36,7 +36,7 @@
                     "row": 14,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/src/animations/Animation.js.flow"
             }
         }

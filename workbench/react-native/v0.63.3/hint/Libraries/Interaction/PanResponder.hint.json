@@ -15,7 +15,7 @@
                     "row": 95,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CoreEventTypes.js.flow"
             }
         }
@@ -36,7 +36,7 @@
                     "row": 90,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Interaction/PanResponder.js.flow"
             }
         },
@@ -55,7 +55,7 @@
                     "row": 90,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Interaction/PanResponder.js.flow"
             }
         }

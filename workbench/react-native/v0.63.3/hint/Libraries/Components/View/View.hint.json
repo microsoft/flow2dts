@@ -15,7 +15,7 @@
                     "row": 389,
                     "column": 14
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 7,
                     "column": 55
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ViewNativeComponent.js.flow"
             }
         }
@@ -55,7 +55,7 @@
                     "row": 5,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/View.js.flow"
             }
         },
@@ -74,7 +74,7 @@
                     "row": 7,
                     "column": 55
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ViewNativeComponent.js.flow"
             }
         },
@@ -93,7 +93,7 @@
                     "row": 10,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/View.js.flow"
             }
         }

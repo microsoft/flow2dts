@@ -16,7 +16,7 @@
                     "row": 2,
                     "column": 44
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ReactNativeViewViewConfigAndroid.js.flow"
             }
         }

@@ -15,7 +15,7 @@
                     "row": 8,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/vendor/emitter/EmitterSubscription.js.flow"
             }
         }
@@ -36,7 +36,7 @@
                     "row": 13,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
             }
         },
@@ -55,7 +55,7 @@
                     "row": 7,
                     "column": 28
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/AppleTV/TVEventHandler.js.flow"
             }
         }

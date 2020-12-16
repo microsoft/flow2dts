@@ -16,7 +16,7 @@
                     "row": 5,
                     "column": 22
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/polyfills/error-guard.js.flow"
             }
         }

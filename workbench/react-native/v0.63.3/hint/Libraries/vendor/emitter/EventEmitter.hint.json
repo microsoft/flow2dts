@@ -16,7 +16,7 @@
                     "row": 25,
                     "column": 26
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/vendor/emitter/EventEmitter.js.flow"
             }
         }

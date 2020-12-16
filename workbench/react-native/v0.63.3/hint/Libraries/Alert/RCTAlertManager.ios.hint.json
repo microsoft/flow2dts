@@ -15,7 +15,7 @@
                     "row": 4,
                     "column": 9
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Alert/NativeAlertManager.js.flow"
             }
         }

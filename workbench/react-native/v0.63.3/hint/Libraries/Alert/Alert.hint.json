@@ -16,7 +16,7 @@
                     "row": 19,
                     "column": 19
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Alert/Alert.js.flow"
             }
         }

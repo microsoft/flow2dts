@@ -23,7 +23,7 @@
                     "row": 95,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CoreEventTypes.js.flow"
             }
         },
@@ -42,7 +42,7 @@
                     "row": 4,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Core/NativeExceptionsManager.js.flow"
             }
         }
@@ -63,7 +63,7 @@
                     "row": 14,
                     "column": 42
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LogBox/UI/LogBoxInspectorStackFrame.js.flow"
             }
         }

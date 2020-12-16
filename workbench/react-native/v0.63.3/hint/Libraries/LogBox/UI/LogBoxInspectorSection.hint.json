@@ -25,7 +25,7 @@
                     "row": 12,
                     "column": 39
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LogBox/UI/LogBoxInspectorSection.js.flow"
             }
         }

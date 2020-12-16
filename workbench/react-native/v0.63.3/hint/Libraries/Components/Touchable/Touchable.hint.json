@@ -15,7 +15,7 @@
                     "row": 4,
                     "column": 19
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/EdgeInsetsPropType.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 95,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CoreEventTypes.js.flow"
             }
         }
@@ -55,7 +55,7 @@
                     "row": 3,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/Touchable.js.flow"
             }
         },
@@ -74,7 +74,7 @@
                     "row": 9,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/Touchable.js.flow"
             }
         },
@@ -93,7 +93,7 @@
                     "row": 10,
                     "column": 60
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/Touchable.js.flow"
             }
         },
@@ -112,7 +112,7 @@
                     "row": 11,
                     "column": 62
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/Touchable.js.flow"
             }
         },
@@ -131,7 +131,7 @@
                     "row": 12,
                     "column": 56
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/Touchable.js.flow"
             }
         },
@@ -150,7 +150,7 @@
                     "row": 13,
                     "column": 58
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/Touchable.js.flow"
             }
         },
@@ -169,7 +169,7 @@
                     "row": 14,
                     "column": 66
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/Touchable.js.flow"
             }
         },
@@ -188,7 +188,7 @@
                     "row": 15,
                     "column": 68
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/Touchable.js.flow"
             }
         },
@@ -207,7 +207,7 @@
                     "row": 16,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/Touchable.js.flow"
             }
         },
@@ -226,7 +226,7 @@
                     "row": 30,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/Touchable.js.flow"
             }
         },
@@ -245,7 +245,7 @@
                     "row": 31,
                     "column": 36
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/Touchable.js.flow"
             }
         },
@@ -264,7 +264,7 @@
                     "row": 32,
                     "column": 40
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/Touchable.js.flow"
             }
         },
@@ -283,7 +283,7 @@
                     "row": 33,
                     "column": 46
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/Touchable.js.flow"
             }
         },
@@ -302,7 +302,7 @@
                     "row": 34,
                     "column": 38
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/Touchable.js.flow"
             }
         },
@@ -321,7 +321,7 @@
                     "row": 35,
                     "column": 38
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/Touchable.js.flow"
             }
         },
@@ -340,7 +340,7 @@
                     "row": 36,
                     "column": 44
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/Touchable.js.flow"
             }
         },
@@ -359,7 +359,7 @@
                     "row": 48,
                     "column": 26
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/Touchable.js.flow"
             }
         },
@@ -378,7 +378,7 @@
                     "row": 264,
                     "column": 21
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/Touchable/Touchable.js.flow"
             }
         }

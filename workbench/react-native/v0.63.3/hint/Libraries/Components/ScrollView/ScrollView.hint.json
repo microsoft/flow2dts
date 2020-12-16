@@ -15,7 +15,7 @@
                     "row": 4,
                     "column": 19
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/EdgeInsetsPropType.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 2,
                     "column": 14
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/PointPropType.js.flow"
             }
         },
@@ -53,7 +53,7 @@
                     "row": 15,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
@@ -72,7 +72,7 @@
                     "row": 7,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
             }
         },
@@ -91,7 +91,7 @@
                     "row": 95,
                     "column": 15
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CoreEventTypes.js.flow"
             }
         },
@@ -110,7 +110,7 @@
                     "row": 112,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CoreEventTypes.js.flow"
             }
         },
@@ -129,7 +129,7 @@
                     "row": 96,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
             }
         },
@@ -148,7 +148,7 @@
                     "row": 12,
                     "column": 10
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollResponder.js.flow"
             }
         },
@@ -167,7 +167,7 @@
                     "row": 389,
                     "column": 14
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
             }
         },
@@ -186,7 +186,7 @@
                     "row": 9,
                     "column": 10
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollView/ScrollViewStickyHeader.js.flow"
             }
         },
@@ -205,7 +205,7 @@
                     "row": 77,
                     "column": 73
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollView/ScrollViewNativeComponentType.js.flow"
             }
         }
@@ -226,7 +226,7 @@
                     "row": 3,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
             }
         },
@@ -245,7 +245,7 @@
                     "row": 334,
                     "column": 2
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollResponder.js.flow"
             }
         },
@@ -264,7 +264,7 @@
                     "row": 13,
                     "column": 1
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/View.js.flow"
             }
         },
@@ -283,7 +283,7 @@
                     "row": 330,
                     "column": 2
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollResponder.js.flow"
             }
         },
@@ -302,7 +302,7 @@
                     "row": 330,
                     "column": 2
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollResponder.js.flow"
             }
         },
@@ -321,7 +321,7 @@
                     "row": 8,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
             }
         },
@@ -340,7 +340,7 @@
                     "row": 77,
                     "column": 73
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollView/ScrollViewNativeComponentType.js.flow"
             }
         },
@@ -359,7 +359,7 @@
                     "row": 581,
                     "column": 19
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
             }
         },
@@ -378,7 +378,7 @@
                     "row": 8,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
             }
         },
@@ -397,8 +397,8 @@
                     "row": 26,
                     "column": 29
                 },
-                "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_4ef3c26/react.js"
+                "libraryFolder": 0,
+                "file": "/react.js"
             }
         },
         {
@@ -416,7 +416,7 @@
                     "row": 589,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
             }
         }

@@ -23,7 +23,7 @@
                     "row": 12,
                     "column": 14
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LogBox/Data/parseLogBoxLog.js.flow"
             }
         }
@@ -44,7 +44,7 @@
                     "row": 12,
                     "column": 41
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LogBox/UI/LogBoxInspectorCodeFrame.js.flow"
             }
         }

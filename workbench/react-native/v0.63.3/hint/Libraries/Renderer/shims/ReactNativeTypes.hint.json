@@ -15,8 +15,8 @@
                     "row": 282,
                     "column": 32
                 },
-                "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_4ef3c26/react.js"
+                "libraryFolder": 0,
+                "file": "/react.js"
             }
         },
         "AbstractComponent": {
@@ -34,8 +34,8 @@
                     "row": 258,
                     "column": 39
                 },
-                "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_4ef3c26/react.js"
+                "libraryFolder": 0,
+                "file": "/react.js"
             }
         }
     },

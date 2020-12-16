@@ -16,7 +16,7 @@
                     "row": 15,
                     "column": 30
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Image/AssetRegistry.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 17,
                     "column": 29
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Image/AssetRegistry.js.flow"
             }
         }

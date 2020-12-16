@@ -16,7 +16,7 @@
                     "row": 2,
                     "column": 20
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Settings/Settings.ios.js.flow"
             }
         }

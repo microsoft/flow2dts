@@ -15,7 +15,7 @@
                     "row": 77,
                     "column": 34
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollView/ScrollViewNativeComponentType.js.flow"
             }
         }

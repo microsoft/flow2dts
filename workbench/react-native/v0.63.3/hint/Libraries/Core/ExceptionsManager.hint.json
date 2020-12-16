@@ -15,7 +15,7 @@
                     "row": 12,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Core/NativeExceptionsManager.js.flow"
             }
         }
@@ -36,8 +36,8 @@
                     "row": 1536,
                     "column": 19
                 },
-                "fromLibrary": true,
-                "file": "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_4ef3c26/core.js"
+                "libraryFolder": 0,
+                "file": "/core.js"
             }
         },
         {
@@ -55,7 +55,7 @@
                     "row": 16,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Core/ExceptionsManager.js.flow"
             }
         },
@@ -74,7 +74,7 @@
                     "row": 18,
                     "column": 44
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Core/ExceptionsManager.js.flow"
             }
         },
@@ -93,7 +93,7 @@
                     "row": 4,
                     "column": 28
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Core/ExceptionsManager.js.flow"
             }
         },
@@ -112,7 +112,7 @@
                     "row": 12,
                     "column": 47
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Core/ExceptionsManager.js.flow"
             }
         }

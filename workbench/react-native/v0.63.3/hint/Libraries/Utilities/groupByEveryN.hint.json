@@ -16,7 +16,7 @@
                     "row": 2,
                     "column": 30
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/groupByEveryN.js.flow"
             }
         }

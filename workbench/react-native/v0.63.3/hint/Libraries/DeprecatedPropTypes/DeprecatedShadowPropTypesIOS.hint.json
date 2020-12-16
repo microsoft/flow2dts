@@ -16,7 +16,7 @@
                     "row": 0,
                     "column": 0
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedColorPropType.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 5,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow"
             }
         },
@@ -54,7 +54,7 @@
                     "row": 2,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow"
             }
         },
@@ -73,7 +73,7 @@
                     "row": 16,
                     "column": 45
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow"
             }
         },
@@ -92,7 +92,7 @@
                     "row": 17,
                     "column": 44
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow"
             }
         },
@@ -111,7 +111,7 @@
                     "row": 7,
                     "column": 40
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow"
             }
         }

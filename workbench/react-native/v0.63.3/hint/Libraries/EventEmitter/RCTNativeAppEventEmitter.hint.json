@@ -16,7 +16,7 @@
                     "row": 9,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/EventEmitter/RCTDeviceEventEmitter.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 2,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/EventEmitter/RCTNativeAppEventEmitter.js.flow"
             }
         },
@@ -54,7 +54,7 @@
                     "row": 5,
                     "column": 36
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/EventEmitter/RCTNativeAppEventEmitter.js.flow"
             }
         }

@@ -16,7 +16,7 @@
                     "row": 2,
                     "column": 55
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/deprecatedCreateStrictShapeTypeChecker.js.flow"
             }
         }

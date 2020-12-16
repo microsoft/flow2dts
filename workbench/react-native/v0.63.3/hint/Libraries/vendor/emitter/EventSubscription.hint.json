@@ -15,7 +15,7 @@
                     "row": 4,
                     "column": 37
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/vendor/emitter/EventSubscriptionVendor.js.flow"
             }
         }
@@ -36,7 +36,7 @@
                     "row": 4,
                     "column": 31
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/vendor/emitter/EventSubscription.js.flow"
             }
         }

@@ -16,7 +16,7 @@
                     "row": 11,
                     "column": 25
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/stringifySafe.js.flow"
             }
         }

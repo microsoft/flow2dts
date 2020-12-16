@@ -23,7 +23,7 @@
                     "row": 17,
                     "column": 10
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CodegenTypes.js.flow"
             }
         }
@@ -44,7 +44,7 @@
                     "row": 19,
                     "column": 29
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/TextInput/TextInputNativeCommands.js.flow"
             }
         }

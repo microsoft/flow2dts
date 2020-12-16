@@ -15,7 +15,7 @@
                     "row": 2,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/NativeModules/specs/NativeLogBox.js.flow"
             }
         }

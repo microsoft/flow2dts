@@ -16,7 +16,7 @@
                     "row": 10,
                     "column": 22
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/differ/deepDiffer.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 8,
                     "column": 41
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Utilities/differ/deepDiffer.js.flow"
             }
         }

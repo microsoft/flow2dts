@@ -23,7 +23,7 @@
                     "row": 7,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/DrawerAndroid/DrawerLayoutAndroid.android.js.flow"
             }
         },
@@ -42,7 +42,7 @@
                     "row": 15,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
@@ -61,7 +61,7 @@
                     "row": 9,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Types/CodegenTypes.js.flow"
             }
         }
@@ -82,7 +82,7 @@
                     "row": 128,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/DrawerAndroid/DrawerLayoutAndroid.android.js.flow"
             }
         }

@@ -23,7 +23,7 @@
                     "row": 5,
                     "column": 26
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/src/createAnimatedComponent.js.flow"
             }
         }
@@ -44,7 +44,7 @@
                     "row": 112,
                     "column": 25
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Lists/SectionList.js.flow"
             }
         },
@@ -63,7 +63,7 @@
                     "row": 4,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/src/components/AnimatedSectionList.js.flow"
             }
         },
@@ -82,7 +82,7 @@
                     "row": 4,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/src/components/AnimatedSectionList.js.flow"
             }
         }

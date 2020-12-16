@@ -16,7 +16,7 @@
                     "row": 13,
                     "column": 32
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 2,
                     "column": 30
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Linking/Linking.js.flow"
             }
         }

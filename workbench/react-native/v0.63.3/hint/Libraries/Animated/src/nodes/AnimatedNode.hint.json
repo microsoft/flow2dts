@@ -16,7 +16,7 @@
                     "row": 2,
                     "column": 26
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/src/nodes/AnimatedNode.js.flow"
             }
         }

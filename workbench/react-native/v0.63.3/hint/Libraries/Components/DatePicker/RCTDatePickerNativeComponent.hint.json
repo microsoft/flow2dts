@@ -15,7 +15,7 @@
                     "row": 96,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 389,
                     "column": 14
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
             }
         },
@@ -61,7 +61,7 @@
                     "row": 6,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/DatePicker/RCTDatePickerNativeComponent.js.flow"
             }
         },
@@ -80,7 +80,7 @@
                     "row": 7,
                     "column": 24
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/DatePicker/RCTDatePickerNativeComponent.js.flow"
             }
         },
@@ -99,7 +99,7 @@
                     "row": 8,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/DatePicker/RCTDatePickerNativeComponent.js.flow"
             }
         }

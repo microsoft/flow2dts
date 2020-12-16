@@ -15,7 +15,7 @@
                     "row": 34,
                     "column": 30
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         }
@@ -36,7 +36,7 @@
                     "row": 4,
                     "column": 33
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/splitLayoutProps.js.flow"
             }
         }

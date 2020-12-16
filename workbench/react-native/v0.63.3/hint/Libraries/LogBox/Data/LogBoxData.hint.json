@@ -23,7 +23,7 @@
                     "row": 25,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LogBox/Data/LogBoxLog.js.flow"
             }
         },
@@ -42,7 +42,7 @@
                     "row": 10,
                     "column": 13
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LogBox/Data/LogBoxLog.js.flow"
             }
         },
@@ -61,7 +61,7 @@
                     "row": 23,
                     "column": 12
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LogBox/Data/parseLogBoxLog.js.flow"
             }
         },
@@ -80,7 +80,7 @@
                     "row": 11,
                     "column": 13
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LogBox/Data/parseLogBoxLog.js.flow"
             }
         },
@@ -99,7 +99,7 @@
                     "row": 37,
                     "column": 19
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LogBox/Data/parseLogBoxLog.js.flow"
             }
         },
@@ -118,7 +118,7 @@
                     "row": 5,
                     "column": 26
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LogBox/Data/parseLogBoxLog.js.flow"
             }
         },
@@ -137,7 +137,7 @@
                     "row": 4,
                     "column": 18
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Core/Devtools/parseErrorStack.js.flow"
             }
         }

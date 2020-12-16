@@ -16,7 +16,7 @@
                     "row": 13,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/ReactNative/queryLayoutByID.js.flow"
             }
         }

@@ -15,7 +15,7 @@
                     "row": 10,
                     "column": 13
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LogBox/Data/LogBoxLog.js.flow"
             }
         },
@@ -44,7 +44,7 @@
                     "row": 14,
                     "column": 38
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/LogBox/UI/LogBoxInspectorFooter.js.flow"
             }
         }

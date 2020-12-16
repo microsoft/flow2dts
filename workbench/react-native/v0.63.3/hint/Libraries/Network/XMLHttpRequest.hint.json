@@ -16,7 +16,7 @@
                     "row": 32,
                     "column": 28
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Network/XMLHttpRequest.js.flow"
             }
         }

@@ -15,7 +15,7 @@
                     "row": 2,
                     "column": 9
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/StyleSheet/Rect.js.flow"
             }
         }

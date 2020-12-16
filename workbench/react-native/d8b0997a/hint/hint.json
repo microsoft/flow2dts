@@ -1,4 +1,7 @@
 {
+    "libraries": [
+        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_1755381c"
+    ],
     "files": {
         "/index.js.flow": {
             "imports": {
@@ -773,6 +776,52 @@
                 ]
             }
         },
+        "/Libraries/Alert/Alert.js.flow": {
+            "imports": {},
+            "typeofs": {
+                "Alert": [
+                    {
+                        "row": 40,
+                        "column": 32,
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 19,
+                            "column": 15,
+                            "local": "Alert",
+                            "type": "class"
+                        }
+                    }
+                ]
+            }
+        },
+        "/Libraries/Alert/NativeAlertManager.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 11,
+                        "local": "TurboModule",
+                        "type": "type"
+                    }
+                }
+            },
+            "typeofs": {}
+        },
+        "/Libraries/Alert/RCTAlertManager.ios.js.flow": {
+            "imports": {
+                "Args": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 4,
+                        "column": 6,
+                        "local": "Args",
+                        "type": "type"
+                    }
+                }
+            },
+            "typeofs": {}
+        },
         "/Libraries/ActionSheetIOS/ActionSheetIOS.js.flow": {
             "imports": {
                 "ColorValue": {
@@ -818,52 +867,6 @@
                         "row": 6,
                         "column": 11,
                         "local": "TurboModule",
-                        "type": "type"
-                    }
-                }
-            },
-            "typeofs": {}
-        },
-        "/Libraries/Alert/Alert.js.flow": {
-            "imports": {},
-            "typeofs": {
-                "Alert": [
-                    {
-                        "row": 40,
-                        "column": 32,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 19,
-                            "column": 15,
-                            "local": "Alert",
-                            "type": "class"
-                        }
-                    }
-                ]
-            }
-        },
-        "/Libraries/Alert/NativeAlertManager.js.flow": {
-            "imports": {
-                "TurboModule": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 6,
-                        "column": 11,
-                        "local": "TurboModule",
-                        "type": "type"
-                    }
-                }
-            },
-            "typeofs": {}
-        },
-        "/Libraries/Alert/RCTAlertManager.ios.js.flow": {
-            "imports": {
-                "Args": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 4,
-                        "column": 6,
-                        "local": "Args",
                         "type": "type"
                     }
                 }

@@ -15,7 +15,7 @@
                     "row": 7,
                     "column": 20
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/src/animations/Animation.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 5,
                     "column": 16
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/src/animations/Animation.js.flow"
             }
         }
@@ -55,7 +55,7 @@
                     "row": 12,
                     "column": 27
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/src/nodes/AnimatedValue.js.flow"
             }
         },
@@ -74,7 +74,7 @@
                     "row": 15,
                     "column": 29
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/src/nodes/AnimatedValueXY.js.flow"
             }
         },
@@ -93,7 +93,7 @@
                     "row": 18,
                     "column": 35
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/src/nodes/AnimatedInterpolation.js.flow"
             }
         },
@@ -112,7 +112,7 @@
                     "row": 14,
                     "column": 23
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/src/animations/Animation.js.flow"
             }
         },
@@ -131,7 +131,7 @@
                     "row": 8,
                     "column": 21
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/src/animations/TimingAnimation.js.flow"
             }
         },
@@ -150,7 +150,7 @@
                     "row": 39,
                     "column": 29
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Animated/src/animations/TimingAnimation.js.flow"
             }
         }

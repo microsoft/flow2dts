@@ -16,7 +16,7 @@
                     "row": 0,
                     "column": 0
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Promise.js.flow"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 19,
                     "column": 29
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.js.flow"
             }
         }

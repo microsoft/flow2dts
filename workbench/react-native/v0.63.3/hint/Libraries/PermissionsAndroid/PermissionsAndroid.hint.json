@@ -15,7 +15,7 @@
                     "row": 4,
                     "column": 21
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/PermissionsAndroid/NativePermissionsAndroid.js.flow"
             }
         },
@@ -34,7 +34,7 @@
                     "row": 5,
                     "column": 19
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/PermissionsAndroid/NativePermissionsAndroid.js.flow"
             }
         }
@@ -55,7 +55,7 @@
                     "row": 88,
                     "column": 38
                 },
-                "fromLibrary": false,
+                "libraryFolder": -1,
                 "file": "/Libraries/PermissionsAndroid/PermissionsAndroid.js.flow"
             }
         }
