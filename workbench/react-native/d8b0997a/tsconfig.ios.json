@@ -1,7 +1,0 @@
-{
-  "compilerOptions": {
-    "noEmit": true,
-    "esModuleInterop": true
-  },
-  "include": ["./outputs/ios/**/*.d.ts"]
-}
