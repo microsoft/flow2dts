@@ -7,33 +7,42 @@ import path from "path"
 import fs from "fs"
 import chalk from "chalk"
 
-import { HintImport } from "./hintfile"
+import { HintImport, HintFile, ResolvedHintEntries } from "./hintfile"
 import { singleFlow2Hint, HintFileEntries } from "./singleFlow2Hint"
 import { mergeHint } from "./mergeHint"
 
 const FLOW_EXTNAME = ".js.flow"
 const HINT_EXTNAME = ".hint.json"
+const MERGED_FILE = "hint.json"
 
 async function run({
   rootDir,
   outDir,
+  mergedFilename,
   patterns,
   cwd,
 }: {
   rootDir: string
   outDir: string
+  mergedFilename: string
   patterns: string[]
   cwd?: string
 }): Promise<[number, number, HintFileEntries]> {
   let totalCount = 0
   let successCount = 0
   const collectedHintFiles: HintFileEntries = { libraries: [], files: {} }
+  const mergedPath = path.join(outDir, MERGED_FILE)
+  if (fs.existsSync(mergedFilename)) {
+    collectedHintFiles.libraries = (<ResolvedHintEntries>require(mergedFilename)).libraries
+  }
+
   for await (const _filename of glob.stream(patterns, { absolute: true, cwd })) {
     const filename = _filename as string
     const outFilename = getOutFilename(outDir, rootDir, filename, FLOW_EXTNAME)
     totalCount++
 
     if (fs.existsSync(outFilename)) {
+      collectedHintFiles.files[filename.substr(rootDir.length).replace(/\\/g, "/")] = <HintFile>require(outFilename)
       console.log(chalk.cyanBright(`✓ ${relativePath(cwd, outFilename)}`))
       successCount++
     } else {
@@ -60,7 +69,7 @@ function getOutFilename(outDir: string, rootDir: string, filename: string, match
 function collectLibraryFile(collectedHintFiles: HintFileEntries, hintImport: HintImport, libraryFiles: string[]) {
   if (hintImport.resolved && hintImport.resolved.libraryFolder !== -1) {
     const libraryFile = collectedHintFiles.libraries[hintImport.resolved.libraryFolder] + hintImport.resolved.file
-    if (libraryFiles.indexOf(libraryFile) !== -1) {
+    if (libraryFiles.indexOf(libraryFile) === -1) {
       libraryFiles.push(libraryFile)
     }
   }
@@ -72,8 +81,10 @@ async function processLibraryFiles(
   outDir: string,
   cwd: string | undefined,
   collectedHintFiles: HintFileEntries
-) {
+): Promise<[number, number]> {
   const libraryFiles: string[] = []
+  let successCount = 0
+
   for (const key in collectedHintFiles.files) {
     const hintFile = collectedHintFiles.files[key]
     for (const importKey in hintFile.imports) {
@@ -87,12 +98,21 @@ async function processLibraryFiles(
   libraryFiles.sort()
   for (const filename of libraryFiles) {
     const outFilename = path.join(outDir, "__flow__", path.basename(filename, ".js") + ".hint.json")
-    await singleFlow2Hint({ rootDir, filename, outFilename, collectedHintFiles, forLibraryFile: true }).then(
-      (outFilename) => {
-        console.log(chalk.green(`✓ ${relativePath(cwd, outFilename)}`))
-      }
-    )
+    if (fs.existsSync(outFilename)) {
+      collectedHintFiles.files[filename] = <HintFile>require(outFilename)
+      console.log(chalk.cyanBright(`✓ ${relativePath(cwd, outFilename)}`))
+      successCount++
+    } else {
+      await singleFlow2Hint({ rootDir, filename, outFilename, collectedHintFiles, forLibraryFile: true }).then(
+        (outFilename) => {
+          console.log(chalk.green(`✓ ${relativePath(cwd, outFilename)}`))
+          successCount++
+        }
+      )
+    }
   }
+
+  return [libraryFiles.length, successCount]
 }
 
 async function main() {
@@ -126,12 +146,14 @@ async function main() {
   const rootDir = path.resolve(cwd || "", argv.rootDir)
   const patterns = argv._
 
-  const [totalCount, successCount, collectedHintFiles] = await run({ cwd, outDir, rootDir, patterns })
-  await processLibraryFiles(rootDir, outDir, cwd, collectedHintFiles)
-  console.log(`\nSuccessfully converted ${successCount} of ${totalCount}\n`)
+  const mergedFilename = path.join(outDir, MERGED_FILE)
+  const [totalCount, successCount, collectedHintFiles] = await run({ rootDir, outDir, mergedFilename, patterns, cwd })
+  console.log(`\nSuccessfully converted local files ${successCount} of ${totalCount}\n`)
+  const [totalLibrary, successLibrary] = await processLibraryFiles(rootDir, outDir, cwd, collectedHintFiles)
+  console.log(`\nSuccessfully converted library files ${successLibrary} of ${totalLibrary}\n`)
 
   const mergedEntries = mergeHint(collectedHintFiles)
-  await fs.promises.writeFile(path.join(outDir, "hint.json"), JSON.stringify(mergedEntries, undefined, 4), "utf8")
+  await fs.promises.writeFile(mergedFilename, JSON.stringify(mergedEntries, undefined, 4), "utf8")
   process.exit(totalCount - successCount)
 }
 

@@ -822,6 +822,83 @@
             },
             "typeofs": {}
         },
+        "/Libraries/AppState/AppState.js.flow": {
+            "imports": {
+                "NativeEventEmitter": {
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 17,
+                        "column": 15,
+                        "local": "NativeEventEmitter",
+                        "type": "class"
+                    }
+                },
+                "EventEmitter": {
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 3,
+                        "local": "remove",
+                        "type": "value"
+                    }
+                }
+            },
+            "typeofs": {
+                "NativeEventEmitter": [
+                    {
+                        "row": 32,
+                        "column": 24,
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 17,
+                            "column": 15,
+                            "local": "NativeEventEmitter",
+                            "type": "class"
+                        }
+                    }
+                ],
+                "EventEmitter": [
+                    {
+                        "row": 49,
+                        "column": 24,
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 6,
+                            "column": 3,
+                            "local": "remove",
+                            "type": "value"
+                        }
+                    }
+                ],
+                "AppStateInstance": [
+                    {
+                        "row": 53,
+                        "column": 32,
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 51,
+                            "column": 13,
+                            "local": "AppStateInstance",
+                            "type": "value"
+                        }
+                    }
+                ]
+            }
+        },
+        "/Libraries/AppState/NativeAppState.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 11,
+                        "local": "TurboModule",
+                        "type": "type"
+                    }
+                }
+            },
+            "typeofs": {}
+        },
         "/Libraries/ActionSheetIOS/ActionSheetIOS.js.flow": {
             "imports": {
                 "ColorValue": {
@@ -2501,83 +2578,6 @@
                 ]
             }
         },
-        "/Libraries/AppState/AppState.js.flow": {
-            "imports": {
-                "NativeEventEmitter": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 17,
-                        "column": 15,
-                        "local": "NativeEventEmitter",
-                        "type": "class"
-                    }
-                },
-                "EventEmitter": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 6,
-                        "column": 3,
-                        "local": "remove",
-                        "type": "value"
-                    }
-                }
-            },
-            "typeofs": {
-                "NativeEventEmitter": [
-                    {
-                        "row": 32,
-                        "column": 24,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 17,
-                            "column": 15,
-                            "local": "NativeEventEmitter",
-                            "type": "class"
-                        }
-                    }
-                ],
-                "EventEmitter": [
-                    {
-                        "row": 49,
-                        "column": 24,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 6,
-                            "column": 3,
-                            "local": "remove",
-                            "type": "value"
-                        }
-                    }
-                ],
-                "AppStateInstance": [
-                    {
-                        "row": 53,
-                        "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 51,
-                            "column": 13,
-                            "local": "AppStateInstance",
-                            "type": "value"
-                        }
-                    }
-                ]
-            }
-        },
-        "/Libraries/AppState/NativeAppState.js.flow": {
-            "imports": {
-                "TurboModule": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 6,
-                        "column": 11,
-                        "local": "TurboModule",
-                        "type": "type"
-                    }
-                }
-            },
-            "typeofs": {}
-        },
         "/Libraries/BatchedBridge/BatchedBridge.js.flow": {
             "imports": {},
             "typeofs": {
@@ -3000,7 +3000,13 @@
                     {
                         "row": 126,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "Button": [
@@ -3128,7 +3134,13 @@
                     {
                         "row": 23,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "StaticContainer": [
@@ -3166,7 +3178,13 @@
                     {
                         "row": 25,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "StaticRenderer": [
@@ -3205,7 +3223,13 @@
                     {
                         "row": 8,
                         "column": 24,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 1536,
+                            "column": 15,
+                            "local": "Error",
+                            "type": "class"
+                        }
                     }
                 ],
                 "handleException": [
@@ -6497,7 +6521,13 @@
                     {
                         "row": 11,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "ImageBackground": [
@@ -7411,7 +7441,13 @@
                     {
                         "row": 241,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 100,
+                            "column": 15,
+                            "local": "React$PureComponent",
+                            "type": "class"
+                        }
                     }
                 ],
                 "FlatList": [
@@ -7523,7 +7559,13 @@
                     {
                         "row": 154,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 100,
+                            "column": 15,
+                            "local": "React$PureComponent",
+                            "type": "class"
+                        }
                     }
                 ],
                 "SectionList": [
@@ -7700,7 +7742,13 @@
                     {
                         "row": 369,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 100,
+                            "column": 15,
+                            "local": "React$PureComponent",
+                            "type": "class"
+                        }
                     }
                 ],
                 "VirtualizedList": [
@@ -7794,7 +7842,13 @@
                     {
                         "row": 136,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 100,
+                            "column": 15,
+                            "local": "React$PureComponent",
+                            "type": "class"
+                        }
                     }
                 ],
                 "VirtualizedSectionList": [
@@ -7903,7 +7957,13 @@
                     {
                         "row": 18,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ]
             }
@@ -7973,7 +8033,13 @@
                     {
                         "row": 134,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "Modal": [
@@ -8106,28 +8172,52 @@
                     {
                         "row": 3,
                         "column": 17,
-                        "type": "unresolved[library]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 1538,
+                            "column": 18,
+                            "local": "fetch",
+                            "type": "value"
+                        }
                     }
                 ],
                 "Headers": [
                     {
                         "row": 4,
                         "column": 19,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 1406,
+                            "column": 15,
+                            "local": "Headers",
+                            "type": "class"
+                        }
                     }
                 ],
                 "Request": [
                     {
                         "row": 5,
                         "column": 19,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 1500,
+                            "column": 15,
+                            "local": "Request",
+                            "type": "class"
+                        }
                     }
                 ],
                 "Response": [
                     {
                         "row": 6,
                         "column": 20,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 1474,
+                            "column": 15,
+                            "local": "Response",
+                            "type": "class"
+                        }
                     }
                 ]
             }
@@ -8286,7 +8376,13 @@
                     {
                         "row": 14,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "PureComponentDebug": [
@@ -8546,7 +8642,13 @@
                     {
                         "row": 40,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "AppContainer": [
@@ -8676,7 +8778,13 @@
                     {
                         "row": 3,
                         "column": 24,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 1536,
+                            "column": 15,
+                            "local": "Error",
+                            "type": "class"
+                        }
                     }
                 ]
             }
@@ -9788,7 +9896,13 @@
                     }
                 },
                 "Node": {
-                    "type": "unresolved[library]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 268,
+                        "column": 23,
+                        "local": "Node",
+                        "type": "type"
+                    }
                 },
                 "TextStyleProp": {
                     "type": "type",
@@ -10629,10 +10743,22 @@
         "/Libraries/Utilities/setAndForwardRef.js.flow": {
             "imports": {
                 "ElementRef": {
-                    "type": "unresolved[library]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 282,
+                        "column": 23,
+                        "local": "ElementRef",
+                        "type": "type"
+                    }
                 },
                 "Ref": {
-                    "type": "unresolved[library]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 267,
+                        "column": 23,
+                        "local": "Ref",
+                        "type": "type"
+                    }
                 }
             },
             "typeofs": {
@@ -12649,7 +12775,13 @@
                     {
                         "row": 101,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "DatePickerIOS": [
@@ -12930,7 +13062,13 @@
                     {
                         "row": 55,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "KeyboardAvoidingView": [
@@ -12992,7 +13130,13 @@
                     {
                         "row": 24,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "MaskedViewIOS": [
@@ -13246,12 +13390,24 @@
                     {
                         "row": 38,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     },
                     {
                         "row": 115,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "PickerItem": [
@@ -13361,7 +13517,13 @@
                     {
                         "row": 69,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "PickerIOS": [
@@ -13997,7 +14159,13 @@
                     {
                         "row": 82,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "RefreshControl": [
@@ -14396,7 +14564,13 @@
                     {
                         "row": 652,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "ScrollView": [
@@ -14576,7 +14750,13 @@
                     {
                         "row": 45,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "ScrollViewStickyHeader": [
@@ -14956,7 +15136,13 @@
                     {
                         "row": 132,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "StatusBar": [
@@ -15075,7 +15261,13 @@
                     {
                         "row": 82,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "Switch": [
@@ -15306,7 +15498,13 @@
                     {
                         "row": 25,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "InputAccessoryView": [
@@ -16296,7 +16494,13 @@
                     {
                         "row": 132,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "TouchableNativeFeedback": [
@@ -16461,7 +16665,13 @@
                     {
                         "row": 70,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "TouchableWithoutFeedback": [
@@ -16531,7 +16741,13 @@
                     {
                         "row": 9,
                         "column": 30,
-                        "type": "unresolved[library]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 26,
+                            "column": 15,
+                            "local": "React$Component",
+                            "type": "class"
+                        }
                     }
                 ],
                 "UnimplementedView": [
@@ -17511,7 +17727,13 @@
                     }
                 },
                 "Node": {
-                    "type": "unresolved[library]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 268,
+                        "column": 23,
+                        "local": "Node",
+                        "type": "type"
+                    }
                 },
                 "ViewStyleProp": {
                     "type": "type",
@@ -18580,10 +18802,22 @@
         "/Libraries/Renderer/shims/ReactNativeTypes.js.flow": {
             "imports": {
                 "ElementRef": {
-                    "type": "unresolved[library]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 282,
+                        "column": 23,
+                        "local": "ElementRef",
+                        "type": "type"
+                    }
                 },
                 "AbstractComponent": {
-                    "type": "unresolved[library]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 258,
+                        "column": 23,
+                        "local": "AbstractComponent",
+                        "type": "type"
+                    }
                 }
             },
             "typeofs": {}
