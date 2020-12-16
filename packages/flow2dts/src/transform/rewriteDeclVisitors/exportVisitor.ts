@@ -122,7 +122,12 @@ export const exportVisitor: Visitor<State> = {
               if (property.key.name === "" || property.key.name[0] !== property.key.name[0].toUpperCase()) {
                 return undefined
               }
-              return t.exportSpecifier(t.identifier(nameForImportTypeof(property.key.name)), property.key)
+              const typeAnnotation = property.typeAnnotation.typeAnnotation
+              const exportName =
+                t.isTSTypeReference(typeAnnotation) && t.isIdentifier(typeAnnotation.typeName)
+                  ? typeAnnotation.typeName.name
+                  : property.key.name
+              return t.exportSpecifier(t.identifier(nameForImportTypeof(exportName)), property.key)
             })
             .filter((value) => value !== undefined)
           if (exportSpecifiers.length > 0) {
