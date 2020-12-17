@@ -77,7 +77,7 @@ declare class XMLHttpRequest extends $1 {
   setReadyState(newState: number): void;
 
   /* global EventListener */
-  addEventListener(type: string, listener: EventListener): void;
+  addEventListener(type: string, listener: any): void;
 }
 declare var $1: any;
 export type { NativeResponseType };

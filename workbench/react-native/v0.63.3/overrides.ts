@@ -389,6 +389,17 @@ const visitors: OverridesVisitors = {
       },
     },
   },
+  // TODO: This is pending the work to port the better DT typings to Flow:
+  // https://github.com/microsoft/flow2dts/issues/14
+  "Libraries/Network/XMLHttpRequest.d.ts": {
+    TSTypeReference: {
+      exit(path) {
+        if (t.isIdentifier(path.node.typeName) && path.node.typeName.name === "EventListener") {
+          path.replaceWith(t.tsAnyKeyword())
+        }
+      },
+    },
+  },
 }
 
 export default visitors
