@@ -21,7 +21,7 @@ function applyVisitor({ input, ...state }: { input: string } & State) {
 }
 
 describe("typeReferenceVisitor", () => {
-  it("works", () => {
+  it("calls typeof on a value used in a qualified identifier expression", () => {
     expect(
       applyVisitor({
         input: dedent`
@@ -45,6 +45,33 @@ describe("typeReferenceVisitor", () => {
       declare var VirtualizedList: $2;
 
       const $2 = require("./VirtualizedList");
+
+      type DefaultProps = {| ...typeof VirtualizedList.defaultProps
+      |};
+    `)
+  })
+
+  it("calls typeof on a class used in a qualified identifier expression", () => {
+    expect(
+      applyVisitor({
+        input: dedent`
+          const VirtualizedList = require("./VirtualizedList");
+          type DefaultProps = {|
+            ...typeof VirtualizedList.defaultProps,
+          |};
+        `,
+        typeReferences: {
+          records: {},
+          imports: {},
+          exports: {},
+        },
+        hintFile: {
+          imports: {},
+          typeofs: {},
+        },
+      })
+    ).toMatchInlineSnapshot(`
+      const VirtualizedList = require("./VirtualizedList");
 
       type DefaultProps = {| ...typeof VirtualizedList.defaultProps
       |};
