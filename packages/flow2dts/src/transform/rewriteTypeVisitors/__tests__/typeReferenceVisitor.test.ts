@@ -27,9 +27,7 @@ describe("typeReferenceVisitor", () => {
         input: dedent`
           declare var VirtualizedList: typeof $2;
           const $2 = require("./VirtualizedList");
-          type DefaultProps = {|
-            ...typeof VirtualizedList.defaultProps,
-          |};
+          type DefaultProps = {|...typeof VirtualizedList.defaultProps,|};
         `,
         typeReferences: {
           records: {},
@@ -38,7 +36,15 @@ describe("typeReferenceVisitor", () => {
         },
         hintFile: {
           imports: {},
-          typeofs: {},
+          typeofs: {
+            defaultProps: [
+              {
+                type: "value",
+                row: 3,
+                column: 49,
+              },
+            ],
+          },
         },
       })
     ).toMatchInlineSnapshot(`
@@ -56,9 +62,7 @@ describe("typeReferenceVisitor", () => {
       applyVisitor({
         input: dedent`
           const VirtualizedList = require("./VirtualizedList");
-          type DefaultProps = {|
-            ...typeof VirtualizedList.defaultProps,
-          |};
+          type DefaultProps = {|...typeof VirtualizedList.defaultProps,|};
         `,
         typeReferences: {
           records: {},
@@ -67,7 +71,15 @@ describe("typeReferenceVisitor", () => {
         },
         hintFile: {
           imports: {},
-          typeofs: {},
+          typeofs: {
+            defaultProps: [
+              {
+                type: "value",
+                row: 2,
+                column: 49,
+              },
+            ],
+          },
         },
       })
     ).toMatchInlineSnapshot(`
