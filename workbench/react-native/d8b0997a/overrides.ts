@@ -436,6 +436,17 @@ const visitors: OverridesVisitors = {
       },
     },
   },
+  "Libraries/Animated/src/createAnimatedComponent.d.ts": {
+    TSTypeParameter: {
+      exit(path) {
+        if (path.node.name === "Props") {
+          const constraint = path.node.constraint
+          t.assertTSTypeLiteral(constraint)
+          constraint.members = []
+        }
+      },
+    },
+  },
 }
 
 export default visitors
