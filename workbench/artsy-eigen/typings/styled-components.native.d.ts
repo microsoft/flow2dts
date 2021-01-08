@@ -48,9 +48,9 @@ declare module "styled-components/native" {
     Image: ReactNativeThemedStyledFunction<typeof ReactNative.Image, T>
     ImageBackground: ReactNativeThemedStyledFunction<typeof ReactNative.ImageBackground, T>
     KeyboardAvoidingView: ReactNativeThemedStyledFunction<typeof ReactNative.KeyboardAvoidingView, T>
-    ListView: ReactNativeThemedStyledFunction<typeof ReactNative.ListView, T>
+    // ListView: ReactNativeThemedStyledFunction<typeof ReactNative.ListView, T>
     Modal: ReactNativeThemedStyledFunction<typeof ReactNative.Modal, T>
-    NavigatorIOS: ReactNativeThemedStyledFunction<typeof ReactNative.NavigatorIOS, T>
+    // NavigatorIOS: ReactNativeThemedStyledFunction<typeof ReactNative.NavigatorIOS, T>
     Picker: ReactNativeThemedStyledFunction<typeof ReactNative.Picker, T>
     PickerIOS: ReactNativeThemedStyledFunction<typeof ReactNative.PickerIOS, T>
     ProgressBarAndroid: ReactNativeThemedStyledFunction<typeof ReactNative.ProgressBarAndroid, T>
@@ -59,25 +59,25 @@ declare module "styled-components/native" {
     SegmentedControlIOS: ReactNativeThemedStyledFunction<typeof ReactNative.SegmentedControlIOS, T>
     Slider: ReactNativeThemedStyledFunction<typeof ReactNative.Slider, T>
     SliderIOS: ReactNativeThemedStyledFunction<typeof ReactNative.Slider, T>
-    SnapshotViewIOS: ReactNativeThemedStyledFunction<typeof ReactNative.SnapshotViewIOS, T>
+    // SnapshotViewIOS: ReactNativeThemedStyledFunction<typeof ReactNative.SnapshotViewIOS, T>
     Switch: ReactNativeThemedStyledFunction<typeof ReactNative.Switch, T>
-    RecyclerViewBackedScrollView: ReactNativeThemedStyledFunction<typeof ReactNative.RecyclerViewBackedScrollView, T>
+    // RecyclerViewBackedScrollView: ReactNativeThemedStyledFunction<typeof ReactNative.RecyclerViewBackedScrollView, T>
     RefreshControl: ReactNativeThemedStyledFunction<typeof ReactNative.RefreshControl, T>
     SafeAreaView: ReactNativeThemedStyledFunction<typeof ReactNative.SafeAreaView, T>
     StatusBar: ReactNativeThemedStyledFunction<typeof ReactNative.StatusBar, T>
-    SwipeableListView: ReactNativeThemedStyledFunction<typeof ReactNative.SwipeableListView, T>
+    // SwipeableListView: ReactNativeThemedStyledFunction<typeof ReactNative.SwipeableListView, T>
     SwitchAndroid: ReactNativeThemedStyledFunction<typeof ReactNative.Switch, T>
-    SwitchIOS: ReactNativeThemedStyledFunction<typeof ReactNative.SwitchIOS, T>
-    TabBarIOS: ReactNativeThemedStyledFunction<typeof ReactNative.TabBarIOS, T>
+    // SwitchIOS: ReactNativeThemedStyledFunction<typeof ReactNative.SwitchIOS, T>
+    // TabBarIOS: ReactNativeThemedStyledFunction<typeof ReactNative.TabBarIOS, T>
     Text: ReactNativeThemedStyledFunction<typeof ReactNative.Text, T>
     TextInput: ReactNativeThemedStyledFunction<typeof ReactNative.TextInput, T>
-    ToolbarAndroid: ReactNativeThemedStyledFunction<typeof ReactNative.ToolbarAndroid, T>
+    // ToolbarAndroid: ReactNativeThemedStyledFunction<typeof ReactNative.ToolbarAndroid, T>
     TouchableHighlight: ReactNativeThemedStyledFunction<typeof ReactNative.TouchableHighlight, T>
     TouchableNativeFeedback: ReactNativeThemedStyledFunction<typeof ReactNative.TouchableNativeFeedback, T>
     TouchableOpacity: ReactNativeThemedStyledFunction<typeof ReactNative.TouchableOpacity, T>
     TouchableWithoutFeedback: ReactNativeThemedStyledFunction<typeof ReactNative.TouchableWithoutFeedback, T>
     View: ReactNativeThemedStyledFunction<typeof ReactNative.View, T>
-    ViewPagerAndroid: ReactNativeThemedStyledFunction<typeof ReactNative.ViewPagerAndroid, T>
+    // ViewPagerAndroid: ReactNativeThemedStyledFunction<typeof ReactNative.ViewPagerAndroid, T>
     FlatList: ReactNativeThemedStyledFunction<typeof ReactNative.FlatList, T>
     SectionList: ReactNativeThemedStyledFunction<typeof ReactNative.SectionList, T>
   }
