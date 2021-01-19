@@ -160,16 +160,22 @@ export interface HintFileEntries {
   files: { [key: string]: HintFile }
 }
 
-async function resolveImport(
-  hintImport: HintImport,
-  filename: string,
-  rootDir: string,
-  normalizedRootDir: string,
+async function resolveImport({
+  hintImport,
+  inputRootDir,
+  inputFilename,
+  normalizedRootDir,
+  collectedHintFiles,
+}: {
+  hintImport: HintImport
+  inputRootDir: string
+  inputFilename: string
+  normalizedRootDir: string
   collectedHintFiles: HintFileEntries
-): Promise<void> {
+}): Promise<void> {
   hintImport.error = ""
 
-  const relativePath = "." + filename.substr(rootDir.length)
+  const relativePath = path.relative(inputFilename, inputRootDir)
   const args = [FLOW_BIN, "get-def", relativePath, `${hintImport.source?.row}`, `${hintImport.source?.column}`]
   await new Promise<void>((resolve, reject) => {
     let resolved = false
@@ -181,7 +187,7 @@ async function resolveImport(
     }
 
     console.log(chalk.yellow("node " + args.join(" ")))
-    const spawnResult = spawn("node", args, { cwd: rootDir })
+    const spawnResult = spawn("node", args, { cwd: inputRootDir })
 
     spawnResult.stdout.on("data", (data) => {
       if (!resolved) {
@@ -248,22 +254,27 @@ async function resolveImport(
   })
 }
 
+// "modified" files are flow scripts with "typeof" being replaced by six space characters
 export async function singleFlow2Hint({
-  rootDir,
-  filename,
+  inputRootDir,
+  inputFilename,
+  modifiedRootDir,
+  modifiedFilename,
   outFilename,
   collectedHintFiles,
   forLibraryFile,
 }: {
-  rootDir: string
-  filename: string
+  inputRootDir: string
+  inputFilename: string
+  modifiedRootDir: string
+  modifiedFilename: string
   outFilename: string
   collectedHintFiles: HintFileEntries
   forLibraryFile: boolean
 }): Promise<string> {
-  const normalizedRootDir = rootDir.replace(/\\/g, "/")
+  const normalizedRootDir = inputRootDir.replace(/\\/g, "/")
 
-  const flowCode = fs.readFileSync(filename, { encoding: "utf8" })
+  const flowCode = fs.readFileSync(modifiedFilename, { encoding: "utf8" })
   const flowAst = babelParser.parse(flowCode, {
     plugins: ["flow"],
     sourceType: "module",
@@ -272,18 +283,18 @@ export async function singleFlow2Hint({
 
   const hint: HintFile = { imports: {}, typeofs: [], decls: [] }
   if (forLibraryFile) {
-    collectedHintFiles.files[filename] = hint
+    collectedHintFiles.files[inputFilename] = hint
   } else {
-    collectedHintFiles.files[filename.substr(rootDir.length).replace(/\\/g, "/")] = hint
+    collectedHintFiles.files[inputFilename.substr(inputRootDir.length).replace(/\\/g, "/")] = hint
   }
   babelTraverse<HintFile>(flowAst, flowImportAndDeclVisitor(forLibraryFile), undefined, hint)
 
   for (const key in hint.imports) {
     const hintImport = hint.imports[key]
-    await resolveImport(hintImport, filename, rootDir, normalizedRootDir, collectedHintFiles)
+    await resolveImport({ hintImport, inputFilename, inputRootDir, normalizedRootDir, collectedHintFiles })
   }
   for (const hintTypeof of hint.typeofs) {
-    await resolveImport(hintTypeof, filename, rootDir, normalizedRootDir, collectedHintFiles)
+    await resolveImport({ hintImport: hintTypeof, inputFilename, inputRootDir, normalizedRootDir, collectedHintFiles })
   }
 
   const outData = JSON.stringify(hint, undefined, 4)

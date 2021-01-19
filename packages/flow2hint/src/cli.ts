@@ -38,11 +38,11 @@ async function run({
     collectedHintFiles.libraries = (<ResolvedHintEntries>require(mergedFilename)).libraries
   }
 
-  const modifiedFullPaths: string[] = []
+  const modifiedFullPaths: [string, string][] = []
   for await (const _filename of glob.stream(patterns, { absolute: true, cwd })) {
     const filename = _filename as string
     const modifiedFilename = getModifiedFilename(modifiedRootDir, inputRootDir, filename)
-    modifiedFullPaths.push(modifiedFilename)
+    modifiedFullPaths.push([filename, modifiedFilename])
 
     const inputCode = await fs.promises.readFile(filename, { encoding: "utf8" })
     // replace "typeof" to six space characters, but not touch "import typeof"
@@ -53,21 +53,23 @@ async function run({
     console.log(chalk.gray(`✓ ${relativePath(cwd, modifiedFilename)}`))
   }
 
-  for (const filename of modifiedFullPaths) {
-    const outFilename = getOutFilename(outDir, modifiedRootDir, filename, FLOW_EXTNAME)
+  for (const [inputFilename, modifiedFilename] of modifiedFullPaths) {
+    const outFilename = getOutFilename(outDir, inputRootDir, inputFilename, FLOW_EXTNAME)
     totalCount++
 
     if (fs.existsSync(outFilename)) {
-      collectedHintFiles.files[filename.substr(modifiedRootDir.length).replace(/\\/g, "/")] = <HintFile>(
+      collectedHintFiles.files[inputFilename.substr(modifiedRootDir.length).replace(/\\/g, "/")] = <HintFile>(
         require(outFilename)
       )
       console.log(chalk.cyanBright(`✓ ${relativePath(cwd, outFilename)}`))
       successCount++
     } else {
-      console.log(`⚒️ ${chalk.dim(relativePath(cwd, filename))}`)
+      console.log(`⚒️ ${chalk.dim(relativePath(cwd, outFilename))}`)
       await singleFlow2Hint({
-        rootDir: modifiedRootDir,
-        filename,
+        inputRootDir,
+        inputFilename,
+        modifiedRootDir,
+        modifiedFilename,
         outFilename,
         collectedHintFiles,
         forLibraryFile: false,
@@ -137,8 +139,10 @@ async function processLibraryFiles({
       successCount++
     } else {
       await singleFlow2Hint({
-        rootDir: modifiedRootDir,
-        filename,
+        inputRootDir,
+        inputFilename: filename,
+        modifiedRootDir,
+        modifiedFilename: filename,
         outFilename,
         collectedHintFiles,
         forLibraryFile: true,
