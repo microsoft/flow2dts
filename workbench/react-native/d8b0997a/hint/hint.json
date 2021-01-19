@@ -1,6 +1,6 @@
 {
     "libraries": [
-        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_1755381c"
+        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_166fc518"
     ],
     "files": {
         "/index.js.flow": {
@@ -776,129 +776,6 @@
                 ]
             }
         },
-        "/Libraries/Alert/Alert.js.flow": {
-            "imports": {},
-            "typeofs": {
-                "Alert": [
-                    {
-                        "row": 40,
-                        "column": 32,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 19,
-                            "column": 15,
-                            "local": "Alert",
-                            "type": "class"
-                        }
-                    }
-                ]
-            }
-        },
-        "/Libraries/Alert/NativeAlertManager.js.flow": {
-            "imports": {
-                "TurboModule": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 6,
-                        "column": 11,
-                        "local": "TurboModule",
-                        "type": "type"
-                    }
-                }
-            },
-            "typeofs": {}
-        },
-        "/Libraries/Alert/RCTAlertManager.ios.js.flow": {
-            "imports": {
-                "Args": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 4,
-                        "column": 6,
-                        "local": "Args",
-                        "type": "type"
-                    }
-                }
-            },
-            "typeofs": {}
-        },
-        "/Libraries/AppState/AppState.js.flow": {
-            "imports": {
-                "NativeEventEmitter": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 17,
-                        "column": 15,
-                        "local": "NativeEventEmitter",
-                        "type": "class"
-                    }
-                },
-                "EventEmitter": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 6,
-                        "column": 3,
-                        "local": "remove",
-                        "type": "value"
-                    }
-                }
-            },
-            "typeofs": {
-                "NativeEventEmitter": [
-                    {
-                        "row": 32,
-                        "column": 24,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 17,
-                            "column": 15,
-                            "local": "NativeEventEmitter",
-                            "type": "class"
-                        }
-                    }
-                ],
-                "EventEmitter": [
-                    {
-                        "row": 49,
-                        "column": 24,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 6,
-                            "column": 3,
-                            "local": "remove",
-                            "type": "value"
-                        }
-                    }
-                ],
-                "AppStateInstance": [
-                    {
-                        "row": 53,
-                        "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 51,
-                            "column": 13,
-                            "local": "AppStateInstance",
-                            "type": "value"
-                        }
-                    }
-                ]
-            }
-        },
-        "/Libraries/AppState/NativeAppState.js.flow": {
-            "imports": {
-                "TurboModule": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 6,
-                        "column": 11,
-                        "local": "TurboModule",
-                        "type": "type"
-                    }
-                }
-            },
-            "typeofs": {}
-        },
         "/Libraries/ActionSheetIOS/ActionSheetIOS.js.flow": {
             "imports": {
                 "ColorValue": {
@@ -944,6 +821,52 @@
                         "row": 6,
                         "column": 11,
                         "local": "TurboModule",
+                        "type": "type"
+                    }
+                }
+            },
+            "typeofs": {}
+        },
+        "/Libraries/Alert/Alert.js.flow": {
+            "imports": {},
+            "typeofs": {
+                "Alert": [
+                    {
+                        "row": 40,
+                        "column": 32,
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 19,
+                            "column": 15,
+                            "local": "Alert",
+                            "type": "class"
+                        }
+                    }
+                ]
+            }
+        },
+        "/Libraries/Alert/NativeAlertManager.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 11,
+                        "local": "TurboModule",
+                        "type": "type"
+                    }
+                }
+            },
+            "typeofs": {}
+        },
+        "/Libraries/Alert/RCTAlertManager.ios.js.flow": {
+            "imports": {
+                "Args": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 4,
+                        "column": 6,
+                        "local": "Args",
                         "type": "type"
                     }
                 }
@@ -2577,6 +2500,83 @@
                     }
                 ]
             }
+        },
+        "/Libraries/AppState/AppState.js.flow": {
+            "imports": {
+                "NativeEventEmitter": {
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 17,
+                        "column": 15,
+                        "local": "NativeEventEmitter",
+                        "type": "class"
+                    }
+                },
+                "EventEmitter": {
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 3,
+                        "local": "remove",
+                        "type": "value"
+                    }
+                }
+            },
+            "typeofs": {
+                "NativeEventEmitter": [
+                    {
+                        "row": 32,
+                        "column": 24,
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 17,
+                            "column": 15,
+                            "local": "NativeEventEmitter",
+                            "type": "class"
+                        }
+                    }
+                ],
+                "EventEmitter": [
+                    {
+                        "row": 49,
+                        "column": 24,
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 6,
+                            "column": 3,
+                            "local": "remove",
+                            "type": "value"
+                        }
+                    }
+                ],
+                "AppStateInstance": [
+                    {
+                        "row": 53,
+                        "column": 32,
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 51,
+                            "column": 13,
+                            "local": "AppStateInstance",
+                            "type": "value"
+                        }
+                    }
+                ]
+            }
+        },
+        "/Libraries/AppState/NativeAppState.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 11,
+                        "local": "TurboModule",
+                        "type": "type"
+                    }
+                }
+            },
+            "typeofs": {}
         },
         "/Libraries/BatchedBridge/BatchedBridge.js.flow": {
             "imports": {},
