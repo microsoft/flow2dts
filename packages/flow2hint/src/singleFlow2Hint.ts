@@ -164,18 +164,22 @@ async function resolveImport({
   hintImport,
   inputRootDir,
   inputFilename,
-  normalizedRootDir,
+  modifiedRootDir,
+  modifiedFilename,
+  normalizedModifiedRootDir,
   collectedHintFiles,
 }: {
   hintImport: HintImport
   inputRootDir: string
   inputFilename: string
-  normalizedRootDir: string
+  modifiedRootDir: string
+  modifiedFilename: string
+  normalizedModifiedRootDir: string
   collectedHintFiles: HintFileEntries
 }): Promise<void> {
   hintImport.error = ""
 
-  const relativePath = path.relative(inputFilename, inputRootDir)
+  const relativePath = "." + inputFilename.substr(inputRootDir.length)
   const args = [FLOW_BIN, "get-def", relativePath, `${hintImport.source?.row}`, `${hintImport.source?.column}`]
   await new Promise<void>((resolve, reject) => {
     let resolved = false
@@ -187,7 +191,7 @@ async function resolveImport({
     }
 
     console.log(chalk.yellow("node " + args.join(" ")))
-    const spawnResult = spawn("node", args, { cwd: inputRootDir })
+    const spawnResult = spawn("node", args, { cwd: modifiedRootDir })
 
     spawnResult.stdout.on("data", (data) => {
       if (!resolved) {
@@ -197,7 +201,7 @@ async function resolveImport({
           const begin: HintPos = { row: +match[3], column: +match[4] }
           const end: HintPos = { row: +match[5], column: +match[6] }
           const file = match[1].replace(/\\/g, "/")
-          const fromLibrary = file.substr(0, normalizedRootDir.length) !== normalizedRootDir
+          const fromLibrary = file.substr(0, normalizedModifiedRootDir.length) !== normalizedModifiedRootDir
           if (fromLibrary) {
             const dirname = path.dirname(file)
             const basename = "/" + path.basename(file)
@@ -217,7 +221,7 @@ async function resolveImport({
               begin,
               end,
               libraryFolder: -1,
-              file: fromLibrary ? file : file.substr(normalizedRootDir.length),
+              file: fromLibrary ? file : file.substr(normalizedModifiedRootDir.length),
             }
           }
           hintImport.error = undefined
@@ -231,7 +235,7 @@ async function resolveImport({
         const error = `${data}`
         console.log(error)
         if (!error.startsWith("Please wait.")) {
-          hintImport.error += error.replace(/\\/g, "/").replace(normalizedRootDir, "")
+          hintImport.error += error.replace(/\\/g, "/").replace(normalizedModifiedRootDir, "")
         }
       }
     })
@@ -272,9 +276,9 @@ export async function singleFlow2Hint({
   collectedHintFiles: HintFileEntries
   forLibraryFile: boolean
 }): Promise<string> {
-  const normalizedRootDir = inputRootDir.replace(/\\/g, "/")
+  const normalizedModifiedRootDir = inputRootDir.replace(/\\/g, "/")
 
-  const flowCode = fs.readFileSync(modifiedFilename, { encoding: "utf8" })
+  const flowCode = fs.readFileSync(inputFilename, { encoding: "utf8" })
   const flowAst = babelParser.parse(flowCode, {
     plugins: ["flow"],
     sourceType: "module",
@@ -291,10 +295,26 @@ export async function singleFlow2Hint({
 
   for (const key in hint.imports) {
     const hintImport = hint.imports[key]
-    await resolveImport({ hintImport, inputFilename, inputRootDir, normalizedRootDir, collectedHintFiles })
+    await resolveImport({
+      hintImport,
+      inputFilename,
+      inputRootDir,
+      modifiedFilename,
+      modifiedRootDir,
+      normalizedModifiedRootDir,
+      collectedHintFiles,
+    })
   }
   for (const hintTypeof of hint.typeofs) {
-    await resolveImport({ hintImport: hintTypeof, inputFilename, inputRootDir, normalizedRootDir, collectedHintFiles })
+    await resolveImport({
+      hintImport: hintTypeof,
+      inputFilename,
+      modifiedFilename,
+      modifiedRootDir,
+      inputRootDir,
+      normalizedModifiedRootDir,
+      collectedHintFiles,
+    })
   }
 
   const outData = JSON.stringify(hint, undefined, 4)
