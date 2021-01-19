@@ -44,9 +44,12 @@ async function run({
     const modifiedFilename = getModifiedFilename(modifiedRootDir, inputRootDir, filename)
     modifiedFullPaths.push(modifiedFilename)
 
-    const inputCode = fs.readFileSync(filename, { encoding: "utf8" })
+    const inputCode = await fs.promises.readFile(filename, { encoding: "utf8" })
     const outputCode = inputCode
-    fs.writeFileSync(modifiedFilename, outputCode, { encoding: "utf8" })
+    await fs.promises.mkdir(path.dirname(modifiedFilename), { recursive: true })
+    await fs.promises.writeFile(modifiedFilename, outputCode, { encoding: "utf8" })
+
+    console.log(chalk.gray(`✓ ${relativePath(cwd, modifiedFilename)}`))
   }
 
   for (const filename of modifiedFullPaths) {

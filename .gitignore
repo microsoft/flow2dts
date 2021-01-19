@@ -3,3 +3,4 @@ node_modules
 yarn-error.log
 types-*.tgz
 build
+**/hint/__modified__/**/*.js.flow
