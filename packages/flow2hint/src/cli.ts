@@ -16,13 +16,15 @@ const HINT_EXTNAME = ".hint.json"
 const MERGED_FILE = "hint.json"
 
 async function run({
-  rootDir,
+  inputRootDir,
+  modifiedRootDir,
   outDir,
   mergedFilename,
   patterns,
   cwd,
 }: {
-  rootDir: string
+  inputRootDir: string
+  modifiedRootDir: string
   outDir: string
   mergedFilename: string
   patterns: string[]
@@ -36,23 +38,39 @@ async function run({
     collectedHintFiles.libraries = (<ResolvedHintEntries>require(mergedFilename)).libraries
   }
 
+  const modifiedFullPaths: string[] = []
   for await (const _filename of glob.stream(patterns, { absolute: true, cwd })) {
     const filename = _filename as string
-    const outFilename = getOutFilename(outDir, rootDir, filename, FLOW_EXTNAME)
+    const modifiedFilename = getModifiedFilename(modifiedRootDir, inputRootDir, filename)
+    modifiedFullPaths.push(modifiedFilename)
+
+    const inputCode = fs.readFileSync(filename, { encoding: "utf8" })
+    const outputCode = inputCode
+    fs.writeFileSync(modifiedFilename, outputCode, { encoding: "utf8" })
+  }
+
+  for (const filename of modifiedFullPaths) {
+    const outFilename = getOutFilename(outDir, modifiedRootDir, filename, FLOW_EXTNAME)
     totalCount++
 
     if (fs.existsSync(outFilename)) {
-      collectedHintFiles.files[filename.substr(rootDir.length).replace(/\\/g, "/")] = <HintFile>require(outFilename)
+      collectedHintFiles.files[filename.substr(modifiedRootDir.length).replace(/\\/g, "/")] = <HintFile>(
+        require(outFilename)
+      )
       console.log(chalk.cyanBright(`✓ ${relativePath(cwd, outFilename)}`))
       successCount++
     } else {
       console.log(`⚒️ ${chalk.dim(relativePath(cwd, filename))}`)
-      await singleFlow2Hint({ rootDir, filename, outFilename, collectedHintFiles, forLibraryFile: false }).then(
-        (outFilename) => {
-          console.log(chalk.green(`✓ ${relativePath(cwd, outFilename)}`))
-          successCount++
-        }
-      )
+      await singleFlow2Hint({
+        rootDir: modifiedRootDir,
+        filename,
+        outFilename,
+        collectedHintFiles,
+        forLibraryFile: false,
+      }).then((outFilename) => {
+        console.log(chalk.green(`✓ ${relativePath(cwd, outFilename)}`))
+        successCount++
+      })
     }
   }
   return [totalCount, successCount, collectedHintFiles]
@@ -60,6 +78,10 @@ async function run({
 
 function relativePath(cwd: string | undefined, filename: string) {
   return path.relative(cwd || ".", filename)
+}
+
+function getModifiedFilename(modifiedDir: string, rootDir: string, filename: string) {
+  return path.join(modifiedDir, path.relative(rootDir, filename))
 }
 
 function getOutFilename(outDir: string, rootDir: string, filename: string, matchedExtname: string) {
@@ -76,12 +98,19 @@ function collectLibraryFile(collectedHintFiles: HintFileEntries, hintImport: Hin
 }
 
 // specifically for Flow's extracted library file
-async function processLibraryFiles(
-  rootDir: string,
-  outDir: string,
-  cwd: string | undefined,
+async function processLibraryFiles({
+  inputRootDir,
+  modifiedRootDir,
+  outDir,
+  cwd,
+  collectedHintFiles,
+}: {
+  inputRootDir: string
+  modifiedRootDir: string
+  outDir: string
+  cwd: string | undefined
   collectedHintFiles: HintFileEntries
-): Promise<[number, number]> {
+}): Promise<[number, number]> {
   const libraryFiles: string[] = []
   let successCount = 0
 
@@ -103,12 +132,16 @@ async function processLibraryFiles(
       console.log(chalk.cyanBright(`✓ ${relativePath(cwd, outFilename)}`))
       successCount++
     } else {
-      await singleFlow2Hint({ rootDir, filename, outFilename, collectedHintFiles, forLibraryFile: true }).then(
-        (outFilename) => {
-          console.log(chalk.green(`✓ ${relativePath(cwd, outFilename)}`))
-          successCount++
-        }
-      )
+      await singleFlow2Hint({
+        rootDir: modifiedRootDir,
+        filename,
+        outFilename,
+        collectedHintFiles,
+        forLibraryFile: true,
+      }).then((outFilename) => {
+        console.log(chalk.green(`✓ ${relativePath(cwd, outFilename)}`))
+        successCount++
+      })
     }
   }
 
@@ -143,13 +176,27 @@ async function main() {
 
   const cwd = argv.cwd
   const outDir = path.resolve(cwd || "", argv.outDir)
-  const rootDir = path.resolve(cwd || "", argv.rootDir)
+  const inputRootDir = path.resolve(cwd || "", argv.rootDir)
+  const modifiedRootDir = path.join(outDir, "__modified__")
   const patterns = argv._
 
   const mergedFilename = path.join(outDir, MERGED_FILE)
-  const [totalCount, successCount, collectedHintFiles] = await run({ rootDir, outDir, mergedFilename, patterns, cwd })
+  const [totalCount, successCount, collectedHintFiles] = await run({
+    inputRootDir,
+    modifiedRootDir,
+    outDir,
+    mergedFilename,
+    patterns,
+    cwd,
+  })
   console.log(`\nSuccessfully converted local files ${successCount} of ${totalCount}\n`)
-  const [totalLibrary, successLibrary] = await processLibraryFiles(rootDir, outDir, cwd, collectedHintFiles)
+  const [totalLibrary, successLibrary] = await processLibraryFiles({
+    inputRootDir,
+    modifiedRootDir,
+    outDir,
+    cwd,
+    collectedHintFiles,
+  })
   console.log(`\nSuccessfully converted library files ${successLibrary} of ${totalLibrary}\n`)
 
   const mergedEntries = mergeHint(collectedHintFiles)
