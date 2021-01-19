@@ -276,7 +276,7 @@ export async function singleFlow2Hint({
   collectedHintFiles: HintFileEntries
   forLibraryFile: boolean
 }): Promise<string> {
-  const normalizedModifiedRootDir = inputRootDir.replace(/\\/g, "/")
+  const normalizedModifiedRootDir = modifiedRootDir.replace(/\\/g, "/")
 
   const flowCode = fs.readFileSync(inputFilename, { encoding: "utf8" })
   const flowAst = babelParser.parse(flowCode, {
