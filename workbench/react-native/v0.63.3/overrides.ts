@@ -119,6 +119,14 @@ const visitors: OverridesVisitors = {
         removeUnknownFromHostComponent(path)
       },
     },
+    // Remove all propTypes typings. They are hard to get right, don't add any value to type-consumers, and are deprecated to boot.
+    TSPropertySignature: {
+      exit(path) {
+        if (t.isIdentifier(path.node.key) && path.node.key.name === "propTypes") {
+          path.remove()
+        }
+      },
+    },
   },
   "index.d.ts": {
     Program: {
