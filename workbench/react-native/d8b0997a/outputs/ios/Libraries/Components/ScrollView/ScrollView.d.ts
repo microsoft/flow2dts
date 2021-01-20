@@ -613,7 +613,7 @@ declare class ScrollView extends React.Component<Props, State> {
   getScrollableNode(): null | undefined | number;
   getInnerViewNode(): null | undefined | number;
   getInnerViewRef(): null | undefined | React.ElementRef<typeof View>;
-  getNativeScrollRef(): null | undefined | React.ElementRef<HostComponent<any>>;
+  getNativeScrollRef(): null | undefined | React.ElementRef<HostComponent<{}>>;
 
   /**
    * Scrolls to a given x, y offset, either immediately or with a smooth animation.
@@ -659,5 +659,5 @@ declare const $f2tExportDefault: React.AbstractComponent<React.ElementConfig<Scr
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-React.ElementRef<HostComponent<any>> & ScrollViewImperativeMethods & {}>> & ScrollViewComponentStatics;
+React.ElementRef<HostComponent<{}>> & ScrollViewImperativeMethods & {}>> & ScrollViewComponentStatics;
 export default $f2tExportDefault;

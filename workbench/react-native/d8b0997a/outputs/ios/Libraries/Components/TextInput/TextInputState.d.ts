@@ -1,7 +1,7 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "react";
 import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
-declare type ComponentRef = $1.ElementRef<HostComponent<any>>;
+declare type ComponentRef = $1.ElementRef<HostComponent<{}>>;
 declare function currentlyFocusedInput(): null | undefined | ComponentRef;
 declare function currentlyFocusedField(): null | undefined | number;
 declare function focusInput(textField?: null | undefined | ComponentRef): void;

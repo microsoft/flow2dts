@@ -7,7 +7,7 @@ declare type SyntheticEvent<T> = Readonly<
 {
   bubbles?: null | undefined | boolean;
   cancelable?: null | undefined | boolean;
-  currentTarget: number | React.ElementRef<HostComponent<any>>;
+  currentTarget: number | React.ElementRef<HostComponent<{}>>;
   defaultPrevented?: null | undefined | boolean;
   dispatchConfig: Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -22,7 +22,7 @@ declare type SyntheticEvent<T> = Readonly<
   isTrusted?: null | undefined | boolean;
   nativeEvent: T;
   persist: () => void;
-  target: (null | undefined | number) | React.ElementRef<HostComponent<any>>;
+  target: (null | undefined | number) | React.ElementRef<HostComponent<{}>>;
   timeStamp: number;
   type?: null | undefined | string;
 }>;

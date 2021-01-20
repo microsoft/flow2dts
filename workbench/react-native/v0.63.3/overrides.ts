@@ -91,7 +91,7 @@ function removeTypeOfHelperForReactElementRef(path: NodePath<t.TSTypeReference>)
   }
 }
 
-// `HostComponent<unknown>` does not satisfy some of the React DT typings, so change it to `HostComponent<any>`.
+// `HostComponent<unknown>` does not satisfy some of the React DT typings, so change it to `HostComponent<{}>`.
 // TODO: Unsure if this should ideally still be `unknown`.
 function removeUnknownFromHostComponent(path: NodePath<t.TSTypeReference>) {
   const id = path.node.typeName
@@ -101,7 +101,7 @@ function removeUnknownFromHostComponent(path: NodePath<t.TSTypeReference>) {
     t.isTSTypeParameterInstantiation(path.node.typeParameters) &&
     t.isTSUnknownKeyword(path.node.typeParameters.params[0])
   ) {
-    path.node.typeParameters.params[0] = t.tsAnyKeyword()
+    path.node.typeParameters.params[0] = t.tsTypeLiteral([])
   }
 }
 
