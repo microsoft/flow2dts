@@ -437,6 +437,22 @@ const visitors: OverridesVisitors = {
       },
     },
   },
+  // TODO: These should be typed as such upstream
+  "Libraries/Components/View/ViewPropTypes.d.ts": {
+    TSPropertySignature: {
+      exit(path) {
+        if (t.isIdentifier(path.node.key) && path.node.key.name === "focusable") {
+          const typeAnnotation = path.node.typeAnnotation!.typeAnnotation
+          t.assertTSBooleanKeyword(typeAnnotation)
+          path.node.typeAnnotation!.typeAnnotation = t.tsUnionType([
+            t.tsNullKeyword(),
+            t.tsUndefinedKeyword(),
+            t.tsBooleanKeyword(),
+          ])
+        }
+      },
+    },
+  },
 }
 
 export default visitors

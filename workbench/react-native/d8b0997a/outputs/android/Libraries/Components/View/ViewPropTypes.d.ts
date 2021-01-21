@@ -313,7 +313,7 @@ declare type AndroidViewProps = Readonly<
   *
   * @platform android
   */
-  focusable?: boolean;
+  focusable?: null | undefined | boolean;
 
   /**
   * The action to perform when this `View` is clicked on by a non-touch click, eg. enter key on a hardware keyboard.
