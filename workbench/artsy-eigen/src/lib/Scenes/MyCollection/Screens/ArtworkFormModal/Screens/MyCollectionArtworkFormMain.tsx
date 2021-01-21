@@ -81,7 +81,7 @@ export const MyCollectionArtworkFormMain: React.FC<StackScreenProps<ArtworkFormM
         />
 
         <Spacer mt={2} mb={1} />
-        {/** onPress={(e) => formik.handleSubmit(e as NonNullableObject<typeof e>)} */}
+
         <ScreenMargin>
           <Button
             disabled={!formik.isValid || !isFormDirty()}
