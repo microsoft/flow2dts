@@ -5,7 +5,7 @@ import { Text } from "react-native"
 import { Disappearable } from "../Disappearable"
 
 describe("Disappearable", () => {
-  const ref = { current: null as null | Disappearable }
+  const ref = { current: undefined as undefined | Disappearable }
   it(`disappears`, async () => {
     const tree = renderWithWrappers(
       <Disappearable ref={ref}>

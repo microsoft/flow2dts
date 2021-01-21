@@ -72,7 +72,7 @@ const TestPage = () => {
   return (
     <Theme>
       <GlobalStoreProvider>
-        <SearchContext.Provider value={{ inputRef: { current: null }, queryRef: { current: null } }}>
+        <SearchContext.Provider value={{ inputRef: { current: undefined }, queryRef: { current: undefined } }}>
           <RecentSearches />
         </SearchContext.Provider>
       </GlobalStoreProvider>
