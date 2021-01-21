@@ -51,7 +51,15 @@ function resolveImport<T extends ResolvedHintImport>(
   callback: (type: ResolvedHintImport["type"], resolvedDecl?: HintDecl) => T
 ): T {
   if (!hintImport.resolved) {
-    return callback("unresolved[error]")
+    if (
+      hintImport.error &&
+      hintImport.error.includes("Could not get definition for ") &&
+      hintImport.error.includes("No possible types")
+    ) {
+      return callback("value")
+    } else {
+      return callback("unresolved[error]")
+    }
   } else if (hintImport.resolved.libraryFolder !== -1) {
     const resolved = hintImport.resolved
     const resolvedHintFile =
