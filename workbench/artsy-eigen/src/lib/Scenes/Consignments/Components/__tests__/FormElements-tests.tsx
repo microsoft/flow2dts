@@ -10,6 +10,16 @@ describe("Row", () => {
       <Row
         renderToHardwareTextureAndroid={true}
         style={{
+          /**
+           * FIXME: Should this be like so?
+           *
+           * style={{
+           *   transform: [{
+           *     scaleX: 23,
+           *   }],
+           * }}
+           */
+          // @ts-expect-error STRICTNESS_MIGRATION --- 🚨 Unsafe legacy code 🚨 Please delete this and fix any type errors if you have time 🙏
           scaleX: 23,
         }}
       />
