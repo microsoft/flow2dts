@@ -1,5 +1,6 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { HMRClientNativeInterface } from "./HMRClient";
 declare var HMRClientProdShim: HMRClientNativeInterface;
-declare const $f2tExportDefault: typeof HMRClientProdShim;
+declare const $f2tExportDefault: $TypeOf<typeof HMRClientProdShim>;
 export default $f2tExportDefault;

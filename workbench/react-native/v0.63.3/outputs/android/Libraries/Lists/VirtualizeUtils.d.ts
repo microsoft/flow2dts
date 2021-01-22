@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare function elementsThatOverlapOffsets(offsets: number[], itemCount: number, getFrameMetrics: (index: number) => {
   length: number;
@@ -33,9 +34,9 @@ declare function computeWindowedRenderLimits(props: {
 declare var VirtualizeUtils:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  computeWindowedRenderLimits: typeof computeWindowedRenderLimits;
-  elementsThatOverlapOffsets: typeof elementsThatOverlapOffsets;
-  newRangeCount: typeof newRangeCount;
+  computeWindowedRenderLimits: $TypeOf<typeof computeWindowedRenderLimits>;
+  elementsThatOverlapOffsets: $TypeOf<typeof elementsThatOverlapOffsets>;
+  newRangeCount: $TypeOf<typeof newRangeCount>;
 };
-declare const $f2tExportDefault: typeof VirtualizeUtils;
+declare const $f2tExportDefault: $TypeOf<typeof VirtualizeUtils>;
 export default $f2tExportDefault;

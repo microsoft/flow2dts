@@ -110,5 +110,5 @@ ViewProps & IOSProps & {
   testID?: null | undefined | string;
 }>;
 declare var SliderWithRef: $1.AbstractComponent<Props, $1.ElementRef<typeof SliderNativeComponent>>;
-declare const $f2tExportDefault: typeof SliderWithRef;
+declare const $f2tExportDefault: $TypeOf<typeof SliderWithRef>;
 export default $f2tExportDefault;

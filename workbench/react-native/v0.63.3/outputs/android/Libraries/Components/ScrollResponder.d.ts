@@ -308,8 +308,8 @@ declare var ScrollResponderMixin:
 declare var ScrollResponder:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  Mixin: typeof ScrollResponderMixin;
+  Mixin: $TypeOf<typeof ScrollResponderMixin>;
 };
 export type { State };
-declare const $f2tExportDefault: typeof ScrollResponder;
+declare const $f2tExportDefault: $TypeOf<typeof ScrollResponder>;
 export default $f2tExportDefault;

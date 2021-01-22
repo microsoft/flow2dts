@@ -134,7 +134,7 @@ declare type Props<ItemT> = $Diff<VirtualizedListProps, {
 }> & FlatListProps<ItemT> & {};
 declare var defaultProps:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-typeof $4.defaultProps & {
+$TypeOf<typeof $4.defaultProps> & {
   numColumns: number;
 
   /**
@@ -144,7 +144,7 @@ typeof $4.defaultProps & {
    */
   removeClippedSubviews: boolean;
 };
-declare type DefaultProps = typeof defaultProps;
+declare type DefaultProps = $TypeOf<typeof defaultProps>;
 declare class FlatList<ItemT> extends $2.PureComponent<Props<ItemT>, {}> {
   static defaultProps: DefaultProps;
   props: Props<ItemT>;

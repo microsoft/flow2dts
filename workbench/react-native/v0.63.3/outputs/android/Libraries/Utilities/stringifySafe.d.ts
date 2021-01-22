@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare function createStringifySafeWithLimits(limits:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -9,5 +10,5 @@ declare function createStringifySafeWithLimits(limits:
 }): ($f2t1: unknown) => string;
 declare var stringifySafe: ($f2t1: unknown) => string;
 export { createStringifySafeWithLimits };
-declare const $f2tExportDefault: typeof stringifySafe;
+declare const $f2tExportDefault: $TypeOf<typeof stringifySafe>;
 export default $f2tExportDefault;

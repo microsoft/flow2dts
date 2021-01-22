@@ -28,7 +28,7 @@ declare var UIView:
 };
 declare var RCTView:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-typeof UIView & {
+$TypeOf<typeof UIView> & {
   // This is a special performance property exposed by RCTView and useful for
   // scrolling content when there are many subviews, most of which are offscreen.
   // For this property to be effective, it must be applied to a view that contains
@@ -39,8 +39,8 @@ typeof UIView & {
 declare var ReactNativeViewAttributes:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  UIView: typeof UIView;
-  RCTView: typeof RCTView;
+  UIView: $TypeOf<typeof UIView>;
+  RCTView: $TypeOf<typeof RCTView>;
 };
-declare const $f2tExportDefault: typeof ReactNativeViewAttributes;
+declare const $f2tExportDefault: $TypeOf<typeof ReactNativeViewAttributes>;
 export default $f2tExportDefault;

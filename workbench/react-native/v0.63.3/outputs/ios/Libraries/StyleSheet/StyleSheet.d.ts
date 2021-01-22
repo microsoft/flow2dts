@@ -62,7 +62,7 @@ declare const $f2tExportDefault:
    *
    * A line with hairline width may not be visible if your simulator is downscaled.
    */
-  hairlineWidth: typeof hairlineWidth;
+  hairlineWidth: $TypeOf<typeof hairlineWidth>;
 
   /**
    * A very common pattern is to create overlays with position absolute and zero positioning,
@@ -83,7 +83,7 @@ declare const $f2tExportDefault:
    *     },
    *   });
    */
-  absoluteFillObject: typeof absoluteFill;
+  absoluteFillObject: $TypeOf<typeof absoluteFill>;
 
   /**
    * Combines two styles such that `style2` will override any styles in `style1`.

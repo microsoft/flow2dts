@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import * as React from "react";
 import { PressEvent } from "../../Types/CoreEventTypes";
@@ -8,5 +9,5 @@ declare type Props = Readonly<
   status: "COMPLETE" | "FAILED" | "NONE" | "PENDING";
 }>;
 declare function LogBoxInspectorSourceMapStatus(props: Props): React.Node;
-declare const $f2tExportDefault: typeof LogBoxInspectorSourceMapStatus;
+declare const $f2tExportDefault: $TypeOf<typeof LogBoxInspectorSourceMapStatus>;
 export default $f2tExportDefault;

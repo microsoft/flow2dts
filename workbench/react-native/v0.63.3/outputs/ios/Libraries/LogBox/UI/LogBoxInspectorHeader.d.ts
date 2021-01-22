@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import * as React from "react";
 import { LogLevel } from "../Data/LogBoxLog";
@@ -10,5 +11,5 @@ declare type Props = Readonly<
   level: LogLevel;
 }>;
 declare function LogBoxInspectorHeader(props: Props): React.Node;
-declare const $f2tExportDefault: typeof LogBoxInspectorHeader;
+declare const $f2tExportDefault: $TypeOf<typeof LogBoxInspectorHeader>;
 export default $f2tExportDefault;

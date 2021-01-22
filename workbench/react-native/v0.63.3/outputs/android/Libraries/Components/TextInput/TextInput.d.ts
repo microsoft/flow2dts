@@ -579,10 +579,10 @@ declare type TextInputComponentStatics = Readonly<
   State: Readonly<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    currentlyFocusedInput: typeof $3.currentlyFocusedInput;
-    currentlyFocusedField: typeof $3.currentlyFocusedField;
-    focusTextInput: typeof $3.focusTextInput;
-    blurTextInput: typeof $3.blurTextInput;
+    currentlyFocusedInput: $TypeOf<typeof $3.currentlyFocusedInput>;
+    currentlyFocusedField: $TypeOf<typeof $3.currentlyFocusedField>;
+    focusTextInput: $TypeOf<typeof $3.focusTextInput>;
+    blurTextInput: $TypeOf<typeof $3.blurTextInput>;
   }>;
 }>;
 export type { ChangeEvent };
@@ -598,7 +598,7 @@ export type { ReturnKeyType };
 export type { AutoCapitalize };
 export type { TextContentType };
 export type { Props };
-declare const $f2tExportDefault: $2.AbstractComponent<$2.ElementConfig<typeof InternalTextInput>, Readonly<
+declare const $f2tExportDefault: $2.AbstractComponent<$2.ElementConfig<$TypeOf<typeof InternalTextInput>>, Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 $2.ElementRef<HostComponent<{}>> & ImperativeMethods & {}>> & TextInputComponentStatics;
 export default $f2tExportDefault;

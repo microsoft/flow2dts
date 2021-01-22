@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var QuickPerformanceLogger:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -11,5 +12,5 @@ declare var QuickPerformanceLogger:
   markerDrop: (markerId: number, instanceKey?: number) => void;
   currentTimestamp: () => number;
 };
-declare const $f2tExportDefault: typeof QuickPerformanceLogger;
+declare const $f2tExportDefault: $TypeOf<typeof QuickPerformanceLogger>;
 export default $f2tExportDefault;

@@ -1,4 +1,4 @@
-import { React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
+import { $TypeOf, React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var DeprecatedEdgeInsetsPropType: React$PropType$Primitive<{
   bottom?: number;
@@ -6,5 +6,5 @@ declare var DeprecatedEdgeInsetsPropType: React$PropType$Primitive<{
   right?: number;
   top?: number;
 }>;
-declare const $f2tExportDefault: typeof DeprecatedEdgeInsetsPropType;
+declare const $f2tExportDefault: $TypeOf<typeof DeprecatedEdgeInsetsPropType>;
 export default $f2tExportDefault;

@@ -19,7 +19,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/text.html#numberoflines
    */
-  numberOfLines: typeof $3.number;
+  numberOfLines: $TypeOf<typeof $3.number>;
 
   /**
    * Set text break strategy on Android.
@@ -33,21 +33,21 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/text.html#onlayout
    */
-  onLayout: typeof $3.func;
+  onLayout: $TypeOf<typeof $3.func>;
 
   /**
    * This function is called on press.
    *
    * See https://reactnative.dev/docs/text.html#onpress
    */
-  onPress: typeof $3.func;
+  onPress: $TypeOf<typeof $3.func>;
 
   /**
    * This function is called on long press.
    *
    * See https://reactnative.dev/docs/text.html#onlongpress
    */
-  onLongPress: typeof $3.func;
+  onLongPress: $TypeOf<typeof $3.func>;
 
   /**
    * Defines how far your touch may move off of the button, before
@@ -62,7 +62,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/text.html#selectable
    */
-  selectable: typeof $3.bool;
+  selectable: $TypeOf<typeof $3.bool>;
 
   /**
    * The highlight color of the text.
@@ -76,29 +76,29 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/text.html#supperhighlighting
    */
-  suppressHighlighting: typeof $3.bool;
-  style: typeof stylePropType;
+  suppressHighlighting: $TypeOf<typeof $3.bool>;
+  style: $TypeOf<typeof stylePropType>;
 
   /**
    * Used to locate this view in end-to-end tests.
    *
    * See https://reactnative.dev/docs/text.html#testid
    */
-  testID: typeof $3.string;
+  testID: $TypeOf<typeof $3.string>;
 
   /**
    * Used to locate this view from native code.
    *
    * See https://reactnative.dev/docs/text.html#nativeid
    */
-  nativeID: typeof $3.string;
+  nativeID: $TypeOf<typeof $3.string>;
 
   /**
    * Whether fonts should scale to respect Text Size accessibility settings.
    *
    * See https://reactnative.dev/docs/text.html#allowfontscaling
    */
-  allowFontScaling: typeof $3.bool;
+  allowFontScaling: $TypeOf<typeof $3.bool>;
 
   /**
    * Specifies largest possible scale a font can reach when `allowFontScaling` is enabled.
@@ -107,35 +107,35 @@ declare const $f2tExportDefault:
    * `0`: no max, ignore parent/global default
    * `>= 1`: sets the maxFontSizeMultiplier of this node to this value
    */
-  maxFontSizeMultiplier: typeof $3.number;
+  maxFontSizeMultiplier: $TypeOf<typeof $3.number>;
 
   /**
    * Indicates whether the view is an accessibility element.
    *
    * See https://reactnative.dev/docs/text.html#accessible
    */
-  accessible: typeof $3.bool;
+  accessible: $TypeOf<typeof $3.bool>;
 
   /**
    * Whether font should be scaled down automatically.
    *
    * See https://reactnative.dev/docs/text.html#adjustsfontsizetofit
    */
-  adjustsFontSizeToFit: typeof $3.bool;
+  adjustsFontSizeToFit: $TypeOf<typeof $3.bool>;
 
   /**
    * Smallest possible scale a font can reach.
    *
    * See https://reactnative.dev/docs/text.html#minimumfontscale
    */
-  minimumFontScale: typeof $3.number;
+  minimumFontScale: $TypeOf<typeof $3.number>;
 
   /**
    * Specifies the disabled state of the text view for testing purposes.
    *
    * See https://reactnative.dev/docs/text.html#disabled
    */
-  disabled: typeof $3.bool;
+  disabled: $TypeOf<typeof $3.bool>;
 
   /**
    * Determines the types of data converted to clickable URLs in text.

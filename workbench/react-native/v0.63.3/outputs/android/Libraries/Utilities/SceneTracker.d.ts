@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type Scene = {
   name: string;
@@ -12,5 +13,5 @@ declare var SceneTracker:
   };
 };
 export type { Scene };
-declare const $f2tExportDefault: typeof SceneTracker;
+declare const $f2tExportDefault: $TypeOf<typeof SceneTracker>;
 export default $f2tExportDefault;

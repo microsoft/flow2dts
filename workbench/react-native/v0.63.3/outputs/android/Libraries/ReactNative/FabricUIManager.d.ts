@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { MeasureOnSuccessCallback } from "../Renderer/shims/ReactNativeTypes";
 import { MeasureInWindowOnSuccessCallback } from "../Renderer/shims/ReactNativeTypes";
@@ -24,5 +25,5 @@ declare type Spec =
   readonly measureLayout: (node: Node, relativeNode: Node, onFail: () => void, onSuccess: MeasureLayoutOnSuccessCallback) => void;
 };
 declare var FabricUIManager: null | undefined | Spec;
-declare const $f2tExportDefault: typeof FabricUIManager;
+declare const $f2tExportDefault: $TypeOf<typeof FabricUIManager>;
 export default $f2tExportDefault;

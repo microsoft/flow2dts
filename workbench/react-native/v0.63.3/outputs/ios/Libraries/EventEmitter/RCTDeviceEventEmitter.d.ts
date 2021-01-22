@@ -10,4 +10,5 @@ declare class RCTDeviceEventEmitter extends $1 {
   removeAllListeners(eventType?: null | undefined | string): void;
   removeSubscription(subscription: EmitterSubscription): void;
 }
-export default RCTDeviceEventEmitter;
+declare const $f2tExportDefault: RCTDeviceEventEmitter;
+export default $f2tExportDefault;

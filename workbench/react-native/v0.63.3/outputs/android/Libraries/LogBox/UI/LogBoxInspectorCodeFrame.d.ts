@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import * as React from "react";
 import { CodeFrame } from "../Data/parseLogBoxLog";
@@ -7,5 +8,5 @@ declare type Props = Readonly<
   codeFrame?: null | undefined | CodeFrame;
 }>;
 declare function LogBoxInspectorCodeFrame(props: Props): React.Node;
-declare const $f2tExportDefault: typeof LogBoxInspectorCodeFrame;
+declare const $f2tExportDefault: $TypeOf<typeof LogBoxInspectorCodeFrame>;
 export default $f2tExportDefault;

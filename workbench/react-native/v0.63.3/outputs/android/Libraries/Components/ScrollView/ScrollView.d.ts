@@ -26,8 +26,8 @@ declare type ScrollViewImperativeMethods = Readonly<
   scrollToEnd: $PropertyType<ScrollView, "scrollToEnd">;
   flashScrollIndicators: $PropertyType<ScrollView, "flashScrollIndicators">;
   // ScrollResponder.Mixin public methods
-  scrollResponderZoomTo: $PropertyType<typeof $2.Mixin, "scrollResponderZoomTo">;
-  scrollResponderScrollNativeHandleToKeyboard: $PropertyType<typeof $2.Mixin, "scrollResponderScrollNativeHandleToKeyboard">;
+  scrollResponderZoomTo: $PropertyType<$TypeOf<typeof $2.Mixin>, "scrollResponderZoomTo">;
+  scrollResponderScrollNativeHandleToKeyboard: $PropertyType<$TypeOf<typeof $2.Mixin>, "scrollResponderScrollNativeHandleToKeyboard">;
 }>;
 declare type ScrollResponderType = ScrollViewImperativeMethods;
 declare type IOSProps = Readonly<
@@ -605,7 +605,7 @@ declare var Context: $1.Context<ContextType>;
 declare type ScrollViewComponentStatics = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  Context: typeof Context;
+  Context: $TypeOf<typeof Context>;
 }>;
 declare class ScrollView extends $1.Component<Props, State> {
   static Context: React$Context<ContextType>;
@@ -669,7 +669,7 @@ declare class ScrollView extends $1.Component<Props, State> {
 export type { ScrollViewImperativeMethods };
 export type { ScrollResponderType };
 export type { Props };
-declare const $f2tExportDefault: $1.AbstractComponent<$1.ElementConfig<ScrollView>, Readonly<
+declare const $f2tExportDefault: $1.AbstractComponent<$1.ElementConfig<typeof ScrollView>, Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

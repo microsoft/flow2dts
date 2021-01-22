@@ -16,22 +16,22 @@ $TypeOf<typeof $2> & $TypeOf<typeof $3> & $TypeOf<typeof $4> & {
   borderLeftColor: $TypeOf<typeof $1>;
   borderStartColor: $TypeOf<typeof $1>;
   borderEndColor: $TypeOf<typeof $1>;
-  borderRadius: typeof $5.number;
-  borderTopLeftRadius: typeof $5.number;
-  borderTopRightRadius: typeof $5.number;
-  borderTopStartRadius: typeof $5.number;
-  borderTopEndRadius: typeof $5.number;
-  borderBottomLeftRadius: typeof $5.number;
-  borderBottomRightRadius: typeof $5.number;
-  borderBottomStartRadius: typeof $5.number;
-  borderBottomEndRadius: typeof $5.number;
+  borderRadius: $TypeOf<typeof $5.number>;
+  borderTopLeftRadius: $TypeOf<typeof $5.number>;
+  borderTopRightRadius: $TypeOf<typeof $5.number>;
+  borderTopStartRadius: $TypeOf<typeof $5.number>;
+  borderTopEndRadius: $TypeOf<typeof $5.number>;
+  borderBottomLeftRadius: $TypeOf<typeof $5.number>;
+  borderBottomRightRadius: $TypeOf<typeof $5.number>;
+  borderBottomStartRadius: $TypeOf<typeof $5.number>;
+  borderBottomEndRadius: $TypeOf<typeof $5.number>;
   borderStyle: React$PropType$Primitive<"solid" | "dotted" | "dashed">;
-  borderWidth: typeof $5.number;
-  borderTopWidth: typeof $5.number;
-  borderRightWidth: typeof $5.number;
-  borderBottomWidth: typeof $5.number;
-  borderLeftWidth: typeof $5.number;
-  opacity: typeof $5.number;
+  borderWidth: $TypeOf<typeof $5.number>;
+  borderTopWidth: $TypeOf<typeof $5.number>;
+  borderRightWidth: $TypeOf<typeof $5.number>;
+  borderBottomWidth: $TypeOf<typeof $5.number>;
+  borderLeftWidth: $TypeOf<typeof $5.number>;
+  opacity: $TypeOf<typeof $5.number>;
 
   /**
    * (Android-only) Sets the elevation of a view, using Android's underlying
@@ -40,7 +40,7 @@ $TypeOf<typeof $2> & $TypeOf<typeof $3> & $TypeOf<typeof $4> & {
    * Only supported on Android 5.0+, has no effect on earlier versions.
    * @platform android
    */
-  elevation: typeof $5.number;
+  elevation: $TypeOf<typeof $5.number>;
 };
-declare const $f2tExportDefault: typeof DeprecatedViewStylePropTypes;
+declare const $f2tExportDefault: $TypeOf<typeof DeprecatedViewStylePropTypes>;
 export default $f2tExportDefault;

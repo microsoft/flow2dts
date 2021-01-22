@@ -1,4 +1,4 @@
-import { Stringish } from "flow2dts-flow-types-polyfill";
+import { $TypeOf, Stringish } from "flow2dts-flow-types-polyfill";
 // @flow
 import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
 import { SyntheticEvent } from "../../Types/CoreEventTypes";
@@ -36,5 +36,5 @@ interface NativeCommands {
 declare var Commands: NativeCommands;
 declare var RCTPickerNativeComponent: ComponentType;
 export { Commands };
-declare const $f2tExportDefault: typeof RCTPickerNativeComponent;
+declare const $f2tExportDefault: $TypeOf<typeof RCTPickerNativeComponent>;
 export default $f2tExportDefault;

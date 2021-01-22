@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type ModuleConfig = [string
 /* name */
@@ -17,5 +18,5 @@ export interface NativeModules {
 declare var NativeModules: NativeModules;
 export type { ModuleConfig };
 export type { MethodType };
-declare const $f2tExportDefault: typeof NativeModules;
+declare const $f2tExportDefault: $TypeOf<typeof NativeModules>;
 export default $f2tExportDefault;

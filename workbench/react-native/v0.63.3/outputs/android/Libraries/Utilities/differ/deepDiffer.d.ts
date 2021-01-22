@@ -1,4 +1,4 @@
-import { $TEMPORARY$module$exports$assign } from "flow2dts-flow-types-polyfill";
+import { $TEMPORARY$module$exports$assign, $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type LogListeners =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -12,7 +12,7 @@ declare type Options =
 };
 declare function unstable_setLogListeners(listeners?: null | undefined | LogListeners): void;
 declare var deepDiffer: (one: any, two: any, maxDepthOrOptions?: Options | number, maybeOptions?: Options) => boolean;
-declare const $f2tExportDefault: $TEMPORARY$module$exports$assign<typeof deepDiffer, {
-  unstable_setLogListeners: typeof unstable_setLogListeners;
+declare const $f2tExportDefault: $TEMPORARY$module$exports$assign<$TypeOf<typeof deepDiffer>, {
+  unstable_setLogListeners: $TypeOf<typeof unstable_setLogListeners>;
 }>;
 export default $f2tExportDefault;

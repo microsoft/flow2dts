@@ -1,4 +1,4 @@
-import { Stringish } from "flow2dts-flow-types-polyfill";
+import { $TypeOf, Stringish } from "flow2dts-flow-types-polyfill";
 import $2 from "react";
 import { TextStyleProp } from "../../StyleSheet/StyleSheet";
 import { ColorValue } from "../../StyleSheet/StyleSheetTypes";
@@ -22,7 +22,7 @@ declare type Label = Stringish | number;
 declare type Props = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 ViewProps & {
-  children: $2.ChildrenArray<$2.Element<typeof PickerIOSItem>>;
+  children: $2.ChildrenArray<$2.Element<$TypeOf<typeof PickerIOSItem>>>;
   itemStyle?: null | undefined | TextStyleProp;
   onChange?: null | undefined | ((event: PickerIOSChangeEvent) => unknown);
   onValueChange?: null | undefined | ((itemValue: string | number, itemIndex: number) => unknown);

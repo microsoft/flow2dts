@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "react";
 import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
 import { ViewProps } from "../View/ViewPropTypes";
@@ -7,5 +8,5 @@ ViewProps & {
   emulateUnlessSupported?: boolean;
 }>;
 declare var exported: $1.AbstractComponent<Props, $1.ElementRef<HostComponent<{}>>>;
-declare const $f2tExportDefault: typeof exported;
+declare const $f2tExportDefault: $TypeOf<typeof exported>;
 export default $f2tExportDefault;

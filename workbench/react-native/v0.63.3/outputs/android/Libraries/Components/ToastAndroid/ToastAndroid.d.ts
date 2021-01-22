@@ -1,3 +1,5 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
+
 /**
  * TODO: Figure out why these are not included in the Flow dump
  */
@@ -13,5 +15,5 @@ declare var ToastAndroid: {
   showWithGravity: (message: string, duration: number, gravity: number) => void;
   showWithGravityAndOffset: (message: string, duration: number, gravity: number, xOffset: number, yOffset: number) => void;
 };
-declare const $f2tExportDefault: typeof ToastAndroid;
+declare const $f2tExportDefault: $TypeOf<typeof ToastAndroid>;
 export default $f2tExportDefault;

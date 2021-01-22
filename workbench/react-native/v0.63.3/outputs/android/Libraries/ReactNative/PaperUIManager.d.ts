@@ -7,5 +7,5 @@ $TypeOf<typeof NativeUIManager> & {
   getConstants: () => Object;
   getViewManagerConfig: (viewManagerName: string) => any;
 };
-declare const $f2tExportDefault: typeof UIManagerJS;
+declare const $f2tExportDefault: $TypeOf<typeof UIManagerJS>;
 export default $f2tExportDefault;

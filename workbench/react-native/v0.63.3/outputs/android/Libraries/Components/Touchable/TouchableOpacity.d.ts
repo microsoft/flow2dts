@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $Diff } from "utility-types";
 // @flow
 import TouchableWithoutFeedback$f2tTypeof from "./TouchableWithoutFeedback";
@@ -20,7 +21,7 @@ declare type Props = Readonly<
 React.ElementConfig<TouchableWithoutFeedback> & TVProps & {
   activeOpacity?: null | undefined | number;
   style?: null | undefined | ViewStyleProp;
-  hostRef: React.Ref<typeof Animated.View>;
+  hostRef: React.Ref<$TypeOf<typeof Animated.View>>;
 }>;
 declare const $f2tExportDefault: React.ComponentType<Readonly<$Diff<Props,
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

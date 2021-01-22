@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type BackPressEventName = "backPress" | "hardwareBackPress";
 declare type TBackHandler =
@@ -10,5 +11,5 @@ declare type TBackHandler =
   readonly removeEventListener: (eventName: BackPressEventName, handler: Function) => void;
 };
 declare var BackHandler: TBackHandler;
-declare const $f2tExportDefault: typeof BackHandler;
+declare const $f2tExportDefault: $TypeOf<typeof BackHandler>;
 export default $f2tExportDefault;

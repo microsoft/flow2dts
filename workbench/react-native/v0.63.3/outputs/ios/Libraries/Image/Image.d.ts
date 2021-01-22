@@ -15,10 +15,10 @@ declare function queryCache(urls: string[]): Promise<{
 declare type ImageComponentStatics = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  getSize: typeof getSize;
-  getSizeWithHeaders: typeof getSizeWithHeaders;
-  prefetch: typeof prefetch;
-  queryCache: typeof queryCache;
+  getSize: $TypeOf<typeof getSize>;
+  getSizeWithHeaders: $TypeOf<typeof getSizeWithHeaders>;
+  prefetch: $TypeOf<typeof prefetch>;
+  queryCache: $TypeOf<typeof queryCache>;
   resolveAssetSource: $TypeOf<typeof $3>;
 }>;
 declare const $f2tExportDefault: $2.AbstractComponent<ImagePropsType, $2.ElementRef<typeof ImageViewNativeComponent>> & ImageComponentStatics;

@@ -7,4 +7,5 @@ declare class RCTNetworking extends $1 {
   abortRequest(requestId: number): void;
   clearCookies(callback: (result: boolean) => void): void;
 }
-export default RCTNetworking;
+declare const $f2tExportDefault: RCTNetworking;
+export default $f2tExportDefault;

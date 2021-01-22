@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var UTFSequence:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -17,5 +18,5 @@ declare var UTFSequence:
   TRIANGLE_LEFT: string;
   TRIANGLE_RIGHT: string;
 };
-declare const $f2tExportDefault: typeof UTFSequence;
+declare const $f2tExportDefault: $TypeOf<typeof UTFSequence>;
 export default $f2tExportDefault;

@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type LogLevel = "trace" | "info" | "warn" | "error" | "log" | "group" | "groupCollapsed" | "groupEnd" | "debug";
 declare type HMRClientNativeInterface =
@@ -11,5 +12,5 @@ declare type HMRClientNativeInterface =
 };
 declare var HMRClient: HMRClientNativeInterface;
 export type { HMRClientNativeInterface };
-declare const $f2tExportDefault: typeof HMRClient;
+declare const $f2tExportDefault: $TypeOf<typeof HMRClient>;
 export default $f2tExportDefault;

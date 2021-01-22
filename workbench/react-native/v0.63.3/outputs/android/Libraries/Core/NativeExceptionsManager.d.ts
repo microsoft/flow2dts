@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { TurboModule } from "../TurboModule/RCTExport";
 declare type StackFrame =
@@ -43,5 +44,5 @@ declare var ExceptionsManager:
 export type { StackFrame };
 export type { ExceptionData };
 export type { Spec };
-declare const $f2tExportDefault: typeof ExceptionsManager;
+declare const $f2tExportDefault: $TypeOf<typeof ExceptionsManager>;
 export default $f2tExportDefault;

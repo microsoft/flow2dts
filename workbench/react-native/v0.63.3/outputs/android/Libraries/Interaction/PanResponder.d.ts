@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $PropertyType } from "utility-types";
 // @flow
 import { PressEvent } from "../Types/CoreEventTypes";
@@ -236,5 +237,5 @@ declare var PanResponder:
 declare type PanResponderInstance = ReturnType<typeof PanResponder["create"]>;
 export type { GestureState };
 export type { PanResponderInstance };
-declare const $f2tExportDefault: typeof PanResponder;
+declare const $f2tExportDefault: $TypeOf<typeof PanResponder>;
 export default $f2tExportDefault;

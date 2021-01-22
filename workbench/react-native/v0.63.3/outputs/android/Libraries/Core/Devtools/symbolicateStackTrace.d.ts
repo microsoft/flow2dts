@@ -1,3 +1,4 @@
+import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { StackFrame } from "../NativeExceptionsManager";
 declare type CodeFrame = Readonly<
@@ -19,5 +20,5 @@ declare type SymbolicatedStackTrace = Readonly<
 declare function symbolicateStackTrace(stack: StackFrame[]): Promise<SymbolicatedStackTrace>;
 export type { CodeFrame };
 export type { SymbolicatedStackTrace };
-declare const $f2tExportDefault: typeof symbolicateStackTrace;
+declare const $f2tExportDefault: $TypeOf<typeof symbolicateStackTrace>;
 export default $f2tExportDefault;
