@@ -73,15 +73,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 5,
-                    "column": 6
+                    "row": 7,
+                    "column": 14
                 },
                 "end": {
-                    "row": 5,
-                    "column": 24
+                    "row": 7,
+                    "column": 32
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/StyleSheet/processColor.js.flow"
+                "file": "/Libraries/Components/CheckBox/AndroidCheckBoxNativeComponent.js.flow"
             }
         }
     },
@@ -94,15 +94,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 24,
-                    "column": 24
+                    "row": 44,
+                    "column": 16
                 },
                 "end": {
-                    "row": 24,
-                    "column": 27
+                    "row": 44,
+                    "column": 24
                 },
-                "libraryFolder": 0,
-                "file": "/core.js"
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/CheckBox/AndroidCheckBoxNativeComponent.js.flow"
             }
         }
     ],

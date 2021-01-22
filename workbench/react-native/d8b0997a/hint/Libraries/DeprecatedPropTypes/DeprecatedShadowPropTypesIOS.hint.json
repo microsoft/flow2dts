@@ -64,18 +64,7 @@
                 "column": 40,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 16,
-                    "column": 40
-                },
-                "end": {
-                    "row": 16,
-                    "column": 45
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow:16:39\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -83,18 +72,7 @@
                 "column": 39,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 17,
-                    "column": 39
-                },
-                "end": {
-                    "row": 17,
-                    "column": 44
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedShadowPropTypesIOS.js.flow:17:38\r\nNo possible types\r\n"
         },
         {
             "source": {

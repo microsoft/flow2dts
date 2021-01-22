@@ -200,15 +200,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 5,
-                    "column": 30
+                    "row": 3,
+                    "column": 12
                 },
                 "end": {
-                    "row": 7,
-                    "column": 29
+                    "row": 3,
+                    "column": 36
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/StyleSheet/flattenStyle.js.flow"
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
             }
         },
         {

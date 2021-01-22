@@ -198,18 +198,7 @@
                 "column": 54,
                 "local": "currentlyFocusedInput"
             },
-            "resolved": {
-                "begin": {
-                    "row": 8,
-                    "column": 39
-                },
-                "end": {
-                    "row": 8,
-                    "column": 55
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/Components/TextInput/TextInput.js.flow:710:53\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -217,18 +206,7 @@
                 "column": 54,
                 "local": "currentlyFocusedField"
             },
-            "resolved": {
-                "begin": {
-                    "row": 10,
-                    "column": 39
-                },
-                "end": {
-                    "row": 10,
-                    "column": 49
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/Components/TextInput/TextInput.js.flow:711:53\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -236,18 +214,7 @@
                 "column": 47,
                 "local": "focusTextInput"
             },
-            "resolved": {
-                "begin": {
-                    "row": 20,
-                    "column": 32
-                },
-                "end": {
-                    "row": 20,
-                    "column": 63
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/Components/TextInput/TextInput.js.flow:712:46\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -255,18 +222,7 @@
                 "column": 46,
                 "local": "blurTextInput"
             },
-            "resolved": {
-                "begin": {
-                    "row": 22,
-                    "column": 31
-                },
-                "end": {
-                    "row": 22,
-                    "column": 62
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/Components/TextInput/TextInput.js.flow:713:45\r\nNo possible types\r\n"
         },
         {
             "source": {

@@ -6,18 +6,7 @@
                 "column": 13,
                 "local": "EventEmitter"
             },
-            "resolved": {
-                "begin": {
-                    "row": 25,
-                    "column": 15
-                },
-                "end": {
-                    "row": 25,
-                    "column": 26
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/vendor/emitter/EventEmitter.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/vendor/emitter/EmitterSubscription.js.flow:5:12\r\nNo possible types\r\n"
         },
         "EventSubscriptionVendor": {
             "source": {
@@ -25,18 +14,7 @@
                 "column": 13,
                 "local": "EventSubscriptionVendor"
             },
-            "resolved": {
-                "begin": {
-                    "row": 4,
-                    "column": 15
-                },
-                "end": {
-                    "row": 4,
-                    "column": 37
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/vendor/emitter/EventSubscriptionVendor.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/vendor/emitter/EmitterSubscription.js.flow:6:12\r\nNo possible types\r\n"
         }
     },
     "typeofs": [

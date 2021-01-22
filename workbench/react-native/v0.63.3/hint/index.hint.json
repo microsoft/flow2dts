@@ -8,15 +8,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 19,
-                    "column": 32
+                    "row": 2,
+                    "column": 15
                 },
                 "end": {
-                    "row": 135,
-                    "column": 2
+                    "row": 2,
+                    "column": 31
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "ActivityIndicator": {
@@ -27,15 +27,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 50,
-                    "column": 39
+                    "row": 3,
+                    "column": 15
                 },
                 "end": {
-                    "row": 53,
-                    "column": 1
+                    "row": 3,
+                    "column": 31
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/ActivityIndicator/ActivityIndicator.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "Button": {
@@ -122,15 +122,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 156,
+                    "row": 8,
                     "column": 15
                 },
                 "end": {
-                    "row": 156,
+                    "row": 8,
                     "column": 22
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Lists/FlatList.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "Image": {
@@ -331,15 +331,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 24,
-                    "column": 24
+                    "row": 19,
+                    "column": 15
                 },
                 "end": {
-                    "row": 24,
-                    "column": 49
+                    "row": 19,
+                    "column": 29
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/ProgressViewIOS/RCTProgressViewNativeComponent.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "SafeAreaView": {
@@ -350,15 +350,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 15,
-                    "column": 23
+                    "row": 20,
+                    "column": 15
                 },
                 "end": {
-                    "row": 18,
-                    "column": 1
+                    "row": 20,
+                    "column": 26
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/SafeAreaView/SafeAreaView.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "ScrollView": {
@@ -388,15 +388,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 112,
+                    "row": 22,
                     "column": 15
                 },
                 "end": {
-                    "row": 112,
+                    "row": 22,
                     "column": 25
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Lists/SectionList.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "SegmentedControlIOS": {
@@ -426,15 +426,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 118,
-                    "column": 28
+                    "row": 24,
+                    "column": 15
                 },
                 "end": {
-                    "row": 121,
-                    "column": 1
+                    "row": 24,
+                    "column": 20
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/Slider/Slider.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "Switch": {
@@ -540,15 +540,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 264,
-                    "column": 24
+                    "row": 30,
+                    "column": 15
                 },
                 "end": {
-                    "row": 277,
-                    "column": 2
+                    "row": 30,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "TouchableHighlight": {
@@ -635,15 +635,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 10,
-                    "column": 19
+                    "row": 35,
+                    "column": 15
                 },
                 "end": {
-                    "row": 13,
-                    "column": 1
+                    "row": 35,
+                    "column": 18
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/View.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "VirtualizedList": {
@@ -673,15 +673,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 122,
+                    "row": 37,
                     "column": 15
                 },
                 "end": {
-                    "row": 122,
+                    "row": 37,
                     "column": 36
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "ActionSheetIOS": {
@@ -692,15 +692,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 5,
-                    "column": 29
+                    "row": 38,
+                    "column": 15
                 },
                 "end": {
-                    "row": 64,
-                    "column": 2
+                    "row": 38,
+                    "column": 28
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/ActionSheetIOS/ActionSheetIOS.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "Alert": {
@@ -768,15 +768,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 34,
-                    "column": 26
+                    "row": 42,
+                    "column": 15
                 },
                 "end": {
-                    "row": 115,
-                    "column": 2
+                    "row": 42,
+                    "column": 25
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/ReactNative/AppRegistry.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "AppState": {
@@ -787,15 +787,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 54,
-                    "column": 31
+                    "row": 43,
+                    "column": 15
                 },
                 "end": {
-                    "row": 54,
-                    "column": 66
+                    "row": 43,
+                    "column": 22
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/AppState/AppState.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "AsyncStorage": {
@@ -806,15 +806,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 2,
-                    "column": 27
+                    "row": 44,
+                    "column": 15
                 },
                 "end": {
-                    "row": 129,
-                    "column": 2
+                    "row": 44,
+                    "column": 26
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Storage/AsyncStorage.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "BackHandler": {
@@ -825,15 +825,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 4,
-                    "column": 21
+                    "row": 45,
+                    "column": 15
                 },
                 "end": {
-                    "row": 14,
-                    "column": 2
+                    "row": 45,
+                    "column": 25
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Utilities/BackHandler.ios.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "Clipboard": {
@@ -882,15 +882,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 26,
-                    "column": 11
+                    "row": 48,
+                    "column": 15
                 },
                 "end": {
-                    "row": 26,
-                    "column": 14
+                    "row": 48,
+                    "column": 24
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Utilities/NativeDeviceInfo.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "DevSettings": {
@@ -996,15 +996,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 2,
-                    "column": 29
+                    "row": 54,
+                    "column": 15
                 },
                 "end": {
-                    "row": 39,
-                    "column": 2
+                    "row": 54,
+                    "column": 28
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Image/ImagePickerIOS.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "InteractionManager": {
@@ -1015,15 +1015,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 5,
-                    "column": 33
+                    "row": 55,
+                    "column": 15
                 },
                 "end": {
-                    "row": 42,
-                    "column": 2
+                    "row": 55,
+                    "column": 32
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Interaction/InteractionManager.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "Keyboard": {
@@ -1053,15 +1053,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 63,
-                    "column": 30
+                    "row": 57,
+                    "column": 15
                 },
                 "end": {
-                    "row": 101,
-                    "column": 2
+                    "row": 57,
+                    "column": 29
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/LayoutAnimation/LayoutAnimation.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "Linking": {
@@ -1148,15 +1148,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 90,
-                    "column": 27
+                    "row": 62,
+                    "column": 15
                 },
                 "end": {
-                    "row": 236,
-                    "column": 2
+                    "row": 62,
+                    "column": 26
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Interaction/PanResponder.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "PermissionsAndroid": {
@@ -1167,15 +1167,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 14,
+                    "row": 63,
                     "column": 15
                 },
                 "end": {
-                    "row": 14,
+                    "row": 63,
                     "column": 32
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/PermissionsAndroid/PermissionsAndroid.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "PixelRatio": {
@@ -1224,15 +1224,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 2,
-                    "column": 23
+                    "row": 66,
+                    "column": 15
                 },
                 "end": {
-                    "row": 14,
-                    "column": 2
+                    "row": 66,
+                    "column": 22
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Settings/Settings.ios.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "Share": {
@@ -1300,15 +1300,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 2,
-                    "column": 23
+                    "row": 70,
+                    "column": 15
                 },
                 "end": {
-                    "row": 29,
-                    "column": 2
+                    "row": 70,
+                    "column": 22
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Performance/Systrace.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "ToastAndroid": {
@@ -1376,15 +1376,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 4,
-                    "column": 11
+                    "row": 74,
+                    "column": 15
                 },
                 "end": {
-                    "row": 4,
-                    "column": 30
+                    "row": 74,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/ReactNative/UIManager.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "useColorScheme": {
@@ -1433,15 +1433,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 2,
-                    "column": 26
+                    "row": 77,
+                    "column": 15
                 },
                 "end": {
-                    "row": 17,
-                    "column": 2
+                    "row": 77,
+                    "column": 25
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/UTFSequence.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "Vibration": {
@@ -1452,15 +1452,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 2,
-                    "column": 24
+                    "row": 78,
+                    "column": 15
                 },
                 "end": {
-                    "row": 15,
-                    "column": 2
+                    "row": 78,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Vibration/Vibration.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "YellowBox": {
@@ -1547,15 +1547,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 12,
-                    "column": 28
+                    "row": 83,
+                    "column": 15
                 },
                 "end": {
-                    "row": 12,
-                    "column": 61
+                    "row": 83,
+                    "column": 27
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/BatchedBridge/NativeModules.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "Platform": {
@@ -1566,15 +1566,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 9,
-                    "column": 23
+                    "row": 84,
+                    "column": 15
                 },
                 "end": {
-                    "row": 32,
-                    "column": 2
+                    "row": 84,
+                    "column": 22
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Utilities/Platform.ios.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "processColor": {
@@ -1585,15 +1585,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 7,
-                    "column": 30
+                    "row": 85,
+                    "column": 15
                 },
                 "end": {
-                    "row": 9,
-                    "column": 23
+                    "row": 85,
+                    "column": 26
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/StyleSheet/processColor.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "PlatformColor": {
@@ -1699,15 +1699,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 2,
-                    "column": 43
+                    "row": 91,
+                    "column": 15
                 },
                 "end": {
-                    "row": 10,
-                    "column": 1
+                    "row": 91,
+                    "column": 42
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedEdgeInsetsPropType.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "DeprecatedPointPropType": {
@@ -1718,15 +1718,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 2,
-                    "column": 28
+                    "row": 92,
+                    "column": 15
                 },
                 "end": {
-                    "row": 8,
-                    "column": 1
+                    "row": 92,
+                    "column": 37
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedPointPropType.js.flow"
+                "file": "/index.js.flow"
             }
         },
         "DeprecatedViewPropTypes": {

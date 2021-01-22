@@ -314,12 +314,12 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 24,
-                    "column": 41
+                    "row": 0,
+                    "column": 1
                 },
                 "end": {
-                    "row": 29,
-                    "column": 41
+                    "row": 0,
+                    "column": 0
                 },
                 "libraryFolder": -1,
                 "file": "/Libraries/Animated/createAnimatedComponent.js.flow"
@@ -464,18 +464,7 @@
                 "column": 38,
                 "local": "add"
             },
-            "resolved": {
-                "begin": {
-                    "row": 51,
-                    "column": 18
-                },
-                "end": {
-                    "row": 54,
-                    "column": 21
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/Animated/AnimatedMock.js.flow:94:37\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -483,18 +472,7 @@
                 "column": 43,
                 "local": "subtract"
             },
-            "resolved": {
-                "begin": {
-                    "row": 56,
-                    "column": 23
-                },
-                "end": {
-                    "row": 59,
-                    "column": 24
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/Animated/AnimatedMock.js.flow:95:42\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -502,18 +480,7 @@
                 "column": 41,
                 "local": "divide"
             },
-            "resolved": {
-                "begin": {
-                    "row": 61,
-                    "column": 21
-                },
-                "end": {
-                    "row": 64,
-                    "column": 21
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/Animated/AnimatedMock.js.flow:96:40\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -521,18 +488,7 @@
                 "column": 43,
                 "local": "multiply"
             },
-            "resolved": {
-                "begin": {
-                    "row": 66,
-                    "column": 23
-                },
-                "end": {
-                    "row": 69,
-                    "column": 27
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/Animated/AnimatedMock.js.flow:97:42\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -540,18 +496,7 @@
                 "column": 41,
                 "local": "modulo"
             },
-            "resolved": {
-                "begin": {
-                    "row": 71,
-                    "column": 21
-                },
-                "end": {
-                    "row": 71,
-                    "column": 72
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/Animated/AnimatedMock.js.flow:98:40\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -559,18 +504,7 @@
                 "column": 44,
                 "local": "diffClamp"
             },
-            "resolved": {
-                "begin": {
-                    "row": 73,
-                    "column": 24
-                },
-                "end": {
-                    "row": 77,
-                    "column": 22
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/Animated/AnimatedMock.js.flow:99:43\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -730,18 +664,7 @@
                 "column": 44,
                 "local": "forkEvent"
             },
-            "resolved": {
-                "begin": {
-                    "row": 126,
-                    "column": 27
-                },
-                "end": {
-                    "row": 129,
-                    "column": 27
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/Animated/AnimatedMock.js.flow:108:43\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -749,18 +672,7 @@
                 "column": 46,
                 "local": "unforkEvent"
             },
-            "resolved": {
-                "begin": {
-                    "row": 131,
-                    "column": 29
-                },
-                "end": {
-                    "row": 134,
-                    "column": 7
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/Animated/AnimatedMock.js.flow:109:45\r\nNo possible types\r\n"
         },
         {
             "source": {

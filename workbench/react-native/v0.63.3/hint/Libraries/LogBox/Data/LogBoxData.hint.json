@@ -130,15 +130,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 4,
-                    "column": 6
+                    "row": 11,
+                    "column": 14
                 },
                 "end": {
-                    "row": 4,
-                    "column": 18
+                    "row": 11,
+                    "column": 26
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Core/Devtools/parseErrorStack.js.flow"
+                "file": "/Libraries/LogBox/Data/LogBoxData.js.flow"
             }
         }
     },

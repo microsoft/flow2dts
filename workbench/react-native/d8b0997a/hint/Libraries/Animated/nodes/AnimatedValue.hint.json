@@ -25,18 +25,7 @@
                 "column": 13,
                 "local": "Animation"
             },
-            "resolved": {
-                "begin": {
-                    "row": 14,
-                    "column": 15
-                },
-                "end": {
-                    "row": 14,
-                    "column": 23
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/Animated/animations/Animation.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/Animated/nodes/AnimatedValue.js.flow:8:12\r\nNo possible types\r\n"
         },
         "InterpolationConfigType": {
             "source": {
@@ -63,18 +52,7 @@
                 "column": 13,
                 "local": "AnimatedTracking"
             },
-            "resolved": {
-                "begin": {
-                    "row": 9,
-                    "column": 15
-                },
-                "end": {
-                    "row": 9,
-                    "column": 30
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/Animated/nodes/AnimatedTracking.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/Animated/nodes/AnimatedValue.js.flow:10:12\r\nNo possible types\r\n"
         }
     },
     "typeofs": [

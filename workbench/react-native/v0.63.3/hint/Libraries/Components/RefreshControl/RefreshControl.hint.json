@@ -68,7 +68,7 @@
             "resolved": {
                 "begin": {
                     "row": 45,
-                    "column": 41
+                    "column": 16
                 },
                 "end": {
                     "row": 45,
@@ -87,7 +87,7 @@
             "resolved": {
                 "begin": {
                     "row": 46,
-                    "column": 41
+                    "column": 16
                 },
                 "end": {
                     "row": 46,
@@ -103,18 +103,7 @@
                 "column": 30,
                 "local": "Component"
             },
-            "resolved": {
-                "begin": {
-                    "row": 26,
-                    "column": 15
-                },
-                "end": {
-                    "row": 26,
-                    "column": 29
-                },
-                "libraryFolder": 0,
-                "file": "/react.js"
-            }
+            "error": "Could not get definition for /Libraries/Components/RefreshControl/RefreshControl.js.flow:82:29\r\nNo possible types\r\n"
         },
         {
             "source": {

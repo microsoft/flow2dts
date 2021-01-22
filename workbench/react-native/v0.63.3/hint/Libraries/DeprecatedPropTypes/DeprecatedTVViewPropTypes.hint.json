@@ -26,18 +26,7 @@
                 "column": 41,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 6,
-                    "column": 41
-                },
-                "end": {
-                    "row": 6,
-                    "column": 44
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTVViewPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTVViewPropTypes.js.flow:6:40\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -45,18 +34,7 @@
                 "column": 46,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 7,
-                    "column": 46
-                },
-                "end": {
-                    "row": 7,
-                    "column": 51
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTVViewPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTVViewPropTypes.js.flow:7:45\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -64,18 +42,7 @@
                 "column": 46,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 8,
-                    "column": 46
-                },
-                "end": {
-                    "row": 8,
-                    "column": 51
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTVViewPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTVViewPropTypes.js.flow:8:45\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -83,18 +50,7 @@
                 "column": 41,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 9,
-                    "column": 41
-                },
-                "end": {
-                    "row": 9,
-                    "column": 46
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTVViewPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTVViewPropTypes.js.flow:9:40\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -102,18 +58,7 @@
                 "column": 45,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 10,
-                    "column": 45
-                },
-                "end": {
-                    "row": 10,
-                    "column": 50
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTVViewPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTVViewPropTypes.js.flow:10:44\r\nNo possible types\r\n"
         },
         {
             "source": {

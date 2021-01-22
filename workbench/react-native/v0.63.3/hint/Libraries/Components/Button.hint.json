@@ -65,18 +65,7 @@
                 "column": 30,
                 "local": "Component"
             },
-            "resolved": {
-                "begin": {
-                    "row": 26,
-                    "column": 15
-                },
-                "end": {
-                    "row": 26,
-                    "column": 29
-                },
-                "libraryFolder": 0,
-                "file": "/react.js"
-            }
+            "error": "Could not get definition for /Libraries/Components/Button.js.flow:91:29\r\nNo possible types\r\n"
         },
         {
             "source": {

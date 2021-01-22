@@ -84,18 +84,7 @@
                 "column": 43,
                 "local": "pickScale"
             },
-            "resolved": {
-                "begin": {
-                    "row": 66,
-                    "column": 3
-                },
-                "end": {
-                    "row": 66,
-                    "column": 70
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/Image/AssetSourceResolver.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/Image/resolveAssetSource.js.flow:17:42\r\nNo possible types\r\n"
         }
     ],
     "decls": [

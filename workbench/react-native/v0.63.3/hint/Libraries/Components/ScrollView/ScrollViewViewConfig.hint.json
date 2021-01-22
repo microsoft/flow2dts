@@ -9,14 +9,14 @@
             "resolved": {
                 "begin": {
                     "row": 2,
-                    "column": 6
+                    "column": 14
                 },
                 "end": {
                     "row": 2,
-                    "column": 24
+                    "column": 32
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Utilities/registerGeneratedViewConfig.js.flow"
+                "file": "/Libraries/Components/ScrollView/ScrollViewViewConfig.js.flow"
             }
         }
     },

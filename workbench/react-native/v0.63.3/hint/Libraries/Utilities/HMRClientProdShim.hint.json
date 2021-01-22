@@ -8,15 +8,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 13,
-                    "column": 6
+                    "row": 2,
+                    "column": 14
                 },
                 "end": {
-                    "row": 13,
-                    "column": 29
+                    "row": 2,
+                    "column": 37
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Utilities/HMRClient.js.flow"
+                "file": "/Libraries/Utilities/HMRClientProdShim.js.flow"
             }
         }
     },

@@ -6,18 +6,7 @@
                 "column": 13,
                 "local": "AnimatedValue"
             },
-            "resolved": {
-                "begin": {
-                    "row": 12,
-                    "column": 15
-                },
-                "end": {
-                    "row": 12,
-                    "column": 27
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/Animated/src/nodes/AnimatedValue.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/Animated/src/animations/DecayAnimation.js.flow:5:12\r\nNo possible types\r\n"
         },
         "AnimationConfig": {
             "source": {

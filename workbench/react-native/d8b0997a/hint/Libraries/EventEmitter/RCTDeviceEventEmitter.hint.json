@@ -9,7 +9,7 @@
             "resolved": {
                 "begin": {
                     "row": 8,
-                    "column": 24
+                    "column": 31
                 },
                 "end": {
                     "row": 8,
@@ -25,18 +25,7 @@
                 "column": 13,
                 "local": "EmitterSubscription"
             },
-            "resolved": {
-                "begin": {
-                    "row": 6,
-                    "column": 15
-                },
-                "end": {
-                    "row": 6,
-                    "column": 33
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/vendor/emitter/_EmitterSubscription.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/EventEmitter/RCTDeviceEventEmitter.js.flow:3:12\r\nNo possible types\r\n"
         },
         "EventSubscriptionVendor": {
             "source": {
@@ -68,7 +57,7 @@
             "resolved": {
                 "begin": {
                     "row": 8,
-                    "column": 24
+                    "column": 31
                 },
                 "end": {
                     "row": 8,

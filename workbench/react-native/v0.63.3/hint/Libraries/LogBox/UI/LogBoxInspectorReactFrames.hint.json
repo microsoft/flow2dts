@@ -14,18 +14,7 @@
                 "column": 13,
                 "local": "LogBoxLog"
             },
-            "resolved": {
-                "begin": {
-                    "row": 25,
-                    "column": 15
-                },
-                "end": {
-                    "row": 25,
-                    "column": 23
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/LogBox/Data/LogBoxLog.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/LogBox/UI/LogBoxInspectorReactFrames.js.flow:4:12\r\nNo possible types\r\n"
         }
     },
     "typeofs": [

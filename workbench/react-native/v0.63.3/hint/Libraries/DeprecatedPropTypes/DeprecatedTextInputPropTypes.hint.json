@@ -102,18 +102,7 @@
                 "column": 33,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 67,
-                    "column": 33
-                },
-                "end": {
-                    "row": 67,
-                    "column": 36
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:67:32\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -121,18 +110,7 @@
                 "column": 32,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 73,
-                    "column": 32
-                },
-                "end": {
-                    "row": 73,
-                    "column": 35
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:73:31\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -140,18 +118,7 @@
                 "column": 31,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 78,
-                    "column": 31
-                },
-                "end": {
-                    "row": 78,
-                    "column": 34
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:78:30\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -159,18 +126,7 @@
                 "column": 38,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 83,
-                    "column": 38
-                },
-                "end": {
-                    "row": 83,
-                    "column": 41
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:83:37\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -178,18 +134,7 @@
                 "column": 43,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 91,
-                    "column": 43
-                },
-                "end": {
-                    "row": 91,
-                    "column": 48
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:91:42\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -197,18 +142,7 @@
                 "column": 30,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 95,
-                    "column": 30
-                },
-                "end": {
-                    "row": 95,
-                    "column": 33
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:95:29\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -216,18 +150,7 @@
                 "column": 36,
                 "local": "string"
             },
-            "resolved": {
-                "begin": {
-                    "row": 200,
-                    "column": 36
-                },
-                "end": {
-                    "row": 200,
-                    "column": 41
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:200:35\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -235,18 +158,7 @@
                 "column": 31,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 205,
-                    "column": 31
-                },
-                "end": {
-                    "row": 205,
-                    "column": 36
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:205:30\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -254,18 +166,7 @@
                 "column": 35,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 211,
-                    "column": 35
-                },
-                "end": {
-                    "row": 211,
-                    "column": 40
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:211:34\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -273,18 +174,7 @@
                 "column": 41,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 220,
-                    "column": 41
-                },
-                "end": {
-                    "row": 220,
-                    "column": 44
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:220:40\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -292,18 +182,7 @@
                 "column": 51,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 226,
-                    "column": 51
-                },
-                "end": {
-                    "row": 226,
-                    "column": 54
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:226:50\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -311,18 +190,7 @@
                 "column": 31,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 231,
-                    "column": 31
-                },
-                "end": {
-                    "row": 231,
-                    "column": 34
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:231:30\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -330,18 +198,7 @@
                 "column": 28,
                 "local": "func"
             },
-            "resolved": {
-                "begin": {
-                    "row": 243,
-                    "column": 28
-                },
-                "end": {
-                    "row": 243,
-                    "column": 31
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:243:27\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -349,18 +206,7 @@
                 "column": 29,
                 "local": "func"
             },
-            "resolved": {
-                "begin": {
-                    "row": 247,
-                    "column": 29
-                },
-                "end": {
-                    "row": 247,
-                    "column": 32
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:247:28\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -368,18 +214,7 @@
                 "column": 30,
                 "local": "func"
             },
-            "resolved": {
-                "begin": {
-                    "row": 251,
-                    "column": 30
-                },
-                "end": {
-                    "row": 251,
-                    "column": 33
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:251:29\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -387,18 +222,7 @@
                 "column": 34,
                 "local": "func"
             },
-            "resolved": {
-                "begin": {
-                    "row": 256,
-                    "column": 34
-                },
-                "end": {
-                    "row": 256,
-                    "column": 37
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:256:33\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -406,18 +230,7 @@
                 "column": 41,
                 "local": "func"
             },
-            "resolved": {
-                "begin": {
-                    "row": 264,
-                    "column": 41
-                },
-                "end": {
-                    "row": 264,
-                    "column": 44
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:264:40\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -425,18 +238,7 @@
                 "column": 33,
                 "local": "func"
             },
-            "resolved": {
-                "begin": {
-                    "row": 265,
-                    "column": 33
-                },
-                "end": {
-                    "row": 265,
-                    "column": 36
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:265:32\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -444,18 +246,7 @@
                 "column": 34,
                 "local": "func"
             },
-            "resolved": {
-                "begin": {
-                    "row": 269,
-                    "column": 34
-                },
-                "end": {
-                    "row": 269,
-                    "column": 37
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:269:33\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -463,18 +254,7 @@
                 "column": 39,
                 "local": "func"
             },
-            "resolved": {
-                "begin": {
-                    "row": 275,
-                    "column": 39
-                },
-                "end": {
-                    "row": 275,
-                    "column": 42
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:275:38\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -482,18 +262,7 @@
                 "column": 37,
                 "local": "func"
             },
-            "resolved": {
-                "begin": {
-                    "row": 280,
-                    "column": 37
-                },
-                "end": {
-                    "row": 280,
-                    "column": 40
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:280:36\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -501,18 +270,7 @@
                 "column": 32,
                 "local": "func"
             },
-            "resolved": {
-                "begin": {
-                    "row": 288,
-                    "column": 32
-                },
-                "end": {
-                    "row": 288,
-                    "column": 35
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:288:31\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -520,18 +278,7 @@
                 "column": 30,
                 "local": "func"
             },
-            "resolved": {
-                "begin": {
-                    "row": 292,
-                    "column": 30
-                },
-                "end": {
-                    "row": 292,
-                    "column": 33
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:292:29\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -539,18 +286,7 @@
                 "column": 30,
                 "local": "func"
             },
-            "resolved": {
-                "begin": {
-                    "row": 298,
-                    "column": 30
-                },
-                "end": {
-                    "row": 298,
-                    "column": 33
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:298:29\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -558,18 +294,7 @@
                 "column": 33,
                 "local": "string"
             },
-            "resolved": {
-                "begin": {
-                    "row": 302,
-                    "column": 33
-                },
-                "end": {
-                    "row": 302,
-                    "column": 38
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:302:32\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -596,18 +321,7 @@
                 "column": 35,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 312,
-                    "column": 35
-                },
-                "end": {
-                    "row": 312,
-                    "column": 38
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:312:34\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -615,18 +329,7 @@
                 "column": 37,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 317,
-                    "column": 37
-                },
-                "end": {
-                    "row": 317,
-                    "column": 40
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:317:36\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -653,18 +356,7 @@
                 "column": 27,
                 "local": "string"
             },
-            "resolved": {
-                "begin": {
-                    "row": 342,
-                    "column": 27
-                },
-                "end": {
-                    "row": 342,
-                    "column": 32
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:342:26\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -672,18 +364,7 @@
                 "column": 34,
                 "local": "string"
             },
-            "resolved": {
-                "begin": {
-                    "row": 348,
-                    "column": 34
-                },
-                "end": {
-                    "row": 348,
-                    "column": 39
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:348:33\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -691,18 +372,7 @@
                 "column": 38,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 361,
-                    "column": 38
-                },
-                "end": {
-                    "row": 361,
-                    "column": 41
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:361:37\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -710,18 +380,7 @@
                 "column": 39,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 365,
-                    "column": 39
-                },
-                "end": {
-                    "row": 365,
-                    "column": 42
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:365:38\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -729,18 +388,7 @@
                 "column": 34,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 373,
-                    "column": 34
-                },
-                "end": {
-                    "row": 373,
-                    "column": 37
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:373:33\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -748,18 +396,7 @@
                 "column": 32,
                 "local": "style"
             },
-            "resolved": {
-                "begin": {
-                    "row": 391,
-                    "column": 32
-                },
-                "end": {
-                    "row": 391,
-                    "column": 36
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:391:31\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -786,18 +423,7 @@
                 "column": 37,
                 "local": "string"
             },
-            "resolved": {
-                "begin": {
-                    "row": 409,
-                    "column": 37
-                },
-                "end": {
-                    "row": 409,
-                    "column": 42
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:409:36\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -805,18 +431,7 @@
                 "column": 40,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 415,
-                    "column": 40
-                },
-                "end": {
-                    "row": 415,
-                    "column": 45
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:415:39\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -824,18 +439,7 @@
                 "column": 48,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 424,
-                    "column": 48
-                },
-                "end": {
-                    "row": 424,
-                    "column": 51
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:424:47\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -843,18 +447,7 @@
                 "column": 33,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 460,
-                    "column": 33
-                },
-                "end": {
-                    "row": 460,
-                    "column": 36
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:460:32\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -862,18 +455,7 @@
                 "column": 39,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 464,
-                    "column": 39
-                },
-                "end": {
-                    "row": 464,
-                    "column": 42
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:464:38\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -881,18 +463,7 @@
                 "column": 42,
                 "local": "string"
             },
-            "resolved": {
-                "begin": {
-                    "row": 471,
-                    "column": 42
-                },
-                "end": {
-                    "row": 471,
-                    "column": 47
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:471:41\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -900,18 +471,7 @@
                 "column": 42,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 513,
-                    "column": 42
-                },
-                "end": {
-                    "row": 513,
-                    "column": 45
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:513:41\r\nNo possible types\r\n"
         }
     ],
     "decls": [

@@ -66,12 +66,12 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 14,
-                    "column": 43
+                    "row": 0,
+                    "column": 1
                 },
                 "end": {
-                    "row": 39,
-                    "column": 2
+                    "row": 0,
+                    "column": 0
                 },
                 "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedTransformPropTypes.js.flow"
@@ -197,18 +197,7 @@
                 "column": 38,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 23,
-                    "column": 38
-                },
-                "end": {
-                    "row": 23,
-                    "column": 43
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow:23:37\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -216,18 +205,7 @@
                 "column": 39,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 24,
-                    "column": 39
-                },
-                "end": {
-                    "row": 24,
-                    "column": 44
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow:24:38\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -254,18 +232,7 @@
                 "column": 34,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 31,
-                    "column": 34
-                },
-                "end": {
-                    "row": 31,
-                    "column": 39
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow:31:33\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -273,18 +240,7 @@
                 "column": 39,
                 "local": "string"
             },
-            "resolved": {
-                "begin": {
-                    "row": 49,
-                    "column": 39
-                },
-                "end": {
-                    "row": 49,
-                    "column": 44
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow:49:38\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -292,18 +248,7 @@
                 "column": 46,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 52,
-                    "column": 46
-                },
-                "end": {
-                    "row": 52,
-                    "column": 51
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow:52:45\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -311,18 +256,7 @@
                 "column": 47,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 53,
-                    "column": 47
-                },
-                "end": {
-                    "row": 53,
-                    "column": 52
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow:53:46\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -330,18 +264,7 @@
                 "column": 49,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 54,
-                    "column": 49
-                },
-                "end": {
-                    "row": 54,
-                    "column": 54
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow:54:48\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -349,18 +272,7 @@
                 "column": 50,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 55,
-                    "column": 50
-                },
-                "end": {
-                    "row": 55,
-                    "column": 55
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow:55:49\r\nNo possible types\r\n"
         },
         {
             "source": {

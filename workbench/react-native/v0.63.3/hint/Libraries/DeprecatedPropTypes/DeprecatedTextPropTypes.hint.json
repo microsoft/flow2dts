@@ -28,12 +28,12 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 2,
-                    "column": 43
+                    "row": 0,
+                    "column": 1
                 },
                 "end": {
-                    "row": 10,
-                    "column": 1
+                    "row": 0,
+                    "column": 0
                 },
                 "libraryFolder": -1,
                 "file": "/Libraries/DeprecatedPropTypes/DeprecatedEdgeInsetsPropType.js.flow"
@@ -64,18 +64,7 @@
                 "column": 35,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 25,
-                    "column": 35
-                },
-                "end": {
-                    "row": 25,
-                    "column": 40
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow:25:34\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -83,18 +72,7 @@
                 "column": 30,
                 "local": "func"
             },
-            "resolved": {
-                "begin": {
-                    "row": 39,
-                    "column": 30
-                },
-                "end": {
-                    "row": 39,
-                    "column": 33
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow:39:29\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -102,18 +80,7 @@
                 "column": 29,
                 "local": "func"
             },
-            "resolved": {
-                "begin": {
-                    "row": 45,
-                    "column": 29
-                },
-                "end": {
-                    "row": 45,
-                    "column": 32
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow:45:28\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -121,18 +88,7 @@
                 "column": 33,
                 "local": "func"
             },
-            "resolved": {
-                "begin": {
-                    "row": 51,
-                    "column": 33
-                },
-                "end": {
-                    "row": 51,
-                    "column": 36
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow:51:32\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -159,18 +115,7 @@
                 "column": 32,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 64,
-                    "column": 32
-                },
-                "end": {
-                    "row": 64,
-                    "column": 35
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow:64:31\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -197,18 +142,7 @@
                 "column": 42,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 76,
-                    "column": 42
-                },
-                "end": {
-                    "row": 76,
-                    "column": 45
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow:76:41\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -235,18 +169,7 @@
                 "column": 28,
                 "local": "string"
             },
-            "resolved": {
-                "begin": {
-                    "row": 83,
-                    "column": 28
-                },
-                "end": {
-                    "row": 83,
-                    "column": 33
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow:83:27\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -254,18 +177,7 @@
                 "column": 30,
                 "local": "string"
             },
-            "resolved": {
-                "begin": {
-                    "row": 89,
-                    "column": 30
-                },
-                "end": {
-                    "row": 89,
-                    "column": 35
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow:89:29\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -273,18 +185,7 @@
                 "column": 38,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 95,
-                    "column": 38
-                },
-                "end": {
-                    "row": 95,
-                    "column": 41
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow:95:37\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -292,18 +193,7 @@
                 "column": 43,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 103,
-                    "column": 43
-                },
-                "end": {
-                    "row": 103,
-                    "column": 48
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow:103:42\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -311,18 +201,7 @@
                 "column": 32,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 109,
-                    "column": 32
-                },
-                "end": {
-                    "row": 109,
-                    "column": 35
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow:109:31\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -330,18 +209,7 @@
                 "column": 42,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 115,
-                    "column": 42
-                },
-                "end": {
-                    "row": 115,
-                    "column": 45
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow:115:41\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -349,18 +217,7 @@
                 "column": 38,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 121,
-                    "column": 38
-                },
-                "end": {
-                    "row": 121,
-                    "column": 43
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow:121:37\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -368,18 +225,7 @@
                 "column": 30,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 127,
-                    "column": 30
-                },
-                "end": {
-                    "row": 127,
-                    "column": 33
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextPropTypes.js.flow:127:29\r\nNo possible types\r\n"
         }
     ],
     "decls": [

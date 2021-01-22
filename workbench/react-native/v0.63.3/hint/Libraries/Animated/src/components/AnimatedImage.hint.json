@@ -16,15 +16,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 5,
-                    "column": 6
+                    "row": 7,
+                    "column": 14
                 },
                 "end": {
-                    "row": 5,
-                    "column": 26
+                    "row": 7,
+                    "column": 34
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Animated/src/createAnimatedComponent.js.flow"
+                "file": "/Libraries/Animated/src/components/AnimatedImage.js.flow"
             }
         }
     },

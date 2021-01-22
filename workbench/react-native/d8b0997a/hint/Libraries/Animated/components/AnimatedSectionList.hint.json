@@ -16,15 +16,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 8,
-                    "column": 6
+                    "row": 7,
+                    "column": 14
                 },
                 "end": {
-                    "row": 8,
-                    "column": 26
+                    "row": 7,
+                    "column": 34
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Animated/createAnimatedComponent.js.flow"
+                "file": "/Libraries/Animated/components/AnimatedSectionList.js.flow"
             }
         }
     },
@@ -37,12 +37,12 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 112,
-                    "column": 15
+                    "row": 0,
+                    "column": 1
                 },
                 "end": {
-                    "row": 112,
-                    "column": 25
+                    "row": 0,
+                    "column": 0
                 },
                 "libraryFolder": -1,
                 "file": "/Libraries/Lists/SectionList.js.flow"

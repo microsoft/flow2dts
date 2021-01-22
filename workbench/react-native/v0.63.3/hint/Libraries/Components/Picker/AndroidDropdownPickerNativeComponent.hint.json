@@ -130,15 +130,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 5,
-                    "column": 6
+                    "row": 10,
+                    "column": 14
                 },
                 "end": {
-                    "row": 5,
-                    "column": 24
+                    "row": 10,
+                    "column": 32
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/StyleSheet/processColor.js.flow"
+                "file": "/Libraries/Components/Picker/AndroidDropdownPickerNativeComponent.js.flow"
             }
         },
         "ViewProps": {

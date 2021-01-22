@@ -1,27 +1,16 @@
 {
     "libraries": [
-        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_1ac129e8"
+        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_1e1cf33d",
+        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_5508788"
     ],
     "files": {
         "/index.js.flow": {
             "imports": {
                 "AccessibilityInfo": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 19,
-                        "column": 13,
-                        "local": "AccessibilityInfo",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "ActivityIndicator": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 50,
-                        "column": 13,
-                        "local": "ActivityIndicatorWithRef",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "Button": {
                     "type": "class",
@@ -48,13 +37,7 @@
                     "type": "unresolved[missing]"
                 },
                 "FlatList": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 156,
-                        "column": 15,
-                        "local": "FlatList",
-                        "type": "class"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "Image": {
                     "type": "value",
@@ -141,22 +124,10 @@
                     "type": "unresolved[missing]"
                 },
                 "ProgressViewIOS": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 20,
-                        "column": 5,
-                        "local": "trackImage",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "SafeAreaView": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 15,
-                        "column": 13,
-                        "local": "exported",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "ScrollView": {
                     "type": "value",
@@ -168,25 +139,13 @@
                     }
                 },
                 "SectionList": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 112,
-                        "column": 15,
-                        "local": "SectionList",
-                        "type": "class"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "SegmentedControlIOS": {
                     "type": "unresolved[missing]"
                 },
                 "Slider": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 118,
-                        "column": 13,
-                        "local": "SliderWithRef",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "Switch": {
                     "type": "class",
@@ -234,13 +193,7 @@
                     }
                 },
                 "Touchable": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 264,
-                        "column": 13,
-                        "local": "Touchable",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "TouchableHighlight": {
                     "type": "value",
@@ -279,13 +232,7 @@
                     }
                 },
                 "View": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 10,
-                        "column": 13,
-                        "local": "View",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "VirtualizedList": {
                     "type": "class",
@@ -297,22 +244,10 @@
                     }
                 },
                 "VirtualizedSectionList": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 122,
-                        "column": 15,
-                        "local": "VirtualizedSectionList",
-                        "type": "class"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "ActionSheetIOS": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 5,
-                        "column": 13,
-                        "local": "ActionSheetIOS",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "Alert": {
                     "type": "class",
@@ -336,40 +271,16 @@
                     }
                 },
                 "AppRegistry": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 34,
-                        "column": 13,
-                        "local": "AppRegistry",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "AppState": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 54,
-                        "column": 13,
-                        "local": "AppStateInstance",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "AsyncStorage": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 2,
-                        "column": 13,
-                        "local": "AsyncStorage",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "BackHandler": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 4,
-                        "column": 6,
-                        "local": "TBackHandler",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "Clipboard": {
                     "type": "unresolved[missing]"
@@ -384,13 +295,7 @@
                     }
                 },
                 "DeviceInfo": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 26,
-                        "column": 11,
-                        "local": "Spec",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "DevSettings": {
                     "type": "type",
@@ -438,34 +343,16 @@
                     }
                 },
                 "ImagePickerIOS": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 2,
-                        "column": 13,
-                        "local": "ImagePickerIOS",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "InteractionManager": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 5,
-                        "column": 13,
-                        "local": "InteractionManager",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "Keyboard": {
                     "type": "unresolved[missing]"
                 },
                 "LayoutAnimation": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 63,
-                        "column": 13,
-                        "local": "LayoutAnimation",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "Linking": {
                     "type": "class",
@@ -504,22 +391,10 @@
                     }
                 },
                 "PanResponder": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 90,
-                        "column": 13,
-                        "local": "PanResponder",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "PermissionsAndroid": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 14,
-                        "column": 15,
-                        "local": "PermissionsAndroid",
-                        "type": "class"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "PixelRatio": {
                     "type": "class",
@@ -540,13 +415,7 @@
                     }
                 },
                 "Settings": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 2,
-                        "column": 13,
-                        "local": "Settings",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "Share": {
                     "type": "class",
@@ -576,13 +445,7 @@
                     }
                 },
                 "Systrace": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 2,
-                        "column": 13,
-                        "local": "Systrace",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "ToastAndroid": {
                     "type": "unresolved[missing]"
@@ -600,13 +463,7 @@
                     }
                 },
                 "UIManager": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 4,
-                        "column": 11,
-                        "local": "UIManagerJSInterface",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "useColorScheme": {
                     "type": "value",
@@ -627,22 +484,10 @@
                     }
                 },
                 "UTFSequence": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 2,
-                        "column": 13,
-                        "local": "UTFSequence",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "Vibration": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 2,
-                        "column": 13,
-                        "local": "Vibration",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "YellowBox": {
                     "type": "type",
@@ -669,31 +514,13 @@
                     "type": "unresolved[missing]"
                 },
                 "NativeModules": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 12,
-                        "column": 13,
-                        "local": "NativeModules",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "Platform": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 9,
-                        "column": 13,
-                        "local": "Platform",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "processColor": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 7,
-                        "column": 18,
-                        "local": "processColor",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "PlatformColor": {
                     "type": "value",
@@ -729,22 +556,10 @@
                     "type": "unresolved[missing]"
                 },
                 "DeprecatedEdgeInsetsPropType": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 2,
-                        "column": 13,
-                        "local": "DeprecatedEdgeInsetsPropType",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "DeprecatedPointPropType": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 2,
-                        "column": 13,
-                        "local": "PointPropType",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "DeprecatedViewPropTypes": {
                     "type": "unresolved[missing]"
@@ -791,13 +606,7 @@
                     }
                 },
                 "ProcessedColorValue": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 5,
-                        "column": 6,
-                        "local": "ProcessedColorValue",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 }
             },
             "typeofs": {
@@ -1382,13 +1191,7 @@
                     {
                         "row": 91,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 15,
-                            "local": "React$Component",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "Button": [
@@ -1436,13 +1239,7 @@
                     }
                 },
                 "EmitterSubscription": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 8,
-                        "column": 15,
-                        "local": "EmitterSubscription",
-                        "type": "class"
-                    }
+                    "type": "value"
                 },
                 "HostComponent": {
                     "type": "type",
@@ -1516,13 +1313,7 @@
                     {
                         "row": 23,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 15,
-                            "local": "React$Component",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "StaticContainer": [
@@ -1560,13 +1351,7 @@
                     {
                         "row": 25,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 15,
-                            "local": "React$Component",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "StaticRenderer": [
@@ -1898,13 +1683,7 @@
                     {
                         "row": 2,
                         "column": 50,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 2,
-                            "column": 13,
-                            "local": "DeprecatedEdgeInsetsPropType",
-                            "type": "value"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ],
                 "$2": [
@@ -1944,39 +1723,21 @@
                     {
                         "row": 25,
                         "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 25,
-                            "column": 3,
-                            "local": "accessible",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "node": [
                     {
                         "row": 27,
                         "column": 40,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 27,
-                            "column": 3,
-                            "local": "accessibilityLabel",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "number": [
                     {
                         "row": 29,
                         "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 29,
-                            "column": 3,
-                            "local": "blurRadius",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "DeprecatedEdgeInsetsPropType": [
@@ -1996,92 +1757,44 @@
                     {
                         "row": 39,
                         "column": 28,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 39,
-                            "column": 3,
-                            "local": "testID",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "func": [
                     {
                         "row": 41,
                         "column": 30,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 41,
-                            "column": 3,
-                            "local": "onLayout",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 43,
                         "column": 33,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 43,
-                            "column": 3,
-                            "local": "onLoadStart",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 45,
                         "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 45,
-                            "column": 3,
-                            "local": "onProgress",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 47,
                         "column": 29,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 47,
-                            "column": 3,
-                            "local": "onError",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 49,
                         "column": 35,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 49,
-                            "column": 3,
-                            "local": "onPartialLoad",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 51,
                         "column": 28,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 51,
-                            "column": 3,
-                            "local": "onLoad",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 53,
                         "column": 31,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 53,
-                            "column": 3,
-                            "local": "onLoadEnd",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ]
             }
@@ -2106,92 +1819,44 @@
                     {
                         "row": 5,
                         "column": 25,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 5,
-                            "column": 3,
-                            "local": "uri",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 6,
                         "column": 28,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 6,
-                            "column": 3,
-                            "local": "bundle",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 7,
                         "column": 28,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 7,
-                            "column": 3,
-                            "local": "method",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 9,
                         "column": 26,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 9,
-                            "column": 3,
-                            "local": "body",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "number": [
                     {
                         "row": 11,
                         "column": 27,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 11,
-                            "column": 3,
-                            "local": "width",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 12,
                         "column": 28,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 12,
-                            "column": 3,
-                            "local": "height",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 13,
                         "column": 27,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 13,
-                            "column": 3,
-                            "local": "scale",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 17,
                         "column": 52,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 16,
-                            "column": 13,
-                            "local": "ImageSourcePropType",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "ImageURISourcePropType": [
@@ -2261,13 +1926,7 @@
                     {
                         "row": 8,
                         "column": 50,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 14,
-                            "column": 13,
-                            "local": "DeprecatedTransformPropTypes",
-                            "type": "value"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ],
                 "$5": [
@@ -2361,92 +2020,44 @@
                     {
                         "row": 23,
                         "column": 38,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 23,
-                            "column": 3,
-                            "local": "borderWidth",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 24,
                         "column": 39,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 24,
-                            "column": 3,
-                            "local": "borderRadius",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 31,
                         "column": 34,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 31,
-                            "column": 3,
-                            "local": "opacity",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 52,
                         "column": 46,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 52,
-                            "column": 3,
-                            "local": "borderTopLeftRadius",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 53,
                         "column": 47,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 53,
-                            "column": 3,
-                            "local": "borderTopRightRadius",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 54,
                         "column": 49,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 54,
-                            "column": 3,
-                            "local": "borderBottomLeftRadius",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 55,
                         "column": 50,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 55,
-                            "column": 3,
-                            "local": "borderBottomRightRadius",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "string": [
                     {
                         "row": 49,
                         "column": 39,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 49,
-                            "column": 3,
-                            "local": "overlayColor",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "ImageStylePropTypes": [
@@ -2484,134 +2095,62 @@
                     {
                         "row": 37,
                         "column": 38,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 37,
-                            "column": 3,
-                            "local": "borderWidth",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 38,
                         "column": 41,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 38,
-                            "column": 3,
-                            "local": "borderTopWidth",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 39,
                         "column": 43,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 39,
-                            "column": 3,
-                            "local": "borderStartWidth",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 40,
                         "column": 41,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 40,
-                            "column": 3,
-                            "local": "borderEndWidth",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 41,
                         "column": 43,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 41,
-                            "column": 3,
-                            "local": "borderRightWidth",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 42,
                         "column": 44,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 42,
-                            "column": 3,
-                            "local": "borderBottomWidth",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 43,
                         "column": 42,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 43,
-                            "column": 3,
-                            "local": "borderLeftWidth",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 74,
                         "column": 31,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 74,
-                            "column": 3,
-                            "local": "flex",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 75,
                         "column": 35,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 75,
-                            "column": 3,
-                            "local": "flexGrow",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 76,
                         "column": 37,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 76,
-                            "column": 3,
-                            "local": "flexShrink",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 78,
                         "column": 38,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 78,
-                            "column": 3,
-                            "local": "aspectRatio",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 79,
                         "column": 33,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 79,
-                            "column": 3,
-                            "local": "zIndex",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "LayoutPropTypes": [
@@ -2687,24 +2226,12 @@
                     {
                         "row": 16,
                         "column": 40,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 16,
-                            "column": 3,
-                            "local": "shadowOpacity",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 17,
                         "column": 39,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 17,
-                            "column": 3,
-                            "local": "shadowRadius",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "DeprecatedShadowPropTypesIOS": [
@@ -2800,437 +2327,203 @@
                     {
                         "row": 67,
                         "column": 33,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 67,
-                            "column": 3,
-                            "local": "autoCorrect",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 73,
                         "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 73,
-                            "column": 3,
-                            "local": "spellCheck",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 78,
                         "column": 31,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 78,
-                            "column": 3,
-                            "local": "autoFocus",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 83,
                         "column": 38,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 83,
-                            "column": 3,
-                            "local": "allowFontScaling",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 95,
                         "column": 30,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 95,
-                            "column": 3,
-                            "local": "editable",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 220,
                         "column": 41,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 220,
-                            "column": 3,
-                            "local": "disableFullscreenUI",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 226,
                         "column": 51,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 226,
-                            "column": 3,
-                            "local": "enablesReturnKeyAutomatically",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 231,
                         "column": 31,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 231,
-                            "column": 3,
-                            "local": "multiline",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 312,
                         "column": 35,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 312,
-                            "column": 3,
-                            "local": "scrollEnabled",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 317,
                         "column": 37,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 317,
-                            "column": 3,
-                            "local": "secureTextEntry",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 361,
                         "column": 38,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 361,
-                            "column": 3,
-                            "local": "clearTextOnFocus",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 365,
                         "column": 39,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 365,
-                            "column": 3,
-                            "local": "selectTextOnFocus",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 373,
                         "column": 34,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 373,
-                            "column": 3,
-                            "local": "blurOnSubmit",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 424,
                         "column": 48,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 424,
-                            "column": 3,
-                            "local": "rejectResponderTermination",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 460,
                         "column": 33,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 460,
-                            "column": 3,
-                            "local": "caretHidden",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 464,
                         "column": 39,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 464,
-                            "column": 3,
-                            "local": "contextMenuHidden",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 513,
                         "column": 42,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 513,
-                            "column": 3,
-                            "local": "showSoftInputOnFocus",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "number": [
                     {
                         "row": 91,
                         "column": 43,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 91,
-                            "column": 3,
-                            "local": "maxFontSizeMultiplier",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 205,
                         "column": 31,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 205,
-                            "column": 3,
-                            "local": "maxLength",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 211,
                         "column": 35,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 211,
-                            "column": 3,
-                            "local": "numberOfLines",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 415,
                         "column": 40,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 415,
-                            "column": 3,
-                            "local": "inlineImagePadding",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "string": [
                     {
                         "row": 200,
                         "column": 36,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 200,
-                            "column": 3,
-                            "local": "returnKeyLabel",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 302,
                         "column": 33,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 302,
-                            "column": 3,
-                            "local": "placeholder",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 342,
                         "column": 27,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 342,
-                            "column": 3,
-                            "local": "value",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 348,
                         "column": 34,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 348,
-                            "column": 3,
-                            "local": "defaultValue",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 409,
                         "column": 37,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 409,
-                            "column": 3,
-                            "local": "inlineImageLeft",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 471,
                         "column": 42,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 471,
-                            "column": 3,
-                            "local": "inputAccessoryViewID",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "func": [
                     {
                         "row": 243,
                         "column": 28,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 243,
-                            "column": 3,
-                            "local": "onBlur",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 247,
                         "column": 29,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 247,
-                            "column": 3,
-                            "local": "onFocus",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 251,
                         "column": 30,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 251,
-                            "column": 3,
-                            "local": "onChange",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 256,
                         "column": 34,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 256,
-                            "column": 3,
-                            "local": "onChangeText",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 264,
                         "column": 41,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 264,
-                            "column": 3,
-                            "local": "onContentSizeChange",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 265,
                         "column": 33,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 265,
-                            "column": 3,
-                            "local": "onTextInput",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 269,
                         "column": 34,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 269,
-                            "column": 3,
-                            "local": "onEndEditing",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 275,
                         "column": 39,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 275,
-                            "column": 3,
-                            "local": "onSelectionChange",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 280,
                         "column": 37,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 280,
-                            "column": 3,
-                            "local": "onSubmitEditing",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 288,
                         "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 288,
-                            "column": 3,
-                            "local": "onKeyPress",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 292,
                         "column": 30,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 292,
-                            "column": 3,
-                            "local": "onLayout",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 298,
                         "column": 30,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 298,
-                            "column": 3,
-                            "local": "onScroll",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "DeprecatedColorPropType": [
@@ -3272,13 +2565,7 @@
                     {
                         "row": 391,
                         "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 391,
-                            "column": 3,
-                            "local": "style",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ]
             }
@@ -3297,13 +2584,7 @@
                     {
                         "row": 4,
                         "column": 50,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 2,
-                            "column": 13,
-                            "local": "DeprecatedEdgeInsetsPropType",
-                            "type": "value"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ],
                 "$3": [
@@ -3323,70 +2604,34 @@
                     {
                         "row": 25,
                         "column": 35,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 25,
-                            "column": 3,
-                            "local": "numberOfLines",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 103,
                         "column": 43,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 103,
-                            "column": 3,
-                            "local": "maxFontSizeMultiplier",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 121,
                         "column": 38,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 121,
-                            "column": 3,
-                            "local": "minimumFontScale",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "func": [
                     {
                         "row": 39,
                         "column": 30,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 39,
-                            "column": 3,
-                            "local": "onLayout",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 45,
                         "column": 29,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 45,
-                            "column": 3,
-                            "local": "onPress",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 51,
                         "column": 33,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 51,
-                            "column": 3,
-                            "local": "onLongPress",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "DeprecatedEdgeInsetsPropType": [
@@ -3406,68 +2651,32 @@
                     {
                         "row": 64,
                         "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 64,
-                            "column": 3,
-                            "local": "selectable",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 76,
                         "column": 42,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 76,
-                            "column": 3,
-                            "local": "suppressHighlighting",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 95,
                         "column": 38,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 95,
-                            "column": 3,
-                            "local": "allowFontScaling",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 109,
                         "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 109,
-                            "column": 3,
-                            "local": "accessible",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 115,
                         "column": 42,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 115,
-                            "column": 3,
-                            "local": "adjustsFontSizeToFit",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 127,
                         "column": 30,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 127,
-                            "column": 3,
-                            "local": "disabled",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "DeprecatedColorPropType": [
@@ -3500,24 +2709,12 @@
                     {
                         "row": 83,
                         "column": 28,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 83,
-                            "column": 3,
-                            "local": "testID",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 89,
                         "column": 30,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 89,
-                            "column": 3,
-                            "local": "nativeID",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ]
             }
@@ -3604,72 +2801,36 @@
                     {
                         "row": 13,
                         "column": 37,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 13,
-                            "column": 3,
-                            "local": "fontFamily",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "number": [
                     {
                         "row": 14,
                         "column": 35,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 14,
-                            "column": 3,
-                            "local": "fontSize",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 52,
                         "column": 43,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 52,
-                            "column": 3,
-                            "local": "textShadowRadius",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 57,
                         "column": 40,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 57,
-                            "column": 3,
-                            "local": "letterSpacing",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 58,
                         "column": 37,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 58,
-                            "column": 3,
-                            "local": "lineHeight",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "bool": [
                     {
                         "row": 78,
                         "column": 45,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 78,
-                            "column": 3,
-                            "local": "includeFontPadding",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "DeprecatedTextStylePropTypes": [
@@ -3751,59 +2912,29 @@
                     {
                         "row": 6,
                         "column": 41,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 6,
-                            "column": 3,
-                            "local": "hasTVPreferredFocus",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "number": [
                     {
                         "row": 7,
                         "column": 46,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 7,
-                            "column": 3,
-                            "local": "tvParallaxShiftDistanceX",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 8,
                         "column": 46,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 8,
-                            "column": 3,
-                            "local": "tvParallaxShiftDistanceY",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 9,
                         "column": 41,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 9,
-                            "column": 3,
-                            "local": "tvParallaxTiltAngle",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 10,
                         "column": 45,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 10,
-                            "column": 3,
-                            "local": "tvParallaxMagnification",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "DeprecatedTVViewPropTypes": [
@@ -3832,13 +2963,7 @@
                     {
                         "row": 2,
                         "column": 50,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 2,
-                            "column": 13,
-                            "local": "DeprecatedEdgeInsetsPropType",
-                            "type": "value"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ],
                 "$2": [
@@ -3858,329 +2983,155 @@
                     {
                         "row": 17,
                         "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 17,
-                            "column": 3,
-                            "local": "accessible",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 50,
                         "column": 54,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 50,
-                            "column": 3,
-                            "local": "accessibilityIgnoresInvertColors",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 122,
                         "column": 46,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 122,
-                            "column": 3,
-                            "local": "accessibilityViewIsModal",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 132,
                         "column": 49,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 132,
-                            "column": 3,
-                            "local": "accessibilityElementsHidden",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 341,
                         "column": 43,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 341,
-                            "column": 3,
-                            "local": "removeClippedSubviews",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 351,
                         "column": 52,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 351,
-                            "column": 3,
-                            "local": "renderToHardwareTextureAndroid",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 360,
                         "column": 40,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 360,
-                            "column": 3,
-                            "local": "shouldRasterizeIOS",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 372,
                         "column": 33,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 372,
-                            "column": 3,
-                            "local": "collapsable",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 382,
                         "column": 52,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 382,
-                            "column": 3,
-                            "local": "needsOffscreenAlphaCompositing",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "node": [
                     {
                         "row": 26,
                         "column": 40,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 3,
-                            "local": "accessibilityLabel",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "string": [
                     {
                         "row": 36,
                         "column": 39,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 36,
-                            "column": 3,
-                            "local": "accessibilityHint",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 165,
                         "column": 28,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 165,
-                            "column": 3,
-                            "local": "testID",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 174,
                         "column": 30,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 174,
-                            "column": 3,
-                            "local": "nativeID",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "object": [
                     {
                         "row": 86,
                         "column": 40,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 86,
-                            "column": 3,
-                            "local": "accessibilityState",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 87,
                         "column": 40,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 87,
-                            "column": 3,
-                            "local": "accessibilityValue",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "func": [
                     {
                         "row": 140,
                         "column": 43,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 140,
-                            "column": 3,
-                            "local": "onAccessibilityAction",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 148,
                         "column": 40,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 148,
-                            "column": 3,
-                            "local": "onAccessibilityTap",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 156,
                         "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 156,
-                            "column": 3,
-                            "local": "onMagicTap",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 191,
                         "column": 38,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 191,
-                            "column": 3,
-                            "local": "onResponderGrant",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 201,
                         "column": 37,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 201,
-                            "column": 3,
-                            "local": "onResponderMove",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 212,
                         "column": 39,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 212,
-                            "column": 3,
-                            "local": "onResponderReject",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 222,
                         "column": 40,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 222,
-                            "column": 3,
-                            "local": "onResponderRelease",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 235,
                         "column": 42,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 235,
-                            "column": 3,
-                            "local": "onResponderTerminate",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 246,
                         "column": 51,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 246,
-                            "column": 3,
-                            "local": "onResponderTerminationRequest",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 256,
                         "column": 47,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 256,
-                            "column": 3,
-                            "local": "onStartShouldSetResponder",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 267,
                         "column": 54,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 267,
-                            "column": 3,
-                            "local": "onStartShouldSetResponderCapture",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 278,
                         "column": 46,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 278,
-                            "column": 3,
-                            "local": "onMoveShouldSetResponder",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 289,
                         "column": 53,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 289,
-                            "column": 3,
-                            "local": "onMoveShouldSetResponderCapture",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 315,
                         "column": 30,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 315,
-                            "column": 3,
-                            "local": "onLayout",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "DeprecatedEdgeInsetsPropType": [
@@ -4239,13 +3190,7 @@
                     {
                         "row": 8,
                         "column": 50,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 14,
-                            "column": 13,
-                            "local": "DeprecatedTransformPropTypes",
-                            "type": "value"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ],
                 "$5": [
@@ -4394,178 +3339,82 @@
                     {
                         "row": 26,
                         "column": 39,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 3,
-                            "local": "borderRadius",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 27,
                         "column": 46,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 27,
-                            "column": 3,
-                            "local": "borderTopLeftRadius",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 28,
                         "column": 47,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 28,
-                            "column": 3,
-                            "local": "borderTopRightRadius",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 29,
                         "column": 47,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 29,
-                            "column": 3,
-                            "local": "borderTopStartRadius",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 30,
                         "column": 45,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 30,
-                            "column": 3,
-                            "local": "borderTopEndRadius",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 31,
                         "column": 49,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 31,
-                            "column": 3,
-                            "local": "borderBottomLeftRadius",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 32,
                         "column": 50,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 32,
-                            "column": 3,
-                            "local": "borderBottomRightRadius",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 33,
                         "column": 50,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 33,
-                            "column": 3,
-                            "local": "borderBottomStartRadius",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 34,
                         "column": 48,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 34,
-                            "column": 3,
-                            "local": "borderBottomEndRadius",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 36,
                         "column": 38,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 36,
-                            "column": 3,
-                            "local": "borderWidth",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 37,
                         "column": 41,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 37,
-                            "column": 3,
-                            "local": "borderTopWidth",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 38,
                         "column": 43,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 38,
-                            "column": 3,
-                            "local": "borderRightWidth",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 39,
                         "column": 44,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 39,
-                            "column": 3,
-                            "local": "borderBottomWidth",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 40,
                         "column": 42,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 40,
-                            "column": 3,
-                            "local": "borderLeftWidth",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 41,
                         "column": 34,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 41,
-                            "column": 3,
-                            "local": "opacity",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 49,
                         "column": 36,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 49,
-                            "column": 3,
-                            "local": "elevation",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "DeprecatedViewStylePropTypes": [
@@ -4586,13 +3435,7 @@
         "/Libraries/EventEmitter/NativeEventEmitter.js.flow": {
             "imports": {
                 "EmitterSubscription": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 8,
-                        "column": 15,
-                        "local": "EmitterSubscription",
-                        "type": "class"
-                    }
+                    "type": "value"
                 }
             },
             "typeofs": {
@@ -4640,13 +3483,7 @@
         "/Libraries/EventEmitter/RCTDeviceEventEmitter.js.flow": {
             "imports": {
                 "EmitterSubscription": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 8,
-                        "column": 15,
-                        "local": "EmitterSubscription",
-                        "type": "class"
-                    }
+                    "type": "value"
                 }
             },
             "typeofs": {
@@ -4957,13 +3794,7 @@
                     {
                         "row": 7,
                         "column": 40,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 11,
-                            "column": 18,
-                            "local": "resolveAssetSource",
-                            "type": "value"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ],
                 "getSize": [
@@ -5101,13 +3932,7 @@
                     {
                         "row": 11,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 15,
-                            "local": "React$Component",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "ImageBackground": [
@@ -5431,13 +4256,7 @@
                     {
                         "row": 17,
                         "column": 43,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 64,
-                            "column": 3,
-                            "local": "fromSource",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ]
             }
@@ -5555,13 +4374,7 @@
         "/Libraries/Interaction/InteractionMixin.js.flow": {
             "imports": {
                 "Handle": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 2,
-                        "column": 6,
-                        "local": "Handle",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 }
             },
             "typeofs": {
@@ -5864,13 +4677,7 @@
                     {
                         "row": 4,
                         "column": 26,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 10,
-                            "column": 13,
-                            "local": "View",
-                            "type": "value"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ],
                 "$4": [
@@ -5940,13 +4747,7 @@
                     {
                         "row": 241,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 100,
-                            "column": 15,
-                            "local": "React$PureComponent",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "FlatList": [
@@ -5976,30 +4777,30 @@
                     }
                 },
                 "ScrollToLocationParamsType": {
-                    "type": "type",
+                    "type": "value",
                     "resolvedDecl": {
-                        "row": 107,
-                        "column": 6,
-                        "local": "ScrollToLocationParamsType",
-                        "type": "type"
+                        "row": 5,
+                        "column": 7,
+                        "local": "$3",
+                        "type": "value"
                     }
                 },
                 "_SectionBase": {
-                    "type": "type",
+                    "type": "value",
                     "resolvedDecl": {
-                        "row": 10,
-                        "column": 6,
-                        "local": "SectionBase",
-                        "type": "type"
+                        "row": 5,
+                        "column": 7,
+                        "local": "$3",
+                        "type": "value"
                     }
                 },
                 "VirtualizedSectionListProps": {
-                    "type": "type",
+                    "type": "value",
                     "resolvedDecl": {
-                        "row": 99,
-                        "column": 6,
-                        "local": "Props",
-                        "type": "type"
+                        "row": 5,
+                        "column": 7,
+                        "local": "$3",
+                        "type": "value"
                     }
                 }
             },
@@ -6021,13 +4822,7 @@
                     {
                         "row": 4,
                         "column": 44,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 122,
-                            "column": 15,
-                            "local": "VirtualizedSectionList",
-                            "type": "class"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ],
                 "defaultProps": [
@@ -6058,13 +4853,7 @@
                     {
                         "row": 154,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 100,
-                            "column": 15,
-                            "local": "React$PureComponent",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "SectionList": [
@@ -6179,13 +4968,7 @@
                     {
                         "row": 8,
                         "column": 26,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 10,
-                            "column": 13,
-                            "local": "View",
-                            "type": "value"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ],
                 "ScrollView": [
@@ -6229,13 +5012,7 @@
                     {
                         "row": 462,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 100,
-                            "column": 15,
-                            "local": "React$PureComponent",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "VirtualizedList": [
@@ -6299,26 +5076,14 @@
                     {
                         "row": 116,
                         "column": 29,
-                        "type": "type",
-                        "resolvedDecl": {
-                            "row": 273,
-                            "column": 6,
-                            "local": "DefaultProps",
-                            "type": "type"
-                        }
+                        "type": "value"
                     }
                 ],
                 "PureComponent": [
                     {
                         "row": 136,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 100,
-                            "column": 15,
-                            "local": "React$PureComponent",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "VirtualizedSectionList": [
@@ -6413,13 +5178,7 @@
                     "type": "unresolved[error]"
                 },
                 "LogBoxLog": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 25,
-                        "column": 15,
-                        "local": "LogBoxLog",
-                        "type": "class"
-                    }
+                    "type": "value"
                 }
             },
             "typeofs": {
@@ -6494,13 +5253,7 @@
                     {
                         "row": 138,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 15,
-                            "local": "React$Component",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "Modal": [
@@ -6684,12 +5437,12 @@
                     }
                 },
                 "RequestBody": {
-                    "type": "type",
+                    "type": "value",
                     "resolvedDecl": {
-                        "row": 7,
-                        "column": 6,
-                        "local": "RequestBody",
-                        "type": "type"
+                        "row": 3,
+                        "column": 7,
+                        "local": "$1",
+                        "type": "value"
                     }
                 }
             },
@@ -6774,13 +5527,7 @@
                     {
                         "row": 14,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 15,
-                            "local": "React$Component",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "PureComponentDebug": [
@@ -7067,13 +5814,7 @@
                     {
                         "row": 40,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 15,
-                            "local": "React$Component",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "AppContainer": [
@@ -7094,13 +5835,7 @@
         "/Libraries/ReactNative/AppRegistry.js.flow": {
             "imports": {
                 "IPerformanceLogger": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 10,
-                        "column": 6,
-                        "local": "IPerformanceLogger",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 }
             },
             "typeofs": {
@@ -7344,13 +6079,7 @@
                     {
                         "row": 2,
                         "column": 53,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 4,
-                            "column": 13,
-                            "local": "createReactNativeComponentClass",
-                            "type": "value"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ],
                 "createReactNativeComponentClass": [
@@ -7371,13 +6100,7 @@
         "/Libraries/ReactNative/renderApplication.js.flow": {
             "imports": {
                 "IPerformanceLogger": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 10,
-                        "column": 6,
-                        "local": "IPerformanceLogger",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 }
             },
             "typeofs": {
@@ -7632,13 +6355,7 @@
                     }
                 },
                 "ProcessedColorValue": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 5,
-                        "column": 6,
-                        "local": "ProcessedColorValue",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 }
             },
             "typeofs": {
@@ -7669,13 +6386,7 @@
                     }
                 },
                 "ProcessedColorValue": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 5,
-                        "column": 6,
-                        "local": "ProcessedColorValue",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 }
             },
             "typeofs": {}
@@ -7775,13 +6486,7 @@
                     }
                 },
                 "ProcessedColorValue": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 5,
-                        "column": 6,
-                        "local": "ProcessedColorValue",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 }
             },
             "typeofs": {
@@ -7959,9 +6664,9 @@
                         "column": 29,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 5,
-                            "column": 18,
-                            "local": "flattenStyle",
+                            "row": 3,
+                            "column": 7,
+                            "local": "$1",
                             "type": "value"
                         }
                     }
@@ -8467,13 +7172,7 @@
         "/Libraries/Utilities/DeviceInfo.js.flow": {
             "imports": {
                 "NativeDeviceInfo": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 26,
-                        "column": 11,
-                        "local": "Spec",
-                        "type": "type"
-                    }
+                    "type": "unresolved[error]"
                 }
             },
             "typeofs": {
@@ -8481,13 +7180,7 @@
                     {
                         "row": 4,
                         "column": 32,
-                        "type": "type",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 11,
-                            "local": "Spec",
-                            "type": "type"
-                        }
+                        "type": "unresolved[error]"
                     }
                 ]
             }
@@ -8535,13 +7228,7 @@
         "/Libraries/Utilities/GlobalPerformanceLogger.js.flow": {
             "imports": {
                 "IPerformanceLogger": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 10,
-                        "column": 6,
-                        "local": "IPerformanceLogger",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 }
             },
             "typeofs": {
@@ -8599,13 +7286,7 @@
         "/Libraries/Utilities/HMRClientProdShim.js.flow": {
             "imports": {
                 "HMRClientNativeInterface": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 13,
-                        "column": 6,
-                        "local": "HMRClientNativeInterface",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 }
             },
             "typeofs": {
@@ -8835,13 +7516,7 @@
                     "type": "unresolved[error]"
                 },
                 "IPerformanceLogger": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 10,
-                        "column": 6,
-                        "local": "IPerformanceLogger",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 }
             },
             "typeofs": {
@@ -9290,12 +7965,12 @@
         "/Libraries/Animated/src/Animated.js.flow": {
             "imports": {
                 "AnimatedComponentType": {
-                    "type": "type",
+                    "type": "value",
                     "resolvedDecl": {
                         "row": 5,
-                        "column": 6,
-                        "local": "AnimatedComponentType",
-                        "type": "type"
+                        "column": 7,
+                        "local": "$2",
+                        "type": "value"
                     }
                 }
             },
@@ -9304,13 +7979,7 @@
                     {
                         "row": 2,
                         "column": 26,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 10,
-                            "column": 13,
-                            "local": "View",
-                            "type": "value"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ],
                 "$2": [
@@ -9714,13 +8383,7 @@
                     {
                         "row": 32,
                         "column": 45,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 10,
-                            "column": 18,
-                            "local": "createAnimatedComponent",
-                            "type": "value"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ],
                 "AnimatedValue": [
@@ -10238,13 +8901,7 @@
                     {
                         "row": 21,
                         "column": 45,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 10,
-                            "column": 18,
-                            "local": "createAnimatedComponent",
-                            "type": "value"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ],
                 "AnimatedValue": [
@@ -10342,78 +8999,42 @@
                     {
                         "row": 94,
                         "column": 38,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 51,
-                            "column": 13,
-                            "local": "add",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "subtract": [
                     {
                         "row": 95,
                         "column": 43,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 56,
-                            "column": 13,
-                            "local": "subtract",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "divide": [
                     {
                         "row": 96,
                         "column": 41,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 61,
-                            "column": 13,
-                            "local": "divide",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "multiply": [
                     {
                         "row": 97,
                         "column": 43,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 66,
-                            "column": 13,
-                            "local": "multiply",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "modulo": [
                     {
                         "row": 98,
                         "column": 41,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 71,
-                            "column": 13,
-                            "local": "modulo",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "diffClamp": [
                     {
                         "row": 99,
                         "column": 44,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 73,
-                            "column": 13,
-                            "local": "diffClamp",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "delay": [
@@ -10511,26 +9132,14 @@
                     {
                         "row": 108,
                         "column": 44,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 126,
-                            "column": 18,
-                            "local": "forkEvent",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "unforkEvent": [
                     {
                         "row": 109,
                         "column": 46,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 131,
-                            "column": 18,
-                            "local": "unforkEvent",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "AnimatedProps": [
@@ -11087,13 +9696,7 @@
         "/Libraries/Components/AppleTV/TVEventHandler.js.flow": {
             "imports": {
                 "EmitterSubscription": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 8,
-                        "column": 15,
-                        "local": "EmitterSubscription",
-                        "type": "class"
-                    }
+                    "type": "value"
                 }
             },
             "typeofs": {
@@ -11158,13 +9761,7 @@
                     }
                 },
                 "ProcessedColorValue": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 5,
-                        "column": 6,
-                        "local": "ProcessedColorValue",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 }
             },
             "typeofs": {
@@ -11174,9 +9771,9 @@
                         "column": 16,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 24,
-                            "column": 13,
-                            "local": "undefined",
+                            "row": 42,
+                            "column": 9,
+                            "local": "false",
                             "type": "value"
                         }
                     }
@@ -11258,13 +9855,7 @@
                     {
                         "row": 101,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 15,
-                            "local": "React$Component",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "DatePickerIOS": [
@@ -11542,13 +10133,7 @@
                     {
                         "row": 55,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 15,
-                            "local": "React$Component",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "KeyboardAvoidingView": [
@@ -11610,13 +10195,7 @@
                     {
                         "row": 24,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 15,
-                            "local": "React$Component",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "MaskedViewIOS": [
@@ -11717,13 +10296,7 @@
                     }
                 },
                 "ProcessedColorValue": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 5,
-                        "column": 6,
-                        "local": "ProcessedColorValue",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "ViewProps": {
                     "type": "type",
@@ -11797,13 +10370,7 @@
                     }
                 },
                 "ProcessedColorValue": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 5,
-                        "column": 6,
-                        "local": "ProcessedColorValue",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "ViewProps": {
                     "type": "type",
@@ -11856,24 +10423,12 @@
                     {
                         "row": 38,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 15,
-                            "local": "React$Component",
-                            "type": "class"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 115,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 15,
-                            "local": "React$Component",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "PickerItem": [
@@ -11925,12 +10480,12 @@
                     }
                 },
                 "ProcessedColorValue": {
-                    "type": "type",
+                    "type": "value",
                     "resolvedDecl": {
-                        "row": 5,
-                        "column": 6,
-                        "local": "ProcessedColorValue",
-                        "type": "type"
+                        "row": 3,
+                        "column": 7,
+                        "local": "$2",
+                        "type": "value"
                     }
                 },
                 "SyntheticEvent": {
@@ -11983,13 +10538,7 @@
                     {
                         "row": 69,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 15,
-                            "local": "React$Component",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "PickerIOS": [
@@ -12037,13 +10586,7 @@
                     }
                 },
                 "ProcessedColorValue": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 5,
-                        "column": 6,
-                        "local": "ProcessedColorValue",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "React": {
                     "type": "unresolved[error]"
@@ -12152,13 +10695,7 @@
                     }
                 },
                 "View": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 10,
-                        "column": 13,
-                        "local": "View",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 }
             },
             "typeofs": {
@@ -12166,24 +10703,12 @@
                     {
                         "row": 17,
                         "column": 62,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 10,
-                            "column": 13,
-                            "local": "View",
-                            "type": "value"
-                        }
+                        "type": "unresolved[missing]"
                     },
                     {
                         "row": 128,
                         "column": 27,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 10,
-                            "column": 13,
-                            "local": "View",
-                            "type": "value"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ]
             }
@@ -12619,13 +11144,7 @@
                     {
                         "row": 82,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 15,
-                            "local": "React$Component",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "RefreshControl": [
@@ -12878,12 +11397,12 @@
                     }
                 },
                 "ScrollResponderState": {
-                    "type": "type",
+                    "type": "value",
                     "resolvedDecl": {
-                        "row": 12,
-                        "column": 6,
-                        "local": "State",
-                        "type": "type"
+                        "row": 9,
+                        "column": 7,
+                        "local": "$4",
+                        "type": "value"
                     }
                 },
                 "ViewProps": {
@@ -12932,50 +11451,26 @@
                     {
                         "row": 5,
                         "column": 37,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 332,
-                            "column": 13,
-                            "local": "ScrollResponder",
-                            "type": "value"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ],
                 "$4": [
                     {
                         "row": 8,
                         "column": 26,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 10,
-                            "column": 13,
-                            "local": "View",
-                            "type": "value"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ],
                 "Mixin": [
                     {
                         "row": 37,
                         "column": 30,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 20,
-                            "column": 13,
-                            "local": "ScrollResponderMixin",
-                            "type": "value"
-                        }
+                        "type": "value"
                     },
                     {
                         "row": 41,
                         "column": 30,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 20,
-                            "column": 13,
-                            "local": "ScrollResponderMixin",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "View": [
@@ -13032,13 +11527,7 @@
                     {
                         "row": 666,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 15,
-                            "local": "React$Component",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "ScrollView": [
@@ -13210,13 +11699,7 @@
                     {
                         "row": 38,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 15,
-                            "local": "React$Component",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "ScrollViewStickyHeader": [
@@ -13237,13 +11720,7 @@
         "/Libraries/Components/ScrollView/ScrollViewViewConfig.js.flow": {
             "imports": {
                 "GeneratedViewConfig": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 2,
-                        "column": 6,
-                        "local": "GeneratedViewConfig",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 }
             },
             "typeofs": {}
@@ -13568,13 +12045,7 @@
                     {
                         "row": 132,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 15,
-                            "local": "React$Component",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "StatusBar": [
@@ -13933,13 +12404,7 @@
                     {
                         "row": 25,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 15,
-                            "local": "React$Component",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "InputAccessoryView": [
@@ -14155,52 +12620,28 @@
                     {
                         "row": 710,
                         "column": 54,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 8,
-                            "column": 18,
-                            "local": "currentlyFocusedInput",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "currentlyFocusedField": [
                     {
                         "row": 711,
                         "column": 54,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 10,
-                            "column": 18,
-                            "local": "currentlyFocusedField",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "focusTextInput": [
                     {
                         "row": 712,
                         "column": 47,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 20,
-                            "column": 18,
-                            "local": "focusTextInput",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "blurTextInput": [
                     {
                         "row": 713,
                         "column": 46,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 22,
-                            "column": 18,
-                            "local": "blurTextInput",
-                            "type": "value"
-                        }
+                        "type": "value"
                     }
                 ],
                 "DeprecatedTextInputPropTypes": [
@@ -14863,13 +13304,7 @@
                     }
                 },
                 "View": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 10,
-                        "column": 13,
-                        "local": "View",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 },
                 "React": {
                     "type": "unresolved[error]"
@@ -14880,13 +13315,7 @@
                     {
                         "row": 39,
                         "column": 31,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 10,
-                            "column": 13,
-                            "local": "View",
-                            "type": "value"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ]
             }
@@ -15199,13 +13628,7 @@
                     {
                         "row": 9,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 26,
-                            "column": 15,
-                            "local": "React$Component",
-                            "type": "class"
-                        }
+                        "type": "value"
                     }
                 ],
                 "UnimplementedView": [
@@ -15253,9 +13676,9 @@
                         "column": 34,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 10,
+                            "column": 7,
+                            "local": "$4",
                             "type": "value"
                         }
                     }
@@ -15264,13 +13687,7 @@
                     {
                         "row": 11,
                         "column": 38,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 2,
-                            "column": 18,
-                            "local": "processTransform",
-                            "type": "value"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ],
                 "$6": [
@@ -15607,13 +14024,7 @@
         "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow": {
             "imports": {
                 "ReactNativeViewViewConfigAndroid": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 2,
-                        "column": 13,
-                        "local": "ReactNativeViewViewConfigAndroid",
-                        "type": "value"
-                    }
+                    "type": "unresolved[missing]"
                 }
             },
             "typeofs": {
@@ -15623,7 +14034,7 @@
                         "column": 48,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 4,
+                            "row": 10,
                             "column": 3,
                             "local": "bubblingEventTypes",
                             "type": "value"
@@ -15636,7 +14047,7 @@
                         "column": 48,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 12,
+                            "row": 79,
                             "column": 3,
                             "local": "directEventTypes",
                             "type": "value"
@@ -15649,7 +14060,7 @@
                         "column": 48,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 50,
+                            "row": 105,
                             "column": 3,
                             "local": "validAttributes",
                             "type": "value"
@@ -15662,9 +14073,9 @@
                         "column": 40,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 331,
+                            "column": 7,
+                            "local": "$1",
                             "type": "value"
                         }
                     }
@@ -15675,9 +14086,9 @@
                         "column": 42,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 332,
+                            "column": 7,
+                            "local": "$2",
                             "type": "value"
                         }
                     }
@@ -15688,9 +14099,9 @@
                         "column": 36,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 334,
+                            "column": 7,
+                            "local": "$3",
                             "type": "value"
                         }
                     }
@@ -15701,9 +14112,9 @@
                         "column": 39,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 335,
+                            "column": 7,
+                            "local": "$4",
                             "type": "value"
                         }
                     }
@@ -15714,9 +14125,9 @@
                         "column": 40,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 337,
+                            "column": 7,
+                            "local": "$5",
                             "type": "value"
                         }
                     }
@@ -15727,9 +14138,9 @@
                         "column": 41,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 339,
+                            "column": 7,
+                            "local": "$6",
                             "type": "value"
                         }
                     }
@@ -15740,9 +14151,9 @@
                         "column": 41,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 341,
+                            "column": 7,
+                            "local": "$7",
                             "type": "value"
                         }
                     }
@@ -15753,9 +14164,9 @@
                         "column": 39,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 343,
+                            "column": 7,
+                            "local": "$8",
                             "type": "value"
                         }
                     }
@@ -15766,9 +14177,9 @@
                         "column": 36,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 345,
+                            "column": 7,
+                            "local": "$9",
                             "type": "value"
                         }
                     }
@@ -15786,9 +14197,9 @@
                         "column": 42,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 348,
+                            "column": 7,
+                            "local": "$11",
                             "type": "value"
                         }
                     }
@@ -15799,9 +14210,9 @@
                         "column": 44,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 349,
+                            "column": 7,
+                            "local": "$12",
                             "type": "value"
                         }
                     }
@@ -15812,9 +14223,9 @@
                         "column": 38,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 351,
+                            "column": 7,
+                            "local": "$13",
                             "type": "value"
                         }
                     }
@@ -15825,9 +14236,9 @@
                         "column": 41,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 352,
+                            "column": 7,
+                            "local": "$14",
                             "type": "value"
                         }
                     }
@@ -15838,9 +14249,9 @@
                         "column": 42,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 354,
+                            "column": 7,
+                            "local": "$15",
                             "type": "value"
                         }
                     }
@@ -15851,9 +14262,9 @@
                         "column": 43,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 356,
+                            "column": 7,
+                            "local": "$16",
                             "type": "value"
                         }
                     }
@@ -15864,9 +14275,9 @@
                         "column": 43,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 358,
+                            "column": 7,
+                            "local": "$17",
                             "type": "value"
                         }
                     }
@@ -15877,9 +14288,9 @@
                         "column": 41,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 360,
+                            "column": 7,
+                            "local": "$18",
                             "type": "value"
                         }
                     }
@@ -15890,9 +14301,9 @@
                         "column": 32,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 362,
+                            "column": 7,
+                            "local": "$19",
                             "type": "value"
                         }
                     }
@@ -15903,9 +14314,9 @@
                         "column": 39,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 364,
+                            "column": 7,
+                            "local": "$20",
                             "type": "value"
                         }
                     }
@@ -15916,9 +14327,9 @@
                         "column": 38,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 366,
+                            "column": 7,
+                            "local": "$21",
                             "type": "value"
                         }
                     }
@@ -15936,9 +14347,9 @@
                         "column": 46,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 369,
+                            "column": 7,
+                            "local": "$23",
                             "type": "value"
                         }
                     }
@@ -15949,9 +14360,9 @@
                         "column": 42,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 371,
+                            "column": 7,
+                            "local": "$24",
                             "type": "value"
                         }
                     }
@@ -15962,9 +14373,9 @@
                         "column": 36,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 7,
-                            "column": 18,
-                            "local": "processColor",
+                            "row": 373,
+                            "column": 7,
+                            "local": "$25",
                             "type": "value"
                         }
                     }
@@ -16470,13 +14881,7 @@
                     }
                 },
                 "ExtendedError": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 4,
-                        "column": 6,
-                        "local": "ExtendedError",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 }
             },
             "typeofs": {}
@@ -16557,13 +14962,7 @@
                     }
                 },
                 "SymbolicatedStackTrace": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 16,
-                        "column": 6,
-                        "local": "SymbolicatedStackTrace",
-                        "type": "type"
-                    }
+                    "type": "unresolved[missing]"
                 }
             },
             "typeofs": {}
@@ -16830,13 +15229,7 @@
                     "type": "unresolved[error]"
                 },
                 "LogBoxLog": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 25,
-                        "column": 15,
-                        "local": "LogBoxLog",
-                        "type": "class"
-                    }
+                    "type": "value"
                 }
             },
             "typeofs": {
@@ -16963,13 +15356,7 @@
                     }
                 },
                 "LogBoxLog": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 25,
-                        "column": 15,
-                        "local": "LogBoxLog",
-                        "type": "class"
-                    }
+                    "type": "value"
                 }
             },
             "typeofs": {
@@ -17418,22 +15805,10 @@
         "/Libraries/vendor/emitter/EmitterSubscription.js.flow": {
             "imports": {
                 "EventEmitter": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 25,
-                        "column": 15,
-                        "local": "EventEmitter",
-                        "type": "class"
-                    }
+                    "type": "value"
                 },
                 "EventSubscriptionVendor": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 4,
-                        "column": 15,
-                        "local": "EventSubscriptionVendor",
-                        "type": "class"
-                    }
+                    "type": "value"
                 }
             },
             "typeofs": {
@@ -17499,13 +15874,7 @@
         "/Libraries/vendor/emitter/EventSubscription.js.flow": {
             "imports": {
                 "EventSubscriptionVendor": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 4,
-                        "column": 15,
-                        "local": "EventSubscriptionVendor",
-                        "type": "class"
-                    }
+                    "type": "value"
                 }
             },
             "typeofs": {
@@ -17527,13 +15896,7 @@
         "/Libraries/vendor/emitter/EventSubscriptionVendor.js.flow": {
             "imports": {
                 "EventSubscription": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 4,
-                        "column": 15,
-                        "local": "EventSubscription",
-                        "type": "class"
-                    }
+                    "type": "value"
                 }
             },
             "typeofs": {
@@ -17555,13 +15918,7 @@
         "/Libraries/Animated/src/animations/Animation.js.flow": {
             "imports": {
                 "AnimatedValue": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 12,
-                        "column": 15,
-                        "local": "AnimatedValue",
-                        "type": "class"
-                    }
+                    "type": "value"
                 }
             },
             "typeofs": {
@@ -17583,13 +15940,7 @@
         "/Libraries/Animated/src/animations/DecayAnimation.js.flow": {
             "imports": {
                 "AnimatedValue": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 12,
-                        "column": 15,
-                        "local": "AnimatedValue",
-                        "type": "class"
-                    }
+                    "type": "value"
                 },
                 "AnimationConfig": {
                     "type": "type",
@@ -17862,12 +16213,12 @@
                     "type": "unresolved[error]"
                 },
                 "AnimatedComponentType": {
-                    "type": "type",
+                    "type": "value",
                     "resolvedDecl": {
                         "row": 5,
-                        "column": 6,
-                        "local": "AnimatedComponentType",
-                        "type": "type"
+                        "column": 7,
+                        "local": "$1",
+                        "type": "value"
                     }
                 }
             },
@@ -17876,13 +16227,7 @@
                     {
                         "row": 4,
                         "column": 30,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 156,
-                            "column": 15,
-                            "local": "FlatList",
-                            "type": "class"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ],
                 "FlatList": [
@@ -17917,12 +16262,12 @@
                     "type": "unresolved[error]"
                 },
                 "AnimatedComponentType": {
-                    "type": "type",
+                    "type": "value",
                     "resolvedDecl": {
                         "row": 5,
-                        "column": 6,
-                        "local": "AnimatedComponentType",
-                        "type": "type"
+                        "column": 7,
+                        "local": "$1",
+                        "type": "value"
                     }
                 }
             },
@@ -17972,12 +16317,12 @@
                     "type": "unresolved[error]"
                 },
                 "AnimatedComponentType": {
-                    "type": "type",
+                    "type": "value",
                     "resolvedDecl": {
                         "row": 5,
-                        "column": 6,
-                        "local": "AnimatedComponentType",
-                        "type": "type"
+                        "column": 7,
+                        "local": "$1",
+                        "type": "value"
                     }
                 }
             },
@@ -18027,12 +16372,12 @@
                     "type": "unresolved[error]"
                 },
                 "AnimatedComponentType": {
-                    "type": "type",
+                    "type": "value",
                     "resolvedDecl": {
                         "row": 5,
-                        "column": 6,
-                        "local": "AnimatedComponentType",
-                        "type": "type"
+                        "column": 7,
+                        "local": "$1",
+                        "type": "value"
                     }
                 }
             },
@@ -18041,13 +16386,7 @@
                     {
                         "row": 4,
                         "column": 33,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 112,
-                            "column": 15,
-                            "local": "SectionList",
-                            "type": "class"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ],
                 "SectionList": [
@@ -18082,12 +16421,12 @@
                     "type": "unresolved[error]"
                 },
                 "AnimatedComponentType": {
-                    "type": "type",
+                    "type": "value",
                     "resolvedDecl": {
                         "row": 5,
-                        "column": 6,
-                        "local": "AnimatedComponentType",
-                        "type": "type"
+                        "column": 7,
+                        "local": "$1",
+                        "type": "value"
                     }
                 }
             },
@@ -18137,12 +16476,12 @@
                     "type": "unresolved[error]"
                 },
                 "AnimatedComponentType": {
-                    "type": "type",
+                    "type": "value",
                     "resolvedDecl": {
                         "row": 5,
-                        "column": 6,
-                        "local": "AnimatedComponentType",
-                        "type": "type"
+                        "column": 7,
+                        "local": "$1",
+                        "type": "value"
                     }
                 }
             },
@@ -18151,13 +16490,7 @@
                     {
                         "row": 4,
                         "column": 26,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 10,
-                            "column": 13,
-                            "local": "View",
-                            "type": "value"
-                        }
+                        "type": "unresolved[missing]"
                     }
                 ],
                 "View": [
@@ -18952,13 +17285,7 @@
                     }
                 },
                 "Animation": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 14,
-                        "column": 15,
-                        "local": "Animation",
-                        "type": "class"
-                    }
+                    "type": "value"
                 },
                 "InterpolationConfigType": {
                     "type": "type",
@@ -18970,13 +17297,7 @@
                     }
                 },
                 "AnimatedTracking": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 9,
-                        "column": 15,
-                        "local": "AnimatedTracking",
-                        "type": "class"
-                    }
+                    "type": "value"
                 }
             },
             "typeofs": {

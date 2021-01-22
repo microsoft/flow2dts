@@ -26,18 +26,7 @@
                 "column": 38,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 37,
-                    "column": 38
-                },
-                "end": {
-                    "row": 37,
-                    "column": 43
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow:37:37\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -45,18 +34,7 @@
                 "column": 41,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 38,
-                    "column": 41
-                },
-                "end": {
-                    "row": 38,
-                    "column": 46
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow:38:40\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -64,18 +42,7 @@
                 "column": 43,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 39,
-                    "column": 43
-                },
-                "end": {
-                    "row": 39,
-                    "column": 48
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow:39:42\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -83,18 +50,7 @@
                 "column": 41,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 40,
-                    "column": 41
-                },
-                "end": {
-                    "row": 40,
-                    "column": 46
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow:40:40\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -102,18 +58,7 @@
                 "column": 43,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 41,
-                    "column": 43
-                },
-                "end": {
-                    "row": 41,
-                    "column": 48
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow:41:42\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -121,18 +66,7 @@
                 "column": 44,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 42,
-                    "column": 44
-                },
-                "end": {
-                    "row": 42,
-                    "column": 49
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow:42:43\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -140,18 +74,7 @@
                 "column": 42,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 43,
-                    "column": 42
-                },
-                "end": {
-                    "row": 43,
-                    "column": 47
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow:43:41\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -159,18 +82,7 @@
                 "column": 31,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 74,
-                    "column": 31
-                },
-                "end": {
-                    "row": 74,
-                    "column": 36
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow:74:30\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -178,18 +90,7 @@
                 "column": 35,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 75,
-                    "column": 35
-                },
-                "end": {
-                    "row": 75,
-                    "column": 40
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow:75:34\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -197,18 +98,7 @@
                 "column": 37,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 76,
-                    "column": 37
-                },
-                "end": {
-                    "row": 76,
-                    "column": 42
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow:76:36\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -216,18 +106,7 @@
                 "column": 38,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 78,
-                    "column": 38
-                },
-                "end": {
-                    "row": 78,
-                    "column": 43
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow:78:37\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -235,18 +114,7 @@
                 "column": 33,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 79,
-                    "column": 33
-                },
-                "end": {
-                    "row": 79,
-                    "column": 38
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedLayoutPropTypes.js.flow:79:32\r\nNo possible types\r\n"
         },
         {
             "source": {

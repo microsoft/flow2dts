@@ -6,18 +6,7 @@
                 "column": 13,
                 "local": "VirtualizedList"
             },
-            "resolved": {
-                "begin": {
-                    "row": 289,
-                    "column": 15
-                },
-                "end": {
-                    "row": 289,
-                    "column": 29
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/Lists/VirtualizedList.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/Lists/VirtualizedListContext.js.flow:2:12\r\nNo possible types\r\n"
         },
         "React": {
             "source": {

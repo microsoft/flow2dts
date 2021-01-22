@@ -86,12 +86,12 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 11,
-                    "column": 36
+                    "row": 0,
+                    "column": 1
                 },
                 "end": {
-                    "row": 11,
-                    "column": 70
+                    "row": 0,
+                    "column": 0
                 },
                 "libraryFolder": -1,
                 "file": "/Libraries/Image/resolveAssetSource.js.flow"

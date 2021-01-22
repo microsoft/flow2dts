@@ -26,18 +26,7 @@
                 "column": 25,
                 "local": "string"
             },
-            "resolved": {
-                "begin": {
-                    "row": 5,
-                    "column": 25
-                },
-                "end": {
-                    "row": 5,
-                    "column": 30
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow:5:24\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -45,18 +34,7 @@
                 "column": 28,
                 "local": "string"
             },
-            "resolved": {
-                "begin": {
-                    "row": 6,
-                    "column": 28
-                },
-                "end": {
-                    "row": 6,
-                    "column": 33
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow:6:27\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -64,18 +42,7 @@
                 "column": 28,
                 "local": "string"
             },
-            "resolved": {
-                "begin": {
-                    "row": 7,
-                    "column": 28
-                },
-                "end": {
-                    "row": 7,
-                    "column": 33
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow:7:27\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -83,18 +50,7 @@
                 "column": 26,
                 "local": "string"
             },
-            "resolved": {
-                "begin": {
-                    "row": 9,
-                    "column": 26
-                },
-                "end": {
-                    "row": 9,
-                    "column": 31
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow:9:25\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -102,18 +58,7 @@
                 "column": 27,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 11,
-                    "column": 27
-                },
-                "end": {
-                    "row": 11,
-                    "column": 32
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow:11:26\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -121,18 +66,7 @@
                 "column": 28,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 12,
-                    "column": 28
-                },
-                "end": {
-                    "row": 12,
-                    "column": 33
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow:12:27\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -140,18 +74,7 @@
                 "column": 27,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 13,
-                    "column": 27
-                },
-                "end": {
-                    "row": 13,
-                    "column": 32
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow:13:26\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -178,18 +101,7 @@
                 "column": 52,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 17,
-                    "column": 52
-                },
-                "end": {
-                    "row": 17,
-                    "column": 57
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedImageSourcePropType.js.flow:17:51\r\nNo possible types\r\n"
         },
         {
             "source": {

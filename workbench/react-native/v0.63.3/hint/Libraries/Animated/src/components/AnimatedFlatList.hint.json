@@ -16,15 +16,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 5,
-                    "column": 6
+                    "row": 7,
+                    "column": 14
                 },
                 "end": {
-                    "row": 5,
-                    "column": 26
+                    "row": 7,
+                    "column": 34
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Animated/src/createAnimatedComponent.js.flow"
+                "file": "/Libraries/Animated/src/components/AnimatedFlatList.js.flow"
             }
         }
     },
@@ -37,12 +37,12 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 156,
-                    "column": 15
+                    "row": 0,
+                    "column": 1
                 },
                 "end": {
-                    "row": 156,
-                    "column": 22
+                    "row": 0,
+                    "column": 0
                 },
                 "libraryFolder": -1,
                 "file": "/Libraries/Lists/FlatList.js.flow"

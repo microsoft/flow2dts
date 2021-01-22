@@ -27,15 +27,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 16,
-                    "column": 6
+                    "row": 3,
+                    "column": 14
                 },
                 "end": {
-                    "row": 16,
-                    "column": 27
+                    "row": 3,
+                    "column": 35
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Core/Devtools/symbolicateStackTrace.js.flow"
+                "file": "/Libraries/LogBox/Data/LogBoxSymbolication.js.flow"
             }
         }
     },

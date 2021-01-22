@@ -6,18 +6,7 @@
                 "column": 8,
                 "local": "NativeDeviceInfo"
             },
-            "resolved": {
-                "begin": {
-                    "row": 26,
-                    "column": 11
-                },
-                "end": {
-                    "row": 26,
-                    "column": 14
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/Utilities/NativeDeviceInfo.js.flow"
-            }
+            "error": "[unrecognizable stdout]:0:1,0:0\r\n"
         }
     },
     "typeofs": [
@@ -27,18 +16,7 @@
                 "column": 32,
                 "local": "NativeDeviceInfo"
             },
-            "resolved": {
-                "begin": {
-                    "row": 26,
-                    "column": 11
-                },
-                "end": {
-                    "row": 26,
-                    "column": 14
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/Utilities/NativeDeviceInfo.js.flow"
-            }
+            "error": "[unrecognizable stdout]:0:1,0:0\r\n"
         }
     ],
     "decls": []

@@ -8,15 +8,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 18,
-                    "column": 5
+                    "row": 2,
+                    "column": 15
                 },
                 "end": {
-                    "row": 23,
-                    "column": 3
+                    "row": 2,
+                    "column": 18
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Text/Text.js.flow"
+                "file": "/Libraries/Text/TextInjection.js.flow"
             }
         }
     },

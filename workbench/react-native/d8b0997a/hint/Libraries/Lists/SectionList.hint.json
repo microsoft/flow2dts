@@ -27,15 +27,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 107,
-                    "column": 6
+                    "row": 8,
+                    "column": 14
                 },
                 "end": {
-                    "row": 107,
-                    "column": 31
+                    "row": 8,
+                    "column": 39
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
+                "file": "/Libraries/Lists/SectionList.js.flow"
             }
         },
         "_SectionBase": {
@@ -46,15 +46,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 10,
-                    "column": 6
+                    "row": 9,
+                    "column": 14
                 },
                 "end": {
-                    "row": 10,
-                    "column": 16
+                    "row": 9,
+                    "column": 24
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
+                "file": "/Libraries/Lists/SectionList.js.flow"
             }
         },
         "VirtualizedSectionListProps": {
@@ -65,15 +65,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 99,
-                    "column": 6
+                    "row": 10,
+                    "column": 14
                 },
                 "end": {
-                    "row": 99,
-                    "column": 10
+                    "row": 10,
+                    "column": 18
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
+                "file": "/Libraries/Lists/SectionList.js.flow"
             }
         }
     },
@@ -105,12 +105,12 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 122,
-                    "column": 15
+                    "row": 0,
+                    "column": 1
                 },
                 "end": {
-                    "row": 122,
-                    "column": 36
+                    "row": 0,
+                    "column": 0
                 },
                 "libraryFolder": -1,
                 "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
@@ -160,18 +160,7 @@
                 "column": 30,
                 "local": "PureComponent"
             },
-            "resolved": {
-                "begin": {
-                    "row": 100,
-                    "column": 15
-                },
-                "end": {
-                    "row": 100,
-                    "column": 33
-                },
-                "libraryFolder": 0,
-                "file": "/react.js"
-            }
+            "error": "Could not get definition for /Libraries/Lists/SectionList.js.flow:154:29\r\nNo possible types\r\n"
         },
         {
             "source": {

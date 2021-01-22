@@ -102,18 +102,7 @@
                 "column": 37,
                 "local": "string"
             },
-            "resolved": {
-                "begin": {
-                    "row": 13,
-                    "column": 37
-                },
-                "end": {
-                    "row": 13,
-                    "column": 42
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextStylePropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextStylePropTypes.js.flow:13:36\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -121,18 +110,7 @@
                 "column": 35,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 14,
-                    "column": 35
-                },
-                "end": {
-                    "row": 14,
-                    "column": 40
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextStylePropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextStylePropTypes.js.flow:14:34\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -140,18 +118,7 @@
                 "column": 43,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 52,
-                    "column": 43
-                },
-                "end": {
-                    "row": 52,
-                    "column": 48
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextStylePropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextStylePropTypes.js.flow:52:42\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -178,18 +145,7 @@
                 "column": 40,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 57,
-                    "column": 40
-                },
-                "end": {
-                    "row": 57,
-                    "column": 45
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextStylePropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextStylePropTypes.js.flow:57:39\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -197,18 +153,7 @@
                 "column": 37,
                 "local": "number"
             },
-            "resolved": {
-                "begin": {
-                    "row": 58,
-                    "column": 37
-                },
-                "end": {
-                    "row": 58,
-                    "column": 42
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextStylePropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextStylePropTypes.js.flow:58:36\r\nNo possible types\r\n"
         },
         {
             "source": {
@@ -216,18 +161,7 @@
                 "column": 45,
                 "local": "bool"
             },
-            "resolved": {
-                "begin": {
-                    "row": 78,
-                    "column": 45
-                },
-                "end": {
-                    "row": 78,
-                    "column": 48
-                },
-                "libraryFolder": -1,
-                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextStylePropTypes.js.flow"
-            }
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextStylePropTypes.js.flow:78:44\r\nNo possible types\r\n"
         },
         {
             "source": {
