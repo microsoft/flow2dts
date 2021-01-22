@@ -5,7 +5,7 @@ import { Visitor, types as t } from "@babel/core"
 import { State } from "../state"
 import {
   assertTSType,
-  isClass,
+  isClassIdentifier,
   nameForExportDefault,
   nameForExportDefaultRedirect,
   nameForHidden,
@@ -105,9 +105,12 @@ export const exportVisitor: Visitor<State> = {
           nssDefault,
           t.exportDefaultDeclaration(t.identifier(nameForExportDefault)),
         ])
-      } else if (t.isTSTypeReference(typeAnnotation) && isClass(typeAnnotation, path.scope)) {
-        t.assertIdentifier(typeAnnotation.typeName)
-        path.replaceWith(t.exportDefaultDeclaration(typeAnnotation.typeName))
+      } else if (
+        t.isTSTypeQuery(typeAnnotation) &&
+        t.isIdentifier(typeAnnotation.exprName) &&
+        isClassIdentifier(typeAnnotation.exprName, path.scope)
+      ) {
+        path.replaceWith(t.exportDefaultDeclaration(typeAnnotation.exprName))
       } else {
         // Export each value separately as ES6 named exports
         if (t.isTSTypeLiteral(typeAnnotation)) {

@@ -40,15 +40,18 @@ export function wrappedTypeOf(id: t.TSEntityName) {
   return t.tsTypeReference(t.identifier("$TypeOf"), t.tsTypeParameterInstantiation([t.tsTypeQuery(id)]))
 }
 
+export function isClassIdentifier(typeName: t.Identifier, scope: Scope) {
+  const binding = scope.getBinding(typeName.name)
+  if (binding && (binding.path.isDeclareClass() || binding.path.isClassDeclaration())) {
+    return true
+  } else {
+    return false
+  }
+}
+
 export function isClass(tsTypeReference: t.TSTypeReference, scope: Scope) {
   const typeName = tsTypeReference.typeName
-  if (t.isIdentifier(typeName)) {
-    const binding = scope.getBinding(typeName.name)
-    if (binding && (binding.path.isDeclareClass() || binding.path.isClassDeclaration())) {
-      return true
-    }
-  }
-  return false
+  return t.isIdentifier(typeName) && isClassIdentifier(typeName, scope)
 }
 
 export function isPathDefinitelyValue<T>(path: NodePath<T>): boolean {
