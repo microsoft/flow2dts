@@ -141,15 +141,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 18,
-                    "column": 14
+                    "row": 12,
+                    "column": 6
                 },
                 "end": {
-                    "row": 18,
-                    "column": 18
+                    "row": 12,
+                    "column": 10
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
+                "file": "/Libraries/Components/ScrollResponder.js.flow"
             }
         },
         "ViewProps": {
@@ -238,12 +238,12 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 0,
-                    "column": 1
+                    "row": 332,
+                    "column": 30
                 },
                 "end": {
-                    "row": 0,
-                    "column": 0
+                    "row": 334,
+                    "column": 2
                 },
                 "libraryFolder": -1,
                 "file": "/Libraries/Components/ScrollResponder.js.flow"
@@ -257,12 +257,12 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 0,
-                    "column": 1
+                    "row": 10,
+                    "column": 19
                 },
                 "end": {
-                    "row": 0,
-                    "column": 0
+                    "row": 13,
+                    "column": 1
                 },
                 "libraryFolder": -1,
                 "file": "/Libraries/Components/View/View.js.flow"

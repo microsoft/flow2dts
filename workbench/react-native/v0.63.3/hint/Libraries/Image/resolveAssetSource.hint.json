@@ -84,7 +84,18 @@
                 "column": 43,
                 "local": "pickScale"
             },
-            "error": "Could not get definition for /Libraries/Image/resolveAssetSource.js.flow:17:42\r\nNo possible types\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 23
+                },
+                "end": {
+                    "row": 17,
+                    "column": 51
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/resolveAssetSource.js.flow"
+            }
         }
     ],
     "decls": [

@@ -46,15 +46,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 6,
-                    "column": 14
+                    "row": 7,
+                    "column": 6
                 },
                 "end": {
-                    "row": 6,
-                    "column": 24
+                    "row": 7,
+                    "column": 16
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Network/RCTNetworking.ios.js.flow"
+                "file": "/Libraries/Network/convertRequestBody.js.flow"
             }
         }
     },

@@ -139,7 +139,7 @@
                 "column": 13,
                 "local": "React"
             },
-            "error": "The flow server is not responding (3 retries remaining): -Launching Flow server for C:/Code/ZihanChen-MSFT/flow2dts/workbench/react-native\r\nSpawned flow server (pid=17604)\r\nLogs will go to C:/Users/zihanc/AppData/Local/Temp/flow/CzCzBCodezBZihanChen-MSFTzBflow2dtszBworkbenchzBreact-native.log\r\nMonitor logs will go to C:/Users/zihanc/AppData/Local/Temp/flow/CzCzBCodezBZihanChen-MSFTzBflow2dtszBworkbenchzBreact-native.monitor_log\r\nStarted a new flow server: /"
+            "error": "Could not get definition for /Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow:10:12\r\nFailed to find imported file react\r\n"
         }
     },
     "typeofs": [],

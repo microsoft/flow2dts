@@ -8,15 +8,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 2,
-                    "column": 14
+                    "row": 10,
+                    "column": 6
                 },
                 "end": {
-                    "row": 2,
-                    "column": 31
+                    "row": 10,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/ReactNative/AppRegistry.js.flow"
+                "file": "/Libraries/Utilities/createPerformanceLogger.js.flow"
             }
         }
     },

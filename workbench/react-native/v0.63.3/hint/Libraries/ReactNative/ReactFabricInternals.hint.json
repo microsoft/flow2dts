@@ -9,12 +9,12 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 0,
-                    "column": 1
+                    "row": 4,
+                    "column": 46
                 },
                 "end": {
-                    "row": 0,
-                    "column": 0
+                    "row": 7,
+                    "column": 11
                 },
                 "libraryFolder": -1,
                 "file": "/Libraries/Renderer/shims/createReactNativeComponentClass.js.flow"

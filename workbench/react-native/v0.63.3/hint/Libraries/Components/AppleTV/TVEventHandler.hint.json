@@ -6,7 +6,18 @@
                 "column": 13,
                 "local": "EmitterSubscription"
             },
-            "error": "Could not get definition for /Libraries/Components/AppleTV/TVEventHandler.js.flow:5:12\r\nNo possible types\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 15
+                },
+                "end": {
+                    "row": 8,
+                    "column": 33
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/vendor/emitter/EmitterSubscription.js.flow"
+            }
         }
     },
     "typeofs": [

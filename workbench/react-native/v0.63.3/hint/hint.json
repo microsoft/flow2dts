@@ -1,16 +1,27 @@
 {
     "libraries": [
-        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_1e1cf33d",
-        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_5508788"
+        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_293c8320"
     ],
     "files": {
         "/index.js.flow": {
             "imports": {
                 "AccessibilityInfo": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 19,
+                        "column": 13,
+                        "local": "AccessibilityInfo",
+                        "type": "value"
+                    }
                 },
                 "ActivityIndicator": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 50,
+                        "column": 13,
+                        "local": "ActivityIndicatorWithRef",
+                        "type": "value"
+                    }
                 },
                 "Button": {
                     "type": "class",
@@ -37,7 +48,13 @@
                     "type": "unresolved[missing]"
                 },
                 "FlatList": {
-                    "type": "unresolved[missing]"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 156,
+                        "column": 15,
+                        "local": "FlatList",
+                        "type": "class"
+                    }
                 },
                 "Image": {
                     "type": "value",
@@ -124,10 +141,22 @@
                     "type": "unresolved[missing]"
                 },
                 "ProgressViewIOS": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 20,
+                        "column": 5,
+                        "local": "trackImage",
+                        "type": "value"
+                    }
                 },
                 "SafeAreaView": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 15,
+                        "column": 13,
+                        "local": "exported",
+                        "type": "value"
+                    }
                 },
                 "ScrollView": {
                     "type": "value",
@@ -139,13 +168,25 @@
                     }
                 },
                 "SectionList": {
-                    "type": "unresolved[missing]"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 112,
+                        "column": 15,
+                        "local": "SectionList",
+                        "type": "class"
+                    }
                 },
                 "SegmentedControlIOS": {
                     "type": "unresolved[missing]"
                 },
                 "Slider": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 118,
+                        "column": 13,
+                        "local": "SliderWithRef",
+                        "type": "value"
+                    }
                 },
                 "Switch": {
                     "type": "class",
@@ -193,7 +234,13 @@
                     }
                 },
                 "Touchable": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 264,
+                        "column": 13,
+                        "local": "Touchable",
+                        "type": "value"
+                    }
                 },
                 "TouchableHighlight": {
                     "type": "value",
@@ -232,7 +279,13 @@
                     }
                 },
                 "View": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 10,
+                        "column": 13,
+                        "local": "View",
+                        "type": "value"
+                    }
                 },
                 "VirtualizedList": {
                     "type": "class",
@@ -244,10 +297,22 @@
                     }
                 },
                 "VirtualizedSectionList": {
-                    "type": "unresolved[missing]"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 122,
+                        "column": 15,
+                        "local": "VirtualizedSectionList",
+                        "type": "class"
+                    }
                 },
                 "ActionSheetIOS": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 5,
+                        "column": 13,
+                        "local": "ActionSheetIOS",
+                        "type": "value"
+                    }
                 },
                 "Alert": {
                     "type": "class",
@@ -271,16 +336,40 @@
                     }
                 },
                 "AppRegistry": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 34,
+                        "column": 13,
+                        "local": "AppRegistry",
+                        "type": "value"
+                    }
                 },
                 "AppState": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 54,
+                        "column": 13,
+                        "local": "AppStateInstance",
+                        "type": "value"
+                    }
                 },
                 "AsyncStorage": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 2,
+                        "column": 13,
+                        "local": "AsyncStorage",
+                        "type": "value"
+                    }
                 },
                 "BackHandler": {
-                    "type": "unresolved[missing]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 4,
+                        "column": 6,
+                        "local": "TBackHandler",
+                        "type": "type"
+                    }
                 },
                 "Clipboard": {
                     "type": "unresolved[missing]"
@@ -295,7 +384,7 @@
                     }
                 },
                 "DeviceInfo": {
-                    "type": "unresolved[missing]"
+                    "type": "unresolved[error]"
                 },
                 "DevSettings": {
                     "type": "type",
@@ -343,16 +432,34 @@
                     }
                 },
                 "ImagePickerIOS": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 2,
+                        "column": 13,
+                        "local": "ImagePickerIOS",
+                        "type": "value"
+                    }
                 },
                 "InteractionManager": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 5,
+                        "column": 13,
+                        "local": "InteractionManager",
+                        "type": "value"
+                    }
                 },
                 "Keyboard": {
                     "type": "unresolved[missing]"
                 },
                 "LayoutAnimation": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 63,
+                        "column": 13,
+                        "local": "LayoutAnimation",
+                        "type": "value"
+                    }
                 },
                 "Linking": {
                     "type": "class",
@@ -391,10 +498,22 @@
                     }
                 },
                 "PanResponder": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 90,
+                        "column": 13,
+                        "local": "PanResponder",
+                        "type": "value"
+                    }
                 },
                 "PermissionsAndroid": {
-                    "type": "unresolved[missing]"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 14,
+                        "column": 15,
+                        "local": "PermissionsAndroid",
+                        "type": "class"
+                    }
                 },
                 "PixelRatio": {
                     "type": "class",
@@ -415,7 +534,13 @@
                     }
                 },
                 "Settings": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 2,
+                        "column": 13,
+                        "local": "Settings",
+                        "type": "value"
+                    }
                 },
                 "Share": {
                     "type": "class",
@@ -445,7 +570,13 @@
                     }
                 },
                 "Systrace": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 2,
+                        "column": 13,
+                        "local": "Systrace",
+                        "type": "value"
+                    }
                 },
                 "ToastAndroid": {
                     "type": "unresolved[missing]"
@@ -463,7 +594,13 @@
                     }
                 },
                 "UIManager": {
-                    "type": "unresolved[missing]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 4,
+                        "column": 11,
+                        "local": "UIManagerJSInterface",
+                        "type": "type"
+                    }
                 },
                 "useColorScheme": {
                     "type": "value",
@@ -484,10 +621,22 @@
                     }
                 },
                 "UTFSequence": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 2,
+                        "column": 13,
+                        "local": "UTFSequence",
+                        "type": "value"
+                    }
                 },
                 "Vibration": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 2,
+                        "column": 13,
+                        "local": "Vibration",
+                        "type": "value"
+                    }
                 },
                 "YellowBox": {
                     "type": "type",
@@ -514,13 +663,31 @@
                     "type": "unresolved[missing]"
                 },
                 "NativeModules": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 12,
+                        "column": 13,
+                        "local": "NativeModules",
+                        "type": "value"
+                    }
                 },
                 "Platform": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 9,
+                        "column": 13,
+                        "local": "Platform",
+                        "type": "value"
+                    }
                 },
                 "processColor": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 7,
+                        "column": 18,
+                        "local": "processColor",
+                        "type": "value"
+                    }
                 },
                 "PlatformColor": {
                     "type": "value",
@@ -556,10 +723,22 @@
                     "type": "unresolved[missing]"
                 },
                 "DeprecatedEdgeInsetsPropType": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 2,
+                        "column": 13,
+                        "local": "DeprecatedEdgeInsetsPropType",
+                        "type": "value"
+                    }
                 },
                 "DeprecatedPointPropType": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 2,
+                        "column": 13,
+                        "local": "PointPropType",
+                        "type": "value"
+                    }
                 },
                 "DeprecatedViewPropTypes": {
                     "type": "unresolved[missing]"
@@ -606,7 +785,13 @@
                     }
                 },
                 "ProcessedColorValue": {
-                    "type": "unresolved[missing]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 5,
+                        "column": 6,
+                        "local": "ProcessedColorValue",
+                        "type": "type"
+                    }
                 }
             },
             "typeofs": {
@@ -1239,7 +1424,13 @@
                     }
                 },
                 "EmitterSubscription": {
-                    "type": "value"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 8,
+                        "column": 15,
+                        "local": "EmitterSubscription",
+                        "type": "class"
+                    }
                 },
                 "HostComponent": {
                     "type": "type",
@@ -1683,7 +1874,13 @@
                     {
                         "row": 2,
                         "column": 50,
-                        "type": "unresolved[missing]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 2,
+                            "column": 13,
+                            "local": "DeprecatedEdgeInsetsPropType",
+                            "type": "value"
+                        }
                     }
                 ],
                 "$2": [
@@ -1926,7 +2123,13 @@
                     {
                         "row": 8,
                         "column": 50,
-                        "type": "unresolved[missing]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 14,
+                            "column": 13,
+                            "local": "DeprecatedTransformPropTypes",
+                            "type": "value"
+                        }
                     }
                 ],
                 "$5": [
@@ -2584,7 +2787,13 @@
                     {
                         "row": 4,
                         "column": 50,
-                        "type": "unresolved[missing]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 2,
+                            "column": 13,
+                            "local": "DeprecatedEdgeInsetsPropType",
+                            "type": "value"
+                        }
                     }
                 ],
                 "$3": [
@@ -2963,7 +3172,13 @@
                     {
                         "row": 2,
                         "column": 50,
-                        "type": "unresolved[missing]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 2,
+                            "column": 13,
+                            "local": "DeprecatedEdgeInsetsPropType",
+                            "type": "value"
+                        }
                     }
                 ],
                 "$2": [
@@ -3190,7 +3405,13 @@
                     {
                         "row": 8,
                         "column": 50,
-                        "type": "unresolved[missing]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 14,
+                            "column": 13,
+                            "local": "DeprecatedTransformPropTypes",
+                            "type": "value"
+                        }
                     }
                 ],
                 "$5": [
@@ -3435,7 +3656,13 @@
         "/Libraries/EventEmitter/NativeEventEmitter.js.flow": {
             "imports": {
                 "EmitterSubscription": {
-                    "type": "value"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 8,
+                        "column": 15,
+                        "local": "EmitterSubscription",
+                        "type": "class"
+                    }
                 }
             },
             "typeofs": {
@@ -3483,7 +3710,13 @@
         "/Libraries/EventEmitter/RCTDeviceEventEmitter.js.flow": {
             "imports": {
                 "EmitterSubscription": {
-                    "type": "value"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 8,
+                        "column": 15,
+                        "local": "EmitterSubscription",
+                        "type": "class"
+                    }
                 }
             },
             "typeofs": {
@@ -4256,7 +4489,13 @@
                     {
                         "row": 17,
                         "column": 43,
-                        "type": "value"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 17,
+                            "column": 5,
+                            "local": "pickScale",
+                            "type": "value"
+                        }
                     }
                 ]
             }
@@ -4374,7 +4613,13 @@
         "/Libraries/Interaction/InteractionMixin.js.flow": {
             "imports": {
                 "Handle": {
-                    "type": "unresolved[missing]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 2,
+                        "column": 6,
+                        "local": "Handle",
+                        "type": "type"
+                    }
                 }
             },
             "typeofs": {
@@ -4677,7 +4922,13 @@
                     {
                         "row": 4,
                         "column": 26,
-                        "type": "unresolved[missing]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 10,
+                            "column": 13,
+                            "local": "View",
+                            "type": "value"
+                        }
                     }
                 ],
                 "$4": [
@@ -4777,30 +5028,30 @@
                     }
                 },
                 "ScrollToLocationParamsType": {
-                    "type": "value",
+                    "type": "type",
                     "resolvedDecl": {
-                        "row": 5,
-                        "column": 7,
-                        "local": "$3",
-                        "type": "value"
+                        "row": 107,
+                        "column": 6,
+                        "local": "ScrollToLocationParamsType",
+                        "type": "type"
                     }
                 },
                 "_SectionBase": {
-                    "type": "value",
+                    "type": "type",
                     "resolvedDecl": {
-                        "row": 5,
-                        "column": 7,
-                        "local": "$3",
-                        "type": "value"
+                        "row": 10,
+                        "column": 6,
+                        "local": "SectionBase",
+                        "type": "type"
                     }
                 },
                 "VirtualizedSectionListProps": {
-                    "type": "value",
+                    "type": "type",
                     "resolvedDecl": {
-                        "row": 5,
-                        "column": 7,
-                        "local": "$3",
-                        "type": "value"
+                        "row": 99,
+                        "column": 6,
+                        "local": "Props",
+                        "type": "type"
                     }
                 }
             },
@@ -4822,7 +5073,13 @@
                     {
                         "row": 4,
                         "column": 44,
-                        "type": "unresolved[missing]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 122,
+                            "column": 15,
+                            "local": "VirtualizedSectionList",
+                            "type": "class"
+                        }
                     }
                 ],
                 "defaultProps": [
@@ -4968,7 +5225,13 @@
                     {
                         "row": 8,
                         "column": 26,
-                        "type": "unresolved[missing]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 10,
+                            "column": 13,
+                            "local": "View",
+                            "type": "value"
+                        }
                     }
                 ],
                 "ScrollView": [
@@ -5076,7 +5339,13 @@
                     {
                         "row": 116,
                         "column": 29,
-                        "type": "value"
+                        "type": "type",
+                        "resolvedDecl": {
+                            "row": 115,
+                            "column": 6,
+                            "local": "DefaultProps",
+                            "type": "type"
+                        }
                     }
                 ],
                 "PureComponent": [
@@ -5437,12 +5706,12 @@
                     }
                 },
                 "RequestBody": {
-                    "type": "value",
+                    "type": "type",
                     "resolvedDecl": {
-                        "row": 3,
-                        "column": 7,
-                        "local": "$1",
-                        "type": "value"
+                        "row": 7,
+                        "column": 6,
+                        "local": "RequestBody",
+                        "type": "type"
                     }
                 }
             },
@@ -5835,7 +6104,13 @@
         "/Libraries/ReactNative/AppRegistry.js.flow": {
             "imports": {
                 "IPerformanceLogger": {
-                    "type": "unresolved[missing]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 10,
+                        "column": 6,
+                        "local": "IPerformanceLogger",
+                        "type": "type"
+                    }
                 }
             },
             "typeofs": {
@@ -6079,7 +6354,13 @@
                     {
                         "row": 2,
                         "column": 53,
-                        "type": "unresolved[missing]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 4,
+                            "column": 13,
+                            "local": "createReactNativeComponentClass",
+                            "type": "value"
+                        }
                     }
                 ],
                 "createReactNativeComponentClass": [
@@ -6100,7 +6381,13 @@
         "/Libraries/ReactNative/renderApplication.js.flow": {
             "imports": {
                 "IPerformanceLogger": {
-                    "type": "unresolved[missing]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 10,
+                        "column": 6,
+                        "local": "IPerformanceLogger",
+                        "type": "type"
+                    }
                 }
             },
             "typeofs": {
@@ -6355,7 +6642,13 @@
                     }
                 },
                 "ProcessedColorValue": {
-                    "type": "unresolved[missing]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 5,
+                        "column": 6,
+                        "local": "ProcessedColorValue",
+                        "type": "type"
+                    }
                 }
             },
             "typeofs": {
@@ -6386,7 +6679,13 @@
                     }
                 },
                 "ProcessedColorValue": {
-                    "type": "unresolved[missing]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 5,
+                        "column": 6,
+                        "local": "ProcessedColorValue",
+                        "type": "type"
+                    }
                 }
             },
             "typeofs": {}
@@ -6486,7 +6785,13 @@
                     }
                 },
                 "ProcessedColorValue": {
-                    "type": "unresolved[missing]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 5,
+                        "column": 6,
+                        "local": "ProcessedColorValue",
+                        "type": "type"
+                    }
                 }
             },
             "typeofs": {
@@ -6664,9 +6969,9 @@
                         "column": 29,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 3,
-                            "column": 7,
-                            "local": "$1",
+                            "row": 5,
+                            "column": 18,
+                            "local": "flattenStyle",
                             "type": "value"
                         }
                     }
@@ -7228,7 +7533,13 @@
         "/Libraries/Utilities/GlobalPerformanceLogger.js.flow": {
             "imports": {
                 "IPerformanceLogger": {
-                    "type": "unresolved[missing]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 10,
+                        "column": 6,
+                        "local": "IPerformanceLogger",
+                        "type": "type"
+                    }
                 }
             },
             "typeofs": {
@@ -7286,7 +7597,13 @@
         "/Libraries/Utilities/HMRClientProdShim.js.flow": {
             "imports": {
                 "HMRClientNativeInterface": {
-                    "type": "unresolved[missing]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 13,
+                        "column": 6,
+                        "local": "HMRClientNativeInterface",
+                        "type": "type"
+                    }
                 }
             },
             "typeofs": {
@@ -7516,7 +7833,13 @@
                     "type": "unresolved[error]"
                 },
                 "IPerformanceLogger": {
-                    "type": "unresolved[missing]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 10,
+                        "column": 6,
+                        "local": "IPerformanceLogger",
+                        "type": "type"
+                    }
                 }
             },
             "typeofs": {
@@ -7965,12 +8288,12 @@
         "/Libraries/Animated/src/Animated.js.flow": {
             "imports": {
                 "AnimatedComponentType": {
-                    "type": "value",
+                    "type": "type",
                     "resolvedDecl": {
                         "row": 5,
-                        "column": 7,
-                        "local": "$2",
-                        "type": "value"
+                        "column": 6,
+                        "local": "AnimatedComponentType",
+                        "type": "type"
                     }
                 }
             },
@@ -7979,7 +8302,13 @@
                     {
                         "row": 2,
                         "column": 26,
-                        "type": "unresolved[missing]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 10,
+                            "column": 13,
+                            "local": "View",
+                            "type": "value"
+                        }
                     }
                 ],
                 "$2": [
@@ -8383,7 +8712,13 @@
                     {
                         "row": 32,
                         "column": 45,
-                        "type": "unresolved[missing]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 10,
+                            "column": 18,
+                            "local": "createAnimatedComponent",
+                            "type": "value"
+                        }
                     }
                 ],
                 "AnimatedValue": [
@@ -8901,7 +9236,13 @@
                     {
                         "row": 21,
                         "column": 45,
-                        "type": "unresolved[missing]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 10,
+                            "column": 18,
+                            "local": "createAnimatedComponent",
+                            "type": "value"
+                        }
                     }
                 ],
                 "AnimatedValue": [
@@ -9696,7 +10037,13 @@
         "/Libraries/Components/AppleTV/TVEventHandler.js.flow": {
             "imports": {
                 "EmitterSubscription": {
-                    "type": "value"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 8,
+                        "column": 15,
+                        "local": "EmitterSubscription",
+                        "type": "class"
+                    }
                 }
             },
             "typeofs": {
@@ -9761,7 +10108,13 @@
                     }
                 },
                 "ProcessedColorValue": {
-                    "type": "unresolved[missing]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 5,
+                        "column": 6,
+                        "local": "ProcessedColorValue",
+                        "type": "type"
+                    }
                 }
             },
             "typeofs": {
@@ -10296,7 +10649,13 @@
                     }
                 },
                 "ProcessedColorValue": {
-                    "type": "unresolved[missing]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 5,
+                        "column": 6,
+                        "local": "ProcessedColorValue",
+                        "type": "type"
+                    }
                 },
                 "ViewProps": {
                     "type": "type",
@@ -10370,7 +10729,13 @@
                     }
                 },
                 "ProcessedColorValue": {
-                    "type": "unresolved[missing]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 5,
+                        "column": 6,
+                        "local": "ProcessedColorValue",
+                        "type": "type"
+                    }
                 },
                 "ViewProps": {
                     "type": "type",
@@ -10480,12 +10845,12 @@
                     }
                 },
                 "ProcessedColorValue": {
-                    "type": "value",
+                    "type": "type",
                     "resolvedDecl": {
-                        "row": 3,
-                        "column": 7,
-                        "local": "$2",
-                        "type": "value"
+                        "row": 5,
+                        "column": 6,
+                        "local": "ProcessedColorValue",
+                        "type": "type"
                     }
                 },
                 "SyntheticEvent": {
@@ -10586,7 +10951,13 @@
                     }
                 },
                 "ProcessedColorValue": {
-                    "type": "unresolved[missing]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 5,
+                        "column": 6,
+                        "local": "ProcessedColorValue",
+                        "type": "type"
+                    }
                 },
                 "React": {
                     "type": "unresolved[error]"
@@ -10695,7 +11066,13 @@
                     }
                 },
                 "View": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 10,
+                        "column": 13,
+                        "local": "View",
+                        "type": "value"
+                    }
                 }
             },
             "typeofs": {
@@ -10703,12 +11080,24 @@
                     {
                         "row": 17,
                         "column": 62,
-                        "type": "unresolved[missing]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 10,
+                            "column": 13,
+                            "local": "View",
+                            "type": "value"
+                        }
                     },
                     {
                         "row": 128,
                         "column": 27,
-                        "type": "unresolved[missing]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 10,
+                            "column": 13,
+                            "local": "View",
+                            "type": "value"
+                        }
                     }
                 ]
             }
@@ -11397,12 +11786,12 @@
                     }
                 },
                 "ScrollResponderState": {
-                    "type": "value",
+                    "type": "type",
                     "resolvedDecl": {
-                        "row": 9,
-                        "column": 7,
-                        "local": "$4",
-                        "type": "value"
+                        "row": 12,
+                        "column": 6,
+                        "local": "State",
+                        "type": "type"
                     }
                 },
                 "ViewProps": {
@@ -11451,14 +11840,26 @@
                     {
                         "row": 5,
                         "column": 37,
-                        "type": "unresolved[missing]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 332,
+                            "column": 13,
+                            "local": "ScrollResponder",
+                            "type": "value"
+                        }
                     }
                 ],
                 "$4": [
                     {
                         "row": 8,
                         "column": 26,
-                        "type": "unresolved[missing]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 10,
+                            "column": 13,
+                            "local": "View",
+                            "type": "value"
+                        }
                     }
                 ],
                 "Mixin": [
@@ -11720,7 +12121,13 @@
         "/Libraries/Components/ScrollView/ScrollViewViewConfig.js.flow": {
             "imports": {
                 "GeneratedViewConfig": {
-                    "type": "unresolved[missing]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 2,
+                        "column": 6,
+                        "local": "GeneratedViewConfig",
+                        "type": "type"
+                    }
                 }
             },
             "typeofs": {}
@@ -13304,7 +13711,13 @@
                     }
                 },
                 "View": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 10,
+                        "column": 13,
+                        "local": "View",
+                        "type": "value"
+                    }
                 },
                 "React": {
                     "type": "unresolved[error]"
@@ -13315,7 +13728,13 @@
                     {
                         "row": 39,
                         "column": 31,
-                        "type": "unresolved[missing]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 10,
+                            "column": 13,
+                            "local": "View",
+                            "type": "value"
+                        }
                     }
                 ]
             }
@@ -13676,9 +14095,9 @@
                         "column": 34,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 10,
-                            "column": 7,
-                            "local": "$4",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -13687,7 +14106,13 @@
                     {
                         "row": 11,
                         "column": 38,
-                        "type": "unresolved[missing]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 2,
+                            "column": 18,
+                            "local": "processTransform",
+                            "type": "value"
+                        }
                     }
                 ],
                 "$6": [
@@ -14024,7 +14449,13 @@
         "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow": {
             "imports": {
                 "ReactNativeViewViewConfigAndroid": {
-                    "type": "unresolved[missing]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 2,
+                        "column": 13,
+                        "local": "ReactNativeViewViewConfigAndroid",
+                        "type": "value"
+                    }
                 }
             },
             "typeofs": {
@@ -14034,7 +14465,7 @@
                         "column": 48,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 10,
+                            "row": 4,
                             "column": 3,
                             "local": "bubblingEventTypes",
                             "type": "value"
@@ -14047,7 +14478,7 @@
                         "column": 48,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 79,
+                            "row": 12,
                             "column": 3,
                             "local": "directEventTypes",
                             "type": "value"
@@ -14060,7 +14491,7 @@
                         "column": 48,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 105,
+                            "row": 50,
                             "column": 3,
                             "local": "validAttributes",
                             "type": "value"
@@ -14073,9 +14504,9 @@
                         "column": 40,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 331,
-                            "column": 7,
-                            "local": "$1",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14086,9 +14517,9 @@
                         "column": 42,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 332,
-                            "column": 7,
-                            "local": "$2",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14099,9 +14530,9 @@
                         "column": 36,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 334,
-                            "column": 7,
-                            "local": "$3",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14112,9 +14543,9 @@
                         "column": 39,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 335,
-                            "column": 7,
-                            "local": "$4",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14125,9 +14556,9 @@
                         "column": 40,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 337,
-                            "column": 7,
-                            "local": "$5",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14138,9 +14569,9 @@
                         "column": 41,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 339,
-                            "column": 7,
-                            "local": "$6",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14151,9 +14582,9 @@
                         "column": 41,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 341,
-                            "column": 7,
-                            "local": "$7",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14164,9 +14595,9 @@
                         "column": 39,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 343,
-                            "column": 7,
-                            "local": "$8",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14177,9 +14608,9 @@
                         "column": 36,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 345,
-                            "column": 7,
-                            "local": "$9",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14197,9 +14628,9 @@
                         "column": 42,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 348,
-                            "column": 7,
-                            "local": "$11",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14210,9 +14641,9 @@
                         "column": 44,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 349,
-                            "column": 7,
-                            "local": "$12",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14223,9 +14654,9 @@
                         "column": 38,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 351,
-                            "column": 7,
-                            "local": "$13",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14236,9 +14667,9 @@
                         "column": 41,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 352,
-                            "column": 7,
-                            "local": "$14",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14249,9 +14680,9 @@
                         "column": 42,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 354,
-                            "column": 7,
-                            "local": "$15",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14262,9 +14693,9 @@
                         "column": 43,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 356,
-                            "column": 7,
-                            "local": "$16",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14275,9 +14706,9 @@
                         "column": 43,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 358,
-                            "column": 7,
-                            "local": "$17",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14288,9 +14719,9 @@
                         "column": 41,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 360,
-                            "column": 7,
-                            "local": "$18",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14301,9 +14732,9 @@
                         "column": 32,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 362,
-                            "column": 7,
-                            "local": "$19",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14314,9 +14745,9 @@
                         "column": 39,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 364,
-                            "column": 7,
-                            "local": "$20",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14327,9 +14758,9 @@
                         "column": 38,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 366,
-                            "column": 7,
-                            "local": "$21",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14347,9 +14778,9 @@
                         "column": 46,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 369,
-                            "column": 7,
-                            "local": "$23",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14360,9 +14791,9 @@
                         "column": 42,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 371,
-                            "column": 7,
-                            "local": "$24",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14373,9 +14804,9 @@
                         "column": 36,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 373,
-                            "column": 7,
-                            "local": "$25",
+                            "row": 7,
+                            "column": 18,
+                            "local": "processColor",
                             "type": "value"
                         }
                     }
@@ -14881,7 +15312,13 @@
                     }
                 },
                 "ExtendedError": {
-                    "type": "unresolved[missing]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 4,
+                        "column": 6,
+                        "local": "ExtendedError",
+                        "type": "type"
+                    }
                 }
             },
             "typeofs": {}
@@ -14962,7 +15399,13 @@
                     }
                 },
                 "SymbolicatedStackTrace": {
-                    "type": "unresolved[missing]"
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 16,
+                        "column": 6,
+                        "local": "SymbolicatedStackTrace",
+                        "type": "type"
+                    }
                 }
             },
             "typeofs": {}
@@ -15805,10 +16248,22 @@
         "/Libraries/vendor/emitter/EmitterSubscription.js.flow": {
             "imports": {
                 "EventEmitter": {
-                    "type": "value"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 25,
+                        "column": 15,
+                        "local": "EventEmitter",
+                        "type": "class"
+                    }
                 },
                 "EventSubscriptionVendor": {
-                    "type": "value"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 4,
+                        "column": 15,
+                        "local": "EventSubscriptionVendor",
+                        "type": "class"
+                    }
                 }
             },
             "typeofs": {
@@ -15874,7 +16329,13 @@
         "/Libraries/vendor/emitter/EventSubscription.js.flow": {
             "imports": {
                 "EventSubscriptionVendor": {
-                    "type": "value"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 4,
+                        "column": 15,
+                        "local": "EventSubscriptionVendor",
+                        "type": "class"
+                    }
                 }
             },
             "typeofs": {
@@ -15896,7 +16357,13 @@
         "/Libraries/vendor/emitter/EventSubscriptionVendor.js.flow": {
             "imports": {
                 "EventSubscription": {
-                    "type": "value"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 4,
+                        "column": 15,
+                        "local": "EventSubscription",
+                        "type": "class"
+                    }
                 }
             },
             "typeofs": {
@@ -15918,7 +16385,13 @@
         "/Libraries/Animated/src/animations/Animation.js.flow": {
             "imports": {
                 "AnimatedValue": {
-                    "type": "value"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 12,
+                        "column": 15,
+                        "local": "AnimatedValue",
+                        "type": "class"
+                    }
                 }
             },
             "typeofs": {
@@ -15940,7 +16413,13 @@
         "/Libraries/Animated/src/animations/DecayAnimation.js.flow": {
             "imports": {
                 "AnimatedValue": {
-                    "type": "value"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 12,
+                        "column": 15,
+                        "local": "AnimatedValue",
+                        "type": "class"
+                    }
                 },
                 "AnimationConfig": {
                     "type": "type",
@@ -16213,12 +16692,12 @@
                     "type": "unresolved[error]"
                 },
                 "AnimatedComponentType": {
-                    "type": "value",
+                    "type": "type",
                     "resolvedDecl": {
                         "row": 5,
-                        "column": 7,
-                        "local": "$1",
-                        "type": "value"
+                        "column": 6,
+                        "local": "AnimatedComponentType",
+                        "type": "type"
                     }
                 }
             },
@@ -16227,7 +16706,13 @@
                     {
                         "row": 4,
                         "column": 30,
-                        "type": "unresolved[missing]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 156,
+                            "column": 15,
+                            "local": "FlatList",
+                            "type": "class"
+                        }
                     }
                 ],
                 "FlatList": [
@@ -16262,12 +16747,12 @@
                     "type": "unresolved[error]"
                 },
                 "AnimatedComponentType": {
-                    "type": "value",
+                    "type": "type",
                     "resolvedDecl": {
                         "row": 5,
-                        "column": 7,
-                        "local": "$1",
-                        "type": "value"
+                        "column": 6,
+                        "local": "AnimatedComponentType",
+                        "type": "type"
                     }
                 }
             },
@@ -16317,12 +16802,12 @@
                     "type": "unresolved[error]"
                 },
                 "AnimatedComponentType": {
-                    "type": "value",
+                    "type": "type",
                     "resolvedDecl": {
                         "row": 5,
-                        "column": 7,
-                        "local": "$1",
-                        "type": "value"
+                        "column": 6,
+                        "local": "AnimatedComponentType",
+                        "type": "type"
                     }
                 }
             },
@@ -16372,12 +16857,12 @@
                     "type": "unresolved[error]"
                 },
                 "AnimatedComponentType": {
-                    "type": "value",
+                    "type": "type",
                     "resolvedDecl": {
                         "row": 5,
-                        "column": 7,
-                        "local": "$1",
-                        "type": "value"
+                        "column": 6,
+                        "local": "AnimatedComponentType",
+                        "type": "type"
                     }
                 }
             },
@@ -16386,7 +16871,13 @@
                     {
                         "row": 4,
                         "column": 33,
-                        "type": "unresolved[missing]"
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 112,
+                            "column": 15,
+                            "local": "SectionList",
+                            "type": "class"
+                        }
                     }
                 ],
                 "SectionList": [
@@ -16421,12 +16912,12 @@
                     "type": "unresolved[error]"
                 },
                 "AnimatedComponentType": {
-                    "type": "value",
+                    "type": "type",
                     "resolvedDecl": {
                         "row": 5,
-                        "column": 7,
-                        "local": "$1",
-                        "type": "value"
+                        "column": 6,
+                        "local": "AnimatedComponentType",
+                        "type": "type"
                     }
                 }
             },
@@ -16476,12 +16967,12 @@
                     "type": "unresolved[error]"
                 },
                 "AnimatedComponentType": {
-                    "type": "value",
+                    "type": "type",
                     "resolvedDecl": {
                         "row": 5,
-                        "column": 7,
-                        "local": "$1",
-                        "type": "value"
+                        "column": 6,
+                        "local": "AnimatedComponentType",
+                        "type": "type"
                     }
                 }
             },
@@ -16490,7 +16981,13 @@
                     {
                         "row": 4,
                         "column": 26,
-                        "type": "unresolved[missing]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 10,
+                            "column": 13,
+                            "local": "View",
+                            "type": "value"
+                        }
                     }
                 ],
                 "View": [
@@ -17285,7 +17782,13 @@
                     }
                 },
                 "Animation": {
-                    "type": "value"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 14,
+                        "column": 15,
+                        "local": "Animation",
+                        "type": "class"
+                    }
                 },
                 "InterpolationConfigType": {
                     "type": "type",
@@ -17297,7 +17800,13 @@
                     }
                 },
                 "AnimatedTracking": {
-                    "type": "value"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 9,
+                        "column": 15,
+                        "local": "AnimatedTracking",
+                        "type": "class"
+                    }
                 }
             },
             "typeofs": {

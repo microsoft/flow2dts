@@ -9,14 +9,14 @@
             "resolved": {
                 "begin": {
                     "row": 2,
-                    "column": 8
+                    "column": 47
                 },
                 "end": {
-                    "row": 2,
-                    "column": 39
+                    "row": 61,
+                    "column": 2
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/Components/View/ReactNativeViewViewConfigAndroid.js.flow"
             }
         }
     },
@@ -29,15 +29,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 11,
-                    "column": 15
+                    "row": 4,
+                    "column": 23
                 },
                 "end": {
                     "row": 11,
-                    "column": 65
+                    "column": 4
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/Components/View/ReactNativeViewViewConfigAndroid.js.flow"
             }
         },
         {
@@ -48,15 +48,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 80,
-                    "column": 15
+                    "row": 12,
+                    "column": 21
                 },
                 "end": {
-                    "row": 80,
-                    "column": 63
+                    "row": 49,
+                    "column": 4
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/Components/View/ReactNativeViewViewConfigAndroid.js.flow"
             }
         },
         {
@@ -67,15 +67,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 106,
-                    "column": 15
+                    "row": 50,
+                    "column": 20
                 },
                 "end": {
-                    "row": 106,
-                    "column": 62
+                    "row": 60,
+                    "column": 4
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/Components/View/ReactNativeViewViewConfigAndroid.js.flow"
             }
         },
         {
@@ -86,15 +86,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 331,
-                    "column": 12
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 331,
-                    "column": 51
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -105,15 +105,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 332,
-                    "column": 12
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 332,
-                    "column": 51
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -124,15 +124,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 334,
-                    "column": 12
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 334,
-                    "column": 51
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -143,15 +143,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 335,
-                    "column": 12
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 335,
-                    "column": 51
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -162,15 +162,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 337,
-                    "column": 12
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 337,
-                    "column": 51
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -181,15 +181,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 339,
-                    "column": 12
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 339,
-                    "column": 51
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -200,15 +200,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 341,
-                    "column": 12
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 341,
-                    "column": 51
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -219,15 +219,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 343,
-                    "column": 12
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 343,
-                    "column": 51
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -238,15 +238,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 345,
-                    "column": 12
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 345,
-                    "column": 51
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -276,15 +276,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 348,
-                    "column": 13
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 348,
-                    "column": 52
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -295,15 +295,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 349,
-                    "column": 13
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 349,
-                    "column": 52
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -314,15 +314,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 351,
-                    "column": 13
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 351,
-                    "column": 52
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -333,15 +333,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 352,
-                    "column": 13
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 352,
-                    "column": 52
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -352,15 +352,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 354,
-                    "column": 13
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 354,
-                    "column": 52
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -371,15 +371,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 356,
-                    "column": 13
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 356,
-                    "column": 52
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -390,15 +390,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 358,
-                    "column": 13
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 358,
-                    "column": 52
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -409,15 +409,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 360,
-                    "column": 13
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 360,
-                    "column": 52
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -428,15 +428,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 362,
-                    "column": 13
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 362,
-                    "column": 52
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -447,15 +447,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 364,
-                    "column": 13
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 364,
-                    "column": 52
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -466,15 +466,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 366,
-                    "column": 13
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 366,
-                    "column": 52
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -504,15 +504,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 369,
-                    "column": 13
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 369,
-                    "column": 52
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -523,15 +523,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 371,
-                    "column": 13
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 371,
-                    "column": 52
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {
@@ -542,15 +542,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 373,
-                    "column": 13
+                    "row": 7,
+                    "column": 30
                 },
                 "end": {
-                    "row": 373,
-                    "column": 52
+                    "row": 9,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/View/ReactNativeViewViewConfig.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         {

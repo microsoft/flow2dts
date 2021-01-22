@@ -8,15 +8,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 6,
-                    "column": 14
+                    "row": 5,
+                    "column": 6
                 },
                 "end": {
-                    "row": 6,
-                    "column": 34
+                    "row": 5,
+                    "column": 26
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Animated/src/Animated.js.flow"
+                "file": "/Libraries/Animated/src/createAnimatedComponent.js.flow"
             }
         }
     },
@@ -29,12 +29,12 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 0,
-                    "column": 1
+                    "row": 10,
+                    "column": 19
                 },
                 "end": {
-                    "row": 0,
-                    "column": 0
+                    "row": 13,
+                    "column": 1
                 },
                 "libraryFolder": -1,
                 "file": "/Libraries/Components/View/View.js.flow"

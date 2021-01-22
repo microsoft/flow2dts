@@ -9,14 +9,14 @@
             "resolved": {
                 "begin": {
                     "row": 2,
-                    "column": 14
+                    "column": 6
                 },
                 "end": {
                     "row": 2,
-                    "column": 19
+                    "column": 11
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Interaction/InteractionMixin.js.flow"
+                "file": "/Libraries/Interaction/InteractionManager.js.flow"
             }
         }
     },

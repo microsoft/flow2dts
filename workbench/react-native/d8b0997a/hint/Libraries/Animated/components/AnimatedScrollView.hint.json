@@ -16,15 +16,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 7,
-                    "column": 14
+                    "row": 8,
+                    "column": 6
                 },
                 "end": {
-                    "row": 7,
-                    "column": 34
+                    "row": 8,
+                    "column": 26
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Animated/components/AnimatedScrollView.js.flow"
+                "file": "/Libraries/Animated/createAnimatedComponent.js.flow"
             }
         }
     },

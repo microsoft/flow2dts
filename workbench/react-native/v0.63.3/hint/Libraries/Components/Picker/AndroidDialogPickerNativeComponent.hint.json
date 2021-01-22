@@ -130,15 +130,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 10,
-                    "column": 14
+                    "row": 5,
+                    "column": 6
                 },
                 "end": {
-                    "row": 10,
-                    "column": 32
+                    "row": 5,
+                    "column": 24
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/Picker/AndroidDialogPickerNativeComponent.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         "ViewProps": {

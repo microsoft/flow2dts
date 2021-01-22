@@ -66,14 +66,14 @@
             "resolved": {
                 "begin": {
                     "row": 5,
-                    "column": 14
+                    "column": 6
                 },
                 "end": {
                     "row": 5,
-                    "column": 32
+                    "column": 24
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/Picker/RCTPickerNativeComponent.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         "React": {

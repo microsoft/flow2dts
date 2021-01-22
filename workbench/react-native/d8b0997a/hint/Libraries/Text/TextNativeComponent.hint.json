@@ -27,15 +27,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 4,
-                    "column": 14
+                    "row": 5,
+                    "column": 6
                 },
                 "end": {
-                    "row": 4,
-                    "column": 32
+                    "row": 5,
+                    "column": 24
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Text/TextNativeComponent.js.flow"
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
             }
         },
         "TextProps": {

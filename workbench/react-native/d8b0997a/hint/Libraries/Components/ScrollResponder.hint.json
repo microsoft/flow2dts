@@ -84,15 +84,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 9,
-                    "column": 14
+                    "row": 30,
+                    "column": 6
                 },
                 "end": {
-                    "row": 9,
-                    "column": 26
+                    "row": 30,
+                    "column": 18
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Components/ScrollResponder.js.flow"
+                "file": "/Libraries/Components/Keyboard/Keyboard.js.flow"
             }
         }
     },

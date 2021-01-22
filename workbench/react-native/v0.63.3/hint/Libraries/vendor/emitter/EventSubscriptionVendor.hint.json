@@ -6,7 +6,18 @@
                 "column": 13,
                 "local": "EventSubscription"
             },
-            "error": "Could not get definition for /Libraries/vendor/emitter/EventSubscriptionVendor.js.flow:2:12\r\nNo possible types\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 15
+                },
+                "end": {
+                    "row": 4,
+                    "column": 31
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/vendor/emitter/EventSubscription.js.flow"
+            }
         }
     },
     "typeofs": [

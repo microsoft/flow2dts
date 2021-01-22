@@ -16,15 +16,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 4,
-                    "column": 14
+                    "row": 10,
+                    "column": 6
                 },
                 "end": {
-                    "row": 4,
-                    "column": 31
+                    "row": 10,
+                    "column": 23
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/Utilities/PerformanceLoggerContext.js.flow"
+                "file": "/Libraries/Utilities/createPerformanceLogger.js.flow"
             }
         }
     },

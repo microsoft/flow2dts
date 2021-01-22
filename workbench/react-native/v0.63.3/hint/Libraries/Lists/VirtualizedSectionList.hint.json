@@ -64,7 +64,18 @@
                 "column": 29,
                 "local": "defaultProps"
             },
-            "error": "Could not get definition for /Libraries/Lists/VirtualizedSectionList.js.flow:116:28\r\nNo possible types\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 116,
+                    "column": 13
+                },
+                "end": {
+                    "row": 116,
+                    "column": 40
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
+            }
         },
         {
             "source": {
