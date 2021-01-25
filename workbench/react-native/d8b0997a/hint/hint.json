@@ -1,6 +1,6 @@
 {
     "libraries": [
-        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_39a98b09"
+        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_26c46356"
     ],
     "files": {
         "/index.js.flow": {
@@ -699,7 +699,13 @@
                     }
                 },
                 "RCTNativeAppEventEmitter": {
-                    "type": "unresolved[missing]"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 15,
+                        "local": "RCTDeviceEventEmitter",
+                        "type": "class"
+                    }
                 },
                 "RootTagContext": {
                     "type": "value",

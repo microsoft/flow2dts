@@ -1574,15 +1574,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 87,
+                    "row": 6,
                     "column": 15
                 },
                 "end": {
-                    "row": 87,
-                    "column": 38
+                    "row": 6,
+                    "column": 35
                 },
                 "libraryFolder": -1,
-                "file": "/index.js.flow"
+                "file": "/Libraries/EventEmitter/RCTDeviceEventEmitter.js.flow"
             }
         },
         "RootTagContext": {

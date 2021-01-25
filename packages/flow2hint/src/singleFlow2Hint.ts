@@ -276,6 +276,7 @@ export async function singleFlow2Hint({
   collectedHintFiles: HintFileEntries
   forLibraryFile: boolean
 }): Promise<string> {
+  const normalizedInputRootDir = inputRootDir.replace(/\\/g, "/")
   const normalizedModifiedRootDir = modifiedRootDir.replace(/\\/g, "/")
 
   const flowCode = fs.readFileSync(inputFilename, { encoding: "utf8" })
@@ -304,14 +305,32 @@ export async function singleFlow2Hint({
       normalizedModifiedRootDir,
       collectedHintFiles,
     })
+    if (
+      hintImport.resolved &&
+      hintImport.source.column === hintImport.resolved.begin.column &&
+      hintImport.source.row === hintImport.resolved.begin.row
+    ) {
+      // if an import symbol is resolved to itself
+      // it means removing "typeof" breaks here
+      // try "flow get-def" on original files
+      await resolveImport({
+        hintImport,
+        inputFilename,
+        inputRootDir,
+        modifiedFilename: inputFilename,
+        modifiedRootDir: inputRootDir,
+        normalizedModifiedRootDir: normalizedInputRootDir,
+        collectedHintFiles,
+      })
+    }
   }
   for (const hintTypeof of hint.typeofs) {
     await resolveImport({
       hintImport: hintTypeof,
       inputFilename,
+      inputRootDir,
       modifiedFilename,
       modifiedRootDir,
-      inputRootDir,
       normalizedModifiedRootDir,
       collectedHintFiles,
     })
