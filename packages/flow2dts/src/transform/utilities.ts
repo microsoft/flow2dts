@@ -3,16 +3,10 @@
 
 import { types as t } from "@babel/core"
 import { NodePath, Scope } from "@babel/traverse"
-import { State } from "./state"
 
-export const nameForExportDefaultRedirect = "$f2tExportDefaultRedirect"
 export const nameForExportDefault = "$f2tExportDefault"
 export const nameForRestParameter = "$f2tRest"
 export const nameForTypeIndexerKey = "$f2tKey"
-
-export function nameForHidden(name: string): string {
-  return `$f2tHidden_${name}`
-}
 
 export function nameForImportTypeof(name: string): string {
   return `${name}$f2tTypeof`
@@ -38,6 +32,14 @@ export function assertTSTypeAnnotation(node: t.Node | null | undefined): asserts
 
 export function wrappedTypeOf(id: t.TSEntityName) {
   return t.tsTypeReference(t.identifier("$TypeOf"), t.tsTypeParameterInstantiation([t.tsTypeQuery(id)]))
+}
+
+export function unwrapTypeOf(typeReference: t.TSTypeReference) {
+  return t.isIdentifier(typeReference.typeName) &&
+    typeReference.typeName.name === "$TypeOf" &&
+    typeReference.typeParameters
+    ? typeReference.typeParameters.params[0]
+    : typeReference
 }
 
 export function isClassIdentifier(typeName: t.Identifier, scope: Scope) {

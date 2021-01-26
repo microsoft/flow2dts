@@ -1,12 +1,9 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill"
 import $1 from "../Renderer/shims/createReactNativeComponentClass"
-declare namespace $f2tExportDefaultRedirect {
-  export const $f2tHidden_createReactNativeComponentClass: $TypeOf<typeof $1>
-}
-declare namespace $f2tExportDefault {
-  export const createReactNativeComponentClass: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_createReactNativeComponentClass>
-  export type createReactNativeComponentClass = $TypeOf<
-    typeof $f2tExportDefaultRedirect.$f2tHidden_createReactNativeComponentClass
-  >
+declare const $f2d_createReactNativeComponentClass: typeof $1
+export { $f2d_createReactNativeComponentClass as createReactNativeComponentClass }
+declare const $f2tExportDefault: /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  createReactNativeComponentClass: $TypeOf<typeof $1>
 }
 export default $f2tExportDefault

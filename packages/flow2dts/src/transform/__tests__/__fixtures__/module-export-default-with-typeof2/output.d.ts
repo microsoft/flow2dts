@@ -1,14 +1,18 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill"
 declare function foo(a: string): number
-declare class Bar {}
-declare namespace $f2tExportDefaultRedirect {
-  export const $f2tHidden_foo: $TypeOf<typeof foo>
-  export const $f2tHidden_Bar: $TypeOf<typeof Bar>
+declare class Bar {
+  static bar: string
 }
-declare namespace $f2tExportDefault {
-  export const foo: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_foo>
-  export type foo = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_foo>
-  export const Bar: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_Bar>
-  export type Bar = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_Bar>
+declare var baz: 42
+declare const $f2d_bar: typeof Bar.bar
+declare const $f2d_inline: () => boolean
+export { foo, Bar, $f2d_bar as bar, baz, $f2d_inline as inline }
+declare const $f2tExportDefault: /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  foo: $TypeOf<typeof foo>
+  Bar: typeof Bar
+  bar: $TypeOf<typeof Bar.bar>
+  baz: $TypeOf<typeof baz>
+  inline: () => boolean
 }
 export default $f2tExportDefault

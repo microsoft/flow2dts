@@ -3,62 +3,10 @@
 
 import { Visitor, types as t } from "@babel/core"
 import { State } from "../state"
-import {
-  assertTSType,
-  isClassIdentifier,
-  nameForExportDefault,
-  nameForExportDefaultRedirect,
-  nameForHidden,
-  nameForImportTypeof,
-  wrappedTypeOf,
-} from "../utilities"
+import { assertTSType, isClassIdentifier, nameForExportDefault, nameForImportTypeof, unwrapTypeOf } from "../utilities"
 
-function convertToNamespace(decl: t.TSType, state: State): [string, t.TSTypeReference][] | undefined {
-  if (decl.type !== "TSTypeLiteral") return undefined
-  for (const prop of decl.members) {
-    if (prop.type !== "TSPropertySignature") return undefined
-    if (prop.key.type !== "Identifier") return undefined
-    const propType = prop.typeAnnotation?.typeAnnotation
-    if (!propType) return undefined
-
-    switch (propType.type) {
-      case "TSTypeReference": {
-        if (propType.typeName.type === "Identifier" && propType.typeName.name === "$TypeOf") {
-          if (!propType.typeParameters) return undefined
-        } else {
-          if (propType.typeParameters) return undefined
-        }
-        break
-      }
-      case "TSTypeQuery": {
-        break
-      }
-      default:
-        return undefined
-    }
-  }
-
-  return decl.members.map((prop) => {
-    const propId = <t.Identifier>(<t.TSPropertySignature>prop).key
-    let propType = <t.TSTypeReference | t.TSTypeQuery>(<t.TSPropertySignature>prop).typeAnnotation?.typeAnnotation
-    switch (propType.type) {
-      case "TSTypeQuery": {
-        propType = t.tsTypeReference(t.identifier("$TypeOf"), t.tsTypeParameterInstantiation([propType]))
-        break
-      }
-      case "TSTypeReference": {
-        if (propType.typeName.type !== "Identifier" || propType.typeName.name !== "$TypeOf") {
-          propType = wrappedTypeOf(propType.typeName)
-        }
-        break
-      }
-    }
-    return [propId.name, propType]
-  })
-}
-
-function makeRedirection(name: string, state: State): t.TSType {
-  return wrappedTypeOf(t.tsQualifiedName(t.identifier(nameForExportDefaultRedirect), t.identifier(nameForHidden(name))))
+function generateIntermediateLocalIdentifier(id: t.Identifier) {
+  return t.identifier(`$f2d_${id.name}`)
 }
 
 export const exportVisitor: Visitor<State> = {
@@ -67,45 +15,7 @@ export const exportVisitor: Visitor<State> = {
       const typeAnnotation = path.node.typeAnnotation.typeAnnotation as any
       assertTSType(typeAnnotation)
 
-      const nss = convertToNamespace(typeAnnotation, state)
-      if (nss) {
-        const statRedirect: t.Statement[] = []
-        const statDefault: t.Statement[] = []
-
-        for (const [name, tsType] of nss) {
-          const varHidden = t.identifier(nameForHidden(name))
-          varHidden.typeAnnotation = t.tsTypeAnnotation(tsType)
-          const exportHidden = t.exportNamedDeclaration(
-            t.variableDeclaration("const", [t.variableDeclarator(varHidden)])
-          )
-
-          const varField = t.identifier(name)
-          varField.typeAnnotation = t.tsTypeAnnotation(makeRedirection(name, state))
-          const exportField = t.exportNamedDeclaration(t.variableDeclaration("const", [t.variableDeclarator(varField)]))
-
-          const exportType = t.exportNamedDeclaration(
-            t.tsTypeAliasDeclaration(t.identifier(name), null, makeRedirection(name, state))
-          )
-
-          statRedirect.push(exportHidden)
-          statDefault.push(exportField)
-          statDefault.push(exportType)
-        }
-
-        const nssRedirect = t.tsModuleDeclaration(
-          t.identifier(nameForExportDefaultRedirect),
-          t.tsModuleBlock(statRedirect)
-        )
-        nssRedirect.declare = true
-        const nssDefault = t.tsModuleDeclaration(t.identifier(nameForExportDefault), t.tsModuleBlock(statDefault))
-        nssDefault.declare = true
-
-        path.replaceWithMultiple([
-          nssRedirect,
-          nssDefault,
-          t.exportDefaultDeclaration(t.identifier(nameForExportDefault)),
-        ])
-      } else if (
+      if (
         t.isTSTypeQuery(typeAnnotation) &&
         t.isIdentifier(typeAnnotation.exprName) &&
         isClassIdentifier(typeAnnotation.exprName, path.scope)
@@ -114,26 +24,65 @@ export const exportVisitor: Visitor<State> = {
       } else {
         // Export each value separately as ES6 named exports
         if (t.isTSTypeLiteral(typeAnnotation)) {
-          const exportSpecifiers = <t.ExportSpecifier[]>typeAnnotation.members
-            .map((property) => {
-              t.assertTSPropertySignature(property)
-              t.assertIdentifier(property.key)
-              t.assertTSTypeAnnotation(property.typeAnnotation)
-              const typeAnnotation = property.typeAnnotation.typeAnnotation
-              // only export names begin with a upper case letter
-              // this is specifically for react-native where a name begins with a lower cased letter is not a react-native class
-              // now the only file still have such kind of export is index.d.ts
-              if (
-                /^[A-Z]/.test(property.key.name) &&
-                t.isTSTypeReference(typeAnnotation) &&
-                t.isIdentifier(typeAnnotation.typeName) &&
-                /^[A-Z]/.test(typeAnnotation.typeName.name)
-              ) {
-                return t.exportSpecifier(t.identifier(nameForImportTypeof(typeAnnotation.typeName.name)), property.key)
+          const intermediateLocalVars: t.Identifier[] = []
+          const exportSpecifiers: t.ExportSpecifier[] = []
+          typeAnnotation.members.forEach((property) => {
+            t.assertTSPropertySignature(property)
+            t.assertIdentifier(property.key)
+            t.assertTSTypeAnnotation(property.typeAnnotation)
+            const typeAnnotation = property.typeAnnotation.typeAnnotation
+            const unwrappedType =
+              t.isTSTypeReference(typeAnnotation) && t.isIdentifier(typeAnnotation.typeName)
+                ? unwrapTypeOf(typeAnnotation)
+                : typeAnnotation
+            let intermediateLocalVar: t.Identifier | null = null
+            let exportSpecifier: t.ExportSpecifier | null = null
+            if (t.isTSTypeQuery(unwrappedType)) {
+              t.assertTSEntityName(unwrappedType.exprName)
+              if (t.isIdentifier(unwrappedType.exprName)) {
+                const binding = path.scope.getBinding(unwrappedType.exprName.name)
+                if (binding) {
+                  if (
+                    binding.path.isTSDeclareFunction() ||
+                    binding.path.isDeclareVariable() ||
+                    binding.path.isDeclareClass()
+                  ) {
+                    exportSpecifier = t.exportSpecifier(unwrappedType.exprName, property.key)
+                  }
+                }
               }
-              return undefined
-            })
-            .filter((value) => value !== undefined)
+            } else if (
+              t.isTSTypeReference(typeAnnotation) &&
+              t.isIdentifier(typeAnnotation.typeName) &&
+              path.scope.getBinding(typeAnnotation.typeName.name)
+            ) {
+              // FIXME: This makes an assumption that the value has been imported using `import typeof`
+              exportSpecifier = t.exportSpecifier(
+                t.identifier(nameForImportTypeof(typeAnnotation.typeName.name)),
+                property.key
+              )
+            }
+            if (exportSpecifier === null) {
+              intermediateLocalVar = generateIntermediateLocalIdentifier(property.key)
+              intermediateLocalVar.typeAnnotation = t.tsTypeAnnotation(unwrappedType)
+              exportSpecifier = t.exportSpecifier(intermediateLocalVar, property.key)
+            }
+            if (intermediateLocalVar) {
+              const duplicateLocalVar = intermediateLocalVars.find(
+                (x) => x.name === (intermediateLocalVar as t.Identifier).name // FIXME: Why is `typedLocalVar` still possibly `null` here??
+              )
+              if (duplicateLocalVar) {
+                if (!t.isNodesEquivalent(intermediateLocalVar, duplicateLocalVar)) {
+                  throw path.buildCodeFrameError(`Duplicate identifier with different typing encountered`)
+                }
+              }
+              intermediateLocalVars.push(intermediateLocalVar)
+            }
+            exportSpecifiers.push(exportSpecifier)
+          })
+          intermediateLocalVars.forEach((valueIdentifier) => {
+            path.insertBefore(t.variableDeclaration("const", [t.variableDeclarator(valueIdentifier)]))
+          })
           if (exportSpecifiers.length > 0) {
             path.insertBefore(t.exportNamedDeclaration(undefined, exportSpecifiers))
           }
