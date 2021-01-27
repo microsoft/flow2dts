@@ -30,18 +30,6 @@ export function assertTSTypeAnnotation(node: t.Node | null | undefined): asserts
   t.assertTSTypeAnnotation(node)
 }
 
-export function wrappedTypeOf(id: t.TSEntityName) {
-  return t.tsTypeReference(t.identifier("$TypeOf"), t.tsTypeParameterInstantiation([t.tsTypeQuery(id)]))
-}
-
-export function unwrapTypeOf(typeReference: t.TSTypeReference) {
-  return t.isIdentifier(typeReference.typeName) &&
-    typeReference.typeName.name === "$TypeOf" &&
-    typeReference.typeParameters
-    ? typeReference.typeParameters.params[0]
-    : typeReference
-}
-
 export function isClassIdentifier(typeName: t.Identifier, scope: Scope) {
   const binding = scope.getBinding(typeName.name)
   if (binding && (binding.path.isDeclareClass() || binding.path.isClassDeclaration())) {

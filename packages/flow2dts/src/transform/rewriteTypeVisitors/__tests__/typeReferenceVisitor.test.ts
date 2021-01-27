@@ -48,7 +48,7 @@ describe("typeReferenceVisitor", () => {
         },
       })
     ).toMatchInlineSnapshot(`
-      declare var VirtualizedList: $TypeOf<typeof $2>;
+      declare var VirtualizedList: typeof $2;
 
       const $2 = require("./VirtualizedList");
 

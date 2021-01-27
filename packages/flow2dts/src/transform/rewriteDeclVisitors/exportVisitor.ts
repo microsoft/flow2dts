@@ -3,7 +3,7 @@
 
 import { Visitor, types as t } from "@babel/core"
 import { State } from "../state"
-import { assertTSType, isClassIdentifier, nameForExportDefault, nameForImportTypeof, unwrapTypeOf } from "../utilities"
+import { assertTSType, isClassIdentifier, nameForExportDefault, nameForImportTypeof } from "../utilities"
 
 function generateIntermediateLocalIdentifier(id: t.Identifier) {
   return t.identifier(`$f2d_${id.name}`)
@@ -36,23 +36,19 @@ export const exportVisitor: Visitor<State> = {
             t.assertIdentifier(property.key)
             t.assertTSTypeAnnotation(property.typeAnnotation)
             const propertyTypeAnnotation = property.typeAnnotation.typeAnnotation
-            const unwrappedType =
-              t.isTSTypeReference(propertyTypeAnnotation) && t.isIdentifier(propertyTypeAnnotation.typeName)
-                ? unwrapTypeOf(propertyTypeAnnotation)
-                : propertyTypeAnnotation
             let intermediateLocalVar: t.Identifier | null = null
             let exportSpecifier: t.ExportSpecifier | null = null
-            if (t.isTSTypeQuery(unwrappedType)) {
-              t.assertTSEntityName(unwrappedType.exprName)
-              if (t.isIdentifier(unwrappedType.exprName)) {
-                const binding = path.scope.getBinding(unwrappedType.exprName.name)
+            if (t.isTSTypeQuery(propertyTypeAnnotation)) {
+              t.assertTSEntityName(propertyTypeAnnotation.exprName)
+              if (t.isIdentifier(propertyTypeAnnotation.exprName)) {
+                const binding = path.scope.getBinding(propertyTypeAnnotation.exprName.name)
                 if (binding) {
                   if (
                     binding.path.isTSDeclareFunction() ||
                     binding.path.isDeclareVariable() ||
                     binding.path.isDeclareClass()
                   ) {
-                    exportSpecifier = t.exportSpecifier(unwrappedType.exprName, property.key)
+                    exportSpecifier = t.exportSpecifier(propertyTypeAnnotation.exprName, property.key)
                   }
                 }
               }
@@ -71,7 +67,7 @@ export const exportVisitor: Visitor<State> = {
             }
             if (exportSpecifier === null) {
               intermediateLocalVar = generateIntermediateLocalIdentifier(property.key)
-              intermediateLocalVar.typeAnnotation = t.tsTypeAnnotation(unwrappedType)
+              intermediateLocalVar.typeAnnotation = t.tsTypeAnnotation(propertyTypeAnnotation)
               exportSpecifier = t.exportSpecifier(intermediateLocalVar, property.key)
             }
             if (intermediateLocalVar) {
