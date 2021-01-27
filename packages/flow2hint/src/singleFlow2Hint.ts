@@ -258,6 +258,14 @@ async function resolveImport({
   })
 }
 
+export function resolvedToItself(hintImport: HintImport): boolean {
+  return (
+    hintImport.resolved !== undefined &&
+    hintImport.source.column === hintImport.resolved.begin.column &&
+    hintImport.source.row === hintImport.resolved.begin.row
+  )
+}
+
 // "modified" files are flow scripts with "typeof" being replaced by six space characters
 export async function singleFlow2Hint({
   inputRootDir,
@@ -305,11 +313,7 @@ export async function singleFlow2Hint({
       normalizedModifiedRootDir,
       collectedHintFiles,
     })
-    if (
-      hintImport.resolved &&
-      hintImport.source.column === hintImport.resolved.begin.column &&
-      hintImport.source.row === hintImport.resolved.begin.row
-    ) {
+    if (resolvedToItself(hintImport)) {
       // if an import symbol is resolved to itself
       // it means removing "typeof" breaks here
       // try "flow get-def" on original files
@@ -322,6 +326,8 @@ export async function singleFlow2Hint({
         normalizedModifiedRootDir: normalizedInputRootDir,
         collectedHintFiles,
       })
+      // it is possible that the import symbols is still resolved to itself
+      // all these will be resolved to "unresolved[guess-type]" and "unresolved[guess-value]"
     }
   }
   for (const hintTypeof of hint.typeofs) {

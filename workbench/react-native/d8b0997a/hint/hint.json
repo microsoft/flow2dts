@@ -1,6 +1,6 @@
 {
     "libraries": [
-        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_26c46356"
+        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_31466df8"
     ],
     "files": {
         "/index.js.flow": {
@@ -42,7 +42,7 @@
                     }
                 },
                 "DrawerLayoutAndroid": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "FlatList": {
                     "type": "class",
@@ -135,7 +135,7 @@
                     }
                 },
                 "ProgressBarAndroid": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "ProgressViewIOS": {
                     "type": "value",
@@ -183,7 +183,7 @@
                     }
                 },
                 "SegmentedControlIOS": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "Slider": {
                     "type": "value",
@@ -321,7 +321,7 @@
                     }
                 },
                 "Animated": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "Appearance": {
                     "type": "type",
@@ -585,7 +585,7 @@
                     }
                 },
                 "ToastAndroid": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "TurboModuleRegistry": {
                     "type": "unresolved[missing]"
@@ -717,7 +717,7 @@
                     }
                 },
                 "DeprecatedColorPropType": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "DeprecatedEdgeInsetsPropType": {
                     "type": "value",
@@ -738,7 +738,7 @@
                     }
                 },
                 "DeprecatedViewPropTypes": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "_HostComponentInternal": {
                     "type": "type",
@@ -4271,7 +4271,7 @@
                     {
                         "row": 269,
                         "column": 34,
-                        "type": "value"
+                        "type": "unresolved[error]"
                     },
                     {
                         "row": 275,
@@ -11809,13 +11809,13 @@
                     "type": "unresolved[error]"
                 },
                 "Float": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "WithDefault": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "BubblingEventHandler": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 }
             },
             "typeofs": {}
@@ -11878,25 +11878,25 @@
         "/Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow": {
             "imports": {
                 "ViewProps": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "ColorValue": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "WithDefault": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "DirectEventHandler": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "Int32": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "Float": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "HostComponent": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "React": {
                     "type": "unresolved[error]"
@@ -12699,7 +12699,7 @@
                     }
                 },
                 "View": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "React": {
                     "type": "unresolved[error]"
@@ -13514,7 +13514,7 @@
                     "type": "unresolved[error]"
                 },
                 "Double": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "HostComponent": {
                     "type": "type",
@@ -14108,13 +14108,13 @@
                     "type": "unresolved[error]"
                 },
                 "WithDefault": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "BubblingEventHandler": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "HostComponent": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "ColorValue": {
                     "type": "type",
@@ -14354,7 +14354,7 @@
                     }
                 },
                 "TextInputNativeCommands": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 }
             },
             "typeofs": {}
@@ -14474,7 +14474,7 @@
                     }
                 },
                 "TextInputNativeCommands": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 }
             },
             "typeofs": {
@@ -14505,7 +14505,7 @@
                     }
                 },
                 "TextInputNativeCommands": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 }
             },
             "typeofs": {}
@@ -15269,7 +15269,7 @@
                     }
                 },
                 "Animated": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "React": {
                     "type": "unresolved[error]"
@@ -15414,10 +15414,10 @@
                     }
                 },
                 "Animated": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "ViewStyleProp": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "React": {
                     "type": "unresolved[error]"
@@ -17017,7 +17017,7 @@
                     "type": "unresolved[error]"
                 },
                 "TextStyleProp": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 }
             },
             "typeofs": {}
@@ -17544,7 +17544,7 @@
         "/Libraries/NativeModules/specs/NativeLogBox.js.flow": {
             "imports": {
                 "TurboModule": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 }
             },
             "typeofs": {}

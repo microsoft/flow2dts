@@ -246,7 +246,7 @@
                 "column": 34,
                 "local": "func"
             },
-            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:269:33\r\nNo possible types\r\n"
+            "error": ""
         },
         {
             "source": {

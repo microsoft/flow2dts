@@ -8,7 +8,7 @@ import {
   ResolvedHintTypeof,
   HintResolved,
 } from "./hintfile"
-import { HintFileEntries } from "./singleFlow2Hint"
+import { HintFileEntries, resolvedToItself } from "./singleFlow2Hint"
 
 function chooseLater(existing: HintDecl | undefined, comming: HintDecl): HintDecl {
   if (existing) {
@@ -86,7 +86,7 @@ export function mergeHint(collectedHintFiles: HintFileEntries): ResolvedHintEntr
 
     for (const importKey in hintFile.imports) {
       const hintImport = hintFile.imports[importKey]
-      mergedFile.imports[importKey] = resolveImport<ResolvedHintImport>(
+      const resolvedHintImport = resolveImport<ResolvedHintImport>(
         collectedHintFiles,
         hintImport,
         (type, resolvedDecl?) => {
@@ -97,6 +97,14 @@ export function mergeHint(collectedHintFiles: HintFileEntries): ResolvedHintEntr
           }
         }
       )
+      if (resolvedHintImport.type === "unresolved[missing]" && resolvedToItself(hintImport)) {
+        if (importKey[0].toUpperCase() === importKey[0]) {
+          resolvedHintImport.type = "type[guess-import]"
+        } else {
+          resolvedHintImport.type = "value[guess-import]"
+        }
+      }
+      mergedFile.imports[importKey] = resolvedHintImport
     }
 
     for (const hintTypeof of hintFile.typeofs) {

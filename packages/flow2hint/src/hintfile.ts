@@ -32,11 +32,21 @@ export interface HintFile {
 
 export interface ResolvedHintImport {
   /*
-   library: resolved to library file but don't know what it is
-   missing: resolved to local file but don't know what it is
-   error: error while running `flow get-def`
+   type[guess]:         an unresolved import identifier, it starts with an upper case letter
+   value[guess]:        an unresolved import identifier, it starts with a lower case letter
+   unresolved[library]: resolved to library file but don't know what it is
+   unresolved[missing]: resolved to local file but don't know what it is
+   unresolved[error]:   error while running `flow get-def`
    */
-  type: "type" | "value" | "class" | "unresolved[library]" | "unresolved[missing]" | "unresolved[error]"
+  type:
+    | "type"
+    | "type[guess-import]"
+    | "value"
+    | "value[guess-import]"
+    | "class"
+    | "unresolved[library]"
+    | "unresolved[missing]"
+    | "unresolved[error]"
   resolvedDecl?: HintDecl
 }
 
