@@ -1,11 +1,68 @@
-import { $TypeOf, React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
+import { React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
 import $1 from "./DeprecatedColorPropType";
 import $2 from "./DeprecatedViewPropTypes";
 import $3 from "prop-types";
 import $4 from "../Text/Text";
+declare const $f2d_autoCapitalize: React$PropType$Primitive<"none" | "sentences" | "words" | "characters">;
+declare const $f2d_autoCompleteType: React$PropType$Primitive<"cc-csc" | "cc-exp" | "cc-exp-month" | "cc-exp-year" | "cc-number" | "email" | "name" | "password" | "postal-code" | "street-address" | "tel" | "username" | "off">;
+declare const $f2d_autoCorrect: typeof $3.bool;
+declare const $f2d_spellCheck: typeof $3.bool;
+declare const $f2d_autoFocus: typeof $3.bool;
+declare const $f2d_allowFontScaling: typeof $3.bool;
+declare const $f2d_maxFontSizeMultiplier: typeof $3.number;
+declare const $f2d_editable: typeof $3.bool;
+declare const $f2d_keyboardType: React$PropType$Primitive<"default" | "email-address" | "numeric" | "phone-pad" | "number-pad" | "ascii-capable" | "numbers-and-punctuation" | "url" | "name-phone-pad" | "decimal-pad" | "twitter" | "web-search" | "ascii-capable-number-pad" | "visible-password">;
+declare const $f2d_keyboardAppearance: React$PropType$Primitive<"default" | "light" | "dark">;
+declare const $f2d_returnKeyType: React$PropType$Primitive<"done" | "go" | "next" | "search" | "send" | "none" | "previous" | "default" | "emergency-call" | "google" | "join" | "route" | "yahoo">;
+declare const $f2d_returnKeyLabel: typeof $3.string;
+declare const $f2d_maxLength: typeof $3.number;
+declare const $f2d_numberOfLines: typeof $3.number;
+declare const $f2d_disableFullscreenUI: typeof $3.bool;
+declare const $f2d_enablesReturnKeyAutomatically: typeof $3.bool;
+declare const $f2d_multiline: typeof $3.bool;
+declare const $f2d_textBreakStrategy: React$PropType$Primitive<"simple" | "highQuality" | "balanced">;
+declare const $f2d_onBlur: typeof $3.func;
+declare const $f2d_onFocus: typeof $3.func;
+declare const $f2d_onChange: typeof $3.func;
+declare const $f2d_onChangeText: typeof $3.func;
+declare const $f2d_onContentSizeChange: typeof $3.func;
+declare const $f2d_onTextInput: typeof $3.func;
+declare const $f2d_onEndEditing: typeof $3.func;
+declare const $f2d_onSelectionChange: typeof $3.func;
+declare const $f2d_onSubmitEditing: typeof $3.func;
+declare const $f2d_onKeyPress: typeof $3.func;
+declare const $f2d_onLayout: typeof $3.func;
+declare const $f2d_onScroll: typeof $3.func;
+declare const $f2d_placeholder: typeof $3.string;
+declare const $f2d_placeholderTextColor: typeof $1;
+declare const $f2d_scrollEnabled: typeof $3.bool;
+declare const $f2d_secureTextEntry: typeof $3.bool;
+declare const $f2d_selectionColor: typeof $1;
+declare const $f2d_selection: React$PropType$Primitive<{
+  end?: number;
+  start: number;
+}>;
+declare const $f2d_value: typeof $3.string;
+declare const $f2d_defaultValue: typeof $3.string;
+declare const $f2d_clearButtonMode: React$PropType$Primitive<"never" | "while-editing" | "unless-editing" | "always">;
+declare const $f2d_clearTextOnFocus: typeof $3.bool;
+declare const $f2d_selectTextOnFocus: typeof $3.bool;
+declare const $f2d_blurOnSubmit: typeof $3.bool;
+declare const $f2d_style: typeof $4.propTypes.style;
+declare const $f2d_underlineColorAndroid: typeof $1;
+declare const $f2d_inlineImageLeft: typeof $3.string;
+declare const $f2d_inlineImagePadding: typeof $3.number;
+declare const $f2d_rejectResponderTermination: typeof $3.bool;
+declare const $f2d_dataDetectorTypes: React$PropType$Primitive<"phoneNumber" | "link" | "address" | "calendarEvent" | "none" | "all" | ("phoneNumber" | "link" | "address" | "calendarEvent" | "none" | "all")[]>;
+declare const $f2d_caretHidden: typeof $3.bool;
+declare const $f2d_contextMenuHidden: typeof $3.bool;
+declare const $f2d_inputAccessoryViewID: typeof $3.string;
+declare const $f2d_textContentType: React$PropType$Primitive<"none" | "URL" | "addressCity" | "addressCityAndState" | "addressState" | "countryName" | "creditCardNumber" | "emailAddress" | "familyName" | "fullStreetAddress" | "givenName" | "jobTitle" | "location" | "middleName" | "name" | "namePrefix" | "nameSuffix" | "nickname" | "organizationName" | "postalCode" | "streetAddressLine1" | "streetAddressLine2" | "sublocality" | "telephoneNumber" | "username" | "password" | "newPassword" | "oneTimeCode">;
+declare const $f2d_showSoftInputOnFocus: typeof $3.bool;
+export { $f2d_autoCapitalize as autoCapitalize, $f2d_autoCompleteType as autoCompleteType, $f2d_autoCorrect as autoCorrect, $f2d_spellCheck as spellCheck, $f2d_autoFocus as autoFocus, $f2d_allowFontScaling as allowFontScaling, $f2d_maxFontSizeMultiplier as maxFontSizeMultiplier, $f2d_editable as editable, $f2d_keyboardType as keyboardType, $f2d_keyboardAppearance as keyboardAppearance, $f2d_returnKeyType as returnKeyType, $f2d_returnKeyLabel as returnKeyLabel, $f2d_maxLength as maxLength, $f2d_numberOfLines as numberOfLines, $f2d_disableFullscreenUI as disableFullscreenUI, $f2d_enablesReturnKeyAutomatically as enablesReturnKeyAutomatically, $f2d_multiline as multiline, $f2d_textBreakStrategy as textBreakStrategy, $f2d_onBlur as onBlur, $f2d_onFocus as onFocus, $f2d_onChange as onChange, $f2d_onChangeText as onChangeText, $f2d_onContentSizeChange as onContentSizeChange, $f2d_onTextInput as onTextInput, $f2d_onEndEditing as onEndEditing, $f2d_onSelectionChange as onSelectionChange, $f2d_onSubmitEditing as onSubmitEditing, $f2d_onKeyPress as onKeyPress, $f2d_onLayout as onLayout, $f2d_onScroll as onScroll, $f2d_placeholder as placeholder, $f2d_placeholderTextColor as placeholderTextColor, $f2d_scrollEnabled as scrollEnabled, $f2d_secureTextEntry as secureTextEntry, $f2d_selectionColor as selectionColor, $f2d_selection as selection, $f2d_value as value, $f2d_defaultValue as defaultValue, $f2d_clearButtonMode as clearButtonMode, $f2d_clearTextOnFocus as clearTextOnFocus, $f2d_selectTextOnFocus as selectTextOnFocus, $f2d_blurOnSubmit as blurOnSubmit, $f2d_style as style, $f2d_underlineColorAndroid as underlineColorAndroid, $f2d_inlineImageLeft as inlineImageLeft, $f2d_inlineImagePadding as inlineImagePadding, $f2d_rejectResponderTermination as rejectResponderTermination, $f2d_dataDetectorTypes as dataDetectorTypes, $f2d_caretHidden as caretHidden, $f2d_contextMenuHidden as contextMenuHidden, $f2d_inputAccessoryViewID as inputAccessoryViewID, $f2d_textContentType as textContentType, $f2d_showSoftInputOnFocus as showSoftInputOnFocus };
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$TypeOf<typeof $2> & {
+typeof $2 & {
   /**
    * Can tell `TextInput` to automatically capitalize certain characters.
    *
@@ -279,7 +336,7 @@ $TypeOf<typeof $2> & {
   /**
    * The text color of the placeholder string.
    */
-  placeholderTextColor: $TypeOf<typeof $1>;
+  placeholderTextColor: typeof $1;
 
   /**
    * If `false`, scrolling of the text view will be disabled.
@@ -297,7 +354,7 @@ $TypeOf<typeof $2> & {
   /**
    * The highlight and cursor color of the text input.
    */
-  selectionColor: $TypeOf<typeof $1>;
+  selectionColor: typeof $1;
 
   /**
    * The start and end of the text input's selection. Set start and end to
@@ -377,7 +434,7 @@ $TypeOf<typeof $2> & {
    * The color of the `TextInput` underline.
    * @platform android
    */
-  underlineColorAndroid: $TypeOf<typeof $1>;
+  underlineColorAndroid: typeof $1;
 
   /**
    * If defined, the provided image resource will be rendered on the left.

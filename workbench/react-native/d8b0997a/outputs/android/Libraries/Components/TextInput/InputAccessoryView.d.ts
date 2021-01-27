@@ -17,4 +17,5 @@ declare type Props = Readonly<
 declare class InputAccessoryView extends $2.Component<Props> {
   render(): $2.Node;
 }
-export default InputAccessoryView;
+declare const $f2tExportDefault: InputAccessoryView;
+export default $f2tExportDefault;

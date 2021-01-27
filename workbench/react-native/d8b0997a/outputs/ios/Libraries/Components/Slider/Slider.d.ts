@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import SliderNativeComponent from "./SliderNativeComponent";
 import $1 from "react";

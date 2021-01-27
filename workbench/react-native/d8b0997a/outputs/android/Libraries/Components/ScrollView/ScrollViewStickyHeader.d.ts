@@ -29,4 +29,5 @@ declare class ScrollViewStickyHeader extends React.Component<Props, State> {
   render(): React.Node;
 }
 export type { Props };
-export default ScrollViewStickyHeader;
+declare const $f2tExportDefault: ScrollViewStickyHeader;
+export default $f2tExportDefault;

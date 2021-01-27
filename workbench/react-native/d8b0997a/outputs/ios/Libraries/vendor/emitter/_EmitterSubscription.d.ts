@@ -1,9 +1,8 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import EventEmitter$f2tTypeof from "./EventEmitter";
-declare type EventEmitter = $TypeOf<typeof EventEmitter$f2tTypeof>;
+declare type EventEmitter = typeof EventEmitter$f2tTypeof;
 import EventSubscription from "./_EventSubscription";
 import EventSubscriptionVendor$f2tTypeof from "./_EventSubscriptionVendor";
-declare type EventSubscriptionVendor = $TypeOf<typeof EventSubscriptionVendor$f2tTypeof>;
+declare type EventSubscriptionVendor = typeof EventSubscriptionVendor$f2tTypeof;
 declare class EmitterSubscription extends EventSubscription {
   // $FlowFixMe[value-as-type]
   emitter: EventEmitter;
@@ -30,4 +29,5 @@ declare class EmitterSubscription extends EventSubscription {
    */
   remove(): void;
 }
-export default EmitterSubscription;
+declare const $f2tExportDefault: EmitterSubscription;
+export default $f2tExportDefault;

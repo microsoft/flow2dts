@@ -1,7 +1,6 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "./Animation";
 import AnimatedValue$f2tTypeof from "../nodes/AnimatedValue";
-declare type AnimatedValue = $TypeOf<typeof AnimatedValue$f2tTypeof>;
+declare type AnimatedValue = typeof AnimatedValue$f2tTypeof;
 import { AnimationConfig } from "./Animation";
 import { EndCallback } from "./Animation";
 declare type DecayAnimationConfig = AnimationConfig & {
@@ -25,10 +24,11 @@ declare class DecayAnimation extends $1 {
     type: string;
     velocity: number;
   };
-  start(fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | $TypeOf<typeof $1>, animatedValue: AnimatedValue): void;
+  start(fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | typeof $1, animatedValue: AnimatedValue): void;
   onUpdate(): void;
   stop(): void;
 }
 export type { DecayAnimationConfig };
 export type { DecayAnimationConfigSingle };
-export default DecayAnimation;
+declare const $f2tExportDefault: DecayAnimation;
+export default $f2tExportDefault;

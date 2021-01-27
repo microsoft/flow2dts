@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $14 from "./AnimatedEvent";
 import $4 from "./AnimatedEvent";
 import $1 from "./nodes/AnimatedAddition";
@@ -26,15 +25,15 @@ declare type CompositeAnimation = {
   _startNativeLoop: (iterations?: number) => void;
   _isUsingNativeDriver: () => boolean;
 };
-declare var add: (a: $TypeOf<typeof $9> | number, b: $TypeOf<typeof $9> | number) => $TypeOf<typeof $1>;
-declare var subtract: (a: $TypeOf<typeof $9> | number, b: $TypeOf<typeof $9> | number) => $TypeOf<typeof $11>;
-declare var divide: (a: $TypeOf<typeof $9> | number, b: $TypeOf<typeof $9> | number) => $TypeOf<typeof $3>;
-declare var multiply: (a: $TypeOf<typeof $9> | number, b: $TypeOf<typeof $9> | number) => $TypeOf<typeof $8>;
-declare var modulo: (a: $TypeOf<typeof $9>, modulus: number) => $TypeOf<typeof $7>;
-declare var diffClamp: (a: $TypeOf<typeof $9>, min: number, max: number) => $TypeOf<typeof $2>;
-declare var spring: (value: $TypeOf<typeof $12> | $TypeOf<typeof $13>, config: SpringAnimationConfig) => CompositeAnimation;
-declare var timing: (value: $TypeOf<typeof $12> | $TypeOf<typeof $13>, config: TimingAnimationConfig) => CompositeAnimation;
-declare var decay: (value: $TypeOf<typeof $12> | $TypeOf<typeof $13>, config: DecayAnimationConfig) => CompositeAnimation;
+declare var add: (a: typeof $9 | number, b: typeof $9 | number) => typeof $1;
+declare var subtract: (a: typeof $9 | number, b: typeof $9 | number) => typeof $11;
+declare var divide: (a: typeof $9 | number, b: typeof $9 | number) => typeof $3;
+declare var multiply: (a: typeof $9 | number, b: typeof $9 | number) => typeof $8;
+declare var modulo: (a: typeof $9, modulus: number) => typeof $7;
+declare var diffClamp: (a: typeof $9, min: number, max: number) => typeof $2;
+declare var spring: (value: typeof $12 | typeof $13, config: SpringAnimationConfig) => CompositeAnimation;
+declare var timing: (value: typeof $12 | typeof $13, config: TimingAnimationConfig) => CompositeAnimation;
+declare var decay: (value: typeof $12 | typeof $13, config: DecayAnimationConfig) => CompositeAnimation;
 declare var sequence: (animations: CompositeAnimation[]) => CompositeAnimation;
 declare type ParallelConfig = {
   // If one is stopped, stop all.  default: true
@@ -52,83 +51,198 @@ declare function forkEvent(event: (null | undefined | $4.AnimatedEvent) | (null 
 declare function unforkEvent(event: (null | undefined | $4.AnimatedEvent) | (null | undefined | Function), listener: Function): void;
 declare var event: (argMapping: ReadonlyArray<null | undefined | Mapping>, config: EventConfig) => any;
 export type { CompositeAnimation };
-declare namespace $f2tExportDefaultRedirect {
-  export const $f2tHidden_Value: $TypeOf<typeof $12>;
-  export const $f2tHidden_ValueXY: $TypeOf<typeof $13>;
-  export const $f2tHidden_Interpolation: $TypeOf<typeof $6>;
-  export const $f2tHidden_Node: $TypeOf<typeof $9>;
-  export const $f2tHidden_decay: $TypeOf<typeof decay>;
-  export const $f2tHidden_timing: $TypeOf<typeof timing>;
-  export const $f2tHidden_spring: $TypeOf<typeof spring>;
-  export const $f2tHidden_add: $TypeOf<typeof add>;
-  export const $f2tHidden_subtract: $TypeOf<typeof subtract>;
-  export const $f2tHidden_divide: $TypeOf<typeof divide>;
-  export const $f2tHidden_multiply: $TypeOf<typeof multiply>;
-  export const $f2tHidden_modulo: $TypeOf<typeof modulo>;
-  export const $f2tHidden_diffClamp: $TypeOf<typeof diffClamp>;
-  export const $f2tHidden_delay: $TypeOf<typeof delay>;
-  export const $f2tHidden_sequence: $TypeOf<typeof sequence>;
-  export const $f2tHidden_parallel: $TypeOf<typeof parallel>;
-  export const $f2tHidden_stagger: $TypeOf<typeof stagger>;
-  export const $f2tHidden_loop: $TypeOf<typeof loop>;
-  export const $f2tHidden_event: $TypeOf<typeof event>;
-  export const $f2tHidden_createAnimatedComponent: $TypeOf<typeof $16>;
-  export const $f2tHidden_attachNativeEvent: $TypeOf<typeof $14.attachNativeEvent>;
-  export const $f2tHidden_forkEvent: $TypeOf<typeof forkEvent>;
-  export const $f2tHidden_unforkEvent: $TypeOf<typeof unforkEvent>;
-  export const $f2tHidden_Event: $TypeOf<typeof $4.AnimatedEvent>;
-  export const $f2tHidden___PropsOnlyForTests: $TypeOf<typeof $10>;
-}
-declare namespace $f2tExportDefault {
-  export const Value: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_Value>;
-  export type Value = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_Value>;
-  export const ValueXY: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_ValueXY>;
-  export type ValueXY = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_ValueXY>;
-  export const Interpolation: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_Interpolation>;
-  export type Interpolation = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_Interpolation>;
-  export const Node: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_Node>;
-  export type Node = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_Node>;
-  export const decay: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_decay>;
-  export type decay = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_decay>;
-  export const timing: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_timing>;
-  export type timing = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_timing>;
-  export const spring: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_spring>;
-  export type spring = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_spring>;
-  export const add: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_add>;
-  export type add = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_add>;
-  export const subtract: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_subtract>;
-  export type subtract = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_subtract>;
-  export const divide: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_divide>;
-  export type divide = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_divide>;
-  export const multiply: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_multiply>;
-  export type multiply = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_multiply>;
-  export const modulo: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_modulo>;
-  export type modulo = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_modulo>;
-  export const diffClamp: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_diffClamp>;
-  export type diffClamp = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_diffClamp>;
-  export const delay: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_delay>;
-  export type delay = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_delay>;
-  export const sequence: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_sequence>;
-  export type sequence = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_sequence>;
-  export const parallel: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_parallel>;
-  export type parallel = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_parallel>;
-  export const stagger: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_stagger>;
-  export type stagger = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_stagger>;
-  export const loop: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_loop>;
-  export type loop = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_loop>;
-  export const event: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_event>;
-  export type event = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_event>;
-  export const createAnimatedComponent: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_createAnimatedComponent>;
-  export type createAnimatedComponent = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_createAnimatedComponent>;
-  export const attachNativeEvent: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_attachNativeEvent>;
-  export type attachNativeEvent = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_attachNativeEvent>;
-  export const forkEvent: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_forkEvent>;
-  export type forkEvent = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_forkEvent>;
-  export const unforkEvent: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_unforkEvent>;
-  export type unforkEvent = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_unforkEvent>;
-  export const Event: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_Event>;
-  export type Event = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_Event>;
-  export const __PropsOnlyForTests: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden___PropsOnlyForTests>;
-  export type __PropsOnlyForTests = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden___PropsOnlyForTests>;
-}
+declare const $f2d_Value: typeof $12;
+declare const $f2d_ValueXY: typeof $13;
+declare const $f2d_Interpolation: typeof $6;
+declare const $f2d_Node: typeof $9;
+declare const $f2d_createAnimatedComponent: typeof $16;
+declare const $f2d_attachNativeEvent: typeof $14.attachNativeEvent;
+declare const $f2d_Event: typeof $4.AnimatedEvent;
+declare const $f2d___PropsOnlyForTests: typeof $10;
+export { $f2d_Value as Value, $f2d_ValueXY as ValueXY, $f2d_Interpolation as Interpolation, $f2d_Node as Node, decay, timing, spring, add, subtract, divide, multiply, modulo, diffClamp, delay, sequence, parallel, stagger, loop, event, $f2d_createAnimatedComponent as createAnimatedComponent, $f2d_attachNativeEvent as attachNativeEvent, forkEvent, unforkEvent, $f2d_Event as Event, $f2d___PropsOnlyForTests as __PropsOnlyForTests };
+declare const $f2tExportDefault:
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  /**
+   * Standard value class for driving animations.  Typically initialized with
+   * `new Animated.Value(0);`
+   *
+   * See https://reactnative.dev/docs/animated.html#value
+   */
+  Value: typeof $12;
+
+  /**
+   * 2D value class for driving 2D animations, such as pan gestures.
+   *
+   * See https://reactnative.dev/docs/animatedvaluexy.html
+   */
+  ValueXY: typeof $13;
+
+  /**
+   * Exported to use the Interpolation type in flow.
+   *
+   * See https://reactnative.dev/docs/animated.html#interpolation
+   */
+  Interpolation: typeof $6;
+
+  /**
+   * Exported for ease of type checking. All animated values derive from this
+   * class.
+   *
+   * See https://reactnative.dev/docs/animated.html#node
+   */
+  Node: typeof $9;
+
+  /**
+   * Animates a value from an initial velocity to zero based on a decay
+   * coefficient.
+   *
+   * See https://reactnative.dev/docs/animated.html#decay
+   */
+  decay: typeof decay;
+
+  /**
+   * Animates a value along a timed easing curve. The Easing module has tons of
+   * predefined curves, or you can use your own function.
+   *
+   * See https://reactnative.dev/docs/animated.html#timing
+   */
+  timing: typeof timing;
+
+  /**
+   * Animates a value according to an analytical spring model based on
+   * damped harmonic oscillation.
+   *
+   * See https://reactnative.dev/docs/animated.html#spring
+   */
+  spring: typeof spring;
+
+  /**
+   * Creates a new Animated value composed from two Animated values added
+   * together.
+   *
+   * See https://reactnative.dev/docs/animated.html#add
+   */
+  add: typeof add;
+
+  /**
+   * Creates a new Animated value composed by subtracting the second Animated
+   * value from the first Animated value.
+   *
+   * See https://reactnative.dev/docs/animated.html#subtract
+   */
+  subtract: typeof subtract;
+
+  /**
+   * Creates a new Animated value composed by dividing the first Animated value
+   * by the second Animated value.
+   *
+   * See https://reactnative.dev/docs/animated.html#divide
+   */
+  divide: typeof divide;
+
+  /**
+   * Creates a new Animated value composed from two Animated values multiplied
+   * together.
+   *
+   * See https://reactnative.dev/docs/animated.html#multiply
+   */
+  multiply: typeof multiply;
+
+  /**
+   * Creates a new Animated value that is the (non-negative) modulo of the
+   * provided Animated value.
+   *
+   * See https://reactnative.dev/docs/animated.html#modulo
+   */
+  modulo: typeof modulo;
+
+  /**
+   * Create a new Animated value that is limited between 2 values. It uses the
+   * difference between the last value so even if the value is far from the
+   * bounds it will start changing when the value starts getting closer again.
+   *
+   * See https://reactnative.dev/docs/animated.html#diffclamp
+   */
+  diffClamp: typeof diffClamp;
+
+  /**
+   * Starts an animation after the given delay.
+   *
+   * See https://reactnative.dev/docs/animated.html#delay
+   */
+  delay: typeof delay;
+
+  /**
+   * Starts an array of animations in order, waiting for each to complete
+   * before starting the next. If the current running animation is stopped, no
+   * following animations will be started.
+   *
+   * See https://reactnative.dev/docs/animated.html#sequence
+   */
+  sequence: typeof sequence;
+
+  /**
+   * Starts an array of animations all at the same time. By default, if one
+   * of the animations is stopped, they will all be stopped. You can override
+   * this with the `stopTogether` flag.
+   *
+   * See https://reactnative.dev/docs/animated.html#parallel
+   */
+  parallel: typeof parallel;
+
+  /**
+   * Array of animations may run in parallel (overlap), but are started in
+   * sequence with successive delays.  Nice for doing trailing effects.
+   *
+   * See https://reactnative.dev/docs/animated.html#stagger
+   */
+  stagger: typeof stagger;
+
+  /**
+   * Loops a given animation continuously, so that each time it reaches the
+   * end, it resets and begins again from the start.
+   *
+   * See https://reactnative.dev/docs/animated.html#loop
+   */
+  loop: typeof loop;
+
+  /**
+   * Takes an array of mappings and extracts values from each arg accordingly,
+   * then calls `setValue` on the mapped outputs.
+   *
+   * See https://reactnative.dev/docs/animated.html#event
+   */
+  event: typeof event;
+
+  /**
+   * Make any React component Animatable.  Used to create `Animated.View`, etc.
+   *
+   * See https://reactnative.dev/docs/animated.html#createanimatedcomponent
+   */
+  createAnimatedComponent: typeof $16;
+
+  /**
+   * Imperative API to attach an animated value to an event on a view. Prefer
+   * using `Animated.event` with `useNativeDrive: true` if possible.
+   *
+   * See https://reactnative.dev/docs/animated.html#attachnativeevent
+   */
+  attachNativeEvent: typeof $14.attachNativeEvent;
+
+  /**
+   * Advanced imperative API for snooping on animated events that are passed in
+   * through props. Use values directly where possible.
+   *
+   * See https://reactnative.dev/docs/animated.html#forkevent
+   */
+  forkEvent: typeof forkEvent;
+  unforkEvent: typeof unforkEvent;
+
+  /**
+   * Expose Event class, so it can be used as a type for type checkers.
+   */
+  Event: typeof $4.AnimatedEvent;
+  __PropsOnlyForTests: typeof $10;
+};
 export default $f2tExportDefault;

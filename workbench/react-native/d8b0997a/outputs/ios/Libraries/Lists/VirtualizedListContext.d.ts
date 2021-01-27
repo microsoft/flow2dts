@@ -1,6 +1,5 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import VirtualizedList$f2tTypeof from "./VirtualizedList.js";
-declare type VirtualizedList = $TypeOf<typeof VirtualizedList$f2tTypeof>;
+declare type VirtualizedList = typeof VirtualizedList$f2tTypeof;
 import * as React from "react";
 declare type Frame = Readonly<{
   offset: number;

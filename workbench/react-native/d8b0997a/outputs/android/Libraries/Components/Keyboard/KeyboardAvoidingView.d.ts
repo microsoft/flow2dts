@@ -46,4 +46,5 @@ declare class KeyboardAvoidingView extends $2.Component<Props, State> {
   componentWillUnmount(): void;
   render(): $2.Node;
 }
-export default KeyboardAvoidingView;
+declare const $f2tExportDefault: KeyboardAvoidingView;
+export default $f2tExportDefault;

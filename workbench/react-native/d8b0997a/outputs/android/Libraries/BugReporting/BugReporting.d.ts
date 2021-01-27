@@ -16,4 +16,5 @@ declare class BugReporting {
   };
   static collectExtraData(): DebugData;
 }
-export default BugReporting;
+declare const $f2tExportDefault: BugReporting;
+export default $f2tExportDefault;

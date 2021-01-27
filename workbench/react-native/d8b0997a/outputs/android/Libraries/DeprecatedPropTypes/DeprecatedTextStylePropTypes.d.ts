@@ -1,11 +1,11 @@
-import { $TypeOf, React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
+import { React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
 import $1 from "./DeprecatedColorPropType";
 import $2 from "./DeprecatedViewStylePropTypes";
 import $3 from "prop-types";
 declare var DeprecatedTextStylePropTypes:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$TypeOf<typeof $2> & {
-  color: $TypeOf<typeof $1>;
+typeof $2 & {
+  color: typeof $1;
   fontFamily: typeof $3.string;
   fontSize: typeof $3.number;
   fontStyle: React$PropType$Primitive<"normal" | "italic">;
@@ -22,7 +22,7 @@ $TypeOf<typeof $2> & {
     width?: number;
   }>;
   textShadowRadius: typeof $3.number;
-  textShadowColor: $TypeOf<typeof $1>;
+  textShadowColor: typeof $1;
 
   /**
    * @platform ios
@@ -58,7 +58,7 @@ $TypeOf<typeof $2> & {
   /**
    * @platform ios
    */
-  textDecorationColor: $TypeOf<typeof $1>;
+  textDecorationColor: typeof $1;
   textTransform: React$PropType$Primitive<"none" | "capitalize" | "uppercase" | "lowercase">;
 
   /**

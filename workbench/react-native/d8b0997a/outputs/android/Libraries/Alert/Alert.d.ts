@@ -17,4 +17,5 @@ declare class Alert {
 export type { AlertType };
 export type { AlertButtonStyle };
 export type { Buttons };
-export default Alert;
+declare const $f2tExportDefault: Alert;
+export default $f2tExportDefault;

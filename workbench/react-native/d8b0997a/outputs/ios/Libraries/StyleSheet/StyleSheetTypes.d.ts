@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $Shape } from "utility-types";
 import $1 from "../Animated/nodes/AnimatedNode";
 import { NativeColorValue } from "./PlatformColorValueTypes";
@@ -18,7 +17,7 @@ declare type EdgeInsetsValue =
   right: number;
   bottom: number;
 };
-declare type DimensionValue = null | number | string | $TypeOf<typeof $1>;
+declare type DimensionValue = null | number | string | typeof $1;
 declare type ____LayoutStyle_Internal = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
@@ -456,47 +455,47 @@ declare type ____TransformStyle_Internal = Readonly<
   transform?: ReadonlyArray<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly perspective: number | $TypeOf<typeof $1>;
+    readonly perspective: number | typeof $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly rotate: string | $TypeOf<typeof $1>;
+    readonly rotate: string | typeof $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly rotateX: string | $TypeOf<typeof $1>;
+    readonly rotateX: string | typeof $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly rotateY: string | $TypeOf<typeof $1>;
+    readonly rotateY: string | typeof $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly rotateZ: string | $TypeOf<typeof $1>;
+    readonly rotateZ: string | typeof $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly scale: number | $TypeOf<typeof $1>;
+    readonly scale: number | typeof $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly scaleX: number | $TypeOf<typeof $1>;
+    readonly scaleX: number | typeof $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly scaleY: number | $TypeOf<typeof $1>;
+    readonly scaleY: number | typeof $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly translateX: number | $TypeOf<typeof $1>;
+    readonly translateX: number | typeof $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly translateY: number | $TypeOf<typeof $1>;
+    readonly translateY: number | typeof $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly translate: [number | $TypeOf<typeof $1>, number | $TypeOf<typeof $1>] | $TypeOf<typeof $1>;
+    readonly translate: [number | typeof $1, number | typeof $1] | typeof $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
@@ -509,7 +508,7 @@ declare type ____TransformStyle_Internal = Readonly<
   |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly matrix: ReadonlyArray<number | $TypeOf<typeof $1>> | $TypeOf<typeof $1>;
+    readonly matrix: ReadonlyArray<number | typeof $1> | typeof $1;
   }>;
 }>;
 declare type ____ShadowStyle_Internal = Readonly<
@@ -536,7 +535,7 @@ declare type ____ShadowStyle_Internal = Readonly<
   * Sets the drop shadow opacity (multiplied by the color's alpha component)
   * @platform ios
   */
-  shadowOpacity?: number | $TypeOf<typeof $1>;
+  shadowOpacity?: number | typeof $1;
 
   /**
   * Sets the drop shadow blur radius
@@ -562,24 +561,24 @@ ____TransformStyle_Internal & {
   borderRightColor?: ____ColorValue_Internal;
   borderStartColor?: ____ColorValue_Internal;
   borderTopColor?: ____ColorValue_Internal;
-  borderRadius?: number | $TypeOf<typeof $1>;
-  borderBottomEndRadius?: number | $TypeOf<typeof $1>;
-  borderBottomLeftRadius?: number | $TypeOf<typeof $1>;
-  borderBottomRightRadius?: number | $TypeOf<typeof $1>;
-  borderBottomStartRadius?: number | $TypeOf<typeof $1>;
-  borderTopEndRadius?: number | $TypeOf<typeof $1>;
-  borderTopLeftRadius?: number | $TypeOf<typeof $1>;
-  borderTopRightRadius?: number | $TypeOf<typeof $1>;
-  borderTopStartRadius?: number | $TypeOf<typeof $1>;
+  borderRadius?: number | typeof $1;
+  borderBottomEndRadius?: number | typeof $1;
+  borderBottomLeftRadius?: number | typeof $1;
+  borderBottomRightRadius?: number | typeof $1;
+  borderBottomStartRadius?: number | typeof $1;
+  borderTopEndRadius?: number | typeof $1;
+  borderTopLeftRadius?: number | typeof $1;
+  borderTopRightRadius?: number | typeof $1;
+  borderTopStartRadius?: number | typeof $1;
   borderStyle?: "solid" | "dotted" | "dashed";
-  borderWidth?: number | $TypeOf<typeof $1>;
-  borderBottomWidth?: number | $TypeOf<typeof $1>;
-  borderEndWidth?: number | $TypeOf<typeof $1>;
-  borderLeftWidth?: number | $TypeOf<typeof $1>;
-  borderRightWidth?: number | $TypeOf<typeof $1>;
-  borderStartWidth?: number | $TypeOf<typeof $1>;
-  borderTopWidth?: number | $TypeOf<typeof $1>;
-  opacity?: number | $TypeOf<typeof $1>;
+  borderWidth?: number | typeof $1;
+  borderBottomWidth?: number | typeof $1;
+  borderEndWidth?: number | typeof $1;
+  borderLeftWidth?: number | typeof $1;
+  borderRightWidth?: number | typeof $1;
+  borderStartWidth?: number | typeof $1;
+  borderTopWidth?: number | typeof $1;
+  opacity?: number | typeof $1;
   elevation?: number;
 }>;
 declare type ____FontWeight_Internal = "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";

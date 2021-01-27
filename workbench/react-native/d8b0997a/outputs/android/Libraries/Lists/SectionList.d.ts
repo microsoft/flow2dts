@@ -135,4 +135,5 @@ declare class SectionList<SectionT extends SectionBase<any>> extends $1.PureComp
 }
 export type { SectionBase };
 export type { Props };
-export default SectionList;
+declare const $f2tExportDefault: SectionList;
+export default $f2tExportDefault;

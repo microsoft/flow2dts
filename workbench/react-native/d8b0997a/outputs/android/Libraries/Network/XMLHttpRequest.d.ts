@@ -89,4 +89,5 @@ declare var $1: any;
 export type { NativeResponseType };
 export type { ResponseType };
 export type { Response };
-export default XMLHttpRequest;
+declare const $f2tExportDefault: XMLHttpRequest;
+export default $f2tExportDefault;

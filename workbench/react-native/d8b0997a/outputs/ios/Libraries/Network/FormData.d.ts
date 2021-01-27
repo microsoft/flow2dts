@@ -21,4 +21,5 @@ declare class FormData {
   append(key: string, value: FormDataValue): void;
   getParts(): FormDataPart[];
 }
-export default FormData;
+declare const $f2tExportDefault: FormData;
+export default $f2tExportDefault;

@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "../nodes/AnimatedValue";
 import $3 from "../nodes/AnimatedValueXY";
 import $1 from "../nodes/AnimatedInterpolation";
@@ -6,10 +5,10 @@ import $4 from "./Animation";
 import { AnimationConfig } from "./Animation";
 import { EndCallback } from "./Animation";
 declare type SpringAnimationConfig = AnimationConfig & {
-  toValue: number | $TypeOf<typeof $2> | {
+  toValue: number | typeof $2 | {
     x: number;
     y: number;
-  } | $TypeOf<typeof $3> | $TypeOf<typeof $1>;
+  } | typeof $3 | typeof $1;
   overshootClamping?: boolean;
   restDisplacementThreshold?: number;
   restSpeedThreshold?: number;
@@ -27,7 +26,7 @@ declare type SpringAnimationConfig = AnimationConfig & {
   delay?: number;
 };
 declare type SpringAnimationConfigSingle = AnimationConfig & {
-  toValue: number | $TypeOf<typeof $2> | $TypeOf<typeof $1>;
+  toValue: number | typeof $2 | typeof $1;
   overshootClamping?: boolean;
   restDisplacementThreshold?: number;
   restSpeedThreshold?: number;
@@ -57,7 +56,7 @@ declare class SpringAnimation extends $4 {
     toValue: any;
     type: string;
   };
-  start(fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | $TypeOf<typeof $4>, animatedValue: $TypeOf<typeof $2>): void;
+  start(fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | typeof $4, animatedValue: typeof $2): void;
   getInternalState(): Object;
 
   /**
@@ -86,4 +85,5 @@ declare class SpringAnimation extends $4 {
 }
 export type { SpringAnimationConfig };
 export type { SpringAnimationConfigSingle };
-export default SpringAnimation;
+declare const $f2tExportDefault: SpringAnimation;
+export default $f2tExportDefault;

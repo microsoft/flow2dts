@@ -1,8 +1,28 @@
-import { $TypeOf, React$PropType$Primitive, ReactPropsCheckType } from "flow2dts-flow-types-polyfill";
+import { React$PropType$Primitive, ReactPropsCheckType } from "flow2dts-flow-types-polyfill";
 import $1 from "./DeprecatedColorPropType";
 import $2 from "./DeprecatedEdgeInsetsPropType";
 import $3 from "prop-types";
 declare var stylePropType: ReactPropsCheckType;
+declare const $f2d_ellipsizeMode: React$PropType$Primitive<"head" | "middle" | "tail" | "clip">;
+declare const $f2d_numberOfLines: typeof $3.number;
+declare const $f2d_textBreakStrategy: React$PropType$Primitive<"simple" | "highQuality" | "balanced">;
+declare const $f2d_onLayout: typeof $3.func;
+declare const $f2d_onPress: typeof $3.func;
+declare const $f2d_onLongPress: typeof $3.func;
+declare const $f2d_pressRetentionOffset: typeof $2;
+declare const $f2d_selectable: typeof $3.bool;
+declare const $f2d_selectionColor: typeof $1;
+declare const $f2d_suppressHighlighting: typeof $3.bool;
+declare const $f2d_testID: typeof $3.string;
+declare const $f2d_nativeID: typeof $3.string;
+declare const $f2d_allowFontScaling: typeof $3.bool;
+declare const $f2d_maxFontSizeMultiplier: typeof $3.number;
+declare const $f2d_accessible: typeof $3.bool;
+declare const $f2d_adjustsFontSizeToFit: typeof $3.bool;
+declare const $f2d_minimumFontScale: typeof $3.number;
+declare const $f2d_disabled: typeof $3.bool;
+declare const $f2d_dataDetectorType: React$PropType$Primitive<"phoneNumber" | "link" | "email" | "none" | "all">;
+export { $f2d_ellipsizeMode as ellipsizeMode, $f2d_numberOfLines as numberOfLines, $f2d_textBreakStrategy as textBreakStrategy, $f2d_onLayout as onLayout, $f2d_onPress as onPress, $f2d_onLongPress as onLongPress, $f2d_pressRetentionOffset as pressRetentionOffset, $f2d_selectable as selectable, $f2d_selectionColor as selectionColor, $f2d_suppressHighlighting as suppressHighlighting, stylePropType as style, $f2d_testID as testID, $f2d_nativeID as nativeID, $f2d_allowFontScaling as allowFontScaling, $f2d_maxFontSizeMultiplier as maxFontSizeMultiplier, $f2d_accessible as accessible, $f2d_adjustsFontSizeToFit as adjustsFontSizeToFit, $f2d_minimumFontScale as minimumFontScale, $f2d_disabled as disabled, $f2d_dataDetectorType as dataDetectorType };
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
@@ -55,7 +75,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/text.html#pressretentionoffset
    */
-  pressRetentionOffset: $TypeOf<typeof $2>;
+  pressRetentionOffset: typeof $2;
 
   /**
    * Lets the user select text.
@@ -69,7 +89,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/text.html#selectioncolor
    */
-  selectionColor: $TypeOf<typeof $1>;
+  selectionColor: typeof $1;
 
   /**
    * When `true`, no visual change is made when text is pressed down.

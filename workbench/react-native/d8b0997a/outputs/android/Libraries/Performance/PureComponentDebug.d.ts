@@ -5,4 +5,5 @@ declare type DoNotCommitUsageOfPureComponentDebug = {};
 declare class PureComponentDebug<P extends DoNotCommitUsageOfPureComponentDebug, S extends null | undefined | {} = undefined> extends $2.Component<P, S> {
   shouldComponentUpdate(nextProps: P, nextState: S): boolean;
 }
-export default PureComponentDebug;
+declare const $f2tExportDefault: PureComponentDebug;
+export default $f2tExportDefault;

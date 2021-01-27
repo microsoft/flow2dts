@@ -1,4 +1,5 @@
 // @flow
 import NativeEventEmitter from "../../EventEmitter/NativeEventEmitter";
 declare class StatusBarIOS extends NativeEventEmitter {}
-export default StatusBarIOS;
+declare const $f2tExportDefault: StatusBarIOS;
+export default $f2tExportDefault;
