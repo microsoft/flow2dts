@@ -40,6 +40,14 @@ export type { ViewStyle };
 export type { TextStyle };
 export type { ImageStyle };
 export type { DangerouslyImpreciseStyle };
+declare const $f2d_absoluteFill: any;
+declare const $f2d_compose: <T extends DangerouslyImpreciseStyleProp>(style1?: null | undefined | T, style2?: null | undefined | T) => (null | undefined | T) | ReadonlyArray<T>;
+declare const $f2d_flatten: typeof $1;
+declare const $f2d_setStyleAttributePreprocessor: (property: string, process: (nextProp: unknown) => unknown) => void;
+declare const $f2d_create: <
+/*[FLOW2DTS - Warning] Covariance and contravariance are ignored.*/
+S extends ____Styles_Internal>(obj: S) => Readonly<S>;
+export { hairlineWidth, $f2d_absoluteFill as absoluteFill, absoluteFill as absoluteFillObject, $f2d_compose as compose, $f2d_flatten as flatten, $f2d_setStyleAttributePreprocessor as setStyleAttributePreprocessor, $f2d_create as create };
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
@@ -148,8 +156,6 @@ declare const $f2tExportDefault:
   /**
    * Creates a StyleSheet style reference from the given object.
    */
-  create: <
-  /*[FLOW2DTS - Warning] Covariance and contravariance are ignored.*/
-  S extends ____Styles_Internal>(obj: S) => Readonly<S>;
+  create: <S extends ____Styles_Internal>(obj: S) => Readonly<S>;
 };
 export default $f2tExportDefault;

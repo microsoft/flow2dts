@@ -21,6 +21,9 @@ declare var customDirectEventTypes: {
     registrationName: string;
   }>;
 };
+declare const $f2d_get: (name: string) => ReactNativeBaseComponentViewConfig;
+declare const $f2d_register: (name: string, callback: ViewConfigGetter) => string;
+export { $f2d_get as get, $f2d_register as register, customDirectEventTypes, customBubblingEventTypes };
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

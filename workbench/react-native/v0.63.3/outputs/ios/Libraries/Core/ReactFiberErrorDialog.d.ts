@@ -7,11 +7,10 @@ declare type CapturedError = {
 };
 declare function showErrorDialog(capturedError: CapturedError): boolean;
 export type { CapturedError };
-declare namespace $f2tExportDefaultRedirect {
-  export const $f2tHidden_showErrorDialog: $TypeOf<typeof showErrorDialog>;
-}
-declare namespace $f2tExportDefault {
-  export const showErrorDialog: $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_showErrorDialog>;
-  export type showErrorDialog = $TypeOf<typeof $f2tExportDefaultRedirect.$f2tHidden_showErrorDialog>;
-}
+export { showErrorDialog };
+declare const $f2tExportDefault:
+/*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
+{
+  showErrorDialog: $TypeOf<typeof showErrorDialog>;
+};
 export default $f2tExportDefault;
