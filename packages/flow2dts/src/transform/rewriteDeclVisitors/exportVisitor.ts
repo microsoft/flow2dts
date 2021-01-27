@@ -56,16 +56,18 @@ export const exportVisitor: Visitor<State> = {
                   }
                 }
               }
-            } else if (
-              t.isTSTypeReference(typeAnnotation) &&
-              t.isIdentifier(typeAnnotation.typeName) &&
-              path.scope.getBinding(typeAnnotation.typeName.name)
-            ) {
-              // FIXME: This makes an assumption that the value has been imported using `import typeof`
-              exportSpecifier = t.exportSpecifier(
-                t.identifier(nameForImportTypeof(typeAnnotation.typeName.name)),
-                property.key
-              )
+            } else if (t.isTSTypeReference(propertyTypeAnnotation) && t.isIdentifier(propertyTypeAnnotation.typeName)) {
+              const binding = path.scope.getBinding(propertyTypeAnnotation.typeName.name)
+              if (
+                binding &&
+                (binding.path.isImportDefaultSpecifier() || binding.path.isImportSpecifier()) &&
+                binding.path.node.local.name === nameForImportTypeof(propertyTypeAnnotation.typeName.name)
+              ) {
+                exportSpecifier = t.exportSpecifier(
+                  t.identifier(nameForImportTypeof(propertyTypeAnnotation.typeName.name)),
+                  property.key
+                )
+              }
             }
             if (exportSpecifier === null) {
               intermediateLocalVar = generateIntermediateLocalIdentifier(property.key)
