@@ -1,5 +1,9 @@
 import { $FlowFixMe, $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "./AnimatedImplementation";
+declare const $f2d_div: $FlowFixMe;
+declare const $f2d_span: $FlowFixMe;
+declare const $f2d_img: $FlowFixMe;
+export { $f2d_div as div, $f2d_span as span, $f2d_img as img };
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 $TypeOf<typeof $1> & {
