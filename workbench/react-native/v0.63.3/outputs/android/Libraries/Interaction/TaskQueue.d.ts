@@ -47,4 +47,5 @@ declare class TaskQueue {
   processNext(): void;
 }
 export type { Task };
-export default TaskQueue;
+declare const $f2tExportDefault: TaskQueue;
+export default $f2tExportDefault;

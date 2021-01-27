@@ -669,7 +669,7 @@ declare class ScrollView extends $1.Component<Props, State> {
 export type { ScrollViewImperativeMethods };
 export type { ScrollResponderType };
 export type { Props };
-declare const $f2tExportDefault: $1.AbstractComponent<$1.ElementConfig<typeof ScrollView>, Readonly<
+declare const $f2tExportDefault: $1.AbstractComponent<$1.ElementConfig<ScrollView>, Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

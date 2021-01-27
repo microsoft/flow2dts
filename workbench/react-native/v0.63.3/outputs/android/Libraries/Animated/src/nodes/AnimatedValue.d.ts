@@ -85,4 +85,5 @@ declare class AnimatedValue extends $3 {
   track(tracking: AnimatedTracking): void;
   __getNativeConfig(): Object;
 }
-export default AnimatedValue;
+declare const $f2tExportDefault: AnimatedValue;
+export default $f2tExportDefault;

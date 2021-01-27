@@ -7,4 +7,5 @@ declare class TVEventHandler {
   enable(component: null | undefined | any, callback: Function): void;
   disable(): void;
 }
-export default TVEventHandler;
+declare const $f2tExportDefault: TVEventHandler;
+export default $f2tExportDefault;

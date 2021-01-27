@@ -26,4 +26,5 @@ declare class Animation {
 export type { EndResult };
 export type { EndCallback };
 export type { AnimationConfig };
-export default Animation;
+declare const $f2tExportDefault: Animation;
+export default $f2tExportDefault;

@@ -11,4 +11,5 @@ declare class AnimatedModulo extends $4 {
   __detach(): void;
   __getNativeConfig(): any;
 }
-export default AnimatedModulo;
+declare const $f2tExportDefault: AnimatedModulo;
+export default $f2tExportDefault;

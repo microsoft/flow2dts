@@ -60,4 +60,5 @@ declare class TouchableWithoutFeedback extends React.Component<Props, State> {
   componentDidUpdate(): void;
   componentWillUnmount(): void;
 }
-export default TouchableWithoutFeedback;
+declare const $f2tExportDefault: TouchableWithoutFeedback;
+export default $f2tExportDefault;

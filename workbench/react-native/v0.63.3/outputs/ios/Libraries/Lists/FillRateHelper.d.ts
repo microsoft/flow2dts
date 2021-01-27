@@ -42,4 +42,5 @@ declare class FillRateHelper {
   enabled(): boolean;
 }
 export type { FillRateInfo };
-export default FillRateHelper;
+declare const $f2tExportDefault: FillRateHelper;
+export default $f2tExportDefault;

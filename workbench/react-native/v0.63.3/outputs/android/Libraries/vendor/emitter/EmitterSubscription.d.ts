@@ -28,4 +28,5 @@ declare class EmitterSubscription extends $2 {
    */
   remove(): void;
 }
-export default EmitterSubscription;
+declare const $f2tExportDefault: EmitterSubscription;
+export default $f2tExportDefault;

@@ -141,4 +141,5 @@ declare class DrawerLayoutAndroid extends React.Component<Props> {
    */
   closeDrawer(): void;
 }
-export default DrawerLayoutAndroid;
+declare const $f2tExportDefault: DrawerLayoutAndroid;
+export default $f2tExportDefault;

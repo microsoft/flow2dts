@@ -11,4 +11,5 @@ declare class AnimatedDiffClamp extends $4 {
   __detach(): void;
   __getNativeConfig(): any;
 }
-export default AnimatedDiffClamp;
+declare const $f2tExportDefault: AnimatedDiffClamp;
+export default $f2tExportDefault;

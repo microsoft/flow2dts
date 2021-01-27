@@ -10,4 +10,5 @@ declare class AnimatedTracking extends $1 {
   update(): void;
   __getNativeConfig(): any;
 }
-export default AnimatedTracking;
+declare const $f2tExportDefault: AnimatedTracking;
+export default $f2tExportDefault;

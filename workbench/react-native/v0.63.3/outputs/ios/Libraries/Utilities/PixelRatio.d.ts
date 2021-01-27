@@ -6,4 +6,5 @@ declare class PixelRatio {
   static roundToNearestPixel(layoutSize: number): number;
   static startDetecting(): void;
 }
-export default PixelRatio;
+declare const $f2tExportDefault: PixelRatio;
+export default $f2tExportDefault;

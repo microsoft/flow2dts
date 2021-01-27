@@ -21,4 +21,5 @@ declare class AnimatedInterpolation extends $3 {
   __getNativeConfig(): any;
 }
 export type { InterpolationConfigType };
-export default AnimatedInterpolation;
+declare const $f2tExportDefault: AnimatedInterpolation;
+export default $f2tExportDefault;

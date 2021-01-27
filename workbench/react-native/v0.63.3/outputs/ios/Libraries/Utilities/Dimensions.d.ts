@@ -12,4 +12,5 @@ declare class Dimensions {
   static addEventListener(type: "change", handler: Function): void;
   static removeEventListener(type: "change", handler: Function): void;
 }
-export default Dimensions;
+declare const $f2tExportDefault: Dimensions;
+export default $f2tExportDefault;

@@ -121,4 +121,5 @@ declare class AnimatedValueXY extends $3 {
     [key: string]: typeof $1;
   }[];
 }
-export default AnimatedValueXY;
+declare const $f2tExportDefault: AnimatedValueXY;
+export default $f2tExportDefault;

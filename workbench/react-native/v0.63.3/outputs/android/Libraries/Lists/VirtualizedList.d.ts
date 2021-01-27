@@ -445,4 +445,5 @@ declare class VirtualizedList extends $1.PureComponent<Props, State> {
 export type { Separators };
 export type { RenderItemProps };
 export type { RenderItemType };
-export default VirtualizedList;
+declare const $f2tExportDefault: VirtualizedList;
+export default $f2tExportDefault;

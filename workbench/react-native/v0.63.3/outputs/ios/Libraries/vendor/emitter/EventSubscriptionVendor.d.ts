@@ -41,4 +41,5 @@ declare class EventSubscriptionVendor {
    */
   getSubscriptionsForType(eventType: string): null | undefined | [EventSubscription];
 }
-export default EventSubscriptionVendor;
+declare const $f2tExportDefault: EventSubscriptionVendor;
+export default $f2tExportDefault;

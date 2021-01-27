@@ -8,4 +8,5 @@ declare class AnimatedStyle extends $2 {
   __makeNative(): void;
   __getNativeConfig(): Object;
 }
-export default AnimatedStyle;
+declare const $f2tExportDefault: AnimatedStyle;
+export default $f2tExportDefault;

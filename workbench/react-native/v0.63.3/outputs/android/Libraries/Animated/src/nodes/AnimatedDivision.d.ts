@@ -11,4 +11,5 @@ declare class AnimatedDivision extends $4 {
   __detach(): void;
   __getNativeConfig(): any;
 }
-export default AnimatedDivision;
+declare const $f2tExportDefault: AnimatedDivision;
+export default $f2tExportDefault;

@@ -17,4 +17,5 @@ declare class StaticRenderer extends $1.Component<Props> {
   shouldComponentUpdate(nextProps: Props): boolean;
   render(): $1.Node;
 }
-export default StaticRenderer;
+declare const $f2tExportDefault: StaticRenderer;
+export default $f2tExportDefault;

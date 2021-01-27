@@ -28,4 +28,5 @@ declare class Blob {
   size(): number;
   type(): string;
 }
-export default Blob;
+declare const $f2tExportDefault: Blob;
+export default $f2tExportDefault;

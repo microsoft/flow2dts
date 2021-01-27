@@ -136,4 +136,5 @@ declare class EventEmitter {
    */
   removeListener(eventType: String, listener: Function): void;
 }
-export default EventEmitter;
+declare const $f2tExportDefault: EventEmitter;
+export default $f2tExportDefault;

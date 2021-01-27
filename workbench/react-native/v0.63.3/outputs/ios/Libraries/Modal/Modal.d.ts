@@ -125,4 +125,5 @@ declare class Modal extends $2.Component<Props> {
   render(): $2.Node;
 }
 export type { Props };
-export default Modal;
+declare const $f2tExportDefault: Modal;
+export default $f2tExportDefault;
