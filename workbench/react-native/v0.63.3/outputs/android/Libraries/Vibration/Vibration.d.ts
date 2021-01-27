@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var Vibration:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -17,5 +16,5 @@ declare var Vibration:
    */
   cancel: () => void;
 };
-declare const $f2tExportDefault: $TypeOf<typeof Vibration>;
+declare const $f2tExportDefault: typeof Vibration;
 export default $f2tExportDefault;

@@ -1,4 +1,4 @@
-import { $TypeOf, React$PropType$Primitive, ReactPropsCheckType } from "flow2dts-flow-types-polyfill";
+import { React$PropType$Primitive, ReactPropsCheckType } from "flow2dts-flow-types-polyfill";
 // @flow
 declare var TransformMatrixPropType: (props: Object, propName: string, componentName: string) => null | undefined | Error;
 declare var DecomposedMatrixPropType: (props: Object, propName: string, componentName: string) => null | undefined | Error;
@@ -30,13 +30,13 @@ declare var DeprecatedTransformPropTypes:
   } | {
     skewY?: string;
   })[]>;
-  transformMatrix: $TypeOf<typeof TransformMatrixPropType>;
-  decomposedMatrix: $TypeOf<typeof DecomposedMatrixPropType>;
+  transformMatrix: typeof TransformMatrixPropType;
+  decomposedMatrix: typeof DecomposedMatrixPropType;
   scaleX: ReactPropsCheckType;
   scaleY: ReactPropsCheckType;
   rotation: ReactPropsCheckType;
   translateX: ReactPropsCheckType;
   translateY: ReactPropsCheckType;
 };
-declare const $f2tExportDefault: $TypeOf<typeof DeprecatedTransformPropTypes>;
+declare const $f2tExportDefault: typeof DeprecatedTransformPropTypes;
 export default $f2tExportDefault;

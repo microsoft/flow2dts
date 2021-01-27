@@ -1,6 +1,5 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "../../EventEmitter/NativeEventEmitter";
-declare var KeyboardEventEmitter: $TypeOf<typeof $1>;
+declare var KeyboardEventEmitter: typeof $1;
 declare type KeyboardEventName = "keyboardWillShow" | "keyboardDidShow" | "keyboardWillHide" | "keyboardDidHide" | "keyboardWillChangeFrame" | "keyboardDidChangeFrame";
 declare type KeyboardEventEasing = "easeIn" | "easeInEaseOut" | "easeOut" | "linear" | "keyboard";
 declare type KeyboardEventCoordinates = Readonly<
@@ -37,5 +36,5 @@ export type { KeyboardEventCoordinates };
 export type { KeyboardEvent };
 export type { AndroidKeyboardEvent };
 export type { IOSKeyboardEvent };
-declare const $f2tExportDefault: $TypeOf<typeof KeyboardEventEmitter>;
+declare const $f2tExportDefault: typeof KeyboardEventEmitter;
 export default $f2tExportDefault;

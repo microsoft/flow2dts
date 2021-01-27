@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type Timespan = {
   description?: string;
@@ -37,5 +36,5 @@ declare type IPerformanceLogger = {
 };
 declare function createPerformanceLogger(): IPerformanceLogger;
 export type { IPerformanceLogger };
-declare const $f2tExportDefault: $TypeOf<typeof createPerformanceLogger>;
+declare const $f2tExportDefault: typeof createPerformanceLogger;
 export default $f2tExportDefault;

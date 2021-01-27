@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { ReactNativeBaseComponentViewConfig } from "./ReactNativeTypes";
 import { ViewConfigGetter } from "./ReactNativeTypes";
@@ -29,7 +28,7 @@ declare const $f2tExportDefault:
 {
   get: (name: string) => ReactNativeBaseComponentViewConfig;
   register: (name: string, callback: ViewConfigGetter) => string;
-  customDirectEventTypes: $TypeOf<typeof customDirectEventTypes>;
-  customBubblingEventTypes: $TypeOf<typeof customBubblingEventTypes>;
+  customDirectEventTypes: typeof customDirectEventTypes;
+  customBubblingEventTypes: typeof customBubblingEventTypes;
 };
 export default $f2tExportDefault;

@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "../DeprecatedPropTypes/DeprecatedTextPropTypes";
 import $2 from "react";
 import { HostComponent } from "../Renderer/shims/ReactNativeTypes";

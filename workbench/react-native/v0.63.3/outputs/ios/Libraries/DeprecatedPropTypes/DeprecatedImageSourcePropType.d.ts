@@ -1,18 +1,18 @@
-import { $TypeOf, React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
+import { React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
 import $3 from "prop-types";
 declare var ImageURISourcePropType: {
-  uri: $TypeOf<typeof $3.string>;
-  bundle: $TypeOf<typeof $3.string>;
-  method: $TypeOf<typeof $3.string>;
+  uri: typeof $3.string;
+  bundle: typeof $3.string;
+  method: typeof $3.string;
   headers: {
     [key: string]: string;
   };
-  body: $TypeOf<typeof $3.string>;
+  body: typeof $3.string;
   cache: React$PropType$Primitive<"default" | "reload" | "force-cache" | "only-if-cached">;
-  width: $TypeOf<typeof $3.number>;
-  height: $TypeOf<typeof $3.number>;
-  scale: $TypeOf<typeof $3.number>;
+  width: typeof $3.number;
+  height: typeof $3.number;
+  scale: typeof $3.number;
 };
-declare var ImageSourcePropType: React$PropType$Primitive<$TypeOf<typeof ImageURISourcePropType> | $TypeOf<typeof $3.number> | $TypeOf<typeof ImageURISourcePropType>[]>;
-declare const $f2tExportDefault: $TypeOf<typeof ImageSourcePropType>;
+declare var ImageSourcePropType: React$PropType$Primitive<typeof ImageURISourcePropType | typeof $3.number | typeof ImageURISourcePropType[]>;
+declare const $f2tExportDefault: typeof ImageSourcePropType;
 export default $f2tExportDefault;

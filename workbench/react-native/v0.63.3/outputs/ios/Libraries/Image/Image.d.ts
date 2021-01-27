@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "../DeprecatedPropTypes/DeprecatedImagePropType";
 import $2 from "react";
 import $3 from "./resolveAssetSource";
@@ -15,11 +14,11 @@ declare function queryCache(urls: string[]): Promise<{
 declare type ImageComponentStatics = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  getSize: $TypeOf<typeof getSize>;
-  getSizeWithHeaders: $TypeOf<typeof getSizeWithHeaders>;
-  prefetch: $TypeOf<typeof prefetch>;
-  queryCache: $TypeOf<typeof queryCache>;
-  resolveAssetSource: $TypeOf<typeof $3>;
+  getSize: typeof getSize;
+  getSizeWithHeaders: typeof getSizeWithHeaders;
+  prefetch: typeof prefetch;
+  queryCache: typeof queryCache;
+  resolveAssetSource: typeof $3;
 }>;
 declare const $f2tExportDefault: $2.AbstractComponent<ImagePropsType, $2.ElementRef<typeof ImageViewNativeComponent>> & ImageComponentStatics;
 export default $f2tExportDefault;

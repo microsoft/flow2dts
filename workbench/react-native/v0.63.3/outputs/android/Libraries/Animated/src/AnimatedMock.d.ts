@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "./AnimatedEvent";
 import $9 from "./AnimatedEvent";
 import $3 from "./AnimatedImplementation";
@@ -21,9 +20,9 @@ declare type CompositeAnimation = {
   _startNativeLoop: (iterations?: number) => void;
   _isUsingNativeDriver: () => boolean;
 };
-declare var spring: (value: $TypeOf<typeof $7> | $TypeOf<typeof $8>, config: SpringAnimationConfig) => CompositeAnimation;
-declare var timing: (value: $TypeOf<typeof $7> | $TypeOf<typeof $8>, config: TimingAnimationConfig) => CompositeAnimation;
-declare var decay: (value: $TypeOf<typeof $7> | $TypeOf<typeof $8>, config: DecayAnimationConfig) => CompositeAnimation;
+declare var spring: (value: typeof $7 | typeof $8, config: SpringAnimationConfig) => CompositeAnimation;
+declare var timing: (value: typeof $7 | typeof $8, config: TimingAnimationConfig) => CompositeAnimation;
+declare var decay: (value: typeof $7 | typeof $8, config: DecayAnimationConfig) => CompositeAnimation;
 declare var sequence: (animations: CompositeAnimation[]) => CompositeAnimation;
 declare type ParallelConfig = {
   stopTogether?: boolean;
@@ -58,30 +57,30 @@ export { $f2d_Value as Value, $f2d_ValueXY as ValueXY, $f2d_Interpolation as Int
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  Value: $TypeOf<typeof $7>;
-  ValueXY: $TypeOf<typeof $8>;
-  Interpolation: $TypeOf<typeof $4>;
-  Node: $TypeOf<typeof $5>;
-  decay: $TypeOf<typeof decay>;
-  timing: $TypeOf<typeof timing>;
-  spring: $TypeOf<typeof spring>;
-  add: $TypeOf<typeof $3.add>;
-  subtract: $TypeOf<typeof $3.subtract>;
-  divide: $TypeOf<typeof $3.divide>;
-  multiply: $TypeOf<typeof $3.multiply>;
-  modulo: $TypeOf<typeof $3.modulo>;
-  diffClamp: $TypeOf<typeof $3.diffClamp>;
-  delay: $TypeOf<typeof delay>;
-  sequence: $TypeOf<typeof sequence>;
-  parallel: $TypeOf<typeof parallel>;
-  stagger: $TypeOf<typeof stagger>;
-  loop: $TypeOf<typeof loop>;
-  event: $TypeOf<typeof event>;
-  createAnimatedComponent: $TypeOf<typeof $11>;
-  attachNativeEvent: $TypeOf<typeof $9.attachNativeEvent>;
-  forkEvent: $TypeOf<typeof $3.forkEvent>;
-  unforkEvent: $TypeOf<typeof $3.unforkEvent>;
-  Event: $TypeOf<typeof $1.AnimatedEvent>;
-  __PropsOnlyForTests: $TypeOf<typeof $6>;
+  Value: typeof $7;
+  ValueXY: typeof $8;
+  Interpolation: typeof $4;
+  Node: typeof $5;
+  decay: typeof decay;
+  timing: typeof timing;
+  spring: typeof spring;
+  add: typeof $3.add;
+  subtract: typeof $3.subtract;
+  divide: typeof $3.divide;
+  multiply: typeof $3.multiply;
+  modulo: typeof $3.modulo;
+  diffClamp: typeof $3.diffClamp;
+  delay: typeof delay;
+  sequence: typeof sequence;
+  parallel: typeof parallel;
+  stagger: typeof stagger;
+  loop: typeof loop;
+  event: typeof event;
+  createAnimatedComponent: typeof $11;
+  attachNativeEvent: typeof $9.attachNativeEvent;
+  forkEvent: typeof $3.forkEvent;
+  unforkEvent: typeof $3.unforkEvent;
+  Event: typeof $1.AnimatedEvent;
+  __PropsOnlyForTests: typeof $6;
 };
 export default $f2tExportDefault;

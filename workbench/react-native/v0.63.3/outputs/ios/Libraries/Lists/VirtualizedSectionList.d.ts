@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $Diff, $PropertyType } from "utility-types";
 import $1 from "react";
 import $2 from "./VirtualizedList";
@@ -83,7 +82,7 @@ declare type OptionalProps<SectionT extends SectionBase<any>> =
     distanceFromEnd: number;
   }) => void);
 };
-declare type VirtualizedListProps = $1.ElementProps<$TypeOf<typeof $2>>;
+declare type VirtualizedListProps = $1.ElementProps<typeof $2>;
 declare type Props<SectionT extends SectionBase<any>> =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 RequiredProps<SectionT> & OptionalProps<SectionT> & $Diff<VirtualizedListProps, {
@@ -100,7 +99,7 @@ declare type ScrollToLocationParamsType =
 };
 declare type DefaultProps =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$TypeOf<typeof $2.defaultProps> & {
+typeof $2.defaultProps & {
   data: ReadonlyArray<Item>;
 };
 declare type State = {
@@ -109,7 +108,7 @@ declare type State = {
 declare class VirtualizedSectionList<SectionT extends SectionBase<any>> extends $1.PureComponent<Props<SectionT>, State> {
   static defaultProps: DefaultProps;
   scrollToLocation(params: ScrollToLocationParamsType): void;
-  getListRef(): $TypeOf<typeof $2>;
+  getListRef(): typeof $2;
   constructor(props: Props<SectionT>, context: Object);
   UNSAFE_componentWillReceiveProps(nextProps: Props<SectionT>): void;
   render(): $1.Node;

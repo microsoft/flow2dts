@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $Keys } from "utility-types";
 // @flow
 declare type Options<T = string> = Readonly<
@@ -7,5 +6,5 @@ declare type Options<T = string> = Readonly<
   supportedCommands: ReadonlyArray<T>;
 }>;
 declare function codegenNativeCommands<T extends {}>(options: Options<$Keys<T>>): T;
-declare const $f2tExportDefault: $TypeOf<typeof codegenNativeCommands>;
+declare const $f2tExportDefault: typeof codegenNativeCommands;
 export default $f2tExportDefault;

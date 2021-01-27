@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $PropertyType } from "utility-types";
 // @flow
 import AccessibilityInfo$f2tTypeof from "./Libraries/Components/AccessibilityInfo/AccessibilityInfo";
@@ -267,7 +266,7 @@ declare const $f2tExportDefault:
   StyleSheet: StyleSheet;
   Systrace: Systrace;
   ToastAndroid: ToastAndroid;
-  TurboModuleRegistry: $TypeOf<typeof TurboModuleRegistry>;
+  TurboModuleRegistry: typeof TurboModuleRegistry;
   TVEventHandler: TVEventHandler;
   UIManager: UIManager;
   unstable_batchedUpdates: $PropertyType<ReactNative, "unstable_batchedUpdates">;

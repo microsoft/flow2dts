@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { ExceptionData } from "./NativeExceptionsManager";
 declare class SyntheticError extends Error {
@@ -12,9 +11,9 @@ export { handleException, installConsoleErrorReporter, SyntheticError, unstable_
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  handleException: $TypeOf<typeof handleException>;
-  installConsoleErrorReporter: $TypeOf<typeof installConsoleErrorReporter>;
+  handleException: typeof handleException;
+  installConsoleErrorReporter: typeof installConsoleErrorReporter;
   SyntheticError: typeof SyntheticError;
-  unstable_setExceptionDecorator: $TypeOf<typeof unstable_setExceptionDecorator>;
+  unstable_setExceptionDecorator: typeof unstable_setExceptionDecorator;
 };
 export default $f2tExportDefault;

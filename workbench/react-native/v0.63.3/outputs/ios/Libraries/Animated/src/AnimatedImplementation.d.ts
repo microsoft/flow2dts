@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import * as $14 from "./AnimatedEvent";
 import * as $4 from "./AnimatedEvent";
 import $1 from "./nodes/AnimatedAddition";
@@ -26,15 +25,15 @@ declare type CompositeAnimation = {
   _startNativeLoop: (iterations?: number) => void;
   _isUsingNativeDriver: () => boolean;
 };
-declare var add: (a: $TypeOf<typeof $9> | number, b: $TypeOf<typeof $9> | number) => $TypeOf<typeof $1>;
-declare var subtract: (a: $TypeOf<typeof $9> | number, b: $TypeOf<typeof $9> | number) => $TypeOf<typeof $11>;
-declare var divide: (a: $TypeOf<typeof $9> | number, b: $TypeOf<typeof $9> | number) => $TypeOf<typeof $3>;
-declare var multiply: (a: $TypeOf<typeof $9> | number, b: $TypeOf<typeof $9> | number) => $TypeOf<typeof $8>;
-declare var modulo: (a: $TypeOf<typeof $9>, modulus: number) => $TypeOf<typeof $7>;
-declare var diffClamp: (a: $TypeOf<typeof $9>, min: number, max: number) => $TypeOf<typeof $2>;
-declare var spring: (value: $TypeOf<typeof $12> | $TypeOf<typeof $13>, config: SpringAnimationConfig) => CompositeAnimation;
-declare var timing: (value: $TypeOf<typeof $12> | $TypeOf<typeof $13>, config: TimingAnimationConfig) => CompositeAnimation;
-declare var decay: (value: $TypeOf<typeof $12> | $TypeOf<typeof $13>, config: DecayAnimationConfig) => CompositeAnimation;
+declare var add: (a: typeof $9 | number, b: typeof $9 | number) => typeof $1;
+declare var subtract: (a: typeof $9 | number, b: typeof $9 | number) => typeof $11;
+declare var divide: (a: typeof $9 | number, b: typeof $9 | number) => typeof $3;
+declare var multiply: (a: typeof $9 | number, b: typeof $9 | number) => typeof $8;
+declare var modulo: (a: typeof $9, modulus: number) => typeof $7;
+declare var diffClamp: (a: typeof $9, min: number, max: number) => typeof $2;
+declare var spring: (value: typeof $12 | typeof $13, config: SpringAnimationConfig) => CompositeAnimation;
+declare var timing: (value: typeof $12 | typeof $13, config: TimingAnimationConfig) => CompositeAnimation;
+declare var decay: (value: typeof $12 | typeof $13, config: DecayAnimationConfig) => CompositeAnimation;
 declare var sequence: (animations: CompositeAnimation[]) => CompositeAnimation;
 declare type ParallelConfig = {
   // If one is stopped, stop all.  default: true
@@ -70,21 +69,21 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#value
    */
-  Value: $TypeOf<typeof $12>;
+  Value: typeof $12;
 
   /**
    * 2D value class for driving 2D animations, such as pan gestures.
    *
    * See https://reactnative.dev/docs/animatedvaluexy.html
    */
-  ValueXY: $TypeOf<typeof $13>;
+  ValueXY: typeof $13;
 
   /**
    * Exported to use the Interpolation type in flow.
    *
    * See https://reactnative.dev/docs/animated.html#interpolation
    */
-  Interpolation: $TypeOf<typeof $6>;
+  Interpolation: typeof $6;
 
   /**
    * Exported for ease of type checking. All animated values derive from this
@@ -92,7 +91,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#node
    */
-  Node: $TypeOf<typeof $9>;
+  Node: typeof $9;
 
   /**
    * Animates a value from an initial velocity to zero based on a decay
@@ -100,7 +99,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#decay
    */
-  decay: $TypeOf<typeof decay>;
+  decay: typeof decay;
 
   /**
    * Animates a value along a timed easing curve. The Easing module has tons of
@@ -108,7 +107,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#timing
    */
-  timing: $TypeOf<typeof timing>;
+  timing: typeof timing;
 
   /**
    * Animates a value according to an analytical spring model based on
@@ -116,7 +115,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#spring
    */
-  spring: $TypeOf<typeof spring>;
+  spring: typeof spring;
 
   /**
    * Creates a new Animated value composed from two Animated values added
@@ -124,7 +123,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#add
    */
-  add: $TypeOf<typeof add>;
+  add: typeof add;
 
   /**
    * Creates a new Animated value composed by subtracting the second Animated
@@ -132,7 +131,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#subtract
    */
-  subtract: $TypeOf<typeof subtract>;
+  subtract: typeof subtract;
 
   /**
    * Creates a new Animated value composed by dividing the first Animated value
@@ -140,7 +139,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#divide
    */
-  divide: $TypeOf<typeof divide>;
+  divide: typeof divide;
 
   /**
    * Creates a new Animated value composed from two Animated values multiplied
@@ -148,7 +147,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#multiply
    */
-  multiply: $TypeOf<typeof multiply>;
+  multiply: typeof multiply;
 
   /**
    * Creates a new Animated value that is the (non-negative) modulo of the
@@ -156,7 +155,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#modulo
    */
-  modulo: $TypeOf<typeof modulo>;
+  modulo: typeof modulo;
 
   /**
    * Create a new Animated value that is limited between 2 values. It uses the
@@ -165,14 +164,14 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#diffclamp
    */
-  diffClamp: $TypeOf<typeof diffClamp>;
+  diffClamp: typeof diffClamp;
 
   /**
    * Starts an animation after the given delay.
    *
    * See https://reactnative.dev/docs/animated.html#delay
    */
-  delay: $TypeOf<typeof delay>;
+  delay: typeof delay;
 
   /**
    * Starts an array of animations in order, waiting for each to complete
@@ -181,7 +180,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#sequence
    */
-  sequence: $TypeOf<typeof sequence>;
+  sequence: typeof sequence;
 
   /**
    * Starts an array of animations all at the same time. By default, if one
@@ -190,7 +189,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#parallel
    */
-  parallel: $TypeOf<typeof parallel>;
+  parallel: typeof parallel;
 
   /**
    * Array of animations may run in parallel (overlap), but are started in
@@ -198,7 +197,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#stagger
    */
-  stagger: $TypeOf<typeof stagger>;
+  stagger: typeof stagger;
 
   /**
    * Loops a given animation continuously, so that each time it reaches the
@@ -206,7 +205,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#loop
    */
-  loop: $TypeOf<typeof loop>;
+  loop: typeof loop;
 
   /**
    * Takes an array of mappings and extracts values from each arg accordingly,
@@ -214,14 +213,14 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#event
    */
-  event: $TypeOf<typeof event>;
+  event: typeof event;
 
   /**
    * Make any React component Animatable.  Used to create `Animated.View`, etc.
    *
    * See https://reactnative.dev/docs/animated.html#createanimatedcomponent
    */
-  createAnimatedComponent: $TypeOf<typeof $16>;
+  createAnimatedComponent: typeof $16;
 
   /**
    * Imperative API to attach an animated value to an event on a view. Prefer
@@ -229,7 +228,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#attachnativeevent
    */
-  attachNativeEvent: $TypeOf<typeof $14.attachNativeEvent>;
+  attachNativeEvent: typeof $14.attachNativeEvent;
 
   /**
    * Advanced imperative API for snooping on animated events that are passed in
@@ -237,13 +236,13 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/animated.html#forkevent
    */
-  forkEvent: $TypeOf<typeof forkEvent>;
-  unforkEvent: $TypeOf<typeof unforkEvent>;
+  forkEvent: typeof forkEvent;
+  unforkEvent: typeof unforkEvent;
 
   /**
    * Expose Event class, so it can be used as a type for type checkers.
    */
-  Event: $TypeOf<typeof $4.AnimatedEvent>;
-  __PropsOnlyForTests: $TypeOf<typeof $10>;
+  Event: typeof $4.AnimatedEvent;
+  __PropsOnlyForTests: typeof $10;
 };
 export default $f2tExportDefault;

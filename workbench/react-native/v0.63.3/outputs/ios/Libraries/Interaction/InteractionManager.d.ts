@@ -1,4 +1,4 @@
-import { $FlowFixMe, $TypeOf } from "flow2dts-flow-types-polyfill";
+import { $FlowFixMe } from "flow2dts-flow-types-polyfill";
 // @flow
 declare type Handle = number;
 import { Task } from "./TaskQueue";
@@ -41,5 +41,5 @@ declare var InteractionManager:
   setDeadline: (deadline: number) => void;
 };
 export type { Handle };
-declare const $f2tExportDefault: $TypeOf<typeof InteractionManager>;
+declare const $f2tExportDefault: typeof InteractionManager;
 export default $f2tExportDefault;

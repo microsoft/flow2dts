@@ -1,9 +1,8 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $2 from "./EventSubscription";
 import EventEmitter$f2tTypeof from "./EventEmitter";
-declare type EventEmitter = $TypeOf<typeof EventEmitter$f2tTypeof>;
+declare type EventEmitter = typeof EventEmitter$f2tTypeof;
 import EventSubscriptionVendor$f2tTypeof from "./EventSubscriptionVendor";
-declare type EventSubscriptionVendor = $TypeOf<typeof EventSubscriptionVendor$f2tTypeof>;
+declare type EventSubscriptionVendor = typeof EventSubscriptionVendor$f2tTypeof;
 declare class EmitterSubscription extends $2 {
   emitter: EventEmitter;
   listener: Function;

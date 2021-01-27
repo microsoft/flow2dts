@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { HostComponent } from "../../Libraries/Renderer/shims/ReactNativeTypes";
 declare type Options = Readonly<
@@ -12,5 +11,5 @@ declare type Options = Readonly<
 declare type NativeComponentType<T> = HostComponent<T>;
 declare function codegenNativeComponent<Props>(componentName: string, options?: Options): NativeComponentType<Props>;
 export type { NativeComponentType };
-declare const $f2tExportDefault: $TypeOf<typeof codegenNativeComponent>;
+declare const $f2tExportDefault: typeof codegenNativeComponent;
 export default $f2tExportDefault;

@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $Diff } from "utility-types";
 // @flow
 import { ViewStyleProp } from "../../StyleSheet/StyleSheet";
@@ -30,7 +29,7 @@ React.ElementConfig<TouchableWithoutFeedback> & AndroidProps & IOSProps & {
   onShowUnderlay?: null | undefined | (() => void);
   onHideUnderlay?: null | undefined | (() => void);
   testOnly_pressed?: null | undefined | boolean;
-  hostRef: React.Ref<$TypeOf<typeof View>>;
+  hostRef: React.Ref<typeof View>;
 }>;
 declare const $f2tExportDefault: React.ComponentType<Readonly<$Diff<Props,
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

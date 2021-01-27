@@ -1,10 +1,9 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "react";
 import { PressEvent } from "../Types/CoreEventTypes";
 import { ScrollEvent } from "../Types/CoreEventTypes";
 import { KeyboardEvent } from "./Keyboard/Keyboard";
 import EmitterSubscription$f2tTypeof from "../vendor/emitter/EmitterSubscription";
-declare type EmitterSubscription = $TypeOf<typeof EmitterSubscription$f2tTypeof>;
+declare type EmitterSubscription = typeof EmitterSubscription$f2tTypeof;
 import { HostComponent } from "../Renderer/shims/ReactNativeTypes";
 declare type State =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -308,8 +307,8 @@ declare var ScrollResponderMixin:
 declare var ScrollResponder:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  Mixin: $TypeOf<typeof ScrollResponderMixin>;
+  Mixin: typeof ScrollResponderMixin;
 };
 export type { State };
-declare const $f2tExportDefault: $TypeOf<typeof ScrollResponder>;
+declare const $f2tExportDefault: typeof ScrollResponder;
 export default $f2tExportDefault;

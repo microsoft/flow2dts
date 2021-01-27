@@ -1,4 +1,4 @@
-import { $TypeOf, React$PropType$Primitive, ReactPropsCheckType } from "flow2dts-flow-types-polyfill";
+import { React$PropType$Primitive, ReactPropsCheckType } from "flow2dts-flow-types-polyfill";
 import $1 from "./DeprecatedEdgeInsetsPropType";
 import $2 from "prop-types";
 declare var stylePropType: ReactPropsCheckType;
@@ -47,7 +47,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#accessible
    */
-  accessible: $TypeOf<typeof $2.bool>;
+  accessible: typeof $2.bool;
 
   /**
    * Overrides the text that's read by the screen reader when the user interacts
@@ -56,7 +56,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#accessibilitylabel
    */
-  accessibilityLabel: $TypeOf<typeof $2.node>;
+  accessibilityLabel: typeof $2.node;
 
   /**
    * An accessibility hint helps users understand what will happen when they perform
@@ -66,7 +66,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#accessibilityHint
    */
-  accessibilityHint: $TypeOf<typeof $2.string>;
+  accessibilityHint: typeof $2.string;
 
   /**
    * Provides an array of custom actions available for accessibility.
@@ -80,14 +80,14 @@ declare const $f2tExportDefault:
    *
    * @platform ios
    */
-  accessibilityIgnoresInvertColors: $TypeOf<typeof $2.bool>;
+  accessibilityIgnoresInvertColors: typeof $2.bool;
 
   /**
    * Indicates to accessibility services to treat UI component like a specific role.
    */
   accessibilityRole: React$PropType$Primitive<"none" | "button" | "link" | "search" | "image" | "keyboardkey" | "text" | "adjustable" | "imagebutton" | "header" | "summary" | "alert" | "checkbox" | "combobox" | "menu" | "menubar" | "menuitem" | "progressbar" | "radio" | "radiogroup" | "scrollbar" | "spinbutton" | "switch" | "tab" | "tablist" | "timer" | "toolbar">;
-  accessibilityState: $TypeOf<typeof $2.object>;
-  accessibilityValue: $TypeOf<typeof $2.object>;
+  accessibilityState: typeof $2.object;
+  accessibilityValue: typeof $2.object;
 
   /**
    * Indicates to accessibility services whether the user should be notified
@@ -119,7 +119,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#accessibilityviewismodal
    */
-  accessibilityViewIsModal: $TypeOf<typeof $2.bool>;
+  accessibilityViewIsModal: typeof $2.bool;
 
   /**
    * A value indicating whether the accessibility elements contained within
@@ -129,7 +129,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#accessibilityElementsHidden
    */
-  accessibilityElementsHidden: $TypeOf<typeof $2.bool>;
+  accessibilityElementsHidden: typeof $2.bool;
 
   /**
    * When `accessible` is true, the system will try to invoke this function
@@ -137,7 +137,7 @@ declare const $f2tExportDefault:
    *
    * @platform ios
    */
-  onAccessibilityAction: $TypeOf<typeof $2.func>;
+  onAccessibilityAction: typeof $2.func;
 
   /**
    * When `accessible` is true, the system will try to invoke this function
@@ -145,7 +145,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onaccessibilitytap
    */
-  onAccessibilityTap: $TypeOf<typeof $2.func>;
+  onAccessibilityTap: typeof $2.func;
 
   /**
    * When `accessible` is `true`, the system will invoke this function when the
@@ -153,7 +153,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onmagictap
    */
-  onMagicTap: $TypeOf<typeof $2.func>;
+  onMagicTap: typeof $2.func;
 
   /**
    * Used to locate this view in end-to-end tests.
@@ -162,7 +162,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#testid
    */
-  testID: $TypeOf<typeof $2.string>;
+  testID: typeof $2.string;
 
   /**
    * Used to locate this view from native classes.
@@ -171,7 +171,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#nativeid
    */
-  nativeID: $TypeOf<typeof $2.string>;
+  nativeID: typeof $2.string;
 
   /**
    * For most touch interactions, you'll simply want to wrap your component in
@@ -188,7 +188,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onrespondergrant
    */
-  onResponderGrant: $TypeOf<typeof $2.func>;
+  onResponderGrant: typeof $2.func;
 
   /**
    * The user is moving their finger.
@@ -198,7 +198,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onrespondermove
    */
-  onResponderMove: $TypeOf<typeof $2.func>;
+  onResponderMove: typeof $2.func;
 
   /**
    * Another responder is already active and will not release it to that `View`
@@ -209,7 +209,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onresponderreject
    */
-  onResponderReject: $TypeOf<typeof $2.func>;
+  onResponderReject: typeof $2.func;
 
   /**
    * Fired at the end of the touch.
@@ -219,7 +219,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onresponderrelease
    */
-  onResponderRelease: $TypeOf<typeof $2.func>;
+  onResponderRelease: typeof $2.func;
 
   /**
    * The responder has been taken from the `View`. Might be taken by other
@@ -232,7 +232,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onresponderterminate
    */
-  onResponderTerminate: $TypeOf<typeof $2.func>;
+  onResponderTerminate: typeof $2.func;
 
   /**
    * Some other `View` wants to become responder and is asking this `View` to
@@ -243,7 +243,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onresponderterminationrequest
    */
-  onResponderTerminationRequest: $TypeOf<typeof $2.func>;
+  onResponderTerminationRequest: typeof $2.func;
 
   /**
    * Does this view want to become responder on the start of a touch?
@@ -253,7 +253,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onstartshouldsetresponder
    */
-  onStartShouldSetResponder: $TypeOf<typeof $2.func>;
+  onStartShouldSetResponder: typeof $2.func;
 
   /**
    * If a parent `View` wants to prevent a child `View` from becoming responder
@@ -264,7 +264,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onstartshouldsetrespondercapture
    */
-  onStartShouldSetResponderCapture: $TypeOf<typeof $2.func>;
+  onStartShouldSetResponderCapture: typeof $2.func;
 
   /**
    * Does this view want to "claim" touch responsiveness? This is called for
@@ -275,7 +275,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onmoveshouldsetresponder
    */
-  onMoveShouldSetResponder: $TypeOf<typeof $2.func>;
+  onMoveShouldSetResponder: typeof $2.func;
 
   /**
    * If a parent `View` wants to prevent a child `View` from becoming responder
@@ -286,7 +286,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onMoveShouldsetrespondercapture
    */
-  onMoveShouldSetResponderCapture: $TypeOf<typeof $2.func>;
+  onMoveShouldSetResponderCapture: typeof $2.func;
 
   /**
    * This defines how far a touch event can start away from the view.
@@ -299,7 +299,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#hitslop
    */
-  hitSlop: $TypeOf<typeof $1>;
+  hitSlop: typeof $1;
 
   /**
    * Invoked on mount and layout changes with:
@@ -312,7 +312,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#onlayout
    */
-  onLayout: $TypeOf<typeof $2.func>;
+  onLayout: typeof $2.func;
 
   /**
    * Controls whether the `View` can be the target of touch events.
@@ -324,7 +324,7 @@ declare const $f2tExportDefault:
   /**
    * See https://reactnative.dev/docs/style.html
    */
-  style: $TypeOf<typeof stylePropType>;
+  style: typeof stylePropType;
 
   /**
    * This is a special performance property exposed by `RCTView` and is useful
@@ -336,7 +336,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#removeclippedsubviews
    */
-  removeClippedSubviews: $TypeOf<typeof $2.bool>;
+  removeClippedSubviews: typeof $2.bool;
 
   /**
    * Whether this `View` should render itself (and all of its children) into a
@@ -346,7 +346,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#rendertohardwaretextureandroid
    */
-  renderToHardwareTextureAndroid: $TypeOf<typeof $2.bool>;
+  renderToHardwareTextureAndroid: typeof $2.bool;
 
   /**
    * Whether this `View` should be rendered as a bitmap before compositing.
@@ -355,7 +355,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#shouldrasterizeios
    */
-  shouldRasterizeIOS: $TypeOf<typeof $2.bool>;
+  shouldRasterizeIOS: typeof $2.bool;
 
   /**
    * Views that are only used to layout their children or otherwise don't draw
@@ -367,7 +367,7 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#collapsable
    */
-  collapsable: $TypeOf<typeof $2.bool>;
+  collapsable: typeof $2.bool;
 
   /**
    * Whether this `View` needs to rendered offscreen and composited with an
@@ -377,6 +377,6 @@ declare const $f2tExportDefault:
    *
    * See https://reactnative.dev/docs/view.html#needsoffscreenalphacompositing
    */
-  needsOffscreenAlphaCompositing: $TypeOf<typeof $2.bool>;
+  needsOffscreenAlphaCompositing: typeof $2.bool;
 };
 export default $f2tExportDefault;

@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "react";
 import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
 declare type ComponentRef = $1.ElementRef<HostComponent<{}>>;
@@ -17,16 +16,16 @@ export { currentlyFocusedInput, focusInput, blurInput, currentlyFocusedField, fo
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  currentlyFocusedInput: $TypeOf<typeof currentlyFocusedInput>;
-  focusInput: $TypeOf<typeof focusInput>;
-  blurInput: $TypeOf<typeof blurInput>;
-  currentlyFocusedField: $TypeOf<typeof currentlyFocusedField>;
-  focusField: $TypeOf<typeof focusField>;
-  blurField: $TypeOf<typeof blurField>;
-  focusTextInput: $TypeOf<typeof focusTextInput>;
-  blurTextInput: $TypeOf<typeof blurTextInput>;
-  registerInput: $TypeOf<typeof registerInput>;
-  unregisterInput: $TypeOf<typeof unregisterInput>;
-  isTextInput: $TypeOf<typeof isTextInput>;
+  currentlyFocusedInput: typeof currentlyFocusedInput;
+  focusInput: typeof focusInput;
+  blurInput: typeof blurInput;
+  currentlyFocusedField: typeof currentlyFocusedField;
+  focusField: typeof focusField;
+  blurField: typeof blurField;
+  focusTextInput: typeof focusTextInput;
+  blurTextInput: typeof blurTextInput;
+  registerInput: typeof registerInput;
+  unregisterInput: typeof unregisterInput;
+  isTextInput: typeof isTextInput;
 };
 export default $f2tExportDefault;
