@@ -1,6 +1,6 @@
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
-import $14 from "./AnimatedEvent";
-import $4 from "./AnimatedEvent";
+import * as $14 from "./AnimatedEvent";
+import * as $4 from "./AnimatedEvent";
 import $1 from "./nodes/AnimatedAddition";
 import $2 from "./nodes/AnimatedDiffClamp";
 import $3 from "./nodes/AnimatedDivision";

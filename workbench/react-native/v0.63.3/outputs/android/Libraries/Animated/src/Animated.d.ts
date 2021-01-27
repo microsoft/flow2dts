@@ -1,3 +1,4 @@
+export * from "./AnimatedMock";
 import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $3 from "../../Components/View/View";
 import $2 from "react";
