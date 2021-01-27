@@ -23,18 +23,23 @@ export const exportVisitor: Visitor<State> = {
         path.replaceWith(t.exportDefaultDeclaration(typeAnnotation.exprName))
       } else {
         // Export each value separately as ES6 named exports
-        if (t.isTSTypeLiteral(typeAnnotation)) {
-          const intermediateLocalVars: t.Identifier[] = []
-          const exportSpecifiers: t.ExportSpecifier[] = []
-          typeAnnotation.members.forEach((property) => {
+        const intermediateLocalVars: t.Identifier[] = []
+        const exportSpecifiers: t.ExportSpecifier[] = []
+        const typeLiterals = t.isTSTypeLiteral(typeAnnotation)
+          ? [typeAnnotation]
+          : t.isTSIntersectionType(typeAnnotation)
+          ? (typeAnnotation.types.filter((x) => t.isTSTypeLiteral(x)) as t.TSTypeLiteral[])
+          : []
+        typeLiterals.forEach((typeLiteral) => {
+          typeLiteral.members.forEach((property) => {
             t.assertTSPropertySignature(property)
             t.assertIdentifier(property.key)
             t.assertTSTypeAnnotation(property.typeAnnotation)
-            const typeAnnotation = property.typeAnnotation.typeAnnotation
+            const propertyTypeAnnotation = property.typeAnnotation.typeAnnotation
             const unwrappedType =
-              t.isTSTypeReference(typeAnnotation) && t.isIdentifier(typeAnnotation.typeName)
-                ? unwrapTypeOf(typeAnnotation)
-                : typeAnnotation
+              t.isTSTypeReference(propertyTypeAnnotation) && t.isIdentifier(propertyTypeAnnotation.typeName)
+                ? unwrapTypeOf(propertyTypeAnnotation)
+                : propertyTypeAnnotation
             let intermediateLocalVar: t.Identifier | null = null
             let exportSpecifier: t.ExportSpecifier | null = null
             if (t.isTSTypeQuery(unwrappedType)) {
@@ -80,12 +85,12 @@ export const exportVisitor: Visitor<State> = {
             }
             exportSpecifiers.push(exportSpecifier)
           })
-          intermediateLocalVars.forEach((valueIdentifier) => {
-            path.insertBefore(t.variableDeclaration("const", [t.variableDeclarator(valueIdentifier)]))
-          })
-          if (exportSpecifiers.length > 0) {
-            path.insertBefore(t.exportNamedDeclaration(undefined, exportSpecifiers))
-          }
+        })
+        intermediateLocalVars.forEach((valueIdentifier) => {
+          path.insertBefore(t.variableDeclaration("const", [t.variableDeclarator(valueIdentifier)]))
+        })
+        if (exportSpecifiers.length > 0) {
+          path.insertBefore(t.exportNamedDeclaration(undefined, exportSpecifiers))
         }
         // Export the entire object as the ES6 default export
         const id = t.identifier(nameForExportDefault)
