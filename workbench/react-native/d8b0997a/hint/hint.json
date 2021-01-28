@@ -1,6 +1,6 @@
 {
     "libraries": [
-        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_1c07be3a"
+        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_a0c5b7b"
     ],
     "files": {
         "/index.js.flow": {
@@ -381,7 +381,13 @@
                     }
                 },
                 "DeviceInfo": {
-                    "type": "type[guess-import]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 33,
+                        "column": 13,
+                        "local": "NativeDeviceInfo",
+                        "type": "value"
+                    }
                 },
                 "DevSettings": {
                     "type": "type",
@@ -769,6 +775,57 @@
                     }
                 ]
             }
+        },
+        "/Libraries/ActionSheetIOS/ActionSheetIOS.js.flow": {
+            "imports": {
+                "ColorValue": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 16,
+                        "column": 6,
+                        "local": "ColorValue",
+                        "type": "type"
+                    }
+                },
+                "ProcessedColorValue": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 5,
+                        "column": 6,
+                        "local": "ProcessedColorValue",
+                        "type": "type"
+                    }
+                }
+            },
+            "typeofs": {
+                "ActionSheetIOS": [
+                    {
+                        "row": 66,
+                        "column": 32,
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 5,
+                            "column": 13,
+                            "local": "ActionSheetIOS",
+                            "type": "value"
+                        }
+                    }
+                ]
+            }
+        },
+        "/Libraries/ActionSheetIOS/NativeActionSheetManager.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 11,
+                        "local": "TurboModule",
+                        "type": "type"
+                    }
+                }
+            },
+            "typeofs": {}
         },
         "/Libraries/Alert/Alert.js.flow": {
             "imports": {},
@@ -2396,150 +2453,6 @@
                 ]
             }
         },
-        "/Libraries/AppState/AppState.js.flow": {
-            "imports": {
-                "NativeEventEmitter": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 17,
-                        "column": 15,
-                        "local": "NativeEventEmitter",
-                        "type": "class"
-                    }
-                },
-                "EventEmitter": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 6,
-                        "column": 3,
-                        "local": "remove",
-                        "type": "value"
-                    }
-                }
-            },
-            "typeofs": {
-                "NativeEventEmitter": [
-                    {
-                        "row": 32,
-                        "column": 24,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 17,
-                            "column": 15,
-                            "local": "NativeEventEmitter",
-                            "type": "class"
-                        }
-                    }
-                ],
-                "EventEmitter": [
-                    {
-                        "row": 49,
-                        "column": 24,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 6,
-                            "column": 3,
-                            "local": "remove",
-                            "type": "value"
-                        }
-                    }
-                ],
-                "AppStateInstance": [
-                    {
-                        "row": 53,
-                        "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 51,
-                            "column": 13,
-                            "local": "AppStateInstance",
-                            "type": "value"
-                        }
-                    }
-                ]
-            }
-        },
-        "/Libraries/AppState/NativeAppState.js.flow": {
-            "imports": {
-                "TurboModule": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 6,
-                        "column": 11,
-                        "local": "TurboModule",
-                        "type": "type"
-                    }
-                }
-            },
-            "typeofs": {}
-        },
-        "/Libraries/BatchedBridge/BatchedBridge.js.flow": {
-            "imports": {},
-            "typeofs": {
-                "$1": [
-                    {
-                        "row": 2,
-                        "column": 34,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 10,
-                            "column": 15,
-                            "local": "MessageQueue",
-                            "type": "class"
-                        }
-                    }
-                ],
-                "BatchedBridge": [
-                    {
-                        "row": 7,
-                        "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 5,
-                            "column": 13,
-                            "local": "BatchedBridge",
-                            "type": "value"
-                        }
-                    }
-                ]
-            }
-        },
-        "/Libraries/BatchedBridge/MessageQueue.js.flow": {
-            "imports": {},
-            "typeofs": {
-                "MessageQueue": [
-                    {
-                        "row": 94,
-                        "column": 32,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 10,
-                            "column": 15,
-                            "local": "MessageQueue",
-                            "type": "class"
-                        }
-                    }
-                ]
-            }
-        },
-        "/Libraries/BatchedBridge/NativeModules.js.flow": {
-            "imports": {},
-            "typeofs": {
-                "NativeModules": [
-                    {
-                        "row": 17,
-                        "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 12,
-                            "column": 13,
-                            "local": "NativeModules",
-                            "type": "value"
-                        }
-                    }
-                ]
-            }
-        },
         "/Libraries/Blob/Blob.js.flow": {
             "imports": {
                 "BlobData": {
@@ -2788,44 +2701,70 @@
             },
             "typeofs": {}
         },
-        "/Libraries/ActionSheetIOS/ActionSheetIOS.js.flow": {
+        "/Libraries/AppState/AppState.js.flow": {
             "imports": {
-                "ColorValue": {
-                    "type": "type",
+                "NativeEventEmitter": {
+                    "type": "class",
                     "resolvedDecl": {
-                        "row": 16,
-                        "column": 6,
-                        "local": "ColorValue",
-                        "type": "type"
+                        "row": 17,
+                        "column": 15,
+                        "local": "NativeEventEmitter",
+                        "type": "class"
                     }
                 },
-                "ProcessedColorValue": {
-                    "type": "type",
+                "EventEmitter": {
+                    "type": "value",
                     "resolvedDecl": {
-                        "row": 5,
-                        "column": 6,
-                        "local": "ProcessedColorValue",
-                        "type": "type"
+                        "row": 6,
+                        "column": 3,
+                        "local": "remove",
+                        "type": "value"
                     }
                 }
             },
             "typeofs": {
-                "ActionSheetIOS": [
+                "NativeEventEmitter": [
                     {
-                        "row": 66,
+                        "row": 32,
+                        "column": 24,
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 17,
+                            "column": 15,
+                            "local": "NativeEventEmitter",
+                            "type": "class"
+                        }
+                    }
+                ],
+                "EventEmitter": [
+                    {
+                        "row": 49,
+                        "column": 24,
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 6,
+                            "column": 3,
+                            "local": "remove",
+                            "type": "value"
+                        }
+                    }
+                ],
+                "AppStateInstance": [
+                    {
+                        "row": 53,
                         "column": 32,
                         "type": "value",
                         "resolvedDecl": {
-                            "row": 5,
+                            "row": 51,
                             "column": 13,
-                            "local": "ActionSheetIOS",
+                            "local": "AppStateInstance",
                             "type": "value"
                         }
                     }
                 ]
             }
         },
-        "/Libraries/ActionSheetIOS/NativeActionSheetManager.js.flow": {
+        "/Libraries/AppState/NativeAppState.js.flow": {
             "imports": {
                 "TurboModule": {
                     "type": "type",
@@ -2906,6 +2845,73 @@
                 }
             },
             "typeofs": {}
+        },
+        "/Libraries/BatchedBridge/BatchedBridge.js.flow": {
+            "imports": {},
+            "typeofs": {
+                "$1": [
+                    {
+                        "row": 2,
+                        "column": 34,
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 10,
+                            "column": 15,
+                            "local": "MessageQueue",
+                            "type": "class"
+                        }
+                    }
+                ],
+                "BatchedBridge": [
+                    {
+                        "row": 7,
+                        "column": 32,
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 5,
+                            "column": 13,
+                            "local": "BatchedBridge",
+                            "type": "value"
+                        }
+                    }
+                ]
+            }
+        },
+        "/Libraries/BatchedBridge/MessageQueue.js.flow": {
+            "imports": {},
+            "typeofs": {
+                "MessageQueue": [
+                    {
+                        "row": 94,
+                        "column": 32,
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 10,
+                            "column": 15,
+                            "local": "MessageQueue",
+                            "type": "class"
+                        }
+                    }
+                ]
+            }
+        },
+        "/Libraries/BatchedBridge/NativeModules.js.flow": {
+            "imports": {},
+            "typeofs": {
+                "NativeModules": [
+                    {
+                        "row": 17,
+                        "column": 32,
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 12,
+                            "column": 13,
+                            "local": "NativeModules",
+                            "type": "value"
+                        }
+                    }
+                ]
+            }
         },
         "/Libraries/Components/Button.js.flow": {
             "imports": {
@@ -6965,7 +6971,13 @@
                     "type": "value[guess-import]"
                 },
                 "LogBoxLog": {
-                    "type": "value"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 25,
+                        "column": 15,
+                        "local": "LogBoxLog",
+                        "type": "class"
+                    }
                 }
             },
             "typeofs": {
@@ -8938,6 +8950,24 @@
             },
             "typeofs": {}
         },
+        "/Libraries/TurboModule/RCTExport.js.flow": {
+            "imports": {},
+            "typeofs": {}
+        },
+        "/Libraries/TurboModule/TurboModuleRegistry.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 11,
+                        "local": "TurboModule",
+                        "type": "type"
+                    }
+                }
+            },
+            "typeofs": {}
+        },
         "/Libraries/Types/CodegenTypes.js.flow": {
             "imports": {
                 "SyntheticEvent": {
@@ -8963,24 +8993,6 @@
                         "row": 96,
                         "column": 6,
                         "local": "HostComponent",
-                        "type": "type"
-                    }
-                }
-            },
-            "typeofs": {}
-        },
-        "/Libraries/TurboModule/RCTExport.js.flow": {
-            "imports": {},
-            "typeofs": {}
-        },
-        "/Libraries/TurboModule/TurboModuleRegistry.js.flow": {
-            "imports": {
-                "TurboModule": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 6,
-                        "column": 11,
-                        "local": "TurboModule",
                         "type": "type"
                     }
                 }
@@ -9175,7 +9187,13 @@
         "/Libraries/Utilities/DeviceInfo.js.flow": {
             "imports": {
                 "NativeDeviceInfo": {
-                    "type": "unresolved[error]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 33,
+                        "column": 13,
+                        "local": "NativeDeviceInfo",
+                        "type": "value"
+                    }
                 }
             },
             "typeofs": {
@@ -9183,7 +9201,13 @@
                     {
                         "row": 4,
                         "column": 32,
-                        "type": "unresolved[error]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 33,
+                            "column": 13,
+                            "local": "NativeDeviceInfo",
+                            "type": "value"
+                        }
                     }
                 ]
             }
@@ -11564,6 +11588,52 @@
                 ]
             }
         },
+        "/Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.js.flow": {
+            "imports": {},
+            "typeofs": {
+                "AccessibilityInfo": [
+                    {
+                        "row": 137,
+                        "column": 32,
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 16,
+                            "column": 13,
+                            "local": "AccessibilityInfo",
+                            "type": "value"
+                        }
+                    }
+                ]
+            }
+        },
+        "/Libraries/Components/AccessibilityInfo/NativeAccessibilityInfo.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 11,
+                        "local": "TurboModule",
+                        "type": "type"
+                    }
+                }
+            },
+            "typeofs": {}
+        },
+        "/Libraries/Components/AccessibilityInfo/NativeAccessibilityManager.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 11,
+                        "local": "TurboModule",
+                        "type": "type"
+                    }
+                }
+            },
+            "typeofs": {}
+        },
         "/Libraries/Components/ActivityIndicator/ActivityIndicator.js.flow": {
             "imports": {
                 "HostComponent": {
@@ -11658,52 +11728,6 @@
                         "row": 96,
                         "column": 6,
                         "local": "HostComponent",
-                        "type": "type"
-                    }
-                }
-            },
-            "typeofs": {}
-        },
-        "/Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.js.flow": {
-            "imports": {},
-            "typeofs": {
-                "AccessibilityInfo": [
-                    {
-                        "row": 137,
-                        "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 16,
-                            "column": 13,
-                            "local": "AccessibilityInfo",
-                            "type": "value"
-                        }
-                    }
-                ]
-            }
-        },
-        "/Libraries/Components/AccessibilityInfo/NativeAccessibilityInfo.js.flow": {
-            "imports": {
-                "TurboModule": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 6,
-                        "column": 11,
-                        "local": "TurboModule",
-                        "type": "type"
-                    }
-                }
-            },
-            "typeofs": {}
-        },
-        "/Libraries/Components/AccessibilityInfo/NativeAccessibilityManager.js.flow": {
-            "imports": {
-                "TurboModule": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 6,
-                        "column": 11,
-                        "local": "TurboModule",
                         "type": "type"
                     }
                 }
@@ -13406,7 +13430,13 @@
                     }
                 },
                 "ScrollViewContext": {
-                    "type": "unresolved[error]"
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 13,
+                        "local": "ScrollViewContext",
+                        "type": "value"
+                    }
                 },
                 "ScrollViewNativeComponent": {
                     "type": "type",
@@ -13472,12 +13502,24 @@
                     {
                         "row": 571,
                         "column": 21,
-                        "type": "unresolved[error]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 6,
+                            "column": 13,
+                            "local": "ScrollViewContext",
+                            "type": "value"
+                        }
                     },
                     {
                         "row": 577,
                         "column": 26,
-                        "type": "unresolved[error]"
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 6,
+                            "column": 13,
+                            "local": "ScrollViewContext",
+                            "type": "value"
+                        }
                     }
                 ],
                 "Component": [
@@ -17250,7 +17292,13 @@
                     "type": "value[guess-import]"
                 },
                 "LogBoxLog": {
-                    "type": "value"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 25,
+                        "column": 15,
+                        "local": "LogBoxLog",
+                        "type": "class"
+                    }
                 }
             },
             "typeofs": {
@@ -17377,7 +17425,13 @@
                     }
                 },
                 "LogBoxLog": {
-                    "type": "value"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 25,
+                        "column": 15,
+                        "local": "LogBoxLog",
+                        "type": "class"
+                    }
                 }
             },
             "typeofs": {

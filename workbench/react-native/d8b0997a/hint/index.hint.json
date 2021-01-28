@@ -907,7 +907,18 @@
                 "local": "DeviceInfo"
             },
             "isImportedType": true,
-            "error": "[unrecognizable stdout]:0:1,0:0\r\n"
+            "resolved": {
+                "begin": {
+                    "row": 33,
+                    "column": 31
+                },
+                "end": {
+                    "row": 38,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/NativeDeviceInfo.js.flow"
+            }
         },
         "DevSettings": {
             "source": {

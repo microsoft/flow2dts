@@ -1,6 +1,6 @@
 {
     "libraries": [
-        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_32912956"
+        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_6958b8c"
     ],
     "files": {
         "/index.js.flow": {
@@ -5447,7 +5447,13 @@
                     "type": "value[guess-import]"
                 },
                 "LogBoxLog": {
-                    "type": "value"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 25,
+                        "column": 15,
+                        "local": "LogBoxLog",
+                        "type": "class"
+                    }
                 }
             },
             "typeofs": {
@@ -15672,7 +15678,13 @@
                     "type": "value[guess-import]"
                 },
                 "LogBoxLog": {
-                    "type": "value"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 25,
+                        "column": 15,
+                        "local": "LogBoxLog",
+                        "type": "class"
+                    }
                 }
             },
             "typeofs": {
@@ -15799,7 +15811,13 @@
                     }
                 },
                 "LogBoxLog": {
-                    "type": "value"
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 25,
+                        "column": 15,
+                        "local": "LogBoxLog",
+                        "type": "class"
+                    }
                 }
             },
             "typeofs": {
