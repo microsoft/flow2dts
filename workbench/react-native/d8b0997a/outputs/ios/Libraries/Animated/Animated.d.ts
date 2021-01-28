@@ -1,3 +1,4 @@
+export * from "./AnimatedMock";
 // @flow
 import AnimatedFlatList$f2tTypeof from "./components/AnimatedFlatList";
 declare type AnimatedFlatList = typeof AnimatedFlatList$f2tTypeof;

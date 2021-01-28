@@ -136,6 +136,35 @@ const visitors: OverridesVisitors = {
         // path.pushContainer("body", ast`export * from "./TypeScriptSupplementals"` as t.Statement[])
       },
     },
+    ImportDefaultSpecifier: {
+      exit(path) {
+        if (path.node.local.name === "Animated$f2tTypeof") {
+          path.replaceWith(t.importNamespaceSpecifier(path.node.local))
+        }
+      },
+    },
+  },
+  // TODO: New overrides API should allow multiple overrides to a single file, so that this can be grouped together with the 'animated' override above in `index.d.ts`
+  "Libraries/Animated/Animated.d.ts": {
+    Program: {
+      exit(path) {
+        const exportDeclaration = ast`
+          export * from "./AnimatedMock"
+        ` as t.ExportDeclaration
+        path.unshiftContainer("body", [exportDeclaration])
+      },
+    },
+  },
+  "Libraries/Animated/AnimatedImplementation.d.ts": {
+    ImportDeclaration: {
+      exit(path) {
+        if (path.node.source.value === "./AnimatedEvent") {
+          path.node.specifiers = path.node.specifiers.map((specifier) =>
+            t.isImportDefaultSpecifier(specifier) ? t.importNamespaceSpecifier(specifier.local) : specifier
+          )
+        }
+      },
+    },
   },
   "Libraries/Lists/SectionList.d.ts": listsVisitor,
   "Libraries/Lists/VirtualizedSectionList.d.ts": {

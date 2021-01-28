@@ -74,7 +74,7 @@ import ActionSheetIOS$f2tTypeof from "./Libraries/ActionSheetIOS/ActionSheetIOS"
 declare type ActionSheetIOS = typeof ActionSheetIOS$f2tTypeof;
 import Alert$f2tTypeof from "./Libraries/Alert/Alert";
 declare type Alert = typeof Alert$f2tTypeof;
-import Animated$f2tTypeof from "./Libraries/Animated/Animated";
+import * as Animated$f2tTypeof from "./Libraries/Animated/Animated";
 declare type Animated = typeof Animated$f2tTypeof;
 import Appearance$f2tTypeof from "./Libraries/Utilities/Appearance";
 declare type Appearance = typeof Appearance$f2tTypeof;
