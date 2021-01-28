@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "HostComponent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 96,

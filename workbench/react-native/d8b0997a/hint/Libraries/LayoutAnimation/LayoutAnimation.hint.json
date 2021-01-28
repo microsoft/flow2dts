@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "LayoutAnimationType"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 228,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "LayoutAnimationProperty"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 236,
@@ -44,6 +46,7 @@
                 "column": 14,
                 "local": "LayoutAnimationConfig"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 249,

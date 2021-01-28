@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "BlurEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 159,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "FocusEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 167,
@@ -44,6 +46,7 @@
                 "column": 14,
                 "local": "MouseEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 175,
@@ -63,6 +66,7 @@
                 "column": 14,
                 "local": "PressEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 95,
@@ -82,6 +86,7 @@
                 "column": 14,
                 "local": "Layout"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 59,
@@ -101,6 +106,7 @@
                 "column": 14,
                 "local": "LayoutEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 79,
@@ -120,6 +126,7 @@
                 "column": 14,
                 "local": "EdgeInsetsProp"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 4,
@@ -139,6 +146,7 @@
                 "column": 14,
                 "local": "Node"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 268,
@@ -158,6 +166,7 @@
                 "column": 14,
                 "local": "ViewStyleProp"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 15,
@@ -177,6 +186,7 @@
                 "column": 14,
                 "local": "AccessibilityRole"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 4,
@@ -196,6 +206,7 @@
                 "column": 14,
                 "local": "AccessibilityState"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 45,
@@ -215,6 +226,7 @@
                 "column": 14,
                 "local": "AccessibilityValue"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 54,
@@ -234,6 +246,7 @@
                 "column": 14,
                 "local": "AccessibilityActionEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 41,
@@ -253,6 +266,7 @@
                 "column": 14,
                 "local": "AccessibilityActionInfo"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 33,

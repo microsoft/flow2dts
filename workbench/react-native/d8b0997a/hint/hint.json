@@ -1,6 +1,6 @@
 {
     "libraries": [
-        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_31466df8"
+        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_1c07be3a"
     ],
     "files": {
         "/index.js.flow": {
@@ -369,7 +369,7 @@
                     }
                 },
                 "Clipboard": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "DatePickerAndroid": {
                     "type": "class",
@@ -381,7 +381,7 @@
                     }
                 },
                 "DeviceInfo": {
-                    "type": "unresolved[error]"
+                    "type": "type[guess-import]"
                 },
                 "DevSettings": {
                     "type": "type",
@@ -474,7 +474,7 @@
                     }
                 },
                 "LogBox": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "NativeDialogManagerAndroid": {
                     "type": "value",
@@ -588,7 +588,7 @@
                     "type": "type[guess-import]"
                 },
                 "TurboModuleRegistry": {
-                    "type": "unresolved[missing]"
+                    "type": "type[guess-import]"
                 },
                 "UIManager": {
                     "type": "type",
@@ -769,57 +769,6 @@
                     }
                 ]
             }
-        },
-        "/Libraries/ActionSheetIOS/ActionSheetIOS.js.flow": {
-            "imports": {
-                "ColorValue": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 16,
-                        "column": 6,
-                        "local": "ColorValue",
-                        "type": "type"
-                    }
-                },
-                "ProcessedColorValue": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 5,
-                        "column": 6,
-                        "local": "ProcessedColorValue",
-                        "type": "type"
-                    }
-                }
-            },
-            "typeofs": {
-                "ActionSheetIOS": [
-                    {
-                        "row": 66,
-                        "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 5,
-                            "column": 13,
-                            "local": "ActionSheetIOS",
-                            "type": "value"
-                        }
-                    }
-                ]
-            }
-        },
-        "/Libraries/ActionSheetIOS/NativeActionSheetManager.js.flow": {
-            "imports": {
-                "TurboModule": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 6,
-                        "column": 11,
-                        "local": "TurboModule",
-                        "type": "type"
-                    }
-                }
-            },
-            "typeofs": {}
         },
         "/Libraries/Alert/Alert.js.flow": {
             "imports": {},
@@ -2839,6 +2788,57 @@
             },
             "typeofs": {}
         },
+        "/Libraries/ActionSheetIOS/ActionSheetIOS.js.flow": {
+            "imports": {
+                "ColorValue": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 16,
+                        "column": 6,
+                        "local": "ColorValue",
+                        "type": "type"
+                    }
+                },
+                "ProcessedColorValue": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 5,
+                        "column": 6,
+                        "local": "ProcessedColorValue",
+                        "type": "type"
+                    }
+                }
+            },
+            "typeofs": {
+                "ActionSheetIOS": [
+                    {
+                        "row": 66,
+                        "column": 32,
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 5,
+                            "column": 13,
+                            "local": "ActionSheetIOS",
+                            "type": "value"
+                        }
+                    }
+                ]
+            }
+        },
+        "/Libraries/ActionSheetIOS/NativeActionSheetManager.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 11,
+                        "local": "TurboModule",
+                        "type": "type"
+                    }
+                }
+            },
+            "typeofs": {}
+        },
         "/Libraries/BugReporting/BugReporting.js.flow": {
             "imports": {},
             "typeofs": {
@@ -4271,7 +4271,7 @@
                     {
                         "row": 269,
                         "column": 34,
-                        "type": "unresolved[error]"
+                        "type": "value"
                     },
                     {
                         "row": 275,
@@ -5528,7 +5528,7 @@
         "/Libraries/Image/ImageAnalyticsTagContext.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 }
             },
             "typeofs": {
@@ -6632,7 +6632,7 @@
         "/Libraries/Lists/VirtualizedList.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "ScrollResponderType": {
                     "type": "type",
@@ -6806,7 +6806,7 @@
                     }
                 },
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 }
             },
             "typeofs": {}
@@ -6962,7 +6962,7 @@
         "/Libraries/LogBox/LogBoxInspectorContainer.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "LogBoxLog": {
                     "type": "value"
@@ -6987,7 +6987,7 @@
         "/Libraries/LogBox/LogBoxNotificationContainer.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "LogBoxLog": {
                     "type": "class",
@@ -7575,7 +7575,7 @@
                     }
                 },
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 }
             },
             "typeofs": {}
@@ -7638,7 +7638,7 @@
         "/Libraries/ReactNative/AppContainer.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 }
             },
             "typeofs": {
@@ -8938,24 +8938,6 @@
             },
             "typeofs": {}
         },
-        "/Libraries/TurboModule/RCTExport.js.flow": {
-            "imports": {},
-            "typeofs": {}
-        },
-        "/Libraries/TurboModule/TurboModuleRegistry.js.flow": {
-            "imports": {
-                "TurboModule": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 6,
-                        "column": 11,
-                        "local": "TurboModule",
-                        "type": "type"
-                    }
-                }
-            },
-            "typeofs": {}
-        },
         "/Libraries/Types/CodegenTypes.js.flow": {
             "imports": {
                 "SyntheticEvent": {
@@ -8973,7 +8955,7 @@
         "/Libraries/Types/CoreEventTypes.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "HostComponent": {
                     "type": "type",
@@ -8981,6 +8963,24 @@
                         "row": 96,
                         "column": 6,
                         "local": "HostComponent",
+                        "type": "type"
+                    }
+                }
+            },
+            "typeofs": {}
+        },
+        "/Libraries/TurboModule/RCTExport.js.flow": {
+            "imports": {},
+            "typeofs": {}
+        },
+        "/Libraries/TurboModule/TurboModuleRegistry.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 11,
+                        "local": "TurboModule",
                         "type": "type"
                     }
                 }
@@ -9529,7 +9529,7 @@
         "/Libraries/Utilities/PerformanceLoggerContext.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "IPerformanceLogger": {
                     "type": "type",
@@ -10288,7 +10288,7 @@
         "/Libraries/Animated/components/AnimatedFlatList.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "AnimatedComponentType": {
                     "type": "type",
@@ -10343,7 +10343,7 @@
         "/Libraries/Animated/components/AnimatedImage.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "AnimatedComponentType": {
                     "type": "type",
@@ -10398,7 +10398,7 @@
         "/Libraries/Animated/components/AnimatedScrollView.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "AnimatedComponentType": {
                     "type": "type",
@@ -10453,7 +10453,7 @@
         "/Libraries/Animated/components/AnimatedSectionList.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "AnimatedComponentType": {
                     "type": "type",
@@ -10508,7 +10508,7 @@
         "/Libraries/Animated/components/AnimatedText.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "AnimatedComponentType": {
                     "type": "type",
@@ -10563,7 +10563,7 @@
         "/Libraries/Animated/components/AnimatedView.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "AnimatedComponentType": {
                     "type": "type",
@@ -11564,52 +11564,6 @@
                 ]
             }
         },
-        "/Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.js.flow": {
-            "imports": {},
-            "typeofs": {
-                "AccessibilityInfo": [
-                    {
-                        "row": 137,
-                        "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 16,
-                            "column": 13,
-                            "local": "AccessibilityInfo",
-                            "type": "value"
-                        }
-                    }
-                ]
-            }
-        },
-        "/Libraries/Components/AccessibilityInfo/NativeAccessibilityInfo.js.flow": {
-            "imports": {
-                "TurboModule": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 6,
-                        "column": 11,
-                        "local": "TurboModule",
-                        "type": "type"
-                    }
-                }
-            },
-            "typeofs": {}
-        },
-        "/Libraries/Components/AccessibilityInfo/NativeAccessibilityManager.js.flow": {
-            "imports": {
-                "TurboModule": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 6,
-                        "column": 11,
-                        "local": "TurboModule",
-                        "type": "type"
-                    }
-                }
-            },
-            "typeofs": {}
-        },
         "/Libraries/Components/ActivityIndicator/ActivityIndicator.js.flow": {
             "imports": {
                 "HostComponent": {
@@ -11704,6 +11658,52 @@
                         "row": 96,
                         "column": 6,
                         "local": "HostComponent",
+                        "type": "type"
+                    }
+                }
+            },
+            "typeofs": {}
+        },
+        "/Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.js.flow": {
+            "imports": {},
+            "typeofs": {
+                "AccessibilityInfo": [
+                    {
+                        "row": 137,
+                        "column": 32,
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 16,
+                            "column": 13,
+                            "local": "AccessibilityInfo",
+                            "type": "value"
+                        }
+                    }
+                ]
+            }
+        },
+        "/Libraries/Components/AccessibilityInfo/NativeAccessibilityInfo.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 11,
+                        "local": "TurboModule",
+                        "type": "type"
+                    }
+                }
+            },
+            "typeofs": {}
+        },
+        "/Libraries/Components/AccessibilityInfo/NativeAccessibilityManager.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 11,
+                        "local": "TurboModule",
                         "type": "type"
                     }
                 }
@@ -11806,7 +11806,7 @@
                     }
                 },
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "Float": {
                     "type": "type[guess-import]"
@@ -11899,7 +11899,7 @@
                     "type": "type[guess-import]"
                 },
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 }
             },
             "typeofs": {}
@@ -11907,7 +11907,7 @@
         "/Libraries/Components/DrawerAndroid/DrawerLayoutAndroid.android.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "ColorValue": {
                     "type": "type",
@@ -12154,7 +12154,7 @@
         "/Libraries/Components/Picker/AndroidDialogPickerNativeComponent.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "DirectEventHandler": {
                     "type": "type",
@@ -12248,7 +12248,7 @@
         "/Libraries/Components/Picker/AndroidDropdownPickerNativeComponent.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "DirectEventHandler": {
                     "type": "type",
@@ -12536,7 +12536,7 @@
                     }
                 },
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 }
             },
             "typeofs": {}
@@ -12558,7 +12558,7 @@
         "/Libraries/Components/Pressable/Pressable.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "RippleConfig": {
                     "type": "type",
@@ -12702,7 +12702,7 @@
                     "type": "type[guess-import]"
                 },
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 }
             },
             "typeofs": {
@@ -12929,7 +12929,7 @@
         "/Libraries/Components/RefreshControl/AndroidSwipeRefreshLayoutNativeComponent.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "HostComponent": {
                     "type": "type",
@@ -13036,7 +13036,7 @@
                     }
                 },
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "HostComponent": {
                     "type": "type",
@@ -13168,7 +13168,7 @@
         "/Libraries/Components/SafeAreaView/SafeAreaView.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "HostComponent": {
                     "type": "type",
@@ -13295,7 +13295,7 @@
         "/Libraries/Components/ScrollView/ScrollView.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "ScrollResponder": {
                     "type": "value",
@@ -13511,7 +13511,7 @@
         "/Libraries/Components/ScrollView/ScrollViewCommands.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "Double": {
                     "type": "type[guess-import]"
@@ -13531,7 +13531,7 @@
         "/Libraries/Components/ScrollView/ScrollViewContext.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 }
             },
             "typeofs": {
@@ -13653,7 +13653,7 @@
                     }
                 },
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "LayoutEvent": {
                     "type": "type",
@@ -14105,7 +14105,7 @@
         "/Libraries/Components/Switch/AndroidSwitchNativeComponent.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "WithDefault": {
                     "type": "type[guess-import]"
@@ -14140,7 +14140,7 @@
         "/Libraries/Components/Switch/Switch.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "ColorValue": {
                     "type": "type",
@@ -14238,7 +14238,7 @@
                     }
                 },
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "HostComponent": {
                     "type": "type",
@@ -14692,7 +14692,7 @@
         "/Libraries/Components/TextInput/TextInputNativeCommands.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "Int32": {
                     "type": "type",
@@ -15272,7 +15272,7 @@
                     "type": "type[guess-import]"
                 },
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 }
             },
             "typeofs": {
@@ -15330,7 +15330,7 @@
                     }
                 },
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 }
             },
             "typeofs": {
@@ -15370,7 +15370,7 @@
                     }
                 },
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 }
             },
             "typeofs": {
@@ -15420,7 +15420,7 @@
                     "type": "type[guess-import]"
                 },
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 }
             },
             "typeofs": {
@@ -15541,7 +15541,7 @@
                     }
                 },
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 }
             },
             "typeofs": {
@@ -16502,7 +16502,7 @@
         "/Libraries/Components/View/ViewNativeComponent.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "ViewProps": {
                     "type": "type",
@@ -16833,7 +16833,7 @@
         "/Libraries/LogBox/Data/LogBoxData.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "LogBoxLog": {
                     "type": "class",
@@ -17014,7 +17014,7 @@
         "/Libraries/LogBox/UI/AnsiHighlight.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "TextStyleProp": {
                     "type": "type[guess-import]"
@@ -17025,7 +17025,7 @@
         "/Libraries/LogBox/UI/LogBoxButton.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "EdgeInsetsProp": {
                     "type": "type",
@@ -17074,7 +17074,7 @@
         "/Libraries/LogBox/UI/LogBoxInspector.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "LogLevel": {
                     "type": "type",
@@ -17114,7 +17114,7 @@
         "/Libraries/LogBox/UI/LogBoxInspectorCodeFrame.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "CodeFrame": {
                     "type": "type",
@@ -17154,7 +17154,7 @@
                     }
                 },
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 }
             },
             "typeofs": {
@@ -17176,7 +17176,7 @@
         "/Libraries/LogBox/UI/LogBoxInspectorHeader.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "LogLevel": {
                     "type": "type",
@@ -17207,7 +17207,7 @@
         "/Libraries/LogBox/UI/LogBoxInspectorMessageHeader.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "LogLevel": {
                     "type": "type",
@@ -17247,7 +17247,7 @@
         "/Libraries/LogBox/UI/LogBoxInspectorReactFrames.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "LogBoxLog": {
                     "type": "value"
@@ -17272,7 +17272,7 @@
         "/Libraries/LogBox/UI/LogBoxInspectorSection.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 }
             },
             "typeofs": {
@@ -17294,7 +17294,7 @@
         "/Libraries/LogBox/UI/LogBoxInspectorSourceMapStatus.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "PressEvent": {
                     "type": "type",
@@ -17325,7 +17325,7 @@
         "/Libraries/LogBox/UI/LogBoxInspectorStackFrame.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "PressEvent": {
                     "type": "type",
@@ -17365,7 +17365,7 @@
         "/Libraries/LogBox/UI/LogBoxInspectorStackFrames.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "Stack": {
                     "type": "type",
@@ -17399,7 +17399,7 @@
         "/Libraries/LogBox/UI/LogBoxMessage.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "TextStyleProp": {
                     "type": "type",
@@ -17439,7 +17439,7 @@
         "/Libraries/LogBox/UI/LogBoxNotification.js.flow": {
             "imports": {
                 "React": {
-                    "type": "unresolved[error]"
+                    "type": "value[guess-import]"
                 },
                 "LogBoxLog": {
                     "type": "class",

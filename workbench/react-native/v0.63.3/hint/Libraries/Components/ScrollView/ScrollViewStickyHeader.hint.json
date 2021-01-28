@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "LayoutEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 79,

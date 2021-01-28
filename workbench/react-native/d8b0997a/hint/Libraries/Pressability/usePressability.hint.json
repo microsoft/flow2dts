@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "EventHandlers"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 137,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "PressabilityConfig"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 8,

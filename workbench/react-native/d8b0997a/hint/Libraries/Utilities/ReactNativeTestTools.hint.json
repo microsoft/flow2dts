@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "ReactTestRenderer"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 8,

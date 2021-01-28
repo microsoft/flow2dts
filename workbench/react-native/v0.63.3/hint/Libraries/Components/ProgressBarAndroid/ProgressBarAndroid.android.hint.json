@@ -25,6 +25,7 @@
                 "column": 15,
                 "local": "ViewProps"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 389,
@@ -44,6 +45,7 @@
                 "column": 15,
                 "local": "ColorValue"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 9,

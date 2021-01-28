@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "Task"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 10,

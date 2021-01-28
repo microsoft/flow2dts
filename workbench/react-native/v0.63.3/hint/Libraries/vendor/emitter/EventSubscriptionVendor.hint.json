@@ -6,6 +6,7 @@
                 "column": 13,
                 "local": "EventSubscription"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 4,

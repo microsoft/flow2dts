@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "AppearancePreferences"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 6,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "ColorSchemeName"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 4,

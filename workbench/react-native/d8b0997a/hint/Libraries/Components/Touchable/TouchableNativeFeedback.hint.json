@@ -25,6 +25,7 @@
                 "column": 15,
                 "local": "TouchableWithoutFeedback"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 60,

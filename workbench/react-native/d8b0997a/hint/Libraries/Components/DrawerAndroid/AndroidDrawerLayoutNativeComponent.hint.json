@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "ViewProps"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "ColorValue"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 3,
@@ -44,6 +46,7 @@
                 "column": 14,
                 "local": "WithDefault"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 4,
@@ -63,6 +66,7 @@
                 "column": 14,
                 "local": "DirectEventHandler"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 5,
@@ -82,6 +86,7 @@
                 "column": 14,
                 "local": "Int32"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 6,
@@ -101,6 +106,7 @@
                 "column": 14,
                 "local": "Float"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 7,
@@ -120,6 +126,7 @@
                 "column": 14,
                 "local": "HostComponent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 9,

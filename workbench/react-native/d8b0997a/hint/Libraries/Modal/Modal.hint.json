@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "ViewProps"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 377,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "RootTag"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,
@@ -44,6 +46,7 @@
                 "column": 14,
                 "local": "DirectEventHandler"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 9,

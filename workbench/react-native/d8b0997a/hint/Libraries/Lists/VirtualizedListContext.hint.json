@@ -6,6 +6,7 @@
                 "column": 13,
                 "local": "VirtualizedList"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 289,

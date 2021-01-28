@@ -6,6 +6,7 @@
                 "column": 15,
                 "local": "Text"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 18,

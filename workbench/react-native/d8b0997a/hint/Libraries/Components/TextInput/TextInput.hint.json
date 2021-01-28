@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "TextStyleProp"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 20,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "ViewStyleProp"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 18,
@@ -44,6 +46,7 @@
                 "column": 14,
                 "local": "ColorValue"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 16,
@@ -63,6 +66,7 @@
                 "column": 14,
                 "local": "ViewProps"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 377,
@@ -82,6 +86,7 @@
                 "column": 14,
                 "local": "SyntheticEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 5,
@@ -101,6 +106,7 @@
                 "column": 14,
                 "local": "ScrollEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 112,
@@ -120,6 +126,7 @@
                 "column": 14,
                 "local": "PressEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 95,
@@ -139,6 +146,7 @@
                 "column": 14,
                 "local": "HostComponent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 96,

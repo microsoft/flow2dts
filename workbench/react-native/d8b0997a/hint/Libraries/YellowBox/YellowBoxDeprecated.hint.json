@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "IgnorePattern"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 33,

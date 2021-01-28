@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "ColorSchemeName"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 4,

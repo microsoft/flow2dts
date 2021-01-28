@@ -52,6 +52,7 @@
                 "column": 14,
                 "local": "EdgeInsetsProp"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 4,
@@ -71,6 +72,7 @@
                 "column": 14,
                 "local": "PointProp"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,
@@ -90,6 +92,7 @@
                 "column": 14,
                 "local": "ViewStyleProp"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 18,
@@ -109,6 +112,7 @@
                 "column": 14,
                 "local": "ColorValue"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 16,
@@ -128,6 +132,7 @@
                 "column": 14,
                 "local": "PressEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 95,
@@ -147,6 +152,7 @@
                 "column": 14,
                 "local": "ScrollEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 112,
@@ -166,6 +172,7 @@
                 "column": 14,
                 "local": "HostComponent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 96,
@@ -185,6 +192,7 @@
                 "column": 14,
                 "local": "State"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 11,
@@ -204,6 +212,7 @@
                 "column": 14,
                 "local": "ViewProps"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 377,
@@ -223,6 +232,7 @@
                 "column": 14,
                 "local": "Props"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 7,

@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "RootTag"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "TurboModule"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 6,

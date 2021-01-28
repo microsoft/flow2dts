@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "ScrollResponderType"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 47,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "ViewStyleProp"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 15,
@@ -44,6 +46,7 @@
                 "column": 14,
                 "local": "ViewabilityConfig"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 23,
@@ -63,6 +66,7 @@
                 "column": 14,
                 "local": "ViewToken"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,
@@ -82,6 +86,7 @@
                 "column": 14,
                 "local": "ViewabilityConfigCallbackPair"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 11,

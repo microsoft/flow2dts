@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "EndCallback"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 5,
@@ -25,6 +26,7 @@
                 "column": 13,
                 "local": "Animation"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 14,
@@ -44,6 +46,7 @@
                 "column": 14,
                 "local": "InterpolationConfigType"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 9,
@@ -63,6 +66,7 @@
                 "column": 13,
                 "local": "AnimatedTracking"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 9,

@@ -14,6 +14,7 @@
                 "column": 14,
                 "local": "DirectEventHandler"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 9,
@@ -33,6 +34,7 @@
                 "column": 14,
                 "local": "Int32"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 17,
@@ -52,6 +54,7 @@
                 "column": 14,
                 "local": "WithDefault"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 21,
@@ -71,6 +74,7 @@
                 "column": 14,
                 "local": "HostComponent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 96,
@@ -90,6 +94,7 @@
                 "column": 14,
                 "local": "TextStyleProp"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 20,
@@ -109,6 +114,7 @@
                 "column": 14,
                 "local": "ColorValue"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 16,
@@ -128,6 +134,7 @@
                 "column": 14,
                 "local": "ProcessedColorValue"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 5,
@@ -147,6 +154,7 @@
                 "column": 14,
                 "local": "ViewProps"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 377,

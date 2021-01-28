@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "Spec"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 4,

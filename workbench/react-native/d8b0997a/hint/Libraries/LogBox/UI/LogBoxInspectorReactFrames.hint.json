@@ -14,6 +14,7 @@
                 "column": 13,
                 "local": "LogBoxLog"
             },
+            "isImportedType": true,
             "error": "Could not get definition for /Libraries/LogBox/UI/LogBoxInspectorReactFrames.js.flow:4:12\r\nNo possible types\r\n"
         }
     },

@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "StackFrame"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 4,

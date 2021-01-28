@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "MeasureOnSuccessCallback"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 5,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "MeasureInWindowOnSuccessCallback"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 14,
@@ -44,6 +46,7 @@
                 "column": 14,
                 "local": "MeasureLayoutOnSuccessCallback"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 21,

@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "ScrollResponderType"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 45,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "ScrollToLocationParamsType"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 107,
@@ -44,6 +46,7 @@
                 "column": 14,
                 "local": "SectionBase"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 10,
@@ -63,6 +66,7 @@
                 "column": 14,
                 "local": "Props"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 99,

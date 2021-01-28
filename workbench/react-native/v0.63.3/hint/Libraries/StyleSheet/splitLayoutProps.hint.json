@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "DangerouslyImpreciseStyle"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 34,

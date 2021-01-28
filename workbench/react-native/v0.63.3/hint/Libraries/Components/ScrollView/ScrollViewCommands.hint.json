@@ -14,6 +14,7 @@
                 "column": 14,
                 "local": "Double"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 3,
@@ -33,6 +34,7 @@
                 "column": 14,
                 "local": "HostComponent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 96,

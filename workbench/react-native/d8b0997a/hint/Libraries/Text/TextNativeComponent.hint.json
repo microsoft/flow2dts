@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "HostComponent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 96,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "ProcessedColorValue"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 5,
@@ -44,6 +46,7 @@
                 "column": 14,
                 "local": "TextProps"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 19,

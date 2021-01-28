@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "WithDefault"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 21,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "ColorValue"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 16,
@@ -44,6 +46,7 @@
                 "column": 14,
                 "local": "ViewProps"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 377,
@@ -63,6 +66,7 @@
                 "column": 14,
                 "local": "HostComponent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 96,

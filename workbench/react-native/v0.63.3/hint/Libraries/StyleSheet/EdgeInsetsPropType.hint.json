@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "Rect"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,

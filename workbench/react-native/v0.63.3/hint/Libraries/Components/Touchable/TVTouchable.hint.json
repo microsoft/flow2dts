@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "BlurEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 159,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "FocusEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 167,
@@ -44,6 +46,7 @@
                 "column": 14,
                 "local": "PressEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 95,

@@ -25,6 +25,7 @@
                 "column": 14,
                 "local": "NativeResponseType"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 4,
@@ -44,6 +45,7 @@
                 "column": 14,
                 "local": "RequestBody"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 7,

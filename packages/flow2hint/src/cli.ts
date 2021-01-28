@@ -45,8 +45,14 @@ async function run({
     modifiedFullPaths.push([filename, modifiedFilename])
 
     const inputCode = await fs.promises.readFile(filename, { encoding: "utf8" })
-    // replace "typeof" to six space characters, but not touch "import typeof"
-    const outputCode = inputCode.replace(/(?<!import\s|declare\smodule.exports:\s)(?<=\W)typeof\s/g, "       ")
+    // replace "typeof" to six space characters, but not touch
+    // "import typeof"
+    // "declare module.exports typeof"
+    // "declare export default"
+    const outputCode = inputCode.replace(
+      /(?<!import\s|declare\smodule.exports:\s|declare\sexport\sdefault\s)(?<=\W)typeof\s/g,
+      "       "
+    )
     await fs.promises.mkdir(path.dirname(modifiedFilename), { recursive: true })
     await fs.promises.writeFile(modifiedFilename, outputCode, { encoding: "utf8" })
 

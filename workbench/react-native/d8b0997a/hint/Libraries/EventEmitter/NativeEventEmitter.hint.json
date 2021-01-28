@@ -25,6 +25,7 @@
                 "column": 14,
                 "local": "EventSubscription"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 5,

@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "ScrollResponderType"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 47,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "ScrollViewNativeComponentType"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 77,
@@ -44,6 +46,7 @@
                 "column": 14,
                 "local": "ViewStyleProp"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 15,
@@ -63,6 +66,7 @@
                 "column": 14,
                 "local": "RenderItemType"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 33,

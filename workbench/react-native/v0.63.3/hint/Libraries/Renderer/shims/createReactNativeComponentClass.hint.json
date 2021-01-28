@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "ViewConfigGetter"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 80,

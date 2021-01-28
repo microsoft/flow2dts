@@ -6,6 +6,7 @@
                 "column": 15,
                 "local": "TouchableWithoutFeedback"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 60,
@@ -44,6 +45,7 @@
                 "column": 14,
                 "local": "ViewStyleProp"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 5,

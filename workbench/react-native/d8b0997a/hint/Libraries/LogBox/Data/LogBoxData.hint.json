@@ -33,6 +33,7 @@
                 "column": 14,
                 "local": "LogLevel"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 10,
@@ -52,6 +53,7 @@
                 "column": 14,
                 "local": "Message"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 28,
@@ -71,6 +73,7 @@
                 "column": 14,
                 "local": "Category"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 11,
@@ -90,6 +93,7 @@
                 "column": 14,
                 "local": "ComponentStack"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 42,
@@ -109,6 +113,7 @@
                 "column": 14,
                 "local": "ExtendedExceptionData"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 5,
@@ -128,6 +133,7 @@
                 "column": 14,
                 "local": "ExtendedError"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 4,

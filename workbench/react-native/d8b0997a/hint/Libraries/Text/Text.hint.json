@@ -44,6 +44,7 @@
                 "column": 14,
                 "local": "TextProps"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 19,

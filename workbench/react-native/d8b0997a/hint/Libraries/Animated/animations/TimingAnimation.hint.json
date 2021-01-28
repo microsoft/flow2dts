@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "AnimationConfig"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 7,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "EndCallback"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 5,

@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "StackFrame"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 4,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "SymbolicatedStackTrace"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 16,

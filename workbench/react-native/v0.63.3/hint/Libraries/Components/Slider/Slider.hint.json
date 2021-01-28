@@ -25,6 +25,7 @@
                 "column": 14,
                 "local": "ImageSource"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 68,
@@ -44,6 +45,7 @@
                 "column": 14,
                 "local": "ViewStyleProp"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 15,
@@ -63,6 +65,7 @@
                 "column": 14,
                 "local": "ColorValue"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 7,
@@ -82,6 +85,7 @@
                 "column": 14,
                 "local": "ViewProps"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 389,

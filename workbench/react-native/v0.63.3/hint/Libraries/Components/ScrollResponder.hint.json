@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "PressEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 95,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "ScrollEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 112,
@@ -44,6 +46,7 @@
                 "column": 14,
                 "local": "KeyboardEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 8,
@@ -63,6 +66,7 @@
                 "column": 13,
                 "local": "EmitterSubscription"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 8,
@@ -82,6 +86,7 @@
                 "column": 14,
                 "local": "HostComponent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 96,

@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "ImageProps"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 57,

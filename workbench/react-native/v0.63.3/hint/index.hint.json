@@ -6,6 +6,7 @@
                 "column": 15,
                 "local": "AccessibilityInfo"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 19,
@@ -25,6 +26,7 @@
                 "column": 15,
                 "local": "ActivityIndicator"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 50,
@@ -44,6 +46,7 @@
                 "column": 15,
                 "local": "Button"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 87,
@@ -63,6 +66,7 @@
                 "column": 15,
                 "local": "CheckBox"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 5,
@@ -82,6 +86,7 @@
                 "column": 15,
                 "local": "DatePickerIOS"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 93,
@@ -101,6 +106,7 @@
                 "column": 15,
                 "local": "DrawerLayoutAndroid"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 7,
@@ -120,6 +126,7 @@
                 "column": 15,
                 "local": "FlatList"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 156,
@@ -139,6 +146,7 @@
                 "column": 15,
                 "local": "Image"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 45,
@@ -158,6 +166,7 @@
                 "column": 15,
                 "local": "ImageBackground"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 5,
@@ -177,6 +186,7 @@
                 "column": 15,
                 "local": "InputAccessoryView"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 21,
@@ -196,6 +206,7 @@
                 "column": 15,
                 "local": "KeyboardAvoidingView"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 41,
@@ -215,6 +226,7 @@
                 "column": 15,
                 "local": "MaskedViewIOS"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 20,
@@ -234,6 +246,7 @@
                 "column": 15,
                 "local": "Modal"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 118,
@@ -253,6 +266,7 @@
                 "column": 15,
                 "local": "Picker"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 103,
@@ -272,6 +286,7 @@
                 "column": 15,
                 "local": "PickerIOS"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 57,
@@ -291,6 +306,7 @@
                 "column": 15,
                 "local": "Pressable"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 126,
@@ -310,6 +326,7 @@
                 "column": 15,
                 "local": "ProgressBarAndroid"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 18,
@@ -329,6 +346,7 @@
                 "column": 15,
                 "local": "ProgressViewIOS"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 24,
@@ -348,6 +366,7 @@
                 "column": 15,
                 "local": "SafeAreaView"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 15,
@@ -367,6 +386,7 @@
                 "column": 15,
                 "local": "ScrollView"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 674,
@@ -386,6 +406,7 @@
                 "column": 15,
                 "local": "SectionList"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 112,
@@ -405,6 +426,7 @@
                 "column": 15,
                 "local": "SegmentedControlIOS"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 23,
@@ -424,6 +446,7 @@
                 "column": 15,
                 "local": "Slider"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 118,
@@ -443,6 +466,7 @@
                 "column": 15,
                 "local": "Switch"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 74,
@@ -462,6 +486,7 @@
                 "column": 15,
                 "local": "RefreshControl"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 72,
@@ -481,6 +506,7 @@
                 "column": 15,
                 "local": "StatusBar"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 99,
@@ -500,6 +526,7 @@
                 "column": 15,
                 "local": "Text"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 17,
@@ -519,6 +546,7 @@
                 "column": 15,
                 "local": "TextInput"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 745,
@@ -538,6 +566,7 @@
                 "column": 15,
                 "local": "Touchable"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 264,
@@ -557,6 +586,7 @@
                 "column": 15,
                 "local": "TouchableHighlight"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 43,
@@ -576,6 +606,7 @@
                 "column": 15,
                 "local": "TouchableNativeFeedback"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 87,
@@ -595,6 +626,7 @@
                 "column": 15,
                 "local": "TouchableOpacity"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 32,
@@ -614,6 +646,7 @@
                 "column": 15,
                 "local": "TouchableWithoutFeedback"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 60,
@@ -633,6 +666,7 @@
                 "column": 15,
                 "local": "View"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 10,
@@ -652,6 +686,7 @@
                 "column": 15,
                 "local": "VirtualizedList"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 315,
@@ -671,6 +706,7 @@
                 "column": 15,
                 "local": "VirtualizedSectionList"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 122,
@@ -690,6 +726,7 @@
                 "column": 15,
                 "local": "ActionSheetIOS"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 5,
@@ -709,6 +746,7 @@
                 "column": 15,
                 "local": "Alert"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 19,
@@ -728,6 +766,7 @@
                 "column": 15,
                 "local": "Animated"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 40,
@@ -747,6 +786,7 @@
                 "column": 15,
                 "local": "Appearance"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 7,
@@ -766,6 +806,7 @@
                 "column": 15,
                 "local": "AppRegistry"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 34,
@@ -785,6 +826,7 @@
                 "column": 15,
                 "local": "AppState"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 54,
@@ -804,6 +846,7 @@
                 "column": 15,
                 "local": "AsyncStorage"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,
@@ -823,6 +866,7 @@
                 "column": 15,
                 "local": "BackHandler"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 4,
@@ -842,6 +886,7 @@
                 "column": 15,
                 "local": "Clipboard"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,
@@ -861,6 +906,7 @@
                 "column": 15,
                 "local": "DatePickerAndroid"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 5,
@@ -880,6 +926,7 @@
                 "column": 15,
                 "local": "DeviceInfo"
             },
+            "isImportedType": true,
             "error": "[unrecognizable stdout]:0:1,0:0\r\n"
         },
         "DevSettings": {
@@ -888,6 +935,7 @@
                 "column": 15,
                 "local": "DevSettings"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,
@@ -907,6 +955,7 @@
                 "column": 15,
                 "local": "Dimensions"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,
@@ -926,6 +975,7 @@
                 "column": 15,
                 "local": "Easing"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,
@@ -945,6 +995,7 @@
                 "column": 15,
                 "local": "ReactNative"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 160,
@@ -964,6 +1015,7 @@
                 "column": 15,
                 "local": "I18nManager"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 7,
@@ -983,6 +1035,7 @@
                 "column": 15,
                 "local": "ImagePickerIOS"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,
@@ -1002,6 +1055,7 @@
                 "column": 15,
                 "local": "InteractionManager"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 5,
@@ -1021,6 +1075,7 @@
                 "column": 15,
                 "local": "Keyboard"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 56,
@@ -1040,6 +1095,7 @@
                 "column": 15,
                 "local": "LayoutAnimation"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 63,
@@ -1059,6 +1115,7 @@
                 "column": 15,
                 "local": "Linking"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 5,
@@ -1078,6 +1135,7 @@
                 "column": 15,
                 "local": "NativeDialogManagerAndroid"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 35,
@@ -1097,6 +1155,7 @@
                 "column": 15,
                 "local": "NativeEventEmitter"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 13,
@@ -1116,6 +1175,7 @@
                 "column": 15,
                 "local": "Networking"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 8,
@@ -1135,6 +1195,7 @@
                 "column": 15,
                 "local": "PanResponder"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 90,
@@ -1154,6 +1215,7 @@
                 "column": 15,
                 "local": "PermissionsAndroid"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 14,
@@ -1173,6 +1235,7 @@
                 "column": 15,
                 "local": "PixelRatio"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,
@@ -1192,6 +1255,7 @@
                 "column": 15,
                 "local": "PushNotificationIOS"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 38,
@@ -1211,6 +1275,7 @@
                 "column": 15,
                 "local": "Settings"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,
@@ -1230,6 +1295,7 @@
                 "column": 15,
                 "local": "Share"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 21,
@@ -1249,6 +1315,7 @@
                 "column": 15,
                 "local": "StatusBarIOS"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 5,
@@ -1268,6 +1335,7 @@
                 "column": 15,
                 "local": "StyleSheet"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 63,
@@ -1287,6 +1355,7 @@
                 "column": 15,
                 "local": "Systrace"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,
@@ -1306,6 +1375,7 @@
                 "column": 15,
                 "local": "ToastAndroid"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 71,
@@ -1325,6 +1395,7 @@
                 "column": 20,
                 "local": "TurboModuleRegistry"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 0,
@@ -1344,6 +1415,7 @@
                 "column": 15,
                 "local": "TVEventHandler"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 7,
@@ -1363,6 +1435,7 @@
                 "column": 15,
                 "local": "UIManager"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 4,
@@ -1382,6 +1455,7 @@
                 "column": 15,
                 "local": "useColorScheme"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 4,
@@ -1401,6 +1475,7 @@
                 "column": 15,
                 "local": "useWindowDimensions"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 4,
@@ -1420,6 +1495,7 @@
                 "column": 15,
                 "local": "UTFSequence"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,
@@ -1439,6 +1515,7 @@
                 "column": 15,
                 "local": "Vibration"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,
@@ -1458,6 +1535,7 @@
                 "column": 15,
                 "local": "YellowBox"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 10,
@@ -1477,6 +1555,7 @@
                 "column": 15,
                 "local": "LogBox"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 4,
@@ -1496,6 +1575,7 @@
                 "column": 15,
                 "local": "RCTDeviceEventEmitter"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 9,
@@ -1515,6 +1595,7 @@
                 "column": 15,
                 "local": "RCTNativeAppEventEmitter"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 82,
@@ -1534,6 +1615,7 @@
                 "column": 15,
                 "local": "NativeModules"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 12,
@@ -1553,6 +1635,7 @@
                 "column": 15,
                 "local": "Platform"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 9,
@@ -1572,6 +1655,7 @@
                 "column": 15,
                 "local": "processColor"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 7,
@@ -1591,6 +1675,7 @@
                 "column": 16,
                 "local": "PlatformColor"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 13,
@@ -1610,6 +1695,7 @@
                 "column": 16,
                 "local": "DynamicColorIOS"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 9,
@@ -1629,6 +1715,7 @@
                 "column": 16,
                 "local": "ColorAndroid"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 4,
@@ -1648,6 +1735,7 @@
                 "column": 15,
                 "local": "RootTagContext"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,
@@ -1667,6 +1755,7 @@
                 "column": 15,
                 "local": "DeprecatedColorPropType"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 90,
@@ -1686,6 +1775,7 @@
                 "column": 15,
                 "local": "DeprecatedEdgeInsetsPropType"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,
@@ -1705,6 +1795,7 @@
                 "column": 15,
                 "local": "DeprecatedPointPropType"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 2,
@@ -1724,6 +1815,7 @@
                 "column": 15,
                 "local": "DeprecatedViewPropTypes"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 93,
@@ -1743,6 +1835,7 @@
                 "column": 14,
                 "local": "HostComponent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 96,

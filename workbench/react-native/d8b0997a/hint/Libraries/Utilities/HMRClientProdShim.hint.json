@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "HMRClientNativeInterface"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 13,

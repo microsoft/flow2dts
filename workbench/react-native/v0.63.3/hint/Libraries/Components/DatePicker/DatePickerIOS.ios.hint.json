@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "SyntheticEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 5,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "ViewProps"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 389,

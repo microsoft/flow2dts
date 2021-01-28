@@ -6,6 +6,7 @@
                 "column": 13,
                 "local": "EmitterSubscription"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 8,

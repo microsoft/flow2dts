@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "HostComponent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 96,
@@ -25,6 +26,7 @@
                 "column": 14,
                 "local": "ViewProps"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 389,
@@ -52,6 +54,7 @@
                 "column": 14,
                 "local": "Float"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 6,
@@ -71,6 +74,7 @@
                 "column": 14,
                 "local": "WithDefault"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 7,
@@ -90,6 +94,7 @@
                 "column": 14,
                 "local": "BubblingEventHandler"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 8,

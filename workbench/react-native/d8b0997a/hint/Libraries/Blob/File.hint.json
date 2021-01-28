@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "BlobOptions"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 15,

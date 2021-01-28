@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "SyntheticEvent"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 5,

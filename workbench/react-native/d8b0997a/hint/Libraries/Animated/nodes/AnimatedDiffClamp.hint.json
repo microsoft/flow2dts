@@ -6,6 +6,7 @@
                 "column": 14,
                 "local": "InterpolationConfigType"
             },
+            "isImportedType": true,
             "resolved": {
                 "begin": {
                     "row": 9,
