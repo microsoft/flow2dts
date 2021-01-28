@@ -97,11 +97,31 @@ export function mergeHint(collectedHintFiles: HintFileEntries): ResolvedHintEntr
           }
         }
       )
-      if (resolvedHintImport.type === "unresolved[missing]" && resolvedToItself(hintImport)) {
-        if (importKey[0].toUpperCase() === importKey[0]) {
-          resolvedHintImport.type = "type[guess-import]"
-        } else {
-          resolvedHintImport.type = "value[guess-import]"
+
+      switch (resolvedHintImport.type) {
+        case "unresolved[error]": {
+          if (hintImport.isImportedType === true) {
+            resolvedHintImport.type = "type[guess-import]"
+          } else if (importKey === "React") {
+            resolvedHintImport.type = "value[guess-import]"
+          }
+          break
+        }
+        case "unresolved[missing]": {
+          if (hintImport.isImportedType === true) {
+            resolvedHintImport.type = "type[guess-import]"
+          } else if (importKey[0].toUpperCase() === importKey[0]) {
+            resolvedHintImport.type = "type[guess-import]"
+          } else if (importKey[0].toLowerCase() === importKey[0]) {
+            resolvedHintImport.type = "value[guess-import]"
+          }
+          break
+        }
+        case "unresolved[library]": {
+          if (hintImport.isImportedType === true) {
+            resolvedHintImport.type = "type[guess-import]"
+          }
+          break
         }
       }
       mergedFile.imports[importKey] = resolvedHintImport

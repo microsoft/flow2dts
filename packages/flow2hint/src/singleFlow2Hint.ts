@@ -66,6 +66,9 @@ function flowImportAndDeclVisitor(forLibraryFile: boolean): Visitor<HintFile> {
 
             if (source) {
               state.imports[specifier.local.name] = { source }
+              if (path.node.importKind === "type" || path.node.importKind === "typeof") {
+                state.imports[specifier.local.name].isImportedType = true
+              }
             }
           }
         }

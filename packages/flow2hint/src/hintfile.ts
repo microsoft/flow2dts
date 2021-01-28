@@ -16,6 +16,7 @@ export interface HintResolved {
 
 export interface HintImport {
   source: HintIdentifier
+  isImportedType?: boolean // true for "import type" or "import typeof"
   resolved?: HintResolved
   error?: string
 }
