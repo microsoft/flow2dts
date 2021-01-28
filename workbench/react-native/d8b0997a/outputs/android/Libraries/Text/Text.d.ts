@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { NativeText } from "./TextNativeComponent";
 import { NativeVirtualText } from "./TextNativeComponent";

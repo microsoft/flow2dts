@@ -2,7 +2,6 @@
 // Licensed under the MIT License.
 
 import { NodePath, types as t } from "@babel/core"
-import { wrappedTypeOf } from "../utilities"
 import { State } from "../state"
 
 export interface ReferenceRecord {
@@ -118,7 +117,7 @@ export function resolveGenericTypeAnnotation<T>(
   state: State,
   path: NodePath<T>,
   flowType: t.GenericTypeAnnotation
-): t.TSTypeReference | undefined {
+): t.TSTypeReference | t.TSTypeQuery | undefined {
   let entity = resolveQualifiedTypeIdentifier(state.typeReferences, path, flowType.id)
 
   if (!entity) {
@@ -164,7 +163,7 @@ export function resolveGenericTypeAnnotation<T>(
     if (entity.type === "Identifier") {
       // when entity is not undefined, it is a resolved type, which means the name is in global context
       if (state.typeReferences.imports[entity.name]) {
-        return wrappedTypeOf(entity)
+        return t.tsTypeQuery(entity)
       }
     }
   }

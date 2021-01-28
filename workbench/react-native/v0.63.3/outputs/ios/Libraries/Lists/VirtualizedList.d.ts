@@ -1,4 +1,4 @@
-import { $TypeOf, React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
+import { React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
 import $1 from "react";
 import $2 from "../Components/ScrollView/ScrollView";
 import $3 from "../Components/View/View";
@@ -281,7 +281,7 @@ declare type OptionalProps =
 };
 declare type Props =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$1.ElementConfig<$TypeOf<typeof $2>> & RequiredProps & OptionalProps & {};
+$1.ElementConfig<typeof $2> & RequiredProps & OptionalProps & {};
 declare type DefaultProps =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

@@ -3,7 +3,7 @@
 
 import { Visitor, types as t } from "@babel/core"
 import { State } from "../state"
-import { nameForImportTypeof, wrappedTypeOf } from "../utilities"
+import { nameForImportTypeof } from "../utilities"
 
 export const importVisitor: Visitor<State> = {
   ImportDeclaration: {
@@ -43,7 +43,7 @@ export const importVisitor: Visitor<State> = {
           const decl = t.tsTypeAliasDeclaration(
             t.identifier(name),
             null,
-            wrappedTypeOf(t.identifier(nameForImportTypeof(name)))
+            t.tsTypeQuery(t.identifier(nameForImportTypeof(name)))
           )
           decl.declare = true
 

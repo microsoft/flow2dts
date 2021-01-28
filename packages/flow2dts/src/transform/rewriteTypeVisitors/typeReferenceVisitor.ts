@@ -3,7 +3,7 @@
 
 import { Visitor, types as t } from "@babel/core"
 import { State, ResolvedHintImport } from "../state"
-import { assertTSType, isClass, isPathDefinitelyValue, isPathDefinitelyType, wrappedTypeOf } from "../utilities"
+import { assertTSType, isClass } from "../utilities"
 import { resolveGenericTypeAnnotation } from "../typeReferenceResolver"
 
 function convertQID(input: t.Identifier | t.QualifiedTypeIdentifier): t.Identifier | t.TSQualifiedName {
@@ -202,14 +202,18 @@ export const typeReferenceVisitor: Visitor<State> = {
                 }
                 case "value": {
                   // it is a value, need to add "typeof"
-                  path.replaceWith(t.tsTypeQuery(resolved.typeName))
+                  path.replaceWith(t.isTSTypeQuery(resolved) ? resolved : t.tsTypeQuery(resolved.typeName))
                   return
                 }
               }
             } else {
               switch (selectedHintImport.type) {
-                case "type":
-                case "class": {
+                case "class":
+                  if (path.findParent((parentPath) => parentPath.isDeclareModuleExports())) {
+                    // it's a class on `module.exports`, leave `typeof` for the `exportVisitor`
+                    return
+                  }
+                case "type": {
                   // it is a type, just use the identifier
                   path.replaceWith(t.tsTypeReference(convertQID(typeQueryOperator.id)))
                   return
@@ -245,7 +249,7 @@ export const typeReferenceVisitor: Visitor<State> = {
               firstName = firstName.left
             }
             if (state.typeReferences.imports[firstName.name]) {
-              path.replaceWith(wrappedTypeOf(resolved.typeName))
+              path.replaceWith(t.tsTypeQuery(resolved.typeName))
               return
             }
           }
@@ -262,10 +266,15 @@ export const typeReferenceVisitor: Visitor<State> = {
       t.assertTSType(typeOfType)
       if (typeOfType.type === "TSTypeReference") {
         if (isClass(typeOfType, path.scope)) {
-          path.replaceWith(typeOfType)
-          return
+          if (path.findParent((ancestorPath) => ancestorPath.isDeclareModuleExports())) {
+            path.replaceWith(t.tsTypeQuery(typeOfType.typeName))
+          } else {
+            // TODO: Check to which typings this still applies
+            path.replaceWith(typeOfType)
+          }
+        } else {
+          path.replaceWith(t.tsTypeQuery(typeOfType.typeName))
         }
-        path.replaceWith(wrappedTypeOf(typeOfType.typeName))
       }
     },
   },

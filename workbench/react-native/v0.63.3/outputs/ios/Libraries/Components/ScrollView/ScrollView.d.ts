@@ -1,4 +1,4 @@
-import { $TypeOf, React$Context } from "flow2dts-flow-types-polyfill";
+import { React$Context } from "flow2dts-flow-types-polyfill";
 import { $PropertyType } from "utility-types";
 import $1 from "react";
 import $2 from "../ScrollResponder";
@@ -582,14 +582,14 @@ ViewProps & IOSProps & AndroidProps & VRProps & {
   * A ref to the inner View element of the ScrollView. This should be used
   * instead of calling `getInnerViewRef`.
   */
-  innerViewRef?: $1.Ref<$TypeOf<typeof $4>>;
+  innerViewRef?: $1.Ref<typeof $4>;
 
   /**
   * A ref to the Native ScrollView component. This ref can be used to call
   * all of ScrollView's public methods, in addition to native methods like
   * measure, measureLayout, etc.
   */
-  scrollViewRef?: $1.Ref<$TypeOf<typeof ScrollViewNativeComponent> & ScrollViewImperativeMethods>;
+  scrollViewRef?: $1.Ref<typeof ScrollViewNativeComponent & ScrollViewImperativeMethods>;
 }>;
 declare type State =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
@@ -669,7 +669,7 @@ declare class ScrollView extends $1.Component<Props, State> {
 export type { ScrollViewImperativeMethods };
 export type { ScrollResponderType };
 export type { Props };
-declare const $f2tExportDefault: $1.AbstractComponent<$1.ElementConfig<ScrollView>, Readonly<
+declare const $f2tExportDefault: $1.AbstractComponent<$1.ElementConfig<typeof ScrollView>, Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

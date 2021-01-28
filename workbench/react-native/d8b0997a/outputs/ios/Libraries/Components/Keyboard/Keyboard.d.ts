@@ -1,7 +1,6 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import NativeEventEmitter from "../../EventEmitter/NativeEventEmitter";
-declare var KeyboardEventEmitter: $TypeOf<typeof NativeEventEmitter>;
+declare var KeyboardEventEmitter: typeof NativeEventEmitter;
 declare type KeyboardEventName = "keyboardWillShow" | "keyboardDidShow" | "keyboardWillHide" | "keyboardDidHide" | "keyboardWillChangeFrame" | "keyboardDidChangeFrame";
 declare type KeyboardEventEasing = "easeIn" | "easeInEaseOut" | "easeOut" | "linear" | "keyboard";
 declare type KeyboardEventCoordinates = Readonly<

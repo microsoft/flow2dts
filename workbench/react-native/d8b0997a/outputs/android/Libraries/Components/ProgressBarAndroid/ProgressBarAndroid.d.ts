@@ -1,5 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
-
 /**
  * TODO: Figure out why these are not included in the Flow dump
  * See https://github.com/facebook/react-native/blob/e99b8bbb404f8cd1f11b6c7998083be530d7b8a4/Libraries/Components/ProgressBarAndroid/ProgressBarAndroid.android.js#L105-L107
@@ -36,5 +34,5 @@ ViewProps & (
    */
   testID?: null | undefined | string;
 }>;
-declare const $f2tExportDefault: $TypeOf<typeof ProgressBarAndroidNativeComponent>;
+declare const $f2tExportDefault: typeof ProgressBarAndroidNativeComponent;
 export default $f2tExportDefault;

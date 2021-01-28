@@ -48,7 +48,7 @@ describe("typeReferenceVisitor", () => {
         },
       })
     ).toMatchInlineSnapshot(`
-      declare var VirtualizedList: $TypeOf<typeof $2>;
+      declare var VirtualizedList: typeof $2;
 
       const $2 = require("./VirtualizedList");
 
@@ -87,6 +87,37 @@ describe("typeReferenceVisitor", () => {
 
       type DefaultProps = {| ...typeof VirtualizedList.defaultProps
       |};
+    `)
+  })
+
+  it("does not remove typeof from a class assigned to module.exports so the exportVisitor can treat it correctly", () => {
+    expect(
+      applyVisitor({
+        input: dedent`
+          declare class Dimensions {}
+          declare module.exports: typeof Dimensions
+        `,
+        typeReferences: {
+          records: {},
+          imports: {},
+          exports: {},
+        },
+        hintFile: {
+          imports: {},
+          typeofs: {
+            Dimensions: [
+              {
+                type: "class",
+                row: 2,
+                column: 32,
+              },
+            ],
+          },
+        },
+      })
+    ).toMatchInlineSnapshot(`
+      declare class Dimensions {}
+      declare module.exports: typeof Dimensions
     `)
   })
 })

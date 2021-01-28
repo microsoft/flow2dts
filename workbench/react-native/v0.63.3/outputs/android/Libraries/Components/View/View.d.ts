@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { ViewProps } from "./ViewPropTypes";
 import $1 from "react";

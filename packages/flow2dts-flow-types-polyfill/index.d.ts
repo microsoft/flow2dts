@@ -86,19 +86,6 @@ export type React$Context<T> = React.Context<T>
  *****************************************************************************/
 
 /**
- * This is not an existing Flow type, but instead a helper to wrap any `typeof` uasge with. TypeScript treats a class
- * as a value and a type, whereas with Flow one has to use the `typeof` operator to get the type. Seeing as we cannot
- * statically know for all identifiers if it represents a class or other value, we have to bridge this at compile time.
- *
- * @example
- *
- *   import { $TypeOf } from "flow-builtin-types"
- *   class Foo {}
- *   type Foo$Type = $TypeOf<typeof Foo>
- */
-export type $TypeOf<T> = T extends { new (...args: any): any } ? InstanceType<T> & T : T
-
-/**
  * TODO: These should be re-enabled as we continue work on flow2dts
 
 // Add types packages

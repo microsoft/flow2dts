@@ -6,9 +6,6 @@
  *       so everybody gets to benefit from them. Related, how do Flow users use these now?
  */
 
-// TODO: This shouldn't be necessarty to use here. This is likely needed because of TS React AbstractComponent handling.
-import { $TypeOf } from "flow2dts-flow-types-polyfill"
-
 /**
  * @deprecated Instead use `import("react-native/Libraries/Types/CoreEventTypes").PressEvent`.
  */
@@ -52,7 +49,7 @@ export type StyleProp<T> = null | void | T | false | "" | ReadonlyArray<StylePro
 /**
  * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof Image>`.
  */
-export type ImageProps = React.ComponentPropsWithoutRef<$TypeOf<typeof import("../Libraries/Image/Image").default>>
+export type ImageProps = React.ComponentPropsWithoutRef<typeof import("../Libraries/Image/Image").default>
 
 /**
  * @deprecated Instead use `import("react-native/Libraries/Text/TextProps").TextProps`.
@@ -63,7 +60,7 @@ export { TextProps } from "../Libraries/Text/TextProps"
  * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof TouchableWithoutFeedback>`.
  */
 export type TouchableWithoutFeedbackProps = React.ComponentPropsWithoutRef<
-  $TypeOf<typeof import("../Libraries/Components/Touchable/TouchableWithoutFeedback").default>
+  typeof import("../Libraries/Components/Touchable/TouchableWithoutFeedback").default
 >
 
 /**
@@ -75,7 +72,7 @@ export { ViewProps } from "../Libraries/Components/View/ViewPropTypes"
  * @deprecated Instead use `React.ComponentPropsWithoutRef<typeof TouchableHighlight>`.
  */
 export type TouchableHighlightProps = React.ComponentPropsWithoutRef<
-  $TypeOf<typeof import("../Libraries/Components/Touchable/TouchableHighlight").default>
+  typeof import("../Libraries/Components/Touchable/TouchableHighlight").default
 >
 
 /**

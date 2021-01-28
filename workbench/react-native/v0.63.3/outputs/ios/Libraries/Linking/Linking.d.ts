@@ -58,4 +58,5 @@ declare class Linking extends $2 {
     value: string | number | boolean;
   }[]): Promise<void>;
 }
-export default Linking;
+declare const $f2tExportDefault: Linking;
+export default $f2tExportDefault;

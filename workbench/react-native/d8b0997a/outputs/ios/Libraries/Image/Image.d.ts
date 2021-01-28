@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "../DeprecatedPropTypes/DeprecatedImagePropType";
 import $2 from "react";
 import $3 from "./resolveAssetSource";
@@ -19,7 +18,7 @@ declare type ImageComponentStatics = Readonly<
   getSizeWithHeaders: typeof getSizeWithHeaders;
   prefetch: typeof prefetch;
   queryCache: typeof queryCache;
-  resolveAssetSource: $TypeOf<typeof $3>;
+  resolveAssetSource: typeof $3;
 }>;
 declare const $f2tExportDefault: $2.AbstractComponent<ImagePropsType, $2.ElementRef<typeof ImageViewNativeComponent>> & ImageComponentStatics;
 export default $f2tExportDefault;

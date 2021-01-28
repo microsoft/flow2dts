@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import { $Diff, $PropertyType } from "utility-types";
 import $2 from "react";
 import $3 from "../Components/View/View";
@@ -124,7 +123,7 @@ declare type OptionalProps<ItemT> =
 declare type FlatListProps<ItemT> =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 RequiredProps<ItemT> & OptionalProps<ItemT> & {};
-declare type VirtualizedListProps = $2.ElementConfig<$TypeOf<typeof $4>>;
+declare type VirtualizedListProps = $2.ElementConfig<typeof $4>;
 declare type Props<ItemT> = $Diff<VirtualizedListProps, {
   getItem: $PropertyType<VirtualizedListProps, "getItem">;
   getItemCount: $PropertyType<VirtualizedListProps, "getItemCount">;
