@@ -1,4 +1,4 @@
-import { OverridesVisitors } from "../../../packages/flow2dts/src/transform/applyOverridesVisitors"
+import { OverridesVisitor } from "../../../packages/flow2dts/src/transform/applyOverridesVisitors"
 import template from "@babel/template"
 import { types as t } from "@babel/core"
 import { NodePath, Scope, Visitor } from "@babel/traverse"
@@ -105,91 +105,108 @@ function removeUnknownFromHostComponent(path: NodePath<t.TSTypeReference>) {
   }
 }
 
-const visitors: OverridesVisitors = {
-  all: {
-    // TODO: We should convert DeclareClass, which is a Flow type, to ClassDeclaration.
-    DeclareClass: {
-      exit(path) {
-        noVoidForReactComponentState(path)
+const visitors: OverridesVisitor[] = [
+  [
+    "**/*",
+    {
+      // TODO: We should convert DeclareClass, which is a Flow type, to ClassDeclaration.
+      DeclareClass: {
+        exit(path) {
+          noVoidForReactComponentState(path)
+        },
+      },
+      TSTypeReference: {
+        exit(path) {
+          removeTypeOfHelperForReactElementRef(path)
+          removeUnknownFromHostComponent(path)
+        },
+      },
+      // Remove all propTypes typings. They are hard to get right, don't add any value to type-consumers, and are deprecated to boot.
+      TSPropertySignature: {
+        exit(path) {
+          if (t.isIdentifier(path.node.key) && path.node.key.name === "propTypes") {
+            path.remove()
+          }
+        },
       },
     },
-    TSTypeReference: {
-      exit(path) {
-        removeTypeOfHelperForReactElementRef(path)
-        removeUnknownFromHostComponent(path)
+  ],
+  [
+    "index.d.ts",
+    {
+      Program: {
+        exit(path) {
+          // These deprecated DT types are defined in a separate file for ease of external contribution.
+          path.pushContainer("body", ast`export * from "./TypeScriptSupplementals"` as t.Statement[])
+        },
+      },
+      ImportDefaultSpecifier: {
+        exit(path) {
+          if (path.node.local.name === "Animated$f2tTypeof") {
+            path.replaceWith(t.importNamespaceSpecifier(path.node.local))
+          }
+        },
       },
     },
-    // Remove all propTypes typings. They are hard to get right, don't add any value to type-consumers, and are deprecated to boot.
-    TSPropertySignature: {
-      exit(path) {
-        if (t.isIdentifier(path.node.key) && path.node.key.name === "propTypes") {
-          path.remove()
-        }
-      },
-    },
-  },
-  "index.d.ts": {
-    Program: {
-      exit(path) {
-        // These deprecated DT types are defined in a separate file for ease of external contribution.
-        path.pushContainer("body", ast`export * from "./TypeScriptSupplementals"` as t.Statement[])
-      },
-    },
-    ImportDefaultSpecifier: {
-      exit(path) {
-        if (path.node.local.name === "Animated$f2tTypeof") {
-          path.replaceWith(t.importNamespaceSpecifier(path.node.local))
-        }
-      },
-    },
-  },
+  ],
   // TODO: New overrides API should allow multiple overrides to a single file, so that this can be grouped together with the 'animated' override above in `index.d.ts`
-  "Libraries/Animated/src/Animated.d.ts": {
-    Program: {
-      exit(path) {
-        const exportDeclaration = ast`
+  [
+    "Libraries/Animated/src/Animated.d.ts",
+    {
+      Program: {
+        exit(path) {
+          const exportDeclaration = ast`
           export * from "./AnimatedMock"
         ` as t.ExportDeclaration
-        path.unshiftContainer("body", [exportDeclaration])
+          path.unshiftContainer("body", [exportDeclaration])
+        },
       },
     },
-  },
-  "Libraries/Animated/src/AnimatedImplementation.d.ts": {
-    ImportDeclaration: {
-      exit(path) {
-        if (path.node.source.value === "./AnimatedEvent") {
-          path.node.specifiers = path.node.specifiers.map((specifier) =>
-            t.isImportDefaultSpecifier(specifier) ? t.importNamespaceSpecifier(specifier.local) : specifier
-          )
-        }
+  ],
+  [
+    "Libraries/Animated/src/AnimatedImplementation.d.ts",
+    {
+      ImportDeclaration: {
+        exit(path) {
+          if (path.node.source.value === "./AnimatedEvent") {
+            path.node.specifiers = path.node.specifiers.map((specifier) =>
+              t.isImportDefaultSpecifier(specifier) ? t.importNamespaceSpecifier(specifier.local) : specifier
+            )
+          }
+        },
       },
     },
-  },
-  "Libraries/Lists/SectionList.d.ts": listsVisitor,
-  "Libraries/Lists/VirtualizedSectionList.d.ts": {
-    ...listsVisitor,
-    // FIXME: This is a temp workaround for https://github.com/microsoft/flow2dts/issues/15
-    TSTypeReference: {
-      exit(path) {
-        const typeName = path.node.typeName
-        if (
-          path.find((p) => p.isTSTypeAliasDeclaration() && p.node.id.name === "DefaultProps") &&
-          t.isTSQualifiedName(typeName) &&
-          t.isIdentifier(typeName.left) &&
-          typeName.left.name === "$2" &&
-          t.isIdentifier(typeName.right) &&
-          typeName.right.name === "defaultProps"
-        ) {
-          path.replaceWith(t.tsTypeQuery(typeName))
-        }
+  ],
+  ["Libraries/Lists/SectionList.d.ts", listsVisitor],
+  [
+    "Libraries/Lists/VirtualizedSectionList.d.ts",
+    {
+      ...listsVisitor,
+      // FIXME: This is a temp workaround for https://github.com/microsoft/flow2dts/issues/15
+      TSTypeReference: {
+        exit(path) {
+          const typeName = path.node.typeName
+          if (
+            path.find((p) => p.isTSTypeAliasDeclaration() && p.node.id.name === "DefaultProps") &&
+            t.isTSQualifiedName(typeName) &&
+            t.isIdentifier(typeName.left) &&
+            typeName.left.name === "$2" &&
+            t.isIdentifier(typeName.right) &&
+            typeName.right.name === "defaultProps"
+          ) {
+            path.replaceWith(t.tsTypeQuery(typeName))
+          }
+        },
       },
     },
-  },
-  "Libraries/Components/TextInput/TextInputNativeCommands.d.ts": {
-    TSInterfaceDeclaration: {
-      exit(path) {
-        if (path.node.id.name === "TextInputNativeCommands") {
-          const replacementDeclaration = ast`
+  ],
+  [
+    "Libraries/Components/TextInput/TextInputNativeCommands.d.ts",
+    {
+      TSInterfaceDeclaration: {
+        exit(path) {
+          if (path.node.id.name === "TextInputNativeCommands") {
+            const replacementDeclaration = ast`
             interface TextInputNativeCommands<
               T extends
                 | React.ForwardRefExoticComponent<any>
@@ -198,54 +215,63 @@ const visitors: OverridesVisitors = {
                 | keyof JSX.IntrinsicElements
             > {}
           ` as t.TSInterfaceDeclaration
-          replacementDeclaration.body = path.node.body
-          path.replaceWith(replacementDeclaration)
-          path.skip()
-        }
-      },
-    },
-  },
-  "Libraries/Performance/PureComponentDebug.d.ts": {
-    // TODO: We should convert DeclareClass, which is a Flow type, to ClassDeclaration.
-    DeclareClass: {
-      exit(path) {
-        if (path.node.id.name === "PureComponentDebug") {
-          const typeParameters = path.node.typeParameters as any
-          t.assertTSTypeParameterDeclaration(typeParameters)
-          typeParameters.params.find((param) => param.name === "S")!.default = t.tsUndefinedKeyword()
-          path.skip()
-        }
-      },
-    },
-  },
-  "Libraries/Interaction/PanResponder.d.ts": {
-    TSTypeAliasDeclaration: {
-      exit(path) {
-        if (path.node.id.name === "PanResponderInstance") {
-          const replacementDeclaration = ast`
-            declare type PanResponderInstance = ReturnType<typeof PanResponder["create"]>
-          ` as t.TSTypeAliasDeclaration
-          path.replaceWith(replacementDeclaration)
-          path.skip()
-        }
-      },
-    },
-  },
-  // TODO: This should be fixed upstream in RN. This seems like simply broken upstream code.
-  "Libraries/Utilities/ReactNativeTestTools.d.ts": {
-    TSTypeAliasDeclaration: {
-      exit(path) {
-        switch (path.node.id.name) {
-          case "$ReturnType": {
-            const replacementDeclaration = ast`
-              declare type $ReturnType<Fn extends (...args: any) => any> = ReturnType<Fn>
-            ` as t.TSTypeAliasDeclaration
+            replacementDeclaration.body = path.node.body
             path.replaceWith(replacementDeclaration)
             path.skip()
-            break
           }
-          case "ReactTestRendererJSON": {
+        },
+      },
+    },
+  ],
+  [
+    "Libraries/Performance/PureComponentDebug.d.ts",
+    {
+      // TODO: We should convert DeclareClass, which is a Flow type, to ClassDeclaration.
+      DeclareClass: {
+        exit(path) {
+          if (path.node.id.name === "PureComponentDebug") {
+            const typeParameters = path.node.typeParameters as any
+            t.assertTSTypeParameterDeclaration(typeParameters)
+            typeParameters.params.find((param) => param.name === "S")!.default = t.tsUndefinedKeyword()
+            path.skip()
+          }
+        },
+      },
+    },
+  ],
+  [
+    "Libraries/Interaction/PanResponder.d.ts",
+    {
+      TSTypeAliasDeclaration: {
+        exit(path) {
+          if (path.node.id.name === "PanResponderInstance") {
             const replacementDeclaration = ast`
+            declare type PanResponderInstance = ReturnType<typeof PanResponder["create"]>
+          ` as t.TSTypeAliasDeclaration
+            path.replaceWith(replacementDeclaration)
+            path.skip()
+          }
+        },
+      },
+    },
+  ],
+  // TODO: This should be fixed upstream in RN. This seems like simply broken upstream code.
+  [
+    "Libraries/Utilities/ReactNativeTestTools.d.ts",
+    {
+      TSTypeAliasDeclaration: {
+        exit(path) {
+          switch (path.node.id.name) {
+            case "$ReturnType": {
+              const replacementDeclaration = ast`
+              declare type $ReturnType<Fn extends (...args: any) => any> = ReturnType<Fn>
+            ` as t.TSTypeAliasDeclaration
+              path.replaceWith(replacementDeclaration)
+              path.skip()
+              break
+            }
+            case "ReactTestRendererJSON": {
+              const replacementDeclaration = ast`
               declare type ReactTestRendererJSON =
                 $ReturnType<
                   $ReturnType<
@@ -253,235 +279,280 @@ const visitors: OverridesVisitors = {
                   >["toJSON"]
                 >
             ` as t.TSTypeAliasDeclaration
-            path.replaceWith(replacementDeclaration)
-            path.skip()
-            break
+              path.replaceWith(replacementDeclaration)
+              path.skip()
+              break
+            }
           }
-        }
+        },
       },
     },
-  },
-  "Libraries/promiseRejectionTrackingOptions.d.ts": {
-    DeclareVariable: {
-      exit(path) {
-        if (path.node.id.name === "rejectionTrackingOptions") {
-          const replacementDeclaration = ast`
+  ],
+  [
+    "Libraries/promiseRejectionTrackingOptions.d.ts",
+    {
+      DeclareVariable: {
+        exit(path) {
+          if (path.node.id.name === "rejectionTrackingOptions") {
+            const replacementDeclaration = ast`
             declare var rejectionTrackingOptions: Parameters<enable>[0]
           ` as t.VariableDeclaration
-          path.replaceWith(replacementDeclaration)
-          path.skip()
-        }
-      },
-    },
-  },
-  // TODO: This should be fixed upstream in RN. No duplicate prop entries should exist.
-  "Libraries/Text/TextProps.d.ts": {
-    Program: {
-      enter(_, state: any) {
-        state.seen_adjustsFontSizeToFit_times = 0
-      },
-    },
-    TSPropertySignature: {
-      exit(path, state: any) {
-        if (t.isIdentifier(path.node.key) && path.node.key.name === "adjustsFontSizeToFit") {
-          state.seen_adjustsFontSizeToFit_times += 1
-          if (state.seen_adjustsFontSizeToFit_times === 2) {
-            path.remove()
+            path.replaceWith(replacementDeclaration)
+            path.skip()
           }
-        }
+        },
       },
     },
-  },
+  ],
+  // TODO: This should be fixed upstream in RN. No duplicate prop entries should exist.
+  [
+    "Libraries/Text/TextProps.d.ts",
+    {
+      Program: {
+        enter(_, state: any) {
+          state.seen_adjustsFontSizeToFit_times = 0
+        },
+      },
+      TSPropertySignature: {
+        exit(path, state: any) {
+          if (t.isIdentifier(path.node.key) && path.node.key.name === "adjustsFontSizeToFit") {
+            state.seen_adjustsFontSizeToFit_times += 1
+            if (state.seen_adjustsFontSizeToFit_times === 2) {
+              path.remove()
+            }
+          }
+        },
+      },
+    },
+  ],
   // TODO: This should be fixed upstream in RN. This seems like simply broken upstream code.
-  "Libraries/Components/SegmentedControlIOS/SegmentedControlIOS.ios.d.ts": {
-    TSTypeReference: {
-      exit(path) {
-        if (t.isIdentifier(path.node.typeName) && path.node.typeName.name === "NativeSegmentedControlIOS") {
-          const typeAlias = ast`
+  [
+    "Libraries/Components/SegmentedControlIOS/SegmentedControlIOS.ios.d.ts",
+    {
+      TSTypeReference: {
+        exit(path) {
+          if (t.isIdentifier(path.node.typeName) && path.node.typeName.name === "NativeSegmentedControlIOS") {
+            const typeAlias = ast`
             type Replacement = typeof import("./RCTSegmentedControlNativeComponent").default
           ` as t.TSTypeAliasDeclaration
-          path.replaceWith(typeAlias.typeAnnotation)
-          path.skip()
-        }
+            path.replaceWith(typeAlias.typeAnnotation)
+            path.skip()
+          }
+        },
       },
     },
-  },
-  "Libraries/Components/Pressable/useAndroidRippleForView.d.ts": {
-    ImportDeclaration: {
-      exit(path) {
-        if (path.node.source.value === "../../..") {
-          if (path.node.specifiers.length !== 1 || path.node.specifiers[0].local.name !== "View") {
-            throw path.buildCodeFrameError("Expected a single `View` import specificier")
-          }
-          const replacementDeclaration = ast`
+  ],
+  [
+    "Libraries/Components/Pressable/useAndroidRippleForView.d.ts",
+    {
+      ImportDeclaration: {
+        exit(path) {
+          if (path.node.source.value === "../../..") {
+            if (path.node.specifiers.length !== 1 || path.node.specifiers[0].local.name !== "View") {
+              throw path.buildCodeFrameError("Expected a single `View` import specificier")
+            }
+            const replacementDeclaration = ast`
             import View from "../../Components/View/View"
           ` as t.ImportDeclaration
-          path.replaceWith(replacementDeclaration)
-          path.skip()
-        }
+            path.replaceWith(replacementDeclaration)
+            path.skip()
+          }
+        },
       },
     },
-  },
-  "Libraries/Components/Touchable/TouchableBounce.d.ts": {
-    ImportDeclaration: {
-      exit(path) {
-        if (path.node.source.value === "../../..") {
-          if (path.node.specifiers.length !== 1 || path.node.specifiers[0].local.name !== "Animated") {
-            throw path.buildCodeFrameError("Expected a single `Animated` import specificier")
-          }
-          const replacementDeclaration = ast`
+  ],
+  [
+    "Libraries/Components/Touchable/TouchableBounce.d.ts",
+    {
+      ImportDeclaration: {
+        exit(path) {
+          if (path.node.source.value === "../../..") {
+            if (path.node.specifiers.length !== 1 || path.node.specifiers[0].local.name !== "Animated") {
+              throw path.buildCodeFrameError("Expected a single `Animated` import specificier")
+            }
+            const replacementDeclaration = ast`
             import * as Animated from "../../Animated/src/Animated"
           ` as t.ImportDeclaration
-          path.replaceWith(replacementDeclaration)
-          path.skip()
-        }
+            path.replaceWith(replacementDeclaration)
+            path.skip()
+          }
+        },
       },
     },
-  },
-  "Libraries/Components/Picker/Picker.d.ts": {
-    DeclareClass: {
-      exit(path) {
-        if (path.node.id.name === "PickerItem") {
-          const body = path.node.body as any
-          t.assertClassBody(body)
-          const renderMethod = body.body.find(
-            (m) => t.isTSDeclareMethod(m) && t.isIdentifier(m.key) && m.key.name === "render"
-          )
-          t.assertTSDeclareMethod(renderMethod)
-          t.assertTSTypeAnnotation(renderMethod.returnType)
-          t.assertTSVoidKeyword(renderMethod.returnType.typeAnnotation)
-          renderMethod.returnType.typeAnnotation = t.tsNeverKeyword()
-        }
+  ],
+  [
+    "Libraries/Components/Picker/Picker.d.ts",
+    {
+      DeclareClass: {
+        exit(path) {
+          if (path.node.id.name === "PickerItem") {
+            const body = path.node.body as any
+            t.assertClassBody(body)
+            const renderMethod = body.body.find(
+              (m) => t.isTSDeclareMethod(m) && t.isIdentifier(m.key) && m.key.name === "render"
+            )
+            t.assertTSDeclareMethod(renderMethod)
+            t.assertTSTypeAnnotation(renderMethod.returnType)
+            t.assertTSVoidKeyword(renderMethod.returnType.typeAnnotation)
+            renderMethod.returnType.typeAnnotation = t.tsNeverKeyword()
+          }
+        },
       },
     },
-  },
-  "Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.d.ts": {
-    ImportDeclaration: {
-      exit(path, state: { promiseIdentifierName?: string }) {
-        if (path.node.source.value === "../../Promise") {
-          const specifier = path.node.specifiers[0]
-          t.assertImportDefaultSpecifier(specifier)
-          state.promiseIdentifierName = specifier.local.name
-          path.remove()
-        }
+  ],
+  [
+    "Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.d.ts",
+    {
+      ImportDeclaration: {
+        exit(path, state: { promiseIdentifierName?: string }) {
+          if (path.node.source.value === "../../Promise") {
+            const specifier = path.node.specifiers[0]
+            t.assertImportDefaultSpecifier(specifier)
+            state.promiseIdentifierName = specifier.local.name
+            path.remove()
+          }
+        },
+      },
+      TSTypeReference: {
+        exit(path, state: { promiseIdentifierName: string }) {
+          if (t.isIdentifier(path.node.typeName) && path.node.typeName.name === state.promiseIdentifierName) {
+            path.node.typeName = t.identifier("Promise")
+          }
+        },
       },
     },
-    TSTypeReference: {
-      exit(path, state: { promiseIdentifierName: string }) {
-        if (t.isIdentifier(path.node.typeName) && path.node.typeName.name === state.promiseIdentifierName) {
-          path.node.typeName = t.identifier("Promise")
-        }
-      },
-    },
-  },
+  ],
   // TODO: These should all be optional upstream
-  "Libraries/Lists/FlatList.d.ts": {
-    TSTypeAliasDeclaration: {
-      exit(path) {
-        if (path.node.id.name === "OptionalProps") {
-          const typeLiteral = path.node.typeAnnotation
-          t.assertTSTypeLiteral(typeLiteral)
-          typeLiteral.members.forEach((propertySignature) => {
-            t.assertTSPropertySignature(propertySignature)
-            propertySignature.optional = true
-          })
-        }
+  [
+    "Libraries/Lists/FlatList.d.ts",
+    {
+      TSTypeAliasDeclaration: {
+        exit(path) {
+          if (path.node.id.name === "OptionalProps") {
+            const typeLiteral = path.node.typeAnnotation
+            t.assertTSTypeLiteral(typeLiteral)
+            typeLiteral.members.forEach((propertySignature) => {
+              t.assertTSPropertySignature(propertySignature)
+              propertySignature.optional = true
+            })
+          }
+        },
       },
     },
-  },
+  ],
   // TODO: These should be typed as such upstream
-  "Libraries/Utilities/Dimensions.d.ts": {
-    Program: {
-      exit(path) {
-        path.unshiftContainer(
-          "body",
-          ast`
+  [
+    "Libraries/Utilities/Dimensions.d.ts",
+    {
+      Program: {
+        exit(path) {
+          path.unshiftContainer(
+            "body",
+            ast`
             import type { DisplayMetrics } from "./NativeDeviceInfo"
             type DimensionsValue = {
               window?: DisplayMetrics
               screen?: DisplayMetrics
             }
           ` as t.Statement[]
-        )
+          )
+        },
       },
-    },
-    TSDeclareMethod: {
-      exit(path) {
-        t.assertTSDeclareMethod(path.node)
-        t.assertIdentifier(path.node.key)
-        if (
-          path.node.key.name === "get" &&
-          path.findParent((p) => p.isDeclareClass() && p.node.id.name === "Dimensions")
-        ) {
-          const prop = (ast`
+      TSDeclareMethod: {
+        exit(path) {
+          t.assertTSDeclareMethod(path.node)
+          t.assertIdentifier(path.node.key)
+          if (
+            path.node.key.name === "get" &&
+            path.findParent((p) => p.isDeclareClass() && p.node.id.name === "Dimensions")
+          ) {
+            const prop = (ast`
             class _ {
               static get<K extends keyof DimensionsValue>(dim: K): Required<DimensionsValue>[K]
             }
           ` as t.ClassDeclaration).body.body[0]
-          path.replaceWith(prop)
-          path.skip()
-        }
+            path.replaceWith(prop)
+            path.skip()
+          }
+        },
       },
     },
-  },
+  ],
   // This is done so people can merge their own NativeModules interface declaration.
-  "Libraries/BatchedBridge/NativeModules.d.ts": {
-    DeclareVariable: {
-      exit(path) {
-        const id = path.node.id
-        if (t.isIdentifier(id) && id.name === "NativeModules") {
-          t.assertTypeAnnotation(id.typeAnnotation)
-          const typeLiteral = id.typeAnnotation.typeAnnotation as any
-          t.assertTSTypeLiteral(typeLiteral)
-          const members = typeLiteral.members
-          path.insertBefore(
-            t.exportNamedDeclaration(
-              t.tsInterfaceDeclaration(t.identifier("NativeModules"), undefined, undefined, t.tsInterfaceBody(members))
+  [
+    "Libraries/BatchedBridge/NativeModules.d.ts",
+    {
+      DeclareVariable: {
+        exit(path) {
+          const id = path.node.id
+          if (t.isIdentifier(id) && id.name === "NativeModules") {
+            t.assertTypeAnnotation(id.typeAnnotation)
+            const typeLiteral = id.typeAnnotation.typeAnnotation as any
+            t.assertTSTypeLiteral(typeLiteral)
+            const members = typeLiteral.members
+            path.insertBefore(
+              t.exportNamedDeclaration(
+                t.tsInterfaceDeclaration(
+                  t.identifier("NativeModules"),
+                  undefined,
+                  undefined,
+                  t.tsInterfaceBody(members)
+                )
+              )
             )
-          )
-          id.typeAnnotation.typeAnnotation = t.tsTypeReference(t.identifier("NativeModules")) as any
-        }
+            id.typeAnnotation.typeAnnotation = t.tsTypeReference(t.identifier("NativeModules")) as any
+          }
+        },
       },
     },
-  },
+  ],
   // TODO: This is pending the work to port the better DT typings to Flow:
   // https://github.com/microsoft/flow2dts/issues/14
-  "Libraries/Network/XMLHttpRequest.d.ts": {
-    TSTypeReference: {
-      exit(path) {
-        if (t.isIdentifier(path.node.typeName) && path.node.typeName.name === "EventListener") {
-          path.replaceWith(t.tsAnyKeyword())
-        }
+  [
+    "Libraries/Network/XMLHttpRequest.d.ts",
+    {
+      TSTypeReference: {
+        exit(path) {
+          if (t.isIdentifier(path.node.typeName) && path.node.typeName.name === "EventListener") {
+            path.replaceWith(t.tsAnyKeyword())
+          }
+        },
       },
     },
-  },
-  "Libraries/Animated/src/createAnimatedComponent.d.ts": {
-    TSTypeParameter: {
-      exit(path) {
-        if (path.node.name === "Props") {
-          const constraint = path.node.constraint
-          t.assertTSTypeLiteral(constraint)
-          constraint.members = []
-        }
+  ],
+  [
+    "Libraries/Animated/src/createAnimatedComponent.d.ts",
+    {
+      TSTypeParameter: {
+        exit(path) {
+          if (path.node.name === "Props") {
+            const constraint = path.node.constraint
+            t.assertTSTypeLiteral(constraint)
+            constraint.members = []
+          }
+        },
       },
     },
-  },
+  ],
   // TODO: These should be typed as such upstream
-  "Libraries/Components/View/ViewPropTypes.d.ts": {
-    TSPropertySignature: {
-      exit(path) {
-        if (t.isIdentifier(path.node.key) && path.node.key.name === "focusable") {
-          const typeAnnotation = path.node.typeAnnotation!.typeAnnotation
-          t.assertTSBooleanKeyword(typeAnnotation)
-          path.node.typeAnnotation!.typeAnnotation = t.tsUnionType([
-            t.tsNullKeyword(),
-            t.tsUndefinedKeyword(),
-            t.tsBooleanKeyword(),
-          ])
-        }
+  [
+    "Libraries/Components/View/ViewPropTypes.d.ts",
+    {
+      TSPropertySignature: {
+        exit(path) {
+          if (t.isIdentifier(path.node.key) && path.node.key.name === "focusable") {
+            const typeAnnotation = path.node.typeAnnotation!.typeAnnotation
+            t.assertTSBooleanKeyword(typeAnnotation)
+            path.node.typeAnnotation!.typeAnnotation = t.tsUnionType([
+              t.tsNullKeyword(),
+              t.tsUndefinedKeyword(),
+              t.tsBooleanKeyword(),
+            ])
+          }
+        },
       },
     },
-  },
-}
+  ],
+]
 
 export default visitors

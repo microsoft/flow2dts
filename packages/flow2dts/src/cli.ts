@@ -7,7 +7,7 @@ import path from "path"
 import chalk from "chalk"
 
 import { convert } from "./convert"
-import { OverridesVisitors } from "./transform/applyOverridesVisitors"
+import { OverridesVisitor } from "./transform/applyOverridesVisitors"
 import { ResolvedHintEntries, ResolvedHintFile } from "./transform/state"
 
 const FLOW_EXTNAME = ".js.flow"
@@ -31,7 +31,7 @@ async function run({
   cwd?: string
 }): Promise<[number, number]> {
   const overridesVisitors =
-    overridesPath === undefined ? undefined : (require(overridesPath).default as OverridesVisitors)
+    overridesPath === undefined ? undefined : (require(overridesPath).default as OverridesVisitor[])
   const hintEntries = hintPath === undefined ? undefined : (require(hintPath) as ResolvedHintEntries)
   let successCount = 0
   const conversions: Array<Promise<void>> = []

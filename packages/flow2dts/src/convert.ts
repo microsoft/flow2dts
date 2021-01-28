@@ -13,7 +13,7 @@ import fs from "fs"
 import stripAnsi from "strip-ansi"
 
 import { transform as pluginFlow2DTS, Options as PluginOptions } from "./transform"
-import { OverridesVisitors } from "./transform/applyOverridesVisitors"
+import { OverridesVisitor } from "./transform/applyOverridesVisitors"
 import { ResolvedHintFile } from "./transform/state"
 
 const regexFixPath = /^\[FLOW2DTS \- Error\] .*?[\\\/]workbench[\\\/]inputs[\\\/](?<path>.*?\.js\.flow):(?<message>.*)$/
@@ -43,7 +43,7 @@ export async function convert({
   outFilename: string
   hintFile?: ResolvedHintFile
   overrideFilename?: string
-  overridesVisitors?: OverridesVisitors
+  overridesVisitors?: OverridesVisitor[]
 }): Promise<[string, boolean]> {
   let success = false
   let outData: string

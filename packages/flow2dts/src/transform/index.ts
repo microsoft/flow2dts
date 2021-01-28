@@ -7,7 +7,7 @@ import { typeReferenceRecognizerVisitor } from "./typeReferenceResolver"
 import { rewriteTypeVisitor } from "./rewriteTypeVisitors"
 import { rewriteDeclVisitor } from "./rewriteDeclVisitors"
 import { createFixupVisitor, Options as FixupOptions } from "./fixupVisitor"
-import { applyOverridesVisitors, OverridesVisitors } from "./applyOverridesVisitors"
+import { applyOverridesVisitors, OverridesVisitor } from "./applyOverridesVisitors"
 import { emitImportsForTypeReferencesVisitor } from "./emitImportsForTypeReferencesVisitor"
 import { polyfillPackagesAndTypes } from "./polyfillPackagesAndTypes"
 import { ResolvedHintFile } from "./state"
@@ -15,7 +15,7 @@ import { ResolvedHintFile } from "./state"
 export interface Options extends FixupOptions {
   pathname?: string
   hintFile?: ResolvedHintFile
-  overridesVisitors?: OverridesVisitors
+  overridesVisitors?: OverridesVisitor[]
 }
 
 export function transform(_api: unknown, options: Options, _dirname: string): PluginObj<State> {

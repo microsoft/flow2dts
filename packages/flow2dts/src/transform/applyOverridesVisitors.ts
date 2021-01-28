@@ -2,16 +2,15 @@
 // Licensed under the MIT License.
 
 import { Visitor, types as t, traverse } from "@babel/core"
+import micromatch from "micromatch"
 
-export type OverridesVisitors<S = any> = { all?: Visitor<S>; [Path: string]: Visitor<S> | undefined }
+export type OverridesVisitor<S = any> = [pathPattern: string, visitor: Visitor<S>]
 
-export function applyOverridesVisitors(pathname: string, fileNode: t.File, visitors: OverridesVisitors) {
+export function applyOverridesVisitors(pathname: string, fileNode: t.File, visitors: OverridesVisitor[]) {
   const state = {}
-  if (visitors.all) {
-    traverse(fileNode, visitors.all, undefined, state)
-  }
-  const fileSpecificVisitor = visitors[pathname]
-  if (fileSpecificVisitor) {
-    traverse(fileNode, fileSpecificVisitor, undefined, state)
-  }
+  visitors.forEach(([pathPattern, visitor]) => {
+    if (micromatch.isMatch(pathname, pathPattern)) {
+      traverse(fileNode, visitor, undefined, state)
+    }
+  })
 }
