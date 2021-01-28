@@ -208,8 +208,12 @@ export const typeReferenceVisitor: Visitor<State> = {
               }
             } else {
               switch (selectedHintImport.type) {
-                case "type":
-                case "class": {
+                case "class":
+                  if (path.findParent((parentPath) => parentPath.isDeclareModuleExports())) {
+                    // it's a class on `module.exports`, leave `typeof` for the `exportVisitor`
+                    return
+                  }
+                case "type": {
                   // it is a type, just use the identifier
                   path.replaceWith(t.tsTypeReference(convertQID(typeQueryOperator.id)))
                   return

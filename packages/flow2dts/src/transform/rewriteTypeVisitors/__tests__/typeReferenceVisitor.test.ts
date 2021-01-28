@@ -89,4 +89,35 @@ describe("typeReferenceVisitor", () => {
       |};
     `)
   })
+
+  it("does not remove typeof from a class assigned to module.exports so the exportVisitor can treat it correctly", () => {
+    expect(
+      applyVisitor({
+        input: dedent`
+          declare class Dimensions {}
+          declare module.exports: typeof Dimensions
+        `,
+        typeReferences: {
+          records: {},
+          imports: {},
+          exports: {},
+        },
+        hintFile: {
+          imports: {},
+          typeofs: {
+            Dimensions: [
+              {
+                type: "class",
+                row: 2,
+                column: 32,
+              },
+            ],
+          },
+        },
+      })
+    ).toMatchInlineSnapshot(`
+      declare class Dimensions {}
+      declare module.exports: typeof Dimensions
+    `)
+  })
 })
