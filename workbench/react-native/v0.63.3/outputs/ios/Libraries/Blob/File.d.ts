@@ -8,5 +8,4 @@ declare class File extends $1 {
   name(): string;
   lastModified(): number;
 }
-declare const $f2tExportDefault: File;
-export default $f2tExportDefault;
+export default File;

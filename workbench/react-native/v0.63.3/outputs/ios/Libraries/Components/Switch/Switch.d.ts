@@ -68,5 +68,4 @@ declare class Switch extends React.Component<Props> {
   componentDidUpdate(): void;
 }
 export type { Props };
-declare const $f2tExportDefault: Switch;
-export default $f2tExportDefault;
+export default Switch;

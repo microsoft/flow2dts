@@ -13,5 +13,4 @@ declare class Batchinator {
   }): void;
   schedule(): void;
 }
-declare const $f2tExportDefault: Batchinator;
-export default $f2tExportDefault;
+export default Batchinator;

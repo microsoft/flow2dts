@@ -11,5 +11,4 @@ declare class AnimatedMultiplication extends $4 {
   __detach(): void;
   __getNativeConfig(): any;
 }
-declare const $f2tExportDefault: AnimatedMultiplication;
-export default $f2tExportDefault;
+export default AnimatedMultiplication;

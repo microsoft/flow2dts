@@ -11,5 +11,4 @@ declare class StyleSheetValidation {
 }
 declare var styleError: (message1: $FlowFixMe, style: $FlowFixMe, caller?: $FlowFixMe, message2?: $FlowFixMe) => void;
 declare var allStylePropTypes: $FlowFixMe;
-declare const $f2tExportDefault: StyleSheetValidation;
-export default $f2tExportDefault;
+export default StyleSheetValidation;

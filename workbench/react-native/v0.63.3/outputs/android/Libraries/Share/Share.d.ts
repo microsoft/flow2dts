@@ -17,5 +17,4 @@ declare class Share {
   static sharedAction: "sharedAction";
   static dismissedAction: "dismissedAction";
 }
-declare const $f2tExportDefault: Share;
-export default $f2tExportDefault;
+export default Share;

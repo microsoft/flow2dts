@@ -40,5 +40,4 @@ declare class MessageQueue {
   __invokeCallback(cbID: number, args: unknown[]): void;
 }
 export type { SpyData };
-declare const $f2tExportDefault: MessageQueue;
-export default $f2tExportDefault;
+export default MessageQueue;

@@ -11,5 +11,4 @@ declare class AnimatedAddition extends $4 {
   __detach(): void;
   __getNativeConfig(): any;
 }
-declare const $f2tExportDefault: AnimatedAddition;
-export default $f2tExportDefault;
+export default AnimatedAddition;

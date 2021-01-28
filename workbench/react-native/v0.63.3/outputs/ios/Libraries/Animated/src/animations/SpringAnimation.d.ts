@@ -85,5 +85,4 @@ declare class SpringAnimation extends $4 {
 }
 export type { SpringAnimationConfig };
 export type { SpringAnimationConfigSingle };
-declare const $f2tExportDefault: SpringAnimation;
-export default $f2tExportDefault;
+export default SpringAnimation;

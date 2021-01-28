@@ -4,5 +4,4 @@ declare class ImageBackground extends $2.Component<$FlowFixMeProps> {
   setNativeProps(props: Object): void;
   render(): $2.Node;
 }
-declare const $f2tExportDefault: ImageBackground;
-export default $f2tExportDefault;
+export default ImageBackground;

@@ -103,5 +103,4 @@ declare class TouchableNativeFeedback extends React.Component<Props, State> {
   componentDidUpdate(prevProps: Props, prevState: State): void;
   componentWillUnmount(): void;
 }
-declare const $f2tExportDefault: TouchableNativeFeedback;
-export default $f2tExportDefault;
+export default TouchableNativeFeedback;

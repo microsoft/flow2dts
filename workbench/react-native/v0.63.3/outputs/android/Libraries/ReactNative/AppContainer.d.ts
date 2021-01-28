@@ -33,5 +33,4 @@ declare class AppContainer extends $2.Component<Props, State> {
   componentWillUnmount(): void;
   render(): $2.Node;
 }
-declare const $f2tExportDefault: AppContainer;
-export default $f2tExportDefault;
+export default AppContainer;

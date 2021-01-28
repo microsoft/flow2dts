@@ -3,5 +3,4 @@ import $1 from "react";
 declare class UnimplementedView extends $1.Component<$FlowFixMeProps> {
   render(): $1.Node;
 }
-declare const $f2tExportDefault: UnimplementedView;
-export default $f2tExportDefault;
+export default UnimplementedView;

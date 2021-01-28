@@ -111,5 +111,4 @@ declare class StatusBar extends $1.Component<Props> {
 }
 export type { StatusBarStyle };
 export type { StatusBarAnimation };
-declare const $f2tExportDefault: StatusBar;
-export default $f2tExportDefault;
+export default StatusBar;

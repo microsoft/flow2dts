@@ -360,5 +360,4 @@ declare class VirtualizedList extends React.PureComponent<Props, State> {
 export type { Separators };
 export type { RenderItemProps };
 export type { RenderItemType };
-declare const $f2tExportDefault: VirtualizedList;
-export default $f2tExportDefault;
+export default VirtualizedList;

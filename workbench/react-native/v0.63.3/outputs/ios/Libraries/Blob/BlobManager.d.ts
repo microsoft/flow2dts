@@ -11,5 +11,4 @@ declare class BlobManager {
   static removeWebSocketHandler(socketId: number): void;
   static sendOverSocket(blob: typeof $1, socketId: number): void;
 }
-declare const $f2tExportDefault: BlobManager;
-export default $f2tExportDefault;
+export default BlobManager;

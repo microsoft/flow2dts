@@ -11,5 +11,4 @@ declare class NativeEventEmitter extends $1 {
   removeAllListeners(eventType: string): void;
   removeSubscription(subscription: EmitterSubscription): void;
 }
-declare const $f2tExportDefault: NativeEventEmitter;
-export default $f2tExportDefault;
+export default NativeEventEmitter;

@@ -89,5 +89,4 @@ declare class DatePickerIOS extends $2.Component<Props> {
   componentDidUpdate(): void;
   render(): $2.Node;
 }
-declare const $f2tExportDefault: DatePickerIOS;
-export default $f2tExportDefault;
+export default DatePickerIOS;

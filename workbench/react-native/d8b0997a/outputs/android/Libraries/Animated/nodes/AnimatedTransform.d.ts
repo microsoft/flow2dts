@@ -8,5 +8,4 @@ declare class AnimatedTransform extends $2 {
   __detach(): void;
   __getNativeConfig(): any;
 }
-declare const $f2tExportDefault: AnimatedTransform;
-export default $f2tExportDefault;
+export default AnimatedTransform;

@@ -18,5 +18,4 @@ declare class Easing {
   static out(easing: (t: number) => number): (t: number) => number;
   static inOut(easing: (t: number) => number): (t: number) => number;
 }
-declare const $f2tExportDefault: Easing;
-export default $f2tExportDefault;
+export default Easing;

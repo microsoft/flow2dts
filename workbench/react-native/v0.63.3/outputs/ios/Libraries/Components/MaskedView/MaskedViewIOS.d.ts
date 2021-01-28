@@ -14,5 +14,4 @@ ViewProps & {
 declare class MaskedViewIOS extends $2.Component<Props> {
   render(): $2.Node;
 }
-declare const $f2tExportDefault: MaskedViewIOS;
-export default $f2tExportDefault;
+export default MaskedViewIOS;

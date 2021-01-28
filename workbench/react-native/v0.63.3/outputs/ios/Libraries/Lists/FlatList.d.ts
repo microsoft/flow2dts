@@ -225,5 +225,4 @@ declare class FlatList<ItemT> extends $2.PureComponent<Props<ItemT>, {}> {
 }
 export type { Props };
 export type { DefaultProps };
-declare const $f2tExportDefault: FlatList;
-export default $f2tExportDefault;
+export default FlatList;

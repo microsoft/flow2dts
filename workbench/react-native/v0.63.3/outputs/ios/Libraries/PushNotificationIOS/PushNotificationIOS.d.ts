@@ -132,5 +132,4 @@ declare class PushNotificationIOS {
 export type { ContentAvailable };
 export type { FetchResult };
 export type { PushNotificationEventName };
-declare const $f2tExportDefault: PushNotificationIOS;
-export default $f2tExportDefault;
+export default PushNotificationIOS;

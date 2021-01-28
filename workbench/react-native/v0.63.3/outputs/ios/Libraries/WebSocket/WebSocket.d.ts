@@ -31,5 +31,4 @@ declare class WebSocket extends $2 {
   ping(): void;
 }
 declare var $2: any;
-declare const $f2tExportDefault: WebSocket;
-export default $f2tExportDefault;
+export default WebSocket;

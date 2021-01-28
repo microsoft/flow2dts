@@ -6,5 +6,4 @@ declare class DatePickerAndroid {
   static readonly dateSetAction: "dateSetAction";
   static readonly dismissedAction: "dismissedAction";
 }
-declare const $f2tExportDefault: DatePickerAndroid;
-export default $f2tExportDefault;
+export default DatePickerAndroid;

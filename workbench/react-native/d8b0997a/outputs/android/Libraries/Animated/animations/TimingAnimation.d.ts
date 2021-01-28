@@ -28,5 +28,4 @@ declare class TimingAnimation extends $4 {
 }
 export type { TimingAnimationConfig };
 export type { TimingAnimationConfigSingle };
-declare const $f2tExportDefault: TimingAnimation;
-export default $f2tExportDefault;
+export default TimingAnimation;
