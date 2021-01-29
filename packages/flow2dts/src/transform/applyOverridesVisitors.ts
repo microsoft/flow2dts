@@ -2,16 +2,30 @@
 // Licensed under the MIT License.
 
 import { Visitor, types as t, traverse } from "@babel/core"
+import { isMatch } from "micromatch"
 
-export type OverridesVisitors<S = any> = { all?: Visitor<S>; [Path: string]: Visitor<S> | undefined }
+export type OverridesVisitor<S = any> = [pathPattern: string, visitor: Visitor<S>]
 
-export function applyOverridesVisitors(pathname: string, fileNode: t.File, visitors: OverridesVisitors) {
+export interface OverridesVisitorObject<S = any> {
+  pathPattern: string
+  visitor: Visitor<S>
+  madeChangesToNumberOfFiles: number
+}
+
+export function initVisitorObjects(visitors: OverridesVisitor[]): OverridesVisitorObject[] {
+  return visitors.map(([pathPattern, visitor]) => ({ pathPattern, visitor, madeChangesToNumberOfFiles: 0 }))
+}
+
+export function applyOverridesVisitors(pathname: string, fileNode: t.File, visitorObjects: OverridesVisitorObject[]) {
   const state = {}
-  if (visitors.all) {
-    traverse(fileNode, visitors.all, undefined, state)
-  }
-  const fileSpecificVisitor = visitors[pathname]
-  if (fileSpecificVisitor) {
-    traverse(fileNode, fileSpecificVisitor, undefined, state)
-  }
+  visitorObjects.forEach((visitorObject) => {
+    if (isMatch(pathname, visitorObject.pathPattern)) {
+      const before = JSON.stringify(fileNode)
+      traverse(fileNode, visitorObject.visitor, undefined, state)
+      const after = JSON.stringify(fileNode)
+      if (after !== before) {
+        visitorObject.madeChangesToNumberOfFiles++
+      }
+    }
+  })
 }

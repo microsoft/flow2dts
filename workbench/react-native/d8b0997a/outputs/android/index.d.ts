@@ -283,3 +283,4 @@ declare const $f2tExportDefault:
   ViewPropTypes: DeprecatedViewPropTypes;
 };
 export default $f2tExportDefault;
+export * from "./TypeScriptSupplementals";
