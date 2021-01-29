@@ -7,7 +7,7 @@ import path from "path"
 import chalk from "chalk"
 
 import { convert } from "./convert"
-import { OverridesVisitor } from "./transform/applyOverridesVisitors"
+import { initVisitorObjects, OverridesVisitor } from "./transform/applyOverridesVisitors"
 import { ResolvedHintEntries, ResolvedHintFile } from "./transform/state"
 
 const FLOW_EXTNAME = ".js.flow"
@@ -29,9 +29,10 @@ async function run({
   platform: string
   patterns: string[]
   cwd?: string
-}): Promise<[number, number]> {
+}): Promise<[numberOfFiles: number, successCount: number, overridesWithoutMatches: string[]]> {
   const overridesVisitors =
     overridesPath === undefined ? undefined : (require(overridesPath).default as OverridesVisitor[])
+  const overridesVisitorObjects = overridesVisitors && initVisitorObjects(overridesVisitors)
   const hintEntries = hintPath === undefined ? undefined : (require(hintPath) as ResolvedHintEntries)
   let successCount = 0
   const conversions: Array<Promise<void>> = []
@@ -51,7 +52,7 @@ async function run({
       const overrideFilename = overridesVisitors && getOverrideFilename(rootDir, filename)
       logStart(cwd, filename)
       conversions.push(
-        convert({ rootDir, filename, outFilename, hintFile, overridesVisitors, overrideFilename }).then(
+        convert({ rootDir, filename, outFilename, hintFile, overridesVisitorObjects, overrideFilename }).then(
           ([outFilename, success]) => {
             if (success) {
               successCount++
@@ -63,7 +64,10 @@ async function run({
     }
   }
   await Promise.all(conversions)
-  return [conversions.length, successCount]
+  const overridesWithoutMatches = overridesVisitorObjects
+    ? overridesVisitorObjects.filter((o) => o.madeChangesToNumberOfFiles === 0).map((o) => o.pathPattern)
+    : []
+  return [conversions.length, successCount, overridesWithoutMatches]
 }
 
 function logEnd(cwd: string | undefined, outFilename: string, success: boolean) {
@@ -150,7 +154,19 @@ async function main() {
   const platform = argv.platform
   const patterns = argv._
 
-  const [totalCount, successCount] = await run({ cwd, outDir, rootDir, overridesPath, hintPath, platform, patterns })
+  const [totalCount, successCount, overridesWithoutMatches] = await run({
+    cwd,
+    outDir,
+    rootDir,
+    overridesPath,
+    hintPath,
+    platform,
+    patterns,
+  })
+
+  overridesWithoutMatches.forEach((pathPattern) => {
+    console.error(`\nOverride with pattern '${pathPattern}' did not alter any files.\n`)
+  })
 
   console.log(`\nSuccessfully converted ${successCount} of ${totalCount}\n`)
 
