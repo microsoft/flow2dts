@@ -1,15 +1,11 @@
 import $2 from "../Components/View/View";
 import $1 from "react";
-declare type AnimatedComponentType<Props extends {
-  readonly [$f2tKey: string]: unknown;
-}, Instance> = $1.AbstractComponent<
+declare type AnimatedComponentType<Props extends {}, Instance> = $1.AbstractComponent<
 /*[FLOW2DTS - Warning] This type was a $ObjMap type in the original Flow source.*/
 { [K in keyof Props & Readonly<{
   passthroughAnimatedPropExplicitValues?: $1.ElementConfig<typeof $2>;
 }>]: ReturnType<() => any> }, Instance>;
-declare function createAnimatedComponent<Props extends {
-  readonly [$f2tKey: string]: unknown;
-}, Instance>(Component: $1.AbstractComponent<Props, Instance>): AnimatedComponentType<Props, Instance>;
+declare function createAnimatedComponent<Props extends {}, Instance>(Component: $1.AbstractComponent<Props, Instance>): AnimatedComponentType<Props, Instance>;
 export type { AnimatedComponentType };
 declare const $f2tExportDefault: typeof createAnimatedComponent;
 export default $f2tExportDefault;

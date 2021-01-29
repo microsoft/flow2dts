@@ -289,22 +289,6 @@ const visitors: OverridesVisitor[] = [
       },
     },
   ],
-  [
-    "Libraries/promiseRejectionTrackingOptions.d.ts",
-    {
-      DeclareVariable: {
-        exit(path) {
-          if (path.node.id.name === "rejectionTrackingOptions") {
-            const replacementDeclaration = ast`
-            declare var rejectionTrackingOptions: Parameters<enable>[0]
-          ` as t.VariableDeclaration
-            path.replaceWith(replacementDeclaration)
-            path.skip()
-          }
-        },
-      },
-    },
-  ],
   // TODO: This should be fixed upstream in RN. No duplicate prop entries should exist.
   [
     "Libraries/Text/TextProps.d.ts",
@@ -321,23 +305,6 @@ const visitors: OverridesVisitor[] = [
             if (state.seen_adjustsFontSizeToFit_times === 2) {
               path.remove()
             }
-          }
-        },
-      },
-    },
-  ],
-  // TODO: This should be fixed upstream in RN. This seems like simply broken upstream code.
-  [
-    "Libraries/Components/SegmentedControlIOS/SegmentedControlIOS.ios.d.ts",
-    {
-      TSTypeReference: {
-        exit(path) {
-          if (t.isIdentifier(path.node.typeName) && path.node.typeName.name === "NativeSegmentedControlIOS") {
-            const typeAlias = ast`
-            type Replacement = typeof import("./RCTSegmentedControlNativeComponent").default
-          ` as t.TSTypeAliasDeclaration
-            path.replaceWith(typeAlias.typeAnnotation)
-            path.skip()
           }
         },
       },
@@ -560,7 +527,7 @@ const visitors: OverridesVisitor[] = [
     },
   ],
   [
-    "Libraries/Animated/src/createAnimatedComponent.d.ts",
+    "Libraries/Animated/createAnimatedComponent.d.ts",
     {
       TSTypeParameter: {
         exit(path) {
