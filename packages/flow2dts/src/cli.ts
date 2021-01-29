@@ -29,7 +29,14 @@ async function run({
   platform: string
   patterns: string[]
   cwd?: string
-}): Promise<[numberOfFiles: number, successCount: number, overridesWithoutMatches: string[]]> {
+}): Promise<
+  [
+    numberOfFiles: number,
+    successCount: number,
+    overridesWithoutMatches: string[],
+    wildcardOverridesWithSingleMatches: string[]
+  ]
+> {
   const overridesVisitors =
     overridesPath === undefined ? undefined : (require(overridesPath).default as OverridesVisitor[])
   const overridesVisitorObjects = overridesVisitors && initVisitorObjects(overridesVisitors)
@@ -67,7 +74,12 @@ async function run({
   const overridesWithoutMatches = overridesVisitorObjects
     ? overridesVisitorObjects.filter((o) => o.madeChangesToNumberOfFiles === 0).map((o) => o.pathPattern)
     : []
-  return [conversions.length, successCount, overridesWithoutMatches]
+  const wildcardOverridesWithSingleMatches = overridesVisitorObjects
+    ? overridesVisitorObjects
+        .filter((o) => o.madeChangesToNumberOfFiles === 1 && o.pathPattern.includes("*"))
+        .map((o) => o.pathPattern)
+    : []
+  return [conversions.length, successCount, overridesWithoutMatches, wildcardOverridesWithSingleMatches]
 }
 
 function logEnd(cwd: string | undefined, outFilename: string, success: boolean) {
@@ -154,7 +166,7 @@ async function main() {
   const platform = argv.platform
   const patterns = argv._
 
-  const [totalCount, successCount, overridesWithoutMatches] = await run({
+  const [totalCount, successCount, overridesWithoutMatches, wildcardOverridesWithSingleMatches] = await run({
     cwd,
     outDir,
     rootDir,
@@ -164,13 +176,26 @@ async function main() {
     patterns,
   })
 
+  const overridesErrorsOccurred = overridesWithoutMatches.length > 0 || wildcardOverridesWithSingleMatches.length > 0
+  if (overridesErrorsOccurred) {
+    console.log("")
+  }
+
   overridesWithoutMatches.forEach((pathPattern) => {
-    console.error(`\nOverride with pattern '${pathPattern}' did not alter any files.\n`)
+    console.error(chalk.red(`‼️ Override with path pattern '${pathPattern}' did not alter any files.`))
+  })
+
+  wildcardOverridesWithSingleMatches.forEach((pathPattern) => {
+    console.error(
+      chalk.red(
+        `‼️ Override with wildcard path pattern '${pathPattern}' only altered a single file. Update the pattern to match a single file, if this was the intent.`
+      )
+    )
   })
 
   console.log(`\nSuccessfully converted ${successCount} of ${totalCount}\n`)
 
-  process.exit(totalCount - successCount)
+  process.exit(totalCount - successCount === 0 && !overridesErrorsOccurred ? 0 : 1)
 }
 
 main()
