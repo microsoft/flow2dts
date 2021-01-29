@@ -7,20 +7,6 @@ const ast = template({
   plugins: ["typescript"],
 }).ast
 
-const listsVisitor: Visitor = {
-  TSTypeAliasDeclaration: {
-    exit(path) {
-      if (path.node.id.name === "Props") {
-        path.node.typeParameters!.params[0]!.constraint = t.tsTypeReference(
-          t.identifier("SectionBase"),
-          t.tsTypeParameterInstantiation([t.tsAnyKeyword()])
-        )
-        path.skip()
-      }
-    },
-  },
-}
-
 function isReactImportSpecifier(scope: Scope, id: t.Identifier) {
   const declarationPath = scope.getBinding(id.name)!.path
   if (t.isImportDeclaration(declarationPath.parent)) {
@@ -105,42 +91,10 @@ function removeUnknownFromHostComponent(path: NodePath<t.TSTypeReference>) {
   }
 }
 
-const visitors: OverridesVisitor[] = [
-  [
-    "**/*",
-    {
-      // TODO: We should convert DeclareClass, which is a Flow type, to ClassDeclaration.
-      DeclareClass: {
-        exit(path) {
-          noVoidForReactComponentState(path)
-        },
-      },
-      TSTypeReference: {
-        exit(path) {
-          removeTypeOfHelperForReactElementRef(path)
-          removeUnknownFromHostComponent(path)
-        },
-      },
-      // Remove all propTypes typings. They are hard to get right, don't add any value to type-consumers, and are deprecated to boot.
-      TSPropertySignature: {
-        exit(path) {
-          if (t.isIdentifier(path.node.key) && path.node.key.name === "propTypes") {
-            path.remove()
-          }
-        },
-      },
-    },
-  ],
+const animatedVisitors: OverridesVisitor[] = [
   [
     "index.d.ts",
     {
-      Program: {
-        exit(path) {
-          // TODO: Copy this from the v0.63.3 typings
-          // These deprecated DT types are defined in a separate file for ease of external contribution.
-          // path.pushContainer("body", ast`export * from "./TypeScriptSupplementals"` as t.Statement[])
-        },
-      },
       ImportDefaultSpecifier: {
         exit(path) {
           if (path.node.local.name === "Animated$f2tTypeof") {
@@ -150,7 +104,6 @@ const visitors: OverridesVisitor[] = [
       },
     },
   ],
-  // TODO: New overrides API should allow multiple overrides to a single file, so that this can be grouped together with the 'animated' override above in `index.d.ts`
   [
     "Libraries/Animated/Animated.d.ts",
     {
@@ -178,11 +131,79 @@ const visitors: OverridesVisitor[] = [
       },
     },
   ],
+]
+
+const listsVisitor: Visitor = {
+  TSTypeAliasDeclaration: {
+    exit(path) {
+      if (path.node.id.name === "Props") {
+        path.node.typeParameters!.params[0]!.constraint = t.tsTypeReference(
+          t.identifier("SectionBase"),
+          t.tsTypeParameterInstantiation([t.tsAnyKeyword()])
+        )
+        path.skip()
+      }
+    },
+  },
+}
+
+const listsVisitors: OverridesVisitor[] = [
   ["Libraries/Lists/SectionList.d.ts", listsVisitor],
+  ["Libraries/Lists/VirtualizedSectionList.d.ts", listsVisitor],
+]
+
+const visitors: OverridesVisitor[] = [
+  ...animatedVisitors,
+  ...listsVisitors,
+  [
+    "**/*",
+    {
+      // TODO: We should convert DeclareClass, which is a Flow type, to ClassDeclaration.
+      DeclareClass: {
+        exit(path) {
+          noVoidForReactComponentState(path)
+        },
+      },
+    },
+  ],
+  [
+    "**/*",
+    {
+      TSTypeReference: {
+        exit(path) {
+          removeTypeOfHelperForReactElementRef(path)
+          removeUnknownFromHostComponent(path)
+        },
+      },
+    },
+  ],
+  [
+    "**/*",
+    {
+      // Remove all propTypes typings. They are hard to get right, don't add any value to type-consumers, and are deprecated to boot.
+      TSPropertySignature: {
+        exit(path) {
+          if (t.isIdentifier(path.node.key) && path.node.key.name === "propTypes") {
+            path.remove()
+          }
+        },
+      },
+    },
+  ],
+  [
+    "index.d.ts",
+    {
+      Program: {
+        exit(path) {
+          // These deprecated DT types are defined in a separate file for ease of external contribution.
+          path.pushContainer("body", ast`export * from "./TypeScriptSupplementals"` as t.Statement[])
+        },
+      },
+    },
+  ],
   [
     "Libraries/Lists/VirtualizedSectionList.d.ts",
     {
-      ...listsVisitor,
       // FIXME: This is a temp workaround for https://github.com/microsoft/flow2dts/issues/15
       TSTypeReference: {
         exit(path) {
