@@ -16,7 +16,7 @@ const TS_EXTNAME = ".d.ts"
 async function run({
   rootDir,
   outDir,
-  overridesPath,
+  overridesPaths,
   hintPath,
   platform,
   patterns,
@@ -24,7 +24,7 @@ async function run({
 }: {
   rootDir: string
   outDir: string
-  overridesPath?: string
+  overridesPaths?: string[]
   hintPath?: string
   platform: string
   patterns: string[]
@@ -38,7 +38,12 @@ async function run({
   ]
 > {
   const overridesVisitors =
-    overridesPath === undefined ? undefined : (require(overridesPath).default as OverridesVisitor[])
+    overridesPaths === undefined
+      ? undefined
+      : overridesPaths.reduce<OverridesVisitor[]>(
+          (all, overridesPath) => [...all, ...require(overridesPath).default],
+          []
+        )
   const overridesVisitorObjects = overridesVisitors && initVisitorObjects(overridesVisitors)
   const hintEntries = hintPath === undefined ? undefined : (require(hintPath) as ResolvedHintEntries)
   let successCount = 0
@@ -143,11 +148,11 @@ async function main() {
         type: "string",
       },
       overrides: {
-        nargs: 1,
         demandOption: false,
         describe:
           "A file that exports a OverridesVisitor object used to provide project specific overrides where conversion cannot accurately be made",
         type: "string",
+        array: true,
       },
       hint: {
         nargs: 1,
@@ -161,7 +166,7 @@ async function main() {
   const cwd = argv.cwd
   const outDir = path.resolve(cwd || "", argv.outDir)
   const rootDir = path.resolve(cwd || "", argv.rootDir)
-  const overridesPath = argv.overrides && path.resolve(cwd || "", argv.overrides)
+  const overridesPath = argv.overrides && argv.overrides.map((o) => path.resolve(cwd || "", o))
   const hintPath = argv.hint && path.resolve(cwd || "", argv.hint)
   const platform = argv.platform
   const patterns = argv._
@@ -170,7 +175,7 @@ async function main() {
     cwd,
     outDir,
     rootDir,
-    overridesPath,
+    overridesPaths: overridesPath,
     hintPath,
     platform,
     patterns,
