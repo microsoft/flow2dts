@@ -572,7 +572,7 @@ declare type ImperativeMethods = Readonly<
   isFocused: () => boolean;
   getNativeRef: () => null | undefined | $2.ElementRef<HostComponent<{}>>;
 }>;
-declare function InternalTextInput(props: Props): $2.Node;
+declare function InternalTextInput(props: Props): $2.Element<Props>;
 declare type TextInputComponentStatics = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {

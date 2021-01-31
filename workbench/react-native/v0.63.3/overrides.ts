@@ -305,6 +305,25 @@ const visitors: OverridesVisitor[] = [
       },
     },
   ],
+  // TODO: This could probably move upstream, as `Element` is slightly more restrictive than `Node`.
+  [
+    "Libraries/Components/TextInput/TextInput.d.ts",
+    {
+      TSDeclareFunction: {
+        exit(path) {
+          if (t.isIdentifier(path.node.id) && path.node.id.name === "InternalTextInput") {
+            const returnType = path.node.returnType
+            t.assertTSTypeAnnotation(returnType)
+            t.assertTSTypeReference(returnType.typeAnnotation)
+            const typeAnnotation = returnType.typeAnnotation
+            t.assertTSQualifiedName(typeAnnotation.typeName)
+            typeAnnotation.typeName.right = t.identifier("Element")
+            typeAnnotation.typeParameters = t.tsTypeParameterInstantiation([t.tsTypeReference(t.identifier("Props"))])
+          }
+        },
+      },
+    },
+  ],
   [
     "Libraries/Components/TextInput/TextInputNativeCommands.d.ts",
     {
