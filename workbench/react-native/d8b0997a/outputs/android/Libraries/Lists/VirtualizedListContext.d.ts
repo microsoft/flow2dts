@@ -1,5 +1,5 @@
-import VirtualizedList$f2tTypeof from "./VirtualizedList.js";
-declare type VirtualizedList = typeof VirtualizedList$f2tTypeof;
+// @flow
+import VirtualizedList from "./VirtualizedList.js";
 import * as React from "react";
 declare type Frame = Readonly<{
   offset: number;

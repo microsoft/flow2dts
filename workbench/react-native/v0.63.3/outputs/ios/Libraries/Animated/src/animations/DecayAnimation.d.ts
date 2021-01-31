@@ -1,6 +1,5 @@
 import $1 from "./Animation";
-import AnimatedValue$f2tTypeof from "../nodes/AnimatedValue";
-declare type AnimatedValue = typeof AnimatedValue$f2tTypeof;
+import AnimatedValue from "../nodes/AnimatedValue";
 import { AnimationConfig } from "./Animation";
 import { EndCallback } from "./Animation";
 declare type DecayAnimationConfig = AnimationConfig & {

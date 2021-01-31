@@ -1,6 +1,5 @@
 import $1 from "../vendor/emitter/EventEmitter";
-import EmitterSubscription$f2tTypeof from "../vendor/emitter/EmitterSubscription";
-declare type EmitterSubscription = typeof EmitterSubscription$f2tTypeof;
+import EmitterSubscription from "../vendor/emitter/EmitterSubscription";
 declare type NativeModule = {
   readonly addListener: (eventType: string) => void;
   readonly removeListeners: (count: number) => void;

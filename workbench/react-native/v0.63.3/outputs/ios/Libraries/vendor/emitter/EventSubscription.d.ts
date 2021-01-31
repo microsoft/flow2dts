@@ -1,5 +1,5 @@
-import EventSubscriptionVendor$f2tTypeof from "./EventSubscriptionVendor";
-declare type EventSubscriptionVendor = typeof EventSubscriptionVendor$f2tTypeof;
+// @flow
+import EventSubscriptionVendor from "./EventSubscriptionVendor";
 declare class EventSubscription {
   eventType: string;
   key: number;

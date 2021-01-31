@@ -1,6 +1,5 @@
 import $1 from "../../EventEmitter/NativeEventEmitter";
-import EmitterSubscription$f2tTypeof from "../../vendor/emitter/EmitterSubscription";
-declare type EmitterSubscription = typeof EmitterSubscription$f2tTypeof;
+import EmitterSubscription from "../../vendor/emitter/EmitterSubscription";
 declare class TVEventHandler {
   __nativeTVNavigationEventListener?: null | undefined | EmitterSubscription;
   __nativeTVNavigationEventEmitter?: null | undefined | typeof $1;

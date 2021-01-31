@@ -1,8 +1,6 @@
 import $2 from "./EventSubscription";
-import EventEmitter$f2tTypeof from "./EventEmitter";
-declare type EventEmitter = typeof EventEmitter$f2tTypeof;
-import EventSubscriptionVendor$f2tTypeof from "./EventSubscriptionVendor";
-declare type EventSubscriptionVendor = typeof EventSubscriptionVendor$f2tTypeof;
+import EventEmitter from "./EventEmitter";
+import EventSubscriptionVendor from "./EventSubscriptionVendor";
 declare class EmitterSubscription extends $2 {
   emitter: EventEmitter;
   listener: Function;

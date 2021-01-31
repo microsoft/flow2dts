@@ -1,7 +1,6 @@
 import $1 from "../vendor/emitter/EventEmitter";
 import $2 from "../vendor/emitter/EventSubscriptionVendor";
-import EmitterSubscription$f2tTypeof from "../vendor/emitter/EmitterSubscription";
-declare type EmitterSubscription = typeof EmitterSubscription$f2tTypeof;
+import EmitterSubscription from "../vendor/emitter/EmitterSubscription";
 declare class RCTDeviceEventEmitter extends $1 {
   sharedSubscriber: typeof $2;
   constructor();

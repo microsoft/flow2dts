@@ -1,11 +1,9 @@
 import $1 from "./AnimatedInterpolation";
 import $3 from "./AnimatedWithChildren";
 import { EndCallback } from "../animations/Animation";
-import Animation$f2tTypeof from "../animations/Animation";
-declare type Animation = typeof Animation$f2tTypeof;
+import Animation from "../animations/Animation";
 import { InterpolationConfigType } from "./AnimatedInterpolation";
-import AnimatedTracking$f2tTypeof from "./AnimatedTracking";
-declare type AnimatedTracking = typeof AnimatedTracking$f2tTypeof;
+import AnimatedTracking from "./AnimatedTracking";
 declare class AnimatedValue extends $3 {
   constructor(value: number);
   __detach(): void;
