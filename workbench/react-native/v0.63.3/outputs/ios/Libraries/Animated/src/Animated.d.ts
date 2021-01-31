@@ -1,15 +1,10 @@
 export * from "./AnimatedMock";
+export * from "../../../TypeScriptSupplementals/Animated";
 import $3 from "../../Components/View/View";
 import $2 from "react";
 import { AnimatedComponentType } from "./createAnimatedComponent";
 import $1 from "./AnimatedMock";
-declare const $f2d_FlatList: any;
-declare const $f2d_Image: any;
-declare const $f2d_ScrollView: any;
-declare const $f2d_SectionList: any;
-declare const $f2d_Text: any;
-declare const $f2d_View: AnimatedComponentType<$2.ElementConfig<typeof $3>, $2.ElementRef<typeof $3>>;
-export { $f2d_FlatList as FlatList, $f2d_Image as Image, $f2d_ScrollView as ScrollView, $f2d_SectionList as SectionList, $f2d_Text as Text, $f2d_View as View };
+export {};
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 typeof $1 & {

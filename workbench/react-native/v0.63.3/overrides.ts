@@ -92,13 +92,31 @@ function removeUnknownFromHostComponent(path: NodePath<t.TSTypeReference>) {
 }
 
 const animatedVisitors: OverridesVisitor[] = [
+  // Override exported components with those taken from DT
   [
-    "index.d.ts",
+    "Libraries/Animated/src/Animated.d.ts",
     {
-      ImportDefaultSpecifier: {
+      Program: {
         exit(path) {
-          if (path.node.local.name === "Animated$f2tTypeof") {
-            path.replaceWith(t.importNamespaceSpecifier(path.node.local))
+          const exportDeclaration = ast`
+            export * from "../../../TypeScriptSupplementals/Animated"
+          ` as t.ExportDeclaration
+          path.unshiftContainer("body", [exportDeclaration])
+        },
+      },
+    },
+  ],
+  [
+    "Libraries/Animated/src/Animated.d.ts",
+    {
+      Identifier: {
+        exit(path) {
+          if (path.node.name.startsWith("$f2d_")) {
+            const parentPath =
+              path.findParent((p) => p.isVariableDeclaration()) || path.findParent((p) => p.isExportSpecifier())
+            if (parentPath) {
+              parentPath.remove()
+            }
           }
         },
       },
@@ -262,25 +280,6 @@ const visitors: OverridesVisitor[] = [
         exit(path) {
           // These deprecated DT types are defined in a separate file for ease of external contribution.
           path.pushContainer("body", ast`export * from "./TypeScriptSupplementals"` as t.Statement[])
-        },
-      },
-    },
-  ],
-  // TODO: These are deprecated DT exports and should be removed.
-  [
-    "Libraries/Animated/src/AnimatedMock.d.ts",
-    {
-      Program: {
-        exit(path) {
-          path.pushContainer(
-            "body",
-            ast`
-              export {
-                ${AnimatedInterpolationName} as AnimatedInterpolation,
-                ${AnimatedNodeName} as Animated
-              }
-            ` as t.ExportNamedDeclaration
-          )
         },
       },
     },
