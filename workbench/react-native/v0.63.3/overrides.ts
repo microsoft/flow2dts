@@ -104,15 +104,29 @@ const animatedVisitors: OverridesVisitor[] = [
       },
     },
   ],
+  // Export all of the AnimatedMock ES6 exports, so those and the ES6 exports of Animated can be...
   [
     "Libraries/Animated/src/Animated.d.ts",
     {
       Program: {
         exit(path) {
           const exportDeclaration = ast`
-          export * from "./AnimatedMock"
-        ` as t.ExportDeclaration
+            export * from "./AnimatedMock"
+          ` as t.ExportDeclaration
           path.unshiftContainer("body", [exportDeclaration])
+        },
+      },
+    },
+  ],
+  // ...imported as a namespace
+  [
+    "index.d.ts",
+    {
+      ImportDefaultSpecifier: {
+        exit(path) {
+          if (path.node.local.name === "Animated$f2tTypeof") {
+            path.replaceWith(t.importNamespaceSpecifier(path.node.local))
+          }
         },
       },
     },
@@ -132,6 +146,56 @@ const animatedVisitors: OverridesVisitor[] = [
     },
   ],
 ]
+
+// TODO: These are specifically to get the Artsy app green
+//       and should be removed when it is done by the hinting work.
+// Doing this so we don't forget to update the other visitor that refers to this var
+const AnimatedInterpolationName = "Interpolation"
+const AnimatedNodeName = "Node"
+const animatedTempClassFixVisitors: OverridesVisitor[] = ["Value", AnimatedInterpolationName, AnimatedNodeName].map(
+  (name) => [
+    "Libraries/Animated/src/AnimatedMock.d.ts",
+    {
+      ImportDeclaration: {
+        exit(path, state) {
+          if (path.node.source.value === `./nodes/Animated${name}`) {
+            const specifier = path.node.specifiers[0]
+            t.assertImportDefaultSpecifier(specifier)
+            const binding = path.scope.getBinding(specifier.local.name)
+            if (binding) {
+              binding.referencePaths.forEach((referencePath) => {
+                const typeQueryReferencePath = referencePath.findParent((parent) => parent.isTSTypeQuery())
+                if (typeQueryReferencePath) {
+                  if (typeQueryReferencePath.findParent((grandParent) => grandParent.isTSPropertySignature())) {
+                    referencePath.replaceWith(t.identifier(name))
+                  } else {
+                    typeQueryReferencePath.replaceWith(t.tsTypeReference(t.identifier(name)))
+                  }
+                }
+              })
+            }
+            specifier.local = t.identifier(name)
+          }
+        },
+      },
+      VariableDeclaration: {
+        exit(path) {
+          const declarator = path.node.declarations[0]
+          if (t.isIdentifier(declarator.id) && declarator.id.name === `$f2d_${name}`) {
+            path.remove()
+          }
+        },
+      },
+      ExportSpecifier: {
+        exit(path) {
+          if (path.node.local.name === `$f2d_${name}`) {
+            path.node.local = t.identifier(name)
+          }
+        },
+      },
+    },
+  ]
+)
 
 const listsVisitor: Visitor = {
   TSTypeAliasDeclaration: {
@@ -154,6 +218,7 @@ const listsVisitors: OverridesVisitor[] = [
 
 const visitors: OverridesVisitor[] = [
   ...animatedVisitors,
+  ...animatedTempClassFixVisitors,
   ...listsVisitors,
   [
     "**/*",
@@ -197,6 +262,25 @@ const visitors: OverridesVisitor[] = [
         exit(path) {
           // These deprecated DT types are defined in a separate file for ease of external contribution.
           path.pushContainer("body", ast`export * from "./TypeScriptSupplementals"` as t.Statement[])
+        },
+      },
+    },
+  ],
+  // TODO: These are deprecated DT exports and should be removed.
+  [
+    "Libraries/Animated/src/AnimatedMock.d.ts",
+    {
+      Program: {
+        exit(path) {
+          path.pushContainer(
+            "body",
+            ast`
+              export {
+                ${AnimatedInterpolationName} as AnimatedInterpolation,
+                ${AnimatedNodeName} as Animated
+              }
+            ` as t.ExportNamedDeclaration
+          )
         },
       },
     },
