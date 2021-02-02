@@ -47,36 +47,6 @@ function noVoidForReactComponentState(path: NodePath<t.DeclareClass>) {
   }
 }
 
-function unwrapTypeOfHelper(type: t.TSType): t.TSType {
-  if (t.isTSUnionType(type)) {
-    return t.tsUnionType(type.types.map(unwrapTypeOfHelper))
-  } else if (
-    t.isTSTypeReference(type) &&
-    t.isIdentifier(type.typeName) &&
-    type.typeName.name === "$TypeOf" &&
-    t.isTSTypeParameterInstantiation(type.typeParameters)
-  ) {
-    return type.typeParameters.params[0]
-  } else {
-    return type
-  }
-}
-
-// React.ElementRef actually requires the typeof a class based component.
-function removeTypeOfHelperForReactElementRef(path: NodePath<t.TSTypeReference>) {
-  const id = path.node.typeName
-  if (
-    t.isTSQualifiedName(id) &&
-    t.isIdentifier(id.left) &&
-    isReactImportSpecifier(path.scope, id.left) &&
-    t.isTSTypeParameterInstantiation(path.node.typeParameters)
-  ) {
-    if (id.right.name === "ElementRef") {
-      path.node.typeParameters.params[0] = unwrapTypeOfHelper(path.node.typeParameters.params[0])
-    }
-  }
-}
-
 // `HostComponent<unknown>` does not satisfy some of the React DT typings, so change it to `HostComponent<{}>`.
 // TODO: Unsure if this should ideally still be `unknown`.
 function removeUnknownFromHostComponent(path: NodePath<t.TSTypeReference>) {
@@ -167,53 +137,78 @@ const animatedVisitors: OverridesVisitor[] = [
 
 // TODO: These are specifically to get the Artsy app green
 //       and should be removed when it is done by the hinting work.
+//
 // Doing this so we don't forget to update the other visitor that refers to this var
 const AnimatedInterpolationName = "Interpolation"
 const AnimatedNodeName = "Node"
-const animatedTempClassFixVisitors: OverridesVisitor[] = ["Value", AnimatedInterpolationName, AnimatedNodeName].map(
-  (name) => [
-    "Libraries/Animated/src/AnimatedMock.d.ts",
+const typeofRelatedTempFixesOverrides: OverridesVisitor[] = [
+  [
+    "Libraries/Lists/VirtualizedSectionList.d.ts",
     {
-      ImportDeclaration: {
-        exit(path, state) {
-          if (path.node.source.value === `./nodes/Animated${name}`) {
-            const specifier = path.node.specifiers[0]
-            t.assertImportDefaultSpecifier(specifier)
-            const binding = path.scope.getBinding(specifier.local.name)
-            if (binding) {
-              binding.referencePaths.forEach((referencePath) => {
-                const typeQueryReferencePath = referencePath.findParent((parent) => parent.isTSTypeQuery())
-                if (typeQueryReferencePath) {
-                  if (typeQueryReferencePath.findParent((grandParent) => grandParent.isTSPropertySignature())) {
-                    referencePath.replaceWith(t.identifier(name))
-                  } else {
-                    typeQueryReferencePath.replaceWith(t.tsTypeReference(t.identifier(name)))
-                  }
-                }
-              })
-            }
-            specifier.local = t.identifier(name)
-          }
-        },
-      },
-      VariableDeclaration: {
+      // FIXME: This is a temp workaround for https://github.com/microsoft/flow2dts/issues/15
+      TSTypeReference: {
         exit(path) {
-          const declarator = path.node.declarations[0]
-          if (t.isIdentifier(declarator.id) && declarator.id.name === `$f2d_${name}`) {
-            path.remove()
-          }
-        },
-      },
-      ExportSpecifier: {
-        exit(path) {
-          if (path.node.local.name === `$f2d_${name}`) {
-            path.node.local = t.identifier(name)
+          const typeName = path.node.typeName
+          if (
+            path.find((p) => p.isTSTypeAliasDeclaration() && p.node.id.name === "DefaultProps") &&
+            t.isTSQualifiedName(typeName) &&
+            t.isIdentifier(typeName.left) &&
+            typeName.left.name === "$2" &&
+            t.isIdentifier(typeName.right) &&
+            typeName.right.name === "defaultProps"
+          ) {
+            path.replaceWith(t.tsTypeQuery(typeName))
           }
         },
       },
     },
-  ]
-)
+  ],
+  ...["Value", AnimatedInterpolationName, AnimatedNodeName].map(
+    (name) =>
+      [
+        "Libraries/Animated/src/AnimatedMock.d.ts",
+        {
+          ImportDeclaration: {
+            exit(path, state) {
+              if (path.node.source.value === `./nodes/Animated${name}`) {
+                const specifier = path.node.specifiers[0]
+                t.assertImportDefaultSpecifier(specifier)
+                const binding = path.scope.getBinding(specifier.local.name)
+                if (binding) {
+                  binding.referencePaths.forEach((referencePath) => {
+                    const typeQueryReferencePath = referencePath.findParent((parent) => parent.isTSTypeQuery())
+                    if (typeQueryReferencePath) {
+                      if (typeQueryReferencePath.findParent((grandParent) => grandParent.isTSPropertySignature())) {
+                        referencePath.replaceWith(t.identifier(name))
+                      } else {
+                        typeQueryReferencePath.replaceWith(t.tsTypeReference(t.identifier(name)))
+                      }
+                    }
+                  })
+                }
+                specifier.local = t.identifier(name)
+              }
+            },
+          },
+          VariableDeclaration: {
+            exit(path) {
+              const declarator = path.node.declarations[0]
+              if (t.isIdentifier(declarator.id) && declarator.id.name === `$f2d_${name}`) {
+                path.remove()
+              }
+            },
+          },
+          ExportSpecifier: {
+            exit(path) {
+              if (path.node.local.name === `$f2d_${name}`) {
+                path.node.local = t.identifier(name)
+              }
+            },
+          },
+        },
+      ] as OverridesVisitor
+  ),
+]
 
 const listsVisitor: Visitor = {
   TSTypeAliasDeclaration: {
@@ -236,7 +231,7 @@ const listsVisitors: OverridesVisitor[] = [
 
 const visitors: OverridesVisitor[] = [
   ...animatedVisitors,
-  ...animatedTempClassFixVisitors,
+  ...typeofRelatedTempFixesOverrides,
   ...listsVisitors,
   [
     "**/*",
@@ -254,7 +249,6 @@ const visitors: OverridesVisitor[] = [
     {
       TSTypeReference: {
         exit(path) {
-          removeTypeOfHelperForReactElementRef(path)
           removeUnknownFromHostComponent(path)
         },
       },
@@ -280,27 +274,6 @@ const visitors: OverridesVisitor[] = [
         exit(path) {
           // These deprecated DT types are defined in a separate file for ease of external contribution.
           path.pushContainer("body", ast`export * from "./TypeScriptSupplementals"` as t.Statement[])
-        },
-      },
-    },
-  ],
-  [
-    "Libraries/Lists/VirtualizedSectionList.d.ts",
-    {
-      // FIXME: This is a temp workaround for https://github.com/microsoft/flow2dts/issues/15
-      TSTypeReference: {
-        exit(path) {
-          const typeName = path.node.typeName
-          if (
-            path.find((p) => p.isTSTypeAliasDeclaration() && p.node.id.name === "DefaultProps") &&
-            t.isTSQualifiedName(typeName) &&
-            t.isIdentifier(typeName.left) &&
-            typeName.left.name === "$2" &&
-            t.isIdentifier(typeName.right) &&
-            typeName.right.name === "defaultProps"
-          ) {
-            path.replaceWith(t.tsTypeQuery(typeName))
-          }
         },
       },
     },
@@ -369,9 +342,10 @@ const visitors: OverridesVisitor[] = [
       TSTypeAliasDeclaration: {
         exit(path) {
           if (path.node.id.name === "PanResponderInstance") {
+            // TS can't support the type of type mapping that $Call does, so convert it manually.
             const replacementDeclaration = ast`
-            declare type PanResponderInstance = ReturnType<typeof PanResponder["create"]>
-          ` as t.TSTypeAliasDeclaration
+              declare type PanResponderInstance = ReturnType<typeof PanResponder["create"]>
+            ` as t.TSTypeAliasDeclaration
             path.replaceWith(replacementDeclaration)
             path.skip()
           }
