@@ -110,10 +110,10 @@ export function mergeHint(collectedHintFiles: HintFileEntries): ResolvedHintEntr
         case "unresolved[missing]": {
           if (hintImport.isImportedType === true) {
             resolvedHintImport.type = "type[guess-import]"
+          } else if (importKey[0].toLowerCase() === importKey[0] || importKey.toUpperCase() === importKey) {
+            resolvedHintImport.type = "value[guess-import]"
           } else if (importKey[0].toUpperCase() === importKey[0]) {
             resolvedHintImport.type = "type[guess-import]"
-          } else if (importKey[0].toLowerCase() === importKey[0]) {
-            resolvedHintImport.type = "value[guess-import]"
           }
           break
         }
@@ -133,17 +133,17 @@ export function mergeHint(collectedHintFiles: HintFileEntries): ResolvedHintEntr
       }
       if (hintTypeof.error === "[TYPEOF RESOLVED TO ITSELF]") {
         const importKey = hintTypeof.source.local
-        if (importKey[0].toUpperCase() === importKey[0]) {
-          mergedFile.typeofs[hintTypeof.source.local].push({
-            column: hintTypeof.source.column,
-            row: hintTypeof.source.row,
-            type: "type[guess-import]",
-          })
-        } else if (importKey[0].toLowerCase() === importKey[0]) {
+        if (importKey[0].toLowerCase() === importKey[0] || importKey.toUpperCase() === importKey) {
           mergedFile.typeofs[hintTypeof.source.local].push({
             column: hintTypeof.source.column,
             row: hintTypeof.source.row,
             type: "value[guess-import]",
+          })
+        } else if (importKey[0].toUpperCase() === importKey[0]) {
+          mergedFile.typeofs[hintTypeof.source.local].push({
+            column: hintTypeof.source.column,
+            row: hintTypeof.source.row,
+            type: "type[guess-import]",
           })
         }
       } else {
