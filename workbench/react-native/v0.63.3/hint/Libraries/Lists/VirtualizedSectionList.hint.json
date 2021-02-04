@@ -64,6 +64,7 @@
                 "column": 29,
                 "local": "defaultProps"
             },
+            "error": "[TYPEOF RESOLVED TO ITSELF]",
             "resolved": {
                 "begin": {
                     "row": 116,

@@ -1,6 +1,6 @@
 {
     "libraries": [
-        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_6958b8c"
+        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_7317cb"
     ],
     "files": {
         "/index.js.flow": {
@@ -4487,15 +4487,9 @@
                 ],
                 "pickScale": [
                     {
-                        "row": 17,
                         "column": 43,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 17,
-                            "column": 5,
-                            "local": "pickScale",
-                            "type": "value"
-                        }
+                        "row": 17,
+                        "type": "value[guess-import]"
                     }
                 ]
             }
@@ -5337,15 +5331,9 @@
                 ],
                 "defaultProps": [
                     {
-                        "row": 116,
                         "column": 29,
-                        "type": "type",
-                        "resolvedDecl": {
-                            "row": 115,
-                            "column": 6,
-                            "local": "DefaultProps",
-                            "type": "type"
-                        }
+                        "row": 116,
+                        "type": "value[guess-import]"
                     }
                 ],
                 "PureComponent": [
@@ -10126,15 +10114,9 @@
             "typeofs": {
                 "undefined": [
                     {
-                        "row": 44,
                         "column": 16,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 42,
-                            "column": 9,
-                            "local": "false",
-                            "type": "value"
-                        }
+                        "row": 44,
+                        "type": "value[guess-import]"
                     }
                 ]
             }
@@ -11511,28 +11493,16 @@
                 ],
                 "DEFAULT": [
                     {
-                        "row": 45,
                         "column": 41,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 44,
-                            "column": 5,
-                            "local": "size",
-                            "type": "value"
-                        }
+                        "row": 45,
+                        "type": "value[guess-import]"
                     }
                 ],
                 "LARGE": [
                     {
-                        "row": 46,
                         "column": 41,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 44,
-                            "column": 5,
-                            "local": "size",
-                            "type": "value"
-                        }
+                        "row": 46,
+                        "type": "value[guess-import]"
                     }
                 ],
                 "Component": [
@@ -13674,15 +13644,9 @@
             "typeofs": {
                 "View": [
                     {
-                        "row": 18,
                         "column": 40,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 18,
-                            "column": 5,
-                            "local": "hostRef",
-                            "type": "value"
-                        }
+                        "row": 18,
+                        "type": "type[guess-import]"
                     }
                 ]
             }
@@ -13822,15 +13786,9 @@
             "typeofs": {
                 "View": [
                     {
-                        "row": 28,
                         "column": 40,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 28,
-                            "column": 5,
-                            "local": "hostRef",
-                            "type": "value"
-                        }
+                        "row": 28,
+                        "type": "type[guess-import]"
                     }
                 ]
             }

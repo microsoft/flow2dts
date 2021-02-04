@@ -357,7 +357,7 @@ export async function singleFlow2Hint({
       collectedHintFiles,
     })
     if (resolvedToItself(hintTypeof)) {
-      hintTypeof.resolved = undefined
+      hintTypeof.error = "[TYPEOF RESOLVED TO ITSELF]"
     }
   }
 

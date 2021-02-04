@@ -1,6 +1,6 @@
 {
     "libraries": [
-        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_a0c5b7b"
+        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_3bbc1e66"
     ],
     "files": {
         "/index.js.flow": {
@@ -2453,6 +2453,150 @@
                 ]
             }
         },
+        "/Libraries/AppState/AppState.js.flow": {
+            "imports": {
+                "NativeEventEmitter": {
+                    "type": "class",
+                    "resolvedDecl": {
+                        "row": 17,
+                        "column": 15,
+                        "local": "NativeEventEmitter",
+                        "type": "class"
+                    }
+                },
+                "EventEmitter": {
+                    "type": "value",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 3,
+                        "local": "remove",
+                        "type": "value"
+                    }
+                }
+            },
+            "typeofs": {
+                "NativeEventEmitter": [
+                    {
+                        "row": 32,
+                        "column": 24,
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 17,
+                            "column": 15,
+                            "local": "NativeEventEmitter",
+                            "type": "class"
+                        }
+                    }
+                ],
+                "EventEmitter": [
+                    {
+                        "row": 49,
+                        "column": 24,
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 6,
+                            "column": 3,
+                            "local": "remove",
+                            "type": "value"
+                        }
+                    }
+                ],
+                "AppStateInstance": [
+                    {
+                        "row": 53,
+                        "column": 32,
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 51,
+                            "column": 13,
+                            "local": "AppStateInstance",
+                            "type": "value"
+                        }
+                    }
+                ]
+            }
+        },
+        "/Libraries/AppState/NativeAppState.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 11,
+                        "local": "TurboModule",
+                        "type": "type"
+                    }
+                }
+            },
+            "typeofs": {}
+        },
+        "/Libraries/BatchedBridge/BatchedBridge.js.flow": {
+            "imports": {},
+            "typeofs": {
+                "$1": [
+                    {
+                        "row": 2,
+                        "column": 34,
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 10,
+                            "column": 15,
+                            "local": "MessageQueue",
+                            "type": "class"
+                        }
+                    }
+                ],
+                "BatchedBridge": [
+                    {
+                        "row": 7,
+                        "column": 32,
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 5,
+                            "column": 13,
+                            "local": "BatchedBridge",
+                            "type": "value"
+                        }
+                    }
+                ]
+            }
+        },
+        "/Libraries/BatchedBridge/MessageQueue.js.flow": {
+            "imports": {},
+            "typeofs": {
+                "MessageQueue": [
+                    {
+                        "row": 94,
+                        "column": 32,
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 10,
+                            "column": 15,
+                            "local": "MessageQueue",
+                            "type": "class"
+                        }
+                    }
+                ]
+            }
+        },
+        "/Libraries/BatchedBridge/NativeModules.js.flow": {
+            "imports": {},
+            "typeofs": {
+                "NativeModules": [
+                    {
+                        "row": 17,
+                        "column": 32,
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 12,
+                            "column": 13,
+                            "local": "NativeModules",
+                            "type": "value"
+                        }
+                    }
+                ]
+            }
+        },
         "/Libraries/Blob/Blob.js.flow": {
             "imports": {
                 "BlobData": {
@@ -2701,83 +2845,6 @@
             },
             "typeofs": {}
         },
-        "/Libraries/AppState/AppState.js.flow": {
-            "imports": {
-                "NativeEventEmitter": {
-                    "type": "class",
-                    "resolvedDecl": {
-                        "row": 17,
-                        "column": 15,
-                        "local": "NativeEventEmitter",
-                        "type": "class"
-                    }
-                },
-                "EventEmitter": {
-                    "type": "value",
-                    "resolvedDecl": {
-                        "row": 6,
-                        "column": 3,
-                        "local": "remove",
-                        "type": "value"
-                    }
-                }
-            },
-            "typeofs": {
-                "NativeEventEmitter": [
-                    {
-                        "row": 32,
-                        "column": 24,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 17,
-                            "column": 15,
-                            "local": "NativeEventEmitter",
-                            "type": "class"
-                        }
-                    }
-                ],
-                "EventEmitter": [
-                    {
-                        "row": 49,
-                        "column": 24,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 6,
-                            "column": 3,
-                            "local": "remove",
-                            "type": "value"
-                        }
-                    }
-                ],
-                "AppStateInstance": [
-                    {
-                        "row": 53,
-                        "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 51,
-                            "column": 13,
-                            "local": "AppStateInstance",
-                            "type": "value"
-                        }
-                    }
-                ]
-            }
-        },
-        "/Libraries/AppState/NativeAppState.js.flow": {
-            "imports": {
-                "TurboModule": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 6,
-                        "column": 11,
-                        "local": "TurboModule",
-                        "type": "type"
-                    }
-                }
-            },
-            "typeofs": {}
-        },
         "/Libraries/BugReporting/BugReporting.js.flow": {
             "imports": {},
             "typeofs": {
@@ -2845,73 +2912,6 @@
                 }
             },
             "typeofs": {}
-        },
-        "/Libraries/BatchedBridge/BatchedBridge.js.flow": {
-            "imports": {},
-            "typeofs": {
-                "$1": [
-                    {
-                        "row": 2,
-                        "column": 34,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 10,
-                            "column": 15,
-                            "local": "MessageQueue",
-                            "type": "class"
-                        }
-                    }
-                ],
-                "BatchedBridge": [
-                    {
-                        "row": 7,
-                        "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 5,
-                            "column": 13,
-                            "local": "BatchedBridge",
-                            "type": "value"
-                        }
-                    }
-                ]
-            }
-        },
-        "/Libraries/BatchedBridge/MessageQueue.js.flow": {
-            "imports": {},
-            "typeofs": {
-                "MessageQueue": [
-                    {
-                        "row": 94,
-                        "column": 32,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 10,
-                            "column": 15,
-                            "local": "MessageQueue",
-                            "type": "class"
-                        }
-                    }
-                ]
-            }
-        },
-        "/Libraries/BatchedBridge/NativeModules.js.flow": {
-            "imports": {},
-            "typeofs": {
-                "NativeModules": [
-                    {
-                        "row": 17,
-                        "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 12,
-                            "column": 13,
-                            "local": "NativeModules",
-                            "type": "value"
-                        }
-                    }
-                ]
-            }
         },
         "/Libraries/Components/Button.js.flow": {
             "imports": {
@@ -5937,15 +5937,9 @@
                 ],
                 "pickScale": [
                     {
-                        "row": 17,
                         "column": 43,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 17,
-                            "column": 5,
-                            "local": "pickScale",
-                            "type": "value"
-                        }
+                        "row": 17,
+                        "type": "value[guess-import]"
                     }
                 ]
             }
@@ -6861,15 +6855,9 @@
                 ],
                 "defaultProps": [
                     {
-                        "row": 116,
                         "column": 29,
-                        "type": "type",
-                        "resolvedDecl": {
-                            "row": 115,
-                            "column": 6,
-                            "local": "DefaultProps",
-                            "type": "type"
-                        }
+                        "row": 116,
+                        "type": "value[guess-import]"
                     }
                 ],
                 "PureComponent": [
@@ -13111,28 +13099,16 @@
                 ],
                 "DEFAULT": [
                     {
-                        "row": 45,
                         "column": 41,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 44,
-                            "column": 5,
-                            "local": "size",
-                            "type": "value"
-                        }
+                        "row": 45,
+                        "type": "value[guess-import]"
                     }
                 ],
                 "LARGE": [
                     {
-                        "row": 46,
                         "column": 41,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 44,
-                            "column": 5,
-                            "local": "size",
-                            "type": "value"
-                        }
+                        "row": 46,
+                        "type": "value[guess-import]"
                     }
                 ],
                 "Component": [
@@ -15320,15 +15296,9 @@
             "typeofs": {
                 "View": [
                     {
-                        "row": 17,
                         "column": 40,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 17,
-                            "column": 5,
-                            "local": "hostRef",
-                            "type": "value"
-                        }
+                        "row": 17,
+                        "type": "type[guess-import]"
                     }
                 ]
             }
@@ -15468,15 +15438,9 @@
             "typeofs": {
                 "View": [
                     {
-                        "row": 28,
                         "column": 40,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 28,
-                            "column": 5,
-                            "local": "hostRef",
-                            "type": "value"
-                        }
+                        "row": 28,
+                        "type": "type[guess-import]"
                     }
                 ]
             }

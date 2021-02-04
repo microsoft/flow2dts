@@ -96,6 +96,7 @@
                 "column": 16,
                 "local": "undefined"
             },
+            "error": "[TYPEOF RESOLVED TO ITSELF]",
             "resolved": {
                 "begin": {
                     "row": 44,

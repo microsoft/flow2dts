@@ -85,6 +85,7 @@
                 "column": 43,
                 "local": "pickScale"
             },
+            "error": "[TYPEOF RESOLVED TO ITSELF]",
             "resolved": {
                 "begin": {
                     "row": 17,
