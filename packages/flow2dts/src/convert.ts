@@ -13,7 +13,7 @@ import fs from "fs"
 import stripAnsi from "strip-ansi"
 
 import { transform as pluginFlow2DTS, Options as PluginOptions } from "./transform"
-import { OverridesVisitors } from "./transform/applyOverridesVisitors"
+import { OverridesVisitorObject } from "./transform/applyOverridesVisitors"
 import { ResolvedHintFile } from "./transform/state"
 
 const regexFixPath = /^\[FLOW2DTS \- Error\] .*?[\\\/]workbench[\\\/]inputs[\\\/](?<path>.*?\.js\.flow):(?<message>.*)$/
@@ -36,20 +36,20 @@ export async function convert({
   outFilename,
   hintFile,
   overrideFilename,
-  overridesVisitors,
+  overridesVisitorObjects,
 }: {
   rootDir: string
   filename: string
   outFilename: string
   hintFile?: ResolvedHintFile
   overrideFilename?: string
-  overridesVisitors?: OverridesVisitors
+  overridesVisitorObjects?: OverridesVisitorObject[]
 }): Promise<[string, boolean]> {
   let success = false
   let outData: string
   const pluginOptions: PluginOptions = {
     pathname: overrideFilename,
-    overridesVisitors,
+    overridesVisitorObjects,
     hintFile,
     moduleRelative: path.relative(path.dirname(filename), rootDir).replace(/\\/g, "/"),
     moduleName: "react-native",

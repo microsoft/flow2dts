@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import * as React from "react";
 import { LogLevel } from "../Data/LogBoxLog";
@@ -9,7 +8,7 @@ declare type Props = Readonly<
   onDismiss: () => void;
   onChangeSelectedIndex: (index: number) => void;
   onMinimize: () => void;
-  logs: ReadonlyArray<$TypeOf<typeof LogBoxLog>>;
+  logs: ReadonlyArray<typeof LogBoxLog>;
   selectedIndex: number;
   fatalType?: null | undefined | LogLevel;
 }>;

@@ -11,7 +11,7 @@ import { AnimationCreator, ease, FancyModalCard, spring } from "./FancyModalCard
 class FancyModalCardStack {
   constructor(
     public readonly level: number = 0,
-    public readonly stack: Array<RefObject<FancyModalCard>> = [{ current: null }],
+    public readonly stack: Array<RefObject<FancyModalCard>> = [{ current: undefined }],
     public readonly executionQueue: ExecutionQueue = new ExecutionQueue()
   ) {}
 

@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import { ColorValue } from "../../StyleSheet/StyleSheet";
 import { PressEvent } from "../../Types/CoreEventTypes";

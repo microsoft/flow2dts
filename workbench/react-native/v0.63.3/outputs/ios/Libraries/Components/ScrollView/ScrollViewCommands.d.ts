@@ -2,7 +2,7 @@
 import * as React from "react";
 import { Double } from "../../../Libraries/Types/CodegenTypes";
 import { HostComponent } from "../../Renderer/shims/ReactNativeTypes";
-declare type ScrollViewNativeComponentType = HostComponent<any>;
+declare type ScrollViewNativeComponentType = HostComponent<{}>;
 interface NativeCommands {
   readonly flashScrollIndicators: (viewRef: React.ElementRef<ScrollViewNativeComponentType>) => void;
   readonly scrollTo: (viewRef: React.ElementRef<ScrollViewNativeComponentType>, x: Double, y: Double, animated: boolean) => void;

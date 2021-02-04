@@ -1,10 +1,8 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 import $1 from "react";
 import { PressEvent } from "../Types/CoreEventTypes";
 import { ScrollEvent } from "../Types/CoreEventTypes";
 import { KeyboardEvent } from "./Keyboard/Keyboard";
-import EmitterSubscription$f2tTypeof from "../vendor/emitter/EmitterSubscription";
-declare type EmitterSubscription = $TypeOf<typeof EmitterSubscription$f2tTypeof>;
+import EmitterSubscription from "../vendor/emitter/EmitterSubscription";
 import { HostComponent } from "../Renderer/shims/ReactNativeTypes";
 declare type State =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/

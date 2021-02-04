@@ -1,6 +1,5 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
-import EventSubscriptionVendor$f2tTypeof from "./_EventSubscriptionVendor";
-declare type EventSubscriptionVendor = $TypeOf<typeof EventSubscriptionVendor$f2tTypeof>;
+// @flow
+import EventSubscriptionVendor from "./_EventSubscriptionVendor";
 declare class EventSubscription {
   eventType: string;
   key: number;

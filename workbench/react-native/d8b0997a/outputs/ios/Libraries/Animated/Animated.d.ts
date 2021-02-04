@@ -1,4 +1,4 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
+export * from "./AnimatedMock";
 // @flow
 import AnimatedFlatList$f2tTypeof from "./components/AnimatedFlatList";
 declare type AnimatedFlatList = typeof AnimatedFlatList$f2tTypeof;
@@ -13,9 +13,10 @@ declare type AnimatedText = typeof AnimatedText$f2tTypeof;
 import AnimatedView$f2tTypeof from "./components/AnimatedView";
 declare type AnimatedView = typeof AnimatedView$f2tTypeof;
 import $1 from "./AnimatedMock";
+export { AnimatedFlatList$f2tTypeof as FlatList, AnimatedImage$f2tTypeof as Image, AnimatedScrollView$f2tTypeof as ScrollView, AnimatedSectionList$f2tTypeof as SectionList, AnimatedText$f2tTypeof as Text, AnimatedView$f2tTypeof as View };
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$TypeOf<typeof $1> & {
+typeof $1 & {
   FlatList: AnimatedFlatList;
   Image: AnimatedImage;
   ScrollView: AnimatedScrollView;

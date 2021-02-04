@@ -3,16 +3,10 @@
 
 import { types as t } from "@babel/core"
 import { NodePath, Scope } from "@babel/traverse"
-import { State } from "./state"
 
-export const nameForExportDefaultRedirect = "$f2tExportDefaultRedirect"
 export const nameForExportDefault = "$f2tExportDefault"
 export const nameForRestParameter = "$f2tRest"
 export const nameForTypeIndexerKey = "$f2tKey"
-
-export function nameForHidden(name: string): string {
-  return `$f2tHidden_${name}`
-}
 
 export function nameForImportTypeof(name: string): string {
   return `${name}$f2tTypeof`
@@ -36,19 +30,18 @@ export function assertTSTypeAnnotation(node: t.Node | null | undefined): asserts
   t.assertTSTypeAnnotation(node)
 }
 
-export function wrappedTypeOf(id: t.TSEntityName) {
-  return t.tsTypeReference(t.identifier("$TypeOf"), t.tsTypeParameterInstantiation([t.tsTypeQuery(id)]))
+export function isClassIdentifier(typeName: t.Identifier, scope: Scope) {
+  const binding = scope.getBinding(typeName.name)
+  if (binding && (binding.path.isDeclareClass() || binding.path.isClassDeclaration())) {
+    return true
+  } else {
+    return false
+  }
 }
 
 export function isClass(tsTypeReference: t.TSTypeReference, scope: Scope) {
   const typeName = tsTypeReference.typeName
-  if (t.isIdentifier(typeName)) {
-    const binding = scope.getBinding(typeName.name)
-    if (binding && (binding.path.isDeclareClass() || binding.path.isClassDeclaration())) {
-      return true
-    }
-  }
-  return false
+  return t.isIdentifier(typeName) && isClassIdentifier(typeName, scope)
 }
 
 export function isPathDefinitelyValue<T>(path: NodePath<T>): boolean {

@@ -1,6 +1,5 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
-import AnimatedValue$f2tTypeof from "../nodes/AnimatedValue";
-declare type AnimatedValue = $TypeOf<typeof AnimatedValue$f2tTypeof>;
+// @flow
+import AnimatedValue from "../nodes/AnimatedValue";
 declare type EndResult = {
   finished: boolean;
 };

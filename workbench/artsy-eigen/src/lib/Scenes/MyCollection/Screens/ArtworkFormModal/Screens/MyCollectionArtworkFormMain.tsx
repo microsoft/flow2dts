@@ -15,6 +15,10 @@ import { ArtworkFormModalScreen } from "../MyCollectionArtworkFormModal"
 
 const SHOW_FORM_VALIDATION_ERRORS_IN_DEV = false
 
+// TODO: It is unclear if this issue structurally applies to RN projects or is more of an issue with e.g. Formik relying on HTML event types.
+//       See https://github.com/microsoft/flow2dts/issues/17
+type NonNullableObject<T> = { [K in keyof T]-?: NonNullable<T[K]> }
+
 export const MyCollectionArtworkFormMain: React.FC<StackScreenProps<ArtworkFormModalScreen, "ArtworkForm">> = ({
   navigation,
   route,
@@ -82,7 +86,7 @@ export const MyCollectionArtworkFormMain: React.FC<StackScreenProps<ArtworkFormM
           <Button
             disabled={!formik.isValid || !isFormDirty()}
             block
-            onPress={formik.handleSubmit}
+            onPress={(event) => formik.handleSubmit(event as NonNullableObject<typeof event>)}
             data-test-id="CompleteButton"
           >
             {modalType === "edit" ? "Save changes" : "Complete"}

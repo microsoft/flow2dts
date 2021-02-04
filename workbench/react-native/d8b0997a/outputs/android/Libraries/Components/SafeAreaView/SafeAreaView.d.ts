@@ -7,6 +7,6 @@ declare type Props = Readonly<
 ViewProps & {
   emulateUnlessSupported?: boolean;
 }>;
-declare var exported: React.AbstractComponent<Props, React.ElementRef<HostComponent<any>>>;
+declare var exported: React.AbstractComponent<Props, React.ElementRef<HostComponent<{}>>>;
 declare const $f2tExportDefault: typeof exported;
 export default $f2tExportDefault;

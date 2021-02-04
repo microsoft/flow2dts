@@ -1,4 +1,4 @@
-import { $TypeOf, Stringish } from "flow2dts-flow-types-polyfill";
+import { Stringish } from "flow2dts-flow-types-polyfill";
 import { $Diff } from "utility-types";
 import $1 from "../../DeprecatedPropTypes/DeprecatedTextInputPropTypes";
 import $2 from "react";
@@ -576,14 +576,14 @@ $Diff<ViewProps, Readonly<
   * If `true`, contextMenuHidden is hidden. The default value is `false`.
   */
   contextMenuHidden?: null | undefined | boolean;
-  forwardedRef?: null | undefined | ReactRefSetter<$2.ElementRef<HostComponent<any>> & ImperativeMethods>;
+  forwardedRef?: null | undefined | ReactRefSetter<$2.ElementRef<HostComponent<{}>> & ImperativeMethods>;
 }>;
 declare type ImperativeMethods = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
   clear: () => void;
   isFocused: () => boolean;
-  getNativeRef: () => null | undefined | $2.ElementRef<HostComponent<any>>;
+  getNativeRef: () => null | undefined | $2.ElementRef<HostComponent<{}>>;
 }>;
 declare function InternalTextInput(props: Props): $2.Node;
 declare type TextInputComponentStatics = Readonly<
@@ -597,7 +597,6 @@ declare type TextInputComponentStatics = Readonly<
     focusTextInput: typeof $3.focusTextInput;
     blurTextInput: typeof $3.blurTextInput;
   }>;
-  propTypes: $TypeOf<typeof $1>;
 }>;
 export type { ChangeEvent };
 export type { TextInputEvent };
@@ -614,5 +613,5 @@ export type { TextContentType };
 export type { Props };
 declare const $f2tExportDefault: $2.AbstractComponent<$2.ElementConfig<typeof InternalTextInput>, Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
-$2.ElementRef<HostComponent<any>> & ImperativeMethods & {}>> & TextInputComponentStatics;
+$2.ElementRef<HostComponent<{}>> & ImperativeMethods & {}>> & TextInputComponentStatics;
 export default $f2tExportDefault;

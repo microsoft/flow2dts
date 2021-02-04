@@ -7,7 +7,7 @@ import path from "path"
 import chalk from "chalk"
 
 import { convert } from "./convert"
-import { OverridesVisitors } from "./transform/applyOverridesVisitors"
+import { initVisitorObjects, OverridesVisitor } from "./transform/applyOverridesVisitors"
 import { ResolvedHintEntries, ResolvedHintFile } from "./transform/state"
 
 const FLOW_EXTNAME = ".js.flow"
@@ -16,7 +16,7 @@ const TS_EXTNAME = ".d.ts"
 async function run({
   rootDir,
   outDir,
-  overridesPath,
+  overridesPaths,
   hintPath,
   platform,
   patterns,
@@ -24,14 +24,27 @@ async function run({
 }: {
   rootDir: string
   outDir: string
-  overridesPath?: string
+  overridesPaths?: string[]
   hintPath?: string
   platform: string
   patterns: string[]
   cwd?: string
-}): Promise<[number, number]> {
+}): Promise<
+  [
+    numberOfFiles: number,
+    successCount: number,
+    overridesWithoutMatches: string[],
+    wildcardOverridesWithSingleMatches: string[]
+  ]
+> {
   const overridesVisitors =
-    overridesPath === undefined ? undefined : (require(overridesPath).default as OverridesVisitors)
+    overridesPaths === undefined
+      ? undefined
+      : overridesPaths.reduce<OverridesVisitor[]>(
+          (all, overridesPath) => [...all, ...require(overridesPath).default],
+          []
+        )
+  const overridesVisitorObjects = overridesVisitors && initVisitorObjects(overridesVisitors)
   const hintEntries = hintPath === undefined ? undefined : (require(hintPath) as ResolvedHintEntries)
   let successCount = 0
   const conversions: Array<Promise<void>> = []
@@ -51,7 +64,7 @@ async function run({
       const overrideFilename = overridesVisitors && getOverrideFilename(rootDir, filename)
       logStart(cwd, filename)
       conversions.push(
-        convert({ rootDir, filename, outFilename, hintFile, overridesVisitors, overrideFilename }).then(
+        convert({ rootDir, filename, outFilename, hintFile, overridesVisitorObjects, overrideFilename }).then(
           ([outFilename, success]) => {
             if (success) {
               successCount++
@@ -63,7 +76,15 @@ async function run({
     }
   }
   await Promise.all(conversions)
-  return [conversions.length, successCount]
+  const overridesWithoutMatches = overridesVisitorObjects
+    ? overridesVisitorObjects.filter((o) => o.madeChangesToNumberOfFiles === 0).map((o) => o.pathPattern)
+    : []
+  const wildcardOverridesWithSingleMatches = overridesVisitorObjects
+    ? overridesVisitorObjects
+        .filter((o) => o.madeChangesToNumberOfFiles === 1 && o.pathPattern.includes("*"))
+        .map((o) => o.pathPattern)
+    : []
+  return [conversions.length, successCount, overridesWithoutMatches, wildcardOverridesWithSingleMatches]
 }
 
 function logEnd(cwd: string | undefined, outFilename: string, success: boolean) {
@@ -127,11 +148,11 @@ async function main() {
         type: "string",
       },
       overrides: {
-        nargs: 1,
         demandOption: false,
         describe:
           "A file that exports a OverridesVisitor object used to provide project specific overrides where conversion cannot accurately be made",
         type: "string",
+        array: true,
       },
       hint: {
         nargs: 1,
@@ -145,16 +166,41 @@ async function main() {
   const cwd = argv.cwd
   const outDir = path.resolve(cwd || "", argv.outDir)
   const rootDir = path.resolve(cwd || "", argv.rootDir)
-  const overridesPath = argv.overrides && path.resolve(cwd || "", argv.overrides)
+  const overridesPath = argv.overrides && argv.overrides.map((o) => path.resolve(cwd || "", o))
   const hintPath = argv.hint && path.resolve(cwd || "", argv.hint)
   const platform = argv.platform
   const patterns = argv._
 
-  const [totalCount, successCount] = await run({ cwd, outDir, rootDir, overridesPath, hintPath, platform, patterns })
+  const [totalCount, successCount, overridesWithoutMatches, wildcardOverridesWithSingleMatches] = await run({
+    cwd,
+    outDir,
+    rootDir,
+    overridesPaths: overridesPath,
+    hintPath,
+    platform,
+    patterns,
+  })
+
+  const overridesErrorsOccurred = overridesWithoutMatches.length > 0 || wildcardOverridesWithSingleMatches.length > 0
+  if (overridesErrorsOccurred) {
+    console.log("")
+  }
+
+  overridesWithoutMatches.forEach((pathPattern) => {
+    console.error(chalk.red(`‼️ Override with path pattern '${pathPattern}' did not alter any files.`))
+  })
+
+  wildcardOverridesWithSingleMatches.forEach((pathPattern) => {
+    console.error(
+      chalk.red(
+        `‼️ Override with wildcard path pattern '${pathPattern}' only altered a single file. Update the pattern to match a single file, if this was the intent.`
+      )
+    )
+  })
 
   console.log(`\nSuccessfully converted ${successCount} of ${totalCount}\n`)
 
-  process.exit(totalCount - successCount)
+  process.exit(totalCount - successCount === 0 && !overridesErrorsOccurred ? 0 : 1)
 }
 
 main()

@@ -1,5 +1,6 @@
 import { $FlowFixMe } from "flow2dts-flow-types-polyfill";
 import { $Keys } from "utility-types";
+import $1 from "../../Promise";
 declare type ChangeEventName = $Keys<{
   announcementFinished: string;
   boldTextChanged: string;
@@ -21,7 +22,7 @@ declare var AccessibilityInfo:
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#isBoldTextEnabled
    */
-  isBoldTextEnabled: () => Promise<boolean>;
+  isBoldTextEnabled: () => $1<boolean>;
 
   /**
    * Query whether grayscale is currently enabled.
@@ -31,7 +32,7 @@ declare var AccessibilityInfo:
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#isGrayscaleEnabled
    */
-  isGrayscaleEnabled: () => Promise<boolean>;
+  isGrayscaleEnabled: () => $1<boolean>;
 
   /**
    * Query whether inverted colors are currently enabled.
@@ -41,7 +42,7 @@ declare var AccessibilityInfo:
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#isInvertColorsEnabled
    */
-  isInvertColorsEnabled: () => Promise<boolean>;
+  isInvertColorsEnabled: () => $1<boolean>;
 
   /**
    * Query whether reduced motion is currently enabled.
@@ -51,7 +52,7 @@ declare var AccessibilityInfo:
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#isReduceMotionEnabled
    */
-  isReduceMotionEnabled: () => Promise<boolean>;
+  isReduceMotionEnabled: () => $1<boolean>;
 
   /**
    * Query whether reduced transparency is currently enabled.
@@ -61,7 +62,7 @@ declare var AccessibilityInfo:
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#isReduceTransparencyEnabled
    */
-  isReduceTransparencyEnabled: () => Promise<boolean>;
+  isReduceTransparencyEnabled: () => $1<boolean>;
 
   /**
    * Query whether a screen reader is currently enabled.
@@ -71,7 +72,7 @@ declare var AccessibilityInfo:
    *
    * See https://reactnative.dev/docs/accessibilityinfo.html#isScreenReaderEnabled
    */
-  isScreenReaderEnabled: () => Promise<boolean>;
+  isScreenReaderEnabled: () => $1<boolean>;
   fetch: $FlowFixMe;
 
   /**

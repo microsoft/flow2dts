@@ -60,7 +60,7 @@ export const FancyModal: React.FC<{ visible: boolean; maxHeight?: number; onBack
   }, [visible])
 
   return (
-    <Modal transparent animated={false} visible={showingUnderlyingModal}>
+    <Modal transparent animationType="slide" visible={showingUnderlyingModal}>
       <FancyModalContext.Provider value={context.nextLevel()}>{card.jsx}</FancyModalContext.Provider>
     </Modal>
   )

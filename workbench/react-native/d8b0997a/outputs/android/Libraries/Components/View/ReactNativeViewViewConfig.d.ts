@@ -1,4 +1,3 @@
-import { $TypeOf } from "flow2dts-flow-types-polyfill";
 // @flow
 import ReactNativeViewViewConfigAndroid from "./ReactNativeViewViewConfigAndroid";
 declare var ReactNativeViewConfig:
@@ -310,7 +309,7 @@ declare var ReactNativeViewConfig:
     shadowOffset:
     /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
     {
-      diff: $TypeOf<typeof $10>;
+      diff: typeof $10;
     };
     shadowOpacity: boolean;
     shadowRadius: boolean;
@@ -452,7 +451,7 @@ declare var ReactNativeViewConfig:
       shadowOffset:
       /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
       {
-        diff: $TypeOf<typeof $22>;
+        diff: typeof $22;
       };
       shadowOpacity: boolean;
       shadowRadius: boolean;

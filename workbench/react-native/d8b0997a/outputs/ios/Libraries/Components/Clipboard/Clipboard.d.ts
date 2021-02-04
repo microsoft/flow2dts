@@ -1,3 +1,6 @@
+declare const $f2d_getString: () => Promise<string>;
+declare const $f2d_setString: (content: string) => void;
+export { $f2d_getString as getString, $f2d_setString as setString };
 // @flow
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
