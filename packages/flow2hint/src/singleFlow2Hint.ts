@@ -261,11 +261,24 @@ async function resolveImport({
   })
 }
 
+function areHintIdEqual(source: HintIdentifier, resolved: HintResolved): boolean {
+  return source.row === resolved.begin.row && source.column === resolved.begin.column
+}
+
+function areHintIdContained(source: HintIdentifier, resolved: HintResolved): boolean {
+  return (
+    source.row === resolved.begin.row &&
+    source.row === resolved.end.row &&
+    source.column >= resolved.begin.column &&
+    source.column < resolved.end.column
+  )
+}
+
 export function resolvedToItself(hintImport: HintImport): boolean {
   return (
     hintImport.resolved !== undefined &&
-    hintImport.source.column === hintImport.resolved.begin.column &&
-    hintImport.source.row === hintImport.resolved.begin.row
+    (areHintIdEqual(hintImport.source, hintImport.resolved) ||
+      areHintIdContained(hintImport.source, hintImport.resolved))
   )
 }
 
@@ -343,6 +356,9 @@ export async function singleFlow2Hint({
       normalizedModifiedRootDir,
       collectedHintFiles,
     })
+    if (resolvedToItself(hintTypeof)) {
+      hintTypeof.resolved = undefined
+    }
   }
 
   const outData = JSON.stringify(hint, undefined, 4)

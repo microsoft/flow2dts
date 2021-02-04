@@ -131,15 +131,32 @@ export function mergeHint(collectedHintFiles: HintFileEntries): ResolvedHintEntr
       if (!mergedFile.typeofs[hintTypeof.source.local]) {
         mergedFile.typeofs[hintTypeof.source.local] = []
       }
-      mergedFile.typeofs[hintTypeof.source.local].push(
-        resolveImport<ResolvedHintTypeof>(collectedHintFiles, hintTypeof, (type, resolvedDecl?) => {
-          if (resolvedDecl) {
-            return { row: hintTypeof.source.row, column: hintTypeof.source.column, type, resolvedDecl }
-          } else {
-            return { row: hintTypeof.source.row, column: hintTypeof.source.column, type }
-          }
-        })
-      )
+      if (hintTypeof.error === "[TYPEOF RESOLVED TO ITSELF]") {
+        const importKey = hintTypeof.source.local
+        if (importKey[0].toUpperCase() === importKey[0]) {
+          mergedFile.typeofs[hintTypeof.source.local].push({
+            column: hintTypeof.source.column,
+            row: hintTypeof.source.row,
+            type: "type[guess-import]",
+          })
+        } else if (importKey[0].toLowerCase() === importKey[0]) {
+          mergedFile.typeofs[hintTypeof.source.local].push({
+            column: hintTypeof.source.column,
+            row: hintTypeof.source.row,
+            type: "value[guess-import]",
+          })
+        }
+      } else {
+        mergedFile.typeofs[hintTypeof.source.local].push(
+          resolveImport<ResolvedHintTypeof>(collectedHintFiles, hintTypeof, (type, resolvedDecl?) => {
+            if (resolvedDecl) {
+              return { row: hintTypeof.source.row, column: hintTypeof.source.column, type, resolvedDecl }
+            } else {
+              return { row: hintTypeof.source.row, column: hintTypeof.source.column, type }
+            }
+          })
+        )
+      }
     }
   }
   return mergedEntries
