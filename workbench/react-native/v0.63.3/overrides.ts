@@ -141,74 +141,6 @@ const animatedVisitors: OverridesVisitor[] = [
 // Doing this so we don't forget to update the other visitor that refers to this var
 const AnimatedInterpolationName = "Interpolation"
 const AnimatedNodeName = "Node"
-const typeofRelatedTempFixesOverrides: OverridesVisitor[] = [
-  [
-    "Libraries/Lists/VirtualizedSectionList.d.ts",
-    {
-      // FIXME: This is a temp workaround for https://github.com/microsoft/flow2dts/issues/15
-      TSTypeReference: {
-        exit(path) {
-          const typeName = path.node.typeName
-          if (
-            path.find((p) => p.isTSTypeAliasDeclaration() && p.node.id.name === "DefaultProps") &&
-            t.isTSQualifiedName(typeName) &&
-            t.isIdentifier(typeName.left) &&
-            typeName.left.name === "$2" &&
-            t.isIdentifier(typeName.right) &&
-            typeName.right.name === "defaultProps"
-          ) {
-            path.replaceWith(t.tsTypeQuery(typeName))
-          }
-        },
-      },
-    },
-  ],
-  ...["Value", AnimatedInterpolationName, AnimatedNodeName].map(
-    (name) =>
-      [
-        "Libraries/Animated/src/AnimatedMock.d.ts",
-        {
-          ImportDeclaration: {
-            exit(path, state) {
-              if (path.node.source.value === `./nodes/Animated${name}`) {
-                const specifier = path.node.specifiers[0]
-                t.assertImportDefaultSpecifier(specifier)
-                const binding = path.scope.getBinding(specifier.local.name)
-                if (binding) {
-                  binding.referencePaths.forEach((referencePath) => {
-                    const typeQueryReferencePath = referencePath.findParent((parent) => parent.isTSTypeQuery())
-                    if (typeQueryReferencePath) {
-                      if (typeQueryReferencePath.findParent((grandParent) => grandParent.isTSPropertySignature())) {
-                        referencePath.replaceWith(t.identifier(name))
-                      } else {
-                        typeQueryReferencePath.replaceWith(t.tsTypeReference(t.identifier(name)))
-                      }
-                    }
-                  })
-                }
-                specifier.local = t.identifier(name)
-              }
-            },
-          },
-          VariableDeclaration: {
-            exit(path) {
-              const declarator = path.node.declarations[0]
-              if (t.isIdentifier(declarator.id) && declarator.id.name === `$f2d_${name}`) {
-                path.remove()
-              }
-            },
-          },
-          ExportSpecifier: {
-            exit(path) {
-              if (path.node.local.name === `$f2d_${name}`) {
-                path.node.local = t.identifier(name)
-              }
-            },
-          },
-        },
-      ] as OverridesVisitor
-  ),
-]
 
 const listsVisitor: Visitor = {
   TSTypeAliasDeclaration: {
@@ -231,7 +163,6 @@ const listsVisitors: OverridesVisitor[] = [
 
 const visitors: OverridesVisitor[] = [
   ...animatedVisitors,
-  ...typeofRelatedTempFixesOverrides,
   ...listsVisitors,
   [
     "**/*",
