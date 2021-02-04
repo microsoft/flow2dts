@@ -8,7 +8,7 @@ declare type IOSProps = Readonly<
 {
   /**
   Whether the indicator should hide when not animating.
-   @platform ios
+    @platform ios
   */
   hidesWhenStopped?: null | undefined | boolean;
 }>;
@@ -22,14 +22,14 @@ ViewProps & IOSProps & {
 
   /**
   The foreground color of the spinner.
-   @default {@platform android} `null` (system accent default color)
+    @default {@platform android} `null` (system accent default color)
   @default {@platform ios} '#999999'
   */
   color?: null | undefined | ColorValue;
 
   /**
   Size of the indicator.
-   @type enum(`'small'`, `'large'`)
+    @type enum(`'small'`, `'large'`)
   @type {@platform android} number
   */
   size?: null | undefined | IndicatorSize;

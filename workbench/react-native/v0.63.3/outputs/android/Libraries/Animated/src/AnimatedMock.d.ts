@@ -1,10 +1,10 @@
 import $1 from "./AnimatedEvent";
 import $9 from "./AnimatedEvent";
 import $3 from "./AnimatedImplementation";
-import Interpolation from "./nodes/AnimatedInterpolation";
-import Node from "./nodes/AnimatedNode";
+import $4 from "./nodes/AnimatedInterpolation";
+import $5 from "./nodes/AnimatedNode";
 import $6 from "./nodes/AnimatedProps";
-import Value from "./nodes/AnimatedValue";
+import $7 from "./nodes/AnimatedValue";
 import $8 from "./nodes/AnimatedValueXY";
 import $11 from "./createAnimatedComponent";
 import { EndCallback } from "./animations/Animation";
@@ -20,9 +20,9 @@ declare type CompositeAnimation = {
   _startNativeLoop: (iterations?: number) => void;
   _isUsingNativeDriver: () => boolean;
 };
-declare var spring: (value: Value | typeof $8, config: SpringAnimationConfig) => CompositeAnimation;
-declare var timing: (value: Value | typeof $8, config: TimingAnimationConfig) => CompositeAnimation;
-declare var decay: (value: Value | typeof $8, config: DecayAnimationConfig) => CompositeAnimation;
+declare var spring: (value: typeof $7 | typeof $8, config: SpringAnimationConfig) => CompositeAnimation;
+declare var timing: (value: typeof $7 | typeof $8, config: TimingAnimationConfig) => CompositeAnimation;
+declare var decay: (value: typeof $7 | typeof $8, config: DecayAnimationConfig) => CompositeAnimation;
 declare var sequence: (animations: CompositeAnimation[]) => CompositeAnimation;
 declare type ParallelConfig = {
   stopTogether?: boolean;
@@ -37,7 +37,10 @@ declare type LoopAnimationConfig = {
 declare var loop: (animation: CompositeAnimation, _?: LoopAnimationConfig) => CompositeAnimation;
 declare var event: (argMapping: (null | undefined | Mapping)[], config: EventConfig) => any;
 export type { CompositeAnimation };
+declare const $f2d_Value: typeof $7;
 declare const $f2d_ValueXY: typeof $8;
+declare const $f2d_Interpolation: typeof $4;
+declare const $f2d_Node: typeof $5;
 declare const $f2d_add: typeof $3.add;
 declare const $f2d_subtract: typeof $3.subtract;
 declare const $f2d_divide: typeof $3.divide;
@@ -50,14 +53,14 @@ declare const $f2d_forkEvent: typeof $3.forkEvent;
 declare const $f2d_unforkEvent: typeof $3.unforkEvent;
 declare const $f2d_Event: typeof $1.AnimatedEvent;
 declare const $f2d___PropsOnlyForTests: typeof $6;
-export { Value, $f2d_ValueXY as ValueXY, Interpolation, Node, decay, timing, spring, $f2d_add as add, $f2d_subtract as subtract, $f2d_divide as divide, $f2d_multiply as multiply, $f2d_modulo as modulo, $f2d_diffClamp as diffClamp, delay, sequence, parallel, stagger, loop, event, $f2d_createAnimatedComponent as createAnimatedComponent, $f2d_attachNativeEvent as attachNativeEvent, $f2d_forkEvent as forkEvent, $f2d_unforkEvent as unforkEvent, $f2d_Event as Event, $f2d___PropsOnlyForTests as __PropsOnlyForTests };
+export { $f2d_Value as Value, $f2d_ValueXY as ValueXY, $f2d_Interpolation as Interpolation, $f2d_Node as Node, decay, timing, spring, $f2d_add as add, $f2d_subtract as subtract, $f2d_divide as divide, $f2d_multiply as multiply, $f2d_modulo as modulo, $f2d_diffClamp as diffClamp, delay, sequence, parallel, stagger, loop, event, $f2d_createAnimatedComponent as createAnimatedComponent, $f2d_attachNativeEvent as attachNativeEvent, $f2d_forkEvent as forkEvent, $f2d_unforkEvent as unforkEvent, $f2d_Event as Event, $f2d___PropsOnlyForTests as __PropsOnlyForTests };
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
-  Value: typeof Value;
+  Value: typeof $7;
   ValueXY: typeof $8;
-  Interpolation: typeof Interpolation;
-  Node: typeof Node;
+  Interpolation: typeof $4;
+  Node: typeof $5;
   decay: typeof decay;
   timing: typeof timing;
   spring: typeof spring;

@@ -202,27 +202,6 @@ const visitors: OverridesVisitor[] = [
     },
   ],
   [
-    "Libraries/Lists/VirtualizedSectionList.d.ts",
-    {
-      // FIXME: This is a temp workaround for https://github.com/microsoft/flow2dts/issues/15
-      TSTypeReference: {
-        exit(path) {
-          const typeName = path.node.typeName
-          if (
-            path.find((p) => p.isTSTypeAliasDeclaration() && p.node.id.name === "DefaultProps") &&
-            t.isTSQualifiedName(typeName) &&
-            t.isIdentifier(typeName.left) &&
-            typeName.left.name === "$2" &&
-            t.isIdentifier(typeName.right) &&
-            typeName.right.name === "defaultProps"
-          ) {
-            path.replaceWith(t.tsTypeQuery(typeName))
-          }
-        },
-      },
-    },
-  ],
-  [
     "Libraries/Components/TextInput/TextInputNativeCommands.d.ts",
     {
       TSInterfaceDeclaration: {
