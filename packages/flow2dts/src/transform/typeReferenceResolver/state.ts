@@ -162,8 +162,26 @@ export function resolveGenericTypeAnnotation<T>(
      */
     if (entity.type === "Identifier") {
       // when entity is not undefined, it is a resolved type, which means the name is in global context
+      // except when this identifier is a class
       if (state.typeReferences.imports[entity.name]) {
-        return t.tsTypeQuery(entity)
+        let needTypeof = true;
+        if (state.hintFile && entity.name[0] === "$") {
+          const hintTypeofs = state.hintFile.typeofs[entity.name];
+          if (hintTypeofs) {
+            // if $x exists in an import, it will not be overrided due to flow compiler's feature
+            // so let's assume there is only one record in hintTypeofs
+            for (const hintTypeof of hintTypeofs) {
+              if (hintTypeof.type === 'class') {
+                needTypeof = false;
+                break;
+              }
+            }
+          }
+        }
+
+        if (needTypeof) {
+          return t.tsTypeQuery(entity)
+        }
       }
     }
   }
