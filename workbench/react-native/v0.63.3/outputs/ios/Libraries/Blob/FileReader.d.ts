@@ -12,8 +12,8 @@ declare class FileReader extends $2 {
   DONE: number;
   constructor();
   readAsArrayBuffer(): void;
-  readAsDataURL(blob?: null | undefined | typeof $1): void;
-  readAsText(blob?: null | undefined | typeof $1, encoding?: string): void;
+  readAsDataURL(blob?: null | undefined | $1): void;
+  readAsText(blob?: null | undefined | $1, encoding?: string): void;
   abort(): void;
   readyState(): ReadyState;
   error(): null | undefined | Error;

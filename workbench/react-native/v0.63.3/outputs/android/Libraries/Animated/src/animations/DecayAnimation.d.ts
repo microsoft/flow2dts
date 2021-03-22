@@ -23,7 +23,7 @@ declare class DecayAnimation extends $1 {
     type: string;
     velocity: number;
   };
-  start(fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | typeof $1, animatedValue: AnimatedValue): void;
+  start(fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | $1, animatedValue: AnimatedValue): void;
   onUpdate(): void;
   stop(): void;
 }

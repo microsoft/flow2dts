@@ -17,7 +17,7 @@ declare type EdgeInsetsValue =
   right: number;
   bottom: number;
 };
-declare type DimensionValue = null | number | string | typeof $1;
+declare type DimensionValue = null | number | string | $1;
 declare type ____LayoutStyle_Internal = Readonly<
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 {
@@ -455,47 +455,47 @@ declare type ____TransformStyle_Internal = Readonly<
   transform?: ReadonlyArray<
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly perspective: number | typeof $1;
+    readonly perspective: number | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly rotate: string | typeof $1;
+    readonly rotate: string | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly rotateX: string | typeof $1;
+    readonly rotateX: string | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly rotateY: string | typeof $1;
+    readonly rotateY: string | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly rotateZ: string | typeof $1;
+    readonly rotateZ: string | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly scale: number | typeof $1;
+    readonly scale: number | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly scaleX: number | typeof $1;
+    readonly scaleX: number | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly scaleY: number | typeof $1;
+    readonly scaleY: number | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly translateX: number | typeof $1;
+    readonly translateX: number | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly translateY: number | typeof $1;
+    readonly translateY: number | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly translate: [number | typeof $1, number | typeof $1] | typeof $1;
+    readonly translate: [number | $1, number | $1] | $1;
   } |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
@@ -508,7 +508,7 @@ declare type ____TransformStyle_Internal = Readonly<
   |
   /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
   {
-    readonly matrix: ReadonlyArray<number | typeof $1> | typeof $1;
+    readonly matrix: ReadonlyArray<number | $1> | $1;
   }>;
 }>;
 declare type ____ShadowStyle_Internal = Readonly<
@@ -535,7 +535,7 @@ declare type ____ShadowStyle_Internal = Readonly<
   * Sets the drop shadow opacity (multiplied by the color's alpha component)
   * @platform ios
   */
-  shadowOpacity?: number | typeof $1;
+  shadowOpacity?: number | $1;
 
   /**
   * Sets the drop shadow blur radius
@@ -561,24 +561,24 @@ ____TransformStyle_Internal & {
   borderRightColor?: ColorValue;
   borderStartColor?: ColorValue;
   borderTopColor?: ColorValue;
-  borderRadius?: number | typeof $1;
-  borderBottomEndRadius?: number | typeof $1;
-  borderBottomLeftRadius?: number | typeof $1;
-  borderBottomRightRadius?: number | typeof $1;
-  borderBottomStartRadius?: number | typeof $1;
-  borderTopEndRadius?: number | typeof $1;
-  borderTopLeftRadius?: number | typeof $1;
-  borderTopRightRadius?: number | typeof $1;
-  borderTopStartRadius?: number | typeof $1;
+  borderRadius?: number | $1;
+  borderBottomEndRadius?: number | $1;
+  borderBottomLeftRadius?: number | $1;
+  borderBottomRightRadius?: number | $1;
+  borderBottomStartRadius?: number | $1;
+  borderTopEndRadius?: number | $1;
+  borderTopLeftRadius?: number | $1;
+  borderTopRightRadius?: number | $1;
+  borderTopStartRadius?: number | $1;
   borderStyle?: "solid" | "dotted" | "dashed";
-  borderWidth?: number | typeof $1;
-  borderBottomWidth?: number | typeof $1;
-  borderEndWidth?: number | typeof $1;
-  borderLeftWidth?: number | typeof $1;
-  borderRightWidth?: number | typeof $1;
-  borderStartWidth?: number | typeof $1;
-  borderTopWidth?: number | typeof $1;
-  opacity?: number | typeof $1;
+  borderWidth?: number | $1;
+  borderBottomWidth?: number | $1;
+  borderEndWidth?: number | $1;
+  borderLeftWidth?: number | $1;
+  borderRightWidth?: number | $1;
+  borderStartWidth?: number | $1;
+  borderTopWidth?: number | $1;
+  opacity?: number | $1;
   elevation?: number;
 }>;
 declare type ____FontWeight_Internal = "normal" | "bold" | "100" | "200" | "300" | "400" | "500" | "600" | "700" | "800" | "900";

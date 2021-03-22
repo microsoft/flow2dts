@@ -20,9 +20,9 @@ declare type CompositeAnimation = {
   _startNativeLoop: (iterations?: number) => void;
   _isUsingNativeDriver: () => boolean;
 };
-declare var spring: (value: typeof $7 | typeof $8, config: SpringAnimationConfig) => CompositeAnimation;
-declare var timing: (value: typeof $7 | typeof $8, config: TimingAnimationConfig) => CompositeAnimation;
-declare var decay: (value: typeof $7 | typeof $8, config: DecayAnimationConfig) => CompositeAnimation;
+declare var spring: (value: $7 | $8, config: SpringAnimationConfig) => CompositeAnimation;
+declare var timing: (value: $7 | $8, config: TimingAnimationConfig) => CompositeAnimation;
+declare var decay: (value: $7 | $8, config: DecayAnimationConfig) => CompositeAnimation;
 declare var sequence: (animations: CompositeAnimation[]) => CompositeAnimation;
 declare type ParallelConfig = {
   stopTogether?: boolean;

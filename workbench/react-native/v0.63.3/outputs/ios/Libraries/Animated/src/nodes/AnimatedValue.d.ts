@@ -62,7 +62,7 @@ declare class AnimatedValue extends $3 {
    * Interpolates the value before updating the property, e.g. mapping 0-1 to
    * 0-10.
    */
-  interpolate(config: InterpolationConfigType): typeof $1;
+  interpolate(config: InterpolationConfigType): $1;
 
   /**
    * Typically only used internally, but could be used by a custom Animation

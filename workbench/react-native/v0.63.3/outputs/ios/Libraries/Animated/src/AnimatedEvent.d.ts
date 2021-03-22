@@ -1,7 +1,7 @@
 import $1 from "./nodes/AnimatedValue";
 declare type Mapping = {
   [key: string]: Mapping;
-} | typeof $1;
+} | $1;
 declare type EventConfig = {
   listener?: null | undefined | Function;
   useNativeDriver: boolean;

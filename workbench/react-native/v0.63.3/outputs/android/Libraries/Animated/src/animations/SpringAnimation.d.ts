@@ -5,10 +5,10 @@ import $4 from "./Animation";
 import { AnimationConfig } from "./Animation";
 import { EndCallback } from "./Animation";
 declare type SpringAnimationConfig = AnimationConfig & {
-  toValue: number | typeof $2 | {
+  toValue: number | $2 | {
     x: number;
     y: number;
-  } | typeof $3 | typeof $1;
+  } | $3 | $1;
   overshootClamping?: boolean;
   restDisplacementThreshold?: number;
   restSpeedThreshold?: number;
@@ -26,7 +26,7 @@ declare type SpringAnimationConfig = AnimationConfig & {
   delay?: number;
 };
 declare type SpringAnimationConfigSingle = AnimationConfig & {
-  toValue: number | typeof $2 | typeof $1;
+  toValue: number | $2 | $1;
   overshootClamping?: boolean;
   restDisplacementThreshold?: number;
   restSpeedThreshold?: number;
@@ -56,7 +56,7 @@ declare class SpringAnimation extends $4 {
     toValue: any;
     type: string;
   };
-  start(fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | typeof $4, animatedValue: typeof $2): void;
+  start(fromValue: number, onUpdate: (value: number) => void, onEnd: null | undefined | EndCallback, previousAnimation: null | undefined | $4, animatedValue: $2): void;
   getInternalState(): Object;
 
   /**

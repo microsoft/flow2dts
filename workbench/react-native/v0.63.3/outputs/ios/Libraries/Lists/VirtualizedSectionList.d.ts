@@ -108,7 +108,7 @@ declare type State = {
 declare class VirtualizedSectionList<SectionT extends SectionBase<any>> extends $1.PureComponent<Props<SectionT>, State> {
   static defaultProps: DefaultProps;
   scrollToLocation(params: ScrollToLocationParamsType): void;
-  getListRef(): typeof $2;
+  getListRef(): $2;
   constructor(props: Props<SectionT>, context: Object);
   UNSAFE_componentWillReceiveProps(nextProps: Props<SectionT>): void;
   render(): $1.Node;
