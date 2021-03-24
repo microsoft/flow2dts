@@ -175,7 +175,7 @@ const logboxVisitor: Visitor = {
 }
 
 const logboxVisitors: OverridesVisitor[] = [
-  // ["Libraries/LogBox/LogBoxInspectorContainers.d.ts", logboxVisitor],
+  ["Libraries/LogBox/LogBoxInspectorContainer.d.ts", logboxVisitor],
   ["Libraries/LogBox/UI/LogBoxInspectorReactFrames.d.ts", logboxVisitor],
   ["Libraries/LogBox/UI/LogBoxInspectorStackFrames.d.ts", logboxVisitor],
 ]
