@@ -47,8 +47,8 @@ declare type LoopAnimationConfig = {
   resetBeforeIteration?: boolean;
 };
 declare var loop: (animation: CompositeAnimation, _?: LoopAnimationConfig) => CompositeAnimation;
-declare function forkEvent(event: (null | undefined | $4.AnimatedEvent) | (null | undefined | Function), listener: Function): $4.AnimatedEvent | Function;
-declare function unforkEvent(event: (null | undefined | $4.AnimatedEvent) | (null | undefined | Function), listener: Function): void;
+declare function forkEvent(event: (null | undefined | typeof $4.AnimatedEvent) | (null | undefined | Function), listener: Function): typeof $4.AnimatedEvent | Function;
+declare function unforkEvent(event: (null | undefined | typeof $4.AnimatedEvent) | (null | undefined | Function), listener: Function): void;
 declare var event: (argMapping: ReadonlyArray<null | undefined | Mapping>, config: EventConfig) => any;
 export type { CompositeAnimation };
 declare const $f2d_Value: typeof $12;

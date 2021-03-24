@@ -3,6 +3,7 @@
 
 import { NodePath, types as t } from "@babel/core"
 import { State } from "../state"
+import { isRequireDeclaration } from './typeReferenceRecognizerVisitor'
 
 export interface ReferenceRecord {
   variable: t.DeclareVariable
@@ -181,6 +182,51 @@ export function resolveGenericTypeAnnotation<T>(
 
         if (needTypeof) {
           return t.tsTypeQuery(entity)
+        }
+      }
+    } else {
+      // when entity is A.B, and A is a value
+      // "typeof" should be added before A.B
+      // I guess this is flow's feature
+      if (state.hintFile) {
+        let firstId: t.Identifier;
+        let qualified = entity;
+        while (true) {
+          if (qualified.left.type === 'Identifier') {
+            firstId = qualified.left;
+            break;
+          } else {
+            qualified = qualified.left;
+          }
+        }
+
+        let skipTypeof = false;
+        const importStat = state.typeReferences.imports[firstId.name];
+        if (importStat !== undefined && importStat.type === "VariableDeclarator") {
+          // ignore if the first identifier is "React"
+          const requireDecl = isRequireDeclaration(importStat);
+          if (requireDecl !== undefined && requireDecl[1].value === "react") {
+            skipTypeof = true;
+          }
+        }
+
+        if (!skipTypeof) {
+          let needTypeof = false;
+          const hintTypeofs = state.hintFile.typeofs[firstId.name];
+          if (hintTypeofs) {
+            // in this situation, a value chould only be imported
+            // so let's assume there is only one record in hintTypeofs
+            for (const hintTypeof of hintTypeofs) {
+              if (hintTypeof.type === 'value') {
+                needTypeof = true;
+                break;
+              }
+            }
+          }
+
+          if (needTypeof) {
+            return t.tsTypeQuery(entity)
+          }
         }
       }
     }

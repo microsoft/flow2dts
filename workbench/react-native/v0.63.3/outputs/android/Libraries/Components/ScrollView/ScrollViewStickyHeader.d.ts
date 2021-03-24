@@ -5,7 +5,7 @@ declare type Props = {
   children?: $2.Element<any>;
   nextHeaderLayoutY?: null | undefined | number;
   onLayout: (event: LayoutEvent) => void;
-  scrollAnimatedValue: $1.Value;
+  scrollAnimatedValue: typeof $1.Value;
   // Will cause sticky headers to stick at the bottom of the ScrollView instead
   // of the top.
   inverted?: null | undefined | boolean;
