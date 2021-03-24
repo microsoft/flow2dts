@@ -5,6 +5,14 @@ import { NodePath, types as t } from "@babel/core"
 import { State } from "../state"
 import { isRequireDeclaration } from './typeReferenceRecognizerVisitor'
 
+export function toQID(input: t.Identifier | t.QualifiedTypeIdentifier): t.TSEntityName {
+  if (input.type === "Identifier") {
+    return t.identifier(input.name)
+  } else {
+    return t.tsQualifiedName(toQID(input.qualification), t.identifier(input.id.name))
+  }
+}
+
 export interface ReferenceRecord {
   variable: t.DeclareVariable
   original: t.Identifier | t.QualifiedTypeIdentifier
@@ -114,6 +122,43 @@ export function resolveMemberExpression<T>(
   return convertTSEntityNameToMemberExpression(resolved)
 }
 
+function isNameValueButNotReact(
+  state: State,
+  entity: t.TSEntityName
+): boolean {
+  // when entity is A or A.B, and A is a value
+  // "typeof" should be added before A.B
+  // I guess this is flow's feature
+
+  if (state.hintFile) {
+    let firstId = entity
+    while (firstId.type === 'TSQualifiedName') {
+      firstId = firstId.left
+    }
+
+    const importStat = state.typeReferences.imports[firstId.name];
+    if (importStat !== undefined && importStat.type === "VariableDeclarator") {
+      // ignore if the first identifier is "React"
+      const requireDecl = isRequireDeclaration(importStat);
+      if (requireDecl !== undefined && requireDecl[1].value === "react") {
+        return false
+      }
+    }
+
+    const hintTypeofs = state.hintFile.typeofs[firstId.name];
+    if (hintTypeofs) {
+      // in this situation, a value chould only be imported
+      // so let's assume there is only one record in hintTypeofs
+      for (const hintTypeof of hintTypeofs) {
+        if (hintTypeof.type === 'value') {
+          return true
+        }
+      }
+    }
+  }
+  return false
+}
+
 export function resolveGenericTypeAnnotation<T>(
   state: State,
   path: NodePath<T>,
@@ -161,6 +206,10 @@ export function resolveGenericTypeAnnotation<T>(
      x could also be used as a type,
      so typeof is required in TypeScript
      */
+    if (isNameValueButNotReact(state, entity)) {
+      return t.tsTypeQuery(entity)
+    }
+
     if (entity.type === "Identifier") {
       // when entity is not undefined, it is a resolved type, which means the name is in global context
       // except when this identifier is a class
@@ -182,51 +231,6 @@ export function resolveGenericTypeAnnotation<T>(
 
         if (needTypeof) {
           return t.tsTypeQuery(entity)
-        }
-      }
-    } else {
-      // when entity is A.B, and A is a value
-      // "typeof" should be added before A.B
-      // I guess this is flow's feature
-      if (state.hintFile) {
-        let firstId: t.Identifier;
-        let qualified = entity;
-        while (true) {
-          if (qualified.left.type === 'Identifier') {
-            firstId = qualified.left;
-            break;
-          } else {
-            qualified = qualified.left;
-          }
-        }
-
-        let skipTypeof = false;
-        const importStat = state.typeReferences.imports[firstId.name];
-        if (importStat !== undefined && importStat.type === "VariableDeclarator") {
-          // ignore if the first identifier is "React"
-          const requireDecl = isRequireDeclaration(importStat);
-          if (requireDecl !== undefined && requireDecl[1].value === "react") {
-            skipTypeof = true;
-          }
-        }
-
-        if (!skipTypeof) {
-          let needTypeof = false;
-          const hintTypeofs = state.hintFile.typeofs[firstId.name];
-          if (hintTypeofs) {
-            // in this situation, a value chould only be imported
-            // so let's assume there is only one record in hintTypeofs
-            for (const hintTypeof of hintTypeofs) {
-              if (hintTypeof.type === 'value') {
-                needTypeof = true;
-                break;
-              }
-            }
-          }
-
-          if (needTypeof) {
-            return t.tsTypeQuery(entity)
-          }
         }
       }
     }

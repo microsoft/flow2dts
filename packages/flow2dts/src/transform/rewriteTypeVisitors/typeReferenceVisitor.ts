@@ -4,15 +4,7 @@
 import { Visitor, types as t } from "@babel/core"
 import { State, ResolvedHintImport } from "../state"
 import { assertTSType, isClass } from "../utilities"
-import { resolveGenericTypeAnnotation } from "../typeReferenceResolver"
-
-function convertQID(input: t.Identifier | t.QualifiedTypeIdentifier): t.Identifier | t.TSQualifiedName {
-  if (input.type === "Identifier") {
-    return t.identifier(input.name)
-  } else {
-    return t.tsQualifiedName(convertQID(input.qualification), t.identifier(input.id.name))
-  }
-}
+import { resolveGenericTypeAnnotation, toQID } from "../typeReferenceResolver"
 
 function isLiteralOrKeywordOrUnionThereof(node: t.TSType): boolean {
   if (t.isTSUnionType(node)) {
@@ -140,7 +132,7 @@ export const typeReferenceVisitor: Visitor<State> = {
           }
         }
 
-        const qid = convertQID(path.node.id)
+        const qid = toQID(path.node.id)
         const args = path.node.typeParameters
           ? t.tsTypeParameterInstantiation(<t.TSType[]>(<unknown>path.node.typeParameters.params))
           : undefined
@@ -215,13 +207,13 @@ export const typeReferenceVisitor: Visitor<State> = {
                   }
                 case "type": {
                   // it is a type, just use the identifier
-                  path.replaceWith(t.tsTypeReference(convertQID(typeQueryOperator.id)))
+                  path.replaceWith(t.tsTypeReference(toQID(typeQueryOperator.id)))
                   return
                 }
                 case "value": {
                   // it is a value, need to add "typeof"
                   if (typeQueryOperator.id.type !== "Identifier" || typeQueryOperator.id.name !== "undefined") {
-                    path.replaceWith(t.tsTypeQuery(convertQID(typeQueryOperator.id)))
+                    path.replaceWith(t.tsTypeQuery(toQID(typeQueryOperator.id)))
                     return
                   }
                 }

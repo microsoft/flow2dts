@@ -161,9 +161,29 @@ const listsVisitors: OverridesVisitor[] = [
   ["Libraries/Lists/VirtualizedSectionList.d.ts", listsVisitor],
 ]
 
+const logboxVisitor: Visitor = {
+  TSTypeReference: {
+    exit(path) {
+      if (t.isIdentifier(path.node.typeName)) {
+        if (path.node.typeName.name === "LogBoxLog") {
+          path.replaceWith(t.tsTypeQuery(t.identifier("LogBoxLog")))
+          path.skip()
+        }
+      }
+    },
+  },
+}
+
+const logboxVisitors: OverridesVisitor[] = [
+  // ["Libraries/LogBox/LogBoxInspectorContainers.d.ts", logboxVisitor],
+  ["Libraries/LogBox/UI/LogBoxInspectorReactFrames.d.ts", logboxVisitor],
+  ["Libraries/LogBox/UI/LogBoxInspectorStackFrames.d.ts", logboxVisitor],
+]
+
 const visitors: OverridesVisitor[] = [
   ...animatedVisitors,
   ...listsVisitors,
+  ...logboxVisitors,
   [
     "**/*",
     {
