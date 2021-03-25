@@ -43,7 +43,7 @@ type WithAnimatedObject<T> = {
 export type WithAnimatedValue<T> = T extends Builtin | Nullable
   ? T
   : T extends Primitive
-  ? T | Animated.Value | Animated.AnimatedInterpolation // add `Value` and `AnimatedInterpolation` but also preserve original T
+  ? T | typeof Animated.Value | typeof Animated.AnimatedInterpolation // add `Value` and `AnimatedInterpolation` but also preserve original T
   : T extends Array<infer P>
   ? WithAnimatedArray<P>
   : T extends {}
