@@ -229,6 +229,28 @@ const visitors: OverridesVisitor[] = [
       },
     },
   ],
+  // This happens due to removing propTypes in Text.d.ts, so we resolve it manually
+  [
+    "Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.d.ts",
+    {
+      ImportDeclaration: {
+        exit(path) {
+          if (path.node.source.value === "flow2dts-flow-types-polyfill") {
+            path.node.specifiers.push(t.importSpecifier(t.identifier("ReactPropsCheckType"), t.identifier("ReactPropsCheckType")))
+          }
+        }
+      },
+      TSTypeQuery: {
+        exit(path) {
+          if (path.node.exprName.type === "TSQualifiedName" && path.node.exprName.left.type === "TSQualifiedName") {
+            if (path.node.exprName.right.name === "style" && path.node.exprName.left.right.name === "propTypes") {
+              path.replaceWith(t.tsTypeReference(t.identifier("ReactPropsCheckType")))
+            }
+          }
+        }
+      },
+    }
+  ],
   // TODO: This could probably move upstream, as `Element` is slightly more restrictive than `Node`.
   [
     "Libraries/Components/TextInput/TextInput.d.ts",

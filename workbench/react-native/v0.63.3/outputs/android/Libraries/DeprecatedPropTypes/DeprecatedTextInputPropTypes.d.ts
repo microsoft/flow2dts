@@ -1,4 +1,4 @@
-import { React$PropType$Primitive } from "flow2dts-flow-types-polyfill";
+import { React$PropType$Primitive, ReactPropsCheckType } from "flow2dts-flow-types-polyfill";
 import $1 from "./DeprecatedColorPropType";
 import $2 from "./DeprecatedViewPropTypes";
 import $3 from "prop-types";
@@ -48,7 +48,7 @@ declare const $f2d_clearButtonMode: React$PropType$Primitive<"never" | "while-ed
 declare const $f2d_clearTextOnFocus: typeof $3.bool;
 declare const $f2d_selectTextOnFocus: typeof $3.bool;
 declare const $f2d_blurOnSubmit: typeof $3.bool;
-declare const $f2d_style: typeof $4.propTypes.style;
+declare const $f2d_style: ReactPropsCheckType;
 declare const $f2d_underlineColorAndroid: typeof $1;
 declare const $f2d_inlineImageLeft: typeof $3.string;
 declare const $f2d_inlineImagePadding: typeof $3.number;
@@ -427,7 +427,7 @@ typeof $2 & {
    *
    * [Styles](docs/style.html)
    */
-  style: typeof $4.propTypes.style;
+  style: ReactPropsCheckType;
 
   /**
    * The color of the `TextInput` underline.
