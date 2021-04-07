@@ -158,3 +158,4 @@ declare const $f2tExportDefault:
   create: <S extends ____Styles_Internal>(obj: S) => Readonly<S>;
 };
 export default $f2tExportDefault;
+export { ColorValue } from "./StyleSheetTypes";

@@ -57,8 +57,56 @@ const visitors: OverridesVisitor[] = [
             path.remove()
           }
         },
-      }
+      },
     },
+  ],
+  // TODO: NativeColorValue is missing because of Libraries/StyleSheet/PlatformColorValueTypes.ios.js.flow
+  [
+    "Libraries/StyleSheet/StyleSheet.d.ts", {
+      Program: {
+        exit(path) {
+          path.pushContainer("body", ast`export { ColorValue } from "./StyleSheetTypes"` as t.Statement[])
+        },
+      },
+    }
+  ],
+  [
+    "Libraries/StyleSheet/processColor.d.ts",
+    {
+      ImportDeclaration: {
+        exit(path) {
+          if (path.node.source.value === "./PlatformColorValueTypes") {
+            path.remove()
+          }
+        }
+      },
+      TSTypeReference: {
+        exit(path) {
+          if (path.node.typeName.type === "Identifier" && path.node.typeName.name === "NativeColorValue") {
+            path.remove()
+          }
+        }
+      },
+    }
+  ],
+  [
+    "Libraries/StyleSheet/StyleSheetTypes.d.ts",
+    {
+      ImportDeclaration: {
+        exit(path) {
+          if (path.node.source.value === "./PlatformColorValueTypes") {
+            path.remove()
+          }
+        }
+      },
+      TSTypeReference: {
+        exit(path) {
+          if (path.node.typeName.type === "Identifier" && path.node.typeName.name === "NativeColorValue") {
+            path.remove()
+          }
+        }
+      },
+    }
   ],
 ]
 

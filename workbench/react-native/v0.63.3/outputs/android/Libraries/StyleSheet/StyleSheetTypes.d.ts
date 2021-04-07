@@ -1,7 +1,6 @@
 import { $Shape } from "utility-types";
 import $1 from "../Animated/src/nodes/AnimatedNode";
-import { NativeColorValue } from "./PlatformColorValueTypes";
-declare type ColorValue = null | string | NativeColorValue;
+declare type ColorValue = null | string;
 declare type ColorArrayValue = null | ReadonlyArray<ColorValue>;
 declare type PointValue =
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
