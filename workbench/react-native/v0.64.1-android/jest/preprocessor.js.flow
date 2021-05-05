@@ -1,0 +1,6 @@
+// @flow
+declare module.exports: {|
+  process(src: string, file: string): string,
+  
+  getCacheKey: any,
+|};

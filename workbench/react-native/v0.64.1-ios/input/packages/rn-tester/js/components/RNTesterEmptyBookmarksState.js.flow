@@ -1,0 +1,5 @@
+// @flow
+import * as React from "react";
+
+declare var RNTesterEmptyBookmarksState: () => React.Node;
+export {RNTesterEmptyBookmarksState};

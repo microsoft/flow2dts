@@ -1,0 +1,20 @@
+// @flow
+import type {PropTypeShape} from "../../../CodegenSchema.js";
+import type {TypeDeclarationMap} from "../utils.js";
+
+declare function getPropProperties(
+  propsTypeName: string,
+  types: TypeDeclarationMap
+): $FlowFixMe;
+
+type PropAST = Object;
+
+declare function getProps(
+  typeDefinition: $ReadOnlyArray<PropAST>,
+  types: TypeDeclarationMap
+): $ReadOnlyArray<PropTypeShape>;
+
+declare module.exports: {|
+  getProps: typeof getProps,
+  getPropProperties: typeof getPropProperties,
+|};

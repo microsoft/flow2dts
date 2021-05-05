@@ -1,0 +1,26 @@
+// @flow
+import * as React from "react";
+
+import type {ColorValue} from "../../StyleSheet/StyleSheet";
+import type {TextStyleProp} from "../../StyleSheet/StyleSheet";
+
+type PickerItemValue = number | string;
+
+type Props = $ReadOnly<
+  {|
+    accessibilityLabel?: ?Stringish,
+    children?: React.Node,
+    style?: ?TextStyleProp,
+    backgroundColor?: ?ColorValue,
+    selectedValue?: ?PickerItemValue,
+    enabled?: ?boolean,
+    mode?: ?('dialog' | 'dropdown'),
+    onValueChange?: ?((itemValue: ?PickerItemValue, itemIndex: number) => mixed),
+    prompt?: ?string,
+    testID?: string,
+  |},
+>;
+
+declare function PickerAndroid(props: Props): React.Node;
+
+declare module.exports: typeof PickerAndroid;

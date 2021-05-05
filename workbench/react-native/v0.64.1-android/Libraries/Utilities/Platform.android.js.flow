@@ -1,0 +1,41 @@
+// @flow
+type PlatformSelectSpec<A, N, D> = {
+  android?: A,
+  native?: N,
+  default?: D,
+  ...,
+};
+
+declare var Platform: {|
+  __constants: null,
+  OS: string,
+  
+  get Version(): number,
+  
+  get constants(): {|
+    isTesting: boolean,
+    reactNativeVersion: {|
+      major: number,
+      minor: number,
+      patch: number,
+      prerelease: ?number,
+    |},
+    Version: number,
+    Release: string,
+    Serial: string,
+    Fingerprint: string,
+    Model: string,
+    ServerHost?: string,
+    uiMode: string,
+    Brand: string,
+    Manufacturer: string,
+  |},
+  
+  get isTesting(): boolean,
+  
+  get isTV(): boolean,
+  select: <A, N, D>(spec: PlatformSelectSpec<A, N, D>) => A | N | D,
+|};
+export type {PlatformSelectSpec};
+
+declare module.exports: typeof Platform;

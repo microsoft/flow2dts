@@ -1,0 +1,22 @@
+// @flow
+import type {ColorValue} from "./StyleSheet";
+import type {ProcessedColorValue} from "./processColor";
+
+opaque type NativeColorValue = {
+  resource_paths?: Array<string>,
+};
+
+declare var PlatformColor: (...names: Array<string>) => ColorValue;
+
+declare var normalizeColorObject: (
+  color: NativeColorValue
+) => ?ProcessedColorValue;
+
+declare var processColorObject: (color: NativeColorValue) => ?NativeColorValue;
+export type {NativeColorValue};
+
+export {PlatformColor};
+
+export {normalizeColorObject};
+
+export {processColorObject};

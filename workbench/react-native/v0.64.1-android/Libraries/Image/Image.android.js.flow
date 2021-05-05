@@ -1,0 +1,140 @@
+// @flow
+declare var DeprecatedViewPropTypes: typeof $1;
+const $1 = require("../DeprecatedPropTypes/DeprecatedViewPropTypes");
+import ImageViewNativeComponent from "./ImageViewNativeComponent";
+declare var PropTypes: typeof $2;
+const $2 = require("prop-types");
+declare var React: typeof $3;
+const $3 = require("react");
+
+declare var resolveAssetSource: typeof $5;
+const $5 = require("./resolveAssetSource");
+
+declare var TextInlineImageNativeComponent: typeof $4;
+const $4 = require("./TextInlineImageNativeComponent");
+
+import type {ImageProps as ImagePropsType} from "./ImageProps";
+
+declare var ImageProps: {|
+  ...typeof DeprecatedViewPropTypes,
+  style: ReactPropsCheckType,
+  /**
+   * See https://reactnative.dev/docs/image.html#source
+   */
+  source: React$PropType$Primitive<
+    
+      | {
+        headers?: {[string]: string,...},
+        uri?: string,
+        ...,
+      }
+      | number
+      | Array<
+        {
+          headers?: {[string]: string,...},
+          height?: number,
+          uri?: string,
+          width?: number,
+          ...,
+        },
+      >,
+  >,
+  /**
+   * blurRadius: the blur radius of the blur filter added to the image
+   *
+   * See https://reactnative.dev/docs/image.html#blurradius
+   */
+  blurRadius: typeof PropTypes.number,
+  /**
+   * See https://reactnative.dev/docs/image.html#defaultsource
+   */
+  defaultSource: typeof PropTypes.number,
+  /**
+   * See https://reactnative.dev/docs/image.html#loadingindicatorsource
+   */
+  loadingIndicatorSource: React$PropType$Primitive<{uri?: string,...} | number>,
+  progressiveRenderingEnabled: typeof PropTypes.bool,
+  fadeDuration: typeof PropTypes.number,
+  /**
+   * Analytics Tag used by this Image
+   */
+  internal_analyticTag: typeof PropTypes.string,
+  /**
+   * Invoked on load start
+   */
+  onLoadStart: typeof PropTypes.func,
+  /**
+   * Invoked on load error
+   */
+  onError: typeof PropTypes.func,
+  /**
+   * Invoked when load completes successfully
+   */
+  onLoad: typeof PropTypes.func,
+  /**
+   * Invoked when load either succeeds or fails
+   */
+  onLoadEnd: typeof PropTypes.func,
+  /**
+   * Used to locate this view in end-to-end tests.
+   */
+  testID: typeof PropTypes.string,
+  /**
+   * The mechanism that should be used to resize the image when the image's dimensions
+   * differ from the image view's dimensions. Defaults to `auto`.
+   *
+   * See https://reactnative.dev/docs/image.html#resizemethod
+   */
+  resizeMethod: React$PropType$Primitive<'auto' | 'resize' | 'scale'>,
+  /**
+   * Determines how to resize the image when the frame doesn't match the raw
+   * image dimensions.
+   *
+   * See https://reactnative.dev/docs/image.html#resizemode
+   */
+  resizeMode: React$PropType$Primitive<
+    'cover' | 'contain' | 'stretch' | 'repeat' | 'center',
+  >,
+|};
+
+declare function getSize(
+  url: string,
+  success: (width: number, height: number) => void,
+  failure?: (error: any) => void
+): any;
+
+declare function getSizeWithHeaders(
+  url: string,
+  headers: {[string]: string,...},
+  success: (width: number, height: number) => void,
+  failure?: (error: any) => void
+): any;
+
+declare function prefetch(url: string, callback: ?Function): any;
+
+declare function abortPrefetch(requestId: number): void;
+
+declare function queryCache(
+  urls: Array<string>
+): Promise<{[string]: 'memory' | 'disk' | 'disk/memory',...}>;
+
+type ImageComponentStatics = $ReadOnly<
+  {|
+    getSize: typeof getSize,
+    getSizeWithHeaders: typeof getSizeWithHeaders,
+    prefetch: typeof prefetch,
+    abortPrefetch: typeof abortPrefetch,
+    queryCache: typeof queryCache,
+    resolveAssetSource: typeof resolveAssetSource,
+    propTypes: typeof ImageProps,
+  |},
+>;
+
+declare module.exports: 
+  & React.AbstractComponent<
+    ImagePropsType,
+    
+      | React.ElementRef<typeof TextInlineImageNativeComponent>
+      | React.ElementRef<typeof ImageViewNativeComponent>,
+  >
+  & ImageComponentStatics;

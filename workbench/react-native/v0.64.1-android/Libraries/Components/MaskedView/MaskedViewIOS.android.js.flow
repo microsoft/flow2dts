@@ -1,0 +1,3 @@
+// @flow
+const $1 = require("../UnimplementedViews/UnimplementedView");
+declare module.exports: typeof $1;

@@ -1,0 +1,29 @@
+// @flow
+import NativeEventEmitter from "../EventEmitter/NativeEventEmitter";
+
+import type {RequestBody} from "./convertRequestBody";
+
+declare class RCTNetworking
+  extends $1 {
+  constructor(): void,
+  
+  sendRequest(
+    method: string,
+    trackingName: string,
+    url: string,
+    headers: Object,
+    data: RequestBody,
+    responseType: 'text' | 'base64',
+    incrementalUpdates: boolean,
+    timeout: number,
+    callback: (requestId: number) => mixed,
+    withCredentials: boolean
+  ): void,
+  
+  abortRequest(requestId: number): void,
+  
+  clearCookies(callback: (result: boolean) => any): void,
+}
+declare var $1: typeof NativeEventEmitter;
+
+declare module.exports: RCTNetworking;

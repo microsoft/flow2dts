@@ -1,0 +1,7 @@
+// @flow
+declare var FileReaderModule: {|
+  readAsText(): Promise<string>,
+  readAsDataURL(): Promise<string>,
+|};
+
+declare module.exports: typeof FileReaderModule;

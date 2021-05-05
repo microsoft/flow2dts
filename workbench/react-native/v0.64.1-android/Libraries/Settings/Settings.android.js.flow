@@ -1,0 +1,12 @@
+// @flow
+declare var Settings: {|
+  get(key: string): mixed,
+  
+  set(settings: Object): void,
+  
+  watchKeys(keys: string | Array<string>, callback: Function): number,
+  
+  clearWatch(watchId: number): void,
+|};
+
+declare module.exports: typeof Settings;

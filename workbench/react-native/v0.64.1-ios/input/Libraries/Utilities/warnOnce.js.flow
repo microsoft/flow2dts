@@ -1,0 +1,4 @@
+// @flow
+declare function warnOnce(key: string, message: string): void;
+
+declare module.exports: typeof warnOnce;

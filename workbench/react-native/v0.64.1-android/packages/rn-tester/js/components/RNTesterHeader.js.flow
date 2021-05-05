@@ -1,0 +1,12 @@
+// @flow
+import * as React from "react";
+
+declare var Header: (
+  {
+    onBack?: () => mixed,
+    title: string,
+    documentationURL?: string,
+    ...,
+  }
+) => React.Node;
+export {Header};

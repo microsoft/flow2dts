@@ -1,0 +1,6 @@
+// @flow
+declare var JSDevSupportModule: {|
+  getJSHierarchy: (tag: number) => void,
+|};
+
+declare module.exports: typeof JSDevSupportModule;

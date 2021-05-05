@@ -1,0 +1,12 @@
+// @flow
+import * as React from "react";
+
+declare class AccessibilityManagerTest
+  extends $1<{...}> {
+  componentDidMount(): void,
+  
+  render(): React.Node,
+}
+declare var $1: typeof React.Component;
+
+declare module.exports: typeof AccessibilityManagerTest;

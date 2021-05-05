@@ -1,0 +1,10 @@
+// @flow
+type Point = {
+  x: ?number,
+  y: ?number,
+  ...,
+};
+
+declare var pointsDiffer: (one: ?Point, two: ?Point) => boolean;
+
+declare module.exports: typeof pointsDiffer;

@@ -1,0 +1,4 @@
+// @flow
+declare function parseFiles(files: Array<string>): void;
+
+declare module.exports: typeof parseFiles;

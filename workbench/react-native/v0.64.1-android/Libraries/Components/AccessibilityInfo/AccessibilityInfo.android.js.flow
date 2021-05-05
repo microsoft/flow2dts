@@ -1,0 +1,57 @@
+// @flow
+type ChangeEventName = $Keys<
+  {
+    change: string,
+    reduceMotionChanged: string,
+    screenReaderChanged: string,
+    ...,
+  },
+>;
+
+declare var AccessibilityInfo: {|
+  /**
+   * iOS only
+   */
+  isBoldTextEnabled: () => Promise<boolean>,
+  
+  /**
+   * iOS only
+   */
+  isGrayscaleEnabled: () => Promise<boolean>,
+  
+  /**
+   * iOS only
+   */
+  isInvertColorsEnabled: () => Promise<boolean>,
+  
+  isReduceMotionEnabled: () => Promise<boolean>,
+  
+  /**
+   * iOS only
+   */
+  isReduceTransparencyEnabled: () => Promise<boolean>,
+  
+  isScreenReaderEnabled: () => Promise<boolean>,
+  
+  get fetch(): () => Promise<boolean>,
+  
+  addEventListener: <T>(eventName: ChangeEventName, handler: T) => void,
+  
+  removeEventListener: <T>(eventName: ChangeEventName, handler: T) => void,
+  
+  /**
+   * Set accessibility focus to a react component.
+   *
+   * See https://reactnative.dev/docs/accessibilityinfo.html#setaccessibilityfocus
+   */
+  setAccessibilityFocus: (reactTag: number) => void,
+  
+  /**
+   * Post a string to be announced by the screen reader.
+   *
+   * See https://reactnative.dev/docs/accessibilityinfo.html#announceforaccessibility
+   */
+  announceForAccessibility: (announcement: string) => void,
+|};
+
+declare module.exports: typeof AccessibilityInfo;

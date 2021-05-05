@@ -1,0 +1,22 @@
+// @flow
+declare var React: typeof $1;
+const $1 = require("react");
+
+declare class TextExample
+  extends $2<{...}> {
+  render(): React.Node,
+}
+declare var $2: typeof React.Component;
+
+declare module.exports: {|
+  examples: Array<
+    {|
+      title: string,
+      render: () => React.Element<typeof TextExample>,
+    |},
+  >,
+  description: string,
+  category: string,
+  documentationURL: string,
+  title: string,
+|};
