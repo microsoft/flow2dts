@@ -1,9 +1,0 @@
-// @flow
-import type {ColorValue} from "./StyleSheet";
-import type {ProcessedColorValue} from "./processColor";
-
-declare function processColorArray(
-  colors: ?Array<ColorValue>
-): ?Array<?ProcessedColorValue>;
-
-declare module.exports: typeof processColorArray;

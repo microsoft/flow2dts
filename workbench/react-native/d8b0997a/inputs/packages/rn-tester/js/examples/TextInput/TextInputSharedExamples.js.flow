@@ -1,4 +1,0 @@
-// @flow
-import type {RNTesterExampleModuleItem} from "../../types/RNTesterTypes";
-
-declare module.exports: Array<RNTesterExampleModuleItem>;

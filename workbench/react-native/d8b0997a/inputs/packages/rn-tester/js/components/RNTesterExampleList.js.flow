@@ -1,4 +1,0 @@
-// @flow
-declare var RNTesterExampleList: React$AbstractComponent<any, void>;
-
-declare module.exports: typeof RNTesterExampleList;

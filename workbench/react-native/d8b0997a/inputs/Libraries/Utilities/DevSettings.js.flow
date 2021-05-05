@@ -1,8 +1,0 @@
-// @flow
-interface IDevSettings {
-  addMenuItem(title: string, handler: () => mixed): void,
-  reload(reason?: string): void,
-  onFastRefresh(): void,
-}
-
-declare module.exports: IDevSettings;

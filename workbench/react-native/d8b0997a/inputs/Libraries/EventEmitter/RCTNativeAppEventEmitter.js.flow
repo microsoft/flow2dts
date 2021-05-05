@@ -1,5 +1,0 @@
-// @flow
-import RCTDeviceEventEmitter from "./RCTDeviceEventEmitter";
-
-declare var RCTNativeAppEventEmitter: typeof RCTDeviceEventEmitter;
-declare module.exports: typeof RCTNativeAppEventEmitter;

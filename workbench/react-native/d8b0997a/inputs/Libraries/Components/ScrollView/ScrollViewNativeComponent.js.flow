@@ -1,4 +1,0 @@
-// @flow
-import type {ScrollViewNativeComponentType} from "./ScrollViewNativeComponentType";
-
-declare export default ScrollViewNativeComponentType;

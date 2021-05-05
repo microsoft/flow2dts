@@ -1,6 +1,0 @@
-// @flow
-declare var ReactFeatureFlags: {|
-  debugRenderPhaseSideEffects: boolean,
-|};
-
-declare module.exports: typeof ReactFeatureFlags;

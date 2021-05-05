@@ -1,6 +1,0 @@
-// @flow
-declare var BridgeSpyStallHandler: {|
-  register: () => void,
-|};
-
-declare module.exports: typeof BridgeSpyStallHandler;

@@ -1,9 +1,0 @@
-// @flow
-import EventEmitter from "../../vendor/emitter/EventEmitter";
-
-declare class NativeEventEmitter
-  extends $1 {
-  constructor(): void,
-}
-declare var $1: typeof EventEmitter;
-export {NativeEventEmitter as default};

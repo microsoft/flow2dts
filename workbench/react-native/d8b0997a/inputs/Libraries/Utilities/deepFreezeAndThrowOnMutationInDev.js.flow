@@ -1,6 +1,0 @@
-// @flow
-declare function deepFreezeAndThrowOnMutationInDev<T: {...} | Array<mixed>>(
-  object: T
-): T;
-
-declare module.exports: typeof deepFreezeAndThrowOnMutationInDev;

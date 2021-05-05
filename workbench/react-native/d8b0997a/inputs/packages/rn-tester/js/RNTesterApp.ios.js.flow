@@ -1,4 +1,0 @@
-// @flow
-import RNTesterApp from "./RNTesterAppShared";
-
-declare module.exports: typeof RNTesterApp;

@@ -1,4 +1,0 @@
-// @flow
-declare function dismissKeyboard(): void;
-
-declare module.exports: typeof dismissKeyboard;

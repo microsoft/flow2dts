@@ -1,5 +1,0 @@
-// @flow
-import type {HostComponent} from "../../Renderer/shims/ReactNativeTypes";
-import type {ViewProps} from "../View/ViewPropTypes";
-
-declare export default HostComponent<ViewProps>;

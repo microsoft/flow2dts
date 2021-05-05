@@ -1,4 +1,0 @@
-// @flow
-declare function openFileInEditor(file: string, lineNumber: number): void;
-
-declare module.exports: typeof openFileInEditor;

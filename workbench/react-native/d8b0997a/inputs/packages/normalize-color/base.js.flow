@@ -1,4 +1,0 @@
-// @flow
-declare function normalizeColorBase(color: ?string | number): null | number;
-
-declare module.exports: typeof normalizeColorBase;

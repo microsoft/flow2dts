@@ -1,4 +1,0 @@
-// @flow
-declare class HeadlessJsTaskError extends $1 {}
-declare var $1: typeof Error;
-export {HeadlessJsTaskError as default};

@@ -1,4 +1,0 @@
-// @flow
-import type {ReactNativeType} from "./ReactNativeTypes";
-
-declare module.exports: ReactNativeType;

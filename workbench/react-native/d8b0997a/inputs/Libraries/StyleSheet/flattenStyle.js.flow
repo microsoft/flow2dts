@@ -1,9 +1,0 @@
-// @flow
-import type {DangerouslyImpreciseStyle} from "./StyleSheet";
-import type {DangerouslyImpreciseStyleProp} from "./StyleSheet";
-
-declare function flattenStyle(
-  style: ?DangerouslyImpreciseStyleProp
-): ?DangerouslyImpreciseStyle;
-
-declare module.exports: typeof flattenStyle;

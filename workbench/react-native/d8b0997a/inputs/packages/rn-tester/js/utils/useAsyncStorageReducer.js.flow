@@ -1,9 +1,0 @@
-// @flow
-import type {RNTesterState} from "../types/RNTesterTypes";
-
-declare var useAsyncStorageReducer: (
-  reducer: Function,
-  initialState: RNTesterState,
-  storageKey: string
-) => [RNTesterState, Function];
-export {useAsyncStorageReducer};

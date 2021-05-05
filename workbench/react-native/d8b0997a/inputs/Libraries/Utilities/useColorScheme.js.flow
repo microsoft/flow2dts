@@ -1,5 +1,0 @@
-// @flow
-import type {ColorSchemeName} from "./NativeAppearance";
-
-declare function useColorScheme(): ?ColorSchemeName;
-export {useColorScheme as default};

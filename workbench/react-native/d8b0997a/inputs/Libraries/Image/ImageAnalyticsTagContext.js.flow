@@ -1,8 +1,0 @@
-// @flow
-import * as React from "react";
-
-type ContextType = ?string;
-
-declare var Context: React.Context<ContextType>;
-
-declare export default typeof Context;

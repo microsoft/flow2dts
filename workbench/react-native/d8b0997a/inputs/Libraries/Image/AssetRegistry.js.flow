@@ -1,3 +1,0 @@
-// @flow
-const $1 = require("@react-native/assets/registry");
-declare module.exports: typeof $1;

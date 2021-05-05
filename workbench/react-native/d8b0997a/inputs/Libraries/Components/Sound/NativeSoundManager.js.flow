@@ -1,9 +1,0 @@
-// @flow
-import type {TurboModule} from "../../TurboModule/RCTExport";
-
-interface Spec extends TurboModule {
-  +playTouchSound: () => void,
-}
-export type {Spec};
-
-declare export default ?Spec;

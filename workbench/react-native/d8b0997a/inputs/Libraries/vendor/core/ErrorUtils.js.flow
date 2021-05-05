@@ -1,4 +1,0 @@
-// @flow
-import type {ErrorUtilsT} from "@react-native/polyfills/error-guard";
-
-declare module.exports: ErrorUtilsT;

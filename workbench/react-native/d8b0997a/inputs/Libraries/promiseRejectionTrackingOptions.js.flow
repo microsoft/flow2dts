@@ -1,8 +1,0 @@
-// @flow
-import typeof {enable} from "promise/setimmediate/rejection-tracking";
-
-type ExtractOptionsType = <P>((options?: ?P) => void) => P;
-
-declare var rejectionTrackingOptions: $Call<ExtractOptionsType, enable>;
-
-declare export default typeof rejectionTrackingOptions;

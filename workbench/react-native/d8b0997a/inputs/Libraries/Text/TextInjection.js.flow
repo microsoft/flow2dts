@@ -1,6 +1,0 @@
-// @flow
-import typeof Text from "./Text";
-
-declare export default {|
-  unstable_Text: ?Text,
-|};

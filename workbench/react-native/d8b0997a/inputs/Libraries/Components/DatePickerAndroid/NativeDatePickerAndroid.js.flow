@@ -1,9 +1,0 @@
-// @flow
-import type {TurboModule} from "../../TurboModule/RCTExport";
-
-interface Spec extends TurboModule {
-  +open: (options: Object) => Promise<Object>,
-}
-export type {Spec};
-
-declare export default Spec;

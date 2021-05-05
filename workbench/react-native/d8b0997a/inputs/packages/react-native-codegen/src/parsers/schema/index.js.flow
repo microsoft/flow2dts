@@ -1,8 +1,0 @@
-// @flow
-import type {SchemaType} from "../../CodegenSchema.js";
-
-declare function parse(filename: string): ?SchemaType;
-
-declare module.exports: {|
-  parse: typeof parse,
-|};

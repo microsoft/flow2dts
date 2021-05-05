@@ -1,6 +1,0 @@
-// @flow
-import * as React from "react";
-
-declare var RNTesterApp: () => React.Node;
-
-declare export default typeof RNTesterApp;

@@ -1,4 +1,0 @@
-// @flow
-declare function groupByEveryN<T>(array: Array<T>, n: number): Array<Array<?T>>;
-
-declare module.exports: typeof groupByEveryN;

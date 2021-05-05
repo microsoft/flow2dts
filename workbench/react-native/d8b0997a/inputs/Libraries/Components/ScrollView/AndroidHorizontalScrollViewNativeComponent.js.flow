@@ -1,5 +1,0 @@
-// @flow
-import type {HostComponent} from "../../Renderer/shims/ReactNativeTypes";
-import type {ScrollViewNativeProps} from "./ScrollViewNativeComponentType";
-
-declare export default HostComponent<ScrollViewNativeProps>;

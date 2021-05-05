@@ -1,4 +1,0 @@
-// @flow
-declare function binaryToBase64(data: ArrayBuffer | $ArrayBufferView): string;
-
-declare module.exports: typeof binaryToBase64;
