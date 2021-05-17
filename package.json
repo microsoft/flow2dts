@@ -23,15 +23,15 @@
     "workbench:react-native:v0.63.3:ios:npm": "node scripts/create-types-package.js ./workbench/react-native/v0.63.3/package.json ./workbench/react-native/v0.63.3/outputs/ios",
     "workbench:artsy-eigen:check": "yarn workspace artsy-eigen type-check",
     "workbench:artsy-eigen:check:offences": "yarn workspace artsy-eigen type-check | node ./scripts/tsc-offences.js",
-    "hint": "yarn hint:react-native:v0.63.3",
-    "hint:lazy": "yarn hint:react-native:v0.63.3:lazy",
-    "hint:react-native:v0.63.3": "rimraf ./workbench/react-native/v0.63.3/hint && yarn hint:react-native:v0.63.3:lazy",
-    "hint:react-native:v0.63.3:cli": "yarn workspace flow2hint cli --cwd ../.. --rootDir ./workbench/react-native/v0.63.3/inputs",
-    "hint:react-native:v0.63.3:cli-with-globs": "yarn hint:react-native:v0.63.3:cli \"./workbench/react-native/v0.63.3/inputs/{index,Libraries/**/*}.js.flow\" \"!./workbench/react-native/v0.63.3/inputs/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow\" \"!./workbench/react-native/v0.63.3/inputs/Libraries/{Inspector,JSInspector,NewAppScreen,ReactPrivate}/**/*.js.flow\" \"!./workbench/react-native/v0.63.3/inputs/Libraries/Animated/AnimatedWeb.js.flow\" \"!./workbench/react-native/v0.63.3/inputs/Libraries/{Promise,promiseRejectionIsError,promiseRejectionTrackingOptions}.js.flow\" \"!./workbench/react-native/v0.63.3/inputs/Libraries/vendor/core/ErrorUtils.js.flow\"",
-    "hint:react-native:v0.63.3:lazy": "yarn hint:react-native:v0.63.3:cli-with-globs --platform ios --outDir ./workbench/react-native/v0.63.3/hint",
+    "hint": "yarn hint:react-native:ios",
+    "hint:lazy": "yarn hint:react-native:ios:lazy",
+    "hint:react-native:ios": "rimraf ./workbench/react-native/v0.64.1/ios/hint && yarn hint:react-native:ios:lazy",
+    "hint:react-native:ios:cli": "yarn workspace flow2hint cli --cwd ../.. --rootDir ./workbench/react-native/v0.64.1/ios/inputs",
+    "hint:react-native:ioscli-with-globs": "yarn hint:react-native:ios:cli \"./workbench/react-native/v0.64.1/ios/inputs/{index,Libraries/**/*}.js.flow\" \"!./workbench/react-native/v0.64.1/ios/inputs/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow\" \"!./workbench/react-native/v0.64.1/ios/inputs/Libraries/{Inspector,JSInspector,NewAppScreen,ReactPrivate}/**/*.js.flow\" \"!./workbench/react-native/v0.64.1/ios/inputs/Libraries/Animated/AnimatedWeb.js.flow\" \"!./workbench/react-native/v0.64.1/ios/inputs/Libraries/{Promise,promiseRejectionIsError,promiseRejectionTrackingOptions}.js.flow\" \"!./workbench/react-native/v0.64.1/ios/inputs/Libraries/vendor/core/ErrorUtils.js.flow\"",
+    "hint:react-native:ios:lazy": "yarn hint:react-native:ios:cli-with-globs --platform ios --outDir ./workbench/react-native/v0.64.1/ios/hint",
     "prettify": "prettier --write \"packages/**/*.ts\" && prettier --write \"packages/**/*.d.ts\" && prettier --write \"packages/**/*.js\"",
     "postinstall": "patch-package",
-    "experiment:flowgetdef": "pushd \"workbench/react-native/v0.63.3/inputs\" && flow get-def ./index.js.flow 50 15 && popd"
+    "experiment:flowgetdef": "pushd \"workbench/react-native/v0.64.1/ios/inputs\" && flow get-def ./index.js.flow 50 15 && popd"
   },
   "resolutions": {
     "@types/react": "16.9.56",
