@@ -27,11 +27,11 @@
     "hint:lazy": "yarn hint:react-native:ios:lazy",
     "hint:react-native:ios": "rimraf ./workbench/react-native/v0.64.1/ios/hint && yarn hint:react-native:ios:lazy",
     "hint:react-native:ios:cli": "yarn workspace flow2hint cli --cwd ../.. --rootDir ./workbench/react-native/v0.64.1/ios/inputs",
-    "hint:react-native:ioscli-with-globs": "yarn hint:react-native:ios:cli \"./workbench/react-native/v0.64.1/ios/inputs/{index,Libraries/**/*}.js.flow\" \"!./workbench/react-native/v0.64.1/ios/inputs/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow\" \"!./workbench/react-native/v0.64.1/ios/inputs/Libraries/{Inspector,JSInspector,NewAppScreen,ReactPrivate}/**/*.js.flow\" \"!./workbench/react-native/v0.64.1/ios/inputs/Libraries/Animated/AnimatedWeb.js.flow\" \"!./workbench/react-native/v0.64.1/ios/inputs/Libraries/{Promise,promiseRejectionIsError,promiseRejectionTrackingOptions}.js.flow\" \"!./workbench/react-native/v0.64.1/ios/inputs/Libraries/vendor/core/ErrorUtils.js.flow\"",
+    "hint:react-native:ios:cli-with-globs": "yarn hint:react-native:ios:cli \"./workbench/react-native/v0.64.1/ios/inputs/{index,Libraries/**/*}.js.flow\" \"!./workbench/react-native/v0.64.1/ios/inputs/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow\" \"!./workbench/react-native/v0.64.1/ios/inputs/Libraries/{Inspector,JSInspector,NewAppScreen,ReactPrivate}/**/*.js.flow\" \"!./workbench/react-native/v0.64.1/ios/inputs/Libraries/Animated/AnimatedWeb.js.flow\" \"!./workbench/react-native/v0.64.1/ios/inputs/Libraries/{Promise,promiseRejectionIsError,promiseRejectionTrackingOptions}.js.flow\" \"!./workbench/react-native/v0.64.1/ios/inputs/Libraries/vendor/core/ErrorUtils.js.flow\"",
     "hint:react-native:ios:lazy": "yarn hint:react-native:ios:cli-with-globs --platform ios --outDir ./workbench/react-native/v0.64.1/ios/hint",
     "prettify": "prettier --write \"packages/**/*.ts\" && prettier --write \"packages/**/*.d.ts\" && prettier --write \"packages/**/*.js\"",
     "postinstall": "patch-package",
-    "experiment:flowgetdef": "pushd \"workbench/react-native/v0.64.1/ios/inputs\" && flow get-def ./index.js.flow 50 15 && popd"
+    "experiment:flowgetdef": "pushd \"./workbench/react-native/v0.64.1/ios/inputs\" && flow get-def ./index.js.flow 50 15 && popd"
   },
   "resolutions": {
     "@types/react": "16.9.56",
