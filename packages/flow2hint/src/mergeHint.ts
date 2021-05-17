@@ -104,6 +104,8 @@ export function mergeHint(collectedHintFiles: HintFileEntries): ResolvedHintEntr
             resolvedHintImport.type = "type[guess-import]"
           } else if (importKey === "React") {
             resolvedHintImport.type = "value[guess-import]"
+          } else if (importKey === "Component") {
+            resolvedHintImport.type = "type[guess-import]"
           }
           break
         }

@@ -67,7 +67,7 @@
                 "column": 30,
                 "local": "Component"
             },
-            "error": "Could not get definition for /Libraries/Components/Keyboard/KeyboardAvoidingView.js.flow:55:29\r\nNo possible types\r\n"
+            "error": ""
         },
         {
             "source": {

@@ -107,7 +107,7 @@
                 "column": 30,
                 "local": "Component"
             },
-            "error": ""
+            "error": "Could not get definition for /Libraries/Components/RefreshControl/RefreshControl.js.flow:82:29\r\nNo possible types\r\n"
         },
         {
             "source": {
