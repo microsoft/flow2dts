@@ -1,0 +1,80 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 35,
+                "column": 32,
+                "local": "QuickPerformanceLogger"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 34
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Performance/QuickPerformanceLogger.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "markerStart",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "local": "markerEnd",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "markerTag",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "markerAnnotate",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "markerCancel",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 3,
+            "local": "markerPoint",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 3,
+            "local": "markerDrop",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "currentTimestamp",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 13,
+            "local": "QuickPerformanceLogger",
+            "type": "value"
+        }
+    ]
+}

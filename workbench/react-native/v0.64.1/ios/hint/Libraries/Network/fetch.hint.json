@@ -1,0 +1,107 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 3,
+                "column": 17,
+                "local": "fetch"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 1538,
+                    "column": 23
+                },
+                "end": {
+                    "row": 1538,
+                    "column": 84
+                },
+                "libraryFolder": 0,
+                "file": "/bom.js"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 19,
+                "local": "Headers"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 1406,
+                    "column": 15
+                },
+                "end": {
+                    "row": 1406,
+                    "column": 21
+                },
+                "libraryFolder": 0,
+                "file": "/bom.js"
+            }
+        },
+        {
+            "source": {
+                "row": 5,
+                "column": 19,
+                "local": "Request"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 1500,
+                    "column": 15
+                },
+                "end": {
+                    "row": 1500,
+                    "column": 21
+                },
+                "libraryFolder": 0,
+                "file": "/bom.js"
+            }
+        },
+        {
+            "source": {
+                "row": 6,
+                "column": 20,
+                "local": "Response"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 1474,
+                    "column": 15
+                },
+                "end": {
+                    "row": 1474,
+                    "column": 22
+                },
+                "libraryFolder": 0,
+                "file": "/bom.js"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "fetch",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 3,
+            "local": "Headers",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "local": "Request",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 3,
+            "local": "Response",
+            "type": "value"
+        }
+    ]
+}

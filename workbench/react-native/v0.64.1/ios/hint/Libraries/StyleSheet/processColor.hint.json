@@ -1,0 +1,79 @@
+{
+    "imports": {
+        "ColorValue": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ColorValue"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 6
+                },
+                "end": {
+                    "row": 16,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        "NativeColorValue": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "NativeColorValue"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 28
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/PlatformColorValueTypes.ios.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 12,
+                "column": 32,
+                "local": "processColor"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 18
+                },
+                "end": {
+                    "row": 7,
+                    "column": 29
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 5,
+            "column": 6,
+            "local": "ProcessedColorValue",
+            "type": "type"
+        },
+        {
+            "row": 7,
+            "column": 18,
+            "local": "processColor",
+            "type": "value"
+        }
+    ]
+}

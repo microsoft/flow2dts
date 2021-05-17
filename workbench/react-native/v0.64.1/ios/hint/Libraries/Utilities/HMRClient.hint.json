@@ -1,0 +1,74 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 30,
+                "column": 32,
+                "local": "HMRClient"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 27,
+                    "column": 13
+                },
+                "end": {
+                    "row": 27,
+                    "column": 21
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/HMRClient.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 6,
+            "local": "LogLevel",
+            "type": "type"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "enable",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "disable",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "registerBundle",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "log",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "setup",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 6,
+            "local": "HMRClientNativeInterface",
+            "type": "type"
+        },
+        {
+            "row": 27,
+            "column": 13,
+            "local": "HMRClient",
+            "type": "value"
+        }
+    ]
+}

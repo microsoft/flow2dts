@@ -1,0 +1,92 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 24,
+                "column": 32,
+                "local": "BugReporting"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 15
+                },
+                "end": {
+                    "row": 10,
+                    "column": 26
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/BugReporting/BugReporting.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 6,
+            "local": "ExtraData",
+            "type": "type"
+        },
+        {
+            "row": 3,
+            "column": 6,
+            "local": "SourceCallback",
+            "type": "type"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "local": "extras",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 3,
+            "local": "files",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 6,
+            "local": "DebugData",
+            "type": "type"
+        },
+        {
+            "row": 14,
+            "column": 7,
+            "local": "remove",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 10,
+            "local": "addSource",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 7,
+            "local": "remove",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 10,
+            "local": "addFileSource",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 10,
+            "local": "collectExtraData",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 15,
+            "local": "BugReporting",
+            "type": "class"
+        }
+    ]
+}

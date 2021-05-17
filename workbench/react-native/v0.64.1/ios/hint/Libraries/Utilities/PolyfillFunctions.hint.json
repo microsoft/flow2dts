@@ -1,0 +1,69 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 11,
+                "column": 34,
+                "local": "polyfillObjectProperty"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 18
+                },
+                "end": {
+                    "row": 2,
+                    "column": 39
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/PolyfillFunctions.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 12,
+                "column": 26,
+                "local": "polyfillGlobal"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 18
+                },
+                "end": {
+                    "row": 8,
+                    "column": 31
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/PolyfillFunctions.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 18,
+            "local": "polyfillObjectProperty",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 18,
+            "local": "polyfillGlobal",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "polyfillObjectProperty",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "polyfillGlobal",
+            "type": "value"
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "imports": {
+        "TurboModule": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "TurboModule"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 11
+                },
+                "end": {
+                    "row": 6,
+                    "column": 21
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/TurboModule/RCTExport.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 5,
+            "column": 26,
+            "local": "BLOB_URI_SCHEME",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 52,
+            "local": "BLOB_URI_HOST",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 4,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 4,
+            "local": "addNetworkingHandler",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 4,
+            "local": "addWebSocketHandler",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 4,
+            "local": "removeWebSocketHandler",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 4,
+            "local": "sendOverSocket",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 4,
+            "local": "createFromParts",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 4,
+            "local": "release",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
+}

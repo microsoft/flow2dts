@@ -1,0 +1,89 @@
+{
+    "imports": {
+        "ImageURISource": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ImageURISource"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 6
+                },
+                "end": {
+                    "row": 2,
+                    "column": 19
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/ImageSource.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 19,
+                "column": 32,
+                "local": "nativeImageSource"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 18
+                },
+                "end": {
+                    "row": 17,
+                    "column": 34
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/nativeImageSource.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 6,
+            "column": 5,
+            "local": "android",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 5,
+            "local": "ios",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 5,
+            "local": "default",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 5,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 5,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 6,
+            "local": "NativeImageSourceSpec",
+            "type": "type"
+        },
+        {
+            "row": 17,
+            "column": 18,
+            "local": "nativeImageSource",
+            "type": "value"
+        }
+    ]
+}

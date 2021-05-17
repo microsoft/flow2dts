@@ -1,0 +1,117 @@
+{
+    "imports": {
+        "WithDefault": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "WithDefault"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 21,
+                    "column": 6
+                },
+                "end": {
+                    "row": 21,
+                    "column": 16
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Types/CodegenTypes.js.flow"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "ColorValue"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 6
+                },
+                "end": {
+                    "row": 16,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ViewProps"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 377,
+                    "column": 6
+                },
+                "end": {
+                    "row": 377,
+                    "column": 14
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
+            }
+        },
+        "HostComponent": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "HostComponent"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 96,
+                    "column": 6
+                },
+                "end": {
+                    "row": 96,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 18,
+            "column": 5,
+            "local": "hidesWhenStopped",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "animating",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 5,
+            "local": "color",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 5,
+            "local": "size",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 6,
+            "local": "NativeProps",
+            "type": "type"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "imports": {},
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "isAsyncDebugging",
+            "type": "value"
+        }
+    ]
+}

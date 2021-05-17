@@ -1,0 +1,83 @@
+{
+    "imports": {
+        "Handle": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "Handle"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 6
+                },
+                "end": {
+                    "row": 2,
+                    "column": 11
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Interaction/InteractionManager.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 21,
+                "column": 32,
+                "local": "InteractionMixin"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 28
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Interaction/InteractionMixin.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 5,
+            "column": 3,
+            "local": "componentWillUnmount",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "_interactionMixinHandles",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "createInteractionHandle",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "clearInteractionHandle",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "runAfterInteractions",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "InteractionMixin",
+            "type": "value"
+        }
+    ]
+}

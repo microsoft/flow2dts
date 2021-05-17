@@ -1,0 +1,73 @@
+{
+    "imports": {
+        "ColorValue": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ColorValue"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 6
+                },
+                "end": {
+                    "row": 16,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        "ProcessedColorValue": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "ProcessedColorValue"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 24
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 9,
+                "column": 32,
+                "local": "normalizeColor"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 18
+                },
+                "end": {
+                    "row": 5,
+                    "column": 31
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/normalizeColor.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 5,
+            "column": 18,
+            "local": "normalizeColor",
+            "type": "value"
+        }
+    ]
+}

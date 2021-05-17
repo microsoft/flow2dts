@@ -1,0 +1,65 @@
+{
+    "imports": {
+        "StackFrame": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "StackFrame"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 6
+                },
+                "end": {
+                    "row": 4,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Core/NativeExceptionsManager.js.flow"
+            }
+        },
+        "SymbolicatedStackTrace": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "SymbolicatedStackTrace"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 6
+                },
+                "end": {
+                    "row": 16,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Core/Devtools/symbolicateStackTrace.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 5,
+            "column": 6,
+            "local": "Stack",
+            "type": "type"
+        },
+        {
+            "row": 7,
+            "column": 18,
+            "local": "deleteStack",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 18,
+            "local": "symbolicate",
+            "type": "value"
+        }
+    ]
+}

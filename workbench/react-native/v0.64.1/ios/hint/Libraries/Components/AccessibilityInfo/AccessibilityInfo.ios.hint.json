@@ -1,0 +1,158 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 137,
+                "column": 32,
+                "local": "AccessibilityInfo"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 13
+                },
+                "end": {
+                    "row": 16,
+                    "column": 29
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 4,
+            "column": 5,
+            "local": "announcementFinished",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 5,
+            "local": "boldTextChanged",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 5,
+            "local": "change",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 5,
+            "local": "grayscaleChanged",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 5,
+            "local": "invertColorsChanged",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 5,
+            "local": "reduceMotionChanged",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 5,
+            "local": "reduceTransparencyChanged",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 5,
+            "local": "screenReaderChanged",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "local": "ChangeEventName",
+            "type": "type"
+        },
+        {
+            "row": 25,
+            "column": 3,
+            "local": "isBoldTextEnabled",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "isGrayscaleEnabled",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 3,
+            "local": "isInvertColorsEnabled",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 3,
+            "local": "isReduceMotionEnabled",
+            "type": "value"
+        },
+        {
+            "row": 65,
+            "column": 3,
+            "local": "isReduceTransparencyEnabled",
+            "type": "value"
+        },
+        {
+            "row": 75,
+            "column": 3,
+            "local": "isScreenReaderEnabled",
+            "type": "value"
+        },
+        {
+            "row": 77,
+            "column": 7,
+            "local": "fetch",
+            "type": "value"
+        },
+        {
+            "row": 113,
+            "column": 9,
+            "local": "remove",
+            "type": "value"
+        },
+        {
+            "row": 110,
+            "column": 3,
+            "local": "addEventListener",
+            "type": "value"
+        },
+        {
+            "row": 120,
+            "column": 3,
+            "local": "setAccessibilityFocus",
+            "type": "value"
+        },
+        {
+            "row": 127,
+            "column": 3,
+            "local": "announceForAccessibility",
+            "type": "value"
+        },
+        {
+            "row": 134,
+            "column": 3,
+            "local": "removeEventListener",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 13,
+            "local": "AccessibilityInfo",
+            "type": "value"
+        }
+    ]
+}

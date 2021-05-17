@@ -1,0 +1,353 @@
+{
+    "imports": {
+        "RectOrSize": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "RectOrSize"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 6
+                },
+                "end": {
+                    "row": 11,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/Rect.js.flow"
+            }
+        },
+        "BlurEvent": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "BlurEvent"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 159,
+                    "column": 6
+                },
+                "end": {
+                    "row": 159,
+                    "column": 14
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
+        },
+        "FocusEvent": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "FocusEvent"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 167,
+                    "column": 6
+                },
+                "end": {
+                    "row": 167,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
+        },
+        "PressEvent": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "PressEvent"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 95,
+                    "column": 6
+                },
+                "end": {
+                    "row": 95,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
+        },
+        "MouseEvent": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "MouseEvent"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 175,
+                    "column": 6
+                },
+                "end": {
+                    "row": 175,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 14,
+            "column": 5,
+            "local": "cancelable",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 5,
+            "local": "disabled",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 5,
+            "local": "hitSlop",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 5,
+            "local": "pressRectOffset",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 5,
+            "local": "android_disableSound",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 5,
+            "local": "delayHoverIn",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 5,
+            "local": "delayHoverOut",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 5,
+            "local": "delayLongPress",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 5,
+            "local": "delayPressIn",
+            "type": "value"
+        },
+        {
+            "row": 60,
+            "column": 5,
+            "local": "delayPressOut",
+            "type": "value"
+        },
+        {
+            "row": 65,
+            "column": 5,
+            "local": "minPressDuration",
+            "type": "value"
+        },
+        {
+            "row": 70,
+            "column": 5,
+            "local": "onBlur",
+            "type": "value"
+        },
+        {
+            "row": 75,
+            "column": 5,
+            "local": "onFocus",
+            "type": "value"
+        },
+        {
+            "row": 80,
+            "column": 5,
+            "local": "onHoverIn",
+            "type": "value"
+        },
+        {
+            "row": 85,
+            "column": 5,
+            "local": "onHoverOut",
+            "type": "value"
+        },
+        {
+            "row": 90,
+            "column": 5,
+            "local": "onLongPress",
+            "type": "value"
+        },
+        {
+            "row": 95,
+            "column": 5,
+            "local": "onPress",
+            "type": "value"
+        },
+        {
+            "row": 100,
+            "column": 5,
+            "local": "onPressIn",
+            "type": "value"
+        },
+        {
+            "row": 105,
+            "column": 5,
+            "local": "onPressMove",
+            "type": "value"
+        },
+        {
+            "row": 110,
+            "column": 5,
+            "local": "onPressOut",
+            "type": "value"
+        },
+        {
+            "row": 116,
+            "column": 5,
+            "local": "onLongPressShouldCancelPress_DEPRECATED",
+            "type": "value"
+        },
+        {
+            "row": 124,
+            "column": 5,
+            "local": "onResponderTerminationRequest_DEPRECATED",
+            "type": "value"
+        },
+        {
+            "row": 133,
+            "column": 5,
+            "local": "onStartShouldSetResponder_DEPRECATED",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 6,
+            "local": "PressabilityConfig",
+            "type": "type"
+        },
+        {
+            "row": 139,
+            "column": 5,
+            "local": "onBlur",
+            "type": "value"
+        },
+        {
+            "row": 140,
+            "column": 5,
+            "local": "onClick",
+            "type": "value"
+        },
+        {
+            "row": 141,
+            "column": 5,
+            "local": "onFocus",
+            "type": "value"
+        },
+        {
+            "row": 142,
+            "column": 5,
+            "local": "onMouseEnter",
+            "type": "value"
+        },
+        {
+            "row": 143,
+            "column": 5,
+            "local": "onMouseLeave",
+            "type": "value"
+        },
+        {
+            "row": 144,
+            "column": 5,
+            "local": "onResponderGrant",
+            "type": "value"
+        },
+        {
+            "row": 145,
+            "column": 5,
+            "local": "onResponderMove",
+            "type": "value"
+        },
+        {
+            "row": 146,
+            "column": 5,
+            "local": "onResponderRelease",
+            "type": "value"
+        },
+        {
+            "row": 147,
+            "column": 5,
+            "local": "onResponderTerminate",
+            "type": "value"
+        },
+        {
+            "row": 148,
+            "column": 5,
+            "local": "onResponderTerminationRequest",
+            "type": "value"
+        },
+        {
+            "row": 149,
+            "column": 5,
+            "local": "onStartShouldSetResponder",
+            "type": "value"
+        },
+        {
+            "row": 137,
+            "column": 6,
+            "local": "EventHandlers",
+            "type": "type"
+        },
+        {
+            "row": 154,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 156,
+            "column": 3,
+            "local": "configure",
+            "type": "value"
+        },
+        {
+            "row": 161,
+            "column": 3,
+            "local": "reset",
+            "type": "value"
+        },
+        {
+            "row": 166,
+            "column": 3,
+            "local": "getEventHandlers",
+            "type": "value"
+        },
+        {
+            "row": 153,
+            "column": 15,
+            "local": "Pressability",
+            "type": "class"
+        }
+    ]
+}

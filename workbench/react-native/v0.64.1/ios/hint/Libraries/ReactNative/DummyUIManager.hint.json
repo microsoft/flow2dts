@@ -1,0 +1,168 @@
+{
+    "imports": {},
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "getViewManagerConfig",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 3,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "local": "getConstantsForViewManager",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 3,
+            "local": "getDefaultEventTypes",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "lazilyLoadView",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "createView",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "updateView",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "focus",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "blur",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "findSubviewIn",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 3,
+            "local": "dispatchViewManagerCommand",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 3,
+            "local": "measure",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 3,
+            "local": "measureInWindow",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 3,
+            "local": "viewIsDescendantOf",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 3,
+            "local": "measureLayout",
+            "type": "value"
+        },
+        {
+            "row": 59,
+            "column": 3,
+            "local": "measureLayoutRelativeToParent",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 3,
+            "local": "setJSResponder",
+            "type": "value"
+        },
+        {
+            "row": 65,
+            "column": 3,
+            "local": "clearJSResponder",
+            "type": "value"
+        },
+        {
+            "row": 66,
+            "column": 3,
+            "local": "configureNextLayoutAnimation",
+            "type": "value"
+        },
+        {
+            "row": 71,
+            "column": 3,
+            "local": "removeSubviewsFromContainerWithID",
+            "type": "value"
+        },
+        {
+            "row": 72,
+            "column": 3,
+            "local": "replaceExistingNonRootView",
+            "type": "value"
+        },
+        {
+            "row": 73,
+            "column": 3,
+            "local": "setChildren",
+            "type": "value"
+        },
+        {
+            "row": 74,
+            "column": 3,
+            "local": "manageChildren",
+            "type": "value"
+        },
+        {
+            "row": 84,
+            "column": 3,
+            "local": "setLayoutAnimationEnabledExperimental",
+            "type": "value"
+        },
+        {
+            "row": 85,
+            "column": 3,
+            "local": "sendAccessibilityEvent",
+            "type": "value"
+        },
+        {
+            "row": 86,
+            "column": 3,
+            "local": "showPopupMenu",
+            "type": "value"
+        },
+        {
+            "row": 92,
+            "column": 3,
+            "local": "dismissPopupMenu",
+            "type": "value"
+        }
+    ]
+}

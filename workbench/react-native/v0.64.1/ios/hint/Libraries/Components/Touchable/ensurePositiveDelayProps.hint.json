@@ -1,0 +1,32 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 4,
+                "column": 32,
+                "local": "ensurePositiveDelayProps"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 36
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Touchable/ensurePositiveDelayProps.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "ensurePositiveDelayProps",
+            "type": "value"
+        }
+    ]
+}

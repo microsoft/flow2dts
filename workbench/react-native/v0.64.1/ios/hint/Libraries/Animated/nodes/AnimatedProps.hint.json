@@ -1,0 +1,160 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 34,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 15
+                },
+                "end": {
+                    "row": 2,
+                    "column": 26
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/nodes/AnimatedNode.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 31,
+                "column": 24,
+                "local": "AnimatedNode"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 24
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/nodes/AnimatedProps.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 33,
+                "column": 32,
+                "local": "AnimatedProps"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/nodes/AnimatedProps.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "AnimatedNode",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "__getValue",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "__getAnimatedValue",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "__attach",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "__detach",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "update",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "__makeNative",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "setNativeView",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 3,
+            "local": "__connectAnimatedView",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 3,
+            "local": "__disconnectAnimatedView",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 3,
+            "local": "__restoreDefaultValues",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 3,
+            "local": "__getNativeConfig",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 15,
+            "local": "AnimatedProps",
+            "type": "class"
+        },
+        {
+            "row": 31,
+            "column": 13,
+            "local": "$2",
+            "type": "value"
+        }
+    ]
+}

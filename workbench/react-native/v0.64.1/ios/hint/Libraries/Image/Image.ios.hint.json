@@ -1,0 +1,339 @@
+{
+    "imports": {
+        "ImagePropsType": {
+            "source": {
+                "row": 10,
+                "column": 14,
+                "local": "ImageProps"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 57,
+                    "column": 6
+                },
+                "end": {
+                    "row": 57,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/ImageProps.js.flow"
+            }
+        },
+        "ImageViewNativeComponent": {
+            "source": {
+                "row": 12,
+                "column": 8,
+                "local": "ImageViewNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 29,
+                    "column": 24
+                },
+                "end": {
+                    "row": 29,
+                    "column": 49
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/ImageViewNativeComponent.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 45,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 0,
+                    "column": 1
+                },
+                "end": {
+                    "row": 0,
+                    "column": 0
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 27,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 12
+                },
+                "end": {
+                    "row": 5,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/Image.ios.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 7,
+                "column": 40,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 0,
+                    "column": 1
+                },
+                "end": {
+                    "row": 0,
+                    "column": 0
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/resolveAssetSource.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 35,
+                "column": 21,
+                "local": "getSize"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 18
+                },
+                "end": {
+                    "row": 14,
+                    "column": 24
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/Image.ios.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 36,
+                "column": 32,
+                "local": "getSizeWithHeaders"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 20,
+                    "column": 18
+                },
+                "end": {
+                    "row": 20,
+                    "column": 35
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/Image.ios.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 37,
+                "column": 22,
+                "local": "prefetch"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 27,
+                    "column": 18
+                },
+                "end": {
+                    "row": 27,
+                    "column": 25
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/Image.ios.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 38,
+                "column": 24,
+                "local": "queryCache"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 29,
+                    "column": 18
+                },
+                "end": {
+                    "row": 29,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/Image.ios.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 39,
+                "column": 32,
+                "local": "resolveAssetSource"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 13
+                },
+                "end": {
+                    "row": 7,
+                    "column": 30
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/Image.ios.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 40,
+                "column": 23,
+                "local": "DeprecatedImagePropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 35
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/Image.ios.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 47,
+                "column": 29,
+                "local": "ImageViewNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 29,
+                    "column": 24
+                },
+                "end": {
+                    "row": 29,
+                    "column": 49
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/ImageViewNativeComponent.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "DeprecatedImagePropType",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 13,
+            "local": "resolveAssetSource",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 18,
+            "local": "getSize",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 18,
+            "local": "getSizeWithHeaders",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 18,
+            "local": "prefetch",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 18,
+            "local": "queryCache",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 5,
+            "local": "getSize",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 5,
+            "local": "getSizeWithHeaders",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 5,
+            "local": "prefetch",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 5,
+            "local": "queryCache",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 5,
+            "local": "resolveAssetSource",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 5,
+            "local": "propTypes",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 6,
+            "local": "ImageComponentStatics",
+            "type": "type"
+        }
+    ]
+}

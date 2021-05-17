@@ -1,0 +1,325 @@
+{
+    "imports": {
+        "PermissionStatus": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "PermissionStatus"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 6
+                },
+                "end": {
+                    "row": 4,
+                    "column": 21
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/PermissionsAndroid/NativePermissionsAndroid.js.flow"
+            }
+        },
+        "PermissionType": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "PermissionType"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 19
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/PermissionsAndroid/NativePermissionsAndroid.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 91,
+                "column": 32,
+                "local": "PermissionsAndroidInstance"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 88,
+                    "column": 13
+                },
+                "end": {
+                    "row": 88,
+                    "column": 38
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/PermissionsAndroid/PermissionsAndroid.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 6,
+            "column": 3,
+            "local": "title",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "buttonPositive",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "buttonNegative",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "buttonNeutral",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 6,
+            "local": "Rationale",
+            "type": "type"
+        },
+        {
+            "row": 16,
+            "column": 5,
+            "local": "ACCESS_BACKGROUND_LOCATION",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 5,
+            "local": "ACCESS_COARSE_LOCATION",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 5,
+            "local": "ACCESS_FINE_LOCATION",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 5,
+            "local": "ADD_VOICEMAIL",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 5,
+            "local": "BODY_SENSORS",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 5,
+            "local": "CALL_PHONE",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 5,
+            "local": "CAMERA",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 5,
+            "local": "GET_ACCOUNTS",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 5,
+            "local": "PROCESS_OUTGOING_CALLS",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "READ_CALENDAR",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 5,
+            "local": "READ_CALL_LOG",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 5,
+            "local": "READ_CONTACTS",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 5,
+            "local": "READ_EXTERNAL_STORAGE",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 5,
+            "local": "READ_PHONE_STATE",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 5,
+            "local": "READ_SMS",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 5,
+            "local": "RECEIVE_MMS",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 5,
+            "local": "RECEIVE_SMS",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 5,
+            "local": "RECEIVE_WAP_PUSH",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 5,
+            "local": "RECORD_AUDIO",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 5,
+            "local": "SEND_SMS",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 5,
+            "local": "USE_SIP",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 5,
+            "local": "WRITE_CALENDAR",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 5,
+            "local": "WRITE_CALL_LOG",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 5,
+            "local": "WRITE_CONTACTS",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 5,
+            "local": "WRITE_EXTERNAL_STORAGE",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "PERMISSIONS",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 5,
+            "local": "DENIED",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 5,
+            "local": "GRANTED",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 5,
+            "local": "NEVER_ASK_AGAIN",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 3,
+            "local": "RESULTS",
+            "type": "value"
+        },
+        {
+            "row": 56,
+            "column": 3,
+            "local": "checkPermission",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 3,
+            "local": "check",
+            "type": "value"
+        },
+        {
+            "row": 66,
+            "column": 3,
+            "local": "requestPermission",
+            "type": "value"
+        },
+        {
+            "row": 71,
+            "column": 3,
+            "local": "request",
+            "type": "value"
+        },
+        {
+            "row": 83,
+            "column": 3,
+            "local": "requestMultiple",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 15,
+            "local": "PermissionsAndroid",
+            "type": "class"
+        },
+        {
+            "row": 88,
+            "column": 13,
+            "local": "PermissionsAndroidInstance",
+            "type": "value"
+        }
+    ]
+}

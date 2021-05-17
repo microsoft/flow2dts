@@ -1,0 +1,134 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 43,
+                "column": 32,
+                "local": "Easing"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 15
+                },
+                "end": {
+                    "row": 2,
+                    "column": 20
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/Easing.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 3,
+            "column": 10,
+            "local": "step0",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 10,
+            "local": "step1",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 10,
+            "local": "linear",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 10,
+            "local": "ease",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 10,
+            "local": "quad",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 10,
+            "local": "cubic",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 10,
+            "local": "poly",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 10,
+            "local": "sin",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 10,
+            "local": "circle",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 10,
+            "local": "exp",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 10,
+            "local": "elastic",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 10,
+            "local": "back",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 10,
+            "local": "bounce",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 10,
+            "local": "bezier",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 10,
+            "local": "in",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 10,
+            "local": "out",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 10,
+            "local": "inOut",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 15,
+            "local": "Easing",
+            "type": "class"
+        }
+    ]
+}

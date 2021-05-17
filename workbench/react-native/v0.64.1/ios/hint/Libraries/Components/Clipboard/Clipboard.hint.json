@@ -1,0 +1,18 @@
+{
+    "imports": {},
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 11,
+            "column": 3,
+            "local": "getString",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "setString",
+            "type": "value"
+        }
+    ]
+}

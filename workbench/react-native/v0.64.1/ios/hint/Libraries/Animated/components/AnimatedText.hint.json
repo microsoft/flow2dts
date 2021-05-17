@@ -1,0 +1,105 @@
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "React"
+            },
+            "error": "Could not get definition for /Libraries/Animated/components/AnimatedText.js.flow:2:12\r\nFailed to find imported file react\r\n"
+        },
+        "AnimatedComponentType": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "AnimatedComponentType"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 6
+                },
+                "end": {
+                    "row": 8,
+                    "column": 26
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/createAnimatedComponent.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 4,
+                "column": 26,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 12
+                },
+                "end": {
+                    "row": 23,
+                    "column": 3
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Text/Text.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 10,
+                "column": 30,
+                "local": "Text"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 16
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/components/AnimatedText.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 11,
+                "column": 27,
+                "local": "Text"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 16
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/components/AnimatedText.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 4,
+            "column": 13,
+            "local": "Text",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
+}

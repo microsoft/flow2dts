@@ -1,0 +1,51 @@
+{
+    "imports": {
+        "IgnorePattern": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "IgnorePattern"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 33,
+                    "column": 6
+                },
+                "end": {
+                    "row": 33,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/LogBox/Data/LogBoxData.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 5,
+            "column": 3,
+            "local": "ignoreLogs",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 3,
+            "local": "ignoreAllLogs",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "install",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "uninstall",
+            "type": "value"
+        }
+    ]
+}

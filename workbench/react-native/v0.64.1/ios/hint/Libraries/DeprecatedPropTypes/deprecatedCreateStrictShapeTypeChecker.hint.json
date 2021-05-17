@@ -1,0 +1,32 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 9,
+                "column": 32,
+                "local": "deprecatedCreateStrictShapeTypeChecker"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 18
+                },
+                "end": {
+                    "row": 2,
+                    "column": 55
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/DeprecatedPropTypes/deprecatedCreateStrictShapeTypeChecker.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 18,
+            "local": "deprecatedCreateStrictShapeTypeChecker",
+            "type": "value"
+        }
+    ]
+}

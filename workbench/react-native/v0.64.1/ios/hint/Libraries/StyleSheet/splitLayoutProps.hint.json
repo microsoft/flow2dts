@@ -1,0 +1,65 @@
+{
+    "imports": {
+        "DangerouslyImpreciseStyle": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "DangerouslyImpreciseStyle"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 37,
+                    "column": 6
+                },
+                "end": {
+                    "row": 37,
+                    "column": 30
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 12,
+                "column": 32,
+                "local": "splitLayoutProps"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 18
+                },
+                "end": {
+                    "row": 4,
+                    "column": 33
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/splitLayoutProps.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 7,
+            "column": 3,
+            "local": "outer",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "inner",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 18,
+            "local": "splitLayoutProps",
+            "type": "value"
+        }
+    ]
+}

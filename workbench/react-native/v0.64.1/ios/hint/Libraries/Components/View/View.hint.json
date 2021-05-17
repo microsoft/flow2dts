@@ -1,0 +1,128 @@
+{
+    "imports": {
+        "ViewProps": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ViewProps"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 377,
+                    "column": 6
+                },
+                "end": {
+                    "row": 377,
+                    "column": 14
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
+            }
+        },
+        "ViewNativeComponent": {
+            "source": {
+                "row": 6,
+                "column": 8,
+                "local": "ViewNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 32
+                },
+                "end": {
+                    "row": 7,
+                    "column": 55
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/View/ViewNativeComponent.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 4,
+                "column": 27,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 12
+                },
+                "end": {
+                    "row": 5,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/View/View.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 12,
+                "column": 27,
+                "local": "ViewNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 32
+                },
+                "end": {
+                    "row": 7,
+                    "column": 55
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/View/ViewNativeComponent.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 16,
+                "column": 32,
+                "local": "View"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 13
+                },
+                "end": {
+                    "row": 10,
+                    "column": 16
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/View/View.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 4,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 10,
+            "column": 13,
+            "local": "View",
+            "type": "value"
+        }
+    ]
+}

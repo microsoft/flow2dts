@@ -1,0 +1,2365 @@
+{
+    "imports": {
+        "AccessibilityInfo": {
+            "source": {
+                "row": 2,
+                "column": 15,
+                "local": "AccessibilityInfo"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 32
+                },
+                "end": {
+                    "row": 135,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.js.flow"
+            }
+        },
+        "ActivityIndicator": {
+            "source": {
+                "row": 3,
+                "column": 15,
+                "local": "ActivityIndicator"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 49,
+                    "column": 39
+                },
+                "end": {
+                    "row": 52,
+                    "column": 1
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/ActivityIndicator/ActivityIndicator.js.flow"
+            }
+        },
+        "Button": {
+            "source": {
+                "row": 4,
+                "column": 15,
+                "local": "Button"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 122,
+                    "column": 15
+                },
+                "end": {
+                    "row": 122,
+                    "column": 20
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Button.js.flow"
+            }
+        },
+        "DatePickerIOS": {
+            "source": {
+                "row": 5,
+                "column": 15,
+                "local": "DatePickerIOS"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 93,
+                    "column": 15
+                },
+                "end": {
+                    "row": 93,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/DatePicker/DatePickerIOS.ios.js.flow"
+            }
+        },
+        "DrawerLayoutAndroid": {
+            "source": {
+                "row": 6,
+                "column": 15,
+                "local": "DrawerLayoutAndroid"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 15
+                },
+                "end": {
+                    "row": 6,
+                    "column": 33
+                },
+                "libraryFolder": -1,
+                "file": "/index.js.flow"
+            }
+        },
+        "FlatList": {
+            "source": {
+                "row": 7,
+                "column": 15,
+                "local": "FlatList"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 156,
+                    "column": 15
+                },
+                "end": {
+                    "row": 156,
+                    "column": 22
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Lists/FlatList.js.flow"
+            }
+        },
+        "Image": {
+            "source": {
+                "row": 8,
+                "column": 15,
+                "local": "Image"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 45,
+                    "column": 5
+                },
+                "end": {
+                    "row": 49,
+                    "column": 25
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/Image.ios.js.flow"
+            }
+        },
+        "ImageBackground": {
+            "source": {
+                "row": 9,
+                "column": 15,
+                "local": "ImageBackground"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 29
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/ImageBackground.js.flow"
+            }
+        },
+        "InputAccessoryView": {
+            "source": {
+                "row": 10,
+                "column": 15,
+                "local": "InputAccessoryView"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 21,
+                    "column": 15
+                },
+                "end": {
+                    "row": 21,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/TextInput/InputAccessoryView.js.flow"
+            }
+        },
+        "KeyboardAvoidingView": {
+            "source": {
+                "row": 11,
+                "column": 15,
+                "local": "KeyboardAvoidingView"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 41,
+                    "column": 15
+                },
+                "end": {
+                    "row": 41,
+                    "column": 34
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Keyboard/KeyboardAvoidingView.js.flow"
+            }
+        },
+        "MaskedViewIOS": {
+            "source": {
+                "row": 12,
+                "column": 15,
+                "local": "MaskedViewIOS"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 20,
+                    "column": 15
+                },
+                "end": {
+                    "row": 20,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/MaskedView/MaskedViewIOS.ios.js.flow"
+            }
+        },
+        "Modal": {
+            "source": {
+                "row": 13,
+                "column": 15,
+                "local": "Modal"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 120,
+                    "column": 15
+                },
+                "end": {
+                    "row": 120,
+                    "column": 19
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Modal/Modal.js.flow"
+            }
+        },
+        "Picker": {
+            "source": {
+                "row": 14,
+                "column": 15,
+                "local": "Picker"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 103,
+                    "column": 15
+                },
+                "end": {
+                    "row": 103,
+                    "column": 20
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Picker/Picker.js.flow"
+            }
+        },
+        "PickerIOS": {
+            "source": {
+                "row": 15,
+                "column": 15,
+                "local": "PickerIOS"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 57,
+                    "column": 15
+                },
+                "end": {
+                    "row": 57,
+                    "column": 23
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Picker/PickerIOS.ios.js.flow"
+            }
+        },
+        "Pressable": {
+            "source": {
+                "row": 16,
+                "column": 15,
+                "local": "Pressable"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 130,
+                    "column": 24
+                },
+                "end": {
+                    "row": 133,
+                    "column": 1
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Pressable/Pressable.js.flow"
+            }
+        },
+        "ProgressBarAndroid": {
+            "source": {
+                "row": 17,
+                "column": 15,
+                "local": "ProgressBarAndroid"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 15
+                },
+                "end": {
+                    "row": 17,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/index.js.flow"
+            }
+        },
+        "ProgressViewIOS": {
+            "source": {
+                "row": 18,
+                "column": 15,
+                "local": "ProgressViewIOS"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 24,
+                    "column": 24
+                },
+                "end": {
+                    "row": 24,
+                    "column": 49
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/ProgressViewIOS/RCTProgressViewNativeComponent.js.flow"
+            }
+        },
+        "RefreshControl": {
+            "source": {
+                "row": 19,
+                "column": 15,
+                "local": "RefreshControl"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 72,
+                    "column": 15
+                },
+                "end": {
+                    "row": 72,
+                    "column": 28
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/RefreshControl/RefreshControl.js.flow"
+            }
+        },
+        "SafeAreaView": {
+            "source": {
+                "row": 20,
+                "column": 15,
+                "local": "SafeAreaView"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 23
+                },
+                "end": {
+                    "row": 17,
+                    "column": 1
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/SafeAreaView/SafeAreaView.js.flow"
+            }
+        },
+        "ScrollView": {
+            "source": {
+                "row": 21,
+                "column": 15,
+                "local": "ScrollView"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 660,
+                    "column": 5
+                },
+                "end": {
+                    "row": 669,
+                    "column": 30
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
+            }
+        },
+        "SectionList": {
+            "source": {
+                "row": 22,
+                "column": 15,
+                "local": "SectionList"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 112,
+                    "column": 15
+                },
+                "end": {
+                    "row": 112,
+                    "column": 25
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Lists/SectionList.js.flow"
+            }
+        },
+        "SegmentedControlIOS": {
+            "source": {
+                "row": 23,
+                "column": 15,
+                "local": "SegmentedControlIOS"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 23,
+                    "column": 15
+                },
+                "end": {
+                    "row": 23,
+                    "column": 33
+                },
+                "libraryFolder": -1,
+                "file": "/index.js.flow"
+            }
+        },
+        "Slider": {
+            "source": {
+                "row": 24,
+                "column": 15,
+                "local": "Slider"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 118,
+                    "column": 28
+                },
+                "end": {
+                    "row": 121,
+                    "column": 1
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Slider/Slider.js.flow"
+            }
+        },
+        "StatusBar": {
+            "source": {
+                "row": 25,
+                "column": 15,
+                "local": "StatusBar"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 99,
+                    "column": 15
+                },
+                "end": {
+                    "row": 99,
+                    "column": 23
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/StatusBar/StatusBar.js.flow"
+            }
+        },
+        "Switch": {
+            "source": {
+                "row": 26,
+                "column": 15,
+                "local": "Switch"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 76,
+                    "column": 15
+                },
+                "end": {
+                    "row": 76,
+                    "column": 20
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Switch/Switch.js.flow"
+            }
+        },
+        "Text": {
+            "source": {
+                "row": 27,
+                "column": 15,
+                "local": "Text"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 12
+                },
+                "end": {
+                    "row": 23,
+                    "column": 3
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Text/Text.js.flow"
+            }
+        },
+        "TextInput": {
+            "source": {
+                "row": 28,
+                "column": 15,
+                "local": "TextInput"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 757,
+                    "column": 5
+                },
+                "end": {
+                    "row": 766,
+                    "column": 29
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/TextInput/TextInput.js.flow"
+            }
+        },
+        "Touchable": {
+            "source": {
+                "row": 29,
+                "column": 15,
+                "local": "Touchable"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 264,
+                    "column": 24
+                },
+                "end": {
+                    "row": 277,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Touchable/Touchable.js.flow"
+            }
+        },
+        "TouchableHighlight": {
+            "source": {
+                "row": 30,
+                "column": 15,
+                "local": "TouchableHighlight"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 42,
+                    "column": 25
+                },
+                "end": {
+                    "row": 44,
+                    "column": 1
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Touchable/TouchableHighlight.js.flow"
+            }
+        },
+        "TouchableNativeFeedback": {
+            "source": {
+                "row": 31,
+                "column": 15,
+                "local": "TouchableNativeFeedback"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 87,
+                    "column": 15
+                },
+                "end": {
+                    "row": 87,
+                    "column": 37
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Touchable/TouchableNativeFeedback.js.flow"
+            }
+        },
+        "TouchableOpacity": {
+            "source": {
+                "row": 32,
+                "column": 15,
+                "local": "TouchableOpacity"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 32,
+                    "column": 25
+                },
+                "end": {
+                    "row": 34,
+                    "column": 1
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Touchable/TouchableOpacity.js.flow"
+            }
+        },
+        "TouchableWithoutFeedback": {
+            "source": {
+                "row": 33,
+                "column": 15,
+                "local": "TouchableWithoutFeedback"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 60,
+                    "column": 15
+                },
+                "end": {
+                    "row": 60,
+                    "column": 38
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Touchable/TouchableWithoutFeedback.js.flow"
+            }
+        },
+        "View": {
+            "source": {
+                "row": 34,
+                "column": 15,
+                "local": "View"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 19
+                },
+                "end": {
+                    "row": 13,
+                    "column": 1
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/View/View.js.flow"
+            }
+        },
+        "VirtualizedList": {
+            "source": {
+                "row": 35,
+                "column": 15,
+                "local": "VirtualizedList"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 289,
+                    "column": 15
+                },
+                "end": {
+                    "row": 289,
+                    "column": 29
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Lists/VirtualizedList.js.flow"
+            }
+        },
+        "VirtualizedSectionList": {
+            "source": {
+                "row": 36,
+                "column": 15,
+                "local": "VirtualizedSectionList"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 122,
+                    "column": 15
+                },
+                "end": {
+                    "row": 122,
+                    "column": 36
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
+            }
+        },
+        "ActionSheetIOS": {
+            "source": {
+                "row": 38,
+                "column": 15,
+                "local": "ActionSheetIOS"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 29
+                },
+                "end": {
+                    "row": 66,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/ActionSheetIOS/ActionSheetIOS.js.flow"
+            }
+        },
+        "Alert": {
+            "source": {
+                "row": 39,
+                "column": 15,
+                "local": "Alert"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 19,
+                    "column": 15
+                },
+                "end": {
+                    "row": 19,
+                    "column": 19
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Alert/Alert.js.flow"
+            }
+        },
+        "Animated": {
+            "source": {
+                "row": 40,
+                "column": 15,
+                "local": "Animated"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 40,
+                    "column": 15
+                },
+                "end": {
+                    "row": 40,
+                    "column": 22
+                },
+                "libraryFolder": -1,
+                "file": "/index.js.flow"
+            }
+        },
+        "Appearance": {
+            "source": {
+                "row": 41,
+                "column": 15,
+                "local": "Appearance"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 25
+                },
+                "end": {
+                    "row": 27,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/Appearance.js.flow"
+            }
+        },
+        "AppRegistry": {
+            "source": {
+                "row": 42,
+                "column": 15,
+                "local": "AppRegistry"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 34,
+                    "column": 26
+                },
+                "end": {
+                    "row": 115,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/ReactNative/AppRegistry.js.flow"
+            }
+        },
+        "AppState": {
+            "source": {
+                "row": 43,
+                "column": 15,
+                "local": "AppState"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 54,
+                    "column": 31
+                },
+                "end": {
+                    "row": 54,
+                    "column": 66
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/AppState/AppState.js.flow"
+            }
+        },
+        "AsyncStorage": {
+            "source": {
+                "row": 44,
+                "column": 15,
+                "local": "AsyncStorage"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 27
+                },
+                "end": {
+                    "row": 129,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Storage/AsyncStorage.js.flow"
+            }
+        },
+        "BackHandler": {
+            "source": {
+                "row": 45,
+                "column": 15,
+                "local": "BackHandler"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 21
+                },
+                "end": {
+                    "row": 14,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/BackHandler.ios.js.flow"
+            }
+        },
+        "Clipboard": {
+            "source": {
+                "row": 46,
+                "column": 15,
+                "local": "Clipboard"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 25
+                },
+                "end": {
+                    "row": 22,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Clipboard/Clipboard.js.flow"
+            }
+        },
+        "DatePickerAndroid": {
+            "source": {
+                "row": 47,
+                "column": 15,
+                "local": "DatePickerAndroid"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 31
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/DatePickerAndroid/DatePickerAndroid.ios.js.flow"
+            }
+        },
+        "DeviceInfo": {
+            "source": {
+                "row": 48,
+                "column": 15,
+                "local": "DeviceInfo"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 33,
+                    "column": 31
+                },
+                "end": {
+                    "row": 38,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/NativeDeviceInfo.js.flow"
+            }
+        },
+        "DevSettings": {
+            "source": {
+                "row": 49,
+                "column": 15,
+                "local": "DevSettings"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 11
+                },
+                "end": {
+                    "row": 2,
+                    "column": 22
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/DevSettings.js.flow"
+            }
+        },
+        "Dimensions": {
+            "source": {
+                "row": 50,
+                "column": 15,
+                "local": "Dimensions"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 15
+                },
+                "end": {
+                    "row": 2,
+                    "column": 24
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/Dimensions.js.flow"
+            }
+        },
+        "Easing": {
+            "source": {
+                "row": 51,
+                "column": 15,
+                "local": "Easing"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 15
+                },
+                "end": {
+                    "row": 2,
+                    "column": 20
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/Easing.js.flow"
+            }
+        },
+        "ReactNative": {
+            "source": {
+                "row": 52,
+                "column": 15,
+                "local": "ReactNative"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 160,
+                    "column": 24
+                },
+                "end": {
+                    "row": 177,
+                    "column": 1
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
+        },
+        "I18nManager": {
+            "source": {
+                "row": 53,
+                "column": 15,
+                "local": "I18nManager"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 25
+                },
+                "end": {
+                    "row": 18,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/ReactNative/I18nManager.js.flow"
+            }
+        },
+        "ImagePickerIOS": {
+            "source": {
+                "row": 54,
+                "column": 15,
+                "local": "ImagePickerIOS"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 29
+                },
+                "end": {
+                    "row": 39,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/ImagePickerIOS.js.flow"
+            }
+        },
+        "InteractionManager": {
+            "source": {
+                "row": 55,
+                "column": 15,
+                "local": "InteractionManager"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 33
+                },
+                "end": {
+                    "row": 45,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Interaction/InteractionManager.js.flow"
+            }
+        },
+        "Keyboard": {
+            "source": {
+                "row": 56,
+                "column": 15,
+                "local": "Keyboard"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 15
+                },
+                "end": {
+                    "row": 17,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
+            }
+        },
+        "LayoutAnimation": {
+            "source": {
+                "row": 57,
+                "column": 15,
+                "local": "LayoutAnimation"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 43,
+                    "column": 30
+                },
+                "end": {
+                    "row": 81,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/LayoutAnimation/LayoutAnimation.js.flow"
+            }
+        },
+        "Linking": {
+            "source": {
+                "row": 58,
+                "column": 15,
+                "local": "Linking"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 15
+                },
+                "end": {
+                    "row": 4,
+                    "column": 21
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Linking/Linking.js.flow"
+            }
+        },
+        "LogBox": {
+            "source": {
+                "row": 59,
+                "column": 15,
+                "local": "LogBox"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 25
+                },
+                "end": {
+                    "row": 10,
+                    "column": 1
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/LogBox/LogBox.js.flow"
+            }
+        },
+        "NativeDialogManagerAndroid": {
+            "source": {
+                "row": 60,
+                "column": 15,
+                "local": "NativeDialogManagerAndroid"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 35,
+                    "column": 24
+                },
+                "end": {
+                    "row": 35,
+                    "column": 28
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/NativeModules/specs/NativeDialogManagerAndroid.js.flow"
+            }
+        },
+        "NativeEventEmitter": {
+            "source": {
+                "row": 61,
+                "column": 15,
+                "local": "NativeEventEmitter"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 15
+                },
+                "end": {
+                    "row": 17,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
+            }
+        },
+        "Networking": {
+            "source": {
+                "row": 62,
+                "column": 15,
+                "local": "Networking"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 15
+                },
+                "end": {
+                    "row": 8,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Network/RCTNetworking.ios.js.flow"
+            }
+        },
+        "PanResponder": {
+            "source": {
+                "row": 63,
+                "column": 15,
+                "local": "PanResponder"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 90,
+                    "column": 27
+                },
+                "end": {
+                    "row": 236,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Interaction/PanResponder.js.flow"
+            }
+        },
+        "PermissionsAndroid": {
+            "source": {
+                "row": 64,
+                "column": 15,
+                "local": "PermissionsAndroid"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 15
+                },
+                "end": {
+                    "row": 14,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/PermissionsAndroid/PermissionsAndroid.js.flow"
+            }
+        },
+        "PixelRatio": {
+            "source": {
+                "row": 65,
+                "column": 15,
+                "local": "PixelRatio"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 15
+                },
+                "end": {
+                    "row": 2,
+                    "column": 24
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/PixelRatio.js.flow"
+            }
+        },
+        "PushNotificationIOS": {
+            "source": {
+                "row": 66,
+                "column": 15,
+                "local": "PushNotificationIOS"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 38,
+                    "column": 15
+                },
+                "end": {
+                    "row": 38,
+                    "column": 33
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/PushNotificationIOS/PushNotificationIOS.js.flow"
+            }
+        },
+        "Settings": {
+            "source": {
+                "row": 67,
+                "column": 15,
+                "local": "Settings"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 23
+                },
+                "end": {
+                    "row": 14,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Settings/Settings.ios.js.flow"
+            }
+        },
+        "Share": {
+            "source": {
+                "row": 68,
+                "column": 15,
+                "local": "Share"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 21,
+                    "column": 15
+                },
+                "end": {
+                    "row": 21,
+                    "column": 19
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Share/Share.js.flow"
+            }
+        },
+        "StatusBarIOS": {
+            "source": {
+                "row": 69,
+                "column": 15,
+                "local": "StatusBarIOS"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 15
+                },
+                "end": {
+                    "row": 4,
+                    "column": 26
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/StatusBar/StatusBarIOS.js.flow"
+            }
+        },
+        "StyleSheet": {
+            "source": {
+                "row": 70,
+                "column": 15,
+                "local": "StyleSheet"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 68,
+                    "column": 25
+                },
+                "end": {
+                    "row": 181,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        "Systrace": {
+            "source": {
+                "row": 71,
+                "column": 15,
+                "local": "Systrace"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 23
+                },
+                "end": {
+                    "row": 32,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Performance/Systrace.js.flow"
+            }
+        },
+        "ToastAndroid": {
+            "source": {
+                "row": 72,
+                "column": 15,
+                "local": "ToastAndroid"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 72,
+                    "column": 15
+                },
+                "end": {
+                    "row": 72,
+                    "column": 26
+                },
+                "libraryFolder": -1,
+                "file": "/index.js.flow"
+            }
+        },
+        "TurboModuleRegistry": {
+            "source": {
+                "row": 73,
+                "column": 20,
+                "local": "TurboModuleRegistry"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 0,
+                    "column": 1
+                },
+                "end": {
+                    "row": 0,
+                    "column": 0
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/TurboModule/TurboModuleRegistry.js.flow"
+            }
+        },
+        "UIManager": {
+            "source": {
+                "row": 74,
+                "column": 15,
+                "local": "UIManager"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 11
+                },
+                "end": {
+                    "row": 4,
+                    "column": 30
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/ReactNative/UIManager.js.flow"
+            }
+        },
+        "useColorScheme": {
+            "source": {
+                "row": 75,
+                "column": 15,
+                "local": "useColorScheme"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 32
+                },
+                "end": {
+                    "row": 4,
+                    "column": 51
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/useColorScheme.js.flow"
+            }
+        },
+        "useWindowDimensions": {
+            "source": {
+                "row": 76,
+                "column": 15,
+                "local": "useWindowDimensions"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 37
+                },
+                "end": {
+                    "row": 4,
+                    "column": 54
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/useWindowDimensions.js.flow"
+            }
+        },
+        "UTFSequence": {
+            "source": {
+                "row": 77,
+                "column": 15,
+                "local": "UTFSequence"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 26
+                },
+                "end": {
+                    "row": 17,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/UTFSequence.js.flow"
+            }
+        },
+        "Vibration": {
+            "source": {
+                "row": 78,
+                "column": 15,
+                "local": "Vibration"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 24
+                },
+                "end": {
+                    "row": 15,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Vibration/Vibration.js.flow"
+            }
+        },
+        "YellowBox": {
+            "source": {
+                "row": 79,
+                "column": 15,
+                "local": "YellowBox"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 5
+                },
+                "end": {
+                    "row": 16,
+                    "column": 3
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/YellowBox/YellowBoxDeprecated.js.flow"
+            }
+        },
+        "DynamicColorIOS": {
+            "source": {
+                "row": 81,
+                "column": 16,
+                "local": "DynamicColorIOS"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 72
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/PlatformColorValueTypesIOS.ios.js.flow"
+            }
+        },
+        "NativeModules": {
+            "source": {
+                "row": 82,
+                "column": 15,
+                "local": "NativeModules"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 28
+                },
+                "end": {
+                    "row": 12,
+                    "column": 65
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/BatchedBridge/NativeModules.js.flow"
+            }
+        },
+        "Platform": {
+            "source": {
+                "row": 83,
+                "column": 15,
+                "local": "Platform"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 23
+                },
+                "end": {
+                    "row": 37,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/Platform.ios.js.flow"
+            }
+        },
+        "PlatformColor": {
+            "source": {
+                "row": 84,
+                "column": 16,
+                "local": "PlatformColor"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 13,
+                    "column": 28
+                },
+                "end": {
+                    "row": 13,
+                    "column": 66
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/PlatformColorValueTypes.ios.js.flow"
+            }
+        },
+        "processColor": {
+            "source": {
+                "row": 85,
+                "column": 15,
+                "local": "processColor"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 30
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        "RCTDeviceEventEmitter": {
+            "source": {
+                "row": 86,
+                "column": 15,
+                "local": "RCTDeviceEventEmitter"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 15
+                },
+                "end": {
+                    "row": 6,
+                    "column": 35
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/EventEmitter/RCTDeviceEventEmitter.js.flow"
+            }
+        },
+        "RCTNativeAppEventEmitter": {
+            "source": {
+                "row": 87,
+                "column": 15,
+                "local": "RCTNativeAppEventEmitter"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 15
+                },
+                "end": {
+                    "row": 6,
+                    "column": 35
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/EventEmitter/RCTDeviceEventEmitter.js.flow"
+            }
+        },
+        "RootTagContext": {
+            "source": {
+                "row": 88,
+                "column": 16,
+                "local": "RootTagContext"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 29
+                },
+                "end": {
+                    "row": 4,
+                    "column": 50
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/ReactNative/RootTag.js.flow"
+            }
+        },
+        "DeprecatedColorPropType": {
+            "source": {
+                "row": 90,
+                "column": 15,
+                "local": "DeprecatedColorPropType"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 90,
+                    "column": 15
+                },
+                "end": {
+                    "row": 90,
+                    "column": 37
+                },
+                "libraryFolder": -1,
+                "file": "/index.js.flow"
+            }
+        },
+        "DeprecatedEdgeInsetsPropType": {
+            "source": {
+                "row": 91,
+                "column": 15,
+                "local": "DeprecatedEdgeInsetsPropType"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 43
+                },
+                "end": {
+                    "row": 10,
+                    "column": 1
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedEdgeInsetsPropType.js.flow"
+            }
+        },
+        "DeprecatedPointPropType": {
+            "source": {
+                "row": 92,
+                "column": 15,
+                "local": "DeprecatedPointPropType"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 28
+                },
+                "end": {
+                    "row": 8,
+                    "column": 1
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedPointPropType.js.flow"
+            }
+        },
+        "DeprecatedViewPropTypes": {
+            "source": {
+                "row": 93,
+                "column": 15,
+                "local": "DeprecatedViewPropTypes"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 93,
+                    "column": 15
+                },
+                "end": {
+                    "row": 93,
+                    "column": 37
+                },
+                "libraryFolder": -1,
+                "file": "/index.js.flow"
+            }
+        },
+        "_HostComponentInternal": {
+            "source": {
+                "row": 95,
+                "column": 14,
+                "local": "HostComponent"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 96,
+                    "column": 6
+                },
+                "end": {
+                    "row": 96,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 97,
+            "column": 6,
+            "local": "HostComponent",
+            "type": "type"
+        },
+        {
+            "row": 101,
+            "column": 7,
+            "local": "AccessibilityInfo",
+            "type": "value"
+        },
+        {
+            "row": 102,
+            "column": 7,
+            "local": "ActivityIndicator",
+            "type": "value"
+        },
+        {
+            "row": 103,
+            "column": 7,
+            "local": "Button",
+            "type": "value"
+        },
+        {
+            "row": 105,
+            "column": 7,
+            "local": "DatePickerIOS",
+            "type": "value"
+        },
+        {
+            "row": 107,
+            "column": 7,
+            "local": "DrawerLayoutAndroid",
+            "type": "value"
+        },
+        {
+            "row": 108,
+            "column": 7,
+            "local": "FlatList",
+            "type": "value"
+        },
+        {
+            "row": 109,
+            "column": 7,
+            "local": "Image",
+            "type": "value"
+        },
+        {
+            "row": 110,
+            "column": 7,
+            "local": "ImageBackground",
+            "type": "value"
+        },
+        {
+            "row": 111,
+            "column": 7,
+            "local": "InputAccessoryView",
+            "type": "value"
+        },
+        {
+            "row": 112,
+            "column": 7,
+            "local": "KeyboardAvoidingView",
+            "type": "value"
+        },
+        {
+            "row": 113,
+            "column": 7,
+            "local": "MaskedViewIOS",
+            "type": "value"
+        },
+        {
+            "row": 114,
+            "column": 7,
+            "local": "Modal",
+            "type": "value"
+        },
+        {
+            "row": 115,
+            "column": 7,
+            "local": "Picker",
+            "type": "value"
+        },
+        {
+            "row": 117,
+            "column": 7,
+            "local": "PickerIOS",
+            "type": "value"
+        },
+        {
+            "row": 118,
+            "column": 7,
+            "local": "Pressable",
+            "type": "value"
+        },
+        {
+            "row": 120,
+            "column": 7,
+            "local": "ProgressBarAndroid",
+            "type": "value"
+        },
+        {
+            "row": 122,
+            "column": 7,
+            "local": "ProgressViewIOS",
+            "type": "value"
+        },
+        {
+            "row": 123,
+            "column": 7,
+            "local": "RefreshControl",
+            "type": "value"
+        },
+        {
+            "row": 124,
+            "column": 7,
+            "local": "SafeAreaView",
+            "type": "value"
+        },
+        {
+            "row": 125,
+            "column": 7,
+            "local": "ScrollView",
+            "type": "value"
+        },
+        {
+            "row": 126,
+            "column": 7,
+            "local": "SectionList",
+            "type": "value"
+        },
+        {
+            "row": 128,
+            "column": 7,
+            "local": "SegmentedControlIOS",
+            "type": "value"
+        },
+        {
+            "row": 129,
+            "column": 7,
+            "local": "Slider",
+            "type": "value"
+        },
+        {
+            "row": 130,
+            "column": 7,
+            "local": "StatusBar",
+            "type": "value"
+        },
+        {
+            "row": 131,
+            "column": 7,
+            "local": "Switch",
+            "type": "value"
+        },
+        {
+            "row": 132,
+            "column": 7,
+            "local": "Text",
+            "type": "value"
+        },
+        {
+            "row": 133,
+            "column": 7,
+            "local": "TextInput",
+            "type": "value"
+        },
+        {
+            "row": 134,
+            "column": 7,
+            "local": "Touchable",
+            "type": "value"
+        },
+        {
+            "row": 135,
+            "column": 7,
+            "local": "TouchableHighlight",
+            "type": "value"
+        },
+        {
+            "row": 136,
+            "column": 7,
+            "local": "TouchableNativeFeedback",
+            "type": "value"
+        },
+        {
+            "row": 137,
+            "column": 7,
+            "local": "TouchableOpacity",
+            "type": "value"
+        },
+        {
+            "row": 138,
+            "column": 7,
+            "local": "TouchableWithoutFeedback",
+            "type": "value"
+        },
+        {
+            "row": 139,
+            "column": 7,
+            "local": "View",
+            "type": "value"
+        },
+        {
+            "row": 140,
+            "column": 7,
+            "local": "VirtualizedList",
+            "type": "value"
+        },
+        {
+            "row": 141,
+            "column": 7,
+            "local": "VirtualizedSectionList",
+            "type": "value"
+        },
+        {
+            "row": 143,
+            "column": 7,
+            "local": "ActionSheetIOS",
+            "type": "value"
+        },
+        {
+            "row": 144,
+            "column": 7,
+            "local": "Alert",
+            "type": "value"
+        },
+        {
+            "row": 145,
+            "column": 7,
+            "local": "Animated",
+            "type": "value"
+        },
+        {
+            "row": 146,
+            "column": 7,
+            "local": "Appearance",
+            "type": "value"
+        },
+        {
+            "row": 147,
+            "column": 7,
+            "local": "AppRegistry",
+            "type": "value"
+        },
+        {
+            "row": 148,
+            "column": 7,
+            "local": "AppState",
+            "type": "value"
+        },
+        {
+            "row": 150,
+            "column": 7,
+            "local": "AsyncStorage",
+            "type": "value"
+        },
+        {
+            "row": 151,
+            "column": 7,
+            "local": "BackHandler",
+            "type": "value"
+        },
+        {
+            "row": 152,
+            "column": 7,
+            "local": "Clipboard",
+            "type": "value"
+        },
+        {
+            "row": 153,
+            "column": 7,
+            "local": "DatePickerAndroid",
+            "type": "value"
+        },
+        {
+            "row": 154,
+            "column": 7,
+            "local": "DeviceInfo",
+            "type": "value"
+        },
+        {
+            "row": 155,
+            "column": 7,
+            "local": "DevSettings",
+            "type": "value"
+        },
+        {
+            "row": 156,
+            "column": 7,
+            "local": "Dimensions",
+            "type": "value"
+        },
+        {
+            "row": 157,
+            "column": 7,
+            "local": "Easing",
+            "type": "value"
+        },
+        {
+            "row": 158,
+            "column": 7,
+            "local": "findNodeHandle",
+            "type": "value"
+        },
+        {
+            "row": 159,
+            "column": 7,
+            "local": "I18nManager",
+            "type": "value"
+        },
+        {
+            "row": 160,
+            "column": 7,
+            "local": "ImagePickerIOS",
+            "type": "value"
+        },
+        {
+            "row": 161,
+            "column": 7,
+            "local": "InteractionManager",
+            "type": "value"
+        },
+        {
+            "row": 162,
+            "column": 7,
+            "local": "Keyboard",
+            "type": "value"
+        },
+        {
+            "row": 163,
+            "column": 7,
+            "local": "LayoutAnimation",
+            "type": "value"
+        },
+        {
+            "row": 164,
+            "column": 7,
+            "local": "Linking",
+            "type": "value"
+        },
+        {
+            "row": 165,
+            "column": 7,
+            "local": "LogBox",
+            "type": "value"
+        },
+        {
+            "row": 166,
+            "column": 7,
+            "local": "NativeDialogManagerAndroid",
+            "type": "value"
+        },
+        {
+            "row": 167,
+            "column": 7,
+            "local": "NativeEventEmitter",
+            "type": "value"
+        },
+        {
+            "row": 168,
+            "column": 7,
+            "local": "Networking",
+            "type": "value"
+        },
+        {
+            "row": 169,
+            "column": 7,
+            "local": "PanResponder",
+            "type": "value"
+        },
+        {
+            "row": 170,
+            "column": 7,
+            "local": "PermissionsAndroid",
+            "type": "value"
+        },
+        {
+            "row": 171,
+            "column": 7,
+            "local": "PixelRatio",
+            "type": "value"
+        },
+        {
+            "row": 172,
+            "column": 7,
+            "local": "PushNotificationIOS",
+            "type": "value"
+        },
+        {
+            "row": 173,
+            "column": 7,
+            "local": "Settings",
+            "type": "value"
+        },
+        {
+            "row": 174,
+            "column": 7,
+            "local": "Share",
+            "type": "value"
+        },
+        {
+            "row": 175,
+            "column": 7,
+            "local": "StatusBarIOS",
+            "type": "value"
+        },
+        {
+            "row": 176,
+            "column": 7,
+            "local": "StyleSheet",
+            "type": "value"
+        },
+        {
+            "row": 177,
+            "column": 7,
+            "local": "Systrace",
+            "type": "value"
+        },
+        {
+            "row": 179,
+            "column": 7,
+            "local": "ToastAndroid",
+            "type": "value"
+        },
+        {
+            "row": 180,
+            "column": 7,
+            "local": "TurboModuleRegistry",
+            "type": "value"
+        },
+        {
+            "row": 181,
+            "column": 7,
+            "local": "UIManager",
+            "type": "value"
+        },
+        {
+            "row": 182,
+            "column": 7,
+            "local": "unstable_batchedUpdates",
+            "type": "value"
+        },
+        {
+            "row": 186,
+            "column": 7,
+            "local": "useColorScheme",
+            "type": "value"
+        },
+        {
+            "row": 187,
+            "column": 7,
+            "local": "useWindowDimensions",
+            "type": "value"
+        },
+        {
+            "row": 188,
+            "column": 7,
+            "local": "UTFSequence",
+            "type": "value"
+        },
+        {
+            "row": 189,
+            "column": 7,
+            "local": "Vibration",
+            "type": "value"
+        },
+        {
+            "row": 190,
+            "column": 7,
+            "local": "YellowBox",
+            "type": "value"
+        },
+        {
+            "row": 192,
+            "column": 7,
+            "local": "DeviceEventEmitter",
+            "type": "value"
+        },
+        {
+            "row": 193,
+            "column": 7,
+            "local": "DynamicColorIOS",
+            "type": "value"
+        },
+        {
+            "row": 194,
+            "column": 7,
+            "local": "NativeAppEventEmitter",
+            "type": "value"
+        },
+        {
+            "row": 195,
+            "column": 7,
+            "local": "NativeModules",
+            "type": "value"
+        },
+        {
+            "row": 196,
+            "column": 7,
+            "local": "Platform",
+            "type": "value"
+        },
+        {
+            "row": 197,
+            "column": 7,
+            "local": "PlatformColor",
+            "type": "value"
+        },
+        {
+            "row": 198,
+            "column": 7,
+            "local": "processColor",
+            "type": "value"
+        },
+        {
+            "row": 199,
+            "column": 7,
+            "local": "requireNativeComponent",
+            "type": "value"
+        },
+        {
+            "row": 200,
+            "column": 7,
+            "local": "unstable_RootTagContext",
+            "type": "value"
+        },
+        {
+            "row": 201,
+            "column": 7,
+            "local": "unstable_enableLogBox",
+            "type": "value"
+        },
+        {
+            "row": 203,
+            "column": 7,
+            "local": "ColorPropType",
+            "type": "value"
+        },
+        {
+            "row": 204,
+            "column": 7,
+            "local": "EdgeInsetsPropType",
+            "type": "value"
+        },
+        {
+            "row": 205,
+            "column": 7,
+            "local": "PointPropType",
+            "type": "value"
+        },
+        {
+            "row": 206,
+            "column": 7,
+            "local": "ViewPropTypes",
+            "type": "value"
+        }
+    ]
+}

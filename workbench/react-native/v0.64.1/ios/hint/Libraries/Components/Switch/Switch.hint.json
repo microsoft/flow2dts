@@ -1,0 +1,210 @@
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "React"
+            },
+            "error": "Could not get definition for /Libraries/Components/Switch/Switch.js.flow:2:12\r\nFailed to find imported file react\r\n"
+        },
+        "ColorValue": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "ColorValue"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 6
+                },
+                "end": {
+                    "row": 16,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        "SyntheticEvent": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "SyntheticEvent"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 19
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "ViewProps"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 377,
+                    "column": 6
+                },
+                "end": {
+                    "row": 377,
+                    "column": 14
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 82,
+                "column": 30,
+                "local": "Component"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 26,
+                    "column": 15
+                },
+                "end": {
+                    "row": 26,
+                    "column": 29
+                },
+                "libraryFolder": 0,
+                "file": "/react.js"
+            }
+        },
+        {
+            "source": {
+                "row": 85,
+                "column": 32,
+                "local": "Switch"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 76,
+                    "column": 15
+                },
+                "end": {
+                    "row": 76,
+                    "column": 20
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Switch/Switch.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 11,
+            "column": 7,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 6,
+            "local": "SwitchChangeEvent",
+            "type": "type"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "disabled",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 5,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 5,
+            "local": "thumbColor",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 9,
+            "local": "false",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 9,
+            "local": "true",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 5,
+            "local": "trackColor",
+            "type": "value"
+        },
+        {
+            "row": 58,
+            "column": 5,
+            "local": "ios_backgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 65,
+            "column": 5,
+            "local": "onChange",
+            "type": "value"
+        },
+        {
+            "row": 72,
+            "column": 5,
+            "local": "onValueChange",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 78,
+            "column": 3,
+            "local": "render",
+            "type": "value"
+        },
+        {
+            "row": 80,
+            "column": 3,
+            "local": "componentDidUpdate",
+            "type": "value"
+        },
+        {
+            "row": 76,
+            "column": 15,
+            "local": "Switch",
+            "type": "class"
+        },
+        {
+            "row": 82,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
+}

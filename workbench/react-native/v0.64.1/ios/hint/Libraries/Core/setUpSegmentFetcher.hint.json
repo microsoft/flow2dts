@@ -1,0 +1,105 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 36,
+                "local": "__fetchSegment"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 18
+                },
+                "end": {
+                    "row": 5,
+                    "column": 31
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Core/setUpSegmentFetcher.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 3,
+                "column": 34,
+                "local": "__getSegment"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 18
+                },
+                "end": {
+                    "row": 17,
+                    "column": 29
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Core/setUpSegmentFetcher.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 6,
+            "local": "FetchSegmentFunction",
+            "type": "type"
+        },
+        {
+            "row": 3,
+            "column": 6,
+            "local": "GetSegmentFunction",
+            "type": "type"
+        },
+        {
+            "row": 9,
+            "column": 7,
+            "local": "otaBuildNumber",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 7,
+            "local": "requestedModuleName",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 7,
+            "local": "segmentHash",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 18,
+            "local": "__fetchSegment",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 7,
+            "local": "otaBuildNumber",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 7,
+            "local": "requestedModuleName",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 7,
+            "local": "segmentHash",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 18,
+            "local": "__getSegment",
+            "type": "value"
+        }
+    ]
+}

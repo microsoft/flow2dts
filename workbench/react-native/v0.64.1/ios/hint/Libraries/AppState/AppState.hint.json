@@ -1,0 +1,183 @@
+{
+    "imports": {
+        "NativeEventEmitter": {
+            "source": {
+                "row": 2,
+                "column": 8,
+                "local": "NativeEventEmitter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 15
+                },
+                "end": {
+                    "row": 17,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
+            }
+        },
+        "EventEmitter": {
+            "source": {
+                "row": 4,
+                "column": 8,
+                "local": "EventEmitter"
+            },
+            "error": "[unrecognizable stdout]:0:1,0:0\r\n"
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 33,
+                "column": 24,
+                "local": "NativeEventEmitter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 15
+                },
+                "end": {
+                    "row": 17,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 52,
+                "column": 24,
+                "local": "EventEmitter"
+            },
+            "error": "[unrecognizable stdout]:0:1,0:0\r\n"
+        },
+        {
+            "source": {
+                "row": 56,
+                "column": 32,
+                "local": "AppStateInstance"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 54,
+                    "column": 13
+                },
+                "end": {
+                    "row": 54,
+                    "column": 28
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/AppState/AppState.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 8,
+            "column": 3,
+            "local": "currentState",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "isAvailable",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 3,
+            "local": "addEventListener",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 3,
+            "local": "removeEventListener",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 15,
+            "local": "AppState",
+            "type": "class"
+        },
+        {
+            "row": 33,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 3,
+            "local": "isAvailable",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 3,
+            "local": "currentState",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 3,
+            "local": "addEventListener",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "removeEventListener",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 3,
+            "local": "addListener",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 3,
+            "local": "removeAllListeners",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 3,
+            "local": "removeSubscription",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 15,
+            "local": "MissingNativeAppStateShim",
+            "type": "class"
+        },
+        {
+            "row": 52,
+            "column": 13,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 13,
+            "local": "AppStateInstance",
+            "type": "value"
+        }
+    ]
+}

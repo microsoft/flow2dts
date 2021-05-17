@@ -1,0 +1,26 @@
+{
+    "imports": {
+        "ReactNativeType": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ReactNativeType"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 160,
+                    "column": 6
+                },
+                "end": {
+                    "row": 160,
+                    "column": 20
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": []
+}

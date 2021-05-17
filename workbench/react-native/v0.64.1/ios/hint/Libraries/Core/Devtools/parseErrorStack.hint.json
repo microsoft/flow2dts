@@ -1,0 +1,89 @@
+{
+    "imports": {
+        "StackFrame": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "StackFrame"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 6
+                },
+                "end": {
+                    "row": 4,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Core/NativeExceptionsManager.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 18,
+                "column": 32,
+                "local": "parseErrorStack"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 15,
+                    "column": 18
+                },
+                "end": {
+                    "row": 15,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Core/Devtools/parseErrorStack.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 7,
+            "column": 5,
+            "local": "jsEngine",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 5,
+            "local": "preventSymbolication",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 5,
+            "local": "componentStack",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 5,
+            "local": "forceRedbox",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 5,
+            "local": "isComponentError",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 6,
+            "local": "ExtendedError",
+            "type": "type"
+        },
+        {
+            "row": 15,
+            "column": 18,
+            "local": "parseErrorStack",
+            "type": "value"
+        }
+    ]
+}

@@ -1,0 +1,158 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 54,
+                "column": 32,
+                "local": "AnimatedNode"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 15
+                },
+                "end": {
+                    "row": 2,
+                    "column": 26
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/nodes/AnimatedNode.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "__nativeAnimatedValueListener",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 3,
+            "local": "__attach",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "local": "__detach",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 3,
+            "local": "__getValue",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "__getAnimatedValue",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "__addChild",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "__removeChild",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "__getChildren",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "__isNative",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "__nativeTag",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "__shouldUpdateListenersForNewNativeTag",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "__makeNative",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 3,
+            "local": "addListener",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "removeListener",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "removeAllListeners",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 3,
+            "local": "hasListeners",
+            "type": "value"
+        },
+        {
+            "row": 47,
+            "column": 3,
+            "local": "__callListeners",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 3,
+            "local": "__getNativeTag",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 3,
+            "local": "__getNativeConfig",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 3,
+            "local": "toJSON",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 15,
+            "local": "AnimatedNode",
+            "type": "class"
+        }
+    ]
+}

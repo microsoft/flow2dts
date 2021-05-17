@@ -1,0 +1,217 @@
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "React"
+            },
+            "error": "Could not get definition for /Libraries/Components/Switch/AndroidSwitchNativeComponent.js.flow:2:12\r\nFailed to find imported file react\r\n"
+        },
+        "WithDefault": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "WithDefault"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 14
+                },
+                "end": {
+                    "row": 4,
+                    "column": 24
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Switch/AndroidSwitchNativeComponent.js.flow"
+            }
+        },
+        "BubblingEventHandler": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "BubblingEventHandler"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 14
+                },
+                "end": {
+                    "row": 5,
+                    "column": 33
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Switch/AndroidSwitchNativeComponent.js.flow"
+            }
+        },
+        "HostComponent": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "HostComponent"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 14
+                },
+                "end": {
+                    "row": 7,
+                    "column": 26
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Switch/AndroidSwitchNativeComponent.js.flow"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "ColorValue"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 6
+                },
+                "end": {
+                    "row": 16,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 10,
+                "column": 14,
+                "local": "ViewProps"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 377,
+                    "column": 6
+                },
+                "end": {
+                    "row": 377,
+                    "column": 14
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 14,
+            "column": 5,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 6,
+            "local": "SwitchChangeEvent",
+            "type": "type"
+        },
+        {
+            "row": 23,
+            "column": 5,
+            "local": "disabled",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 5,
+            "local": "enabled",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "thumbColor",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 5,
+            "local": "trackColorForFalse",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 5,
+            "local": "trackColorForTrue",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 5,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 5,
+            "local": "on",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 5,
+            "local": "thumbTintColor",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 5,
+            "local": "trackTintColor",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 5,
+            "local": "onChange",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 6,
+            "local": "NativeProps",
+            "type": "type"
+        },
+        {
+            "row": 38,
+            "column": 6,
+            "local": "NativeType",
+            "type": "type"
+        },
+        {
+            "row": 41,
+            "column": 4,
+            "local": "setNativeValue",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 11,
+            "local": "NativeCommands",
+            "type": "type"
+        },
+        {
+            "row": 47,
+            "column": 13,
+            "local": "Commands",
+            "type": "value"
+        }
+    ]
+}

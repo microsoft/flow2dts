@@ -1,0 +1,18 @@
+{
+    "imports": {},
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "showMessage",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 3,
+            "local": "hide",
+            "type": "value"
+        }
+    ]
+}

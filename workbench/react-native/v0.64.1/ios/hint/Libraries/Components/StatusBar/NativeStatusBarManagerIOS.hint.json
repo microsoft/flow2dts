@@ -1,0 +1,179 @@
+{
+    "imports": {
+        "TurboModule": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "TurboModule"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 11
+                },
+                "end": {
+                    "row": 6,
+                    "column": 21
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/TurboModule/RCTExport.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 59,
+                "column": 31,
+                "local": "NativeStatusBarManager"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 29,
+                    "column": 13
+                },
+                "end": {
+                    "row": 29,
+                    "column": 34
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/StatusBar/NativeStatusBarManagerIOS.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 6,
+            "column": 6,
+            "local": "HEIGHT",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 6,
+            "local": "DEFAULT_BACKGROUND_COLOR",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 4,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 37,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 4,
+            "local": "getHeight",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 4,
+            "local": "setNetworkActivityIndicatorVisible",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 4,
+            "local": "addListener",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 4,
+            "local": "removeListeners",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 4,
+            "local": "setStyle",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 4,
+            "local": "setHidden",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        },
+        {
+            "row": 31,
+            "column": 6,
+            "local": "HEIGHT",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 6,
+            "local": "DEFAULT_BACKGROUND_COLOR",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 3,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 34,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "getHeight",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 3,
+            "local": "setNetworkActivityIndicatorVisible",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 3,
+            "local": "addListener",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 3,
+            "local": "removeListeners",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 3,
+            "local": "setStyle",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 3,
+            "local": "setHidden",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 13,
+            "local": "NativeStatusBarManager",
+            "type": "value"
+        }
+    ]
+}

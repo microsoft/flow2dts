@@ -1,0 +1,3912 @@
+{
+    "imports": {},
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 22,
+            "column": 13,
+            "local": "NaN",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 13,
+            "local": "Infinity",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 13,
+            "local": "undefined",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 18,
+            "local": "parseInt",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 18,
+            "local": "parseFloat",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 18,
+            "local": "isNaN",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 18,
+            "local": "isFinite",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 18,
+            "local": "decodeURI",
+            "type": "value"
+        },
+        {
+            "row": 59,
+            "column": 18,
+            "local": "decodeURIComponent",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 18,
+            "local": "encodeURI",
+            "type": "value"
+        },
+        {
+            "row": 69,
+            "column": 18,
+            "local": "encodeURIComponent",
+            "type": "value"
+        },
+        {
+            "row": 72,
+            "column": 5,
+            "local": "enumerable",
+            "type": "value"
+        },
+        {
+            "row": 73,
+            "column": 5,
+            "local": "configurable",
+            "type": "value"
+        },
+        {
+            "row": 74,
+            "column": 5,
+            "local": "writable",
+            "type": "value"
+        },
+        {
+            "row": 75,
+            "column": 5,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 76,
+            "column": 5,
+            "local": "get",
+            "type": "value"
+        },
+        {
+            "row": 77,
+            "column": 5,
+            "local": "set",
+            "type": "value"
+        },
+        {
+            "row": 71,
+            "column": 6,
+            "local": "PropertyDescriptor",
+            "type": "type"
+        },
+        {
+            "row": 81,
+            "column": 6,
+            "local": "PropertyDescriptorMap",
+            "type": "type"
+        },
+        {
+            "row": 83,
+            "column": 6,
+            "local": "$NotNullOrVoid",
+            "type": "type"
+        },
+        {
+            "row": 102,
+            "column": 12,
+            "local": "assign",
+            "type": "value"
+        },
+        {
+            "row": 108,
+            "column": 12,
+            "local": "create",
+            "type": "value"
+        },
+        {
+            "row": 114,
+            "column": 12,
+            "local": "defineProperties",
+            "type": "value"
+        },
+        {
+            "row": 121,
+            "column": 12,
+            "local": "defineProperty",
+            "type": "value"
+        },
+        {
+            "row": 126,
+            "column": 12,
+            "local": "entries",
+            "type": "value"
+        },
+        {
+            "row": 131,
+            "column": 12,
+            "local": "freeze",
+            "type": "value"
+        },
+        {
+            "row": 136,
+            "column": 12,
+            "local": "fromEntries",
+            "type": "value"
+        },
+        {
+            "row": 148,
+            "column": 12,
+            "local": "getOwnPropertyDescriptor",
+            "type": "value"
+        },
+        {
+            "row": 154,
+            "column": 12,
+            "local": "getOwnPropertyDescriptors",
+            "type": "value"
+        },
+        {
+            "row": 162,
+            "column": 12,
+            "local": "getOwnPropertyNames",
+            "type": "value"
+        },
+        {
+            "row": 167,
+            "column": 12,
+            "local": "getOwnPropertySymbols",
+            "type": "value"
+        },
+        {
+            "row": 172,
+            "column": 12,
+            "local": "getPrototypeOf",
+            "type": "value"
+        },
+        {
+            "row": 178,
+            "column": 12,
+            "local": "is",
+            "type": "value"
+        },
+        {
+            "row": 183,
+            "column": 12,
+            "local": "isExtensible",
+            "type": "value"
+        },
+        {
+            "row": 188,
+            "column": 12,
+            "local": "isFrozen",
+            "type": "value"
+        },
+        {
+            "row": 189,
+            "column": 12,
+            "local": "isSealed",
+            "type": "value"
+        },
+        {
+            "row": 196,
+            "column": 12,
+            "local": "keys",
+            "type": "value"
+        },
+        {
+            "row": 201,
+            "column": 12,
+            "local": "preventExtensions",
+            "type": "value"
+        },
+        {
+            "row": 206,
+            "column": 12,
+            "local": "seal",
+            "type": "value"
+        },
+        {
+            "row": 212,
+            "column": 12,
+            "local": "setPrototypeOf",
+            "type": "value"
+        },
+        {
+            "row": 217,
+            "column": 12,
+            "local": "values",
+            "type": "value"
+        },
+        {
+            "row": 222,
+            "column": 5,
+            "local": "hasOwnProperty",
+            "type": "value"
+        },
+        {
+            "row": 227,
+            "column": 5,
+            "local": "isPrototypeOf",
+            "type": "value"
+        },
+        {
+            "row": 232,
+            "column": 5,
+            "local": "propertyIsEnumerable",
+            "type": "value"
+        },
+        {
+            "row": 234,
+            "column": 5,
+            "local": "toLocaleString",
+            "type": "value"
+        },
+        {
+            "row": 236,
+            "column": 5,
+            "local": "toString",
+            "type": "value"
+        },
+        {
+            "row": 238,
+            "column": 5,
+            "local": "valueOf",
+            "type": "value"
+        },
+        {
+            "row": 90,
+            "column": 15,
+            "local": "Object",
+            "type": "class"
+        },
+        {
+            "row": 266,
+            "column": 10,
+            "local": "for",
+            "type": "value"
+        },
+        {
+            "row": 270,
+            "column": 4,
+            "local": "description",
+            "type": "value"
+        },
+        {
+            "row": 275,
+            "column": 10,
+            "local": "hasInstance",
+            "type": "value"
+        },
+        {
+            "row": 280,
+            "column": 10,
+            "local": "isConcatSpreadable",
+            "type": "value"
+        },
+        {
+            "row": 281,
+            "column": 10,
+            "local": "iterator",
+            "type": "value"
+        },
+        {
+            "row": 287,
+            "column": 10,
+            "local": "keyFor",
+            "type": "value"
+        },
+        {
+            "row": 288,
+            "column": 10,
+            "local": "length",
+            "type": "value"
+        },
+        {
+            "row": 293,
+            "column": 10,
+            "local": "match",
+            "type": "value"
+        },
+        {
+            "row": 298,
+            "column": 10,
+            "local": "matchAll",
+            "type": "value"
+        },
+        {
+            "row": 303,
+            "column": 10,
+            "local": "replace",
+            "type": "value"
+        },
+        {
+            "row": 308,
+            "column": 10,
+            "local": "search",
+            "type": "value"
+        },
+        {
+            "row": 313,
+            "column": 10,
+            "local": "species",
+            "type": "value"
+        },
+        {
+            "row": 318,
+            "column": 10,
+            "local": "split",
+            "type": "value"
+        },
+        {
+            "row": 323,
+            "column": 10,
+            "local": "toPrimitive",
+            "type": "value"
+        },
+        {
+            "row": 328,
+            "column": 10,
+            "local": "toStringTag",
+            "type": "value"
+        },
+        {
+            "row": 333,
+            "column": 10,
+            "local": "unscopables",
+            "type": "value"
+        },
+        {
+            "row": 334,
+            "column": 3,
+            "local": "toString",
+            "type": "value"
+        },
+        {
+            "row": 335,
+            "column": 3,
+            "local": "valueOf",
+            "type": "value"
+        },
+        {
+            "row": 255,
+            "column": 15,
+            "local": "Symbol",
+            "type": "class"
+        },
+        {
+            "row": 340,
+            "column": 11,
+            "local": "apply",
+            "type": "value"
+        },
+        {
+            "row": 341,
+            "column": 11,
+            "local": "bind",
+            "type": "value"
+        },
+        {
+            "row": 342,
+            "column": 11,
+            "local": "call",
+            "type": "value"
+        },
+        {
+            "row": 344,
+            "column": 5,
+            "local": "toString",
+            "type": "value"
+        },
+        {
+            "row": 345,
+            "column": 5,
+            "local": "arguments",
+            "type": "value"
+        },
+        {
+            "row": 346,
+            "column": 5,
+            "local": "caller",
+            "type": "value"
+        },
+        {
+            "row": 347,
+            "column": 5,
+            "local": "length",
+            "type": "value"
+        },
+        {
+            "row": 351,
+            "column": 5,
+            "local": "name",
+            "type": "value"
+        },
+        {
+            "row": 339,
+            "column": 15,
+            "local": "Function",
+            "type": "class"
+        },
+        {
+            "row": 355,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 358,
+            "column": 5,
+            "local": "valueOf",
+            "type": "value"
+        },
+        {
+            "row": 359,
+            "column": 5,
+            "local": "toString",
+            "type": "value"
+        },
+        {
+            "row": 354,
+            "column": 15,
+            "local": "Boolean",
+            "type": "class"
+        },
+        {
+            "row": 369,
+            "column": 12,
+            "local": "EPSILON",
+            "type": "value"
+        },
+        {
+            "row": 375,
+            "column": 12,
+            "local": "MAX_SAFE_INTEGER",
+            "type": "value"
+        },
+        {
+            "row": 377,
+            "column": 12,
+            "local": "MAX_VALUE",
+            "type": "value"
+        },
+        {
+            "row": 383,
+            "column": 12,
+            "local": "MIN_SAFE_INTEGER",
+            "type": "value"
+        },
+        {
+            "row": 385,
+            "column": 12,
+            "local": "MIN_VALUE",
+            "type": "value"
+        },
+        {
+            "row": 390,
+            "column": 12,
+            "local": "NaN",
+            "type": "value"
+        },
+        {
+            "row": 395,
+            "column": 12,
+            "local": "NEGATIVE_INFINITY",
+            "type": "value"
+        },
+        {
+            "row": 400,
+            "column": 12,
+            "local": "POSITIVE_INFINITY",
+            "type": "value"
+        },
+        {
+            "row": 408,
+            "column": 12,
+            "local": "isFinite",
+            "type": "value"
+        },
+        {
+            "row": 413,
+            "column": 12,
+            "local": "isInteger",
+            "type": "value"
+        },
+        {
+            "row": 420,
+            "column": 12,
+            "local": "isNaN",
+            "type": "value"
+        },
+        {
+            "row": 425,
+            "column": 12,
+            "local": "isSafeInteger",
+            "type": "value"
+        },
+        {
+            "row": 430,
+            "column": 12,
+            "local": "parseFloat",
+            "type": "value"
+        },
+        {
+            "row": 438,
+            "column": 12,
+            "local": "parseInt",
+            "type": "value"
+        },
+        {
+            "row": 439,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 444,
+            "column": 5,
+            "local": "toExponential",
+            "type": "value"
+        },
+        {
+            "row": 449,
+            "column": 5,
+            "local": "toFixed",
+            "type": "value"
+        },
+        {
+            "row": 455,
+            "column": 5,
+            "local": "toLocaleString",
+            "type": "value"
+        },
+        {
+            "row": 460,
+            "column": 5,
+            "local": "toPrecision",
+            "type": "value"
+        },
+        {
+            "row": 465,
+            "column": 5,
+            "local": "toString",
+            "type": "value"
+        },
+        {
+            "row": 467,
+            "column": 5,
+            "local": "valueOf",
+            "type": "value"
+        },
+        {
+            "row": 363,
+            "column": 15,
+            "local": "Number",
+            "type": "class"
+        },
+        {
+            "row": 473,
+            "column": 5,
+            "local": "E",
+            "type": "value"
+        },
+        {
+            "row": 475,
+            "column": 5,
+            "local": "LN10",
+            "type": "value"
+        },
+        {
+            "row": 477,
+            "column": 5,
+            "local": "LN2",
+            "type": "value"
+        },
+        {
+            "row": 479,
+            "column": 5,
+            "local": "LOG10E",
+            "type": "value"
+        },
+        {
+            "row": 481,
+            "column": 5,
+            "local": "LOG2E",
+            "type": "value"
+        },
+        {
+            "row": 483,
+            "column": 5,
+            "local": "PI",
+            "type": "value"
+        },
+        {
+            "row": 485,
+            "column": 5,
+            "local": "SQRT1_2",
+            "type": "value"
+        },
+        {
+            "row": 487,
+            "column": 5,
+            "local": "SQRT2",
+            "type": "value"
+        },
+        {
+            "row": 493,
+            "column": 5,
+            "local": "abs",
+            "type": "value"
+        },
+        {
+            "row": 498,
+            "column": 5,
+            "local": "acos",
+            "type": "value"
+        },
+        {
+            "row": 503,
+            "column": 5,
+            "local": "acosh",
+            "type": "value"
+        },
+        {
+            "row": 508,
+            "column": 5,
+            "local": "asin",
+            "type": "value"
+        },
+        {
+            "row": 513,
+            "column": 5,
+            "local": "asinh",
+            "type": "value"
+        },
+        {
+            "row": 518,
+            "column": 5,
+            "local": "atan",
+            "type": "value"
+        },
+        {
+            "row": 524,
+            "column": 5,
+            "local": "atan2",
+            "type": "value"
+        },
+        {
+            "row": 529,
+            "column": 5,
+            "local": "atanh",
+            "type": "value"
+        },
+        {
+            "row": 534,
+            "column": 5,
+            "local": "cbrt",
+            "type": "value"
+        },
+        {
+            "row": 539,
+            "column": 5,
+            "local": "ceil",
+            "type": "value"
+        },
+        {
+            "row": 544,
+            "column": 5,
+            "local": "clz32",
+            "type": "value"
+        },
+        {
+            "row": 549,
+            "column": 5,
+            "local": "cos",
+            "type": "value"
+        },
+        {
+            "row": 554,
+            "column": 5,
+            "local": "cosh",
+            "type": "value"
+        },
+        {
+            "row": 559,
+            "column": 5,
+            "local": "exp",
+            "type": "value"
+        },
+        {
+            "row": 566,
+            "column": 5,
+            "local": "expm1",
+            "type": "value"
+        },
+        {
+            "row": 571,
+            "column": 5,
+            "local": "floor",
+            "type": "value"
+        },
+        {
+            "row": 576,
+            "column": 5,
+            "local": "fround",
+            "type": "value"
+        },
+        {
+            "row": 586,
+            "column": 5,
+            "local": "hypot",
+            "type": "value"
+        },
+        {
+            "row": 592,
+            "column": 5,
+            "local": "imul",
+            "type": "value"
+        },
+        {
+            "row": 597,
+            "column": 5,
+            "local": "log",
+            "type": "value"
+        },
+        {
+            "row": 602,
+            "column": 5,
+            "local": "log10",
+            "type": "value"
+        },
+        {
+            "row": 607,
+            "column": 5,
+            "local": "log1p",
+            "type": "value"
+        },
+        {
+            "row": 612,
+            "column": 5,
+            "local": "log2",
+            "type": "value"
+        },
+        {
+            "row": 617,
+            "column": 5,
+            "local": "max",
+            "type": "value"
+        },
+        {
+            "row": 622,
+            "column": 5,
+            "local": "min",
+            "type": "value"
+        },
+        {
+            "row": 628,
+            "column": 5,
+            "local": "pow",
+            "type": "value"
+        },
+        {
+            "row": 630,
+            "column": 5,
+            "local": "random",
+            "type": "value"
+        },
+        {
+            "row": 635,
+            "column": 5,
+            "local": "round",
+            "type": "value"
+        },
+        {
+            "row": 640,
+            "column": 5,
+            "local": "sign",
+            "type": "value"
+        },
+        {
+            "row": 645,
+            "column": 5,
+            "local": "sin",
+            "type": "value"
+        },
+        {
+            "row": 650,
+            "column": 5,
+            "local": "sinh",
+            "type": "value"
+        },
+        {
+            "row": 655,
+            "column": 5,
+            "local": "sqrt",
+            "type": "value"
+        },
+        {
+            "row": 660,
+            "column": 5,
+            "local": "tan",
+            "type": "value"
+        },
+        {
+            "row": 665,
+            "column": 5,
+            "local": "tanh",
+            "type": "value"
+        },
+        {
+            "row": 671,
+            "column": 5,
+            "local": "trunc",
+            "type": "value"
+        },
+        {
+            "row": 471,
+            "column": 13,
+            "local": "Math",
+            "type": "value"
+        },
+        {
+            "row": 679,
+            "column": 5,
+            "local": "@@iterator",
+            "type": "value"
+        },
+        {
+            "row": 683,
+            "column": 5,
+            "local": "toLocaleString",
+            "type": "value"
+        },
+        {
+            "row": 689,
+            "column": 5,
+            "local": "concat",
+            "type": "value"
+        },
+        {
+            "row": 693,
+            "column": 5,
+            "local": "entries",
+            "type": "value"
+        },
+        {
+            "row": 702,
+            "column": 5,
+            "local": "every",
+            "type": "value"
+        },
+        {
+            "row": 707,
+            "column": 5,
+            "local": "filter",
+            "type": "value"
+        },
+        {
+            "row": 713,
+            "column": 5,
+            "local": "filter",
+            "type": "value"
+        },
+        {
+            "row": 723,
+            "column": 5,
+            "local": "find",
+            "type": "value"
+        },
+        {
+            "row": 733,
+            "column": 5,
+            "local": "findIndex",
+            "type": "value"
+        },
+        {
+            "row": 739,
+            "column": 5,
+            "local": "forEach",
+            "type": "value"
+        },
+        {
+            "row": 745,
+            "column": 5,
+            "local": "includes",
+            "type": "value"
+        },
+        {
+            "row": 751,
+            "column": 5,
+            "local": "indexOf",
+            "type": "value"
+        },
+        {
+            "row": 756,
+            "column": 5,
+            "local": "join",
+            "type": "value"
+        },
+        {
+            "row": 760,
+            "column": 5,
+            "local": "keys",
+            "type": "value"
+        },
+        {
+            "row": 766,
+            "column": 5,
+            "local": "lastIndexOf",
+            "type": "value"
+        },
+        {
+            "row": 772,
+            "column": 5,
+            "local": "map",
+            "type": "value"
+        },
+        {
+            "row": 783,
+            "column": 5,
+            "local": "flatMap",
+            "type": "value"
+        },
+        {
+            "row": 790,
+            "column": 5,
+            "local": "flat",
+            "type": "value"
+        },
+        {
+            "row": 797,
+            "column": 5,
+            "local": "flat",
+            "type": "value"
+        },
+        {
+            "row": 804,
+            "column": 5,
+            "local": "flat",
+            "type": "value"
+        },
+        {
+            "row": 809,
+            "column": 5,
+            "local": "reduce",
+            "type": "value"
+        },
+        {
+            "row": 817,
+            "column": 5,
+            "local": "reduce",
+            "type": "value"
+        },
+        {
+            "row": 825,
+            "column": 5,
+            "local": "reduceRight",
+            "type": "value"
+        },
+        {
+            "row": 833,
+            "column": 5,
+            "local": "reduceRight",
+            "type": "value"
+        },
+        {
+            "row": 842,
+            "column": 5,
+            "local": "slice",
+            "type": "value"
+        },
+        {
+            "row": 851,
+            "column": 5,
+            "local": "some",
+            "type": "value"
+        },
+        {
+            "row": 855,
+            "column": 5,
+            "local": "values",
+            "type": "value"
+        },
+        {
+            "row": 860,
+            "column": 6,
+            "local": "length",
+            "type": "value"
+        },
+        {
+            "row": 678,
+            "column": 15,
+            "local": "$ReadOnlyArray",
+            "type": "class"
+        },
+        {
+            "row": 873,
+            "column": 5,
+            "local": "copyWithin",
+            "type": "value"
+        },
+        {
+            "row": 882,
+            "column": 5,
+            "local": "every",
+            "type": "value"
+        },
+        {
+            "row": 891,
+            "column": 5,
+            "local": "fill",
+            "type": "value"
+        },
+        {
+            "row": 896,
+            "column": 5,
+            "local": "filter",
+            "type": "value"
+        },
+        {
+            "row": 902,
+            "column": 5,
+            "local": "filter",
+            "type": "value"
+        },
+        {
+            "row": 912,
+            "column": 5,
+            "local": "find",
+            "type": "value"
+        },
+        {
+            "row": 922,
+            "column": 5,
+            "local": "findIndex",
+            "type": "value"
+        },
+        {
+            "row": 928,
+            "column": 5,
+            "local": "forEach",
+            "type": "value"
+        },
+        {
+            "row": 934,
+            "column": 5,
+            "local": "map",
+            "type": "value"
+        },
+        {
+            "row": 945,
+            "column": 5,
+            "local": "flatMap",
+            "type": "value"
+        },
+        {
+            "row": 949,
+            "column": 5,
+            "local": "pop",
+            "type": "value"
+        },
+        {
+            "row": 954,
+            "column": 5,
+            "local": "push",
+            "type": "value"
+        },
+        {
+            "row": 959,
+            "column": 5,
+            "local": "reduce",
+            "type": "value"
+        },
+        {
+            "row": 967,
+            "column": 5,
+            "local": "reduce",
+            "type": "value"
+        },
+        {
+            "row": 975,
+            "column": 5,
+            "local": "reduceRight",
+            "type": "value"
+        },
+        {
+            "row": 983,
+            "column": 5,
+            "local": "reduceRight",
+            "type": "value"
+        },
+        {
+            "row": 990,
+            "column": 5,
+            "local": "reverse",
+            "type": "value"
+        },
+        {
+            "row": 994,
+            "column": 5,
+            "local": "shift",
+            "type": "value"
+        },
+        {
+            "row": 995,
+            "column": 5,
+            "local": "some",
+            "type": "value"
+        },
+        {
+            "row": 996,
+            "column": 5,
+            "local": "sort",
+            "type": "value"
+        },
+        {
+            "row": 997,
+            "column": 5,
+            "local": "splice",
+            "type": "value"
+        },
+        {
+            "row": 998,
+            "column": 5,
+            "local": "unshift",
+            "type": "value"
+        },
+        {
+            "row": 1005,
+            "column": 5,
+            "local": "length",
+            "type": "value"
+        },
+        {
+            "row": 1007,
+            "column": 12,
+            "local": "isArray",
+            "type": "value"
+        },
+        {
+            "row": 1014,
+            "column": 12,
+            "local": "from",
+            "type": "value"
+        },
+        {
+            "row": 1019,
+            "column": 12,
+            "local": "from",
+            "type": "value"
+        },
+        {
+            "row": 1026,
+            "column": 12,
+            "local": "from",
+            "type": "value"
+        },
+        {
+            "row": 1031,
+            "column": 12,
+            "local": "from",
+            "type": "value"
+        },
+        {
+            "row": 1038,
+            "column": 33,
+            "local": "length",
+            "type": "value"
+        },
+        {
+            "row": 1038,
+            "column": 12,
+            "local": "from",
+            "type": "value"
+        },
+        {
+            "row": 1043,
+            "column": 30,
+            "local": "length",
+            "type": "value"
+        },
+        {
+            "row": 1043,
+            "column": 12,
+            "local": "from",
+            "type": "value"
+        },
+        {
+            "row": 1048,
+            "column": 12,
+            "local": "of",
+            "type": "value"
+        },
+        {
+            "row": 863,
+            "column": 15,
+            "local": "Array",
+            "type": "class"
+        },
+        {
+            "row": 1053,
+            "column": 3,
+            "local": "length",
+            "type": "value"
+        },
+        {
+            "row": 1051,
+            "column": 6,
+            "local": "$ArrayLike",
+            "type": "type"
+        },
+        {
+            "row": 1057,
+            "column": 6,
+            "local": "RegExp$flags",
+            "type": "type"
+        },
+        {
+            "row": 1059,
+            "column": 5,
+            "local": "index",
+            "type": "value"
+        },
+        {
+            "row": 1060,
+            "column": 5,
+            "local": "input",
+            "type": "value"
+        },
+        {
+            "row": 1061,
+            "column": 5,
+            "local": "groups",
+            "type": "value"
+        },
+        {
+            "row": 1058,
+            "column": 6,
+            "local": "RegExp$matchResult",
+            "type": "type"
+        },
+        {
+            "row": 1069,
+            "column": 5,
+            "local": "@@iterator",
+            "type": "value"
+        },
+        {
+            "row": 1074,
+            "column": 5,
+            "local": "anchor",
+            "type": "value"
+        },
+        {
+            "row": 1079,
+            "column": 5,
+            "local": "charAt",
+            "type": "value"
+        },
+        {
+            "row": 1084,
+            "column": 5,
+            "local": "charCodeAt",
+            "type": "value"
+        },
+        {
+            "row": 1092,
+            "column": 5,
+            "local": "codePointAt",
+            "type": "value"
+        },
+        {
+            "row": 1097,
+            "column": 5,
+            "local": "concat",
+            "type": "value"
+        },
+        {
+            "row": 1098,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 1104,
+            "column": 5,
+            "local": "endsWith",
+            "type": "value"
+        },
+        {
+            "row": 1112,
+            "column": 5,
+            "local": "includes",
+            "type": "value"
+        },
+        {
+            "row": 1118,
+            "column": 5,
+            "local": "indexOf",
+            "type": "value"
+        },
+        {
+            "row": 1124,
+            "column": 5,
+            "local": "lastIndexOf",
+            "type": "value"
+        },
+        {
+            "row": 1126,
+            "column": 5,
+            "local": "link",
+            "type": "value"
+        },
+        {
+            "row": 1133,
+            "column": 5,
+            "local": "localeCompare",
+            "type": "value"
+        },
+        {
+            "row": 1138,
+            "column": 5,
+            "local": "match",
+            "type": "value"
+        },
+        {
+            "row": 1144,
+            "column": 5,
+            "local": "matchAll",
+            "type": "value"
+        },
+        {
+            "row": 1151,
+            "column": 5,
+            "local": "normalize",
+            "type": "value"
+        },
+        {
+            "row": 1163,
+            "column": 5,
+            "local": "padEnd",
+            "type": "value"
+        },
+        {
+            "row": 1175,
+            "column": 5,
+            "local": "padStart",
+            "type": "value"
+        },
+        {
+            "row": 1181,
+            "column": 5,
+            "local": "repeat",
+            "type": "value"
+        },
+        {
+            "row": 1187,
+            "column": 5,
+            "local": "replace",
+            "type": "value"
+        },
+        {
+            "row": 1192,
+            "column": 5,
+            "local": "search",
+            "type": "value"
+        },
+        {
+            "row": 1199,
+            "column": 5,
+            "local": "slice",
+            "type": "value"
+        },
+        {
+            "row": 1205,
+            "column": 5,
+            "local": "split",
+            "type": "value"
+        },
+        {
+            "row": 1211,
+            "column": 5,
+            "local": "startsWith",
+            "type": "value"
+        },
+        {
+            "row": 1217,
+            "column": 5,
+            "local": "substr",
+            "type": "value"
+        },
+        {
+            "row": 1224,
+            "column": 5,
+            "local": "substring",
+            "type": "value"
+        },
+        {
+            "row": 1226,
+            "column": 5,
+            "local": "toLocaleLowerCase",
+            "type": "value"
+        },
+        {
+            "row": 1228,
+            "column": 5,
+            "local": "toLocaleUpperCase",
+            "type": "value"
+        },
+        {
+            "row": 1230,
+            "column": 5,
+            "local": "toLowerCase",
+            "type": "value"
+        },
+        {
+            "row": 1232,
+            "column": 5,
+            "local": "toUpperCase",
+            "type": "value"
+        },
+        {
+            "row": 1234,
+            "column": 5,
+            "local": "trim",
+            "type": "value"
+        },
+        {
+            "row": 1236,
+            "column": 5,
+            "local": "trimEnd",
+            "type": "value"
+        },
+        {
+            "row": 1238,
+            "column": 5,
+            "local": "trimLeft",
+            "type": "value"
+        },
+        {
+            "row": 1240,
+            "column": 5,
+            "local": "trimRight",
+            "type": "value"
+        },
+        {
+            "row": 1242,
+            "column": 5,
+            "local": "trimStart",
+            "type": "value"
+        },
+        {
+            "row": 1244,
+            "column": 5,
+            "local": "valueOf",
+            "type": "value"
+        },
+        {
+            "row": 1246,
+            "column": 5,
+            "local": "toString",
+            "type": "value"
+        },
+        {
+            "row": 1248,
+            "column": 5,
+            "local": "length",
+            "type": "value"
+        },
+        {
+            "row": 1251,
+            "column": 12,
+            "local": "fromCharCode",
+            "type": "value"
+        },
+        {
+            "row": 1256,
+            "column": 12,
+            "local": "fromCodePoint",
+            "type": "value"
+        },
+        {
+            "row": 1263,
+            "column": 12,
+            "local": "raw",
+            "type": "value"
+        },
+        {
+            "row": 1271,
+            "column": 35,
+            "local": "raw",
+            "type": "value"
+        },
+        {
+            "row": 1271,
+            "column": 12,
+            "local": "raw",
+            "type": "value"
+        },
+        {
+            "row": 1068,
+            "column": 15,
+            "local": "String",
+            "type": "class"
+        },
+        {
+            "row": 1276,
+            "column": 5,
+            "local": "compile",
+            "type": "value"
+        },
+        {
+            "row": 1277,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 1282,
+            "column": 5,
+            "local": "exec",
+            "type": "value"
+        },
+        {
+            "row": 1295,
+            "column": 5,
+            "local": "flags",
+            "type": "value"
+        },
+        {
+            "row": 1297,
+            "column": 5,
+            "local": "global",
+            "type": "value"
+        },
+        {
+            "row": 1299,
+            "column": 5,
+            "local": "ignoreCase",
+            "type": "value"
+        },
+        {
+            "row": 1300,
+            "column": 5,
+            "local": "lastIndex",
+            "type": "value"
+        },
+        {
+            "row": 1302,
+            "column": 5,
+            "local": "multiline",
+            "type": "value"
+        },
+        {
+            "row": 1304,
+            "column": 5,
+            "local": "source",
+            "type": "value"
+        },
+        {
+            "row": 1309,
+            "column": 5,
+            "local": "sticky",
+            "type": "value"
+        },
+        {
+            "row": 1314,
+            "column": 5,
+            "local": "unicode",
+            "type": "value"
+        },
+        {
+            "row": 1319,
+            "column": 5,
+            "local": "dotAll",
+            "type": "value"
+        },
+        {
+            "row": 1324,
+            "column": 5,
+            "local": "test",
+            "type": "value"
+        },
+        {
+            "row": 1325,
+            "column": 5,
+            "local": "toString",
+            "type": "value"
+        },
+        {
+            "row": 1274,
+            "column": 15,
+            "local": "RegExp",
+            "type": "class"
+        },
+        {
+            "row": 1331,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 1332,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 1333,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 1334,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 1335,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 1337,
+            "column": 5,
+            "local": "getDate",
+            "type": "value"
+        },
+        {
+            "row": 1339,
+            "column": 5,
+            "local": "getDay",
+            "type": "value"
+        },
+        {
+            "row": 1341,
+            "column": 5,
+            "local": "getFullYear",
+            "type": "value"
+        },
+        {
+            "row": 1343,
+            "column": 5,
+            "local": "getHours",
+            "type": "value"
+        },
+        {
+            "row": 1345,
+            "column": 5,
+            "local": "getMilliseconds",
+            "type": "value"
+        },
+        {
+            "row": 1347,
+            "column": 5,
+            "local": "getMinutes",
+            "type": "value"
+        },
+        {
+            "row": 1349,
+            "column": 5,
+            "local": "getMonth",
+            "type": "value"
+        },
+        {
+            "row": 1351,
+            "column": 5,
+            "local": "getSeconds",
+            "type": "value"
+        },
+        {
+            "row": 1353,
+            "column": 5,
+            "local": "getTime",
+            "type": "value"
+        },
+        {
+            "row": 1355,
+            "column": 5,
+            "local": "getTimezoneOffset",
+            "type": "value"
+        },
+        {
+            "row": 1357,
+            "column": 5,
+            "local": "getUTCDate",
+            "type": "value"
+        },
+        {
+            "row": 1359,
+            "column": 5,
+            "local": "getUTCDay",
+            "type": "value"
+        },
+        {
+            "row": 1361,
+            "column": 5,
+            "local": "getUTCFullYear",
+            "type": "value"
+        },
+        {
+            "row": 1363,
+            "column": 5,
+            "local": "getUTCHours",
+            "type": "value"
+        },
+        {
+            "row": 1365,
+            "column": 5,
+            "local": "getUTCMilliseconds",
+            "type": "value"
+        },
+        {
+            "row": 1367,
+            "column": 5,
+            "local": "getUTCMinutes",
+            "type": "value"
+        },
+        {
+            "row": 1369,
+            "column": 5,
+            "local": "getUTCMonth",
+            "type": "value"
+        },
+        {
+            "row": 1371,
+            "column": 5,
+            "local": "getUTCSeconds",
+            "type": "value"
+        },
+        {
+            "row": 1376,
+            "column": 5,
+            "local": "setDate",
+            "type": "value"
+        },
+        {
+            "row": 1383,
+            "column": 5,
+            "local": "setFullYear",
+            "type": "value"
+        },
+        {
+            "row": 1391,
+            "column": 5,
+            "local": "setHours",
+            "type": "value"
+        },
+        {
+            "row": 1396,
+            "column": 5,
+            "local": "setMilliseconds",
+            "type": "value"
+        },
+        {
+            "row": 1403,
+            "column": 5,
+            "local": "setMinutes",
+            "type": "value"
+        },
+        {
+            "row": 1409,
+            "column": 5,
+            "local": "setMonth",
+            "type": "value"
+        },
+        {
+            "row": 1415,
+            "column": 5,
+            "local": "setSeconds",
+            "type": "value"
+        },
+        {
+            "row": 1420,
+            "column": 5,
+            "local": "setTime",
+            "type": "value"
+        },
+        {
+            "row": 1425,
+            "column": 5,
+            "local": "setUTCDate",
+            "type": "value"
+        },
+        {
+            "row": 1432,
+            "column": 5,
+            "local": "setUTCFullYear",
+            "type": "value"
+        },
+        {
+            "row": 1440,
+            "column": 5,
+            "local": "setUTCHours",
+            "type": "value"
+        },
+        {
+            "row": 1445,
+            "column": 5,
+            "local": "setUTCMilliseconds",
+            "type": "value"
+        },
+        {
+            "row": 1452,
+            "column": 5,
+            "local": "setUTCMinutes",
+            "type": "value"
+        },
+        {
+            "row": 1458,
+            "column": 5,
+            "local": "setUTCMonth",
+            "type": "value"
+        },
+        {
+            "row": 1464,
+            "column": 5,
+            "local": "setUTCSeconds",
+            "type": "value"
+        },
+        {
+            "row": 1466,
+            "column": 5,
+            "local": "toDateString",
+            "type": "value"
+        },
+        {
+            "row": 1468,
+            "column": 5,
+            "local": "toISOString",
+            "type": "value"
+        },
+        {
+            "row": 1470,
+            "column": 5,
+            "local": "toJSON",
+            "type": "value"
+        },
+        {
+            "row": 1476,
+            "column": 5,
+            "local": "toLocaleDateString",
+            "type": "value"
+        },
+        {
+            "row": 1482,
+            "column": 5,
+            "local": "toLocaleString",
+            "type": "value"
+        },
+        {
+            "row": 1488,
+            "column": 5,
+            "local": "toLocaleTimeString",
+            "type": "value"
+        },
+        {
+            "row": 1490,
+            "column": 5,
+            "local": "toTimeString",
+            "type": "value"
+        },
+        {
+            "row": 1492,
+            "column": 5,
+            "local": "toUTCString",
+            "type": "value"
+        },
+        {
+            "row": 1494,
+            "column": 5,
+            "local": "valueOf",
+            "type": "value"
+        },
+        {
+            "row": 1497,
+            "column": 12,
+            "local": "now",
+            "type": "value"
+        },
+        {
+            "row": 1502,
+            "column": 12,
+            "local": "parse",
+            "type": "value"
+        },
+        {
+            "row": 1513,
+            "column": 12,
+            "local": "UTC",
+            "type": "value"
+        },
+        {
+            "row": 1330,
+            "column": 15,
+            "local": "Date",
+            "type": "class"
+        },
+        {
+            "row": 1519,
+            "column": 5,
+            "local": "getThis",
+            "type": "value"
+        },
+        {
+            "row": 1520,
+            "column": 5,
+            "local": "getTypeName",
+            "type": "value"
+        },
+        {
+            "row": 1521,
+            "column": 5,
+            "local": "getFunction",
+            "type": "value"
+        },
+        {
+            "row": 1522,
+            "column": 5,
+            "local": "getFunctionName",
+            "type": "value"
+        },
+        {
+            "row": 1523,
+            "column": 5,
+            "local": "getMethodName",
+            "type": "value"
+        },
+        {
+            "row": 1524,
+            "column": 5,
+            "local": "getFileName",
+            "type": "value"
+        },
+        {
+            "row": 1525,
+            "column": 5,
+            "local": "getLineNumber",
+            "type": "value"
+        },
+        {
+            "row": 1526,
+            "column": 5,
+            "local": "getColumnNumber",
+            "type": "value"
+        },
+        {
+            "row": 1527,
+            "column": 5,
+            "local": "getEvalOrigin",
+            "type": "value"
+        },
+        {
+            "row": 1528,
+            "column": 5,
+            "local": "getScriptNameOrSourceURL",
+            "type": "value"
+        },
+        {
+            "row": 1529,
+            "column": 5,
+            "local": "isToplevel",
+            "type": "value"
+        },
+        {
+            "row": 1530,
+            "column": 5,
+            "local": "isEval",
+            "type": "value"
+        },
+        {
+            "row": 1531,
+            "column": 5,
+            "local": "isNative",
+            "type": "value"
+        },
+        {
+            "row": 1532,
+            "column": 5,
+            "local": "isConstructor",
+            "type": "value"
+        },
+        {
+            "row": 1533,
+            "column": 5,
+            "local": "toString",
+            "type": "value"
+        },
+        {
+            "row": 1518,
+            "column": 15,
+            "local": "CallSite",
+            "type": "class"
+        },
+        {
+            "row": 1538,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 1539,
+            "column": 5,
+            "local": "name",
+            "type": "value"
+        },
+        {
+            "row": 1540,
+            "column": 5,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 1541,
+            "column": 5,
+            "local": "stack",
+            "type": "value"
+        },
+        {
+            "row": 1542,
+            "column": 5,
+            "local": "toString",
+            "type": "value"
+        },
+        {
+            "row": 1545,
+            "column": 5,
+            "local": "description",
+            "type": "value"
+        },
+        {
+            "row": 1546,
+            "column": 5,
+            "local": "number",
+            "type": "value"
+        },
+        {
+            "row": 1549,
+            "column": 5,
+            "local": "fileName",
+            "type": "value"
+        },
+        {
+            "row": 1550,
+            "column": 5,
+            "local": "lineNumber",
+            "type": "value"
+        },
+        {
+            "row": 1551,
+            "column": 5,
+            "local": "columnNumber",
+            "type": "value"
+        },
+        {
+            "row": 1554,
+            "column": 12,
+            "local": "captureStackTrace",
+            "type": "value"
+        },
+        {
+            "row": 1556,
+            "column": 12,
+            "local": "stackTraceLimit",
+            "type": "value"
+        },
+        {
+            "row": 1557,
+            "column": 12,
+            "local": "prepareStackTrace",
+            "type": "value"
+        },
+        {
+            "row": 1536,
+            "column": 15,
+            "local": "Error",
+            "type": "class"
+        },
+        {
+            "row": 1560,
+            "column": 15,
+            "local": "EvalError",
+            "type": "class"
+        },
+        {
+            "row": 1564,
+            "column": 15,
+            "local": "RangeError",
+            "type": "class"
+        },
+        {
+            "row": 1568,
+            "column": 15,
+            "local": "ReferenceError",
+            "type": "class"
+        },
+        {
+            "row": 1572,
+            "column": 15,
+            "local": "SyntaxError",
+            "type": "class"
+        },
+        {
+            "row": 1576,
+            "column": 15,
+            "local": "TypeError",
+            "type": "class"
+        },
+        {
+            "row": 1580,
+            "column": 15,
+            "local": "URIError",
+            "type": "class"
+        },
+        {
+            "row": 1594,
+            "column": 12,
+            "local": "parse",
+            "type": "value"
+        },
+        {
+            "row": 1601,
+            "column": 12,
+            "local": "stringify",
+            "type": "value"
+        },
+        {
+            "row": 1612,
+            "column": 12,
+            "local": "stringify",
+            "type": "value"
+        },
+        {
+            "row": 1587,
+            "column": 15,
+            "local": "JSON",
+            "type": "class"
+        },
+        {
+            "row": 1623,
+            "column": 5,
+            "local": "done",
+            "type": "value"
+        },
+        {
+            "row": 1624,
+            "column": 6,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 1628,
+            "column": 5,
+            "local": "done",
+            "type": "value"
+        },
+        {
+            "row": 1629,
+            "column": 6,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 1621,
+            "column": 6,
+            "local": "IteratorResult",
+            "type": "type"
+        },
+        {
+            "row": 1634,
+            "column": 5,
+            "local": "@@iterator",
+            "type": "value"
+        },
+        {
+            "row": 1635,
+            "column": 5,
+            "local": "next",
+            "type": "value"
+        },
+        {
+            "row": 1633,
+            "column": 11,
+            "local": "$Iterator",
+            "type": "type"
+        },
+        {
+            "row": 1637,
+            "column": 6,
+            "local": "Iterator",
+            "type": "type"
+        },
+        {
+            "row": 1640,
+            "column": 5,
+            "local": "@@iterator",
+            "type": "value"
+        },
+        {
+            "row": 1639,
+            "column": 11,
+            "local": "$Iterable",
+            "type": "type"
+        },
+        {
+            "row": 1642,
+            "column": 6,
+            "local": "Iterable",
+            "type": "type"
+        },
+        {
+            "row": 1645,
+            "column": 5,
+            "local": "@@iterator",
+            "type": "value"
+        },
+        {
+            "row": 1646,
+            "column": 5,
+            "local": "next",
+            "type": "value"
+        },
+        {
+            "row": 1647,
+            "column": 5,
+            "local": "return",
+            "type": "value"
+        },
+        {
+            "row": 1648,
+            "column": 5,
+            "local": "throw",
+            "type": "value"
+        },
+        {
+            "row": 1644,
+            "column": 11,
+            "local": "Generator",
+            "type": "type"
+        },
+        {
+            "row": 1651,
+            "column": 18,
+            "local": "$iterate",
+            "type": "value"
+        },
+        {
+            "row": 1656,
+            "column": 5,
+            "local": "@@asyncIterator",
+            "type": "value"
+        },
+        {
+            "row": 1657,
+            "column": 5,
+            "local": "next",
+            "type": "value"
+        },
+        {
+            "row": 1655,
+            "column": 11,
+            "local": "$AsyncIterator",
+            "type": "type"
+        },
+        {
+            "row": 1659,
+            "column": 6,
+            "local": "AsyncIterator",
+            "type": "type"
+        },
+        {
+            "row": 1662,
+            "column": 5,
+            "local": "@@asyncIterator",
+            "type": "value"
+        },
+        {
+            "row": 1661,
+            "column": 11,
+            "local": "$AsyncIterable",
+            "type": "type"
+        },
+        {
+            "row": 1664,
+            "column": 6,
+            "local": "AsyncIterable",
+            "type": "type"
+        },
+        {
+            "row": 1667,
+            "column": 5,
+            "local": "@@asyncIterator",
+            "type": "value"
+        },
+        {
+            "row": 1668,
+            "column": 5,
+            "local": "next",
+            "type": "value"
+        },
+        {
+            "row": 1669,
+            "column": 5,
+            "local": "return",
+            "type": "value"
+        },
+        {
+            "row": 1670,
+            "column": 5,
+            "local": "throw",
+            "type": "value"
+        },
+        {
+            "row": 1666,
+            "column": 11,
+            "local": "AsyncGenerator",
+            "type": "type"
+        },
+        {
+            "row": 1673,
+            "column": 18,
+            "local": "$asyncIterator",
+            "type": "value"
+        },
+        {
+            "row": 1678,
+            "column": 5,
+            "local": "@@iterator",
+            "type": "value"
+        },
+        {
+            "row": 1682,
+            "column": 5,
+            "local": "entries",
+            "type": "value"
+        },
+        {
+            "row": 1683,
+            "column": 5,
+            "local": "forEach",
+            "type": "value"
+        },
+        {
+            "row": 1684,
+            "column": 5,
+            "local": "get",
+            "type": "value"
+        },
+        {
+            "row": 1685,
+            "column": 5,
+            "local": "has",
+            "type": "value"
+        },
+        {
+            "row": 1689,
+            "column": 5,
+            "local": "keys",
+            "type": "value"
+        },
+        {
+            "row": 1690,
+            "column": 5,
+            "local": "size",
+            "type": "value"
+        },
+        {
+            "row": 1694,
+            "column": 5,
+            "local": "values",
+            "type": "value"
+        },
+        {
+            "row": 1677,
+            "column": 15,
+            "local": "$ReadOnlyMap",
+            "type": "class"
+        },
+        {
+            "row": 1698,
+            "column": 5,
+            "local": "@@iterator",
+            "type": "value"
+        },
+        {
+            "row": 1699,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 1700,
+            "column": 5,
+            "local": "clear",
+            "type": "value"
+        },
+        {
+            "row": 1701,
+            "column": 5,
+            "local": "delete",
+            "type": "value"
+        },
+        {
+            "row": 1705,
+            "column": 5,
+            "local": "entries",
+            "type": "value"
+        },
+        {
+            "row": 1706,
+            "column": 5,
+            "local": "forEach",
+            "type": "value"
+        },
+        {
+            "row": 1707,
+            "column": 5,
+            "local": "get",
+            "type": "value"
+        },
+        {
+            "row": 1708,
+            "column": 5,
+            "local": "has",
+            "type": "value"
+        },
+        {
+            "row": 1712,
+            "column": 5,
+            "local": "keys",
+            "type": "value"
+        },
+        {
+            "row": 1713,
+            "column": 5,
+            "local": "set",
+            "type": "value"
+        },
+        {
+            "row": 1714,
+            "column": 5,
+            "local": "size",
+            "type": "value"
+        },
+        {
+            "row": 1718,
+            "column": 5,
+            "local": "values",
+            "type": "value"
+        },
+        {
+            "row": 1697,
+            "column": 15,
+            "local": "Map",
+            "type": "class"
+        },
+        {
+            "row": 1725,
+            "column": 5,
+            "local": "get",
+            "type": "value"
+        },
+        {
+            "row": 1726,
+            "column": 5,
+            "local": "has",
+            "type": "value"
+        },
+        {
+            "row": 1724,
+            "column": 15,
+            "local": "$ReadOnlyWeakMap",
+            "type": "class"
+        },
+        {
+            "row": 1730,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 1731,
+            "column": 5,
+            "local": "delete",
+            "type": "value"
+        },
+        {
+            "row": 1732,
+            "column": 5,
+            "local": "get",
+            "type": "value"
+        },
+        {
+            "row": 1733,
+            "column": 5,
+            "local": "has",
+            "type": "value"
+        },
+        {
+            "row": 1734,
+            "column": 5,
+            "local": "set",
+            "type": "value"
+        },
+        {
+            "row": 1729,
+            "column": 15,
+            "local": "WeakMap",
+            "type": "class"
+        },
+        {
+            "row": 1738,
+            "column": 5,
+            "local": "@@iterator",
+            "type": "value"
+        },
+        {
+            "row": 1742,
+            "column": 5,
+            "local": "entries",
+            "type": "value"
+        },
+        {
+            "row": 1743,
+            "column": 5,
+            "local": "forEach",
+            "type": "value"
+        },
+        {
+            "row": 1744,
+            "column": 5,
+            "local": "has",
+            "type": "value"
+        },
+        {
+            "row": 1748,
+            "column": 5,
+            "local": "keys",
+            "type": "value"
+        },
+        {
+            "row": 1749,
+            "column": 5,
+            "local": "size",
+            "type": "value"
+        },
+        {
+            "row": 1753,
+            "column": 5,
+            "local": "values",
+            "type": "value"
+        },
+        {
+            "row": 1737,
+            "column": 15,
+            "local": "$ReadOnlySet",
+            "type": "class"
+        },
+        {
+            "row": 1757,
+            "column": 5,
+            "local": "@@iterator",
+            "type": "value"
+        },
+        {
+            "row": 1758,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 1759,
+            "column": 5,
+            "local": "add",
+            "type": "value"
+        },
+        {
+            "row": 1760,
+            "column": 5,
+            "local": "clear",
+            "type": "value"
+        },
+        {
+            "row": 1761,
+            "column": 5,
+            "local": "delete",
+            "type": "value"
+        },
+        {
+            "row": 1765,
+            "column": 5,
+            "local": "entries",
+            "type": "value"
+        },
+        {
+            "row": 1766,
+            "column": 5,
+            "local": "forEach",
+            "type": "value"
+        },
+        {
+            "row": 1767,
+            "column": 5,
+            "local": "has",
+            "type": "value"
+        },
+        {
+            "row": 1771,
+            "column": 5,
+            "local": "keys",
+            "type": "value"
+        },
+        {
+            "row": 1772,
+            "column": 5,
+            "local": "size",
+            "type": "value"
+        },
+        {
+            "row": 1776,
+            "column": 5,
+            "local": "values",
+            "type": "value"
+        },
+        {
+            "row": 1756,
+            "column": 15,
+            "local": "Set",
+            "type": "class"
+        },
+        {
+            "row": 1782,
+            "column": 5,
+            "local": "has",
+            "type": "value"
+        },
+        {
+            "row": 1781,
+            "column": 15,
+            "local": "$ReadOnlyWeakSet",
+            "type": "class"
+        },
+        {
+            "row": 1786,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 1787,
+            "column": 5,
+            "local": "add",
+            "type": "value"
+        },
+        {
+            "row": 1788,
+            "column": 5,
+            "local": "delete",
+            "type": "value"
+        },
+        {
+            "row": 1789,
+            "column": 5,
+            "local": "has",
+            "type": "value"
+        },
+        {
+            "row": 1785,
+            "column": 15,
+            "local": "WeakSet",
+            "type": "class"
+        },
+        {
+            "row": 1799,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 1810,
+            "column": 5,
+            "local": "then",
+            "type": "value"
+        },
+        {
+            "row": 1817,
+            "column": 5,
+            "local": "then",
+            "type": "value"
+        },
+        {
+            "row": 1827,
+            "column": 5,
+            "local": "then",
+            "type": "value"
+        },
+        {
+            "row": 1837,
+            "column": 5,
+            "local": "catch",
+            "type": "value"
+        },
+        {
+            "row": 1843,
+            "column": 5,
+            "local": "catch",
+            "type": "value"
+        },
+        {
+            "row": 1853,
+            "column": 5,
+            "local": "finally",
+            "type": "value"
+        },
+        {
+            "row": 1860,
+            "column": 12,
+            "local": "resolve",
+            "type": "value"
+        },
+        {
+            "row": 1866,
+            "column": 12,
+            "local": "reject",
+            "type": "value"
+        },
+        {
+            "row": 1873,
+            "column": 12,
+            "local": "all",
+            "type": "value"
+        },
+        {
+            "row": 1880,
+            "column": 12,
+            "local": "allSettled",
+            "type": "value"
+        },
+        {
+            "row": 1887,
+            "column": 12,
+            "local": "race",
+            "type": "value"
+        },
+        {
+            "row": 1798,
+            "column": 15,
+            "local": "Promise",
+            "type": "class"
+        },
+        {
+            "row": 1891,
+            "column": 4,
+            "local": "status",
+            "type": "value"
+        },
+        {
+            "row": 1892,
+            "column": 4,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 1894,
+            "column": 4,
+            "local": "status",
+            "type": "value"
+        },
+        {
+            "row": 1895,
+            "column": 4,
+            "local": "reason",
+            "type": "value"
+        },
+        {
+            "row": 1890,
+            "column": 6,
+            "local": "$SettledPromiseResult",
+            "type": "type"
+        },
+        {
+            "row": 1899,
+            "column": 18,
+            "local": "$await",
+            "type": "value"
+        },
+        {
+            "row": 1904,
+            "column": 12,
+            "local": "isView",
+            "type": "value"
+        },
+        {
+            "row": 1905,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 1906,
+            "column": 5,
+            "local": "byteLength",
+            "type": "value"
+        },
+        {
+            "row": 1907,
+            "column": 5,
+            "local": "slice",
+            "type": "value"
+        },
+        {
+            "row": 1903,
+            "column": 15,
+            "local": "ArrayBuffer",
+            "type": "class"
+        },
+        {
+            "row": 1914,
+            "column": 6,
+            "local": "$ArrayBufferView",
+            "type": "type"
+        },
+        {
+            "row": 1923,
+            "column": 12,
+            "local": "BYTES_PER_ELEMENT",
+            "type": "value"
+        },
+        {
+            "row": 1924,
+            "column": 12,
+            "local": "from",
+            "type": "value"
+        },
+        {
+            "row": 1925,
+            "column": 12,
+            "local": "of",
+            "type": "value"
+        },
+        {
+            "row": 1927,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 1928,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 1929,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 1930,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 1934,
+            "column": 5,
+            "local": "@@iterator",
+            "type": "value"
+        },
+        {
+            "row": 1939,
+            "column": 5,
+            "local": "buffer",
+            "type": "value"
+        },
+        {
+            "row": 1943,
+            "column": 5,
+            "local": "byteLength",
+            "type": "value"
+        },
+        {
+            "row": 1947,
+            "column": 5,
+            "local": "byteOffset",
+            "type": "value"
+        },
+        {
+            "row": 1951,
+            "column": 5,
+            "local": "length",
+            "type": "value"
+        },
+        {
+            "row": 1962,
+            "column": 5,
+            "local": "copyWithin",
+            "type": "value"
+        },
+        {
+            "row": 1966,
+            "column": 5,
+            "local": "entries",
+            "type": "value"
+        },
+        {
+            "row": 1975,
+            "column": 5,
+            "local": "every",
+            "type": "value"
+        },
+        {
+            "row": 1984,
+            "column": 5,
+            "local": "fill",
+            "type": "value"
+        },
+        {
+            "row": 1992,
+            "column": 5,
+            "local": "filter",
+            "type": "value"
+        },
+        {
+            "row": 2002,
+            "column": 5,
+            "local": "find",
+            "type": "value"
+        },
+        {
+            "row": 2012,
+            "column": 5,
+            "local": "findIndex",
+            "type": "value"
+        },
+        {
+            "row": 2020,
+            "column": 5,
+            "local": "forEach",
+            "type": "value"
+        },
+        {
+            "row": 2026,
+            "column": 5,
+            "local": "includes",
+            "type": "value"
+        },
+        {
+            "row": 2033,
+            "column": 5,
+            "local": "indexOf",
+            "type": "value"
+        },
+        {
+            "row": 2039,
+            "column": 5,
+            "local": "join",
+            "type": "value"
+        },
+        {
+            "row": 2043,
+            "column": 5,
+            "local": "keys",
+            "type": "value"
+        },
+        {
+            "row": 2050,
+            "column": 5,
+            "local": "lastIndexOf",
+            "type": "value"
+        },
+        {
+            "row": 2059,
+            "column": 5,
+            "local": "map",
+            "type": "value"
+        },
+        {
+            "row": 2070,
+            "column": 5,
+            "local": "reduce",
+            "type": "value"
+        },
+        {
+            "row": 2084,
+            "column": 5,
+            "local": "reduce",
+            "type": "value"
+        },
+        {
+            "row": 2098,
+            "column": 5,
+            "local": "reduceRight",
+            "type": "value"
+        },
+        {
+            "row": 2112,
+            "column": 5,
+            "local": "reduceRight",
+            "type": "value"
+        },
+        {
+            "row": 2119,
+            "column": 5,
+            "local": "reverse",
+            "type": "value"
+        },
+        {
+            "row": 2125,
+            "column": 5,
+            "local": "set",
+            "type": "value"
+        },
+        {
+            "row": 2131,
+            "column": 5,
+            "local": "slice",
+            "type": "value"
+        },
+        {
+            "row": 2140,
+            "column": 5,
+            "local": "some",
+            "type": "value"
+        },
+        {
+            "row": 2150,
+            "column": 5,
+            "local": "sort",
+            "type": "value"
+        },
+        {
+            "row": 2157,
+            "column": 5,
+            "local": "subarray",
+            "type": "value"
+        },
+        {
+            "row": 2161,
+            "column": 5,
+            "local": "values",
+            "type": "value"
+        },
+        {
+            "row": 1919,
+            "column": 15,
+            "local": "$TypedArray",
+            "type": "class"
+        },
+        {
+            "row": 2168,
+            "column": 15,
+            "local": "Int8Array",
+            "type": "class"
+        },
+        {
+            "row": 2173,
+            "column": 15,
+            "local": "Uint8Array",
+            "type": "class"
+        },
+        {
+            "row": 2178,
+            "column": 15,
+            "local": "Uint8ClampedArray",
+            "type": "class"
+        },
+        {
+            "row": 2183,
+            "column": 15,
+            "local": "Int16Array",
+            "type": "class"
+        },
+        {
+            "row": 2188,
+            "column": 15,
+            "local": "Uint16Array",
+            "type": "class"
+        },
+        {
+            "row": 2193,
+            "column": 15,
+            "local": "Int32Array",
+            "type": "class"
+        },
+        {
+            "row": 2198,
+            "column": 15,
+            "local": "Uint32Array",
+            "type": "class"
+        },
+        {
+            "row": 2203,
+            "column": 15,
+            "local": "Float32Array",
+            "type": "class"
+        },
+        {
+            "row": 2208,
+            "column": 15,
+            "local": "Float64Array",
+            "type": "class"
+        },
+        {
+            "row": 2211,
+            "column": 5,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 2212,
+            "column": 5,
+            "local": "buffer",
+            "type": "value"
+        },
+        {
+            "row": 2213,
+            "column": 5,
+            "local": "byteLength",
+            "type": "value"
+        },
+        {
+            "row": 2214,
+            "column": 5,
+            "local": "byteOffset",
+            "type": "value"
+        },
+        {
+            "row": 2220,
+            "column": 5,
+            "local": "getInt8",
+            "type": "value"
+        },
+        {
+            "row": 2226,
+            "column": 5,
+            "local": "getUint8",
+            "type": "value"
+        },
+        {
+            "row": 2232,
+            "column": 5,
+            "local": "getInt16",
+            "type": "value"
+        },
+        {
+            "row": 2238,
+            "column": 5,
+            "local": "getUint16",
+            "type": "value"
+        },
+        {
+            "row": 2244,
+            "column": 5,
+            "local": "getInt32",
+            "type": "value"
+        },
+        {
+            "row": 2250,
+            "column": 5,
+            "local": "getUint32",
+            "type": "value"
+        },
+        {
+            "row": 2256,
+            "column": 5,
+            "local": "getFloat32",
+            "type": "value"
+        },
+        {
+            "row": 2262,
+            "column": 5,
+            "local": "getFloat64",
+            "type": "value"
+        },
+        {
+            "row": 2268,
+            "column": 5,
+            "local": "setInt8",
+            "type": "value"
+        },
+        {
+            "row": 2274,
+            "column": 5,
+            "local": "setUint8",
+            "type": "value"
+        },
+        {
+            "row": 2282,
+            "column": 5,
+            "local": "setInt16",
+            "type": "value"
+        },
+        {
+            "row": 2290,
+            "column": 5,
+            "local": "setUint16",
+            "type": "value"
+        },
+        {
+            "row": 2298,
+            "column": 5,
+            "local": "setInt32",
+            "type": "value"
+        },
+        {
+            "row": 2306,
+            "column": 5,
+            "local": "setUint32",
+            "type": "value"
+        },
+        {
+            "row": 2314,
+            "column": 5,
+            "local": "setFloat32",
+            "type": "value"
+        },
+        {
+            "row": 2322,
+            "column": 5,
+            "local": "setFloat64",
+            "type": "value"
+        },
+        {
+            "row": 2210,
+            "column": 15,
+            "local": "DataView",
+            "type": "class"
+        },
+        {
+            "row": 2325,
+            "column": 18,
+            "local": "btoa",
+            "type": "value"
+        },
+        {
+            "row": 2326,
+            "column": 18,
+            "local": "atob",
+            "type": "value"
+        },
+        {
+            "row": 2328,
+            "column": 18,
+            "local": "escape",
+            "type": "value"
+        },
+        {
+            "row": 2329,
+            "column": 18,
+            "local": "unescape",
+            "type": "value"
+        },
+        {
+            "row": 2333,
+            "column": 18,
+            "local": "clearInterval",
+            "type": "value"
+        },
+        {
+            "row": 2334,
+            "column": 18,
+            "local": "clearTimeout",
+            "type": "value"
+        },
+        {
+            "row": 2335,
+            "column": 18,
+            "local": "setTimeout",
+            "type": "value"
+        },
+        {
+            "row": 2340,
+            "column": 18,
+            "local": "setInterval",
+            "type": "value"
+        },
+        {
+            "row": 2349,
+            "column": 5,
+            "local": "apply",
+            "type": "value"
+        },
+        {
+            "row": 2350,
+            "column": 5,
+            "local": "construct",
+            "type": "value"
+        },
+        {
+            "row": 2351,
+            "column": 5,
+            "local": "defineProperty",
+            "type": "value"
+        },
+        {
+            "row": 2352,
+            "column": 5,
+            "local": "deleteProperty",
+            "type": "value"
+        },
+        {
+            "row": 2353,
+            "column": 5,
+            "local": "get",
+            "type": "value"
+        },
+        {
+            "row": 2354,
+            "column": 5,
+            "local": "getOwnPropertyDescriptor",
+            "type": "value"
+        },
+        {
+            "row": 2355,
+            "column": 5,
+            "local": "getPrototypeOf",
+            "type": "value"
+        },
+        {
+            "row": 2356,
+            "column": 5,
+            "local": "setPrototypeOf",
+            "type": "value"
+        },
+        {
+            "row": 2357,
+            "column": 5,
+            "local": "has",
+            "type": "value"
+        },
+        {
+            "row": 2358,
+            "column": 5,
+            "local": "isExtensible",
+            "type": "value"
+        },
+        {
+            "row": 2359,
+            "column": 5,
+            "local": "ownKeys",
+            "type": "value"
+        },
+        {
+            "row": 2360,
+            "column": 5,
+            "local": "preventExtensions",
+            "type": "value"
+        },
+        {
+            "row": 2361,
+            "column": 5,
+            "local": "set",
+            "type": "value"
+        },
+        {
+            "row": 2348,
+            "column": 13,
+            "local": "Reflect",
+            "type": "value"
+        },
+        {
+            "row": 2368,
+            "column": 5,
+            "local": "getPrototypeOf",
+            "type": "value"
+        },
+        {
+            "row": 2369,
+            "column": 5,
+            "local": "setPrototypeOf",
+            "type": "value"
+        },
+        {
+            "row": 2370,
+            "column": 5,
+            "local": "isExtensible",
+            "type": "value"
+        },
+        {
+            "row": 2371,
+            "column": 5,
+            "local": "preventExtensions",
+            "type": "value"
+        },
+        {
+            "row": 2372,
+            "column": 5,
+            "local": "getOwnPropertyDescriptor",
+            "type": "value"
+        },
+        {
+            "row": 2373,
+            "column": 5,
+            "local": "defineProperty",
+            "type": "value"
+        },
+        {
+            "row": 2374,
+            "column": 5,
+            "local": "has",
+            "type": "value"
+        },
+        {
+            "row": 2375,
+            "column": 5,
+            "local": "get",
+            "type": "value"
+        },
+        {
+            "row": 2376,
+            "column": 5,
+            "local": "set",
+            "type": "value"
+        },
+        {
+            "row": 2377,
+            "column": 5,
+            "local": "deleteProperty",
+            "type": "value"
+        },
+        {
+            "row": 2378,
+            "column": 5,
+            "local": "ownKeys",
+            "type": "value"
+        },
+        {
+            "row": 2379,
+            "column": 5,
+            "local": "apply",
+            "type": "value"
+        },
+        {
+            "row": 2380,
+            "column": 5,
+            "local": "construct",
+            "type": "value"
+        },
+        {
+            "row": 2367,
+            "column": 6,
+            "local": "Proxy$traps",
+            "type": "type"
+        },
+        {
+            "row": 2384,
+            "column": 33,
+            "local": "revoke",
+            "type": "value"
+        },
+        {
+            "row": 2384,
+            "column": 6,
+            "local": "Proxy$revocable",
+            "type": "type"
+        },
+        {
+            "row": 2387,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 2389,
+            "column": 10,
+            "local": "revocable",
+            "type": "value"
+        },
+        {
+            "row": 2386,
+            "column": 15,
+            "local": "Proxy",
+            "type": "class"
+        },
+        {
+            "row": 2394,
+            "column": 13,
+            "local": "global",
+            "type": "value"
+        },
+        {
+            "row": 2397,
+            "column": 5,
+            "local": "exports",
+            "type": "value"
+        },
+        {
+            "row": 2398,
+            "column": 5,
+            "local": "require",
+            "type": "value"
+        },
+        {
+            "row": 2399,
+            "column": 5,
+            "local": "id",
+            "type": "value"
+        },
+        {
+            "row": 2400,
+            "column": 5,
+            "local": "filename",
+            "type": "value"
+        },
+        {
+            "row": 2401,
+            "column": 5,
+            "local": "loaded",
+            "type": "value"
+        },
+        {
+            "row": 2402,
+            "column": 5,
+            "local": "parent",
+            "type": "value"
+        },
+        {
+            "row": 2403,
+            "column": 5,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 2404,
+            "column": 5,
+            "local": "builtinModules",
+            "type": "value"
+        },
+        {
+            "row": 2396,
+            "column": 13,
+            "local": "module",
+            "type": "value"
+        },
+        {
+            "row": 2409,
+            "column": 5,
+            "local": "resolve",
+            "type": "value"
+        },
+        {
+            "row": 2410,
+            "column": 5,
+            "local": "cache",
+            "type": "value"
+        },
+        {
+            "row": 2411,
+            "column": 5,
+            "local": "main",
+            "type": "value"
+        },
+        {
+            "row": 2407,
+            "column": 13,
+            "local": "require",
+            "type": "value"
+        },
+        {
+            "row": 2414,
+            "column": 13,
+            "local": "exports",
+            "type": "value"
+        },
+        {
+            "row": 2421,
+            "column": 5,
+            "local": "assert",
+            "type": "value"
+        },
+        {
+            "row": 2422,
+            "column": 5,
+            "local": "clear",
+            "type": "value"
+        },
+        {
+            "row": 2423,
+            "column": 5,
+            "local": "count",
+            "type": "value"
+        },
+        {
+            "row": 2424,
+            "column": 5,
+            "local": "countReset",
+            "type": "value"
+        },
+        {
+            "row": 2425,
+            "column": 5,
+            "local": "debug",
+            "type": "value"
+        },
+        {
+            "row": 2426,
+            "column": 5,
+            "local": "dir",
+            "type": "value"
+        },
+        {
+            "row": 2427,
+            "column": 5,
+            "local": "dirxml",
+            "type": "value"
+        },
+        {
+            "row": 2428,
+            "column": 5,
+            "local": "error",
+            "type": "value"
+        },
+        {
+            "row": 2429,
+            "column": 5,
+            "local": "_exception",
+            "type": "value"
+        },
+        {
+            "row": 2430,
+            "column": 5,
+            "local": "group",
+            "type": "value"
+        },
+        {
+            "row": 2431,
+            "column": 5,
+            "local": "groupCollapsed",
+            "type": "value"
+        },
+        {
+            "row": 2432,
+            "column": 5,
+            "local": "groupEnd",
+            "type": "value"
+        },
+        {
+            "row": 2433,
+            "column": 5,
+            "local": "info",
+            "type": "value"
+        },
+        {
+            "row": 2434,
+            "column": 5,
+            "local": "log",
+            "type": "value"
+        },
+        {
+            "row": 2435,
+            "column": 5,
+            "local": "profile",
+            "type": "value"
+        },
+        {
+            "row": 2436,
+            "column": 5,
+            "local": "profileEnd",
+            "type": "value"
+        },
+        {
+            "row": 2437,
+            "column": 5,
+            "local": "table",
+            "type": "value"
+        },
+        {
+            "row": 2438,
+            "column": 5,
+            "local": "time",
+            "type": "value"
+        },
+        {
+            "row": 2439,
+            "column": 5,
+            "local": "timeEnd",
+            "type": "value"
+        },
+        {
+            "row": 2440,
+            "column": 5,
+            "local": "timeStamp",
+            "type": "value"
+        },
+        {
+            "row": 2441,
+            "column": 5,
+            "local": "timeLog",
+            "type": "value"
+        },
+        {
+            "row": 2442,
+            "column": 5,
+            "local": "trace",
+            "type": "value"
+        },
+        {
+            "row": 2443,
+            "column": 5,
+            "local": "warn",
+            "type": "value"
+        },
+        {
+            "row": 2420,
+            "column": 13,
+            "local": "console",
+            "type": "value"
+        },
+        {
+            "row": 2448,
+            "column": 3,
+            "local": "cast",
+            "type": "value"
+        },
+        {
+            "row": 2449,
+            "column": 3,
+            "local": "isValid",
+            "type": "value"
+        },
+        {
+            "row": 2450,
+            "column": 3,
+            "local": "members",
+            "type": "value"
+        },
+        {
+            "row": 2451,
+            "column": 3,
+            "local": "__proto__",
+            "type": "value"
+        },
+        {
+            "row": 2447,
+            "column": 6,
+            "local": "$EnumProto",
+            "type": "type"
+        },
+        {
+            "row": 2455,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 2460,
+            "column": 4,
+            "local": "byteLength",
+            "type": "value"
+        },
+        {
+            "row": 2464,
+            "column": 3,
+            "local": "slice",
+            "type": "value"
+        },
+        {
+            "row": 2454,
+            "column": 15,
+            "local": "SharedArrayBuffer",
+            "type": "class"
+        },
+        {
+            "row": 2469,
+            "column": 6,
+            "local": "$SharedIntegerTypedArray",
+            "type": "type"
+        },
+        {
+            "row": 2483,
+            "column": 3,
+            "local": "add",
+            "type": "value"
+        },
+        {
+            "row": 2489,
+            "column": 3,
+            "local": "and",
+            "type": "value"
+        },
+        {
+            "row": 2495,
+            "column": 3,
+            "local": "compareExchange",
+            "type": "value"
+        },
+        {
+            "row": 2501,
+            "column": 3,
+            "local": "exchange",
+            "type": "value"
+        },
+        {
+            "row": 2506,
+            "column": 3,
+            "local": "load",
+            "type": "value"
+        },
+        {
+            "row": 2512,
+            "column": 3,
+            "local": "or",
+            "type": "value"
+        },
+        {
+            "row": 2517,
+            "column": 3,
+            "local": "store",
+            "type": "value"
+        },
+        {
+            "row": 2523,
+            "column": 3,
+            "local": "sub",
+            "type": "value"
+        },
+        {
+            "row": 2529,
+            "column": 3,
+            "local": "xor",
+            "type": "value"
+        },
+        {
+            "row": 2536,
+            "column": 3,
+            "local": "isLockFree",
+            "type": "value"
+        },
+        {
+            "row": 2543,
+            "column": 3,
+            "local": "wait",
+            "type": "value"
+        },
+        {
+            "row": 2551,
+            "column": 3,
+            "local": "notify",
+            "type": "value"
+        },
+        {
+            "row": 2477,
+            "column": 13,
+            "local": "Atomics",
+            "type": "value"
+        }
+    ]
+}

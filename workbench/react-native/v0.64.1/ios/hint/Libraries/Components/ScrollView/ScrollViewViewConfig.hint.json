@@ -1,0 +1,26 @@
+{
+    "imports": {
+        "GeneratedViewConfig": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "GeneratedViewConfig"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 6
+                },
+                "end": {
+                    "row": 2,
+                    "column": 24
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/registerGeneratedViewConfig.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": []
+}

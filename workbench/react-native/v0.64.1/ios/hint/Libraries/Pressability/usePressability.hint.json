@@ -1,0 +1,53 @@
+{
+    "imports": {
+        "EventHandlers": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "EventHandlers"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 137,
+                    "column": 6
+                },
+                "end": {
+                    "row": 137,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Pressability/Pressability.js.flow"
+            }
+        },
+        "PressabilityConfig": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "PressabilityConfig"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 6
+                },
+                "end": {
+                    "row": 8,
+                    "column": 23
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Pressability/Pressability.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 5,
+            "column": 18,
+            "local": "usePressability",
+            "type": "value"
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "imports": {
+        "StackFrame": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "StackFrame"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 6
+                },
+                "end": {
+                    "row": 4,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Core/NativeExceptionsManager.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 30,
+                "column": 32,
+                "local": "symbolicateStackTrace"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 23,
+                    "column": 18
+                },
+                "end": {
+                    "row": 23,
+                    "column": 38
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Core/Devtools/symbolicateStackTrace.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 6,
+            "column": 5,
+            "local": "content",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 7,
+            "local": "row",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 7,
+            "local": "column",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 5,
+            "local": "location",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 5,
+            "local": "fileName",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 6,
+            "local": "CodeFrame",
+            "type": "type"
+        },
+        {
+            "row": 18,
+            "column": 5,
+            "local": "stack",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 5,
+            "local": "codeFrame",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 6,
+            "local": "SymbolicatedStackTrace",
+            "type": "type"
+        },
+        {
+            "row": 23,
+            "column": 18,
+            "local": "symbolicateStackTrace",
+            "type": "value"
+        }
+    ]
+}

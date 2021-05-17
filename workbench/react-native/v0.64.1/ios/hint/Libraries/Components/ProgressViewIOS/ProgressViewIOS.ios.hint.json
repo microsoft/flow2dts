@@ -1,0 +1,45 @@
+{
+    "imports": {
+        "RCTProgressViewNativeComponent": {
+            "source": {
+                "row": 2,
+                "column": 8,
+                "local": "RCTProgressViewNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 24,
+                    "column": 24
+                },
+                "end": {
+                    "row": 24,
+                    "column": 49
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/ProgressViewIOS/RCTProgressViewNativeComponent.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 4,
+                "column": 32,
+                "local": "RCTProgressViewNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 24,
+                    "column": 24
+                },
+                "end": {
+                    "row": 24,
+                    "column": 49
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/ProgressViewIOS/RCTProgressViewNativeComponent.js.flow"
+            }
+        }
+    ],
+    "decls": []
+}

@@ -1,0 +1,118 @@
+{
+    "imports": {
+        "NativeEventEmitter": {
+            "source": {
+                "row": 2,
+                "column": 8,
+                "local": "NativeEventEmitter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 15
+                },
+                "end": {
+                    "row": 17,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 70,
+                "column": 24,
+                "local": "NativeEventEmitter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 15
+                },
+                "end": {
+                    "row": 17,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 6,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "addEventListener",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "removeEventListener",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 3,
+            "local": "openURL",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "canOpenURL",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 3,
+            "local": "openSettings",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 3,
+            "local": "getInitialURL",
+            "type": "value"
+        },
+        {
+            "row": 63,
+            "column": 9,
+            "local": "key",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 9,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 59,
+            "column": 3,
+            "local": "sendIntent",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 15,
+            "local": "Linking",
+            "type": "class"
+        },
+        {
+            "row": 70,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
+}

@@ -1,0 +1,189 @@
+{
+    "imports": {
+        "ExceptionData": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ExceptionData"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 6
+                },
+                "end": {
+                    "row": 12,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Core/NativeExceptionsManager.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 8,
+                "column": 24,
+                "local": "Error"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 1536,
+                    "column": 15
+                },
+                "end": {
+                    "row": 1536,
+                    "column": 19
+                },
+                "libraryFolder": 0,
+                "file": "/core.js"
+            }
+        },
+        {
+            "source": {
+                "row": 21,
+                "column": 27,
+                "local": "handleException"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 18
+                },
+                "end": {
+                    "row": 16,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Core/ExceptionsManager.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 22,
+                "column": 39,
+                "local": "installConsoleErrorReporter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 18
+                },
+                "end": {
+                    "row": 18,
+                    "column": 44
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Core/ExceptionsManager.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 23,
+                "column": 26,
+                "local": "SyntheticError"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 15
+                },
+                "end": {
+                    "row": 4,
+                    "column": 28
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Core/ExceptionsManager.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 24,
+                "column": 42,
+                "local": "unstable_setExceptionDecorator"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 18
+                },
+                "end": {
+                    "row": 12,
+                    "column": 47
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Core/ExceptionsManager.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 6,
+            "column": 3,
+            "local": "name",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 15,
+            "local": "SyntheticError",
+            "type": "class"
+        },
+        {
+            "row": 8,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "ExceptionDecorator",
+            "type": "type"
+        },
+        {
+            "row": 12,
+            "column": 18,
+            "local": "unstable_setExceptionDecorator",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 18,
+            "local": "handleException",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 18,
+            "local": "installConsoleErrorReporter",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "handleException",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 3,
+            "local": "installConsoleErrorReporter",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 3,
+            "local": "SyntheticError",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 3,
+            "local": "unstable_setExceptionDecorator",
+            "type": "value"
+        }
+    ]
+}

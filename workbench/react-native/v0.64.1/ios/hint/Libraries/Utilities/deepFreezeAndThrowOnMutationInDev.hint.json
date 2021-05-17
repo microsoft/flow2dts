@@ -1,0 +1,32 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 6,
+                "column": 32,
+                "local": "deepFreezeAndThrowOnMutationInDev"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 18
+                },
+                "end": {
+                    "row": 2,
+                    "column": 50
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/deepFreezeAndThrowOnMutationInDev.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 18,
+            "local": "deepFreezeAndThrowOnMutationInDev",
+            "type": "value"
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "imports": {
+        "Options": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "Options"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 6
+                },
+                "end": {
+                    "row": 2,
+                    "column": 12
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/DatePickerAndroid/DatePickerAndroidTypes.js.flow"
+            }
+        },
+        "DatePickerOpenAction": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "DatePickerOpenAction"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 6
+                },
+                "end": {
+                    "row": 11,
+                    "column": 25
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/DatePickerAndroid/DatePickerAndroidTypes.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 13,
+                "column": 32,
+                "local": "DatePickerAndroid"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 31
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/DatePickerAndroid/DatePickerAndroid.ios.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 6,
+            "column": 10,
+            "local": "open",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 11,
+            "local": "dateSetAction",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 11,
+            "local": "dismissedAction",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 15,
+            "local": "DatePickerAndroid",
+            "type": "class"
+        }
+    ]
+}

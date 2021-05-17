@@ -1,0 +1,683 @@
+{
+    "imports": {
+        "ElementRef": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ElementRef"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 282,
+                    "column": 23
+                },
+                "end": {
+                    "row": 282,
+                    "column": 32
+                },
+                "libraryFolder": 0,
+                "file": "/react.js"
+            }
+        },
+        "AbstractComponent": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "AbstractComponent"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 258,
+                    "column": 23
+                },
+                "end": {
+                    "row": 258,
+                    "column": 39
+                },
+                "libraryFolder": 0,
+                "file": "/react.js"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 5,
+            "column": 6,
+            "local": "MeasureOnSuccessCallback",
+            "type": "type"
+        },
+        {
+            "row": 14,
+            "column": 6,
+            "local": "MeasureInWindowOnSuccessCallback",
+            "type": "type"
+        },
+        {
+            "row": 21,
+            "column": 6,
+            "local": "MeasureLayoutOnSuccessCallback",
+            "type": "type"
+        },
+        {
+            "row": 32,
+            "column": 7,
+            "local": "diff",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 7,
+            "local": "process",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 6,
+            "local": "AttributeType",
+            "type": "type"
+        },
+        {
+            "row": 40,
+            "column": 5,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 6,
+            "local": "AttributeConfiguration",
+            "type": "type"
+        },
+        {
+            "row": 47,
+            "column": 5,
+            "local": "baseModuleName",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 17,
+            "local": "captured",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 17,
+            "local": "bubbled",
+            "type": "value"
+        },
+        {
+            "row": 52,
+            "column": 13,
+            "local": "phasedRegistrationNames",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 5,
+            "local": "bubblingEventTypes",
+            "type": "value"
+        },
+        {
+            "row": 63,
+            "column": 5,
+            "local": "Commands",
+            "type": "value"
+        },
+        {
+            "row": 68,
+            "column": 13,
+            "local": "registrationName",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 5,
+            "local": "directEventTypes",
+            "type": "value"
+        },
+        {
+            "row": 74,
+            "column": 5,
+            "local": "NativeProps",
+            "type": "value"
+        },
+        {
+            "row": 75,
+            "column": 5,
+            "local": "uiViewClassName",
+            "type": "value"
+        },
+        {
+            "row": 76,
+            "column": 5,
+            "local": "validAttributes",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 6,
+            "local": "ReactNativeBaseComponentViewConfig",
+            "type": "type"
+        },
+        {
+            "row": 80,
+            "column": 6,
+            "local": "ViewConfigGetter",
+            "type": "type"
+        },
+        {
+            "row": 83,
+            "column": 3,
+            "local": "blur",
+            "type": "value"
+        },
+        {
+            "row": 84,
+            "column": 3,
+            "local": "focus",
+            "type": "value"
+        },
+        {
+            "row": 85,
+            "column": 3,
+            "local": "measure",
+            "type": "value"
+        },
+        {
+            "row": 86,
+            "column": 3,
+            "local": "measureInWindow",
+            "type": "value"
+        },
+        {
+            "row": 87,
+            "column": 3,
+            "local": "measureLayout",
+            "type": "value"
+        },
+        {
+            "row": 92,
+            "column": 3,
+            "local": "setNativeProps",
+            "type": "value"
+        },
+        {
+            "row": 82,
+            "column": 6,
+            "local": "NativeMethods",
+            "type": "type"
+        },
+        {
+            "row": 96,
+            "column": 6,
+            "local": "HostComponent",
+            "type": "type"
+        },
+        {
+            "row": 99,
+            "column": 3,
+            "local": "computeComponentStackForErrorReporting",
+            "type": "value"
+        },
+        {
+            "row": 98,
+            "column": 6,
+            "local": "SecretInternalsType",
+            "type": "type"
+        },
+        {
+            "row": 106,
+            "column": 6,
+            "local": "InspectorDataProps",
+            "type": "type"
+        },
+        {
+            "row": 115,
+            "column": 5,
+            "local": "fileName",
+            "type": "value"
+        },
+        {
+            "row": 116,
+            "column": 5,
+            "local": "lineNumber",
+            "type": "value"
+        },
+        {
+            "row": 113,
+            "column": 6,
+            "local": "InspectorDataSource",
+            "type": "type"
+        },
+        {
+            "row": 124,
+            "column": 5,
+            "local": "measure",
+            "type": "value"
+        },
+        {
+            "row": 125,
+            "column": 5,
+            "local": "props",
+            "type": "value"
+        },
+        {
+            "row": 126,
+            "column": 5,
+            "local": "source",
+            "type": "value"
+        },
+        {
+            "row": 120,
+            "column": 6,
+            "local": "InspectorDataGetter",
+            "type": "type"
+        },
+        {
+            "row": 134,
+            "column": 9,
+            "local": "name",
+            "type": "value"
+        },
+        {
+            "row": 135,
+            "column": 9,
+            "local": "getInspectorData",
+            "type": "value"
+        },
+        {
+            "row": 132,
+            "column": 5,
+            "local": "hierarchy",
+            "type": "value"
+        },
+        {
+            "row": 138,
+            "column": 5,
+            "local": "selectedIndex",
+            "type": "value"
+        },
+        {
+            "row": 139,
+            "column": 5,
+            "local": "props",
+            "type": "value"
+        },
+        {
+            "row": 140,
+            "column": 5,
+            "local": "source",
+            "type": "value"
+        },
+        {
+            "row": 130,
+            "column": 6,
+            "local": "InspectorData",
+            "type": "type"
+        },
+        {
+            "row": 146,
+            "column": 5,
+            "local": "pointerY",
+            "type": "value"
+        },
+        {
+            "row": 147,
+            "column": 5,
+            "local": "touchedViewTag",
+            "type": "value"
+        },
+        {
+            "row": 150,
+            "column": 9,
+            "local": "top",
+            "type": "value"
+        },
+        {
+            "row": 151,
+            "column": 9,
+            "local": "left",
+            "type": "value"
+        },
+        {
+            "row": 152,
+            "column": 9,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 153,
+            "column": 9,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 148,
+            "column": 5,
+            "local": "frame",
+            "type": "value"
+        },
+        {
+            "row": 144,
+            "column": 6,
+            "local": "TouchedViewDataAtPoint",
+            "type": "type"
+        },
+        {
+            "row": 161,
+            "column": 3,
+            "local": "findHostInstance_DEPRECATED",
+            "type": "value"
+        },
+        {
+            "row": 164,
+            "column": 3,
+            "local": "findNodeHandle",
+            "type": "value"
+        },
+        {
+            "row": 165,
+            "column": 3,
+            "local": "dispatchCommand",
+            "type": "value"
+        },
+        {
+            "row": 166,
+            "column": 3,
+            "local": "render",
+            "type": "value"
+        },
+        {
+            "row": 171,
+            "column": 3,
+            "local": "unmountComponentAtNode",
+            "type": "value"
+        },
+        {
+            "row": 172,
+            "column": 3,
+            "local": "unmountComponentAtNodeAndRemoveContainer",
+            "type": "value"
+        },
+        {
+            "row": 174,
+            "column": 3,
+            "local": "unstable_batchedUpdates",
+            "type": "value"
+        },
+        {
+            "row": 175,
+            "column": 3,
+            "local": "__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED",
+            "type": "value"
+        },
+        {
+            "row": 160,
+            "column": 6,
+            "local": "ReactNativeType",
+            "type": "type"
+        },
+        {
+            "row": 180,
+            "column": 3,
+            "local": "findHostInstance_DEPRECATED",
+            "type": "value"
+        },
+        {
+            "row": 183,
+            "column": 3,
+            "local": "findNodeHandle",
+            "type": "value"
+        },
+        {
+            "row": 184,
+            "column": 3,
+            "local": "dispatchCommand",
+            "type": "value"
+        },
+        {
+            "row": 185,
+            "column": 3,
+            "local": "render",
+            "type": "value"
+        },
+        {
+            "row": 190,
+            "column": 3,
+            "local": "unmountComponentAtNode",
+            "type": "value"
+        },
+        {
+            "row": 179,
+            "column": 6,
+            "local": "ReactFabricType",
+            "type": "type"
+        },
+        {
+            "row": 195,
+            "column": 3,
+            "local": "node",
+            "type": "value"
+        },
+        {
+            "row": 197,
+            "column": 5,
+            "local": "_nativeTag",
+            "type": "value"
+        },
+        {
+            "row": 198,
+            "column": 5,
+            "local": "viewConfig",
+            "type": "value"
+        },
+        {
+            "row": 199,
+            "column": 5,
+            "local": "currentProps",
+            "type": "value"
+        },
+        {
+            "row": 200,
+            "column": 5,
+            "local": "_internalInstanceHandle",
+            "type": "value"
+        },
+        {
+            "row": 196,
+            "column": 3,
+            "local": "canonical",
+            "type": "value"
+        },
+        {
+            "row": 194,
+            "column": 6,
+            "local": "ReactNativeEventTarget",
+            "type": "type"
+        },
+        {
+            "row": 207,
+            "column": 3,
+            "local": "identifier",
+            "type": "value"
+        },
+        {
+            "row": 208,
+            "column": 3,
+            "local": "locationX",
+            "type": "value"
+        },
+        {
+            "row": 209,
+            "column": 3,
+            "local": "locationY",
+            "type": "value"
+        },
+        {
+            "row": 210,
+            "column": 3,
+            "local": "pageX",
+            "type": "value"
+        },
+        {
+            "row": 211,
+            "column": 3,
+            "local": "pageY",
+            "type": "value"
+        },
+        {
+            "row": 212,
+            "column": 3,
+            "local": "screenX",
+            "type": "value"
+        },
+        {
+            "row": 213,
+            "column": 3,
+            "local": "screenY",
+            "type": "value"
+        },
+        {
+            "row": 214,
+            "column": 3,
+            "local": "target",
+            "type": "value"
+        },
+        {
+            "row": 215,
+            "column": 3,
+            "local": "timestamp",
+            "type": "value"
+        },
+        {
+            "row": 216,
+            "column": 3,
+            "local": "force",
+            "type": "value"
+        },
+        {
+            "row": 206,
+            "column": 6,
+            "local": "ReactFaricEventTouch",
+            "type": "type"
+        },
+        {
+            "row": 221,
+            "column": 3,
+            "local": "touches",
+            "type": "value"
+        },
+        {
+            "row": 222,
+            "column": 3,
+            "local": "changedTouches",
+            "type": "value"
+        },
+        {
+            "row": 223,
+            "column": 3,
+            "local": "targetTouches",
+            "type": "value"
+        },
+        {
+            "row": 224,
+            "column": 3,
+            "local": "target",
+            "type": "value"
+        },
+        {
+            "row": 220,
+            "column": 6,
+            "local": "ReactFaricEvent",
+            "type": "type"
+        },
+        {
+            "row": 228,
+            "column": 6,
+            "local": "LayoutAnimationType",
+            "type": "type"
+        },
+        {
+            "row": 236,
+            "column": 6,
+            "local": "LayoutAnimationProperty",
+            "type": "type"
+        },
+        {
+            "row": 240,
+            "column": 5,
+            "local": "duration",
+            "type": "value"
+        },
+        {
+            "row": 241,
+            "column": 5,
+            "local": "delay",
+            "type": "value"
+        },
+        {
+            "row": 242,
+            "column": 5,
+            "local": "springDamping",
+            "type": "value"
+        },
+        {
+            "row": 243,
+            "column": 5,
+            "local": "initialVelocity",
+            "type": "value"
+        },
+        {
+            "row": 244,
+            "column": 5,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 245,
+            "column": 5,
+            "local": "property",
+            "type": "value"
+        },
+        {
+            "row": 238,
+            "column": 6,
+            "local": "LayoutAnimationAnimationConfig",
+            "type": "type"
+        },
+        {
+            "row": 251,
+            "column": 5,
+            "local": "duration",
+            "type": "value"
+        },
+        {
+            "row": 252,
+            "column": 5,
+            "local": "create",
+            "type": "value"
+        },
+        {
+            "row": 253,
+            "column": 5,
+            "local": "update",
+            "type": "value"
+        },
+        {
+            "row": 254,
+            "column": 5,
+            "local": "delete",
+            "type": "value"
+        },
+        {
+            "row": 249,
+            "column": 6,
+            "local": "LayoutAnimationConfig",
+            "type": "type"
+        }
+    ]
+}

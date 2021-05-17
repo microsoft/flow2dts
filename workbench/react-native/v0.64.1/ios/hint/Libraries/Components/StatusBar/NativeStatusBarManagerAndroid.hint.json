@@ -1,0 +1,143 @@
+{
+    "imports": {
+        "TurboModule": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "TurboModule"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 11
+                },
+                "end": {
+                    "row": 6,
+                    "column": 21
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/TurboModule/RCTExport.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 42,
+                "column": 31,
+                "local": "NativeStatusBarManager"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 21,
+                    "column": 13
+                },
+                "end": {
+                    "row": 21,
+                    "column": 34
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/StatusBar/NativeStatusBarManagerAndroid.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 6,
+            "column": 6,
+            "local": "HEIGHT",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 6,
+            "local": "DEFAULT_BACKGROUND_COLOR",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 4,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 4,
+            "local": "setColor",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 4,
+            "local": "setTranslucent",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 4,
+            "local": "setStyle",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 4,
+            "local": "setHidden",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        },
+        {
+            "row": 23,
+            "column": 6,
+            "local": "HEIGHT",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 6,
+            "local": "DEFAULT_BACKGROUND_COLOR",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 3,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 3,
+            "local": "setColor",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 3,
+            "local": "setTranslucent",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "setStyle",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 3,
+            "local": "setHidden",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 13,
+            "local": "NativeStatusBarManager",
+            "type": "value"
+        }
+    ]
+}

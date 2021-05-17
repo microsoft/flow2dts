@@ -1,0 +1,201 @@
+{
+    "imports": {
+        "DangerouslyImpreciseStyle": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "DangerouslyImpreciseStyle"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 37,
+                    "column": 6
+                },
+                "end": {
+                    "row": 37,
+                    "column": 30
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        "ResolvedAssetSource": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "ResolvedAssetSource"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 6
+                },
+                "end": {
+                    "row": 2,
+                    "column": 24
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/AssetSourceResolver.js.flow"
+            }
+        },
+        "HostComponent": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "HostComponent"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 96,
+                    "column": 6
+                },
+                "end": {
+                    "row": 96,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
+        },
+        "ImageProps": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ImageProps"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 57,
+                    "column": 6
+                },
+                "end": {
+                    "row": 57,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/ImageProps.js.flow"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "ViewProps"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 377,
+                    "column": 6
+                },
+                "end": {
+                    "row": 377,
+                    "column": 14
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
+            }
+        },
+        "ImageStyleProp": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "ImageStyleProp"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 22,
+                    "column": 6
+                },
+                "end": {
+                    "row": 22,
+                    "column": 19
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "ColorValue"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 6
+                },
+                "end": {
+                    "row": 16,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 15,
+            "column": 5,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 5,
+            "local": "tintColor",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 5,
+            "local": "shouldNotifyLoadEvents",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 50,
+            "local": "uri",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 5,
+            "local": "src",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 5,
+            "local": "headers",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 5,
+            "local": "defaultSrc",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "loadingIndicatorSrc",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "NativeProps",
+            "type": "type"
+        }
+    ]
+}

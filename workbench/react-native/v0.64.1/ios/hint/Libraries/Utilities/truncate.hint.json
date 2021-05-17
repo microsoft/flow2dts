@@ -1,0 +1,56 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 15,
+                "column": 32,
+                "local": "truncate"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 13
+                },
+                "end": {
+                    "row": 9,
+                    "column": 20
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/truncate.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "breakOnWords",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 3,
+            "local": "minDelta",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "local": "elipsis",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "local": "truncateOptions",
+            "type": "type"
+        },
+        {
+            "row": 9,
+            "column": 13,
+            "local": "truncate",
+            "type": "value"
+        }
+    ]
+}

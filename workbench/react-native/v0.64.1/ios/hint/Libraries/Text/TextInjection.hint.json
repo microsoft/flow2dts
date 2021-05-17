@@ -1,0 +1,33 @@
+{
+    "imports": {
+        "Text": {
+            "source": {
+                "row": 2,
+                "column": 15,
+                "local": "Text"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 12
+                },
+                "end": {
+                    "row": 23,
+                    "column": 3
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Text/Text.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 5,
+            "column": 3,
+            "local": "unstable_Text",
+            "type": "value"
+        }
+    ]
+}

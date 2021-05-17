@@ -1,0 +1,111 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 16,
+                "column": 31,
+                "local": "isRTL"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 10
+                },
+                "end": {
+                    "row": 4,
+                    "column": 16
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/ReactNative/I18nManager.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 17,
+                "column": 49,
+                "local": "doLeftAndRightSwapInRTL"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 28
+                },
+                "end": {
+                    "row": 3,
+                    "column": 34
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/ReactNative/I18nManager.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "doLeftAndRightSwapInRTL",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 3,
+            "local": "isRTL",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 13,
+            "local": "i18nConstants",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 25,
+            "local": "doLeftAndRightSwapInRTL",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 59,
+            "local": "isRTL",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "allowRTL",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "forceRTL",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "swapLeftAndRightInRTL",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "isRTL",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "doLeftAndRightSwapInRTL",
+            "type": "value"
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "imports": {
+        "TurboModule": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "TurboModule"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 11
+                },
+                "end": {
+                    "row": 6,
+                    "column": 21
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/TurboModule/RCTExport.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 5,
+            "column": 4,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 4,
+            "local": "canRecordVideos",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 4,
+            "local": "canUseCamera",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 7,
+            "local": "unmirrorFrontFacingCamera",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 7,
+            "local": "videoMode",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 4,
+            "local": "openCameraDialog",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 7,
+            "local": "showImages",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 7,
+            "local": "showVideos",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 4,
+            "local": "openSelectDialog",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 4,
+            "local": "clearAllPendingVideos",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 4,
+            "local": "removePendingVideo",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
+}

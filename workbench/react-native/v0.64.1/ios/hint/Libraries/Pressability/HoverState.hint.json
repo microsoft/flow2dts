@@ -1,0 +1,12 @@
+{
+    "imports": {},
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 2,
+            "column": 18,
+            "local": "isHoverEnabled",
+            "type": "value"
+        }
+    ]
+}

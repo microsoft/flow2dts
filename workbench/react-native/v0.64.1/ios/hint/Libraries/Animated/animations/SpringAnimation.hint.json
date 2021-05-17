@@ -1,0 +1,510 @@
+{
+    "imports": {
+        "AnimationConfig": {
+            "source": {
+                "row": 11,
+                "column": 14,
+                "local": "AnimationConfig"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 6
+                },
+                "end": {
+                    "row": 7,
+                    "column": 20
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/animations/Animation.js.flow"
+            }
+        },
+        "EndCallback": {
+            "source": {
+                "row": 12,
+                "column": 14,
+                "local": "EndCallback"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 16
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/animations/Animation.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 35,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 15
+                },
+                "end": {
+                    "row": 12,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/nodes/AnimatedValue.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 37,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 15,
+                    "column": 15
+                },
+                "end": {
+                    "row": 15,
+                    "column": 29
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/nodes/AnimatedValueXY.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 6,
+                "column": 43,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 15
+                },
+                "end": {
+                    "row": 18,
+                    "column": 35
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/nodes/AnimatedInterpolation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 8,
+                "column": 31,
+                "local": "$4"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 15
+                },
+                "end": {
+                    "row": 14,
+                    "column": 23
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/animations/Animation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 115,
+                "column": 24,
+                "local": "Animation"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 13
+                },
+                "end": {
+                    "row": 8,
+                    "column": 21
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/animations/SpringAnimation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 120,
+                "column": 32,
+                "local": "SpringAnimation"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 63,
+                    "column": 15
+                },
+                "end": {
+                    "row": 63,
+                    "column": 29
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/animations/SpringAnimation.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "AnimatedValue",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "AnimatedValueXY",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 13,
+            "local": "AnimatedInterpolation",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 13,
+            "local": "Animation",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 7,
+            "local": "$4",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 7,
+            "local": "x",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 7,
+            "local": "y",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "toValue",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 3,
+            "local": "overshootClamping",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 3,
+            "local": "restDisplacementThreshold",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 3,
+            "local": "restSpeedThreshold",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 7,
+            "local": "x",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 7,
+            "local": "y",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 3,
+            "local": "velocity",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "bounciness",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 3,
+            "local": "speed",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 3,
+            "local": "tension",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 3,
+            "local": "friction",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 3,
+            "local": "stiffness",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 3,
+            "local": "damping",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 3,
+            "local": "mass",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "delay",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 6,
+            "local": "SpringAnimationConfig",
+            "type": "type"
+        },
+        {
+            "row": 48,
+            "column": 3,
+            "local": "toValue",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 3,
+            "local": "overshootClamping",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 3,
+            "local": "restDisplacementThreshold",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 3,
+            "local": "restSpeedThreshold",
+            "type": "value"
+        },
+        {
+            "row": 52,
+            "column": 3,
+            "local": "velocity",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 3,
+            "local": "bounciness",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 3,
+            "local": "speed",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 3,
+            "local": "tension",
+            "type": "value"
+        },
+        {
+            "row": 56,
+            "column": 3,
+            "local": "friction",
+            "type": "value"
+        },
+        {
+            "row": 57,
+            "column": 3,
+            "local": "stiffness",
+            "type": "value"
+        },
+        {
+            "row": 58,
+            "column": 3,
+            "local": "damping",
+            "type": "value"
+        },
+        {
+            "row": 59,
+            "column": 3,
+            "local": "mass",
+            "type": "value"
+        },
+        {
+            "row": 60,
+            "column": 3,
+            "local": "delay",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 6,
+            "local": "SpringAnimationConfigSingle",
+            "type": "type"
+        },
+        {
+            "row": 65,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 68,
+            "column": 5,
+            "local": "damping",
+            "type": "value"
+        },
+        {
+            "row": 69,
+            "column": 5,
+            "local": "initialVelocity",
+            "type": "value"
+        },
+        {
+            "row": 70,
+            "column": 5,
+            "local": "iterations",
+            "type": "value"
+        },
+        {
+            "row": 71,
+            "column": 5,
+            "local": "mass",
+            "type": "value"
+        },
+        {
+            "row": 72,
+            "column": 5,
+            "local": "overshootClamping",
+            "type": "value"
+        },
+        {
+            "row": 73,
+            "column": 5,
+            "local": "restDisplacementThreshold",
+            "type": "value"
+        },
+        {
+            "row": 74,
+            "column": 5,
+            "local": "restSpeedThreshold",
+            "type": "value"
+        },
+        {
+            "row": 75,
+            "column": 5,
+            "local": "stiffness",
+            "type": "value"
+        },
+        {
+            "row": 76,
+            "column": 5,
+            "local": "toValue",
+            "type": "value"
+        },
+        {
+            "row": 77,
+            "column": 5,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 67,
+            "column": 3,
+            "local": "__getNativeAnimationConfig",
+            "type": "value"
+        },
+        {
+            "row": 80,
+            "column": 3,
+            "local": "start",
+            "type": "value"
+        },
+        {
+            "row": 88,
+            "column": 3,
+            "local": "getInternalState",
+            "type": "value"
+        },
+        {
+            "row": 111,
+            "column": 3,
+            "local": "onUpdate",
+            "type": "value"
+        },
+        {
+            "row": 113,
+            "column": 3,
+            "local": "stop",
+            "type": "value"
+        },
+        {
+            "row": 63,
+            "column": 15,
+            "local": "SpringAnimation",
+            "type": "class"
+        },
+        {
+            "row": 115,
+            "column": 13,
+            "local": "$5",
+            "type": "value"
+        }
+    ]
+}
