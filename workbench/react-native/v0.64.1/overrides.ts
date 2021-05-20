@@ -135,13 +135,6 @@ const animatedVisitors: OverridesVisitor[] = [
   ],
 ]
 
-// TODO: These are specifically to get the Artsy app green
-//       and should be removed when it is done by the hinting work.
-//
-// Doing this so we don't forget to update the other visitor that refers to this var
-const AnimatedInterpolationName = "Interpolation"
-const AnimatedNodeName = "Node"
-
 const listsVisitor: Visitor = {
   TSTypeAliasDeclaration: {
     exit(path) {
