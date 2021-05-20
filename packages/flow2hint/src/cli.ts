@@ -196,12 +196,12 @@ async function main() {
   const inputRootDir = path.join(workbenchDir, platform, "inputs")
   const modifiedRootDir = path.join(outDir, "__modified__")
   const patterns = [
-    `${inputRootDir}/{index,Libraries/**/*}.js.flow`,
-    `!${inputRootDir}/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow`,
-    `!${inputRootDir}/Libraries/{Inspector,JSInspector,NewAppScreen,ReactPrivate}/**/*.js.flow`,
-    `!${inputRootDir}/Libraries/Animated/AnimatedWeb.js.flow`,
-    `!${inputRootDir}/Libraries/{Promise,promiseRejectionIsError,promiseRejectionTrackingOptions}.js.flow`,
-    `!${inputRootDir}/Libraries/vendor/core/ErrorUtils.js.flow`,
+    `${argv.workbenchDir}/${platform}/inputs/{index,Libraries/**/*}.js.flow`,
+    `!${argv.workbenchDir}/${platform}/inputs/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow`,
+    `!${argv.workbenchDir}/${platform}/inputs/Libraries/{Inspector,JSInspector,NewAppScreen,ReactPrivate}/**/*.js.flow`,
+    `!${argv.workbenchDir}/${platform}/inputs/Libraries/Animated/AnimatedWeb.js.flow`,
+    `!${argv.workbenchDir}/${platform}/inputs/Libraries/{Promise,promiseRejectionIsError,promiseRejectionTrackingOptions}.js.flow`,
+    `!${argv.workbenchDir}/${platform}/inputs/Libraries/vendor/core/ErrorUtils.js.flow`,
   ]
 
   const mergedFilename = path.join(outDir, MERGED_FILE)
@@ -213,6 +213,7 @@ async function main() {
     patterns,
     cwd,
   })
+
   console.log(`\nSuccessfully converted local files ${successCount} of ${totalCount}\n`)
   const [totalLibrary, successLibrary] = await processLibraryFiles({
     inputRootDir,

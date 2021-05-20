@@ -155,12 +155,12 @@ async function main() {
     path.join(workbenchDir, `overrides.${platform}.ts`)
   ]
   const patterns = [
-    `${argv.rootDir}/{index,Libraries/**/*}.js.flow`,
-    `!${argv.rootDir}/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow`,
-    `!${argv.rootDir}/Libraries/{Inspector,JSInspector,NewAppScreen,ReactPrivate}/**/*.js.flow`,
-    `!${argv.rootDir}/Libraries/Animated/AnimatedWeb.js.flow`,
-    `!${argv.rootDir}/Libraries/{Promise,promiseRejectionIsError,promiseRejectionTrackingOptions}.js.flow`,
-    `!${argv.rootDir}/Libraries/vendor/core/ErrorUtils.js.flow`,
+    `${argv.workbenchDir}/${platform}/inputs/{index,Libraries/**/*}.js.flow`,
+    `!${argv.workbenchDir}/${platform}/inputs/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow`,
+    `!${argv.workbenchDir}/${platform}/inputs/Libraries/{Inspector,JSInspector,NewAppScreen,ReactPrivate}/**/*.js.flow`,
+    `!${argv.workbenchDir}/${platform}/inputs/Libraries/Animated/AnimatedWeb.js.flow`,
+    `!${argv.workbenchDir}/${platform}/inputs/Libraries/{Promise,promiseRejectionIsError,promiseRejectionTrackingOptions}.js.flow`,
+    `!${argv.workbenchDir}/${platform}/inputs/Libraries/vendor/core/ErrorUtils.js.flow`,
   ]
 
   const [totalCount, successCount, overridesWithoutMatches, wildcardOverridesWithSingleMatches] = await run({
