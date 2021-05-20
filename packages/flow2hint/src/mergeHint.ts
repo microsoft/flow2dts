@@ -74,7 +74,7 @@ function resolveImport<T extends ResolvedHintImport>(
 
 export function mergeHint(collectedHintFiles: HintFileEntries): ResolvedHintEntries {
   const mergedEntries: ResolvedHintEntries = { libraries: collectedHintFiles.libraries, files: {} }
-  HintFileLoop: for (const fileKey in collectedHintFiles.files) {
+  HintFileLoop: for (const fileKey of Object.keys(collectedHintFiles.files).sort()) {
     for (const libraryFolder of collectedHintFiles.libraries) {
       if (libraryFolder + "/" === fileKey.substr(0, libraryFolder.length + 1)) {
         continue HintFileLoop

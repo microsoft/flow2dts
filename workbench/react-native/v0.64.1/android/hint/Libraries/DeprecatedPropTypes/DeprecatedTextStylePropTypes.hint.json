@@ -161,7 +161,7 @@
                 "column": 45,
                 "local": "bool"
             },
-            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextStylePropTypes.js.flow:78:44\r\nNo possible types\r\n"
+            "error": ""
         },
         {
             "source": {
