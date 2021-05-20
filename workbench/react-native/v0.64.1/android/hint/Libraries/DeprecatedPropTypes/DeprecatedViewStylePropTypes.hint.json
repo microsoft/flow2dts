@@ -359,7 +359,7 @@
                 "column": 50,
                 "local": "number"
             },
-            "error": ""
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedViewStylePropTypes.js.flow:32:49\r\nNo possible types\r\n"
         },
         {
             "source": {

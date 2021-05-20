@@ -1,6 +1,6 @@
 {
     "libraries": [
-        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_3144583c"
+        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_353fdf33"
     ],
     "files": {
         "/index.js.flow": {
@@ -815,6 +815,38 @@
             },
             "typeofs": {}
         },
+        "/Libraries/Alert/Alert.js.flow": {
+            "imports": {},
+            "typeofs": {
+                "Alert": [
+                    {
+                        "row": 40,
+                        "column": 32,
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 19,
+                            "column": 15,
+                            "local": "Alert",
+                            "type": "class"
+                        }
+                    }
+                ]
+            }
+        },
+        "/Libraries/Alert/NativeAlertManager.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 11,
+                        "local": "TurboModule",
+                        "type": "type"
+                    }
+                }
+            },
+            "typeofs": {}
+        },
         "/Libraries/AppState/AppState.js.flow": {
             "imports": {
                 "NativeEventEmitter": {
@@ -867,38 +899,6 @@
             }
         },
         "/Libraries/AppState/NativeAppState.js.flow": {
-            "imports": {
-                "TurboModule": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 6,
-                        "column": 11,
-                        "local": "TurboModule",
-                        "type": "type"
-                    }
-                }
-            },
-            "typeofs": {}
-        },
-        "/Libraries/Alert/Alert.js.flow": {
-            "imports": {},
-            "typeofs": {
-                "Alert": [
-                    {
-                        "row": 40,
-                        "column": 32,
-                        "type": "class",
-                        "resolvedDecl": {
-                            "row": 19,
-                            "column": 15,
-                            "local": "Alert",
-                            "type": "class"
-                        }
-                    }
-                ]
-            }
-        },
-        "/Libraries/Alert/NativeAlertManager.js.flow": {
             "imports": {
                 "TurboModule": {
                     "type": "type",
@@ -4969,7 +4969,7 @@
                     {
                         "row": 32,
                         "column": 50,
-                        "type": "unresolved[error]"
+                        "type": "value"
                     },
                     {
                         "row": 33,
@@ -13706,38 +13706,6 @@
             },
             "typeofs": {}
         },
-        "/Libraries/Components/Sound/NativeSoundManager.js.flow": {
-            "imports": {
-                "TurboModule": {
-                    "type": "type",
-                    "resolvedDecl": {
-                        "row": 6,
-                        "column": 11,
-                        "local": "TurboModule",
-                        "type": "type"
-                    }
-                }
-            },
-            "typeofs": {}
-        },
-        "/Libraries/Components/Sound/SoundManager.js.flow": {
-            "imports": {},
-            "typeofs": {
-                "SoundManager": [
-                    {
-                        "row": 6,
-                        "column": 32,
-                        "type": "value",
-                        "resolvedDecl": {
-                            "row": 2,
-                            "column": 13,
-                            "local": "SoundManager",
-                            "type": "value"
-                        }
-                    }
-                ]
-            }
-        },
         "/Libraries/Components/StatusBar/NativeStatusBarManagerAndroid.js.flow": {
             "imports": {
                 "TurboModule": {
@@ -13865,6 +13833,38 @@
                             "column": 15,
                             "local": "NativeEventEmitter",
                             "type": "class"
+                        }
+                    }
+                ]
+            }
+        },
+        "/Libraries/Components/Sound/NativeSoundManager.js.flow": {
+            "imports": {
+                "TurboModule": {
+                    "type": "type",
+                    "resolvedDecl": {
+                        "row": 6,
+                        "column": 11,
+                        "local": "TurboModule",
+                        "type": "type"
+                    }
+                }
+            },
+            "typeofs": {}
+        },
+        "/Libraries/Components/Sound/SoundManager.js.flow": {
+            "imports": {},
+            "typeofs": {
+                "SoundManager": [
+                    {
+                        "row": 6,
+                        "column": 32,
+                        "type": "value",
+                        "resolvedDecl": {
+                            "row": 2,
+                            "column": 13,
+                            "local": "SoundManager",
+                            "type": "value"
                         }
                     }
                 ]
