@@ -122,16 +122,10 @@ async function main() {
       "$0 --root path/to/flow/inputs --out path/to/ts/outputs [FILES]\n\nFILES can be a list of include patterns or exclude by prepending the ! operator."
     )
     .options({
-      rootDir: {
+      workbenchDir: {
         nargs: 1,
         demandOption: true,
-        describe: "The root directory of the Flow sources",
-        type: "string",
-      },
-      outDir: {
-        nargs: 1,
-        demandOption: true,
-        describe: "Where the TS sources should be written",
+        describe: "The root directory per platform containing \"{platform}/hint\", \"{platform}/inputs\" and \"{platform}/outputs\"",
         type: "string",
       },
       platform: {
@@ -147,29 +141,27 @@ async function main() {
         describe: "The working directory from which to expand relative paths",
         type: "string",
       },
-      overrides: {
-        demandOption: false,
-        describe:
-          "A file that exports a OverridesVisitor object used to provide project specific overrides where conversion cannot accurately be made",
-        type: "string",
-        array: true,
-      },
-      hint: {
-        nargs: 1,
-        demandOption: false,
-        describe: "A file that provide hint for imported symbols",
-        type: "string",
-      },
     })
     .help().argv
 
   const cwd = argv.cwd
-  const outDir = path.resolve(cwd || "", argv.outDir)
-  const rootDir = path.resolve(cwd || "", argv.rootDir)
-  const overridesPath = argv.overrides && argv.overrides.map((o) => path.resolve(cwd || "", o))
-  const hintPath = argv.hint && path.resolve(cwd || "", argv.hint)
   const platform = argv.platform
-  const patterns = argv._
+  const workbenchDir = path.resolve(cwd || "", argv.workbenchDir)
+  const rootDir = path.join(workbenchDir, platform, "inputs")
+  const outDir = path.join(workbenchDir, platform, "outputs")
+  const hintPath = path.join(workbenchDir, platform, "hint", "hint.json")
+  const overridesPath = [
+    path.join(workbenchDir, "overrides.ts"),
+    path.join(workbenchDir, `overrides.${platform}.ts`)
+  ]
+  const patterns = [
+    `${argv.rootDir}/{index,Libraries/**/*}.js.flow`,
+    `!${argv.rootDir}/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow`,
+    `!${argv.rootDir}/Libraries/{Inspector,JSInspector,NewAppScreen,ReactPrivate}/**/*.js.flow`,
+    `!${argv.rootDir}/Libraries/Animated/AnimatedWeb.js.flow`,
+    `!${argv.rootDir}/Libraries/{Promise,promiseRejectionIsError,promiseRejectionTrackingOptions}.js.flow`,
+    `!${argv.rootDir}/Libraries/vendor/core/ErrorUtils.js.flow`,
+  ]
 
   const [totalCount, successCount, overridesWithoutMatches, wildcardOverridesWithSingleMatches] = await run({
     cwd,

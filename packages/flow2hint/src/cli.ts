@@ -164,20 +164,21 @@ async function processLibraryFiles({
 
 async function main() {
   const argv = yargs
-    .scriptName("flow2dts")
+    .scriptName("flow2hint")
     .usage("$0 --root path/to/flow/inputs --out path/to/ts/outputs [FILES]")
     .options({
-      rootDir: {
+      workbenchDir: {
         nargs: 1,
         demandOption: true,
-        describe: "The root directory of the Flow sources",
+        describe: "The root directory per platform containing \"{platform}/hint\", \"{platform}/inputs\" and \"{platform}/outputs\"",
         type: "string",
       },
-      outDir: {
+      platform: {
         nargs: 1,
         demandOption: true,
-        describe: "Where the hint files should be written",
+        describe: "Determines which platform specific files to include",
         type: "string",
+        choices: ["ios", "android"],
       },
       cwd: {
         nargs: 1,
@@ -189,10 +190,19 @@ async function main() {
     .help().argv
 
   const cwd = argv.cwd
-  const outDir = path.resolve(cwd || "", argv.outDir)
-  const inputRootDir = path.resolve(cwd || "", argv.rootDir)
+  const platform = argv.platform
+  const workbenchDir = path.resolve(cwd || "", argv.workbenchDir)
+  const outDir = path.join(workbenchDir, platform, "hint")
+  const inputRootDir = path.join(workbenchDir, platform, "inputs")
   const modifiedRootDir = path.join(outDir, "__modified__")
-  const patterns = argv._
+  const patterns = [
+    `${inputRootDir}/{index,Libraries/**/*}.js.flow`,
+    `!${inputRootDir}/Libraries/**/{__flowtests__,__mocks__,__tests__}/**/*.js.flow`,
+    `!${inputRootDir}/Libraries/{Inspector,JSInspector,NewAppScreen,ReactPrivate}/**/*.js.flow`,
+    `!${inputRootDir}/Libraries/Animated/AnimatedWeb.js.flow`,
+    `!${inputRootDir}/Libraries/{Promise,promiseRejectionIsError,promiseRejectionTrackingOptions}.js.flow`,
+    `!${inputRootDir}/Libraries/vendor/core/ErrorUtils.js.flow`,
+  ]
 
   const mergedFilename = path.join(outDir, MERGED_FILE)
   const [totalCount, successCount, collectedHintFiles] = await run({
