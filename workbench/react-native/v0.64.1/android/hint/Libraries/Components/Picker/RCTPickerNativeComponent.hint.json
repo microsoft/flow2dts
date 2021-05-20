@@ -1,0 +1,209 @@
+{
+    "imports": {
+        "HostComponent": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "HostComponent"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 96,
+                    "column": 6
+                },
+                "end": {
+                    "row": 96,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
+        },
+        "SyntheticEvent": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "SyntheticEvent"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 19
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
+        },
+        "TextStyleProp": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "TextStyleProp"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 20,
+                    "column": 6
+                },
+                "end": {
+                    "row": 20,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        "ProcessedColorValue": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ProcessedColorValue"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 24
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        },
+        "React": {
+            "source": {
+                "row": 7,
+                "column": 13,
+                "local": "React"
+            },
+            "error": "Could not get definition for /Libraries/Components/Picker/RCTPickerNativeComponent.js.flow:7:12\r\nFailed to find imported file react\r\n"
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 12,
+            "column": 7,
+            "local": "newValue",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 7,
+            "local": "newIndex",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 6,
+            "local": "PickerIOSChangeEvent",
+            "type": "type"
+        },
+        {
+            "row": 20,
+            "column": 5,
+            "local": "label",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 5,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 5,
+            "local": "textColor",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 6,
+            "local": "RCTPickerIOSItemType",
+            "type": "type"
+        },
+        {
+            "row": 26,
+            "column": 6,
+            "local": "Label",
+            "type": "type"
+        },
+        {
+            "row": 30,
+            "column": 5,
+            "local": "items",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 5,
+            "local": "onChange",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 5,
+            "local": "selectedIndex",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 5,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 5,
+            "local": "testID",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 5,
+            "local": "accessibilityLabel",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 6,
+            "local": "NativeProps",
+            "type": "type"
+        },
+        {
+            "row": 39,
+            "column": 6,
+            "local": "ComponentType",
+            "type": "type"
+        },
+        {
+            "row": 42,
+            "column": 4,
+            "local": "setNativeSelectedIndex",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 11,
+            "local": "NativeCommands",
+            "type": "type"
+        },
+        {
+            "row": 48,
+            "column": 13,
+            "local": "Commands",
+            "type": "value"
+        }
+    ]
+}

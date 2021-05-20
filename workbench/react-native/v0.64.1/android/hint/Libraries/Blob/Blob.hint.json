@@ -1,0 +1,115 @@
+{
+    "imports": {
+        "BlobData": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "BlobData"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 6
+                },
+                "end": {
+                    "row": 4,
+                    "column": 13
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Blob/BlobTypes.js.flow"
+            }
+        },
+        "BlobOptions": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "BlobOptions"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 15,
+                    "column": 6
+                },
+                "end": {
+                    "row": 15,
+                    "column": 16
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Blob/BlobTypes.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 38,
+                "column": 32,
+                "local": "Blob"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Blob/Blob.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 11,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 7,
+            "local": "data",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 7,
+            "local": "data",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "slice",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 3,
+            "local": "close",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 7,
+            "local": "size",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 7,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 15,
+            "local": "Blob",
+            "type": "class"
+        }
+    ]
+}

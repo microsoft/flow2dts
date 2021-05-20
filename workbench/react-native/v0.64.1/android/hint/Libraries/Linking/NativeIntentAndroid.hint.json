@@ -1,0 +1,75 @@
+{
+    "imports": {
+        "TurboModule": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "TurboModule"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 11
+                },
+                "end": {
+                    "row": 6,
+                    "column": 21
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/TurboModule/RCTExport.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 5,
+            "column": 4,
+            "local": "getInitialURL",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 4,
+            "local": "canOpenURL",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 4,
+            "local": "openURL",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 4,
+            "local": "openSettings",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 9,
+            "local": "key",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 9,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 4,
+            "local": "sendIntent",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
+}

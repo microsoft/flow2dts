@@ -1,0 +1,202 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 32,
+                "column": 27,
+                "local": "TransformMatrixPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 35
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTransformPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 33,
+                "column": 28,
+                "local": "DecomposedMatrixPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 13
+                },
+                "end": {
+                    "row": 8,
+                    "column": 36
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTransformPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 41,
+                "column": 32,
+                "local": "DeprecatedTransformPropTypes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 13
+                },
+                "end": {
+                    "row": 14,
+                    "column": 40
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTransformPropTypes.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "TransformMatrixPropType",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 13,
+            "local": "DecomposedMatrixPropType",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 12,
+            "local": "perspective",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 12,
+            "local": "rotate",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 12,
+            "local": "rotateX",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 12,
+            "local": "rotateY",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 12,
+            "local": "rotateZ",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 12,
+            "local": "scale",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 12,
+            "local": "scaleX",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 12,
+            "local": "scaleY",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 12,
+            "local": "translateX",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 12,
+            "local": "translateY",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 12,
+            "local": "skewX",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 12,
+            "local": "skewY",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "transform",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "transformMatrix",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 3,
+            "local": "decomposedMatrix",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 3,
+            "local": "scaleX",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "scaleY",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "rotation",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 3,
+            "local": "translateX",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 3,
+            "local": "translateY",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 13,
+            "local": "DeprecatedTransformPropTypes",
+            "type": "value"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 19,
+                "column": 32,
+                "local": "queryLayoutByID"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 13,
+                    "column": 13
+                },
+                "end": {
+                    "row": 13,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/ReactNative/queryLayoutByID.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 6,
+            "local": "OnSuccessCallback",
+            "type": "type"
+        },
+        {
+            "row": 11,
+            "column": 6,
+            "local": "OnErrorCallback",
+            "type": "type"
+        },
+        {
+            "row": 13,
+            "column": 13,
+            "local": "queryLayoutByID",
+            "type": "value"
+        }
+    ]
+}

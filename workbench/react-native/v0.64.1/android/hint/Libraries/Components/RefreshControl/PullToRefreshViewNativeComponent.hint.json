@@ -1,0 +1,175 @@
+{
+    "imports": {
+        "DirectEventHandler": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "DirectEventHandler"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 6
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Types/CodegenTypes.js.flow"
+            }
+        },
+        "WithDefault": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "WithDefault"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 21,
+                    "column": 6
+                },
+                "end": {
+                    "row": 21,
+                    "column": 16
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Types/CodegenTypes.js.flow"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "ColorValue"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 6
+                },
+                "end": {
+                    "row": 16,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ViewProps"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 377,
+                    "column": 6
+                },
+                "end": {
+                    "row": 377,
+                    "column": 14
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
+            }
+        },
+        "React": {
+            "source": {
+                "row": 6,
+                "column": 13,
+                "local": "React"
+            },
+            "error": "Could not get definition for /Libraries/Components/RefreshControl/PullToRefreshViewNativeComponent.js.flow:6:12\r\nFailed to find imported file react\r\n"
+        },
+        "HostComponent": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "HostComponent"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 96,
+                    "column": 6
+                },
+                "end": {
+                    "row": 96,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 17,
+            "column": 5,
+            "local": "tintColor",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 5,
+            "local": "titleColor",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "title",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 5,
+            "local": "onRefresh",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 5,
+            "local": "refreshing",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "NativeProps",
+            "type": "type"
+        },
+        {
+            "row": 39,
+            "column": 6,
+            "local": "ComponentType",
+            "type": "type"
+        },
+        {
+            "row": 42,
+            "column": 4,
+            "local": "setNativeRefreshing",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 11,
+            "local": "NativeCommands",
+            "type": "type"
+        },
+        {
+            "row": 48,
+            "column": 13,
+            "local": "Commands",
+            "type": "value"
+        }
+    ]
+}

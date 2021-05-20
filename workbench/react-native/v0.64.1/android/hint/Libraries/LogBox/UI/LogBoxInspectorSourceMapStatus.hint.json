@@ -1,0 +1,79 @@
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "React"
+            },
+            "error": "Could not get definition for /Libraries/LogBox/UI/LogBoxInspectorSourceMapStatus.js.flow:2:12\r\nFailed to find imported file react\r\n"
+        },
+        "PressEvent": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "PressEvent"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 95,
+                    "column": 6
+                },
+                "end": {
+                    "row": 95,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 15,
+                "column": 31,
+                "local": "LogBoxInspectorSourceMapStatus"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 13,
+                    "column": 18
+                },
+                "end": {
+                    "row": 13,
+                    "column": 47
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/LogBox/UI/LogBoxInspectorSourceMapStatus.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 8,
+            "column": 5,
+            "local": "onPress",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 5,
+            "local": "status",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 13,
+            "column": 18,
+            "local": "LogBoxInspectorSourceMapStatus",
+            "type": "value"
+        }
+    ]
+}

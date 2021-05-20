@@ -1,0 +1,110 @@
+{
+    "imports": {
+        "EventEmitter": {
+            "source": {
+                "row": 2,
+                "column": 8,
+                "local": "EventEmitter"
+            },
+            "error": "[unrecognizable stdout]:0:1,0:0\r\n"
+        },
+        "EventSubscription": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "EventSubscription"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 11
+                },
+                "end": {
+                    "row": 5,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/vendor/emitter/EventEmitter.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 34,
+                "column": 24,
+                "local": "EventEmitter"
+            },
+            "error": "[unrecognizable stdout]:0:1,0:0\r\n"
+        }
+    ],
+    "decls": [
+        {
+            "row": 6,
+            "column": 4,
+            "local": "addListener",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 4,
+            "local": "removeListeners",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 6,
+            "local": "NativeModule",
+            "type": "type"
+        },
+        {
+            "row": 13,
+            "column": 5,
+            "local": "__SECRET_DISABLE_CALLS_INTO_MODULE_DO_NOT_USE_OR_YOU_WILL_BE_FIRED",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 6,
+            "local": "NativeEventEmitterOptions",
+            "type": "type"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 3,
+            "local": "addListener",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 3,
+            "local": "removeAllListeners",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "removeSubscription",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 15,
+            "local": "NativeEventEmitter",
+            "type": "class"
+        },
+        {
+            "row": 34,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "imports": {
+        "ScrollViewNativeComponentType": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ScrollViewNativeComponentType"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 76,
+                    "column": 6
+                },
+                "end": {
+                    "row": 76,
+                    "column": 34
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/ScrollView/ScrollViewNativeComponentType.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": []
+}

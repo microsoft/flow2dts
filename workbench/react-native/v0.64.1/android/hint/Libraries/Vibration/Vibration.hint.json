@@ -1,0 +1,44 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 17,
+                "column": 32,
+                "local": "Vibration"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 21
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Vibration/Vibration.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 8,
+            "column": 3,
+            "local": "vibrate",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "cancel",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 13,
+            "local": "Vibration",
+            "type": "value"
+        }
+    ]
+}

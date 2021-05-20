@@ -1,0 +1,1104 @@
+{
+    "imports": {},
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 29,
+            "column": 3,
+            "local": "props",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 3,
+            "local": "state",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 3,
+            "local": "setState",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 3,
+            "local": "forceUpdate",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 3,
+            "local": "render",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 3,
+            "local": "componentWillMount",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 3,
+            "local": "UNSAFE_componentWillMount",
+            "type": "value"
+        },
+        {
+            "row": 47,
+            "column": 3,
+            "local": "componentDidMount",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 3,
+            "local": "componentWillReceiveProps",
+            "type": "value"
+        },
+        {
+            "row": 52,
+            "column": 3,
+            "local": "UNSAFE_componentWillReceiveProps",
+            "type": "value"
+        },
+        {
+            "row": 56,
+            "column": 3,
+            "local": "shouldComponentUpdate",
+            "type": "value"
+        },
+        {
+            "row": 61,
+            "column": 3,
+            "local": "componentWillUpdate",
+            "type": "value"
+        },
+        {
+            "row": 66,
+            "column": 3,
+            "local": "UNSAFE_componentWillUpdate",
+            "type": "value"
+        },
+        {
+            "row": 71,
+            "column": 3,
+            "local": "componentDidUpdate",
+            "type": "value"
+        },
+        {
+            "row": 76,
+            "column": 3,
+            "local": "componentWillUnmount",
+            "type": "value"
+        },
+        {
+            "row": 79,
+            "column": 13,
+            "local": "componentStack",
+            "type": "value"
+        },
+        {
+            "row": 77,
+            "column": 3,
+            "local": "componentDidCatch",
+            "type": "value"
+        },
+        {
+            "row": 84,
+            "column": 3,
+            "local": "refs",
+            "type": "value"
+        },
+        {
+            "row": 85,
+            "column": 3,
+            "local": "context",
+            "type": "value"
+        },
+        {
+            "row": 86,
+            "column": 3,
+            "local": "getChildContext",
+            "type": "value"
+        },
+        {
+            "row": 87,
+            "column": 10,
+            "local": "displayName",
+            "type": "value"
+        },
+        {
+            "row": 88,
+            "column": 10,
+            "local": "childContextTypes",
+            "type": "value"
+        },
+        {
+            "row": 89,
+            "column": 10,
+            "local": "contextTypes",
+            "type": "value"
+        },
+        {
+            "row": 90,
+            "column": 10,
+            "local": "propTypes",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 15,
+            "local": "React$Component",
+            "type": "class"
+        },
+        {
+            "row": 106,
+            "column": 3,
+            "local": "props",
+            "type": "value"
+        },
+        {
+            "row": 107,
+            "column": 3,
+            "local": "state",
+            "type": "value"
+        },
+        {
+            "row": 100,
+            "column": 15,
+            "local": "React$PureComponent",
+            "type": "class"
+        },
+        {
+            "row": 118,
+            "column": 3,
+            "local": "replaceState",
+            "type": "value"
+        },
+        {
+            "row": 120,
+            "column": 3,
+            "local": "isMounted",
+            "type": "value"
+        },
+        {
+            "row": 126,
+            "column": 3,
+            "local": "props",
+            "type": "value"
+        },
+        {
+            "row": 127,
+            "column": 3,
+            "local": "state",
+            "type": "value"
+        },
+        {
+            "row": 114,
+            "column": 15,
+            "local": "LegacyReactComponent",
+            "type": "class"
+        },
+        {
+            "row": 131,
+            "column": 3,
+            "local": "displayName",
+            "type": "value"
+        },
+        {
+            "row": 134,
+            "column": 3,
+            "local": "name",
+            "type": "value"
+        },
+        {
+            "row": 135,
+            "column": 3,
+            "local": "propTypes",
+            "type": "value"
+        },
+        {
+            "row": 146,
+            "column": 3,
+            "local": "displayName",
+            "type": "value"
+        },
+        {
+            "row": 147,
+            "column": 3,
+            "local": "propTypes",
+            "type": "value"
+        },
+        {
+            "row": 148,
+            "column": 3,
+            "local": "contextTypes",
+            "type": "value"
+        },
+        {
+            "row": 179,
+            "column": 4,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 180,
+            "column": 4,
+            "local": "props",
+            "type": "value"
+        },
+        {
+            "row": 181,
+            "column": 4,
+            "local": "key",
+            "type": "value"
+        },
+        {
+            "row": 182,
+            "column": 4,
+            "local": "ref",
+            "type": "value"
+        },
+        {
+            "row": 197,
+            "column": 8,
+            "local": "current",
+            "type": "value"
+        },
+        {
+            "row": 207,
+            "column": 5,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 208,
+            "column": 5,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 206,
+            "column": 3,
+            "local": "Provider",
+            "type": "value"
+        },
+        {
+            "row": 211,
+            "column": 35,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 211,
+            "column": 3,
+            "local": "Consumer",
+            "type": "value"
+        },
+        {
+            "row": 213,
+            "column": 3,
+            "local": "displayName",
+            "type": "value"
+        },
+        {
+            "row": 223,
+            "column": 38,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 226,
+            "column": 22,
+            "local": "DOM",
+            "type": "value"
+        },
+        {
+            "row": 227,
+            "column": 22,
+            "local": "PropTypes",
+            "type": "value"
+        },
+        {
+            "row": 228,
+            "column": 22,
+            "local": "version",
+            "type": "value"
+        },
+        {
+            "row": 230,
+            "column": 27,
+            "local": "checkPropTypes",
+            "type": "value"
+        },
+        {
+            "row": 238,
+            "column": 22,
+            "local": "createClass",
+            "type": "value"
+        },
+        {
+            "row": 239,
+            "column": 27,
+            "local": "createContext",
+            "type": "value"
+        },
+        {
+            "row": 243,
+            "column": 22,
+            "local": "createElement",
+            "type": "value"
+        },
+        {
+            "row": 244,
+            "column": 22,
+            "local": "cloneElement",
+            "type": "value"
+        },
+        {
+            "row": 245,
+            "column": 27,
+            "local": "createFactory",
+            "type": "value"
+        },
+        {
+            "row": 249,
+            "column": 8,
+            "local": "current",
+            "type": "value"
+        },
+        {
+            "row": 248,
+            "column": 27,
+            "local": "createRef",
+            "type": "value"
+        },
+        {
+            "row": 251,
+            "column": 27,
+            "local": "isValidElement",
+            "type": "value"
+        },
+        {
+            "row": 253,
+            "column": 22,
+            "local": "Component",
+            "type": "value"
+        },
+        {
+            "row": 254,
+            "column": 22,
+            "local": "PureComponent",
+            "type": "value"
+        },
+        {
+            "row": 255,
+            "column": 23,
+            "local": "StatelessFunctionalComponent",
+            "type": "type"
+        },
+        {
+            "row": 257,
+            "column": 23,
+            "local": "ComponentType",
+            "type": "type"
+        },
+        {
+            "row": 258,
+            "column": 23,
+            "local": "AbstractComponent",
+            "type": "type"
+        },
+        {
+            "row": 262,
+            "column": 23,
+            "local": "MixedElement",
+            "type": "type"
+        },
+        {
+            "row": 263,
+            "column": 23,
+            "local": "ElementType",
+            "type": "type"
+        },
+        {
+            "row": 264,
+            "column": 23,
+            "local": "Element",
+            "type": "type"
+        },
+        {
+            "row": 265,
+            "column": 22,
+            "local": "Fragment",
+            "type": "value"
+        },
+        {
+            "row": 266,
+            "column": 23,
+            "local": "Key",
+            "type": "type"
+        },
+        {
+            "row": 267,
+            "column": 23,
+            "local": "Ref",
+            "type": "type"
+        },
+        {
+            "row": 268,
+            "column": 23,
+            "local": "Node",
+            "type": "type"
+        },
+        {
+            "row": 269,
+            "column": 23,
+            "local": "Context",
+            "type": "type"
+        },
+        {
+            "row": 270,
+            "column": 23,
+            "local": "Portal",
+            "type": "type"
+        },
+        {
+            "row": 271,
+            "column": 41,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 271,
+            "column": 22,
+            "local": "ConcurrentMode",
+            "type": "value"
+        },
+        {
+            "row": 272,
+            "column": 37,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 272,
+            "column": 22,
+            "local": "StrictMode",
+            "type": "value"
+        },
+        {
+            "row": 275,
+            "column": 5,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 276,
+            "column": 5,
+            "local": "fallback",
+            "type": "value"
+        },
+        {
+            "row": 274,
+            "column": 22,
+            "local": "Suspense",
+            "type": "value"
+        },
+        {
+            "row": 280,
+            "column": 23,
+            "local": "ElementProps",
+            "type": "type"
+        },
+        {
+            "row": 281,
+            "column": 23,
+            "local": "ElementConfig",
+            "type": "type"
+        },
+        {
+            "row": 282,
+            "column": 23,
+            "local": "ElementRef",
+            "type": "type"
+        },
+        {
+            "row": 283,
+            "column": 23,
+            "local": "Config",
+            "type": "type"
+        },
+        {
+            "row": 285,
+            "column": 23,
+            "local": "ChildrenArray",
+            "type": "type"
+        },
+        {
+            "row": 287,
+            "column": 5,
+            "local": "map",
+            "type": "value"
+        },
+        {
+            "row": 292,
+            "column": 5,
+            "local": "forEach",
+            "type": "value"
+        },
+        {
+            "row": 297,
+            "column": 5,
+            "local": "count",
+            "type": "value"
+        },
+        {
+            "row": 298,
+            "column": 5,
+            "local": "only",
+            "type": "value"
+        },
+        {
+            "row": 299,
+            "column": 5,
+            "local": "toArray",
+            "type": "value"
+        },
+        {
+            "row": 286,
+            "column": 22,
+            "local": "Children",
+            "type": "value"
+        },
+        {
+            "row": 306,
+            "column": 14,
+            "local": "current",
+            "type": "value"
+        },
+        {
+            "row": 303,
+            "column": 27,
+            "local": "forwardRef",
+            "type": "value"
+        },
+        {
+            "row": 310,
+            "column": 27,
+            "local": "memo",
+            "type": "value"
+        },
+        {
+            "row": 316,
+            "column": 32,
+            "local": "default",
+            "type": "value"
+        },
+        {
+            "row": 315,
+            "column": 27,
+            "local": "lazy",
+            "type": "value"
+        },
+        {
+            "row": 321,
+            "column": 27,
+            "local": "useContext",
+            "type": "value"
+        },
+        {
+            "row": 326,
+            "column": 27,
+            "local": "useState",
+            "type": "value"
+        },
+        {
+            "row": 332,
+            "column": 27,
+            "local": "useReducer",
+            "type": "value"
+        },
+        {
+            "row": 337,
+            "column": 27,
+            "local": "useReducer",
+            "type": "value"
+        },
+        {
+            "row": 343,
+            "column": 27,
+            "local": "useReducer",
+            "type": "value"
+        },
+        {
+            "row": 349,
+            "column": 57,
+            "local": "current",
+            "type": "value"
+        },
+        {
+            "row": 349,
+            "column": 27,
+            "local": "useRef",
+            "type": "value"
+        },
+        {
+            "row": 351,
+            "column": 27,
+            "local": "useDebugValue",
+            "type": "value"
+        },
+        {
+            "row": 353,
+            "column": 27,
+            "local": "useEffect",
+            "type": "value"
+        },
+        {
+            "row": 358,
+            "column": 27,
+            "local": "useLayoutEffect",
+            "type": "value"
+        },
+        {
+            "row": 363,
+            "column": 27,
+            "local": "useCallback",
+            "type": "value"
+        },
+        {
+            "row": 368,
+            "column": 27,
+            "local": "useMemo",
+            "type": "value"
+        },
+        {
+            "row": 374,
+            "column": 12,
+            "local": "current",
+            "type": "value"
+        },
+        {
+            "row": 373,
+            "column": 27,
+            "local": "useImperativeHandle",
+            "type": "value"
+        },
+        {
+            "row": 379,
+            "column": 27,
+            "local": "useDeferredValue",
+            "type": "value"
+        },
+        {
+            "row": 384,
+            "column": 27,
+            "local": "useTransition",
+            "type": "value"
+        },
+        {
+            "row": 390,
+            "column": 5,
+            "local": "name",
+            "type": "value"
+        },
+        {
+            "row": 391,
+            "column": 5,
+            "local": "timestamp",
+            "type": "value"
+        },
+        {
+            "row": 389,
+            "column": 23,
+            "local": "Interaction",
+            "type": "type"
+        },
+        {
+            "row": 406,
+            "column": 5,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 407,
+            "column": 5,
+            "local": "id",
+            "type": "value"
+        },
+        {
+            "row": 408,
+            "column": 5,
+            "local": "onRender",
+            "type": "value"
+        },
+        {
+            "row": 405,
+            "column": 22,
+            "local": "Profiler",
+            "type": "value"
+        },
+        {
+            "row": 412,
+            "column": 5,
+            "local": "timeoutMs",
+            "type": "value"
+        },
+        {
+            "row": 416,
+            "column": 6,
+            "local": "DOM",
+            "type": "value"
+        },
+        {
+            "row": 417,
+            "column": 6,
+            "local": "PropTypes",
+            "type": "value"
+        },
+        {
+            "row": 418,
+            "column": 6,
+            "local": "version",
+            "type": "value"
+        },
+        {
+            "row": 419,
+            "column": 6,
+            "local": "checkPropTypes",
+            "type": "value"
+        },
+        {
+            "row": 420,
+            "column": 6,
+            "local": "memo",
+            "type": "value"
+        },
+        {
+            "row": 421,
+            "column": 6,
+            "local": "lazy",
+            "type": "value"
+        },
+        {
+            "row": 422,
+            "column": 6,
+            "local": "createClass",
+            "type": "value"
+        },
+        {
+            "row": 423,
+            "column": 6,
+            "local": "createContext",
+            "type": "value"
+        },
+        {
+            "row": 424,
+            "column": 6,
+            "local": "createElement",
+            "type": "value"
+        },
+        {
+            "row": 425,
+            "column": 6,
+            "local": "cloneElement",
+            "type": "value"
+        },
+        {
+            "row": 426,
+            "column": 6,
+            "local": "createFactory",
+            "type": "value"
+        },
+        {
+            "row": 427,
+            "column": 6,
+            "local": "createRef",
+            "type": "value"
+        },
+        {
+            "row": 428,
+            "column": 6,
+            "local": "forwardRef",
+            "type": "value"
+        },
+        {
+            "row": 429,
+            "column": 6,
+            "local": "isValidElement",
+            "type": "value"
+        },
+        {
+            "row": 430,
+            "column": 6,
+            "local": "Component",
+            "type": "value"
+        },
+        {
+            "row": 431,
+            "column": 6,
+            "local": "PureComponent",
+            "type": "value"
+        },
+        {
+            "row": 432,
+            "column": 6,
+            "local": "Fragment",
+            "type": "value"
+        },
+        {
+            "row": 433,
+            "column": 6,
+            "local": "Children",
+            "type": "value"
+        },
+        {
+            "row": 434,
+            "column": 6,
+            "local": "ConcurrentMode",
+            "type": "value"
+        },
+        {
+            "row": 435,
+            "column": 6,
+            "local": "StrictMode",
+            "type": "value"
+        },
+        {
+            "row": 436,
+            "column": 6,
+            "local": "Profiler",
+            "type": "value"
+        },
+        {
+            "row": 437,
+            "column": 6,
+            "local": "Suspense",
+            "type": "value"
+        },
+        {
+            "row": 438,
+            "column": 6,
+            "local": "useContext",
+            "type": "value"
+        },
+        {
+            "row": 439,
+            "column": 6,
+            "local": "useState",
+            "type": "value"
+        },
+        {
+            "row": 440,
+            "column": 6,
+            "local": "useReducer",
+            "type": "value"
+        },
+        {
+            "row": 441,
+            "column": 6,
+            "local": "useRef",
+            "type": "value"
+        },
+        {
+            "row": 442,
+            "column": 6,
+            "local": "useEffect",
+            "type": "value"
+        },
+        {
+            "row": 443,
+            "column": 6,
+            "local": "useLayoutEffect",
+            "type": "value"
+        },
+        {
+            "row": 444,
+            "column": 6,
+            "local": "useCallback",
+            "type": "value"
+        },
+        {
+            "row": 445,
+            "column": 6,
+            "local": "useMemo",
+            "type": "value"
+        },
+        {
+            "row": 446,
+            "column": 6,
+            "local": "useImperativeHandle",
+            "type": "value"
+        },
+        {
+            "row": 447,
+            "column": 6,
+            "local": "useTransition",
+            "type": "value"
+        },
+        {
+            "row": 448,
+            "column": 6,
+            "local": "useDeferredValue",
+            "type": "value"
+        },
+        {
+            "row": 458,
+            "column": 6,
+            "local": "ReactPropsCheckType",
+            "type": "type"
+        },
+        {
+            "row": 466,
+            "column": 3,
+            "local": "isRequired",
+            "type": "value"
+        },
+        {
+            "row": 464,
+            "column": 6,
+            "local": "ReactPropsChainableTypeChecker",
+            "type": "type"
+        },
+        {
+            "row": 470,
+            "column": 6,
+            "local": "React$PropTypes$arrayOf",
+            "type": "type"
+        },
+        {
+            "row": 472,
+            "column": 6,
+            "local": "React$PropTypes$instanceOf",
+            "type": "type"
+        },
+        {
+            "row": 474,
+            "column": 6,
+            "local": "React$PropTypes$objectOf",
+            "type": "type"
+        },
+        {
+            "row": 476,
+            "column": 6,
+            "local": "React$PropTypes$oneOf",
+            "type": "type"
+        },
+        {
+            "row": 478,
+            "column": 6,
+            "local": "React$PropTypes$oneOfType",
+            "type": "type"
+        },
+        {
+            "row": 481,
+            "column": 6,
+            "local": "React$PropTypes$shape",
+            "type": "type"
+        },
+        {
+            "row": 486,
+            "column": 3,
+            "local": "array",
+            "type": "value"
+        },
+        {
+            "row": 487,
+            "column": 3,
+            "local": "bool",
+            "type": "value"
+        },
+        {
+            "row": 488,
+            "column": 3,
+            "local": "func",
+            "type": "value"
+        },
+        {
+            "row": 489,
+            "column": 3,
+            "local": "number",
+            "type": "value"
+        },
+        {
+            "row": 490,
+            "column": 3,
+            "local": "object",
+            "type": "value"
+        },
+        {
+            "row": 491,
+            "column": 3,
+            "local": "string",
+            "type": "value"
+        },
+        {
+            "row": 492,
+            "column": 3,
+            "local": "any",
+            "type": "value"
+        },
+        {
+            "row": 493,
+            "column": 3,
+            "local": "arrayOf",
+            "type": "value"
+        },
+        {
+            "row": 494,
+            "column": 3,
+            "local": "element",
+            "type": "value"
+        },
+        {
+            "row": 496,
+            "column": 3,
+            "local": "instanceOf",
+            "type": "value"
+        },
+        {
+            "row": 497,
+            "column": 3,
+            "local": "node",
+            "type": "value"
+        },
+        {
+            "row": 499,
+            "column": 3,
+            "local": "objectOf",
+            "type": "value"
+        },
+        {
+            "row": 500,
+            "column": 3,
+            "local": "oneOf",
+            "type": "value"
+        },
+        {
+            "row": 501,
+            "column": 3,
+            "local": "oneOfType",
+            "type": "value"
+        },
+        {
+            "row": 502,
+            "column": 3,
+            "local": "shape",
+            "type": "value"
+        },
+        {
+            "row": 485,
+            "column": 6,
+            "local": "ReactPropTypes",
+            "type": "type"
+        }
+    ]
+}

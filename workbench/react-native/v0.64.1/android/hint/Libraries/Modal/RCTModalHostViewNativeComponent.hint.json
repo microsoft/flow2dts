@@ -1,0 +1,217 @@
+{
+    "imports": {
+        "HostComponent": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "HostComponent"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 96,
+                    "column": 6
+                },
+                "end": {
+                    "row": 96,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
+        },
+        "WithDefault": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "WithDefault"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 21,
+                    "column": 6
+                },
+                "end": {
+                    "row": 21,
+                    "column": 16
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Types/CodegenTypes.js.flow"
+            }
+        },
+        "DirectEventHandler": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "DirectEventHandler"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 6
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Types/CodegenTypes.js.flow"
+            }
+        },
+        "BubblingEventHandler": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "BubblingEventHandler"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 6
+                },
+                "end": {
+                    "row": 4,
+                    "column": 25
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Types/CodegenTypes.js.flow"
+            }
+        },
+        "Int32": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "Int32"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 6
+                },
+                "end": {
+                    "row": 17,
+                    "column": 10
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Types/CodegenTypes.js.flow"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "ViewProps"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 377,
+                    "column": 6
+                },
+                "end": {
+                    "row": 377,
+                    "column": 14
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 12,
+            "column": 5,
+            "local": "orientation",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "OrientationChangeEvent",
+            "type": "type"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "animationType",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 5,
+            "local": "presentationStyle",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 5,
+            "local": "transparent",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 5,
+            "local": "statusBarTranslucent",
+            "type": "value"
+        },
+        {
+            "row": 59,
+            "column": 5,
+            "local": "hardwareAccelerated",
+            "type": "value"
+        },
+        {
+            "row": 69,
+            "column": 5,
+            "local": "onRequestClose",
+            "type": "value"
+        },
+        {
+            "row": 77,
+            "column": 5,
+            "local": "onShow",
+            "type": "value"
+        },
+        {
+            "row": 85,
+            "column": 5,
+            "local": "onDismiss",
+            "type": "value"
+        },
+        {
+            "row": 90,
+            "column": 5,
+            "local": "animated",
+            "type": "value"
+        },
+        {
+            "row": 97,
+            "column": 5,
+            "local": "supportedOrientations",
+            "type": "value"
+        },
+        {
+            "row": 114,
+            "column": 5,
+            "local": "onOrientationChange",
+            "type": "value"
+        },
+        {
+            "row": 119,
+            "column": 5,
+            "local": "identifier",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 6,
+            "local": "NativeProps",
+            "type": "type"
+        }
+    ]
+}

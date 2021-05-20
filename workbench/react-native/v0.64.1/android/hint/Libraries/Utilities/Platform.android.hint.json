@@ -1,0 +1,188 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 41,
+                "column": 32,
+                "local": "Platform"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 13
+                },
+                "end": {
+                    "row": 9,
+                    "column": 20
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/Platform.android.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "android",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 3,
+            "local": "native",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "local": "default",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "local": "PlatformSelectSpec",
+            "type": "type"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "__constants",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "OS",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 7,
+            "local": "Version",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 5,
+            "local": "isTesting",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 7,
+            "local": "major",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 7,
+            "local": "minor",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 7,
+            "local": "patch",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 7,
+            "local": "prerelease",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 5,
+            "local": "reactNativeVersion",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 5,
+            "local": "Version",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 5,
+            "local": "Release",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "Serial",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 5,
+            "local": "Fingerprint",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 5,
+            "local": "Model",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 5,
+            "local": "ServerHost",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 5,
+            "local": "uiMode",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 5,
+            "local": "Brand",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 5,
+            "local": "Manufacturer",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 7,
+            "local": "constants",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 7,
+            "local": "isTesting",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 7,
+            "local": "isTV",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 3,
+            "local": "select",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 13,
+            "local": "Platform",
+            "type": "value"
+        }
+    ]
+}

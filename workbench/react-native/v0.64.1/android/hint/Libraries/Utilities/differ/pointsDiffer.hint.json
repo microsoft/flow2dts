@@ -1,0 +1,50 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 10,
+                "column": 32,
+                "local": "pointsDiffer"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 13
+                },
+                "end": {
+                    "row": 8,
+                    "column": 24
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/differ/pointsDiffer.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "x",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 3,
+            "local": "y",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "local": "Point",
+            "type": "type"
+        },
+        {
+            "row": 8,
+            "column": 13,
+            "local": "pointsDiffer",
+            "type": "value"
+        }
+    ]
+}

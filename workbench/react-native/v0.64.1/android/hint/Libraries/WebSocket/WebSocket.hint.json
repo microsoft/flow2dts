@@ -1,0 +1,220 @@
+{
+    "imports": {
+        "Blob": {
+            "source": {
+                "row": 2,
+                "column": 8,
+                "local": "Blob"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Blob/Blob.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 59,
+                "column": 32,
+                "local": "WebSocket"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 15
+                },
+                "end": {
+                    "row": 18,
+                    "column": 23
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/WebSocket/WebSocket.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 4,
+            "column": 6,
+            "local": "ArrayBufferView",
+            "type": "type"
+        },
+        {
+            "row": 16,
+            "column": 6,
+            "local": "BinaryType",
+            "type": "type"
+        },
+        {
+            "row": 20,
+            "column": 10,
+            "local": "CONNECTING",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 10,
+            "local": "OPEN",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 10,
+            "local": "CLOSING",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 10,
+            "local": "CLOSED",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 3,
+            "local": "CONNECTING",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 3,
+            "local": "OPEN",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 3,
+            "local": "CLOSING",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 3,
+            "local": "CLOSED",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 3,
+            "local": "onclose",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 3,
+            "local": "onerror",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "onmessage",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 3,
+            "local": "onopen",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "bufferedAmount",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "extension",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 3,
+            "local": "protocol",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 3,
+            "local": "readyState",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 3,
+            "local": "url",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 27,
+            "local": "origin",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 16,
+            "local": "headers",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 47,
+            "column": 7,
+            "local": "binaryType",
+            "type": "value"
+        },
+        {
+            "row": 49,
+            "column": 7,
+            "local": "binaryType",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 3,
+            "local": "close",
+            "type": "value"
+        },
+        {
+            "row": 53,
+            "column": 3,
+            "local": "send",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 3,
+            "local": "ping",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 15,
+            "local": "WebSocket",
+            "type": "class"
+        },
+        {
+            "row": 57,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
+}

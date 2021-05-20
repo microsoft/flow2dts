@@ -1,0 +1,150 @@
+{
+    "imports": {},
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 3,
+            "column": 4,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "local": "HermesStackLocationNative",
+            "type": "type"
+        },
+        {
+            "row": 7,
+            "column": 4,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 4,
+            "local": "sourceUrl",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 4,
+            "local": "line1Based",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 4,
+            "local": "column1Based",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 6,
+            "local": "HermesStackLocationSource",
+            "type": "type"
+        },
+        {
+            "row": 14,
+            "column": 4,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 4,
+            "local": "sourceUrl",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 4,
+            "local": "line1Based",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 4,
+            "local": "virtualOffset0Based",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 6,
+            "local": "HermesStackLocationBytecode",
+            "type": "type"
+        },
+        {
+            "row": 20,
+            "column": 6,
+            "local": "HermesStackLocation",
+            "type": "type"
+        },
+        {
+            "row": 26,
+            "column": 4,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 4,
+            "local": "location",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 4,
+            "local": "functionName",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 6,
+            "local": "HermesStackEntryFrame",
+            "type": "type"
+        },
+        {
+            "row": 32,
+            "column": 4,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 4,
+            "local": "count",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 6,
+            "local": "HermesStackEntrySkipped",
+            "type": "type"
+        },
+        {
+            "row": 36,
+            "column": 6,
+            "local": "HermesStackEntry",
+            "type": "type"
+        },
+        {
+            "row": 39,
+            "column": 4,
+            "local": "message",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 4,
+            "local": "entries",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 6,
+            "local": "HermesParsedStack",
+            "type": "type"
+        }
+    ]
+}

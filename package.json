@@ -4,6 +4,8 @@
   "workspaces": [
     "packages/*",
     "workbench/react-native/v0.63.3",
+    "workbench/react-native/v0.64.1/ios/outputs",
+    "workbench/react-native/v0.64.1/android/outputs",
     "workbench/artsy-eigen"
   ],
   "scripts": {

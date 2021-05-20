@@ -1,0 +1,406 @@
+{
+    "imports": {
+        "HostComponent": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "HostComponent"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 96,
+                    "column": 6
+                },
+                "end": {
+                    "row": 96,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 27,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 12
+                },
+                "end": {
+                    "row": 3,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 31,
+                "column": 33,
+                "local": "currentlyFocusedInput"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 18
+                },
+                "end": {
+                    "row": 8,
+                    "column": 38
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 32,
+                "column": 22,
+                "local": "focusInput"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 18
+                },
+                "end": {
+                    "row": 12,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 33,
+                "column": 21,
+                "local": "blurInput"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 18
+                },
+                "end": {
+                    "row": 14,
+                    "column": 26
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 35,
+                "column": 33,
+                "local": "currentlyFocusedField"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 18
+                },
+                "end": {
+                    "row": 10,
+                    "column": 38
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 36,
+                "column": 22,
+                "local": "focusField"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 18
+                },
+                "end": {
+                    "row": 16,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 37,
+                "column": 21,
+                "local": "blurField"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 18
+                },
+                "end": {
+                    "row": 18,
+                    "column": 26
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 38,
+                "column": 26,
+                "local": "focusTextInput"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 20,
+                    "column": 18
+                },
+                "end": {
+                    "row": 20,
+                    "column": 31
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 39,
+                "column": 25,
+                "local": "blurTextInput"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 22,
+                    "column": 18
+                },
+                "end": {
+                    "row": 22,
+                    "column": 30
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 40,
+                "column": 25,
+                "local": "registerInput"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 24,
+                    "column": 18
+                },
+                "end": {
+                    "row": 24,
+                    "column": 30
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 41,
+                "column": 27,
+                "local": "unregisterInput"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 26,
+                    "column": 18
+                },
+                "end": {
+                    "row": 26,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 42,
+                "column": 23,
+                "local": "isTextInput"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 28,
+                    "column": 18
+                },
+                "end": {
+                    "row": 28,
+                    "column": 28
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/TextInput/TextInputState.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 6,
+            "local": "ComponentRef",
+            "type": "type"
+        },
+        {
+            "row": 8,
+            "column": 18,
+            "local": "currentlyFocusedInput",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 18,
+            "local": "currentlyFocusedField",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 18,
+            "local": "focusInput",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 18,
+            "local": "blurInput",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 18,
+            "local": "focusField",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 18,
+            "local": "blurField",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 18,
+            "local": "focusTextInput",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 18,
+            "local": "blurTextInput",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 18,
+            "local": "registerInput",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 18,
+            "local": "unregisterInput",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 18,
+            "local": "isTextInput",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 3,
+            "local": "currentlyFocusedInput",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "focusInput",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 3,
+            "local": "blurInput",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "currentlyFocusedField",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "focusField",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 3,
+            "local": "blurField",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 3,
+            "local": "focusTextInput",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 3,
+            "local": "blurTextInput",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 3,
+            "local": "registerInput",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 3,
+            "local": "unregisterInput",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 3,
+            "local": "isTextInput",
+            "type": "value"
+        }
+    ]
+}

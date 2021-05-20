@@ -1,0 +1,167 @@
+{
+    "imports": {
+        "TouchableWithoutFeedback": {
+            "source": {
+                "row": 2,
+                "column": 15,
+                "local": "TouchableWithoutFeedback"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 60,
+                    "column": 15
+                },
+                "end": {
+                    "row": 60,
+                    "column": 38
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Touchable/TouchableWithoutFeedback.js.flow"
+            }
+        },
+        "Animated": {
+            "source": {
+                "row": 3,
+                "column": 8,
+                "local": "Animated"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 8
+                },
+                "end": {
+                    "row": 3,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Touchable/TouchableOpacity.js.flow"
+            }
+        },
+        "ViewStyleProp": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ViewStyleProp"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 14
+                },
+                "end": {
+                    "row": 5,
+                    "column": 26
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Touchable/TouchableOpacity.js.flow"
+            }
+        },
+        "React": {
+            "source": {
+                "row": 7,
+                "column": 13,
+                "local": "React"
+            },
+            "error": "Could not get definition for /Libraries/Components/Touchable/TouchableOpacity.js.flow:7:12\r\nFailed to find imported file react\r\n"
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 28,
+                "column": 40,
+                "local": "View"
+            },
+            "error": "[TYPEOF RESOLVED TO ITSELF]",
+            "resolved": {
+                "begin": {
+                    "row": 28,
+                    "column": 31
+                },
+                "end": {
+                    "row": 28,
+                    "column": 43
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Touchable/TouchableOpacity.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 11,
+            "column": 5,
+            "local": "hasTVPreferredFocus",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 5,
+            "local": "nextFocusDown",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 5,
+            "local": "nextFocusForward",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 5,
+            "local": "nextFocusLeft",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 5,
+            "local": "nextFocusRight",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 5,
+            "local": "nextFocusUp",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 6,
+            "local": "TVProps",
+            "type": "type"
+        },
+        {
+            "row": 25,
+            "column": 5,
+            "local": "activeOpacity",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 5,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 5,
+            "local": "hostRef",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 33,
+            "column": 28,
+            "local": "hostRef",
+            "type": "value"
+        }
+    ]
+}

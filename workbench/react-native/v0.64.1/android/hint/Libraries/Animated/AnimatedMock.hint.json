@@ -1,0 +1,1114 @@
+{
+    "imports": {
+        "EndCallback": {
+            "source": {
+                "row": 24,
+                "column": 14,
+                "local": "EndCallback"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 16
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/animations/Animation.js.flow"
+            }
+        },
+        "TimingAnimationConfig": {
+            "source": {
+                "row": 25,
+                "column": 14,
+                "local": "TimingAnimationConfig"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 6
+                },
+                "end": {
+                    "row": 14,
+                    "column": 26
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/animations/TimingAnimation.js.flow"
+            }
+        },
+        "DecayAnimationConfig": {
+            "source": {
+                "row": 26,
+                "column": 14,
+                "local": "DecayAnimationConfig"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 6
+                },
+                "end": {
+                    "row": 9,
+                    "column": 25
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/animations/DecayAnimation.js.flow"
+            }
+        },
+        "SpringAnimationConfig": {
+            "source": {
+                "row": 27,
+                "column": 14,
+                "local": "SpringAnimationConfig"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 6
+                },
+                "end": {
+                    "row": 14,
+                    "column": 26
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/animations/SpringAnimation.js.flow"
+            }
+        },
+        "Mapping": {
+            "source": {
+                "row": 28,
+                "column": 14,
+                "local": "Mapping"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 12
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedEvent.js.flow"
+            }
+        },
+        "EventConfig": {
+            "source": {
+                "row": 29,
+                "column": 14,
+                "local": "EventConfig"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 6
+                },
+                "end": {
+                    "row": 6,
+                    "column": 16
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedEvent.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 38,
+                "local": "AnimatedEvent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 25
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 3,
+                "column": 43,
+                "local": "attachNativeEvent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 13
+                },
+                "end": {
+                    "row": 3,
+                    "column": 29
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 24,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 35,
+                    "column": 25
+                },
+                "end": {
+                    "row": 38,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedEvent.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 5,
+                "column": 25,
+                "local": "$9"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 35,
+                    "column": 25
+                },
+                "end": {
+                    "row": 38,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedEvent.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 8,
+                "column": 44,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 142,
+                    "column": 25
+                },
+                "end": {
+                    "row": 316,
+                    "column": 2
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedImplementation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 10,
+                "column": 43,
+                "local": "$4"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 15
+                },
+                "end": {
+                    "row": 18,
+                    "column": 35
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/nodes/AnimatedInterpolation.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 12,
+                "column": 34,
+                "local": "$5"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 15
+                },
+                "end": {
+                    "row": 2,
+                    "column": 26
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/nodes/AnimatedNode.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 14,
+                "column": 35,
+                "local": "$6"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/nodes/AnimatedProps.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 16,
+                "column": 35,
+                "local": "$7"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 15
+                },
+                "end": {
+                    "row": 12,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/nodes/AnimatedValue.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 18,
+                "column": 37,
+                "local": "$8"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 15,
+                    "column": 15
+                },
+                "end": {
+                    "row": 15,
+                    "column": 29
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/nodes/AnimatedValueXY.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 21,
+                "column": 45,
+                "local": "$11"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 24,
+                    "column": 41
+                },
+                "end": {
+                    "row": 29,
+                    "column": 41
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/createAnimatedComponent.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 87,
+                "column": 17,
+                "local": "AnimatedValue"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 13
+                },
+                "end": {
+                    "row": 16,
+                    "column": 25
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 88,
+                "column": 19,
+                "local": "AnimatedValueXY"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 13
+                },
+                "end": {
+                    "row": 18,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 89,
+                "column": 25,
+                "local": "AnimatedInterpolation"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 13
+                },
+                "end": {
+                    "row": 10,
+                    "column": 33
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 90,
+                "column": 16,
+                "local": "AnimatedNode"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 12,
+                    "column": 13
+                },
+                "end": {
+                    "row": 12,
+                    "column": 24
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 91,
+                "column": 17,
+                "local": "decay"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 50,
+                    "column": 13
+                },
+                "end": {
+                    "row": 50,
+                    "column": 17
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 92,
+                "column": 18,
+                "local": "timing"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 45,
+                    "column": 13
+                },
+                "end": {
+                    "row": 45,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 93,
+                "column": 18,
+                "local": "spring"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 40,
+                    "column": 13
+                },
+                "end": {
+                    "row": 40,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 94,
+                "column": 38,
+                "local": "add"
+            },
+            "error": "Could not get definition for /Libraries/Animated/AnimatedMock.js.flow:94:37\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 95,
+                "column": 43,
+                "local": "subtract"
+            },
+            "error": "Could not get definition for /Libraries/Animated/AnimatedMock.js.flow:95:42\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 96,
+                "column": 41,
+                "local": "divide"
+            },
+            "error": "Could not get definition for /Libraries/Animated/AnimatedMock.js.flow:96:40\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 97,
+                "column": 43,
+                "local": "multiply"
+            },
+            "error": "Could not get definition for /Libraries/Animated/AnimatedMock.js.flow:97:42\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 98,
+                "column": 41,
+                "local": "modulo"
+            },
+            "error": "Could not get definition for /Libraries/Animated/AnimatedMock.js.flow:98:40\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 99,
+                "column": 44,
+                "local": "diffClamp"
+            },
+            "error": "Could not get definition for /Libraries/Animated/AnimatedMock.js.flow:99:43\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 100,
+                "column": 17,
+                "local": "delay"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 65,
+                    "column": 13
+                },
+                "end": {
+                    "row": 65,
+                    "column": 17
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 101,
+                "column": 20,
+                "local": "sequence"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 55,
+                    "column": 13
+                },
+                "end": {
+                    "row": 55,
+                    "column": 20
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 102,
+                "column": 20,
+                "local": "parallel"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 60,
+                    "column": 13
+                },
+                "end": {
+                    "row": 60,
+                    "column": 20
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 103,
+                "column": 19,
+                "local": "stagger"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 67,
+                    "column": 13
+                },
+                "end": {
+                    "row": 67,
+                    "column": 19
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 104,
+                "column": 16,
+                "local": "loop"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 78,
+                    "column": 13
+                },
+                "end": {
+                    "row": 78,
+                    "column": 16
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 105,
+                "column": 17,
+                "local": "event"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 83,
+                    "column": 13
+                },
+                "end": {
+                    "row": 83,
+                    "column": 17
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 106,
+                "column": 35,
+                "local": "createAnimatedComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 21,
+                    "column": 13
+                },
+                "end": {
+                    "row": 21,
+                    "column": 35
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 107,
+                "column": 29,
+                "local": "attachNativeEvent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 13
+                },
+                "end": {
+                    "row": 3,
+                    "column": 29
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 108,
+                "column": 44,
+                "local": "forkEvent"
+            },
+            "error": "Could not get definition for /Libraries/Animated/AnimatedMock.js.flow:108:43\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 109,
+                "column": 46,
+                "local": "unforkEvent"
+            },
+            "error": "Could not get definition for /Libraries/Animated/AnimatedMock.js.flow:109:45\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 110,
+                "column": 17,
+                "local": "AnimatedEvent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 25
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 111,
+                "column": 31,
+                "local": "AnimatedProps"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 13
+                },
+                "end": {
+                    "row": 14,
+                    "column": 25
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/AnimatedMock.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "AnimatedEvent",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 13,
+            "local": "attachNativeEvent",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 13,
+            "local": "$10",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 7,
+            "local": "$9",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 13,
+            "local": "AnimatedImplementation",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 13,
+            "local": "AnimatedInterpolation",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 7,
+            "local": "$4",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 13,
+            "local": "AnimatedNode",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 7,
+            "local": "$5",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 13,
+            "local": "AnimatedProps",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 7,
+            "local": "$6",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 13,
+            "local": "AnimatedValue",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 7,
+            "local": "$7",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 13,
+            "local": "AnimatedValueXY",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 7,
+            "local": "$8",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 13,
+            "local": "createAnimatedComponent",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 7,
+            "local": "$11",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "start",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 3,
+            "local": "stop",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 3,
+            "local": "reset",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "_startNativeLoop",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 3,
+            "local": "_isUsingNativeDriver",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 6,
+            "local": "CompositeAnimation",
+            "type": "type"
+        },
+        {
+            "row": 40,
+            "column": 13,
+            "local": "spring",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 13,
+            "local": "timing",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 13,
+            "local": "decay",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 13,
+            "local": "sequence",
+            "type": "value"
+        },
+        {
+            "row": 59,
+            "column": 24,
+            "local": "stopTogether",
+            "type": "value"
+        },
+        {
+            "row": 59,
+            "column": 6,
+            "local": "ParallelConfig",
+            "type": "type"
+        },
+        {
+            "row": 60,
+            "column": 13,
+            "local": "parallel",
+            "type": "value"
+        },
+        {
+            "row": 65,
+            "column": 13,
+            "local": "delay",
+            "type": "value"
+        },
+        {
+            "row": 67,
+            "column": 13,
+            "local": "stagger",
+            "type": "value"
+        },
+        {
+            "row": 73,
+            "column": 3,
+            "local": "iterations",
+            "type": "value"
+        },
+        {
+            "row": 74,
+            "column": 3,
+            "local": "resetBeforeIteration",
+            "type": "value"
+        },
+        {
+            "row": 72,
+            "column": 6,
+            "local": "LoopAnimationConfig",
+            "type": "type"
+        },
+        {
+            "row": 78,
+            "column": 13,
+            "local": "loop",
+            "type": "value"
+        },
+        {
+            "row": 83,
+            "column": 13,
+            "local": "event",
+            "type": "value"
+        },
+        {
+            "row": 87,
+            "column": 3,
+            "local": "Value",
+            "type": "value"
+        },
+        {
+            "row": 88,
+            "column": 3,
+            "local": "ValueXY",
+            "type": "value"
+        },
+        {
+            "row": 89,
+            "column": 3,
+            "local": "Interpolation",
+            "type": "value"
+        },
+        {
+            "row": 90,
+            "column": 3,
+            "local": "Node",
+            "type": "value"
+        },
+        {
+            "row": 91,
+            "column": 3,
+            "local": "decay",
+            "type": "value"
+        },
+        {
+            "row": 92,
+            "column": 3,
+            "local": "timing",
+            "type": "value"
+        },
+        {
+            "row": 93,
+            "column": 3,
+            "local": "spring",
+            "type": "value"
+        },
+        {
+            "row": 94,
+            "column": 3,
+            "local": "add",
+            "type": "value"
+        },
+        {
+            "row": 95,
+            "column": 3,
+            "local": "subtract",
+            "type": "value"
+        },
+        {
+            "row": 96,
+            "column": 3,
+            "local": "divide",
+            "type": "value"
+        },
+        {
+            "row": 97,
+            "column": 3,
+            "local": "multiply",
+            "type": "value"
+        },
+        {
+            "row": 98,
+            "column": 3,
+            "local": "modulo",
+            "type": "value"
+        },
+        {
+            "row": 99,
+            "column": 3,
+            "local": "diffClamp",
+            "type": "value"
+        },
+        {
+            "row": 100,
+            "column": 3,
+            "local": "delay",
+            "type": "value"
+        },
+        {
+            "row": 101,
+            "column": 3,
+            "local": "sequence",
+            "type": "value"
+        },
+        {
+            "row": 102,
+            "column": 3,
+            "local": "parallel",
+            "type": "value"
+        },
+        {
+            "row": 103,
+            "column": 3,
+            "local": "stagger",
+            "type": "value"
+        },
+        {
+            "row": 104,
+            "column": 3,
+            "local": "loop",
+            "type": "value"
+        },
+        {
+            "row": 105,
+            "column": 3,
+            "local": "event",
+            "type": "value"
+        },
+        {
+            "row": 106,
+            "column": 3,
+            "local": "createAnimatedComponent",
+            "type": "value"
+        },
+        {
+            "row": 107,
+            "column": 3,
+            "local": "attachNativeEvent",
+            "type": "value"
+        },
+        {
+            "row": 108,
+            "column": 3,
+            "local": "forkEvent",
+            "type": "value"
+        },
+        {
+            "row": 109,
+            "column": 3,
+            "local": "unforkEvent",
+            "type": "value"
+        },
+        {
+            "row": 110,
+            "column": 3,
+            "local": "Event",
+            "type": "value"
+        },
+        {
+            "row": 111,
+            "column": 3,
+            "local": "__PropsOnlyForTests",
+            "type": "value"
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "imports": {
+        "TurboModule": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "TurboModule"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 11
+                },
+                "end": {
+                    "row": 6,
+                    "column": 21
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/TurboModule/RCTExport.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 5,
+            "column": 4,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 4,
+            "local": "getSize",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 7,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 7,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 4,
+            "local": "getSizeWithHeaders",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 4,
+            "local": "prefetchImage",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 4,
+            "local": "queryCache",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
+}

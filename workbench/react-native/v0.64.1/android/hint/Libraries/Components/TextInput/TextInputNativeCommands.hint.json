@@ -1,0 +1,85 @@
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "React"
+            },
+            "error": "Could not get definition for /Libraries/Components/TextInput/TextInputNativeCommands.js.flow:2:12\r\nFailed to find imported file react\r\n"
+        },
+        "Int32": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "Int32"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 6
+                },
+                "end": {
+                    "row": 17,
+                    "column": 10
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Types/CodegenTypes.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 22,
+                "column": 31,
+                "local": "supportedCommands"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 19,
+                    "column": 13
+                },
+                "end": {
+                    "row": 19,
+                    "column": 29
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/TextInput/TextInputNativeCommands.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 7,
+            "column": 4,
+            "local": "focus",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 4,
+            "local": "blur",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 4,
+            "local": "setTextAndSelection",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 11,
+            "local": "TextInputNativeCommands",
+            "type": "type"
+        },
+        {
+            "row": 19,
+            "column": 13,
+            "local": "supportedCommands",
+            "type": "value"
+        }
+    ]
+}

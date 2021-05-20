@@ -1,0 +1,105 @@
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "React"
+            },
+            "error": "Could not get definition for /Libraries/LogBox/UI/LogBoxInspectorStackFrames.js.flow:2:12\r\nFailed to find imported file react\r\n"
+        },
+        "Stack": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "Stack"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 10
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/LogBox/Data/LogBoxSymbolication.js.flow"
+            }
+        },
+        "LogBoxLog": {
+            "source": {
+                "row": 5,
+                "column": 13,
+                "local": "LogBoxLog"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 25,
+                    "column": 15
+                },
+                "end": {
+                    "row": 25,
+                    "column": 23
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/LogBox/Data/LogBoxLog.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 22,
+                "column": 31,
+                "local": "LogBoxInspectorStackFrames"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 19,
+                    "column": 18
+                },
+                "end": {
+                    "row": 19,
+                    "column": 43
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/LogBox/UI/LogBoxInspectorStackFrames.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 9,
+            "column": 5,
+            "local": "log",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 5,
+            "local": "onRetry",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 14,
+            "column": 18,
+            "local": "getCollapseMessage",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 18,
+            "local": "LogBoxInspectorStackFrames",
+            "type": "value"
+        }
+    ]
+}

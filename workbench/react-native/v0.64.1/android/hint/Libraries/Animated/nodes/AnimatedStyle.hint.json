@@ -1,0 +1,130 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 42,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 34
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/nodes/AnimatedWithChildren.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 21,
+                "column": 24,
+                "local": "AnimatedWithChildren"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/nodes/AnimatedStyle.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 23,
+                "column": 32,
+                "local": "AnimatedStyle"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Animated/nodes/AnimatedStyle.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "AnimatedWithChildren",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "__getValue",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "__getAnimatedValue",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "__attach",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "__detach",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "__makeNative",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "__getNativeConfig",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 15,
+            "local": "AnimatedStyle",
+            "type": "class"
+        },
+        {
+            "row": 21,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
+}

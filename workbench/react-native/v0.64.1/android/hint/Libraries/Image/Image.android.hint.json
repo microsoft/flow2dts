@@ -1,0 +1,688 @@
+{
+    "imports": {
+        "ImageViewNativeComponent": {
+            "source": {
+                "row": 4,
+                "column": 8,
+                "local": "ImageViewNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 29,
+                    "column": 24
+                },
+                "end": {
+                    "row": 29,
+                    "column": 49
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/ImageViewNativeComponent.js.flow"
+            }
+        },
+        "ImagePropsType": {
+            "source": {
+                "row": 16,
+                "column": 14,
+                "local": "ImageProps"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 57,
+                    "column": 6
+                },
+                "end": {
+                    "row": 57,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/ImageProps.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 45,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 0,
+                    "column": 1
+                },
+                "end": {
+                    "row": 0,
+                    "column": 0
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 5,
+                "column": 31,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 12
+                },
+                "end": {
+                    "row": 6,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/Image.android.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 7,
+                "column": 27,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 8,
+                    "column": 12
+                },
+                "end": {
+                    "row": 8,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/Image.android.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 10,
+                "column": 40,
+                "local": "$5"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 0,
+                    "column": 1
+                },
+                "end": {
+                    "row": 0,
+                    "column": 0
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/resolveAssetSource.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 13,
+                "column": 52,
+                "local": "$4"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 30
+                },
+                "end": {
+                    "row": 4,
+                    "column": 49
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/TextInlineImageNativeComponent.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 19,
+                "column": 13,
+                "local": "DeprecatedViewPropTypes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 35
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/Image.android.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 47,
+                "column": 32,
+                "local": "number"
+            },
+            "error": "Could not get definition for /Libraries/Image/Image.android.js.flow:47:31\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 51,
+                "column": 35,
+                "local": "number"
+            },
+            "error": "Could not get definition for /Libraries/Image/Image.android.js.flow:51:34\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 56,
+                "column": 49,
+                "local": "bool"
+            },
+            "error": "Could not get definition for /Libraries/Image/Image.android.js.flow:56:48\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 57,
+                "column": 34,
+                "local": "number"
+            },
+            "error": "Could not get definition for /Libraries/Image/Image.android.js.flow:57:33\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 61,
+                "column": 42,
+                "local": "string"
+            },
+            "error": "Could not get definition for /Libraries/Image/Image.android.js.flow:61:41\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 65,
+                "column": 33,
+                "local": "func"
+            },
+            "error": "Could not get definition for /Libraries/Image/Image.android.js.flow:65:32\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 69,
+                "column": 29,
+                "local": "func"
+            },
+            "error": "Could not get definition for /Libraries/Image/Image.android.js.flow:69:28\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 73,
+                "column": 28,
+                "local": "func"
+            },
+            "error": "Could not get definition for /Libraries/Image/Image.android.js.flow:73:27\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 77,
+                "column": 31,
+                "local": "func"
+            },
+            "error": "Could not get definition for /Libraries/Image/Image.android.js.flow:77:30\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 81,
+                "column": 28,
+                "local": "string"
+            },
+            "error": "Could not get definition for /Libraries/Image/Image.android.js.flow:81:27\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 123,
+                "column": 21,
+                "local": "getSize"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 100,
+                    "column": 18
+                },
+                "end": {
+                    "row": 100,
+                    "column": 24
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/Image.android.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 124,
+                "column": 32,
+                "local": "getSizeWithHeaders"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 106,
+                    "column": 18
+                },
+                "end": {
+                    "row": 106,
+                    "column": 35
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/Image.android.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 125,
+                "column": 22,
+                "local": "prefetch"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 113,
+                    "column": 18
+                },
+                "end": {
+                    "row": 113,
+                    "column": 25
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/Image.android.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 126,
+                "column": 27,
+                "local": "abortPrefetch"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 115,
+                    "column": 18
+                },
+                "end": {
+                    "row": 115,
+                    "column": 30
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/Image.android.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 127,
+                "column": 24,
+                "local": "queryCache"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 117,
+                    "column": 18
+                },
+                "end": {
+                    "row": 117,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/Image.android.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 128,
+                "column": 32,
+                "local": "resolveAssetSource"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 13
+                },
+                "end": {
+                    "row": 10,
+                    "column": 30
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/Image.android.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 129,
+                "column": 23,
+                "local": "ImageProps"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 13
+                },
+                "end": {
+                    "row": 18,
+                    "column": 22
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/Image.android.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 137,
+                "column": 33,
+                "local": "TextInlineImageNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 13,
+                    "column": 13
+                },
+                "end": {
+                    "row": 13,
+                    "column": 42
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/Image.android.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 138,
+                "column": 33,
+                "local": "ImageViewNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 29,
+                    "column": 24
+                },
+                "end": {
+                    "row": 29,
+                    "column": 49
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Image/ImageViewNativeComponent.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "DeprecatedViewPropTypes",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 13,
+            "local": "PropTypes",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 13,
+            "local": "resolveAssetSource",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 7,
+            "local": "$5",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 13,
+            "local": "TextInlineImageNativeComponent",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 7,
+            "local": "$4",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 3,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 9,
+            "local": "headers",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 9,
+            "local": "uri",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 11,
+            "local": "headers",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 11,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 11,
+            "local": "uri",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 11,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 3,
+            "local": "source",
+            "type": "value"
+        },
+        {
+            "row": 47,
+            "column": 3,
+            "local": "blurRadius",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 3,
+            "local": "defaultSource",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 53,
+            "local": "uri",
+            "type": "value"
+        },
+        {
+            "row": 55,
+            "column": 3,
+            "local": "loadingIndicatorSource",
+            "type": "value"
+        },
+        {
+            "row": 56,
+            "column": 3,
+            "local": "progressiveRenderingEnabled",
+            "type": "value"
+        },
+        {
+            "row": 57,
+            "column": 3,
+            "local": "fadeDuration",
+            "type": "value"
+        },
+        {
+            "row": 61,
+            "column": 3,
+            "local": "internal_analyticTag",
+            "type": "value"
+        },
+        {
+            "row": 65,
+            "column": 3,
+            "local": "onLoadStart",
+            "type": "value"
+        },
+        {
+            "row": 69,
+            "column": 3,
+            "local": "onError",
+            "type": "value"
+        },
+        {
+            "row": 73,
+            "column": 3,
+            "local": "onLoad",
+            "type": "value"
+        },
+        {
+            "row": 77,
+            "column": 3,
+            "local": "onLoadEnd",
+            "type": "value"
+        },
+        {
+            "row": 81,
+            "column": 3,
+            "local": "testID",
+            "type": "value"
+        },
+        {
+            "row": 88,
+            "column": 3,
+            "local": "resizeMethod",
+            "type": "value"
+        },
+        {
+            "row": 95,
+            "column": 3,
+            "local": "resizeMode",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 13,
+            "local": "ImageProps",
+            "type": "value"
+        },
+        {
+            "row": 100,
+            "column": 18,
+            "local": "getSize",
+            "type": "value"
+        },
+        {
+            "row": 106,
+            "column": 18,
+            "local": "getSizeWithHeaders",
+            "type": "value"
+        },
+        {
+            "row": 113,
+            "column": 18,
+            "local": "prefetch",
+            "type": "value"
+        },
+        {
+            "row": 115,
+            "column": 18,
+            "local": "abortPrefetch",
+            "type": "value"
+        },
+        {
+            "row": 117,
+            "column": 18,
+            "local": "queryCache",
+            "type": "value"
+        },
+        {
+            "row": 123,
+            "column": 5,
+            "local": "getSize",
+            "type": "value"
+        },
+        {
+            "row": 124,
+            "column": 5,
+            "local": "getSizeWithHeaders",
+            "type": "value"
+        },
+        {
+            "row": 125,
+            "column": 5,
+            "local": "prefetch",
+            "type": "value"
+        },
+        {
+            "row": 126,
+            "column": 5,
+            "local": "abortPrefetch",
+            "type": "value"
+        },
+        {
+            "row": 127,
+            "column": 5,
+            "local": "queryCache",
+            "type": "value"
+        },
+        {
+            "row": 128,
+            "column": 5,
+            "local": "resolveAssetSource",
+            "type": "value"
+        },
+        {
+            "row": 129,
+            "column": 5,
+            "local": "propTypes",
+            "type": "value"
+        },
+        {
+            "row": 121,
+            "column": 6,
+            "local": "ImageComponentStatics",
+            "type": "type"
+        }
+    ]
+}

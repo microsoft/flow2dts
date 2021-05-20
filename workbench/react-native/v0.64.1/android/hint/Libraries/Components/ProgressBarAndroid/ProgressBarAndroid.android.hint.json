@@ -1,0 +1,140 @@
+{
+    "imports": {
+        "ProgressBarAndroidNativeComponent": {
+            "source": {
+                "row": 2,
+                "column": 8,
+                "local": "ProgressBarAndroidNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 24,
+                    "column": 24
+                },
+                "end": {
+                    "row": 24,
+                    "column": 49
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/ProgressBarAndroid/ProgressBarAndroidNativeComponent.js.flow"
+            }
+        },
+        "ViewProps": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "ViewProps"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 377,
+                    "column": 6
+                },
+                "end": {
+                    "row": 377,
+                    "column": 14
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/View/ViewPropTypes.js.flow"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ColorValue"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 6
+                },
+                "end": {
+                    "row": 16,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 50,
+                "column": 32,
+                "local": "ProgressBarAndroidNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 24,
+                    "column": 24
+                },
+                "end": {
+                    "row": 24,
+                    "column": 49
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/ProgressBarAndroid/ProgressBarAndroidNativeComponent.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 19,
+            "column": 9,
+            "local": "styleAttr",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 9,
+            "local": "indeterminate",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 9,
+            "local": "progress",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 9,
+            "local": "typeAttr",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 9,
+            "local": "indeterminate",
+            "type": "value"
+        },
+        {
+            "row": 37,
+            "column": 5,
+            "local": "animating",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 5,
+            "local": "color",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 5,
+            "local": "testID",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 6,
+            "local": "ProgressBarAndroidProps",
+            "type": "type"
+        }
+    ]
+}

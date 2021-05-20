@@ -1,0 +1,275 @@
+{
+    "imports": {
+        "ViewProps": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ViewProps"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 14
+                },
+                "end": {
+                    "row": 2,
+                    "column": 22
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "ColorValue"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 14
+                },
+                "end": {
+                    "row": 3,
+                    "column": 23
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow"
+            }
+        },
+        "WithDefault": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "WithDefault"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 14
+                },
+                "end": {
+                    "row": 4,
+                    "column": 24
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow"
+            }
+        },
+        "DirectEventHandler": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "DirectEventHandler"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 14
+                },
+                "end": {
+                    "row": 5,
+                    "column": 31
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow"
+            }
+        },
+        "Int32": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "Int32"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 14
+                },
+                "end": {
+                    "row": 6,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow"
+            }
+        },
+        "Float": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "Float"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 14
+                },
+                "end": {
+                    "row": 7,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow"
+            }
+        },
+        "HostComponent": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "HostComponent"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 14
+                },
+                "end": {
+                    "row": 9,
+                    "column": 26
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow"
+            }
+        },
+        "React": {
+            "source": {
+                "row": 10,
+                "column": 13,
+                "local": "React"
+            },
+            "error": "Could not get definition for /Libraries/Components/DrawerAndroid/AndroidDrawerLayoutNativeComponent.js.flow:10:12\r\nFailed to find imported file react\r\n"
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 14,
+            "column": 5,
+            "local": "drawerState",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 6,
+            "local": "DrawerStateEvent",
+            "type": "type"
+        },
+        {
+            "row": 20,
+            "column": 5,
+            "local": "offset",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 6,
+            "local": "DrawerSlideEvent",
+            "type": "type"
+        },
+        {
+            "row": 32,
+            "column": 5,
+            "local": "keyboardDismissMode",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 5,
+            "local": "drawerBackgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 5,
+            "local": "drawerPosition",
+            "type": "value"
+        },
+        {
+            "row": 57,
+            "column": 5,
+            "local": "drawerWidth",
+            "type": "value"
+        },
+        {
+            "row": 66,
+            "column": 5,
+            "local": "drawerLockMode",
+            "type": "value"
+        },
+        {
+            "row": 74,
+            "column": 5,
+            "local": "onDrawerSlide",
+            "type": "value"
+        },
+        {
+            "row": 83,
+            "column": 5,
+            "local": "onDrawerStateChanged",
+            "type": "value"
+        },
+        {
+            "row": 88,
+            "column": 5,
+            "local": "onDrawerOpen",
+            "type": "value"
+        },
+        {
+            "row": 93,
+            "column": 5,
+            "local": "onDrawerClose",
+            "type": "value"
+        },
+        {
+            "row": 100,
+            "column": 5,
+            "local": "statusBarBackgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 6,
+            "local": "NativeProps",
+            "type": "type"
+        },
+        {
+            "row": 104,
+            "column": 6,
+            "local": "NativeType",
+            "type": "type"
+        },
+        {
+            "row": 107,
+            "column": 4,
+            "local": "openDrawer",
+            "type": "value"
+        },
+        {
+            "row": 108,
+            "column": 4,
+            "local": "closeDrawer",
+            "type": "value"
+        },
+        {
+            "row": 106,
+            "column": 11,
+            "local": "NativeCommands",
+            "type": "type"
+        },
+        {
+            "row": 111,
+            "column": 13,
+            "local": "Commands",
+            "type": "value"
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "imports": {
+        "DangerouslyImpreciseStyle": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "DangerouslyImpreciseStyle"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 37,
+                    "column": 6
+                },
+                "end": {
+                    "row": 37,
+                    "column": 30
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        "DangerouslyImpreciseStyleProp": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "DangerouslyImpreciseStyleProp"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 24,
+                    "column": 6
+                },
+                "end": {
+                    "row": 24,
+                    "column": 34
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 9,
+                "column": 32,
+                "local": "flattenStyle"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 18
+                },
+                "end": {
+                    "row": 5,
+                    "column": 29
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/flattenStyle.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 5,
+            "column": 18,
+            "local": "flattenStyle",
+            "type": "value"
+        }
+    ]
+}

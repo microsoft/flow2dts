@@ -1,0 +1,53 @@
+{
+    "imports": {
+        "HostComponent": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "HostComponent"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 96,
+                    "column": 6
+                },
+                "end": {
+                    "row": 96,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 8,
+                "column": 32,
+                "local": "requireNativeComponent"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 34
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/ReactNative/requireNativeComponent.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 4,
+            "column": 13,
+            "local": "requireNativeComponent",
+            "type": "value"
+        }
+    ]
+}

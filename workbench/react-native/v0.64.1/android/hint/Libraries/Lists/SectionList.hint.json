@@ -1,0 +1,443 @@
+{
+    "imports": {
+        "ScrollResponderType": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "ScrollResponderType"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 45,
+                    "column": 6
+                },
+                "end": {
+                    "row": 45,
+                    "column": 24
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/ScrollView/ScrollView.js.flow"
+            }
+        },
+        "ScrollToLocationParamsType": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "ScrollToLocationParamsType"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 107,
+                    "column": 6
+                },
+                "end": {
+                    "row": 107,
+                    "column": 31
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
+            }
+        },
+        "_SectionBase": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "SectionBase"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 10,
+                    "column": 6
+                },
+                "end": {
+                    "row": 10,
+                    "column": 16
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
+            }
+        },
+        "VirtualizedSectionListProps": {
+            "source": {
+                "row": 10,
+                "column": 14,
+                "local": "Props"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 99,
+                    "column": 6
+                },
+                "end": {
+                    "row": 99,
+                    "column": 10
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 27,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 12
+                },
+                "end": {
+                    "row": 3,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Lists/SectionList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 44,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 122,
+                    "column": 15
+                },
+                "end": {
+                    "row": 122,
+                    "column": 36
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Lists/VirtualizedSectionList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 106,
+                "column": 36,
+                "local": "defaultProps"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 105,
+                    "column": 13
+                },
+                "end": {
+                    "row": 105,
+                    "column": 24
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Lists/SectionList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 110,
+                "column": 28,
+                "local": "defaultProps"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 105,
+                    "column": 13
+                },
+                "end": {
+                    "row": 105,
+                    "column": 24
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Lists/SectionList.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 154,
+                "column": 30,
+                "local": "PureComponent"
+            },
+            "error": "Could not get definition for /Libraries/Lists/SectionList.js.flow:154:29\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 159,
+                "column": 32,
+                "local": "SectionList"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 112,
+                    "column": 15
+                },
+                "end": {
+                    "row": 112,
+                    "column": 25
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Lists/SectionList.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "VirtualizedSectionList",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 6,
+            "local": "Item",
+            "type": "type"
+        },
+        {
+            "row": 14,
+            "column": 6,
+            "local": "SectionBase",
+            "type": "type"
+        },
+        {
+            "row": 28,
+            "column": 3,
+            "local": "sections",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 6,
+            "local": "RequiredProps",
+            "type": "type"
+        },
+        {
+            "row": 37,
+            "column": 7,
+            "local": "item",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 7,
+            "local": "index",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 7,
+            "local": "section",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 9,
+            "local": "highlight",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 9,
+            "local": "unhighlight",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 9,
+            "local": "updateProps",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 7,
+            "local": "separators",
+            "type": "value"
+        },
+        {
+            "row": 35,
+            "column": 3,
+            "local": "renderItem",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 3,
+            "local": "extraData",
+            "type": "value"
+        },
+        {
+            "row": 60,
+            "column": 3,
+            "local": "initialNumToRender",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 3,
+            "local": "inverted",
+            "type": "value"
+        },
+        {
+            "row": 71,
+            "column": 3,
+            "local": "keyExtractor",
+            "type": "value"
+        },
+        {
+            "row": 76,
+            "column": 28,
+            "local": "distanceFromEnd",
+            "type": "value"
+        },
+        {
+            "row": 76,
+            "column": 3,
+            "local": "onEndReached",
+            "type": "value"
+        },
+        {
+            "row": 82,
+            "column": 3,
+            "local": "removeClippedSubviews",
+            "type": "value"
+        },
+        {
+            "row": 31,
+            "column": 6,
+            "local": "OptionalProps",
+            "type": "type"
+        },
+        {
+            "row": 89,
+            "column": 7,
+            "local": "getItem",
+            "type": "value"
+        },
+        {
+            "row": 90,
+            "column": 7,
+            "local": "getItemCount",
+            "type": "value"
+        },
+        {
+            "row": 94,
+            "column": 7,
+            "local": "renderItem",
+            "type": "value"
+        },
+        {
+            "row": 85,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 107,
+            "column": 3,
+            "local": "stickySectionHeadersEnabled",
+            "type": "value"
+        },
+        {
+            "row": 105,
+            "column": 13,
+            "local": "defaultProps",
+            "type": "value"
+        },
+        {
+            "row": 110,
+            "column": 6,
+            "local": "DefaultProps",
+            "type": "type"
+        },
+        {
+            "row": 114,
+            "column": 3,
+            "local": "props",
+            "type": "value"
+        },
+        {
+            "row": 115,
+            "column": 10,
+            "local": "defaultProps",
+            "type": "value"
+        },
+        {
+            "row": 127,
+            "column": 3,
+            "local": "scrollToLocation",
+            "type": "value"
+        },
+        {
+            "row": 134,
+            "column": 3,
+            "local": "recordInteraction",
+            "type": "value"
+        },
+        {
+            "row": 141,
+            "column": 3,
+            "local": "flashScrollIndicators",
+            "type": "value"
+        },
+        {
+            "row": 146,
+            "column": 3,
+            "local": "getScrollResponder",
+            "type": "value"
+        },
+        {
+            "row": 148,
+            "column": 3,
+            "local": "getScrollableNode",
+            "type": "value"
+        },
+        {
+            "row": 150,
+            "column": 3,
+            "local": "setNativeProps",
+            "type": "value"
+        },
+        {
+            "row": 152,
+            "column": 3,
+            "local": "render",
+            "type": "value"
+        },
+        {
+            "row": 112,
+            "column": 15,
+            "local": "SectionList",
+            "type": "class"
+        },
+        {
+            "row": 154,
+            "column": 13,
+            "local": "$2",
+            "type": "value"
+        }
+    ]
+}

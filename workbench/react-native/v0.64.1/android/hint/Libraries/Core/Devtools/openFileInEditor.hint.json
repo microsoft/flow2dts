@@ -1,0 +1,32 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 4,
+                "column": 32,
+                "local": "openFileInEditor"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 18
+                },
+                "end": {
+                    "row": 2,
+                    "column": 33
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Core/Devtools/openFileInEditor.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 18,
+            "local": "openFileInEditor",
+            "type": "value"
+        }
+    ]
+}

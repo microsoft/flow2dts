@@ -1,0 +1,50 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 13,
+                "column": 32,
+                "local": "defineLazyObjectProperty"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 18
+                },
+                "end": {
+                    "row": 2,
+                    "column": 41
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/defineLazyObjectProperty.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 6,
+            "column": 5,
+            "local": "get",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 5,
+            "local": "enumerable",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 5,
+            "local": "writable",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 18,
+            "local": "defineLazyObjectProperty",
+            "type": "value"
+        }
+    ]
+}

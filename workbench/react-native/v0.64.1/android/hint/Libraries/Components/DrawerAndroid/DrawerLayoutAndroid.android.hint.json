@@ -1,0 +1,378 @@
+{
+    "imports": {
+        "React": {
+            "source": {
+                "row": 2,
+                "column": 13,
+                "local": "React"
+            },
+            "error": "Could not get definition for /Libraries/Components/DrawerAndroid/DrawerLayoutAndroid.android.js.flow:2:12\r\nFailed to find imported file react\r\n"
+        },
+        "ColorValue": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "ColorValue"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 6
+                },
+                "end": {
+                    "row": 16,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        "ViewStyleProp": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ViewStyleProp"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 6
+                },
+                "end": {
+                    "row": 18,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        "DirectEventHandler": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "DirectEventHandler"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 9,
+                    "column": 6
+                },
+                "end": {
+                    "row": 9,
+                    "column": 23
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Types/CodegenTypes.js.flow"
+            }
+        },
+        "MeasureOnSuccessCallback": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "MeasureOnSuccessCallback"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 29
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
+        },
+        "MeasureInWindowOnSuccessCallback": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "MeasureInWindowOnSuccessCallback"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 14,
+                    "column": 6
+                },
+                "end": {
+                    "row": 14,
+                    "column": 37
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
+        },
+        "MeasureLayoutOnSuccessCallback": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "MeasureLayoutOnSuccessCallback"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 21,
+                    "column": 6
+                },
+                "end": {
+                    "row": 21,
+                    "column": 35
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Renderer/shims/ReactNativeTypes.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 182,
+                "column": 30,
+                "local": "Component"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 26,
+                    "column": 15
+                },
+                "end": {
+                    "row": 26,
+                    "column": 29
+                },
+                "libraryFolder": 0,
+                "file": "/react.js"
+            }
+        },
+        {
+            "source": {
+                "row": 184,
+                "column": 32,
+                "local": "DrawerLayoutAndroid"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 106,
+                    "column": 15
+                },
+                "end": {
+                    "row": 106,
+                    "column": 33
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/DrawerAndroid/DrawerLayoutAndroid.android.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 11,
+            "column": 6,
+            "local": "DrawerStates",
+            "type": "type"
+        },
+        {
+            "row": 15,
+            "column": 5,
+            "local": "offset",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 6,
+            "local": "DrawerSlideEvent",
+            "type": "type"
+        },
+        {
+            "row": 26,
+            "column": 5,
+            "local": "keyboardDismissMode",
+            "type": "value"
+        },
+        {
+            "row": 39,
+            "column": 5,
+            "local": "drawerBackgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 5,
+            "local": "drawerPosition",
+            "type": "value"
+        },
+        {
+            "row": 50,
+            "column": 5,
+            "local": "drawerWidth",
+            "type": "value"
+        },
+        {
+            "row": 59,
+            "column": 5,
+            "local": "drawerLockMode",
+            "type": "value"
+        },
+        {
+            "row": 64,
+            "column": 5,
+            "local": "onDrawerSlide",
+            "type": "value"
+        },
+        {
+            "row": 73,
+            "column": 5,
+            "local": "onDrawerStateChanged",
+            "type": "value"
+        },
+        {
+            "row": 78,
+            "column": 5,
+            "local": "onDrawerOpen",
+            "type": "value"
+        },
+        {
+            "row": 83,
+            "column": 5,
+            "local": "onDrawerClose",
+            "type": "value"
+        },
+        {
+            "row": 88,
+            "column": 5,
+            "local": "renderNavigationView",
+            "type": "value"
+        },
+        {
+            "row": 95,
+            "column": 5,
+            "local": "statusBarBackgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 97,
+            "column": 5,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 98,
+            "column": 5,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 103,
+            "column": 3,
+            "local": "statusBarBackgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 102,
+            "column": 6,
+            "local": "State",
+            "type": "type"
+        },
+        {
+            "row": 108,
+            "column": 7,
+            "local": "positions",
+            "type": "value"
+        },
+        {
+            "row": 110,
+            "column": 5,
+            "local": "drawerBackgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 109,
+            "column": 10,
+            "local": "defaultProps",
+            "type": "value"
+        },
+        {
+            "row": 113,
+            "column": 3,
+            "local": "state",
+            "type": "value"
+        },
+        {
+            "row": 115,
+            "column": 3,
+            "local": "render",
+            "type": "value"
+        },
+        {
+            "row": 120,
+            "column": 3,
+            "local": "openDrawer",
+            "type": "value"
+        },
+        {
+            "row": 125,
+            "column": 3,
+            "local": "closeDrawer",
+            "type": "value"
+        },
+        {
+            "row": 166,
+            "column": 3,
+            "local": "blur",
+            "type": "value"
+        },
+        {
+            "row": 168,
+            "column": 3,
+            "local": "focus",
+            "type": "value"
+        },
+        {
+            "row": 170,
+            "column": 3,
+            "local": "measure",
+            "type": "value"
+        },
+        {
+            "row": 172,
+            "column": 3,
+            "local": "measureInWindow",
+            "type": "value"
+        },
+        {
+            "row": 174,
+            "column": 3,
+            "local": "measureLayout",
+            "type": "value"
+        },
+        {
+            "row": 180,
+            "column": 3,
+            "local": "setNativeProps",
+            "type": "value"
+        },
+        {
+            "row": 106,
+            "column": 15,
+            "local": "DrawerLayoutAndroid",
+            "type": "class"
+        },
+        {
+            "row": 182,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
+}

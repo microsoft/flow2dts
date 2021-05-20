@@ -1,0 +1,77 @@
+{
+    "imports": {
+        "ColorValue": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ColorValue"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 6
+                },
+                "end": {
+                    "row": 16,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        "ProcessedColorValue": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "ProcessedColorValue"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 6
+                },
+                "end": {
+                    "row": 5,
+                    "column": 24
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/processColor.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 6,
+            "column": 3,
+            "local": "resource_paths",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 13,
+            "local": "NativeColorValue",
+            "type": "type"
+        },
+        {
+            "row": 9,
+            "column": 13,
+            "local": "PlatformColor",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 13,
+            "local": "normalizeColorObject",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 13,
+            "local": "processColorObject",
+            "type": "value"
+        }
+    ]
+}

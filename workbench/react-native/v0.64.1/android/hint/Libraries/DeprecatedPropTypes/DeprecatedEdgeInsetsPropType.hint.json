@@ -1,0 +1,56 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 12,
+                "column": 32,
+                "local": "DeprecatedEdgeInsetsPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 40
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedEdgeInsetsPropType.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 4,
+            "column": 5,
+            "local": "bottom",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 5,
+            "local": "left",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 5,
+            "local": "right",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 5,
+            "local": "top",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 13,
+            "local": "DeprecatedEdgeInsetsPropType",
+            "type": "value"
+        }
+    ]
+}

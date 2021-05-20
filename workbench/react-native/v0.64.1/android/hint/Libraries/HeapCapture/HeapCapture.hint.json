@@ -1,0 +1,38 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 6,
+                "column": 32,
+                "local": "HeapCapture"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 23
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/HeapCapture/HeapCapture.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "captureHeap",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 13,
+            "local": "HeapCapture",
+            "type": "value"
+        }
+    ]
+}

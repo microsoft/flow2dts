@@ -1,0 +1,154 @@
+{
+    "imports": {
+        "ViewStyleProp": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "ViewStyleProp"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 6
+                },
+                "end": {
+                    "row": 18,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        "ColorValue": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "ColorValue"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 6
+                },
+                "end": {
+                    "row": 16,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 27,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 12
+                },
+                "end": {
+                    "row": 3,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/TextInput/InputAccessoryView.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 25,
+                "column": 30,
+                "local": "Component"
+            },
+            "error": "Could not get definition for /Libraries/Components/TextInput/InputAccessoryView.js.flow:25:29\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 27,
+                "column": 32,
+                "local": "InputAccessoryView"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 21,
+                    "column": 15
+                },
+                "end": {
+                    "row": 21,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/TextInput/InputAccessoryView.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "React",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 6,
+            "local": "children",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 5,
+            "local": "nativeID",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 5,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 5,
+            "local": "backgroundColor",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 6,
+            "local": "Props",
+            "type": "type"
+        },
+        {
+            "row": 23,
+            "column": 3,
+            "local": "render",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 15,
+            "local": "InputAccessoryView",
+            "type": "class"
+        },
+        {
+            "row": 25,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
+}

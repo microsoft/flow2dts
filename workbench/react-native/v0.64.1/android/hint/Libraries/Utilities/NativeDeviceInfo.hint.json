@@ -1,0 +1,191 @@
+{
+    "imports": {
+        "TurboModule": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "TurboModule"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 11
+                },
+                "end": {
+                    "row": 6,
+                    "column": 21
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/TurboModule/RCTExport.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 45,
+                "column": 31,
+                "local": "NativeDeviceInfo"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 33,
+                    "column": 13
+                },
+                "end": {
+                    "row": 33,
+                    "column": 28
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Utilities/NativeDeviceInfo.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 5,
+            "column": 3,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 3,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "scale",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "fontScale",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "densityDpi",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 6,
+            "local": "DisplayMetricsAndroid",
+            "type": "type"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "width",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "height",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "scale",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "fontScale",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 6,
+            "local": "DisplayMetrics",
+            "type": "type"
+        },
+        {
+            "row": 20,
+            "column": 3,
+            "local": "window",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "screen",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 3,
+            "local": "windowPhysicalPixels",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 3,
+            "local": "screenPhysicalPixels",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 6,
+            "local": "DimensionsPayload",
+            "type": "type"
+        },
+        {
+            "row": 28,
+            "column": 6,
+            "local": "Dimensions",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 6,
+            "local": "isIPhoneX_deprecated",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 4,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        },
+        {
+            "row": 35,
+            "column": 6,
+            "local": "Dimensions",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 6,
+            "local": "isIPhoneX_deprecated",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 3,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 33,
+            "column": 13,
+            "local": "NativeDeviceInfo",
+            "type": "value"
+        }
+    ]
+}

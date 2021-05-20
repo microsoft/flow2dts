@@ -1,0 +1,102 @@
+{
+    "imports": {
+        "NativeEventEmitter": {
+            "source": {
+                "row": 2,
+                "column": 8,
+                "local": "NativeEventEmitter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 15
+                },
+                "end": {
+                    "row": 17,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
+            }
+        },
+        "RequestBody": {
+            "source": {
+                "row": 4,
+                "column": 14,
+                "local": "RequestBody"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 6
+                },
+                "end": {
+                    "row": 7,
+                    "column": 16
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Network/convertRequestBody.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 27,
+                "column": 24,
+                "local": "NativeEventEmitter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 15
+                },
+                "end": {
+                    "row": 17,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 8,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "sendRequest",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 3,
+            "local": "abortRequest",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 3,
+            "local": "clearCookies",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 15,
+            "local": "RCTNetworking",
+            "type": "class"
+        },
+        {
+            "row": 27,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
+}

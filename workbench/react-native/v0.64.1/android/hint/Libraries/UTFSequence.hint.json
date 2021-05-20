@@ -1,0 +1,116 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 19,
+                "column": 32,
+                "local": "UTFSequence"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 23
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/UTFSequence.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 3,
+            "column": 3,
+            "local": "BOM",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 3,
+            "local": "BULLET",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 3,
+            "local": "BULLET_SP",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 3,
+            "local": "MDASH",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "MDASH_SP",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "MIDDOT",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "MIDDOT_KATAKANA",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "MIDDOT_SP",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "NBSP",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "NDASH",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "NDASH_SP",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "PIZZA",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "TRIANGLE_LEFT",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "TRIANGLE_RIGHT",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 13,
+            "local": "UTFSequence",
+            "type": "value"
+        }
+    ]
+}

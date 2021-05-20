@@ -1,0 +1,81 @@
+{
+    "imports": {
+        "TurboModule": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "TurboModule"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 6,
+                    "column": 11
+                },
+                "end": {
+                    "row": 6,
+                    "column": 21
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/TurboModule/RCTExport.js.flow"
+            }
+        }
+    },
+    "typeofs": [],
+    "decls": [
+        {
+            "row": 8,
+            "column": 16,
+            "local": "headers",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 4,
+            "local": "connect",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 4,
+            "local": "send",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 4,
+            "local": "sendBinary",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 4,
+            "local": "ping",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 4,
+            "local": "close",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 4,
+            "local": "addListener",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 4,
+            "local": "removeListeners",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 11,
+            "local": "Spec",
+            "type": "type"
+        }
+    ]
+}

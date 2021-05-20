@@ -1,0 +1,122 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 57,
+                "column": 32,
+                "local": "AccessibilityInfo"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 11,
+                    "column": 13
+                },
+                "end": {
+                    "row": 11,
+                    "column": 29
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/AccessibilityInfo/AccessibilityInfo.android.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 4,
+            "column": 5,
+            "local": "change",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 5,
+            "local": "reduceMotionChanged",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 5,
+            "local": "screenReaderChanged",
+            "type": "value"
+        },
+        {
+            "row": 2,
+            "column": 6,
+            "local": "ChangeEventName",
+            "type": "type"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "isBoldTextEnabled",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 3,
+            "local": "isGrayscaleEnabled",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 3,
+            "local": "isInvertColorsEnabled",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 3,
+            "local": "isReduceMotionEnabled",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 3,
+            "local": "isReduceTransparencyEnabled",
+            "type": "value"
+        },
+        {
+            "row": 34,
+            "column": 3,
+            "local": "isScreenReaderEnabled",
+            "type": "value"
+        },
+        {
+            "row": 36,
+            "column": 7,
+            "local": "fetch",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 3,
+            "local": "addEventListener",
+            "type": "value"
+        },
+        {
+            "row": 40,
+            "column": 3,
+            "local": "removeEventListener",
+            "type": "value"
+        },
+        {
+            "row": 47,
+            "column": 3,
+            "local": "setAccessibilityFocus",
+            "type": "value"
+        },
+        {
+            "row": 54,
+            "column": 3,
+            "local": "announceForAccessibility",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 13,
+            "local": "AccessibilityInfo",
+            "type": "value"
+        }
+    ]
+}

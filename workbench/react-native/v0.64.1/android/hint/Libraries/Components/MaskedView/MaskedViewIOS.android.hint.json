@@ -1,0 +1,32 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 3,
+                "column": 32,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 15
+                },
+                "end": {
+                    "row": 5,
+                    "column": 31
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/UnimplementedViews/UnimplementedView.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
+}

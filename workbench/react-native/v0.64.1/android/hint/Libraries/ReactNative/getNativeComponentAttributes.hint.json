@@ -1,0 +1,32 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 4,
+                "column": 32,
+                "local": "getNativeComponentAttributes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 18
+                },
+                "end": {
+                    "row": 2,
+                    "column": 45
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/ReactNative/getNativeComponentAttributes.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 18,
+            "local": "getNativeComponentAttributes",
+            "type": "value"
+        }
+    ]
+}

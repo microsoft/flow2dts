@@ -1,0 +1,857 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 45,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 3,
+                    "column": 12
+                },
+                "end": {
+                    "row": 3,
+                    "column": 47
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 4,
+                "column": 45,
+                "local": "$2"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 0,
+                    "column": 1
+                },
+                "end": {
+                    "row": 0,
+                    "column": 0
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedViewPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 6,
+                "column": 31,
+                "local": "$3"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 12
+                },
+                "end": {
+                    "row": 7,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 8,
+                "column": 26,
+                "local": "$4"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 18,
+                    "column": 12
+                },
+                "end": {
+                    "row": 23,
+                    "column": 3
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Text/Text.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 12,
+                "column": 13,
+                "local": "DeprecatedViewPropTypes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 35
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 67,
+                "column": 33,
+                "local": "bool"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:67:32\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 73,
+                "column": 32,
+                "local": "bool"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:73:31\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 78,
+                "column": 31,
+                "local": "bool"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:78:30\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 83,
+                "column": 38,
+                "local": "bool"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:83:37\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 91,
+                "column": 43,
+                "local": "number"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:91:42\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 95,
+                "column": 30,
+                "local": "bool"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:95:29\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 200,
+                "column": 36,
+                "local": "string"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:200:35\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 205,
+                "column": 31,
+                "local": "number"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:205:30\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 211,
+                "column": 35,
+                "local": "number"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:211:34\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 220,
+                "column": 41,
+                "local": "bool"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:220:40\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 226,
+                "column": 51,
+                "local": "bool"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:226:50\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 231,
+                "column": 31,
+                "local": "bool"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:231:30\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 243,
+                "column": 28,
+                "local": "func"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:243:27\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 247,
+                "column": 29,
+                "local": "func"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:247:28\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 251,
+                "column": 30,
+                "local": "func"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:251:29\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 256,
+                "column": 34,
+                "local": "func"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:256:33\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 264,
+                "column": 41,
+                "local": "func"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:264:40\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 265,
+                "column": 33,
+                "local": "func"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:265:32\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 269,
+                "column": 34,
+                "local": "func"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:269:33\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 275,
+                "column": 39,
+                "local": "func"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:275:38\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 280,
+                "column": 37,
+                "local": "func"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:280:36\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 288,
+                "column": 32,
+                "local": "func"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:288:31\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 292,
+                "column": 30,
+                "local": "func"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:292:29\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 298,
+                "column": 30,
+                "local": "func"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:298:29\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 302,
+                "column": 33,
+                "local": "string"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:302:32\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 306,
+                "column": 32,
+                "local": "DeprecatedColorPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 35
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 312,
+                "column": 35,
+                "local": "bool"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:312:34\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 317,
+                "column": 37,
+                "local": "bool"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:317:36\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 321,
+                "column": 26,
+                "local": "DeprecatedColorPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 35
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 342,
+                "column": 27,
+                "local": "string"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:342:26\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 348,
+                "column": 34,
+                "local": "string"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:348:33\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 361,
+                "column": 38,
+                "local": "bool"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:361:37\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 365,
+                "column": 39,
+                "local": "bool"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:365:38\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 373,
+                "column": 34,
+                "local": "bool"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:373:33\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 392,
+                "column": 32,
+                "local": "style"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:392:31\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 397,
+                "column": 33,
+                "local": "DeprecatedColorPropType"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 35
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 410,
+                "column": 37,
+                "local": "string"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:410:36\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 416,
+                "column": 40,
+                "local": "number"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:416:39\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 425,
+                "column": 48,
+                "local": "bool"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:425:47\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 461,
+                "column": 33,
+                "local": "bool"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:461:32\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 465,
+                "column": 39,
+                "local": "bool"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:465:38\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 472,
+                "column": 42,
+                "local": "string"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:472:41\r\nNo possible types\r\n"
+        },
+        {
+            "source": {
+                "row": 513,
+                "column": 42,
+                "local": "bool"
+            },
+            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.js.flow:513:41\r\nNo possible types\r\n"
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "DeprecatedColorPropType",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "DeprecatedViewPropTypes",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 7,
+            "local": "$2",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 13,
+            "local": "PropTypes",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 7,
+            "local": "$3",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 13,
+            "local": "Text",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 7,
+            "local": "$4",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "autoCapitalize",
+            "type": "value"
+        },
+        {
+            "row": 48,
+            "column": 3,
+            "local": "autoCompleteType",
+            "type": "value"
+        },
+        {
+            "row": 67,
+            "column": 3,
+            "local": "autoCorrect",
+            "type": "value"
+        },
+        {
+            "row": 73,
+            "column": 3,
+            "local": "spellCheck",
+            "type": "value"
+        },
+        {
+            "row": 78,
+            "column": 3,
+            "local": "autoFocus",
+            "type": "value"
+        },
+        {
+            "row": 83,
+            "column": 3,
+            "local": "allowFontScaling",
+            "type": "value"
+        },
+        {
+            "row": 91,
+            "column": 3,
+            "local": "maxFontSizeMultiplier",
+            "type": "value"
+        },
+        {
+            "row": 95,
+            "column": 3,
+            "local": "editable",
+            "type": "value"
+        },
+        {
+            "row": 126,
+            "column": 3,
+            "local": "keyboardType",
+            "type": "value"
+        },
+        {
+            "row": 147,
+            "column": 3,
+            "local": "keyboardAppearance",
+            "type": "value"
+        },
+        {
+            "row": 180,
+            "column": 3,
+            "local": "returnKeyType",
+            "type": "value"
+        },
+        {
+            "row": 200,
+            "column": 3,
+            "local": "returnKeyLabel",
+            "type": "value"
+        },
+        {
+            "row": 205,
+            "column": 3,
+            "local": "maxLength",
+            "type": "value"
+        },
+        {
+            "row": 211,
+            "column": 3,
+            "local": "numberOfLines",
+            "type": "value"
+        },
+        {
+            "row": 220,
+            "column": 3,
+            "local": "disableFullscreenUI",
+            "type": "value"
+        },
+        {
+            "row": 226,
+            "column": 3,
+            "local": "enablesReturnKeyAutomatically",
+            "type": "value"
+        },
+        {
+            "row": 231,
+            "column": 3,
+            "local": "multiline",
+            "type": "value"
+        },
+        {
+            "row": 237,
+            "column": 3,
+            "local": "textBreakStrategy",
+            "type": "value"
+        },
+        {
+            "row": 243,
+            "column": 3,
+            "local": "onBlur",
+            "type": "value"
+        },
+        {
+            "row": 247,
+            "column": 3,
+            "local": "onFocus",
+            "type": "value"
+        },
+        {
+            "row": 251,
+            "column": 3,
+            "local": "onChange",
+            "type": "value"
+        },
+        {
+            "row": 256,
+            "column": 3,
+            "local": "onChangeText",
+            "type": "value"
+        },
+        {
+            "row": 264,
+            "column": 3,
+            "local": "onContentSizeChange",
+            "type": "value"
+        },
+        {
+            "row": 265,
+            "column": 3,
+            "local": "onTextInput",
+            "type": "value"
+        },
+        {
+            "row": 269,
+            "column": 3,
+            "local": "onEndEditing",
+            "type": "value"
+        },
+        {
+            "row": 275,
+            "column": 3,
+            "local": "onSelectionChange",
+            "type": "value"
+        },
+        {
+            "row": 280,
+            "column": 3,
+            "local": "onSubmitEditing",
+            "type": "value"
+        },
+        {
+            "row": 288,
+            "column": 3,
+            "local": "onKeyPress",
+            "type": "value"
+        },
+        {
+            "row": 292,
+            "column": 3,
+            "local": "onLayout",
+            "type": "value"
+        },
+        {
+            "row": 298,
+            "column": 3,
+            "local": "onScroll",
+            "type": "value"
+        },
+        {
+            "row": 302,
+            "column": 3,
+            "local": "placeholder",
+            "type": "value"
+        },
+        {
+            "row": 306,
+            "column": 3,
+            "local": "placeholderTextColor",
+            "type": "value"
+        },
+        {
+            "row": 312,
+            "column": 3,
+            "local": "scrollEnabled",
+            "type": "value"
+        },
+        {
+            "row": 317,
+            "column": 3,
+            "local": "secureTextEntry",
+            "type": "value"
+        },
+        {
+            "row": 321,
+            "column": 3,
+            "local": "selectionColor",
+            "type": "value"
+        },
+        {
+            "row": 328,
+            "column": 7,
+            "local": "end",
+            "type": "value"
+        },
+        {
+            "row": 329,
+            "column": 7,
+            "local": "start",
+            "type": "value"
+        },
+        {
+            "row": 326,
+            "column": 3,
+            "local": "selection",
+            "type": "value"
+        },
+        {
+            "row": 342,
+            "column": 3,
+            "local": "value",
+            "type": "value"
+        },
+        {
+            "row": 348,
+            "column": 3,
+            "local": "defaultValue",
+            "type": "value"
+        },
+        {
+            "row": 354,
+            "column": 3,
+            "local": "clearButtonMode",
+            "type": "value"
+        },
+        {
+            "row": 361,
+            "column": 3,
+            "local": "clearTextOnFocus",
+            "type": "value"
+        },
+        {
+            "row": 365,
+            "column": 3,
+            "local": "selectTextOnFocus",
+            "type": "value"
+        },
+        {
+            "row": 373,
+            "column": 3,
+            "local": "blurOnSubmit",
+            "type": "value"
+        },
+        {
+            "row": 392,
+            "column": 3,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 397,
+            "column": 3,
+            "local": "underlineColorAndroid",
+            "type": "value"
+        },
+        {
+            "row": 410,
+            "column": 3,
+            "local": "inlineImageLeft",
+            "type": "value"
+        },
+        {
+            "row": 416,
+            "column": 3,
+            "local": "inlineImagePadding",
+            "type": "value"
+        },
+        {
+            "row": 425,
+            "column": 3,
+            "local": "rejectResponderTermination",
+            "type": "value"
+        },
+        {
+            "row": 445,
+            "column": 3,
+            "local": "dataDetectorTypes",
+            "type": "value"
+        },
+        {
+            "row": 461,
+            "column": 3,
+            "local": "caretHidden",
+            "type": "value"
+        },
+        {
+            "row": 465,
+            "column": 3,
+            "local": "contextMenuHidden",
+            "type": "value"
+        },
+        {
+            "row": 472,
+            "column": 3,
+            "local": "inputAccessoryViewID",
+            "type": "value"
+        },
+        {
+            "row": 478,
+            "column": 3,
+            "local": "textContentType",
+            "type": "value"
+        },
+        {
+            "row": 513,
+            "column": 3,
+            "local": "showSoftInputOnFocus",
+            "type": "value"
+        }
+    ]
+}

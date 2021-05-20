@@ -1,0 +1,190 @@
+{
+    "imports": {
+        "ColorValue": {
+            "source": {
+                "row": 2,
+                "column": 14,
+                "local": "ColorValue"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 16,
+                    "column": 6
+                },
+                "end": {
+                    "row": 16,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        "PressEvent": {
+            "source": {
+                "row": 3,
+                "column": 14,
+                "local": "PressEvent"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 95,
+                    "column": 6
+                },
+                "end": {
+                    "row": 95,
+                    "column": 15
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Types/CoreEventTypes.js.flow"
+            }
+        },
+        "View": {
+            "source": {
+                "row": 4,
+                "column": 9,
+                "local": "View"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 9
+                },
+                "end": {
+                    "row": 4,
+                    "column": 12
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Pressable/useAndroidRippleForView.js.flow"
+            }
+        },
+        "React": {
+            "source": {
+                "row": 5,
+                "column": 13,
+                "local": "React"
+            },
+            "error": "Could not get definition for /Libraries/Components/Pressable/useAndroidRippleForView.js.flow:5:12\r\nFailed to find imported file react\r\n"
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 24,
+                "column": 54,
+                "local": "View"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 9
+                },
+                "end": {
+                    "row": 4,
+                    "column": 12
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/Pressable/useAndroidRippleForView.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 9,
+            "column": 5,
+            "local": "type",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 5,
+            "local": "color",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 5,
+            "local": "borderless",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 5,
+            "local": "rippleRadius",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 6,
+            "local": "NativeBackgroundProp",
+            "type": "type"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "color",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "borderless",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "radius",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 6,
+            "local": "RippleConfig",
+            "type": "type"
+        },
+        {
+            "row": 24,
+            "column": 14,
+            "local": "current",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 5,
+            "local": "onPressIn",
+            "type": "value"
+        },
+        {
+            "row": 28,
+            "column": 5,
+            "local": "onPressMove",
+            "type": "value"
+        },
+        {
+            "row": 29,
+            "column": 5,
+            "local": "onPressOut",
+            "type": "value"
+        },
+        {
+            "row": 32,
+            "column": 9,
+            "local": "nativeBackgroundAndroid",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 5,
+            "local": "viewProps",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 18,
+            "local": "useAndroidRippleForView",
+            "type": "value"
+        }
+    ]
+}

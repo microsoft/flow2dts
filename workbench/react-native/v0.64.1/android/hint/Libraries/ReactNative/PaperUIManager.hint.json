@@ -1,0 +1,83 @@
+{
+    "imports": {
+        "NativeUIManager": {
+            "source": {
+                "row": 2,
+                "column": 8,
+                "local": "NativeUIManager"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 11
+                },
+                "end": {
+                    "row": 4,
+                    "column": 14
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/ReactNative/NativeUIManager.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 5,
+                "column": 13,
+                "local": "NativeUIManager"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 11
+                },
+                "end": {
+                    "row": 4,
+                    "column": 14
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/ReactNative/NativeUIManager.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 10,
+                "column": 32,
+                "local": "UIManagerJS"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 4,
+                    "column": 13
+                },
+                "end": {
+                    "row": 4,
+                    "column": 23
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/ReactNative/PaperUIManager.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 6,
+            "column": 3,
+            "local": "getConstants",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "getViewManagerConfig",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 13,
+            "local": "UIManagerJS",
+            "type": "value"
+        }
+    ]
+}

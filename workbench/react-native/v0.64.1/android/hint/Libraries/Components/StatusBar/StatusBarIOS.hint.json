@@ -1,0 +1,58 @@
+{
+    "imports": {
+        "NativeEventEmitter": {
+            "source": {
+                "row": 2,
+                "column": 8,
+                "local": "NativeEventEmitter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 15
+                },
+                "end": {
+                    "row": 17,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 5,
+                "column": 24,
+                "local": "NativeEventEmitter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 17,
+                    "column": 15
+                },
+                "end": {
+                    "row": 17,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/EventEmitter/NativeEventEmitter.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 4,
+            "column": 15,
+            "local": "StatusBarIOS",
+            "type": "class"
+        },
+        {
+            "row": 5,
+            "column": 13,
+            "local": "$1",
+            "type": "value"
+        }
+    ]
+}

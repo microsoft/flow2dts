@@ -1,0 +1,301 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 48,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 0,
+                    "column": 1
+                },
+                "end": {
+                    "row": 0,
+                    "column": 0
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/View/ReactNativeStyleAttributes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 27,
+                "column": 17,
+                "local": "ReactNativeStyleAttributes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 38
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/View/ReactNativeViewAttributes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 31,
+                "column": 13,
+                "local": "UIView"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/View/ReactNativeViewAttributes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 42,
+                "column": 18,
+                "local": "UIView"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 13
+                },
+                "end": {
+                    "row": 5,
+                    "column": 18
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/View/ReactNativeViewAttributes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 43,
+                "column": 19,
+                "local": "RCTView"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 30,
+                    "column": 13
+                },
+                "end": {
+                    "row": 30,
+                    "column": 19
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/View/ReactNativeViewAttributes.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 46,
+                "column": 32,
+                "local": "ReactNativeViewAttributes"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 41,
+                    "column": 13
+                },
+                "end": {
+                    "row": 41,
+                    "column": 37
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/Components/View/ReactNativeViewAttributes.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "ReactNativeStyleAttributes",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 6,
+            "column": 3,
+            "local": "pointerEvents",
+            "type": "value"
+        },
+        {
+            "row": 7,
+            "column": 3,
+            "local": "accessible",
+            "type": "value"
+        },
+        {
+            "row": 8,
+            "column": 3,
+            "local": "accessibilityActions",
+            "type": "value"
+        },
+        {
+            "row": 9,
+            "column": 3,
+            "local": "accessibilityLabel",
+            "type": "value"
+        },
+        {
+            "row": 10,
+            "column": 3,
+            "local": "accessibilityLiveRegion",
+            "type": "value"
+        },
+        {
+            "row": 11,
+            "column": 3,
+            "local": "accessibilityRole",
+            "type": "value"
+        },
+        {
+            "row": 12,
+            "column": 3,
+            "local": "accessibilityState",
+            "type": "value"
+        },
+        {
+            "row": 13,
+            "column": 3,
+            "local": "accessibilityValue",
+            "type": "value"
+        },
+        {
+            "row": 14,
+            "column": 3,
+            "local": "accessibilityHint",
+            "type": "value"
+        },
+        {
+            "row": 15,
+            "column": 3,
+            "local": "importantForAccessibility",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 3,
+            "local": "nativeID",
+            "type": "value"
+        },
+        {
+            "row": 17,
+            "column": 3,
+            "local": "testID",
+            "type": "value"
+        },
+        {
+            "row": 18,
+            "column": 3,
+            "local": "renderToHardwareTextureAndroid",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 3,
+            "local": "shouldRasterizeIOS",
+            "type": "value"
+        },
+        {
+            "row": 20,
+            "column": 3,
+            "local": "onLayout",
+            "type": "value"
+        },
+        {
+            "row": 21,
+            "column": 3,
+            "local": "onAccessibilityAction",
+            "type": "value"
+        },
+        {
+            "row": 22,
+            "column": 3,
+            "local": "onAccessibilityTap",
+            "type": "value"
+        },
+        {
+            "row": 23,
+            "column": 3,
+            "local": "onMagicTap",
+            "type": "value"
+        },
+        {
+            "row": 24,
+            "column": 3,
+            "local": "onAccessibilityEscape",
+            "type": "value"
+        },
+        {
+            "row": 25,
+            "column": 3,
+            "local": "collapsable",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 3,
+            "local": "needsOffscreenAlphaCompositing",
+            "type": "value"
+        },
+        {
+            "row": 27,
+            "column": 3,
+            "local": "style",
+            "type": "value"
+        },
+        {
+            "row": 5,
+            "column": 13,
+            "local": "UIView",
+            "type": "value"
+        },
+        {
+            "row": 38,
+            "column": 3,
+            "local": "removeClippedSubviews",
+            "type": "value"
+        },
+        {
+            "row": 30,
+            "column": 13,
+            "local": "RCTView",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 3,
+            "local": "UIView",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "RCTView",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 13,
+            "local": "ReactNativeViewAttributes",
+            "type": "value"
+        }
+    ]
+}

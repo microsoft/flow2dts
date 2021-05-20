@@ -1,0 +1,440 @@
+{
+    "imports": {
+        "____ColorValue_Internal": {
+            "source": {
+                "row": 5,
+                "column": 14,
+                "local": "____ColorValue_Internal"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 7,
+                    "column": 6
+                },
+                "end": {
+                    "row": 7,
+                    "column": 28
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
+            }
+        },
+        "____Styles_Internal": {
+            "source": {
+                "row": 6,
+                "column": 14,
+                "local": "____Styles_Internal"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 660,
+                    "column": 6
+                },
+                "end": {
+                    "row": 660,
+                    "column": 24
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
+            }
+        },
+        "____DangerouslyImpreciseStyle_Internal": {
+            "source": {
+                "row": 7,
+                "column": 14,
+                "local": "____DangerouslyImpreciseStyle_Internal"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 631,
+                    "column": 6
+                },
+                "end": {
+                    "row": 631,
+                    "column": 43
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
+            }
+        },
+        "____DangerouslyImpreciseStyleProp_Internal": {
+            "source": {
+                "row": 8,
+                "column": 14,
+                "local": "____DangerouslyImpreciseStyleProp_Internal"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 647,
+                    "column": 6
+                },
+                "end": {
+                    "row": 647,
+                    "column": 47
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
+            }
+        },
+        "____ViewStyle_Internal": {
+            "source": {
+                "row": 9,
+                "column": 14,
+                "local": "____ViewStyle_Internal"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 532,
+                    "column": 6
+                },
+                "end": {
+                    "row": 532,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
+            }
+        },
+        "____ViewStyleProp_Internal": {
+            "source": {
+                "row": 10,
+                "column": 14,
+                "local": "____ViewStyleProp_Internal"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 650,
+                    "column": 6
+                },
+                "end": {
+                    "row": 650,
+                    "column": 31
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
+            }
+        },
+        "____TextStyle_Internal": {
+            "source": {
+                "row": 11,
+                "column": 14,
+                "local": "____TextStyle_Internal"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 581,
+                    "column": 6
+                },
+                "end": {
+                    "row": 581,
+                    "column": 27
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
+            }
+        },
+        "____TextStyleProp_Internal": {
+            "source": {
+                "row": 12,
+                "column": 14,
+                "local": "____TextStyleProp_Internal"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 653,
+                    "column": 6
+                },
+                "end": {
+                    "row": 653,
+                    "column": 31
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
+            }
+        },
+        "____ImageStyle_Internal": {
+            "source": {
+                "row": 13,
+                "column": 14,
+                "local": "____ImageStyle_Internal"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 622,
+                    "column": 6
+                },
+                "end": {
+                    "row": 622,
+                    "column": 28
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
+            }
+        },
+        "____ImageStyleProp_Internal": {
+            "source": {
+                "row": 14,
+                "column": 14,
+                "local": "____ImageStyleProp_Internal"
+            },
+            "isImportedType": true,
+            "resolved": {
+                "begin": {
+                    "row": 656,
+                    "column": 6
+                },
+                "end": {
+                    "row": 656,
+                    "column": 32
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheetTypes.js.flow"
+            }
+        }
+    },
+    "typeofs": [
+        {
+            "source": {
+                "row": 2,
+                "column": 29,
+                "local": "$1"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 5,
+                    "column": 30
+                },
+                "end": {
+                    "row": 7,
+                    "column": 29
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/flattenStyle.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 88,
+                "column": 25,
+                "local": "hairlineWidth"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 39,
+                    "column": 13
+                },
+                "end": {
+                    "row": 39,
+                    "column": 25
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 109,
+                "column": 30,
+                "local": "absoluteFill"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 41,
+                    "column": 13
+                },
+                "end": {
+                    "row": 41,
+                    "column": 24
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        },
+        {
+            "source": {
+                "row": 161,
+                "column": 19,
+                "local": "flatten"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 2,
+                    "column": 13
+                },
+                "end": {
+                    "row": 2,
+                    "column": 19
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/StyleSheet/StyleSheet.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 2,
+            "column": 13,
+            "local": "flatten",
+            "type": "value"
+        },
+        {
+            "row": 3,
+            "column": 7,
+            "local": "$1",
+            "type": "value"
+        },
+        {
+            "row": 16,
+            "column": 6,
+            "local": "ColorValue",
+            "type": "type"
+        },
+        {
+            "row": 18,
+            "column": 6,
+            "local": "ViewStyleProp",
+            "type": "type"
+        },
+        {
+            "row": 20,
+            "column": 6,
+            "local": "TextStyleProp",
+            "type": "type"
+        },
+        {
+            "row": 22,
+            "column": 6,
+            "local": "ImageStyleProp",
+            "type": "type"
+        },
+        {
+            "row": 24,
+            "column": 6,
+            "local": "DangerouslyImpreciseStyleProp",
+            "type": "type"
+        },
+        {
+            "row": 26,
+            "column": 6,
+            "local": "TypeForStyleKey",
+            "type": "type"
+        },
+        {
+            "row": 31,
+            "column": 6,
+            "local": "ViewStyle",
+            "type": "type"
+        },
+        {
+            "row": 33,
+            "column": 6,
+            "local": "TextStyle",
+            "type": "type"
+        },
+        {
+            "row": 35,
+            "column": 6,
+            "local": "ImageStyle",
+            "type": "type"
+        },
+        {
+            "row": 37,
+            "column": 6,
+            "local": "DangerouslyImpreciseStyle",
+            "type": "type"
+        },
+        {
+            "row": 39,
+            "column": 13,
+            "local": "hairlineWidth",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 3,
+            "local": "position",
+            "type": "value"
+        },
+        {
+            "row": 43,
+            "column": 3,
+            "local": "left",
+            "type": "value"
+        },
+        {
+            "row": 44,
+            "column": 3,
+            "local": "right",
+            "type": "value"
+        },
+        {
+            "row": 45,
+            "column": 3,
+            "local": "top",
+            "type": "value"
+        },
+        {
+            "row": 46,
+            "column": 3,
+            "local": "bottom",
+            "type": "value"
+        },
+        {
+            "row": 41,
+            "column": 13,
+            "local": "absoluteFill",
+            "type": "value"
+        },
+        {
+            "row": 88,
+            "column": 3,
+            "local": "hairlineWidth",
+            "type": "value"
+        },
+        {
+            "row": 95,
+            "column": 3,
+            "local": "absoluteFill",
+            "type": "value"
+        },
+        {
+            "row": 109,
+            "column": 3,
+            "local": "absoluteFillObject",
+            "type": "value"
+        },
+        {
+            "row": 117,
+            "column": 3,
+            "local": "compose",
+            "type": "value"
+        },
+        {
+            "row": 161,
+            "column": 3,
+            "local": "flatten",
+            "type": "value"
+        },
+        {
+            "row": 172,
+            "column": 3,
+            "local": "setStyleAttributePreprocessor",
+            "type": "value"
+        },
+        {
+            "row": 180,
+            "column": 3,
+            "local": "create",
+            "type": "value"
+        }
+    ]
+}
