@@ -1,0 +1,86 @@
+{
+    "imports": {},
+    "typeofs": [
+        {
+            "source": {
+                "row": 100,
+                "column": 32,
+                "local": "EventEmitter"
+            },
+            "resolved": {
+                "begin": {
+                    "row": 19,
+                    "column": 15
+                },
+                "end": {
+                    "row": 19,
+                    "column": 26
+                },
+                "libraryFolder": -1,
+                "file": "/Libraries/vendor/emitter/_EventEmitter.js.flow"
+            }
+        }
+    ],
+    "decls": [
+        {
+            "row": 3,
+            "column": 7,
+            "local": "EmitterSubscription",
+            "type": "value"
+        },
+        {
+            "row": 4,
+            "column": 7,
+            "local": "EventSubscriptionVendor",
+            "type": "value"
+        },
+        {
+            "row": 26,
+            "column": 3,
+            "local": "constructor",
+            "type": "value"
+        },
+        {
+            "row": 42,
+            "column": 3,
+            "local": "addListener",
+            "type": "value"
+        },
+        {
+            "row": 51,
+            "column": 3,
+            "local": "removeAllListeners",
+            "type": "value"
+        },
+        {
+            "row": 57,
+            "column": 3,
+            "local": "removeSubscription",
+            "type": "value"
+        },
+        {
+            "row": 66,
+            "column": 3,
+            "local": "listenerCount",
+            "type": "value"
+        },
+        {
+            "row": 82,
+            "column": 3,
+            "local": "emit",
+            "type": "value"
+        },
+        {
+            "row": 97,
+            "column": 3,
+            "local": "removeListener",
+            "type": "value"
+        },
+        {
+            "row": 19,
+            "column": 15,
+            "local": "EventEmitter",
+            "type": "class"
+        }
+    ]
+}

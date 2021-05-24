@@ -1,6 +1,6 @@
 {
     "libraries": [
-        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_3d9761cb"
+        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_1ba5e99c"
     ],
     "files": {
         "/Libraries/ActionSheetIOS/ActionSheetIOS.js.flow": {
@@ -10051,7 +10051,7 @@
                     {
                         "row": 292,
                         "column": 30,
-                        "type": "unresolved[error]"
+                        "type": "value"
                     },
                     {
                         "row": 298,
@@ -16803,12 +16803,12 @@
                     {
                         "row": 2,
                         "column": 34,
-                        "type": "value",
+                        "type": "class",
                         "resolvedDecl": {
-                            "row": 3,
-                            "column": 7,
-                            "local": "$1",
-                            "type": "value"
+                            "row": 19,
+                            "column": 15,
+                            "local": "EventEmitter",
+                            "type": "class"
                         }
                     }
                 ],
@@ -16874,6 +16874,24 @@
                             "row": 6,
                             "column": 15,
                             "local": "EmitterSubscription",
+                            "type": "class"
+                        }
+                    }
+                ]
+            }
+        },
+        "/Libraries/vendor/emitter/_EventEmitter.js.flow": {
+            "imports": {},
+            "typeofs": {
+                "EventEmitter": [
+                    {
+                        "row": 100,
+                        "column": 32,
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 19,
+                            "column": 15,
+                            "local": "EventEmitter",
                             "type": "class"
                         }
                     }

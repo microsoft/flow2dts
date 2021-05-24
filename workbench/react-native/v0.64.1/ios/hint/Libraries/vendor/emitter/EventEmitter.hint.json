@@ -9,15 +9,15 @@
             },
             "resolved": {
                 "begin": {
-                    "row": 3,
-                    "column": 12
+                    "row": 19,
+                    "column": 15
                 },
                 "end": {
-                    "row": 3,
-                    "column": 37
+                    "row": 19,
+                    "column": 26
                 },
                 "libraryFolder": -1,
-                "file": "/Libraries/vendor/emitter/EventEmitter.js.flow"
+                "file": "/Libraries/vendor/emitter/_EventEmitter.js.flow"
             }
         },
         {
