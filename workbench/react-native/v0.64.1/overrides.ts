@@ -210,6 +210,57 @@ const missingFileVisitors: OverridesVisitor[] = [
       },
     },
   ],
+  [
+    "Libraries/DeprecatedPropTypes/DeprecatedImagePropType.d.ts",
+    {
+      ImportDeclaration: {
+        exit(path) {
+          switch (path.node.source.value) {
+            case "./DeprecatedImageSourcePropType": {
+              path.remove()
+              break
+            }
+          }
+        },
+      },
+      VariableDeclaration: {
+        exit(path) {
+          if (path.node.declarations.length === 1 && path.node.declarations[0].id.type === "Identifier") {
+            switch (path.node.declarations[0].id.name) {
+              case "$f2d_source": {
+                path.remove()
+                return
+              }
+            }
+          }
+        },
+      },
+      TSPropertySignature: {
+        exit(path) {
+          if (path.node.key.type === "Identifier") {
+            switch (path.node.key.name) {
+              case "source": {
+                path.remove()
+                break
+              }
+            }
+          }
+        },
+      },
+      ExportSpecifier: {
+        exit(path) {
+          if (path.node.exported.type === "Identifier") {
+            switch (path.node.exported.name) {
+              case "source": {
+                path.remove()
+                break
+              }
+            }
+          }
+        },
+      },
+    },
+  ],
 ]
 
 const visitors: OverridesVisitor[] = [
