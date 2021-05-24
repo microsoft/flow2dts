@@ -7,28 +7,6 @@ const ast = template({
 }).ast
 
 const visitors: OverridesVisitor[] = [
-  [
-    "Libraries/Components/AccessibilityInfo/AccessibilityInfo.ios.d.ts",
-    {
-      ImportDeclaration: {
-        exit(path, state: { promiseIdentifierName?: string }) {
-          if (path.node.source.value === "../../Promise") {
-            const specifier = path.node.specifiers[0]
-            t.assertImportDefaultSpecifier(specifier)
-            state.promiseIdentifierName = specifier.local.name
-            path.remove()
-          }
-        },
-      },
-      TSTypeReference: {
-        exit(path, state: { promiseIdentifierName: string }) {
-          if (t.isIdentifier(path.node.typeName) && path.node.typeName.name === state.promiseIdentifierName) {
-            path.node.typeName = t.identifier("Promise")
-          }
-        },
-      },
-    },
-  ],
   // TODO: This should be fixed upstream in RN. This seems like simply broken upstream code.
   [
     "Libraries/Components/SegmentedControlIOS/SegmentedControlIOS.ios.d.ts",

@@ -64,37 +64,21 @@ function removeUnknownFromHostComponent(path: NodePath<t.TSTypeReference>) {
 const animatedVisitors: OverridesVisitor[] = [
   // Override exported components with those taken from DT
   [
-    "Libraries/Animated/src/Animated.d.ts",
+    "Libraries/Animated/Animated.d.ts",
     {
       Program: {
         exit(path) {
           const exportDeclaration = ast`
-            export * from "../../../TypeScriptSupplementals/Animated"
+            export * from "../../TypeScriptSupplementals/Animated"
           ` as t.ExportDeclaration
           path.unshiftContainer("body", [exportDeclaration])
         },
       },
     },
   ],
-  [
-    "Libraries/Animated/src/Animated.d.ts",
-    {
-      Identifier: {
-        exit(path) {
-          if (path.node.name.startsWith("$f2d_")) {
-            const parentPath =
-              path.findParent((p) => p.isVariableDeclaration()) || path.findParent((p) => p.isExportSpecifier())
-            if (parentPath) {
-              parentPath.remove()
-            }
-          }
-        },
-      },
-    },
-  ],
   // Export all of the AnimatedMock ES6 exports, so those and the ES6 exports of Animated can be...
   [
-    "Libraries/Animated/src/Animated.d.ts",
+    "Libraries/Animated/Animated.d.ts",
     {
       Program: {
         exit(path) {
@@ -120,7 +104,7 @@ const animatedVisitors: OverridesVisitor[] = [
     },
   ],
   [
-    "Libraries/Animated/src/AnimatedImplementation.d.ts",
+    "Libraries/Animated/AnimatedImplementation.d.ts",
     {
       ImportDeclaration: {
         exit(path) {
@@ -530,7 +514,7 @@ const visitors: OverridesVisitor[] = [
     },
   ],
   [
-    "Libraries/Animated/src/createAnimatedComponent.d.ts",
+    "Libraries/Animated/createAnimatedComponent.d.ts",
     {
       TSTypeParameter: {
         exit(path) {
