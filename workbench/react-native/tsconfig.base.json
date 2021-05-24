@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "noEmit": true,
-    "esModuleInterop": true,
-    "lib": ["es2015"],
-    "types": [],
-    "strict": true
-  }
-}
