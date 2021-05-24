@@ -444,7 +444,7 @@ const visitors: OverridesVisitor[] = [
               throw path.buildCodeFrameError("Expected a single `Animated` import specificier")
             }
             const replacementDeclaration = ast`
-            import * as Animated from "../../Animated/src/Animated"
+            import * as Animated from "../../Animated/Animated"
           ` as t.ImportDeclaration
             path.replaceWith(replacementDeclaration)
             path.skip()
