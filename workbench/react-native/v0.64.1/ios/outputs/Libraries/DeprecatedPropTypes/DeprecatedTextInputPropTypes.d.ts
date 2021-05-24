@@ -1,5 +1,5 @@
 import { React$PropType$Primitive, ReactPropsCheckType } from "flow2dts-flow-types-polyfill";
-import $1 from "./DeprecatedColorPropType";
+import $1 from "../../TypeScriptSupplementals/DeprecatedImageSourcePropType";
 import $2 from "./DeprecatedViewPropTypes";
 import $3 from "prop-types";
 import $4 from "../Text/Text";
