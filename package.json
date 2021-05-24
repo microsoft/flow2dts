@@ -10,12 +10,13 @@
   ],
   "scripts": {
     "test": "yarn workspace flow2dts test",
-    "start": "yarn hint && yarn workbench && yarn check:offences",
-    "check": "yarn check:react-native",
-    "check:offences": "yarn check | node ./scripts/tsc-offences.js",
-    "check:react-native": "yarn check:react-native:ios && yarn check:react-native:android",
-    "check:react-native:ios": "yarn tsc --project ./workbench/react-native/v0.64.1/ios/outputs/tsconfig.json --pretty",
-    "check:react-native:android": "yarn tsc --project ./workbench/react-native/v0.64.1/android/outputs/tsconfig.json --pretty",
+    "start": "yarn hint && yarn workbench && yarn wbcheck:react-native:offences",
+    "wbcheck": "yarn wbcheck:react-native:ios && yarn wbcheck:react-native:android",
+    "wbcheck:offences": "yarn wbcheck:react-native:ios:offences && yarn wbcheck:react-native:android:offences",
+    "wbcheck:react-native:ios": "yarn tsc --project ./workbench/react-native/v0.64.1/ios/outputs/tsconfig.json --pretty",
+    "wbcheck:react-native:ios:offences": "yarn wbcheck:react-native:ios | node ./scripts/tsc-offences.js",
+    "wbcheck:react-native:android": "yarn tsc --project ./workbench/react-native/v0.64.1/android/outputs/tsconfig.json --pretty",
+    "wbcheck:react-native:android:offences": "yarn wbcheck:react-native:android | node ./scripts/tsc-offences.js",
     "workbench": "yarn workbench:react-native",
     "workbench:react-native": "yarn workbench:react-native:ios && yarn workbench:react-native:android",
     "workbench:react-native:cli": "yarn workspace flow2dts cli --cwd ../.. --workbenchDir ./workbench/react-native/v0.64.1",
@@ -31,7 +32,7 @@
     "prettify": "prettier --write \"packages/**/*.ts\" && prettier --write \"packages/**/*.d.ts\" && prettier --write \"packages/**/*.js\"",
     "postinstall": "patch-package",
     "experiment:flowgetdef": "pushd \"./workbench/react-native/v0.64.1/ios/inputs\" && flow get-def ./index.js.flow 50 15 && popd",
-    "work": "cls && yarn workbench:react-native:ios && yarn check:react-native:ios"
+    "work": "cls && yarn workbench:react-native:ios && yarn wbcheck:react-native:ios"
   },
   "resolutions": {
     "@types/react": "16.9.56",
