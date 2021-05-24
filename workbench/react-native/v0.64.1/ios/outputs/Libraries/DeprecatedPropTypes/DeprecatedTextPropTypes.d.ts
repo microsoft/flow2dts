@@ -1,5 +1,5 @@
 import { React$PropType$Primitive, ReactPropsCheckType } from "flow2dts-flow-types-polyfill";
-import $1 from "../../TypeScriptSupplementals/DeprecatedImageSourcePropType";
+import $1 from "../../TypeScriptSupplementals/DeprecatedColorPropType";
 import $2 from "./DeprecatedEdgeInsetsPropType";
 import $3 from "prop-types";
 declare var stylePropType: ReactPropsCheckType;

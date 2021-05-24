@@ -167,9 +167,15 @@ const missingFileVisitors: OverridesVisitor[] = [
           switch (path.node.source.value) {
             case "./DeprecatedColorPropType": {
               path.node.source.value = "../../TypeScriptSupplementals/DeprecatedColorPropType"
+              break
             }
             case "./DeprecatedImageSourcePropType": {
               path.node.source.value = "../../TypeScriptSupplementals/DeprecatedImageSourcePropType"
+              break
+            }
+            case "../../Utilities/differ/sizesDiffer": {
+              path.node.source.value = "../../../TypeScriptSupplementals/sizesDiffer"
+              break
             }
           }
         },
