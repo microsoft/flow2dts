@@ -11,13 +11,11 @@
   "scripts": {
     "test": "yarn workspace flow2dts test",
     "start": "yarn hint && yarn workbench && yarn check:offences",
-
     "check": "yarn check:react-native",
     "check:offences": "yarn check | node ./scripts/tsc-offences.js",
     "check:react-native": "yarn check:react-native:ios && yarn check:react-native:android",
     "check:react-native:ios": "yarn tsc --project ./workbench/react-native/v0.64.1/ios/outputs/tsconfig.json --pretty",
     "check:react-native:android": "yarn tsc --project ./workbench/react-native/v0.64.1/android/outputs/tsconfig.json --pretty",
-
     "workbench": "yarn workbench:react-native",
     "workbench:react-native": "yarn workbench:react-native:ios && yarn workbench:react-native:android",
     "workbench:react-native:cli": "yarn workspace flow2dts cli --cwd ../.. --workbenchDir ./workbench/react-native/v0.64.1",
@@ -26,15 +24,14 @@
     "workbench:react-native:ios:npm": "node scripts/create-types-package.js ./workbench/react-native/v0.63.3/package.json ./workbench/react-native/v0.63.3/outputs/ios",
     "artsy-eigen:check": "yarn workspace artsy-eigen type-check",
     "artsy-eigen:check:offences": "yarn workspace artsy-eigen type-check | node ./scripts/tsc-offences.js",
-
     "hint": "yarn hint:react-native:ios && yarn hint:react-native:android",
     "hint:react-native:cli": "yarn workspace flow2hint cli --cwd ../.. --workbenchDir ./workbench/react-native/v0.64.1",
     "hint:react-native:ios": "rimraf ./workbench/react-native/v0.64.1/ios/hint && yarn hint:react-native:cli --platform ios",
     "hint:react-native:android": "rimraf ./workbench/react-native/v0.64.1/android/hint && yarn hint:react-native:cli --platform android",
-
     "prettify": "prettier --write \"packages/**/*.ts\" && prettier --write \"packages/**/*.d.ts\" && prettier --write \"packages/**/*.js\"",
     "postinstall": "patch-package",
-    "experiment:flowgetdef": "pushd \"./workbench/react-native/v0.64.1/ios/inputs\" && flow get-def ./index.js.flow 50 15 && popd"
+    "experiment:flowgetdef": "pushd \"./workbench/react-native/v0.64.1/ios/inputs\" && flow get-def ./index.js.flow 50 15 && popd",
+    "work": "cls && yarn workbench:react-native:ios && yarn check:react-native:ios"
   },
   "resolutions": {
     "@types/react": "16.9.56",
