@@ -262,6 +262,28 @@ const visitors: OverridesVisitor[] = [
       },
     },
   ],
+  // Fixing due to semantic differences between Flow and TypeScript
+  [
+    "Libraries/Components/ScrollView/ScrollViewStickyHeader.d.ts",
+    {
+      TSTypeReference: {
+        exit(path) {
+          if (path.node.typeName.type === "TSQualifiedName" && path.node.typeName.left.type === "Identifier") {
+            const valueName = path.node.typeName.left.name
+            const fieldName = path.node.typeName.right.name
+            if (valueName === "AnimatedImplementation" && (fieldName === "Value" || fieldName === "Interpolation")) {
+              path.replaceWith(
+                t.tsIndexedAccessType(
+                  t.tsTypeQuery(t.identifier(valueName)),
+                  t.tsLiteralType(t.stringLiteral(fieldName))
+                )
+              )
+            }
+          }
+        },
+      },
+    },
+  ],
   // This happens due to removing propTypes in Text.d.ts, so we resolve it manually
   [
     "Libraries/DeprecatedPropTypes/DeprecatedTextInputPropTypes.d.ts",
@@ -529,6 +551,24 @@ const visitors: OverridesVisitor[] = [
       },
     },
   ],
+  [
+    "Libraries/Components/View/ViewPropTypes.d.ts",
+    {
+      TSPropertySignature: {
+        exit(path) {
+          if (t.isIdentifier(path.node.key) && path.node.key.name === "focusable") {
+            const typeAnnotation = path.node.typeAnnotation!.typeAnnotation
+            t.assertTSBooleanKeyword(typeAnnotation)
+            path.node.typeAnnotation!.typeAnnotation = t.tsUnionType([
+              t.tsNullKeyword(),
+              t.tsUndefinedKeyword(),
+              t.tsBooleanKeyword(),
+            ])
+          }
+        },
+      },
+    },
+  ],
   // This is done so people can merge their own NativeModules interface declaration.
   [
     "Libraries/BatchedBridge/NativeModules.d.ts",
@@ -580,25 +620,6 @@ const visitors: OverridesVisitor[] = [
             const constraint = path.node.constraint
             t.assertTSTypeLiteral(constraint)
             constraint.members = []
-          }
-        },
-      },
-    },
-  ],
-  // TODO: These should be typed as such upstream
-  [
-    "Libraries/Components/View/ViewPropTypes.d.ts",
-    {
-      TSPropertySignature: {
-        exit(path) {
-          if (t.isIdentifier(path.node.key) && path.node.key.name === "focusable") {
-            const typeAnnotation = path.node.typeAnnotation!.typeAnnotation
-            t.assertTSBooleanKeyword(typeAnnotation)
-            path.node.typeAnnotation!.typeAnnotation = t.tsUnionType([
-              t.tsNullKeyword(),
-              t.tsUndefinedKeyword(),
-              t.tsBooleanKeyword(),
-            ])
           }
         },
       },
