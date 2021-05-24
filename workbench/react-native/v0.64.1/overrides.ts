@@ -157,10 +157,66 @@ const logboxVisitors: OverridesVisitor[] = [
   ["Libraries/LogBox/UI/LogBoxInspectorStackFrames.d.ts", logboxVisitor],
 ]
 
+const missingFileVisitors: OverridesVisitor[] = [
+  // TODO: This should be fixed upstream in RN. This seems like simply broken upstream code.
+  [
+    "index.d.ts",
+    {
+      ImportDeclaration: {
+        exit(path) {
+          switch (path.node.source.value) {
+            case "./Libraries/DeprecatedPropTypes/DeprecatedColorPropType": {
+              path.remove()
+              break
+            }
+          }
+        },
+      },
+      TSTypeAliasDeclaration: {
+        exit(path) {
+          if (path.node.id.type === "Identifier") {
+            switch (path.node.id.name) {
+              case "DeprecatedColorPropType": {
+                path.remove()
+                break
+              }
+            }
+          }
+        },
+      },
+      TSPropertySignature: {
+        exit(path) {
+          if (path.node.key.type === "Identifier") {
+            switch (path.node.key.name) {
+              case "ColorPropType": {
+                path.remove()
+                break
+              }
+            }
+          }
+        },
+      },
+      ExportSpecifier: {
+        exit(path) {
+          if (path.node.exported.type === "Identifier") {
+            switch (path.node.exported.name) {
+              case "ColorPropType": {
+                path.remove()
+                break
+              }
+            }
+          }
+        },
+      },
+    },
+  ],
+]
+
 const visitors: OverridesVisitor[] = [
   ...animatedVisitors,
   ...listsVisitors,
   ...logboxVisitors,
+  ...missingFileVisitors,
   [
     "**/*",
     {
@@ -213,9 +269,11 @@ const visitors: OverridesVisitor[] = [
       ImportDeclaration: {
         exit(path) {
           if (path.node.source.value === "flow2dts-flow-types-polyfill") {
-            path.node.specifiers.push(t.importSpecifier(t.identifier("ReactPropsCheckType"), t.identifier("ReactPropsCheckType")))
+            path.node.specifiers.push(
+              t.importSpecifier(t.identifier("ReactPropsCheckType"), t.identifier("ReactPropsCheckType"))
+            )
           }
-        }
+        },
       },
       TSTypeQuery: {
         exit(path) {
@@ -224,9 +282,9 @@ const visitors: OverridesVisitor[] = [
               path.replaceWith(t.tsTypeReference(t.identifier("ReactPropsCheckType")))
             }
           }
-        }
+        },
       },
-    }
+    },
   ],
   // TODO: This could probably move upstream, as `Element` is slightly more restrictive than `Node`.
   [
