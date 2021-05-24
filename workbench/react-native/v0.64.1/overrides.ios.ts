@@ -15,7 +15,8 @@ const visitors: OverridesVisitor[] = [
         exit(path) {
           switch (path.node.source.value) {
             case "./Libraries/Components/DrawerAndroid/DrawerLayoutAndroid":
-            case "./Libraries/Components/ProgressBarAndroid/ProgressBarAndroid": {
+            case "./Libraries/Components/ProgressBarAndroid/ProgressBarAndroid":
+            case "./Libraries/Components/ToastAndroid/ToastAndroid": {
               path.remove()
               break
             }
@@ -27,7 +28,8 @@ const visitors: OverridesVisitor[] = [
           if (path.node.id.type === "Identifier") {
             switch (path.node.id.name) {
               case "DrawerLayoutAndroid":
-              case "ProgressBarAndroid": {
+              case "ProgressBarAndroid":
+              case "ToastAndroid": {
                 path.remove()
                 break
               }
@@ -40,7 +42,8 @@ const visitors: OverridesVisitor[] = [
           if (path.node.key.type === "Identifier") {
             switch (path.node.key.name) {
               case "DrawerLayoutAndroid":
-              case "ProgressBarAndroid": {
+              case "ProgressBarAndroid":
+              case "ToastAndroid": {
                 path.remove()
                 break
               }
@@ -53,7 +56,8 @@ const visitors: OverridesVisitor[] = [
           if (path.node.exported.type === "Identifier") {
             switch (path.node.exported.name) {
               case "DrawerLayoutAndroid":
-              case "ProgressBarAndroid": {
+              case "ProgressBarAndroid":
+              case "ToastAndroid": {
                 path.remove()
                 break
               }
