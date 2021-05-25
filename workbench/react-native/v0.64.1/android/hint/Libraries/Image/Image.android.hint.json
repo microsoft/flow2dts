@@ -217,7 +217,7 @@
                 "column": 28,
                 "local": "func"
             },
-            "error": "Could not get definition for /Libraries/Image/Image.android.js.flow:73:27\r\nNo possible types\r\n"
+            "error": ""
         },
         {
             "source": {
@@ -225,7 +225,7 @@
                 "column": 31,
                 "local": "func"
             },
-            "error": "Could not get definition for /Libraries/Image/Image.android.js.flow:77:30\r\nNo possible types\r\n"
+            "error": ""
         },
         {
             "source": {

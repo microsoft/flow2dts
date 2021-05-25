@@ -232,7 +232,7 @@
                 "column": 34,
                 "local": "number"
             },
-            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedImageStylePropTypes.js.flow:31:33\r\nNo possible types\r\n"
+            "error": ""
         },
         {
             "source": {

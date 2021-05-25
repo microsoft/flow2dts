@@ -1,6 +1,10 @@
 {
     "libraries": [
-        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_3155dacc"
+        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_3fe0ca24",
+        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_37a8f6f5",
+        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_20d1419b",
+        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_bc1012a",
+        "C:/Users/zihanc/AppData/Local/Temp/flow/flowlib_33a5b8f1"
     ],
     "files": {
         "/Libraries/ActionSheetIOS/ActionSheetIOS.js.flow": {
@@ -6822,7 +6826,7 @@
                     {
                         "row": 725,
                         "column": 46,
-                        "type": "value"
+                        "type": "unresolved[error]"
                     }
                 ],
                 "DeprecatedTextInputPropTypes": [
@@ -9288,14 +9292,14 @@
                     {
                         "row": 25,
                         "column": 32,
-                        "type": "value"
+                        "type": "unresolved[error]"
                     }
                 ],
                 "node": [
                     {
                         "row": 27,
                         "column": 40,
-                        "type": "value"
+                        "type": "unresolved[error]"
                     }
                 ],
                 "number": [
@@ -9508,7 +9512,7 @@
                     {
                         "row": 31,
                         "column": 34,
-                        "type": "value"
+                        "type": "unresolved[error]"
                     },
                     {
                         "row": 52,
@@ -10338,7 +10342,7 @@
                     {
                         "row": 78,
                         "column": 45,
-                        "type": "unresolved[error]"
+                        "type": "value"
                     }
                 ],
                 "DeprecatedTextStylePropTypes": [
@@ -10452,7 +10456,7 @@
                     {
                         "row": 132,
                         "column": 49,
-                        "type": "value"
+                        "type": "unresolved[error]"
                     },
                     {
                         "row": 341,
@@ -10472,7 +10476,7 @@
                     {
                         "row": 372,
                         "column": 33,
-                        "type": "value"
+                        "type": "unresolved[error]"
                     },
                     {
                         "row": 382,
@@ -11250,12 +11254,12 @@
                     {
                         "row": 73,
                         "column": 28,
-                        "type": "value"
+                        "type": "unresolved[error]"
                     },
                     {
                         "row": 77,
                         "column": 31,
-                        "type": "value"
+                        "type": "unresolved[error]"
                     }
                 ],
                 "getSize": [
@@ -16860,12 +16864,12 @@
                     {
                         "row": 2,
                         "column": 34,
-                        "type": "value",
+                        "type": "class",
                         "resolvedDecl": {
-                            "row": 3,
-                            "column": 7,
-                            "local": "$1",
-                            "type": "value"
+                            "row": 19,
+                            "column": 15,
+                            "local": "EventEmitter",
+                            "type": "class"
                         }
                     }
                 ],
@@ -16931,6 +16935,24 @@
                             "row": 6,
                             "column": 15,
                             "local": "EmitterSubscription",
+                            "type": "class"
+                        }
+                    }
+                ]
+            }
+        },
+        "/Libraries/vendor/emitter/_EventEmitter.js.flow": {
+            "imports": {},
+            "typeofs": {
+                "EventEmitter": [
+                    {
+                        "row": 100,
+                        "column": 32,
+                        "type": "class",
+                        "resolvedDecl": {
+                            "row": 19,
+                            "column": 15,
+                            "local": "EventEmitter",
                             "type": "class"
                         }
                     }

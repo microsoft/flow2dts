@@ -83,7 +83,7 @@
                 "column": 32,
                 "local": "bool"
             },
-            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow:25:31\r\nNo possible types\r\n"
+            "error": "Lost connection to the flow server (3 retries remaining)\r\nThe flow server is not responding (3 retries remaining): -Launching Flow server for C:/Code/vczh-ds3/Microsoft/flow2dts/workbench/react-native\r\nSpawned flow server (pid=15676)\r\nLogs will go to C:/Users/zihanc/AppData/Local/Temp/flow/CzCzBCodezBvczZh-ds3zBMicrosoftzBflow2dtszBworkbenchzBreact-native.log\r\nMonitor logs will go to C:/Users/zihanc/AppData/Local/Temp/flow/CzCzBCodezBvczZh-ds3zBMicrosoftzBflow2dtszBworkbenchzBreact-native.monitor_log\r\nStarted a new flow server: /Lost connection to the flow server (2 retries remaining)\r\nThe flow server is not responding (3 retries remaining): |Launching Flow server for C:/Code/vczh-ds3/Microsoft/flow2dts/workbench/react-native\r\nSpawned flow server (pid=7728)\r\nLogs will go to C:/Users/zihanc/AppData/Local/Temp/flow/CzCzBCodezBvczZh-ds3zBMicrosoftzBflow2dtszBworkbenchzBreact-native.log\r\nMonitor logs will go to C:/Users/zihanc/AppData/Local/Temp/flow/CzCzBCodezBvczZh-ds3zBMicrosoftzBflow2dtszBworkbenchzBreact-native.monitor_log\r\nStarted a new flow server: /Lost connection to the flow server (1 retry remaining)\r\nThe flow server is not responding (3 retries remaining): -Launching Flow server for C:/Code/vczh-ds3/Microsoft/flow2dts/workbench/react-native\r\nSpawned flow server (pid=7712)\r\nLogs will go to C:/Users/zihanc/AppData/Local/Temp/flow/CzCzBCodezBvczZh-ds3zBMicrosoftzBflow2dtszBworkbenchzBreact-native.log\r\nMonitor logs will go to C:/Users/zihanc/AppData/Local/Temp/flow/CzCzBCodezBvczZh-ds3zBMicrosoftzBflow2dtszBworkbenchzBreact-native.monitor_log\r\nStarted a new flow server: /"
         },
         {
             "source": {
@@ -91,7 +91,7 @@
                 "column": 40,
                 "local": "node"
             },
-            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedImagePropType.js.flow:27:39\r\nNo possible types\r\n"
+            "error": ""
         },
         {
             "source": {

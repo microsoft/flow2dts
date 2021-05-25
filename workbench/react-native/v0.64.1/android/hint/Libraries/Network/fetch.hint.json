@@ -16,7 +16,7 @@
                     "row": 1538,
                     "column": 84
                 },
-                "libraryFolder": 0,
+                "libraryFolder": 1,
                 "file": "/bom.js"
             }
         },
@@ -35,7 +35,7 @@
                     "row": 1406,
                     "column": 21
                 },
-                "libraryFolder": 0,
+                "libraryFolder": 2,
                 "file": "/bom.js"
             }
         },
@@ -54,7 +54,7 @@
                     "row": 1500,
                     "column": 21
                 },
-                "libraryFolder": 0,
+                "libraryFolder": 3,
                 "file": "/bom.js"
             }
         },
@@ -73,7 +73,7 @@
                     "row": 1474,
                     "column": 22
                 },
-                "libraryFolder": 0,
+                "libraryFolder": 3,
                 "file": "/bom.js"
             }
         }

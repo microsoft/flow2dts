@@ -249,7 +249,7 @@
                 "column": 46,
                 "local": "blurTextInput"
             },
-            "error": "Could not get definition for /Libraries/Components/TextInput/TextInput.js.flow:725:45\r\nNo possible types\r\n"
+            "error": ""
         },
         {
             "source": {

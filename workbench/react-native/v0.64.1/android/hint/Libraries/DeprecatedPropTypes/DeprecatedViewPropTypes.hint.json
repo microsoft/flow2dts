@@ -101,7 +101,7 @@
                 "column": 49,
                 "local": "bool"
             },
-            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedViewPropTypes.js.flow:132:48\r\nNo possible types\r\n"
+            "error": ""
         },
         {
             "source": {
@@ -299,7 +299,7 @@
                 "column": 33,
                 "local": "bool"
             },
-            "error": "Could not get definition for /Libraries/DeprecatedPropTypes/DeprecatedViewPropTypes.js.flow:372:32\r\nNo possible types\r\n"
+            "error": ""
         },
         {
             "source": {
