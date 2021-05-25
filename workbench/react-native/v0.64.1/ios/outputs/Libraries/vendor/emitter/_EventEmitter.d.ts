@@ -1,6 +1,6 @@
 // @flow
-import EmitterSubscription from "./EmitterSubscription";
-import EventSubscriptionVendor from "./EventSubscriptionVendor";
+import EmitterSubscription from "./_EmitterSubscription";
+import EventSubscriptionVendor from "./_EventSubscriptionVendor";
 /**
  * @class EventEmitter
  * @description

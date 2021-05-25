@@ -1,7 +1,7 @@
 // @flow
 
-const EmitterSubscription = require("./EmitterSubscription")
-const EventSubscriptionVendor = require("./EventSubscriptionVendor")
+const EmitterSubscription = require("./_EmitterSubscription")
+const EventSubscriptionVendor = require("./_EventSubscriptionVendor")
 
 /**
  * @class EventEmitter
