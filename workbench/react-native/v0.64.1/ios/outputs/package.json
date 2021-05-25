@@ -1,7 +1,7 @@
 {
   "name": "@types/react-native",
-  "version": "0.63.3",
-  "types": "outputs/ios/index.d.ts",
+  "version": "0.64.1",
+  "types": "index.d.ts",
   "dependencies": {
     "@react-native/assets": "1.0.0",
     "@react-native/polyfills": "1.0.0",

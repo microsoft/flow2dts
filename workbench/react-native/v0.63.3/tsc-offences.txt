@@ -1,4 +1,0 @@
-IOS
-ANDROID
-   3 TS2307
-   1 TS2339

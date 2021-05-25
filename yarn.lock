@@ -952,6 +952,17 @@
   resolved "https://registry.yarnpkg.com/@types/query-string/-/query-string-5.0.1.tgz#6cb41c724cb1644d56c2d1dae7c7b204e706b39e"
   integrity sha512-qlH3YtJ5ipp6z5SU9G0LJsBnNEZqTKPeGjNIyMcGD5Dhbooz0CCsW/sILsgb+LBRrDeTehRtQviXV2kfLm3dqg==
 
+"@types/react-native@0.63.3":
+  version "0.64.1"
+  dependencies:
+    "@react-native/assets" "1.0.0"
+    "@react-native/polyfills" "1.0.0"
+    "@types/invariant" "^2.2.34"
+    "@types/promise" "^7.1.30"
+    "@types/react" "^16.9.56"
+    "@types/react-test-renderer" "^16.9.3"
+    utility-types "^3.10.0"
+
 "@types/react-relay@*", "@types/react-relay@^7.0.17":
   version "7.0.17"
   resolved "https://registry.yarnpkg.com/@types/react-relay/-/react-relay-7.0.17.tgz#83f6b85c41b5fd3bb27d04d759fa4c0e4dd6a8d4"

@@ -36,7 +36,7 @@
   },
   "resolutions": {
     "@types/react": "16.9.56",
-    "@types/react-native": "0.63.3"
+    "@types/react-native": "0.64.1"
   },
   "devDependencies": {
     "flow-bin": "0.137.0",
