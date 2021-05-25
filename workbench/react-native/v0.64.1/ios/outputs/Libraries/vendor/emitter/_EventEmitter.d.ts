@@ -1,5 +1,7 @@
 // @flow
-import EmitterSubscription from "./_EmitterSubscription";
+interface EmitterSubscription {
+  remove: () => void;
+}
 import EventSubscriptionVendor from "./_EventSubscriptionVendor";
 /**
  * @class EventEmitter

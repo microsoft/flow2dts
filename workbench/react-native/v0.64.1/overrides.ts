@@ -183,21 +183,6 @@ const missingFileVisitors: OverridesVisitor[] = [
     },
   ],
   [
-    "Libraries/vendor/emitter/_EmitterSubscription.d.ts",
-    {
-      ImportDeclaration: {
-        exit(path) {
-          switch (path.node.source.value) {
-            case "./EventEmitter": {
-              path.node.source.value = "./_EventEmitter"
-              break
-            }
-          }
-        },
-      },
-    },
-  ],
-  [
     "index.d.ts",
     {
       ImportDeclaration: {
@@ -250,11 +235,71 @@ const missingFileVisitors: OverridesVisitor[] = [
   ],
 ]
 
+const fixingEventEmitterVisitors: OverridesVisitor[] = [
+  // TODO: This should be fixed upstream in RN. This seems like simply broken upstream code.
+  [
+    "Libraries/AppState/AppState.d.ts",
+    {
+      TSDeclareMethod: {
+        exit(path) {
+          if (path.node.key.type === "Identifier") {
+            switch (path.node.key.name) {
+              case "addListener":
+              case "removeAllListeners":
+              case "removeSubscription": {
+                if (path.node.params.length === 0) {
+                  path.remove()
+                }
+                break
+              }
+            }
+          }
+        },
+      },
+    },
+  ],
+  [
+    "Libraries/vendor/emitter/_EventEmitter.d.ts",
+    {
+      ImportDeclaration: {
+        exit(path) {
+          switch (path.node.source.value) {
+            case "./_EmitterSubscription": {
+              const interfaceDecl = ast`
+              interface EmitterSubscription {
+                remove: () => void;
+              }` as t.TSInterfaceDeclaration
+              path.replaceWith(interfaceDecl)
+              break
+            }
+          }
+        },
+      },
+    },
+  ],
+  [
+    "Libraries/vendor/emitter/_EmitterSubscription.d.ts",
+    {
+      ImportDeclaration: {
+        exit(path) {
+          switch (path.node.source.value) {
+            case "./EventEmitter": {
+              path.node.source.value = "./_EventEmitter"
+              break
+            }
+          }
+        },
+      },
+    },
+  ],
+]
+
 const visitors: OverridesVisitor[] = [
   ...animatedVisitors,
   ...listsVisitors,
   ...logboxVisitors,
   ...missingFileVisitors,
+  ...fixingEventEmitterVisitors,
   [
     "**/*",
     {
