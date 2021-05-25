@@ -9,7 +9,7 @@
     "@types/promise": "^7.1.30",
     "@types/react": "^16.9.56",
     "@types/react-test-renderer": "^16.9.3",
-    "@types/react-native__assets": "1.0.0",
+    "@types/react-native__assets": "file:../../../../../../../Zihanc-MSFT/DefinitelyTyped/types/react-native__assets",
     "utility-types": "^3.10.0"
   }
 }
