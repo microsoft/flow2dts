@@ -183,6 +183,21 @@ const missingFileVisitors: OverridesVisitor[] = [
     },
   ],
   [
+    "Libraries/vendor/emitter/_EmitterSubscription.d.ts",
+    {
+      ImportDeclaration: {
+        exit(path) {
+          switch (path.node.source.value) {
+            case "./EventEmitter": {
+              path.node.source.value = "./_EventEmitter"
+              break
+            }
+          }
+        },
+      },
+    },
+  ],
+  [
     "index.d.ts",
     {
       ImportDeclaration: {

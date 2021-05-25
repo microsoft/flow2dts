@@ -1,5 +1,5 @@
 // @flow
-import EventEmitter from "./EventEmitter";
+import EventEmitter from "./_EventEmitter";
 import EventSubscription from "./_EventSubscription";
 import EventSubscriptionVendor from "./_EventSubscriptionVendor";
 declare class EmitterSubscription extends EventSubscription {
