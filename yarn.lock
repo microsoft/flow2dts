@@ -960,12 +960,14 @@
     "@types/invariant" "^2.2.34"
     "@types/promise" "^7.1.30"
     "@types/react" "^16.9.56"
-    "@types/react-native__assets" "file:../../Zihanc-MSFT/DefinitelyTyped/types/react-native__assets"
+    "@types/react-native__assets" "1.0.0"
     "@types/react-test-renderer" "^16.9.3"
     utility-types "^3.10.0"
 
-"@types/react-native__assets@file:../../Zihanc-MSFT/DefinitelyTyped/types/react-native__assets":
-  version "0.0.0"
+"@types/react-native__assets@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/react-native__assets/-/react-native__assets-1.0.0.tgz#5ae261d71b43560f5e4f05b7ce9212a2ff5fb02a"
+  integrity sha512-9/VzYmiUPHdRJn1WwiG5TgKlLyyFyp7MaRzh4iTCTgWOcHQ9ZMjdUbwMHaXMp6F5fnrn4Oxk7LRR4flNz6VOBw==
 
 "@types/react-relay@*", "@types/react-relay@^7.0.17":
   version "7.0.17"
