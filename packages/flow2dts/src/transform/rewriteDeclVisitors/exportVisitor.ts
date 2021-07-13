@@ -37,7 +37,7 @@ export const exportVisitor: Visitor<State> = {
             t.assertTSTypeAnnotation(property.typeAnnotation)
             const propertyTypeAnnotation = property.typeAnnotation.typeAnnotation
             let intermediateLocalVar: t.Identifier | null = null
-            let exportSpecifier: t.ExportSpecifier | null = null
+            const exportSpecifier: t.ExportSpecifier[] = []
             if (t.isTSTypeQuery(propertyTypeAnnotation)) {
               t.assertTSEntityName(propertyTypeAnnotation.exprName)
               if (t.isIdentifier(propertyTypeAnnotation.exprName)) {
@@ -48,7 +48,7 @@ export const exportVisitor: Visitor<State> = {
                     binding.path.isDeclareVariable() ||
                     binding.path.isDeclareClass()
                   ) {
-                    exportSpecifier = t.exportSpecifier(propertyTypeAnnotation.exprName, property.key)
+                    exportSpecifier.push(t.exportSpecifier(propertyTypeAnnotation.exprName, property.key))
                   }
                 }
               }
@@ -59,20 +59,22 @@ export const exportVisitor: Visitor<State> = {
                 (binding.path.isImportDefaultSpecifier() || binding.path.isImportSpecifier()) &&
                 binding.path.node.local.name === nameForImportTypeof(propertyTypeAnnotation.typeName.name)
               ) {
-                exportSpecifier = t.exportSpecifier(
-                  // Instead of export { AccessibilityInfo$f2tTypeof as AccessibilityInfo }
-                  // we may need export { AccessibilityInfo }
-                  // to export it as a type, since later it is also exported as a value of this type
-                  // t.identifier(nameForImportTypeof(propertyTypeAnnotation.typeName.name)),
-                  property.key,
-                  property.key
-                )
+                // In index.d.ts (but also affects Libraries/Animated/Animated.d.ts)
+                // We need both export { AccessibilityInfo$f2tTypeof as AccessibilityInfo } and export { AccessibilityInfo }
+                // So that it is exported as a type and a value, and also in default exports
+                exportSpecifier.push(t.exportSpecifier(propertyTypeAnnotation.typeName, property.key))
+                //exportSpecifier.push(
+                //  t.exportSpecifier(
+                //    t.identifier(nameForImportTypeof(propertyTypeAnnotation.typeName.name)),
+                //    property.key
+                //  )
+                //)
               }
             }
-            if (exportSpecifier === null) {
+            if (exportSpecifier.length === 0) {
               intermediateLocalVar = generateIntermediateLocalIdentifier(property.key)
               intermediateLocalVar.typeAnnotation = t.tsTypeAnnotation(propertyTypeAnnotation)
-              exportSpecifier = t.exportSpecifier(intermediateLocalVar, property.key)
+              exportSpecifier.push(t.exportSpecifier(intermediateLocalVar, property.key))
             }
             if (intermediateLocalVar) {
               const duplicateLocalVar = intermediateLocalVars.find(
@@ -85,7 +87,7 @@ export const exportVisitor: Visitor<State> = {
               }
               intermediateLocalVars.push(intermediateLocalVar)
             }
-            exportSpecifiers.push(exportSpecifier)
+            exportSpecifiers.push(...exportSpecifier)
           })
         })
         intermediateLocalVars.forEach((valueIdentifier) => {
