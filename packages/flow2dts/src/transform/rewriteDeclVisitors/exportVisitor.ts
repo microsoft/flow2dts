@@ -69,6 +69,9 @@ export const exportVisitor: Visitor<State> = {
                 //    property.key
                 //  )
                 //)
+                // TODO: Sometimes a type need renaming but sometimes not,
+                // export {AType as X, AValue as X} is incorrect because the name conflicts
+                // AType as X must be either `export type X = AType;` or adding `export` before the declaration of `AType`
               }
             }
             if (exportSpecifier.length === 0) {
