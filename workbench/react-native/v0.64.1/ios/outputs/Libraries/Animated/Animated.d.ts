@@ -14,7 +14,7 @@ declare type AnimatedText = typeof AnimatedText$f2tTypeof;
 import AnimatedView$f2tTypeof from "./components/AnimatedView";
 declare type AnimatedView = typeof AnimatedView$f2tTypeof;
 import $1 from "./AnimatedMock";
-export { AnimatedFlatList$f2tTypeof as FlatList, AnimatedImage$f2tTypeof as Image, AnimatedScrollView$f2tTypeof as ScrollView, AnimatedSectionList$f2tTypeof as SectionList, AnimatedText$f2tTypeof as Text, AnimatedView$f2tTypeof as View };
+export { FlatList, Image, ScrollView, SectionList, Text, View };
 declare const $f2tExportDefault:
 /*[FLOW2DTS - Warning] This type was an exact object type in the original Flow source.*/
 typeof $1 & {

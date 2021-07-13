@@ -6,7 +6,7 @@ declare type Props = {
   children?: React.Element<any>;
   nextHeaderLayoutY?: null | undefined | number;
   onLayout: (event: LayoutEvent) => void;
-  scrollAnimatedValue: AnimatedImplementation.Value;
+  scrollAnimatedValue: typeof AnimatedImplementation["Value"];
   // Will cause sticky headers to stick at the bottom of the ScrollView instead
   // of the top.
   inverted?: null | undefined | boolean;
@@ -25,7 +25,7 @@ declare class ScrollViewStickyHeader extends React.Component<Props, State> {
   state: State;
   setNextHeaderY(y: number): void;
   UNSAFE_componentWillReceiveProps(nextProps: Props): void;
-  updateTranslateListener(translateY: AnimatedImplementation.Interpolation, isFabric: boolean): void;
+  updateTranslateListener(translateY: typeof AnimatedImplementation["Interpolation"], isFabric: boolean): void;
   render(): React.Node;
 }
 export type { Props };

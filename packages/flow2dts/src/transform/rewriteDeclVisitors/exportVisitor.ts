@@ -60,7 +60,11 @@ export const exportVisitor: Visitor<State> = {
                 binding.path.node.local.name === nameForImportTypeof(propertyTypeAnnotation.typeName.name)
               ) {
                 exportSpecifier = t.exportSpecifier(
-                  t.identifier(nameForImportTypeof(propertyTypeAnnotation.typeName.name)),
+                  // Instead of export { AccessibilityInfo$f2tTypeof as AccessibilityInfo }
+                  // we may need export { AccessibilityInfo }
+                  // to export it as a type, since later it is also exported as a value of this type
+                  // t.identifier(nameForImportTypeof(propertyTypeAnnotation.typeName.name)),
+                  property.key,
                   property.key
                 )
               }
@@ -72,7 +76,7 @@ export const exportVisitor: Visitor<State> = {
             }
             if (intermediateLocalVar) {
               const duplicateLocalVar = intermediateLocalVars.find(
-                (x) => x.name === (intermediateLocalVar as t.Identifier).name // FIXME: Why is `typedLocalVar` still possibly `null` here??
+                (x) => x.name === (intermediateLocalVar as t.Identifier).name
               )
               if (duplicateLocalVar) {
                 if (!t.isNodesEquivalent(intermediateLocalVar, duplicateLocalVar)) {
