@@ -178,7 +178,6 @@ declare const $f2d_unstable_batchedUpdates: $PropertyType<ReactNative, "unstable
 declare const $f2d_requireNativeComponent: <T>(uiViewClassName: string) => HostComponent<T>;
 declare const $f2d_unstable_enableLogBox: () => void;
 export type unstable_RootTagContext = RootTagContext;
-export type ColorPropType = DeprecatedColorPropType;
 export type EdgeInsetsPropType = DeprecatedEdgeInsetsPropType;
 export type PointPropType = DeprecatedPointPropType;
 export type ViewPropTypes = DeprecatedViewPropTypes;

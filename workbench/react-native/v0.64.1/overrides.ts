@@ -231,6 +231,18 @@ const missingFileVisitors: OverridesVisitor[] = [
           }
         },
       },
+      ExportNamedDeclaration: {
+        exit(path) {
+          if (path.node.declaration && path.node.declaration.type === "TSTypeAliasDeclaration") {
+            switch (path.node.declaration.id.name) {
+              case "ColorPropType": {
+                path.remove()
+                break
+              }
+            }
+          }
+        },
+      },
     },
   ],
 ]
