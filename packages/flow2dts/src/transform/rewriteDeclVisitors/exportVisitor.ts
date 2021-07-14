@@ -24,20 +24,20 @@ export const exportVisitor: Visitor<State> = {
       } else {
         // Export each value separately as ES6 named exports
         const intermediateLocalVars: t.Identifier[] = []
-        const exportSpecifiers: t.ExportSpecifier[] = []
+        const exportDeclarationsForTypes: t.ExportNamedDeclaration[] = []
+        const exportSpecifiersForValues: t.ExportSpecifier[] = []
         const typeLiterals = t.isTSTypeLiteral(typeAnnotation)
           ? [typeAnnotation]
           : t.isTSIntersectionType(typeAnnotation)
-          ? (typeAnnotation.types.filter((x) => t.isTSTypeLiteral(x)) as t.TSTypeLiteral[])
-          : []
+            ? (typeAnnotation.types.filter((x) => t.isTSTypeLiteral(x)) as t.TSTypeLiteral[])
+            : []
         typeLiterals.forEach((typeLiteral) => {
           typeLiteral.members.forEach((property) => {
             t.assertTSPropertySignature(property)
             t.assertIdentifier(property.key)
             t.assertTSTypeAnnotation(property.typeAnnotation)
             const propertyTypeAnnotation = property.typeAnnotation.typeAnnotation
-            let intermediateLocalVar: t.Identifier | null = null
-            const exportSpecifier: t.ExportSpecifier[] = []
+            let exportSpecifier: t.ExportSpecifier | null = null
             if (t.isTSTypeQuery(propertyTypeAnnotation)) {
               t.assertTSEntityName(propertyTypeAnnotation.exprName)
               if (t.isIdentifier(propertyTypeAnnotation.exprName)) {
@@ -48,7 +48,7 @@ export const exportVisitor: Visitor<State> = {
                     binding.path.isDeclareVariable() ||
                     binding.path.isDeclareClass()
                   ) {
-                    exportSpecifier.push(t.exportSpecifier(propertyTypeAnnotation.exprName, property.key))
+                    exportSpecifier = t.exportSpecifier(propertyTypeAnnotation.exprName, property.key)
                   }
                 }
               }
@@ -59,46 +59,74 @@ export const exportVisitor: Visitor<State> = {
                 (binding.path.isImportDefaultSpecifier() || binding.path.isImportSpecifier()) &&
                 binding.path.node.local.name === nameForImportTypeof(propertyTypeAnnotation.typeName.name)
               ) {
-                // In index.d.ts (but also affects Libraries/Animated/Animated.d.ts)
-                // We need both export { AccessibilityInfo$f2tTypeof as AccessibilityInfo } and export { AccessibilityInfo }
-                // So that it is exported as a type and a value, and also in default exports
-                exportSpecifier.push(t.exportSpecifier(propertyTypeAnnotation.typeName, property.key))
-                //exportSpecifier.push(
-                //  t.exportSpecifier(
-                //    t.identifier(nameForImportTypeof(propertyTypeAnnotation.typeName.name)),
-                //    property.key
-                //  )
-                //)
-                // TODO: Sometimes a type need renaming but sometimes not,
-                // export {AType as X, AValue as X} is incorrect because the name conflicts
-                // AType as X must be either `export type X = AType;` or adding `export` before the declaration of `AType`
-              }
-            }
-            if (exportSpecifier.length === 0) {
-              intermediateLocalVar = generateIntermediateLocalIdentifier(property.key)
-              intermediateLocalVar.typeAnnotation = t.tsTypeAnnotation(propertyTypeAnnotation)
-              exportSpecifier.push(t.exportSpecifier(intermediateLocalVar, property.key))
-            }
-            if (intermediateLocalVar) {
-              const duplicateLocalVar = intermediateLocalVars.find(
-                (x) => x.name === (intermediateLocalVar as t.Identifier).name
-              )
-              if (duplicateLocalVar) {
-                if (!t.isNodesEquivalent(intermediateLocalVar, duplicateLocalVar)) {
-                  throw path.buildCodeFrameError(`Duplicate identifier with different typing encountered`)
+                // Check if the name to export is a class.
+                // If it is, then there is no need to export the type again,
+                // because a class is a value (its constructor) and a type at the same time.
+                let importedClass = false;
+                if (state.hintFile) {
+                  const imported = state.hintFile.imports[propertyTypeAnnotation.typeName.name]
+                  if (imported) {
+                    if (imported.type === "class") {
+                      importedClass = true;
+                    }
+                  }
                 }
+
+                if (!importedClass) {
+                  // In index.d.ts (but also affects Libraries/Animated/Animated.d.ts)
+                  // We need both export { AccessibilityInfo$f2tTypeof as AccessibilityInfo } and export { AccessibilityInfo }
+                  // So that it is exported as a type and a value, and also in default exports
+                  if (propertyTypeAnnotation.typeName.name === property.key.name) {
+                    // when exported type name is not changed, add "export" to "type Local = xxx"
+                    state.importToExport.add(propertyTypeAnnotation.typeName.name)
+                  } else {
+                    // when exported type name changed, add a new "export type Exported = Local"
+                    const exportDeclaration = t.exportNamedDeclaration(
+                      t.tsTypeAliasDeclaration(
+                        property.key, undefined,
+                        t.tsTypeReference(propertyTypeAnnotation.typeName)
+                      )
+                    )
+                    exportDeclarationsForTypes.push(exportDeclaration)
+                  }
+                }
+
+                exportSpecifier = t.exportSpecifier(
+                  t.identifier(nameForImportTypeof(propertyTypeAnnotation.typeName.name)),
+                  property.key
+                )
               }
-              intermediateLocalVars.push(intermediateLocalVar)
-            }
-            exportSpecifiers.push(...exportSpecifier)
-          })
+              if (exportSpecifier === null) {
+                const intermediateLocalVar = generateIntermediateLocalIdentifier(property.key)
+                intermediateLocalVar.typeAnnotation = t.tsTypeAnnotation(propertyTypeAnnotation)
+
+                const duplicateLocalVar = intermediateLocalVars.find(
+                  (x) => x.name === (intermediateLocalVar as t.Identifier).name
+                )
+                if (duplicateLocalVar) {
+                  if (!t.isNodesEquivalent(intermediateLocalVar, duplicateLocalVar)) {
+                    throw path.buildCodeFrameError(`Duplicate identifier with different typing encountered`)
+                  }
+                }
+                intermediateLocalVars.push(intermediateLocalVar)
+
+                exportSpecifier = t.exportSpecifier(intermediateLocalVar, property.key)
+              }
+              exportSpecifiersForValues.push(exportSpecifier)
+            })
         })
+
+        // insert all created export declarations before "export default $f2tExportDefault"
         intermediateLocalVars.forEach((valueIdentifier) => {
           path.insertBefore(t.variableDeclaration("const", [t.variableDeclarator(valueIdentifier)]))
         })
-        if (exportSpecifiers.length > 0) {
-          path.insertBefore(t.exportNamedDeclaration(undefined, exportSpecifiers))
+        if (exportDeclarationsForTypes.length > 0) {
+          path.insertBefore(exportDeclarationsForTypes)
         }
+        if (exportSpecifiersForValues.length > 0) {
+          path.insertBefore(t.exportNamedDeclaration(undefined, exportSpecifiersForValues))
+        }
+
         // Export the entire object as the ES6 default export
         const id = t.identifier(nameForExportDefault)
         id.typeAnnotation = t.tsTypeAnnotation(typeAnnotation)

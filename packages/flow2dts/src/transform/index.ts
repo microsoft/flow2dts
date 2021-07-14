@@ -5,7 +5,7 @@ import { PluginObj, traverse, types as t } from "@babel/core"
 import { initializeState, State } from "./state"
 import { typeReferenceRecognizerVisitor } from "./typeReferenceResolver"
 import { rewriteTypeVisitor } from "./rewriteTypeVisitors"
-import { rewriteDeclVisitor } from "./rewriteDeclVisitors"
+import { rewriteDeclVisitorPass1, rewriteDeclVisitorPass2 } from "./rewriteDeclVisitors"
 import { createFixupVisitor, Options as FixupOptions } from "./fixupVisitor"
 import { applyOverridesVisitors, OverridesVisitorObject } from "./applyOverridesVisitors"
 import { emitImportsForTypeReferencesVisitor } from "./emitImportsForTypeReferencesVisitor"
@@ -41,7 +41,8 @@ export function transform(_api: unknown, options: Options, _dirname: string): Pl
          */
           path.traverse(typeReferenceRecognizerVisitor, state)
           path.traverse(rewriteTypeVisitor, state)
-          path.traverse(rewriteDeclVisitor, state)
+          path.traverse(rewriteDeclVisitorPass1, state)
+          path.traverse(rewriteDeclVisitorPass2, state)
 
           /**
            * Fixes some AST issues.

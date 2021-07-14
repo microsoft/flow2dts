@@ -8,11 +8,13 @@ import { ResolvedHintFile } from "../../../flow2hint/src/hintfile"
 
 export interface State {
   typeReferences: RecognizedTypeReferences
+  importToExport: Set<string>
   hintFile?: ResolvedHintFile
 }
 
 export function initializeState(state: State, hintFile: ResolvedHintFile | undefined): void {
   state.typeReferences = { records: {}, imports: {}, exports: {} }
+  state.importToExport = new Set<string>()
   state.hintFile = hintFile
 }
 
