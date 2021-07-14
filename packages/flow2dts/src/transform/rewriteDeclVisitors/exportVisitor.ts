@@ -96,24 +96,26 @@ export const exportVisitor: Visitor<State> = {
                   property.key
                 )
               }
-              if (exportSpecifier === null) {
-                const intermediateLocalVar = generateIntermediateLocalIdentifier(property.key)
-                intermediateLocalVar.typeAnnotation = t.tsTypeAnnotation(propertyTypeAnnotation)
+            }
 
-                const duplicateLocalVar = intermediateLocalVars.find(
-                  (x) => x.name === (intermediateLocalVar as t.Identifier).name
-                )
-                if (duplicateLocalVar) {
-                  if (!t.isNodesEquivalent(intermediateLocalVar, duplicateLocalVar)) {
-                    throw path.buildCodeFrameError(`Duplicate identifier with different typing encountered`)
-                  }
+            if (exportSpecifier === null) {
+              const intermediateLocalVar = generateIntermediateLocalIdentifier(property.key)
+              intermediateLocalVar.typeAnnotation = t.tsTypeAnnotation(propertyTypeAnnotation)
+
+              const duplicateLocalVar = intermediateLocalVars.find(
+                (x) => x.name === (intermediateLocalVar as t.Identifier).name
+              )
+              if (duplicateLocalVar) {
+                if (!t.isNodesEquivalent(intermediateLocalVar, duplicateLocalVar)) {
+                  throw path.buildCodeFrameError(`Duplicate identifier with different typing encountered`)
                 }
-                intermediateLocalVars.push(intermediateLocalVar)
-
-                exportSpecifier = t.exportSpecifier(intermediateLocalVar, property.key)
               }
-              exportSpecifiersForValues.push(exportSpecifier)
-            })
+              intermediateLocalVars.push(intermediateLocalVar)
+
+              exportSpecifier = t.exportSpecifier(intermediateLocalVar, property.key)
+            }
+            exportSpecifiersForValues.push(exportSpecifier)
+          })
         })
 
         // insert all created export declarations before "export default $f2tExportDefault"
