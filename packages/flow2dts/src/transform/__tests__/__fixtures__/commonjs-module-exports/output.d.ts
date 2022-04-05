@@ -1,5 +1,5 @@
 import MyClass$f2tTypeof from "MyClass"
-declare type MyClass = typeof MyClass$f2tTypeof
+export declare type MyClass = typeof MyClass$f2tTypeof
 declare const $f2d_someKey: string
 declare const $f2d_anotherKey: () => boolean
 export { $f2d_someKey as someKey, $f2d_anotherKey as anotherKey, MyClass$f2tTypeof as MyClass }

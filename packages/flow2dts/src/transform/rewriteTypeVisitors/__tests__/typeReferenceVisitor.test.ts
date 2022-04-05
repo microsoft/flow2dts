@@ -34,6 +34,7 @@ describe("typeReferenceVisitor", () => {
           imports: {},
           exports: {},
         },
+        importToExport: new Set<string>(),
         hintFile: {
           imports: {},
           typeofs: {
@@ -69,6 +70,7 @@ describe("typeReferenceVisitor", () => {
           imports: {},
           exports: {},
         },
+        importToExport: new Set<string>(),
         hintFile: {
           imports: {},
           typeofs: {
@@ -102,6 +104,7 @@ describe("typeReferenceVisitor", () => {
           imports: {},
           exports: {},
         },
+        importToExport: new Set<string>(),
         hintFile: {
           imports: {},
           typeofs: {
